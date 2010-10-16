@@ -1,0 +1,149 @@
+<includes>
+	<include name="PhotoWall">
+		<control type="panel" id="58">
+			<posx>45</posx>
+			<posy>115</posy>
+			<width>660</width>
+			<height>369</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>58</onup>
+			<ondown>58</ondown>
+			<viewtype label="Wall">Wall</viewtype>
+			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
+			<scrolltime>200</scrolltime>
+			<preloaditems>5</preloaditems>
+			<include>list-fade</include>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="122" width="122">
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>121</width>
+					<height>121</height>
+					<texture>picturepanel.png</texture>
+					<fadetime>600</fadetime>
+					<aspectratio>keep</aspectratio>
+					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>8</posy>
+					<width>107</width>
+					<height>107</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<fadetime>600</fadetime>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+					<visible>SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>8</posy>
+					<width>107</width>
+					<height>107</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<fadetime>600</fadetime>
+					<info>ListItem.Icon</info>
+					<aspectratio aligny="top">scale</aspectratio>
+					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="122" width="122">
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>121</width>
+					<height>121</height>
+					<fadetime>600</fadetime>
+					<texture>picturepanel.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>8</posy>
+					<width>107</width>
+					<height>107</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<fadetime>600</fadetime>
+					<info>ListItem.Icon</info>
+					<aspectratio>keep</aspectratio>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>8</posy>
+					<width>107</width>
+					<height>107</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<fadetime>600</fadetime>
+					<info>ListItem.Icon</info>
+					<aspectratio aligny="top">scale</aspectratio>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(58)</visible>
+			<!-- Label -->
+			<control type="label">
+				<posx>10</posx>
+				<posy>505</posy>
+				<width>700</width>
+				<height>30</height>
+				<font>font28</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<info>ListItem.Label</info>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
+			<!-- Go Back -->
+			<control type="label">
+				<posx>140</posx>
+				<posy>522</posy>
+				<width>460</width>
+				<height>30</height>
+				<font>font22</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>31688</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
+			<!-- Resolution -->
+			<control type="label">
+				<posx>160</posx>
+				<posy>545</posy>
+				<width>400</width>
+				<height>30</height>
+				<font>font13</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<info>ListItem.PictureResolution</info>
+				<textoffsetx>0</textoffsetx>
+				<visible>Control.IsVisible(58)</visible>
+			</control>
+		</control>
+	</include>
+</includes>

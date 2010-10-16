@@ -1,0 +1,418 @@
+<includes>
+	<!-- Start Video Window Specific Views -->
+	<include name="VideoWrapView">
+		<control type="wraplist" id="54">
+			<viewtype label="Wrap">Wraplist</viewtype>
+			<posx>-28</posx>
+			<posy>150</posy>
+			<width>1000</width>
+			<height>420</height>
+			<onleft>54</onleft>
+			<onright>54</onright>
+			<onup>2</onup>
+			<ondown>23</ondown>
+			<include>list-fade</include>
+			<focusposition>2</focusposition>
+			<orientation>horizontal</orientation>
+			<preloaditems>5</preloaditems>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="292" width="50">
+				<control type="image">
+					<posx>-36</posx>
+					<posy>269</posy>
+					<height>103</height>
+					<width>45</width>
+					<texture>dvdcase-back.png</texture>
+					<colordiffuse>UnFocusedCovers</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<visible>Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-36</posx>
+					<posy>272</posy>
+					<height>96</height>
+					<width>44</width>
+					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<colordiffuse>UnFocusedCovers</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-36</posx>
+					<posy>272</posy>
+					<height>96</height>
+					<width>44</width>
+					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<info>ListItem.Icon</info>
+					<colordiffuse>UnFocusedCovers</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-32</posx>
+					<posy>272</posy>
+					<height>15</height>
+					<width>15</width>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>UnFocusedCovers</colordiffuse>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="405" width="138">
+				<control type="image">
+					<posx>-40</posx>
+					<posy>100</posy>
+					<height>284</height>
+					<width>139</width>
+					<texture diffuse="RndVideoMask.png">Hi-lite.png</texture>
+				    <aspectratio>stretch</aspectratio>
+					<colordiffuse>IconGlow</colordiffuse>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-29</posx>
+					<posy>115</posy>
+					<height>257</height>
+					<width>117</width>
+					<texture>dvdcase-back.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<visible>Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-30</posx>
+					<posy>119</posy>
+					<height>250</height>
+					<width>115</width>
+					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-30</posx>
+					<posy>119</posy>
+					<height>250</height>
+					<width>115</width>
+					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<info>ListItem.Icon</info>
+					<aspectratio>stretch</aspectratio>
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>-27</posx>
+					<posy>124</posy>
+					<height>39</height>
+					<width>39</width>
+					<info>ListItem.Overlay</info>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(54)</visible>
+			<include>SortLetterNotification</include>
+			<animation effect="fade" delay="100" start="0" end="100" time="600">Visible</animation>
+			<!-- Star Rating -->
+			<control type="image">
+				<posx>175</posx>
+				<posy>275</posy>
+				<width>100</width>
+				<height>20</height>
+				<info>ListItem.StarRating</info>
+				<colordiffuse>StarDiffuse</colordiffuse>
+				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				<visible>!IsEmpty(ListItem.StarRating)</visible>
+			</control>
+			<!-- MPAA Rating -->
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/mpaa_restricted.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated R,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/mpaa_pg13.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/mpaa_pg.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/mpaa_nc17.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/mpaa_general.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
+			</control>
+			<!-- UK Ratings -->
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/bbfc_u.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:U)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/bbfc_pg.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:PG)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/bbfc_12.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:12)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/bbfc_15.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:15)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:18)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:X)</visible>
+			</control>
+			<!-- German Ratings -->
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/FSK-0_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:0) | substring(listitem.mpaa,o.A)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/FSK-6_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:6) | substring(listitem.mpaa,ab 6)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/FSK-12_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:12) | substring(listitem.mpaa,ab 12)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/FSK-16_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:16) | substring(listitem.mpaa,ab 16)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/FSK-18_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
+			</control>
+			<!-- Australian Ratings -->
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/australia_r.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:R)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/australia_m.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:M) + ! substring(listitem.mpaa,Australia:MA)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/australia_ma.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:MA)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/australia_pg.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:PG)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>special://skin/extras/images/rating/australia_g.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:G)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>175</posx>
+				<posy>300</posy>
+				<width>120</width>
+				<height>50</height>
+				<texture>$INFO[listitem.mpaa,special://skin/extras/images/rating/,.png]</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,TV-,Left)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<!-- Go Back -->
+			<control type="label">
+				<posx>175</posx>
+				<posy>350</posy>
+				<width>525</width>
+				<height>30</height>
+				<font>font22</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>31688</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+			</control>
+			<!-- Title -->
+			<control type="label">
+				<posx>175</posx>
+				<posy>350</posy>
+				<width>525</width>
+				<height>30</height>
+				<font>font22</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<info>ListItem.Label</info>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+			</control>
+			<!-- Genre -->
+			<control type="label">
+				<posx>175</posx>
+				<posy>390</posy>
+				<width>525</width>
+				<height>30</height>
+				<font>font13</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<selectedcolor>listselectedtext</selectedcolor>
+				<scroll>true</scroll>
+				<info>ListItem.Genre</info>
+				<textoffsetx>0</textoffsetx>
+			</control>
+			<!-- Scroll Bar -->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>527</posy>
+				<width>700</width>
+				<height>22</height>
+				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onup>54</onup>
+				<ondown>2</ondown>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+			</control>
+		</control>
+	</include>
+	<!-- End Video Window Specific Views -->
+</includes>
