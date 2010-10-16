@@ -1,0 +1,145 @@
+<includes>
+	<include name="AudioWallView">
+		<control type="panel" id="58">
+			<posx>70</posx>
+			<posy>110</posy>
+			<width>625</width>
+			<height>381</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>58</onup>
+			<ondown>58</ondown>
+			<viewtype label="Wall">Wall</viewtype>
+			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
+			<scrolltime>200</scrolltime>
+			<include>list-fade</include>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="127" width="81">
+				<control type="image">
+					<width>81</width>
+					<height>127</height>
+					<posx>0</posx>
+					<posy>0</posy>
+					<texture>-</texture>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>80</width>
+					<height>126</height>
+				    <aspectratio>stretch</aspectratio>
+					<colordiffuse>UnFocusedCovers</colordiffuse>
+					<texture diffuse="RndMusicMask.png">defaultmusic.png</texture>
+					<info>ListItem.Icon</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="127" width="81">
+				<control type="image">
+					<width>81</width>
+					<height>127</height>
+					<posx>0</posx>
+					<posy>0</posy>
+					<texture background="true" diffuse="RndMusicMask.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<bordertexture border="7">Hi-LiteSquare.png</bordertexture>
+					<bordersize>7</bordersize>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" />
+						<effect type="fade" start="5" time="200" pulse="true" />
+					</animation>-->
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>80</width>
+					<height>126</height>
+				    <aspectratio>stretch</aspectratio>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<texture diffuse="RndMusicMask.png">defaultmusic.png</texture>
+					<info>ListItem.Icon</info>
+					<visible>SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(58)</visible>
+			<control type="scrollbar" id="23">
+				<posx>700</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>58</onleft>
+				<onright>2</onright>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+			</control>
+			<!-- Artist & Album name-->
+			<control type="label">
+				<posx>70</posx>
+				<posy>516</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font20</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
+			<!-- Go Back -->
+			<control type="label">
+				<posx>70</posx>
+				<posy>516</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font20</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>31688</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
+			<!-- Genre -->
+			<control type="label">
+				<posx>70</posx>
+				<posy>548</posy>
+				<width>510</width>
+				<height>30</height>
+				<font>font13</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>$INFO[ListItem.Genre]</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
+			<!-- Star Rating -->
+			<control type="image">
+				<posx>590</posx>
+				<posy>526</posy>
+				<width>100</width>
+				<height>20</height>
+				<info>ListItem.StarRating</info>
+				<colordiffuse>FlagDiffuse</colordiffuse>
+				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				<visible>!IsEmpty(ListItem.StarRating)</visible>
+			</control>
+		</control>
+	</include>
+</includes>
