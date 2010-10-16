@@ -1,0 +1,360 @@
+<includes>
+	<include name="ListView">
+		<control type="list" id="50">
+			<viewtype label="List">List</viewtype>
+			<posx>400</posx>
+			<posy>95</posy>
+			<width>300</width>
+			<height>444</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<include>list-fade</include>
+			<scrolltime>1</scrolltime>
+			<preloaditems>5</preloaditems>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="37">
+				<control type="image">
+					<width>290</width>
+					<height>30</height>
+					<posx>0</posx>
+					<posy>1</posy>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>4</posy>
+					<width>24</width>
+					<height>24</height>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>-4</posy>
+					<width>254</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="37">
+				<control type="image">
+					<width>270</width>
+					<height>37</height>
+					<posx>22</posx>
+					<posy>-4</posy>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>4</posy>
+					<width>24</width>
+					<height>24</height>
+					<info>ListItem.Overlay</info>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>-4</posy>
+					<width>254</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<include>SortLetterNotification</include>
+	</include>
+
+	<include name="PlaylistView">
+		<control type="list" id="50">
+			<posx>405</posx>
+			<posy>90</posy>
+			<width>285</width>
+			<height>444</height>
+			<onleft>20</onleft>
+			<onright>23</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<include>list-fade</include>
+			<scrolltime>1</scrolltime>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="32">
+				<control type="image">
+					<width>285</width>
+					<height>30</height>
+					<posx>0</posx>
+					<posy>1</posy>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>315</width>
+					<height>30</height>
+					<font>font12</font>
+					<align>left</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="32">
+				<control type="image">
+					<width>285</width>
+					<height>35</height>
+					<posx>0</posx>
+					<posy>-3</posy>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>1</posy>
+					<width>312</width>
+					<height>22</height>
+					<font>font13</font>
+					<align>left</align>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<scroll>true</scroll>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<include>SortLetterNotification</include>
+	</include>
+<!--	<include name="LetterNav">
+		<control type="list" id="22">
+			<posx>695</posx>
+			<posy>86</posy>
+			<width>16</width>
+			<height>432</height>
+			<onleft>50</onleft>
+			<onright>23</onright>
+			<onup>22</onup>
+			<ondown>22</ondown>
+			<include>list-fade</include>
+			<scrolltime>1</scrolltime>
+			<visible>Skin.HasSetting(lbar) + Control.IsVisible(23)</visible>
+			<viewtype label="535">list</viewtype>
+			<itemlayout height="16">
+				<control type="image">
+					<width>16</width>
+					<height>16</height>
+					<posx>0</posx>
+					<posy>1</posy>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>16</width>
+					<height>16</height>
+					<font>font10</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="16">
+				<control type="image">
+					<width>16</width>
+					<height>16</height>
+					<posx>0</posx>
+					<posy>-3</posy>
+					<texture>-</texture>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>1</posy>
+					<width>16</width>
+					<height>16</height>
+					<font>font13</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>listselectedtext</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<scroll>true</scroll>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="301">
+					<description>A</description>
+					<label>A</label>
+					<onclick>JumpSMS2</onclick>
+				</item>
+				<item id="302">
+					<description>B</description>
+					<label>B</label>
+					<onclick>JumpSMS2</onclick>
+					<onclick>JumpSMS2</onclick>
+				</item>
+				<item id="303">
+					<description>C</description>
+					<label>C</label>
+					<onclick>JumpSMS2</onclick>
+					<onclick>JumpSMS2</onclick>
+					<onclick>JumpSMS2</onclick>
+				</item>
+				<item id="304">
+					<description>D</description>
+					<label>D</label>
+					<onclick>JumpSMS3</onclick>
+				</item>
+				<item id="305">
+					<description>E</description>
+					<label>E</label>
+					<onclick>JumpSMS3</onclick>
+					<onclick>JumpSMS3</onclick>
+				</item>
+				<item id="306">
+					<description>F</description>
+					<label>F</label>
+					<onclick>JumpSMS3</onclick>
+					<onclick>JumpSMS3</onclick>
+					<onclick>JumpSMS3</onclick>
+				</item>
+				<item id="307">
+					<description>G</description>
+					<label>G</label>
+					<onclick>JumpSMS4</onclick>
+				</item>
+				<item id="308">
+					<description>H</description>
+					<label>H</label>
+					<onclick>JumpSMS4</onclick>
+					<onclick>JumpSMS4</onclick>
+				</item>
+				<item id="309">
+					<description>I</description>
+					<label>I</label>
+					<onclick>JumpSMS4</onclick>
+					<onclick>JumpSMS4</onclick>
+					<onclick>JumpSMS4</onclick>
+				</item>
+				<item id="310">
+					<description>J</description>
+					<label>J</label>
+					<onclick>Action(50,0xF100+0x4A)</onclick>
+				</item>
+				<item id="311">
+					<description>K</description>
+					<label>K</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,K)</onclick>
+				</item>
+				<item id="312">
+					<description>L</description>
+					<label>L</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,L)</onclick>
+				</item>
+				<item id="313">
+					<description>M</description>
+					<label>M</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,M)</onclick>
+				</item>
+				<item id="314">
+					<description>N</description>
+					<label>N</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,N)</onclick>
+				</item>
+				<item id="315">
+					<description>O</description>
+					<label>O</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,O)</onclick>
+				</item>
+				<item id="316">
+					<description>P</description>
+					<label>P</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,P)</onclick>
+				</item>
+				<item id="317">
+					<description>Q</description>
+					<label>Q</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,Q)</onclick>
+				</item>
+				<item id="318">
+					<description>R</description>
+					<label>R</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,R)</onclick>
+				</item>
+				<item id="319">
+					<description>S</description>
+					<label>S</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,S)</onclick>
+				</item>
+				<item id="320">
+					<description>T</description>
+					<label>T</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,T)</onclick>
+				</item>
+				<item id="321">
+					<description>U</description>
+					<label>U</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,U)</onclick>
+				</item>
+				<item id="22">
+					<description>V</description>
+					<label>V</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,V)</onclick>
+				</item>
+				<item id="323">
+					<description>W</description>
+					<label>W</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,W)</onclick>
+				</item>
+				<item id="324">
+					<description>X</description>
+					<label>X</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,X)</onclick>
+				</item>
+				<item id="325">
+					<description>Y</description>
+					<label>Y</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,Y)</onclick>
+				</item>
+				<item id="326">
+					<description>Z</description>
+					<label>Z</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,Z)</onclick>
+				</item>
+				<item id="327">
+					<description>#</description>
+					<label>#</label>
+					<onclick>XBMC.RunScript(special://skin/scripts/JumpToLetter.py,#)</onclick>
+				</item>
+			</content>
+		</control>
+	</include>-->
+	<include name="PageControl">
+		<control type="scrollbar" id="23">
+			<posx>700</posx>
+			<posy>90</posy>
+			<width>14</width>
+			<height>448</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>2</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+		</control>
+	</include>
+</includes>
