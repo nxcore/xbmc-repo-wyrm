@@ -1,0 +1,708 @@
+<includes>
+	<include name="List2">
+		<control type="list" id="51">
+			<!-- List text positioning ... -->
+			<posx>376</posx>
+			<posy>95</posy>
+			<width>334</width>
+			<height>444</height>
+			<onleft>2</onleft>
+			<onright>23</onright>
+			<onup>51</onup>
+			<ondown>51</ondown>
+			<include>list-fade</include>
+			<scrolltime>1</scrolltime>
+			<viewtype label="List2">List2</viewtype>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="37">
+				<control type="image">
+					<posx>34</posx>
+					<posy>0</posy>
+					<width>290</width>
+					<height>30</height>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>32</width>
+					<height>32</height>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>46</posx>
+					<posy>-2</posy>
+					<width>264</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="37">
+				<!-- This positions the "highlight" box behind selected list item ... -->
+				<control type="image">
+					<posx>34</posx>
+					<posy>-2</posy>
+					<width>290</width>
+					<height>37</height>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>32</width>
+					<height>32</height>
+					<info>ListItem.Overlay</info>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>46</posx>
+					<posy>-2</posy>
+					<width>264</width>
+					<height>37</height>
+					<font>font12</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group" id="3002">
+			<include>list-fade</include>
+			<visible>Container(51).OnPrevious</visible>
+			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
+			<control type="group">
+				<posx>30</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="slide" end="-100,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(3).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(3).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>95</posx>
+				<posy>160</posy>
+				<width>65</width>
+				<height>130</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="zoom" start="95,160,65,130" end="30,150,50,100" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>65</width>
+					<height>65</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>140</posx>
+				<posy>145</posy>
+				<width>230</width>
+				<height>460</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="zoom" start="140,145,230,460" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>-340</posx>
+				<posy>225</posy>
+				<width>230</width>
+				<height>460</height>
+				<visible>Container(51).OnPrevious</visible>
+				<animation effect="slide" start="0,0" end="400,-80" delay="50" time="150" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio align="left" aligny="top">keep</aspectratio>
+				</control>
+			</control>
+		</control>
+		<control type="group" id="3001">
+			<include>list-fade</include>
+			<visible>Container(51).OnNext</visible>
+			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
+			<control type="group">
+				<posx>-70</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="slide" end="100,0" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>30</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="zoom" start="30,150,50,100" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>95</posx>
+				<posy>160</posy>
+				<width>65</width>
+				<height>130</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="zoom" start="95,160,65,130" end="140,145,230,460" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>65</posy>
+					<width>65</width>
+					<height>65</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio align="left" aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>140</posx>
+				<posy>145</posy>
+				<width>230</width>
+				<height>460</height>
+				<visible>Container(51).OnNext</visible>
+				<animation effect="slide" start="0,0" end="-400,80" time="150" reversible="false">Hidden</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(-1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(-1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<include>list-fade</include>
+			<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
+			<control type="group">
+				<posx>30</posx>
+				<posy>150</posy>
+				<width>50</width>
+				<height>100</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>50</width>
+					<height>50</height>
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(2).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>95</posx>
+				<posy>160</posy>
+				<width>65</width>
+				<height>130</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>65</width>
+					<height>65</height>
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>65</width>
+					<height>65</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(1).Icon</info>
+					<aspectratio aligny="top">keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>140</posx>
+				<posy>145</posy>
+				<width>230</width>
+				<height>460</height>
+				<control type="image">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>230</width>
+					<height>230</height>
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>230</posy>
+					<width>230</width>
+					<height>230</height>
+					<texture flipy="true" diffuse="fade.png" />
+					<info>Container(51).Listitem(0).Icon</info>
+					<aspectratio align="left" aligny="top">keep</aspectratio>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(51)</visible>
+			<include>SortLetterNotification</include>
+			<!-- Scroll Bar -->
+			<control type="scrollbar" id="23">
+				<posx>700</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>448</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>51</onleft>
+				<onright>2</onright>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+			</control>
+			<!-- Star Rating -->
+			<control type="image">
+				<posx>10</posx>
+				<posy>240</posy>
+				<width>100</width>
+				<height>20</height>
+				<info>ListItem.StarRating</info>
+				<colordiffuse>StarDiffuse</colordiffuse>
+				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				<visible>!IsEmpty(ListItem.StarRating)</visible>
+			</control>
+			<!-- Duration -->
+			<control type="label">
+				<posx>10</posx>
+				<posy>265</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<info>ListItem.Duration</info>
+				<visible>substring(listitem.Duration,hrs)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>265</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<info>ListItem.Duration</info>
+				<visible>substring(listitem.Duration,min)</visible>
+				<visible>!substring(listitem.Duration,hrs)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>265</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$INFO[ListItem.Duration,, mins]</label>
+				<visible>!substring(listitem.Duration,min)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<!-- MPAA Rating -->
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/mpaa_restricted.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated R,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/mpaa_pg13.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/mpaa_pg.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/mpaa_nc17.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/mpaa_general.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
+			</control>
+			<!-- UK Ratings -->
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/bbfc_u.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:U)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/bbfc_pg.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:PG)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/bbfc_12.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:12)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/bbfc_15.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:15)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:18)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:X)</visible>
+			</control>
+			<!-- German Ratings -->
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/FSK-0_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:0) | substring(listitem.mpaa,o.A)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/FSK-6_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:6) | substring(listitem.mpaa,ab 6)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/FSK-12_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:12) | substring(listitem.mpaa,ab 12)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/FSK-16_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:16) | substring(listitem.mpaa,ab 16)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/FSK-18_info.png</texture>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
+			</control>
+			<!-- Australian Ratings -->
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/australia_r.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:R)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/australia_m.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:M) + ! substring(listitem.mpaa,Australia:MA)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/australia_ma.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:MA)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/australia_pg.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:PG)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>special://skin/extras/images/rating/australia_g.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:G)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>325</posy>
+				<width>120</width>
+				<height>50</height>
+				<aligny>left</aligny>
+				<texture>$INFO[listitem.mpaa,special://skin/extras/images/rating/,.png]</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,TV-,Left)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<!-- Plot Outline -->
+			<control type="textbox">
+				<posx>10</posx>
+				<posy>394</posy>
+				<width>365</width>
+				<height>140</height>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+			</control>
+			<!-- Plot (Show if no outline available)-->
+			<control type="textbox">
+				<posx>10</posx>
+				<posy>394</posy>
+				<width>365</width>
+				<height>140</height>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
+				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+			</control>
+		</control>
+	</include>
+</includes>

@@ -1,0 +1,172 @@
+<window id="55">  <!-- strings fixed -->
+	<defaultcontrol always="true">420</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<previouswindow>56</previouswindow>
+	<controls>
+		<include>background</include>
+		<include>Fake-Overlay</include>
+		<control type="image">
+			<description>Settings Logo</description>
+			<include>icon-header-commons</include>
+			<texture>icon-settings.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<label>31831</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+
+		<control type="grouplist" id="420">
+			<posx>40</posx>
+			<posy>90</posy>
+			<width>500</width>
+			<height>425</height>
+			<itemgap>-2</itemgap>
+			<onup>420</onup>
+			<ondown>420</ondown>
+			<onleft>420</onleft>
+			<onright>420</onright>
+			<control type="radiobutton" id="13">
+				<description>Movies Library link toggle</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31810</label>
+				<textwidth>480</textwidth>
+				<onclick>Skin.ToggleSetting(movie-library)</onclick>
+				<selected>Skin.HasSetting(movie-library)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="radiobutton" id="14">
+				<description>Set Default Movie Source</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31852</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(setdefault-moviesource)</onclick>
+				<selected>Skin.HasSetting(setdefault-moviesource)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="button" id="15">
+				<description>Default Movie Source selected</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textwidth>250</textwidth>
+				<enable>Skin.HasSetting(setdefault-moviesource)</enable>
+				<label>31855</label>
+				<label2>$INFO[Skin.String(default-moviesource)]</label2>
+				<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,movie)</onclick>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+			</control>
+			<control type="radiobutton" id="16">
+				<description>TV Library link toggle</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31811</label>
+				<textwidth>480</textwidth>
+				<onclick>Skin.ToggleSetting(tv-library)</onclick>
+				<selected>Skin.HasSetting(tv-library)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="radiobutton" id="17">
+				<description>Set Default TV Source</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31853</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(setdefault-tvsource)</onclick>
+				<selected>Skin.HasSetting(setdefault-tvsource)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="button" id="18">
+				<description>Default TV Source</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textwidth>480</textwidth>
+				<enable>Skin.HasSetting(setdefault-tvsource)</enable>
+				<label>31855</label>
+				<label2>$INFO[Skin.String(default-tvsource)]</label2>
+				<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,tv)</onclick>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+			</control>
+			<control type="radiobutton" id="19">
+				<description>Music Video Library link toggle</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31847</label>
+				<textwidth>480</textwidth>
+				<onclick>Skin.ToggleSetting(musicvideo-library)</onclick>
+				<selected>Skin.HasSetting(musicvideo-library)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="radiobutton" id="20">
+				<description>Set Default Music Video Source</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31854</label>
+				<textwidth>480</textwidth>
+				<onclick>Skin.ToggleSetting(setdefault-musicvideosource)</onclick>
+				<selected>Skin.HasSetting(setdefault-musicvideosource)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="button" id="21">
+				<description>Default Music Video Source</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textwidth>480</textwidth>
+				<enable>Skin.HasSetting(setdefault-musicvideosource)</enable>
+				<label>31855</label>
+				<label2>$INFO[Skin.String(default-musicvideosource)]</label2>
+				<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,musicvideo)</onclick>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+			</control>
+		</control>
+	</controls>
+</window>

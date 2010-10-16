@@ -1,0 +1,151 @@
+<window id="131">
+	<defaultcontrol>5</defaultcontrol>
+	<controls>
+		<control type="group">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>768</width>
+				<height>512</height>
+				<texture>black.png</texture>
+				<visible>!Window.IsActive(130)</visible>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<posx>50</posx>
+				<posy>90</posy>
+				<width>600</width>
+				<height>375</height>
+				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="label">
+				<description>heading label</description>
+				<posx>260</posx>
+				<posy>95</posy>
+				<width>200</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font14</font>
+				<label>$LOCALIZE[20043]</label>
+				<textcolor>button-text</textcolor>
+				<visible>!Window.IsVisible(130)</visible>
+			</control>
+			<control type="image">
+				<description>seperator</description>
+				<posx>65</posx>
+				<posy>125</posy>
+				<width>565</width>
+				<height>8</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texture>separator.png</texture>
+			</control>
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<posx>60</posx>
+				<posy>150</posy>
+				<width>550</width>
+				<height>255</height>
+				<itemgap>0</itemgap>
+				<pagecontrol>60</pagecontrol>
+				<onleft>5</onleft>
+				<onright>60</onright>
+				<onup>28</onup>
+				<ondown>28</ondown>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>620</posx>
+				<posy>150</posy>
+				<width>14</width>
+				<height>255</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+			</control>
+			<control type="button" id="7">
+				<description>Default Button</description>
+				<posx>30</posx>
+				<posy>150</posy>
+				<height>45</height>
+				<font>font12</font>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textcolor>button-text</textcolor>
+				<textoffsetx>20</textoffsetx>
+			</control>
+			<control type="radiobutton" id="8">
+				<description>Default RadioButton</description>
+				<posx>30</posx>
+				<posy>150</posy>
+				<height>35</height>
+				<font>font12</font>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textoffsetx>20</textoffsetx>
+				<aligny>center</aligny>
+				<textureradiofocus>check-box.png</textureradiofocus>
+				<textureradionofocus>check-boxNF.png</textureradionofocus>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="spincontrolex" id="9">
+				<description>Default SpinControlex</description>
+				<posx>30</posx>
+				<posy>150</posy>
+				<height>35</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textureup>scroll-up.png</textureup>
+				<texturedown>scroll-down.png</texturedown>
+				<textureupfocus>scroll-up-focus.png</textureupfocus>
+				<texturedownfocus>scroll-down-focus.png</texturedownfocus>
+				<font>font12</font>
+				<disabledcolor>disabled-text</disabledcolor>
+				<textoffsetx>12</textoffsetx>
+				<aligny>center</aligny>
+				<reverse>yes</reverse>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="button" id="28">
+				<description>Ok Button</description>
+				<posx>200</posx>
+				<posy>420</posy>
+				<width>90</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>186</label>
+				<onleft>29</onleft>
+				<onright>29</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+			<control type="button" id="29">
+				<description>Cancel Button</description>
+				<posx>400</posx>
+				<posy>420</posy>
+				<width>90</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>222</label>
+				<onleft>28</onleft>
+				<onright>28</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+		</control>
+	</controls>
+</window>

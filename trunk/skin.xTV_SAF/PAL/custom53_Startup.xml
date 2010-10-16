@@ -1,0 +1,95 @@
+<window id="53">
+	<defaultcontrol always="true">420</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<previouswindow>56</previouswindow>
+	<controls>
+		<include>background</include>
+<!--		<include>xtv-box</include> -->
+		<include>Fake-Overlay</include>
+		<control type="image">
+			<description>Settings Logo</description>
+			<include>icon-header-commons</include>
+			<texture>icon-settings.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<label>31841</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="grouplist" id="420">
+			<posx>40</posx>
+			<posy>90</posy>
+			<width>500</width>
+			<height>425</height>
+			<itemgap>-2</itemgap>
+			<onup>420</onup>
+			<ondown>420</ondown>
+			<onleft>420</onleft>
+			<onright>420</onright>
+			<control type="radiobutton" id="12">
+				<description>Intro Video Toggle</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31003</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(intro-vid)</onclick>
+				<selected>Skin.HasSetting(intro-vid)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="button" id="13">
+				<description>Intro Video Location</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textwidth>480</textwidth>
+				<enable>Skin.HasSetting(intro-vid)</enable>
+				<label>31004</label>
+				<label2>$INFO[Skin.String(intro-vid-location)]</label2>
+				<onclick>Skin.SetFile(intro-vid-location,,special://skin/extras)</onclick>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>ff4e4e4e</disabledcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+			</control>
+			<control type="radiobutton" id="14">
+				<description>Startup Playlist toggle</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31001</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
+				<selected>Skin.HasSetting(startup-playlist)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+			<control type="button" id="15">
+				<description>Choose Playlist button</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31002</label>
+				<enable>Skin.HasSetting(startup-playlist)</enable>
+				<onclick>Skin.SetFile(playlist,.m3u,special://userdata/playlists/music)</onclick>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>ff4e4e4e</disabledcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+			</control>
+		</control>
+	</controls>
+</window>

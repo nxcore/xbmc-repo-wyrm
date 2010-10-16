@@ -1,0 +1,109 @@
+<window id="139">
+	<defaultcontrol>5</defaultcontrol>
+	<include>screen-fade</include>
+	<controls>
+		<include>background</include>
+		<control type="list" id="5">
+			<posx>300</posx>
+			<posy>90</posy>
+			<width>400</width>
+			<height>400</height>
+			<onleft>23</onleft>
+			<onright>23</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<scrolltime>200</scrolltime>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="37">
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>145</width>
+					<height>37</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+				</control>
+				<control type="label">
+					<posx>160</posx>
+					<posy>0</posy>
+					<width>240</width>
+					<height>37</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>left</align>
+					<info>ListItem.Label2</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="37">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>400</width>
+					<height>37</height>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>145</width>
+					<height>37</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+				</control>
+				<control type="label">
+					<posx>160</posx>
+					<posy>0</posy>
+					<width>240</width>
+					<height>37</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>left</align>
+					<info>ListItem.Label2</info>
+				</control>
+			</focusedlayout>
+		</control>
+        <control type="image">
+			<posx>25</posx>
+			<posy>165</posy>
+			<width>270</width>
+			<height>270</height>
+			<texture background="true">$INFO[ListItem.Icon]</texture>
+			<aspectratio align="middle" aligny="center">keep</aspectratio>
+			<bordertexture border="6">photoframe.png</bordertexture>
+			<bordersize>6</bordersize>
+			<texture>picturepanel.png</texture>
+			<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+        </control>
+		<!-- Scrollbar -->
+		<control type="scrollbar" id="23">
+			<posx>705</posx>
+			<posy>90</posy>
+			<width>14</width>
+			<height>400</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Skin.HasSetting(sbar)</visible>
+		</control>
+	</controls>
+</window>
