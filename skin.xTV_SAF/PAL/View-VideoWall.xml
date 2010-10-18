@@ -13,6 +13,7 @@
 			<scrolltime>100</scrolltime>
 			<include>list-fade</include>
 			<pagecontrol>23</pagecontrol>
+			<preloaditems>8</preloaditems>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<itemlayout height="110" width="66">
 				<control type="image">
@@ -52,7 +53,7 @@
 					<height>112</height>
 				    <aspectratio>stretch</aspectratio>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="90" end="160" center="auto" time="600" tween="back" easing="out" />
+						<effect type="zoom" start="100" end="150" center="auto" time="600" tween="back" easing="out" />
 					</animation>
 					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -65,7 +66,7 @@
 					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="90" end="160" center="auto" time="600" tween="back" easing="out" />
+						<effect type="zoom" start="100" end="150" center="auto" time="600" tween="back" easing="out" />
 					</animation>
 					<visible>SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
 				</control>
@@ -79,7 +80,7 @@
 					<bordertexture border="8">Hi-lite.png</bordertexture>
 					<bordersize>8</bordersize>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="90" end="160" center="auto" time="600" tween="back" easing="out" />
+						<effect type="zoom" start="100" end="150" center="auto" time="600" tween="back" easing="out" />
 					</animation>
 					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
 				</control>
