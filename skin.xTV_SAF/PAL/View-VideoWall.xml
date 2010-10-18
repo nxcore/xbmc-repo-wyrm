@@ -30,7 +30,7 @@
 					<height>108</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -40,7 +40,7 @@
 					<height>108</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
 					<info>ListItem.Icon</info>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
@@ -55,7 +55,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="150" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -63,7 +63,7 @@
 					<posy>0</posy>
 					<width>66</width>
 					<height>112</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="150" center="auto" time="600" tween="back" easing="out" />
