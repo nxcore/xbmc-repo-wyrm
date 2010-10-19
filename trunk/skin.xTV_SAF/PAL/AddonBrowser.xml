@@ -20,6 +20,22 @@
 			<textcolor>button-text</textcolor>
 		</control>
 
+		<!-- Show Addon Status -->
+		<control type="fadelabel">
+			<posx>80</posx>
+			<posy>65</posy>
+			<width>256</width>
+			<height>20</height>
+			<font>font13</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<scrollout>false</scrollout>
+			<pauseatend>2000</pauseatend>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$INFO[ListItem.Property(Addon.Status)]</label>
+		</control>
+		
 		<!-- Show Addons icon -->
 		<control type="image">
 			<description>list item icon</description>
@@ -29,7 +45,7 @@
 			<height>256</height>
 			<texture background="true">DefaultAddon.png</texture>
 			<info>ListItem.Icon</info>
-			<fadetime>300</fadetime>
+			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 			<include>list-fade</include>
@@ -42,7 +58,7 @@
 			<height>256</height>
 			<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png">DefaultAddon.png</texture>
 			<info>ListItem.Icon</info>
-			<fadetime>300</fadetime>
+			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 			<include>list-fade</include>
@@ -56,7 +72,7 @@
 			<width>256</width>
 			<height>256</height>
 			<texture background="true">DefaultAddon.png</texture>
-			<fadetime>300</fadetime>
+			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50) + SubString(ListItem.Icon,defaultfolder.png,Left)</visible>
 			<include>list-fade</include>
@@ -68,7 +84,7 @@
 			<width>256</width>
 			<height>256</height>
 			<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png">DefaultAddon.png</texture>
-			<fadetime>300</fadetime>
+			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 			<include>list-fade</include>
