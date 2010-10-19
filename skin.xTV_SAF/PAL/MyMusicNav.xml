@@ -31,22 +31,22 @@
 
 		<control type="image">
 			<description>list item icon</description>
-			<posx>90</posx>
+			<posx>106</posx>
 			<posy>106</posy>
-			<width>244</width>
-			<height>288</height>
+			<width>218</width>
+			<height>280</height>
 			<texture fallback="DefaultAlbumCover.png">$INFO[ListItem.Icon]</texture>
 			<aspectratio>stretch</aspectratio>
 			<visible>Control.IsVisible(50)</visible>
 			<include>list-fade</include>
 		</control>
         <control type="image">
-			<posx>32</posx>
-			<posy>90</posy>
-			<width>340</width>
-			<height>320</height>
+			<posx>74</posx>
+			<posy>88</posy>
+			<width>266</width>
+			<height>310</height>
 			<texture>CDcase.png</texture>
-			<aspectratio>keep</aspectratio>
+			<aspectratio>stretch</aspectratio>
 			<visible>Skin.HasSetting(CDcase) + Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
         </control>
 		<control type="image">
