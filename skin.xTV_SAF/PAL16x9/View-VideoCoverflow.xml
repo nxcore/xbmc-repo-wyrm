@@ -14,7 +14,7 @@
 			<include>list-fade</include>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>5</preloaditems>
+			<preloaditems>9</preloaditems>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="390" width="140"></itemlayout>
 			<focusedlayout height="410" width="320"></focusedlayout>

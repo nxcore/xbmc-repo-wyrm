@@ -136,8 +136,8 @@
 			<posy>40</posy>
 			<posx>338</posx>
 			<visible>Container.Scrolling</visible>
-			<animation effect="slide" start="-45,0" time="150" tween="cubic" easing="out">Visible</animation>
-			<animation effect="slide" end="-45,0" time="150" delay="600" tween="cubic" easing="out">Hidden</animation>
+			<animation effect="slide" start="-45,0" time="300" tween="cubic" easing="out">Visible</animation>
+			<animation effect="slide" end="-45,0" time="100" delay="200" tween="cubic" easing="out">Hidden</animation>
 			<control type="image">
 				<posx>-8</posx>
 				<width>45</width>
