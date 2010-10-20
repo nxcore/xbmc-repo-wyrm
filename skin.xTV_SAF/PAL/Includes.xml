@@ -73,7 +73,6 @@
 			<colordiffuse>fanart-background</colordiffuse>
 			<aspectratio>scale</aspectratio>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-<!--			<info>ListItem.Property(Fanart_Image)</info>-->
 			<visible>Skin.HasSetting(background-fanart) + ![IsEmpty(ListItem.Property(Fanart_Image))] + ![Skin.HasSetting(HomeViewToggle) + [Player.HasVideo]]</visible>
 		</control>
 	</include>
