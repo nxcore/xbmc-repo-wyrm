@@ -332,7 +332,7 @@
 				 	<icon>icon-family.png</icon>
 				 	<thumb>icon-family-blur1.png</thumb>
 					<label>31040</label>
-					<onclick>LoadProfile($INFO[Skin.String(home-familypname)])</onclick>
+					<onclick>LoadProfile($INFO[Skin.String(home-familypname)],'prompt')</onclick>
 					<visible>!StringCompare(System.ProfileName,Skin.String(home-familypname))</visible>
 					<visible>Skin.HasSetting(home-familymode) + !StringCompare(System.ProfileName,$INFO[Skin.String(home-familypname)])</visible>
 				</item>-->

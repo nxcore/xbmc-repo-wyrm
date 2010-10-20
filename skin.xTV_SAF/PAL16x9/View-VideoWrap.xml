@@ -14,7 +14,7 @@
 			<include>list-fade</include>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>5</preloaditems>
+			<preloaditems>13</preloaditems>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="292" width="50">
 				<control type="image">
@@ -42,8 +42,7 @@
 					<posy>272</posy>
 					<height>96</height>
 					<width>44</width>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
-					<info>ListItem.Icon</info>
+					<texture fallback="defaultvideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -92,8 +91,7 @@
 					<posy>119</posy>
 					<height>250</height>
 					<width>115</width>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
-					<info>ListItem.Icon</info>
+					<texture fallback="defaultvideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
