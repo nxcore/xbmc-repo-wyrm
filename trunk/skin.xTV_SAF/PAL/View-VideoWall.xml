@@ -40,8 +40,7 @@
 					<height>108</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
-					<info>ListItem.Icon</info>
+					<texture fallback="defaultvideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 			</itemlayout>
