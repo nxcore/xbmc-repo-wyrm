@@ -104,7 +104,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(54)</visible>
+			<visible>Control.IsVisible(54) + !Container.Scrolling</visible>
 			<include>SortLetterNotification</include>
 			<!-- Star Rating -->
 			<control type="image">
@@ -387,25 +387,25 @@
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
 			</control>
-			<!-- Scroll Bar -->
-			<control type="scrollbar" id="23">
-				<posx>10</posx>
-				<posy>527</posy>
-				<width>700</width>
-				<height>22</height>
-				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<onup>54</onup>
-				<ondown>2</ondown>
-				<include>list-fade</include>
-				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar)</visible>
-			</control>
 		</control>
-    </include>
+		<!-- Scroll Bar -->
+		<control type="scrollbar" id="23">
+			<posx>10</posx>
+			<posy>527</posy>
+			<width>700</width>
+			<height>22</height>
+			<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onup>54</onup>
+			<ondown>2</ondown>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>horizontal</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
+		</control>
+	</include>
 </includes>
