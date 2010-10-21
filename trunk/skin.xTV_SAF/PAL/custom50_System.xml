@@ -128,7 +128,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31812</label>
-				<onclick>RunScript(special://skin/scripts/ThemeInstaller/default.py , http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBoxThemes/)</onclick>
+				<onclick>RunScript(special://skin/scripts/ThemeInstaller.py , http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBoxThemes/)</onclick>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>4</onup>
@@ -147,7 +147,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31835</label>
-				<onclick>RunScript(special://skin/scripts/ThemeInstaller/default.py)</onclick>
+				<onclick>RunScript(special://skin/scripts/ThemeInstaller.py)</onclick>
 				<onleft>6</onleft>
 				<onright>6</onright>
 				<onup>5</onup>

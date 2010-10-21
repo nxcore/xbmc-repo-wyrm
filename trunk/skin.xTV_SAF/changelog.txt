@@ -3,6 +3,7 @@
 - New media info flag graphics, Thanks Chip from over at http://community.mediabrowser.tv/
 - Changed font to Ubuntu font as previous fonts were not open source.
 - Fixed issue with background fanarts.
+- Major Performance boost with most view types, Thanks to Sharpe of Back-Row skin for suggestions.
 - Themes now available for ALL platforms, download and install from System menu.
 - Fixed a number of issues with volume level display
 - Plus a number of minor bug fixes and graphical clean-ups.
