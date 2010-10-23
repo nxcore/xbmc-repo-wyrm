@@ -13,7 +13,8 @@
 			<include>list-fade</include>
 			<focusposition>1</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>5</preloaditems>
+			<preloaditems>6</preloaditems>
+			<scrolltime>0</scrolltime>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="191" width="108">
 				<control type="image">
@@ -21,10 +22,11 @@
 					<posy>186</posy>
 					<width>99</width>
 					<height>144</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<align>center</align>
-					<fadetime>600</fadetime>
-					<info>ListItem.Icon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aligny>center</aligny>
+					<fadetime>300</fadetime>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
@@ -33,10 +35,12 @@
 					<width>99</width>
 					<height>144</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="middle" aligny="bottom">keep</aspectratio>
-					<bordertexture border="6">photoframe.png</bordertexture>
-					<bordersize>6</bordersize>
-					<fadetime>600</fadetime>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<align>center</align>
+					<aligny>center</aligny>
+					<bordertexture border="4">photoframe.png</bordertexture>
+					<bordersize>4</bordersize>
+					<fadetime>300</fadetime>
 					<visible>!SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 			</itemlayout>
@@ -47,10 +51,12 @@
 					<height>330</height>
 					<width>228</width>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="middle" aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<align>center</align>
+					<aligny>center</aligny>
 					<bordertexture border="6">photoframe.png</bordertexture>
 					<bordersize>6</bordersize>
-					<fadetime>600</fadetime>
+					<fadetime>300</fadetime>
 					<visible>!SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
@@ -58,11 +64,11 @@
 					<posy>0</posy>
 					<height>330</height>
 					<width>228</width>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<align>center</align>
 					<aligny>center</aligny>
-					<fadetime>600</fadetime>
-					<info>ListItem.Icon</info>
+					<fadetime>300</fadetime>
 					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 			</focusedlayout>

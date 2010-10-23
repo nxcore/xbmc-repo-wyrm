@@ -63,7 +63,7 @@
 					<posy>285</posy>
 					<width>240</width>
 					<height>240</height>
-					<texture flipy="true" diffuse="fade2.png">-</texture>
+					<texture flipy="true" diffuse="fade.png">-</texture>
 					<aspectratio>keep</aspectratio>
 					<info>ListItem.Icon</info>
 					<animation effect="zoom" end="-5,305,300,300" time="0">Focus</animation>
