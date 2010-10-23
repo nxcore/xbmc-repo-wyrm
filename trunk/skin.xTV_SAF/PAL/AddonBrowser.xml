@@ -5,7 +5,6 @@
 		<include>background</include>
 		<include>#files</include>
 		<include>Fake-Overlay</include>
-
 		<control type="image">
 			<description>Settings Logo</description>
 			<include>icon-header-commons</include>
@@ -110,78 +109,100 @@
 				<posx>260</posx>
 				<posy>170</posy>
 				<width>225</width>
-				<height>245</height>
+				<height>205</height>
 				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
-			<control type="button" id="2">
-				<description>View As Icons button</description>
+			<control type="grouplist" id="420">
 				<posx>270</posx>
 				<posy>180</posy>
 				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>100</label>
-				<textoffsetx>10</textoffsetx>
-				<aligny>center</aligny>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<height>205</height>
+				<itemgap>2</itemgap>
+				<onup>420</onup>
+				<ondown>420</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>3</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="3">
-				<description>Sort by button</description>
-				<posx>270</posx>
-				<posy>225</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>103</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>4</onright>
-				<onup>2</onup>
-				<ondown>5</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="togglebutton" id="4">
-				<description>Sort asc</description>
-				<posx>440</posx>
-				<posy>240</posy>
-				<label>-</label>
-				<onleft>3</onleft>
-				<onright>50</onright>
-				<onup>2</onup>
-				<ondown>5</ondown>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="radiobutton" id="5">
-				<description>Enable auto-updates</description>
-				<posx>270</posx>
-				<posy>270</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<label>24063</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>4</onup>
-				<ondown>2</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
+				<control type="button" id="2">
+					<description>View As Icons button</description>
+					<width>205</width>
+					<font>font12</font>
+					<label>100</label>
+					<textoffsetx>10</textoffsetx>
+					<aligny>center</aligny>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="group" id="999">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>205</width>
+					<height>37</height>
+					<include>View-as</include>
+					<control type="image">
+						<description>Button image</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>205</width>
+						<height>37</height>
+						<texture>default-button.png</texture>
+						<include>button-fade</include>
+						<visible>Control.HasFocus(3) | Control.HasFocus(4)</visible>
+					</control>
+					<control type="button" id="3">
+						<description>Sort by button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>205</width>
+						<font>font12</font>
+						<label>103</label>
+						<textoffsetx>10</textoffsetx>
+						<texturefocus>-</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<onleft>50</onleft> 
+						<onright>4</onright>
+						<textcolor>button-text</textcolor>
+						<include>button-fade</include>
+						<!--<include>View-as</include>-->
+					</control>
+					<control type="togglebutton" id="4">
+						<description>Sort asc/dsc</description>
+						<posx>180</posx>
+						<posy>10</posy>
+						<width>15</width>
+						<height>15</height>
+						<label>-</label>
+						<onleft>3</onleft> 
+						<onright>50</onright>
+						<include>button-fade</include>
+						<!--<include>View-as</include>-->
+					</control>
+				</control>
+				<control type="radiobutton" id="5">
+					<description>Enable auto-updates</description>
+					<width>205</width>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>24063</label>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="radiobutton" id ="6"> 
+					<description>No notifications</description>
+					<width>205</width>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>25000</label> 
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<!--<include>View-as</include>-->
+					<visible>!IsEmpty($LOCALIZE[25000])</visible>
+				</control>
 			</control>
 		</control>
 	</controls>
