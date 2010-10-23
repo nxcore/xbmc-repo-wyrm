@@ -71,14 +71,25 @@
 					<visible>SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>68</width>
+					<posx>-4</posx>
+					<posy>-4</posy>
 					<height>124</height>
+					<width>68</width>
+					<texture diffuse="RndVideoMask.png">Hi-lite.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="100" end="155" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<colordiffuse>IconGlow</colordiffuse>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>4</posy>
+					<width>50</width>
+					<height>106</height>
 					<texture background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<bordertexture border="9">Hi-lite.png</bordertexture>
-					<bordersize>9</bordersize>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="155" center="auto" time="600" tween="back" easing="out" />
 					</animation>
