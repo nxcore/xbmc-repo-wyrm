@@ -13,7 +13,7 @@
     defaultresolutionwide="PAL16x9"
     defaultthemename="textures.xpr"
     effectslowdown="1.00"
-    debugging="true"/>
+    debugging="false"/>
   <extension point="xbmc.addon.metadata">
     <summary>xTV SAF is a update of xTV (2269)</summary>
     <description>xTV SAF is a mod of xTV to include the latest xbmc features in a Spouse friendly manner.  The mod is based on xTV 2269 and includes support for media flagging and now Add-ons</description>
