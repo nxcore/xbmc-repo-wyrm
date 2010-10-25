@@ -7,7 +7,7 @@
 		<control type="image">
 			<description>Videos Logo</description>
 			<include>icon-header-commons</include>
-			<texture>icon-video.png</texture>
+			<texture>icon-video-sml.png</texture>
 		</control>
 		<control type="label">
 			<description>Video Label</description>

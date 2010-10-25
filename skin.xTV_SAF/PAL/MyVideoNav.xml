@@ -30,7 +30,7 @@
 			<description>Movies Logo</description>
 			<include>icon-header-commons</include>
 			<include>icon-ani</include>
-			<texture>icon-video.png</texture>
+			<texture>icon-video-sml.png</texture>
 			<visible>Container.Content(movies)</visible>
 		</control>
 		<control type="image">
@@ -84,7 +84,7 @@
 			<description>Music Videos Logo</description>
 			<include>icon-header-commons</include>
 			<include>icon-ani</include>
-			<texture>icon-musicvideo.png</texture>
+			<texture>icon-musicvideo-sml.png</texture>
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
 		<control type="image">

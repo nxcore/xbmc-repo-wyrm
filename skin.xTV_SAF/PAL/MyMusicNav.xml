@@ -11,7 +11,7 @@
 			<description>Music Logo</description>
 			<include>icon-header-commons</include>
 			<include>icon-ani</include>
-			<texture>icon-music.png</texture>
+			<texture>icon-music-sml.png</texture>
 		</control>
 		<control type="image">
 			<description>Music Logo Reflection</description>
