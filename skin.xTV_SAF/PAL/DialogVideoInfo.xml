@@ -631,7 +631,7 @@
 				<posy>525</posy>
 				<height>46</height>
 				<width>118</width>
-				<font>font10</font>
+				<font>font11</font>
 				<label>208</label>
 				<altlabel>1024</altlabel>
 				<align>center</align>
@@ -646,7 +646,7 @@
 				<posy>525</posy>
 				<height>46</height>
 				<width>118</width>
-				<font>font10</font>
+				<font>font11</font>
 				<label>20410</label>
 				<align>center</align>
 				<enable>!IsEmpty(ListItem.Trailer)</enable>
@@ -661,7 +661,7 @@
 				<posy>525</posy>
 				<height>46</height>
 				<width>118</width>
-				<font>font10</font>
+				<font>font11</font>
 				<label>206</label>
 				<align>center</align>
 				<onclick>SetFocus(50)</onclick>
@@ -676,7 +676,7 @@
 				<posy>525</posy>
 				<height>46</height>
 				<width>118</width>
-				<font>font10</font>
+				<font>font11</font>
 				<label>13405</label>
 				<align>center</align>
 				<onleft>5</onleft>
@@ -690,7 +690,7 @@
 				<posy>525</posy>
 				<height>46</height>
 				<width>118</width>
-				<font>font10</font>
+				<font>font11</font>
 				<label>20413</label>
 				<align>center</align>
 				<onleft>10</onleft>
@@ -704,7 +704,7 @@
 				<posy>525</posy>
 				<height>46</height>
 				<width>118</width>
-				<font>font10</font>
+				<font>font11</font>
 				<label>184</label>
 				<align>center</align>
 				<onleft>12</onleft>

@@ -15,9 +15,10 @@
 		</control>
 		<control type="label">
 			<description>Video Title label</description>
-			<width>350</width>
 			<posx>360</posx>
 			<posy>355</posy>
+			<width>350</width>
+			<height>35</height>
 			<info>VideoPlayer.Title</info>
 			<align>right</align>
 			<font>font28</font>
@@ -27,6 +28,8 @@
 			<description>Time label</description>
 			<posx>360</posx>
 			<posy>455</posy>
+			<width>300</width>
+			<height>25</height>
 			<label>$INFO[VideoPlayer.Time]</label>
 			<align>right</align>
 			<font>font11</font>
@@ -36,7 +39,7 @@
 			<posy>470</posy>
 			<width>300</width>
 			<height>25</height>
-			<font>font10</font>
+			<font>font11</font>
 			<colordiffuse>osd-background</colordiffuse>
 			<label>$INFO[VideoPlayer.Time]</label>
 		</control>
@@ -45,7 +48,7 @@
 			<posy>470</posy>
 			<width>300</width>
 			<height>25</height>
-			<font>font10</font>
+			<font>font11</font>
 			<colordiffuse>osd-background</colordiffuse>
 			<label>$LOCALIZE[31720]: $INFO[System.Time]</label>
 		</control>
@@ -55,7 +58,7 @@
 			<width>300</width>
 			<height>25</height>
 			<align>right</align>
-			<font>font10</font>
+			<font>font11</font>
 			<colordiffuse>osd-background</colordiffuse>
 			<label>$INFO[VideoPlayer.Duration]</label>
 		</control>
@@ -65,9 +68,9 @@
 			<width>300</width>
 			<height>25</height>
 			<align>right</align>
-			<font>font10</font>
+			<font>font11</font>
 			<colordiffuse>osd-background</colordiffuse>
-			<label>$LOCALIZE[31710]: $INFO[Player.FinishTime]</label>
+			<label>$LOCALIZE[31129]: $INFO[Player.FinishTime]</label>
 		</control>
 		<control type="progress">
 			<posx>30</posx>

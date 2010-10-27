@@ -57,7 +57,7 @@
 			<posy>500</posy>
 			<width>200</width>
 			<height>200</height>
-			<font>font10</font>
+			<font>font12</font>
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<textcolor>button-text</textcolor>
 			<visible>Player.HasVideo</visible>

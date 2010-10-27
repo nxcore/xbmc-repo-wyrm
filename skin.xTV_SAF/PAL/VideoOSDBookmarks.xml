@@ -18,12 +18,12 @@
 		<control type="label">
 			<description>heading label</description>
 			<posx>35</posx>
-			<posy>15</posy>
+			<posy>18</posy>
 			<width>420</width>
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>font13</font>
+			<font>font18</font>
 			<label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems])</label>
 			<textcolor>button-text</textcolor>
 		</control>
@@ -60,7 +60,7 @@
 					<posy>144</posy>
 					<width>160</width>
 					<height>20</height>
-					<font>font10</font>
+					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -83,7 +83,7 @@
 					<posy>144</posy>
 					<width>160</width>
 					<height>20</height>
-					<font>font10</font>
+					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -116,7 +116,7 @@
 			<width>155</width>
 			<height>35</height>
 			<label>294</label>
-			<font>font10</font>
+			<font>font11</font>
 			<textoffsetx>10</textoffsetx>
 			<textcolor>button-text</textcolor>
 			<align>center</align>
@@ -134,7 +134,7 @@
 			<width>155</width>
 			<height>35</height>
 			<label>296</label>
-			<font>font10</font>
+			<font>font11</font>
 			<textoffsetx>10</textoffsetx>
 			<textcolor>button-text</textcolor>
 			<align>center</align>
@@ -146,13 +146,13 @@
 			<onup>11</onup>
 		</control>
 		<control type="button" id="4">
-			<description>Clear Bookmark button</description>
+			<description>Set episode bookmark</description>
 			<posx>325</posx>
 			<posy>430</posy>
 			<width>155</width>
 			<height>35</height>
 			<label>20406</label>
-			<font>font10</font>
+			<font>font11</font>
 			<textoffsetx>10</textoffsetx>
 			<textcolor>button-text</textcolor>
 			<align>center</align>

@@ -17,7 +17,7 @@
 			<posy>10</posy>
 			<align>left</align>
 			<label>262</label>
-			<font>special13</font>
+			<font>font13</font>
 		</control>
 		<control type="textbox" id="5">
 			<description>textarea</description>

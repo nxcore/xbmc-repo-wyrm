@@ -32,7 +32,7 @@
 			<posy>110</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1123</onleft>
 			<onright>1123</onright>
 			<onup>1109</onup>
@@ -50,7 +50,7 @@
 			<posy>130</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1122</onleft>
 			<onright>1122</onright>
 			<onup>1123</onup>
@@ -68,7 +68,7 @@
 			<posy>150</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1121</onleft>
 			<onright>1121</onright>
 			<onup>1122</onup>
@@ -86,7 +86,7 @@
 			<posy>170</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1120</onleft>
 			<onright>1120</onright>
 			<onup>1121</onup>
@@ -104,7 +104,7 @@
 			<posy>190</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1119</onleft>
 			<onright>1119</onright>
 			<onup>1120</onup>
@@ -122,7 +122,7 @@
 			<posy>210</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1118</onleft>
 			<onright>1118</onright>
 			<onup>1119</onup>
@@ -140,7 +140,7 @@
 			<posy>230</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1117</onleft>
 			<onright>1117</onright>
 			<onup>1118</onup>
@@ -158,7 +158,7 @@
 			<posy>250</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1116</onleft>
 			<onright>1116</onright>
 			<onup>1117</onup>
@@ -176,7 +176,7 @@
 			<posy>270</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1115</onleft>
 			<onright>1115</onright>
 			<onup>1116</onup>
@@ -194,7 +194,7 @@
 			<posy>290</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1114</onleft>
 			<onright>1114</onright>
 			<onup>1115</onup>
@@ -212,7 +212,7 @@
 			<posy>310</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1113</onleft>
 			<onright>1113</onright>
 			<onup>1114</onup>
@@ -230,7 +230,7 @@
 			<posy>330</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1112</onleft>
 			<onright>1112</onright>
 			<onup>1113</onup>
@@ -248,7 +248,7 @@
 			<posy>350</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1111</onleft>
 			<onright>1111</onright>
 			<onup>1112</onup>
@@ -266,7 +266,7 @@
 			<posy>370</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1110</onleft>
 			<onright>1110</onright>
 			<onup>1111</onup>
@@ -284,7 +284,7 @@
 			<posy>390</posy>
 			<width>110</width>
 			<height>20</height>
-			<font>font101</font>
+			<font>font11</font>
 			<onleft>1109</onleft>
 			<onright>1109</onright>
 			<onup>1110</onup>

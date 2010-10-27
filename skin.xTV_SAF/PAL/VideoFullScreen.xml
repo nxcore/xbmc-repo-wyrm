@@ -26,7 +26,7 @@
 			<height>25</height>
 			<label>-</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
 		<control type="label" id="11">
@@ -37,7 +37,7 @@
 			<height>25</height>
 			<label>-</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
 		<control type="label" id="12">
@@ -48,7 +48,7 @@
 			<height>25</height>
 			<label>-</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
 
