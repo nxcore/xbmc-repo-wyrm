@@ -167,7 +167,7 @@
 			<width>120</width>
 			<height>37</height>
 			<label>186</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -183,7 +183,7 @@
 			<width>120</width>
 			<height>37</height>
 			<label>222</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -199,7 +199,7 @@
 			<width>120</width>
 			<height>37</height>
 			<label>13405</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -215,7 +215,7 @@
 			<width>120</width>
 			<height>37</height>
 			<label>10523</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -243,7 +243,7 @@
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<label>31229</label>
-			<font>font10</font>
+			<font>font12</font>
 		</control>
 		<control type="button" id="14">
 			<description>Decrease Rating</description>

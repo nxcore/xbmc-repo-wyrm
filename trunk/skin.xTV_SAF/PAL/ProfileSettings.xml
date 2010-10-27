@@ -43,7 +43,7 @@
 			<posy>205</posy>
 			<width>280</width>
 			<align>left</align>
-			<font>special13</font>
+			<font>font13</font>
 			<textcolor>button-text</textcolor>
 		</control>
 		<control type="label">

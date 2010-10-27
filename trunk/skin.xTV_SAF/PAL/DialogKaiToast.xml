@@ -21,7 +21,7 @@
 			<posx>10</posx>
 			<posy>17</posy>
 			<width>235</width>
-			<font>font12</font>
+			<font>font13</font>
 			<align>center</align>
 			<label>-</label>
 			<scroll>true</scroll>
@@ -33,7 +33,7 @@
 			<posy>33</posy>
 			<width>235</width>
 			<label>-</label>
-			<font>font10</font>
+			<font>font11</font>
 			<align>center</align>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>

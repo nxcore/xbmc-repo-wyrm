@@ -56,7 +56,7 @@
 			<posy>468</posy>
 			<width>130</width>
 			<align>right</align>
-			<font>font10</font>
+			<font>font12</font>
 			<label>$INFO[Player.Time]$INFO[Player.Duration,/ ]</label>
 			<textcolor>button-text</textcolor>
 			<visible>Player.HasAudio</visible>
@@ -67,7 +67,7 @@
 			<posy>468</posy>
 			<width>220</width>
 			<height>20</height>
-			<font>font10</font>
+			<font>font12</font>
 			<info>MusicPlayer.Title</info>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>

@@ -102,7 +102,7 @@
 			<width>445</width>
 			<info>MusicPlayer.Artist</info>
 			<align>left</align>
-			<font>special12</font>
+			<font>font12</font>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.HasMedia + Player.ShowInfo</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -114,7 +114,7 @@
 			<width>430</width>
 			<info>MusicPlayer.Title</info>
 			<align>left</align>
-			<font>special13</font>
+			<font>font13</font>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.HasMedia + Player.ShowInfo</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -126,7 +126,7 @@
 			<width>430</width>
 			<info>MusicPlayer.Album</info>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.HasMedia + Player.ShowInfo</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -138,7 +138,7 @@
 			<width>430</width>
 			<label>$INFO[musicplayer.Time]$INFO[musicplayer.Duration, / ]</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.HasMedia + Player.ShowInfo</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -150,7 +150,7 @@
 			<posy>556</posy>
 			<align>right</align>
 			<label>$INFO[musicplayer.Playlistposition,Track ]$INFO[musicplayer.Playlistlength, / ]</label>
-			<font>font10</font>
+			<font>font12</font>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.HasMedia + Player.ShowInfo</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -165,7 +165,7 @@
 			<visible>Player.ShowInfo + MusicPartyMode.Enabled</visible>
 			<animation effect="fade" time="1000">VisibleChange</animation>
 			<align>right</align>
-			<font>font10</font>
+			<font>font12</font>
 		</control>
 		<!-- "Now Playing" Stuff -->
 		<control type="image">
@@ -273,7 +273,7 @@
 			<height>20</height>
 			<info>MusicPlayer.Album</info>
 			<align>right</align>
-			<font>font10</font>
+			<font>font12</font>
 			<scroll>true</scroll>
 			<visible>Skin.HasSetting(np-vis)</visible>
 			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
@@ -281,12 +281,12 @@
 		<control type="label">
 			<description>Time label</description>
 			<posx>380</posx>
-			<posy>465</posy>
+			<posy>462</posy>
 			<width>110</width>
 			<height>20</height>
 			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 			<align>right</align>
-			<font>font10</font>
+			<font>font12</font>
 			<visible>Skin.HasSetting(np-vis)</visible>
 			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
 		</control>

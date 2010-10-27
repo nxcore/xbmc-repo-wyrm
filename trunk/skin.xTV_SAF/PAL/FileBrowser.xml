@@ -23,7 +23,7 @@
 			<posy>-2</posy>
 			<width>420</width>
 			<align>left</align>
-			<font>special13</font>
+			<font>font13</font>
 			<label>1023</label>
 			<textcolor>button-text</textcolor>
 		</control>

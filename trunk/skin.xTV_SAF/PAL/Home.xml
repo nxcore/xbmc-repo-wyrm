@@ -646,9 +646,9 @@
 				<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
 				<control type="image">
 					<description>cover image</description>
-					<posx>45</posx>
-					<posy>442</posy>
-					<width>80</width>
+					<posx>10</posx>
+					<posy>444</posy>
+					<width>90</width>
 					<height>90</height>
 					<info>MusicPlayer.Cover</info>
 					<include>homemediainfo</include>
@@ -656,31 +656,34 @@
 				</control>
 				<control type="label">
 					<description>Artist label</description>
-					<width>235</width>
-					<posx>135</posx>
+					<posx>110</posx>
 					<posy>440</posy>
+					<width>260</width>
+					<height>25</height>
 					<info>MusicPlayer.Artist</info>
 					<align>left</align>
-					<font>font10</font>
+					<font>font12</font>
 					<scroll>true</scroll>
 					<include>homemediainfo</include>
 				</control>
 				<control type="label">
 					<description>Album label</description>
-					<width>235</width>
-					<posx>135</posx>
+					<posx>110</posx>
 					<posy>465</posy>
+					<width>260</width>
+					<height>25</height>
 					<info>MusicPlayer.Album</info>
 					<align>left</align>
-					<font>font10</font>
+					<font>font12</font>
 					<scroll>true</scroll>
 					<include>homemediainfo</include>
 				</control>
 				<control type="label">
 					<description>Title label</description>
-					<width>235</width>
-					<posx>135</posx>
+					<posx>110</posx>
 					<posy>490</posy>
+					<width>260</width>
+					<height>25</height>
 					<info>MusicPlayer.Title</info>
 					<align>left</align>
 					<font>font12</font>
@@ -689,64 +692,64 @@
 				</control>
 				<control type="label">
 					<description>Time label</description>
-					<width>235</width>
-					<posx>135</posx>
+					<posx>110</posx>
 					<posy>515</posy>
+					<width>260</width>
+					<height>25</height>
 					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 					<align>left</align>
-					<font>font10</font>
+					<font>font12</font>
 					<include>homemediainfo</include>
 				</control>
 			</control>
 
 		<!-- media infos (video) -->
-		<control type="videowindow">
-			<description>video preview window</description>
-			<posx>25</posx>
-			<posy>438</posy>
-			<width>116</width>
-			<height>99</height>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
-		</control>
-		<control type="label">
-			<description>Now playing</description>
-			<posx>150</posx>
-			<posy>440</posy>
-			<width>225</width>
-			<height>25</height>
-			<label>13350</label>
-			<align>left</align>
-			<font>font12</font>
-			<textcolor>listselectedtext</textcolor>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
-		</control>
-		<control type="label">
-			<description>Video Title label</description>
-			<posx>150</posx>
-			<posy>465</posy>
-			<width>225</width>
-			<height>25</height>
-			<info>VideoPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<scroll>true</scroll>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
-		</control>
-		<control type="label">
-			<description>Time label</description>
-			<posx>150</posx>
-			<posy>490</posy>
-			<width>225</width>
-			<height>25</height>
-			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-			<align>left</align>
-			<font>font10</font>
-			<scroll>true</scroll>
-			<include>homemediainfo</include>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
+		<control type="group">
+			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
+			<control type="videowindow">
+				<description>video preview window</description>
+				<posx>25</posx>
+				<posy>426</posy>
+				<width>116</width>
+				<height>99</height>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Now playing</description>
+				<posx>150</posx>
+				<posy>440</posy>
+				<width>225</width>
+				<height>25</height>
+				<label>13350</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>listselectedtext</textcolor>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Video Title label</description>
+				<posx>150</posx>
+				<posy>465</posy>
+				<width>225</width>
+				<height>25</height>
+				<info>VideoPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>150</posx>
+				<posy>490</posy>
+				<width>225</width>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
 		</control>
 		<!-- page info -->
 		<include>page-info</include>

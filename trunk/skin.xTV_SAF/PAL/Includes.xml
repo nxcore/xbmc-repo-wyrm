@@ -120,10 +120,10 @@
 		<control type="label" id="12">
 			<description>number of files text label</description>
 			<posx>600</posx>
-			<posy>548</posy>
+			<posy>546</posy>
 			<align>left</align>
 			<label>-</label>
-			<font>font10</font>
+			<font>font11</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
@@ -335,7 +335,7 @@
 			<height>25</height>
 			<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
 		</control>
 		<!-- Audio Stuff -->
@@ -357,7 +357,7 @@
 			<height>20</height>
 			<info>MusicPlayer.Artist</info>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<scroll>true</scroll>
 			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
@@ -370,7 +370,7 @@
 			<height>20</height>
 			<info>MusicPlayer.Album</info>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<scroll>true</scroll>
 			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
@@ -396,7 +396,7 @@
 			<height>20</height>
 			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio + Skin.HasSetting(overlay)</visible>
 		</control>
