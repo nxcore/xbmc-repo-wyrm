@@ -14,11 +14,9 @@ import xbmcgui
 # Init
 #
 if os.getenv("OS") == "xbox" :
-    SKIN_PATH        = os.path.join( xbmc.translatePath("special://home/skin"), xbmc.getSkinDir() )
-    SKIN_THEMES_REPO = "http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBoxThemes/"
+    SKIN_PATH = os.path.join( xbmc.translatePath("special://home/skin"), xbmc.getSkinDir() )
 else:
-    SKIN_PATH        = os.path.join( xbmc.translatePath("special://home/addons"), xbmc.getSkinDir() )
-    SKIN_THEMES_REPO = "http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBMCThemes/"
+    SKIN_PATH = os.path.join( xbmc.translatePath("special://home/addons"), xbmc.getSkinDir() )
 
 SKIN_THEMES_PATH = os.path.join( SKIN_PATH, "extras", "themes" ) 
 SKIN_MEDIA_PATH  = os.path.join( SKIN_PATH, "media" )
@@ -28,38 +26,48 @@ SKIN_COLORS_PATH = os.path.join( SKIN_PATH, "colors" )
 # Main
 #
 def main() :
-    while True :
-        #
-        # Get a list of extra themes (local)
-        #
-        themes = get_local_themes()
-        
-        #
-        # Dialog to select local theme...
-        #
-        dialogThemes = xbmcgui.Dialog()
-        index        = dialogThemes.select( xbmc.getLocalizedString(31428), themes )    
-        
-        # Cancel / Back...
-        if index == -1 :
-            break
-        #
-        # Download more themes...
-        #
-        elif index == len( themes ) - 1 :
-            show_remote_themes()
-        #
-        # Install local theme...
-        #
-        else :
-            theme   = themes[ index ]
-            install_local_theme( theme )
-            break
+    SKIN_THEMES_REPO = None
+    if len(sys.argv) == 2 and sys.argv[ 1 ].startswith("http://") :
+        SKIN_THEMES_REPO = sys.argv[ 1 ]
+
+    #
+    # Get a list of local themes...
+    #
+    themes = get_local_themes()
+
+    # Add entry to download more themes...
+    themes.append( xbmc.getLocalizedString(31812) )
+
+    #
+    # Dialog to select local theme or download more...
+    #
+    dialogThemes = xbmcgui.Dialog()
+    index        = dialogThemes.select( xbmc.getLocalizedString(31428), themes ) 
+
+    #
+    # Cancel / Back...
+    #
+    if index == -1 :
+        return
+    #
+    # Download more themes...
+    #
+    elif index == len( themes ) - 1 :
+        show_remote_themes( SKIN_THEMES_REPO )
+    #
+    # Install local theme...
+    #
+    else :
+        theme   = themes[ index ]
+        install_local_theme( theme )
 
 #
 # Get local themes
 #
 def get_local_themes( ) :
+    #
+    # Get a list of extra themes (local)
+    #       
     themes = []
     
     if os.path.isdir( SKIN_THEMES_PATH ) :
@@ -67,18 +75,15 @@ def get_local_themes( ) :
             if fnmatch.fnmatch(entry, "*.zip") :
                 ( name, ext ) = os.path.splitext( entry )
                 themes.append( name )
-
-    # Add entry to delete more themes...
-    themes.append( xbmc.getLocalizedString(31812) )
     
     # Return value
     return themes
 
 #
-# Get remote themes
+# Show remote themes
 #
-def show_remote_themes() :
-    file = urllib.urlopen( SKIN_THEMES_REPO )
+def show_remote_themes( skin_themes_repo ) :
+    file = urllib.urlopen( skin_themes_repo )
     html = file.read()
     
     # Parse HTML...
@@ -112,12 +117,24 @@ def show_remote_themes() :
         dp.create( xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31432), theme )
         
         # Download theme...
-        remote_theme = os.path.join( SKIN_THEMES_REPO, "%s.zip" % theme )
+        remote_theme = os.path.join( skin_themes_repo, "%s.zip" % theme )
         local_theme  = os.path.join( SKIN_THEMES_PATH, "%s.zip" % theme )
-        urllib.urlretrieve( remote_theme, local_theme )
+        urllib.urlretrieve( remote_theme, local_theme, lambda nb, bs, fs, url=remote_theme : download_progress_hook( nb, bs, fs, local_theme, dp ) )
         
         # Close progress dialog...
         dp.close()
+        
+        # Install local theme...
+        install_local_theme( theme )
+
+#
+# Download progress hook...
+#
+def download_progress_hook( numblocks, blocksize, filesize, url=None, dp=None, ratio=1.0 ):
+    downloadedsize  = numblocks * blocksize
+    percent         = int( downloadedsize * 100 / filesize )
+    
+    dp.update( percent )
 
 #
 # Install local theme
