@@ -71,16 +71,6 @@
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
-			<control type="button" id="6">
-				<description>Profiles</description>
-				<font>font13</font>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>31555</label>
-				<onclick>ActivateWindow(34)</onclick>
-				<textcolor>button-text</textcolor>
-				<aligny>center</aligny>
-			</control>
 			<control type="button" id="7">
 				<description>System Info</description>
 				<font>font13</font>
