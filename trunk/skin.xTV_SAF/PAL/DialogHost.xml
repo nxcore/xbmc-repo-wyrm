@@ -2,7 +2,7 @@
 	<defaultcontrol>3101</defaultcontrol>
 	<controls>
 		<control type="image">
-			<description>Dialog Background</description>
+			<description>Host Dialog Background</description>
 			<posx>165</posx>
 			<posy>177</posy>
 			<width>390</width>
@@ -101,7 +101,7 @@
 			<width>77</width>
 			<height>32</height>
 			<label>186</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
@@ -117,7 +117,7 @@
 			<width>77</width>
 			<height>32</height>
 			<label>222</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>

@@ -3,6 +3,7 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="image">
+			<description>Yes/No Dialog background image</description>
 			<posx>165</posx>
 			<posy>205</posy>
 			<width>390</width>
@@ -23,7 +24,7 @@
 			<posx>190</posx>
 			<posy>260</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 			<textcolor>button-text</textcolor>
 		</control>
 		<control type="label" id="3">
@@ -31,7 +32,7 @@
 			<posx>190</posx>
 			<posy>280</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 			<textcolor>button-text</textcolor>
 		</control>
 		<control type="label" id="4">
@@ -39,7 +40,7 @@
 			<posx>190</posx>
 			<posy>300</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 			<textcolor>button-text</textcolor>
 		</control>
 		<control type="button" id="11">
@@ -49,7 +50,7 @@
 			<width>150</width>
 			<height>32</height>
 			<label>107</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
@@ -65,7 +66,7 @@
 			<width>150</width>
 			<height>32</height>
 			<label>106</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>

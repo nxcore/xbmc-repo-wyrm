@@ -107,7 +107,7 @@
 		<align>right</align>
 		<width>15</width>
 		<height>20</height>
-		<font>font14</font>
+		<font>font13</font>
 		<reverse>yes</reverse>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -129,7 +129,7 @@
 		<texturedown>scroll-down.png</texturedown>
 		<textureupfocus>scroll-up-focus.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-		<font>font14</font>
+		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>

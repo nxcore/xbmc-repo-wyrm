@@ -3,6 +3,7 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="image">
+			<description>OK Dialog background</description>
 			<posx>165</posx>
 			<posy>205</posy>
 			<width>390</width>
@@ -23,21 +24,21 @@
 			<posx>190</posx>
 			<posy>260</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 		</control>
 		<control type="label" id="3">
 			<description>dialog line 2</description>
 			<posx>190</posx>
 			<posy>280</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 		</control>
 		<control type="label" id="4">
 			<description>dialog line 3</description>
 			<posx>190</posx>
 			<posy>300</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 		</control>
 		<control type="button" id="10">
 			<description>OK button</description>
@@ -46,7 +47,7 @@
 			<width>77</width>
 			<height>32</height>
 			<label>186</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>center</align>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
