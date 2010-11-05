@@ -24,7 +24,7 @@
 				<posx>0</posx>
 				<posy>2</posy>
 				<width>420</width>
-				<align>left</align>
+				<align>center</align>
 				<font>font18</font>
 				<textcolor>button-text</textcolor>
 			</control>
