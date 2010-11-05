@@ -17,7 +17,7 @@
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="999">
-			<description>background image</description>
+			<description>background mid image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>315</width>

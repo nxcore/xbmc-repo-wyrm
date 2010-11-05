@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="image">
-			<description>background image</description>
+			<description>Network Setup background image</description>
 			<posx>-15</posx>
 			<posy>-15</posy>
 			<width>440</width>

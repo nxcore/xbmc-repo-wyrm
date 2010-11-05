@@ -8,7 +8,7 @@
 	</coordinates>
 	<controls>
 		<control type="image">
-			<description>background image</description>
+			<description>Media Source background image</description>
 			<posx>-15</posx>
 			<posy>-15</posy>
 			<width>520</width>

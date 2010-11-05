@@ -1,19 +1,13 @@
 <window id="129">
 	<defaultcontrol>15</defaultcontrol>
+	<include>button-fade</include>
+	<include>fadebackground</include>
 	<coordinates>
 		<system>1</system>
 		<posx>165</posx>
 		<posy>200</posy>
 	</coordinates>
-	<include>button-fade</include>
 	<controls>
-		<control type="image">
-			<posx>-165</posx>
-			<posy>-200</posy>
-			<width>720</width>
-			<height>576</height>
-			<texture>black.png</texture>
-		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -62,7 +56,6 @@
 				<font>font12</font>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<font>font12</font>
 				<onright>15</onright>
 				<onleft>15</onleft>
 				<onup>9000</onup>
@@ -77,7 +70,7 @@
 			<height>37</height>
 			<font>font12</font>
 			<textoffsetx>12</textoffsetx>
-			<textwidth>380</textwidth>
+			<textwidth>350</textwidth>
 			<aligny>center</aligny>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>

@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="image">
-			<description>background image</description>
+			<description>Visualisation Preset Background image</description>
 			<posx>-10</posx>
 			<posy>-10</posy>
 			<width>426</width>

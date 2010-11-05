@@ -3,7 +3,7 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="image" id="1">
-			<description>background image</description>
+			<description> Script Info background image</description>
 			<posx>5</posx>
 			<posy>0</posy>
 			<width>400</width>
