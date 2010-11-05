@@ -134,7 +134,7 @@
 			<posy>546</posy>
 			<align>left</align>
 			<label>-</label>
-			<font>font11</font>
+			<font>font13</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>

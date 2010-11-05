@@ -885,7 +885,7 @@
 			<!-- Genre -->
 			<control type="label">
 				<posx>130</posx>
-				<posy>540</posy>
+				<posy>546</posy>
 				<width>465</width>
 				<height>30</height>
 				<font>font13</font>
