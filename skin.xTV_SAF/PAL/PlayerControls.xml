@@ -19,7 +19,7 @@
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="image">
-			<description>Panel</description>
+			<description>Player Controls background image</description>
 			<posx>70</posx>
 			<posy>100</posy>
 			<height>140</height>
@@ -74,7 +74,7 @@
 			<width>300</width>
 			<height>25</height>
 			<label>$INFO[VideoPlayer.Title]</label>
-			<font>font13</font>
+			<font>font12</font>
 			<align>left</align>
 		</control>
 		<control type="label">
@@ -85,10 +85,10 @@
 			<height>25</height>
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<align>left</align>
-			<font>font10</font>
+			<font>font12</font>
 			<scroll>true</scroll>
 			<visible>Player.HasVideo</visible>
-		</control>		
+		</control>
 <!-- Music -->
 		<control type="label">
 			<description>Album Artist</description>
@@ -97,7 +97,7 @@
 			<width>440</width>
 			<height>16</height>
 			<label>$INFO[MusicPlayer.Artist]</label>
-			<font>font11</font>
+			<font>font12</font>
 			<align>left</align>
 		</control>
 		<control type="label">
@@ -107,7 +107,7 @@
 			<width>440</width>
 			<height>16</height>
 			<label>$INFO[MusicPlayer.Album]</label>
-			<font>font11</font>
+			<font>font12</font>
 			<align>left</align>
 		</control>
 		<control type="label">
@@ -117,7 +117,7 @@
 			<width>440</width>
 			<height>16</height>
 			<label>$INFO[MusicPlayer.Title]</label>
-			<font>font13</font>
+			<font>font12</font>
 			<align>left</align>
 		</control>
 		<control type="label">
@@ -125,7 +125,7 @@
 			<posx>200</posx>
 			<posy>175</posy>
 			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-			<font>font10</font>
+			<font>font12</font>
 			<align>left</align>
 			<width>200</width>
 			<height>16</height>

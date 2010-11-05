@@ -25,7 +25,7 @@
 				<posy>2</posy>
 				<width>420</width>
 				<align>left</align>
-				<font>font12</font>
+				<font>font18</font>
 				<textcolor>button-text</textcolor>
 			</control>
 			<control type="label" id="3">

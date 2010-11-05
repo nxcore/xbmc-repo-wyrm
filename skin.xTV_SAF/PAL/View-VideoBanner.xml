@@ -3,7 +3,6 @@
 		<control type="group" id="500">
 			<defaultcontrol always="true">59</defaultcontrol>
 			<visible>Control.IsVisible(59)</visible>
-
 			<control type="list" id="59">
 				<viewtype label="Banner">Banner List</viewtype>
 				<posx>0</posx>
@@ -162,7 +161,7 @@
 					<posx>0</posx>
 					<posy>215</posy>
 					<height>20</height>
-					<font>font14</font>
+					<font>font13</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$LOCALIZE[20416]:[/B] $INFO[ListItem.Premiered]</label>
@@ -173,7 +172,7 @@
 					<posy>240</posy>
 					<width>315</width>
 					<height>20</height>
-					<font>font14</font>
+					<font>font13</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$LOCALIZE[515]:[/B] $INFO[ListItem.Genre]</label>
@@ -184,7 +183,7 @@
 					<posx>0</posx>
 					<posy>265</posy>
 					<height>30</height>
-					<font>font14</font>
+					<font>font13</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$LOCALIZE[563]:[/B] $INFO[ListItem.Rating]</label>

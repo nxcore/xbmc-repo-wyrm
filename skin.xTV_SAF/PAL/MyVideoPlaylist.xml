@@ -30,9 +30,9 @@
 			<description>Now Playing Label</description>
 			<posx>30</posx>
 			<posy>455</posy>
-			<width>220</width>
-			<height>200</height>
-			<font>font13</font>
+			<width>350</width>
+			<height>24</height>
+			<font>font12</font>
 			<info>VideoPlayer.Title</info>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
@@ -56,7 +56,7 @@
 			<posx>30</posx>
 			<posy>500</posy>
 			<width>200</width>
-			<height>200</height>
+			<height>24</height>
 			<font>font12</font>
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<textcolor>button-text</textcolor>
