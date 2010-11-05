@@ -8,7 +8,7 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="image">
-			<description>background image</description>
+			<description>Content Settings Background image</description>
 			<posx>-25</posx>
 			<posy>-11</posy>
 			<width>446</width>
@@ -168,7 +168,7 @@
 			<align>center</align>
 			<label>5</label>
 			<textcolor>button-text</textcolor>
-			<font>font10</font>
+			<font>font12</font>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
 			<onleft>29</onleft>
@@ -185,7 +185,7 @@
 			<align>center</align>
 			<label>186</label>
 			<textcolor>button-text</textcolor>
-			<font>font10</font>
+			<font>font12</font>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
 			<onleft>6</onleft>
@@ -202,7 +202,7 @@
 			<align>center</align>
 			<label>222</label>
 			<textcolor>button-text</textcolor>
-			<font>font10</font>
+			<font>font12</font>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
 			<onleft>28</onleft>

@@ -1,20 +1,14 @@
 <window id="129">
 	<defaultcontrol always="true">22</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<include>button-fade</include>
+	<include>fadebackground</include>
 	<coordinates>
 		<system>1</system>
 		<posx>110</posx>
 		<posy>100</posy>
 	</coordinates>
-	<include>button-fade</include>
 	<controls>
-		<control type="image" id="0">
-			<posx>-110</posx>
-			<posy>-100</posy>
-			<width>720</width>
-			<height>576</height>
-			<texture>black.png</texture>
-		</control>
 		<control type="image" id="0">
 			<description>background image</description>
 			<posx>-15</posx>

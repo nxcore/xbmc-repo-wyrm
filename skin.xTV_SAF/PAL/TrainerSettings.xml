@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="image" id="1">
-			<description>background image</description>
+			<description>Trainer Settings background image</description>
 			<posx>-15</posx>
 			<posy>-15</posy>
 			<width>560</width>
@@ -145,7 +145,7 @@
 			<height>45</height>
 			<align>center</align>
 			<label>186</label>
-			<font>font10</font>
+			<font>font12</font>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus border="10">default-button.png</texturefocus>
 			<onleft>5</onleft>
@@ -164,7 +164,7 @@
 			<height>45</height>
 			<align>center</align>
 			<label>222</label>
-			<font>font10</font>
+			<font>font12</font>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus border="10">default-button.png</texturefocus>
 			<onleft>5</onleft>

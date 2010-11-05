@@ -30,7 +30,7 @@
 		<control type="label" id="402">
 			<description>Description Button</description>
 			<posx>10</posx>
-			<posy>33</posy>
+			<posy>40</posy>
 			<width>235</width>
 			<label>-</label>
 			<font>font11</font>

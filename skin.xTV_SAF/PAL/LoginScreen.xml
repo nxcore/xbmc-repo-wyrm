@@ -7,15 +7,8 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<description>Background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<texture>background.png</texture>
-			<animation effect="fade" end="0" time="600">WindowClose</animation>
-		</control>
+		<animation effect="fade" end="0" time="600">WindowClose</animation>
+		<include>background</include>
 		<control type="wraplist" id="52">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -28,7 +21,6 @@
 			<scrolltime>200</scrolltime>
 			<focusposition>0</focusposition>
 			<orientation>horizontal</orientation>
-			<animation effect="fade" end="0" time="600">WindowClose</animation>
 			<itemlayout height="140" width="160">
 				<control type="image">
 					<posx>20</posx>
@@ -77,7 +69,7 @@
 			<info>ListItem.Label</info>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
-			<animation effect="fade" end="0" time="600">WindowClose</animation>
+			<shadowcolor>shadow-text</shadowcolor>
 		</control>
 		<control type="label" id="3">
 			<description>Profile Count Label</description>
@@ -88,7 +80,7 @@
 			<label>-</label>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
-			<animation effect="fade" end="0" time="600">WindowClose</animation>
+			<shadowcolor>shadow-text</shadowcolor>
 		</control>
 	</controls>
 </window>

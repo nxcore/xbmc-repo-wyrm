@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="image" id="1">
-			<description>background image</description>
+			<description>File Browser background image</description>
 			<posx>-15</posx>
 			<posy>-15</posy>
 			<width>560</width>
@@ -26,6 +26,7 @@
 			<font>font13</font>
 			<label>1023</label>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 		</control>
 		<control type="label" id="412">
 			<description>path label control</description>
@@ -36,6 +37,7 @@
 			<font>font12</font>
 			<haspath>true</haspath>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 		</control>
 		<control type="list" id="450">
 			<posx>10</posx>
@@ -63,6 +65,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
@@ -84,6 +87,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
@@ -117,6 +121,7 @@
 				<onup>415</onup>
 				<ondown>414</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="button" id="414">
 				<description>Cancel button</description>
@@ -134,6 +139,7 @@
 				<onup>413</onup>
 				<ondown>415</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="button" id="415">
 				<description>Create folder button</description>
@@ -151,6 +157,7 @@
 				<onup>414</onup>
 				<ondown>413</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 		</control>
 	</controls>

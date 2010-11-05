@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="image">
-			<description>background image</description>
+			<description>Favourites background image</description>
 			<posx>-15</posx>
 			<posy>-5</posy>
 			<width>380</width>

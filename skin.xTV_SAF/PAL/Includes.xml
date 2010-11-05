@@ -16,7 +16,18 @@
 	<include file="View-AlbumCoverflow.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
 
-	<!-- Begin iTV string includes -->
+	<!-- Begin fade background image include -->
+	<include name="fadebackground">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<texture>black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+	</include>
+	
 	<!-- Begin background image include -->
 	<include name="background">
 		<control type="image">

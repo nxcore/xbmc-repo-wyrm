@@ -3,7 +3,7 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="image">
-			<description>background image</description>
+			<description>Select Dialog background image</description>
 			<posx>10</posx>
 			<posy>50</posy>
 			<width>390</width>
@@ -32,7 +32,7 @@
 			<posx>315</posx>
 			<posy>520</posy>
 			<label>-</label>
-			<font>font10</font>
+			<font>font12</font>
 		</control>
 		<control type="list" id="3">
 			<posx>20</posx>
@@ -92,7 +92,7 @@
 			<posy>515</posy>
 			<width>140</width>
 			<height>30</height>
-			<font>font10</font>
+			<font>font12</font>
 			<label>368</label>
 			<align>center</align>
 			<onleft>3</onleft>
