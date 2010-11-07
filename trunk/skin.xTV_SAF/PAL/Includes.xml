@@ -307,8 +307,8 @@
 		<!-- Video Stuff -->
 		<control type="videowindow">
 			<description>video preview window</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<posx>20</posx>
+			<posy>4</posy>
 			<width>116</width>
 			<height>99</height>
 			<aspectratio>keep</aspectratio>
@@ -316,8 +316,8 @@
 		</control>
 			<control type="label">
 			<description>Now playing</description>
-			<posx>118</posx>
-			<posy>5</posy>
+			<posx>144</posx>
+			<posy>16</posy>
 			<width>230</width>
 			<height>25</height>
 			<label>13350</label>
@@ -328,8 +328,8 @@
 		</control>
 		<control type="label">
 			<description>Video Title label</description>
-			<posx>118</posx>
-			<posy>30</posy>
+			<posx>144</posx>
+			<posy>40</posy>
 			<width>230</width>
 			<height>25</height>
 			<info>VideoPlayer.Title</info>
@@ -340,8 +340,8 @@
 		</control>
 		<control type="label">
 			<description>Time label</description>
-			<posx>118</posx>
-			<posy>55</posy>
+			<posx>144</posx>
+			<posy>64</posy>
 			<width>230</width>
 			<height>25</height>
 			<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
