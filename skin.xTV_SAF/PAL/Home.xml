@@ -647,7 +647,7 @@
 				<control type="image">
 					<description>cover image</description>
 					<posx>10</posx>
-					<posy>444</posy>
+					<posy>434</posy>
 					<width>90</width>
 					<height>90</height>
 					<info>MusicPlayer.Cover</info>
@@ -657,7 +657,7 @@
 				<control type="label">
 					<description>Artist label</description>
 					<posx>110</posx>
-					<posy>440</posy>
+					<posy>430</posy>
 					<width>260</width>
 					<height>25</height>
 					<info>MusicPlayer.Artist</info>
@@ -669,7 +669,7 @@
 				<control type="label">
 					<description>Album label</description>
 					<posx>110</posx>
-					<posy>465</posy>
+					<posy>455</posy>
 					<width>260</width>
 					<height>25</height>
 					<info>MusicPlayer.Album</info>
@@ -681,7 +681,7 @@
 				<control type="label">
 					<description>Title label</description>
 					<posx>110</posx>
-					<posy>490</posy>
+					<posy>480</posy>
 					<width>260</width>
 					<height>25</height>
 					<info>MusicPlayer.Title</info>
@@ -693,7 +693,7 @@
 				<control type="label">
 					<description>Time label</description>
 					<posx>110</posx>
-					<posy>515</posy>
+					<posy>505</posy>
 					<width>260</width>
 					<height>25</height>
 					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
@@ -709,7 +709,7 @@
 			<control type="videowindow">
 				<description>video preview window</description>
 				<posx>25</posx>
-				<posy>426</posy>
+				<posy>416</posy>
 				<width>116</width>
 				<height>99</height>
 				<include>homemediainfo</include>
@@ -717,7 +717,7 @@
 			<control type="label">
 				<description>Now playing</description>
 				<posx>150</posx>
-				<posy>440</posy>
+				<posy>430</posy>
 				<width>225</width>
 				<height>25</height>
 				<label>13350</label>
@@ -729,7 +729,7 @@
 			<control type="label">
 				<description>Video Title label</description>
 				<posx>150</posx>
-				<posy>465</posy>
+				<posy>455</posy>
 				<width>225</width>
 				<height>25</height>
 				<info>VideoPlayer.Title</info>
@@ -741,7 +741,7 @@
 			<control type="label">
 				<description>Time label</description>
 				<posx>150</posx>
-				<posy>490</posy>
+				<posy>480</posy>
 				<width>225</width>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
