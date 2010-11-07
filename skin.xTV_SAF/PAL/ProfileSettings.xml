@@ -106,9 +106,9 @@
 		</control>
 		<control type="button" id="28">
 			<description>Ok Button</description>
-			<posx>150</posx>
+			<posx>160</posx>
 			<posy>300</posy>
-			<width>100</width>
+			<width>160</width>
 			<height>35</height>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -122,9 +122,9 @@
 		</control>
 		<control type="button" id="29">
 			<description>Cancel Button</description>
-			<posx>350</posx>
+			<posx>385</posx>
 			<posy>300</posy>
-			<width>100</width>
+			<width>160</width>
 			<height>35</height>
 			<align>center</align>
 			<aligny>center</aligny>
