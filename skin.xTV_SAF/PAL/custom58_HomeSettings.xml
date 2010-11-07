@@ -86,7 +86,7 @@
 				<label>31842</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
-				<selected>!Skin.HasSetting(home-musicvideo)</selected>
+				<selected>Skin.HasSetting(home-musicvideo)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
@@ -116,7 +116,7 @@
 				<label>31828</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-programs)</onclick>
-				<selected>!Skin.HasSetting(home-programs)</selected>
+				<selected>Skin.HasSetting(home-programs)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
@@ -131,7 +131,7 @@
 				<label>31848</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-scripts)</onclick>
-				<selected>!Skin.HasSetting(home-scripts)</selected>
+				<selected>Skin.HasSetting(home-scripts)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
@@ -289,7 +289,7 @@
 				<label>31890</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
-				<selected>Skin.HasSetting(home-playdisc)</selected>
+				<selected>!Skin.HasSetting(home-playdisc)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
@@ -304,7 +304,7 @@
 				<label>31825</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-time)</onclick>
-				<selected>Skin.HasSetting(home-time)</selected>
+				<selected>!Skin.HasSetting(home-time)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
@@ -319,7 +319,7 @@
 				<label>31826</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
-				<selected>Skin.HasSetting(home-shutdown)</selected>
+				<selected>!Skin.HasSetting(home-shutdown)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
@@ -334,7 +334,7 @@
 				<label>31832</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
-				<selected>Skin.HasSetting(home-currentweather)</selected>
+				<selected>!Skin.HasSetting(home-currentweather)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
