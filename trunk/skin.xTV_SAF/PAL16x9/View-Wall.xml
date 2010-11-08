@@ -14,6 +14,7 @@
 			<scrolltime>200</scrolltime>
 			<include>list-fade</include>
 			<pagecontrol>23</pagecontrol>
+			<preloaditems>8</preloaditems>
 			<itemlayout height="127" width="81">
 				<control type="image">
 					<width>81</width>
@@ -29,7 +30,7 @@
 					<height>126</height>
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<texture diffuse="RndMusicMask.png">DefaultProgram.png</texture>
+					<texture background="true" diffuse="RndMusicMask.png">DefaultProgram.png</texture>
 					<info>ListItem.Icon</info>
 				</control>
 			</itemlayout>
@@ -56,7 +57,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<texture diffuse="RndMusicMask.png">DefaultProgram.png</texture>
+					<texture background="true" diffuse="RndMusicMask.png">DefaultProgram.png</texture>
 					<info>ListItem.Icon</info>
 				</control>
 			</focusedlayout>

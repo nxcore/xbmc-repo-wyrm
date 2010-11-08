@@ -13,6 +13,9 @@
 			<include>list-fade</include>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
+			<preloaditems>5</preloaditems>
+			<scrolltime>0</scrolltime>
+			<pagecontrol>23</pagecontrol>
 			<itemlayout height="390" width="140">
 				<control type="image">
 					<posx>-15</posx>
@@ -20,7 +23,7 @@
 					<width>140</width>
 					<height>140</height>
 					<info>ListItem.Icon</info>
-					<texture diffuse="RndRectMask.png">-</texture>
+					<texture background="true" diffuse="RndRectMask.png">-</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
@@ -28,7 +31,7 @@
 					<posy>295</posy>
 					<width>140</width>
 					<height>140</height>
-					<texture flipy="true" diffuse="fade.png">-</texture>
+					<texture background="true" flipy="true" diffuse="fade.png">-</texture>
 					<info>ListItem.Icon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -56,6 +59,7 @@
 					<height>240</height>
 					<aspectratio>keep</aspectratio>
 					<info>ListItem.Icon</info>
+					<texture background="true" diffuse="RndRectMask.png">-</texture>
 					<animation effect="zoom" end="-5,5,300,300" time="0">Focus</animation>
 				</control>
 				<control type="image">
@@ -63,7 +67,7 @@
 					<posy>285</posy>
 					<width>240</width>
 					<height>240</height>
-					<texture flipy="true" diffuse="fade.png">-</texture>
+					<texture background="true" flipy="true" diffuse="fade.png">-</texture>
 					<aspectratio>keep</aspectratio>
 					<info>ListItem.Icon</info>
 					<animation effect="zoom" end="-5,305,300,300" time="0">Focus</animation>

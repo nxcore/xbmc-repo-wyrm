@@ -43,7 +43,7 @@
 		<include condition="!Skin.HasSetting(views-programlist2)">List2</include>
 		<include condition="!Skin.HasSetting(views-programicons)">IconView</include>
 		<include condition="!Skin.HasSetting(views-programwrap)">WrapView</include>
-		<include condition="!Skin.HasSetting(views-programwrap)">WallView</include>
+		<include condition="!Skin.HasSetting(views-programwall)">WallView</include>
 		<include condition="!Skin.HasSetting(views-programcoverflow)">Coverflow</include>
 
 		<include>PageControl</include>
