@@ -144,8 +144,8 @@
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
-			<posy>40</posy>
-			<posx>330</posx>
+			<posx>332</posx>
+			<posy>34</posy>
 			<visible>Container.Scrolling</visible>
 			<animation effect="fade" start="0" end="100" time="50">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>

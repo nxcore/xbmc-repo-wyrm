@@ -104,9 +104,9 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<include>SortLetterNotification</include>
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
+			<include>SortLetterNotification</include>
 			<!-- Star Rating -->
 			<control type="image">
 				<posx>175</posx>
