@@ -14,10 +14,11 @@
 			<focusposition>0</focusposition>
 			<orientation>horizontal</orientation>
 			<preloaditems>5</preloaditems>
+			<scrolltime>0</scrolltime>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="140" width="140">
 				<control type="image">
-					<posx>-14</posx>
+					<posx>-12</posx>
 					<posy>156</posy>
 					<height>124</height>
 					<width>104</width>
@@ -26,10 +27,10 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>-30</posx>
-					<posy>148</posy>
-					<height>140</height>
-					<width>128</width>
+					<posx>-22</posx>
+					<posy>144</posy>
+					<height>144</height>
+					<width>118</width>
 					<texture>case-cd.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>keep</aspectratio>
@@ -47,10 +48,10 @@
 					<info>ListItem.Icon</info>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>18</posy>
-					<height>275</height>
-					<width>235</width>
+					<posx>6</posx>
+					<posy>14</posy>
+					<height>284</height>
+					<width>220</width>
 					<texture>case-cd.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>

@@ -24,7 +24,7 @@
 					<align>center</align>
 					<fadetime>600</fadetime>
 					<info>ListItem.Icon</info>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
@@ -33,7 +33,7 @@
 					<width>99</width>
 					<height>144</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="middle" aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<bordertexture border="6">photoframe.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>600</fadetime>
@@ -47,7 +47,7 @@
 					<height>330</height>
 					<width>228</width>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="middle" aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<bordertexture border="6">photoframe.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>600</fadetime>
@@ -58,7 +58,7 @@
 					<posy>0</posy>
 					<height>330</height>
 					<width>228</width>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<align>center</align>
 					<aligny>center</aligny>
 					<fadetime>600</fadetime>

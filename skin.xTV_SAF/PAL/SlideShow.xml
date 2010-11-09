@@ -107,7 +107,7 @@
 			<description>Playlist</description>
 			<width>100</width>
 			<posx>680</posx>
-			<posy>556</posy>
+			<posy>528</posy>
 			<align>right</align>
 			<label>$INFO[musicplayer.Playlistposition,Track ]$INFO[musicplayer.Playlistlength, / ]</label>
 			<font>font12</font>
