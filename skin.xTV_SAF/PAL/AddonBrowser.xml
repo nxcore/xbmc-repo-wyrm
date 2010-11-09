@@ -73,7 +73,7 @@
 			<texture background="true">DefaultAddon.png</texture>
 			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
-			<visible>Control.IsVisible(50) + SubString(ListItem.Icon,defaultfolder.png,Left)</visible>
+			<visible>Control.IsVisible(50) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 			<include>list-fade</include>
 		</control>
 		<control type="image">

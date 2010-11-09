@@ -29,7 +29,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-5).Icon</info>
 				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -47,7 +47,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-4).Icon</info>
 				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -65,7 +65,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-3).Icon</info>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -83,7 +83,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-2).Icon</info>
 				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -101,7 +101,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(4).Icon</info>
 				<animation effect="rotatey" center="810" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -119,7 +119,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(3).Icon</info>
 				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -137,7 +137,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(2).Icon</info>
 				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -155,7 +155,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(1).Icon</info>
 				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -176,7 +176,7 @@
 					<posy>0</posy>
 					<width>172</width>
 					<height>375</height>
-					<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+					<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 					<info>Container.ListItem(-1).Icon</info>
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
@@ -196,7 +196,7 @@
 					<posy>0</posy>
 					<width>172</width>
 					<height>375</height>
-					<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+					<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 					<info>Container.ListItem(0).Icon</info>
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
@@ -227,7 +227,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-4).Icon</info>
 				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -245,7 +245,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-3).Icon</info>
 				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -263,7 +263,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-2).Icon</info>
 				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -281,7 +281,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-1).Icon</info>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -299,7 +299,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(5).Icon</info>
 				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -317,7 +317,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(4).Icon</info>
 				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -335,7 +335,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(3).Icon</info>
 				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -353,7 +353,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(2).Icon</info>
 				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -374,7 +374,7 @@
 					<posy>0</posy>
 					<width>172</width>
 					<height>375</height>
-					<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+					<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 					<info>Container.ListItem(1).Icon</info>
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
@@ -394,7 +394,7 @@
 					<posy>0</posy>
 					<width>172</width>
 					<height>375</height>
-					<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+					<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 					<info>Container.ListItem(0).Icon</info>
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
@@ -424,7 +424,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-4).Icon</info>
 				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -442,7 +442,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-3).Icon</info>
 				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -460,7 +460,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-2).Icon</info>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -478,7 +478,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(-1).Icon</info>
 				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -496,7 +496,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(4).Icon</info>
 				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -514,7 +514,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(3).Icon</info>
 				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -532,7 +532,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(2).Icon</info>
 				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -550,7 +550,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<info>Container.ListItem(1).Icon</info>
 				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
@@ -568,7 +568,7 @@
 				<posy>0</posy>
 				<width>172</width>
 				<height>375</height>
-				<texture diffuse="RndRectMask.png">defaultscript.png</texture>
+				<texture diffuse="RndRectMask.png">DefaultScript.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<visible>!Contol.HasFocus(57)</visible>
 				<info>Container.ListItem(0).Icon</info>

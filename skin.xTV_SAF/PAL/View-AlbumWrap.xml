@@ -30,7 +30,7 @@
 					<posy>148</posy>
 					<height>140</height>
 					<width>128</width>
-					<texture>CDcase.png</texture>
+					<texture>case-cd.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>keep</aspectratio>
 					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
@@ -51,7 +51,7 @@
 					<posy>18</posy>
 					<height>275</height>
 					<width>235</width>
-					<texture>CDcase.png</texture>
+					<texture>case-cd.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
 				</control>
