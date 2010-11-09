@@ -31,7 +31,7 @@
 						<posy>10</posy>
 						<width>320</width>
 						<height>75</height>
-						<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+						<texture diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					</control>
@@ -63,14 +63,14 @@
 						<animation effect="zoom" start="90" end="110" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>
 						<control type="image">
 							<description>Cover</description>
-							<posx>0</posx>
-							<posy>0</posy>
+							<posx>10</posx>
+							<posy>10</posy>
 							<width>320</width>
 							<height>120</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<bordertexture border="14,0,14,0">Hi-liteBanner.png</bordertexture>
-							<bordersize>14</bordersize>
+							<bordertexture border="10">hi-lite.png</bordertexture>
+							<bordersize>10</bordersize>
 							<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
 						</control>
 						<control type="image">
@@ -78,7 +78,7 @@
 							<posy>0</posy>
 							<width>320</width>
 							<height>120</height>
-							<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+							<texture diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						</control>

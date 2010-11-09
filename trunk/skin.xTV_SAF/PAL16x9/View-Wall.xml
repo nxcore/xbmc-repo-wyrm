@@ -40,7 +40,7 @@
 					<height>127</height>
 					<posx>0</posx>
 					<posy>0</posy>
-					<texture diffuse="RndMusicMask.png">Hi-lite.png</texture>
+					<texture diffuse="RndMusicMask.png">hi-lite.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />

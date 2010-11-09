@@ -45,7 +45,7 @@
 			<posy>88</posy>
 			<width>266</width>
 			<height>310</height>
-			<texture>CDcase.png</texture>
+			<texture>case-cd.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<visible>Skin.HasSetting(CDcase) + Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
         </control>

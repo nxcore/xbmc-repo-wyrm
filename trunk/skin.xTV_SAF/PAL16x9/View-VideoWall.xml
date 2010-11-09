@@ -30,7 +30,7 @@
 					<height>124</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -40,7 +40,7 @@
 					<height>124</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 					<info>ListItem.Icon</info>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
@@ -55,7 +55,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="145" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<texture background="true" diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -75,7 +75,7 @@
 					<posy>-4</posy>
 					<height>124</height>
 					<width>68</width>
-					<texture diffuse="RndVideoMask.png">Hi-lite.png</texture>
+					<texture diffuse="RndVideoMask.png">hi-lite.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="155" center="auto" time="600" tween="back" easing="out" />

@@ -23,7 +23,7 @@
 					<posy>269</posy>
 					<height>103</height>
 					<width>45</width>
-					<texture>dvdcase-back.png</texture>
+					<texture>case-dvd.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
@@ -33,7 +33,7 @@
 					<posy>272</posy>
 					<height>96</height>
 					<width>44</width>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -43,7 +43,7 @@
 					<posy>272</posy>
 					<height>96</height>
 					<width>44</width>
-					<texture fallback="defaultvideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -64,7 +64,7 @@
 					<posy>100</posy>
 					<height>284</height>
 					<width>139</width>
-					<texture diffuse="RndVideoMask.png">Hi-lite.png</texture>
+					<texture diffuse="RndVideoMask.png">hi-lite.png</texture>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>IconGlow</colordiffuse>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
@@ -74,7 +74,7 @@
 					<posy>115</posy>
 					<height>257</height>
 					<width>117</width>
-					<texture>dvdcase-back.png</texture>
+					<texture>case-dvd.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
@@ -83,7 +83,7 @@
 					<posy>119</posy>
 					<height>250</height>
 					<width>115</width>
-					<texture diffuse="RndVideoMask.png">defaultvideo.png</texture>
+					<texture diffuse="RndVideoMask.png">DefaultVideo.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
@@ -92,7 +92,7 @@
 					<posy>119</posy>
 					<height>250</height>
 					<width>115</width>
-					<texture fallback="defaultvideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="RndVideoMask.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
