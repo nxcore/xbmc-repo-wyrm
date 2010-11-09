@@ -83,7 +83,6 @@
 			<aspectratio align="middle" aligny="center">keep</aspectratio>
 			<bordertexture border="6">photoframe.png</bordertexture>
 			<bordersize>6</bordersize>
-			<texture>picturepanel.png</texture>
 			<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
         </control>
 		<!-- Scrollbar -->

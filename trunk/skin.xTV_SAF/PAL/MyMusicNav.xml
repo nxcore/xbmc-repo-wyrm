@@ -41,10 +41,10 @@
 			<include>list-fade</include>
 		</control>
         <control type="image">
-			<posx>74</posx>
-			<posy>88</posy>
-			<width>266</width>
-			<height>310</height>
+			<posx>84</posx>
+			<posy>82</posy>
+			<width>248</width>
+			<height>330</height>
 			<texture>case-cd.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<visible>Skin.HasSetting(CDcase) + Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
