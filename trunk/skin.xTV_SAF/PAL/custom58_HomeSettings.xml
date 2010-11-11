@@ -22,7 +22,7 @@
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>290</posx>
-			<posy>75</posy>
+			<posy>76</posy>
 			<height>17</height>
 			<width>17</width>
 			<texture>scroll-up.png</texture>
@@ -30,7 +30,7 @@
 		</control>
 		<control type="image">
 			<posx>290</posx>
-			<posy>505</posy>
+			<posy>506</posy>
 			<height>17</height>
 			<width>17</width>
 			<texture>scroll-down.png</texture>
@@ -176,14 +176,14 @@
 				<texturenofocus>-</texturenofocus>
 				<textwidth>450</textwidth>
 				<enable>Skin.HasSetting(home-youtube)</enable>
-				<label> $LOCALIZE[31850]</label>
+				<label>$LOCALIZE[31850]</label>
 				<label2>$INFO[Skin.String(youtube-scriptpath)] </label2>
 				<haspath>true</haspath>
 				<onclick>Skin.SetFile(youtube-scriptpath,.py)</onclick>
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
-				<textoffsetx>10</textoffsetx>
+				<textoffsetx>20</textoffsetx>
 				<visible>System.Platform.xbox</visible>
 			</control>
 			<control type="button" id="27">
@@ -194,14 +194,14 @@
 				<texturenofocus>-</texturenofocus>
 				<textwidth>450</textwidth>
 				<enable>Skin.HasSetting(home-youtube)</enable>
-				<label> $LOCALIZE[31850]</label>
+				<label>$LOCALIZE[31850]</label>
 				<label2>$INFO[Skin.String(youtube-scriptpath)] </label2>
 				<haspath>true</haspath>
 				<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
-				<textoffsetx>10</textoffsetx>
+				<textoffsetx>20</textoffsetx>
 				<visible>!System.Platform.xbox</visible>
 			</control>
 			<control type="radiobutton" id="15">
@@ -278,7 +278,7 @@
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
-				<textoffsetx>30</textoffsetx>
+				<textoffsetx>20</textoffsetx>
 			</control>
 			<control type="radiobutton" id="22">
 				<description>Play Disc On Home toggle</description>

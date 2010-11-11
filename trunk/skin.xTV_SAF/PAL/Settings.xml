@@ -39,20 +39,20 @@
 			</control>
 			<control type="image">
 				<description>Appearance Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>74</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>100</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(3)</visible>
 			</control>
 			<control type="image">
 				<description>Appearance Settings arrow image</description>
-				<posx>650</posx>
-				<posy>74</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>100</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="6">
 				<description>My Videos</description>
@@ -73,20 +73,20 @@
 			</control>
 			<control type="image">
 				<description>My Videos Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>113</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>138</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(6)</visible>
 			</control>
 			<control type="image">
 				<description>My Videos Settings arrow image</description>
-				<posx>650</posx>
-				<posy>113</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>138</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="7">
 				<description>My Music</description>
@@ -107,20 +107,20 @@
 			</control>
 			<control type="image">
 				<description>My Music Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>152</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>178</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(7)</visible>
 			</control>
 			<control type="image">
 				<description>My Music Settings arrow image</description>
-				<posx>650</posx>
-				<posy>152</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>178</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="9">
 				<description>My Pictures</description>
@@ -141,20 +141,20 @@
 			</control>
 			<control type="image">
 				<description>My PicturesSkin Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>191</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>216</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(9)</visible>
 			</control>
 			<control type="image">
 				<description>My Pictures Settings arrow image</description>
-				<posx>650</posx>
-				<posy>191</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>216</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="10">
 				<description>My Weather</description>
@@ -175,20 +175,20 @@
 			</control>
 			<control type="image">
 				<description>My Weather Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>230</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>256</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(10)</visible>
 			</control>
 			<control type="image">
 				<description>My Weather Settings arrow image</description>
-				<posx>650</posx>
-				<posy>230</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>256</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="8">
 				<description>Addons</description>
@@ -228,20 +228,20 @@
 			</control>
 			<control type="image">
 				<description>My Programs/Addons Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>269</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>294</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">
 				<description>My Programs/Addons Settings arrow image</description>
-				<posx>650</posx>
-				<posy>269</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>294</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="2">
 				<description>Network</description>
@@ -262,20 +262,20 @@
 			</control>
 			<control type="image">
 				<description>Network Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>308</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>334</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Network Settings arrow image</description>
-				<posx>650</posx>
-				<posy>308</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>334</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="4">
 				<description>System</description>
@@ -296,20 +296,20 @@
 			</control>
 			<control type="image">
 				<description>System Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>347</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>374</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(4)</visible>
 			</control>
 			<control type="image">
 				<description>System Settings arrow image</description>
-				<posx>650</posx>
-				<posy>347</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>374</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 
 <!-- xTV SAF Skin settings menu item -->
@@ -333,20 +333,20 @@
 			</control>
 			<control type="image">
 				<description>Skin Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>386</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>412</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(999)</visible>
 			</control>
 			<control type="image">
 				<description>Skin Settings arrow image</description>
-				<posx>650</posx>
-				<posy>386</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>412</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 		</control>
 	</controls>
