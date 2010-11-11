@@ -59,8 +59,6 @@
 					<height>330</height>
 					<width>228</width>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<align>center</align>
-					<aligny>center</aligny>
 					<fadetime>600</fadetime>
 					<info>ListItem.Icon</info>
 					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>

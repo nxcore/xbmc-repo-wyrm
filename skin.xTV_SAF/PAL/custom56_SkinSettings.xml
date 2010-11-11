@@ -1,4 +1,4 @@
-<window id="56"> <!-- strings fixed -->
+<window id="56">
 	<defaultcontrol always="false">1</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>4</previouswindow>
@@ -41,21 +41,21 @@
 			</control>
 			<control type="image">
 				<description>Startup Settings Button arrow focus image</description>
-				<posx>650</posx>
-				<posy>73</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>100</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(1)</visible>
 			</control>
 			<control type="image">
 				<description>Startup Settings Button arrow image</description>
-				<posx>650</posx>
-				<posy>73</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture> 
-			</control>			
+				<posx>656</posx>
+				<posy>100</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
+			</control>
 			<control type="button" id="2">
 				<description>General Settings Button</description>
 				<font>font13</font>
@@ -76,20 +76,20 @@
 			</control>
 			<control type="image">
 				<description>General Settings Button arrow focus image</description>
-				<posx>650</posx>
-				<posy>113</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>140</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>General Settings Button arrow image</description>
-				<posx>650</posx>
-				<posy>113</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture> 
+				<posx>656</posx>
+				<posy>140</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="3">
 				<description>Home Window Settings Button</description>
@@ -111,20 +111,20 @@
 			</control>
 			<control type="image">
 				<description>Home Window Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>153</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>180</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(3)</visible>
 			</control>
 			<control type="image">
 				<description>Home Window Settings arrow image</description>
-				<posx>650</posx>
-				<posy>153</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture> 
+				<posx>656</posx>
+				<posy>180</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="4">
 				<description>Background Settings Button</description>
@@ -146,20 +146,20 @@
 			</control>
 			<control type="image">
 				<description>Background Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>193</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>220</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(4)</visible>
 			</control>
 			<control type="image">
 				<description>Background Settings arrow image</description>
-				<posx>650</posx>
-				<posy>193</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture> 
+				<posx>656</posx>
+				<posy>220</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="5">
 				<description>Media Sources Settings Button</description>
@@ -171,7 +171,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31831</label>
-				<onclick>XBMC.ActivateWindow(55)</onclick> 
+				<onclick>XBMC.ActivateWindow(55)</onclick>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>4</onup>
@@ -181,20 +181,20 @@
 			</control>
 			<control type="image">
 				<description>Media Sources Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>233</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>260</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(5)</visible>
 			</control>
 			<control type="image">
 				<description>Media Sources Settings arrow image</description>
-				<posx>650</posx>
-				<posy>233</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
+				<posx>656</posx>
+				<posy>260</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="6">
 				<description>Views Settings Button</description>
@@ -206,7 +206,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31834</label>
-				<onclick>XBMC.ActivateWindow(52)</onclick> 
+				<onclick>XBMC.ActivateWindow(52)</onclick>
 				<onleft>6</onleft>
 				<onright>6</onright>
 				<onup>5</onup>
@@ -216,21 +216,21 @@
 			</control>
 			<control type="image">
 				<description>Views Settings arrow focus image</description>
-				<posx>650</posx>
-				<posy>273</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow.png</texture>
+				<posx>656</posx>
+				<posy>300</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(6)</visible>
 			</control>
 			<control type="image">
 				<description>Views Settings arrow image</description>
-				<posx>650</posx>
-				<posy>273</posy>
-				<width>25</width>
-				<height>75</height>
-				<texture>home-buttonarrow-alpha.png</texture>
-			</control>			
+				<posx>656</posx>
+				<posy>300</posy>
+				<width>16</width>
+				<height>16</height>
+				<texture>scroll-right.png</texture>
+			</control>
 		</control>
 	</controls>
 </window>

@@ -30,7 +30,7 @@
 			<label>$INFO[system.Date]</label>
 			<align>center</align>
 			<font>font13</font>
-			<visible>Skin.HasSetting(home-time)</visible>
+			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
 		<control type="label">
 			<description>Time and Date</description>
@@ -41,7 +41,7 @@
 			<label>$INFO[system.Time(hh:mm xx)]</label>
 			<align>center</align>
 			<font>font13</font>
-			<visible>Skin.HasSetting(home-time)</visible>
+			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
 		<!-- main logo and label-->
 		<control type="image">
@@ -66,7 +66,7 @@
 			<font>font13</font>
 			<align>right</align>
 			<aligny>center</aligny>
-			<visible>Skin.HasSetting(home-currentweather) + IsEmpty(Weather.Conditions)</visible>
+			<visible>!Skin.HasSetting(home-currentweather) + IsEmpty(Weather.Conditions)</visible>
 		</control>
 		<control type="label">
 			<description>current condition label</description>
@@ -79,8 +79,8 @@
 			<font>font13</font>
 			<align>right</align>
 			<aligny>center</aligny>
-			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>	
+			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
+		</control>
 		<control type="label">
 			<description>current temp value</description>
 			<posx>640</posx>
@@ -91,7 +91,7 @@
 			<align>right</align>
 			<aligny>bottom</aligny>
 			<label>$INFO[Weather.Temperature]</label>
-			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
+			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
 		</control>	
 <!--		<control type="image">
 			<description>current weather icon</description>
@@ -113,7 +113,7 @@
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
-			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
+			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
 		</control>
 
 		<!-- Markers for excess menu items -->
@@ -157,11 +157,11 @@
 					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
-					<posx>265</posx>
-					<posy>-18</posy>
-					<width>25</width>
-					<height>75</height>
-					<texture>home-buttonarrow-alpha.png</texture>
+					<posx>275</posx>
+					<posy>12</posy>
+					<width>16</width>
+					<height>16</height>
+					<texture>scroll-right.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</itemlayout>
@@ -185,11 +185,11 @@
 					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
-					<posx>265</posx>
-					<posy>-18</posy>
-					<width>25</width>
-					<height>75</height>
-					<texture>home-buttonarrow.png</texture>
+					<posx>275</posx>
+					<posy>12</posy>
+					<width>16</width>
+					<height>16</height>
+					<texture>scroll-right-focus.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</focusedlayout>
@@ -252,8 +252,7 @@
 					<label>31028</label> 
 					<onclick>ActivateWindow(MyVideoFiles,$INFO[Skin.String(default-musicvideosource)],return)</onclick>
 					<visible>Skin.HasSetting(setdefault-musicvideosource)</visible>
-					<visible>!Skin.HasSetting(musicvideo-library)</visible>
-					<visible>!Skin.HasSetting(home-musicvideo)</visible>
+					<visible>!Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
 					<icon>icon-musicvideo.png</icon>
@@ -261,16 +260,14 @@
 					<label>31028</label> 
 					<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
 					<visible>!Skin.HasSetting(setdefault-musicvideosource)</visible>
-					<visible>!Skin.HasSetting(musicvideo-library)</visible>
-					<visible>!Skin.HasSetting(home-musicvideo)</visible>
+					<visible>!Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
 					<icon>icon-musicvideo.png</icon>
 					<thumb>icon-musicvideo-blur1.png</thumb>
 					<label>31028</label>
 					<onclick>ActivateWindow(MyVideoLibrary,musicvideotitles,return)</onclick>
-					<visible>Skin.HasSetting(musicvideo-library)</visible>
-					<visible>!Skin.HasSetting(home-musicvideo)</visible>
+					<visible>Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
 					<icon>icon-music.png</icon>
@@ -291,14 +288,14 @@
 					<thumb>icon-programs-blur1.png</thumb>
 					<label>31029</label>
 					<onclick>ActivateWindow(MyPrograms,,return)</onclick>
-					<visible>!Skin.HasSetting(home-programs)</visible>
+					<visible>Skin.HasSetting(home-programs)</visible>
 				</item>
 				<item>
 					<icon>icon-scripts.png</icon>
 					<thumb>icon-scripts-blur1.png</thumb>
 					<label>31034</label>
 					<onclick>ActivateWindow(Scripts,,return)</onclick>
-					<visible>System.Platform.xbox + !Skin.HasSetting(home-scripts)</visible>
+					<visible>System.Platform.xbox + Skin.HasSetting(home-scripts)</visible>
 				</item>
 				<item>
 					<icon>icon-photo.png</icon>
@@ -347,14 +344,14 @@
 					<thumb>icon-disc-blur1.png</thumb>
 					<label>31036</label>
 					<onclick>XBMC.PlayDVD</onclick>
-					<visible>System.HasMediaDVD + Skin.HasSetting(home-playdisc)</visible>
+					<visible>System.HasMediaDVD + !Skin.HasSetting(home-playdisc)</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>31038</label>
 					<onclick>XBMC.ShutDown()</onclick>
-					<visible>Skin.HasSetting(home-shutdown)</visible>
+					<visible>!Skin.HasSetting(home-shutdown)</visible>
 				</item>
 			</content>
 		</control>
