@@ -44,7 +44,7 @@
 			<ondown>2</ondown>
 			<onup>2</onup>
 			<scrolltime>200</scrolltime>
-			<viewtype label="Icon">icon</viewtype>
+			<viewtype label="31944">icon</viewtype>
 			<pagecontrol>23</pagecontrol>
 			<orientation>horizontal</orientation>
 			<itemlayout height="172" width="192">

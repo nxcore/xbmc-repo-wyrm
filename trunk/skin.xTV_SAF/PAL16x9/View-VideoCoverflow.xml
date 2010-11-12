@@ -1,7 +1,7 @@
 <includes>
 	<include name="VideoCoverflow">
 		<control type="wraplist" id="57">
-			<viewtype label="Coverflow">Wraplist</viewtype>
+			<viewtype label="31946">Wraplist</viewtype>
 			<posx>-80</posx>
 			<posy>150</posy>
 			<width>800</width>

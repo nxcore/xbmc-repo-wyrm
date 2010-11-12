@@ -1,5 +1,5 @@
 ﻿<fonts>
-	<fontset id="Default" unicode="true">
+	<fontset id="Default" idloc="31575" unicode="true">
 		<font>
 			<name>font11</name>
 			<filename>Ubuntu-R.ttf</filename>
@@ -37,7 +37,7 @@
 			<size>31</size>
 		</font>
 	</fontset>
-	<fontset id="Bold" unicode="true">
+	<fontset id="Bold" idloc="31576" unicode="true">
 		<font>
 			<name>font11</name>
 			<filename>Ubuntu-B.ttf</filename>
@@ -75,7 +75,7 @@
 			<size>31</size>
 		</font>
 	</fontset>
-	<fontset id="XBMC Default" unicode="true">
+	<fontset id="XBMC Default" idloc="31577" unicode="true">
 		<font>
 			<name>font11</name>
 			<filename>arial.ttf</filename>

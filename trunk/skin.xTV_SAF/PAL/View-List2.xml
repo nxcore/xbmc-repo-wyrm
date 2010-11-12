@@ -12,7 +12,7 @@
 			<ondown>51</ondown>
 			<include>list-fade</include>
 			<scrolltime>1</scrolltime>
-			<viewtype label="List2">List2</viewtype>
+			<viewtype label="31942">List2</viewtype>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="37">
 				<control type="image">

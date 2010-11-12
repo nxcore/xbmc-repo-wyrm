@@ -1,7 +1,7 @@
 <includes>
 	<include name="AlbumWrapView">
 		<control type="wraplist" id="54">
-			<viewtype label="Wrap">Wraplist</viewtype>
+			<viewtype label="31943">Wraplist</viewtype>
 			<posx>0</posx>
 			<posy>200</posy>
 			<width>1000</width>
