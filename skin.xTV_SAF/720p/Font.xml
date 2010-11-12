@@ -1,12 +1,6 @@
 ﻿<fonts>
 	<fontset id="Default" unicode="true">
 		<font>
-			<name>font10</name>
-			<filename>Ubuntu-R.ttf</filename>
-			<size>23</size>
-			<aspect>1.05</aspect>
-		</font>
-		<font>
 			<name>font11</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>24</size>
@@ -51,11 +45,6 @@
 	</fontset>
 	<fontset id="Bold" unicode="true">
 		<font>
-			<name>font10</name>
-			<filename>Ubuntu-B.ttf</filename>
-			<size>23</size>
-		</font>
-		<font>
 			<name>font11</name>
 			<filename>Ubuntu-B.ttf</filename>
 			<size>24</size>
@@ -90,6 +79,50 @@
 			<name>font28</name>
 			<filename>Ubuntu-B.ttf</filename>
 			<size>48</size>
+		</font>
+	</fontset>
+	<fontset id="XBMC Default" unicode="true">
+		<font>
+			<name>font11</name>
+			<filename>arial.ttf</filename>
+			<size>24</size>
+			<aspect>1.05</aspect>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>arial.ttf</filename>
+			<size>24</size>
+			<aspect>1.05</aspect>
+		</font>
+		<font>
+			<name>font13</name>
+			<filename>arial.ttf</filename>
+			<size>25</size>
+			<aspect>1.05</aspect>
+		</font>
+		<font>
+			<name>font18</name>
+			<filename>arial.ttf</filename>
+			<size>31</size>
+			<aspect>1.05</aspect>
+		</font>
+		<font>
+			<name>font20</name>
+			<filename>arial.ttf</filename>
+			<size>36</size>
+			<style>bold</style>
+			<aspect>1.05</aspect>
+		</font>
+		<font>
+			<name>font22</name>
+			<filename>arial.ttf</filename>
+			<size>38</size>
+		</font>
+		<font>
+			<name>font28</name>
+			<filename>arial.ttf</filename>
+			<size>48</size>
+			<aspect>1.05</aspect>
 		</font>
 	</fontset>
 </fonts>
