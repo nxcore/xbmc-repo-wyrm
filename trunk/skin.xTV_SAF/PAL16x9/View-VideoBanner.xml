@@ -209,7 +209,7 @@
 					<posx>5</posx>
 					<posy>345</posy>
 					<width>310</width>
-					<height>112</height>
+					<height>120</height>
 					<font>font13</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
@@ -222,7 +222,7 @@
 					<posx>5</posx>
 					<posy>345</posy>
 					<width>310</width>
-					<height>112</height>
+					<height>120</height>
 					<font>font13</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
