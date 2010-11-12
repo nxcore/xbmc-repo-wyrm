@@ -49,7 +49,7 @@
 			<onup>2</onup>
 			<ondown>2</ondown>
 			<scrolltime>1</scrolltime>
-			<viewtype label="List">List</viewtype>
+			<viewtype label="31942">List</viewtype>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="32">
 				<control type="image">

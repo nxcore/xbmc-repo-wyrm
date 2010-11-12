@@ -10,7 +10,7 @@
 			<onup>52</onup>
 			<ondown>52</ondown>
 			<include>list-fade</include>
-			<viewtype label="Icons">Icons</viewtype>
+			<viewtype label="31944">Icons</viewtype>
 			<scrolltime>200</scrolltime>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="130" width="115">
@@ -103,7 +103,7 @@
 			<onright>23</onright>
 			<onup>52</onup>
 			<ondown>52</ondown>
-			<viewtype label="Icons">Icons</viewtype>
+			<viewtype label="31944">Icons</viewtype>
 			<scrolltime>200</scrolltime>
 			<include>list-fade</include>
 			<pagecontrol>23</pagecontrol>

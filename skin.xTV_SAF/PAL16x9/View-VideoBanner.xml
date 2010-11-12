@@ -4,7 +4,7 @@
 			<defaultcontrol always="true">59</defaultcontrol>
 			<visible>Control.IsVisible(59)</visible>
 			<control type="list" id="59">
-				<viewtype label="Banner">Banner List</viewtype>
+				<viewtype label="31947">Banner List</viewtype>
 				<posx>0</posx>
 				<posy>110</posy>
 				<width>720</width>
