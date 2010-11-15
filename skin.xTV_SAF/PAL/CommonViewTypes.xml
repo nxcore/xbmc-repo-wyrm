@@ -1,7 +1,7 @@
 <includes>
 	<include name="ListView">
 		<control type="list" id="50">
-			<viewtype label="31942">List</viewtype>
+			<viewtype label="31941">List</viewtype>
 			<posx>400</posx>
 			<posy>95</posy>
 			<width>300</width>
@@ -89,7 +89,7 @@
 			<ondown>50</ondown>
 			<include>list-fade</include>
 			<scrolltime>1</scrolltime>
-			<viewtype label="31942">list</viewtype>
+			<viewtype label="31941">list</viewtype>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="37">
 				<control type="image">
