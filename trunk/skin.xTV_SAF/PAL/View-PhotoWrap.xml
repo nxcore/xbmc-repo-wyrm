@@ -2,7 +2,7 @@
 	<include name="PhotoWrap">
 		<control type="wraplist" id="54">
 			<viewtype label="31943">Wraplist</viewtype>
-			<posx>10</posx>
+			<posx>-10</posx>
 			<posy>155</posy>
 			<width>1000</width>
 			<height>400</height>
@@ -13,7 +13,8 @@
 			<include>list-fade</include>
 			<focusposition>1</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>5</preloaditems>
+			<preloaditems>6</preloaditems>
+			<scrolltime>0</scrolltime>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="191" width="108">
 				<control type="image">
@@ -25,7 +26,7 @@
 					<fadetime>600</fadetime>
 					<info>ListItem.Icon</info>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>65</posx>
@@ -37,7 +38,7 @@
 					<bordertexture border="6">photoframe.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>600</fadetime>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="427" width="241">
@@ -51,7 +52,7 @@
 					<bordertexture border="6">photoframe.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>600</fadetime>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>67</posx>
@@ -61,7 +62,7 @@
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<fadetime>600</fadetime>
 					<info>ListItem.Icon</info>
-					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 			</focusedlayout>
 		</control>

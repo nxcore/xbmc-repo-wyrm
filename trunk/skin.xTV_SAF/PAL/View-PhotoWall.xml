@@ -24,7 +24,7 @@
 					<texture>picturepanel.png</texture>
 					<fadetime>600</fadetime>
 					<aspectratio>keep</aspectratio>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
                 </control>
 				<control type="image">
 					<posx>8</posx>
@@ -36,7 +36,7 @@
 					<fadetime>600</fadetime>
 					<info>ListItem.Icon</info>
 					<aspectratio>keep</aspectratio>
-					<visible>SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+					<visible>SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>8</posx>
@@ -48,7 +48,7 @@
 					<fadetime>600</fadetime>
 					<info>ListItem.Icon</info>
 					<aspectratio aligny="top">scale</aspectratio>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="122" width="122">
@@ -63,7 +63,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
                 </control>
 				<control type="image">
 					<posx>8</posx>
@@ -78,7 +78,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<visible>SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+					<visible>SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>8</posx>
@@ -93,7 +93,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 			</focusedlayout>
 		</control>

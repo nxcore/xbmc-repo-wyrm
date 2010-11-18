@@ -2,7 +2,7 @@
 	<include name="PhotoWrap">
 		<control type="wraplist" id="54">
 			<viewtype label="31943">Wraplist</viewtype>
-			<posx>10</posx>
+			<posx>-10</posx>
 			<posy>155</posy>
 			<width>1000</width>
 			<height>400</height>
@@ -25,7 +25,7 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<fadetime>300</fadetime>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>65</posx>
@@ -37,7 +37,7 @@
 					<bordertexture border="4">photoframe.png</bordertexture>
 					<bordersize>4</bordersize>
 					<fadetime>300</fadetime>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="427" width="241">
@@ -51,7 +51,7 @@
 					<bordertexture border="6">photoframe.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>300</fadetime>
-					<visible>!SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>!SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>67</posx>
@@ -61,7 +61,7 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>SubString(ListItem.Icon,DefaultFolder,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
+					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
 				</control>
 			</focusedlayout>
 		</control>
