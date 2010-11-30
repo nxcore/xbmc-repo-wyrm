@@ -1,5 +1,5 @@
 <window id="6">
-	<defaultcontrol always="true">50</defaultcontrol>
+	<defaultcontrol>1</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
 	<controls>
@@ -7,6 +7,22 @@
 		<include>Fake-Overlay</include>
 		<include>#files</include>
 		
+		<control type="button" id="1">
+			<description>run WOL script</description>
+			<onfocus>XBMC.RunScript($INFO[Skin.String(wake-scriptpath)])</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(wake-source)</visible>
+		</control>
+		<control type="button" id="1">
+			<description>bypass running WOL script</description>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(wake-source)</visible>
+		</control>
+
 		<control type="image">
 			<description>Default xTV Logo</description>
 			<posx>485</posx>
