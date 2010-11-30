@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.xTV_SAF"
-  version="1.00"
+  version="1.0.0"
   name="xTV SAF"
   provider-name="Wyrm">
   <requires>
