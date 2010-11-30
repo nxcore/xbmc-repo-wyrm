@@ -316,23 +316,13 @@
 					<onclick>XBMC.RunScript($INFO[Skin.String(home-scriptlocation)]/default.py)</onclick>
 					<visible>Skin.HasSetting(home-script)</visible>
 				</item>
-				<!-- Adult/Family Toggle -->
-				<!--<item>
-				 	<icon>icon-adult.png</icon>
-				 	<thumb>icon-adult-blur1.png</thumb>
-					<label>31039</label>
-					<onclick>Mastermode()</onclick>
-					<visible>StringCompare(System.ProfileName,Skin.String(home-familypname))</visible>
-					<visible>Skin.HasSetting(home-familymode) + StringCompare(System.ProfileName,$INFO[Skin.String(home-familypname)])</visible>
-				</item>
 				<item>
-				 	<icon>icon-family.png</icon>
-				 	<thumb>icon-family-blur1.png</thumb>
-					<label>31040</label>
-					<onclick>LoadProfile($INFO[Skin.String(home-familypname)],'prompt')</onclick>
-					<visible>!StringCompare(System.ProfileName,Skin.String(home-familypname))</visible>
-					<visible>Skin.HasSetting(home-familymode) + !StringCompare(System.ProfileName,$INFO[Skin.String(home-familypname)])</visible>
-				</item>-->
+					<icon>icon-fav.png</icon>
+					<thumb>icon-fav-blur1.png</thumb>
+					<label>31652</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<visible>Skin.HasSetting(home-favorites)</visible>
+				</item>
 				<item>
 					<icon>icon-settings.png</icon>
 					<thumb>icon-settings-blur1.png</thumb>
