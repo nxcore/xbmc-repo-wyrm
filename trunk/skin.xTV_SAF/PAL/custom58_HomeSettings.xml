@@ -219,36 +219,6 @@
 				<textoffsetx>10</textoffsetx>
 				<radioposx>450</radioposx>
 			</control>
-<!--			<control type="radiobutton" id="24">
-				<description>Family Mode Toggle</description>
-				<font>font13</font>
-				<width>480</width>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>31892</label>
-				<onclick>Skin.ToggleSetting(home-familymode)</onclick>
-				<selected>Skin.HasSetting(home-familymode)</selected>
-				<textcolor>button-text</textcolor>
-				<aligny>center</aligny>
-				<textoffsetx>10</textoffsetx>
-				<radioposx>450</radioposx>
-			</control>
-			<control type="button" id="25">
-				<description>Family Profile Name</description>
-				<font>font13</font>
-				<width>480</width>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<textwidth>480</textwidth>
-				<enable>Skin.HasSetting(home-familymode)</enable>
-				<label>31893</label>
-				<label2>$INFO[Skin.String(home-familypname)] </label2>
-				<onclick>XBMC.RunScript(special://skin/scripts/ProfileName.py)</onclick>
-				<textcolor>button-text</textcolor>
-				<disabledcolor>disabled-text</disabledcolor>
-				<aligny>center</aligny>
-				<textoffsetx>30</textoffsetx>
-			</control> -->
 			<control type="radiobutton" id="16">
 				<description>User Script On Home toggle</description>
 				<font>font13</font>
@@ -279,6 +249,21 @@
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
 				<textoffsetx>20</textoffsetx>
+			</control>
+			<control type="radiobutton" id="24">
+				<description>Favorites On Home toggle</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31833</label>
+				<textwidth>480</textwidth>
+				<onclick>Skin.ToggleSetting(home-favorites)</onclick>
+				<selected>Skin.HasSetting(home-favorites)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
+				<radioposx>450</radioposx>
 			</control>
 			<control type="radiobutton" id="22">
 				<description>Play Disc On Home toggle</description>
