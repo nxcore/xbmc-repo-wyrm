@@ -2,10 +2,14 @@
 - Added animated weather icons and updated the weather info screen
 - New media info flag graphics, Thanks Chip from over at http://community.mediabrowser.tv/
 - Changed font to Ubuntu font as previous fonts were not open source.
+- Added support for the default XBMC font to handle any characters not covered by the Ubuntu font
 - Fixed issue with background fanarts.
+- Added settings to select YouTube and 'Wake on Lan' script.
+- Favourites can now be added to home menu.
 - Major Performance boost with most view types, Thanks to Sharpe of Back-Row skin for suggestions.
 - Themes now available for ALL platforms, download and install from System menu . Thanks to Dan Dar3 for writing the new themes script.
 - Fixed a number of issues with volume level display.
+- Reduced the volume of in skin sounds to make them less intrusive.
 - This release is the first to make the xbmc addons repo.
 - Plus numerous minor bug fixes and graphical clean-ups.
 
