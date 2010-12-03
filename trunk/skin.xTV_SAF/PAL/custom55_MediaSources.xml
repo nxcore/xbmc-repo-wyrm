@@ -51,6 +51,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31852</label>
+				<enable>!Skin.HasSetting(movie-library)</enable>
 				<textwidth>250</textwidth>
 				<onclick>Skin.ToggleSetting(setdefault-moviesource)</onclick>
 				<selected>Skin.HasSetting(setdefault-moviesource)</selected>
@@ -97,6 +98,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31853</label>
+				<enable>!Skin.HasSetting(tv-library)</enable>
 				<textwidth>250</textwidth>
 				<onclick>Skin.ToggleSetting(setdefault-tvsource)</onclick>
 				<selected>Skin.HasSetting(setdefault-tvsource)</selected>
@@ -143,6 +145,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31854</label>
+				<enable>!Skin.HasSetting(musicvideo-library)</enable>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(setdefault-musicvideosource)</onclick>
 				<selected>Skin.HasSetting(setdefault-musicvideosource)</selected>
