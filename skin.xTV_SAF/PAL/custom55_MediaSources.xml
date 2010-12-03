@@ -194,7 +194,7 @@
 				<textwidth>450</textwidth>
 				<enable>Skin.HasSetting(wake-source)</enable>
 				<label>$LOCALIZE[31850]</label>
-				<label2>$INFO[Skin.String(wake-scriptpath)] </label2>
+				<label2>$INFO[Skin.String(wake-scriptpath)]</label2>
 				<haspath>true</haspath>
 				<onclick>Skin.SetFile(wake-scriptpath,.py)</onclick>
 				<textcolor>button-text</textcolor>
@@ -212,7 +212,7 @@
 				<textwidth>450</textwidth>
 				<enable>Skin.HasSetting(wake-source)</enable>
 				<label>$LOCALIZE[31850]</label>
-				<label2>$INFO[Skin.String(wake-scriptpath)] </label2>
+				<label2>$INFO[Skin.String(wake-scriptpath)]</label2>
 				<haspath>true</haspath>
 				<onclick>Skin.SetAddon(wake-scriptpath,xbmc.python.script)</onclick>
 				<textcolor>button-text</textcolor>
