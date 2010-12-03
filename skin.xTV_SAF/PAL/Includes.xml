@@ -86,8 +86,31 @@
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<visible>Skin.HasSetting(background-fanart) + ![IsEmpty(ListItem.Property(Fanart_Image))] + ![Skin.HasSetting(HomeViewToggle) + [Player.HasVideo]]</visible>
 		</control>
+		<!-- Following fanart hacks modified from Ronie's hacks in T! -->
 		<control type="image">
-			<description>dirty hack for (folder) fanart in programs pictures scripts</description>
+			<description>hack for (inside folder) fanart in programs pictures scripts</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<colordiffuse>fanart-background</colordiffuse>
+			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<visible>Skin.HasSetting(background-fanart) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+		</control>
+		<control type="image">
+			<description>hack for (inside folder) fanart in programs pictures scripts</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<colordiffuse>fanart-background</colordiffuse>
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+			<aspectratio>scale</aspectratio>
+			<visible>Skin.HasSetting(background-fanart) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+		</control>
+		<control type="image">
+			<description>hack for (folder) fanart in programs pictures scripts</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>720</width>
