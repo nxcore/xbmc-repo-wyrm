@@ -1,55 +1,55 @@
-<window type="dialog" id="105">
+<window id="105">
 	<defaultcontrol always="true">450</defaultcontrol>
-	<animation effect="fade" time="400">WindowOpen</animation>
-	<animation effect="fade" time="400">WindowClose</animation>
-	<coordinates>
-		<system>1</system>
-		<posx>25</posx>
-		<posy>0</posy>
-	</coordinates>
+	<allowoverlay>yes</allowoverlay>
 	<controls>
+		<include>background</include>
+		<include>Fake-Overlay</include>
+		
 		<control type="image">
-			<description>Favourites Dialog background image</description>
-			<posx>10</posx>
-			<posy>50</posy>
-			<width>390</width>
-			<height>506</height>
-			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
+			<description>Favourites Logo</description>
+			<include>icon-header-commons</include>
+			<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175">WindowClose</animation>
+			<animation effect="zoom" start="140,145,230,230"  end="470,14,64,64" time="175">WindowOpen</animation>
+			<texture>icon-fav-sml.png</texture>
 		</control>
-			<control type="label" id="1">
-			<description>Heading</description>
-			<posx>20</posx>
-			<posy>60</posy>
-			<width>370</width>
+		<control type="image">
+			<description>Favourites Logo Reflection</description>
+			<include>icon-header-reflect-commons</include>
+			<include>icon-reflection-ani</include>
+			<texture flipy="true" diffuse="fade.png">icon-fav-sml.png</texture>
+		</control>
+
+		<control type="label">
+			<description>Favourites Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<width>170</width>
 			<label>$LOCALIZE[1036]</label>
-			<align>center</align>
+			<font>font20</font>
+			<style>bold</style>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<include>list-fade</include>
 		</control>
-		<control type="image">
-			<description>separator image</description>
-			<posx>20</posx>
-			<posy>85</posy>
-			<width>370</width>
-			<height>5</height>
-			<texture>separator.png</texture>
-		</control>
+
 		<control type="group">
 			<control type="list" id="450">
-			<posx>20</posx>
-			<posy>95</posy>
-			<width>370</width>
-			<height>420</height>
+				<posx>405</posx>
+				<posy>90</posy>
+				<width>285</width>
+				<height>420</height>
 				<onleft>1</onleft>
 				<onright>10</onright>
 				<onup>450</onup>
 				<ondown>450</ondown>
 				<scrolltime>200</scrolltime>
+				<pagecontrol>23</pagecontrol>
 				<itemlayout height="32">
 					<control type="label">
 						<posx>10</posx>
 						<posy>0</posy>
-						<width>328</width>
-						<height>32</height>
+						<width>254</width>
+						<height>37</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -60,8 +60,8 @@
 				</itemlayout>
 				<focusedlayout height="32">
 					<control type="image">
-						<width>348</width>
-						<height>32</height>
+						<width>285</width>
+						<height>37</height>
 						<posx>0</posx>
 						<posy>0</posy>
 						<texture>default-button.png</texture>
@@ -69,8 +69,8 @@
 					<control type="label">
 						<posx>10</posx>
 						<posy>0</posy>
-						<width>328</width>
-						<height>32</height>
+						<width>254</width>
+						<height>37</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -81,6 +81,61 @@
 					</control>
 				</focusedlayout>
 			</control>
+		</control>
+		<control type="group">
+			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
+				<effect type="rotatey" start="-20" end="-20" time="0"/>
+				<effect type="slide" end="10,0" time="0"/>
+			</animation>
+			<control type="image">
+				<description>list item icon</description>
+				<posx>20</posx>
+				<posy>125</posy>
+				<width>345</width>
+				<height>345</height>
+				<texture fallback="shut-fav.png" background="true" diffuse="RndVideoMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<aspectratio>keep</aspectratio>
+				<include>list-fade</include>
+			</control>
+			<control type="image">
+				<description>list item icon reflection</description>
+				<posx>20</posx>
+				<posy>470</posy>
+				<width>345</width>
+				<height>345</height>
+				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<aspectratio>keep</aspectratio>
+				<include>list-fade</include>
+			</control>
+		</control>
+		<control type="label" id="12">
+			<description>number of files text label</description>
+			<posx>600</posx>
+			<posy>546</posy>
+			<align>left</align>
+			<label>$INFO[Container(450).NumItems] $LOCALIZE[127]</label>
+			<font>font13</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<include>list-fade</include>
+		</control>
+		<control type="scrollbar" id="23">
+			<posx>700</posx>
+			<posy>90</posy>
+			<width>14</width>
+			<height>448</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>2</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>
 </window>
