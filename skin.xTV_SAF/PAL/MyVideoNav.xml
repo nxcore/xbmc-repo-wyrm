@@ -7,22 +7,6 @@
 		<include>Fake-Overlay</include>
 		<include>#files</include>
 		
-		<control type="button" id="1">
-			<description>run WOL script</description>
-			<onfocus>XBMC.RunScript($INFO[Skin.String(wake-scriptpath)])</onfocus>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(wake-source)</visible>
-		</control>
-		<control type="button" id="1">
-			<description>run WOL script</description>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(wake-source)</visible>
-		</control>
-		
 		<control type="image">
 			<description>Default xTV Logo</description>
 			<posx>485</posx>
@@ -132,7 +116,23 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 <!--	<include>LetterNav</include> -->
 		<include>PageControl</include>
-
+		
+		<control type="button" id="1">
+			<description>run WOL script</description>
+			<onfocus>XBMC.RunScript($INFO[Skin.String(wake-scriptpath)])</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(wake-source)</visible>
+		</control>
+		<control type="button" id="1">
+			<description>run WOL script</description>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(wake-source)</visible>
+		</control>
+		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
 			<control type="image">
