@@ -2,7 +2,7 @@
 <addon
   id="skin.xtv-saf"
   version="1.0.0"
-  name="xTV SAF"
+  name="xTV-SAF"
   provider-name="Wyrm">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
