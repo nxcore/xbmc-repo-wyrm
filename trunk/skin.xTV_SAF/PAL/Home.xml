@@ -341,7 +341,7 @@
 					<thumb>shut-power-blur1.png</thumb>
 					<label>31038</label>
 					<onclick>XBMC.ShutDown()</onclick>
-					<visible>!Skin.HasSetting(home-shutdown)</visible>
+					<visible>Skin.HasSetting(home-shutdown)</visible>
 				</item>
 			</content>
 		</control>

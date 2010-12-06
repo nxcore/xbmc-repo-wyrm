@@ -304,7 +304,7 @@
 				<label>31826</label>
 				<textwidth>480</textwidth>
 				<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
-				<selected>!Skin.HasSetting(home-shutdown)</selected>
+				<selected>Skin.HasSetting(home-shutdown)</selected>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
