@@ -126,7 +126,7 @@
 			<visible>Skin.HasSetting(wake-source)</visible>
 		</control>
 		<control type="button" id="1">
-			<description>run WOL script</description>
+			<description>bypass running of WOL script</description>
 			<onfocus>SetFocus(50)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
