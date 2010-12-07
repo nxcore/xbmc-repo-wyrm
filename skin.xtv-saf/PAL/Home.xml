@@ -110,7 +110,7 @@
 			<width>70</width>
 			<height>70</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
-			<timeperimage>100</timeperimage>
+			<timeperimage>200</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
 			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
