@@ -280,7 +280,7 @@
 					<icon>icon-youtube.png</icon>
 					<thumb>icon-youtube-blur1.png</thumb>
 					<label>31037</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(youtube-scriptpath)])</onclick>
+					<onclick>ActivateWindow(VideoLibrary,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
 					<visible>Skin.HasSetting(home-youtube)</visible>
 				</item> 
 				<item>
