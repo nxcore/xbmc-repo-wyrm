@@ -190,6 +190,27 @@
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
+				<visible>!System.Platform.xbox</visible>
+			</control>
+			<control type="button" id="5">
+				<description>Instal Themes</description>
+				<font>font13</font>
+				<posx>405</posx>
+				<posy>285</posy>
+				<width>285</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31835</label>
+				<onclick>RunScript(special://skin/scripts/ThemeInstaller.py , http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBoxThemes/)</onclick>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>6</onup>
+				<ondown>1</ondown>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+				<visible>System.Platform.xbox</visible>
 			</control>
 		</control>
 	</controls>
