@@ -159,6 +159,12 @@ def install_local_theme( theme ) :
                 outfile = open( os.path.join( SKIN_MEDIA_PATH, zip_entry ), "wb" )
                 outfile.write ( zip.read( zip_entry ) )
                 outfile.close()
+                
+            # XBT - skin/media
+            elif zip_entry == "%s.xbt" % theme :
+                outfile = open( os.path.join( SKIN_MEDIA_PATH, zip_entry ), "wb" )
+                outfile.write ( zip.read( zip_entry ) )
+                outfile.close()
         
         # Close zip...
         zip.close()
