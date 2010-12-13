@@ -104,7 +104,7 @@
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar) + SubString(Container.Viewmode,Wrap,Left)</visible>
+			<visible>Skin.HasSetting(sbar) + Control.IsVisible(54)</visible>
 		</control>
 		<!-- Go Back -->
 		<control type="label">
