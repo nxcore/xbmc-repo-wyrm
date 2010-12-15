@@ -91,7 +91,7 @@
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(3).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -99,7 +99,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -115,7 +115,7 @@
 					<posy>0</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -123,7 +123,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -139,7 +139,7 @@
 					<posy>0</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -147,7 +147,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -163,7 +163,7 @@
 					<posy>0</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -171,7 +171,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 					<aspectratio align="left" aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -193,7 +193,7 @@
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -201,7 +201,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -217,7 +217,7 @@
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -225,7 +225,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -241,7 +241,7 @@
 					<posy>0</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -249,7 +249,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 					<aspectratio align="left" aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -265,7 +265,7 @@
 					<posy>0</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -273,7 +273,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -291,7 +291,7 @@
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -299,7 +299,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -313,7 +313,7 @@
 					<posy>0</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -321,7 +321,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -335,7 +335,7 @@
 					<posy>0</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" diffuse="RndVideoMask.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+					<texture background="true" diffuse="RndRectMask.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -343,7 +343,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture background="true" flipy="true" diffuse="fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+					<texture background="true" flipy="true" diffuse="RndFade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 					<aspectratio align="left" aligny="top">keep</aspectratio>
 				</control>
 			</control>

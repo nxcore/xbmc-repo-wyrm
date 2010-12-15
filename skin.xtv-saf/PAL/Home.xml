@@ -369,7 +369,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(3).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -394,7 +394,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(2).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -419,7 +419,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(1).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -444,7 +444,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(0).ActualIcon</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -474,7 +474,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(2).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -499,7 +499,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(1).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -524,7 +524,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(0).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -549,7 +549,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(-1).ActualIcon</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -576,7 +576,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(2).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -599,7 +599,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(1).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -622,7 +622,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="fade.png" />
+					<texture flipy="true" diffuse="RndFade.png" />
 					<info>Container(5).Listitem(0).ActualIcon</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>

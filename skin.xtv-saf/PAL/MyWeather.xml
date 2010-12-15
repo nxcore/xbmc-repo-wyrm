@@ -15,7 +15,7 @@
 			<description>Weather Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">icon-weather.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">icon-weather.png</texture>
 			<visible>Skin.HasSetting(home-weather)</visible>
 		</control>
 		<control type="label">

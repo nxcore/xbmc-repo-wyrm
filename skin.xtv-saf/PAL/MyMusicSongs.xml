@@ -16,7 +16,7 @@
 			<description>Music Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">icon-music.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">icon-music.png</texture>
 		</control>
 		<control type="label">
 			<description>Music Label</description>

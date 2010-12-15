@@ -35,7 +35,7 @@
 					<posy>440</posy>
 					<width>140</width>
 					<height>140</height>
-					<texture flipy="true" diffuse="fade.png">-</texture>
+					<texture flipy="true" diffuse="RndFade.png">-</texture>
 					<info>ListItem.Icon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -54,7 +54,7 @@
 					<posy>440</posy>
 					<width>370</width>
 					<height>370</height>
-					<texture flipy="true" diffuse="fade.png">-</texture>
+					<texture flipy="true" diffuse="RndFade.png">-</texture>
 					<aspectratio>keep</aspectratio>
 					<info>ListItem.Icon</info>
 				</control>
