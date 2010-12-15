@@ -43,6 +43,20 @@
 			<font>font13</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
+		<!-- low free memory label -->
+		<control type="label">
+			<description>low free memory label</description>
+			<posx>200</posx>
+			<posy>70</posy>
+			<width>320</width>
+			<height>20</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font13</font>
+			<textcolor>warning-text</textcolor>
+			<label>[B]Memory low[/B]: $INFO[System.FreeMemory]</label>
+			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
+		</control>
 		<!-- main logo and label-->
 		<control type="image">
 			<description>xTV Logo</description>
