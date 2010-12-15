@@ -35,7 +35,7 @@
 			<width>350</width>
 			<height>350</height>
 			<info>ListItem.Icon</info>
-			<texture flipy="true" diffuse="fade.png">-</texture>
+			<texture flipy="true" diffuse="RndFade.png">-</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50)</visible>
 		</control>

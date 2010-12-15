@@ -22,7 +22,7 @@
 			<description>Default xTV Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">home-logo.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">home-logo.png</texture>
 			<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
 		</control>
 
@@ -37,7 +37,7 @@
 			<description>Movies Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">icon-video.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">icon-video.png</texture>
 			<visible>Container.Content(movies)</visible>
 		</control>
 		<control type="label">
@@ -64,7 +64,7 @@
 			<description>TV Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">icon-tv.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">icon-tv.png</texture>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
 		<control type="label">
@@ -91,7 +91,7 @@
 			<description>Music Videos Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">icon-musicvideo.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">icon-musicvideo.png</texture>
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
 		<control type="label">

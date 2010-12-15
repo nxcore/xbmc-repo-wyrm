@@ -110,7 +110,7 @@
 			<posy>362</posy>
 			<width>256</width>
 			<height>256</height>
-			<texture fallback="unknown-user.png" flipy="true" diffuse="fade.png">$INFO[Container(2).ListItem.Icon]</texture>
+			<texture fallback="unknown-user.png" flipy="true" diffuse="RndFade.png">$INFO[Container(2).ListItem.Icon]</texture>
 			<aspectratio>keep</aspectratio>
 		</control>
 		<control type="fadelabel" id="3">

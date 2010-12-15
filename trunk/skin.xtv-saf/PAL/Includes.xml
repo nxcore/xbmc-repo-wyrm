@@ -221,7 +221,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="RndVideoMask.png" border="3">-</texture>
+				<texture background="true" diffuse="RndRectMask.png" border="3">-</texture>
 				<info>ListItem.Icon</info>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
@@ -234,7 +234,7 @@
 				<width>345</width>
 				<height>345</height>
 				<info>ListItem.Icon</info>
-				<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="3">-</texture>
+				<texture background="true" flipy="true" diffuse="RndFade.png" border="3">-</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 				<visible>Skin.HasSetting(Fanart) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
@@ -247,7 +247,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="RndVideoMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture background="true" diffuse="RndRectMask.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
@@ -258,7 +258,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture background="true" flipy="true" diffuse="RndFade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
@@ -271,7 +271,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" diffuse="RndVideoMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTvshows.png" background="true" diffuse="RndRectMask.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -282,7 +282,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="RndFade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -295,7 +295,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="RndVideoMask.png" border="3">DefaultTvshows.png</texture>
+				<texture background="true" diffuse="RndRectMask.png" border="3">DefaultTvshows.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -306,7 +306,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="3">DefaultTvshows.png</texture>
+				<texture background="true" flipy="true" diffuse="RndFade.png" border="3">DefaultTvshows.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -320,7 +320,7 @@
 				<height>345</height>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" diffuse="RndVideoMask.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" diffuse="RndRectMask.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
@@ -330,7 +330,7 @@
 				<height>345</height>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" flipy="true" diffuse="RndFade.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 		</control>
@@ -471,7 +471,7 @@
 		<animation effect="slide" end="0,450" time="200">WindowClose</animation>
 	</include>
 	<include name="list-fade">
-		<animation effect="fade" start="0" delay="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
+		<animation effect="fade" start="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
 		<animation effect="fade" start="0" time="10" condition="Window.Next(Home)">WindowClose</animation>
 	</include>
 	<include name="screen-fade">

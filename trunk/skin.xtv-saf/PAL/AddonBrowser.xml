@@ -55,7 +55,7 @@
 			<posy>347</posy>
 			<width>256</width>
 			<height>256</height>
-			<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png">DefaultAddon.png</texture>
+			<texture background="true" flipy="true" diffuse="RndFade.png">DefaultAddon.png</texture>
 			<info>ListItem.Icon</info>
 			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
@@ -82,7 +82,7 @@
 			<posy>347</posy>
 			<width>256</width>
 			<height>256</height>
-			<texture background="true" flipy="true" diffuse="RndVideoMaskFade.png">DefaultAddon.png</texture>
+			<texture background="true" flipy="true" diffuse="RndFade.png">DefaultAddon.png</texture>
 			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>

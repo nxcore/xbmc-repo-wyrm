@@ -17,7 +17,7 @@
 			<description>Favourites Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="fade.png">icon-fav-sml.png</texture>
+			<texture flipy="true" diffuse="RndFade.png">icon-fav-sml.png</texture>
 		</control>
 
 		<control type="label">
@@ -94,7 +94,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="shut-fav.png" background="true" diffuse="RndVideoMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="shut-fav.png" background="true" diffuse="RndRectMask.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 			</control>
@@ -104,7 +104,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="RndVideoMaskFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="RndFade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 			</control>
