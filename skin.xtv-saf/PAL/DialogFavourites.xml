@@ -2,6 +2,7 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+		<include>fadebackground</include>
 		<include>background</include>
 		<include>Fake-Overlay</include>
 		
@@ -9,7 +10,7 @@
 			<description>Favourites Logo</description>
 			<include>icon-header-commons</include>
 			<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175">WindowClose</animation>
-			<animation effect="zoom" start="140,145,230,230"  end="470,14,64,64" time="175">WindowOpen</animation>
+			<animation effect="zoom" start="140,145,230,230" end="470,14,64,64" time="175">WindowOpen</animation>
 			<texture>icon-fav-sml.png</texture>
 		</control>
 		<control type="image">
