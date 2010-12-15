@@ -471,7 +471,7 @@
 		<animation effect="slide" end="0,450" time="200">WindowClose</animation>
 	</include>
 	<include name="list-fade">
-		<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
+		<animation effect="fade" start="0" delay="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
 		<animation effect="fade" start="0" time="10" condition="Window.Next(Home)">WindowClose</animation>
 	</include>
 	<include name="screen-fade">
