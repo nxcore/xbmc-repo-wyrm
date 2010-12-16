@@ -120,7 +120,7 @@
 			</control>
 			<control type="grouplist">
 				<posx>20</posx>
-				<posy>90</posy>
+				<posy>95</posy>
 				<width>315</width>
 				<height>480</height>
 				<itemgap>2</itemgap>

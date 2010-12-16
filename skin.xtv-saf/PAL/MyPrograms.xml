@@ -46,7 +46,9 @@
 			<texture flipy="true" diffuse="RndFade.png">-</texture>
 			<visible>Control.IsVisible(50)</visible>
 		</control>
-		
+
+		<include>memory-low</include>
+
 		<include>ListView</include>
 		<include>ListView-Icon</include>
 		<include condition="!Skin.HasSetting(views-programlist2)">List2</include>

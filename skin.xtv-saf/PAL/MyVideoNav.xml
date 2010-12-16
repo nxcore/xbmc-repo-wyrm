@@ -107,6 +107,8 @@
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
 
+		<include>memory-low</include>
+
 		<include>ListView-Icon</include>
 		<include>ListView</include>
 		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
