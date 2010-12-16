@@ -38,6 +38,7 @@
 			<height>576</height>
 			<colordiffuse>solid-background</colordiffuse>
 			<texture>background.png</texture>
+			<visible>!Skin.HasSetting(background-fanart) + [IsEmpty(ListItem.Property(Fanart_Image))]</visible>
 		</control>
 		<control type="visualisation">
 			<posx>0</posx>
@@ -149,6 +150,22 @@
 			<textcolor>info-text</textcolor>
 			<titlecolor>rss-title-text</titlecolor>
 			<headlinecolor>rss-headline-text</headlinecolor>
+		</control>
+	</include>
+
+	<!-- Begin Low free memory include -->
+	<include name="memory-low">
+		<control type="label">
+			<description>low free memory label</description>
+			<posx>200</posx>
+			<posy>60</posy>
+			<width>320</width>
+			<height>30</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font18</font>
+			<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
+			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
 		</control>
 	</include>
 

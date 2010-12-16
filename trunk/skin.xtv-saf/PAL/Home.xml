@@ -24,7 +24,7 @@
 		<control type="label">
 			<description>Date</description>
 			<posx>200</posx>
-			<posy>20</posy>
+			<posy>15</posy>
 			<width>320</width>
 			<height>20</height>
 			<label>$INFO[system.Date]</label>
@@ -35,7 +35,7 @@
 		<control type="label">
 			<description>Time and Date</description>
 			<posx>200</posx>
-			<posy>45</posy>
+			<posy>40</posy>
 			<width>320</width>
 			<height>20</height>
 			<label>$INFO[system.Time(hh:mm xx)]</label>
@@ -43,20 +43,9 @@
 			<font>font13</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
-		<!-- low free memory label -->
-		<control type="label">
-			<description>low free memory label</description>
-			<posx>200</posx>
-			<posy>70</posy>
-			<width>320</width>
-			<height>20</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font13</font>
-			<textcolor>warning-text</textcolor>
-			<label>[B]Memory low[/B]: $INFO[System.FreeMemory]</label>
-			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
-		</control>
+
+		<include>memory-low</include>
+
 		<!-- main logo and label-->
 		<control type="image">
 			<description>xTV Logo</description>

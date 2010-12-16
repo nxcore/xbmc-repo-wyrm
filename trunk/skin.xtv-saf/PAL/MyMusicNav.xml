@@ -145,6 +145,8 @@
 			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
 		</control>
 
+		<include>memory-low</include>
+
 		<include>ListView</include>
 		<include condition="!Skin.HasSetting(views-musiclist2)">List2</include>
 		<include condition="!Skin.HasSetting(views-musicwrap)">AlbumWrapView</include>

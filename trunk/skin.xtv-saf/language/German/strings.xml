@@ -100,6 +100,7 @@
 	<string id="31569">XBox</string>
 	<string id="31570">Mac OS X</string>
 	<string id="31571">Memory in Gebrauch:</string>
+	<string id="31571">Warnung Speicher Niedrig:</string>
 
 	<!-- Fontset names -->
 	<string id="31575">Standard</string>
