@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!--  strings 31000 thru 31999 reserved for skins  -->
+
+<strings>
+	<!-- Start startup strings 31001 - 31025-->
+	<string id="31001">Utilice Lista de inicio</string>
+	<string id="31002">Seleccione Lista de reproducción</string>
+	<string id="31003">Utilice Intro Video</string>
+	<string id="31004">Intro Archivo :</string>
+	<!-- End startup strings -->
+
+	<!-- Start home strings 31026 - 31125-->
+	<string id="31026">Películas</string>
+	<string id="31027">TV Shows</string>
+	<string id="31028">Música Videos</string>
+	<string id="31029">Programas</string>
+	<string id="31030">Música</string>
+	<string id="31031">Fotos</string>
+	<string id="31032">Tiempo</string>
+	<string id="31033">Archivos</string>
+	<string id="31034">Scripts</string>
+	<string id="31035">Configuración</string>
+	<string id="31036">Reproducir disco</string>
+	<string id="31037">YouTube</string>	
+	<string id="31038">Salir</string>
+	<!-- End home strings -->
+
+	<!-- Start video strings 31126 - 31225-->
+	<string id="31126">Movie Trailers</string>
+	<string id="31127">Director:</string>
+	<string id="31128">Hora actual: </string>
+	<string id="31129">Hora de finalización: </string>
+	<!-- End video strings -->
+
+	<!-- Start music strings 31226 -31325-->
+	<string id="31226">CDDB</string>
+	<string id="31227">Playlist Editor</string>
+	<string id="31228">Info Song</string>
+	<string id="31229">Rating</string>
+	<string id="31230">Artista:</string>
+	<string id="31231">Género:</string>
+	<string id="31232">Año:</string>
+	<!-- End music strings -->
+
+	<!-- Start photo strings 31326 - 31425-->
+	<!-- End photo strings -->
+
+	<!-- Start programs/script strings 31426 - 31525-->
+	<string id="31426">Gamesaves</string>
+    <string id="31427">Señal por defecto</string>
+ 	<string id="31428">Temas xTV</string>
+	<string id="31429">Tema instalado</string>
+	<string id="31430">Tema ya existe.</string>
+	<string id="31431">No temas encontrados.</string>
+	<string id="31432">Descargar Tema:</string>
+	<string id="31433">Descargar Completo</string>
+	<string id="31434">Descarga cancelada</string>
+	<string id="31435">Descargar abortadas</string>
+	<string id="31436">Ir a Ajustes de aspecto para aplicar el tema.</string>
+	<string id="31437">Error al tema de descarga desde el servidor de.</string>
+	<string id="31438">No puedo conectar al servidor.</string>
+	<string id="31439">Compruebe la conexión o inténtelo de nuevo más tarde.</string>
+	<!-- End script strings -->
+
+	<!-- Begin weather strings 31526 - 31550-->
+	<string id="31526">Alto</string>
+	<string id="31527">Bajo</string>
+	<string id="31528">Actual</string>
+	<string id="31529">Temperatura</string>
+	<!-- End weather strings -->
+
+	<!-- Start system strings 31551 - 31650 -->
+	<string id="31551">Sistema</string>
+	<string id="31552">Administrador de Archivos</string>
+	<string id="31553">Scripts</string>
+	<string id="31554">Gamesaves</string>
+	<string id="31555">Perfiles</string>
+	<string id="31556">Configuración de la piel</string>
+	<string id="31557">Acerca de xTV</string>
+	<string id="31558">Power Menu</string>
+	<string id="31559">Sistema de Información de</string>
+	<string id="31560">Apoyar</string>
+	<string id="31561">XBMC Construir:</string>
+	<string id="31562">XBMC Fecha de la compilación:</string>
+	<string id="31563">Versión de la piel:</string>
+	<string id="31564">Tema actual:</string>
+	<string id="31565">Modo de pantalla:</string>
+	<string id="31566">Plataforma de Sistemas:</string>
+	<string id="31567">Linux</string>
+	<string id="31568">MS Windows</string>
+	<string id="31569">XBox</string>
+	<string id="31570">Mac OS X</string>	
+	<!-- End system strings -->
+
+	<!-- Begin Misc. strings 31651 - 31800 -->
+	<string id="31651">Muted</string>
+	<string id="31652">Favoritos</string>
+	<string id="31653">Salir XBMC</string>
+
+	<string id="31655">Configuración</string>
+	<string id="31656">Letras</string>
+	<string id="31657">Presets</string>
+	<string id="31658">Visuals</string>
+	<string id="31659">Lista de reproducción</string>
+	<string id="31660">Pausa</string>
+	<string id="31661">Jugar</string>
+	<string id="31662">Pausa</string>
+	<string id="31663">|-Saltar</string>
+	<string id="31664">Saltar-|</string>
+	<string id="31665">Rebobinar</string>
+	<string id="31666">Rebobinar-2x</string>
+	<string id="31667">Rebobinar-4x</string>
+	<string id="31668">Rebobinar-8x</string>
+	<string id="31669">Rebobinar-16x</string>
+	<string id="31670">Rebobinar-32x</string>
+	<string id="31671">Adelantar</string>
+	<string id="31672">Adelantar-2x</string>
+	<string id="31673">Adelantar-4x</string>
+	<string id="31674">Adelantar-8x</string>
+	<string id="31675">Adelantar-16x</string>
+	<string id="31676">Adelantar-32x</string>
+	
+	<string id="31685">No se puede ejecutar con esta versión de XBMC, actualización necesaria</string>
+	<string id="31686">XBMCScripts</string>
+	<string id="31687">Movie Trailers</string>	
+	<!-- End Misc. strings -->
+
+	<!-- Begin skin settings strings 31801 - 31999 -->
+	<string id="31801">Utilice la barra de desplazamiento</string>
+	<string id="31838">Utilice Letterbar</string>
+	<string id="31802">Uso de superposiciones de Medios de Comunicación</string>
+	<string id="31803">Uso de superposiciones vistos Estado</string>
+	<string id="31804">Utilice Now Playing Pantallas</string>
+	<string id="31823">Habilitar el desplazamiento automático</string>
+	<string id="31824">Mostrar Fanart</string>
+	<string id="31845">Mostrar la caja del DVD</string>
+	<string id="31846">Mostrar la caja de CD</string>
+	<string id="31805">Cambiar el color</string>
+	<string id="31806">Now Playing Visuales Estilo</string>
+	<string id="31807">Seleccione Personalizado Antecedentes</string>
+	<string id="31808">Perdí mi Custom Antecedentes</string>
+	<string id="31809">Visuals utilizar como fondo</string>
+
+	<string id="31810">Películas Button Links a la biblioteca</string>
+	<string id="31811">TV Botón Enlaces a Biblioteca</string>
+	<string id="31847">Music Video Button Links a la Biblioteca</string>
+	
+	<string id="31841">Inicio</string>
+	<string id="31813">General</string>
+	<string id="31814">Fondo</string>
+	<string id="31815">Inicio Ventana</string>
+	<string id="31831">Los medios de comunicación</string>
+	<string id="31812">Descargar temas</string>
+	<string id="31820">Información</string>
+	<string id="31834">Vistas</string>	
+
+	<string id="31816">Inclinación de lista Vista de iconos</string>
+	<string id="31840">Tilt Ver Wall</string>
+	<string id="31817">Lock "Ver como" Grupo</string>
+
+	<string id="31843">Películas en Menú Inicio</string>
+	<string id="31844">En el Menú Inicio de TV</string>
+	<string id="31842">Videos Musicales en Menú Inicio</string>
+	<string id="31827">Música en Menú Inicio</string>
+	<string id="31828">Programas en el Menú Inicio</string>
+	<string id="31848">Scripts en Menú Inicio</string>
+	<string id="31829">Fotos en el Menú Inicio</string>
+	<string id="31830">Script de usuario en Menú Inicio</string>
+	<string id="31821">YouTube en el Menú Inicio</string>
+	<string id="31822">El tiempo en Menú Inicio</string>
+	<string id="31825">Tiempo en el Menú Inicio</string>
+	<string id="31826">Salir de Menú Inicio</string>
+	<string id="31832">Clima actual El Menú Inicio</string>
+	<string id="31890">Escuchar disco en Menú Inicio</string>
+
+	<string id="31850">Script :</string>
+
+	<string id="31852">Predeterminar película de origen</string>
+    <string id="31853">Predeterminar la fuente de TV</string>
+	<string id="31854">Predeterminar Music Video fuente</string>
+	<string id="31855">Fuente :</string>
+	
+	<string id="31900">Video Vistas</string> 
+	<string id="31901">Música Vistas</string> 
+	<string id="31902">Reproducciones de fotos</string>
+	<string id="31903">Script / Programa de Visitas</string>
+	<string id="31904"> (Haz click para ampliar)</string>
+	
+	<string id="31921">Ocultar "Lista2" Ver</string>
+	<string id="31922">Ocultar "Wrap" Ver</string> 
+	<string id="31923">Ocultar "iconos" vista</string> 
+	<string id="31924">Ocultar "Big iconos" vista</string>
+	<string id="31925">Ocultar "Wide iconos" vista</string> 
+	<string id="31926">Ocultar "Big Wide" Ver</string>
+	<string id="31927">Ocultar "muro", ver</string>
+	<string id="31928">Ocultar "Coverflow" Ver</string> 
+	<!-- End skin settings strings -->
+</strings>

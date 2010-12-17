@@ -1,0 +1,736 @@
+<window id="2003">
+	<defaultcontrol>7050</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
+	<controls>
+		<include>background</include>
+		<control type="button" id="7050">
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>999</onleft>
+			<onright>999</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+		</control>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>40</posy>
+			<!-- Star Rating -->
+			<control type="image">
+				<posx>90</posx>
+				<posy>0</posy>
+				<width>122</width>
+				<height>22</height>
+				<info>ListItem.StarRating</info>
+				<colordiffuse>StarDiffuse</colordiffuse>
+				<visible>!IsEmpty(ListItem.StarRating)</visible>
+			</control>
+			<!-- Studio -->
+			<control type="image">
+				<posx>216</posx>
+				<posy>-29</posy>
+				<width>80</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<colordiffuse>StudioShadow</colordiffuse>
+				<aspectratio>keep</aspectratio>
+				<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+				<visible>!IsEmpty(ListItem.Studio)</visible>
+			</control>
+			<control type="image">
+				<posx>215</posx>
+				<posy>-30</posy>
+				<width>80</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<colordiffuse>StudioDiffuse</colordiffuse>
+				<aspectratio>keep</aspectratio>
+				<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+				<visible>!IsEmpty(ListItem.Studio)</visible>
+			</control>
+			<!-- Title -->
+			<control type="fadelabel">
+				<posx>300</posx>
+				<posy>-10</posy>
+				<width>400</width>
+				<scrollout>false</scrollout>
+				<pauseatend>200</pauseatend>
+				<scrollspeed>20</scrollspeed>
+				<font>font22</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<info>ListItem.Title</info>
+			</control>
+			<!-- MPAA Rating -->
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/mpaa_restricted.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated R,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/mpaa_pg13.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/mpaa_pg.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/mpaa_nc17.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/mpaa_general.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
+			</control>
+			<!-- UK Ratings -->
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/bbfc_u.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:U)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/bbfc_pg.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:PG)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/bbfc_12.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:12)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/bbfc_15.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:15)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:18)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,UK:X)</visible>
+			</control>
+			<!-- German Ratings -->
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/FSK-0_info.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:0) | substring(listitem.mpaa,o.A)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/FSK-6_info.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:6) | substring(listitem.mpaa,ab 6)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/FSK-12_info.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:12) | substring(listitem.mpaa,ab 12)</visible>
+				</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/FSK-16_info.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:16) | substring(listitem.mpaa,ab 16)</visible>
+				</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/FSK-18_info.png</texture>
+				<colordiffuse>InfoRating</colordiffuse>
+				<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
+			</control>
+			<!-- Australian Ratings -->
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/australia_r.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:R)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/australia_m.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:M) + ! substring(listitem.mpaa,Australia:MA)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/australia_ma.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:MA)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/australia_pg.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:PG)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/australia_g.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,Australia:G)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="image">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>left</align>
+				<texture>$INFO[listitem.mpaa,special://skin/extras/images/rating/,.png]</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>substring(listitem.mpaa,TV-,Left)</visible>
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<control type="label">
+				<posx>300</posx>
+				<posy>45</posy>
+				<width>125</width>
+				<height>50</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[B]RATING[CR]$LOCALIZE[13205][/B]</label>
+				<visible>IsEmpty(listitem.mpaa)</visible>
+			</control>
+			<!-- Duration -->
+			<control type="label">
+				<posx>435</posx>
+				<posy>50</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<info>ListItem.Duration</info>
+				<visible>substring(listitem.Duration,hrs)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<control type="label">
+				<posx>435</posx>
+				<posy>50</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<info>ListItem.Duration</info>
+				<visible>substring(listitem.Duration,min)</visible>
+				<visible>!substring(listitem.Duration,hrs)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<control type="label">
+				<posx>435</posx>
+				<posy>50</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$INFO[ListItem.Duration,, mins]</label>
+				<visible>!substring(listitem.Duration,min)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<control type="label">
+				<posx>435</posx>
+				<posy>50</posy>
+				<width>150</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[B]$LOCALIZE[2050][CR]$LOCALIZE[13205][/B]</label>
+				<visible>IsEmpty(listitem.Duration)</visible>
+			</control>
+			<!-- Year -->
+			<control type="label">
+				<posx>600</posx>
+				<posy>50</posy>
+				<width>100</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<info>ListItem.Year</info>
+			</control>
+			<!-- Genre -->
+			<control type="label">
+				<posx>300</posx>
+				<posy>100</posy>
+				<width>150</width>
+				<height>30</height>
+				<font>font18</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>$LOCALIZE[31133]</label>
+				<textoffsetx>0</textoffsetx>
+			</control>
+			<control type="label">
+				<posx>435</posx>
+				<posy>100</posy>
+				<width>255</width>
+				<height>30</height>
+				<font>font13</font>
+				<align>left</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>$INFO[ListItem.Genre]</label>
+				<textoffsetx>0</textoffsetx>
+			</control>
+			<!-- Director -->
+			<control type="label">
+				<posx>300</posx>
+				<posy>154</posy>
+				<width>150</width>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[31130]</label>
+			</control>
+			<control type="label">
+				<posx>435</posx>
+				<posy>154</posy>
+				<width>255</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label fallback="161">$INFO[ListItem.Director]</label>
+			</control>
+			<!-- Writer -->
+			<control type="label">
+				<posx>300</posx>
+				<posy>178</posy>
+				<width>150</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$LOCALIZE[31131]</label>
+			</control>
+			<control type="label">
+				<posx>435</posx>
+				<posy>178</posy>
+				<width>255</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label fallback="161">$INFO[ListItem.Writer]</label>
+			</control>
+			<!-- Plot -->
+			<control type="label">
+				<posx>300</posx>
+				<posy>212</posy>
+				<width>150</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[B]$LOCALIZE[207][/B]</label>
+				<visible>!substring(Control.GetLabel(5),plot)</visible>
+			</control>
+			<control type="textbox">
+				<posx>300</posx>
+				<posy>234</posy>
+				<width>370</width>
+				<height>236</height>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<visible>!substring(Control.GetLabel(5),plot)</visible>
+				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
+			</control>
+			<control type="image" id="3">
+				<description>Cover image</description>
+				<posx>10</posx>
+				<posy>50</posy>
+				<width>280</width>
+				<height>370</height>
+				<texture>-</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>!substring(Control.GetLabel(5),plot)</visible>
+			</control>
+			<!-- Cast -->
+			<control type="label">
+				<posx>300</posx>
+				<posy>212</posy>
+				<width>150</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[B]$LOCALIZE[206][/B]</label>
+				<visible>substring(Control.GetLabel(5),plot)</visible>
+			</control>
+			<control type="list" id="50">
+				<posx>300</posx>
+				<posy>234</posy>
+				<width>400</width>
+				<height>230</height>
+				<onleft>999</onleft>
+				<onright>999</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<viewtype label="">list</viewtype>
+				<pagecontrol>23</pagecontrol>
+				<include>list-fade</include>
+				<scrolltime>1</scrolltime>
+				<orientation>vertical</orientation>
+				<itemgap>7</itemgap>
+				<itemlayout height="32" width="370">
+					<control type="image">
+						<width>370</width>
+						<height>30</height>
+						<posx>0</posx>
+						<posy>1</posy>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>3</posy>
+						<width>340</width>
+						<height>37</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="32" width="370">
+					<control type="image">
+						<posx>2</posx>
+						<posy>2</posy>
+						<width>370</width>
+						<height>37</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<texture border="2">default-button.png</texture>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>3</posy>
+						<width>340</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<scrollspeed>30</scrollspeed>
+						<info>ListItem.Label</info>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="image">
+				<description>Actor image</description>
+				<posx>10</posx>
+				<posy>50</posy>
+				<width>260</width>
+				<height>350</height>
+				<align>center</align>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
+				<texture>$INFO[Container(50).Listitem.Icon]</texture>
+				<visible>substring(Control.GetLabel(5),plot)</visible>
+			</control>
+
+			<!-- Media flags -->
+			<control type="grouplist">
+				<description>Group Media Flags</description>
+				<posx>22</posx>
+				<posy>430</posy>
+				<width>256</width>
+				<height>48</height>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<itemgap>-8</itemgap>
+				<visible>!substring(Control.GetLabel(5),plot)</visible>
+				<!-- Audio Codec -->
+				<control type="image" id="161">
+					<width>64</width>
+					<height>48</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<texture>$INFO[Listitem.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
+					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(161))">Conditional</animation>
+					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
+				</control>
+				<!-- Video Codec -->
+				<control type="image" id="162">
+					<width>64</width>
+					<height>48</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<texture>$INFO[Listitem.VideoCodec,special://skin/extras/images/video/,.png]</texture>
+					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(162))">Conditional</animation>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+				</control>-->
+				<!-- Video Aspect Ratio -->
+				<control type="image" id="163">
+					<description>Aspectratio Image</description>
+					<width>64</width>
+					<height>48</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>$INFO[ListItem.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
+					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(163))">Conditional</animation>  
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.VideoAspect)</visible>
+				</control>
+				<!-- Video Resolution -->
+				<control type="image" id="164">
+					<width>64</width>
+					<height>48</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<texture>$INFO[Listitem.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
+					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(164))">Conditional</animation>  
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+				</control>
+			</control>
+		</control>
+
+		<!-- Option Buttons -->
+		<control type="group" id="999">
+			<control type="button" id="8">
+				<description>Play/Browse</description>
+				<posx>8</posx>
+				<posy>525</posy>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>208</label>
+				<altlabel>1024</altlabel>
+				<align>center</align>
+				<onleft>6</onleft>
+				<onright>11</onright>
+				<onup>999</onup>
+				<ondown>999</ondown>
+			</control>
+			<control type="button" id="11">
+				<description>Trailer</description>
+				<posx>126</posx>
+				<posy>525</posy>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>20410</label>
+				<align>center</align>
+				<enable>!IsEmpty(ListItem.Trailer)</enable>
+				<onleft>8</onleft>
+				<onright>5</onright>
+				<onup>999</onup>
+				<ondown>999</ondown>
+			</control>
+			<control type="button" id="5">
+				<description>Cast/Plot</description>
+				<posx>244</posx>
+				<posy>525</posy>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>206</label>
+				<align>center</align>
+				<onclick>SetFocus(50)</onclick>
+				<onleft>11</onleft>
+				<onright>10</onright>
+				<onup>999</onup>
+				<ondown>999</ondown>
+			</control>
+			<control type="button" id="10">
+				<description>Thumb</description>
+				<posx>362</posx>
+				<posy>525</posy>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>13405</label>
+				<align>center</align>
+				<onleft>5</onleft>
+				<onright>12</onright>
+				<onup>999</onup>
+				<ondown>999</ondown>
+			</control>
+			<control type="button" id="12">
+				<description>Fanart</description>
+				<posx>480</posx>
+				<posy>525</posy>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>20413</label>
+				<align>center</align>
+				<onleft>10</onleft>
+				<onright>6</onright>
+				<onup>999</onup>
+				<ondown>999</ondown>
+			</control>
+			<control type="button" id="6">
+				<description>Refresh</description>
+				<posx>598</posx>
+				<posy>525</posy>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>184</label>
+				<align>center</align>
+				<onleft>12</onleft>
+				<onright>8</onright>
+				<onup>999</onup>
+				<ondown>999</ondown>
+			</control>
+		</control>
+		<!-- Scrollbar -->
+		<control type="scrollbar" id="23">
+			<posx>705</posx>
+			<posy>260</posy>
+			<width>14</width>
+			<height>230</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>999</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + substring(Control.GetLabel(5),plot)</visible>
+		</control>
+	</controls>
+</window>

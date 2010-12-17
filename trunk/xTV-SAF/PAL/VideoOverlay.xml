@@ -1,0 +1,88 @@
+﻿<window id="2004">
+	<defaultcontrol always="true">214</defaultcontrol>
+	<visible>false</visible>
+	<visible>Player.HasVideo + !Skin.HasSetting(now-playing) + !Window.IsActive(2004)</visible>
+	<animation effect="fade" time="1000">WindowOpen</animation>
+	<animation effect="fade" time="1000">WindowClose</animation>
+	<controls>
+		<include>background</include>
+		<control type="videowindow">
+			<description>video preview window</description>
+			<posx>375</posx>
+			<posy>190</posy>
+			<width>275</width>
+			<height>300</height>
+		</control>
+		<control type="label">
+			<description>Video Title label</description>
+			<posx>360</posx>
+			<posy>355</posy>
+			<width>350</width>
+			<height>35</height>
+			<info>VideoPlayer.Title</info>
+			<align>right</align>
+			<font>font28</font>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<description>Time label</description>
+			<posx>360</posx>
+			<posy>455</posy>
+			<width>300</width>
+			<height>25</height>
+			<label>$INFO[VideoPlayer.Time]</label>
+			<align>right</align>
+			<font>font11</font>
+		</control>
+		<control type="label">
+			<posx>330</posx>
+			<posy>470</posy>
+			<width>300</width>
+			<height>25</height>
+			<font>font11</font>
+			<colordiffuse>osd-background</colordiffuse>
+			<label>$INFO[VideoPlayer.Time]</label>
+		</control>
+		<control type="label">
+			<posx>330</posx>
+			<posy>470</posy>
+			<width>300</width>
+			<height>25</height>
+			<font>font11</font>
+			<colordiffuse>osd-background</colordiffuse>
+			<label>$LOCALIZE[31720]: $INFO[System.Time]</label>
+		</control>
+		<control type="label">
+			<posx>550</posx>
+			<posy>470</posy>
+			<width>300</width>
+			<height>25</height>
+			<align>right</align>
+			<font>font11</font>
+			<colordiffuse>osd-background</colordiffuse>
+			<label>$INFO[VideoPlayer.Duration]</label>
+		</control>
+		<control type="label">
+			<posx>550</posx>
+			<posy>470</posy>
+			<width>300</width>
+			<height>25</height>
+			<align>right</align>
+			<font>font11</font>
+			<colordiffuse>osd-background</colordiffuse>
+			<label>$LOCALIZE[31129]: $INFO[Player.FinishTime]</label>
+		</control>
+		<control type="progress">
+			<posx>30</posx>
+			<posy>460</posy>
+			<width>250</width>
+			<height>16</height>
+			<info>Player.Progress</info>
+			<texturebg>progressbar-background-blue.png</texturebg>
+			<lefttexture>progress-left.png</lefttexture>
+			<midtexture>progress-middle.png</midtexture>
+			<righttexture>progress-right.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+		</control>
+	</controls>
+</window>
