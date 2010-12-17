@@ -1,0 +1,83 @@
+<window id="145">
+	<defaultcontrol>11</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>160</posx>
+		<posy>500</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(VolumeBar)]</visible>
+			<control type="image">
+				<description>Slider Dialog background image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>70</height>
+				<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
+				<colordiffuse>osd-background</colordiffuse>
+			</control>
+			<control type="label" id="10">
+				<description>Dialog header</description>
+				<posx>10</posx>
+				<posy>15</posy>
+				<width>180</width>
+				<height>16</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label" id="12">
+				<description>Slider Value</description>
+				<posx>380</posx>
+				<posy>15</posy>
+				<width>180</width>
+				<height>16</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+		<control type="image">
+			<description>Music cover image</description>
+			<posx>-6</posx>
+			<posy>-205</posy>
+			<width>200</width>
+			<height>200</height>
+			<align>left</align>
+			<texture diffuse="RndRectMask.png" border="3">-</texture>
+			<fadetime>300</fadetime>
+			<info>MusicPlayer.Cover</info>
+			<aspectratio>keep</aspectratio>
+		</control>
+			<control type="image">
+				<description>Seekslider background</description>
+				<posx>15</posx>
+				<posy>38</posy>
+				<width>370</width>
+				<height>12</height>
+				<texture>progressbar-background-blue.png</texture>
+			</control>
+			<control type="slider" id="11">
+				<description>Slider</description>
+				<posx>20</posx>
+				<posy>38</posy>
+				<width>360</width>
+				<height>6</height>
+				<aligny>center</aligny>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<texturesliderbar>seekslider.png</texturesliderbar>
+				<textureslidernib>progress-marker.png</textureslidernib>
+				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+				<onup>11</onup>
+				<ondown>11</ondown>
+				<onleft>11</onleft>
+				<onright>11</onright>
+			</control>
+		</control>
+	</controls>
+</window>
