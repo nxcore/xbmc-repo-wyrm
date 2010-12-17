@@ -11,7 +11,7 @@
     point="xbmc.gui.skin"
     defaultresolution="PAL"
     defaultresolutionwide="PAL16x9"
-    defaultthemename="textures.xpr"
+    defaultthemename="Textures.xbt"
     effectslowdown="1.00"
     debugging="false"/>
   <extension point="xbmc.addon.metadata">
