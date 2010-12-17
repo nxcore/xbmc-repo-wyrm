@@ -1,4 +1,7 @@
 #
+# ThemeInstaller script by Dan Dar3
+# Instals and applies skin themes from local or remote zip files
+#
 # Imports
 #
 import os
@@ -148,7 +151,7 @@ def install_local_theme( theme ) :
         zip = zipfile.ZipFile (themeZip, "r")
         for zip_entry in zip.namelist() :
         
-            # XML - skin/media
+            # XML - skin/color
             if zip_entry == "%s.xml" % theme :
                 outfile = open( os.path.join( SKIN_COLORS_PATH, zip_entry ), "wb" )
                 outfile.write ( zip.read( zip_entry ) )
@@ -170,7 +173,14 @@ def install_local_theme( theme ) :
         zip.close()
         
         # Message...
-        xbmcgui.Dialog().ok( xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31429) )
+        #xbmcgui.Dialog().ok( xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31429) )
+        
+        # Apply theme...
+        choice = xbmcgui.Dialog().yesno(xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31441))
+        if choice == True :
+            xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skintheme;%s)"  % theme )
+            xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skincolors;%s)" % theme )
+            xbmc.executebuiltin( "XBMC.ReloadSkin()")
         
     except :
         # Message...
