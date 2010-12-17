@@ -126,7 +126,7 @@
 			<font>font12</font>
 		</control>
 
-<!--		<control type="label">
+	<!--<control type="label">
 			<description>Song Title value</description>
 			<posx>45</posx>
 			<posy>300</posy>
@@ -135,7 +135,7 @@
 			<info>ListItem.Title</info>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-		</control> -->
+		</control>-->
 		<control type="image">
 			<description>seperator</description>
 			<posx>45</posx>

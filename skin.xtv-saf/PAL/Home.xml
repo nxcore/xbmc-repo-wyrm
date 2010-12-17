@@ -96,7 +96,7 @@
 			<label>$INFO[Weather.Temperature]</label>
 			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
 		</control>	
-<!--		<control type="image">
+		<!--<control type="image">
 			<description>current weather icon</description>
 			<posx>645</posx>
 			<posy>15</posy>
