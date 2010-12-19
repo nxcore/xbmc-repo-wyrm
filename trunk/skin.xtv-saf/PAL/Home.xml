@@ -315,8 +315,10 @@
 					<visible>Skin.HasSetting(home-weather)</visible>
 				</item>
 				<item>
-					<include condition="Skin.HasSetting(home-script)" file="HomeMenuScript.xml">homescreenscript</include>
-					<onclick>XBMC.RunScript($INFO[Skin.String(home-scriptlocation)]/default.py)</onclick>
+					<icon>icon-scripts.png</icon>
+					<thumb>icon-scripts-blur1.png</thumb>
+					<label>$INFO[Skin.String(home-scriptlabel)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(home-scriptname)])</onclick>
 					<visible>Skin.HasSetting(home-script)</visible>
 				</item>
 				<item>
