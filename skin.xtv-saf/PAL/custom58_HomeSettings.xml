@@ -235,7 +235,7 @@
 				<radioposx>450</radioposx>
 			</control>
 			<control type="button" id="17">
-				<description>Home script location</description>
+				<description>Home user script location</description>
 				<font>font13</font>
 				<width>480</width>
 				<texturefocus>default-button.png</texturefocus>
@@ -244,7 +244,23 @@
 				<enable>Skin.HasSetting(home-script)</enable>
 				<label>31850</label>
 				<label2>$INFO[Skin.String(home-scriptname)] </label2>
-				<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py)</onclick>
+				<onclick>XBMC.Skin.SetAddon(home-scriptname,xbmc.python.script)</onclick>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+				<textoffsetx>20</textoffsetx>
+			</control>
+			<control type="button" id="25">
+				<description>Home user script label</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textwidth>480</textwidth>
+				<enable>Skin.HasSetting(home-script)</enable>
+				<label>$LOCALIZE[21899] :</label>
+				<label2>$INFO[Skin.String(home-scriptlabel)] </label2>
+				<onclick>XBMC.Skin.SetString(home-scriptlabel)</onclick>
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
