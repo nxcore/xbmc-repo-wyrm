@@ -92,13 +92,6 @@
 			<height>35</height>
 			<textoffsetx>10</textoffsetx>
 		</control>
-		<control type="sliderex" id="10">
-			<description>Default Slider</description>
-			<height>35</height>
-			<font>font12</font>
-			<textcolor>button-text</textcolor>
-			<focusedcolor>white</focusedcolor>
-		</control>
 		<control type="image" id="11">
 			<description>Default Seperator</description>
 			<height>8</height>

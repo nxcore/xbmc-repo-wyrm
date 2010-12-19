@@ -1,3 +1,9 @@
+#
+# VideoSource script by Wyrm
+# Reads the source file for video sources and have the user select one as a default
+#
+# Imports
+#
 import xbmc,xbmcgui
 import fileinput,os,sys,re,string
 
@@ -46,7 +52,7 @@ def selectsource(xml):
 def main():
 	SourceType = string.replace(str(sys.argv[1:]),"'","")
 	SourceType = string.replace(SourceType,"[","")
-	SourceType = string.replace(SourceType,"]","")	
+	SourceType = string.replace(SourceType,"]","")
 	try:
 		getvideosource(xml)
 		Listnum = selectsource(xml)
@@ -55,4 +61,4 @@ def main():
 		sys.exit(2)
 
 if __name__ == '__main__':
-	main()	
+	main()

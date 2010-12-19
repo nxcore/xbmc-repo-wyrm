@@ -168,7 +168,7 @@
 				<texturenofocus>-</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>8</onup>
+				<onup>7</onup>
 				<ondown>3</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
@@ -238,26 +238,6 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>5</onup>
-				<ondown>8</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="8">
-				<description>Movie Trailers</description>
-				<posx>270</posx>
-				<posy>360</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>31126</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onclick>XBMC.RunScript(special://xbmc/scripts/AppleMovieTrailers/default.py)</onclick>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>7</onup>
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
