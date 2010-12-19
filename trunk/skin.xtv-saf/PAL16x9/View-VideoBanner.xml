@@ -45,14 +45,14 @@
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-<!--					<control type="image">
+				<!--<control type="image">
 						<description>Overlay</description>
 						<posx>360</posx>
 						<posy>16</posy>
 						<width>64</width>
 						<height>64</height>
 						<info>ListItem.Overlay</info>
-					</control> -->
+					</control>-->
 				</itemlayout>
 				<focusedlayout height="120">
 					<control type="group">
@@ -91,7 +91,7 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 						</control>
-<!--						<control type="image">
+					<!--<control type="image">
 							<description>Overlay</description>
 							<posx>6</posx>
 							<posy>6</posy>
@@ -99,7 +99,7 @@
 							<height>64</height>
 							<info>ListItem.Overlay</info>
 							<aspectratio align="center" aligny="top">stretch</aspectratio>
-						</control> -->
+						</control>-->
 					</control>
 				</focusedlayout>
 			</control>
