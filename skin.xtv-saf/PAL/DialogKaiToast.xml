@@ -3,7 +3,7 @@
 	<animation effect="slide" time="400" end="300,0">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
-		<posx>420</posx>
+		<posx>330</posx>
 		<posy>470</posy>
 	</coordinates>
 	<controls>
@@ -11,15 +11,44 @@
 			<description>Popup Kai Toast Dialog Background</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>255</width>
-			<height>75</height>
+			<width>320</width>
+			<height>90</height>
 			<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
+		<control type="image" id="400">
+			<description>avatar</description>
+			<posx>20</posx>
+			<posy>10</posy>
+			<width>64</width>
+			<height>64</height>
+			<aspectratio>keep</aspectratio>
+			<texture>kai-warning.png</texture>
+		</control>
+		<control type="image" id="404">
+			<description>avatar</description>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>64</width>
+			<height>64</height>
+			<aspectratio>keep</aspectratio>
+			<texture>kai-warning.png</texture>
+			<visible>false</visible>
+		</control>
+		<control type="image" id="405">
+			<description>avatar</description>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>64</width>
+			<height>64</height>
+			<aspectratio>keep</aspectratio>
+			<texture>kai-error.png</texture>
+			<visible>false</visible>
+		</control>
 		<control type="label" id="401">
 			<description>Caption Label</description>
-			<posx>10</posx>
-			<posy>17</posy>
+			<posx>84</posx>
+			<posy>25</posy>
 			<width>235</width>
 			<font>font13</font>
 			<align>center</align>
@@ -29,8 +58,8 @@
 		</control>
 		<control type="label" id="402">
 			<description>Description Button</description>
-			<posx>10</posx>
-			<posy>40</posy>
+			<posx>84</posx>
+			<posy>48</posy>
 			<width>235</width>
 			<label>-</label>
 			<font>font11</font>
