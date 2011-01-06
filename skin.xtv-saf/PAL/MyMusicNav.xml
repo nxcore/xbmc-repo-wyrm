@@ -17,7 +17,7 @@
 			<description>Music Logo Reflection</description>
 			<include>icon-header-reflect-commons</include>
 			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-music.png</texture>
+			<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
 		</control>
 		<control type="label">
 			<description>Music Label</description>
@@ -174,7 +174,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>295</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
