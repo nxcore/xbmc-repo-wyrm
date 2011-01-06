@@ -14,7 +14,7 @@
 				<posy>0</posy>
 				<width>400</width>
 				<height>70</height>
-				<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
+				<texture diffuse="mask-square.png" border="8">button-menu-background.png</texture>
 				<colordiffuse>osd-background</colordiffuse>
 			</control>
 			<control type="label" id="10">
@@ -48,7 +48,7 @@
 			<width>200</width>
 			<height>200</height>
 			<align>left</align>
-			<texture diffuse="RndRectMask.png" border="3">-</texture>
+			<texture diffuse="mask-rect.png" border="3">-</texture>
 			<fadetime>300</fadetime>
 			<info>MusicPlayer.Cover</info>
 			<aspectratio>keep</aspectratio>

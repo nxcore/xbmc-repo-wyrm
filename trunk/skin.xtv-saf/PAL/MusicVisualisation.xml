@@ -207,7 +207,7 @@
 			<posy>434</posy>
 			<width>205</width>
 			<height>224</height>
-			<texture flipy="true" diffuse="RndFade.png">-</texture>
+			<texture flipy="true" diffuse="mask-fade.png">-</texture>
 			<info>MusicPlayer.Cover</info>
 			<visible>Skin.HasSetting(np-vis) + Skin.HasSetting(tilted-icons)</visible>
 			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
@@ -232,7 +232,7 @@
 			<posy>495</posy>
 			<width>275</width>
 			<height>300</height>
-			<texture flipy="true" diffuse="RndFade.png">-</texture>
+			<texture flipy="true" diffuse="mask-fade.png">-</texture>
 			<info>MusicPlayer.Cover</info>
 			<visible>Skin.HasSetting(np-vis)</visible>
 			<visible>!Skin.HasSetting(tilted-icons)</visible>

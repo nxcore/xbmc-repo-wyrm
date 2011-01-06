@@ -83,7 +83,7 @@
 			<width>200</width>
 			<height>200</height>
 			<align>left</align>
-			<texture diffuse="RndRectMask.png" border="3">-</texture>
+			<texture diffuse="mask-rect.png" border="3">-</texture>
 			<fadetime>300</fadetime>
 			<info>videoplayer.cover</info>
 			<aspectratio>keep</aspectratio>

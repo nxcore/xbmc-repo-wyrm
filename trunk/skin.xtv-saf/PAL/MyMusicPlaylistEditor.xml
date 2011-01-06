@@ -220,7 +220,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>290</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>

@@ -23,7 +23,7 @@
 					<width>140</width>
 					<height>140</height>
 					<info>ListItem.Icon</info>
-					<texture background="true" diffuse="RndRectMask.png">-</texture>
+					<texture background="true" diffuse="mask-rect.png">-</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
@@ -31,7 +31,7 @@
 					<posy>295</posy>
 					<width>140</width>
 					<height>140</height>
-					<texture background="true" flipy="true" diffuse="RndFade.png">-</texture>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">-</texture>
 					<info>ListItem.Icon</info>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -47,7 +47,7 @@
 					<posy>296</posy>
 					<width>25</width>
 					<height>25</height>
-					<texture flipy="true" diffuse="RndFade.png">-</texture>
+					<texture flipy="true" diffuse="mask-fade.png">-</texture>
 					<info>ListItem.Overlay</info>
 				</control>
 			</itemlayout>
@@ -59,14 +59,14 @@
 					<height>240</height>
 					<aspectratio>keep</aspectratio>
 					<info>ListItem.Icon</info>
-					<texture background="true" diffuse="RndRectMask.png">-</texture>
+					<texture background="true" diffuse="mask-rect.png">-</texture>
 				</control>
 				<control type="image">
 					<posx>15</posx>
 					<posy>295</posy>
 					<width>240</width>
 					<height>240</height>
-					<texture background="true" flipy="true" diffuse="RndFade.png">-</texture>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">-</texture>
 					<aspectratio>keep</aspectratio>
 					<info>ListItem.Icon</info>
 				</control>
@@ -82,7 +82,7 @@
 					<posy>353</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture flipy="true" diffuse="RndFade.png">-</texture>
+					<texture flipy="true" diffuse="mask-fade.png">-</texture>
 					<info>ListItem.Overlay</info>
 				</control>
 			</focusedlayout>

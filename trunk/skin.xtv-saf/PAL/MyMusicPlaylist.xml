@@ -101,7 +101,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
