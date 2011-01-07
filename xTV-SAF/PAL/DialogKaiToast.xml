@@ -3,25 +3,55 @@
 	<animation effect="slide" time="400" end="300,0">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
-		<posx>420</posx>
-		<posy>470</posy>
+		<posx>330</posx>
+		<posy>455</posy>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<description>Popup Kai Toast Dialog Background</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>255</width>
-			<height>75</height>
-			<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+			<width>330</width>
+			<height>90</height>
+			<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
+		</control>
+		<control type="image" id="400">
+			<description>avatar</description>
+			<posx>5</posx>
+			<posy>12</posy>
+			<width>64</width>
+			<height>64</height>
+			<aspectratio>keep</aspectratio>
+			<texture>kai-warning.png</texture>
+		</control>
+		<control type="image" id="404">
+			<description>avatar</description>
+			<posx>5</posx>
+			<posy>12</posy>
+			<width>64</width>
+			<height>64</height>
+			<aspectratio>keep</aspectratio>
+			<texture>kai-warning.png</texture>
+			<visible>false</visible>
+		</control>
+		<control type="image" id="405">
+			<description>avatar</description>
+			<posx>5</posx>
+			<posy>12</posy>
+			<width>64</width>
+			<height>64</height>
+			<aspectratio>keep</aspectratio>
+			<texture>kai-error.png</texture>
+			<visible>false</visible>
 		</control>
 		<control type="label" id="401">
 			<description>Caption Label</description>
-			<posx>10</posx>
-			<posy>17</posy>
-			<width>235</width>
-			<font>font13</font>
+			<posx>72</posx>
+			<posy>15</posy>
+			<width>240</width>
+			<height>30</height>
+			<font>font18</font>
 			<align>center</align>
 			<label>-</label>
 			<scroll>true</scroll>
@@ -29,11 +59,12 @@
 		</control>
 		<control type="label" id="402">
 			<description>Description Button</description>
-			<posx>10</posx>
-			<posy>40</posy>
-			<width>235</width>
+			<posx>72</posx>
+			<posy>48</posy>
+			<width>240</width>
+			<height>30</height>
 			<label>-</label>
-			<font>font11</font>
+			<font>font12</font>
 			<align>center</align>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
