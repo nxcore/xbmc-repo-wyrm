@@ -10,7 +10,6 @@
 - Themes now available for ALL platforms, download and install from System menu . Thanks to Dan Dar3 for writing the new themes script.
 - Fixed a number of issues with volume level display.
 - Reduced the volume of in skin sounds to make them less intrusive.
-- This release is the first to make the xbmc addons repo.
 - Plus numerous minor bug fixes and graphical clean-ups.
 
 [B]0.9.6[/B]
