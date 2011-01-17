@@ -38,7 +38,6 @@
 			<height>576</height>
 			<colordiffuse>solid-background</colordiffuse>
 			<texture>background.png</texture>
-			<visible>!Skin.HasSetting(background-fanart) + [IsEmpty(ListItem.Property(Fanart_Image))]</visible>
 		</control>
 		<control type="visualisation">
 			<posx>0</posx>
@@ -76,50 +75,62 @@
 			<info>Skin.String(custom-background)</info>
 			<visible>INFO$(Skin.String(custom-background))</visible>
 		</control>
-		<control type="image">
-			<description>Fanart background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<colordiffuse>fanart-background</colordiffuse>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<visible>Skin.HasSetting(background-fanart) + ![IsEmpty(ListItem.Property(Fanart_Image))] + ![Skin.HasSetting(HomeViewToggle) + [Player.HasVideo]]</visible>
-		</control>
-		<!-- Following fanart hacks modified from Ronie's hacks in T! -->
-		<control type="image">
-			<description>hack for (inside folder) fanart in programs pictures scripts</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<colordiffuse>fanart-background</colordiffuse>
-			<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(background-fanart) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
-		</control>
-		<control type="image">
-			<description>hack for (inside folder) fanart in programs pictures scripts</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<colordiffuse>fanart-background</colordiffuse>
-			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(background-fanart) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
-		</control>
-		<control type="image">
-			<description>hack for (folder) fanart in programs pictures scripts</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<colordiffuse>fanart-background</colordiffuse>
-			<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(background-fanart) + IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+		<control type="group">
+			<!--<visible>Skin.HasSetting(background-fanart) + !Container.Scrolling  + !Player.HasMedia</visible>-->
+			<visible>Skin.HasSetting(background-fanart) + !Player.HasMedia</visible>
+			<control type="image">
+				<description>Fanart background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<colordiffuse>fanart-background</colordiffuse>
+				<aspectratio>scale</aspectratio>
+				<fadetime>300</fadetime>
+				<include>background-fade</include>
+				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			</control>
+			<!-- Following fanart hacks modified from Ronie's hacks in T! -->
+			<control type="image">
+				<description>hack for (inside folder) fanart in programs pictures scripts</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<colordiffuse>fanart-background</colordiffuse>
+				<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>300</fadetime>
+				<include>background-fade</include>
+				<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+			</control>
+			<control type="image">
+				<description>hack for (inside folder) fanart in programs pictures scripts</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<colordiffuse>fanart-background</colordiffuse>
+				<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>300</fadetime>
+				<include>background-fade</include>
+				<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+			</control>
+			<control type="image">
+				<description>hack for (folder) fanart in programs pictures scripts</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<colordiffuse>fanart-background</colordiffuse>
+				<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>300</fadetime>
+				<include>background-fade</include>
+				<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+			</control>
 		</control>
 	</include>
 
@@ -195,29 +206,31 @@
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
+			<visible>Container.Scrolling</visible>
+			<animation effect="fade" time="50">Visible</animation>
+			<animation effect="fade" time="300" delay="500">Hidden</animation>
 			<posx>332</posx>
 			<posy>34</posy>
-			<visible>Container.Scrolling</visible>
-			<animation effect="fade" start="0" end="100" time="50">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<width>46</width>
+			<height>52</height>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>52</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 			</control>
 			<control type="label">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
-				<font>font28</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.SortLetter]</label>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<font>font28</font>
 			</control>
 		</control>
 	</include>
@@ -238,7 +251,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="RndRectMask.png" border="3">-</texture>
+				<texture background="true" diffuse="mask-rect.png" border="3">-</texture>
 				<info>ListItem.Icon</info>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
@@ -251,7 +264,7 @@
 				<width>345</width>
 				<height>345</height>
 				<info>ListItem.Icon</info>
-				<texture background="true" flipy="true" diffuse="RndFade.png" border="3">-</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png" border="3">-</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 				<visible>Skin.HasSetting(Fanart) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
@@ -264,7 +277,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="RndRectMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
@@ -275,7 +288,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" flipy="true" diffuse="RndFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
@@ -288,7 +301,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" diffuse="RndRectMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -299,7 +312,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="RndFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -312,7 +325,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="RndRectMask.png" border="3">DefaultTvshows.png</texture>
+				<texture background="true" diffuse="mask-rect.png" border="3">DefaultTvshows.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -323,7 +336,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" flipy="true" diffuse="RndFade.png" border="3">DefaultTvshows.png</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png" border="3">DefaultTvshows.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -337,7 +350,7 @@
 				<height>345</height>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" diffuse="RndRectMask.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" diffuse="mask-rect.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
@@ -347,7 +360,7 @@
 				<height>345</height>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" flipy="true" diffuse="RndFade.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 		</control>
@@ -490,6 +503,10 @@
 	<include name="list-fade">
 		<animation effect="fade" start="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
 		<animation effect="fade" start="0" time="10" condition="Window.Next(Home)">WindowClose</animation>
+	</include>
+	<include name="background-fade">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
 	</include>
 	<include name="screen-fade">
 		<animation effect="fade" time="1000">WindowOpen</animation>
