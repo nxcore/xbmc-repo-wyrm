@@ -9,7 +9,7 @@
 			<onleft>57</onleft>
 			<onright>57</onright>
 			<onup>2</onup>
-			<ondown>2</ondown>
+			<ondown>23</ondown>
 			<scrolltime>100</scrolltime>
 			<include>list-fade</include>
 			<focusposition>2</focusposition>
