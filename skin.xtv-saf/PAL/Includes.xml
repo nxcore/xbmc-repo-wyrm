@@ -203,6 +203,32 @@
 		</control>
 	</include>
 
+	<!-- MovieLibraryTitle Include -->
+	<include name="MovieLibraryTitle">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/2/,return)</onclick>
+	</include>
+	<!-- MovieLibraryRoot Include -->
+	<include name="MovieLibraryRoot">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/,return)</onclick>
+	</include>
+	<!-- MovieLibraryRecentlyadded Include -->
+	<include name="MovieLibraryRecentlyadded">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://4/,return)</onclick>
+	</include>
+
+	<!-- MovieLibraryTitle Include -->
+	<include name="TVLibraryTitle">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/2/,return)</onclick>
+	</include>
+	<!-- MovieLibraryRoot Include -->
+	<include name="TVLibraryRoot">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/,return)</onclick>
+	</include>
+	<!-- MovieLibraryRecentlyadded Include -->
+	<include name="TVLibraryRecentlyadded">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://5/,return)</onclick>
+	</include>
+
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">

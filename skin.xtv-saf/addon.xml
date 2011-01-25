@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.xtv-saf"
-  version="1.0.0"
+  version="1.0.2"
   name="xTV-SAF"
   provider-name="Wyrm">
   <requires>
@@ -13,7 +13,7 @@
     defaultresolutionwide="PAL16x9"
     defaultthemename="Textures.xbt"
     effectslowdown="1.00"
-    debugging="false"/>
+    debugging="true"/>
   <extension point="xbmc.addon.metadata">
     <summary>xTV-SAF is a update of xTV (2269)</summary>
     <description>xTV-SAF is a fork of xTV to include the latest xbmc features in a Spouse friendly manner.</description>
