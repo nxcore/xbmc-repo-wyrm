@@ -219,7 +219,9 @@
 					<icon>icon-video.png</icon>
 					<thumb>icon-video-blur1.png</thumb>
 					<label>31026</label>
-					<onclick>ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+					<include condition="!Skin.String(movie-libraryentry) | SubString(Skin.String(movie-libraryentry),$LOCALIZE[369],Left)">MovieLibraryTitle</include>
+					<include condition="SubString(Skin.String(movie-libraryentry),$LOCALIZE[20108],Left)">MovieLibraryRoot</include>
+					<include condition="SubString(Skin.String(movie-libraryentry),$LOCALIZE[20386],Left)">MovieLibraryRecentlyadded</include>
 					<visible>Skin.HasSetting(movie-library)</visible>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
@@ -245,7 +247,9 @@
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
 					<label>31027</label>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+					<include condition="!Skin.String(tv-libraryentry) | SubString(Skin.String(tv-libraryentry),$LOCALIZE[369],Left)">TVLibraryTitle</include>
+					<include condition="SubString(Skin.String(tv-libraryentry),$LOCALIZE[20108],Left)">TVLibraryRoot</include>
+					<include condition="SubString(Skin.String(tv-libraryentry),$LOCALIZE[20387],Left)">TVLibraryRecentlyadded</include>
 					<visible>Skin.HasSetting(tv-library)</visible>
 					<visible>!Skin.HasSetting(home-tv)</visible>
 				</item>
@@ -269,7 +273,7 @@
 					<icon>icon-musicvideo.png</icon>
 					<thumb>icon-musicvideo-blur1.png</thumb>
 					<label>31028</label>
-					<onclick>ActivateWindow(MyVideoLibrary,musicvideotitles,return)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,videodb://3/2/,return)</onclick>
 					<visible>Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
