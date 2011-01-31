@@ -1,3 +1,11 @@
+[B]1.0.2[/B]
+- Added support for setting library entry points for TV and Movies
+- Fixed a number of issues with fanart backgrounds
+- Cleaned up a number of skin graphics
+- Fixed a number of very minor bugs
+- Fixed issue with background fanarts.
+- Non Xbox and Xbox builds of skin are again back in sync.  Version 1.0.0 was XBox only. Non Xbox users see below for features added since last update.
+
 [B]1.0.0[/B]
 - Added animated weather icons and updated the weather info screen
 - New media info flag graphics, Thanks Chip from over at http://community.mediabrowser.tv/
