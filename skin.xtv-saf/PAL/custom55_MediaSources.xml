@@ -51,8 +51,6 @@
 				<description>Movies Library link toggle</description>
 				<font>font13</font>
 				<width>480</width>
-				<onup>12</onup>
-				<ondown>930</ondown>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31810</label>
@@ -64,86 +62,77 @@
 				<textoffsetx>10</textoffsetx>
 				<radioposx>450</radioposx>
 			</control>
-			<control type="group" id="930">
+			<control type="label" id="930">
+				<description>Set Movie library entry point</description>
 				<width>480</width>
 				<height>40</height>
+				<label>31680</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
 				<visible>Skin.HasSetting(movie-library)</visible>
-				<control type="button" id="931">
-					<description>Movies Library entry point Title</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>480</width>
-					<height>40</height>
-					<onup>13</onup>
-					<ondown>14</ondown>
-					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textwidth>460</textwidth>
-					<enable>Skin.HasSetting(movie-library)</enable>
-					<label>Movie Library Entry point</label>
-					<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
-					<onclick>SetFocus(932)</onclick>
-					<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20108])</onclick>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<aligny>center</aligny>
-					<textoffsetx>30</textoffsetx>
-					<visible allowhiddenfocus="true">!Skin.String(movie-libraryentry) | SubString(Skin.String(movie-libraryentry),$LOCALIZE[369],Left)</visible>
-				</control>
-				<control type="button" id="932">
-					<description>Movies Library entry point Root</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>480</width>
-					<height>40</height>
-					<onup>13</onup>
-					<ondown>14</ondown>
-					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textwidth>460</textwidth>
-					<enable>Skin.HasSetting(movie-library)</enable>
-					<label>Movie Library Entry point</label>
-					<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
-					<onclick>SetFocus(933)</onclick>
-					<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20386])</onclick>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<aligny>center</aligny>
-					<textoffsetx>30</textoffsetx>
-					<visible allowhiddenfocus="true">SubString(Skin.String(movie-libraryentry),$LOCALIZE[20108],Left)</visible>
-				</control>
-				<control type="button" id="933">
-					<description>Movies Library entry point Recentlyadded</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>480</width>
-					<height>40</height>
-					<onup>13</onup>
-					<ondown>14</ondown>
-					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textwidth>460</textwidth>
-					<enable>Skin.HasSetting(movie-library)</enable>
-					<label>Movie Library Entry point</label>
-					<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
-					<onclick>SetFocus(931)</onclick>
-					<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[369])</onclick>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<aligny>center</aligny>
-					<textoffsetx>30</textoffsetx>
-					<visible allowhiddenfocus="true">SubString(Skin.String(movie-libraryentry),$LOCALIZE[20386],Left)</visible>
-				</control>
 			</control>
+			<control type="radiobutton" id="931">
+				<description>Set Movie library entry point - Title</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>369</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(movie-libraryentrytitle)</onclick>
+				<onclick>Skin.Reset(movie-libraryentryroot)</onclick>
+				<onclick>Skin.Reset(movie-libraryentryrecent)</onclick>
+				<selected>Skin.HasSetting(movie-libraryentrytitle)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+				<visible>Skin.HasSetting(movie-library)</visible>
+			</control>
+				<control type="radiobutton" id="932">
+				<description>Set Movie library entry point - Root</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>20108</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(movie-libraryentryroot)</onclick>
+				<onclick>Skin.Reset(movie-libraryentrytitle)</onclick>
+				<onclick>Skin.Reset(movie-libraryentryrecent)</onclick>
+				<selected>Skin.HasSetting(movie-libraryentryroot)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+				<visible>Skin.HasSetting(movie-library)</visible>
+			</control>
+			<control type="radiobutton" id="933">
+				<description>Set Movie library entry point - Recentlyadded</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>20386</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(movie-libraryentryrecent)</onclick>
+				<onclick>Skin.Reset(movie-libraryentrytitle)</onclick>
+				<onclick>Skin.Reset(movie-libraryentryroot)</onclick>
+				<selected>Skin.HasSetting(movie-libraryentryrecent)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+				<visible>Skin.HasSetting(movie-library)</visible>
+			</control>
+
 			<control type="radiobutton" id="14">
 				<description>Set Default Movie Source</description>
 				<font>font13</font>
 				<width>480</width>
-				<onup>930</onup>
-				<ondown>15</ondown>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31852</label>
@@ -155,6 +144,7 @@
 				<aligny>center</aligny>
 				<textoffsetx>10</textoffsetx>
 				<radioposx>450</radioposx>
+				<visible>!Skin.HasSetting(movie-library)</visible>
 			</control>
 			<control type="button" id="15">
 				<description>Default Movie Source selected</description>
@@ -171,6 +161,7 @@
 				<disabledcolor>disabled-text</disabledcolor>
 				<aligny>center</aligny>
 				<textoffsetx>30</textoffsetx>
+				<visible>!Skin.HasSetting(movie-library)</visible>
 			</control>
 			<control type="radiobutton" id="16">
 				<description>TV Library link toggle</description>
@@ -189,80 +180,73 @@
 				<textoffsetx>10</textoffsetx>
 				<radioposx>450</radioposx>
 			</control>
-			<control type="group" id="960">
+			<control type="label" id="960">
+				<description>Set TV library entry point</description>
 				<width>480</width>
 				<height>40</height>
+				<label>31681</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<aligny>center</aligny>
+				<textoffsetx>10</textoffsetx>
 				<visible>Skin.HasSetting(tv-library)</visible>
-				<control type="button" id="961">
-					<description>TV Library entry point Title</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>480</width>
-					<height>40</height>
-					<onup>16</onup>
-					<ondown>17</ondown>
-					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textwidth>460</textwidth>
-					<enable>Skin.HasSetting(tv-library)</enable>
-					<label>TV Library Entry point</label>
-					<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
-					<onclick>SetFocus(962)</onclick>
-					<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20108])</onclick>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<aligny>center</aligny>
-					<textoffsetx>30</textoffsetx>
-					<visible allowhiddenfocus="true">!Skin.String(tv-libraryentry) | SubString(Skin.String(tv-libraryentry),$LOCALIZE[369],Left)</visible>
-				</control>
-				<control type="button" id="962">
-					<description>TV Library entry point Root</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>480</width>
-					<height>40</height>
-					<onup>16</onup>
-					<ondown>17</ondown>
-					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textwidth>460</textwidth>
-					<enable>Skin.HasSetting(tv-library)</enable>
-					<label>TV Library Entry point</label>
-					<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
-					<onclick>SetFocus(963)</onclick>
-					<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20387])</onclick>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<aligny>center</aligny>
-					<textoffsetx>30</textoffsetx>
-					<visible allowhiddenfocus="true">SubString(Skin.String(tv-libraryentry),$LOCALIZE[20108],Left)</visible>
-				</control>
-				<control type="button" id="963">
-					<description>TV Library entry point Recentlyadded</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>480</width>
-					<height>40</height>
-					<onup>16</onup>
-					<ondown>17</ondown>
-					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textwidth>460</textwidth>
-					<enable>Skin.HasSetting(tv-library)</enable>
-					<label>TV Library Entry point</label>
-					<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
-					<onclick>SetFocus(961)</onclick>
-					<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[369])</onclick>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<aligny>center</aligny>
-					<textoffsetx>30</textoffsetx>
-					<visible allowhiddenfocus="true">SubString(Skin.String(tv-libraryentry),$LOCALIZE[20387],Left)</visible>
-				</control>
 			</control>
+			<control type="radiobutton" id="961">
+				<description>Set TV library entry point - Title</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>369</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(tv-libraryentrytitle)</onclick>
+				<onclick>Skin.Reset(tv-libraryentryroot)</onclick>
+				<onclick>Skin.Reset(tv-libraryentryrecent)</onclick>
+				<selected>Skin.HasSetting(tv-libraryentrytitle)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+				<visible>Skin.HasSetting(tv-library)</visible>
+			</control>
+				<control type="radiobutton" id="962">
+				<description>Set TV library entry point - Root</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>20108</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(tv-libraryentryroot)</onclick>
+				<onclick>Skin.Reset(tv-libraryentrytitle)</onclick>
+				<onclick>Skin.Reset(tv-libraryentryrecent)</onclick>
+				<selected>Skin.HasSetting(tv-libraryentryroot)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+				<visible>Skin.HasSetting(tv-library)</visible>
+			</control>
+			<control type="radiobutton" id="963">
+				<description>Set TV library entry point - Recentlyadded</description>
+				<font>font13</font>
+				<width>480</width>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>20387</label>
+				<textwidth>250</textwidth>
+				<onclick>Skin.ToggleSetting(tv-libraryentryrecent)</onclick>
+				<onclick>Skin.Reset(tv-libraryentrytitle)</onclick>
+				<onclick>Skin.Reset(tv-libraryentryroot)</onclick>
+				<selected>Skin.HasSetting(tv-libraryentryrecent)</selected>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<textoffsetx>30</textoffsetx>
+				<radioposx>450</radioposx>
+				<visible>Skin.HasSetting(tv-library)</visible>
+			</control>
+
 			<control type="radiobutton" id="17">
 				<description>Set Default TV Source</description>
 				<font>font13</font>

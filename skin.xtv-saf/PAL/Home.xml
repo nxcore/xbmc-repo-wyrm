@@ -219,9 +219,12 @@
 					<icon>icon-video.png</icon>
 					<thumb>icon-video-blur1.png</thumb>
 					<label>31026</label>
-					<include condition="!Skin.String(movie-libraryentry) | SubString(Skin.String(movie-libraryentry),$LOCALIZE[369],Left)">MovieLibraryTitle</include>
-					<include condition="SubString(Skin.String(movie-libraryentry),$LOCALIZE[20108],Left)">MovieLibraryRoot</include>
-					<include condition="SubString(Skin.String(movie-libraryentry),$LOCALIZE[20386],Left)">MovieLibraryRecentlyadded</include>
+					<include condition="!Skin.HasSetting(movie-libraryhasentry)">MovieLibraryTitle</include>
+					<onclick>Skin.SetBool(movie-libraryhasentry)</onclick>
+					<include condition="Skin.HasSetting(movie-libraryentrytitle)">MovieLibraryTitle</include>
+					<include condition="Skin.HasSetting(movie-libraryentryroot)">MovieLibraryRoot</include>
+					<include condition="Skin.HasSetting(movie-libraryentryrecent)">MovieLibraryRecentlyadded</include>
+					<onclick>ReloadSkin()</onclick>
 					<visible>Skin.HasSetting(movie-library)</visible>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
@@ -247,9 +250,12 @@
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
 					<label>31027</label>
-					<include condition="!Skin.String(tv-libraryentry) | SubString(Skin.String(tv-libraryentry),$LOCALIZE[369],Left)">TVLibraryTitle</include>
-					<include condition="SubString(Skin.String(tv-libraryentry),$LOCALIZE[20108],Left)">TVLibraryRoot</include>
-					<include condition="SubString(Skin.String(tv-libraryentry),$LOCALIZE[20387],Left)">TVLibraryRecentlyadded</include>
+					<include condition="!Skin.HasSetting(tv-libraryhasentry)">TVLibraryTitle</include>
+					<onclick>Skin.SetBool(tv-libraryhasentry)</onclick>
+					<include condition="Skin.HasSetting(tv-libraryentrytitle)">TVLibraryTitle</include>
+					<include condition="Skin.HasSetting(tv-libraryentryroot)">TVLibraryRoot</include>
+					<include condition="Skin.HasSetting(tv-libraryentryrecent)">TVLibraryRecentlyadded</include>
+					<onclick>ReloadSkin()</onclick>
 					<visible>Skin.HasSetting(tv-library)</visible>
 					<visible>!Skin.HasSetting(home-tv)</visible>
 				</item>
