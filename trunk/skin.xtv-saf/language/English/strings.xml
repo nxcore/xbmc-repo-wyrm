@@ -138,6 +138,11 @@
 	<string id="31675">Forward-16x</string>
 	<string id="31676">Forward-32x</string>
 
+	<string id="31680">Movie Library Entry point</string>
+	<string id="31681">TV Library Entry point</string>
+	<string id="31682">Music Video Library Entry point</string>
+	<string id="31683">Music Library Entry point</string>
+
 	<string id="31685">Cannot run with this version of XBMC, upgrade required</string>
 	<string id="31686">XBMCScripts</string>
 	<string id="31687">Movie Trailers</string>
