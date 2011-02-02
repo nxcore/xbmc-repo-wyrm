@@ -24,8 +24,8 @@
 				<description>XBMC Build Version</description>
 				<posx>40</posx>
 				<posy>110</posy>
-				<width>250</width>				
-				<label>31561</label>				
+				<width>250</width>
+				<label>31561</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
 			</control>
@@ -34,16 +34,16 @@
 				<posx>650</posx>
 				<posy>110</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>$INFO[System.BuildVersion]</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-			</control>			
+			</control>
 			<control type="label">
 				<description>XBMC Build Date</description>
 				<posx>40</posx>
 				<posy>150</posy>
-				<width>250</width>				
+				<width>250</width>
 				<label>31562</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
@@ -53,17 +53,17 @@
 				<posx>650</posx>
 				<posy>150</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>$INFO[System.BuildDate]</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-			</control>				
+			</control>
 			<control type="label">
 				<description>Skin Version</description>
 				<posx>40</posx>
 				<posy>190</posy>
 				<width>250</width>
-				<align>left</align>				
+				<align>left</align>
 				<label>31563</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
@@ -73,8 +73,8 @@
 				<posx>650</posx>
 				<posy>190</posy>
 				<width>400</width>
-				<align>right</align>				
-				<label>xTV SAF v1.00</label>
+				<align>right</align>
+				<label>xTV-SAF v1.0.2</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
 			</control>
@@ -83,7 +83,7 @@
 				<posx>40</posx>
 				<posy>230</posy>
 				<width>250</width>
-				<align>left</align>				
+				<align>left</align>
 				<label>31564</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
@@ -93,17 +93,17 @@
 				<posx>650</posx>
 				<posy>230</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>$INFO[Skin.CurrentTheme]</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-			</control>						
+			</control>
 			<control type="label">
 				<description>Screen Mode</description>
 				<posx>40</posx>
 				<posy>270</posy>
 				<width>250</width>
-				<align>left</align>				
+				<align>left</align>
 				<label>31565</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
@@ -113,7 +113,7 @@
 				<posx>650</posx>
 				<posy>270</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>$INFO[System.ScreenMode]</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
@@ -123,7 +123,7 @@
 				<posx>40</posx>
 				<posy>310</posy>
 				<width>250</width>
-				<align>left</align>				
+				<align>left</align>
 				<label>31566</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
@@ -133,44 +133,44 @@
 				<posx>650</posx>
 				<posy>310</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>31567</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-				<visible>System.Platform.linux</visible>				
+				<visible>System.Platform.linux</visible>
 			</control>
 			<control type="label">
 				<description>Windows Platform</description>
 				<posx>650</posx>
 				<posy>310</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>31568</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-				<visible>System.Platform.windows</visible>				
+				<visible>System.Platform.windows</visible>
 			</control>
 			<control type="label">
 				<description>XBox Platform</description>
 				<posx>650</posx>
 				<posy>310</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>31569</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-				<visible>System.Platform.xbox</visible>				
+				<visible>System.Platform.xbox</visible>
 			</control>
 			<control type="label">
 				<description>Mac OS X Platform</description>
 				<posx>650</posx>
 				<posy>310</posy>
 				<width>400</width>
-				<align>right</align>				
+				<align>right</align>
 				<label>31570</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-				<visible>System.Platform.osx</visible>				
+				<visible>System.Platform.osx</visible>
 			</control>
 		</control>
 	</controls>

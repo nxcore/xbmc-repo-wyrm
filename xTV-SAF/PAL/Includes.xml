@@ -203,6 +203,32 @@
 		</control>
 	</include>
 
+		<!-- MovieLibraryTitle Include -->
+	<include name="MovieLibraryTitle">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/2/,return)</onclick>
+	</include>
+		<!-- MovieLibraryRoot Include -->
+	<include name="MovieLibraryRoot">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/,return)</onclick>
+	</include>
+		<!-- MovieLibraryRecentlyadded Include -->
+	<include name="MovieLibraryRecentlyadded">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://4/,return)</onclick>
+	</include>
+
+	<!-- MovieLibraryTitle Include -->
+	<include name="TVLibraryTitle">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/2/,return)</onclick>
+	</include>
+	<!-- MovieLibraryRoot Include -->
+	<include name="TVLibraryRoot">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/,return)</onclick>
+	</include>
+	<!-- MovieLibraryRecentlyadded Include -->
+	<include name="TVLibraryRecentlyadded">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://5/,return)</onclick>
+	</include>
+
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
@@ -251,7 +277,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="mask-rect.png" border="3">-</texture>
+				<texture background="true" diffuse="mask-rect.png">-</texture>
 				<info>ListItem.Icon</info>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
@@ -264,7 +290,7 @@
 				<width>345</width>
 				<height>345</height>
 				<info>ListItem.Icon</info>
-				<texture background="true" flipy="true" diffuse="mask-fade.png" border="3">-</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png">-</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 				<visible>Skin.HasSetting(Fanart) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
@@ -277,7 +303,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
@@ -288,7 +314,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
@@ -301,7 +327,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -312,7 +338,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -325,7 +351,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" diffuse="mask-rect.png" border="3">DefaultTvshows.png</texture>
+				<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -336,7 +362,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture background="true" flipy="true" diffuse="mask-fade.png" border="3">DefaultTvshows.png</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
@@ -350,7 +376,7 @@
 				<height>345</height>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" diffuse="mask-rect.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="image">
@@ -360,7 +386,7 @@
 				<height>345</height>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" flipy="true" diffuse="mask-fade.png" border="2,2,0,0">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 		</control>
