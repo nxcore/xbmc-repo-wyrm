@@ -2,7 +2,7 @@
   <defaultresolution>pal</defaultresolution>
   <defaultresolutionwide>pal16x9</defaultresolutionwide>
   <version>2.11</version>
-  <skinversion>0.96</skinversion> 
+  <skinversion>1.0.2</skinversion> 
   <debugging>true</debugging>
   
   <credits>
