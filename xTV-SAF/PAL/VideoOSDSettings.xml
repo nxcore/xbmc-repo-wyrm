@@ -1,5 +1,5 @@
 <window id="123">
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol>5</defaultcontrol>
 	<animation effect="fade" time="400">WindowOpen</animation>
 	<animation effect="fade" time="400">WindowClose</animation>
 	<coordinates>
@@ -16,7 +16,7 @@
 				<posy>-10</posy>
 				<width>426</width>
 				<height>475</height>
-				<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
+				<texture diffuse="mask-square.png" border="8">button-menu-background.png</texture>
 				<colordiffuse>UnFocusedPosters</colordiffuse>
 			</control>
 			<control type="label" id="2">
@@ -51,7 +51,6 @@
 				<posy>40</posy>
 				<width>408</width>
 				<height>395</height>
-				<texture>-</texture>
 				<itemgap>0</itemgap>
 				<pagecontrol>-</pagecontrol>
 				<onleft>5</onleft>
