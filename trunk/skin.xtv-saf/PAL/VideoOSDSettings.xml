@@ -1,5 +1,5 @@
 <window id="123">
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol>5</defaultcontrol>
 	<animation effect="fade" time="400">WindowOpen</animation>
 	<animation effect="fade" time="400">WindowClose</animation>
 	<coordinates>
@@ -51,7 +51,6 @@
 				<posy>40</posy>
 				<width>408</width>
 				<height>395</height>
-				<texture>-</texture>
 				<itemgap>0</itemgap>
 				<pagecontrol>-</pagecontrol>
 				<onleft>5</onleft>
