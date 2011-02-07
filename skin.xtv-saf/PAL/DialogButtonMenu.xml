@@ -82,6 +82,7 @@
 					<height>80</height>
 					<texturefocus>shut-profile.png</texturefocus>
 					<texturenofocus>shut-profile.png</texturenofocus>
+					<onclick>dialog.close(all,true)</onclick>
 					<onclick>system.logoff</onclick>
 					<pulseonselect>yes</pulseonselect>
 					<aligny>center</aligny>
