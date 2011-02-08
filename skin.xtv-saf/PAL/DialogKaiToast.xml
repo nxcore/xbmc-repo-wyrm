@@ -18,7 +18,7 @@
 		</control>
 		<control type="image" id="400">
 			<description>avatar</description>
-			<posx>5</posx>
+			<posx>10</posx>
 			<posy>12</posy>
 			<width>64</width>
 			<height>64</height>
@@ -27,7 +27,7 @@
 		</control>
 		<control type="image" id="404">
 			<description>avatar</description>
-			<posx>5</posx>
+			<posx>10</posx>
 			<posy>12</posy>
 			<width>64</width>
 			<height>64</height>
@@ -37,7 +37,7 @@
 		</control>
 		<control type="image" id="405">
 			<description>avatar</description>
-			<posx>5</posx>
+			<posx>10</posx>
 			<posy>12</posy>
 			<width>64</width>
 			<height>64</height>
@@ -47,7 +47,7 @@
 		</control>
 		<control type="label" id="401">
 			<description>Caption Label</description>
-			<posx>72</posx>
+			<posx>76</posx>
 			<posy>15</posy>
 			<width>240</width>
 			<height>30</height>
@@ -59,7 +59,7 @@
 		</control>
 		<control type="label" id="402">
 			<description>Description Button</description>
-			<posx>72</posx>
+			<posx>76</posx>
 			<posy>48</posy>
 			<width>240</width>
 			<height>30</height>
