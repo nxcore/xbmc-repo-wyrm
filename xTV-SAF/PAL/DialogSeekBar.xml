@@ -30,7 +30,7 @@
 			<width>200</width>
 			<height>200</height>
 			<align>left</align>
-			<texture diffuse="RndRectMask.png" border="3">-</texture>
+			<texture diffuse="mask-rect.png">-</texture>
 			<fadetime>300</fadetime>
 			<info>VideoPlayer.Cover</info>
 			<aspectratio>keep</aspectratio>
@@ -45,7 +45,7 @@
 			<width>200</width>
 			<height>200</height>
 			<align>left</align>
-			<texture diffuse="RndRectMask.png" border="3">-</texture>
+			<texture diffuse="mask-rect.png">-</texture>
 			<fadetime>300</fadetime>
 			<info>MusicPlayer.Cover</info>
 			<aspectratio>keep</aspectratio>
@@ -276,7 +276,7 @@
 				<posy>2</posy>
 				<width>200</width>
 				<height>70</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 			</control>
 			<control type="label">
 				<description>Elapsed Time Label</description>
