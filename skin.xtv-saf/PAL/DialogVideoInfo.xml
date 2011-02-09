@@ -474,12 +474,12 @@
 			</control>
 			<control type="image" id="3">
 				<description>Cover image</description>
-				<posx>10</posx>
-				<posy>50</posy>
-				<width>280</width>
-				<height>370</height>
-				<texture>-</texture>
-				<aspectratio>keep</aspectratio>
+				<posx>15</posx>
+				<posy>55</posy>
+				<width>235</width>
+				<height>330</height>
+				<texture diffuse="mask-rect.png">-</texture>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
 				<visible>!substring(Control.GetLabel(5),plot)</visible>
 			</control>
 			<!-- Cast -->
@@ -556,13 +556,13 @@
 			</control>
 			<control type="image">
 				<description>Actor image</description>
-				<posx>10</posx>
-				<posy>50</posy>
-				<width>260</width>
-				<height>350</height>
+				<posx>15</posx>
+				<posy>55</posy>
+				<width>235</width>
+				<height>330</height>
 				<align>center</align>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture>$INFO[Container(50).Listitem.Icon]</texture>
+				<texture diffuse="mask-rect.png">$INFO[Container(50).Listitem.Icon]</texture>
 				<visible>substring(Control.GetLabel(5),plot)</visible>
 			</control>
 
