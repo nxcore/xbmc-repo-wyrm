@@ -167,7 +167,6 @@
 						<onright>4</onright>
 						<textcolor>button-text</textcolor>
 						<include>button-fade</include>
-						<!--<include>View-as</include>-->
 					</control>
 					<control type="togglebutton" id="4">
 						<description>Sort asc/dsc</description>
@@ -179,7 +178,6 @@
 						<onleft>3</onleft> 
 						<onright>50</onright>
 						<include>button-fade</include>
-						<!--<include>View-as</include>-->
 					</control>
 				</control>
 				<control type="radiobutton" id="5">
@@ -200,8 +198,7 @@
 					<label>25000</label> 
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<!--<include>View-as</include>-->
-					<visible>!IsEmpty($LOCALIZE[25000])</visible>
+					<include>View-as</include>
 				</control>
 			</control>
 		</control>
