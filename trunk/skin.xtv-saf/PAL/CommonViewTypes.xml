@@ -74,6 +74,18 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<control type="image">
+				<description>top and bottom list fade</description>
+				<posx>400</posx>
+				<posy>95</posy>
+				<width>300</width>
+				<height>444</height>
+				<texture background="true" diffuse="mask-listfade.png">mask-rect.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		</control>
 		<include>SortLetterNotification</include>
 	</include>
 
@@ -135,6 +147,18 @@
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<control type="image">
+				<description>top and bottom list fade</description>
+				<posx>400</posx>
+				<posy>95</posy>
+				<width>300</width>
+				<height>444</height>
+				<texture background="true" diffuse="mask-listfade.png">mask-rect.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		</control>
 		<include>SortLetterNotification</include>
 	</include>
