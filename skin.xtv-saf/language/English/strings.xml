@@ -147,6 +147,9 @@
 	<string id="31686">XBMCScripts</string>
 	<string id="31687">Movie Trailers</string>
 	<string id="31688">Go Back</string>
+	
+	<string id="31690">Plugin</string>
+	<string id="31691">Go Back</string>
 
 	<!-- End Misc. strings -->
 
@@ -206,6 +209,7 @@
 	<string id="31894">Wake external sources</string>
 
 	<string id="31850">Script :</string>
+	<string id="31851">Plugin :</string>
 
 	<string id="31852">Set Default Movie source</string>
     <string id="31853">Set Default TV source</string>
