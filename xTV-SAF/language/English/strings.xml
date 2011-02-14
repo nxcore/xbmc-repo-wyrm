@@ -68,6 +68,8 @@
 	<string id="31439">Check your connection or try again later.</string>
 	<string id="31440">Family Profile</string>
 	<string id="31441">Apply theme now?</string>
+	<string id="31442">Choose a Plugin Type</string>
+	<string id="31443">Choose a Plugin</string>
 	<!-- End script strings -->
 
 	<!-- Begin weather strings 31526 - 31550-->
@@ -206,6 +208,7 @@
 	<string id="31894">Wake external sources</string>
 
 	<string id="31850">Script :</string>
+	<string id="31851">Plugin :</string>
 
 	<string id="31852">Set Default Movie source</string>
     <string id="31853">Set Default TV source</string>
