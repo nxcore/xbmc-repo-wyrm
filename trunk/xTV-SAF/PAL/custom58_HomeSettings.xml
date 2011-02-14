@@ -169,40 +169,33 @@
 				<radioposx>450</radioposx>
 			</control>
 			<control type="button" id="26">
-				<description>YouTube script location (XBox)</description>
-				<font>font13</font>
 				<width>480</width>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<textwidth>450</textwidth>
-				<enable>Skin.HasSetting(home-youtube)</enable>
+				<font>font13</font>
 				<label>$LOCALIZE[31850]</label>
-				<label2>$INFO[Skin.String(youtube-scriptpath)] </label2>
-				<haspath>true</haspath>
-				<onclick>Skin.SetFile(youtube-scriptpath,.py)</onclick>
+				<label2>$INFO[Skin.String(youtube-script)]</label2>
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
-				<aligny>center</aligny>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<textoffsetx>20</textoffsetx>
-				<visible>System.Platform.xbox</visible>
+				<enable>Skin.HasSetting(home-youtube)</enable>
+				<onclick>Skin.SetFile(youtube-script,.py)</onclick>
+				<onclick>Skin.Reset(youtube-pluginfolder)</onclick>
+				<onclick>Skin.Reset(youtube-pluginname)</onclick>
 			</control>
 			<control type="button" id="27">
-				<description>YouTube script location (Non XBox)</description>
-				<font>font13</font>
 				<width>480</width>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<textwidth>450</textwidth>
-				<enable>Skin.HasSetting(home-youtube)</enable>
-				<label>$LOCALIZE[31850]</label>
-				<label2>$INFO[Skin.String(youtube-scriptpath)] </label2>
-				<haspath>true</haspath>
-				<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
+				<font>font13</font>
+				<label>$LOCALIZE[31851]</label>
+				<label2>$INFO[Skin.String(youtube-pluginname)]</label2>
 				<textcolor>button-text</textcolor>
 				<disabledcolor>disabled-text</disabledcolor>
-				<aligny>center</aligny>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<textoffsetx>20</textoffsetx>
-				<visible>!System.Platform.xbox</visible>
+				<enable>Skin.HasSetting(home-youtube)</enable>
+				<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,youtube)</onclick>
+				<onclick>Skin.Reset(youtube-script)</onclick>
 			</control>
 			<control type="radiobutton" id="15">
 				<description>Weather On Home toggle</description>
