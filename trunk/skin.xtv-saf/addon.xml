@@ -13,7 +13,7 @@
     defaultresolutionwide="PAL16x9"
     defaultthemename="Textures.xbt"
     effectslowdown="1.00"
-    debugging="true"/>
+    debugging="false"/>
   <extension point="xbmc.addon.metadata">
     <summary>xTV-SAF is a update of xTV (2269)</summary>
     <description>xTV-SAF is a fork of xTV to include the latest xbmc features in a Spouse friendly manner.</description>
