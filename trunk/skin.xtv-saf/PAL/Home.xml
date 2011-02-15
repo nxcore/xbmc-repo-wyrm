@@ -113,6 +113,7 @@
 			<width>70</width>
 			<height>70</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
+			<aspectratio>keep</aspectratio>
 			<timeperimage>200</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
