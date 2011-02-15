@@ -77,6 +77,7 @@
 					<width>200</width>
 					<height>200</height>
 					<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Current.FanartCode)]</imagepath>
+					<aspectratio>keep</aspectratio>
 					<timeperimage>200</timeperimage>
 					<randomize>false</randomize>
 					<fadetime>0</fadetime>
@@ -260,6 +261,7 @@
 						<width>70</width>
 						<height>70</height>
 						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day0.FanartCode)]</imagepath>
+						<aspectratio>keep</aspectratio>
 						<timeperimage>200</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
@@ -361,6 +363,7 @@
 						<width>70</width>
 						<height>70</height>
 						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
+						<aspectratio>keep</aspectratio>
 						<timeperimage>200</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
@@ -462,6 +465,7 @@
 						<width>70</width>
 						<height>70</height>
 						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
+						<aspectratio>keep</aspectratio>
 						<timeperimage>200</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
@@ -563,6 +567,7 @@
 						<width>70</width>
 						<height>70</height>
 						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
+						<aspectratio>keep</aspectratio>
 						<timeperimage>200</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
