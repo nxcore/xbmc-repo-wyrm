@@ -6,16 +6,16 @@
 			<description>Select Dialog background image</description>
 			<posx>10</posx>
 			<posy>50</posy>
-			<width>390</width>
+			<width>410</width>
 			<height>506</height>
-			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
+			<texture diffuse="mask-square.png" border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 			<control type="label" id="1">
 			<description>Heading</description>
 			<posx>20</posx>
 			<posy>60</posy>
-			<width>370</width>
+			<width>390</width>
 			<label>$LOCALIZE[1023]</label>
 			<align>center</align>
 		</control>
@@ -23,7 +23,7 @@
 			<description>separator image</description>
 			<posx>20</posx>
 			<posy>85</posy>
-			<width>370</width>
+			<width>390</width>
 			<height>5</height>
 			<texture>separator.png</texture>
 		</control>
@@ -44,6 +44,7 @@
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<scrolltime>1</scrolltime>
+			<pagecontrol>23</pagecontrol>
 			<itemlayout height="32">
 				<control type="image">
 					<width>370</width>
@@ -100,6 +101,24 @@
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<textcolor>button-text</textcolor>
+		</control>
+		<control type="scrollbar" id="23">
+			<posx>392</posx>
+			<posy>90</posy>
+			<width>14</width>
+			<height>425</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>2</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>
 </window>
