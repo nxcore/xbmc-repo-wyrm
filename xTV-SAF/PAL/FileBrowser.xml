@@ -12,36 +12,34 @@
 			<description>File Browser background image</description>
 			<posx>-15</posx>
 			<posy>-15</posy>
-			<width>560</width>
-			<height>460</height>
-			<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+			<width>570</width>
+			<height>424</height>
+			<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label" id="411">
 			<description>heading label</description>
 			<posx>10</posx>
 			<posy>-2</posy>
-			<width>420</width>
-			<align>left</align>
+			<width>520</width>
 			<font>font13</font>
 			<label>1023</label>
+			<align>center</align>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 		</control>
-		<control type="label" id="412">
-			<description>path label control</description>
-			<posx>40</posx>
-			<posy>35</posy>
-			<width>440</width>
-			<align>left</align>
-			<font>font12</font>
-			<haspath>true</haspath>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-		</control>
-		<control type="list" id="450">
+		<control type="image">
+			<description>separator image</description>
 			<posx>10</posx>
-			<posy>70</posy>
+			<posy>24</posy>
+			<width>520</width>
+			<height>5</height>
+			<texture>separator.png</texture>
+		</control>
+
+		<control type="list" id="450">
+			<posx>30</posx>
+			<posy>35</posy>
 			<width>300</width>
 			<height>324</height>
 			<onleft>413</onleft>
@@ -49,6 +47,7 @@
 			<onup>450</onup>
 			<ondown>450</ondown>
 			<scrolltime>1</scrolltime>
+			<pagecontrol>23</pagecontrol>
 			<itemlayout height="36">
 				<control type="image">
 					<width>300</width>
@@ -95,16 +94,17 @@
 		</control>
 		<control type="image">
 			<description>List Icon</description>
-			<posx>310</posx>
-			<posy>200</posy>
-			<width>215</width>
-			<height>215</height>
+			<posx>335</posx>
+			<posy>154</posy>
+			<width>200</width>
+			<height>200</height>
 			<aspectratio>keep</aspectratio>
+			<align>center</align>
 			<info>ListItem.Icon</info>
 		</control>
 		<control type="group">
-			<posx>335</posx>
-			<posy>70</posy>
+			<posx>355</posx>
+			<posy>35</posy>
 			<control type="button" id="413">
 				<description>OK button</description>
 				<posx>0</posx>
@@ -159,6 +159,44 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 			</control>
+		</control>
+		<control type="label">
+			<description>Number of items</description>
+			<posx>10</posx>
+			<posy>370</posy>
+			<width>200</width>
+			<align>left</align>
+			<font>font12</font>
+			<label>$INFO[Container(450).NumItems] $LOCALIZE[127]</label>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="412">
+			<description>path label control</description>
+			<posx>335</posx>
+			<posy>370</posy>
+			<width>200</width>
+			<align>center</align>
+			<font>font12</font>
+			<haspath>true</haspath>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="scrollbar" id="23">
+			<posx>10</posx>
+			<posy>30</posy>
+			<width>14</width>
+			<height>334</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>
 </window>
