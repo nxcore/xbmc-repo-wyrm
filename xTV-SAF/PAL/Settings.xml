@@ -323,7 +323,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31556</label>
-				<onclick>XBMC.ActivateWindow(56)</onclick>
+				<onclick>XBMC.ActivateWindow(52)</onclick>
 				<onleft>999</onleft>
 				<onright>999</onright>
 				<onup>4</onup>
