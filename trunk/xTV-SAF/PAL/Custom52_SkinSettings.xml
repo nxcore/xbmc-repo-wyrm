@@ -1,0 +1,1812 @@
+<window id="52">
+	<defaultcontrol always="true">999</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+		<include>background</include>
+		<include>Fake-Overlay</include>
+		<control type="image">
+			<description>Settings Logo</description>
+			<include>icon-header-commons</include>
+			<texture>icon-settings.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings Label</description>
+			<posx>535</posx>
+			<posy>20</posy>
+			<width>175</width>
+			<height>25</height>
+			<label>31556</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="label">
+			<description>Settings Label</description>
+			<posx>535</posx>
+			<posy>50</posy>
+			<width>175</width>
+			<height>25</height>
+			<label>$LOCALIZE[5]</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<!--Settings Categorys-->
+		<control type="group" id="999">
+			<include>list-fade</include>
+			<control type="button" id="1">
+				<description>Startup Settings Button</description>
+				<font>font13</font>
+				<posx>550</posx>
+				<posy>90</posy>
+				<width>160</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31841</label>
+				<onup>6</onup>
+				<ondown>2</ondown>
+				<onleft>100</onleft>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="2">
+				<description>General Settings Button</description>
+				<font>font13</font>
+				<posx>550</posx>
+				<posy>130</posy>
+				<width>160</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31813</label>
+				<onup>1</onup>
+				<ondown>3</ondown>
+				<onleft>200</onleft>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="3">
+				<description>Home Window Settings Button</description>
+				<font>font13</font>
+				<posx>550</posx>
+				<posy>170</posy>
+				<width>160</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31815</label>
+				<onup>2</onup>
+				<ondown>4</ondown>
+				<onleft>300</onleft>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="4">
+				<description>Background Settings Button</description>
+				<font>font13</font>
+				<posx>550</posx>
+				<posy>210</posy>
+				<width>160</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31814</label>
+				<onup>3</onup>
+				<ondown>5</ondown>
+				<onleft>400</onleft>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="5">
+				<description>Media Sources Settings Button</description>
+				<font>font13</font>
+				<posx>550</posx>
+				<posy>250</posy>
+				<width>160</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31831</label>
+				<onup>4</onup>
+				<ondown>6</ondown>
+				<onleft>500</onleft>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="6">
+				<description>Views Settings Button</description>
+				<font>font13</font>
+				<posx>550</posx>
+				<posy>290</posy>
+				<width>160</width>
+				<height>40</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31834</label>
+				<onup>5</onup>
+				<ondown>1</ondown>
+				<onleft>600</onleft>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+		</control>
+		
+		<!--Startup Settings-->
+		<control type="group">
+			<control type="image">
+				<description>Startup Settings Button Image</description>
+				<posx>550</posx>
+				<posy>90</posy>
+				<width>160</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<include>settingbutton-fade</include>
+				<visible>ControlGroup(100).HasFocus()</visible>
+			</control>
+			<control type="label">
+				<description>Startup Settings Button Label</description>
+				<posx>560</posx>
+				<posy>90</posy>
+				<width>150</width>
+				<height>40</height>
+				<label>31841</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<visible>ControlGroup(100).HasFocus()</visible>
+			</control>
+			<!--Scrollbar-->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<onleft>1</onleft>
+				<onright>100</onright>
+				<onup>100</onup>
+				<ondown>100</ondown>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Control.HasFocus(1) | ControlGroup(100).HasFocus()</visible>
+			</control>
+			<control type="grouplist" id="100">
+				<posx>30</posx>
+				<posy>90</posy>
+				<width>500</width>
+				<height>425</height>
+				<itemgap>-2</itemgap>
+				<onup>100</onup>
+				<ondown>100</ondown>
+				<onleft>100</onleft>
+				<onright>999</onright>
+				<pagecontrol>23</pagecontrol>
+				<visible allowhiddenfocus="true">Control.HasFocus(1) | ControlGroup(100).HasFocus()</visible>
+				<control type="radiobutton" id="110">
+					<description>Intro Video Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31003</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(intro-vid)</onclick>
+					<selected>Skin.HasSetting(intro-vid)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="111">
+					<description>Intro Video Location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(intro-vid)</enable>
+					<label>31004</label>
+					<label2>$INFO[Skin.String(intro-vid-location)]</label2>
+					<onclick>Skin.SetFile(intro-vid-location,,special://skin/extras)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>ff4e4e4e</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+				</control>
+				<control type="radiobutton" id="112">
+					<description>Startup Playlist toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31001</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
+					<selected>Skin.HasSetting(startup-playlist)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="113">
+					<description>Choose Playlist button</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31002</label>
+					<enable>Skin.HasSetting(startup-playlist)</enable>
+					<onclick>Skin.SetFile(playlist,.m3u,special://userdata/playlists/music)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>ff4e4e4e</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+			</control>
+		</control>
+		<!--General Settings-->
+		<control type="group">
+			<control type="image">
+				<description>General Settings Button Image</description>
+				<posx>550</posx>
+				<posy>130</posy>
+				<width>160</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<include>settingbutton-fade</include>
+				<visible>ControlGroup(200).HasFocus()</visible>
+			</control>
+			<control type="label">
+				<description>General Settings Button Label</description>
+				<posx>560</posx>
+				<posy>130</posy>
+				<width>150</width>
+				<height>40</height>
+				<label>31813</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<visible>ControlGroup(200).HasFocus()</visible>
+			</control>
+			<!--Scrollbar-->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<onleft>1</onleft>
+				<onright>200</onright>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Control.HasFocus(2) | ControlGroup(200).HasFocus()</visible>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>30</posx>
+				<posy>90</posy>
+				<width>500</width>
+				<height>420</height>
+				<itemgap>-2</itemgap>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>200</onleft>
+				<onright>999</onright>
+				<pagecontrol>23</pagecontrol>
+				<visible allowhiddenfocus="true">Control.HasFocus(2) | ControlGroup(200).HasFocus()</visible>
+				<control type="radiobutton" id="201">
+					<description>Scrollbar Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31801</label>
+					<onclick>Skin.ToggleSetting(sbar)</onclick>
+					<selected>Skin.HasSetting(sbar)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="202">
+					<description>Media Overlay Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31802</label>
+					<onclick>Skin.ToggleSetting(overlay)</onclick>
+					<selected>Skin.HasSetting(overlay)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="203">
+					<description>Now Playing Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31804</label>
+					<onclick>Skin.ToggleSetting(now-playing)</onclick>
+					<selected>!Skin.HasSetting(now-playing)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="204">
+					<description>Watched/Unwatched Overlay Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31803</label>
+					<onclick>Skin.ToggleSetting(watched-overlay)</onclick>
+					<selected>Skin.HasSetting(watched-overlay)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="205">
+					<description>Use Now Playing Screen Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31806</label>
+					<onclick>Skin.ToggleSetting(np-vis)</onclick>
+					<selected>Skin.HasSetting(np-vis)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="206">
+					<description>Icon Tilt Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31816</label>
+					<onclick>Skin.ToggleSetting(tilted-icons)</onclick>
+					<selected>Skin.HasSetting(tilted-icons)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="207">
+					<description>Video Wall Tilt Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31840</label>
+					<onclick>Skin.ToggleSetting(tilted-videowall)</onclick>
+					<selected>Skin.HasSetting(tilted-videowall)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="208">
+					<description>Auto Scroll Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31823</label>
+					<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
+					<selected>!Skin.HasSetting(AutoScroll)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="209">
+					<description>Subtitles in OSD toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31891</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(osd-subtitles)</onclick>
+					<selected>Skin.HasSetting(osd-subtitles)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="210">
+					<description>Subtile script location (XBox)</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<enable>Skin.HasSetting(osd-subtitles)</enable>
+					<label> $LOCALIZE[31850]</label>
+					<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(osd-subscriptpath,.py)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>System.Platform.xbox</visible>
+				</control>
+				<control type="button" id="210">
+					<description>Subtile script location (Non XBox)</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<enable>Skin.HasSetting(osd-subtitles)</enable>
+					<label> $LOCALIZE[31850]</label>
+					<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>!System.Platform.xbox</visible>
+				</control>
+			</control>
+		</control>
+		<!--Home Settings-->
+		<control type="group">
+			<control type="image">
+				<description>Home Settings Button Image</description>
+				<posx>550</posx>
+				<posy>170</posy>
+				<width>160</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<include>settingbutton-fade</include>
+				<visible>ControlGroup(300).HasFocus()</visible>
+			</control>
+			<control type="label">
+				<description>Home Settings Button Label</description>
+				<posx>560</posx>
+				<posy>170</posy>
+				<width>150</width>
+				<height>40</height>
+				<label>31815</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<visible>ControlGroup(300).HasFocus()</visible>
+			</control>
+			<!--Scrollbar-->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<onleft>1</onleft>
+				<onright>300</onright>
+				<onup>300</onup>
+				<ondown>300</ondown>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Control.HasFocus(3) | ControlGroup(300).HasFocus()</visible>
+			</control>
+			<control type="grouplist" id="300">
+				<posx>30</posx>
+				<posy>90</posy>
+				<width>500</width>
+				<height>420</height>
+				<itemgap>-2</itemgap>
+				<onup>300</onup>
+				<ondown>300</ondown>
+				<onleft>300</onleft>
+				<onright>999</onright>
+				<pagecontrol>23</pagecontrol>
+				<visible allowhiddenfocus="true">Control.HasFocus(3) | ControlGroup(300).HasFocus()</visible>
+				<control type="radiobutton" id="301">
+					<description>Movies On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31843</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-movie)</onclick>
+					<selected>!Skin.HasSetting(home-movie)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="302">
+					<description>TV On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31844</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-tv)</onclick>
+					<selected>!Skin.HasSetting(home-tv)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="303">
+					<description>Music Videos On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31842</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
+					<selected>Skin.HasSetting(home-musicvideo)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="304">
+					<description>Music On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31827</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-music)</onclick>
+					<selected>!Skin.HasSetting(home-music)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="305">
+					<description>Programs On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31828</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-programs)</onclick>
+					<selected>Skin.HasSetting(home-programs)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="306">
+					<description>Scripts On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31848</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-scripts)</onclick>
+					<selected>Skin.HasSetting(home-scripts)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>System.Platform.xbox</visible>
+				</control>
+				<control type="radiobutton" id="307">
+					<description>Photos On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31829</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-photos)</onclick>
+					<selected>!Skin.HasSetting(home-photos)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="308">
+					<description>Youtube On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31821</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-youtube)</onclick>
+					<selected>Skin.HasSetting(home-youtube)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="309">
+					<description>YouTube script location (XBox)</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<!--<enable>Skin.HasSetting(home-youtube)</enable>-->
+					<label>$LOCALIZE[31850]</label>
+					<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(youtube-scriptpath,.py)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>System.Platform.xbox + Skin.HasSetting(home-youtube)</visible>
+				</control>
+				<control type="button" id="310">
+					<description>YouTube script location (Non XBox)</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<!--<enable>Skin.HasSetting(home-youtube)</enable>-->
+					<label>$LOCALIZE[31850]</label>
+					<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>!System.Platform.xbox + Skin.HasSetting(home-youtube)</visible>
+				</control>
+				<control type="radiobutton" id="311">
+					<description>Weather On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31822</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-weather)</onclick>
+					<selected>Skin.HasSetting(home-weather)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="312">
+					<description>User Script On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31830</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-script)</onclick>
+					<selected>Skin.HasSetting(home-script)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="313">
+					<description>Home user script location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<!--<enable>Skin.HasSetting(home-script)</enable>-->
+					<label>31850</label>
+					<label2>$INFO[Skin.String(home-scriptname)] </label2>
+					<onclick>XBMC.Skin.SetAddon(home-scriptname,xbmc.python.script)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(home-script)</visible>
+				</control>
+				<control type="button" id="314">
+					<description>Home user script label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(home-script)</enable>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(home-scriptlabel)] </label2>
+					<onclick>XBMC.Skin.SetString(home-scriptlabel)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(home-script)</visible>
+				</control>
+				<control type="radiobutton" id="315">
+					<description>Favorites On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31833</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-favorites)</onclick>
+					<selected>Skin.HasSetting(home-favorites)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="316">
+					<description>Play Disc On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31890</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
+					<selected>!Skin.HasSetting(home-playdisc)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="317">
+					<description>Time On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31825</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-time)</onclick>
+					<selected>!Skin.HasSetting(home-time)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="318">
+					<description>Shutdown From Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31826</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
+					<selected>Skin.HasSetting(home-shutdown)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="319">
+					<description>Current Weather On Home toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31832</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
+					<selected>!Skin.HasSetting(home-currentweather)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+			</control>
+		</control>
+		<!--Background-->
+		<control type="group">
+			<control type="image">
+				<description>Background Settings Button Image</description>
+				<posx>550</posx>
+				<posy>210</posy>
+				<width>160</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<include>settingbutton-fade</include>
+				<visible>ControlGroup(400).HasFocus()</visible>
+			</control>
+			<control type="label">
+				<description>Background Settings Button Label</description>
+				<posx>560</posx>
+				<posy>210</posy>
+				<width>150</width>
+				<height>40</height>
+				<label>31814</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<visible>ControlGroup(400).HasFocus()</visible>
+			</control>
+			<!--Scrollbar-->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<onleft>1</onleft>
+				<onright>400</onright>
+				<onup>400</onup>
+				<ondown>400</ondown>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Control.HasFocus(4) | ControlGroup(400).HasFocus()</visible>
+			</control>
+			<control type="grouplist" id="400">
+				<posx>30</posx>
+				<posy>90</posy>
+				<width>500</width>
+				<height>425</height>
+				<itemgap>-2</itemgap>
+				<onup>400</onup>
+				<ondown>400</ondown>
+				<onleft>400</onleft>
+				<onright>999</onright>
+				<pagecontrol>23</pagecontrol>
+				<visible allowhiddenfocus="true">Control.HasFocus(4) | ControlGroup(400).HasFocus()</visible>
+				<control type="button" id="401">
+					<description>Custom Background Button</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31807</label>
+					<onclick>Skin.SetImage(custom-background)</onclick>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<visible>!Skin.String(custom-background)</visible>
+				</control>
+				<control type="button" id="402">
+					<description>Reset Custom Background Button</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31808</label>
+					<onclick>Skin.Reset(custom-background)</onclick>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<visible>Skin.String(custom-background)</visible>
+				</control>
+				<control type="radiobutton" id="403">
+					<description>Media In Background Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31809</label>
+					<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
+					<selected>Skin.HasSetting(HomeViewToggle)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="404">
+					<description>Background Fanart Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31818</label>
+					<onclick>Skin.ToggleSetting(background-fanart)</onclick>
+					<selected>Skin.HasSetting(background-fanart)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="405">
+					<description>Fanart as Thumb Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31824</label>
+					<onclick>Skin.ToggleSetting(Fanart)</onclick>
+					<selected>Skin.HasSetting(Fanart)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="406">
+					<description>Use DVD case Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31845</label>
+					<onclick>Skin.ToggleSetting(DVDcase)</onclick>
+					<selected>Skin.HasSetting(DVDcase)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="407">
+					<description>Use CD case Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31846</label>
+					<onclick>Skin.ToggleSetting(CDcase)</onclick>
+					<selected>Skin.HasSetting(CDcase)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+			</control>
+		</control>
+		<!--Media Sources Settings-->
+		<control type="group">
+			<control type="image">
+				<description>Media Sources Settings Button Image</description>
+				<posx>550</posx>
+				<posy>250</posy>
+				<width>160</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<include>settingbutton-fade</include>
+				<visible>ControlGroup(500).HasFocus()</visible>
+			</control>
+			<control type="label">
+				<description>Media Sources Settings Button Label</description>
+				<posx>560</posx>
+				<posy>250</posy>
+				<width>150</width>
+				<height>40</height>
+				<label>31831</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<visible>ControlGroup(500).HasFocus()</visible>
+			</control>
+			<!--Scrollbar-->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<onleft>1</onleft>
+				<onright>500</onright>
+				<onup>500</onup>
+				<ondown>500</ondown>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Control.HasFocus(5) | ControlGroup(500).HasFocus()</visible>
+			</control>
+			<control type="grouplist" id="500">
+				<posx>30</posx>
+				<posy>90</posy>
+				<width>500</width>
+				<height>425</height>
+				<itemgap>-2</itemgap>
+				<onup>500</onup>
+				<ondown>500</ondown>
+				<onleft>500</onleft>
+				<onright>999</onright>
+				<pagecontrol>23</pagecontrol>
+				<visible allowhiddenfocus="true">Control.HasFocus(5) | ControlGroup(500).HasFocus()</visible>
+				<control type="radiobutton" id="501">
+					<description>Movies Library link toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31810</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(movie-library)</onclick>
+					<selected>Skin.HasSetting(movie-library)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="label" id="502">
+					<description>Set Movie library entry point</description>
+					<width>490</width>
+					<height>40</height>
+					<label>31680</label>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<visible>Skin.HasSetting(movie-library)</visible>
+				</control>
+				<control type="radiobutton" id="503">
+					<description>Set Movie library entry point - Title</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>369</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(movie-libraryentrytitle)</onclick>
+					<onclick>Skin.Reset(movie-libraryentryroot)</onclick>
+					<onclick>Skin.Reset(movie-libraryentryrecent)</onclick>
+					<selected>Skin.HasSetting(movie-libraryentrytitle)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>Skin.HasSetting(movie-library)</visible>
+				</control>
+				<control type="radiobutton" id="504">
+					<description>Set Movie library entry point - Root</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>20108</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(movie-libraryentryroot)</onclick>
+					<onclick>Skin.Reset(movie-libraryentrytitle)</onclick>
+					<onclick>Skin.Reset(movie-libraryentryrecent)</onclick>
+					<selected>Skin.HasSetting(movie-libraryentryroot)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>Skin.HasSetting(movie-library)</visible>
+				</control>
+				<control type="radiobutton" id="505">
+					<description>Set Movie library entry point - Recentlyadded</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>20386</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(movie-libraryentryrecent)</onclick>
+					<onclick>Skin.Reset(movie-libraryentrytitle)</onclick>
+					<onclick>Skin.Reset(movie-libraryentryroot)</onclick>
+					<selected>Skin.HasSetting(movie-libraryentryrecent)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>Skin.HasSetting(movie-library)</visible>
+				</control>
+				<control type="radiobutton" id="506">
+					<description>Set Default Movie Source</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31852</label>
+					<enable>!Skin.HasSetting(movie-library)</enable>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(setdefault-moviesource)</onclick>
+					<selected>Skin.HasSetting(setdefault-moviesource)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>!Skin.HasSetting(movie-library)</visible>
+				</control>
+				<control type="button" id="507">
+					<description>Default Movie Source selected</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>250</textwidth>
+					<enable>Skin.HasSetting(setdefault-moviesource)</enable>
+					<label>31855</label>
+					<label2>$INFO[Skin.String(default-moviesource)]</label2>
+					<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,movie)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>!Skin.HasSetting(movie-library)</visible>
+				</control>
+				<control type="radiobutton" id="508">
+					<description>TV Library link toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<onup>15</onup>
+					<ondown>960</ondown>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31811</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(tv-library)</onclick>
+					<selected>Skin.HasSetting(tv-library)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="label" id="509">
+					<description>Set TV library entry point</description>
+					<width>490</width>
+					<height>40</height>
+					<label>31681</label>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<visible>Skin.HasSetting(tv-library)</visible>
+				</control>
+				<control type="radiobutton" id="510">
+					<description>Set TV library entry point - Title</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>369</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(tv-libraryentrytitle)</onclick>
+					<onclick>Skin.Reset(tv-libraryentryroot)</onclick>
+					<onclick>Skin.Reset(tv-libraryentryrecent)</onclick>
+					<selected>Skin.HasSetting(tv-libraryentrytitle)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>Skin.HasSetting(tv-library)</visible>
+				</control>
+				<control type="radiobutton" id="511">
+					<description>Set TV library entry point - Root</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>20108</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(tv-libraryentryroot)</onclick>
+					<onclick>Skin.Reset(tv-libraryentrytitle)</onclick>
+					<onclick>Skin.Reset(tv-libraryentryrecent)</onclick>
+					<selected>Skin.HasSetting(tv-libraryentryroot)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>Skin.HasSetting(tv-library)</visible>
+				</control>
+				<control type="radiobutton" id="512">
+					<description>Set TV library entry point - Recentlyadded</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>20387</label>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(tv-libraryentryrecent)</onclick>
+					<onclick>Skin.Reset(tv-libraryentrytitle)</onclick>
+					<onclick>Skin.Reset(tv-libraryentryroot)</onclick>
+					<selected>Skin.HasSetting(tv-libraryentryrecent)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>Skin.HasSetting(tv-library)</visible>
+				</control>
+				<control type="radiobutton" id="513">
+					<description>Set Default TV Source</description>
+					<font>font13</font>
+					<width>490</width>
+					<onup>960</onup>
+					<ondown>18</ondown>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31853</label>
+					<enable>!Skin.HasSetting(tv-library)</enable>
+					<textwidth>250</textwidth>
+					<onclick>Skin.ToggleSetting(setdefault-tvsource)</onclick>
+					<selected>Skin.HasSetting(setdefault-tvsource)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>!Skin.HasSetting(tv-library)</visible>
+				</control>
+				<control type="button" id="514">
+					<description>Default TV Source</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(setdefault-tvsource)</enable>
+					<label>31855</label>
+					<label2>$INFO[Skin.String(default-tvsource)]</label2>
+					<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,tv)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>!Skin.HasSetting(tv-library)</visible>
+				</control>
+				<control type="radiobutton" id="515">
+					<description>Music Video Library link toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31847</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(musicvideo-library)</onclick>
+					<selected>Skin.HasSetting(musicvideo-library)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="516">
+					<description>Set Default Music Video Source</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31854</label>
+					<enable>!Skin.HasSetting(musicvideo-library)</enable>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(setdefault-musicvideosource)</onclick>
+					<selected>Skin.HasSetting(setdefault-musicvideosource)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+					<visible>!Skin.HasSetting(musicvideo-library)</visible>
+				</control>
+				<control type="button" id="517">
+					<description>Default Music Video Source</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(setdefault-musicvideosource)</enable>
+					<label>31855</label>
+					<label2>$INFO[Skin.String(default-musicvideosource)]</label2>
+					<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,musicvideo)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>!Skin.HasSetting(musicvideo-library)</visible>
+				</control>
+				<control type="radiobutton" id="518">
+					<description>Use WOL script to wake external sources</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31894</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(wake-source)</onclick>
+					<selected>Skin.HasSetting(wake-source)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="519">
+					<description>WOL script location (XBox)</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<enable>Skin.HasSetting(wake-source)</enable>
+					<label>$LOCALIZE[31850]</label>
+					<label2>$INFO[Skin.String(wake-scriptpath)]</label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(wake-scriptpath,.py)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>System.Platform.xbox</visible>
+				</control>
+				<control type="button" id="520">
+					<description>WOL script location (Non XBox)</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<enable>Skin.HasSetting(wake-source)</enable>
+					<label>$LOCALIZE[31850]</label>
+					<label2>$INFO[Skin.String(wake-scriptpath)]</label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetAddon(wake-scriptpath,xbmc.python.script)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>30</textoffsetx>
+					<visible>!System.Platform.xbox</visible>
+				</control>
+			</control>
+		</control>
+		<!-- Views Settings-->
+		<control type="group">
+			<control type="image">
+				<description>Views Settings Button Image</description>
+				<posx>550</posx>
+				<posy>290</posy>
+				<width>160</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<include>settingbutton-fade</include>
+				<visible>ControlGroup(600).HasFocus()</visible>
+			</control>
+			<control type="label">
+				<description>Views Settings Button Label</description>
+				<posx>560</posx>
+				<posy>290</posy>
+				<width>150</width>
+				<height>40</height>
+				<label>31834</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<visible>ControlGroup(600).HasFocus()</visible>
+			</control>
+			<!--Scrollbar-->
+			<control type="scrollbar" id="23">
+				<posx>10</posx>
+				<posy>90</posy>
+				<width>14</width>
+				<height>424</height>
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<onleft>1</onleft>
+				<onright>600</onright>
+				<onup>600</onup>
+				<ondown>600</ondown>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Control.HasFocus(6) | ControlGroup(600).HasFocus()</visible>
+			</control>
+			<control type="grouplist" id="600">
+				<posx>30</posx>
+				<posy>90</posy>
+				<width>500</width>
+				<height>420</height>
+				<itemgap>-2</itemgap>
+				<onup>600</onup>
+				<ondown>600</ondown>
+				<onleft>600</onleft>
+				<onright>999</onright>
+				<pagecontrol>23</pagecontrol>
+				<visible allowhiddenfocus="true">Control.HasFocus(6) | ControlGroup(600).HasFocus()</visible>
+				<control type="radiobutton" id="601">
+					<description>View As Panel Lock Toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31817</label>
+					<onclick>Skin.ToggleSetting(view-as-lock)</onclick>
+					<selected>Skin.HasSetting(view-as-lock)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="label" id="602">
+					<description>Video views section heading</description>
+					<posx>50</posx>
+					<width>490</width>
+					<height>40</height>
+					<label>[B][I]Video Views[/I][/B]</label>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+				</control>
+				<control type="radiobutton" id="603">
+					<description>Video List2 view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31921</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-videolist2)</onclick>
+					<selected>Skin.HasSetting(views-videolist2)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="604">
+					<description>Video Icons view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31923</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-videoicons)</onclick>
+					<selected>Skin.HasSetting(views-videoicons)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="605">
+					<description>Video Banner view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31929</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-videobanner)</onclick>
+					<selected>Skin.HasSetting(views-videobanner)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="606">
+					<description>Video Wrap view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31922</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-videowrap)</onclick>
+					<selected>Skin.HasSetting(views-videowrap)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="607">
+					<description>Video Wall view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31927</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-videowall)</onclick>
+					<selected>Skin.HasSetting(views-videowall)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="608">
+					<description>Video Coverflow view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31928</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-videocoverflow)</onclick>
+					<selected>Skin.HasSetting(views-videocoverflow)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="label" id="621">
+					<description>Music views section heading</description>
+					<posx>50</posx>
+					<width>490</width>
+					<height>40</height>
+					<label>[B][I]Music Views[/I][/B]</label>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+				</control>
+				<control type="radiobutton" id="622">
+					<description>Music List2 view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31921</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-musiclist2)</onclick>
+					<selected>Skin.HasSetting(views-musiclist2)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="623">
+					<description>Music Wrap view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31922</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-musicwrap)</onclick>
+					<selected>Skin.HasSetting(views-musicwrap)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="624">
+					<description>Music Wall view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31927</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-musicwall)</onclick>
+					<selected>Skin.HasSetting(views-musicwall)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="625">
+					<description>Music Coverflow view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31928</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-musiccoverflow)</onclick>
+					<selected>Skin.HasSetting(views-musiccoverflow)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="label" id="631">
+					<description>Photo views section heading</description>
+					<posx>50</posx>
+					<width>490</width>
+					<height>40</height>
+					<label>[B][I]Photo Views[/I][/B]</label>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+				</control>	
+				<control type="radiobutton" id="632">
+					<description>Photo List2 view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31921</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-photolist2)</onclick>
+					<selected>Skin.HasSetting(views-photolist2)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="633">
+					<description>Photo Icons view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31923</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-photoicons)</onclick>
+					<selected>Skin.HasSetting(views-photoicons)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="634">
+					<description>Photo Wrap view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31922</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-photowrap)</onclick>
+					<selected>Skin.HasSetting(views-photowrap)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="635">
+					<description>Photo Wall view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31927</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-photowall)</onclick>
+					<selected>Skin.HasSetting(views-photowall)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="label" id="641">
+					<description>Program/Scripts views section heading</description>
+					<posx>50</posx>
+					<width>490</width>
+					<height>40</height>
+					<label>[B][I]Program/Script Views[/I][/B]</label>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+				</control>
+				<control type="radiobutton" id="642">
+					<description>Program/Scripts List2 view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31921</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-programlist2)</onclick>
+					<selected>Skin.HasSetting(views-programlist2)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="643">
+					<description>Program/Scripts Icons view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31923</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-programicons)</onclick>
+					<selected>Skin.HasSetting(views-programicons)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="644">
+					<description>Program/Scripts Wrap view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31922</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-programwrap)</onclick>
+					<selected>Skin.HasSetting(views-programwrap)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="645">
+					<description>Program/Scripts Wall view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31927</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-programwall)</onclick>
+					<selected>Skin.HasSetting(views-programwall)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="radiobutton" id="647">
+					<description>Program/Scripts Coverflow view toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>31928</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(views-programcoverflow)</onclick>
+					<selected>Skin.HasSetting(views-programcoverflow)</selected>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

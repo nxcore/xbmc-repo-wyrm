@@ -9,11 +9,23 @@
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>
+		<control type="label" id="2">
+			<description>Settings Label</description>
+			<posx>535</posx>
+			<posy>20</posy>
+			<width>175</width>
+			<height>25</height>
+			<label>-</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
 		<control type="label">
 			<description>Settings Label</description>
 			<posx>535</posx>
-			<posy>40</posy>
-			<label>31035</label>
+			<posy>50</posy>
+			<width>175</width>
+			<height>25</height>
+			<label>$LOCALIZE[5]</label>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
