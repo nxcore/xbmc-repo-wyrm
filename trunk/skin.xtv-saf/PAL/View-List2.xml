@@ -373,7 +373,7 @@
 			<!-- Star Rating -->
 			<control type="image">
 				<posx>10</posx>
-				<posy>250</posy>
+				<posy>215</posy>
 				<width>100</width>
 				<height>20</height>
 				<info>ListItem.StarRating</info>
@@ -384,9 +384,9 @@
 			<!-- Duration -->
 			<control type="label">
 				<posx>10</posx>
-				<posy>265</posy>
+				<posy>242</posy>
 				<width>150</width>
-				<height>50</height>
+				<height>25</height>
 				<aligny>center</aligny>
 				<font>font18</font>
 				<textcolor>button-text</textcolor>
@@ -397,9 +397,9 @@
 			</control>
 			<control type="label">
 				<posx>10</posx>
-				<posy>265</posy>
+				<posy>242</posy>
 				<width>150</width>
-				<height>50</height>
+				<height>25</height>
 				<aligny>center</aligny>
 				<font>font18</font>
 				<textcolor>button-text</textcolor>
@@ -411,9 +411,9 @@
 			</control>
 			<control type="label">
 				<posx>10</posx>
-				<posy>265</posy>
+				<posy>242</posy>
 				<width>150</width>
-				<height>50</height>
+				<height>25</height>
 				<aligny>center</aligny>
 				<font>font18</font>
 				<textcolor>button-text</textcolor>
@@ -423,250 +423,32 @@
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
 			<!-- MPAA Rating -->
-			<control type="image">
+			<control type="group">
 				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_restricted.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated R,Left)</visible>
+				<posy>275</posy>
+				<include>mpaa-ratings</include>
 			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_pg13.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_pg.png</texture>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
-				<aspectratio>keep</aspectratio>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_nc17.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_general.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
-			</control>
-			<!-- UK Ratings -->
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_u.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:U)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_pg.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:PG)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_12.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:12)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_15.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:15)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:18)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:X)</visible>
-			</control>
-			<!-- German Ratings -->
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-0_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:0) | substring(listitem.mpaa,o.A)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-6_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:6) | substring(listitem.mpaa,ab 6)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-12_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:12) | substring(listitem.mpaa,ab 12)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-16_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:16) | substring(listitem.mpaa,ab 16)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-18_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
-			</control>
-			<!-- Australian Ratings -->
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_r.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:R)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_m.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:M) + ! substring(listitem.mpaa,Australia:MA)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_ma.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:MA)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_pg.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:PG)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_g.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:G)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>$INFO[listitem.mpaa,special://skin/extras/images/rating/,.png]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,TV-,Left)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
+			<!-- TV show Logo -->
+			<control type="group">
+				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="image" id="37016">
+					<posx>10</posx>
+					<posy>330</posy>
+					<width>104</width>
+					<height>40</height>
+					<texture>$INFO[ListItem.path]logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+				</control>
+				<control type="image" id="39016">
+					<posx>10</posx>
+					<posy>330</posy>
+					<width>104</width>
+					<height>40</height>
+					<texture>$INFO[ListItem.path]../logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+				</control>
 			</control>
 			<!-- Plot Outline -->
 			<control type="textbox">
@@ -678,6 +460,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+				<align>justify</align>
 				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>
@@ -691,6 +474,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<align>justify</align>
 				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>
