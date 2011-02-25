@@ -121,18 +121,50 @@
 		
 		<control type="button" id="1">
 			<description>run WOL script</description>
+			<posy>-20</posy>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
 			<onfocus>XBMC.RunScript($INFO[Skin.String(wake-scriptpath)])</onfocus>
-			<onfocus>SetFocus(50)</onfocus>
+			<onfocus>SetFocus(9999)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>Skin.HasSetting(wake-source)</visible>
 		</control>
 		<control type="button" id="1">
 			<description>bypass running of WOL script</description>
-			<onfocus>SetFocus(50)</onfocus>
+			<posy>-20</posy>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9999)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>!Skin.HasSetting(wake-source)</visible>
+		</control>
+		
+		<control type="button" id="9999">
+			<description>trigger</description>
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=True)</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(tv_theme)</visible>
+		</control>
+		<control type="button" id="9999">
+			<description>bypass running of WOL script</description>
+			<posy>-20</posy>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(tv_theme)</visible>
 		</control>
 		
 		<control type="group">
