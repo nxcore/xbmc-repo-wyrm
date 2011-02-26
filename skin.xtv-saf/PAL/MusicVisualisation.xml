@@ -3,8 +3,6 @@
 	<allowoverlay>no</allowoverlay>
 	<visible>!Window.IsVisible(2004)</visible>
 	<visible>!Window.IsVisible(2005)</visible>
-	<visible>!SubString(Window(10025).Property(TvTunesIsAlive),True)</visible>
-	
 
 	<controls>
 		<control type="visualisation" id="2">
