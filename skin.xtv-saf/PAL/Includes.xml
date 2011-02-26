@@ -45,7 +45,7 @@
 			<width>720</width>
 			<height>576</height>
 			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(HomeViewToggle) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			<visible>Skin.HasSetting(HomeViewToggle) + !(Window(videolibrary).Property(TvTunesIsAlive))</visible>
 		</control>
 		<control type="videowindow">
 			<posx>0</posx>
@@ -76,8 +76,7 @@
 			<visible>INFO$(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<!--<visible>Skin.HasSetting(background-fanart) + !Container.Scrolling  + !Player.HasMedia</visible>-->
-			<visible>Skin.HasSetting(background-fanart) + [SubString(Window(videolibrary).Property(TvTunesIsAlive),True) | !Player.HasMedia]</visible>
+			<visible>Skin.HasSetting(background-fanart) + !Player.HasVideo</visible>
 			<control type="image">
 				<description>Fanart background</description>
 				<posx>0</posx>
