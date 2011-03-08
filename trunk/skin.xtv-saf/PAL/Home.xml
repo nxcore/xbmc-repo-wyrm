@@ -220,15 +220,27 @@
 					<icon>icon-video.png</icon>
 					<thumb>icon-video-blur1.png</thumb>
 					<label>31026</label>
-					<include condition="!Skin.HasSetting(movie-libraryhasentry)">MovieLibraryTitle</include>
-					<onclick>Skin.SetBool(movie-libraryhasentry)</onclick>
-					<include condition="Skin.HasSetting(movie-libraryentrytitle)">MovieLibraryTitle</include>
-					<include condition="Skin.HasSetting(movie-libraryentryroot)">MovieLibraryRoot</include>
-					<include condition="Skin.HasSetting(movie-libraryentryrecent)">MovieLibraryRecentlyadded</include>
+					<include condition="!Skin.String(movie-libraryentry)">MovieLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[369])">MovieLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20108])">MovieLibraryRoot</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20386])">MovieLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[135])">MovieLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[652])">MovieLibraryYears</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[344])">MovieLibraryActors</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20348])">MovieLibraryDirectors</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20388])">MovieLibraryStudios</include>
 					<onclick>ReloadSkin()</onclick>
 					<visible>Skin.HasSetting(movie-library)</visible>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
+				<!--<item>
+					<description>HD Movies</description>
+					<label>HD Movies</label>
+					<icon>icon-video.png</icon>
+					<thumb>icon-video-blur1.png</thumb>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/HDMovies.xsp,return)</onclick>
+					<visible>Library.HasContent(Movies)</visible>
+				</item>-->
 				<item>
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>

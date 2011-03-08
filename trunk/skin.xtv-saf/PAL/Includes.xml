@@ -214,16 +214,36 @@
 	<include name="MovieLibraryRecentlyadded">
 		<onclick>ActivateWindow(MyVideoLibrary,videodb://4/,return)</onclick>
 	</include>
+			<!-- MovieLibraryGenres Include -->
+	<include name="MovieLibraryGenres">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/1/,return)</onclick>
+	</include>
+		<!-- MovieLibraryYears Include -->
+	<include name="MovieLibraryYears">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/3/,return)</onclick>
+	</include>
+		<!-- MovieLibraryActors Include -->
+	<include name="MovieLibraryActors">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/4/ ,return)</onclick>
+	</include>
+			<!-- MovieLibraryDirectors Include -->
+	<include name="MovieLibraryDirectors">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/5/,return)</onclick>
+	</include>
+		<!-- MovieLibraryStudios Include -->
+	<include name="MovieLibraryStudios">
+		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/6/,return)</onclick>
+	</include>
 
-	<!-- MovieLibraryTitle Include -->
+	<!-- TVLibraryTitle Include -->
 	<include name="TVLibraryTitle">
 		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/2/,return)</onclick>
 	</include>
-	<!-- MovieLibraryRoot Include -->
+	<!-- TVLibraryRoot Include -->
 	<include name="TVLibraryRoot">
 		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/,return)</onclick>
 	</include>
-	<!-- MovieLibraryRecentlyadded Include -->
+	<!-- TVLibraryRecentlyadded Include -->
 	<include name="TVLibraryRecentlyadded">
 		<onclick>ActivateWindow(MyVideoLibrary,videodb://5/,return)</onclick>
 	</include>
