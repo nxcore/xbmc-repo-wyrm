@@ -263,11 +263,14 @@
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
 					<label>31027</label>
-					<include condition="!Skin.HasSetting(tv-libraryhasentry)">TVLibraryTitle</include>
-					<onclick>Skin.SetBool(tv-libraryhasentry)</onclick>
-					<include condition="Skin.HasSetting(tv-libraryentrytitle)">TVLibraryTitle</include>
-					<include condition="Skin.HasSetting(tv-libraryentryroot)">TVLibraryRoot</include>
-					<include condition="Skin.HasSetting(tv-libraryentryrecent)">TVLibraryRecentlyadded</include>
+					<include condition="!Skin.String(tv-libraryentry)">TVLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[369])">TVLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20108])">TVLibraryRoot</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20387])">TVLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[135])">TVLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[652])">TVLibraryYears</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[344])">TVLibraryActors</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20388])">TVLibraryStudios</include>
 					<onclick>ReloadSkin()</onclick>
 					<visible>Skin.HasSetting(tv-library)</visible>
 					<visible>!Skin.HasSetting(home-tv)</visible>
@@ -292,7 +295,16 @@
 					<icon>icon-musicvideo.png</icon>
 					<thumb>icon-musicvideo-blur1.png</thumb>
 					<label>31028</label>
-					<onclick>ActivateWindow(MyVideoLibrary,videodb://3/2/,return)</onclick>
+					<include condition="!Skin.String(musicvideo-libraryentry)">MusicVideoLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[369])">MusicVideoLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20108])">MusicVideoLibraryRoot</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20390])">MusicVideoLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[135])">MusicVideoLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[652])">MusicVideoLibraryYears</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[133])">MusicVideoLibraryArtists</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
+					<onclick>ReloadSkin()</onclick>
 					<visible>Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
@@ -300,7 +312,26 @@
 					<thumb>icon-music-blur1.png</thumb>
 					<label>31030</label>
 					<onclick>ActivateWindow(MyMusic,,return)</onclick>
-					<visible>!Skin.HasSetting(home-music)</visible>
+					<visible>!Skin.HasSetting(music-library) + !Skin.HasSetting(home-music)</visible>
+				</item>
+				<item>
+					<icon>icon-music.png</icon>
+					<thumb>icon-music-blur1.png</thumb>
+					<label>31030</label>
+					<include condition="!Skin.String(music-libraryentry)">MusicLibraryAlbums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[132])">MusicLibraryAlbums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[135])">MusicLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[133])">MusicLibraryArtists</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[134])">MusicLibrarySongs</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[10504])">MusicLibraryTop100Songs</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[10505])">MusicLibraryTop100Albums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[359])">MusicLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[517])">MusicLibraryRecentlyPlayed</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[521])">MusicLibraryCompilations</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[652])">MusicLibraryYears</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[1050])">MusicLibrarySingles</include>
+					<onclick>ReloadSkin()</onclick>
+					<visible>Skin.HasSetting(music-library) + !Skin.HasSetting(home-music)</visible>
 				</item>
 				<item>
 					<icon>icon-youtube.png</icon>

@@ -202,50 +202,144 @@
 		</control>
 	</include>
 
-		<!-- MovieLibraryTitle Include -->
+	<!-- MovieLibraryTitle Include -->
 	<include name="MovieLibraryTitle">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/2/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
 	</include>
-		<!-- MovieLibraryRoot Include -->
+	<!-- MovieLibraryRoot Include -->
 	<include name="MovieLibraryRoot">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,Movies,return)</onclick>
 	</include>
-		<!-- MovieLibraryRecentlyadded Include -->
+	<!-- MovieLibraryRecentlyadded Include -->
 	<include name="MovieLibraryRecentlyadded">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://4/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
 	</include>
-			<!-- MovieLibraryGenres Include -->
+	<!-- MovieLibraryGenres Include -->
 	<include name="MovieLibraryGenres">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/1/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
 	</include>
-		<!-- MovieLibraryYears Include -->
+	<!-- MovieLibraryYears Include -->
 	<include name="MovieLibraryYears">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/3/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
 	</include>
-		<!-- MovieLibraryActors Include -->
+	<!-- MovieLibraryActors Include -->
 	<include name="MovieLibraryActors">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/4/ ,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,MovieActors,return)</onclick>
 	</include>
-			<!-- MovieLibraryDirectors Include -->
+	<!-- MovieLibraryDirectors Include -->
 	<include name="MovieLibraryDirectors">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/5/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,MovieDirectors,return)</onclick>
 	</include>
-		<!-- MovieLibraryStudios Include -->
+	<!-- MovieLibraryStudios Include -->
 	<include name="MovieLibraryStudios">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://1/6/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,MovieStudios,return)</onclick>
 	</include>
 
 	<!-- TVLibraryTitle Include -->
 	<include name="TVLibraryTitle">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/2/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
 	</include>
 	<!-- TVLibraryRoot Include -->
 	<include name="TVLibraryRoot">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://2/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,TvShows,return)</onclick>
 	</include>
 	<!-- TVLibraryRecentlyadded Include -->
 	<include name="TVLibraryRecentlyadded">
-		<onclick>ActivateWindow(MyVideoLibrary,videodb://5/,return)</onclick>
+		<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+	</include>
+	<!-- TVLibraryGenres Include -->
+	<include name="TVLibraryGenres">
+		<onclick>ActivateWindow(VideoLibrary,TvShowGenres,return)</onclick>
+	</include>
+	<!-- TVLibraryYears Include -->
+	<include name="TVLibraryYears">
+		<onclick>ActivateWindow(VideoLibrary,TvShowYears,return)</onclick>
+	</include>
+	<!-- TVLibraryActors Include -->
+	<include name="TVLibraryActors">
+		<onclick>ActivateWindow(VideoLibrary,TvShowActors,return)</onclick>
+	</include>
+	<!-- TVLibraryStudios Include -->
+	<include name="TVLibraryStudios">
+		<onclick>ActivateWindow(VideoLibrary,TvShowStudios,return)</onclick>
+	</include>
+
+	<!-- MusicVideoLibraryTitle Include -->
+	<include name="MusicVideoLibraryTitle">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryRoot Include -->
+	<include name="MusicVideoLibraryRoot">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideos,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryRecentlyadded Include -->
+	<include name="MusicVideoLibraryRecentlyadded">
+		<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMusicVideos,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryGenres Include -->
+	<include name="MusicVideoLibraryGenres">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoGenres,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryYears Include -->
+	<include name="MusicVideoLibraryYears">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoYears,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryArtists Include -->
+	<include name="MusicVideoLibraryArtists">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoArtists,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryDirectors Include -->
+	<include name="MusicVideoLibraryDirectors">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoDirectors,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryStudios Include -->
+	<include name="MusicVideoLibraryStudios">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoStudios,return)</onclick>
+	</include>
+
+	<!-- MusicVideoLibraryGenres Include -->
+	<include name="MusicLibraryGenres">
+		<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
+	</include>
+	<!-- MusicLibraryArtists Include -->
+	<include name="MusicLibraryArtists">
+		<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
+	</include>
+	<!-- MusicLibraryAlbums Include -->
+	<include name="MusicLibraryAlbums">
+		<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+	</include>
+	<!-- MusicLibrarySongs Include -->
+	<include name="MusicLibrarySongs">
+		<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+	</include>
+	<!-- MusicLibraryTop100Songs Include -->
+	<include name="MusicLibraryTop100Songs">
+		<onclick>ActivateWindow(MusicLibrary,Top100Songs,return)</onclick>
+	</include>
+	<!-- MusicLibraryTop100Albums Include -->
+	<include name="MusicLibraryTop100Albums">
+		<onclick>ActivateWindow(MusicLibrary,Top100Albums,return)</onclick>
+	</include>
+	<!-- MusicLibraryRecentlyadded Include -->
+	<include name="MusicLibraryRecentlyadded">
+		<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
+	</include>
+	<!-- MusicLibraryRecentlyPlayed Include -->
+	<include name="MusicLibraryRecentlyPlayed">
+		<onclick>ActivateWindow(MusicLibrary,RecentlyPlayedAlbums,return)</onclick>
+	</include>
+	<!-- MusicLibraryCompilations  Include -->
+	<include name="MusicLibraryCompilations">
+		<onclick>ActivateWindow(MusicLibrary,Compilations,return)</onclick>
+	</include>
+	<!-- MusicLibraryYears Include -->
+	<include name="MusicLibraryYears">
+		<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
+	</include>
+	<!-- MusicLibrarySingles Include -->
+	<include name="MusicLibrarySingles">
+		<onclick>ActivateWindow(MusicLibrary,Singles,return)</onclick>
 	</include>
 
 	<!-- Start Current Sort Letter -->
@@ -808,8 +902,8 @@
 		<animation effect="fade" start="100" end="50" time="50">Visible</animation>
 	</include>
 	<include name="shutdown-ani">
-		<animation effect="slide" start="0,450" time="200">WindowOpen</animation>
-		<animation effect="slide" end="0,450" time="200">WindowClose</animation>
+		<animation effect="slide" start="0,600" time="200">WindowOpen</animation>
+		<animation effect="slide" end="0,600" time="200">WindowClose</animation>
 	</include>
 	<include name="list-fade">
 		<animation effect="fade" start="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
