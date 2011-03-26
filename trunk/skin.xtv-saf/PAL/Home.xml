@@ -95,7 +95,7 @@
 			<aligny>bottom</aligny>
 			<label>$INFO[Weather.Temperature]</label>
 			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>	
+		</control>
 		<!--<control type="image">
 			<description>current weather icon</description>
 			<posx>645</posx>
@@ -144,6 +144,8 @@
 			<posy>160</posy>
 			<height>320</height>
 			<width>305</width>
+			<focusposition>3</focusposition>
+			<movement>4</movement>
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<onup>5</onup>
@@ -233,14 +235,6 @@
 					<visible>Skin.HasSetting(movie-library)</visible>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
-				<!--<item>
-					<description>HD Movies</description>
-					<label>HD Movies</label>
-					<icon>icon-video.png</icon>
-					<thumb>icon-video-blur1.png</thumb>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/HDMovies.xsp,return)</onclick>
-					<visible>Library.HasContent(Movies)</visible>
-				</item>-->
 				<item>
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
@@ -334,6 +328,62 @@
 					<visible>Skin.HasSetting(music-library) + !Skin.HasSetting(home-music)</visible>
 				</item>
 				<item>
+					<icon>$INFO[Skin.String(custom-playlist1icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist1icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist1label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist1) + !SubString(Skin.String(custom-playlist1name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist2icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist2icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist2label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist2) + !SubString(Skin.String(custom-playlist2name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist3icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist3icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist3label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist3) + !SubString(Skin.String(custom-playlist3name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist4icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist4icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist4label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist4) + !SubString(Skin.String(custom-playlist4name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist1icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist1icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist1label)] </label>
+					<onclick>XBMC.ActivateWindow(MusicLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist1) + SubString(Skin.String(custom-playlist1name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist2icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist2icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist2label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist2) + SubString(Skin.String(custom-playlist2name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist3icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist3icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist3label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist3) + SubString(Skin.String(custom-playlist3name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist4icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist4icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist4label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist4) + SubString(Skin.String(custom-playlist4name),music)</visible>
+				</item>
+				<item>
 					<icon>icon-youtube.png</icon>
 					<thumb>icon-youtube-blur1.png</thumb>
 					<label>31037</label>
@@ -369,11 +419,32 @@
 					<visible>Skin.HasSetting(home-weather)</visible>
 				</item>
 				<item>
-					<icon>icon-scripts.png</icon>
-					<thumb>icon-scripts-blur1.png</thumb>
-					<label>$INFO[Skin.String(home-scriptlabel)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(home-scriptname)])</onclick>
-					<visible>Skin.HasSetting(home-script)</visible>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script1label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script1name)])</onclick>
+					<visible>Skin.HasSetting(custom-script1)</visible>
+				</item>
+				<item>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script2label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script2name)])</onclick>
+					<visible>Skin.HasSetting(custom-script2)</visible>
+				</item>
+				<item>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script3label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script3name)])</onclick>
+					<visible>Skin.HasSetting(custom-script3)</visible>
+				</item>
+				<item>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script4label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script4name)])</onclick>
+					<visible>Skin.HasSetting(custom-script4)</visible>
 				</item>
 				<item>
 					<icon>icon-fav.png</icon>

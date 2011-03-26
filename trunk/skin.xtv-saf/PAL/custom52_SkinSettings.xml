@@ -2470,59 +2470,454 @@
 					<texturenofocus>-</texturenofocus>
 					<textwidth>460</textwidth>
 					<label>Download TV logos</label>
-					<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True)</onclick>
+					<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=False,logo=True,showthumb=False)</onclick>
 					<textcolor>button-text</textcolor>
 					<aligny>center</aligny>
 					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="radiobutton" id="706">
-					<description>User Script On Home toggle</description>
+					<description>Custom script 1 toggle</description>
 					<font>font13</font>
 					<width>490</width>
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<label>31830</label>
+					<label>$LOCALIZE[636] $LOCALIZE[24009] 1</label>
 					<textwidth>480</textwidth>
-					<onclick>Skin.ToggleSetting(home-script)</onclick>
-					<selected>Skin.HasSetting(home-script)</selected>
+					<onclick>Skin.ToggleSetting(custom-script1)</onclick>
+					<selected>Skin.HasSetting(custom-script1)</selected>
 					<textcolor>button-text</textcolor>
 					<aligny>center</aligny>
 					<textoffsetx>10</textoffsetx>
 					<radioposx>460</radioposx>
 				</control>
 				<control type="button" id="707">
-					<description>Home user script location</description>
+					<description>Custom script 1 location</description>
 					<font>font13</font>
 					<width>490</width>
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<textwidth>480</textwidth>
-					<enable>Skin.HasSetting(home-script)</enable>
+					<enable>Skin.HasSetting(custom-script1)</enable>
 					<label>31850</label>
-					<label2>$INFO[Skin.String(home-scriptname)] </label2>
-					<onclick>XBMC.Skin.SetAddon(home-scriptname,xbmc.python.script)</onclick>
+					<label2>$INFO[Skin.String(custom-script1name)] </label2>
+					<onclick>XBMC.Skin.SetAddon(custom-script1name,xbmc.python.script)</onclick>
 					<textcolor>button-text</textcolor>
 					<disabledcolor>disabled-text</disabledcolor>
 					<aligny>center</aligny>
 					<textoffsetx>20</textoffsetx>
-					<visible>Skin.HasSetting(home-script)</visible>
+					<visible>Skin.HasSetting(custom-script1)</visible>
 				</control>
 				<control type="button" id="708">
-					<description>Home user script label</description>
+					<description>Custom script 1 label</description>
 					<font>font13</font>
 					<width>490</width>
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<textwidth>480</textwidth>
-					<enable>Skin.HasSetting(home-script)</enable>
+					<enable>Skin.HasSetting(custom-script1)</enable>
 					<label>$LOCALIZE[21899] :</label>
-					<label2>$INFO[Skin.String(home-scriptlabel)] </label2>
-					<onclick>XBMC.Skin.SetString(home-scriptlabel)</onclick>
+					<label2>$INFO[Skin.String(custom-script1label)] </label2>
+					<onclick>XBMC.Skin.SetString(custom-script1label)</onclick>
 					<textcolor>button-text</textcolor>
 					<disabledcolor>disabled-text</disabledcolor>
 					<aligny>center</aligny>
 					<textoffsetx>20</textoffsetx>
-					<visible>Skin.HasSetting(home-script)</visible>
+					<visible>Skin.HasSetting(custom-script1)</visible>
+				</control>
+				<control type="radiobutton" id="709">
+					<description>Custom script 2 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[24009] 2</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-script2)</onclick>
+					<selected>Skin.HasSetting(custom-script2)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="710">
+					<description>Custom script 2 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(custom-script2)</enable>
+					<label>31850</label>
+					<label2>$INFO[Skin.String(custom-script2name)] </label2>
+					<onclick>XBMC.Skin.SetAddon(custom-script2name,xbmc.python.script)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-script2)</visible>
+				</control>
+				<control type="button" id="711">
+					<description>Custom script 2 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(custom-script2)</enable>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-script2label)] </label2>
+					<onclick>XBMC.Skin.SetString(custom-script2label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-script2)</visible>
+				</control>
+				<control type="radiobutton" id="712">
+					<description>Custom script 3 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[24009] 3</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-script3)</onclick>
+					<selected>Skin.HasSetting(custom-script3)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="713">
+					<description>Custom script 3 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(custom-script3)</enable>
+					<label>31850</label>
+					<label2>$INFO[Skin.String(custom-script3name)] </label2>
+					<onclick>XBMC.Skin.SetAddon(custom-script3name,xbmc.python.script)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-script3)</visible>
+				</control>
+				<control type="button" id="714">
+					<description>Custom script 3 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(custom-script3)</enable>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-script3label)] </label2>
+					<onclick>XBMC.Skin.SetString(custom-script3label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-script3)</visible>
+				</control>
+				<control type="radiobutton" id="715">
+					<description>Custom script 4 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[24009] 4</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-script4)</onclick>
+					<selected>Skin.HasSetting(custom-script4)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="716">
+					<description>Custom script 4 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(custom-script4)</enable>
+					<label>31850</label>
+					<label2>$INFO[Skin.String(custom-script4name)] </label2>
+					<onclick>XBMC.Skin.SetAddon(custom-script4name,xbmc.python.script)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-script4)</visible>
+				</control>
+				<control type="button" id="717">
+					<description>Custom script 4 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>480</textwidth>
+					<enable>Skin.HasSetting(custom-script4)</enable>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-script4label)] </label2>
+					<onclick>XBMC.Skin.SetString(custom-script4label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-script4)</visible>
+				</control>
+				<control type="radiobutton" id="718">
+					<description>Custom Playlist1 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-playlist1)</onclick>
+					<selected>Skin.HasSetting(custom-playlist1)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="719">
+					<description>Custom playlist1 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<label>$LOCALIZE[559] :</label>
+					<label2>$INFO[Skin.String(custom-playlist1name)] </label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(custom-playlist1name,.xsp,special://skin/extras/playlists)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist1)</visible>
+				</control>
+				<control type="button" id="720">
+					<description>Custom playlist1 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-playlist1label)]</label2>
+					<onclick>Skin.SetString(custom-playlist1label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist1)</visible>
+				</control>
+				<control type="button" id="721">
+					<description>Custom playlist1 icon</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21371] :</label>
+					<label2>$INFO[Skin.String(custom-playlist1icon)]</label2>
+					<onclick>Skin.SetImage(custom-playlist1icon)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist1)</visible>
+				</control>
+				<control type="radiobutton" id="722">
+					<description>Custom Playlist2 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-playlist2)</onclick>
+					<selected>Skin.HasSetting(custom-playlist2)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="723">
+					<description>Custom playlist2 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<label>$LOCALIZE[559] :</label>
+					<label2>$INFO[Skin.String(custom-playlist2name)] </label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(custom-playlist2name,.xsp,special://skin/extras/playlists)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist2)</visible>
+				</control>
+				<control type="button" id="724">
+					<description>Custom playlist2 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-playlist2label)]</label2>
+					<onclick>Skin.SetString(custom-playlist2label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist2)</visible>
+				</control>
+				<control type="button" id="725">
+					<description>Custom playlist2 icon</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21371] :</label>
+					<label2>$INFO[Skin.String(custom-playlist2icon)]</label2>
+					<onclick>Skin.SetImage(custom-playlist2icon)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist2)</visible>
+				</control>
+				<control type="radiobutton" id="726">
+					<description>Custom Playlist3 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[559] 3</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-playlist3)</onclick>
+					<selected>Skin.HasSetting(custom-playlist3)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="727">
+					<description>Custom playlist3 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<label>$LOCALIZE[559] :</label>
+					<label2>$INFO[Skin.String(custom-playlist3name)] </label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(custom-playlist3name,.xsp,special://skin/extras/playlists)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist3)</visible>
+				</control>
+				<control type="button" id="728">
+					<description>Custom playlist3 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-playlist3label)]</label2>
+					<onclick>Skin.SetString(custom-playlist3label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist3)</visible>
+				</control>
+				<control type="button" id="729">
+					<description>Custom playlist3 icon</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21371] :</label>
+					<label2>$INFO[Skin.String(custom-playlist3icon)]</label2>
+					<onclick>Skin.SetImage(custom-playlist3icon)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist3)</visible>
+				</control>
+				<control type="radiobutton" id="730">
+					<description>Custom Playlist4 toggle</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[636] $LOCALIZE[559] 4</label>
+					<textwidth>480</textwidth>
+					<onclick>Skin.ToggleSetting(custom-playlist4)</onclick>
+					<selected>Skin.HasSetting(custom-playlist4)</selected>
+					<textcolor>button-text</textcolor>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>460</radioposx>
+				</control>
+				<control type="button" id="731">
+					<description>Custom playlist4 location</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textwidth>460</textwidth>
+					<label>$LOCALIZE[559] :</label>
+					<label2>$INFO[Skin.String(custom-playlist4name)] </label2>
+					<haspath>true</haspath>
+					<onclick>Skin.SetFile(custom-playlist4name,.xsp,special://skin/extras/playlists)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist4)</visible>
+				</control>
+				<control type="button" id="732">
+					<description>Custom playlist4 label</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21899] :</label>
+					<label2>$INFO[Skin.String(custom-playlist4label)]</label2>
+					<onclick>Skin.SetString(custom-playlist4label)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist4)</visible>
+				</control>
+				<control type="button" id="733">
+					<description>Custom playlist4 icon</description>
+					<font>font13</font>
+					<width>490</width>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label>$LOCALIZE[21371] :</label>
+					<label2>$INFO[Skin.String(custom-playlist4icon)]</label2>
+					<onclick>Skin.SetImage(custom-playlist4icon)</onclick>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<aligny>center</aligny>
+					<textoffsetx>20</textoffsetx>
+					<visible>Skin.HasSetting(custom-playlist4)</visible>
 				</control>
 			</control>
 		</control>
