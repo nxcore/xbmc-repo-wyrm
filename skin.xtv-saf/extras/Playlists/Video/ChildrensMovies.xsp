@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Childrens Movies</name>
+    <match>one</match>
+    <rule field="mpaarating" operator="endswith">Australia:G</rule>
+    <rule field="mpaarating" operator="endswith">Australia:PG</rule>
+</smartplaylist>
