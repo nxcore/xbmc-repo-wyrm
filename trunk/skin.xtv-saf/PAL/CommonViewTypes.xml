@@ -41,6 +41,14 @@
 			</itemlayout>
 			<focusedlayout height="40">
 				<control type="image">
+					<posx>22</posx>
+					<posy>-3</posy>
+					<width>270</width>
+					<height>40</height>
+					<texture>default-button.png</texture>
+					<visible>!IntegerGreaterThan(Container(50).NumPages,1)</visible>
+				</control>
+				<control type="image">
 					<posx>0</posx>
 					<posy>4</posy>
 					<width>24</width>
@@ -64,7 +72,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group" description="List furniture">
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(50) + IntegerGreaterThan(Container(50).NumPages,1)</visible>
 			<control type="image" description="Slider">
 				<posx>422</posx>
 				<posy>132</posy>
@@ -141,6 +149,14 @@
 			</itemlayout>
 			<focusedlayout height="40">
 				<control type="image">
+					<posx>22</posx>
+					<posy>-3</posy>
+					<width>270</width>
+					<height>40</height>
+					<texture>default-button.png</texture>
+					<visible>!IntegerGreaterThan(Container(50).NumPages,1)</visible>
+				</control>
+				<control type="image">
 					<posx>0</posx>
 					<posy>4</posy>
 					<width>24</width>
@@ -164,7 +180,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group" description="List furniture">
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(50) + IntegerGreaterThan(Container(50).NumPages,1)</visible>
 			<control type="image" description="Slider">
 				<posx>422</posx>
 				<posy>132</posy>
