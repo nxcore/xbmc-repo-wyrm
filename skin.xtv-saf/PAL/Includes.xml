@@ -16,6 +16,8 @@
 	<include file="View-AlbumCoverflow.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
 
+	<include file="Includes_Weather.xml">-</include>
+
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -899,7 +901,7 @@
 		<animation effect="fade" start="0" time="300">Visible</animation>
 	</include>
 	<include name="settingbutton-fade">
-		<animation effect="fade" start="100" end="50" time="50">Visible</animation>
+		<animation effect="fade" start="100" end="70" time="50">Visible</animation>
 	</include>
 	<include name="shutdown-ani">
 		<animation effect="slide" start="0,600" time="200">WindowOpen</animation>
