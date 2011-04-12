@@ -25,7 +25,7 @@
 			<texture flipy="true" diffuse="mask-fade.png">home-logo.png</texture>
 			<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
 		</control>
-
+		
 		<control type="image">
 			<description>Movies Logo</description>
 			<include>icon-header-commons</include>
@@ -52,7 +52,7 @@
 			<include>list-fade</include>
 			<visible>Container.Content(movies)</visible>
 		</control>
-
+		
 		<control type="image">
 			<description>TV Logo</description>
 			<include>icon-header-commons</include>
@@ -79,7 +79,7 @@
 			<include>list-fade</include>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
-
+		
 		<control type="image">
 			<description>Music Videos Logo</description>
 			<include>icon-header-commons</include>
@@ -106,18 +106,36 @@
 			<include>list-fade</include>
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
-
+		
 		<include>memory-low</include>
-
-		<include>ListView-Icon</include>
-		<include>ListView</include>
-		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
-		<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
-		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
-		<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
-		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
-<!--	<include>LetterNav</include> -->
-		<include>PageControl</include>
+		
+		<control type="label">
+			<description>No Content Available Label</description>
+			<posx>160</posx>
+			<posy>160</posy>
+			<width>400</width>
+			<height>40</height>
+			<label>33077</label>
+			<font>font28</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
+		</control>
+		<control type="group">
+			<description>Only Show Views if Content Available</description>
+			<visible>IntegerGreaterThan(Container.NumItems,0)</visible>
+			<include>ListView-Icon</include>
+			<include>ListView</include>
+			<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
+			<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
+			<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
+			<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
+			<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+			<!--<include>LetterNav</include>-->
+			<include>PageControl</include>
+		</control>
 		
 		<control type="button" id="1">
 			<description>run WOL script</description>

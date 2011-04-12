@@ -106,14 +106,14 @@
 		</control>
 		<include>SortLetterNotification</include>
 	</include>
-
+	
 	<include name="PlaylistView">
 		<control type="fixedlist" id="50">
 			<viewtype label="31941">List</viewtype>
 			<posx>400</posx>
 			<posy>95</posy>
 			<width>300</width>
-			<height>444</height>
+			<height>455</height>
 			<focusposition>4</focusposition>
 			<movement>6</movement>
 			<onleft>2</onleft>
@@ -124,7 +124,7 @@
 			<scrolltime>1</scrolltime>
 			<preloaditems>5</preloaditems>
 			<pagecontrol>23</pagecontrol>
-			<itemlayout height="40">
+			<itemlayout height="45">
 				<control type="image">
 					<posx>0</posx>
 					<posy>4</posy>
@@ -147,12 +147,12 @@
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
-			<focusedlayout height="40">
+			<focusedlayout height="45">
 				<control type="image">
 					<posx>22</posx>
 					<posy>-3</posy>
 					<width>270</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<visible>!IntegerGreaterThan(Container(50).NumPages,1)</visible>
 				</control>
@@ -185,36 +185,36 @@
 				<posx>422</posx>
 				<posy>132</posy>
 				<width>274</width>
-				<height>40</height>
+				<height>45</height>
 				<texture>default-button.png</texture>
 				<aspectratio>stretch</aspectratio>
-				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-40"
+				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-45"
 					time="60" reversible="true">Conditional</animation>
 				<animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,0"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,40"
+				<animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,45"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,80"
+				<animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,90"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,120"
+				<animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,135"
+				time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,180"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,160"
+				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,225"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,200"
+				<animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,270"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,240"
+				<animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,315"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,280"
+				<animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,360"
 					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,320"
-					time="60" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,360"
+				<animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,405"
 					time="60" reversible="true">Conditional</animation>
 			</control>
 		</control>
 		<include>SortLetterNotification</include>
 	</include>
-
+	
 	<include name="PageControl">
 		<control type="scrollbar" id="23">
 			<posx>700</posx>
