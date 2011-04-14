@@ -375,7 +375,26 @@
 			</control>
 		</control>
 	</include>
-
+	<include name="PageControl50">
+		<control type="scrollbar" id="23">
+			<posx>700</posx>
+			<posy>90</posy>
+			<width>14</width>
+			<height>444</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>2</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+		</control>
+	</include>
 	<!-- Start List Item Icon Include -->
 	<include name="ListView-Icon">
 		<control type="group">
@@ -384,7 +403,7 @@
 				<effect type="rotatey" start="-20" end="-20" time="0"/>
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
-
+			
 			<!-- No Fanart available -->
 			<control type="image">
 				<description>list item icon</description>
@@ -410,7 +429,7 @@
 				<include>list-fade</include>
 				<visible>Skin.HasSetting(Fanart) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
 			</control>
-
+			
 			<!-- User has selected NO fanart -->
 			<control type="image">
 				<description>list item icon</description>
@@ -434,7 +453,7 @@
 				<visible>![Skin.HasSetting(Fanart)]</visible>
 				<include>list-fade</include>
 			</control>
-
+			
 			<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
 			<control type="image">
 				<description>list item icon</description>
@@ -458,7 +477,7 @@
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
 			</control>
-
+			
 			<!-- Show TV icon as the Default icon -->
 			<control type="image">
 				<description>list item icon</description>
@@ -482,7 +501,7 @@
 				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				<include>list-fade</include>
 			</control>
-
+			
 			<!-- Fanart image -->
 			<control type="image">
 				<posx>20</posx>
@@ -506,7 +525,7 @@
 			</control>
 		</control>
 	</include>
-
+	
 	<!-- Start Fake Overlay Include -->
 	<include name="Fake-Overlay">
 		<!-- Video Stuff -->
@@ -901,7 +920,7 @@
 		<animation effect="fade" start="0" time="300">Visible</animation>
 	</include>
 	<include name="settingbutton-fade">
-		<animation effect="fade" start="100" end="70" time="50">Visible</animation>
+		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
 	</include>
 	<include name="shutdown-ani">
 		<animation effect="slide" start="0,600" time="200">WindowOpen</animation>

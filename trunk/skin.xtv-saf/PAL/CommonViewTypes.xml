@@ -40,14 +40,14 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="40">
-				<control type="image">
+				<!--<control type="image">
 					<posx>22</posx>
 					<posy>-3</posy>
 					<width>270</width>
 					<height>40</height>
 					<texture>default-button.png</texture>
 					<visible>!IntegerGreaterThan(Container(50).NumPages,1)</visible>
-				</control>
+				</control>-->
 				<control type="image">
 					<posx>0</posx>
 					<posy>4</posy>
@@ -72,7 +72,8 @@
 			</focusedlayout>
 		</control>
 		<control type="group" description="List furniture">
-			<visible>Control.IsVisible(50) + IntegerGreaterThan(Container(50).NumPages,1)</visible>
+			<visible>Control.IsVisible(50)</visible>
+			<!--<visible>Control.IsVisible(50) + IntegerGreaterThan(Container(50).NumPages,1)</visible>-->
 			<control type="image" description="Slider">
 				<posx>422</posx>
 				<posy>132</posy>
@@ -104,7 +105,11 @@
 					time="60" reversible="true">Conditional</animation>
 			</control>
 		</control>
-		<include>SortLetterNotification</include>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>SortLetterNotification</include>
+			<include>PageControl50</include>
+		</control>
 	</include>
 	
 	<include name="PlaylistView">
@@ -212,27 +217,10 @@
 					time="60" reversible="true">Conditional</animation>
 			</control>
 		</control>
-		<include>SortLetterNotification</include>
-	</include>
-	
-	<include name="PageControl">
-		<control type="scrollbar" id="23">
-			<posx>700</posx>
-			<posy>90</posy>
-			<width>14</width>
-			<height>444</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>50</onleft>
-			<onright>2</onright>
-			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>SortLetterNotification</include>
+			<include>PageControl50</include>
 		</control>
 	</include>
 </includes>

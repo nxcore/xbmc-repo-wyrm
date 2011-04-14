@@ -1,10 +1,10 @@
 <includes>
 	<include name="List2">
 		<control type="fixedlist" id="51">
-			<!-- List text positioning ... -->
+			<viewtype label="31942">List2</viewtype>
 			<posx>400</posx>
 			<posy>95</posy>
-			<width>330</width>
+			<width>300</width>
 			<height>444</height>
 			<focusposition>4</focusposition>
 			<movement>6</movement>
@@ -15,7 +15,6 @@
 			<include>list-fade</include>
 			<scrolltime>1</scrolltime>
 			<preloaditems>5</preloaditems>
-			<viewtype label="31942">List2</viewtype>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="40">
 				<control type="image">
@@ -390,7 +389,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Skin.HasSetting(sbar) + Control.IsVisible(51)</visible>
 			</control>
 			<!-- Star Rating -->
 			<control type="image">
