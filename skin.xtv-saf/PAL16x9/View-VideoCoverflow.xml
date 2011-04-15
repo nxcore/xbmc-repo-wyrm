@@ -9,13 +9,13 @@
 			<onleft>57</onleft>
 			<onright>57</onright>
 			<onup>2</onup>
-			<ondown>23</ondown>
+			<ondown>25</ondown>
 			<scrolltime>100</scrolltime>
 			<include>list-fade</include>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
 			<preloaditems>9</preloaditems>
-			<pagecontrol>23</pagecontrol>
+			<pagecontrol>25</pagecontrol>
 			<itemlayout height="390" width="140"></itemlayout>
 			<focusedlayout height="410" width="320"></focusedlayout>
 		</control>
@@ -648,14 +648,14 @@
 			<visible>Control.IsVisible(57)</visible>
 			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
-			<control type="scrollbar" id="23">
+			<control type="scrollbar" id="25">
 				<posx>10</posx>
 				<posy>470</posy>
 				<width>700</width>
 				<height>22</height>
-				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<texturesliderbackground border="11">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="11">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="11">scrollbar_bar_focus.png</texturesliderbarfocus>
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onup>57</onup>
@@ -664,7 +664,7 @@
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Skin.HasSetting(sbar) + Control.IsVisible(57)</visible>
 			</control>
 			<!-- MPAA Rating -->
 			<control type="group">
