@@ -119,9 +119,9 @@
 			<include>list-fade</include>
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
-
+		
 		<include>memory-low</include>
-
+		
 		<include>ListView-Icon</include>
 		<include>ListView</include>
 		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
@@ -129,11 +129,11 @@
 		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
 		<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+		<!--<include>LetterNav</include>-->
+		<!--<include>PageControl50</include>-->
 		
-<!--		<include>LetterNav</include>-->
-		<include>PageControl</include>
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<visible>!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26)]</visible>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
