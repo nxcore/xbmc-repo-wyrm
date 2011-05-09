@@ -213,6 +213,7 @@
 						<label>31003</label>
 						<textwidth>250</textwidth>
 						<onclick>Skin.ToggleSetting(intro-vid)</onclick>
+						<onclick>Skin.Reset(startup-playlist)</onclick>
 						<selected>Skin.HasSetting(intro-vid)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -244,6 +245,7 @@
 						<label>31001</label>
 						<textwidth>250</textwidth>
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
+						<onclick>Skin.Reset(intro-vid)</onclick>
 						<selected>Skin.HasSetting(startup-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -257,13 +259,17 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31002</label>
+						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
+						<haspath>true</haspath>
+						<scroll>false</scroll>
+						<textwidth>200</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
-						<onclick>Skin.SetFile(playlist,.m3u,special://userdata/playlists/music)</onclick>
+						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
+						<!--<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u,special://userdata/playlists/music)</onclick>-->
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>30</textoffsetx>
-						<radioposx>460</radioposx>
 					</control>
 				</control>
 			</control>
