@@ -5,6 +5,10 @@
 	<controls>
 		<include>background</include>
 		<control type="button" id="7050">
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<onleft>999</onleft>
@@ -12,7 +16,6 @@
 			<onup>50</onup>
 			<ondown>50</ondown>
 		</control>
-
 		<control type="group">
 			<posx>0</posx>
 			<posy>40</posy>
@@ -515,7 +518,7 @@
 					<label>Get Logo</label>
 					<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
 					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
+					<visible>Container.Content(TVShows)</visible>
 				</control>
 				<control type="button" id="1114">
 					<description>Get TV Tune</description>
@@ -524,7 +527,7 @@
 					<font>font11</font>
 					<align>center</align>
 					<label>Get TV Tunes</label>
-					<onclick>XBMC.RunScript(script.TvTunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+					<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 					<onclick>SetFocus(999)</onclick>
 					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
 				</control>

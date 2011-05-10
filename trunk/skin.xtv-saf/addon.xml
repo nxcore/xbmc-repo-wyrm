@@ -7,7 +7,7 @@
 	<requires>
 		<import addon="xbmc.gui" version="2.11"/>
 		<import addon="script.logo-downloader" version="2.0.0"/>
-		<import addon="script.TvTunes" version="0.8.0"/>
+		<import addon="script.tvtunes" version="0.9.0"/>
 	</requires>
   <extension
     point="xbmc.gui.skin"

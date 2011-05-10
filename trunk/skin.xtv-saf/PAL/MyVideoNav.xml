@@ -390,7 +390,7 @@
 			<posy>-10</posy>
 			<width>1</width>
 			<height>1</height>
-			<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=True)</onfocus>
+			<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=True)</onfocus>
 			<onfocus>SetFocus(50)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
