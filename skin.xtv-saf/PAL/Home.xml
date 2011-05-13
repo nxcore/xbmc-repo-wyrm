@@ -46,17 +46,6 @@
 
 		<include>memory-low</include>
 
-		<!-- main logo and label-->
-		<!--<control type="image">
-			<description>xTV Logo</description>
-			<posx>490</posx>
-			<posy>65</posy>
-			<width>80</width>
-			<height>80</height>
-			<aspectratio>keep</aspectratio>
-			<texture>home-logo.png</texture>
-		</control>-->
-
 		<!-- Weather Condition -->
 		<control type="label">
 			<description>Can't get current weather conditions</description>
@@ -71,55 +60,56 @@
 			<aligny>center</aligny>
 			<visible>!Skin.HasSetting(home-currentweather) + IsEmpty(Weather.Conditions)</visible>
 		</control>
-		<control type="label">
-			<description>current condition label</description>
-			<posx>640</posx>
-			<posy>5</posy>
-			<width>120</width>
-			<height>40</height>
-			<wrapmultiline>true</wrapmultiline>
-			<label>$INFO[Weather.Conditions]</label>
-			<font>font13</font>
-			<align>right</align>
-			<aligny>center</aligny>
+		<control type="group">
 			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
+			<control type="label">
+				<description>current condition label</description>
+				<posx>640</posx>
+				<posy>5</posy>
+				<width>120</width>
+				<height>40</height>
+				<wrapmultiline>true</wrapmultiline>
+				<label>$INFO[Weather.Conditions]</label>
+				<font>font13</font>
+				<align>right</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label">
+				<description>current temp value</description>
+				<posx>640</posx>
+				<posy>45</posy>
+				<width>75</width>
+				<height>30</height>
+				<font>font22</font>
+				<align>right</align>
+				<aligny>bottom</aligny>
+				<label>$INFO[Weather.Temperature]</label>
+			</control>
+			<control type="image">
+				<description>current weather icon</description>
+				<posx>645</posx>
+				<posy>15</posy>
+				<height>70</height>
+				<width>70</width>
+				<texture>$INFO[Weather.Conditions]</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>!Skin.HasSetting(weather-animateicon)</visible>
+			</control>
+			<control type="multiimage">
+				<description>current weather animated icon</description>
+				<posx>645</posx>
+				<posy>15</posy>
+				<width>70</width>
+				<height>70</height>
+				<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
+				<aspectratio>keep</aspectratio>
+				<timeperimage>200</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>0</fadetime>
+				<visible>Skin.HasSetting(weather-animateicon)</visible>
+			</control>
 		</control>
-		<control type="label">
-			<description>current temp value</description>
-			<posx>640</posx>
-			<posy>45</posy>
-			<width>75</width>
-			<height>30</height>
-			<font>font22</font>
-			<align>right</align>
-			<aligny>bottom</aligny>
-			<label>$INFO[Weather.Temperature]</label>
-			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>
-		<!--<control type="image">
-			<description>current weather icon</description>
-			<posx>645</posx>
-			<posy>15</posy>
-			<height>70</height>
-			<width>70</width>
-			<texture>$INFO[Weather.Conditions]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>-->
-		<control type="multiimage">
-			<description>current weather icon</description>
-			<posx>645</posx>
-			<posy>15</posy>
-			<width>70</width>
-			<height>70</height>
-			<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
-			<aspectratio>keep</aspectratio>
-			<timeperimage>200</timeperimage>
-			<randomize>false</randomize>
-			<fadetime>0</fadetime>
-			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>
-
+		
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>527</posx>
