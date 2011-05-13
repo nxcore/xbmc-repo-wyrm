@@ -439,6 +439,21 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
+					<control type="radiobutton" id="211">
+						<description>Animated Weather Icons toggle</description>
+						<font>font13</font>
+						<width>500</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>Animated Weather Icons</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
+						<selected>Skin.HasSetting(weather-animateicon)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<radioposx>460</radioposx>
+					</control>
 				</control>
 			</control>
 			<!--Home Settings-->
