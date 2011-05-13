@@ -8,6 +8,10 @@
 		<include>#files</include>
 		
 		<control type="button" id="1">
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
 			<description>run WOL script</description>
 			<onfocus>XBMC.RunScript($INFO[Skin.String(wake-scriptpath)])</onfocus>
 			<onfocus>SetFocus(50)</onfocus>
@@ -16,6 +20,10 @@
 			<visible>Skin.HasSetting(wake-source)</visible>
 		</control>
 		<control type="button" id="1">
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
 			<description>bypass running WOL script</description>
 			<onfocus>SetFocus(50)</onfocus>
 			<texturenofocus>-</texturenofocus>
