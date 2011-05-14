@@ -19,18 +19,6 @@
 				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Current_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Current_Icon</include>
-				<!--<control type="multiimage">
-					<description>current weather icon</description>
-					<posx>10</posx>
-					<posy>80</posy>
-					<width>200</width>
-					<height>200</height>
-					<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Current.FanartCode)]</imagepath>
-					<aspectratio>keep</aspectratio>
-					<timeperimage>200</timeperimage>
-					<randomize>false</randomize>
-					<fadetime>0</fadetime>
-				</control>-->
 				<control type="label">
 					<description>current condition label</description>
 					<posx>10</posx>
@@ -194,7 +182,7 @@
 						<description>Day label</description>
 						<posx>40</posx>
 						<posy>10</posy>
-						<width>460</width>
+						<width>295</width>
 						<height>35</height>
 						<font>font18</font>
 						<info>Window.Property(Day0.Title)</info>
@@ -205,22 +193,11 @@
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day0_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day0_Icon</include>
-					<!--<control type="multiimage">
-						<description>current weather icon</description>
-						<posx>220</posx>
-						<posy>5</posy>
-						<width>70</width>
-						<height>70</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day0.FanartCode)]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-					</control>-->
 					<control type="label">
 						<description>high label</description>
 						<posx>40</posx>
 						<posy>50</posy>
+						<width>65</width>
 						<height>20</height>
 						<font>font13</font>
 						<align>left</align>
@@ -234,6 +211,7 @@
 						<description>high value</description>
 						<posx>110</posx>
 						<posy>50</posy>
+						<width>65</width>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
 						<font>font13</font>
@@ -247,6 +225,7 @@
 						<description>low label</description>
 						<posx>40</posx>
 						<posy>80</posy>
+						<width>65</width>
 						<height>20</height>
 						<font>font13</font>
 						<align>left</align>
@@ -260,6 +239,7 @@
 						<description>low value</description>
 						<posx>110</posx>
 						<posy>80</posy>
+						<width>65</width>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
 						<font>font13</font>
@@ -271,14 +251,15 @@
 					</control>
 					<control type="label">
 						<description>conditions label</description>
-						<posx>205</posx>
+						<posx>180</posx>
 						<posy>80</posy>
-						<width>100</width>
+						<width>140</width>
 						<height>20</height>
 						<info>Window.Property(Day0.Outlook)</info>
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
+						<scroll>true</scroll>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 					</control>
@@ -309,18 +290,6 @@
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day1_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day1_Icon</include>
-					<!--<control type="multiimage">
-						<description>current weather icon</description>
-						<posx>220</posx>
-						<posy>5</posy>
-						<width>70</width>
-						<height>70</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-					</control>-->
 					<control type="label">
 						<description>high label</description>
 						<posx>40</posx>
@@ -375,14 +344,15 @@
 					</control>
 					<control type="label">
 						<description>conditions label</description>
-						<posx>205</posx>
+						<posx>180</posx>
 						<posy>80</posy>
-						<width>100</width>
+						<width>140</width>
 						<height>20</height>
 						<info>Window.Property(Day1.Outlook)</info>
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
+						<scroll>true</scroll>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 					</control>
@@ -413,18 +383,6 @@
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day2_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day2_Icon</include>
-					<!--<control type="multiimage">
-						<description>current weather icon</description>
-						<posx>220</posx>
-						<posy>5</posy>
-						<width>70</width>
-						<height>70</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-					</control>-->
 					<control type="label">
 						<description>high label</description>
 						<posx>40</posx>
@@ -479,14 +437,15 @@
 					</control>
 					<control type="label">
 						<description>conditions label</description>
-						<posx>205</posx>
+						<posx>180</posx>
 						<posy>80</posy>
-						<width>100</width>
+						<width>140</width>
 						<height>20</height>
 						<info>Window.Property(Day2.Outlook)</info>
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
+						<scroll>true</scroll>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 					</control>
@@ -517,18 +476,6 @@
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day3_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day3_Icon</include>
-					<!--<control type="multiimage">
-						<description>current weather icon</description>
-						<posx>220</posx>
-						<posy>5</posy>
-						<width>70</width>
-						<height>70</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-					</control>-->
 					<control type="label">
 						<description>high label</description>
 						<posx>40</posx>
@@ -583,14 +530,15 @@
 					</control>
 					<control type="label">
 						<description>conditions label</description>
-						<posx>205</posx>
+						<posx>180</posx>
 						<posy>80</posy>
-						<width>100</width>
+						<width>140</width>
 						<height>20</height>
 						<info>Window.Property(Day3.Outlook)</info>
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
+						<scroll>true</scroll>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 					</control>
@@ -626,11 +574,11 @@
 	<include name="Weather_Animated_Day0_Icon">
 		<control type="multiimage">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
-			<imagepath>weather/$INFO[Window.Property(Day0.FanartCode)]</imagepath>
+			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day0.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -639,8 +587,8 @@
 	<include name="Weather_Day0_Icon">
 		<control type="image">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
 			<info>Window.Property(Day0.OutlookIcon)</info>
@@ -650,11 +598,11 @@
 	<include name="Weather_Animated_Day1_Icon">
 		<control type="multiimage">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
-			<imagepath>weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
+			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -663,8 +611,8 @@
 	<include name="Weather_Day1_Icon">
 		<control type="image">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
 			<info>Window.Property(Day1.OutlookIcon)</info>
@@ -674,11 +622,11 @@
 	<include name="Weather_Animated_Day2_Icon">
 		<control type="multiimage">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
-			<imagepath>weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
+			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -687,8 +635,8 @@
 	<include name="Weather_Day2_Icon">
 		<control type="image">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
 			<info>Window.Property(Day2.OutlookIcon)</info>
@@ -698,11 +646,11 @@
 	<include name="Weather_Animated_Day3_Icon">
 		<control type="multiimage">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
-			<imagepath>weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
+			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -711,8 +659,8 @@
 	<include name="Weather_Day3_Icon">
 		<control type="image">
 			<description>day icon</description>
-			<posx>220</posx>
-			<posy>5</posy>
+			<posx>210</posx>
+			<posy>10</posy>
 			<width>70</width>
 			<height>70</height>
 			<info>Window.Property(Day3.OutlookIcon)</info>
