@@ -226,7 +226,7 @@
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
+						<textwidth>210</textwidth>
 						<enable>Skin.HasSetting(intro-vid)</enable>
 						<label>31004</label>
 						<label2>$INFO[Skin.String(intro-vid-location)]</label2>
@@ -262,10 +262,9 @@
 						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
 						<haspath>true</haspath>
 						<scroll>false</scroll>
-						<textwidth>200</textwidth>
+						<textwidth>210</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
-						<!--<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u,special://userdata/playlists/music)</onclick>-->
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1068,39 +1067,6 @@
 						<onclick>Skin.SetBool(selectmusicentry)</onclick>
 						<onclick>SetFocus(540)</onclick>
 						<visible>Skin.HasSetting(music-library)</visible>
-					</control>
-					<control type="radiobutton" id="525">
-						<description>Use WOL script to wake external sources</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31894</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(wake-source)</onclick>
-						<selected>Skin.HasSetting(wake-source)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
-					</control>
-					<control type="button" id="527">
-						<description>WOL script location (Non XBox)</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<enable>Skin.HasSetting(wake-source)</enable>
-						<label>$LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(wake-scriptpath)]</label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetAddon(wake-scriptpath,xbmc.python.script)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>30</textoffsetx>
-						<visible>!System.Platform.xbox</visible>
 					</control>
 				</control>
 			</control>
