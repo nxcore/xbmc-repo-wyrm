@@ -4,21 +4,17 @@
 	<animation effect="fade" start="0" end="0" time="10000" condition="Window.Previous(Startup) + Skin.HasSetting(intro-vid)">WindowOpen</animation>
 	<controls>
 		<control type="button" id="420">
-			<description>trigger without playlist</description>
-			<onfocus>XBMC.PlayMedia($INFO[Skin.String(playlist)])</onfocus>
+			<description>trigger playlist if selected</description>
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<include condition="Skin.HasSetting(startup-playlist)">StartupPlaylist</include>
 			<onfocus>SetFocus(5)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="18000" end="100">Focus</animation>
-			<visible>Skin.HasSetting(startup-playlist)</visible>
 		</control>
-		<control type="button" id="420">
-			<description>trigger with playlist</description>
-			<onfocus>SetFocus(5)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(startup-playlist)</visible>
-		</control>
+		
 		<include>background</include>
 		<!-- show time on home screen -->
 		<control type="label">
@@ -43,9 +39,9 @@
 			<font>font13</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
-
+		
 		<include>memory-low</include>
-
+		
 		<!-- Weather Condition -->
 		<control type="label">
 			<description>Can't get current weather conditions</description>
@@ -127,7 +123,7 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(5).HasNext</visible>
 		</control>
-
+		
 		<!-- main buttons -->
 		<control type="list" id="5">
 			<posx>375</posx>
@@ -140,6 +136,8 @@
 			<onright>5</onright>
 			<onup>5</onup>
 			<ondown>5</ondown>
+			<scrolltime>1</scrolltime>
+			<preloaditems>5</preloaditems>
 			<itemlayout height="45">
 				<control type="label">
 					<posx>15</posx>
