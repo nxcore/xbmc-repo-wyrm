@@ -565,7 +565,6 @@
 				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<texture flipy="true" diffuse="mask-fade.png">-</texture>
 			</control>
-
 			<control type="image">
 				<posx>270</posx>
 				<posy>0</posy>
@@ -586,10 +585,10 @@
 				<info>Container.ListItem(0).Icon</info>
 				<texture flipy="true" diffuse="mask-fade.png">-</texture>
 			</control>
-	</control>
+		</control>
 		<control type="group">
-		<visible>Control.IsVisible(57)</visible>
-		<include>SortLetterNotification</include>
+			<visible>Control.IsVisible(57)</visible>
+			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="1257">
 				<posx>10</posx>

@@ -9,13 +9,13 @@
 			<onleft>54</onleft>
 			<onright>54</onright>
 			<onup>2</onup>
-			<ondown>2</ondown>
+			<ondown>1354</ondown>
 			<include>list-fade</include>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
 			<preloaditems>5</preloaditems>
 			<scrolltime>0</scrolltime>
-			<pagecontrol>23</pagecontrol>
+			<pagecontrol>1354</pagecontrol>
 			<itemlayout height="390" width="140">
 				<control type="image">
 					<posx>-15</posx>
@@ -87,55 +87,58 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<!-- Scroll Bar -->
-		<control type="scrollbar" id="23">
-			<posx>10</posx>
-			<posy>490</posy>
-			<width>700</width>
-			<height>22</height>
-			<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
-			<onup>54</onup>
-			<ondown>2</ondown>
-			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>horizontal</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar) + Control.IsVisible(54)</visible>
-		</control>
-		<!-- Go Back -->
-		<control type="label">
-			<posx>10</posx>
-			<posy>510</posy>
-			<width>700</width>
-			<height>30</height>
-			<font>font20</font>
-			<align>center</align>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<scroll>true</scroll>
-			<label>31688</label>
-			<textoffsetx>0</textoffsetx>
-			<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
+			<include>SortLetterNotification</include>
+			<!-- Scroll Bar -->
+			<control type="scrollbar" id="1354">
+				<posx>10</posx>
+				<posy>490</posy>
+				<width>700</width>
+				<height>22</height>
+				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onup>54</onup>
+				<ondown>2</ondown>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar)</visible>
+			</control>
+			<!-- Go Back -->
+			<control type="label">
+				<posx>10</posx>
+				<posy>510</posy>
+				<width>700</width>
+				<height>30</height>
+				<font>font20</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>31688</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
+			<!-- Label -->
+			<control type="label">
+				<posx>10</posx>
+				<posy>510</posy>
+				<width>700</width>
+				<height>30</height>
+				<font>font20</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<info>ListItem.Label</info>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+			</control>
 		</control>
-		<!-- Label -->
-		<control type="label">
-			<posx>10</posx>
-			<posy>510</posy>
-			<width>700</width>
-			<height>30</height>
-			<font>font20</font>
-			<align>center</align>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<scroll>true</scroll>
-			<info>ListItem.Label</info>
-			<textoffsetx>0</textoffsetx>
-			<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-			<visible>Control.IsVisible(54)</visible>
-		</control>	</include>
+	</include>
 </includes>
