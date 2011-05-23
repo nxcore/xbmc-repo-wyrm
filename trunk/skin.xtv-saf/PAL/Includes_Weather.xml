@@ -667,6 +667,48 @@
 			<aspectratio align="right">keep</aspectratio>
 		</control>
 	</include>
+	<include name="Waiting_for_Data">
+		<control type="group">
+			<visible>IsEmpty(Window.Property(Daily.1.Outlook))</visible>
+			<control type="label">
+				<description>Downloading</description>
+				<posx>280</posx>
+				<posy>180</posy>
+				<width>160</width>
+				<height>40</height>
+				<font>font28</font>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>13413</label>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="multiimage">
+				<description>Busy animation</description>
+				<posx>310</posx>
+				<posy>238</posy>
+				<width>100</width>
+				<height>100</height>
+				<imagepath>busy</imagepath>
+				<timeperimage>100</timeperimage>
+				<fadetime>0</fadetime>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<description>Please wait</description>
+				<posx>280</posx>
+				<posy>350</posy>
+				<width>160</width>
+				<height>40</height>
+				<font>font28</font>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>20186</label>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+		</control>
+	</include>
 	<include name="weatherplus">
 		<control type="button" id="6000">
 			<description>fake button to steal focus</description>
@@ -675,13 +717,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<onclick>-</onclick>
-			<visible>Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3) | Skin.String(WeatherPlus,4) | Skin.String(WeatherPlus,5) | Skin.String(WeatherPlus,6)</visible>
+			<visible>[!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3) + !Skin.String(WeatherPlus,4) + !Skin.String(WeatherPlus,5) + !Skin.String(WeatherPlus,6)] | [Skin.String(WeatherPlus,6) + IsEmpty(Window.Property(Alerts.RSS))]</visible>
 		</control>
 		<control type="group">
 			<description>Today</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>[!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3) + !Skin.String(WeatherPlus,4) + !Skin.String(WeatherPlus,5) + !Skin.String(WeatherPlus,6)] | [Skin.String(WeatherPlus,6) + IsEmpty(Window.Property(Alerts.RSS))]</visible>
+			<visible>[!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3) + !Skin.String(WeatherPlus,4) + !Skin.String(WeatherPlus,5) + !Skin.String(WeatherPlus,6)] | [Skin.String(WeatherPlus,6) + IsEmpty(Window.Property(Alerts.RSS))] + [!IsEmpty(Window.Property(Daily.1.Outlook))]</visible>
 			<control type="group">
 				<control type="group">
 					<posx>10</posx>
@@ -770,7 +812,7 @@
 							<width>100</width>
 							<height>20</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.1.ShortDate)]</label>
@@ -829,7 +871,7 @@
 							<width>100</width>
 							<height>20</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.2.ShortDate)]</label>
@@ -888,7 +930,7 @@
 							<width>100</width>
 							<height>20</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.3.ShortDate)]</label>
@@ -947,7 +989,7 @@
 							<width>100</width>
 							<height>40</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.4.ShortDate)]</label>
@@ -1006,7 +1048,7 @@
 							<width>100</width>
 							<height>40</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.5.ShortDate)]</label>
@@ -1065,7 +1107,7 @@
 							<width>100</width>
 							<height>20</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.6.ShortDate)]</label>
@@ -1124,7 +1166,7 @@
 							<width>100</width>
 							<height>20</height>
 							<align>center</align>
-							<textcolor>listselectedtext</textcolor>
+							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<font>font11</font>
 							<label fallback="-">$INFO[Window.Property(Daily.7.ShortDate)]</label>
@@ -1847,810 +1889,1024 @@
 			</control>
 		</control>
 		<!-- Scroll Bar -->
-			<control type="scrollbar" id="600">
-				<posx>700</posx>
-				<posy>90</posy>
-				<width>14</width>
-				<height>430</height>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<onleft>601</onleft>
-				<onright>6000</onright>
-				<include>list-fade</include>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + Skin.String(WeatherPlus,2)</visible>
+		<control type="scrollbar" id="600">
+			<posx>700</posx>
+			<posy>125</posy>
+			<width>14</width>
+			<height>404</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>602</onleft>
+			<onright>6000</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + Skin.String(WeatherPlus,2)</visible>
+		</control>
+		<!-- List Headings -->
+		<control type="group">
+			<posx>10</posx>
+			<posy>75</posy>
+			<visible>Skin.String(WeatherPlus,2)</visible>
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>80</width>
+				<height>40</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[CR]$LOCALIZE[555]</label>
 			</control>
-		<control type="grouplist" id="601">
+			<control type="label">
+				<posx>120</posx>
+				<posy>0</posy>
+				<width>150</width>
+				<height>40</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[CR]$LOCALIZE[33020]</label>
+			</control>
+			<control type="label">
+				<posx>275</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>40</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$LOCALIZE[401][CR]$LOCALIZE[402]</label>
+			</control>
+			<control type="label">
+				<posx>360</posx>
+				<posy>0</posy>
+				<width>85</width>
+				<height>40</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[CR]$LOCALIZE[406]</label>
+			</control>
+			<control type="label">
+				<posx>450</posx>
+				<posy>0</posy>
+				<width>85</width>
+				<height>40</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[CR]$LOCALIZE[33022] :</label>
+			</control>
+			<control type="label">
+				<posx>540</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>60</height>
+				<align>center</align>
+				<font>font13</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>[CR]$LOCALIZE[404]</label>
+			</control>
+		</control>
+		<include>Waiting_for_Data</include>
+		<control type="grouplist" id="602">
 			<description>Hourly</description>
 			<posx>10</posx>
-			<posy>90</posy>
+			<posy>130</posy>
 			<width>700</width>
-			<height>450</height>
+			<height>404</height>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
 			<onleft>6000</onleft>
 			<onright>600</onright>
-			<onup>601</onup>
-			<ondown>601</ondown>
+			<onup>602</onup>
+			<ondown>602</ondown>
 			<pagecontrol>600</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,2)</visible>
+			<visible>Skin.String(WeatherPlus,2) + !IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="group">
 				<description>Hourly.1</description>
-				<posx>10</posx>
-				<posy>0</posy>
-				<width>700</width>
-				<height>190</height>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>55</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.1.Time)][/B][CR][B]$INFO[Window.Property(Hourly.1.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly1_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly1_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.1.Time)]$INFO[Window.Property(Hourly.1.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.1.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.1.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.1.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.1.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.1.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.1.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.1.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.1.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.1.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.1.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.1.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.1.Windspeed)][CR]$INFO[Window.Property(Hourly.1.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.2</description>
-				<posx>185</posx>
-				<posy>0</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.2.Time)][/B][CR][B]$INFO[Window.Property(Hourly.2.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly2_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly2_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.2.Time)]$INFO[Window.Property(Hourly.2.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.2.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.2.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.2.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.2.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.2.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.2.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.2.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.2.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.2.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.2.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.2.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.2.Windspeed)][CR]$INFO[Window.Property(Hourly.2.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.3</description>
-				<posx>360</posx>
-				<posy>0</posy>
-				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly3_Icon</include>
-				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly3_Icon</include>
+				<height>68</height>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
-					<height>20</height>
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
 					<align>center</align>
-					<font>font12</font>
+					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.3.Time)]$INFO[Window.Property(Hourly.3.ShortDate), - ][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.3.Time)][/B][CR][B]$INFO[Window.Property(Hourly.3.ShortDate)][/B]</label>
 				</control>
+				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly1_Icon</include>
+				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly3_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.3.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.3.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.3.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.3.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.3.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.3.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.3.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.3.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.3.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.3.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.3.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.3.Windspeed)][CR]$INFO[Window.Property(Hourly.3.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.4</description>
-				<posx>535</posx>
-				<posy>0</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.4.Time)][/B][CR][B]$INFO[Window.Property(Hourly.4.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly4_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly4_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.4.Time)]$INFO[Window.Property(Hourly.4.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.4.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.4.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.4.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.4.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.4.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.4.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.4.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.4.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.4.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.4.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.4.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.4.Windspeed)][CR]$INFO[Window.Property(Hourly.4.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.5</description>
-				<posx>10</posx>
-				<posy>172</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.5.Time)][/B][CR][B]$INFO[Window.Property(Hourly.5.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly5_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly5_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.5.Time)]$INFO[Window.Property(Hourly.5.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.5.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.5.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.5.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.5.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.5.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.5.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.5.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font13</font>
+					<aligny>center</aligny>
+					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.5.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.5.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.5.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.5.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.5.Windspeed)][CR]$INFO[Window.Property(Hourly.5.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.6</description>
-				<posx>185</posx>
-				<posy>172</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.6.Time)][/B][CR][B]$INFO[Window.Property(Hourly.6.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly6_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly6_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.6.Time)]$INFO[Window.Property(Hourly.6.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.6.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.6.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.6.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.6.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.6.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.6.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.6.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.6.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.6.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.6.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.6.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.6.Windspeed)][CR]$INFO[Window.Property(Hourly.6.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.7</description>
-				<include>Window_OpenClose_Left_Animation</include>
-				<posx>360</posx>
-				<posy>172</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.7.Time)][/B][CR][B]$INFO[Window.Property(Hourly.7.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly7_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly7_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.7.Time)]$INFO[Window.Property(Hourly.7.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.7.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.7.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.7.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.7.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.7.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.7.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.7.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.7.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.7.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.7.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.7.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.7.Windspeed)][CR]$INFO[Window.Property(Hourly.7.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.8</description>
-				<posx>535</posx>
-				<posy>172</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.8.Time)][/B][CR][B]$INFO[Window.Property(Hourly.8.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly8_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly8_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.8.Time)]$INFO[Window.Property(Hourly.8.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.8.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.8.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.8.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.8.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.8.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.8.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.8.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.8.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.8.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.8.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.8.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.8.Windspeed)][CR]$INFO[Window.Property(Hourly.8.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.9</description>
-				<posx>10</posx>
-				<posy>344</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.9.Time)][/B][CR][B]$INFO[Window.Property(Hourly.9.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly9_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly9_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.9.Time)]$INFO[Window.Property(Hourly.9.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.9.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.9.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.9.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.9.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.9.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.9.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.9.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.9.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.9.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.9.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.9.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.9.Windspeed)][CR]$INFO[Window.Property(Hourly.9.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.10</description>
-				<posx>185</posx>
-				<posy>344</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.10.Time)][/B][CR][B]$INFO[Window.Property(Hourly.10.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly10_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly10_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.10.Time)]$INFO[Window.Property(Hourly.10.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.10.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.10.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.10.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.10.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.10.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.10.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.10.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.10.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.10.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.10.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.10.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.10.Windspeed)][CR]$INFO[Window.Property(Hourly.10.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.11</description>
-				<posx>360</posx>
-				<posy>344</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.11.Time)][/B][CR][B]$INFO[Window.Property(Hourly.11.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly11_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly11_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.11.Time)]$INFO[Window.Property(Hourly.11.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.11.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.11.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.11.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.11.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.11.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.11.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.11.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.11.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.11.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.11.Humidity)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.11.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.11.Windspeed)][CR]$INFO[Window.Property(Hourly.11.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 			<control type="group">
 				<description>Hourly.12</description>
-				<posx>535</posx>
-				<posy>344</posy>
+				<height>68</height>
+				<control type="label">
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.12.Time)][/B][CR][B]$INFO[Window.Property(Hourly.12.ShortDate)][/B]</label>
+				</control>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Hourly12_Icon</include>
 				<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Hourly12_Icon</include>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>43</posy>
-					<width>165</width>
+					<posx>120</posx>
+					<posy>10</posy>
+					<width>150</width>
 					<height>20</height>
 					<align>center</align>
-					<font>font12</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.12.Time)]$INFO[Window.Property(Hourly.12.ShortDate), - ][/B]</label>
-				</control>
-				<control type="label">
-					<posx>-2</posx>
-					<posy>65</posy>
-					<width>165</width>
-					<height>20</height>
-					<align>center</align>
+					<scroll>true</scroll>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$INFO[Window.Property(Hourly.12.Outlook)][/B]</label>
 				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>91</posy>
-					<width>55</width>
+					<posx>275</posx>
+					<posy>10</posy>
+					<width>90</width>
 					<height>80</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.12.Temperature),$LOCALIZE[401] :[CR]] $INFO[System.TemperatureUnits][CR][B]$INFO[Window.Property(Hourly.12.FeelsLike),$LOCALIZE[33024] :[CR]] $INFO[System.TemperatureUnits][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.12.Temperature)] $INFO[System.TemperatureUnits][/B][CR][B]$INFO[Window.Property(Hourly.12.FeelsLike)] $INFO[System.TemperatureUnits][/B]</label>
 				</control>
 				<control type="label">
-					<posx>110</posx>
-					<posy>91</posy>
-					<width>55</width>
-					<height>80</height>
+					<posx>360</posx>
+					<posy>10</posy>
+					<width>85</width>
+					<height>20</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.12.Precipitation),$LOCALIZE[33022] :[CR], %][CR][B]$INFO[Window.Property(Hourly.12.Humidity),$LOCALIZE[33023] :[CR], %][/B]</label>
-				</control>1
+					<label>[B]$INFO[Window.Property(Hourly.12.Humidity)] %[/B]</label>
+				</control>
 				<control type="label">
-					<posx>-2</posx>
-					<posy>175</posy>
-					<width>165</width>
+					<posx>450</posx>
+					<posy>10</posy>
+					<width>85</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>font11</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label>[B]$INFO[Window.Property(Hourly.12.Windspeed),$LOCALIZE[404] : ] $INFO[Window.Property(Hourly.12.ShortWindDirection)][/B]</label>
+					<label>[B]$INFO[Window.Property(Hourly.12.Precipitation)] %[/B]</label>
+				</control>
+				<control type="label">
+					<posx>540</posx>
+					<posy>10</posy>
+					<width>155</width>
+					<height>80</height>
+					<align>center</align>
+					<font>font11</font>
+					<scroll>true</scroll>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>[B]$INFO[Window.Property(Hourly.12.Windspeed)][CR]$INFO[Window.Property(Hourly.12.ShortWindDirection)][/B]</label>
 				</control>
 			</control>
 		</control>
@@ -2658,7 +2914,7 @@
 			<description>36 Hour</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,3)</visible>
+			<visible>Skin.String(WeatherPlus,3) + !IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="group">
 				<control type="group">
 					<description>36 hour 1</description>
@@ -2984,7 +3240,7 @@
 			<description>Weekend</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,4)</visible>
+			<visible>Skin.String(WeatherPlus,4) + !IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="group">
 				<control type="group">
 					<description>Weekend 1</description>
@@ -3748,7 +4004,7 @@
 			<description>10 Day</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,5)</visible>
+			<visible>Skin.String(WeatherPlus,5) + !IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="group">
 				<control type="group">
 					<description>Daily.1</description>
@@ -4616,7 +4872,7 @@
 			<description>Alerts</description>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.String(WeatherPlus,6) + !IsEmpty(Window.Property(Alerts.RSS))</visible>
+			<visible>Skin.String(WeatherPlus,6) + !IsEmpty(Window.Property(Alerts.RSS)) + !IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="group">
 				<control type="label">
 					<posx>180</posx>
@@ -4814,132 +5070,119 @@
 	</include>
 	<include name="Weather_Hourly1_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.1.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly2_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.2.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly3_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.3.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly4_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.4.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly5_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.5.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly6_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.6.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly7_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.7.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly8_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.8.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly9_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.9.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly10_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.10.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly11_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.11.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Hourly12_Icon">
 		<control type="image">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<texture>$INFO[Window.Property(Hourly.12.OutlookIcon)]</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="Weather_Animated_Hourly1_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.1.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -4947,12 +5190,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly2_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.2.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -4960,12 +5202,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly3_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.3.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -4973,12 +5214,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly4_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.4.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -4986,12 +5226,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly5_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.5.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -4999,12 +5238,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly6_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.6.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -5012,12 +5250,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly7_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.7.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -5025,12 +5262,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly8_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.8.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -5038,12 +5274,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly9_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.9.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -5051,12 +5286,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly10_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.10.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -5064,12 +5298,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly11_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.11.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
@@ -5077,12 +5310,11 @@
 	</include>
 	<include name="Weather_Animated_Hourly12_Icon">
 		<control type="multiimage">
-			<posx>70</posx>
-			<posy>90</posy>
+			<posx>100</posx>
+			<posy>0</posy>
 			<width>50</width>
 			<height>50</height>
 			<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Hourly.12.FanartCode)]</imagepath>
-			<colordiffuse>99FFFFFF</colordiffuse>
 			<timeperimage>100</timeperimage>
 			<randomize>false</randomize>
 			<fadetime>0</fadetime>
