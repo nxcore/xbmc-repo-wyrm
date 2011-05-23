@@ -47,7 +47,7 @@
 			<width>720</width>
 			<height>576</height>
 			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(HomeViewToggle) + !(Window(videolibrary).Property(TvTunesIsAlive))</visible>
+			<visible>Skin.HasSetting(HomeViewToggle) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
 		</control>
 		<control type="videowindow">
 			<posx>0</posx>
@@ -375,7 +375,7 @@
 			</control>
 		</control>
 	</include>
-	<include name="PageControl50">
+	<include name="PageControl">
 		<control type="scrollbar" id="23">
 			<posx>700</posx>
 			<posy>90</posy>
@@ -643,14 +643,6 @@
 		<width>64</width>
 		<height>64</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
-	</include>
-	<include name="icon-header-reflect-commons">
-		<posx>140</posx>
-		<posy>375</posy>
-		<width>230</width>
-		<height>230</height>
-		<aspectratio aligny="top">keep</aspectratio>
-		<visible>Window.Next(Home)</visible>
 	</include>
 	<include name="mpaa-ratings">
 	<!-- MPAA Rating -->
@@ -942,9 +934,6 @@
 		<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175" condition="Window.Next(Home)">WindowClose</animation>
 		<animation effect="zoom" start="140,145,230,230"  end="470,14,64,64" time="175" condition="Window.Previous(Home)">WindowOpen</animation>
 	</include>
-	<include name="icon-reflection-ani">
-		<animation effect="fade" start="0" end="100" time="25" delay="150" condition="Window.Next(Home)">Visible</animation>
-	</include>
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
@@ -965,4 +954,14 @@
 		<autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
 	</include>
 	<!-- End Autoscroll Includes -->
+	<!-- Start of Play content Includes -->
+	<include name="StartupPlaylist">
+		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;)</onfocus>
+	</include>
+	<include name="StartupVideo">
+		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
+	</include>
+	<include name="PlayTVTunes">
+		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=True)</onfocus>
+	</include>
 </includes>
