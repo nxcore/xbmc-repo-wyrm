@@ -142,7 +142,6 @@
 				<scroll>true</scroll>
 				<info>ListItem.PictureResolution</info>
 				<textoffsetx>0</textoffsetx>
-				<visible>Control.IsVisible(58)</visible>
 			</control>
 			<control type="scrollbar" id="1358">
 				<posx>700</posx>
@@ -160,7 +159,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + Control.IsVisible(58)</visible>
+				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>
 	</include>

@@ -124,11 +124,8 @@
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + Control.IsVisible(54)</visible>
+				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
-		</control>
-		<control type="group">
-			<visible>Control.IsVisible(54)</visible>
 			<!-- Star Rating -->
 			<control type="image">
 				<posx>175</posx>
@@ -199,20 +196,6 @@
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 			</control>
-			<!--<control type="label">
-				<posx>175</posx>
-				<posy>345</posy>
-				<width>525</width>
-				<height>30</height>
-				<font>font22</font>
-				<align>left</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<info>ListItem.Label</info>
-				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-			</control>-->
 			<!-- Genre -->
 			<control type="label">
 				<posx>175</posx>
