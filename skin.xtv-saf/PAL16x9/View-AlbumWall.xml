@@ -6,14 +6,14 @@
 			<width>625</width>
 			<height>381</height>
 			<onleft>2</onleft>
-			<onright>23</onright>
+			<onright>1258</onright>
 			<onup>58</onup>
 			<ondown>58</ondown>
 			<viewtype label="31945">Wall</viewtype>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<scrolltime>200</scrolltime>
 			<include>list-fade</include>
-			<pagecontrol>23</pagecontrol>
+			<pagecontrol>1258</pagecontrol>
 			<itemlayout height="127" width="81">
 				<control type="image">
 					<width>81</width>
@@ -65,7 +65,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(58)</visible>
-			<control type="scrollbar" id="23">
+			<control type="scrollbar" id="1258">
 				<posx>700</posx>
 				<posy>90</posy>
 				<width>14</width>

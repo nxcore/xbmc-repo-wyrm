@@ -9,13 +9,13 @@
 			<focusposition>4</focusposition>
 			<movement>6</movement>
 			<onleft>2</onleft>
-			<onright>23</onright>
+			<onright>27</onright>
 			<onup>51</onup>
 			<ondown>51</ondown>
 			<include>list-fade</include>
 			<scrolltime>1</scrolltime>
 			<preloaditems>5</preloaditems>
-			<pagecontrol>23</pagecontrol>
+			<pagecontrol>27</pagecontrol>
 			<itemlayout height="40">
 				<control type="image">
 					<posx>0</posx>
@@ -373,7 +373,7 @@
 			<visible>Control.IsVisible(51)</visible>
 			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
-			<control type="scrollbar" id="23">
+			<control type="scrollbar" id="27">
 				<posx>700</posx>
 				<posy>90</posy>
 				<width>14</width>

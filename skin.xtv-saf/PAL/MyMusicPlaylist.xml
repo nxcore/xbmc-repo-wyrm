@@ -12,20 +12,18 @@
 		<control type="label">
 			<description>Music Label</description>
 			<posx>535</posx>
-			<posy>40</posy>
-			<label>31030</label>
-			<font>font20</font>
+			<posy>20</posy>
+			<width>175</width>
+			<height>25</height>
+			<label>$LOCALIZE[10517]</label>
+			<font>font18</font>
+			<wrapmultiline>true</wrapmultiline>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 		</control>
-		<include>PlaylistView</include>
-		<include>PageControl</include>
-		<control type="visualisation">
-			<posx>30</posx>
-			<posy>100</posy>
-			<width>350</width>
-			<height>350</height>
-			<animation effect="fade" delay="175" start="0" time="300">WindowOpen</animation>
-		</control>
+		
+		<include>ListView</include>
+		
 		<control type="image">
 			<posx>40</posx>
 			<posy>90</posy>
@@ -52,36 +50,40 @@
 		</control>
 		<control type="label">
 			<description>Time Label</description>
-			<posx>300</posx>
+			<posx>394</posx>
 			<posy>468</posy>
 			<width>130</width>
 			<align>right</align>
 			<font>font12</font>
 			<label>$INFO[Player.Time]$INFO[Player.Duration,/ ]</label>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio</visible>
 		</control>
 		<control type="label">
 			<description>Now Playing Label</description>
 			<posx>20</posx>
 			<posy>468</posy>
-			<width>220</width>
+			<width>240</width>
 			<height>20</height>
 			<font>font12</font>
 			<info>MusicPlayer.Title</info>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio</visible>
 		</control>
 		<control type="label">
 			<description>Artist label</description>
 			<posx>20</posx>
-			<posy>486</posy>
-			<width>220</width>
+			<posy>490</posy>
+			<width>240</width>
 			<height>20</height>
 			<info>MusicPlayer.Artist</info>
 			<font>font12</font>
 			<scroll>true</scroll>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio</visible>
 		</control>
 		<control type="group">
@@ -121,6 +123,7 @@
 				<onup>22</onup>
 				<ondown>28</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -141,6 +144,7 @@
 				<onup>20</onup>
 				<ondown>26</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -158,6 +162,7 @@
 				<onup>28</onup>
 				<ondown>21</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -177,6 +182,7 @@
 				<onup>26</onup>
 				<ondown>22</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -197,6 +203,7 @@
 				<onup>21</onup>
 				<ondown>20</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
