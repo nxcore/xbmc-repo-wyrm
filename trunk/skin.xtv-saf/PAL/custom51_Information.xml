@@ -21,7 +21,7 @@
 		</control>
 		<control type="grouplist" id="420">
 			<posx>405</posx>
-			<posy>90</posy>	
+			<posy>90</posy>
 			<width>285</width>
 			<height>421</height>
 			<itemgap>2</itemgap>
@@ -29,7 +29,6 @@
 			<ondown>420</ondown>
 			<onleft>420</onleft>
 			<onright>420</onright>
-	
 			<!-- Start Custom Background Buttons -->
 			<control type="button" id="2">
 				<description>File Explorer</description>
