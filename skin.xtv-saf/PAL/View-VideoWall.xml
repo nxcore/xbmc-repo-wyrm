@@ -126,7 +126,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + Control.IsVisible(58)</visible>
+				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 			<!-- Watched Overlay -->
 			<control type="image">

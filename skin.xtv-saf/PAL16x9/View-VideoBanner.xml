@@ -252,7 +252,7 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar) + Control.IsVisible(59)</visible>
+					<visible>Skin.HasSetting(sbar)</visible>
 				</control>
 			</control>
 		</control>

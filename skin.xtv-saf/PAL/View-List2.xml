@@ -389,7 +389,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + Control.IsVisible(51)</visible>
+				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 			<!-- Star Rating -->
 			<control type="image">
