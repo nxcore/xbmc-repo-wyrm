@@ -6,13 +6,13 @@
 			<width>548</width>
 			<height>330</height>
 			<onleft>2</onleft>
-			<onright>23</onright>
+			<onright>28</onright>
 			<onup>58</onup>
 			<ondown>58</ondown>
 			<viewtype label="31945">Wall</viewtype>
 			<scrolltime>100</scrolltime>
 			<include>list-fade</include>
-			<pagecontrol>23</pagecontrol>
+			<pagecontrol>28</pagecontrol>
 			<preloaditems>8</preloaditems>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<itemlayout height="110" width="66">
@@ -110,7 +110,7 @@
 				<posy>505</posy>
 				<include>mpaa-ratings</include>
 			</control>
-			<control type="scrollbar" id="23">
+			<control type="scrollbar" id="28">
 				<posx>700</posx>
 				<posy>82</posy>
 				<width>14</width>
@@ -126,7 +126,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Skin.HasSetting(sbar) + Control.IsVisible(58)</visible>
 			</control>
 			<!-- Watched Overlay -->
 			<control type="image">

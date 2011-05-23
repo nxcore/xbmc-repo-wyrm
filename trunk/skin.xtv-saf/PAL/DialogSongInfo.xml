@@ -1,8 +1,8 @@
 <window id="135">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<animation effect="fade" time="1000">WindowOpen</animation>
-	<animation effect="fade" time="1000">WindowClose</animation>
+	<include>screen-fade</include>
+	
 	<controls>
 		<include>background</include>
 		<control type="fadelabel">

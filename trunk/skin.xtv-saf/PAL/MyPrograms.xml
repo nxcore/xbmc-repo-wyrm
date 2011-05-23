@@ -12,12 +12,6 @@
 			<include>icon-ani</include>
 			<texture>icon-programs.png</texture>
 		</control>
-		<control type="image">
-			<description>Programs Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="mask-fade.png">icon-programs.png</texture>
-		</control>
 		<control type="label">
 			<description>Programs Label</description>
 			<posx>535</posx>
@@ -56,8 +50,6 @@
 		<include condition="!Skin.HasSetting(views-programwrap)">WrapView</include>
 		<include condition="!Skin.HasSetting(views-programwall)">WallView</include>
 		<include condition="!Skin.HasSetting(views-programcoverflow)">Coverflow</include>
-		
-		<include>PageControl</include>
 		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
