@@ -133,11 +133,11 @@
 			<focusposition>3</focusposition>
 			<movement>4</movement>
 			<onleft>5</onleft>
-			<onright>5</onright>
+			<onright>23</onright>
 			<onup>5</onup>
 			<ondown>5</ondown>
 			<scrolltime>1</scrolltime>
-			<preloaditems>5</preloaditems>
+			<pagecontrol>23</pagecontrol>
 			<itemlayout height="45">
 				<control type="label">
 					<posx>15</posx>
@@ -463,7 +463,6 @@
 				</item>
 			</content>
 		</control>
-		<!--test -->
 		<control type="group" id="3002">
 			<visible>Container(5).OnPrevious</visible>
 			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
@@ -568,7 +567,6 @@
 				</control>
 			</control>
 		</control>
-
 		<control type="group" id="3001">
 			<visible>Container(5).OnNext</visible>
 			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
@@ -673,7 +671,6 @@
 				</control>
 			</control>
 		</control>
-
 		<control type="group">
 			<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
 			<control type="group">
@@ -747,67 +744,66 @@
 			</control>
 		</control>
 		<!-- media infos (music) -->
-			<control type="group">
-				<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
-				<control type="image">
-					<description>cover image</description>
-					<posx>10</posx>
-					<posy>434</posy>
-					<width>90</width>
-					<height>90</height>
-					<info>MusicPlayer.Cover</info>
-					<include>homemediainfo</include>
-					<aspectratio align="right">keep</aspectratio>
-				</control>
-				<control type="label">
-					<description>Artist label</description>
-					<posx>110</posx>
-					<posy>430</posy>
-					<width>260</width>
-					<height>25</height>
-					<info>MusicPlayer.Artist</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-					<include>homemediainfo</include>
-				</control>
-				<control type="label">
-					<description>Album label</description>
-					<posx>110</posx>
-					<posy>455</posy>
-					<width>260</width>
-					<height>25</height>
-					<info>MusicPlayer.Album</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-					<include>homemediainfo</include>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>110</posx>
-					<posy>480</posy>
-					<width>260</width>
-					<height>25</height>
-					<info>MusicPlayer.Title</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-					<include>homemediainfo</include>
-				</control>
-				<control type="label">
-					<description>Time label</description>
-					<posx>110</posx>
-					<posy>505</posy>
-					<width>260</width>
-					<height>25</height>
-					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-					<align>left</align>
-					<font>font12</font>
-					<include>homemediainfo</include>
-				</control>
+		<control type="group">
+			<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
+			<control type="image">
+				<description>cover image</description>
+				<posx>10</posx>
+				<posy>434</posy>
+				<width>90</width>
+				<height>90</height>
+				<info>MusicPlayer.Cover</info>
+				<include>homemediainfo</include>
+				<aspectratio align="right">keep</aspectratio>
 			</control>
-
+			<control type="label">
+				<description>Artist label</description>
+				<posx>110</posx>
+				<posy>430</posy>
+				<width>260</width>
+				<height>25</height>
+				<info>MusicPlayer.Artist</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Album label</description>
+				<posx>110</posx>
+				<posy>455</posy>
+				<width>260</width>
+				<height>25</height>
+				<info>MusicPlayer.Album</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>110</posx>
+				<posy>480</posy>
+				<width>260</width>
+				<height>25</height>
+				<info>MusicPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>110</posx>
+				<posy>505</posy>
+				<width>260</width>
+				<height>25</height>
+				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<include>homemediainfo</include>
+			</control>
+		</control>
 		<!-- media infos (video) -->
 		<control type="group">
 			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
@@ -855,6 +851,25 @@
 				<scroll>true</scroll>
 				<include>homemediainfo</include>
 			</control>
+		</control>
+		<!-- Scroll Bar -->
+		<control type="scrollbar" id="23">
+			<posx>700</posx>
+			<posy>126</posy>
+			<width>14</width>
+			<height>366</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<!-- page info -->
 		<include>page-info</include>
