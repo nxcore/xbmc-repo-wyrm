@@ -61,6 +61,7 @@
 			<midtexture>progress-middle.png</midtexture>
 			<righttexture>progress-right.png</righttexture>
 			<overlaytexture>-</overlaytexture>
+			<info>System.Progressbar</info>
 		</control>
 		<control type="button" id="10">
 			<description>Cancel button</description>
