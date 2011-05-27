@@ -90,7 +90,7 @@
 		</control>
 
 		<include>ListView</include>
-		<include>PageControl</include>
+		<!--<include>PageControl</include>-->
 
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
