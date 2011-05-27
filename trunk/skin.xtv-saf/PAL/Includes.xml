@@ -41,96 +41,100 @@
 			<colordiffuse>solid-background</colordiffuse>
 			<texture>background.png</texture>
 		</control>
-		<control type="visualisation">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(HomeViewToggle) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
-		</control>
-		<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<aspectratio>scale</aspectratio>
-			<visible>Skin.HasSetting(HomeViewToggle)</visible>
-		</control>
-		<control type="image">
-			<description>background to cover video and visualisation backgrounds</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<colordiffuse>mask-background</colordiffuse>
-			<texture>background.png</texture>
-			<visible>Skin.HasSetting(HomeViewToggle)</visible>
-		</control>
-		<control type="image">
-			<description>custom background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>720</width>
-			<height>576</height>
-			<colordiffuse>fanart-background</colordiffuse>
-			<info>Skin.String(custom-background)</info>
-			<visible>INFO$(Skin.String(custom-background))</visible>
+		<control type="group">
+			<visible>Skin.HasSetting(HomeViewToggle) + Player.HasVideo</visible>
+			<control type="visualisation">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<aspectratio>scale</aspectratio>
+				<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			</control>
+			<control type="videowindow">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<description>background to cover video and visualisation backgrounds</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<colordiffuse>mask-background</colordiffuse>
+				<texture>background.png</texture>
+			</control>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(background-fanart) + !Player.HasVideo</visible>
+			<visible>!Skin.HasSetting(HomeViewToggle) | !Player.HasVideo</visible>
 			<control type="image">
-				<description>Fanart background</description>
+				<description>custom background</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>720</width>
 				<height>576</height>
 				<colordiffuse>fanart-background</colordiffuse>
-				<aspectratio>scale</aspectratio>
-				<fadetime>300</fadetime>
-				<include>background-fade</include>
-				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+				<info>Skin.String(custom-background)</info>
+				<visible>INFO$(Skin.String(custom-background))</visible>
 			</control>
-			<!-- Following fanart hacks modified from Ronie's hacks in T! -->
-			<control type="image">
-				<description>hack for (inside folder) fanart in programs pictures scripts</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<colordiffuse>fanart-background</colordiffuse>
-				<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>300</fadetime>
-				<include>background-fade</include>
-				<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
-			</control>
-			<control type="image">
-				<description>hack for (inside folder) fanart in programs pictures scripts</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<colordiffuse>fanart-background</colordiffuse>
-				<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>300</fadetime>
-				<include>background-fade</include>
-				<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
-			</control>
-			<control type="image">
-				<description>hack for (folder) fanart in programs pictures scripts</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<colordiffuse>fanart-background</colordiffuse>
-				<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>300</fadetime>
-				<include>background-fade</include>
-				<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(background-fanart) + !Skin.String(custom-background)</visible>
+				<control type="image">
+					<description>Fanart background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>576</height>
+					<colordiffuse>fanart-background</colordiffuse>
+					<aspectratio>scale</aspectratio>
+					<fadetime>300</fadetime>
+					<include>background-fade</include>
+					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+				</control>
+				<control type="group">
+					<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+					<!-- Following fanart hacks modified from Ronie's hacks in T! -->
+					<control type="image">
+						<description>hack for (inside folder) fanart in programs pictures scripts</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>720</width>
+						<height>576</height>
+						<colordiffuse>fanart-background</colordiffuse>
+						<texture background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
+						<aspectratio>scale</aspectratio>
+						<fadetime>300</fadetime>
+						<include>background-fade</include>
+					</control>
+					<control type="image">
+						<description>hack for (inside folder) fanart in programs pictures scripts</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>720</width>
+						<height>576</height>
+						<colordiffuse>fanart-background</colordiffuse>
+						<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+						<aspectratio>scale</aspectratio>
+						<fadetime>300</fadetime>
+						<include>background-fade</include>
+					</control>
+					<control type="image">
+						<description>hack for (folder) fanart in programs pictures scripts</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>720</width>
+						<height>576</height>
+						<colordiffuse>fanart-background</colordiffuse>
+						<texture background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
+						<aspectratio>scale</aspectratio>
+						<fadetime>300</fadetime>
+						<include>background-fade</include>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -528,112 +532,118 @@
 	
 	<!-- Start Fake Overlay Include -->
 	<include name="Fake-Overlay">
-		<!-- Video Stuff -->
-		<control type="videowindow">
-			<description>video preview window</description>
-			<posx>20</posx>
-			<posy>4</posy>
-			<width>116</width>
-			<height>99</height>
-			<aspectratio>keep</aspectratio>
+		<control type="group">
 			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
-		</control>
+			<!-- Video Stuff -->
+			<control type="videowindow">
+				<description>video preview window</description>
+				<posx>20</posx>
+				<posy>4</posy>
+				<width>116</width>
+				<height>99</height>
+				<aspectratio>keep</aspectratio>
+			</control>
 			<control type="label">
-			<description>Now playing</description>
-			<posx>144</posx>
-			<posy>16</posy>
-			<width>230</width>
-			<height>25</height>
-			<label>13350</label>
-			<align>left</align>
-			<font>font12</font>
-			<textcolor>listselectedtext</textcolor>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
+				<description>Now playing</description>
+				<posx>144</posx>
+				<posy>16</posy>
+				<width>230</width>
+				<height>25</height>
+				<label>13350</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Video Title label</description>
+				<posx>144</posx>
+				<posy>40</posy>
+				<width>230</width>
+				<height>25</height>
+				<info>VideoPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>144</posx>
+				<posy>64</posy>
+				<width>230</width>
+				<height>25</height>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
 		</control>
-		<control type="label">
-			<description>Video Title label</description>
-			<posx>144</posx>
-			<posy>40</posy>
-			<width>230</width>
-			<height>25</height>
-			<info>VideoPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<scroll>true</scroll>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
-		</control>
-		<control type="label">
-			<description>Time label</description>
-			<posx>144</posx>
-			<posy>64</posy>
-			<width>230</width>
-			<height>25</height>
-			<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-			<align>left</align>
-			<font>font12</font>
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
-		</control>
-		<!-- Audio Stuff -->
-		<control type="image">
-			<description>cover image</description>
-			<posx>25</posx>
-			<posy>5</posy>
-			<width>80</width>
-			<height>80</height>
-			<info>MusicPlayer.Cover</info>
-			<aspectratio>keep</aspectratio>
+		<control type="group">
 			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
-		</control>
-		<control type="label">
-			<description>Artist label</description>
-			<posx>118</posx>
-			<posy>2</posy>
-			<width>235</width>
-			<height>20</height>
-			<info>MusicPlayer.Artist</info>
-			<align>left</align>
-			<font>font12</font>
-			<scroll>true</scroll>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
-		</control>
-		<control type="label">
-			<description>Album label</description>
-			<posx>118</posx>
-			<posy>22</posy>
-			<width>235</width>
-			<height>20</height>
-			<info>MusicPlayer.Album</info>
-			<align>left</align>
-			<font>font12</font>
-			<scroll>true</scroll>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
-		</control>
-		<control type="label">
-			<description>Title label</description>
-			<posx>118</posx>
-			<posy>42</posy>
-			<width>235</width>
-			<height>20</height>
-			<info>MusicPlayer.Title</info>
-			<align>left</align>
-			<font>font12</font>
-			<scroll>true</scroll>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
-		</control>
-		<control type="label">
-			<description>Time label</description>
-			<posx>118</posx>
-			<posy>62</posy>
-			<width>235</width>
-			<height>20</height>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-			<align>left</align>
-			<font>font12</font>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			<!-- Audio Stuff -->
+			<control type="image">
+				<description>cover image</description>
+				<posx>25</posx>
+				<posy>5</posy>
+				<width>80</width>
+				<height>80</height>
+				<info>MusicPlayer.Cover</info>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<description>Artist label</description>
+				<posx>118</posx>
+				<posy>2</posy>
+				<width>235</width>
+				<height>20</height>
+				<info>MusicPlayer.Artist</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Album label</description>
+				<posx>118</posx>
+				<posy>22</posy>
+				<width>235</width>
+				<height>20</height>
+				<info>MusicPlayer.Album</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>118</posx>
+				<posy>42</posy>
+				<width>235</width>
+				<height>20</height>
+				<info>MusicPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>118</posx>
+				<posy>62</posy>
+				<width>235</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
 		</control>
 	</include>
 	<!-- End Fake Overlay Include -->
@@ -963,5 +973,21 @@
 	</include>
 	<include name="PlayTVTunes">
 		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=True)</onfocus>
+	</include>
+	<include name="RestartSkinMovies">
+		<onclick>Skin.Reset(updatemovieentry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+	<include name="RestartSkinTV">
+		<onclick>Skin.Reset(updatetventry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+	<include name="RestartSkinMusicVid">
+		<onclick>Skin.Reset(updatemusicvidentry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+	<include name="RestartSkinMusic">
+		<onclick>Skin.Reset(updatemusicentry)</onclick>
+		<onclick>ReloadSkin()</onclick>
 	</include>
 </includes>

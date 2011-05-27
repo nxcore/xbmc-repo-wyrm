@@ -219,7 +219,7 @@
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[344])">MovieLibraryActors</include>
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20348])">MovieLibraryDirectors</include>
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20388])">MovieLibraryStudios</include>
-					<onclick>ReloadSkin()</onclick>
+					<include condition="Skin.HasSetting(updatemovieentry)">RestartSkinMovies</include>
 					<visible>Skin.HasSetting(movie-library)</visible>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
@@ -253,7 +253,7 @@
 					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[652])">TVLibraryYears</include>
 					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[344])">TVLibraryActors</include>
 					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20388])">TVLibraryStudios</include>
-					<onclick>ReloadSkin()</onclick>
+					<include condition="Skin.HasSetting(updatetventry)">RestartSkinTV</include>
 					<visible>Skin.HasSetting(tv-library)</visible>
 					<visible>!Skin.HasSetting(home-tv)</visible>
 				</item>
@@ -286,7 +286,7 @@
 					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[133])">MusicVideoLibraryArtists</include>
 					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
 					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
-					<onclick>ReloadSkin()</onclick>
+					<include condition="Skin.HasSetting(updatemusicvidentry)">RestartSkinMusicVid</include>
 					<visible>Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
@@ -312,7 +312,7 @@
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[521])">MusicLibraryCompilations</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[652])">MusicLibraryYears</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[1050])">MusicLibrarySingles</include>
-					<onclick>ReloadSkin()</onclick>
+					<include condition="Skin.HasSetting(updatemusicentry)">RestartSkinMusic</include>
 					<visible>Skin.HasSetting(music-library) + !Skin.HasSetting(home-music)</visible>
 				</item>
 				<item>
