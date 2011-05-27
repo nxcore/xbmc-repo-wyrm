@@ -14,7 +14,7 @@
 			<ondown>50</ondown>
 			<include>list-fade</include>
 			<scrolltime>1</scrolltime>
-			<preloaditems>5</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="40">
 				<control type="image">
