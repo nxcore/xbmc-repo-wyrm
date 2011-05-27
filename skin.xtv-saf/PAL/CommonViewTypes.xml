@@ -43,7 +43,7 @@
 				<control type="image">
 					<posx>22</posx>
 					<posy>-3</posy>
-					<width>270</width>
+					<width>274</width>
 					<height>40</height>
 					<texture>default-button.png</texture>
 					<visible>!IntegerGreaterThan(Container(50).NumPages,1)</visible>
