@@ -1,7 +1,6 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<!--<previouswindow>Home</previouswindow>-->
 	<controls>
 		<control type="button" id="9999">
 			<description>Play TVTunes theme if required</description>
