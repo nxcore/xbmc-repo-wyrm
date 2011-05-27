@@ -42,14 +42,14 @@
 			<texture>background.png</texture>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(HomeViewToggle) + Player.HasVideo</visible>
+			<visible>Skin.HasSetting(HomeViewToggle) + [Player.HasVideo | Player.HasAudio]</visible>
 			<control type="visualisation">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>720</width>
 				<height>576</height>
 				<aspectratio>scale</aspectratio>
-				<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+				<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True) | Player.HasAudio</visible>
 			</control>
 			<control type="videowindow">
 				<posx>0</posx>
@@ -57,6 +57,7 @@
 				<width>720</width>
 				<height>576</height>
 				<aspectratio>scale</aspectratio>
+				<visible>Player.HasVideo</visible>
 			</control>
 			<control type="image">
 				<description>background to cover video and visualisation backgrounds</description>
@@ -69,7 +70,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(HomeViewToggle) | !Player.HasVideo</visible>
+			<visible>!Skin.HasSetting(HomeViewToggle) | ![Player.HasVideo | Player.HasAudio]</visible>
 			<control type="image">
 				<description>custom background</description>
 				<posx>0</posx>
@@ -187,7 +188,6 @@
 
 	<!-- Start Home Media Overlay -->
 	<include name="homemediainfo">
-		<visible>!Skin.HasSetting(homepageMusicinfo)</visible>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
 		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
@@ -407,125 +407,129 @@
 				<effect type="rotatey" start="-20" end="-20" time="0"/>
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
-			
-			<!-- No Fanart available -->
-			<control type="image">
-				<description>list item icon</description>
-				<posx>20</posx>
-				<posy>125</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture background="true" diffuse="mask-rect.png">-</texture>
-				<info>ListItem.Icon</info>
-				<aspectratio>keep</aspectratio>
-				<include>list-fade</include>
-				<visible>Skin.HasSetting(Fanart) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(Fanart) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="group">
+					<visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
+					<!-- No Fanart available -->
+					<control type="image">
+						<description>list item icon</description>
+						<posx>20</posx>
+						<posy>125</posy>
+						<width>345</width>
+						<height>345</height>
+						<texture background="true" diffuse="mask-rect.png">-</texture>
+						<info>ListItem.Icon</info>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>20</posx>
+						<posy>470</posy>
+						<width>345</width>
+						<height>345</height>
+						<info>ListItem.Icon</info>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">-</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<!-- Fanart image -->
+					<control type="image">
+						<posx>20</posx>
+						<posy>125</posy>
+						<width>345</width>
+						<height>345</height>
+						<include>icon-fade</include>
+						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>470</posy>
+						<width>345</width>
+						<height>345</height>
+						<include>icon-fade</include>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					</control>
+				</control>
 			</control>
-			<control type="image">
-				<description>list item icon reflection</description>
-				<posx>20</posx>
-				<posy>470</posy>
-				<width>345</width>
-				<height>345</height>
-				<info>ListItem.Icon</info>
-				<texture background="true" flipy="true" diffuse="mask-fade.png">-</texture>
-				<aspectratio>keep</aspectratio>
-				<include>list-fade</include>
-				<visible>Skin.HasSetting(Fanart) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
+			<control type="group">
+				<visible>![Skin.HasSetting(Fanart)] + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<!-- User has selected NO fanart -->
+				<control type="image">
+					<description>list item icon</description>
+					<posx>20</posx>
+					<posy>125</posy>
+					<width>345</width>
+					<height>345</height>
+					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+				<control type="image">
+					<description>list item icon reflection</description>
+					<posx>20</posx>
+					<posy>470</posy>
+					<width>345</width>
+					<height>345</height>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
 			</control>
-			
-			<!-- User has selected NO fanart -->
-			<control type="image">
-				<description>list item icon</description>
-				<posx>20</posx>
-				<posy>125</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>![Skin.HasSetting(Fanart)]</visible>
-				<include>list-fade</include>
-			</control>
-			<control type="image">
-				<description>list item icon reflection</description>
-				<posx>20</posx>
-				<posy>470</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>![Skin.HasSetting(Fanart)]</visible>
-				<include>list-fade</include>
-			</control>
-			
-			<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
-			<control type="image">
-				<description>list item icon</description>
-				<posx>20</posx>
-				<posy>125</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<include>list-fade</include>
-			</control>
-			<control type="image">
-				<description>list item icon reflection</description>
-				<posx>20</posx>
-				<posy>470</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>[Container.Content(seasons) | Container.Content(episodes)] + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<include>list-fade</include>
-			</control>
-			
-			<!-- Show TV icon as the Default icon -->
-			<control type="image">
-				<description>list item icon</description>
-				<posx>20</posx>
-				<posy>125</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<include>list-fade</include>
-			</control>
-			<control type="image">
-				<description>list item icon reflection</description>
-				<posx>20</posx>
-				<posy>470</posy>
-				<width>345</width>
-				<height>345</height>
-				<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>[Container.Content(seasons) | Container.Content(episodes)] + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<include>list-fade</include>
-			</control>
-			
-			<!-- Fanart image -->
-			<control type="image">
-				<posx>20</posx>
-				<posy>125</posy>
-				<width>345</width>
-				<height>345</height>
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
-			</control>
-			<control type="image">
-				<posx>20</posx>
-				<posy>470</posy>
-				<width>345</width>
-				<height>345</height>
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
-				<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<visible>Skin.HasSetting(Fanart) + !IsEmpty(ListItem.Property(Fanart_Image)) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
+			<control type="group">
+				<visible>[Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
+					<control type="image">
+						<description>list item icon</description>
+						<posx>20</posx>
+						<posy>125</posy>
+						<width>345</width>
+						<height>345</height>
+						<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>20</posx>
+						<posy>470</posy>
+						<width>345</width>
+						<height>345</height>
+						<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<!-- Show TV icon as the Default icon -->
+					<control type="image">
+						<description>list item icon</description>
+						<posx>20</posx>
+						<posy>125</posy>
+						<width>345</width>
+						<height>345</height>
+						<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>20</posx>
+						<posy>470</posy>
+						<width>345</width>
+						<height>345</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -940,6 +944,10 @@
 		<animation effect="fade" time="1000">WindowOpen</animation>
 		<animation effect="fade" time="1000">WindowClose</animation>
 	</include>
+	<include name="icon-fade">
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+	</include>
 	<include name="icon-ani">
 		<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175" condition="Window.Next(Home)">WindowClose</animation>
 		<animation effect="zoom" start="140,145,230,230"  end="470,14,64,64" time="175" condition="Window.Previous(Home)">WindowOpen</animation>
@@ -966,7 +974,7 @@
 	<!-- End Autoscroll Includes -->
 	<!-- Start of Play content Includes -->
 	<include name="StartupPlaylist">
-		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;)</onfocus>
+		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;,isdir)</onfocus>
 	</include>
 	<include name="StartupVideo">
 		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
