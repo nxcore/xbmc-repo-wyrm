@@ -870,6 +870,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<onclick>Skin.SetBool(updatemovieentry)</onclick>
 						<onclick>Skin.SetBool(selectmovieentry)</onclick>
 						<onclick>SetFocus(560)</onclick>
 						<visible>Skin.HasSetting(movie-library)</visible>
@@ -934,6 +935,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<onclick>Skin.SetBool(updatetventry)</onclick>
 						<onclick>Skin.SetBool(selecttventry)</onclick>
 						<onclick>SetFocus(570)</onclick>
 						<visible>Skin.HasSetting(tv-library)</visible>
@@ -999,6 +1001,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<onclick>Skin.SetBool(updatemusicvidentry)</onclick>
 						<onclick>Skin.SetBool(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(580)</onclick>
 						<visible>Skin.HasSetting(musicvideo-library)</visible>
@@ -1064,6 +1067,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<onclick>Skin.SetBool(updatemusicentry)</onclick>
 						<onclick>Skin.SetBool(selectmusicentry)</onclick>
 						<onclick>SetFocus(540)</onclick>
 						<visible>Skin.HasSetting(music-library)</visible>
