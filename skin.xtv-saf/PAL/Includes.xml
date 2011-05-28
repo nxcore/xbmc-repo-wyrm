@@ -97,7 +97,8 @@
 					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
 				<control type="group">
-					<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+					<visible>false</visible>
+					<!--<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>-->
 					<!-- Following fanart hacks modified from Ronie's hacks in T! -->
 					<control type="image">
 						<description>hack for (inside folder) fanart in programs pictures scripts</description>
