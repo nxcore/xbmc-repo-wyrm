@@ -101,226 +101,229 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26)]</visible>
-			<control type="image">
-				<description>Background shadow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<texture>black.png</texture>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="image">
-				<description>Button Background</description>
-				<posx>260</posx>
-				<posy>170</posy>
-				<width>225</width>
-				<height>380</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="2">
-				<description>View As Icons button</description>
-				<posx>270</posx>
-				<posy>180</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>100</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>11</onup>
-				<ondown>3</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="3">
-				<description>Sort by button</description>
-				<posx>270</posx>
-				<posy>225</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>103</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>4</onright>
-				<onup>2</onup>
-				<ondown>5</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="togglebutton" id="4">
-				<description>Sort asc</description>
-				<posx>440</posx>
-				<posy>240</posy>
-				<label>-</label>
-				<onleft>3</onleft>
-				<onright>50</onright>
-				<onup>2</onup>
-				<ondown>5</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="radiobutton" id="5">
-				<description>Library button</description>
-				<posx>270</posx>
-				<posy>270</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<label>$LOCALIZE[14022] $LOCALIZE[456]</label>
-				<onclick>ReplaceWindow(myvideofiles)</onclick>
-				<selected>Window.IsVisible(myvideolibrary)</selected>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>3</onup>
-				<ondown>10</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="10">
-				<description>Show Button</description>
-				<posx>270</posx>
-				<posy>315</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>8</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-				<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
-			</control>
-			<control type="button" id="14">
-				<description>Watched Toggle Button</description>
-				<posx>270</posx>
-				<posy>315</posy>
-				<label>20367</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>10</onup>
-				<ondown>8</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-				<visible>Skin.HasSetting(watched_filtering_toggle)</visible>
-			</control>
-			<control type="button" id="8">
-				<description>Search Button</description>
-				<posx>270</posx>
-				<posy>360</posy>
-				<width>205</width>
-				<height>45</height>
-				<label>137</label>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>10</onup>
-				<ondown>19</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="radiobutton" id="19">
-				<description>Filter</description>
-				<posx>270</posx>
-				<posy>405</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>587</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>8</onup>
-				<ondown>16</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="16">
-				<description>Party Mode button</description>
-				<posx>270</posx>
-				<posy>450</posy>
-				<width>205</width>
-				<height>45</height>
-				<label>589</label>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>19</onup>
-				<ondown>17</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="17">
-				<description>Flatten Library button</description>
-				<posx>270</posx>
-				<posy>495</posy>
-				<width>205</width>
-				<height>45</height>
-				<label>20411</label>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>16</onup>
-				<ondown>11</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="radiobutton" id="11">
-				<description>Unlock Shares</description>
-				<posx>270</posx>
-				<posy>540</posy>
-				<label>20336</label>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<onclick>xbmc.mastermode</onclick>
-				<selected>system.ismaster</selected>
-				<visible>system.haslocks</visible>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>17</onup>
-				<ondown>2</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="label" id="18">
-				<description>No Info Scanned Label</description>
-				<posx>270</posx>
-				<posy>200</posy>
-				<width>485</width>
-				<height>150</height>
-				<font>font13</font>
-				<label>-</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
-				<include>View-as</include>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) |  Control.HasFocus(54) | Control.HasFocus(57) | Control.HasFocus(58) | Control.HasFocus(59)]</visible>
+			<animation effect="fade" start="0" time="300">Visible</animation>
+			<control type="group">
+				<control type="image">
+					<description>Background shadow</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>576</height>
+					<texture>black.png</texture>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="image">
+					<description>Button Background</description>
+					<posx>260</posx>
+					<posy>170</posy>
+					<width>225</width>
+					<height>380</height>
+					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="button" id="2">
+					<description>View As Icons button</description>
+					<posx>270</posx>
+					<posy>180</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>100</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>11</onup>
+					<ondown>3</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<posx>270</posx>
+					<posy>225</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>103</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>4</onright>
+					<onup>2</onup>
+					<ondown>5</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc</description>
+					<posx>440</posx>
+					<posy>240</posy>
+					<label>-</label>
+					<onleft>3</onleft>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>5</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="radiobutton" id="5">
+					<description>Library button</description>
+					<posx>270</posx>
+					<posy>270</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>$LOCALIZE[14022] $LOCALIZE[456]</label>
+					<onclick>ReplaceWindow(myvideofiles)</onclick>
+					<selected>Window.IsVisible(myvideolibrary)</selected>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>3</onup>
+					<ondown>10</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="button" id="10">
+					<description>Show Button</description>
+					<posx>270</posx>
+					<posy>315</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>5</onup>
+					<ondown>8</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+					<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
+				</control>
+				<control type="button" id="14">
+					<description>Watched Toggle Button</description>
+					<posx>270</posx>
+					<posy>315</posy>
+					<label>20367</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>10</onup>
+					<ondown>8</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+					<visible>Skin.HasSetting(watched_filtering_toggle)</visible>
+				</control>
+				<control type="button" id="8">
+					<description>Search Button</description>
+					<posx>270</posx>
+					<posy>360</posy>
+					<width>205</width>
+					<height>45</height>
+					<label>137</label>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>10</onup>
+					<ondown>19</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="radiobutton" id="19">
+					<description>Filter</description>
+					<posx>270</posx>
+					<posy>405</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>587</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>8</onup>
+					<ondown>16</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="button" id="16">
+					<description>Party Mode button</description>
+					<posx>270</posx>
+					<posy>450</posy>
+					<width>205</width>
+					<height>45</height>
+					<label>589</label>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>19</onup>
+					<ondown>17</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="button" id="17">
+					<description>Flatten Library button</description>
+					<posx>270</posx>
+					<posy>495</posy>
+					<width>205</width>
+					<height>45</height>
+					<label>20411</label>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>16</onup>
+					<ondown>11</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="radiobutton" id="11">
+					<description>Unlock Shares</description>
+					<posx>270</posx>
+					<posy>540</posy>
+					<label>20336</label>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<onclick>xbmc.mastermode</onclick>
+					<selected>system.ismaster</selected>
+					<visible>system.haslocks</visible>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>17</onup>
+					<ondown>2</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<include>View-as</include>
+				</control>
+				<control type="label" id="18">
+					<description>No Info Scanned Label</description>
+					<posx>270</posx>
+					<posy>200</posy>
+					<width>485</width>
+					<height>150</height>
+					<font>font13</font>
+					<label>-</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>View-as</include>
+				</control>
 			</control>
 		</control>
 	</controls>

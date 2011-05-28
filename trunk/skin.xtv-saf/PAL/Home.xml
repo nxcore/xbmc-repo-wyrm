@@ -476,6 +476,7 @@
 				<posy>150</posy>
 				<width>50</width>
 				<height>100</height>
+				<visible>Container(5).OnPrevious</visible>
 				<animation effect="slide" end="-100,0" time="200" reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
@@ -579,6 +580,7 @@
 				<posy>150</posy>
 				<width>50</width>
 				<height>100</height>
+				<visible>Container(5).OnNext</visible>
 				<animation effect="slide" end="100,0" time="200" reversible="false">Hidden</animation>
 				<control type="image">
 					<posx>0</posx>
@@ -877,4 +879,4 @@
 		<!-- page info -->
 		<include>page-info</include>
 	</controls>
-</window>        
+</window>

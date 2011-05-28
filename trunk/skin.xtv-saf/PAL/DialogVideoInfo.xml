@@ -3,7 +3,6 @@
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<controls>
-		<include>background</include>
 		<control type="button" id="7050">
 			<posy>-10</posy>
 			<posy>-10</posy>
@@ -16,6 +15,7 @@
 			<onup>50</onup>
 			<ondown>50</ondown>
 		</control>
+		<include>background</include>
 		<control type="group">
 			<posx>0</posx>
 			<posy>40</posy>
