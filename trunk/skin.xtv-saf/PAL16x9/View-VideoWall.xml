@@ -1,10 +1,10 @@
 <includes>
 	<include name="VideoWallView">
 		<control type="panel" id="58">
-			<posx>35</posx>
+			<posx>60</posx>
 			<posy>105</posy>
-			<width>660</width>
-			<height>376</height>
+			<width>600</width>
+			<height>378</height>
 			<onleft>2</onleft>
 			<onright>1158</onright>
 			<onup>58</onup>
@@ -15,18 +15,18 @@
 			<pagecontrol>1158</pagecontrol>
 			<preloaditems>11</preloaditems>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
-			<itemlayout height="125" width="56">
+			<itemlayout height="126" width="58">
 				<control type="image">
-					<width>56</width>
-					<height>125</height>
+					<width>58</width>
+					<height>126</height>
 					<posx>0</posx>
 					<posy>0</posy>
 					<texture>-</texture>
 				</control>
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
-					<width>55</width>
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>56</width>
 					<height>124</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
@@ -34,9 +34,9 @@
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
-					<posx>1</posx>
-					<posy>1</posy>
-					<width>55</width>
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>56</width>
 					<height>124</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
@@ -45,10 +45,10 @@
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="138" width="84">
+			<focusedlayout height="136" width="82">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<posx>4</posx>
+					<posy>4</posy>
 					<width>58</width>
 					<height>124</height>
 				    <aspectratio>stretch</aspectratio>
@@ -59,8 +59,8 @@
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<posx>4</posx>
+					<posy>4</posy>
 					<width>58</width>
 					<height>124</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -71,8 +71,8 @@
 					<visible>SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
 				</control>
 				<control type="image">
-					<posx>-4</posx>
-					<posy>-4</posy>
+					<posx>0</posx>
+					<posy>0</posy>
 					<height>124</height>
 					<width>68</width>
 					<texture diffuse="mask-rect.png">hi-lite.png</texture>
@@ -84,8 +84,8 @@
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
-					<posx>4</posx>
-					<posy>4</posy>
+					<posx>8</posx>
+					<posy>8</posy>
 					<width>50</width>
 					<height>106</height>
 					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
