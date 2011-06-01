@@ -403,45 +403,45 @@
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
 			</control>
 			<!-- Duration -->
-			<control type="label">
-				<posx>10</posx>
-				<posy>242</posy>
-				<width>150</width>
-				<height>25</height>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<info>ListItem.Duration</info>
-				<visible>substring(listitem.Duration,hrs)</visible>
+			<control type="group">
 				<visible>!IsEmpty(listitem.Duration)</visible>
-			</control>
-			<control type="label">
-				<posx>10</posx>
-				<posy>242</posy>
-				<width>150</width>
-				<height>25</height>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<info>ListItem.Duration</info>
-				<visible>substring(listitem.Duration,min)</visible>
-				<visible>!substring(listitem.Duration,hrs)</visible>
-				<visible>!IsEmpty(listitem.Duration)</visible>
-			</control>
-			<control type="label">
-				<posx>10</posx>
-				<posy>242</posy>
-				<width>150</width>
-				<height>25</height>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<label>$INFO[ListItem.Duration,, mins]</label>
-				<visible>!substring(listitem.Duration,min)</visible>
-				<visible>!IsEmpty(listitem.Duration)</visible>
+				<control type="label">
+					<posx>10</posx>
+					<posy>242</posy>
+					<width>150</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<info>ListItem.Duration</info>
+					<visible>substring(listitem.Duration,hrs)</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>242</posy>
+					<width>150</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<info>ListItem.Duration</info>
+					<visible>substring(listitem.Duration,min)</visible>
+					<visible>!substring(listitem.Duration,hrs)</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>242</posy>
+					<width>150</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>$INFO[ListItem.Duration,, mins]</label>
+					<visible>!substring(listitem.Duration,min)</visible>
+				</control>
 			</control>
 			<!-- MPAA Rating -->
 			<control type="group">
@@ -457,7 +457,7 @@
 					<posy>330</posy>
 					<width>104</width>
 					<height>40</height>
-					<texture>$INFO[ListItem.path]logo.png</texture>
+					<texture fallback="blank.png">$INFO[ListItem.path]logo.png</texture>
 					<aligny>bottom</aligny>
 					<aspectratio align="left">keep</aspectratio>
 				</control>
@@ -469,6 +469,7 @@
 					<texture>$INFO[ListItem.path]../logo.png</texture>
 					<aligny>bottom</aligny>
 					<aspectratio align="left">keep</aspectratio>
+					<visible>!StringCompare(Control.GetLabel(37016),blank.png)</visible>
 				</control>
 			</control>
 			<!-- Plot Outline -->
