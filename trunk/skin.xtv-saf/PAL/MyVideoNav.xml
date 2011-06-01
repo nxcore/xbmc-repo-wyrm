@@ -2,16 +2,30 @@
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<control type="button" id="9999">
-			<description>Play TVTunes theme if required</description>
-			<posy>-10</posy>
-			<posy>-10</posy>
-			<width>1</width>
-			<height>1</height>
-			<include condition="Skin.HasSetting(tv_theme)">PlayTVTunes</include>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+		<control type="group" id="9999">
+			<control type="button">
+				<description>Play TVTunes theme if required</description>
+				<posy>-10</posy>
+				<posy>-10</posy>
+				<width>1</width>
+				<height>1</height>
+				<include condition="Skin.HasSetting(tv_theme)">PlayTVTunes</include>
+				<onfocus>SetFocus(50)</onfocus>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+			</control>
+			<control type="button">
+				<description>Skip TVTunes script if not in TV library</description>
+				<posy>-10</posy>
+				<posy>-10</posy>
+				<width>1</width>
+				<height>1</height>
+				<onfocus>SetFocus(50)</onfocus>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+			</control>
 		</control>
 		
 		<include>background</include>
@@ -19,23 +33,23 @@
 		<include>#files</include>
 		
 		<control type="image">
-			<description>Default xTV Logo</description>
-			<posx>485</posx>
-			<posy>25</posy>
-			<width>64</width>
-			<height>64</height>
-			<aspectratio aligny="bottom">keep</aspectratio>
-			<include>icon-ani</include>
-			<texture>home-logo.png</texture>
-			<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
-		</control>
-		
-		<control type="image">
-			<description>Movies Logo</description>
+			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
 			<include>icon-ani</include>
 			<texture>icon-video-sml.png</texture>
-			<visible>Container.Content(movies)</visible>
+			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
+		</control>
+		<control type="label">
+			<description>Video Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<label>3</label>
+			<font>font20</font>
+			<style>bold</style>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<include>list-fade</include>
+			<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
 		</control>
 		<control type="label">
 			<description>Movie Label</description>
