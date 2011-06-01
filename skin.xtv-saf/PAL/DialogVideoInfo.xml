@@ -1,8 +1,9 @@
 <window id="2003">
 	<defaultcontrol>7050</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+	<allowoverlay>no</allowoverlay>
 	<include>screen-fade</include>
 	<controls>
+		<include>background</include>
 		<control type="button" id="7050">
 			<posy>-10</posy>
 			<posy>-10</posy>
@@ -15,7 +16,6 @@
 			<onup>50</onup>
 			<ondown>50</ondown>
 		</control>
-		<include>background</include>
 		<control type="group">
 			<posx>0</posx>
 			<posy>40</posy>
@@ -30,50 +30,52 @@
 				<visible>!IsEmpty(ListItem.StarRating) + !substring(Control.GetLabel(5),plot)</visible>
 			</control>
 			<!-- Studio -->
-			<control type="image">
-				<posx>216</posx>
-				<posy>-24</posy>
-				<width>60</width>
-				<height>60</height>
-				<align>center</align>
-				<aligny>bottom</aligny>
-				<colordiffuse>StudioShadow</colordiffuse>
-				<aspectratio>keep</aspectratio>
-				<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+			<control type="group">
 				<visible>!IsEmpty(ListItem.Studio)</visible>
-			</control>
-			<control type="image">
-				<posx>215</posx>
-				<posy>-25</posy>
-				<width>60</width>
-				<height>60</height>
-				<align>center</align>
-				<aligny>bottom</aligny>
-				<colordiffuse>StudioDiffuse</colordiffuse>
-				<aspectratio>keep</aspectratio>
-				<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
-				<visible>!IsEmpty(ListItem.Studio)</visible>
+				<control type="image">
+					<posx>216</posx>
+					<posy>-24</posy>
+					<width>60</width>
+					<height>60</height>
+					<align>center</align>
+					<aligny>bottom</aligny>
+					<colordiffuse>StudioShadow</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+				</control>
+				<control type="image">
+					<posx>215</posx>
+					<posy>-25</posy>
+					<width>60</width>
+					<height>60</height>
+					<align>center</align>
+					<aligny>bottom</aligny>
+					<colordiffuse>StudioDiffuse</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+				</control>
 			</control>
 			<!-- Title -->
-			<control type="image" id="37016">
-				<posx>300</posx>
-				<posy>-25</posy>
-				<width>134</width>
-				<height>52</height>
-				<texture>$INFO[ListItem.FileNameAndPath]logo.png</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
+			<control type="group">
 				<visible>container.content(tvshows)</visible>
-			</control>
-			<control type="image" id="39016">
-				<posx>300</posx>
-				<posy>-25</posy>
-				<width>134</width>
-				<height>52</height>
-				<texture>$INFO[ListItem.path]../logo.png</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
-				<visible>container.content(tvshows)</visible>
+				<control type="image" id="37016">
+					<posx>300</posx>
+					<posy>-25</posy>
+					<width>134</width>
+					<height>52</height>
+					<texture>$INFO[ListItem.FileNameAndPath]logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+				</control>
+				<control type="image" id="39016">
+					<posx>300</posx>
+					<posy>-25</posy>
+					<width>134</width>
+					<height>52</height>
+					<texture>$INFO[ListItem.path]../logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+				</control>
 			</control>
 			<control type="fadelabel">
 				<posx>300</posx>
@@ -348,65 +350,93 @@
 			<!-- Media flags -->
 			<control type="grouplist">
 				<description>Group Media Flags</description>
-				<posx>22</posx>
+				<posx>26</posx>
 				<posy>430</posy>
 				<width>256</width>
 				<height>48</height>
-				<align>center</align>
+				<align>right</align>
 				<orientation>horizontal</orientation>
 				<itemgap>-8</itemgap>
 				<visible>!substring(Control.GetLabel(5),plot)</visible>
-				<!-- Audio Codec -->
+				<!-- Hack to check if media flag image is available -->
 				<control type="image" id="161">
-					<width>64</width>
+					<width>1</width>
 					<height>48</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
-					<aspectratio>stretch</aspectratio>
-					<texture>$INFO[Listitem.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
-					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(161))">Conditional</animation>
+					<align>center</align>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<texture fallback="blank.png">$INFO[Listitem.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
 					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
 				</control>
-				<!-- Video Codec -->
 				<control type="image" id="162">
+					<width>1</width>
+					<height>48</height>
+					<align>center</align>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<texture fallback="blank.png">$INFO[Listitem.VideoCodec,special://skin/extras/images/video/,.png]</texture>
+					<visible>!IsEmpty(ListItem.VideoCodec)</visible>
+				</control>
+				<control type="image" id="163">
+					<description>Aspectratio Image</description>
+					<width>1</width>
+					<height>48</height>
+					<align>center</align>
+					<texture fallback="blank.png">$INFO[ListItem.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<visible>!IsEmpty(ListItem.VideoAspect)</visible>
+				</control>
+				<control type="image" id="164">
+					<width>1</width>
+					<height>48</height>
+					<align>center</align>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<texture fallback="blank.png">$INFO[Listitem.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+				</control>
+				<!-- Audio Codec -->
+				<control type="image" id="171">
 					<width>64</width>
 					<height>48</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<aspectratio>stretch</aspectratio>
-					<texture>$INFO[Listitem.VideoCodec,special://skin/extras/images/video/,.png]</texture>
-					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(162))">Conditional</animation>
-					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
-				</control>-->
+					<texture>$INFO[Listitem.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
+					<visible>!IsEmpty(ListItem.AudioCodec) + !StringCompare(Control.GetLabel(161),blank.png)</visible>
+				</control>
+				<!-- Video Codec -->
+				<control type="image" id="172">
+					<width>64</width>
+					<height>48</height>
+					<align>center</align>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture fallback="blank.png">$INFO[Listitem.VideoCodec,special://skin/extras/images/video/,.png]</texture>
+					<visible>!IsEmpty(ListItem.VideoCodec) + !StringCompare(Control.GetLabel(162),blank.png)</visible>
+				</control>
 				<!-- Video Aspect Ratio -->
-				<control type="image" id="163">
+				<control type="image" id="173">
 					<description>Aspectratio Image</description>
 					<width>64</width>
 					<height>48</height>
-					<aspectratio>stretch</aspectratio>
+					<align>center</align>
 					<texture>$INFO[ListItem.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
-					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(163))">Conditional</animation>  
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.VideoAspect)</visible>
+					<visible>!IsEmpty(ListItem.VideoAspect) + !StringCompare(Control.GetLabel(163),blank.png)</visible>
 				</control>
 				<!-- Video Resolution -->
-				<control type="image" id="164">
+				<control type="image" id="174">
 					<width>64</width>
 					<height>48</height>
+					<align>center</align>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<aspectratio>stretch</aspectratio>
 					<texture>$INFO[Listitem.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
-					<animation effect="slide" start="0,0" end="-70,0" time="0" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(164))">Conditional</animation>  
-					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution) + !StringCompare(Control.GetLabel(164),blank.png)</visible>
 				</control>
 			</control>
 		</control>
 
 		<!-- Option Buttons -->
 		<control type="grouplist" id="999">
-			<posx>10</posx>
+			<posx>5</posx>
 			<posy>525</posy>
-			<width>700</width>
+			<width>710</width>
 			<height>46</height>
 			<itemgap>0</itemgap>
 			<scrolltime>200</scrolltime>
@@ -426,6 +456,18 @@
 				<label>208</label>
 				<altlabel>1024</altlabel>
 				<align>center</align>
+			</control>
+			<control type="button" id="18">
+				<description>Home Cinema Experience</description>
+				<height>46</height>
+				<width>118</width>
+				<font>font11</font>
+				<label>31692</label>
+				<align>center</align>
+				<onclick>Playlist.Clear</onclick>
+				<onclick>Dialog.Close(MovieInformation)</onclick>
+				<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
+				<visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
 			</control>
 			<control type="button" id="11">
 				<description>Trailer</description>
@@ -450,7 +492,7 @@
 				<height>46</height>
 				<width>118</width>
 				<font>font11</font>
-				<label>Get Extras...</label>
+				<label>31693</label>
 				<align>center</align>
 				<onclick>SetFocus(995)</onclick>
 			</control>
@@ -515,7 +557,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<align>center</align>
-					<label>Get Logo</label>
+					<label>31694</label>
 					<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
 					<onclick>SetFocus(999)</onclick>
 					<visible>Container.Content(TVShows)</visible>
@@ -526,7 +568,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<align>center</align>
-					<label>Get TV Tunes</label>
+					<label>31695</label>
 					<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 					<onclick>SetFocus(999)</onclick>
 					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
