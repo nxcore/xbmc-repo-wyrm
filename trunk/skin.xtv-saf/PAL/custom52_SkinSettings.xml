@@ -554,22 +554,6 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="307">
-						<description>Scripts On Home toggle</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31848</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(home-scripts)</onclick>
-						<selected>Skin.HasSetting(home-scripts)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
-						<visible>System.Platform.xbox</visible>
-					</control>
 					<control type="radiobutton" id="308">
 						<description>Photos On Home toggle</description>
 						<font>font13</font>
@@ -600,31 +584,13 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="310">
-						<description>YouTube script location (XBox)</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(youtube-scriptpath,.py)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>20</textoffsetx>
-						<visible>System.Platform.xbox + Skin.HasSetting(home-youtube)</visible>
-					</control>
 					<control type="button" id="311">
-						<description>YouTube script location (Non XBox)</description>
+						<description>YouTube script location</description>
 						<font>font13</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
-						<!--<enable>Skin.HasSetting(home-youtube)</enable>-->
 						<label>$LOCALIZE[31850]</label>
 						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
 						<haspath>true</haspath>
@@ -633,7 +599,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
-						<visible>!System.Platform.xbox + Skin.HasSetting(home-youtube)</visible>
+						<visible>Skin.HasSetting(home-youtube)</visible>
 					</control>
 					<control type="radiobutton" id="312">
 						<description>Weather On Home toggle</description>
@@ -665,7 +631,22 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="314">
+					<!--<control type="radiobutton" id="315">
+						<description>Global Search On Home toggle</description>
+						<font>font13</font>
+						<width>500</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31895</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-globalsearch)</onclick>
+						<selected>Skin.HasSetting(home-globalsearch)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<radioposx>460</radioposx>
+					</control>-->
+					<control type="radiobutton" id="315">
 						<description>Play Disc On Home toggle</description>
 						<font>font13</font>
 						<width>500</width>
@@ -680,7 +661,7 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="315">
+					<control type="radiobutton" id="316">
 						<description>Shutdown From Home toggle</description>
 						<font>font13</font>
 						<width>500</width>
@@ -1510,26 +1491,8 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<!--<control type="button" id="712">
-						<description>Subtile script location (XBox)</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label> $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(osd-subscriptpath,.py)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>30</textoffsetx>
-						<visible>System.Platform.xbox</visible>
-					</control>-->
 					<control type="button" id="713">
-						<description>Subtile script location (Non XBox)</description>
+						<description>Subtile script location</description>
 						<font>font13</font>
 						<width>500</width>
 						<height>40</height>
@@ -1545,7 +1508,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>30</textoffsetx>
-						<visible>Skin.HasSetting(osd-subtitles) + !System.Platform.xbox</visible>
+						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
 					<control type="radiobutton" id="714">
 						<description>Use TV Tunes</description>

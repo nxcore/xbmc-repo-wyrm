@@ -41,20 +41,6 @@
 					<label>13277</label>
 					<textcolor>button-text</textcolor>
 				</control>
-				<control type="button" id="92">
-					<description>hdd</description>
-					<width>200</width>
-					<label>13275</label>
-					<textcolor>button-text</textcolor>
-					<visible>System.Platform.Xbox</visible>
-				</control>
-				<control type="button" id="93">
-					<description>dvd</description>
-					<width>200</width>
-					<label>13276</label>
-					<textcolor>button-text</textcolor>
-					<visible>System.Platform.Xbox</visible>
-				</control>
 				<control type="button" id="96">
 					<description>network</description>
 					<width>200</width>
