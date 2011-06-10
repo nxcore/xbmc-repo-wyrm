@@ -208,7 +208,7 @@
 				<textcolor>button-text</textcolor>
 				<visible>!System.Platform.Xbox</visible>
 			</control>
-			<control type="button" id="8">
+			<!--<control type="button" id="8">
 				<description>My Programs</description>
 				<font>font13</font>
 				<posx>405</posx>
@@ -225,7 +225,7 @@
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
 				<visible>System.Platform.Xbox</visible>
-			</control>
+			</control>-->
 			<control type="image">
 				<description>My Programs/Addons Settings arrow focus image</description>
 				<posx>656</posx>

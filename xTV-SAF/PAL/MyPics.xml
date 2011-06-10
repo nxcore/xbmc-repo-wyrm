@@ -13,12 +13,6 @@
 			<include>icon-ani</include>
 			<texture>icon-photo-sml.png</texture>
 		</control>
-		<control type="image">
-			<description>Photos Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-photo.png</texture>
-		</control>
 		<control type="label">
 			<description>Photos Label</description>
 			<posx>535</posx>
@@ -37,7 +31,7 @@
 		<include condition="!Skin.HasSetting(views-photoicons)">IconView</include>
 		<include condition="!Skin.HasSetting(views-photowrap)">PhotoWrap</include>
 		<include condition="!Skin.HasSetting(views-photowall)">PhotoWall</include>
-		<include>PageControl</include>
+		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
 			<control type="image">
@@ -56,7 +50,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>

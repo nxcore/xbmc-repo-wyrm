@@ -1,11 +1,6 @@
 ﻿<window id="106">
 	<defaultcontrol>1000</defaultcontrol>
 	<include>shutdown-ani</include>
-	<coordinates>
-		<system>1</system>
-		<posx>-10</posx>
-		<posy>0</posy>
-	</coordinates>
 	<controls>
 		<control type="image" id="997">
 			<description>background top image</description>
@@ -13,7 +8,7 @@
 			<posy>-7</posy>
 			<width>315</width>
 			<height>7</height>
-			<texture border="7,6,7,0">dialog-context-top.png</texture>
+			<texture border="7,7,7,0">dialog-context-top.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="999">
@@ -22,7 +17,7 @@
 			<posy>0</posy>
 			<width>315</width>
 			<height>237</height>
-			<texture border="6,0,6,0">dialog-context-middle.png</texture>
+			<texture border="7,0,7,0">dialog-context-middle.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="998">
@@ -37,10 +32,11 @@
 		<control type="button" id="1000">
 			<description>button template</description>
 			<posx>15</posx>
-			<posy>5</posy>
+			<posy>0</posy>
 			<width>285</width>
-			<height>32</height>
+			<height>40</height>
 			<align>center</align>
+			<aligny>center</aligny>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>default-button.png</texturefocus>
 		</control>

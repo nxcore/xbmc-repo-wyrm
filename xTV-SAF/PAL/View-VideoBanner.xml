@@ -7,20 +7,20 @@
 				<viewtype label="31947">Banner List</viewtype>
 				<posx>0</posx>
 				<posy>110</posy>
-				<width>720</width>
+				<width>260</width>
 				<height>370</height>
-				<pagecontrol>23</pagecontrol>
+				<pagecontrol>26</pagecontrol>
 				<onup>59</onup>
 				<ondown>59</ondown>
 				<onleft>2</onleft>
-				<onright>23</onright>
+				<onright>26</onright>
 				<visible>Window.IsActive(VideoLibrary)</visible>
 				<itemlayout height="80">
 					<control type="image">
 						<description>Cover</description>
 						<posx>365</posx>
-						<posy>10</posy>
-						<width>320</width>
+						<posy>5</posy>
+						<width>260</width>
 						<height>75</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
@@ -28,45 +28,45 @@
 					</control>
 					<control type="image">
 						<posx>365</posx>
-						<posy>10</posy>
-						<width>320</width>
+						<posy>5</posy>
+						<width>260</width>
 						<height>75</height>
-						<texture diffuse="RndRectMask.png">DefaultVideo.png</texture>
+						<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					</control>
 					<control type="image">
 						<description>Go Back Image</description>
 						<posx>365</posx>
-						<posy>10</posy>
-						<width>320</width>
+						<posy>5</posy>
+						<width>260</width>
 						<height>75</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-<!--					<control type="image">
+					<!--<control type="image">
 						<description>Overlay</description>
 						<posx>360</posx>
 						<posy>16</posy>
 						<width>64</width>
 						<height>64</height>
 						<info>ListItem.Overlay</info>
-					</control> -->
+					</control>-->
 				</itemlayout>
-				<focusedlayout height="120">
+				<focusedlayout height="80">
 					<control type="group">
 						<posx>365</posx>
 						<posy>5</posy>
-						<width>320</width>
-						<height>120</height>
-						<animation effect="zoom" start="90" end="110" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>
+						<width>260</width>
+						<height>80</height>
+						<!--<animation effect="zoom" start="90" end="105" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>-->
 						<control type="image">
 							<description>Cover</description>
-							<posx>10</posx>
-							<posy>10</posy>
-							<width>320</width>
-							<height>120</height>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>260</width>
+							<height>80</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<bordertexture border="10">hi-lite.png</bordertexture>
@@ -76,22 +76,22 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>320</width>
-							<height>120</height>
-							<texture diffuse="RndRectMask.png">DefaultVideo.png</texture>
+							<width>260</width>
+							<height>80</height>
+							<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>320</width>
-							<height>120</height>
+							<width>260</width>
+							<height>80</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 						</control>
-<!--						<control type="image">
+						<!--<control type="image">
 							<description>Overlay</description>
 							<posx>6</posx>
 							<posy>6</posy>
@@ -155,7 +155,6 @@
 					<label>$INFO[ListItem.Label]</label>
 					<scroll>true</scroll>
 				</control>
-
 				<control type="label">
 					<description>First Aired</description>
 					<posx>0</posx>
@@ -232,12 +231,12 @@
 					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 				</control>
 			</control>
-
+			
 			<control type="group">
 				<visible>Control.IsVisible(59)</visible>
 				<include>SortLetterNotification</include>
 				<!-- Scroll Bar -->
-				<control type="scrollbar" id="23">
+				<control type="scrollbar" id="26">
 					<posx>700</posx>
 					<posy>110</posy>
 					<width>14</width>

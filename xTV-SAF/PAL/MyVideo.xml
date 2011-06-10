@@ -1,90 +1,32 @@
 <window id="6">
-	<defaultcontrol always="true">1</defaultcontrol>
+	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
 		<include>#files</include>
 		
-		<control type="button" id="1">
-			<description>run WOL script</description>
-			<onfocus>XBMC.RunScript($INFO[Skin.String(wake-scriptpath)])</onfocus>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(wake-source)</visible>
-		</control>
-		<control type="button" id="1">
-			<description>bypass running WOL script</description>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(wake-source)</visible>
-		</control>
-
 		<control type="image">
-			<description>Default xTV Logo</description>
-			<posx>485</posx>
-			<posy>25</posy>
-			<width>64</width>
-			<height>64</height>
-			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture>home-logo.png</texture>
-			<visible>[!Container.Content(movies) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(musicvideos)]</visible>
-		</control>
-		<control type="image">
-			<description>Default xTV Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">home-logo.png</texture>
-			<visible>[!Container.Content(movies) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(musicvideos)]</visible>
-		</control>
-		<control type="image">
-			<description>Videos Logo</description>
+			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
 			<include>icon-ani</include>
 			<texture>icon-video-sml.png</texture>
-			<visible>Container.Content(movies)</visible>
+			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
 		</control>
-		<control type="image">
-			<description>Videos Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-video.png</texture>
-			<visible>Window.Next(Home) + Container.Content(movies)</visible>
-		</control>
-		<control type="image">
-			<description>TV Logo</description>
-			<include>icon-header-commons</include>
-			<include>icon-ani</include>
-			<texture>icon-tv.png</texture>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-		</control>
-		<control type="image">
-			<description>TV Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-tv.png</texture>
-			<visible>Window.Next(Home) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-		</control>
-		<control type="image">
-			<description>Music Videos Logo</description>
-			<include>icon-header-commons</include>
-			<include>icon-ani</include>
-			<texture>icon-musicvideo-sml.png</texture>
-			<visible>Container.Content(musicvideos)</visible>
-		</control>
-		<control type="image">
-			<description>Music Videos Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-musicvideo.png</texture>
-			<visible>Window.Next(Home) + Container.Content(musicvideos)</visible>
-		</control>
-		
 		<control type="label">
 			<description>Video Label</description>
+			<posx>535</posx>
+			<posy>40</posy>
+			<label>3</label>
+			<font>font20</font>
+			<style>bold</style>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<include>list-fade</include>
+			<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
+		</control>
+		<control type="label">
+			<description>Movie Label</description>
 			<posx>535</posx>
 			<posy>40</posy>
 			<label>31026</label>
@@ -94,6 +36,13 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
 			<visible>Container.Content(movies)</visible>
+		</control>
+		<control type="image">
+			<description>TV Logo</description>
+			<include>icon-header-commons</include>
+			<include>icon-ani</include>
+			<texture>icon-tv.png</texture>
+			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
 		<control type="label">
 			<description>TV Shows Label</description>
@@ -107,6 +56,13 @@
 			<include>list-fade</include>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
+		<control type="image">
+			<description>Music Videos Logo</description>
+			<include>icon-header-commons</include>
+			<include>icon-ani</include>
+			<texture>icon-musicvideo-sml.png</texture>
+			<visible>Container.Content(musicvideos)</visible>
+		</control>
 		<control type="label">
 			<description>Music Video Label</description>
 			<posx>535</posx>
@@ -119,9 +75,9 @@
 			<include>list-fade</include>
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
-
+		
 		<include>memory-low</include>
-
+		
 		<include>ListView-Icon</include>
 		<include>ListView</include>
 		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
@@ -130,10 +86,8 @@
 		<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
-<!--		<include>LetterNav</include>-->
-		<include>PageControl</include>
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<visible>!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26)]</visible>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
@@ -150,7 +104,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -168,7 +122,7 @@
 				<texturenofocus>-</texturenofocus>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>8</onup>
+				<onup>7</onup>
 				<ondown>3</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
@@ -238,26 +192,6 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>5</onup>
-				<ondown>8</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="button" id="8">
-				<description>Movie Trailers</description>
-				<posx>270</posx>
-				<posy>360</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>31126</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onclick>XBMC.RunScript(special://xbmc/scripts/AppleMovieTrailers/default.py)</onclick>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>7</onup>
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>

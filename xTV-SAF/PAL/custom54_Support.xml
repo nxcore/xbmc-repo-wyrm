@@ -74,7 +74,7 @@
 				<posy>190</posy>
 				<width>400</width>
 				<align>right</align>
-				<label>xTV-SAF v1.0.2</label>
+				<label>xTV-SAF v1.1.0</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
 			</control>
@@ -171,6 +171,22 @@
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
 				<visible>System.Platform.osx</visible>
+			</control>
+			<control type="button" id="1">
+				<description>Reset Skin</description>
+				<posx>260</posx>
+				<posy>480</posy>
+				<width>200</width>
+				<height>40</height>
+				<label>Reset Skin</label>
+				<font>font13</font>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>Skin.ResetSettings</onclick>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
 			</control>
 		</control>
 	</controls>

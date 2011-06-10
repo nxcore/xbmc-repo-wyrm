@@ -12,13 +12,18 @@
 		<control type="label">
 			<description>Video Label</description>
 			<posx>535</posx>
-			<posy>40</posy>
-			<label>31012</label>
-			<font>font20</font>
+			<posy>20</posy>
+			<width>175</width>
+			<height>25</height>
+			<label>$LOCALIZE[10522]</label>
+			<font>font18</font>
+			<wrapmultiline>true</wrapmultiline>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 		</control>
-		<include>PlaylistView</include>
-		<include>PageControl</include>
+		
+		<include>ListView</include>
+		
 		<control type="videowindow">
 			<posx>30</posx>
 			<posy>100</posy>
@@ -36,6 +41,7 @@
 			<info>VideoPlayer.Title</info>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="progress">
@@ -60,6 +66,7 @@
 			<font>font12</font>
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="group">
@@ -79,7 +86,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -99,6 +106,7 @@
 				<onup>22</onup>
 				<ondown>28</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -119,6 +127,7 @@
 				<onup>20</onup>
 				<ondown>26</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -136,6 +145,7 @@
 				<onup>28</onup>
 				<ondown>21</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -155,6 +165,7 @@
 				<onup>26</onup>
 				<ondown>22</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -175,6 +186,7 @@
 				<onup>21</onup>
 				<ondown>20</ondown>
 				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>

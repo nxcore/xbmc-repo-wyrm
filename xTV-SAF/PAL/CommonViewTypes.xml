@@ -1,26 +1,22 @@
 <includes>
 	<include name="ListView">
-		<control type="list" id="50">
+		<control type="fixedlist" id="50">
 			<viewtype label="31941">List</viewtype>
 			<posx>400</posx>
 			<posy>95</posy>
 			<width>300</width>
 			<height>444</height>
+			<focusposition>4</focusposition>
+			<movement>6</movement>
 			<onleft>2</onleft>
 			<onright>23</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<include>list-fade</include>
 			<scrolltime>1</scrolltime>
-			<preloaditems>5</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout height="40">
-				<control type="image">
-					<posx>0</posx>
-					<posy>1</posy>
-					<width>290</width>
-					<height>30</height>
-				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>4</posy>
@@ -31,9 +27,9 @@
 				</control>
 				<control type="label">
 					<posx>30</posx>
-					<posy>-4</posy>
-					<width>254</width>
-					<height>37</height>
+					<posy>-2</posy>
+					<width>258</width>
+					<height>32</height>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -47,9 +43,10 @@
 				<control type="image">
 					<posx>22</posx>
 					<posy>-3</posy>
-					<width>270</width>
-					<height>37</height>
+					<width>274</width>
+					<height>40</height>
 					<texture>default-button.png</texture>
+					<visible>!IntegerGreaterThan(Container(50).NumPages,1)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -61,9 +58,9 @@
 				</control>
 				<control type="label">
 					<posx>30</posx>
-					<posy>-4</posy>
-					<width>254</width>
-					<height>37</height>
+					<posy>-2</posy>
+					<width>258</width>
+					<height>32</height>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -74,89 +71,43 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<include>SortLetterNotification</include>
-	</include>
-
-	<include name="PlaylistView">
-		<control type="list" id="50">
-			<posx>405</posx>
-			<posy>90</posy>
-			<width>285</width>
-			<height>444</height>
-			<onleft>20</onleft>
-			<onright>23</onright>
-			<onup>50</onup>
-			<ondown>50</ondown>
-			<include>list-fade</include>
-			<scrolltime>1</scrolltime>
-			<viewtype label="31941">list</viewtype>
-			<pagecontrol>23</pagecontrol>
-			<itemlayout height="40">
-				<control type="image">
-					<width>285</width>
-					<height>30</height>
-					<posx>0</posx>
-					<posy>1</posy>
-				</control>
-				<control type="label">
-					<posx>10</posx>
-					<posy>-4</posy>
-					<width>315</width>
-					<height>37</height>
-					<font>font12</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label</info>
-				</control>
-			</itemlayout>
-			<focusedlayout height="40">
-				<control type="image">
-					<posx>0</posx>
-					<posy>-3</posy>
-					<width>285</width>
-					<height>37</height>
-					<texture>default-button.png</texture>
-				</control>
-				<control type="label">
-					<posx>10</posx>
-					<posy>-4</posy>
-					<width>312</width>
-					<height>37</height>
-					<font>font12</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<scroll>true</scroll>
-					<info>ListItem.Label</info>
-				</control>
-			</focusedlayout>
+		<control type="group" description="List furniture">
+			<visible>Control.IsVisible(50) + IntegerGreaterThan(Container(50).NumPages,1)</visible>
+			<control type="image" description="Slider">
+				<posx>422</posx>
+				<posy>132</posy>
+				<width>274</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-40"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,0"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,40"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,80"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,120"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,160"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,200"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,240"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,280"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,320"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,360"
+					time="60" reversible="true">Conditional</animation>
+			</control>
 		</control>
-		<include>SortLetterNotification</include>
-	</include>
-
-	<include name="PageControl">
-		<control type="scrollbar" id="23">
-			<posx>700</posx>
-			<posy>90</posy>
-			<width>14</width>
-			<height>448</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>50</onleft>
-			<onright>2</onright>
-			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>SortLetterNotification</include>
+			<include>PageControl</include>
 		</control>
 	</include>
 </includes>

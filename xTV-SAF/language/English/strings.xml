@@ -79,6 +79,10 @@
 	<string id="31529">Temp</string>
 	<string id="31530">Location</string>
 	<string id="31531">Last Updated</string>
+	<string id="31532">Average Low</string>
+	<string id="31533">Average High</string>
+	<string id="31534">Record Low</string>
+	<string id="31535">Record High</string>
 	<!-- End weather strings -->
 
 	<!-- Start system strings 31551 - 31650 -->
@@ -149,6 +153,13 @@
 	<string id="31686">XBMCScripts</string>
 	<string id="31687">Movie Trailers</string>
 	<string id="31688">Go Back</string>
+	
+	<string id="31690">Plugin</string>
+	<string id="31691">Go Back</string>
+	<string id="31692">Cinema</string>
+	<string id="31693">Get Extras...</string>
+	<string id="31694">Get Logo</string>
+	<string id="31695">Get TV Tunes</string>
 
 	<!-- End Misc. strings -->
 
@@ -172,11 +183,12 @@
 	<string id="31810">Movies Button Links to Library</string>
 	<string id="31811">TV Button Links to Library</string>
 	<string id="31847">Music Video Button Links to Library</string>
+	<string id="31849">Music Button Links to Library</string>
 
 	<string id="31841">Startup</string>
 	<string id="31813">General</string>
 	<string id="31814">Background</string>
-	<string id="31815">Home Window</string>
+	<string id="31815">Home Menu</string>
 	<string id="31831">Media Sources</string>
 	<string id="31812">Download Themes</string>
 	<string id="31820">Information</string>
@@ -188,7 +200,7 @@
 	<string id="31817">Lock "View As" Panel</string>
 
 	<string id="31843">Movies In Home Menu</string>
-	<string id="31844">TV In Home Menu</string>
+	<string id="31844">TV Shows In Home Menu</string>
 	<string id="31842">Music Videos In Home Menu</string>
 	<string id="31827">Music in Home Menu</string>
 	<string id="31828">Programs in Home Menu</string>
@@ -197,15 +209,16 @@
 	<string id="31830">User Script in Home Menu</string>
 	<string id="31821">YouTube In Home Menu</string>
 	<string id="31822">Weather In Home Menu</string>
-	<string id="31825">Time On Home Menu</string>
+	<string id="31825">Time On Home Screen</string>
 	<string id="31826">Quit From Home Menu</string>
-	<string id="31832">Current Weather On Home Menu</string>
+	<string id="31832">Current Weather On Home Screen</string>
 	<string id="31833">Favourites On Home Menu</string>
 	<string id="31890">Play Disc On Home Menu</string>
 	<string id="31891">Show subtitle button in OSD</string>
 	<string id="31892">Family Mode Toggle on Home Menu</string>
 	<string id="31893">Profile :</string>
 	<string id="31894">Wake external sources</string>
+	<string id="31895">Global Search in Home Menu</string>
 
 	<string id="31850">Script :</string>
 	<string id="31851">Plugin :</string>
