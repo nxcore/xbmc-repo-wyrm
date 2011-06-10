@@ -3,31 +3,26 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="button" id="10">
-			<description>trigger without playlist</description>
-			<onfocus>XBMC.PlayMedia($INFO[Skin.String(intro-vid-location)])</onfocus>
+			<description>Play the startup video if required</description>
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<include condition="Skin.HasSetting(intro-vid)">StartupVideo</include>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="3000" end="100">Focus</animation>
-			<visible>Skin.Hassetting(intro-vid)</visible>
-		</control>
-		<control type="button" id="10">
-			<description>trigger with playlist</description>
-			<onfocus>ReplaceWindow(Home)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="3000" end="100">Focus</animation>
-			<visible>!Skin.Hassetting(intro-vid)</visible>
+			<animation effect="fade" delay="1000" end="100">Focus</animation>
 		</control>
 		<control type="image">
-			<description>Background image</description>
+			<description>Startup Background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>720</width>
 			<height>576</height>
 			<texture>background-startup-16x9.png</texture>
 			<animation effect="fade" end="0" time="1000">WindowClose</animation>
-			<visible>!Skin.Hassetting(intro-vid)</visible>
+			<visible>!Skin.HasSetting(intro-vid)</visible>
 		</control>
 	</controls>
 </window>

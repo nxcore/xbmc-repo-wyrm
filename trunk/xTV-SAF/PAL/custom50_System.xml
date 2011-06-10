@@ -12,12 +12,6 @@
 			<include>icon-ani</include>
 			<texture>icon-settings.png</texture>
 		</control>
-		<control type="image">
-			<description>System Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-settings.png</texture>
-		</control>
 		<control type="label">
 			<description>Settings Label</description>
 			<posx>535</posx>
@@ -27,7 +21,7 @@
 			<textcolor>button-text</textcolor>
 			<include>list-fade</include>
 		</control>
-
+		
 		<control type="group" id="999">
 			<include>list-fade</include>
 			<control type="button" id="1">

@@ -4,126 +4,117 @@
 	<animation effect="fade" start="0" end="0" time="10000" condition="Window.Previous(Startup) + Skin.HasSetting(intro-vid)">WindowOpen</animation>
 	<controls>
 		<control type="button" id="420">
-			<description>trigger without playlist</description>
-			<onfocus>XBMC.PlayMedia($INFO[Skin.String(playlist)])</onfocus>
+			<description>trigger playlist if selected</description>
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<include condition="Skin.HasSetting(startup-playlist)">StartupPlaylist</include>
 			<onfocus>SetFocus(5)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="18000" end="100">Focus</animation>
-			<visible>Skin.HasSetting(startup-playlist)</visible>
 		</control>
-		<control type="button" id="420">
-			<description>trigger with playlist</description>
-			<onfocus>SetFocus(5)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(startup-playlist)</visible>
-		</control>
+		
 		<include>background</include>
-		<!-- show time on home screen -->
-		<control type="label">
-			<description>Date</description>
-			<posx>200</posx>
-			<posy>15</posy>
-			<width>320</width>
-			<height>20</height>
-			<label>$INFO[system.Date]</label>
-			<align>center</align>
-			<font>font13</font>
+		
+		<control type="group">
 			<visible>!Skin.HasSetting(home-time)</visible>
+			<!-- show time on home screen -->
+			<control type="label">
+				<description>Date</description>
+				<posx>200</posx>
+				<posy>15</posy>
+				<width>320</width>
+				<height>20</height>
+				<label>$INFO[system.Date]</label>
+				<align>center</align>
+				<font>font13</font>
+			</control>
+			<control type="label">
+				<description>Time and Date</description>
+				<posx>200</posx>
+				<posy>45</posy>
+				<width>320</width>
+				<height>30</height>
+				<label>$INFO[system.Time(hh:mm xx)]</label>
+				<align>center</align>
+				<font>font18</font>
+			</control>
 		</control>
-		<control type="label">
-			<description>Time and Date</description>
-			<posx>200</posx>
-			<posy>40</posy>
-			<width>320</width>
-			<height>20</height>
-			<label>$INFO[system.Time(hh:mm xx)]</label>
-			<align>center</align>
-			<font>font13</font>
-			<visible>!Skin.HasSetting(home-time)</visible>
-		</control>
-
+		
 		<include>memory-low</include>
-
-		<!-- main logo and label-->
-		<control type="image">
-			<description>xTV Logo</description>
-			<posx>490</posx>
-			<posy>65</posy>
-			<width>80</width>
-			<height>80</height>
-			<aspectratio>keep</aspectratio>
-			<texture>home-logo.png</texture>
+		
+		<control type="group">
+			<visible>!Skin.HasSetting(home-currentweather)</visible>
+			<!-- Weather Condition -->
+			<control type="label">
+				<description>Can't get current weather conditions</description>
+				<posx>670</posx>
+				<posy>25</posy>
+				<width>120</width>
+				<height>40</height>
+				<wrapmultiline>true</wrapmultiline>
+				<label>412</label>
+				<font>font13</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<visible>IsEmpty(Weather.Conditions)</visible>
+			</control>
+			<control type="group">
+				<visible>!IsEmpty(Weather.Conditions)</visible>
+				<control type="label">
+					<description>current condition label</description>
+					<posx>640</posx>
+					<posy>5</posy>
+					<width>120</width>
+					<height>40</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$INFO[Weather.Conditions]</label>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="label">
+					<description>current temp value</description>
+					<posx>640</posx>
+					<posy>45</posy>
+					<width>75</width>
+					<height>30</height>
+					<font>font22</font>
+					<align>right</align>
+					<aligny>bottom</aligny>
+					<label>$INFO[Weather.Temperature]</label>
+				</control>
+				<control type="image">
+					<description>current weather icon</description>
+					<posx>645</posx>
+					<posy>15</posy>
+					<height>70</height>
+					<width>70</width>
+					<texture>$INFO[Weather.Conditions]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!Skin.HasSetting(weather-animateicon)</visible>
+				</control>
+				<control type="multiimage">
+					<description>current weather animated icon</description>
+					<posx>645</posx>
+					<posy>15</posy>
+					<width>70</width>
+					<height>70</height>
+					<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
+					<aspectratio>keep</aspectratio>
+					<timeperimage>200</timeperimage>
+					<randomize>false</randomize>
+					<fadetime>0</fadetime>
+					<visible>Skin.HasSetting(weather-animateicon)</visible>
+				</control>
+			</control>
 		</control>
-
-		<!-- Weather Condition -->
-		<control type="label">
-			<description>Can't get current weather conditions</description>
-			<posx>670</posx>
-			<posy>25</posy>
-			<width>120</width>
-			<height>40</height>
-			<wrapmultiline>true</wrapmultiline>
-			<label>412</label>
-			<font>font13</font>
-			<align>right</align>
-			<aligny>center</aligny>
-			<visible>!Skin.HasSetting(home-currentweather) + IsEmpty(Weather.Conditions)</visible>
-		</control>
-		<control type="label">
-			<description>current condition label</description>
-			<posx>640</posx>
-			<posy>5</posy>
-			<width>120</width>
-			<height>40</height>
-			<wrapmultiline>true</wrapmultiline>
-			<label>$INFO[Weather.Conditions]</label>
-			<font>font13</font>
-			<align>right</align>
-			<aligny>center</aligny>
-			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>
-		<control type="label">
-			<description>current temp value</description>
-			<posx>640</posx>
-			<posy>45</posy>
-			<width>75</width>
-			<height>30</height>
-			<font>font22</font>
-			<align>right</align>
-			<aligny>bottom</aligny>
-			<label>$INFO[Weather.Temperature]</label>
-			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>	
-		<!--<control type="image">
-			<description>current weather icon</description>
-			<posx>645</posx>
-			<posy>15</posy>
-			<height>70</height>
-			<width>70</width>
-			<texture>$INFO[Weather.Conditions]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>-->
-		<control type="multiimage">
-			<description>current weather icon</description>
-			<posx>645</posx>
-			<posy>15</posy>
-			<width>70</width>
-			<height>70</height>
-			<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
-			<aspectratio>keep</aspectratio>
-			<timeperimage>200</timeperimage>
-			<randomize>false</randomize>
-			<fadetime>0</fadetime>
-			<visible>!Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.Conditions)</visible>
-		</control>
-
+		
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>527</posx>
-			<posy>145</posy>
+			<posy>115</posy>
 			<height>17</height>
 			<width>17</width>
 			<texture>scroll-up.png</texture>
@@ -137,23 +128,27 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(5).HasNext</visible>
 		</control>
-
+		
 		<!-- main buttons -->
 		<control type="list" id="5">
 			<posx>375</posx>
-			<posy>160</posy>
-			<height>320</height>
+			<posy>130</posy>
+			<height>360</height>
 			<width>305</width>
+			<focusposition>3</focusposition>
+			<movement>4</movement>
 			<onleft>5</onleft>
-			<onright>5</onright>
+			<onright>23</onright>
 			<onup>5</onup>
 			<ondown>5</ondown>
-			<itemlayout height="40">
+			<scrolltime>1</scrolltime>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout height="45">
 				<control type="label">
-					<posx>20</posx>
-					<posy>-1</posy>
-					<width>265</width>
-					<height>37</height>
+					<posx>15</posx>
+					<posy>-4</posy>
+					<width>270</width>
+					<height>45</height>
 					<info>ListItem.label</info>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -162,26 +157,26 @@
 				</control>
 				<control type="image">
 					<posx>275</posx>
-					<posy>12</posy>
-					<width>16</width>
-					<height>16</height>
+					<posy>8</posy>
+					<width>22</width>
+					<height>22</height>
 					<texture>scroll-right.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</itemlayout>
-			<focusedlayout height="40">
+			<focusedlayout height="45">
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>-2</posy>
 					<width>305</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 				</control>
 				<control type="label">
-					<posx>20</posx>
-					<posy>-1</posy>
-					<width>265</width>
-					<height>37</height>
+					<posx>15</posx>
+					<posy>-4</posy>
+					<width>270</width>
+					<height>45</height>
 					<info>ListItem.label</info>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -190,9 +185,9 @@
 				</control>
 				<control type="image">
 					<posx>275</posx>
-					<posy>12</posy>
-					<width>16</width>
-					<height>16</height>
+					<posy>8</posy>
+					<width>22</width>
+					<height>22</height>
 					<texture>scroll-right-focus.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
@@ -220,12 +215,16 @@
 					<icon>icon-video.png</icon>
 					<thumb>icon-video-blur1.png</thumb>
 					<label>31026</label>
-					<include condition="!Skin.HasSetting(movie-libraryhasentry)">MovieLibraryTitle</include>
-					<onclick>Skin.SetBool(movie-libraryhasentry)</onclick>
-					<include condition="Skin.HasSetting(movie-libraryentrytitle)">MovieLibraryTitle</include>
-					<include condition="Skin.HasSetting(movie-libraryentryroot)">MovieLibraryRoot</include>
-					<include condition="Skin.HasSetting(movie-libraryentryrecent)">MovieLibraryRecentlyadded</include>
-					<onclick>ReloadSkin()</onclick>
+					<include condition="!Skin.String(movie-libraryentry)">MovieLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[369])">MovieLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20108])">MovieLibraryRoot</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20386])">MovieLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[135])">MovieLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[652])">MovieLibraryYears</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[344])">MovieLibraryActors</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20348])">MovieLibraryDirectors</include>
+					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20388])">MovieLibraryStudios</include>
+					<include condition="Skin.HasSetting(updatemovieentry)">RestartSkinMovies</include>
 					<visible>Skin.HasSetting(movie-library)</visible>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
@@ -251,12 +250,15 @@
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
 					<label>31027</label>
-					<include condition="!Skin.HasSetting(tv-libraryhasentry)">TVLibraryTitle</include>
-					<onclick>Skin.SetBool(tv-libraryhasentry)</onclick>
-					<include condition="Skin.HasSetting(tv-libraryentrytitle)">TVLibraryTitle</include>
-					<include condition="Skin.HasSetting(tv-libraryentryroot)">TVLibraryRoot</include>
-					<include condition="Skin.HasSetting(tv-libraryentryrecent)">TVLibraryRecentlyadded</include>
-					<onclick>ReloadSkin()</onclick>
+					<include condition="!Skin.String(tv-libraryentry)">TVLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[369])">TVLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20108])">TVLibraryRoot</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20387])">TVLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[135])">TVLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[652])">TVLibraryYears</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[344])">TVLibraryActors</include>
+					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20388])">TVLibraryStudios</include>
+					<include condition="Skin.HasSetting(updatetventry)">RestartSkinTV</include>
 					<visible>Skin.HasSetting(tv-library)</visible>
 					<visible>!Skin.HasSetting(home-tv)</visible>
 				</item>
@@ -280,7 +282,16 @@
 					<icon>icon-musicvideo.png</icon>
 					<thumb>icon-musicvideo-blur1.png</thumb>
 					<label>31028</label>
-					<onclick>ActivateWindow(MyVideoLibrary,videodb://3/2/,return)</onclick>
+					<include condition="!Skin.String(musicvideo-libraryentry)">MusicVideoLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[369])">MusicVideoLibraryTitle</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20108])">MusicVideoLibraryRoot</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20390])">MusicVideoLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[135])">MusicVideoLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[652])">MusicVideoLibraryYears</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[133])">MusicVideoLibraryArtists</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
+					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
+					<include condition="Skin.HasSetting(updatemusicvidentry)">RestartSkinMusicVid</include>
 					<visible>Skin.HasSetting(musicvideo-library) + Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
@@ -288,22 +299,90 @@
 					<thumb>icon-music-blur1.png</thumb>
 					<label>31030</label>
 					<onclick>ActivateWindow(MyMusic,,return)</onclick>
-					<visible>!Skin.HasSetting(home-music)</visible>
+					<visible>!Skin.HasSetting(music-library) + !Skin.HasSetting(home-music)</visible>
+				</item>
+				<item>
+					<icon>icon-music.png</icon>
+					<thumb>icon-music-blur1.png</thumb>
+					<label>31030</label>
+					<include condition="!Skin.String(music-libraryentry)">MusicLibraryAlbums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[132])">MusicLibraryAlbums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[135])">MusicLibraryGenres</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[133])">MusicLibraryArtists</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[134])">MusicLibrarySongs</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[10504])">MusicLibraryTop100Songs</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[10505])">MusicLibraryTop100Albums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[359])">MusicLibraryRecentlyadded</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[517])">MusicLibraryRecentlyPlayed</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[521])">MusicLibraryCompilations</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[652])">MusicLibraryYears</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[1050])">MusicLibrarySingles</include>
+					<include condition="Skin.HasSetting(updatemusicentry)">RestartSkinMusic</include>
+					<visible>Skin.HasSetting(music-library) + !Skin.HasSetting(home-music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist1icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist1icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist1label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist1) + !SubString(Skin.String(custom-playlist1name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist2icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist2icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist2label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist2) + !SubString(Skin.String(custom-playlist2name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist3icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist3icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist3label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist3) + !SubString(Skin.String(custom-playlist3name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist4icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist4icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist4label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist4) + !SubString(Skin.String(custom-playlist4name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist1icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist1icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist1label)] </label>
+					<onclick>XBMC.ActivateWindow(MusicLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist1) + SubString(Skin.String(custom-playlist1name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist2icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist2icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist2label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist2) + SubString(Skin.String(custom-playlist2name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist3icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist3icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist3label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist3) + SubString(Skin.String(custom-playlist3name),music)</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-playlist4icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-playlist4icon)]</thumb>
+					<label>$INFO[Skin.String(custom-playlist4label)] </label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-playlist4) + SubString(Skin.String(custom-playlist4name),music)</visible>
 				</item>
 				<item>
 					<icon>icon-youtube.png</icon>
 					<thumb>icon-youtube-blur1.png</thumb>
 					<label>31037</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(youtube-script)])</onclick>
-					<visible>Skin.HasSetting(home-youtube) + !IsEmpty(Skin.String(youtube-script))</visible>
-				</item>
-				<item>
-					<icon>icon-youtube.png</icon>
-					<thumb>icon-youtube-blur1.png</thumb>
-					<label>31037</label>
-					<onclick>ActivateWindow($INFO[Skin.String(youtube-pluginwindow)],plugin://$INFO[Skin.String(youtube-pluginfolder)])</onclick>
-					<visible>Skin.HasSetting(home-youtube) + !IsEmpty(Skin.String(youtube-pluginfolder))</visible>
-				</item>
+					<onclick>ActivateWindow(VideoLibrary,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
+					<visible>Skin.HasSetting(home-youtube)</visible>
+				</item> 
 				<item>
 					<icon>icon-programs.png</icon>
 					<thumb>icon-programs-blur1.png</thumb>
@@ -333,11 +412,32 @@
 					<visible>Skin.HasSetting(home-weather)</visible>
 				</item>
 				<item>
-					<icon>icon-scripts.png</icon>
-					<thumb>icon-scripts-blur1.png</thumb>
-					<label>$INFO[Skin.String(home-scriptlabel)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(home-scriptname)])</onclick>
-					<visible>Skin.HasSetting(home-script)</visible>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script1label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script1name)])</onclick>
+					<visible>Skin.HasSetting(custom-script1)</visible>
+				</item>
+				<item>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script2label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script2name)])</onclick>
+					<visible>Skin.HasSetting(custom-script2)</visible>
+				</item>
+				<item>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script3label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script3name)])</onclick>
+					<visible>Skin.HasSetting(custom-script3)</visible>
+				</item>
+				<item>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom-script4label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script4name)])</onclick>
+					<visible>Skin.HasSetting(custom-script4)</visible>
 				</item>
 				<item>
 					<icon>icon-fav.png</icon>
@@ -346,6 +446,13 @@
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<visible>Skin.HasSetting(home-favorites)</visible>
 				</item>
+				<item>
+					<icon>DefaultMusicSearch.png</icon>
+					<thumb>DefaultMusicSearch-blur1.png</thumb>
+					<label>137</label>
+					<onclick>RunScript(script.globalsearch)</onclick>
+					<visible>Skin.HasSetting(home-globalsearch)</visible>
+				</item> 
 				<item>
 					<icon>icon-settings.png</icon>
 					<thumb>icon-settings-blur1.png</thumb>
@@ -368,7 +475,6 @@
 				</item>
 			</content>
 		</control>
-		<!--test -->
 		<control type="group" id="3002">
 			<visible>Container(5).OnPrevious</visible>
 			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
@@ -392,7 +498,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(3).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -417,7 +523,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(2).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -442,7 +548,7 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(1).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -467,13 +573,12 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(0).ActualIcon</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
 		</control>
-
 		<control type="group" id="3001">
 			<visible>Container(5).OnNext</visible>
 			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
@@ -497,7 +602,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(2).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -522,7 +627,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(1).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -547,7 +652,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(0).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -572,15 +677,14 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(-1).ActualIcon</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
 		</control>
-
 		<control type="group">
-			<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
+			<visible>!Control.IsVisible(3001) + !Control.IsVisible(3002)</visible>
 			<control type="group">
 				<posx>30</posx>
 				<posy>150</posy>
@@ -599,7 +703,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(2).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -622,7 +726,7 @@
 					<posy>65</posy>
 					<width>65</width>
 					<height>65</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(1).Thumb</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
@@ -645,74 +749,73 @@
 					<posy>230</posy>
 					<width>230</width>
 					<height>230</height>
-					<texture flipy="true" diffuse="mask-fade.png" />
+					<texture flipy="true" diffuse="mask-fade.png"/>
 					<info>Container(5).Listitem(0).ActualIcon</info>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
 		</control>
 		<!-- media infos (music) -->
-			<control type="group">
-				<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
-				<control type="image">
-					<description>cover image</description>
-					<posx>10</posx>
-					<posy>434</posy>
-					<width>90</width>
-					<height>90</height>
-					<info>MusicPlayer.Cover</info>
-					<include>homemediainfo</include>
-					<aspectratio align="right">keep</aspectratio>
-				</control>
-				<control type="label">
-					<description>Artist label</description>
-					<posx>110</posx>
-					<posy>430</posy>
-					<width>260</width>
-					<height>25</height>
-					<info>MusicPlayer.Artist</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-					<include>homemediainfo</include>
-				</control>
-				<control type="label">
-					<description>Album label</description>
-					<posx>110</posx>
-					<posy>455</posy>
-					<width>260</width>
-					<height>25</height>
-					<info>MusicPlayer.Album</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-					<include>homemediainfo</include>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>110</posx>
-					<posy>480</posy>
-					<width>260</width>
-					<height>25</height>
-					<info>MusicPlayer.Title</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-					<include>homemediainfo</include>
-				</control>
-				<control type="label">
-					<description>Time label</description>
-					<posx>110</posx>
-					<posy>505</posy>
-					<width>260</width>
-					<height>25</height>
-					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-					<align>left</align>
-					<font>font12</font>
-					<include>homemediainfo</include>
-				</control>
+		<control type="group">
+			<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
+			<control type="image">
+				<description>cover image</description>
+				<posx>10</posx>
+				<posy>434</posy>
+				<width>90</width>
+				<height>90</height>
+				<info>MusicPlayer.Cover</info>
+				<include>homemediainfo</include>
+				<aspectratio align="right">keep</aspectratio>
 			</control>
-
+			<control type="label">
+				<description>Artist label</description>
+				<posx>110</posx>
+				<posy>430</posy>
+				<width>260</width>
+				<height>25</height>
+				<info>MusicPlayer.Artist</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Album label</description>
+				<posx>110</posx>
+				<posy>455</posy>
+				<width>260</width>
+				<height>25</height>
+				<info>MusicPlayer.Album</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>110</posx>
+				<posy>480</posy>
+				<width>260</width>
+				<height>25</height>
+				<info>MusicPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<include>homemediainfo</include>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>110</posx>
+				<posy>505</posy>
+				<width>260</width>
+				<height>25</height>
+				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<include>homemediainfo</include>
+			</control>
+		</control>
 		<!-- media infos (video) -->
 		<control type="group">
 			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
@@ -761,7 +864,26 @@
 				<include>homemediainfo</include>
 			</control>
 		</control>
+		<!-- Scroll Bar -->
+		<control type="scrollbar" id="23">
+			<posx>700</posx>
+			<posy>126</posy>
+			<width>14</width>
+			<height>366</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
+		</control>
 		<!-- page info -->
 		<include>page-info</include>
 	</controls>
-</window>        
+</window>

@@ -5,6 +5,7 @@
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
+	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
 		
@@ -13,18 +14,10 @@
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>
-<!--		<control type="label">
-			<description>Addons Label</description>
-			<posx>535</posx>
-			<posy>40</posy>
-			<label>24001</label>
-			<font>font20</font>
-			<textcolor>button-text</textcolor>
-		</control>-->
 		<control type="label" id="20">
 			<description>header label</description>
 			<posx>535</posx>
-			<posy>35</posy>
+			<posy>25</posy>
 			<width>180</width>
 			<height>50</height>
 			<font>font18</font>

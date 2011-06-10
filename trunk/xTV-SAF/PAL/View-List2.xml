@@ -1,39 +1,35 @@
 <includes>
 	<include name="List2">
-		<control type="list" id="51">
-			<!-- List text positioning ... -->
-			<posx>376</posx>
+		<control type="fixedlist" id="51">
+			<viewtype label="31942">List2</viewtype>
+			<posx>400</posx>
 			<posy>95</posy>
-			<width>334</width>
+			<width>300</width>
 			<height>444</height>
+			<focusposition>4</focusposition>
+			<movement>6</movement>
 			<onleft>2</onleft>
-			<onright>23</onright>
+			<onright>27</onright>
 			<onup>51</onup>
 			<ondown>51</ondown>
 			<include>list-fade</include>
-			<scrolltime>0</scrolltime>
-			<viewtype label="31942">List2</viewtype>
-			<pagecontrol>23</pagecontrol>
+			<scrolltime>1</scrolltime>
+			<preloaditems>5</preloaditems>
+			<pagecontrol>27</pagecontrol>
 			<itemlayout height="40">
 				<control type="image">
-					<posx>34</posx>
-					<posy>0</posy>
-					<width>290</width>
-					<height>30</height>
-				</control>
-				<control type="image">
-					<posx>2</posx>
-					<posy>2</posy>
-					<width>32</width>
-					<height>32</height>
+					<posx>0</posx>
+					<posy>4</posy>
+					<width>24</width>
+					<height>24</height>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 				<control type="label">
-					<posx>46</posx>
-					<posy>-4</posy>
-					<width>264</width>
-					<height>37</height>
+					<posx>30</posx>
+					<posy>-2</posy>
+					<width>258</width>
+					<height>32</height>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -44,27 +40,19 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="40">
-				<!-- This positions the "highlight" box behind selected list item ... -->
 				<control type="image">
-					<posx>34</posx>
-					<posy>-2</posy>
-					<width>290</width>
-					<height>40</height>
-					<texture>default-button.png</texture>
-				</control>
-				<control type="image">
-					<posx>2</posx>
-					<posy>2</posy>
-					<width>32</width>
-					<height>32</height>
+					<posx>0</posx>
+					<posy>4</posy>
+					<width>24</width>
+					<height>24</height>
 					<info>ListItem.Overlay</info>
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 				<control type="label">
-					<posx>46</posx>
-					<posy>-4</posy>
-					<width>264</width>
-					<height>37</height>
+					<posx>30</posx>
+					<posy>-2</posy>
+					<width>258</width>
+					<height>32</height>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -73,6 +61,39 @@
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
+		</control>
+		<control type="group" description="List furniture">
+			<visible>Control.IsVisible(51)</visible>
+			<control type="image" description="Slider">
+				<posx>422</posx>
+				<posy>132</posy>
+				<width>274</width>
+				<height>40</height>
+				<texture>default-button.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation condition="Container(51).Position(0)" effect="slide" start="0,0" end="0,-40"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(1)" effect="slide" start="0,0" end="0,0"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(2)" effect="slide" start="0,0" end="0,40"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(3)" effect="slide" start="0,0" end="0,80"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(4)" effect="slide" start="0,0" end="0,120"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(5)" effect="slide" start="0,0" end="0,160"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(6)" effect="slide" start="0,0" end="0,200"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(7)" effect="slide" start="0,0" end="0,240"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(8)" effect="slide" start="0,0" end="0,280"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(9)" effect="slide" start="0,0" end="0,320"
+					time="60" reversible="true">Conditional</animation>
+				<animation condition="Container(51).Position(10)" effect="slide" start="0,0" end="0,360"
+					time="60" reversible="true">Conditional</animation>
+			</control>
 		</control>
 		<!-- Icons moving backwards -->
 		<control type="group" id="3002">
@@ -352,11 +373,11 @@
 			<visible>Control.IsVisible(51)</visible>
 			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
-			<control type="scrollbar" id="23">
+			<control type="scrollbar" id="27">
 				<posx>700</posx>
 				<posy>90</posy>
 				<width>14</width>
-				<height>448</height>
+				<height>444</height>
 				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
@@ -373,7 +394,7 @@
 			<!-- Star Rating -->
 			<control type="image">
 				<posx>10</posx>
-				<posy>250</posy>
+				<posy>215</posy>
 				<width>100</width>
 				<height>20</height>
 				<info>ListItem.StarRating</info>
@@ -382,291 +403,74 @@
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
 			</control>
 			<!-- Duration -->
-			<control type="label">
-				<posx>10</posx>
-				<posy>265</posy>
-				<width>150</width>
-				<height>50</height>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<info>ListItem.Duration</info>
-				<visible>substring(listitem.Duration,hrs)</visible>
+			<control type="group">
 				<visible>!IsEmpty(listitem.Duration)</visible>
-			</control>
-			<control type="label">
-				<posx>10</posx>
-				<posy>265</posy>
-				<width>150</width>
-				<height>50</height>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<info>ListItem.Duration</info>
-				<visible>substring(listitem.Duration,min)</visible>
-				<visible>!substring(listitem.Duration,hrs)</visible>
-				<visible>!IsEmpty(listitem.Duration)</visible>
-			</control>
-			<control type="label">
-				<posx>10</posx>
-				<posy>265</posy>
-				<width>150</width>
-				<height>50</height>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<label>$INFO[ListItem.Duration,, mins]</label>
-				<visible>!substring(listitem.Duration,min)</visible>
-				<visible>!IsEmpty(listitem.Duration)</visible>
+				<control type="label">
+					<posx>10</posx>
+					<posy>242</posy>
+					<width>150</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<info>ListItem.Duration</info>
+					<visible>substring(listitem.Duration,hrs)</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>242</posy>
+					<width>150</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<info>ListItem.Duration</info>
+					<visible>substring(listitem.Duration,min)</visible>
+					<visible>!substring(listitem.Duration,hrs)</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>242</posy>
+					<width>150</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>$INFO[ListItem.Duration,, mins]</label>
+					<visible>!substring(listitem.Duration,min)</visible>
+				</control>
 			</control>
 			<!-- MPAA Rating -->
-			<control type="image">
+			<control type="group">
 				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_restricted.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated R,Left)</visible>
+				<posy>275</posy>
+				<include>mpaa-ratings</include>
 			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_pg13.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_pg.png</texture>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
-				<aspectratio>keep</aspectratio>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_nc17.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/mpaa_general.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
-			</control>
-			<!-- UK Ratings -->
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_u.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:U)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_pg.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:PG)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_12.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:12)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_15.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:15)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:18)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,UK:X)</visible>
-			</control>
-			<!-- German Ratings -->
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-0_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:0) | substring(listitem.mpaa,o.A)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-6_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:6) | substring(listitem.mpaa,ab 6)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-12_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:12) | substring(listitem.mpaa,ab 12)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-16_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:16) | substring(listitem.mpaa,ab 16)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/FSK-18_info.png</texture>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>InfoRating</colordiffuse>
-				<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
-			</control>
-			<!-- Australian Ratings -->
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_r.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:R)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_m.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:M) + ! substring(listitem.mpaa,Australia:MA)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_ma.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:MA)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_pg.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:PG)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>special://skin/extras/images/rating/australia_g.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,Australia:G)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>310</posy>
-				<width>120</width>
-				<height>50</height>
-				<aligny>bottom</aligny>
-				<texture>$INFO[listitem.mpaa,special://skin/extras/images/rating/,.png]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>substring(listitem.mpaa,TV-,Left)</visible>
-				<visible>!IsEmpty(listitem.mpaa)</visible>
+			<!-- TV show Logo -->
+			<control type="group">
+				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="image" id="37016">
+					<posx>10</posx>
+					<posy>330</posy>
+					<width>104</width>
+					<height>40</height>
+					<texture fallback="blank.png">$INFO[ListItem.path]logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+				</control>
+				<control type="image" id="39016">
+					<posx>10</posx>
+					<posy>330</posy>
+					<width>104</width>
+					<height>40</height>
+					<texture>$INFO[ListItem.path]../logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+					<visible>!StringCompare(Control.GetLabel(37016),blank.png)</visible>
+				</control>
 			</control>
 			<!-- Plot Outline -->
 			<control type="textbox">
@@ -678,6 +482,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+				<align>justify</align>
 				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>
@@ -691,6 +496,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<align>justify</align>
 				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>

@@ -12,12 +12,6 @@
 			<include>icon-ani</include>
 			<texture>icon-music-sml.png</texture>
 		</control>
-		<control type="image">
-			<description>Music Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-music.png</texture>
-		</control>
 		<control type="label">
 			<description>Music Label</description>
 			<posx>535</posx>
@@ -36,7 +30,7 @@
 		<include condition="!Skin.HasSetting(views-musicwrap)">AlbumWrapView</include>
 		<include condition="!Skin.HasSetting(views-musicwall)">AudioWallView</include>
 		<include condition="!Skin.HasSetting(views-musiccoverflow)">AlbumCoverflow</include>
-		<include>PageControl</include>
+		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
 			<control type="image">
@@ -55,7 +49,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>160</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>

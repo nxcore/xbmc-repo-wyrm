@@ -55,7 +55,7 @@
 			<posy>347</posy>
 			<width>256</width>
 			<height>256</height>
-			<texture background="true" flipy="true" diffuse="RndFade.png">DefaultAddon.png</texture>
+			<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
 			<info>ListItem.Icon</info>
 			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
@@ -82,7 +82,7 @@
 			<posy>347</posy>
 			<width>256</width>
 			<height>256</height>
-			<texture background="true" flipy="true" diffuse="RndFade.png">DefaultAddon.png</texture>
+			<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
 			<fadetime>200</fadetime>
 			<aspectratio>keep</aspectratio>
 			<visible>Control.IsVisible(50) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -90,7 +90,7 @@
 		</control>
 
 		<include>ListView</include>
-		<include>PageControl</include>
+		<!--<include>PageControl</include>-->
 
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
@@ -110,7 +110,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>205</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
@@ -167,7 +167,6 @@
 						<onright>4</onright>
 						<textcolor>button-text</textcolor>
 						<include>button-fade</include>
-						<!--<include>View-as</include>-->
 					</control>
 					<control type="togglebutton" id="4">
 						<description>Sort asc/dsc</description>
@@ -179,7 +178,6 @@
 						<onleft>3</onleft> 
 						<onright>50</onright>
 						<include>button-fade</include>
-						<!--<include>View-as</include>-->
 					</control>
 				</control>
 				<control type="radiobutton" id="5">
@@ -200,8 +198,7 @@
 					<label>25000</label> 
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<!--<include>View-as</include>-->
-					<visible>!IsEmpty($LOCALIZE[25000])</visible>
+					<include>View-as</include>
 				</control>
 			</control>
 		</control>
