@@ -151,11 +151,11 @@
 			<!-- Go Back -->
 			<control type="label">
 				<posx>10</posx>
-				<posy>135</posy>
+				<posy>240</posy>
 				<width>260</width>
 				<height>30</height>
-				<font>font18</font>
-				<align>left</align>
+				<font>font28</font>
+				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<scroll>true</scroll>
@@ -272,6 +272,19 @@
 					<label>$INFO[ListItem.Duration,, mins]</label>
 					<visible>!substring(listitem.Duration,min)</visible>
 				</control>
+			</control>
+			<!-- Watched TV episodes -->
+			<control type="label">
+				<posx>400</posx>
+				<posy>500</posy>
+				<width>200</width>
+				<height>25</height>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]</label>
+				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
 			</control>
 			<control type="scrollbar" id="28">
 				<posx>700</posx>
