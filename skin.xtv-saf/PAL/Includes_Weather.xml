@@ -672,9 +672,9 @@
 			<visible>IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="label">
 				<description>Downloading</description>
-				<posx>280</posx>
+				<posx>160</posx>
 				<posy>180</posy>
-				<width>160</width>
+				<width>400</width>
 				<height>40</height>
 				<font>font28</font>
 				<align>center</align>
@@ -696,9 +696,9 @@
 			</control>
 			<control type="label">
 				<description>Please wait</description>
-				<posx>280</posx>
+				<posx>160</posx>
 				<posy>350</posy>
-				<width>160</width>
+				<width>400</width>
 				<height>40</height>
 				<font>font28</font>
 				<align>center</align>
@@ -712,12 +712,12 @@
 	<include name="weatherplus">
 		<control type="button" id="6000">
 			<description>fake button to steal focus</description>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
+			<onleft>6000</onleft>
+			<onright>6000</onright>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<onclick>-</onclick>
-			<visible>[!Skin.String(WeatherPlus,2) + !Skin.String(WeatherPlus,3) + !Skin.String(WeatherPlus,4) + !Skin.String(WeatherPlus,5) + !Skin.String(WeatherPlus,6)] | [Skin.String(WeatherPlus,6) + IsEmpty(Window.Property(Alerts.RSS))]</visible>
+			<visible>Skin.String(WeatherPlus,2) | Skin.String(WeatherPlus,3) | Skin.String(WeatherPlus,4) | Skin.String(WeatherPlus,5) | Skin.String(WeatherPlus,6)</visible>
 		</control>
 		<control type="group">
 			<description>Today</description>
