@@ -7,8 +7,8 @@
 		<control type="button" id="7050">
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
+			<onleft>6000</onleft>
+			<onright>6000</onright>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 		</control>
@@ -178,8 +178,8 @@
 				<textoffsetx>5</textoffsetx>
 				<onleft>1115</onleft>
 				<onright>2</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onup>7050</onup>
+				<ondown>7050</ondown>
 			</control>
 			<control type="label">
 				<description>conditions label</description>
@@ -205,8 +205,8 @@
 				<align>center</align>
 				<onleft>3</onleft>
 				<onright>4</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onup>7050</onup>
+				<ondown>7050</ondown>
 			</control>
 			<control type="button" id="4">
 				<description>Settings button</description>
@@ -220,8 +220,8 @@
 				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 				<onleft>2</onleft>
 				<onright>1115</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onup>7050</onup>
+				<ondown>7050</ondown>
 			</control>
 			<control type="button" id="1115">
 				<description>Select forecast type</description>
@@ -236,8 +236,8 @@
 				<onclick>SetFocus(995)</onclick>
 				<onleft>4</onleft>
 				<onright>3</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onup>7050</onup>
+				<ondown>7050</ondown>
 				<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 			</control>
 		</control>

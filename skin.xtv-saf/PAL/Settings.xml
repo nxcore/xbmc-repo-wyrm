@@ -206,28 +206,9 @@
 				<onup>10</onup>
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
-				<visible>!System.Platform.Xbox</visible>
-			</control>
-			<control type="button" id="8">
-				<description>My Programs</description>
-				<font>font13</font>
-				<posx>405</posx>
-				<posy>285</posy>
-				<width>285</width>
-				<height>40</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>0</label>
-				<onclick>ActivateWindow(MyProgramsSettings)</onclick>
-				<onleft>8</onleft>
-				<onright>8</onright>
-				<onup>10</onup>
-				<ondown>2</ondown>
-				<textcolor>button-text</textcolor>
-				<visible>System.Platform.Xbox</visible>
 			</control>
 			<control type="image">
-				<description>My Programs/Addons Settings arrow focus image</description>
+				<description>Addons Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>294</posy>
 				<width>16</width>
@@ -236,7 +217,7 @@
 				<visible>Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">
-				<description>My Programs/Addons Settings arrow image</description>
+				<description>Addons Settings arrow image</description>
 				<posx>656</posx>
 				<posy>294</posy>
 				<width>16</width>

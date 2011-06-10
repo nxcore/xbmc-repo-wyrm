@@ -186,31 +186,6 @@
 				<onclick>XBMC.PlayerControl(Record)</onclick>
 				<visible>Player.CanRecord</visible>
 			</control>
-			<control type="image" id="940">
-				<description>Dummy</description>
-				<width>24</width>
-				<height>48</height>
-				<texture>-</texture>
-				<visible>System.Platform.xbox</visible>
-			</control>
-			<control type="button" id="220">
-				<description>Popup Vis Preset List</description>
-				<width>48</width>
-				<height>48</height>
-				<texturefocus>osd-btn-vis-focus.png</texturefocus>
-				<texturenofocus>osd-btn-vis.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(122)</onclick>
-				<visible>System.Platform.xbox</visible>
-			</control>
-			<control type="button" id="219">
-				<description>Popup Vis Settings</description>
-				<width>48</width>
-				<height>48</height>
-				<texturefocus>osd-btn-setting-focus.png</texturefocus>
-				<texturenofocus>osd-btn-setting.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(121)</onclick>
-				<visible>System.Platform.xbox</visible>
-			</control>
 			<control type="button" id="219">
 				<description>Popup Vis Settings</description>
 				<width>48</width>
@@ -218,7 +193,6 @@
 				<texturefocus>osd-btn-setting-focus.png</texturefocus>
 				<texturenofocus>osd-btn-setting.png</texturenofocus>
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-				<visible>!System.Platform.xbox</visible>
 			</control>
 		</control>
 <!-- End Player buttons -->

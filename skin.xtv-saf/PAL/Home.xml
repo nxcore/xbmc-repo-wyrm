@@ -391,13 +391,6 @@
 					<visible>Skin.HasSetting(home-programs)</visible>
 				</item>
 				<item>
-					<icon>icon-scripts.png</icon>
-					<thumb>icon-scripts-blur1.png</thumb>
-					<label>31034</label>
-					<onclick>ActivateWindow(Scripts,,return)</onclick>
-					<visible>System.Platform.xbox + Skin.HasSetting(home-scripts)</visible>
-				</item>
-				<item>
 					<icon>icon-photo.png</icon>
 					<thumb>icon-photo-blur1.png</thumb>
 					<label>31031</label>
@@ -446,6 +439,13 @@
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<visible>Skin.HasSetting(home-favorites)</visible>
 				</item>
+				<item>
+					<icon>DefaultMusicSearch.png</icon>
+					<thumb>DefaultMusicSearch-blur1.png</thumb>
+					<label>137</label>
+					<onclick>RunScript(script.globalsearch)</onclick>
+					<visible>Skin.HasSetting(home-globalsearch)</visible>
+				</item> 
 				<item>
 					<icon>icon-settings.png</icon>
 					<thumb>icon-settings-blur1.png</thumb>

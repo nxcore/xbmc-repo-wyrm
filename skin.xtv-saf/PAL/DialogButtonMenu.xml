@@ -105,20 +105,6 @@
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(23)">conditional</animation>
 					<visible>System.LoggedOn</visible>
 				</control>
-				<!--<control type="button" id="11">
-					<description>Exit xbmc</description>
-					<width>80</width>
-					<height>80</height>
-					<texturefocus>shut-power.png</texturefocus>
-					<texturenofocus>shut-power.png</texturenofocus>
-					<onclick>XBMC.ShutDown()</onclick>
-					<pulseonselect>yes</pulseonselect>
-					<aligny>center</aligny>
-					<font>-</font>
-					<label>-</label>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Exit)</visible>
-					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(11)">conditional</animation>
-				</control>-->
 				<control type="button" id="13">
 					<description>Restart xbmc</description>
 					<posy>0</posy>
@@ -272,34 +258,6 @@
 						<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(36)">conditional</animation>
 					</control>
 				</control>
-<!--				<control type="button" id="15">
-					<description>Suspend button</description>
-					<width>80</width>
-					<height>80</height>
-					<texturefocus>shut-suspend-focus.png</texturefocus>
-					<texturenofocus>shut-suspend-nofocus.png</texturenofocus>
-					<onclick>Dialog.Close(ShutdownMenu)</onclick>
-					<onclick>Suspend</onclick>
-					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
-					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(15)">conditional</animation>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Suspend) + System.CanSuspend</visible>
-				</control>
-				<control type="button" id="16">
-					<description>Hibernate button</description>
-					<width>80</width>
-					<height>80</height>
-					<texturefocus>shut-hibernate-focus.png</texturefocus>
-					<texturenofocus>shut-hibernate-nofocus.png</texturenofocus>
-					<onclick>Dialog.Close(ShutdownMenu)</onclick>
-					<onclick>Hibernate</onclick>
-					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
-					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(16)">conditional</animation>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Hibernate) + System.CanHibernate</visible>
-				</control>-->
 				<control type="button" id="17">
 					<description>Favourites button</description>
 					<width>80</width>
@@ -313,33 +271,6 @@
 					<label>-</label>
 					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(17)">conditional</animation>
 					<visible>!Skin.HasSetting(Hide_Shutdown_Favourites) + System.LoggedOn</visible>
-				</control>
-				<!--<control type="button" id="18">
-					<description>Reboot button</description>
-					<width>80</width>
-					<height>80</height>
-					<texturefocus>shut-restart.png</texturefocus>
-					<texturenofocus>shut-restart.png</texturenofocus>
-					<onclick>Reset</onclick>
-					<pulseonselect>yes</pulseonselect>
-					<aligny>center</aligny>
-					<font>-</font>
-					<label>-</label>
-					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(18)">conditional</animation>
-					<visible>!Skin.HasSetting(Hide_Shutdown_Reboot)</visible>
-				</control>-->
-				<control type="button" id="19">
-				<description>Dashboard button</description>
-					<visible>System.Platform.xbox</visible>
-					<width>80</width>
-					<height>80</height>
-					<texturefocus>shut-dash.png</texturefocus>
-					<texturenofocus>shut-dash.png</texturenofocus>
-					<onclick>XBMC.Dashboard()</onclick>
-					<pulseonselect>yes</pulseonselect>
-					<font>-</font>
-					<label>-</label>
-					<animation effect="zoom" start="100" end="130" time="200" center="auto" condition="Control.HasFocus(19)">conditional</animation>
 				</control>
 			</control>
 			
