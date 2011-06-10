@@ -664,7 +664,7 @@
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar)</visible>
+				<visible>Skin.HasSetting(sbar) + [IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<!-- MPAA Rating -->
 			<control type="group">
@@ -684,49 +684,21 @@
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
 			</control>
 			<!-- Title -->
-			<control type="image" id="7016">
-				<posx>314</posx>
+			<control type="label">
+				<posx>130</posx>
 				<posy>495</posy>
-				<width>134</width>
-				<height>52</height>
-				<texture background="true">$INFO[ListItem.path]logo.png</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
+				<width>465</width>
+				<height>30</height>
+				<font>font22</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<selectedcolor>listselectedtext</selectedcolor>
+				<scroll>true</scroll>
+				<info>ListItem.Label</info>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Container(57).Content(tvshows)</visible>
-			</control>
-			<control type="label">
-				<posx>138</posx>
-				<posy>505</posy>
-				<width>454</width>
-				<height>30</height>
-				<font>font18</font>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<info>ListItem.Label</info>
-				<textoffsetx>0</textoffsetx>
-				<visible>[IsEmpty(Control.GetLabel(7016))] + Container(57).Content(tvshows)</visible>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				<animation effect="fade" delay="50" start="0" end="100" time="100">Visible</animation>
-				<animation effect="fade" time="200">WindowClose</animation>
-			</control>
-			<control type="label">
-				<posx>138</posx>
-				<posy>505</posy>
-				<width>454</width>
-				<height>30</height>
-				<font>font18</font>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<info>ListItem.Label</info>
-				<textoffsetx>0</textoffsetx>
-				<visible>!Container(57).Content(tvshows)</visible>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				<animation effect="fade" delay="50" start="0" end="100" time="100">Visible</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 			</control>
 			<!-- Go Back -->
@@ -743,22 +715,6 @@
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-			</control>
-			<!-- Title -->
-			<control type="label">
-				<posx>130</posx>
-				<posy>495</posy>
-				<width>465</width>
-				<height>30</height>
-				<font>font22</font>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<selectedcolor>listselectedtext</selectedcolor>
-				<scroll>true</scroll>
-				<info>ListItem.Label</info>
-				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 			<!-- Genre -->
 			<control type="label">
