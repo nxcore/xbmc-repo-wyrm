@@ -1,3 +1,17 @@
+[B]1.1.0[/B]
+- Added support for TVTunes, LogoDownloader scripts.
+- Added support for Weather Plus plugin.
+- Greatly expanded library entry point support (now supports Movies, TV, Music Videos and Music libraries).
+- Changed skin settings to match other settings menus.
+- Custom Playlists and scripts now available from home menu.
+- Can now select if static or animated weather icons used.
+- Cleaned up a number of skin graphics, removed and renamed a number of images.
+- Cleanup of sound support in the skin (fixed a number of sound files).
+- A number of dialogs have been made full screen (should not be any remaining lable overflow problems).
+- Fixed a large number of bugs.
+- Code cleanup/optimisations (hopefully a lot quicker now).
+- Due to changes to skin engine this release will probably be the last for XBMC Dharma.
+
 [B]1.0.2[/B]
 - Added support for setting library entry points for TV and Movies
 - Fixed a number of issues with fanart backgrounds
