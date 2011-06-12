@@ -2025,7 +2025,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>404</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -2239,7 +2239,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>312</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -2408,7 +2408,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>280</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -2562,7 +2562,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>312</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
