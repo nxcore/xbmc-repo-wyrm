@@ -81,7 +81,7 @@
 			<height>270</height>
 			<texture background="true">$INFO[ListItem.Icon]</texture>
 			<aspectratio align="middle" aligny="center">keep</aspectratio>
-			<bordertexture border="6">photoframe.png</bordertexture>
+			<bordertexture border="6">picturepanel.png</bordertexture>
 			<bordersize>6</bordersize>
 			<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
         </control>

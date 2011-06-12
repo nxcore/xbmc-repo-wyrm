@@ -29,7 +29,7 @@
 					<height>94</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<texture diffuse="mask-square.png" background="true">DefaultMusic.png</texture>
+					<texture diffuse="mask-squ.png" background="true">DefaultMusic.png</texture>
 					<info>ListItem.Icon</info>
 				</control>
 			</itemlayout>
@@ -39,7 +39,7 @@
 					<posy>1</posy>
 					<width>76</width>
 					<height>82</height>
-					<texture background="true" diffuse="mask-square.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<bordertexture border="9">hi-lite.png</bordertexture>
 					<bordersize>9</bordersize>
