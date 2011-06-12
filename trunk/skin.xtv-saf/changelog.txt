@@ -1,5 +1,5 @@
 [B]1.1.0[/B]
-- Added support for TVTunes, LogoDownloader scripts.
+- Added support for TVTunes, LogoDownloader and Cinema Experience scripts.
 - Added support for Weather Plus plugin.
 - Greatly expanded library entry point support (now supports Movies, TV, Music Videos and Music libraries).
 - Changed skin settings to match other settings menus.
