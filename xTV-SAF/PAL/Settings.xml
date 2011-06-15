@@ -26,7 +26,7 @@
 				<posx>405</posx>
 				<posy>90</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>480</label>
@@ -41,8 +41,8 @@
 				<description>Appearance Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>100</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(3)</visible>
 			</control>
@@ -50,8 +50,8 @@
 				<description>Appearance Settings arrow image</description>
 				<posx>656</posx>
 				<posy>100</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="6">
@@ -60,7 +60,7 @@
 				<posx>405</posx>
 				<posy>129</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>3</label>
@@ -75,8 +75,8 @@
 				<description>My Videos Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>138</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(6)</visible>
 			</control>
@@ -84,8 +84,8 @@
 				<description>My Videos Settings arrow image</description>
 				<posx>656</posx>
 				<posy>138</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="7">
@@ -94,7 +94,7 @@
 				<posx>405</posx>
 				<posy>168</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>2</label>
@@ -109,8 +109,8 @@
 				<description>My Music Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>178</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(7)</visible>
 			</control>
@@ -118,8 +118,8 @@
 				<description>My Music Settings arrow image</description>
 				<posx>656</posx>
 				<posy>178</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="9">
@@ -128,7 +128,7 @@
 				<posx>405</posx>
 				<posy>207</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>1</label>
@@ -143,8 +143,8 @@
 				<description>My PicturesSkin Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>216</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(9)</visible>
 			</control>
@@ -152,8 +152,8 @@
 				<description>My Pictures Settings arrow image</description>
 				<posx>656</posx>
 				<posy>216</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="10">
@@ -162,7 +162,7 @@
 				<posx>405</posx>
 				<posy>246</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>8</label>
@@ -177,8 +177,8 @@
 				<description>My Weather Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>256</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(10)</visible>
 			</control>
@@ -186,8 +186,8 @@
 				<description>My Weather Settings arrow image</description>
 				<posx>656</posx>
 				<posy>256</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="8">
@@ -196,7 +196,7 @@
 				<posx>405</posx>
 				<posy>285</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>24001</label>
@@ -206,41 +206,22 @@
 				<onup>10</onup>
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
-				<visible>!System.Platform.Xbox</visible>
 			</control>
-			<!--<control type="button" id="8">
-				<description>My Programs</description>
-				<font>font13</font>
-				<posx>405</posx>
-				<posy>285</posy>
-				<width>285</width>
-				<height>40</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>0</label>
-				<onclick>ActivateWindow(MyProgramsSettings)</onclick>
-				<onleft>8</onleft>
-				<onright>8</onright>
-				<onup>10</onup>
-				<ondown>2</ondown>
-				<textcolor>button-text</textcolor>
-				<visible>System.Platform.Xbox</visible>
-			</control>-->
 			<control type="image">
-				<description>My Programs/Addons Settings arrow focus image</description>
+				<description>Addons Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>294</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">
-				<description>My Programs/Addons Settings arrow image</description>
+				<description>Addons Settings arrow image</description>
 				<posx>656</posx>
 				<posy>294</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="2">
@@ -249,7 +230,7 @@
 				<posx>405</posx>
 				<posy>324</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>705</label>
@@ -264,8 +245,8 @@
 				<description>Network Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>334</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(2)</visible>
 			</control>
@@ -273,8 +254,8 @@
 				<description>Network Settings arrow image</description>
 				<posx>656</posx>
 				<posy>334</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="4">
@@ -283,7 +264,7 @@
 				<posx>405</posx>
 				<posy>363</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>13000</label>
@@ -298,8 +279,8 @@
 				<description>System Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>374</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(4)</visible>
 			</control>
@@ -307,8 +288,8 @@
 				<description>System Settings arrow image</description>
 				<posx>656</posx>
 				<posy>374</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 
@@ -319,7 +300,7 @@
 				<posx>405</posx>
 				<posy>402</posy>
 				<width>285</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31556</label>
@@ -335,8 +316,8 @@
 				<description>Skin Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>412</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right-focus.png</texture>
 				<visible>Control.HasFocus(999)</visible>
 			</control>
@@ -344,8 +325,8 @@
 				<description>Skin Settings arrow image</description>
 				<posx>656</posx>
 				<posy>412</posy>
-				<width>16</width>
-				<height>16</height>
+				<width>22</width>
+				<height>22</height>
 				<texture>scroll-right.png</texture>
 			</control>
 		</control>

@@ -38,7 +38,7 @@
 				<posx>550</posx>
 				<posy>90</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31841</label>
@@ -54,9 +54,9 @@
 				<description>General Settings Button</description>
 				<font>font13</font>
 				<posx>550</posx>
-				<posy>130</posy>
+				<posy>133</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31813</label>
@@ -72,9 +72,9 @@
 				<description>Home Window Settings Button</description>
 				<font>font13</font>
 				<posx>550</posx>
-				<posy>170</posy>
+				<posy>176</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31815</label>
@@ -90,9 +90,9 @@
 				<description>Background Settings Button</description>
 				<font>font13</font>
 				<posx>550</posx>
-				<posy>210</posy>
+				<posy>219</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31814</label>
@@ -108,9 +108,9 @@
 				<description>Media Sources Settings Button</description>
 				<font>font13</font>
 				<posx>550</posx>
-				<posy>250</posy>
+				<posy>262</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31831</label>
@@ -126,9 +126,9 @@
 				<description>Views Settings Button</description>
 				<font>font13</font>
 				<posx>550</posx>
-				<posy>290</posy>
+				<posy>305</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>31834</label>
@@ -144,9 +144,9 @@
 				<description>Custom Settings Button</description>
 				<font>font13</font>
 				<posx>550</posx>
-				<posy>330</posy>
+				<posy>348</posy>
 				<width>160</width>
-				<height>40</height>
+				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>636</label>
@@ -164,7 +164,7 @@
 			<posx>8</posx>
 			<posy>90</posy>
 			<width>14</width>
-			<height>424</height>
+			<height>434</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
@@ -187,7 +187,7 @@
 					<posx>550</posx>
 					<posy>90</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -196,7 +196,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>101</onup>
 					<ondown>101</ondown>
@@ -278,9 +278,9 @@
 				<control type="image">
 					<description>General Settings Button Image</description>
 					<posx>550</posx>
-					<posy>130</posy>
+					<posy>133</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -289,7 +289,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>200</onup>
 					<ondown>200</ondown>
@@ -461,9 +461,9 @@
 				<control type="image">
 					<description>Home Settings Button Image</description>
 					<posx>550</posx>
-					<posy>170</posy>
+					<posy>176</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -472,7 +472,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>300</onup>
 					<ondown>300</ondown>
@@ -554,22 +554,6 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="307">
-						<description>Scripts On Home toggle</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31848</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(home-scripts)</onclick>
-						<selected>Skin.HasSetting(home-scripts)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
-						<visible>System.Platform.xbox</visible>
-					</control>
 					<control type="radiobutton" id="308">
 						<description>Photos On Home toggle</description>
 						<font>font13</font>
@@ -601,9 +585,9 @@
 						<radioposx>460</radioposx>
 					</control>
 					<control type="button" id="310">
-						<description>YouTube script location (XBox)</description>
+						<description>YouTube script location</description>
 						<font>font13</font>
-						<width>500</width>
+						<width>490</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -615,25 +599,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
-						<visible>System.Platform.xbox + Skin.HasSetting(home-youtube)</visible>
-					</control>
-					<control type="button" id="311">
-						<description>YouTube script location (Non XBox)</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<!--<enable>Skin.HasSetting(home-youtube)</enable>-->
-						<label>$LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>20</textoffsetx>
-						<visible>!System.Platform.xbox + Skin.HasSetting(home-youtube)</visible>
+						<visible>Skin.HasSetting(home-youtube)</visible>
 					</control>
 					<control type="radiobutton" id="312">
 						<description>Weather On Home toggle</description>
@@ -664,22 +630,6 @@
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
-					</control>
-					<control type="radiobutton" id="315">
-						<description>Global Search On Home toggle</description>
-						<font>font13</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31895</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(home-globalsearch)</onclick>
-						<selected>Skin.HasSetting(home-globalsearch)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
-						<visible>System.Platform.Xbox</visible> <!-- hack to determine if running XBMC Eden, will probably break -->
 					</control>
 					<control type="radiobutton" id="315">
 						<description>Play Disc On Home toggle</description>
@@ -719,9 +669,9 @@
 				<control type="image">
 					<description>Background Settings Button Image</description>
 					<posx>550</posx>
-					<posy>210</posy>
+					<posy>219</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -730,7 +680,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>400</onup>
 					<ondown>400</ondown>
@@ -841,9 +791,9 @@
 				<control type="image">
 					<description>Media Sources Settings Button Image</description>
 					<posx>550</posx>
-					<posy>250</posy>
+					<posy>262</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -852,7 +802,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>501</onup>
 					<ondown>501</ondown>
@@ -877,7 +827,7 @@
 					<control type="button" id="512">
 						<description>Set Movie library entry point</description>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>31680</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
 						<font>font13</font>
@@ -942,7 +892,7 @@
 					<control type="button" id="516">
 						<description>Set TV library entry point</description>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>31681</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
 						<font>font13</font>
@@ -1008,7 +958,7 @@
 					<control type="button" id="520">
 						<description>Set Music Video library entry point</description>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>31682</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
 						<font>font13</font>
@@ -1074,7 +1024,7 @@
 					<control type="button" id="524">
 						<description>Set Music library entry point</description>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>31683</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
 						<font>font13</font>
@@ -1096,9 +1046,9 @@
 				<control type="image">
 					<description>Views Settings Button Image</description>
 					<posx>550</posx>
-					<posy>290</posy>
+					<posy>305</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -1107,7 +1057,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>601</onup>
 					<ondown>601</ondown>
@@ -1118,7 +1068,7 @@
 						<description>View As Panel Lock Toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31817</label>
@@ -1134,7 +1084,7 @@
 						<description>Video views section heading</description>
 						<posx>50</posx>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>[B][I]Video Views[/I][/B]</label>
 						<font>font13</font>
 						<textcolor>button-text</textcolor>
@@ -1146,7 +1096,7 @@
 						<description>Video List2 view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -1163,7 +1113,7 @@
 						<description>Video Banner view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31929</label>
@@ -1180,7 +1130,7 @@
 						<description>Video Wrap view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -1197,7 +1147,7 @@
 						<description>Video Wall view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -1214,7 +1164,7 @@
 						<description>Video Coverflow view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31928</label>
@@ -1231,7 +1181,7 @@
 						<description>Music views section heading</description>
 						<posx>50</posx>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>[B][I]Music Views[/I][/B]</label>
 						<font>font13</font>
 						<textcolor>button-text</textcolor>
@@ -1243,7 +1193,7 @@
 						<description>Music List2 view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -1260,7 +1210,7 @@
 						<description>Music Wrap view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -1277,7 +1227,7 @@
 						<description>Music Wall view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -1294,7 +1244,7 @@
 						<description>Music Coverflow view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31928</label>
@@ -1311,7 +1261,7 @@
 						<description>Photo views section heading</description>
 						<posx>50</posx>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>[B][I]Photo Views[/I][/B]</label>
 						<font>font13</font>
 						<textcolor>button-text</textcolor>
@@ -1323,7 +1273,7 @@
 						<description>Photo List2 view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -1340,7 +1290,7 @@
 						<description>Photo Icons view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31923</label>
@@ -1357,7 +1307,7 @@
 						<description>Photo Wrap view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -1374,7 +1324,7 @@
 						<description>Photo Wall view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -1391,7 +1341,7 @@
 						<description>Program/Scripts views section heading</description>
 						<posx>50</posx>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<label>[B][I]Program/Script Views[/I][/B]</label>
 						<font>font13</font>
 						<textcolor>button-text</textcolor>
@@ -1403,7 +1353,7 @@
 						<description>Program/Scripts List2 view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -1420,7 +1370,7 @@
 						<description>Program/Scripts Icons view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31923</label>
@@ -1437,7 +1387,7 @@
 						<description>Program/Scripts Wrap view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -1454,7 +1404,7 @@
 						<description>Program/Scripts Wall view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -1471,7 +1421,7 @@
 						<description>Program/Scripts Coverflow view toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31928</label>
@@ -1492,9 +1442,9 @@
 				<control type="image">
 					<description>Custom Settings Button Image</description>
 					<posx>550</posx>
-					<posy>330</posy>
+					<posy>348</posy>
 					<width>160</width>
-					<height>40</height>
+					<height>45</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
@@ -1503,7 +1453,7 @@
 					<posx>30</posx>
 					<posy>90</posy>
 					<width>500</width>
-					<height>420</height>
+					<height>432</height>
 					<itemgap>-2</itemgap>
 					<onup>701</onup>
 					<ondown>701</ondown>
@@ -1514,7 +1464,7 @@
 						<description>Subtitles in OSD toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31891</label>
@@ -1526,10 +1476,11 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<!--<control type="button" id="712">
-						<description>Subtile script location (XBox)</description>
+					<control type="button" id="713">
+						<description>Subtile script location</description>
 						<font>font13</font>
 						<width>500</width>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -1542,32 +1493,13 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>30</textoffsetx>
-						<visible>System.Platform.xbox</visible>
-					</control>-->
-					<control type="button" id="713">
-						<description>Subtile script location (Non XBox)</description>
-						<font>font13</font>
-						<width>500</width>
-						<height>40</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label> $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>30</textoffsetx>
-						<visible>Skin.HasSetting(osd-subtitles) + !System.Platform.xbox</visible>
+						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
-					<control type="radiobutton" id="714">
+					<!--<control type="radiobutton" id="714">
 						<description>Use TV Tunes</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>Use TV Tunes</label>
@@ -1583,7 +1515,7 @@
 						<description>TV Logo Downloader Script</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -1592,12 +1524,12 @@
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
-					</control>
+					</control>-->
 					<control type="radiobutton" id="716">
 						<description>Custom script 1 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[24009] 1</label>
@@ -1613,14 +1545,14 @@
 						<description>Custom script 1 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<enable>Skin.HasSetting(custom-script1)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script1name)] </label2>
-						<onclick>XBMC.Skin.SetAddon(custom-script1name,xbmc.python.script)</onclick>
+						<onclick>Skin.SetFile(custom-script1name,.py)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1631,7 +1563,7 @@
 						<description>Custom script 1 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
@@ -1649,7 +1581,7 @@
 						<description>Custom script 2 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[24009] 2</label>
@@ -1665,14 +1597,14 @@
 						<description>Custom script 2 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<enable>Skin.HasSetting(custom-script2)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script2name)] </label2>
-						<onclick>XBMC.Skin.SetAddon(custom-script2name,xbmc.python.script)</onclick>
+						<onclick>Skin.SetFile(custom-script2name,.py)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1683,7 +1615,7 @@
 						<description>Custom script 2 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
@@ -1701,7 +1633,7 @@
 						<description>Custom script 3 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[24009] 3</label>
@@ -1717,14 +1649,14 @@
 						<description>Custom script 3 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<enable>Skin.HasSetting(custom-script3)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script3name)] </label2>
-						<onclick>XBMC.Skin.SetAddon(custom-script3name,xbmc.python.script)</onclick>
+						<onclick>Skin.SetFile(custom-script3name,.py)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1735,7 +1667,7 @@
 						<description>Custom script 3 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
@@ -1753,7 +1685,7 @@
 						<description>Custom script 4 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[24009] 4</label>
@@ -1769,14 +1701,14 @@
 						<description>Custom script 4 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<enable>Skin.HasSetting(custom-script4)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script4name)] </label2>
-						<onclick>XBMC.Skin.SetAddon(custom-script4name,xbmc.python.script)</onclick>
+						<onclick>Skin.SetFile(custom-script4name,.py)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1787,7 +1719,7 @@
 						<description>Custom script 4 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
@@ -1805,7 +1737,7 @@
 						<description>Custom Playlist1 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
@@ -1821,7 +1753,7 @@
 						<description>Custom playlist1 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -1839,7 +1771,7 @@
 						<description>Custom playlist1 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
@@ -1855,7 +1787,7 @@
 						<description>Custom playlist1 icon</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
@@ -1871,7 +1803,7 @@
 						<description>Custom Playlist2 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
@@ -1887,7 +1819,7 @@
 						<description>Custom playlist2 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -1905,7 +1837,7 @@
 						<description>Custom playlist2 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
@@ -1921,7 +1853,7 @@
 						<description>Custom playlist2 icon</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
@@ -1937,7 +1869,7 @@
 						<description>Custom Playlist3 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 3</label>
@@ -1953,7 +1885,7 @@
 						<description>Custom playlist3 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -1971,7 +1903,7 @@
 						<description>Custom playlist3 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
@@ -1987,7 +1919,7 @@
 						<description>Custom playlist3 icon</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
@@ -2003,7 +1935,7 @@
 						<description>Custom Playlist4 toggle</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 4</label>
@@ -2019,7 +1951,7 @@
 						<description>Custom playlist4 location</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -2037,7 +1969,7 @@
 						<description>Custom playlist4 label</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
@@ -2053,7 +1985,7 @@
 						<description>Custom playlist4 icon</description>
 						<font>font13</font>
 						<width>500</width>
-						<height>40</height>
+						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
@@ -2078,7 +2010,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>404</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -2292,7 +2224,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>312</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -2461,7 +2393,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>280</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -2615,7 +2547,7 @@
 					<posy>0</posy>
 					<width>245</width>
 					<height>312</height>
-					<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">

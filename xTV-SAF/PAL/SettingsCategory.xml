@@ -35,7 +35,7 @@
 			<posy>124</posy>
 			<width>160</width>
 			<height>410</height>
-			<itemgap>-4</itemgap>
+			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<onup>3</onup>
@@ -47,7 +47,7 @@
 			<posy>124</posy>
 			<width>505</width>
 			<height>410</height>
-			<itemgap>-4</itemgap>
+			<itemgap>-2</itemgap>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>5</onup>
@@ -57,8 +57,8 @@
 			<description>Default Button</description>
 			<posx>530</posx>
 			<posy>150</posy>
-			<height>40</height>
-			<font>font12</font>
+			<height>45</height>
+			<font>font13</font>
 			<textoffsetx>10</textoffsetx>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
@@ -69,8 +69,8 @@
 			<posx>530</posx>
 			<posy>150</posy>
 			<width>225</width>
-			<height>40</height>
-			<font>font12</font>
+			<height>45</height>
+			<font>font13</font>
 			<texturenofocus>-</texturenofocus>
 			<textoffsetx>10</textoffsetx>
 			<textoffsetx2>20</textoffsetx2>
@@ -83,14 +83,14 @@
 			<posx>530</posx>
 			<posy>150</posy>
 			<width>300</width>
-			<height>40</height>
+			<height>45</height>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textureup>scroll-up.png</textureup>
 			<texturedown>scroll-down.png</texturedown>
 			<textureupfocus>scroll-up-focus.png</textureupfocus>
 			<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-			<font>font12</font>
+			<font>font13</font>
 			<disabledcolor>disabled-text</disabledcolor>
 			<textoffsetx>10</textoffsetx>
 			<aligny>center</aligny>
@@ -102,9 +102,9 @@
 			<posx>190</posx>
 			<posy>150</posy>
 			<width>150</width>
-			<height>40</height>
+			<height>45</height>
 			<label>224</label>
-			<font>font12</font>
+			<font>font13</font>
 			<align>left</align>
 			<textoffsetx>10</textoffsetx>
 			<texturefocus>default-button.png</texturefocus>
