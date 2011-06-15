@@ -1495,7 +1495,7 @@
 						<textoffsetx>30</textoffsetx>
 						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
-					<!--<control type="radiobutton" id="714">
+					<control type="radiobutton" id="714">
 						<description>Use TV Tunes</description>
 						<font>font13</font>
 						<width>500</width>
@@ -1512,6 +1512,23 @@
 						<radioposx>460</radioposx>
 					</control>
 					<control type="button" id="715">
+						<description>TVTunes script location</description>
+						<font>font13</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<enable>Skin.HasSetting(tv_theme)</enable>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(tv_themelocation)] </label2>
+						<onclick>Skin.SetFile(tv_themelocation,.py)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+					</control>
+					<!--<control type="button" id="715">
 						<description>TV Logo Downloader Script</description>
 						<font>font13</font>
 						<width>500</width>
