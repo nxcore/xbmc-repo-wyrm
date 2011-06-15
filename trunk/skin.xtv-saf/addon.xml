@@ -17,7 +17,7 @@
     effectslowdown="1.00"
     debugging="false"/>
   <extension point="xbmc.addon.metadata">
-    <summary>xTV-SAF is a update of xTV (2269)</summary>
+    <summary>xTV-SAF, a family friendly remake of a classic skin</summary>
     <description>xTV-SAF is a fork of xTV to include the latest xbmc features in a Spouse friendly manner.</description>
     <disclaimer></disclaimer>
     <platform>all</platform>

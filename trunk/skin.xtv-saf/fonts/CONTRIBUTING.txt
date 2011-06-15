@@ -13,9 +13,9 @@ and this is where milestones, bug management and releases are handled.
 Contributions are welcomed.  Your work will be used on millions of
 computers every single day!  Following the initial bootstrapping of
 Latin, Cyrillic, Greek, Arabic and Hebrew expansion will be undertaken
-by Font designers from the font-design and Ubuntu communities.
+by font designers from the font design and Ubuntu communities.
 
-In ensure that the Ubuntu Font Family can be re-licensed to future
+To ensure that the Ubuntu Font Family can be re-licensed to future
 widely-used libre font licences, copyright assignment is being required:
 
   https://launchpad.net/~uff-contributors
