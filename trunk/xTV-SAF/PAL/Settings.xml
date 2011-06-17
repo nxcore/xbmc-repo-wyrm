@@ -191,7 +191,7 @@
 				<texture>scroll-right.png</texture>
 			</control>
 			<control type="button" id="8">
-				<description>Addons</description>
+				<description>My Programs</description>
 				<font>font13</font>
 				<posx>405</posx>
 				<posy>285</posy>
@@ -199,8 +199,8 @@
 				<height>45</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>24001</label>
-				<onclick>ActivateWindow(AddonBrowser)</onclick>
+				<label>0</label>
+				<onclick>ActivateWindow(MyProgramsSettings)</onclick>
 				<onleft>8</onleft>
 				<onright>8</onright>
 				<onup>10</onup>
@@ -208,7 +208,7 @@
 				<textcolor>button-text</textcolor>
 			</control>
 			<control type="image">
-				<description>Addons Settings arrow focus image</description>
+				<description>My Programs Settings arrow focus image</description>
 				<posx>656</posx>
 				<posy>294</posy>
 				<width>22</width>
@@ -217,7 +217,7 @@
 				<visible>Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">
-				<description>Addons Settings arrow image</description>
+				<description>My Programs Settings arrow image</description>
 				<posx>656</posx>
 				<posy>294</posy>
 				<width>22</width>
