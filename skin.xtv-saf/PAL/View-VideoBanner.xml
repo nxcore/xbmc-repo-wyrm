@@ -7,8 +7,8 @@
 				<viewtype label="31947">Banner List</viewtype>
 				<posx>0</posx>
 				<posy>110</posy>
-				<width>260</width>
-				<height>370</height>
+				<width>720</width>
+				<height>400</height>
 				<pagecontrol>26</pagecontrol>
 				<onup>59</onup>
 				<ondown>59</ondown>
@@ -45,14 +45,6 @@
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-					<!--<control type="image">
-						<description>Overlay</description>
-						<posx>360</posx>
-						<posy>16</posy>
-						<width>64</width>
-						<height>64</height>
-						<info>ListItem.Overlay</info>
-					</control>-->
 				</itemlayout>
 				<focusedlayout height="80">
 					<control type="group">
@@ -60,7 +52,7 @@
 						<posy>5</posy>
 						<width>260</width>
 						<height>80</height>
-						<!--<animation effect="zoom" start="90" end="105" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>-->
+						<animation effect="zoom" start="90" end="105" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>
 						<control type="image">
 							<description>Cover</description>
 							<posx>0</posx>
@@ -69,8 +61,8 @@
 							<height>80</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<bordertexture border="10">hi-lite.png</bordertexture>
-							<bordersize>10</bordersize>
+							<bordertexture border="9">hi-lite.png</bordertexture>
+							<bordersize>9</bordersize>
 							<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
 						</control>
 						<control type="image">
@@ -91,15 +83,6 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 						</control>
-						<!--<control type="image">
-							<description>Overlay</description>
-							<posx>6</posx>
-							<posy>6</posy>
-							<width>64</width>
-							<height>64</height>
-							<info>ListItem.Overlay</info>
-							<aspectratio align="center" aligny="top">stretch</aspectratio>
-						</control> -->
 					</control>
 				</focusedlayout>
 			</control>
@@ -125,7 +108,7 @@
 				<height>480</height>
 				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
-				<visible>!IsEmpty(ListItem.Thumb)</visible>
+				<visible>!IsEmpty(ListItem.Icon)</visible>
 				<control type="group">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -147,13 +130,14 @@
 					<posy>180</posy>
 					<width>315</width>
 					<height>30</height>
-					<font>font20</font>
+					<font>font18</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
 					<scroll>true</scroll>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="label">
 					<description>First Aired</description>
@@ -164,6 +148,7 @@
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$LOCALIZE[20416]:[/B] $INFO[ListItem.Premiered]</label>
+					<visible>!IsEmpty(ListItem.Premiered)</visible>
 				</control>
 				<control type="label">
 					<description>Genre</description>
@@ -176,6 +161,7 @@
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$LOCALIZE[515]:[/B] $INFO[ListItem.Genre]</label>
 					<scroll>true</scroll>
+					<visible>!IsEmpty(ListItem.Genre)</visible>
 				</control>
 				<control type="label">
 					<description>Rating</description>
@@ -186,6 +172,7 @@
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>[B]$LOCALIZE[563]:[/B] $INFO[ListItem.Rating]</label>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -203,6 +190,7 @@
 					<width>315</width>
 					<height>2</height>
 					<texture>separator.png</texture>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<!-- Plot Outline -->
 				<control type="textbox">
@@ -231,7 +219,6 @@
 					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 				</control>
 			</control>
-			
 			<control type="group">
 				<visible>Control.IsVisible(59)</visible>
 				<include>SortLetterNotification</include>
@@ -240,7 +227,7 @@
 					<posx>700</posx>
 					<posy>110</posy>
 					<width>14</width>
-					<height>370</height>
+					<height>405</height>
 					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
