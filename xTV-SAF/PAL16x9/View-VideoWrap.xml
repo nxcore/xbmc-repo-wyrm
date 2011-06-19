@@ -1,5 +1,4 @@
 <includes>
-	<!-- Start Video Window Specific Views -->
 	<include name="VideoWrapView">
 		<control type="wraplist" id="54">
 			<viewtype label="31943">Wraplist</viewtype>
