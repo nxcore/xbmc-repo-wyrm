@@ -32,9 +32,9 @@
 		<control type="grouplist" id="3">
 			<description>button area</description>
 			<posx>550</posx>
-			<posy>124</posy>
+			<posy>90</posy>
 			<width>160</width>
-			<height>410</height>
+			<height>432</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
 			<onright>5</onright>
@@ -43,10 +43,10 @@
 		</control>
 		<control type="grouplist" id="5">
 			<description>control area</description>
-			<posx>10</posx>
-			<posy>124</posy>
-			<width>505</width>
-			<height>410</height>
+			<posx>30</posx>
+			<posy>90</posy>
+			<width>500</width>
+			<height>432</height>
 			<itemgap>-2</itemgap>
 			<onleft>3</onleft>
 			<onright>3</onright>
