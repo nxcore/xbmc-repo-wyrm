@@ -4,7 +4,7 @@
 	<animation effect="fade" time="400">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
-		<posx>282</posx>
+		<posx>250</posx>
 		<posy>20</posy>
 	</coordinates>
 	<controls>
@@ -12,7 +12,7 @@
 			<description>Visualisation Preset Background image</description>
 			<posx>-10</posx>
 			<posy>-10</posy>
-			<width>426</width>
+			<width>450</width>
 			<height>475</height>
 			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
@@ -42,23 +42,70 @@
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="listcontrol" id="2">
-			<description>Preset List</description>
-			<posx>-1</posx>
-			<posy>40</posy>
-			<width>407</width>
+		<control type="list" id="2">
+			<posx>0</posx>
+			<posy>45</posy>
+			<width>410</width>
 			<height>440</height>
-			<spinposx>371</spinposx>
-			<spinposy>390</spinposy>
-			<font>font12</font>
-			<textcolor>button-text</textcolor>
-			<selectedcolor>listselectedtext</selectedcolor>
-			<textoffsetx>10</textoffsetx>
-			<textureheight>37</textureheight>
-			<onleft>2</onleft>
-			<onright>2</onright>
+			<onleft>60</onleft>
+			<onright>60</onright>
 			<onup>2</onup>
 			<ondown>2</ondown>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="45">
+				<control type="label">
+					<posx>5</posx>
+					<posy>0</posy>
+					<width>395</width>
+					<height>45</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="45">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>410</width>
+					<height>45</height>
+					<texture>default-button.png</texture>
+				</control>
+				<control type="label">
+					<posx>5</posx>
+					<posy>0</posy>
+					<width>395</width>
+					<height>45</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>425</posx>
+			<posy>65</posy>
+			<width>14</width>
+			<height>270</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>
 </window>
