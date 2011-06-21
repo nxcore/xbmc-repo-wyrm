@@ -3,7 +3,6 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>background</include>
-		<include>Fake-Overlay</include>
 		<control type="button" id="7050">
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
@@ -72,7 +71,7 @@
 				<posy>0</posy>
 				<width>176</width>
 				<height>300</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
 			<control type="label">
@@ -167,12 +166,12 @@
 		</control>
 		<!--Button Group -->
 		<control type="group" id="9000">
-			<animation effect="slide" start="0,0" end="70,0" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="98,0" time="0" condition="!StringCompare(Weather.Plugin,weather.weatherplus)">Conditional</animation>
 			<control type="spincontrolex" id="3">
 				<description>change location button</description>
-				<posx>80</posx>
+				<posx>10</posx>
 				<posy>530</posy>
-				<width>140</width>
+				<width>175</width>
 				<height>40</height>
 				<font>-</font>
 				<textoffsetx>5</textoffsetx>
@@ -183,7 +182,7 @@
 			</control>
 			<control type="label">
 				<description>conditions label</description>
-				<posx>85</posx>
+				<posx>15</posx>
 				<posy>530</posy>
 				<width>115</width>
 				<height>40</height>
@@ -196,9 +195,9 @@
 			</control>
 			<control type="button" id="2">
 				<description>Refresh button</description>
-				<posx>220</posx>
+				<posx>185</posx>
 				<posy>530</posy>
-				<width>140</width>
+				<width>175</width>
 				<height>40</height>
 				<label>103</label>
 				<font>font13</font>
@@ -212,7 +211,7 @@
 				<description>Settings button</description>
 				<posx>360</posx>
 				<posy>530</posy>
-				<width>140</width>
+				<width>175</width>
 				<height>40</height>
 				<label>5</label>
 				<font>font13</font>
@@ -225,9 +224,9 @@
 			</control>
 			<control type="button" id="1115">
 				<description>Select forecast type</description>
-				<posx>500</posx>
+				<posx>535</posx>
 				<posy>530</posy>
-				<width>140</width>
+				<width>175</width>
 				<height>40</height>
 				<label>Forecast Type...</label>
 				<font>font13</font>
