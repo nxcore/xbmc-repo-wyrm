@@ -15,7 +15,6 @@
 			<width>450</width>
 			<height>475</height>
 			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
-			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="label" id="3">
 			<description>Presets Label</description>
