@@ -22,14 +22,15 @@
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 		</control>
 		
-<!-- Media Icon -->
+		<!-- Media Icon -->
 		<control type="image">
 			<description>Video cover image</description>
-			<posx>-6</posx>
+			<posx>5</posx>
 			<posy>-205</posy>
 			<width>200</width>
 			<height>200</height>
 			<align>left</align>
+			<aligny>bottom</aligny>
 			<texture diffuse="mask-rect.png">-</texture>
 			<fadetime>300</fadetime>
 			<info>VideoPlayer.Cover</info>
@@ -40,20 +41,21 @@
 		</control>
 		<control type="image">
 			<description>Music cover image</description>
-			<posx>-6</posx>
+			<posx>5</posx>
 			<posy>-205</posy>
 			<width>200</width>
 			<height>200</height>
 			<align>left</align>
+			<aligny>bottom</aligny>
 			<texture diffuse="mask-rect.png">-</texture>
 			<fadetime>300</fadetime>
 			<info>MusicPlayer.Cover</info>
 			<aspectratio>keep</aspectratio>
 			<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
 		</control>
-<!-- End of Media Icon -->
-
-<!-- Player action labels -->
+		<!-- End of Media Icon -->
+		
+		<!-- Player action labels -->
 		<control type="label">
 			<posx>240</posx>
 			<posy>65</posy>
@@ -185,9 +187,9 @@
 			<visible>Player.Forwarding32x</visible>
 			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
 		</control>
-<!-- End Player action labels -->
-
-<!-- Player info labels -->
+		<!-- End Player action labels -->
+		
+		<!-- Player info labels -->
 		<control type="label">
 			<posx>30</posx>
 			<posy>4</posy>
@@ -230,9 +232,9 @@
 			<visible>[Window.IsActive(2005)]</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 		</control>
-<!-- End Player info labels -->
-
-<!-- Progress bar -->
+		<!-- End Player info labels -->
+		
+		<!-- Progress bar -->
 		<control type="progress" id="23">
 			<description>Progressbar</description>
 			<posx>120</posx>
@@ -248,8 +250,8 @@
 			<visible>[Window.IsActive(2005)]</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 		</control>
-<!-- End Progress Bar -->
-<!-- Seek Slider -->
+		<!-- End Progress Bar -->
+		<!-- Seek Slider -->
 		<control type="slider" id="401">
 			<description>Seek Slider</description>
 			<posx>120</posx>
@@ -266,8 +268,8 @@
 			<visible>[Window.IsActive(2005)]</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 		</control>
-<!-- End Seek Slider -->
-<!-- Start Progress Control for all Windows Except VideoFullScreen , MusicVisualisation and MyMusicPlaylist-->
+		<!-- End Seek Slider -->
+		<!-- Start Progress Control for all Windows Except VideoFullScreen , MusicVisualisation and MyMusicPlaylist-->
 		<control type="group">
 			<visible>![Window.IsActive(2005) | Window.IsActive(2006) | Window.IsActive(500)]</visible>
 			<control type="image">
@@ -276,7 +278,7 @@
 				<posy>2</posy>
 				<width>200</width>
 				<height>70</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 			</control>
 			<control type="label">
 				<description>Elapsed Time Label</description>
