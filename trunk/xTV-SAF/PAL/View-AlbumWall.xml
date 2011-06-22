@@ -1,7 +1,7 @@
 <includes>
 	<include name="AudioWallView">
 		<control type="panel" id="58">
-			<posx>80</posx>
+			<posx>85</posx>
 			<posy>105</posy>
 			<width>600</width>
 			<height>384</height>
@@ -29,7 +29,7 @@
 					<height>94</height>
 				    <aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<texture diffuse="mask-square.png" background="true">DefaultMusic.png</texture>
+					<texture diffuse="mask-squ.png" background="true">DefaultMusic.png</texture>
 					<info>ListItem.Icon</info>
 				</control>
 			</itemlayout>
@@ -39,7 +39,7 @@
 					<posy>1</posy>
 					<width>76</width>
 					<height>82</height>
-					<texture background="true" diffuse="mask-square.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<bordertexture border="9">hi-lite.png</bordertexture>
 					<bordersize>9</bordersize>
@@ -85,12 +85,12 @@
 			</control>
 			<!-- Artist & Album name-->
 			<control type="label">
-				<posx>70</posx>
+				<posx>15</posx>
 				<posy>516</posy>
-				<width>510</width>
+				<width>690</width>
 				<height>30</height>
 				<font>font20</font>
-				<align>left</align>
+				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<scroll>true</scroll>
@@ -100,12 +100,12 @@
 			</control>
 			<!-- Go Back -->
 			<control type="label">
-				<posx>70</posx>
+				<posx>15</posx>
 				<posy>516</posy>
-				<width>510</width>
+				<width>690</width>
 				<height>30</height>
 				<font>font20</font>
-				<align>left</align>
+				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<scroll>true</scroll>
@@ -113,31 +113,31 @@
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
-			<!-- Genre -->
-			<control type="label">
-				<posx>70</posx>
-				<posy>548</posy>
-				<width>510</width>
-				<height>30</height>
-				<font>font13</font>
-				<align>left</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<label>$INFO[ListItem.Genre]</label>
-				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-			</control>
 			<!-- Star Rating -->
 			<control type="image">
-				<posx>590</posx>
-				<posy>526</posy>
+				<posx>15</posx>
+				<posy>548</posy>
 				<width>100</width>
 				<height>20</height>
 				<info>ListItem.StarRating</info>
 				<colordiffuse>FlagDiffuse</colordiffuse>
 				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
+			</control>
+			<!-- Genre -->
+			<control type="label">
+				<posx>125</posx>
+				<posy>548</posy>
+				<width>470</width>
+				<height>30</height>
+				<font>font13</font>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
+				<label>$INFO[ListItem.Genre]</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 		</control>
 	</include>
