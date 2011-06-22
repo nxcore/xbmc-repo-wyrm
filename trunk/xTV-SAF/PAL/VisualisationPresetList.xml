@@ -13,7 +13,7 @@
 			<posx>-10</posx>
 			<posy>-10</posy>
 			<width>450</width>
-			<height>475</height>
+			<height>520</height>
 			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
 		</control>
 		<control type="label" id="3">
