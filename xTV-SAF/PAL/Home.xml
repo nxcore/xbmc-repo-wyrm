@@ -325,56 +325,28 @@
 					<thumb>$INFO[Skin.String(custom-playlist1icon)]</thumb>
 					<label>$INFO[Skin.String(custom-playlist1label)] </label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist1) + !SubString(Skin.String(custom-playlist1name),music)</visible>
+					<visible>Skin.HasSetting(custom-playlist1) + !IsEmpty(Skin.String(custom-playlist1name))+ !IsEmpty(Skin.String(custom-playlist1icon))+ !IsEmpty(Skin.String(custom-playlist1label))</visible>
 				</item>
 				<item>
 					<icon>$INFO[Skin.String(custom-playlist2icon)]</icon>
 					<thumb>$INFO[Skin.String(custom-playlist2icon)]</thumb>
 					<label>$INFO[Skin.String(custom-playlist2label)] </label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist2) + !SubString(Skin.String(custom-playlist2name),music)</visible>
+					<visible>Skin.HasSetting(custom-playlist2) + !IsEmpty(Skin.String(custom-playlist2name))+ !IsEmpty(Skin.String(custom-playlist2icon))+ !IsEmpty(Skin.String(custom-playlist2label))</visible>
 				</item>
 				<item>
 					<icon>$INFO[Skin.String(custom-playlist3icon)]</icon>
 					<thumb>$INFO[Skin.String(custom-playlist3icon)]</thumb>
 					<label>$INFO[Skin.String(custom-playlist3label)] </label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist3) + !SubString(Skin.String(custom-playlist3name),music)</visible>
+					<visible>Skin.HasSetting(custom-playlist3) + !IsEmpty(Skin.String(custom-playlist3name))+ !IsEmpty(Skin.String(custom-playlist3icon))+ !IsEmpty(Skin.String(custom-playlist3label))</visible>
 				</item>
 				<item>
 					<icon>$INFO[Skin.String(custom-playlist4icon)]</icon>
 					<thumb>$INFO[Skin.String(custom-playlist4icon)]</thumb>
 					<label>$INFO[Skin.String(custom-playlist4label)] </label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist4) + !SubString(Skin.String(custom-playlist4name),music)</visible>
-				</item>
-				<item>
-					<icon>$INFO[Skin.String(custom-playlist1icon)]</icon>
-					<thumb>$INFO[Skin.String(custom-playlist1icon)]</thumb>
-					<label>$INFO[Skin.String(custom-playlist1label)] </label>
-					<onclick>XBMC.ActivateWindow(MusicLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist1) + SubString(Skin.String(custom-playlist1name),music)</visible>
-				</item>
-				<item>
-					<icon>$INFO[Skin.String(custom-playlist2icon)]</icon>
-					<thumb>$INFO[Skin.String(custom-playlist2icon)]</thumb>
-					<label>$INFO[Skin.String(custom-playlist2label)] </label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist2) + SubString(Skin.String(custom-playlist2name),music)</visible>
-				</item>
-				<item>
-					<icon>$INFO[Skin.String(custom-playlist3icon)]</icon>
-					<thumb>$INFO[Skin.String(custom-playlist3icon)]</thumb>
-					<label>$INFO[Skin.String(custom-playlist3label)] </label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist3) + SubString(Skin.String(custom-playlist3name),music)</visible>
-				</item>
-				<item>
-					<icon>$INFO[Skin.String(custom-playlist4icon)]</icon>
-					<thumb>$INFO[Skin.String(custom-playlist4icon)]</thumb>
-					<label>$INFO[Skin.String(custom-playlist4label)] </label>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-playlist4) + SubString(Skin.String(custom-playlist4name),music)</visible>
+					<visible>Skin.HasSetting(custom-playlist4) + !IsEmpty(Skin.String(custom-playlist4name))+ !IsEmpty(Skin.String(custom-playlist4icon))+ !IsEmpty(Skin.String(custom-playlist4label))</visible>
 				</item>
 				<item>
 					<icon>icon-youtube.png</icon>
@@ -389,13 +361,6 @@
 					<label>31029</label>
 					<onclick>ActivateWindow(MyPrograms,,return)</onclick>
 					<visible>Skin.HasSetting(home-programs)</visible>
-				</item>
-				<item>
-					<icon>icon-scripts.png</icon>
-					<thumb>icon-scripts-blur1.png</thumb>
-					<label>31034</label>
-					<onclick>ActivateWindow(Scripts,,return)</onclick>
-					<visible>System.Platform.xbox + Skin.HasSetting(home-scripts)</visible>
 				</item>
 				<item>
 					<icon>icon-photo.png</icon>
