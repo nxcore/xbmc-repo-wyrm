@@ -9,11 +9,11 @@
 				<posy>110</posy>
 				<width>720</width>
 				<height>360</height>
-				<pagecontrol>26</pagecontrol>
+				<pagecontrol>29</pagecontrol>
 				<onup>59</onup>
 				<ondown>59</ondown>
 				<onleft>2</onleft>
-				<onright>26</onright>
+				<onright>29</onright>
 				<visible>Window.IsActive(VideoLibrary)</visible>
 				<itemlayout height="80">
 					<control type="image">
@@ -223,7 +223,7 @@
 				<visible>Control.IsVisible(59)</visible>
 				<include>SortLetterNotification</include>
 				<!-- Scroll Bar -->
-				<control type="scrollbar" id="26">
+				<control type="scrollbar" id="29">
 					<posx>700</posx>
 					<posy>110</posy>
 					<width>14</width>
@@ -233,8 +233,8 @@
 					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>2</onleft>
-					<onright>59</onright>
+					<onleft>59</onleft>
+					<onright>2</onright>
 					<include>list-fade</include>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
