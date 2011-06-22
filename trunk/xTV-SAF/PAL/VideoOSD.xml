@@ -18,8 +18,8 @@
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-<!-- Player buttons -->
-			
+		
+		<!-- Player buttons -->
 		<control type="grouplist" id="999">
 			<description>Group OSD Button</description>
 			<posx>685r</posx>
@@ -160,6 +160,6 @@
 				<onclick>XBMC.ActivateWindow(123)</onclick>
 			</control>
 		</control>
-<!-- End Player buttons -->
+		<!-- End Player buttons -->
 	</controls>
 </window>
