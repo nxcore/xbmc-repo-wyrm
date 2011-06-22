@@ -15,7 +15,7 @@
 				<posx>-10</posx>
 				<posy>-10</posy>
 				<width>426</width>
-				<height>475</height>
+				<height>490</height>
 				<texture diffuse="mask-square.png" border="8">button-menu-background.png</texture>
 				<colordiffuse>UnFocusedPosters</colordiffuse>
 			</control>
@@ -50,7 +50,7 @@
 				<posx>-1</posx>
 				<posy>40</posy>
 				<width>408</width>
-				<height>395</height>
+				<height>410</height>
 				<itemgap>0</itemgap>
 				<pagecontrol>-</pagecontrol>
 				<onleft>5</onleft>
