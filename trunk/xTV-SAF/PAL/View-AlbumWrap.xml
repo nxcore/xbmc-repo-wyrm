@@ -34,7 +34,7 @@
 					<texture>case-cd.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>keep</aspectratio>
-					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
+					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="275" width="275">
@@ -54,7 +54,7 @@
 					<width>220</width>
 					<texture>case-cd.png</texture>
 					<aspectratio>stretch</aspectratio>
-					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
+					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 			</focusedlayout>
 		</control>

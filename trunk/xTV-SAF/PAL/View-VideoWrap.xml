@@ -5,7 +5,7 @@
 			<posx>-45</posx>
 			<posy>150</posy>
 			<width>1000</width>
-			<height>400</height>
+			<height>375</height>
 			<onleft>54</onleft>
 			<onright>54</onright>
 			<onup>2</onup>
@@ -137,12 +137,14 @@
 				<colordiffuse>StarDiffuse</colordiffuse>
 				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- MPAA Rating -->
 			<control type="group">
 				<posx>175</posx>
 				<posy>300</posy>
 				<include>mpaa-ratings</include>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
@@ -158,7 +160,7 @@
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Title -->
 			<control type="label">
@@ -174,7 +176,7 @@
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Genre -->
 			<control type="label">
@@ -190,6 +192,7 @@
 				<scroll>true</scroll>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 		</control>
 	</include>
