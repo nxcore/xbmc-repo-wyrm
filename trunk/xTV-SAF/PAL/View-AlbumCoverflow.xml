@@ -1,4 +1,4 @@
-<includes>
+ <includes>
 	<include name="AlbumCoverflow">
 		<control type="wraplist" id="57">
 			<viewtype label="31946">Wraplist</viewtype>
@@ -32,7 +32,7 @@
 				<width>260</width>
 				<height>260</height>
 				<info>Container.ListItem(-5).Icon</info>
-				<texture diffuse="mask-square.png">-</texture>
+				<texture diffuse="mask-squ.png">-</texture>
 				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
@@ -630,7 +630,7 @@
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + [IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
+				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
