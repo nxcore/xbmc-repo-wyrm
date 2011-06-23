@@ -185,6 +185,8 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font18</font>
+			<textcolor>warning-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
 			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
 		</control>
@@ -971,7 +973,7 @@
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
-		<visible allowhiddenfocus="true">![Window.Next(Home) | Control.HasFocus(1) | Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) |  Control.HasFocus(54) | Control.HasFocus(57) | Control.HasFocus(58) | Control.HasFocus(59) | Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(100) | Control.HasFocus(1254) | Control.HasFocus(1257) | Control.HasFocus(1258) | Control.HasFocus(1354) | Control.HasFocus(1357) | Control.HasFocus(1358)]</visible>
+		<visible allowhiddenfocus="true">![Window.Next(Home) | Control.HasFocus(1) | Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) |  Control.HasFocus(54) | Control.HasFocus(57) | Control.HasFocus(58) | Control.HasFocus(59) | Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(100) | Control.HasFocus(1157) | Control.HasFocus(1254) | Control.HasFocus(1257) | Control.HasFocus(1258) | Control.HasFocus(1354) | Control.HasFocus(1357) | Control.HasFocus(1358)]</visible>
 	</include>
 	<!-- End Visibility Includes -->
 	<!-- Start Autoscroll Includes -->
