@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.xtv-saf"
-  version="1.1.0"
-  name="xTV-SAF"
-  provider-name="Wyrm">
+	id="skin.xtv-saf"
+	version="1.1.1"
+	name="xTV-SAF"
+	provider-name="Wyrm">
 	<requires>
 		<import addon="xbmc.gui" version="2.11"/>
 		<import addon="script.logo-downloader" version="2.0.0"/>
 		<import addon="script.tvtunes" version="0.9.0"/>
 	</requires>
-  <extension
-    point="xbmc.gui.skin"
-    defaultresolution="PAL"
-    defaultresolutionwide="PAL16x9"
-    defaultthemename="Textures.xbt"
-    effectslowdown="1.00"
-    debugging="false"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>xTV-SAF, a family friendly remake of a classic skin</summary>
-    <description>xTV-SAF is a fork of xTV to include the latest xbmc features in a Spouse friendly manner.</description>
-    <disclaimer></disclaimer>
-    <platform>all</platform>
-  </extension>
+	<extension
+		point="xbmc.gui.skin"
+		defaultresolution="PAL"
+		defaultresolutionwide="PAL16x9"
+		defaultthemename="Textures.xbt"
+		effectslowdown="1.00"
+		debugging="true"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>xTV-SAF, a family friendly remake of a classic skin</summary>
+		<description>xTV-SAF is a fork of xTV to include the latest xbmc features in a Spouse friendly manner.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>

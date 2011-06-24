@@ -1,4 +1,4 @@
-<includes>
+ <includes>
 	<include name="AlbumCoverflow">
 		<control type="wraplist" id="57">
 			<viewtype label="31946">Wraplist</viewtype>
@@ -630,7 +630,7 @@
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
-				<visible>Skin.HasSetting(sbar) + [IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
+				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
