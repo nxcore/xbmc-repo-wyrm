@@ -1,91 +1,99 @@
 <includes>
 	<include name="BannerView">
-		<control type="group" id="500">
-			<defaultcontrol always="true">59</defaultcontrol>
-			<visible>Control.IsVisible(59)</visible>
-			<control type="list" id="59">
-				<viewtype label="31947">Banner List</viewtype>
-				<posx>0</posx>
-				<posy>110</posy>
-				<width>720</width>
-				<height>400</height>
-				<pagecontrol>29</pagecontrol>
-				<onup>59</onup>
-				<ondown>59</ondown>
-				<onleft>2</onleft>
-				<onright>29</onright>
-				<visible>Window.IsActive(VideoLibrary)</visible>
-				<itemlayout height="80">
+		<control type="list" id="59">
+			<visible>Container.Content(TVShows)</visible>
+			<viewtype label="31947">Banner List</viewtype>
+			<posx>0</posx>
+			<posy>110</posy>
+			<width>720</width>
+			<height>400</height>
+			<pagecontrol>29</pagecontrol>
+			<onup>59</onup>
+			<ondown>59</ondown>
+			<onleft>2</onleft>
+			<onright>29</onright>
+			<itemlayout height="80">
+				<control type="image">
+					<description>Cover</description>
+					<posx>365</posx>
+					<posy>5</posy>
+					<width>260</width>
+					<height>75</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>365</posx>
+					<posy>5</posy>
+					<width>260</width>
+					<height>75</height>
+					<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				</control>
+				<control type="image">
+					<description>Go Back Image</description>
+					<posx>365</posx>
+					<posy>5</posy>
+					<width>260</width>
+					<height>75</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="80">
+				<control type="group">
+					<posx>365</posx>
+					<posy>5</posy>
+					<width>260</width>
+					<height>80</height>
+					<!--<animation effect="zoom" start="90" end="120" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>-->
 					<control type="image">
 						<description>Cover</description>
-						<posx>365</posx>
-						<posy>5</posy>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>260</width>
-						<height>75</height>
+						<height>80</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<bordertexture border="9">hi-lite.png</bordertexture>
+						<bordersize>9</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="600" tween="back" easing="out" />
+						</animation>
 						<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
 					</control>
 					<control type="image">
-						<posx>365</posx>
-						<posy>5</posy>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>260</width>
-						<height>75</height>
+						<height>80</height>
 						<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="115" center="auto" time="600" tween="back" easing="out" />
+						</animation>
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					</control>
 					<control type="image">
-						<description>Go Back Image</description>
-						<posx>365</posx>
-						<posy>5</posy>
-						<width>260</width>
-						<height>75</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="80">
-					<control type="group">
-						<posx>365</posx>
-						<posy>5</posy>
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>260</width>
 						<height>80</height>
-						<animation effect="zoom" start="90" end="105" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>
-						<control type="image">
-							<description>Cover</description>
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>260</width>
-							<height>80</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<bordertexture border="9">hi-lite.png</bordertexture>
-							<bordersize>9</bordersize>
-							<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>260</width>
-							<height>80</height>
-							<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
-							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>260</width>
-							<height>80</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-						</control>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="115" center="auto" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-				</focusedlayout>
-			</control>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(59)</visible>
 			<control type="label">
 				<description>Go Back</description>
 				<posx>40</posx>
@@ -220,7 +228,6 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(59)</visible>
 				<include>SortLetterNotification</include>
 				<!-- Scroll Bar -->
 				<control type="scrollbar" id="29">
