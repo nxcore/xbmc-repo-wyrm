@@ -114,17 +114,17 @@
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>527</posx>
-			<posy>115</posy>
-			<height>17</height>
-			<width>17</width>
+			<posy>110</posy>
+			<height>22</height>
+			<width>22</width>
 			<texture>scroll-up.png</texture>
 			<visible>Container(5).HasPrevious</visible>
 		</control>
 		<control type="image">
 			<posx>527</posx>
 			<posy>485</posy>
-			<height>17</height>
-			<width>17</width>
+			<height>22</height>
+			<width>22</width>
 			<texture>scroll-down.png</texture>
 			<visible>Container(5).HasNext</visible>
 		</control>

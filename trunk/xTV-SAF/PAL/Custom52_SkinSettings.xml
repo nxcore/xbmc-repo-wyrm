@@ -584,17 +584,17 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="310">
+					<control type="button" id="311">
 						<description>YouTube script location</description>
 						<font>font13</font>
-						<width>490</width>
+						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
 						<label>$LOCALIZE[31850]</label>
 						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(youtube-scriptpath,.py)</onclick>
+						<onclick>Skin.SetFile(youtube-scriptpath,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -631,6 +631,21 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
+					<!--<control type="radiobutton" id="315">
+						<description>Global Search On Home toggle</description>
+						<font>font13</font>
+						<width>500</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31895</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-globalsearch)</onclick>
+						<selected>Skin.HasSetting(home-globalsearch)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<radioposx>460</radioposx>
+					</control>-->
 					<control type="radiobutton" id="315">
 						<description>Play Disc On Home toggle</description>
 						<font>font13</font>
@@ -1488,7 +1503,7 @@
 						<label> $LOCALIZE[31850]</label>
 						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(osd-subscriptpath,.py)</onclick>
+						<onclick>Skin.SetFile(osd-subscriptpath,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1512,23 +1527,6 @@
 						<radioposx>460</radioposx>
 					</control>
 					<control type="button" id="715">
-						<description>TVTunes script location</description>
-						<font>font13</font>
-						<width>500</width>
-						<height>45</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(tv_theme)</enable>
-						<label>31850</label>
-						<label2>$INFO[Skin.String(tv_themelocation)] </label2>
-						<onclick>Skin.SetFile(tv_themelocation,.py)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>20</textoffsetx>
-					</control>
-					<!--<control type="button" id="715">
 						<description>TV Logo Downloader Script</description>
 						<font>font13</font>
 						<width>500</width>
@@ -1541,7 +1539,7 @@
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
-					</control>-->
+					</control>
 					<control type="radiobutton" id="716">
 						<description>Custom script 1 toggle</description>
 						<font>font13</font>
@@ -1569,7 +1567,7 @@
 						<enable>Skin.HasSetting(custom-script1)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script1name)] </label2>
-						<onclick>Skin.SetFile(custom-script1name,.py)</onclick>
+						<onclick>XBMC.Skin.SetFile(custom-script1name,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1621,7 +1619,7 @@
 						<enable>Skin.HasSetting(custom-script2)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script2name)] </label2>
-						<onclick>Skin.SetFile(custom-script2name,.py)</onclick>
+						<onclick>XBMC.Skin.SetFile(custom-script2name,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1673,7 +1671,7 @@
 						<enable>Skin.HasSetting(custom-script3)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script3name)] </label2>
-						<onclick>Skin.SetFile(custom-script3name,.py)</onclick>
+						<onclick>XBMC.Skin.SetFile(custom-script3name,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1725,7 +1723,7 @@
 						<enable>Skin.HasSetting(custom-script4)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script4name)] </label2>
-						<onclick>Skin.SetFile(custom-script4name,.py)</onclick>
+						<onclick>XBMC.Skin.SetFile(custom-script4name,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1777,7 +1775,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist1name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist1name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist1name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1843,7 +1841,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist2name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist2name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist2name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1909,7 +1907,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist3name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist3name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist3name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1975,7 +1973,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist4name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist4name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist4name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
