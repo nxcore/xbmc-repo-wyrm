@@ -477,7 +477,7 @@
 				<posx>10</posx>
 				<posy>374</posy>
 				<width>365</width>
-				<height>160</height>
+				<height>162</height>
 				<font>font12</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -491,7 +491,7 @@
 				<posx>10</posx>
 				<posy>374</posy>
 				<width>365</width>
-				<height>160</height>
+				<height>162</height>
 				<font>font12</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>

@@ -5,7 +5,7 @@
 			<posx>-45</posx>
 			<posy>150</posy>
 			<width>1000</width>
-			<height>400</height>
+			<height>375</height>
 			<onleft>54</onleft>
 			<onright>54</onright>
 			<onup>2</onup>
@@ -13,7 +13,7 @@
 			<include>list-fade</include>
 			<focusposition>1</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>5</preloaditems>
+			<preloaditems>13</preloaditems>
 			<scrolltime>0</scrolltime>
 			<pagecontrol>24</pagecontrol>
 			<itemlayout height="120" width="64">
@@ -65,6 +65,7 @@
 					<width>170</width>
 					<texture diffuse="mask-rect.png">hi-lite.png</texture>
 					<aspectratio>stretch</aspectratio>
+					<colordiffuse>IconGlow</colordiffuse>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
@@ -129,19 +130,21 @@
 			<!-- Star Rating -->
 			<control type="image">
 				<posx>175</posx>
-				<posy>270</posy>
+				<posy>275</posy>
 				<width>100</width>
 				<height>20</height>
 				<info>ListItem.StarRating</info>
 				<colordiffuse>StarDiffuse</colordiffuse>
 				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- MPAA Rating -->
 			<control type="group">
 				<posx>175</posx>
 				<posy>300</posy>
 				<include>mpaa-ratings</include>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
@@ -157,28 +160,9 @@
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Title -->
-			<control type="image" id="37016">
-				<posx>175</posx>
-				<posy>350</posy>
-				<width>134</width>
-				<height>52</height>
-				<texture>$INFO[ListItem.path]logo.png</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
-				<visible>container.content(tvshows)</visible>
-			</control>
-			<control type="image" id="39016">
-				<posx>175</posx>
-				<posy>350</posy>
-				<width>134</width>
-				<height>52</height>
-				<texture>$INFO[ListItem.path]../logo.png</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
-				<visible>container.content(tvshows)</visible>
-			</control>
 			<control type="label">
 				<posx>175</posx>
 				<posy>350</posy>
@@ -189,17 +173,15 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<scroll>true</scroll>
-				<info>ListItem.Title</info>
+				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				<visible>[IsEmpty(Control.GetLabel(37016)) + IsEmpty(Control.GetLabel(39016))] | !container.content(tvshows)</visible>
-				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
-				<animation effect="fade" time="200">WindowClose</animation>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Genre -->
 			<control type="label">
 				<posx>175</posx>
-				<posy>385</posy>
+				<posy>390</posy>
 				<width>525</width>
 				<height>30</height>
 				<font>font13</font>
@@ -210,6 +192,7 @@
 				<scroll>true</scroll>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
+				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 		</control>
 	</include>

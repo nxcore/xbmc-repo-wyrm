@@ -28,7 +28,7 @@
 			<texture>default-button.png</texture>
 			<colordiffuse>solid-background</colordiffuse>
 		</control>
-<!-- Media Icon -->
+		<!-- Media Icon -->
 		<control type="image">
 			<description>Video cover image</description>
 			<posx>75</posx>
@@ -36,6 +36,7 @@
 			<width>120</width>
 			<height>120</height>
 			<align>left</align>
+			<aligny>bottom</aligny>
 			<fadetime>300</fadetime>
 			<info>VideoPlayer.Cover</info>
 			<aspectratio>keep</aspectratio>
@@ -47,14 +48,15 @@
 			<width>120</width>
 			<height>120</height>
 			<align>left</align>
+			<aligny>bottom</aligny>
 			<fadetime>300</fadetime>
 			<info>MusicPlayer.Cover</info>
 			<aspectratio>keep</aspectratio>
 			<visible>!Window.IsActive(visualisation)</visible>
 		</control>
-<!-- End of Media Icon -->
-<!-- Media Info -->
-<!-- Video -->
+		<!-- End of Media Icon -->
+		<!-- Media Info -->
+		<!-- Video -->
 		<control type="label">
 			<description>Now playing</description>
 			<posx>200</posx>
@@ -89,7 +91,7 @@
 			<scroll>true</scroll>
 			<visible>Player.HasVideo</visible>
 		</control>
-<!-- Music -->
+		<!-- Music -->
 		<control type="label">
 			<description>Album Artist</description>
 			<posx>200</posx>
@@ -131,8 +133,8 @@
 			<height>16</height>
 			<visible>Player.HasAudio</visible>
 		</control>
-<!-- End of Media Info-->
-<!-- Player buttons -->
+		<!-- End of Media Info-->
+		<!-- Player buttons -->
 		<control type="grouplist" id="999">
 			<description>Group OSD Button</description>
 			<posx>200</posx>
@@ -301,6 +303,6 @@
 				<visible>Player.HasAudio</visible>
 			</control>
 		</control>
-<!-- End Player buttons -->
+		<!-- End Player buttons -->
 	</controls>
 </window>

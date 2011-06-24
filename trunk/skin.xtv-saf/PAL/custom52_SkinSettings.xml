@@ -1775,7 +1775,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist1name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist1name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist1name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1841,7 +1841,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist2name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist2name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist2name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1907,7 +1907,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist3name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist3name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist3name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -1973,7 +1973,7 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist4name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist4name,.xsp,special://skin/extras/playlists)</onclick>
+						<onclick>Skin.SetFile(custom-playlist4name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>

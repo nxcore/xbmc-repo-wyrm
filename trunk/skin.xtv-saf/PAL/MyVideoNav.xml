@@ -1,6 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<views>50,51,54,57,58,59</views>
 	<controls>
 		<control type="group" id="9999">
 			<control type="button">
@@ -106,8 +107,8 @@
 		
 		<include>memory-low</include>
 		
-		<include>ListView-Icon</include>
 		<include>ListView</include>
+		<include>ListView-Icon</include>
 		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
 		<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
 		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
@@ -115,7 +116,7 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
 		<control type="group">
-			<visible allowhiddenfocus="true">!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) |  Control.HasFocus(54) | Control.HasFocus(57) | Control.HasFocus(58) | Control.HasFocus(59)]</visible>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(view-as-lock)</visible>
 			<animation effect="fade" start="0" time="300">Visible</animation>
 			<control type="group">
 				<control type="image">
