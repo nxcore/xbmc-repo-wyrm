@@ -15,7 +15,7 @@
 		defaultresolutionwide="PAL16x9"
 		defaultthemename="Textures.xbt"
 		effectslowdown="1.00"
-		debugging="true"/>
+		debugging="false"/>
 	<extension point="xbmc.addon.metadata">
 		<summary>xTV-SAF, a family friendly remake of a classic skin</summary>
 		<description>xTV-SAF is a fork of xTV to include the latest xbmc features in a Spouse friendly manner.</description>
