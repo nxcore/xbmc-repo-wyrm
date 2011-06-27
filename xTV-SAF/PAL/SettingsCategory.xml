@@ -43,9 +43,9 @@
 		</control>
 		<control type="grouplist" id="5">
 			<description>control area</description>
-			<posx>30</posx>
+			<posx>10</posx>
 			<posy>90</posy>
-			<width>500</width>
+			<width>530</width>
 			<height>432</height>
 			<itemgap>-2</itemgap>
 			<onleft>3</onleft>
@@ -55,10 +55,10 @@
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
-			<posx>530</posx>
+			<posx>540</posx>
 			<posy>150</posy>
 			<height>45</height>
-			<font>font13</font>
+			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
@@ -66,11 +66,11 @@
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
-			<posx>530</posx>
+			<posx>540</posx>
 			<posy>150</posy>
 			<width>225</width>
 			<height>45</height>
-			<font>font13</font>
+			<font>font12</font>
 			<texturenofocus>-</texturenofocus>
 			<textoffsetx>10</textoffsetx>
 			<textoffsetx2>20</textoffsetx2>
@@ -80,7 +80,7 @@
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
-			<posx>530</posx>
+			<posx>540</posx>
 			<posy>150</posy>
 			<width>300</width>
 			<height>45</height>
@@ -90,7 +90,7 @@
 			<texturedown>scroll-down.png</texturedown>
 			<textureupfocus>scroll-up-focus.png</textureupfocus>
 			<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-			<font>font13</font>
+			<font>font12</font>
 			<disabledcolor>disabled-text</disabledcolor>
 			<textoffsetx>10</textoffsetx>
 			<aligny>center</aligny>
@@ -104,7 +104,7 @@
 			<width>150</width>
 			<height>45</height>
 			<label>224</label>
-			<font>font13</font>
+			<font>font12</font>
 			<align>left</align>
 			<textoffsetx>10</textoffsetx>
 			<texturefocus>default-button.png</texturefocus>
