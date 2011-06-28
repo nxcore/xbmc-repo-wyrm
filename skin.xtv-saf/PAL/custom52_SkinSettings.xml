@@ -34,7 +34,7 @@
 			<include>list-fade</include>
 			<control type="button" id="981">
 				<description>Startup Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>90</posy>
 				<width>160</width>
@@ -52,7 +52,7 @@
 			</control>
 			<control type="button" id="982">
 				<description>General Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>133</posy>
 				<width>160</width>
@@ -70,7 +70,7 @@
 			</control>
 			<control type="button" id="983">
 				<description>Home Window Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>176</posy>
 				<width>160</width>
@@ -88,7 +88,7 @@
 			</control>
 			<control type="button" id="984">
 				<description>Background Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>219</posy>
 				<width>160</width>
@@ -106,7 +106,7 @@
 			</control>
 			<control type="button" id="985">
 				<description>Media Sources Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>262</posy>
 				<width>160</width>
@@ -124,7 +124,7 @@
 			</control>
 			<control type="button" id="986">
 				<description>Views Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>305</posy>
 				<width>160</width>
@@ -142,7 +142,7 @@
 			</control>
 			<control type="button" id="987">
 				<description>Custom Settings Button</description>
-				<font>font13</font>
+				<font>font12</font>
 				<posx>550</posx>
 				<posy>348</posy>
 				<width>160</width>
@@ -206,7 +206,7 @@
 					<include>list-fade</include>
 					<control type="radiobutton" id="110">
 						<description>Intro Video Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -222,7 +222,7 @@
 					</control>
 					<control type="button" id="111">
 						<description>Intro Video Location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -238,7 +238,7 @@
 					</control>
 					<control type="radiobutton" id="112">
 						<description>Startup Playlist toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -254,7 +254,7 @@
 					</control>
 					<control type="button" id="113">
 						<description>Choose Playlist button</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -298,7 +298,7 @@
 					<pagecontrol>23</pagecontrol>
 					<control type="radiobutton" id="201">
 						<description>Scrollbar Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -312,7 +312,7 @@
 					</control>
 					<control type="radiobutton" id="202">
 						<description>Media Overlay Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -326,7 +326,7 @@
 					</control>
 					<control type="radiobutton" id="203">
 						<description>Now Playing Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -340,7 +340,7 @@
 					</control>
 					<control type="radiobutton" id="204">
 						<description>Watched/Unwatched Overlay Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -354,7 +354,7 @@
 					</control>
 					<control type="radiobutton" id="205">
 						<description>Use Now Playing Screen Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -368,7 +368,7 @@
 					</control>
 					<control type="radiobutton" id="206">
 						<description>Icon Tilt Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -382,7 +382,7 @@
 					</control>
 					<control type="radiobutton" id="207">
 						<description>Video Wall Tilt Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -396,7 +396,7 @@
 					</control>
 					<control type="radiobutton" id="208">
 						<description>Auto Scroll Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -410,7 +410,7 @@
 					</control>
 					<control type="radiobutton" id="209">
 						<description>Time On Home Screen toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -425,7 +425,7 @@
 					</control>
 					<control type="radiobutton" id="210">
 						<description>Current Weather On Home Screen toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -440,7 +440,7 @@
 					</control>
 					<control type="radiobutton" id="211">
 						<description>Animated Weather Icons toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -474,14 +474,14 @@
 					<width>500</width>
 					<height>432</height>
 					<itemgap>-2</itemgap>
-					<onup>300</onup>
-					<ondown>300</ondown>
+					<onup>301</onup>
+					<ondown>301</ondown>
 					<onleft>23</onleft>
 					<onright>999</onright>
 					<pagecontrol>23</pagecontrol>
 					<control type="radiobutton" id="302">
 						<description>Movies On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -496,7 +496,7 @@
 					</control>
 					<control type="radiobutton" id="303">
 						<description>TV Shows On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -511,7 +511,7 @@
 					</control>
 					<control type="radiobutton" id="304">
 						<description>Music Videos On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -526,7 +526,7 @@
 					</control>
 					<control type="radiobutton" id="305">
 						<description>Music On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -541,7 +541,7 @@
 					</control>
 					<control type="radiobutton" id="306">
 						<description>Programs On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -556,7 +556,7 @@
 					</control>
 					<control type="radiobutton" id="308">
 						<description>Photos On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -571,7 +571,7 @@
 					</control>
 					<control type="radiobutton" id="309">
 						<description>Youtube On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -586,7 +586,7 @@
 					</control>
 					<control type="button" id="311">
 						<description>YouTube script location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -603,7 +603,7 @@
 					</control>
 					<control type="radiobutton" id="312">
 						<description>Weather On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -618,7 +618,7 @@
 					</control>
 					<control type="radiobutton" id="313">
 						<description>Favorites On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -633,7 +633,7 @@
 					</control>
 					<!--<control type="radiobutton" id="315">
 						<description>Global Search On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -648,7 +648,7 @@
 					</control>-->
 					<control type="radiobutton" id="315">
 						<description>Play Disc On Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -663,7 +663,7 @@
 					</control>
 					<control type="radiobutton" id="316">
 						<description>Shutdown From Home toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -697,14 +697,14 @@
 					<width>500</width>
 					<height>432</height>
 					<itemgap>-2</itemgap>
-					<onup>400</onup>
-					<ondown>400</ondown>
+					<onup>401</onup>
+					<ondown>401</ondown>
 					<onleft>23</onleft>
 					<onright>999</onright>
 					<pagecontrol>23</pagecontrol>
 					<control type="button" id="402">
 						<description>Custom Background Button</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -717,7 +717,7 @@
 					</control>
 					<control type="button" id="403">
 						<description>Reset Custom Background Button</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -730,7 +730,7 @@
 					</control>
 					<control type="radiobutton" id="404">
 						<description>Media In Background Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -744,7 +744,7 @@
 					</control>
 					<control type="radiobutton" id="405">
 						<description>Background Fanart Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -758,7 +758,7 @@
 					</control>
 					<control type="radiobutton" id="406">
 						<description>Fanart as Thumb Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -772,7 +772,7 @@
 					</control>
 					<control type="radiobutton" id="407">
 						<description>Use DVD case Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -786,7 +786,7 @@
 					</control>
 					<control type="radiobutton" id="408">
 						<description>Use CD case Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -826,7 +826,7 @@
 					<pagecontrol>23</pagecontrol>
 					<control type="radiobutton" id="511">
 						<description>Movies Library link toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -845,7 +845,7 @@
 						<height>45</height>
 						<label>31680</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -858,7 +858,7 @@
 					</control>
 					<control type="radiobutton" id="513">
 						<description>Set Default Movie Source</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -874,7 +874,7 @@
 					</control>
 					<control type="button" id="514">
 						<description>Default Movie Source selected</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -891,7 +891,7 @@
 					</control>
 					<control type="radiobutton" id="515">
 						<description>TV Library link toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -910,7 +910,7 @@
 						<height>45</height>
 						<label>31681</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -923,7 +923,7 @@
 					</control>
 					<control type="radiobutton" id="517">
 						<description>Set Default TV Source</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -940,7 +940,7 @@
 					</control>
 					<control type="button" id="518">
 						<description>Default TV Source</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -957,7 +957,7 @@
 					</control>
 					<control type="radiobutton" id="519">
 						<description>Music Video Library link toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -976,7 +976,7 @@
 						<height>45</height>
 						<label>31682</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -989,7 +989,7 @@
 					</control>
 					<control type="radiobutton" id="521">
 						<description>Set Default Music Video Source</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1006,7 +1006,7 @@
 					</control>
 					<control type="button" id="522">
 						<description>Default Music Video Source</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1023,7 +1023,7 @@
 					</control>
 					<control type="radiobutton" id="523">
 						<description>Music Library link toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1042,7 +1042,7 @@
 						<height>45</height>
 						<label>31683</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -1081,7 +1081,7 @@
 					<pagecontrol>23</pagecontrol>
 					<control type="radiobutton" id="611">
 						<description>View As Panel Lock Toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1101,7 +1101,7 @@
 						<width>500</width>
 						<height>45</height>
 						<label>[B][I]Video Views[/I][/B]</label>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
@@ -1109,7 +1109,7 @@
 					</control>
 					<control type="radiobutton" id="613">
 						<description>Video List2 view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1126,7 +1126,7 @@
 					</control>
 					<control type="radiobutton" id="614">
 						<description>Video Banner view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1143,7 +1143,7 @@
 					</control>
 					<control type="radiobutton" id="615">
 						<description>Video Wrap view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1160,7 +1160,7 @@
 					</control>
 					<control type="radiobutton" id="616">
 						<description>Video Wall view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1177,7 +1177,7 @@
 					</control>
 					<control type="radiobutton" id="617">
 						<description>Video Coverflow view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1198,7 +1198,7 @@
 						<width>500</width>
 						<height>45</height>
 						<label>[B][I]Music Views[/I][/B]</label>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
@@ -1206,7 +1206,7 @@
 					</control>
 					<control type="radiobutton" id="619">
 						<description>Music List2 view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1223,7 +1223,7 @@
 					</control>
 					<control type="radiobutton" id="620">
 						<description>Music Wrap view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1240,7 +1240,7 @@
 					</control>
 					<control type="radiobutton" id="621">
 						<description>Music Wall view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1257,7 +1257,7 @@
 					</control>
 					<control type="radiobutton" id="622">
 						<description>Music Coverflow view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1278,7 +1278,7 @@
 						<width>500</width>
 						<height>45</height>
 						<label>[B][I]Photo Views[/I][/B]</label>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
@@ -1286,7 +1286,7 @@
 					</control>
 					<control type="radiobutton" id="624">
 						<description>Photo List2 view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1303,7 +1303,7 @@
 					</control>
 					<control type="radiobutton" id="625">
 						<description>Photo Icons view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1320,7 +1320,7 @@
 					</control>
 					<control type="radiobutton" id="626">
 						<description>Photo Wrap view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1337,7 +1337,7 @@
 					</control>
 					<control type="radiobutton" id="627">
 						<description>Photo Wall view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1358,7 +1358,7 @@
 						<width>500</width>
 						<height>45</height>
 						<label>[B][I]Program/Script Views[/I][/B]</label>
-						<font>font13</font>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
@@ -1366,7 +1366,7 @@
 					</control>
 					<control type="radiobutton" id="629">
 						<description>Program/Scripts List2 view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1383,7 +1383,7 @@
 					</control>
 					<control type="radiobutton" id="630">
 						<description>Program/Scripts Icons view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1400,7 +1400,7 @@
 					</control>
 					<control type="radiobutton" id="631">
 						<description>Program/Scripts Wrap view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1417,7 +1417,7 @@
 					</control>
 					<control type="radiobutton" id="632">
 						<description>Program/Scripts Wall view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1434,7 +1434,7 @@
 					</control>
 					<control type="radiobutton" id="633">
 						<description>Program/Scripts Coverflow view toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1477,7 +1477,7 @@
 					<pagecontrol>23</pagecontrol>
 					<control type="radiobutton" id="711">
 						<description>Subtitles in OSD toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1493,7 +1493,7 @@
 					</control>
 					<control type="button" id="713">
 						<description>Subtile script location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1512,7 +1512,7 @@
 					</control>
 					<control type="radiobutton" id="714">
 						<description>Use TV Tunes</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1528,7 +1528,7 @@
 					</control>
 					<control type="button" id="715">
 						<description>TV Logo Downloader Script</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1542,7 +1542,7 @@
 					</control>
 					<control type="radiobutton" id="716">
 						<description>Custom script 1 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1558,7 +1558,7 @@
 					</control>
 					<control type="button" id="717">
 						<description>Custom script 1 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1576,7 +1576,7 @@
 					</control>
 					<control type="button" id="718">
 						<description>Custom script 1 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1594,7 +1594,7 @@
 					</control>
 					<control type="radiobutton" id="719">
 						<description>Custom script 2 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1610,7 +1610,7 @@
 					</control>
 					<control type="button" id="720">
 						<description>Custom script 2 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1628,7 +1628,7 @@
 					</control>
 					<control type="button" id="721">
 						<description>Custom script 2 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1646,7 +1646,7 @@
 					</control>
 					<control type="radiobutton" id="722">
 						<description>Custom script 3 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1662,7 +1662,7 @@
 					</control>
 					<control type="button" id="723">
 						<description>Custom script 3 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1680,7 +1680,7 @@
 					</control>
 					<control type="button" id="724">
 						<description>Custom script 3 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1698,7 +1698,7 @@
 					</control>
 					<control type="radiobutton" id="725">
 						<description>Custom script 4 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1714,7 +1714,7 @@
 					</control>
 					<control type="button" id="726">
 						<description>Custom script 4 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1732,7 +1732,7 @@
 					</control>
 					<control type="button" id="727">
 						<description>Custom script 4 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1748,9 +1748,22 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-script4)</visible>
 					</control>
-					<control type="radiobutton" id="728">
+					<control type="label" id="728">
+						<description>Video Playlists</description>
+						<width>500</width>
+						<height>45</height>
+						<font>font12</font>
+						<textcolor>listselectedtext</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<label>[B]$LOCALIZE[20012][/B]</label>
+						<scroll>true</scroll>
+					</control>
+					<control type="radiobutton" id="729">
 						<description>Custom Playlist1 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1764,9 +1777,9 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="729">
+					<control type="button" id="730">
 						<description>Custom playlist1 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1775,16 +1788,16 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist1name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist1name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
+						<onclick>Skin.SetFile(custom-playlist1name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist1)</visible>
 					</control>
-					<control type="button" id="730">
+					<control type="button" id="731">
 						<description>Custom playlist1 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1798,9 +1811,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist1)</visible>
 					</control>
-					<control type="button" id="731">
+					<control type="button" id="732">
 						<description>Custom playlist1 icon</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1814,9 +1827,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="732">
+					<control type="radiobutton" id="733">
 						<description>Custom Playlist2 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1830,9 +1843,9 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="733">
+					<control type="button" id="734">
 						<description>Custom playlist2 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1841,16 +1854,16 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist2name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist2name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
+						<onclick>Skin.SetFile(custom-playlist2name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist2)</visible>
 					</control>
-					<control type="button" id="734">
+					<control type="button" id="735">
 						<description>Custom playlist2 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1864,9 +1877,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist2)</visible>
 					</control>
-					<control type="button" id="735">
+					<control type="button" id="736">
 						<description>Custom playlist2 icon</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1880,9 +1893,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="736">
+					<control type="radiobutton" id="737">
 						<description>Custom Playlist3 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1896,9 +1909,9 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="737">
+					<control type="button" id="738">
 						<description>Custom playlist3 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1907,16 +1920,16 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist3name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist3name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
+						<onclick>Skin.SetFile(custom-playlist3name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist3)</visible>
 					</control>
-					<control type="button" id="738">
+					<control type="button" id="739">
 						<description>Custom playlist3 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1930,9 +1943,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist3)</visible>
 					</control>
-					<control type="button" id="739">
+					<control type="button" id="740">
 						<description>Custom playlist3 icon</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1946,9 +1959,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist3)</visible>
 					</control>
-					<control type="radiobutton" id="740">
+					<control type="radiobutton" id="741">
 						<description>Custom Playlist4 toggle</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1962,9 +1975,9 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="741">
+					<control type="button" id="742">
 						<description>Custom playlist4 location</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1973,16 +1986,16 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist4name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist4name,.xsp,&quot;special://skin/extras/playlists)&quot;</onclick>
+						<onclick>Skin.SetFile(custom-playlist4name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist4)</visible>
 					</control>
-					<control type="button" id="742">
+					<control type="button" id="743">
 						<description>Custom playlist4 label</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -1996,9 +2009,9 @@
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist4)</visible>
 					</control>
-					<control type="button" id="743">
+					<control type="button" id="744">
 						<description>Custom playlist4 icon</description>
-						<font>font13</font>
+						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
@@ -2011,6 +2024,151 @@
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist4)</visible>
+					</control>
+					<control type="label" id="745">
+						<description>Music Playlists</description>
+						<width>500</width>
+						<height>45</height>
+						<font>font12</font>
+						<textcolor>listselectedtext</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<label>[B]$LOCALIZE[20011][/B]</label>
+						<scroll>true</scroll>
+					</control>
+					<control type="radiobutton" id="746">
+						<description>Custom Music Playlist1 toggle</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(custom-mplaylist1)</onclick>
+						<selected>Skin.HasSetting(custom-mplaylist1)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<radioposx>460</radioposx>
+					</control>
+					<control type="button" id="747">
+						<description>Custom music playlist1 location</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>460</textwidth>
+						<label>$LOCALIZE[559] :</label>
+						<label2>$INFO[Skin.String(custom-mplaylist1name)] </label2>
+						<haspath>true</haspath>
+						<onclick>Skin.SetFile(custom-mplaylist1name,.xsp,&quot;special://skin/extras/playlists/music&quot;)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
+					</control>
+					<control type="button" id="748">
+						<description>Custom music playlist1 label</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[21899] :</label>
+						<label2>$INFO[Skin.String(custom-mplaylist1label)]</label2>
+						<onclick>Skin.SetString(custom-mplaylist1label)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
+					</control>
+					<control type="button" id="749">
+						<description>Custom music playlist1 icon</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[21371] :</label>
+						<label2>$INFO[Skin.String(custom-mplaylist1icon)]</label2>
+						<onclick>Skin.SetImage(custom-mplaylist1icon)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
+					</control>
+					<control type="radiobutton" id="750">
+						<description>Custom Music Playlist2 toggle</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(custom-mplaylist2)</onclick>
+						<selected>Skin.HasSetting(custom-mplaylist2)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<radioposx>460</radioposx>
+					</control>
+					<control type="button" id="751">
+						<description>Custom music playlist2 location</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>460</textwidth>
+						<label>$LOCALIZE[559] :</label>
+						<label2>$INFO[Skin.String(custom-mplaylist2name)] </label2>
+						<haspath>true</haspath>
+						<onclick>Skin.SetFile(custom-mplaylist2name,.xsp,&quot;special://skin/extras/playlists/music&quot;)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
+					</control>
+					<control type="button" id="752">
+						<description>Custom music playlist2 label</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[21899] :</label>
+						<label2>$INFO[Skin.String(custom-mplaylist2label)]</label2>
+						<onclick>Skin.SetString(custom-mplaylist2label)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
+					</control>
+					<control type="button" id="753">
+						<description>Custom music playlist2 icon</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[21371] :</label>
+						<label2>$INFO[Skin.String(custom-mplaylist2icon)]</label2>
+						<onclick>Skin.SetImage(custom-mplaylist2icon)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
 					</control>
 				</control>
 			</control>
@@ -2033,7 +2191,7 @@
 					<posx>12</posx>
 					<posy>6</posy>
 					<width>220</width>
-					<font>font13</font>
+					<font>font12</font>
 					<label>31683</label>
 					<align>center</align>
 					<textcolor>button-text</textcolor>
@@ -2064,7 +2222,7 @@
 					<ondown>541</ondown>
 					<control type="button" id="542">
 						<description>Set Music library entry point - Genres</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2079,7 +2237,7 @@
 					</control>
 					<control type="button" id="543">
 						<description>Set Music library entry point - Artists</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2094,7 +2252,7 @@
 					</control>
 					<control type="button" id="544">
 						<description>Set Music library entry point - Albums</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2109,7 +2267,7 @@
 					</control>
 					<control type="button" id="545">
 						<description>Set Music library entry point - Songs</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2124,7 +2282,7 @@
 					</control>
 					<control type="button" id="546">
 						<description>Set Music library entry point - Top100Songs</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2139,7 +2297,7 @@
 					</control>
 					<control type="button" id="547">
 						<description>Set Music library entry point - Top100Albums</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2154,7 +2312,7 @@
 					</control>
 					<control type="button" id="548">
 						<description>Set Music library entry point - RecentlyAddedAlbums</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2169,7 +2327,7 @@
 					</control>
 					<control type="button" id="549">
 						<description>Set Music library entry point - RecentlyPlayededAlbums</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2184,7 +2342,7 @@
 					</control>
 					<control type="button" id="550">
 						<description>Set Music library entry point - Compilations</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2199,7 +2357,7 @@
 					</control>
 					<control type="button" id="551">
 						<description>Set Music library entry point - Years</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2214,7 +2372,7 @@
 					</control>
 					<control type="button" id="552">
 						<description>Set Music library entry point - Singles</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2247,7 +2405,7 @@
 					<posx>12</posx>
 					<posy>6</posy>
 					<width>220</width>
-					<font>font13</font>
+					<font>font12</font>
 					<label>31680</label>
 					<align>center</align>
 					<textcolor>button-text</textcolor>
@@ -2278,7 +2436,7 @@
 					<ondown>561</ondown>
 					<control type="button" id="562">
 						<description>Set Movie library entry point - Title</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2293,7 +2451,7 @@
 					</control>
 					<control type="button" id="563">
 						<description>Set Movie library entry point - Root</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2308,7 +2466,7 @@
 					</control>
 					<control type="button" id="564">
 						<description>Set Movie library entry point - Recentlyadded</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2323,7 +2481,7 @@
 					</control>
 					<control type="button" id="565">
 						<description>Set Movie library entry point - Genres</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2338,7 +2496,7 @@
 					</control>
 					<control type="button" id="566">
 						<description>Set Movie library entry point - Years</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2353,7 +2511,7 @@
 					</control>
 					<control type="button" id="567">
 						<description>Set Movie library entry point - Actors</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2368,7 +2526,7 @@
 					</control>
 					<control type="button" id="568">
 						<description>Set Movie library entry point - Directors</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2383,7 +2541,7 @@
 					</control>
 					<control type="button" id="569">
 						<description>Set Movie library entry point - Studios</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2416,7 +2574,7 @@
 					<posx>12</posx>
 					<posy>6</posy>
 					<width>220</width>
-					<font>font13</font>
+					<font>font12</font>
 					<label>31681</label>
 					<align>center</align>
 					<textcolor>button-text</textcolor>
@@ -2447,7 +2605,7 @@
 					<ondown>571</ondown>
 					<control type="button" id="572">
 						<description>Set TV library entry point - Title</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2462,7 +2620,7 @@
 					</control>
 					<control type="button" id="573">
 						<description>Set TV library entry point - Root</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2477,7 +2635,7 @@
 					</control>
 					<control type="button" id="574">
 						<description>Set TV library entry point - Recentlyadded</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2492,7 +2650,7 @@
 					</control>
 					<control type="button" id="575">
 						<description>Set TV library entry point - Genres</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2507,7 +2665,7 @@
 					</control>
 					<control type="button" id="576">
 						<description>Set TV library entry point - Years</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2522,7 +2680,7 @@
 					</control>
 					<control type="button" id="577">
 						<description>Set TV library entry point - Actors</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2537,7 +2695,7 @@
 					</control>
 					<control type="button" id="578">
 						<description>Set TV library entry point - Studios</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2570,7 +2728,7 @@
 					<posx>12</posx>
 					<posy>6</posy>
 					<width>220</width>
-					<font>font13</font>
+					<font>font12</font>
 					<label>31682</label>
 					<align>center</align>
 					<textcolor>button-text</textcolor>
@@ -2601,7 +2759,7 @@
 					<ondown>581</ondown>
 					<control type="button" id="582">
 						<description>Set Music Video library entry point - Title</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2616,7 +2774,7 @@
 					</control>
 					<control type="button" id="583">
 						<description>Set Music Video library entry point - Root</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2631,7 +2789,7 @@
 					</control>
 					<control type="button" id="584">
 						<description>Set Music Video library entry point - Recentlyadded</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2646,7 +2804,7 @@
 					</control>
 					<control type="button" id="585">
 						<description>Set Music Video library entry point - Genres</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2661,7 +2819,7 @@
 					</control>
 					<control type="button" id="586">
 						<description>Set Music Video library entry point - Years</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2676,7 +2834,7 @@
 					</control>
 					<control type="button" id="587">
 						<description>Set Music Video library entry point - Artists</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2691,7 +2849,7 @@
 					</control>
 					<control type="button" id="588">
 						<description>Set Music Video library entry point - Directors</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>
@@ -2706,7 +2864,7 @@
 					</control>
 					<control type="button" id="589">
 						<description>Set Music Video library entry point - Studios</description>
-						<font>font13</font>
+						<font>font12</font>
 						<height>32</height>
 						<width>220</width>
 						<texturefocus>default-button.png</texturefocus>

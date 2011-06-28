@@ -1,5 +1,9 @@
+[B]1.1.1[/B]
+- Post update bug fixes (lots of them).
+- Unifying release, Release for XBMC Dharma, XBMC pre Eden and Xbox builds.
+
 [B]1.1.0[/B]
-- Added support for TVTunes, LogoDownloader and Cinema Experience scripts.
+- Added support for TVTunes, LogoDownloader scripts.
 - Added support for Weather Plus plugin.
 - Greatly expanded library entry point support (now supports Movies, TV, Music Videos and Music libraries).
 - Changed skin settings to match other settings menus.
@@ -7,7 +11,7 @@
 - Can now select if static or animated weather icons used.
 - Cleaned up a number of skin graphics, removed and renamed a number of images.
 - Cleanup of sound support in the skin (fixed a number of sound files).
-- A number of dialogs have been made full screen (should not be any remaining label overflow problems).
+- A number of dialogs have been made full screen (should not be any remaining lable overflow problems).
 - Fixed a large number of bugs.
 - Code cleanup/optimisations (hopefully a lot quicker now).
 - Due to changes to skin engine this release will probably be the last for XBMC Dharma.

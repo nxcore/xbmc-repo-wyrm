@@ -349,6 +349,20 @@
 					<visible>Skin.HasSetting(custom-playlist4) + !IsEmpty(Skin.String(custom-playlist4name))+ !IsEmpty(Skin.String(custom-playlist4icon))+ !IsEmpty(Skin.String(custom-playlist4label))</visible>
 				</item>
 				<item>
+					<icon>$INFO[Skin.String(custom-mplaylist1icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-mplaylist1icon)]</thumb>
+					<label>$INFO[Skin.String(custom-mplaylist1label)] </label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist1name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-mplaylist1) + !IsEmpty(Skin.String(custom-mplaylist1name))+ !IsEmpty(Skin.String(custom-mplaylist1icon))+ !IsEmpty(Skin.String(custom-mplaylist1label))</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(custom-mplaylist2icon)]</icon>
+					<thumb>$INFO[Skin.String(custom-mplaylist2icon)]</thumb>
+					<label>$INFO[Skin.String(custom-mplaylist2label)] </label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist2name)],return)</onclick>
+					<visible>Skin.HasSetting(custom-mplaylist2) + !IsEmpty(Skin.String(custom-mplaylist2name))+ !IsEmpty(Skin.String(custom-mplaylist2icon))+ !IsEmpty(Skin.String(custom-mplaylist2label))</visible>
+				</item>
+				<item>
 					<icon>icon-youtube.png</icon>
 					<thumb>icon-youtube-blur1.png</thumb>
 					<label>31037</label>
