@@ -19,20 +19,20 @@
 		<control type="progress">
 			<description>progress control</description>
 			<posx>36</posx>
-			<posy>60</posy>
+			<posy>72</posy>
 			<width>128</width>
-			<height>52</height>
+			<height>32</height>
 			<info>Player.Volume</info>
-			<texturebg>volume-back.png</texturebg>
+			<texturebg>blank.png</texturebg>
 			<lefttexture>-</lefttexture>
-			<midtexture>progress-middle.png</midtexture>
+			<midtexture>volume-back.png</midtexture>
 			<righttexture>-</righttexture>
 			<overlaytexture>-</overlaytexture>
 		</control>
 		<control type="image">
 			<description>Volume bar overlay</description>
 			<posx>36</posx>
-			<posy>70</posy>
+			<posy>72</posy>
 			<width>128</width>
 			<height>32</height>
 			<texture>volume-overlay.png</texture>
