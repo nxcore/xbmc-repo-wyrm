@@ -1,4 +1,4 @@
-<window id="105">
+<window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -9,17 +9,9 @@
 		<control type="image">
 			<description>Favourites Logo</description>
 			<include>icon-header-commons</include>
-			<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175">WindowClose</animation>
-			<animation effect="zoom" start="140,145,230,230" end="470,14,64,64" time="175">WindowOpen</animation>
+			<include>icon-ani</include>
 			<texture>icon-fav-sml.png</texture>
 		</control>
-		<control type="image">
-			<description>Favourites Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="mask-fade.png">icon-fav-sml.png</texture>
-		</control>
-
 		<control type="label">
 			<description>Favourites Label</description>
 			<posx>535</posx>
@@ -32,19 +24,18 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
 		</control>
-
 		<control type="group">
 			<control type="list" id="450">
 				<posx>400</posx>
 				<posy>90</posy>
 				<width>285</width>
 				<height>444</height>
-				<onleft>23</onleft>
-				<onright>23</onright>
+				<onleft>423</onleft>
+				<onright>423</onright>
 				<onup>450</onup>
 				<ondown>450</ondown>
 				<scrolltime>200</scrolltime>
-				<pagecontrol>23</pagecontrol>
+				<pagecontrol>423</pagecontrol>
 				<itemlayout height="40">
 					<control type="label">
 						<posx>10</posx>
@@ -120,7 +111,7 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
 		</control>
-		<control type="scrollbar" id="23">
+		<control type="scrollbar" id="423">
 			<posx>700</posx>
 			<posy>90</posy>
 			<width>14</width>
