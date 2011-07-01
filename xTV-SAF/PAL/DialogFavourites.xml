@@ -9,17 +9,9 @@
 		<control type="image">
 			<description>Favourites Logo</description>
 			<include>icon-header-commons</include>
-			<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175">WindowClose</animation>
-			<animation effect="zoom" start="140,145,230,230" end="470,14,64,64" time="175">WindowOpen</animation>
+			<include>icon-ani</include>
 			<texture>icon-fav-sml.png</texture>
 		</control>
-		<control type="image">
-			<description>Favourites Logo Reflection</description>
-			<include>icon-header-reflect-commons</include>
-			<include>icon-reflection-ani</include>
-			<texture flipy="true" diffuse="RndFade.png">icon-fav-sml.png</texture>
-		</control>
-
 		<control type="label">
 			<description>Favourites Label</description>
 			<posx>535</posx>
@@ -32,25 +24,24 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
 		</control>
-
 		<control type="group">
 			<control type="list" id="450">
-				<posx>405</posx>
+				<posx>400</posx>
 				<posy>90</posy>
 				<width>285</width>
-				<height>420</height>
-				<onleft>1</onleft>
-				<onright>10</onright>
+				<height>444</height>
+				<onleft>23</onleft>
+				<onright>23</onright>
 				<onup>450</onup>
 				<ondown>450</ondown>
 				<scrolltime>200</scrolltime>
 				<pagecontrol>23</pagecontrol>
-				<itemlayout height="32">
+				<itemlayout height="40">
 					<control type="label">
 						<posx>10</posx>
 						<posy>0</posy>
 						<width>254</width>
-						<height>37</height>
+						<height>32</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -59,10 +50,10 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="32">
+				<focusedlayout height="40">
 					<control type="image">
 						<width>285</width>
-						<height>37</height>
+						<height>40</height>
 						<posx>0</posx>
 						<posy>0</posy>
 						<texture>default-button.png</texture>
@@ -71,7 +62,7 @@
 						<posx>10</posx>
 						<posy>0</posy>
 						<width>254</width>
-						<height>37</height>
+						<height>32</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -94,7 +85,7 @@
 				<posy>125</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="shut-fav.png" background="true" diffuse="RndRectMask.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="shut-fav.png" background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 			</control>
@@ -104,7 +95,7 @@
 				<posy>470</posy>
 				<width>345</width>
 				<height>345</height>
-				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="RndFade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 				<include>list-fade</include>
 			</control>
@@ -124,14 +115,14 @@
 			<posx>700</posx>
 			<posy>90</posy>
 			<width>14</width>
-			<height>448</height>
+			<height>444</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>50</onleft>
-			<onright>2</onright>
+			<onleft>450</onleft>
+			<onright>450</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
