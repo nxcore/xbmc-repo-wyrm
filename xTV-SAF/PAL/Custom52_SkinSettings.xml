@@ -1512,18 +1512,56 @@
 						<radioposx>460</radioposx>
 					</control>
 					<control type="button" id="715">
-						<description>TV Logo Downloader Script</description>
+						<description>TV Tunes script location</description>
 						<font>font12</font>
 						<width>500</width>
 						<height>45</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>Download TV logos</label>
-						<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=False,logo=True,showthumb=False)</onclick>
+						<textwidth>480</textwidth>
+						<enable>Skin.HasSetting(tvtunes-scriptlocation)</enable>
+						<label>$LOCALIZE[33082]:</label>
+						<label2>$INFO[Skin.String(tvtunes-scriptlocation)] </label2>
+						<onclick>XBMC.Skin.SetFile(tvtunes-scriptlocation,special://xbmc)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(tv_theme)</visible>
+					</control>
+					<control type="radiobutton" id="754">
+						<description>Cinema script toggle</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>Use Home Cinema script</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(cinema-script)</onclick>
+						<selected>Skin.HasSetting(cinema-script)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<radioposx>460</radioposx>
+					</control>
+					<control type="button" id="755">
+						<description>Cinema script location</description>
+						<font>font12</font>
+						<width>500</width>
+						<height>45</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<enable>Skin.HasSetting(cinema-location)</enable>
+						<label>$LOCALIZE[33082]:</label>
+						<label2>$INFO[Skin.String(cinema-location)] </label2>
+						<onclick>XBMC.Skin.SetFile(cinema-location,special://xbmc)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>20</textoffsetx>
+						<visible>Skin.HasSetting(cinema-script)</visible>
 					</control>
 					<control type="radiobutton" id="716">
 						<description>Custom script 1 toggle</description>
@@ -1732,22 +1770,6 @@
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(custom-script4)</visible>
-					</control>
-					<control type="radiobutton" id="728">
-						<description>Custom Playlist1 toggle</description>
-						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-playlist1)</onclick>
-						<selected>Skin.HasSetting(custom-playlist1)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
 					</control>
 					<control type="label" id="728">
 						<description>Video Playlists</description>

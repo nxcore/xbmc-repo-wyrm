@@ -395,28 +395,28 @@
 					<thumb>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script1label)] </label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script1name)])</onclick>
-					<visible>Skin.HasSetting(custom-script1)</visible>
+					<visible>Skin.HasSetting(custom-script1) + !IsEmpty(Skin.String(custom-script1label))+ !IsEmpty(Skin.String(custom-script1name))</visible>
 				</item>
 				<item>
 					<icon>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</icon>
 					<thumb>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script2label)] </label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script2name)])</onclick>
-					<visible>Skin.HasSetting(custom-script2)</visible>
+					<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
 				</item>
 				<item>
 					<icon>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</icon>
 					<thumb>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script3label)] </label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script3name)])</onclick>
-					<visible>Skin.HasSetting(custom-script3)</visible>
+					<visible>Skin.HasSetting(custom-script3) + !IsEmpty(Skin.String(custom-script3label))+ !IsEmpty(Skin.String(custom-script3name))</visible>
 				</item>
 				<item>
 					<icon>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</icon>
 					<thumb>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script4label)] </label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script4name)])</onclick>
-					<visible>Skin.HasSetting(custom-script4)</visible>
+					<visible>Skin.HasSetting(custom-script4) + !IsEmpty(Skin.String(custom-script4label))+ !IsEmpty(Skin.String(custom-script4name))</visible>
 				</item>
 				<item>
 					<icon>icon-fav.png</icon>
