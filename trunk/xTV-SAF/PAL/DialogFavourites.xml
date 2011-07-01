@@ -1,4 +1,4 @@
-<window id="105">
+<window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -30,12 +30,12 @@
 				<posy>90</posy>
 				<width>285</width>
 				<height>444</height>
-				<onleft>23</onleft>
-				<onright>23</onright>
+				<onleft>423</onleft>
+				<onright>423</onright>
 				<onup>450</onup>
 				<ondown>450</ondown>
 				<scrolltime>200</scrolltime>
-				<pagecontrol>23</pagecontrol>
+				<pagecontrol>423</pagecontrol>
 				<itemlayout height="40">
 					<control type="label">
 						<posx>10</posx>
@@ -111,7 +111,7 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
 		</control>
-		<control type="scrollbar" id="23">
+		<control type="scrollbar" id="423">
 			<posx>700</posx>
 			<posy>90</posy>
 			<width>14</width>

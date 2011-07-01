@@ -78,8 +78,8 @@
 		
 		<include>memory-low</include>
 		
-		<include>ListView-Icon</include>
 		<include>ListView</include>
+		<include>ListView-Icon</include>
 		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
 		<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
 		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
@@ -87,7 +87,7 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26)]</visible>
+			<visible>!Skin.HasSetting(view-as-lock)</visible>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
@@ -104,7 +104,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>
