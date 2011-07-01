@@ -998,7 +998,7 @@
 		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
 	</include>
 	<include name="PlayTVTunes">
-		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=True)</onfocus>
+		<onfocus>XBMC.RunScript($INFO[Skin.String(tvtunes-scriptlocation)],backend=True&amp;loop=True)</onfocus>
 	</include>
 	<include name="RestartSkinMovies">
 		<onclick>Skin.Reset(updatemovieentry)</onclick>

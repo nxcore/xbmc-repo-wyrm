@@ -466,8 +466,8 @@
 				<align>center</align>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
-				<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
-				<visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
+				<onclick>XBMC.RunScript(cinema-location)</onclick>
+				<visible>Skin.HasSetting(cinema-script) + Container.Content(movies) + !IsEmpty(Skin.String(cinema-location))</visible>
 			</control>
 			<control type="button" id="11">
 				<description>Trailer</description>
@@ -551,17 +551,7 @@
 					<align>center</align>
 					<onclick>SetFocus(999)</onclick>
 				</control>
-				<control type="button" id="1113">
-					<description>Get Logo</description>
-					<width>118</width>
-					<height>46</height>
-					<font>font11</font>
-					<align>center</align>
-					<label>31694</label>
-					<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows)</visible>
-				</control>
+				
 				<control type="button" id="1114">
 					<description>Get TV Tune</description>
 					<width>118</width>
@@ -569,9 +559,9 @@
 					<font>font11</font>
 					<align>center</align>
 					<label>31695</label>
-					<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+					<onclick>XBMC.RunScript($INFO[Skin.String(tvtunes-scriptlocation)],mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
+					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/) + Skin.HasSetting(cinema-script) + !IsEmpty(Skin.String(cinema-location))</visible>
 				</control>
 			</control>
 		</control>
