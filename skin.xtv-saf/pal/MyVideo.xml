@@ -87,7 +87,7 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock) + ![Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26)]</visible>
+			<visible>!Skin.HasSetting(view-as-lock)</visible>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
