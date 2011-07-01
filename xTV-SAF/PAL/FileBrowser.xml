@@ -12,16 +12,16 @@
 			<description>File Browser background image</description>
 			<posx>-15</posx>
 			<posy>-15</posy>
-			<width>570</width>
+			<width>660</width>
 			<height>424</height>
-			<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label" id="411">
 			<description>heading label</description>
 			<posx>10</posx>
 			<posy>-2</posy>
-			<width>520</width>
+			<width>610</width>
 			<font>font13</font>
 			<label>1023</label>
 			<align>center</align>
@@ -32,11 +32,11 @@
 			<description>separator image</description>
 			<posx>10</posx>
 			<posy>24</posy>
-			<width>520</width>
+			<width>610</width>
 			<height>5</height>
 			<texture>separator.png</texture>
 		</control>
-
+		
 		<control type="list" id="450">
 			<posx>30</posx>
 			<posy>35</posy>
@@ -94,7 +94,7 @@
 		</control>
 		<control type="image">
 			<description>List Icon</description>
-			<posx>335</posx>
+			<posx>410</posx>
 			<posy>154</posy>
 			<width>200</width>
 			<height>200</height>
@@ -103,7 +103,7 @@
 			<info>ListItem.Icon</info>
 		</control>
 		<control type="group">
-			<posx>355</posx>
+			<posx>440</posx>
 			<posy>35</posy>
 			<control type="button" id="413">
 				<description>OK button</description>
@@ -164,7 +164,7 @@
 			<description>Number of items</description>
 			<posx>10</posx>
 			<posy>370</posy>
-			<width>200</width>
+			<width>120</width>
 			<align>left</align>
 			<font>font12</font>
 			<label>$INFO[Container(450).NumItems] $LOCALIZE[127]</label>
@@ -173,10 +173,10 @@
 		</control>
 		<control type="label" id="412">
 			<description>path label control</description>
-			<posx>335</posx>
+			<posx>625</posx>
 			<posy>370</posy>
-			<width>200</width>
-			<align>center</align>
+			<width>480</width>
+			<align>right</align>
 			<font>font12</font>
 			<haspath>true</haspath>
 			<textcolor>button-text</textcolor>
