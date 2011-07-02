@@ -1,5 +1,5 @@
 ﻿<window id="2006">
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol>999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<visible>!Window.IsVisible(2004)</visible>
 	<visible>!Window.IsVisible(2005)</visible>
@@ -303,6 +303,12 @@
 			<overlaytexture>-</overlaytexture>
 			<visible>Skin.HasSetting(np-vis)</visible>
 			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+		</control>
+		<control type="button" id="999">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
 		</control>
 	</controls>
 </window>
