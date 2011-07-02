@@ -116,7 +116,7 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
 		<control type="group">
-			<visible allowhiddenfocus="true">!Skin.HasSetting(view-as-lock)</visible>
+			<visible>!Skin.HasSetting(view-as-lock)</visible>
 			<animation effect="fade" start="0" time="300">Visible</animation>
 			<control type="group">
 				<control type="image">
