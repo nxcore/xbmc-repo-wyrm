@@ -16,9 +16,9 @@
 		</control>
 		<control type="list" id="50">
 			<posx>76</posx>
-			<posy>132</posy>
+			<posy>130</posy>
 			<width>280</width>
-			<height>380</height>
+			<height>352</height>
 			<onleft>6</onleft>
 			<onright>100</onright>
 			<onup>50</onup>
@@ -74,7 +74,6 @@
 					<selectedcolor>listselectedtext</selectedcolor>
 					<scroll>true</scroll>
 					<info>ListItem.Label</info>
-					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="label">
 					<posx>260</posx>
@@ -91,9 +90,9 @@
 		</control>
 		<control type="list" id="100">
 			<posx>372</posx>
-			<posy>132</posy>
+			<posy>130</posy>
 			<width>280</width>
-			<height>350</height>
+			<height>352</height>
 			<onleft>50</onleft>
 			<onright>6</onright>
 			<onup>100</onup>
@@ -149,7 +148,6 @@
 					<selectedcolor>listselectedtext</selectedcolor>
 					<scroll>true</scroll>
 					<info>ListItem.Label</info>
-					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="label">
 					<posx>260</posx>
@@ -220,7 +218,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>290</height>
-				<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
