@@ -366,9 +366,16 @@
 					<icon>icon-youtube.png</icon>
 					<thumb>icon-youtube-blur1.png</thumb>
 					<label>31037</label>
-					<onclick>ActivateWindow(VideoLibrary,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
-					<visible>Skin.HasSetting(home-youtube)</visible>
-				</item> 
+					<onclick>XBMC.RunScript($INFO[Skin.String(youtube-script)])</onclick>
+					<visible>Skin.HasSetting(home-youtube) + !IsEmpty(Skin.String(youtube-script))</visible>
+				</item>
+				<item>
+					<icon>icon-youtube.png</icon>
+					<thumb>icon-youtube-blur1.png</thumb>
+					<label>31037</label>
+					<onclick>ActivateWindow($INFO[Skin.String(youtube-pluginwindow)],plugin://$INFO[Skin.String(youtube-pluginfolder)])</onclick>
+					<visible>Skin.HasSetting(home-youtube) + !IsEmpty(Skin.String(youtube-pluginfolder))</visible>
+				</item>
 				<item>
 					<icon>icon-programs.png</icon>
 					<thumb>icon-programs-blur1.png</thumb>

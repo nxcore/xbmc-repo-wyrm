@@ -3,6 +3,10 @@
 	<allowoverlay>yes</allowoverlay>
 	<views>50,51,54,57,58,59</views>
 	<controls>
+		<include>background</include>
+		<include>Fake-Overlay</include>
+		<include>#files</include>
+		
 		<control type="group" id="9999">
 			<control type="button">
 				<description>Play TVTunes theme if required</description>
@@ -29,10 +33,6 @@
 			</control>
 		</control>
 		
-		<include>background</include>
-		<include>Fake-Overlay</include>
-		<include>#files</include>
-		
 		<control type="image">
 			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
@@ -44,6 +44,8 @@
 			<description>Video Label</description>
 			<posx>535</posx>
 			<posy>40</posy>
+			<width>175</width>
+			<height>30</height>
 			<label>3</label>
 			<font>font20</font>
 			<style>bold</style>
@@ -56,6 +58,8 @@
 			<description>Movie Label</description>
 			<posx>535</posx>
 			<posy>40</posy>
+			<width>175</width>
+			<height>30</height>
 			<label>31026</label>
 			<font>font20</font>
 			<style>bold</style>
@@ -76,6 +80,8 @@
 			<description>TV Shows Label</description>
 			<posx>535</posx>
 			<posy>40</posy>
+			<width>175</width>
+			<height>30</height>
 			<label>31027</label>
 			<font>font20</font>
 			<style>bold</style>
@@ -117,6 +123,7 @@
 		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<include>View-as</include>
 			<animation effect="fade" start="0" time="300">Visible</animation>
 			<control type="group">
 				<control type="image">
@@ -127,7 +134,6 @@
 					<height>576</height>
 					<texture>black.png</texture>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="image">
 					<description>Button Background</description>
@@ -137,7 +143,6 @@
 					<height>380</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="button" id="2">
 					<description>View As Icons button</description>
@@ -156,7 +161,6 @@
 					<ondown>3</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
@@ -175,7 +179,6 @@
 					<ondown>5</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
@@ -188,7 +191,6 @@
 					<ondown>5</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Library button</description>
@@ -207,7 +209,6 @@
 					<ondown>10</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="button" id="10">
 					<description>Show Button</description>
@@ -223,7 +224,6 @@
 					<ondown>8</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 					<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="14">
@@ -237,7 +237,6 @@
 					<ondown>8</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 					<visible>Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="8">
@@ -255,7 +254,6 @@
 					<ondown>19</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
@@ -271,7 +269,6 @@
 					<ondown>16</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="button" id="16">
 					<description>Party Mode button</description>
@@ -288,7 +285,6 @@
 					<ondown>17</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="button" id="17">
 					<description>Flatten Library button</description>
@@ -305,7 +301,6 @@
 					<ondown>11</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>
@@ -324,7 +319,6 @@
 					<ondown>2</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="label" id="18">
 					<description>No Info Scanned Label</description>
@@ -337,7 +331,6 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>button-text</textcolor>
-					<include>View-as</include>
 				</control>
 			</control>
 		</control>

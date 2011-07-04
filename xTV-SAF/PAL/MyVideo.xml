@@ -88,6 +88,7 @@
 		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<include>View-as</include>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
@@ -96,7 +97,6 @@
 				<height>576</height>
 				<texture>black.png</texture>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="image">
 				<description>Button Background</description>
@@ -106,7 +106,6 @@
 				<height>245</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="2">
 				<description>View type button</description>
@@ -126,7 +125,6 @@
 				<ondown>3</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="3">
 				<description>Sort by button</description>
@@ -145,7 +143,6 @@
 				<ondown>5</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="togglebutton" id="4">
 				<description>Sort asc</description>
@@ -157,7 +154,6 @@
 				<onup>2</onup>
 				<ondown>5</ondown>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="radiobutton" id="5">
 				<description>Library button</description>
@@ -176,7 +172,6 @@
 				<ondown>7</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="radiobutton" id="7">
 				<description>Stacking</description>
@@ -195,7 +190,6 @@
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 		</control>
 	</controls>
