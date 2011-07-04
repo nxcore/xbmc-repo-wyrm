@@ -15,9 +15,9 @@
 	<include file="View-Coverflow.xml">-</include>
 	<include file="View-AlbumCoverflow.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
-
+	
 	<include file="Includes_Weather.xml">-</include>
-
+	
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -143,7 +143,7 @@
 			</control>
 		</control>
 	</include>
-
+	
 	<!-- Start xTV box image include -->
 	<include name="xtv-box">
 		<control type="image">
@@ -158,7 +158,7 @@
 			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 	</include>
-
+	
 	<!-- Begin Page info Includes -->
 	<include name="page-info">
 		<control type="rss">
@@ -173,7 +173,7 @@
 			<headlinecolor>rss-headline-text</headlinecolor>
 		</control>
 	</include>
-
+	
 	<!-- Begin Low free memory include -->
 	<include name="memory-low">
 		<control type="label">
@@ -191,20 +191,22 @@
 			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
 		</control>
 	</include>
-
+	
 	<!-- Start Home Media Overlay -->
 	<include name="homemediainfo">
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
 		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
 	</include>
-
+	
 	<!-- Start Number of Files Include -->
 	<include name="#files">
 		<control type="label" id="12">
 			<description>number of files text label</description>
 			<posx>600</posx>
 			<posy>546</posy>
+			<width>115</width>
+			<height>30</height>
 			<align>left</align>
 			<label>-</label>
 			<font>font13</font>
@@ -213,7 +215,7 @@
 			<include>list-fade</include>
 		</control>
 	</include>
-
+	
 	<!-- MovieLibraryTitle Include -->
 	<include name="MovieLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
@@ -246,7 +248,7 @@
 	<include name="MovieLibraryStudios">
 		<onclick>ActivateWindow(VideoLibrary,MovieStudios,return)</onclick>
 	</include>
-
+	
 	<!-- TVLibraryTitle Include -->
 	<include name="TVLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
@@ -275,7 +277,7 @@
 	<include name="TVLibraryStudios">
 		<onclick>ActivateWindow(VideoLibrary,TvShowStudios,return)</onclick>
 	</include>
-
+	
 	<!-- MusicVideoLibraryTitle Include -->
 	<include name="MusicVideoLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
@@ -308,7 +310,7 @@
 	<include name="MusicVideoLibraryStudios">
 		<onclick>ActivateWindow(VideoLibrary,MusicVideoStudios,return)</onclick>
 	</include>
-
+	
 	<!-- MusicVideoLibraryGenres Include -->
 	<include name="MusicLibraryGenres">
 		<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
@@ -353,7 +355,7 @@
 	<include name="MusicLibrarySingles">
 		<onclick>ActivateWindow(MusicLibrary,Singles,return)</onclick>
 	</include>
-
+	
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
@@ -938,7 +940,7 @@
 			</control>
 		</control>
 	</include>
-
+	
 	<!-- Start Animation Includes -->
 	<include name="button-fade">
 		<animation effect="fade" start="0" time="300">Visible</animation>
@@ -967,13 +969,13 @@
 		<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 	</include>
 	<include name="icon-ani">
-		<!--<animation effect="zoom" start="470,14,64,64" end="140,145,230,230" time="175" condition="Window.Next(Home)">WindowClose</animation>-->
 		<animation effect="zoom" start="140,145,230,230"  end="470,14,64,64" time="175" condition="Window.Previous(Home)">WindowOpen</animation>
 	</include>
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
-		<visible allowhiddenfocus="true">![Window.Next(Home) | Control.HasFocus(1) | Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) |  Control.HasFocus(54) | Control.HasFocus(57) | Control.HasFocus(58) | Control.HasFocus(59) | Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24) | Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27) | Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(100) | Control.HasFocus(1157) | Control.HasFocus(1254) | Control.HasFocus(1257) | Control.HasFocus(1258) | Control.HasFocus(1354) | Control.HasFocus(1357) | Control.HasFocus(1358)]</visible>
+		<animation effect="fade" time="200" delay="300">WindowOpen</animation>
+		<visible allowhiddenfocus="true">![Window.Next(Home)|Control.HasFocus(1)|Control.HasFocus(50)|Control.HasFocus(51)|Control.HasFocus(54)|Control.HasFocus(57)|Control.HasFocus(58)|Control.HasFocus(59) | Control.HasFocus(23)|Control.HasFocus(24)|Control.HasFocus(25)|Control.HasFocus(27)|Control.HasFocus(28)|Control.HasFocus(29)|Control.HasFocus(30)|Control.HasFocus(60)|Control.HasFocus(61)|Control.HasFocus(100)|Control.HasFocus(101)|Control.HasFocus(423)|Control.HasFocus(600)|Control.HasFocus(1254)|Control.HasFocus(1257)|Control.HasFocus(1258)|Control.HasFocus(1354)|Control.HasFocus(1357)|Control.HasFocus(1358)]</visible>
 	</include>
 	<!-- End Visibility Includes -->
 	<!-- Start Autoscroll Includes -->
@@ -998,7 +1000,7 @@
 		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
 	</include>
 	<include name="PlayTVTunes">
-		<onfocus>XBMC.RunScript($INFO[Skin.String(tvtunes-scriptlocation)],backend=True&amp;loop=True)</onfocus>
+		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=True)</onfocus>
 	</include>
 	<include name="RestartSkinMovies">
 		<onclick>Skin.Reset(updatemovieentry)</onclick>

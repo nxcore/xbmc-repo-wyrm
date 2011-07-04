@@ -8,13 +8,15 @@
 			<posy>205</posy>
 			<width>390</width>
 			<height>190</height>
-			<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label" id="1">
 			<description>dialog Heading</description>
 			<posx>190</posx>
 			<posy>218</posy>
+			<width>360</width>
+			<height>20</height>
 			<label>-</label>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
@@ -24,6 +26,8 @@
 			<description>dialog line 1</description>
 			<posx>190</posx>
 			<posy>260</posy>
+			<width>360</width>
+			<height>20</height>
 			<haspath>yes</haspath>
 			<label>-</label>
 			<font>font12</font>
@@ -34,6 +38,8 @@
 			<description>dialog line 2</description>
 			<posx>190</posx>
 			<posy>280</posy>
+			<width>360</width>
+			<height>20</height>
 			<haspath>yes</haspath>
 			<label>-</label>
 			<font>font12</font>
@@ -44,13 +50,15 @@
 			<description>dialog line 3</description>
 			<posx>190</posx>
 			<posy>300</posy>
+			<width>360</width>
+			<height>20</height>
 			<haspath>yes</haspath>
 			<label>-</label>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 		</control>
-		<control type="progress" id="20">
+		<control type="progress">
 			<description>progress control</description>
 			<posx>190</posx>
 			<posy>326</posy>

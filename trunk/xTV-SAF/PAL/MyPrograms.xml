@@ -40,9 +40,9 @@
 			<texture flipy="true" diffuse="mask-fade.png">-</texture>
 			<visible>Control.IsVisible(50)</visible>
 		</control>
-
+		
 		<include>memory-low</include>
-
+		
 		<include>ListView</include>
 		<include>ListView-Icon</include>
 		<include condition="!Skin.HasSetting(views-programlist2)">List2</include>
@@ -69,7 +69,7 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>160</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<include>button-fade</include>
 				<include>View-as</include>
 			</control>

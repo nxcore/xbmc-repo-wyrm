@@ -584,24 +584,40 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="311">
+					<control type="button" id="310">
 						<description>YouTube script location</description>
-						<font>font12</font>
 						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
+						<font>font12</font>
 						<label>$LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(youtube-scriptpath,special://xbmc)</onclick>
+						<label2>$INFO[Skin.String(youtube-script)]</label2>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
 						<textoffsetx>20</textoffsetx>
+						<enable>Skin.HasSetting(home-youtube)</enable>
+						<onclick>Skin.SetFile(youtube-script,.py)</onclick>
+						<onclick>Skin.Reset(youtube-pluginfolder)</onclick>
+						<onclick>Skin.Reset(youtube-pluginname)</onclick>
 						<visible>Skin.HasSetting(home-youtube)</visible>
 					</control>
-					<control type="radiobutton" id="312">
+					<control type="button" id="311">
+						<description>YouTube plugin location</description>
+						<width>500</width>
+						<font>font13</font>
+						<label>$LOCALIZE[31851]</label>
+						<label2>$INFO[Skin.String(youtube-pluginname)]</label2>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textoffsetx>20</textoffsetx>
+						<enable>Skin.HasSetting(home-youtube)</enable>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,youtube)</onclick>
+						<onclick>Skin.Reset(youtube-script)</onclick>
+						<visible>Skin.HasSetting(home-youtube)</visible>
+					</control>
+					<control type="radiobutton" id="314">
 						<description>Weather On Home toggle</description>
 						<font>font12</font>
 						<width>500</width>
@@ -616,7 +632,7 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="313">
+					<control type="radiobutton" id="315">
 						<description>Favorites On Home toggle</description>
 						<font>font12</font>
 						<width>500</width>
@@ -631,7 +647,7 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="314">
+					<control type="radiobutton" id="316">
 						<description>Play Disc On Home toggle</description>
 						<font>font12</font>
 						<width>500</width>
@@ -646,7 +662,7 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="radiobutton" id="315">
+					<control type="radiobutton" id="317">
 						<description>Shutdown From Home toggle</description>
 						<font>font12</font>
 						<width>500</width>

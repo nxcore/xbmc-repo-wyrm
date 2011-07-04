@@ -17,14 +17,16 @@
 			<description>Photos Label</description>
 			<posx>535</posx>
 			<posy>40</posy>
+			<width>175</width>
+			<height>30</height>
 			<label>31031</label>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 			<include>list-fade</include>
 		</control>
-
+		
 		<include>memory-low</include>
-
+		
 		<include>ListView-Icon</include>
 		<include>ListView</include>
 		<include condition="!Skin.HasSetting(views-photolist2)">List2</include>
@@ -34,6 +36,7 @@
 		
 		<control type="group">
 			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<include>View-as</include>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
@@ -42,7 +45,6 @@
 				<height>576</height>
 				<texture>black.png</texture>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="image">
 				<description>Button Background</description>
@@ -50,9 +52,8 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="2">
 				<description>View As Icons button</description>
@@ -72,7 +73,6 @@
 				<ondown>3</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="3">
 				<description>Sort by button</description>
@@ -91,7 +91,6 @@
 				<ondown>6</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="togglebutton" id="4">
 				<description>Sort asc/desn</description>
@@ -103,7 +102,6 @@
 				<onup>2</onup>
 				<ondown>6</ondown>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="6">
 				<description>SlideShow button</description>
@@ -121,7 +119,6 @@
 				<ondown>7</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="7">
 				<description>recursive slideshow</description>
@@ -138,7 +135,6 @@
 				<ondown>9</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="radiobutton" id="9">
 				<description>Randomize button</description>
@@ -155,7 +151,6 @@
 				<ondown>2</ondown>
 				<textcolor>button-text</textcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 		</control>
 	</controls>

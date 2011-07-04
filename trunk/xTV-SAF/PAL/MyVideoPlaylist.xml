@@ -70,6 +70,8 @@
 			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<include>View-as</include>
 			<control type="image">
 				<description>Background shadow</description>
 				<posx>0</posx>
@@ -78,7 +80,6 @@
 				<height>576</height>
 				<texture>black.png</texture>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="image">
 				<description>Button Background</description>
@@ -86,9 +87,8 @@
 				<posy>170</posy>
 				<width>225</width>
 				<height>245</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="20">
 				<description>Shuffle button</description>
@@ -108,7 +108,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="radiobutton" id="28">
 				<description>Randomize button</description>
@@ -129,7 +128,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="26">
 				<description>Repeat button</description>
@@ -147,7 +145,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="21">
 				<description>Save button</description>
@@ -167,7 +164,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 			<control type="button" id="22">
 				<description>Clear button</description>
@@ -188,7 +184,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<include>button-fade</include>
-				<include>View-as</include>
 			</control>
 		</control>
 	</controls>
