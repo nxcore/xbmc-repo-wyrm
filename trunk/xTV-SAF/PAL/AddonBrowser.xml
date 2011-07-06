@@ -93,39 +93,31 @@
 		<!--<include>PageControl</include>-->
 
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock)</visible>
-			<control type="image">
-				<description>Background shadow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<texture>black.png</texture>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="image">
-				<description>Button Background</description>
-				<posx>260</posx>
-				<posy>170</posy>
-				<width>225</width>
-				<height>205</height>
-				<texture border="8" diffuse="mask-square.png">button-menu-background.png</texture>
-				<include>button-fade</include>
-				<include>View-as</include>
-			</control>
-			<control type="grouplist" id="420">
-				<posx>270</posx>
-				<posy>180</posy>
-				<width>205</width>
-				<height>205</height>
-				<itemgap>2</itemgap>
-				<onup>420</onup>
-				<ondown>420</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
+			<posy>576</posy>
+			<include>View-as</include>
+			<control type="group" id="9000">
+				<visible>!Skin.HasSetting(view-as-lock)</visible>
+				<control type="image">
+					<description>Background shadow</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>576</height>
+					<texture>black.png</texture>
+				</control>
+				<control type="image">
+					<description>Button Background</description>
+					<posx>260</posx>
+					<posy>170</posy>
+					<width>225</width>
+					<height>205</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<include>button-fade</include>
+				</control>
 				<control type="button" id="2">
 					<description>View As Icons button</description>
+					<posx>270</posx>
+					<posy>180</posy>
 					<width>205</width>
 					<font>font12</font>
 					<label>100</label>
@@ -133,72 +125,70 @@
 					<aligny>center</aligny>
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>6</onup>
+					<ondown>3</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
-				<control type="group" id="999">
-					<posx>0</posx>
-					<posy>0</posy>
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<posx>270</posx>
+					<posy>225</posy>
 					<width>205</width>
-					<height>37</height>
-					<include>View-as</include>
-					<control type="image">
-						<description>Button image</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>205</width>
-						<height>37</height>
-						<texture>default-button.png</texture>
-						<include>button-fade</include>
-						<visible>Control.HasFocus(3) | Control.HasFocus(4)</visible>
-					</control>
-					<control type="button" id="3">
-						<description>Sort by button</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>205</width>
-						<font>font12</font>
-						<label>103</label>
-						<textoffsetx>10</textoffsetx>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<onleft>50</onleft> 
-						<onright>4</onright>
-						<textcolor>button-text</textcolor>
-						<include>button-fade</include>
-					</control>
-					<control type="togglebutton" id="4">
-						<description>Sort asc/dsc</description>
-						<posx>180</posx>
-						<posy>10</posy>
-						<width>15</width>
-						<height>15</height>
-						<label>-</label>
-						<onleft>3</onleft> 
-						<onright>50</onright>
-						<include>button-fade</include>
-					</control>
+					<font>font12</font>
+					<label>103</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>4</onright>
+					<onup>2</onup>
+					<ondown>5</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc/dsc</description>
+					<posx>450</posx>
+					<posy>240</posy>
+					<label>-</label>
+					<onleft>3</onleft>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>5</ondown>
+					<include>button-fade</include>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Enable auto-updates</description>
+					<posx>270</posx>
+					<posy>270</posy>
 					<width>205</width>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
 					<label>24063</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>3</onup>
+					<ondown>6</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 				<control type="radiobutton" id ="6"> 
 					<description>No notifications</description>
+					<posx>270</posx>
+					<posy>315</posy>
 					<width>205</width>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
-					<label>25000</label> 
+					<label>25000</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>5</onup>
+					<ondown>2</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<include>View-as</include>
 				</control>
 			</control>
 		</control>

@@ -8,7 +8,7 @@
 			<height>400</height>
 			<onleft>54</onleft>
 			<onright>54</onright>
-			<onup>2</onup>
+			<onup>9000</onup>
 			<ondown>23</ondown>
 			<include>list-fade</include>
 			<focusposition>1</focusposition>
@@ -35,7 +35,7 @@
 					<height>144</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="6">photoframe.png</bordertexture>
+					<bordertexture border="6">picturepanel.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>600</fadetime>
 					<visible>!SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
@@ -49,7 +49,7 @@
 					<width>228</width>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="6">photoframe.png</bordertexture>
+					<bordertexture border="6">picturepanel.png</bordertexture>
 					<bordersize>6</bordersize>
 					<fadetime>600</fadetime>
 					<visible>!SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.FileNameAndPath,/,Left)</visible>
@@ -81,7 +81,7 @@
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onup>54</onup>
-				<ondown>2</ondown>
+				<ondown>9000</ondown>
 				<include>list-fade</include>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>

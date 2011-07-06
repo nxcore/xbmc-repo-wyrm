@@ -5,7 +5,7 @@
 			<posy>100</posy>
 			<width>680</width>
 			<height>394</height>
-			<onleft>2</onleft>
+			<onleft>9000</onleft>
 			<onright>29</onright>
 			<onup>52</onup>
 			<ondown>52</ondown>
@@ -103,7 +103,7 @@
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>52</onleft>
-			<onright>2</onright>
+			<onright>9000</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>

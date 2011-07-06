@@ -87,120 +87,120 @@
 			<visible>Player.HasAudio</visible>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<posy>576</posy>
 			<include>View-as</include>
-			<control type="image">
-				<description>Background shadow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<texture>black.png</texture>
-				<include>button-fade</include>
-			</control>
-			<control type="image">
-				<description>Button Background</description>
-				<posx>260</posx>
-				<posy>170</posy>
-				<width>225</width>
-				<height>245</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="20">
-				<description>Shuffle button</description>
-				<posx>270</posx>
-				<posy>180</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>191</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>22</onup>
-				<ondown>28</ondown>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="radiobutton" id="28">
-				<description>Randomize button</description>
-				<posx>270</posx>
-				<posy>225</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>13319</label>
-				<label>194</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>20</onup>
-				<ondown>26</ondown>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="26">
-				<description>Repeat button</description>
-				<posx>270</posx>
-				<posy>270</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<label>-</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>28</onup>
-				<ondown>21</ondown>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="21">
-				<description>Save button</description>
-				<posx>270</posx>
-				<posy>315</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>190</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>26</onup>
-				<ondown>22</ondown>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="22">
-				<description>Clear button</description>
-				<posx>270</posx>
-				<posy>360</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>192</label>
-				<label>31011</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>21</onup>
-				<ondown>20</ondown>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<include>button-fade</include>
+			<control type="group" id="9000">
+				<visible>!Skin.HasSetting(view-as-lock)</visible>
+				<control type="image">
+					<description>Background shadow</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>576</height>
+					<texture>black.png</texture>
+				</control>
+				<control type="image">
+					<description>Button Background</description>
+					<posx>260</posx>
+					<posy>170</posy>
+					<width>225</width>
+					<height>245</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="20">
+					<description>Shuffle button</description>
+					<posx>270</posx>
+					<posy>180</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>191</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>22</onup>
+					<ondown>28</ondown>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="radiobutton" id="28">
+					<description>Randomize button</description>
+					<posx>270</posx>
+					<posy>225</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>13319</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>20</onup>
+					<ondown>26</ondown>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="26">
+					<description>Repeat button</description>
+					<posx>270</posx>
+					<posy>270</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>-</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>28</onup>
+					<ondown>21</ondown>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="21">
+					<description>Save button</description>
+					<posx>270</posx>
+					<posy>315</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>190</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>26</onup>
+					<ondown>22</ondown>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="22">
+					<description>Clear button</description>
+					<posx>270</posx>
+					<posy>360</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>192</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>21</onup>
+					<ondown>20</ondown>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
 		</control>
 	</controls>

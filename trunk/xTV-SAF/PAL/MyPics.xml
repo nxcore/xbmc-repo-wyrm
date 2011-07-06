@@ -35,122 +35,124 @@
 		<include condition="!Skin.HasSetting(views-photowall)">PhotoWall</include>
 		
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<posy>576</posy>
 			<include>View-as</include>
-			<control type="image">
-				<description>Background shadow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>720</width>
-				<height>576</height>
-				<texture>black.png</texture>
-				<include>button-fade</include>
-			</control>
-			<control type="image">
-				<description>Button Background</description>
-				<posx>260</posx>
-				<posy>170</posy>
-				<width>225</width>
-				<height>245</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="2">
-				<description>View As Icons button</description>
-				<posx>270</posx>
-				<posy>180</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>100</label>
-				<textoffsetx>10</textoffsetx>
-				<aligny>center</aligny>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>9</onup>
-				<ondown>3</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="3">
-				<description>Sort by button</description>
-				<posx>270</posx>
-				<posy>225</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<label>103</label>
-				<textoffsetx>10</textoffsetx>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<onleft>50</onleft>
-				<onright>4</onright>
-				<onup>2</onup>
-				<ondown>6</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="togglebutton" id="4">
-				<description>Sort asc/desn</description>
-				<posx>440</posx>
-				<posy>240</posy>
-				<label>-</label>
-				<onleft>3</onleft>
-				<onright>50</onright>
-				<onup>2</onup>
-				<ondown>6</ondown>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="6">
-				<description>SlideShow button</description>
-				<posx>270</posx>
-				<posy>270</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<label>108</label>
-				<font>font12</font>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>4</onup>
-				<ondown>7</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="button" id="7">
-				<description>recursive slideshow</description>
-				<posx>270</posx>
-				<posy>315</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<label>361</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>6</onup>
-				<ondown>9</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
-			</control>
-			<control type="radiobutton" id="9">
-				<description>Randomize button</description>
-				<posx>270</posx>
-				<posy>360</posy>
-				<width>205</width>
-				<height>45</height>
-				<font>font12</font>
-				<textoffsetx>10</textoffsetx>
-				<label>13319</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>7</onup>
-				<ondown>2</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
+			<control type="group" id="9000">
+				<visible>!Skin.HasSetting(view-as-lock)</visible>
+				<control type="image">
+					<description>Background shadow</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>576</height>
+					<texture>black.png</texture>
+				</control>
+				<control type="image">
+					<description>Button Background</description>
+					<posx>260</posx>
+					<posy>170</posy>
+					<width>225</width>
+					<height>245</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="2">
+					<description>View As Icons button</description>
+					<posx>270</posx>
+					<posy>180</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>100</label>
+					<textoffsetx>10</textoffsetx>
+					<aligny>center</aligny>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>9</onup>
+					<ondown>3</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<posx>270</posx>
+					<posy>225</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<label>103</label>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>50</onleft>
+					<onright>4</onright>
+					<onup>2</onup>
+					<ondown>6</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc/desn</description>
+					<posx>440</posx>
+					<posy>240</posy>
+					<label>-</label>
+					<onleft>3</onleft>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>6</ondown>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="6">
+					<description>SlideShow button</description>
+					<posx>270</posx>
+					<posy>270</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>108</label>
+					<font>font12</font>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>4</onup>
+					<ondown>7</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="7">
+					<description>recursive slideshow</description>
+					<posx>270</posx>
+					<posy>315</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>361</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>6</onup>
+					<ondown>9</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="radiobutton" id="9">
+					<description>Randomize button</description>
+					<posx>270</posx>
+					<posy>360</posy>
+					<width>205</width>
+					<height>45</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<label>13319</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>7</onup>
+					<ondown>2</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
 		</control>
 	</controls>

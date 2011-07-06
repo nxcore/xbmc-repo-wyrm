@@ -8,7 +8,7 @@
 			<height>444</height>
 			<focusposition>4</focusposition>
 			<movement>6</movement>
-			<onleft>2</onleft>
+			<onleft>9000</onleft>
 			<onright>27</onright>
 			<onup>51</onup>
 			<ondown>51</ondown>
@@ -384,7 +384,7 @@
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>51</onleft>
-				<onright>2</onright>
+				<onright>9000</onright>
 				<include>list-fade</include>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
