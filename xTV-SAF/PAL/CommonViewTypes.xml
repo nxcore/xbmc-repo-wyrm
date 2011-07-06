@@ -8,7 +8,7 @@
 			<height>444</height>
 			<focusposition>4</focusposition>
 			<movement>6</movement>
-			<onleft>2</onleft>
+			<onleft>9000</onleft>
 			<onright>23</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>

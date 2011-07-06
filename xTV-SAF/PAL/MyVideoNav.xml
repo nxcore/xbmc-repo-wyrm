@@ -7,30 +7,16 @@
 		<include>Fake-Overlay</include>
 		<include>#files</include>
 		
-		<control type="group" id="9999">
-			<control type="button">
-				<description>Play TVTunes theme if required</description>
-				<posy>-10</posy>
-				<posy>-10</posy>
-				<width>1</width>
-				<height>1</height>
-				<include condition="Skin.HasSetting(tv_theme)">PlayTVTunes</include>
-				<onfocus>SetFocus(50)</onfocus>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-			</control>
-			<control type="button">
-				<description>Skip TVTunes script if not in TV library</description>
-				<posy>-10</posy>
-				<posy>-10</posy>
-				<width>1</width>
-				<height>1</height>
-				<onfocus>SetFocus(50)</onfocus>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-			</control>
+		<control type="button" id="9999">
+			<description>Play TVTunes theme if required</description>
+			<posy>-10</posy>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<include condition="Skin.HasSetting(tv_theme)">PlayTVTunes</include>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
 		</control>
 		
 		<control type="image">
@@ -122,10 +108,10 @@
 		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
 		
 		<control type="group">
-			<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<posy>576</posy>
 			<include>View-as</include>
-			<animation effect="fade" start="0" time="300">Visible</animation>
-			<control type="group">
+			<control type="group" id="9000">
+				<visible>!Skin.HasSetting(view-as-lock)</visible>
 				<control type="image">
 					<description>Background shadow</description>
 					<posx>0</posx>
@@ -133,7 +119,7 @@
 					<width>720</width>
 					<height>576</height>
 					<texture>black.png</texture>
-					<include>button-fade</include>
+					<visible>!Skin.HasSetting(view-as-lock)</visible>
 				</control>
 				<control type="image">
 					<description>Button Background</description>

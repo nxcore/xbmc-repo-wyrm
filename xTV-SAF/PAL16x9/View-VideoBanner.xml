@@ -10,7 +10,7 @@
 			<pagecontrol>29</pagecontrol>
 			<onup>59</onup>
 			<ondown>59</ondown>
-			<onleft>2</onleft>
+			<onleft>9000</onleft>
 			<onright>29</onright>
 			<visible>Window.IsActive(VideoLibrary)</visible>
 			<itemlayout height="80">
@@ -227,7 +227,7 @@
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>59</onleft>
-					<onright>2</onright>
+					<onright>9000</onright>
 					<include>list-fade</include>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
