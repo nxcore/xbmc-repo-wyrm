@@ -1,0 +1,1304 @@
+<includes>
+	<include file="CommonViewTypes.xml">-</include>
+	<include file="Defaults.xml">-</include>
+	<include file="View-VideoBanner.xml">-</include>
+	<include file="View-Icon.xml">-</include>
+	<include file="View-List2.xml">-</include>
+	<include file="View-Wall.xml">-</include>
+	<include file="View-VideoWall.xml">-</include>
+	<include file="View-AlbumWall.xml">-</include>
+	<include file="View-PhotoWall.xml">-</include>
+	<include file="View-Wrap.xml">-</include>
+	<include file="View-VideoWrap.xml">-</include>
+	<include file="View-AlbumWrap.xml">-</include>
+	<include file="View-PhotoWrap.xml">-</include>
+	<include file="View-Coverflow.xml">-</include>
+	<include file="View-AlbumCoverflow.xml">-</include>
+	<include file="View-VideoCoverflow.xml">-</include>
+	
+	<include file="Includes_Weather.xml">-</include>
+	
+	<!-- Begin fade background image include -->
+	<include name="fadebackground">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+	</include>
+	
+	<!-- Begin background image include -->
+	<include name="background">
+		<control type="image">
+			<description>solid background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<colordiffuse>solid-background</colordiffuse>
+			<texture>background.png</texture>
+		</control>
+		<control type="group">
+			<visible>Skin.HasSetting(HomeViewToggle) + [Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]]</visible>
+			<control type="visualisation">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>scale</aspectratio>
+				<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + Player.HasAudio + Visualisation.Enabled</visible>
+			</control>
+			<control type="videowindow">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>scale</aspectratio>
+				<visible>Player.HasVideo</visible>
+			</control>
+			<control type="image">
+				<description>background to cover video and visualisation backgrounds</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>mask-background</colordiffuse>
+				<texture>background.png</texture>
+			</control>
+		</control>
+		<control type="group">
+			<visible>!Skin.HasSetting(HomeViewToggle) | ![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]]</visible>
+			<control type="image">
+				<description>custom background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>fanart-background</colordiffuse>
+				<info>Skin.String(custom-background)</info>
+				<visible>INFO$(Skin.String(custom-background))</visible>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(background-fanart) + !Skin.String(custom-background)</visible>
+				<control type="image">
+					<description>Fanart background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<colordiffuse>fanart-background</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<include>background-fade</include>
+					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+				</control>
+				<control type="group">
+					<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
+					<!-- Following fanart hacks modified from Ronie's hacks in T! -->
+					<control type="image" id="1501">
+						<description>hack for (inside folder) fanart in programs pictures scripts</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<colordiffuse>fanart-background</colordiffuse>
+						<texture fallback="blank.png" background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<include>background-fade</include>
+					</control>
+					<control type="group">
+						<visible>!StringCompare(Control.GetLabel(1501),blank.png)</visible>
+						<control type="image" id="1502">
+							<description>hack for (inside folder) fanart in programs pictures scripts</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>1280</width>
+							<height>720</height>
+							<colordiffuse>fanart-background</colordiffuse>
+							<texture fallback="blank.png" background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+							<aspectratio>stretch</aspectratio>
+							<fadetime>300</fadetime>
+							<include>background-fade</include>
+						</control>
+						<control type="image" id="1503">
+							<description>hack for (folder) fanart in programs pictures scripts</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>1280</width>
+							<height>720</height>
+							<colordiffuse>fanart-background</colordiffuse>
+							<texture fallback="blank.png" background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
+							<aspectratio>stretch</aspectratio>
+							<fadetime>300</fadetime>
+							<include>background-fade</include>
+							<visible>!StringCompare(Control.GetLabel(1502),blank.png)</visible>
+						</control>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+	
+	<!-- Start xTV box image include -->
+	<include name="xtv-box">
+		<control type="image">
+			<description>Xtv Logo</description>
+			<posx>-53</posx>
+			<posy>87</posy>
+			<width>778</width>
+			<height>550</height>
+			<aspectratio>keep</aspectratio>
+			<texture>Xtv-Logo-Big.png</texture>
+			<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home) + !Window.Previous(Settings)">WindowOpen</animation>
+			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
+		</control>
+	</include>
+	
+	<!-- Begin Page info Includes -->
+	<include name="page-info">
+		<control type="rss">
+			<description>rss feed</description>
+			<posx>0</posx>
+			<posy>681</posy>
+			<width>1280</width>
+			<font>font12</font>
+			<urlset>1</urlset>
+			<textcolor>info-text</textcolor>
+			<titlecolor>rss-title-text</titlecolor>
+			<headlinecolor>rss-headline-text</headlinecolor>
+		</control>
+	</include>
+	
+	<!-- Begin Low free memory include -->
+	<include name="memory-low">
+		<control type="label">
+			<description>low free memory label</description>
+			<posx>354</posx>
+			<posy>75</posy>
+			<width>566</width>
+			<height>37</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font18</font>
+			<textcolor>warning-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
+			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
+		</control>
+	</include>
+	
+	<!-- Start Home Media Overlay -->
+	<include name="homemediainfo">
+		<animation effect="fade" time="200">VisibleChange</animation>
+		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
+		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
+	</include>
+	
+	<!-- Start Number of Files Include -->
+	<include name="#files">
+		<control type="label" id="12">
+			<description>number of files text label</description>
+			<posx>1062</posx>
+			<posy>682</posy>
+			<width>203</width>
+			<height>37</height>
+			<align>left</align>
+			<label>-</label>
+			<font>font13</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<include>list-fade</include>
+		</control>
+	</include>
+	
+	<!-- MovieLibraryTitle Include -->
+	<include name="MovieLibraryTitle">
+		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
+	</include>
+	<!-- MovieLibraryRoot Include -->
+	<include name="MovieLibraryRoot">
+		<onclick>ActivateWindow(Videos,movies,return)</onclick>
+	</include>
+	<!-- MovieLibraryRecentlyadded Include -->
+	<include name="MovieLibraryRecentlyadded">
+		<onclick>ActivateWindow(Videos,recentlyaddedmovies,return)</onclick>
+	</include>
+	<!-- MovieLibraryGenres Include -->
+	<include name="MovieLibraryGenres">
+		<onclick>ActivateWindow(Videos,moviegenres,return)</onclick>
+	</include>
+	<!-- MovieLibraryYears Include -->
+	<include name="MovieLibraryYears">
+		<onclick>ActivateWindow(Videos,movieyears,return)</onclick>
+	</include>
+	<!-- MovieLibraryActors Include -->
+	<include name="MovieLibraryActors">
+		<onclick>ActivateWindow(Videos,movieactors,return)</onclick>
+	</include>
+	<!-- MovieLibraryDirectors Include -->
+	<include name="MovieLibraryDirectors">
+		<onclick>ActivateWindow(Videos,moviedirectors,return)</onclick>
+	</include>
+	<!-- MovieLibraryStudios Include -->
+	<include name="MovieLibraryStudios">
+		<onclick>ActivateWindow(Videos,moviestudios,return)</onclick>
+	</include>
+	<!-- MovieLibraryFiles Include -->
+	<include name="MovieLibraryFiles">
+		<onclick>ActivateWindow(Videos,Files,return)</onclick>
+	</include>
+	
+	<!-- TVLibraryTitle Include -->
+	<include name="TVLibraryTitle">
+		<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
+	</include>
+	<!-- TVLibraryRoot Include -->
+	<include name="TVLibraryRoot">
+		<onclick>ActivateWindow(Videos,tvshows,return)</onclick>
+	</include>
+	<!-- TVLibraryRecentlyadded Include -->
+	<include name="TVLibraryRecentlyadded">
+		<onclick>ActivateWindow(Videos,recentlyaddedepisodes,return)</onclick>
+	</include>
+	<!-- TVLibraryGenres Include -->
+	<include name="TVLibraryGenres">
+		<onclick>ActivateWindow(Videos,tvshowgenres,return)</onclick>
+	</include>
+	<!-- TVLibraryYears Include -->
+	<include name="TVLibraryYears">
+		<onclick>ActivateWindow(Videos,tvshowyears,return)</onclick>
+	</include>
+	<!-- TVLibraryActors Include -->
+	<include name="TVLibraryActors">
+		<onclick>ActivateWindow(Videos,tvshowactors,return)</onclick>
+	</include>
+	<!-- TVLibraryStudios Include -->
+	<include name="TVLibraryStudios">
+		<onclick>ActivateWindow(Videos,tvshowstudios,return)</onclick>
+	</include>
+	<!-- TVLibraryFiles Include -->
+	<include name="TVLibraryFiles">
+		<onclick>ActivateWindow(Videos,Files,return)</onclick>
+	</include>
+	
+	<!-- MusicVideoLibraryTitle Include -->
+	<include name="MusicVideoLibraryTitle">
+		<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryRoot Include -->
+	<include name="MusicVideoLibraryRoot">
+		<onclick>ActivateWindow(Videos,musicvideos,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryRecentlyadded Include -->
+	<include name="MusicVideoLibraryRecentlyadded">
+		<onclick>ActivateWindow(Videos,recentlyaddedmusicvideos,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryGenres Include -->
+	<include name="MusicVideoLibraryGenres">
+		<onclick>ActivateWindow(Videos,musicvideogenres,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryYears Include -->
+	<include name="MusicVideoLibraryYears">
+		<onclick>ActivateWindow(Videos,musicvideoyears,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryArtists Include -->
+	<include name="MusicVideoLibraryArtists">
+		<onclick>ActivateWindow(Videos,musicvideoartists,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryDirectors Include -->
+	<include name="MusicVideoLibraryDirectors">
+		<onclick>ActivateWindow(Videos,musicvideodirectors,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryStudios Include -->
+	<include name="MusicVideoLibraryStudios">
+		<onclick>ActivateWindow(Videos,musicvideostudios,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryFiles Include -->
+	<include name="MusicVideoLibraryFiles">
+		<onclick>ActivateWindow(Videos,Files,return)</onclick>
+	</include>
+	
+	<!-- MusicVideoLibraryGenres Include -->
+	<include name="MusicLibraryGenres">
+		<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
+	</include>
+	<!-- MusicLibraryArtists Include -->
+	<include name="MusicLibraryArtists">
+		<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
+	</include>
+	<!-- MusicLibraryAlbums Include -->
+	<include name="MusicLibraryAlbums">
+		<onclick>ActivateWindow(MusicLibrary,albums,return)</onclick>
+	</include>
+	<!-- MusicLibrarySongs Include -->
+	<include name="MusicLibrarySongs">
+		<onclick>ActivateWindow(MusicLibrary,songs,return)</onclick>
+	</include>
+	<!-- MusicLibraryTop100Songs Include -->
+	<include name="MusicLibraryTop100Songs">
+		<onclick>ActivateWindow(MusicLibrary,top100songs,return)</onclick>
+	</include>
+	<!-- MusicLibraryTop100Albums Include -->
+	<include name="MusicLibraryTop100Albums">
+		<onclick>ActivateWindow(MusicLibrary,top100albums,return)</onclick>
+	</include>
+	<!-- MusicLibraryRecentlyadded Include -->
+	<include name="MusicLibraryRecentlyadded">
+		<onclick>ActivateWindow(MusicLibrary,recentlyaddedalbums,return)</onclick>
+	</include>
+	<!-- MusicLibraryRecentlyPlayed Include -->
+	<include name="MusicLibraryRecentlyPlayed">
+		<onclick>ActivateWindow(MusicLibrary,recentlyplayedalbums,return)</onclick>
+	</include>
+	<!-- MusicLibraryCompilations  Include -->
+	<include name="MusicLibraryCompilations">
+		<onclick>ActivateWindow(MusicLibrary,compilations,return)</onclick>
+	</include>
+	<!-- MusicLibraryYears Include -->
+	<include name="MusicLibraryYears">
+		<onclick>ActivateWindow(MusicLibrary,years,return)</onclick>
+	</include>
+	<!-- MusicLibrarySingles Include -->
+	<include name="MusicLibrarySingles">
+		<onclick>ActivateWindow(MusicLibrary,singles,return)</onclick>
+	</include>
+	<!-- MusicLibraryFiles Include -->
+	<include name="MusicLibraryFiles">
+		<onclick>ActivateWindow(MusicFiles)</onclick>
+	</include>
+	
+	<!-- Start Current Sort Letter -->
+	<include name="SortLetterNotification">
+		<control type="group">
+			<visible>Container.Scrolling</visible>
+			<animation effect="fade" time="50">Visible</animation>
+			<animation effect="fade" time="300" delay="500">Hidden</animation>
+			<posx>587</posx>
+			<posy>42</posy>
+			<width>81</width>
+			<height>65</height>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>81</width>
+				<height>65</height>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>79</width>
+				<height>56</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.SortLetter]</label>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<font>font28</font>
+			</control>
+		</control>
+	</include>
+	<include name="PageControl">
+		<control type="scrollbar" id="23">
+			<posx>1239</posx>
+			<posy>112</posy>
+			<width>24</width>
+			<height>555</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+		</control>
+	</include>
+	<!-- Start List Item Icon Include -->
+	<include name="ListView-Icon">
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
+				<effect type="rotatey" start="-20" end="-20" time="0"/>
+				<effect type="slide" end="10,0" time="0"/>
+			</animation>
+			<control type="group">
+				<control type="image">
+					<description>list item icon</description>
+					<posx>122</posx>
+					<posy>118</posy>
+					<width>384</width>
+					<height>384</height>
+					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+				<control type="image">
+					<description>list item icon reflection</description>
+					<posx>122</posx>
+					<posy>503</posy>
+					<width>384</width>
+					<height>384</height>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+			</control>
+		</control>
+	</include>
+	<!-- Start Video List Item Icon Include -->
+	<include name="ListView-VideoIcon">
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
+				<effect type="rotatey" start="-20" end="-20" time="0"/>
+				<effect type="slide" end="10,0" time="0"/>
+			</animation>
+			<control type="group">
+				<visible>Skin.HasSetting(Fanart) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="group">
+					<visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<!-- No Fanart available -->
+					<control type="image">
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<!-- Fanart image -->
+					<control type="image">
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<include>icon-fade</include>
+						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					</control>
+					<control type="image">
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<include>icon-fade</include>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<visible>![Skin.HasSetting(Fanart)] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+				<!-- User has selected NO fanart -->
+				<control type="image">
+					<description>list item icon</description>
+					<posx>90</posx>
+					<posy>120</posy>
+					<width>448</width>
+					<height>448</height>
+					<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+				<control type="image">
+					<description>list item icon reflection</description>
+					<posx>90</posx>
+					<posy>570</posy>
+					<width>448</width>
+					<height>448</height>
+					<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+			</control>
+			<control type="group">
+				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
+					<control type="image">
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<!-- Show TV icon as the Default icon -->
+					<control type="image">
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<visible>System.IdleTime(2) + !IsEmpty(listitem.Duration)</visible>
+				<animation effect="fade" time="300">Visible</animation>
+				<!-- Star Rating -->
+				<control type="image">
+					<posx>17</posx>
+					<posy>268</posy>
+					<width>177</width>
+					<height>25</height>
+					<info>ListItem.StarRating</info>
+					<colordiffuse>StarDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.Thumb)</visible>
+					<visible>!IsEmpty(ListItem.StarRating)</visible>
+				</control>
+				<!-- Duration -->
+				<control type="group">
+					<visible>!IsEmpty(listitem.Duration)</visible>
+					<control type="label">
+						<posx>17</posx>
+						<posy>302</posy>
+						<width>265</width>
+						<height>31</height>
+						<aligny>center</aligny>
+						<font>font18</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Duration</info>
+						<visible>substring(listitem.Duration,hrs)</visible>
+					</control>
+					<control type="label">
+						<posx>17</posx>
+						<posy>302</posy>
+						<width>265</width>
+						<height>31</height>
+						<aligny>center</aligny>
+						<font>font18</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Duration</info>
+						<visible>substring(listitem.Duration,min)</visible>
+						<visible>!substring(listitem.Duration,hrs)</visible>
+					</control>
+					<control type="label">
+						<posx>17</posx>
+						<posy>302</posy>
+						<width>265</width>
+						<height>31</height>
+						<aligny>center</aligny>
+						<font>font18</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<label>$INFO[ListItem.Duration,, mins]</label>
+						<visible>!substring(listitem.Duration,min)</visible>
+					</control>
+				</control>
+				<!-- MPAA Rating -->
+				<control type="group">
+					<posx>17</posx>
+					<posy>343</posy>
+					<include>mpaa-ratings</include>
+				</control>
+				<!-- TV show Logo -->
+				<control type="group">
+					<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<control type="image" id="37016">
+						<posx>17</posx>
+						<posy>412</posy>
+						<width>184</width>
+						<height>50</height>
+						<texture fallback="blank.png">$INFO[ListItem.path]logo.png</texture>
+						<aligny>bottom</aligny>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image" id="39016">
+						<posx>17</posx>
+						<posy>412</posy>
+						<width>184</width>
+						<height>50</height>
+						<texture>$INFO[ListItem.path]../logo.png</texture>
+						<aligny>bottom</aligny>
+						<aspectratio align="left">keep</aspectratio>
+						<visible>!StringCompare(Control.GetLabel(37016),blank.png)</visible>
+					</control>
+				</control>
+				<!-- Plot Outline -->
+				<control type="textbox">
+					<posx>17</posx>
+					<posy>467</posy>
+					<width>646</width>
+					<height>202</height>
+					<font>font12</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+					<align>justify</align>
+					<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+				</control>
+				<!-- Plot (Show if no outline available)-->
+				<control type="textbox">
+					<posx>17</posx>
+					<posy>467</posy>
+					<width>646</width>
+					<height>202</height>
+					<font>font12</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label fallback="161">$INFO[ListItem.Plot]</label>
+					<align>justify</align>
+					<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
+					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+				</control>
+			</control>
+		</control>
+	</include>
+	<!-- Start Music List Item Icon Include -->
+	<include name="ListView-MusicIcon">
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
+				<effect type="rotatey" start="-20" end="-20" time="0"/>
+				<effect type="slide" end="10,0" time="0"/>
+			</animation>
+			<control type="image">
+				<posx>144</posx>
+				<posy>98</posy>
+				<width>418</width>
+				<height>418</height>
+				<texture>case-cd.png</texture>
+				<aspectratio aligny="center">keep</aspectratio>
+				<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
+			</control>
+			<control type="image">
+				<description>list item icon</description>
+				<posx>190</posx>
+				<posy>134</posy>
+				<width>350</width>
+				<height>350</height>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio aligny="center" align="center">keep</aspectratio>
+				<include>list-fade</include>
+			</control>
+			<control type="group">
+				<visible>!IsEmpty(ListItem.Album)</visible>
+				<control type="image">
+					<description>seperator</description>
+					<posx>31</posx>
+					<posy>512</posy>
+					<width>654</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="label">
+					<description>Artist label</description>
+					<posx>123</posx>
+					<posy>525</posy>
+					<width>177</width>
+					<height>25</height>
+					<label>31230</label>
+					<font>font11</font>
+					<align>right</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Artist value</description>
+					<posx>159</posx>
+					<posy>525</posy>
+					<width>513</width>
+					<height>25</height>
+					<label>$INFO[ListItem.Artist]</label>
+					<scroll>true</scroll>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Genre label</description>
+					<posx>123</posx>
+					<posy>550</posy>
+					<width>177</width>
+					<height>25</height>
+					<label>31231</label>
+					<font>font11</font>
+					<align>right</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Genre value</description>
+					<posx>159</posx>
+					<posy>550</posy>
+					<width>513</width>
+					<height>25</height>
+					<label>$INFO[ListItem.Genre]</label>
+					<scroll>true</scroll>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Year label</description>
+					<posx>123</posx>
+					<posy>575</posy>
+					<width>177</width>
+					<height>25</height>
+					<label>31232</label>
+					<font>font11</font>
+					<align>right</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Year label</description>
+					<posx>159</posx>
+					<posy>575</posy>
+					<width>513</width>
+					<height>25</height>
+					<label>$INFO[ListItem.Year]</label>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="image">
+					<description>seperator</description>
+					<posx>31</posx>
+					<posy>612</posy>
+					<width>654</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+			</control>
+		</control>
+	</include>
+	<!-- Start Fake Overlay Include -->
+	<include name="Fake-Overlay">
+		<control type="group">
+			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
+			<!-- Video Stuff -->
+			<control type="videowindow">
+				<description>video preview window</description>
+				<posx>35</posx>
+				<posy>5</posy>
+				<width>205</width>
+				<height>123</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<description>Now playing</description>
+				<posx>254</posx>
+				<posy>20</posy>
+				<width>407</width>
+				<height>31</height>
+				<label>13350</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>listselectedtext</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Video Title label</description>
+				<posx>254</posx>
+				<posy>50</posy>
+				<width>407</width>
+				<height>31</height>
+				<info>VideoPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>254</posx>
+				<posy>80</posy>
+				<width>407</width>
+				<height>31</height>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			<!-- Audio Stuff -->
+			<control type="image">
+				<description>cover image</description>
+				<posx>44</posx>
+				<posy>6</posy>
+				<width>141</width>
+				<height>100</height>
+				<info>MusicPlayer.Cover</info>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<description>Artist label</description>
+				<posx>208</posx>
+				<posy>2</posy>
+				<width>415</width>
+				<height>25</height>
+				<info>MusicPlayer.Artist</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Album label</description>
+				<posx>208</posx>
+				<posy>27</posy>
+				<width>415</width>
+				<height>25</height>
+				<info>MusicPlayer.Album</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>208</posx>
+				<posy>52</posy>
+				<width>415</width>
+				<height>25</height>
+				<info>MusicPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>208</posx>
+				<posy>77</posy>
+				<width>415</width>
+				<height>25</height>
+				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+		</control>
+	</include>
+	<!-- End Fake Overlay Include -->
+	<include name="icon-header-commons">
+		<posx>840</posx>
+		<posy>20</posy>
+		<width>80</width>
+		<height>80</height>
+		<aspectratio aligny="bottom">keep</aspectratio>
+	</include>
+	<include name="mpaa-ratings">
+	<!-- MPAA Rating -->
+		<control type="group">
+			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+			<control type="group">
+				<visible>!IsEmpty(listitem.mpaa)</visible>
+				<!-- US ratings -->
+				<control type="group">
+					<visible>substring(listitem.mpaa,Rated)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/mpaa_restricted.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Rated R,Left)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/mpaa_pg13.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/mpaa_pg.png</texture>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/mpaa_nc17.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/mpaa_general.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Rated G,Left)</visible>
+					</control>
+				</control>
+				<!-- UK Ratings -->
+				<control type="group">
+					<visible>substring(listitem.mpaa,UK)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/bbfc_u.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,UK:U)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/bbfc_pg.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,UK:PG)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/bbfc_12.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,UK:12)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/bbfc_15.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,UK:15)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,UK:18)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/bbfc_18.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,UK:X)</visible>
+					</control>
+				</control>
+				<!-- German Ratings -->
+				<control type="group">
+					<visible>substring(listitem.mpaa,Germany) | substring(listitem.mpaa,ab)  | substring(listitem.mpaa,o.A)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/FSK-0_info.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Germany:0) | substring(listitem.mpaa,o.A)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/FSK-6_info.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Germany:6) | substring(listitem.mpaa,ab 6)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/FSK-12_info.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Germany:12) | substring(listitem.mpaa,ab 12)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/FSK-16_info.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Germany:16) | substring(listitem.mpaa,ab 16)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/FSK-18_info.png</texture>
+						<aspectratio>keep</aspectratio>
+						<colordiffuse>InfoRating</colordiffuse>
+						<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
+					</control>
+				</control>
+				<!-- Australian Ratings -->
+				<control type="group">
+					<visible>substring(listitem.mpaa,Australia)</visible>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/australia_r.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>substring(listitem.mpaa,Australia:R)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/australia_m.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>substring(listitem.mpaa,Australia:M) + ! substring(listitem.mpaa,Australia:MA)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/australia_ma.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>substring(listitem.mpaa,Australia:MA)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/australia_pg.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>substring(listitem.mpaa,Australia:PG)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/australia_g.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>substring(listitem.mpaa,Australia:G)</visible>
+					</control>
+				</control>
+				<!-- TV ratings -->
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>212</width>
+					<height>62</height>
+					<aligny>bottom</aligny>
+					<texture>$INFO[listitem.mpaa,special://skin/extras/images/rating/,.png]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>substring(listitem.mpaa,TV-,Left)</visible>
+				</control>
+			</control>
+			<!-- No Rating set -->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>212</width>
+				<height>62</height>
+				<align>left</align>
+				<texture>special://skin/extras/images/rating/notrated.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>!IsEmpty(ListItem.Thumb)</visible>
+				<visible>IsEmpty(listitem.mpaa)</visible>
+			</control>
+		</control>
+	</include>
+	
+	<!-- Start Animation Includes -->
+	<include name="button-fade">
+		<animation effect="fade" start="0" time="300">Visible</animation>
+	</include>
+	<include name="settingbutton-fade">
+		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
+	</include>
+	<include name="shutdown-ani">
+		<animation effect="slide" start="0,600" time="200">WindowOpen</animation>
+		<animation effect="slide" end="0,600" time="200">WindowClose</animation>
+	</include>
+	<include name="list-fade">
+		<animation effect="fade" start="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
+		<animation effect="fade" start="0" time="10" condition="Window.Next(Home)">WindowClose</animation>
+	</include>
+	<include name="background-fade">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+	</include>
+	<include name="screen-fade">
+		<animation effect="fade" time="1000">WindowOpen</animation>
+		<animation effect="fade" time="1000">WindowClose</animation>
+	</include>
+	<include name="icon-fade">
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+	</include>
+	<include name="icon-ani">
+		<animation effect="zoom" start="140,145,230,460"  end="840,20,80,80" time="175" condition="Window.Previous(Home)">WindowOpen</animation>
+	</include>
+	<!-- End Animation Includes -->
+	<!-- Start Visibility Includes -->
+	<include name="View-as">
+		<animation effect="slide" time="0" start="0,0" end="0,-720" delay="0">Visible</animation>
+		<animation effect="fade" time="200" delay="300">WindowOpen</animation>
+		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
+	</include>
+	<!-- End Visibility Includes -->
+	<!-- Start Autoscroll Includes -->
+	<include name="AutoScroll1x">
+		<align>justify</align>
+		<autoscroll time="3000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
+	<include name="AutoScroll2x">
+		<align>justify</align>
+		<autoscroll time="2000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
+	<include name="AutoScroll3x">
+		<align>justify</align>
+		<autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
+	<!-- End Autoscroll Includes -->
+	<!-- Start of Play content Includes -->
+	<include name="StartupPlaylist">
+		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;,isdir)</onfocus>
+	</include>
+	<include name="StartupVideo">
+		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
+	</include>
+	<include name="PlayTVTunes">
+		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=True)</onfocus>
+	</include>
+	<include name="RestartSkinMovies">
+		<onclick>Skin.Reset(updatemovieentry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+	<include name="RestartSkinTV">
+		<onclick>Skin.Reset(updatetventry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+	<include name="RestartSkinMusicVid">
+		<onclick>Skin.Reset(updatemusicvidentry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+	<include name="RestartSkinMusic">
+		<onclick>Skin.Reset(updatemusicentry)</onclick>
+		<onclick>ReloadSkin()</onclick>
+	</include>
+</includes>

@@ -1,0 +1,63 @@
+<window id="122">
+	<defaultcontrol>2</defaultcontrol>
+	<animation effect="fade" time="400">WindowOpen</animation>
+	<animation effect="fade" time="400">WindowClose</animation>
+	<coordinates>
+		<posx>499</posx>
+		<posy>25</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<description>Visualisation Preset Background image</description>
+			<posx>-17</posx>
+			<posy>-12</posy>
+			<width>754</width>
+			<height>593</height>
+			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<colordiffuse>osd-background</colordiffuse>
+		</control>
+		<control type="label" id="3">
+			<description>Presets Label</description>
+			<posx>0</posx>
+			<posy>2</posy>
+			<width>743</width>
+			<align>left</align>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="label" id="4">
+			<description>No Presets Label</description>
+			<posx>0</posx>
+			<posy>212</posy>
+			<width>722</width>
+			<align>center</align>
+			<label>13389</label>
+			<font>font12</font>
+		</control>
+		<control type="image">
+			<posx>8</posx>
+			<posy>43</posy>
+			<width>708</width>
+			<height>2</height>
+			<texture>separator.png</texture>
+		</control>
+		<control type="listcontrol" id="2">
+			<description>Preset List</description>
+			<posx>-1</posx>
+			<posy>50</posy>
+			<width>720</width>
+			<height>550</height>
+			<spinposx>371</spinposx>
+			<spinposy>390</spinposy>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<selectedcolor>listselectedtext</selectedcolor>
+			<textoffsetx>10</textoffsetx>
+			<textureheight>37</textureheight>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+		</control>
+	</controls>
+</window>

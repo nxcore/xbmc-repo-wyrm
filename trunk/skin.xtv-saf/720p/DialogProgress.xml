@@ -1,0 +1,89 @@
+<window id="101">
+	<defaultcontrol>10</defaultcontrol>
+	<include>shutdown-ani</include>
+	<controls>
+		<control type="image">
+			<description>Progess Dialog background</description>
+			<posx>292</posx>
+			<posy>256</posy>
+			<width>690</width>
+			<height>237</height>
+			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<colordiffuse>dialog-background</colordiffuse>
+		</control>
+		<control type="label" id="1">
+			<description>dialog Heading</description>
+			<posx>336</posx>
+			<posy>272</posy>
+			<width>637</width>
+			<height>25</height>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="2">
+			<description>dialog line 1</description>
+			<posx>336</posx>
+			<posy>325</posy>
+			<width>637</width>
+			<height>25</height>
+			<haspath>yes</haspath>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="3">
+			<description>dialog line 2</description>
+			<posx>336</posx>
+			<posy>350</posy>
+			<width>637</width>
+			<height>25</height>
+			<haspath>yes</haspath>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="4">
+			<description>dialog line 3</description>
+			<posx>336</posx>
+			<posy>375</posy>
+			<width>637</width>
+			<height>25</height>
+			<haspath>yes</haspath>
+			<label>-</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="progress">
+			<description>progress control</description>
+			<posx>336</posx>
+			<posy>407</posy>
+			<width>601</width>
+			<height>15</height>
+			<info>System.Progressbar</info>
+			<visible>IntegerGreaterThan(System.Progressbar,0)</visible>
+		</control>
+		<control type="button" id="10">
+			<description>Cancel button</description>
+			<posx>559</posx>
+			<posy>432</posy>
+			<width>159</width>
+			<height>40</height>
+			<label>222</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>default-button.png</texturefocus>
+			<onleft>10</onleft>
+			<align>center</align>
+			<onright>10</onright>
+			<onup>10</onup>
+			<ondown>10</ondown>
+		</control>
+	</controls>
+</window>
