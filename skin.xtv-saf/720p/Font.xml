@@ -28,7 +28,6 @@
 			<name>font20</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>36</size>
-			<style>bold</style>
 			<aspect>1.05</aspect>
 		</font>
 		<font>
@@ -68,7 +67,6 @@
 			<name>font20</name>
 			<filename>Ubuntu-B.ttf</filename>
 			<size>36</size>
-			<style>bold</style>
 		</font>
 		<font>
 			<name>font22</name>
@@ -110,7 +108,6 @@
 			<name>font20</name>
 			<filename>arial.ttf</filename>
 			<size>36</size>
-			<style>bold</style>
 			<aspect>1.05</aspect>
 		</font>
 		<font>

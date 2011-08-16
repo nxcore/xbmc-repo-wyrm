@@ -1,0 +1,198 @@
+<window id="50">
+	<defaultcontrol always="true">999</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<previouswindow>Home</previouswindow>
+	<controls>
+		<include>background</include>
+		<include>xtv-box</include>
+		<include>Fake-Overlay</include>
+		<control type="image">
+			<description>Settings Logo</description>
+			<include>icon-header-commons</include>
+			<include>icon-ani</include>
+			<texture>icon-settings.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings Label</description>
+			<posx>946</posx>
+			<posy>50</posy>
+			<width>309</width>
+			<height>37</height>
+			<label>31551</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+			<include>list-fade</include>
+		</control>
+		
+		<control type="group" id="999">
+			<include>list-fade</include>
+			<control type="button" id="1">
+				<description>Settings Menu</description>
+				<font>font13</font>
+				<posx>716</posx>
+				<posy>112</posy>
+				<width>504</width>
+				<height>56</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31035</label>
+				<textoffsetx>18</textoffsetx>
+				<onclick>ActivateWindow(4)</onclick>
+				<onleft>1</onleft>
+				<onright>1</onright>
+				<onup>5</onup>
+				<ondown>2</ondown>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="image">
+				<description>Settings arrow focus image</description>
+				<posx>1161</posx>
+				<posy>125</posy>
+				<width>38</width>
+				<height>27</height>
+				<texture>scroll-right-focus.png</texture>
+				<visible>Control.HasFocus(1)</visible>
+			</control>
+			<control type="image">
+				<description>Settings arrow image</description>
+				<posx>1161</posx>
+				<posy>125</posy>
+				<width>38</width>
+				<height>27</height>
+				<texture>scroll-right.png</texture>
+			</control>
+			<control type="button" id="2">
+				<description>Information Button</description>
+				<font>font13</font>
+				<posx>716</posx>
+				<posy>161</posy>
+				<width>504</width>
+				<height>56</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31820</label>
+				<textoffsetx>18</textoffsetx>
+				<onclick>ActivateWindow(51)</onclick>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<onup>1</onup>
+				<ondown>7</ondown>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="image">
+				<description>Information arrow focus image</description>
+				<posx>1161</posx>
+				<posy>172</posy>
+				<width>38</width>
+				<height>27</height>
+				<texture>scroll-right-focus.png</texture>
+				<visible>Control.HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<description>Information arrow image</description>
+				<posx>1161</posx>
+				<posy>172</posy>
+				<width>38</width>
+				<height>27</height>
+				<texture>scroll-right.png</texture>
+			</control>
+			<control type="button" id="7">
+				<description>Power Menu</description>
+				<font>font13</font>
+				<posx>716</posx>
+				<posy>210</posy>
+				<width>504</width>
+				<height>56</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31558</label>
+				<textoffsetx>18</textoffsetx>
+				<onclick>ActivateWindow(111)</onclick>
+				<onleft>7</onleft>
+				<onright>7</onright>
+				<onup>2</onup>
+				<ondown>4</ondown>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="image">
+				<description>Power menu arrow focus image</description>
+				<posx>1161</posx>
+				<posy>221</posy>
+				<width>38</width>
+				<height>27</height>
+				<texture>scroll-right-focus.png</texture>
+				<visible>Control.HasFocus(7)</visible>
+			</control>
+			<control type="image">
+				<description>Power Menu arrow image</description>
+				<posx>1161</posx>
+				<posy>221</posy>
+				<width>38</width>
+				<height>27</height>
+				<texture>scroll-right.png</texture>
+			</control>
+			<control type="button" id="4">
+				<description>Support Information</description>
+				<font>font13</font>
+				<posx>716</posx>
+				<posy>258</posy>
+				<width>504</width>
+				<height>56</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31560</label>
+				<textoffsetx>18</textoffsetx>
+				<onclick>XBMC.ActivateWindow(54)</onclick>
+				<onleft>4</onleft>
+				<onright>4</onright>
+				<onup>7</onup>
+				<ondown>6</ondown>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="6">
+				<description>Profiles</description>
+				<font>font13</font>
+				<posx>716</posx>
+				<posy>307</posy>
+				<width>504</width>
+				<height>56</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31555</label>
+				<textoffsetx>18</textoffsetx>
+				<onclick>ActivateWindow(34)</onclick>
+				<onleft>6</onleft>
+				<onright>6</onright>
+				<onup>4</onup>
+				<ondown>5</ondown>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="5">
+				<description>Instal Themes</description>
+				<font>font13</font>
+				<posx>716</posx>
+				<posy>356</posy>
+				<width>504</width>
+				<height>56</height>
+				<texturefocus>default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>31835</label>
+				<textoffsetx>18</textoffsetx>
+				<onclick>RunScript(special://skin/scripts/ThemeInstaller.py , http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBMCThemes/)</onclick>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>6</onup>
+				<ondown>1</ondown>
+				<textcolor>button-text</textcolor>
+				<disabledcolor>disabled-text</disabledcolor>
+				<aligny>center</aligny>
+			</control>
+		</control>
+	</controls>
+</window>
