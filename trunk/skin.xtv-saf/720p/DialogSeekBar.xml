@@ -55,6 +55,19 @@
 		<!-- End of Media Icon -->
 		
 		<!-- Player action labels -->
+		<!-- buffering dialog -->
+		<!--<control type="label" id="24">
+			<description>buffering label</description>
+			<posx>424</posx>
+			<posy>-200</posy>
+			<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
+			<width>530</width>
+			<align>center</align>
+			<font>font28</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>-->
+		
 		<control type="label">
 			<posx>424</posx>
 			<posy>81</posy>

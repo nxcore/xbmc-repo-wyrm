@@ -1303,7 +1303,7 @@
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>701</onup>
 					<ondown>701</ondown>
@@ -1327,7 +1327,7 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="713">
-						<description>Subtile script location</description>
+						<description>Subtitle script location</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
@@ -1345,11 +1345,11 @@
 						<textoffsetx>50</textoffsetx>
 						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
-					<!--<control type="radiobutton" id="714">
+					<control type="radiobutton" id="714">
 						<description>Use TV Tunes</description>
 						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
+						<width>885</width>
+						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>Use TV Tunes</label>
@@ -1357,21 +1357,25 @@
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
 						<selected>Skin.HasSetting(tv_theme)</selected>
 						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<enable>System.HasAddon(script.tvtunes)</enable>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
-					</control>-->
+					</control>
 					<control type="button" id="715">
 						<description>TV Logo Downloader Script</description>
-						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
+						<textwidth>480</textwidth>
+						<font>font12</font>
 						<label>Download TV logos</label>
 						<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=False,logo=True,showthumb=False)</onclick>
 						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<enable>System.HasAddon(script.logo-downloader)</enable>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
