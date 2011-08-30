@@ -8,6 +8,7 @@
 	<default type="label">
 		<posx>141</posx>
 		<posy>75</posy>
+		<height>25</height>
 		<label>-</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>

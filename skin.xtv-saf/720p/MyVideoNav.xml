@@ -112,17 +112,17 @@
 				</control>
 				<control type="image">
 					<description>Button Background</description>
-					<posx>460</posx>
-					<posy>212</posy>
+					<posx>440</posx>
+					<posy>102</posy>
 					<width>398</width>
-					<height>475</height>
+					<height>506</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<include>button-fade</include>
 				</control>
 				<control type="button" id="2">
 					<description>View As Icons button</description>
-					<posx>477</posx>
-					<posy>225</posy>
+					<posx>456</posx>
+					<posy>114</posy>
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
@@ -139,8 +139,8 @@
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
-					<posx>477</posx>
-					<posy>281</posy>
+					<posx>456</posx>
+					<posy>170</posy>
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
@@ -157,8 +157,8 @@
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>
-					<posx>778</posx>
-					<posy>300</posy>
+					<posx>758</posx>
+					<posy>190</posy>
 					<label>-</label>
 					<onleft>3</onleft>
 					<onright>50</onright>
@@ -169,8 +169,8 @@
 				</control>
 				<control type="button" id="10">
 					<description>Show Button</description>
-					<posx>477</posx>
-					<posy>337</posy>
+					<posx>456</posx>
+					<posy>226</posy>
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
@@ -185,8 +185,8 @@
 				</control>
 				<control type="button" id="14">
 					<description>Watched Toggle Button</description>
-					<posx>477</posx>
-					<posy>337</posy>
+					<posx>456</posx>
+					<posy>226</posy>
 					<label>20367</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -198,8 +198,8 @@
 				</control>
 				<control type="button" id="8">
 					<description>Search Button</description>
-					<posx>477</posx>
-					<posy>393</posy>
+					<posx>456</posx>
+					<posy>282</posy>
 					<width>362</width>
 					<height>56</height>
 					<label>137</label>
@@ -214,8 +214,8 @@
 				</control>
 				<control type="radiobutton" id="19">
 					<description>Filter</description>
-					<posx>477</posx>
-					<posy>450</posy>
+					<posx>456</posx>
+					<posy>340</posy>
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
@@ -230,8 +230,8 @@
 				</control>
 				<control type="button" id="16">
 					<description>Party Mode button</description>
-					<posx>477</posx>
-					<posy>506</posy>
+					<posx>456</posx>
+					<posy>396</posy>
 					<width>362</width>
 					<height>56</height>
 					<label>589</label>
@@ -246,8 +246,8 @@
 				</control>
 				<control type="button" id="17">
 					<description>Flatten Library button</description>
-					<posx>477</posx>
-					<posy>562</posy>
+					<posx>456</posx>
+					<posy>452</posy>
 					<width>362</width>
 					<height>56</height>
 					<label>20411</label>
@@ -262,8 +262,8 @@
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>
-					<posx>477</posx>
-					<posy>618</posy>
+					<posx>456</posx>
+					<posy>508</posy>
 					<label>20336</label>
 					<width>362</width>
 					<height>56</height>
@@ -281,10 +281,10 @@
 				</control>
 				<control type="label" id="18">
 					<description>No Info Scanned Label</description>
-					<posx>477</posx>
-					<posy>250</posy>
+					<posx>210</posx>
+					<posy>520</posy>
 					<width>858</width>
-					<height>187</height>
+					<height>116</height>
 					<font>font13</font>
 					<label>-</label>
 					<align>center</align>

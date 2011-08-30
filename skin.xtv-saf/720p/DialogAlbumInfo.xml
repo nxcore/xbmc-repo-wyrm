@@ -133,11 +133,11 @@
 			</control>
 			<control type="image">
 				<posx>230</posx>
-				<posy>462</posy>
+				<posy>466</posy>
 				<width>115</width>
 				<height>20</height>
 				<info>ListItem.StarRating</info>
-				<colordiffuse>FlagDiffuse</colordiffuse>
+				<colordiffuse>StarDiffuse</colordiffuse>
 				<align>right</align>
 				<aspectratio>keep</aspectratio>
 			</control>

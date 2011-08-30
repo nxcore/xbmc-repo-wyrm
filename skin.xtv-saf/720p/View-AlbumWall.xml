@@ -134,7 +134,7 @@
 				<width>177</width>
 				<height>25</height>
 				<info>ListItem.StarRating</info>
-				<colordiffuse>FlagDiffuse</colordiffuse>
+				<colordiffuse>StarDiffuse</colordiffuse>
 				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
 			</control>
