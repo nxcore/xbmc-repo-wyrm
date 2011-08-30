@@ -125,7 +125,6 @@
 			<font>font13</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>false</pulseonselect>
@@ -136,7 +135,6 @@
 			<font>font13</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
@@ -147,7 +145,6 @@
 			<radioposx>756</radioposx>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
@@ -156,7 +153,6 @@
 			<height>50</height>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<font>font13</font>
@@ -183,7 +179,6 @@
 			<font>font13</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>

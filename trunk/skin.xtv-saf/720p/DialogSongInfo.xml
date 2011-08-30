@@ -24,52 +24,20 @@
 			<info>ListItem.Icon</info>
 			<aspectratio>keep</aspectratio>
 		</control>
+		<control type="image">
+			<description>seperator</description>
+			<posx>79</posx>
+			<posy>406</posy>
+			<width>548</width>
+			<height>6</height>
+			<texture>separator.png</texture>
+		</control>
 		<control type="label">
 			<description>Album Title</description>
 			<posx>97</posx>
-			<posy>412</posy>
+			<posy>418</posy>
 			<width>159</width>
 			<label>$LOCALIZE[558]:</label>
-			<font>font12</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Genre Title</description>
-			<posx>97</posx>
-			<posy>437</posy>
-			<width>159</width>
-			<label>$LOCALIZE[515]:</label>
-			<font>font12</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Year Title</description>
-			<posx>97</posx>
-			<posy>462</posy>
-			<width>159</width>
-			<label>$LOCALIZE[562]:</label>
-			<font>font12</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Track Number Title</description>
-			<posx>97</posx>
-			<posy>487</posy>
-			<width>159</width>
-			<label>$LOCALIZE[554] :</label>
-			<font>font12</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Rating Title</description>
-			<posx>97</posx>
-			<posy>512</posy>
-			<width>159</width>
-			<label>$LOCALIZE[563]:</label>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -77,9 +45,19 @@
 		<control type="fadelabel">
 			<description>Album value</description>
 			<posx>251</posx>
-			<posy>412</posy>
+			<posy>418</posy>
 			<width>371</width>
 			<info>ListItem.Album</info>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label">
+			<description>Genre Title</description>
+			<posx>97</posx>
+			<posy>450</posy>
+			<width>159</width>
+			<label>$LOCALIZE[515]:</label>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -87,9 +65,19 @@
 		<control type="fadelabel">
 			<description>Genre value</description>
 			<posx>251</posx>
-			<posy>437</posy>
+			<posy>450</posy>
 			<width>371</width>
 			<info>ListItem.Genre</info>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label">
+			<description>Year Title</description>
+			<posx>97</posx>
+			<posy>480</posy>
+			<width>159</width>
+			<label>$LOCALIZE[562]:</label>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -97,9 +85,19 @@
 		<control type="fadelabel">
 			<description>year value</description>
 			<posx>251</posx>
-			<posy>462</posy>
+			<posy>480</posy>
 			<width>371</width>
 			<info>ListItem.Year</info>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label">
+			<description>Track Number Title</description>
+			<posx>97</posx>
+			<posy>512</posy>
+			<width>159</width>
+			<label>$LOCALIZE[554] :</label>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -107,27 +105,37 @@
 		<control type="fadelabel">
 			<description>Track Number value</description>
 			<posx>251</posx>
-			<posy>487</posy>
+			<posy>512</posy>
 			<width>371</width>
 			<info>ListItem.TrackNumber</info>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 		</control>
+		<control type="label">
+			<description>Rating Title</description>
+			<posx>97</posx>
+			<posy>542</posy>
+			<width>159</width>
+			<label>$LOCALIZE[563]:</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
 		<control type="image">
 			<description>Rating value</description>
-			<posx>180</posx>
-			<posy>518</posy>
-			<width>336</width>
+			<posx>222</posx>
+			<posy>544</posy>
+			<width>150</width>
 			<height>25</height>
 			<info>ListItem.Rating</info>
+			<colordiffuse>StarDiffuse</colordiffuse>
 			<aspectratio>keep</aspectratio>
-			<font>font12</font>
 		</control>
 		<control type="image">
 			<description>seperator</description>
 			<posx>79</posx>
-			<posy>406</posy>
+			<posy>576</posy>
 			<width>548</width>
 			<height>6</height>
 			<texture>separator.png</texture>
@@ -153,10 +161,11 @@
 			<posx>88</posx>
 			<posy>650</posy>
 			<width>212</width>
-			<height>46</height>
+			<height>50</height>
 			<label>186</label>
-			<font>font12</font>
+			<font>font13</font>
 			<align>center</align>
+			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<onleft>15</onleft>
@@ -169,10 +178,11 @@
 			<posx>300</posx>
 			<posy>650</posy>
 			<width>212</width>
-			<height>46</height>
+			<height>50</height>
 			<label>222</label>
-			<font>font12</font>
+			<font>font13</font>
 			<align>center</align>
+			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<onleft>10</onleft>
@@ -185,10 +195,11 @@
 			<posx>513</posx>
 			<posy>650</posy>
 			<width>212</width>
-			<height>46</height>
+			<height>50</height>
 			<label>13405</label>
-			<font>font12</font>
+			<font>font13</font>
 			<align>center</align>
+			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<onleft>11</onleft>
@@ -201,10 +212,11 @@
 			<posx>725</posx>
 			<posy>650</posy>
 			<width>212</width>
-			<height>46</height>
+			<height>50</height>
 			<label>10523</label>
-			<font>font12</font>
+			<font>font13</font>
 			<align>center</align>
+			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<onleft>13</onleft>
@@ -217,7 +229,7 @@
 			<posx>938</posx>
 			<posy>650</posy>
 			<width>212</width>
-			<height>46</height>
+			<height>50</height>
 			<texture>default-button.png</texture>
 			<visible>[Control.HasFocus(14) | Control.HasFocus(15)]</visible>
 		</control>
@@ -226,19 +238,19 @@
 			<posx>950</posx>
 			<posy>650</posy>
 			<width>123</width>
-			<height>46</height>
+			<height>50</height>
 			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<label>31229</label>
-			<font>font12</font>
+			<font>font13</font>
 		</control>
 		<control type="button" id="14">
 			<description>Decrease Rating</description>
 			<posx>1074</posx>
-			<posy>662</posy>
+			<posy>664</posy>
 			<width>26</width>
-			<height>18</height>
+			<height>26</height>
 			<onclick>DecreaseRating</onclick>
 			<texturenofocus>scroll-down.png</texturenofocus>
 			<texturefocus>scroll-down-focus.png</texturefocus>
@@ -250,9 +262,9 @@
 		<control type="button" id="15">
 			<description>Increase Rating</description>
 			<posx>1106</posx>
-			<posy>662</posy>
+			<posy>664</posy>
 			<width>26</width>
-			<height>18</height>
+			<height>26</height>
 			<onclick>IncreaseRating</onclick>
 			<texturenofocus>scroll-up.png</texturenofocus>
 			<texturefocus>scroll-up-focus.png</texturefocus>
