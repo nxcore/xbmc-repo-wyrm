@@ -165,10 +165,9 @@
 		<control type="rss">
 			<description>rss feed</description>
 			<posx>0</posx>
-			<posy>681</posy>
+			<posy>680</posy>
 			<width>1280</width>
-			<height>25</height>
-			<font>font12</font>
+			<font>rss20</font>
 			<urlset>1</urlset>
 			<textcolor>info-text</textcolor>
 			<titlecolor>rss-title-text</titlecolor>
