@@ -453,6 +453,20 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
+					<control type="radiobutton" id="212">
+						<description>Horizontal home menu toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>Use horizontal home menu</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(horizontal-homemenu)</onclick>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
 				</control>
 			</control>
 			<!--Home Settings-->

@@ -1,6 +1,11 @@
 ﻿<fonts>
 	<fontset id="Default" idloc="31575" unicode="true">
 		<font>
+			<name>rss20</name>
+			<filename>Ubuntu-R.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
 			<name>font11</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>24</size>
@@ -44,6 +49,11 @@
 	</fontset>
 	<fontset id="Bold" idloc="31576" unicode="true">
 		<font>
+			<name>rss20</name>
+			<filename>Ubuntu-B.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
 			<name>font11</name>
 			<filename>Ubuntu-B.ttf</filename>
 			<size>24</size>
@@ -80,6 +90,10 @@
 		</font>
 	</fontset>
 	<fontset id="XBMC Default" idloc="31577" unicode="true">
+		<font>
+			<name>rss20</name>
+			<filename>arial.ttf</filename>
+		</font>
 		<font>
 			<name>font11</name>
 			<filename>arial.ttf</filename>
