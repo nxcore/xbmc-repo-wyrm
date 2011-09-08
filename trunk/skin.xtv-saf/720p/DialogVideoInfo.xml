@@ -432,7 +432,6 @@
 				</control>
 			</control>
 		</control>
-
 		<!-- Option Buttons -->
 		<control type="grouplist" id="999">
 			<posx>8</posx>
@@ -448,7 +447,6 @@
 			<onright>999</onright>
 			<onup>999</onup>
 			<ondown>999</ondown>
-
 			<control type="button" id="8">
 				<description>Play/Browse</description>
 				<height>57</height>
