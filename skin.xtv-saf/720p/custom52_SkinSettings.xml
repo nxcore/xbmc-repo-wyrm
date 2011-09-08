@@ -462,6 +462,7 @@
 						<label>Use horizontal home menu</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(horizontal-homemenu)</onclick>
+						<selected>Skin.HasSetting(horizontal-homemenu)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -645,21 +646,6 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<!--<control type="radiobutton" id="315">
-						<description>Global Search On Home toggle</description>
-						<font>font12</font>
-						<width>500</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31895</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(home-globalsearch)</onclick>
-						<selected>Skin.HasSetting(home-globalsearch)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>-->
 					<control type="radiobutton" id="315">
 						<description>Play Disc On Home toggle</description>
 						<font>font12</font>
