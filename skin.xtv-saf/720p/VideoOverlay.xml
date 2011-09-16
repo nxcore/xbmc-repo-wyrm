@@ -78,6 +78,7 @@
 			<width>442</width>
 			<height>20</height>
 			<info>Player.Progress</info>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
 	</controls>
 </window>

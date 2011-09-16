@@ -304,6 +304,7 @@
 			<width>389</width>
 			<height>15</height>
 			<info>Player.Progress</info>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 			<visible>Skin.HasSetting(np-vis) + IntegerGreaterThan(System.Progressbar,0)</visible>
 			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
 		</control>

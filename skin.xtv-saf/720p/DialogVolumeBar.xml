@@ -22,6 +22,7 @@
 			<width>226</width>
 			<height>40</height>
 			<info>Player.Volume</info>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 			<texturebg>blank.png</texturebg>
 			<lefttexture>-</lefttexture>
 			<midtexture>volume-back.png</midtexture>

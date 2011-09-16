@@ -15,7 +15,9 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>482</height>
-				<texture>background.png</texture>
+				<colordiffuse>FF101005</colordiffuse>
+				<texture>volume-back.png</texture>
+				<!--<texture>background.png</texture>-->
 			</control>
 			<control type="label" id="311">
 				<description>dialog Heading</description>
@@ -31,16 +33,16 @@
 			</control>
 			<control type="image">
 				<posx>74</posx>
-				<posy>68</posy>
+				<posy>64</posy>
 				<width>1122</width>
-				<height>45</height>
-				<texture border="6">progressbar-background-blue.png</texture>
-				<colordiffuse>ProgressBarColor</colordiffuse>
+				<height>50</height>
+				<texture border="8">scrollbar_bar.png</texture>
+				<colordiffuse>FFFFFFFF</colordiffuse>
 			</control>
 			<control type="label" id="310">
 				<description>Edit Text</description>
 				<posx>97</posx>
-				<posy>72</posy>
+				<posy>66</posy>
 				<width>1062</width>
 				<height>37</height>
 				<font>font22</font>

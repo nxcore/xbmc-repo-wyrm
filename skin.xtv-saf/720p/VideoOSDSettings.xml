@@ -115,11 +115,11 @@
 				<width>700</width>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<sliderwidth>100</sliderwidth>
-				<sliderheight>20</sliderheight>
+				<sliderwidth>192</sliderwidth>
+				<sliderheight>16</sliderheight>
 				<texturesliderbar>osd_slider_bg.png</texturesliderbar>
-				<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-				<textureslidernibfocus>osd_slider_nibFO.png</textureslidernibfocus>
+				<textureslidernib>progress-marker.png</textureslidernib>
+				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 				<font>font12</font>
 				<textcolor>button-text</textcolor>
 				<focusedcolor>white</focusedcolor>

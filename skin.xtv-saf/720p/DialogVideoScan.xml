@@ -47,6 +47,7 @@
 				<posy>90</posy>
 				<width>654</width>
 				<height>20</height>
+				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="button" id="1111">
 				<posx>-17</posx>
