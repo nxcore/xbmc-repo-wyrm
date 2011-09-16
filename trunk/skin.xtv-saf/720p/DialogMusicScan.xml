@@ -45,6 +45,7 @@
 			<posy>90</posy>
 			<width>608</width>
 			<height>15</height>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
 	</controls>
 </window>

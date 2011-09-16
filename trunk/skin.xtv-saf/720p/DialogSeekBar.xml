@@ -5,7 +5,7 @@
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
 	<coordinates>
 		<posx>0</posx>
-		<posy>612</posy>
+		<posy>640</posy>
 	</coordinates>
 	<controls>
 		<control type="image">
@@ -36,7 +36,7 @@
 			<aspectratio>keep</aspectratio>
 			<animation effect="fade" time="500">VisibleChange</animation>
 			<visible>[VideoPlayer.Content(Episodes) | VideoPlayer.Content(Movies)] + Window.IsVisible(FullscreenVideo)</visible>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
 		</control>
 		<control type="image">
 			<description>Music cover image</description>
@@ -55,154 +55,166 @@
 		<!-- End of Media Icon -->
 		
 		<!-- Player action labels -->
-		<!-- buffering dialog -->
-		<!--<control type="label" id="24">
-			<description>buffering label</description>
-			<posx>424</posx>
-			<posy>-200</posy>
-			<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-			<width>530</width>
-			<align>center</align>
-			<font>font28</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-		</control>-->
-		
-		<control type="label">
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31662</label>
-			<visible>Player.Paused</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>rewind 2x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31666</label>
-			<visible>Player.Rewinding2x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>forward 2x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31672</label>
-			<visible>Player.Forwarding2x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>rewind 4x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31667</label>
-			<visible>Player.Rewinding4x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>forward 4x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31673</label>
-			<visible>Player.Forwarding4x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>rewind 8x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31668</label>
-			<visible>Player.Rewinding8x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>forward 8x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31674</label>
-			<visible>Player.Forwarding8x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>rewind 16x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31669</label>
-			<visible>Player.Rewinding16x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>forward 16x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31675</label>
-			<visible>Player.Forwarding16x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>rewind 32x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<label>31670</label>
-			<font>font28</font>
-			<visible>Player.Rewinding32x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
-		</control>
-		<control type="label">
-			<description>forward 32x</description>
-			<posx>424</posx>
-			<posy>81</posy>
-			<width>424</width>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font28</font>
-			<label>31676</label>
-			<visible>Player.Forwarding32x</visible>
-			<visible>[Window.IsActive(2005) | Window.IsActive(2006)]</visible>
+		<control type="group">
+			<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
+			<!--<control type="label">
+				<description>Seek Label</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>[B]$INFO[Player.SeekOffset][/B]</label>
+				<visible>Player.DisplayAfterSeek + !Player.Seeking</visible>
+			</control>-->
+			<control type="label">
+				<description>Cache Label</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
+				<visible>[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
+			</control>
+			<control type="label">
+				<description>Seeking Label</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>$LOCALIZE[773] $INFO[Player.SeekOffset]</label>
+				<visible>Player.Seeking</visible>
+			</control>
+			<control type="label">
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31662</label>
+				<visible>Player.Paused + !Player.Caching</visible>
+			</control>
+			<control type="label">
+				<description>rewind 2x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31666</label>
+				<visible>Player.Rewinding2x</visible>
+			</control>
+			<control type="label">
+				<description>forward 2x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31672</label>
+				<visible>Player.Forwarding2x</visible>
+			</control>
+			<control type="label">
+				<description>rewind 4x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31667</label>
+				<visible>Player.Rewinding4x</visible>
+			</control>
+			<control type="label">
+				<description>forward 4x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31673</label>
+				<visible>Player.Forwarding4x</visible>
+			</control>
+			<control type="label">
+				<description>rewind 8x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31668</label>
+				<visible>Player.Rewinding8x</visible>
+			</control>
+			<control type="label">
+				<description>forward 8x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31674</label>
+				<visible>Player.Forwarding8x</visible>
+			</control>
+			<control type="label">
+				<description>rewind 16x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31669</label>
+				<visible>Player.Rewinding16x</visible>
+			</control>
+			<control type="label">
+				<description>forward 16x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31675</label>
+				<visible>Player.Forwarding16x</visible>
+			</control>
+			<control type="label">
+				<description>rewind 32x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>31670</label>
+				<font>font22</font>
+				<visible>Player.Rewinding32x</visible>
+			</control>
+			<control type="label">
+				<description>forward 32x</description>
+				<posx>424</posx>
+				<posy>40</posy>
+				<width>424</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+				<label>31676</label>
+				<visible>Player.Forwarding32x</visible>
+			</control>
 		</control>
 		<!-- End Player action labels -->
 		
 		<control type="group">
-			<visible>[Window.IsActive(2005)]</visible>
+			<visible>[Window.IsVisible(FullscreenVideo)]</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<!-- Player info labels -->
 			<control type="label">
@@ -242,33 +254,38 @@
 			<!-- End Player info labels -->
 			
 			<!-- Progress bar -->
-			<control type="progress" id="23">
+			<control type="progress">
+				<description>Progressbar Cache</description>
+				<posx>214</posx>
+				<posy>12</posy>
+				<width>864</width>
+				<height>16</height>
+				<info>Player.ProgressCache</info>
+				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+				<colordiffuse>FF777777</colordiffuse>
+			</control>
+			<control type="progress">
 				<description>Progressbar</description>
-				<posx>212</posx>
-				<posy>13</posy>
-				<width>867</width>
-				<height>15</height>
+				<posx>214</posx>
+				<posy>12</posy>
+				<width>864</width>
+				<height>16</height>
 				<info>Player.Progress</info>
-				<texturebg border="6,0,6,0">progressbar-background-blue.png</texturebg>
-				<lefttexture border="0,0,0,0">progress-left.png</lefttexture>
-				<midtexture border="0,0,0,0">progress-middle.png</midtexture>
-				<righttexture border="0,0,0,0">progress-right.png</righttexture>
+				<texturebg border="14,0,14,0">progress-background.png</texturebg>
+				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<!-- End Progress Bar -->
 			<!-- Seek Slider -->
 			<control type="slider" id="401">
 				<description>Seek Slider</description>
-				<posx>212</posx>
-				<posy>12</posy>
-				<width>867</width>
-				<height>10</height>
-				<texturesliderbar>seekslider.png</texturesliderbar>
+				<posx>210</posx>
+				<posy>10</posy>
+				<width>864</width>
+				<height>20</height>
+				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
 				<textureslidernib>progress-marker.png</textureslidernib>
 				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
-				<onup>1</onup>
-				<ondown>1</ondown>
-				<onleft>1</onleft>
-				<onright>1</onright>
 			</control>
 			<!-- End Seek Slider -->
 		</control>
@@ -315,18 +332,16 @@
 				<width>177</width>
 				<height>20</height>
 			</control>
-			<control type="progress" id="23">
+			<control type="progress">
 				<description>Progressbar</description>
 				<posx>743</posx>
 				<posy>66</posy>
 				<width>300</width>
-				<height>10</height>
+				<height>8</height>
 				<info>Player.Progress</info>
-				<texturebg border="4,0,4,0">progressbar-background-blue.png</texturebg>
-				<lefttexture border="0,0,0,0">progress-left.png</lefttexture>
-				<midtexture border="0,0,0,0">progress-middle.png</midtexture>
-				<righttexture border="0,0,0,0">progress-right.png</righttexture>
-				<visible>IntegerGreaterThan(Player.Progress,0)</visible>
+				<colordiffuse>ProgressBarColor</colordiffuse>
+				<texturebg>progress-background.png</texturebg>
+				<midtexture>progress-middle.png</midtexture>
 			</control>
 		</control>
 	</controls>

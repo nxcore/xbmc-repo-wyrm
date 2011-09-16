@@ -171,6 +171,7 @@
 					<width>566</width>
 					<height>20</height>
 					<info>System.CPUUsage</info>
+					<colordiffuse>ProgressBarColor</colordiffuse>
 				</control>
 				<control type="label">
 					<description>Memory Text</description>
@@ -190,6 +191,7 @@
 					<width>566</width>
 					<height>20</height>
 					<info>system.memory(used)</info>
+					<colordiffuse>ProgressBarColor</colordiffuse>
 				</control>
 			</control>
 	</controls>

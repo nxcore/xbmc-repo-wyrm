@@ -50,6 +50,7 @@
 			<width>619</width>
 			<height>15</height>
 			<info>Player.Progress</info>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 			<visible>Player.HasVideo + IntegerGreaterThan(System.Progressbar,0)</visible>
 		</control>
 		<control type="label">

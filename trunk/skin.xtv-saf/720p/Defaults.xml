@@ -90,11 +90,10 @@
 	<default type="progress">
 		<posx>177</posx>
 		<posy>406</posy>
-		<texturebg border="9,0,9,0">progressbar-background-blue.png</texturebg>
-		<lefttexture border="0,0,0,0">progress-left.png</lefttexture>
-		<midtexture border="0,0,0,0">progress-middle.png</midtexture>
-		<righttexture border="0,0,0,0">progress-right.png</righttexture>
-		<colordiffuse>ProgressBarColor</colordiffuse>
+		<texturebg border="14,0,14,0">progress-background.png</texturebg>
+		<lefttexture>-</lefttexture>
+		<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+		<righttexture>-</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="spincontrol">
@@ -195,8 +194,13 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="slider">
-		<controloffsetx>75</controloffsetx>
-		<controloffsety>0</controloffsety>
+		<posx>12</posx>
+		<posy>48</posy>
+		<width>672</width>
+		<height>20</height>
+		<texturesliderbar>seekslider.png</texturesliderbar>
+		<textureslidernib>progress-marker.png</textureslidernib>
+		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 	</default>
 	<default type="mover">
 		<posx>106</posx>

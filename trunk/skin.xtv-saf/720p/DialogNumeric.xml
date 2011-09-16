@@ -32,7 +32,7 @@
 			<posy>68</posy>
 			<width>1122</width>
 			<height>45</height>
-			<texture border="8">progressbar-background-blue.png</texture>
+			<texture border="8">progress-background.png</texture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
 		<control type="label" id="4">

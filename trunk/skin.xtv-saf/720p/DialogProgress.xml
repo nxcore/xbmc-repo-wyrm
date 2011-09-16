@@ -65,6 +65,7 @@
 			<width>601</width>
 			<height>15</height>
 			<info>System.Progressbar</info>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 			<visible>IntegerGreaterThan(System.Progressbar,0)</visible>
 		</control>
 		<control type="button" id="10">

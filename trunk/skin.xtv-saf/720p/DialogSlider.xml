@@ -42,26 +42,22 @@
 			</control>
 			<control type="image">
 				<description>Seekslider background</description>
-				<posx>26</posx>
-				<posy>47</posy>
-				<width>654</width>
-				<height>15</height>
-				<texture>progressbar-background-blue.png</texture>
+				<posx>12</posx>
+				<posy>50</posy>
+				<width>672</width>
+				<height>16</height>
+				<texture border="14,0,14,0">progress-middle.png</texture>
+				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="slider" id="11">
 				<description>Slider</description>
-				<posx>35</posx>
-				<posy>47</posy>
-				<width>637</width>
-				<height>7</height>
-				<aligny>center</aligny>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<texturesliderbar>seekslider.png</texturesliderbar>
-				<textureslidernib>progress-marker.png</textureslidernib>
+				<posx>12</posx>
+				<posy>48</posy>
+				<width>672</width>
+				<height>20</height>
+				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
+				<textureslidernib border="8,0,8,0">progress-marker.png</textureslidernib>
 				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
-				<onup>11</onup>
-				<ondown>11</ondown>
 				<onleft>11</onleft>
 				<onright>11</onright>
 			</control>
