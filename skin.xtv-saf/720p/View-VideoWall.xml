@@ -77,7 +77,7 @@
 					<posy>-6</posy>
 					<width>118</width>
 					<height>165</height>
-					<texture diffuse="mask-rect.png">hi-lite.png</texture>
+					<texture diffuse="mask-rect.png">mask-hilite.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />

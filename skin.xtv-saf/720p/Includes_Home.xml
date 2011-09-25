@@ -782,34 +782,36 @@
 	</include>
 	
 	<include name="HorzHomeMenu">
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>Background.png</texture>
-			<include>screen-fade</include>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>292</height>
-			<texture>menu-shelf.png</texture>
-			<include>screen-fade</include>
-		</control>
+		<include>screen-fade</include>
+		<control type="group">
+			<!-- Build up home menu shelf image -->
 			<control type="image">
-				<posx>560</posx>
-				<posy>90</posy>
-				<width>160</width>
-				<height>160</height>
-				<texture>$INFO[Container(9000).ListItem.Icon]</texture>
-				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9000)</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>192</height>
+				<texture>white.png</texture>
+				<colordiffuse>FF606060</colordiffuse>
 			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>192</posy>
+				<width>1280</width>
+				<height>102</height>
+				<texture>white.png</texture>
+				<colordiffuse>FF404040</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>-100</posx>
+				<posy>-20</posy>
+				<width>1480</width>
+				<height>310</height>
+				<texture>menu-mask.png</texture>
+				<colordiffuse>BBF9F9F9</colordiffuse>
+			</control>
+		</control>
 		<control type="group">
 			<visible>!Skin.HasSetting(home-time)</visible>
-			<include>screen-fade</include>
 			<!-- Show time on home screen -->
 			<control type="label">
 				<description>Date</description>
@@ -832,9 +834,18 @@
 				<font>font18</font>
 			</control>
 		</control>
+		<!-- Default menu icon -->
+		<control type="image">
+			<posx>560</posx>
+			<posy>90</posy>
+			<width>160</width>
+			<height>160</height>
+			<texture>$INFO[Container(9000).ListItem.Icon]</texture>
+			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
+			<visible>Control.HasFocus(9000)</visible>
+		</control>
 		<!-- Main Horizontal menu bar -->
 		<control type="group">
-			<include>screen-fade</include>
 			<posx>0</posx>
 			<posy>290</posy>
 			<control type="image">
@@ -853,7 +864,7 @@
 			</control>
 			<control type="list" id="9000">
 				<posx>0</posx>
-				<posy>5</posy>
+				<posy>2</posy>
 				<width>1280</width>
 				<height>70</height>
 				<onleft>9000</onleft>
@@ -962,7 +973,6 @@
 			<!-- Home menu sub menus -->
 				<posx>0</posx>
 				<posy>370</posy>
-				<include>background-fade</include>
 				<include>menu-slide</include>
 				<control type="grouplist" id="9010">
 					<posx>0</posx>
@@ -974,171 +984,173 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
-					<!-- Start or buttons Used for the main VIDEO button -->
-					<control type="button" id="90101">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>342</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
-						<visible>!Skin.HasSetting(home-movie) + Library.HasContent(Movies)</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90102">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>20343</label>
-						<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
-						<visible>!Skin.HasSetting(home-tv) + Library.HasContent(TVShows)</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90103">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>20389</label>
-						<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
-						<visible>Skin.HasSetting(home-musicvideo) + Library.HasContent(MusicVideos)</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90108">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-playlist1label)]</label>
-						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
-						<visible>Skin.HasSetting(custom-playlist1) + !IsEmpty(Skin.String(custom-playlist1name))+ !IsEmpty(Skin.String(custom-playlist1icon))+ !IsEmpty(Skin.String(custom-playlist1label))</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90109">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-playlist2label)]</label>
-						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
-						<visible>Skin.HasSetting(custom-playlist2) + !IsEmpty(Skin.String(custom-playlist2name))+ !IsEmpty(Skin.String(custom-playlist2icon))+ !IsEmpty(Skin.String(custom-playlist2label))</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90110">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-playlist3label)]</label>
-						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
-						<visible>Skin.HasSetting(custom-playlist3) + !IsEmpty(Skin.String(custom-playlist3name))+ !IsEmpty(Skin.String(custom-playlist3icon))+ !IsEmpty(Skin.String(custom-playlist3label))</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90120">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-playlist4label)]</label>
-						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
-						<visible>Skin.HasSetting(custom-playlist4) + !IsEmpty(Skin.String(custom-playlist4name))+ !IsEmpty(Skin.String(custom-playlist4icon))+ !IsEmpty(Skin.String(custom-playlist4label))</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90104">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>744</label>
-						<onclick>ActivateWindow(Videos,Files,return)</onclick>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90105">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>14022</label>
-						<onclick>ActivateWindow(VideoLibrary,Root)</onclick>
-						<visible>Library.HasContent(Video)</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90106">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>24001</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
-						<visible>Library.HasContent(Video)</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
-					<control type="button" id="90107">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>24001</label>
-						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
-						<visible>!Library.HasContent(Video)</visible>
-						<visible>Container(9000).HasFocus(1)</visible>
-					</control>
+
+						<!-- Start or buttons Used for the main VIDEO button -->
+						<control type="button" id="90101">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>342</label>
+							<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
+							<visible>!Skin.HasSetting(home-movie) + Library.HasContent(Movies)</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90102">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>20343</label>
+							<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
+							<visible>!Skin.HasSetting(home-tv) + Library.HasContent(TVShows)</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90103">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>20389</label>
+							<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+							<visible>Skin.HasSetting(home-musicvideo) + Library.HasContent(MusicVideos)</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90108">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>$INFO[Skin.String(custom-playlist1label)]</label>
+							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
+							<visible>Skin.HasSetting(custom-playlist1) + !IsEmpty(Skin.String(custom-playlist1name))+ !IsEmpty(Skin.String(custom-playlist1icon))+ !IsEmpty(Skin.String(custom-playlist1label))</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90109">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>$INFO[Skin.String(custom-playlist2label)]</label>
+							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
+							<visible>Skin.HasSetting(custom-playlist2) + !IsEmpty(Skin.String(custom-playlist2name))+ !IsEmpty(Skin.String(custom-playlist2icon))+ !IsEmpty(Skin.String(custom-playlist2label))</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90110">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>$INFO[Skin.String(custom-playlist3label)]</label>
+							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
+							<visible>Skin.HasSetting(custom-playlist3) + !IsEmpty(Skin.String(custom-playlist3name))+ !IsEmpty(Skin.String(custom-playlist3icon))+ !IsEmpty(Skin.String(custom-playlist3label))</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90120">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>$INFO[Skin.String(custom-playlist4label)]</label>
+							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
+							<visible>Skin.HasSetting(custom-playlist4) + !IsEmpty(Skin.String(custom-playlist4name))+ !IsEmpty(Skin.String(custom-playlist4icon))+ !IsEmpty(Skin.String(custom-playlist4label))</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90104">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>744</label>
+							<onclick>ActivateWindow(Videos,Files,return)</onclick>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90105">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>14022</label>
+							<onclick>ActivateWindow(VideoLibrary,Root)</onclick>
+							<visible>Library.HasContent(Video)</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90106">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>24001</label>
+							<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+							<visible>Library.HasContent(Video)</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+						<control type="button" id="90107">
+							<height>50</height>
+							<width>256</width>
+							<textcolor>button-text</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<texturefocus border="5">default-button.png</texturefocus>
+							<texturenofocus border="5">-</texturenofocus>
+							<pulseonselect>true</pulseonselect>
+							<label>24001</label>
+							<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+							<visible>!Library.HasContent(Video)</visible>
+							<visible>Container(9000).HasFocus(1)</visible>
+						</control>
+
 					<!-- Start or buttons Used for the main MUSIC button -->
 					<control type="button" id="90111">
 						<height>50</height>
@@ -1300,12 +1312,27 @@
 						<texturefocus border="5">default-button.png</texturefocus>
 						<texturenofocus border="5">-</texturenofocus>
 						<pulseonselect>true</pulseonselect>
+						<label>31037</label>
+						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
+						<visible>Skin.HasSetting(home-youtube)</visible>
+						<visible>Container(9000).HasFocus(4)</visible>
+					</control>
+					<control type="button" id="90172">
+						<height>50</height>
+						<width>256</width>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<texturefocus border="5">default-button.png</texturefocus>
+						<texturenofocus border="5">-</texturenofocus>
+						<pulseonselect>true</pulseonselect>
 						<label>$INFO[Skin.String(custom-script1label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script1name)])</onclick>
 						<visible>Skin.HasSetting(custom-script1) + !IsEmpty(Skin.String(custom-script1label))+ !IsEmpty(Skin.String(custom-script1name))</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</control>
-					<control type="button" id="90172">
+					<control type="button" id="90173">
 						<height>50</height>
 						<width>256</width>
 						<textcolor>button-text</textcolor>
@@ -1320,7 +1347,7 @@
 						<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</control>
-					<control type="button" id="90173">
+					<control type="button" id="90174">
 						<height>50</height>
 						<width>256</width>
 						<textcolor>button-text</textcolor>
@@ -1335,7 +1362,7 @@
 						<visible>Skin.HasSetting(custom-script3) + !IsEmpty(Skin.String(custom-script3label))+ !IsEmpty(Skin.String(custom-script3name))</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</control>
-					<control type="button" id="90174">
+					<control type="button" id="90175">
 						<height>50</height>
 						<width>256</width>
 						<textcolor>button-text</textcolor>
@@ -1786,7 +1813,8 @@
 						<posy>60</posy>
 						<width>96</width>
 						<height>96</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
+						<imagepath>special://skin/extras/images/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+						<!--<info>$INFO[Window(Weather).Property(Day1.FanartCode)]</info>-->
 						<aspectratio>keep</aspectratio>
 						<timeperimage>200</timeperimage>
 						<randomize>false</randomize>

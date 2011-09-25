@@ -8,17 +8,16 @@
 			<description>Panel</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<height>100</height>
+			<height>80</height>
 			<width>1280</width>
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-		
 		<!-- Player buttons -->
 		<control type="grouplist" id="999">
 			<description>Group OSD Button</description>
 			<posx>65</posx>
-			<posy>31</posy>
+			<posy>14</posy>
 			<width>1150</width>
 			<height>60</height>
 			<itemgap>6</itemgap>

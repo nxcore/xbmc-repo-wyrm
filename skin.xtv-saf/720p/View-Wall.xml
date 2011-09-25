@@ -42,7 +42,7 @@
 					<height>144</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<bordertexture border="9">hi-lite.png</bordertexture>
+					<bordertexture border="9">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="140" center="auto" time="600" tween="back" easing="out" />

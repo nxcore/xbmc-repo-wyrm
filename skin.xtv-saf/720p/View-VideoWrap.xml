@@ -63,7 +63,7 @@
 					<posy>100</posy>
 					<height>402</height>
 					<width>274</width>
-					<texture diffuse="mask-rect.png">hi-lite.png</texture>
+					<texture diffuse="mask-rect.png">mask-hilite.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>IconGlow</colordiffuse>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>

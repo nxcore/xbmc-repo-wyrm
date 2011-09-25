@@ -1,5 +1,10 @@
 <window id="2000">
 	<defaultcontrol>3</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="image">

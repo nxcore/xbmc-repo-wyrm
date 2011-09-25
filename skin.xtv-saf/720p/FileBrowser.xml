@@ -41,8 +41,8 @@
 			<posy>43</posy>
 			<width>675</width>
 			<height>405</height>
-			<onleft>413</onleft>
-			<onright>413</onright>
+			<onleft>23</onleft>
+			<onright>460</onright>
 			<onup>450</onup>
 			<ondown>450</ondown>
 			<scrolltime>1</scrolltime>
@@ -101,7 +101,7 @@
 			<align>center</align>
 			<info>ListItem.Icon</info>
 		</control>
-		<control type="group">
+		<control type="group" id="460">
 			<posx>778</posx>
 			<posy>43</posy>
 			<control type="button" id="413">
@@ -116,7 +116,7 @@
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>default-button.png</texturefocus>
 				<onleft>450</onleft>
-				<onright>450</onright>
+				<onright>23</onright>
 				<onup>415</onup>
 				<ondown>414</ondown>
 				<textcolor>button-text</textcolor>
@@ -134,7 +134,7 @@
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>default-button.png</texturefocus>
 				<onleft>450</onleft>
-				<onright>450</onright>
+				<onright>23</onright>
 				<onup>413</onup>
 				<ondown>415</ondown>
 				<textcolor>button-text</textcolor>
@@ -145,14 +145,14 @@
 				<posx>0</posx>
 				<posy>92</posy>
 				<width>318</width>
-				<height>46</height>
+				<height>45</height>
 				<align>center</align>
 				<label>119</label>
 				<font>font12</font>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>default-button.png</texturefocus>
 				<onleft>450</onleft>
-				<onright>450</onright>
+				<onright>23</onright>
 				<onup>414</onup>
 				<ondown>413</ondown>
 				<textcolor>button-text</textcolor>
@@ -162,9 +162,11 @@
 		<control type="label">
 			<description>Number of items</description>
 			<posx>16</posx>
-			<posy>462</posy>
+			<posy>460</posy>
 			<width>212</width>
+			<height>30</height>
 			<align>left</align>
+			<aligny>center</aligny>
 			<font>font12</font>
 			<label>$INFO[Container(450).NumItems] $LOCALIZE[127]</label>
 			<textcolor>button-text</textcolor>
@@ -173,9 +175,11 @@
 		<control type="label" id="412">
 			<description>path label control</description>
 			<posx>1106</posx>
-			<posy>462</posy>
+			<posy>460</posy>
 			<width>870</width>
+			<height>30</height>
 			<align>right</align>
+			<aligny>center</aligny>
 			<font>font12</font>
 			<haspath>true</haspath>
 			<textcolor>button-text</textcolor>
@@ -191,11 +195,13 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>460</onleft>
+			<onright>450</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar)</visible>
+			<visible>Control.IsVisible(450) + Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>
 </window>
