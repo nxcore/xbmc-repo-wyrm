@@ -53,7 +53,7 @@
 					<height>150</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<bordertexture border="9">hi-lite.png</bordertexture>
+					<bordertexture border="9">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize>
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
 				</control>

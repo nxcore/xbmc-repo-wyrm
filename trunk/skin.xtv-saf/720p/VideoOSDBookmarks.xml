@@ -74,7 +74,7 @@
 					<height>172</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<bordertexture border="9">hi-lite.png</bordertexture>
+					<bordertexture border="9">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize> 
 				</control>
 				<control type="label">

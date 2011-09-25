@@ -25,7 +25,6 @@
 			<height>175</height>
 			<width>1026</width>
 			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-			<texture>default-button.png</texture>
 			<colordiffuse>solid-background</colordiffuse>
 		</control>
 		<!-- Media Icon -->
@@ -138,7 +137,7 @@
 		<control type="grouplist" id="999">
 			<description>Group OSD Button</description>
 			<posx>354</posx>
-			<posy>250</posy>
+			<posy>240</posy>
 			<width>778</width>
 			<height>40</height>
 			<itemgap>3</itemgap>

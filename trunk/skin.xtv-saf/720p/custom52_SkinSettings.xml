@@ -1372,7 +1372,7 @@
 						<textwidth>480</textwidth>
 						<font>font12</font>
 						<label>Download TV logos</label>
-						<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=False,logo=True,showthumb=False)</onclick>
+						<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=False)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<enable>System.HasAddon(script.logo-downloader)</enable>
