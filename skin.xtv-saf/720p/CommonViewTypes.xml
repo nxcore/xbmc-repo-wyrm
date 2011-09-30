@@ -63,9 +63,9 @@
 				</control>
 				<control type="label">
 					<posx>53</posx>
-					<posy>-2</posy>
+					<posy>5</posy>
 					<width>486</width>
-					<height>40</height>
+					<height>26</height>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -86,9 +86,9 @@
 				</control>
 				<control type="label">
 					<posx>53</posx>
-					<posy>-2</posy>
+					<posy>5</posy>
 					<width>486</width>
-					<height>40</height>
+					<height>26</height>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>

@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
 				<control type="image">
 				<description>Seekbar Dialog background image</description>
 				<description>Panel</description>

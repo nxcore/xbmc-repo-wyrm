@@ -1,6 +1,5 @@
 <includes>
 	<include name="BannerView">
-		<visible>Control.IsVisible(59) + Window.IsActive(VideoLibrary) + Container.Content(TVShows)</visible>
 		<control type="list" id="59">
 			<viewtype label="31947">Banner List</viewtype>
 			<posx>0</posx>
@@ -78,7 +77,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(59)</visible>
+			<visible>Control.IsVisible(59) + Window.IsActive(VideoLibrary) + Container.Content(TVShows)</visible>
 			<control type="label">
 				<description>Go Back</description>
 				<posx>70</posx>
