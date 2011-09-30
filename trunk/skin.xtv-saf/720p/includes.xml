@@ -173,6 +173,7 @@
 			<textcolor>info-text</textcolor>
 			<titlecolor>rss-title-text</titlecolor>
 			<headlinecolor>rss-headline-text</headlinecolor>
+			<shadowcolor>shadow-text</shadowcolor>
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 		</control>
 	</include>
@@ -686,7 +687,7 @@
 					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-					<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+					<label>$INFO[ListItem.PlotOutline]</label>
 					<align>justify</align>
 					<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
@@ -1234,8 +1235,8 @@
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
 	</include>
 	<include name="shutdown-ani">
-		<animation effect="slide" start="0,720" time="200">WindowOpen</animation>
-		<animation effect="slide" end="0,720" time="200">WindowClose</animation>
+		<animation effect="slide" start="0,900" time="200">WindowOpen</animation>
+		<animation effect="slide" end="0,900" time="200">WindowClose</animation>
 	</include>
 	<include name="list-fade">
 		<animation effect="fade" start="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
@@ -1297,6 +1298,12 @@
 	<include name="StartupVideo">
 		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
 	</include>
+	<!-- End of Play content Includes -->
+	<!-- Conditional onloads don't work for early pre-Eden builds, so use a conditional include instead -->
+	<include name="StartTVTunes">
+		<onload>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+	</include>	
+	<!-- Start of Library entry point Includes -->
 	<include name="RestartSkinMovies">
 		<onclick>Skin.Reset(updatemovieentry)</onclick>
 		<onclick>ReloadSkin()</onclick>
@@ -1313,4 +1320,5 @@
 		<onclick>Skin.Reset(updatemusicentry)</onclick>
 		<onclick>ReloadSkin()</onclick>
 	</include>
+	<!-- End of Library entry point Includes -->
 </includes>

@@ -2012,771 +2012,627 @@
 				</control>
 			</control>
 		</control>
-			<control type="group" id="540">
-				<visible allowhiddenfocus="true">ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)</visible>
-				<posx>433</posx>
-				<posy>137</posy>
-				<control type="image">
-					<description>Progess Dialog background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>433</width>
-					<height>545</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
-				</control>
-				<control type="label">
-					<description>heading label</description>
-					<posx>21</posx>
-					<posy>7</posy>
-					<width>389</width>
-					<font>font12</font>
-					<label>31683</label>
-					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="image">
-					<description>separator image</description>
-					<posx>21</posx>
-					<posy>37</posy>
-					<width>389</width>
-					<height>6</height>
-					<texture>separator.png</texture>
-				</control>
-				<control type="grouplist" id="541">
-					<description>Group Get Music Library Entry point Buttons</description>
-					<posx>21</posx>
-					<posy>45</posy>
-					<width>389</width>
-					<height>480</height>
-					<itemgap>0</itemgap>
-					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
-					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
-					<onleft>514</onleft>
-					<onright>514</onright>
-					<onup>541</onup>
-					<ondown>541</ondown>
-					<control type="button" id="542">
-						<description>Set Music library entry point - Genres</description>
-						<font>font12</font>
-						<height>40</height>
+		<control type="group" id="540">
+			<visible allowhiddenfocus="true">ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)</visible>
+			<posx>433</posx>
+			<posy>137</posy>
+			<control type="image">
+				<description>Progess Dialog background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>433</width>
+				<height>545</height>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="label">
+				<description>heading label</description>
+				<posx>21</posx>
+				<posy>4</posy>
+				<width>389</width>
+				<font>font12</font>
+				<label>31683</label>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="image">
+				<description>separator image</description>
+				<posx>21</posx>
+				<posy>37</posy>
+				<width>389</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="list" id="541">
+				<description>Group Get Music Library Entry point Buttons</description>
+				<posx>21</posx>
+				<posy>45</posy>
+				<width>389</width>
+				<height>490</height>
+				<itemgap>0</itemgap>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+				<align>center</align>
+				<usecontrolcoords>false</usecontrolcoords>
+				<onleft>514</onleft>
+				<onright>514</onright>
+				<viewtype label="31028">list</viewtype>
+				<itemlayout height="40" width="389">
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
 						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="389">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<align>left</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Set Music library entry point - Genres</description>
 						<label>135</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[135])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="543">
+					</item>
+					<item id="2">
 						<description>Set Music library entry point - Artists</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>133</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[133])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="544">
+					</item>
+					<item id="3">
 						<description>Set Music library entry point - Albums</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>132</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[132])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="545">
+					</item>
+					<item id="4">
 						<description>Set Music library entry point - Songs</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>134</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[134])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="546">
+					</item>
+					<item id="5">
 						<description>Set Music library entry point - Top100Songs</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>10504</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10504])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="547">
+					</item>
+					<item id="6">
 						<description>Set Music library entry point - Top100Albums</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>10505</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10505])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="548">
+					</item>
+					<item id="7">
 						<description>Set Music library entry point - RecentlyAddedAlbums</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>359</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[359])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="549">
+					</item>
+					<item id="8">
 						<description>Set Music library entry point - RecentlyPlayededAlbums</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>517</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[517])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="550">
+					</item>
+					<item id="9">
 						<description>Set Music library entry point - Compilations</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>521</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[521])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="551">
+					</item>
+					<item id="10">
 						<description>Set Music library entry point - Years</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>652</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[652])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="552">
+					</item>
+					<item id="11">
 						<description>Set Music library entry point - Singles</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>1050</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[1050])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="553">
+					</item>
+					<item id="12">
 						<description>Set Music library entry point - Files</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>744</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[744])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
+					</item>
+				</content>
+			</control>
+		</control>	
+		<control type="group" id="560">
+			<visible allowhiddenfocus="true">ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)</visible>
+			<posx>433</posx>
+			<posy>192</posy>
+			<control type="image">
+				<description>Progess Dialog background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>433</width>
+				<height>430</height>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="label">
+				<description>heading label</description>
+				<posx>21</posx>
+				<posy>4</posy>
+				<width>389</width>
+				<font>font12</font>
+				<label>31680</label>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="image">
+				<description>separator image</description>
+				<posx>21</posx>
+				<posy>37</posy>
+				<width>389</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="list" id="561">
+				<description>Group Get Movie Library Entry point Buttons</description>
+				<posx>21</posx>
+				<posy>45</posy>
+				<width>389</width>
+				<height>370</height>
+				<itemgap>0</itemgap>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+				<align>center</align>
+				<usecontrolcoords>false</usecontrolcoords>
+				<onleft>502</onleft>
+				<onright>502</onright>
+				<viewtype label="31028">list</viewtype>
+				<itemlayout height="40" width="389">
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
 						<aligny>center</aligny>
-					</control>
-				</control>
-			</control>
-			<control type="group" id="560">
-				<visible allowhiddenfocus="true">ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)</visible>
-				<posx>433</posx>
-				<posy>192</posy>
-				<control type="image">
-					<description>Progess Dialog background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>433</width>
-					<height>430</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
-				</control>
-				<control type="label">
-					<description>heading label</description>
-					<posx>21</posx>
-					<posy>7</posy>
-					<width>389</width>
-					<font>font12</font>
-					<label>31680</label>
-					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="image">
-					<description>separator image</description>
-					<posx>21</posx>
-					<posy>37</posy>
-					<width>389</width>
-					<height>6</height>
-					<texture>separator.png</texture>
-				</control>
-				<control type="grouplist" id="561">
-					<description>Group Get Movie Library Entry point Buttons</description>
-					<posx>21</posx>
-					<posy>45</posy>
-					<width>389</width>
-					<height>377</height>
-					<itemgap>0</itemgap>
-					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
-					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
-					<onleft>502</onleft>
-					<onright>502</onright>
-					<onup>561</onup>
-					<ondown>561</ondown>
-					<control type="button" id="562">
-						<description>Set Movie library entry point - Title</description>
 						<font>font12</font>
-						<height>40</height>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="389">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<height>40</height>
+						<align>left</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Set Movie library entry point - Title</description>
 						<label>369</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[369])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="563">
+					</item>
+					<item id="2">
 						<description>Set Movie library entry point - Root</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20108</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20108])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="564">
+					</item>
+					<item id="3">
 						<description>Set Movie library entry point - Recentlyadded</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20386</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20386])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="565">
+					</item>
+					<item id="4">
 						<description>Set Movie library entry point - Genres</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>135</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[135])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="566">
+					</item>
+					<item id="5">
 						<description>Set Movie library entry point - Years</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>652</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[652])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="567">
+					</item>
+					<item id="6">
 						<description>Set Movie library entry point - Actors</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>344</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[344])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="568">
+					</item>
+					<item id="7">
 						<description>Set Movie library entry point - Directors</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20348</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20348])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="569">
+					</item>
+					<item id="8">
 						<description>Set Movie library entry point - Studios</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20388</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20388])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="591">
+					</item>
+					<item id="9">
 						<description>Set Movie library entry point - Files</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>744</label>
 						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[744])</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
+					</item>
+				</content>
+			</control>
+		</control>	
+		<control type="group" id="570">
+			<visible allowhiddenfocus="true">ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)</visible>
+			<posx>433</posx>
+			<posy>206</posy>
+			<control type="image">
+				<description>Progess Dialog background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>433</width>
+				<height>390</height>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="label">
+				<description>heading label</description>
+				<posx>21</posx>
+				<posy>4</posy>
+				<width>389</width>
+				<font>font12</font>
+				<label>31681</label>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="image">
+				<description>separator image</description>
+				<posx>21</posx>
+				<posy>37</posy>
+				<width>389</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="list" id="571">
+				<description>Group Get TV Library Entry point Buttons</description>
+				<posx>21</posx>
+				<posy>45</posy>
+				<width>389</width>
+				<height>370</height>
+				<itemgap>0</itemgap>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+				<align>center</align>
+				<usecontrolcoords>false</usecontrolcoords>
+				<onleft>506</onleft>
+				<onright>506</onright>
+				<viewtype label="31028">list</viewtype>
+				<itemlayout height="40" width="389">
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
 						<aligny>center</aligny>
-					</control>
-				</control>
-			</control>
-			<control type="group" id="570">
-				<visible allowhiddenfocus="true">ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)</visible>
-				<posx>433</posx>
-				<posy>206</posy>
-				<control type="image">
-					<description>Progess Dialog background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>433</width>
-					<height>390</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
-				</control>
-				<control type="label">
-					<description>heading label</description>
-					<posx>21</posx>
-					<posy>7</posy>
-					<width>389</width>
-					<font>font12</font>
-					<label>31681</label>
-					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="image">
-					<description>separator image</description>
-					<posx>21</posx>
-					<posy>37</posy>
-					<width>389</width>
-					<height>6</height>
-					<texture>separator.png</texture>
-				</control>
-				<control type="grouplist" id="571">
-					<description>Group Get TV Library Entry point Buttons</description>
-					<posx>21</posx>
-					<posy>25</posy>
-					<width>389</width>
-					<height>370</height>
-					<itemgap>0</itemgap>
-					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
-					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
-					<onleft>506</onleft>
-					<onright>506</onright>
-					<onup>571</onup>
-					<ondown>571</ondown>
-					<control type="button" id="572">
-						<description>Set TV library entry point - Title</description>
 						<font>font12</font>
-						<height>40</height>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="389">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<height>40</height>
+						<align>left</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Set TV library entry point - Title</description>
 						<label>369</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[369])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="573">
+					</item>
+					<item id="2">
 						<description>Set TV library entry point - Root</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20108</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20108])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="574">
+					</item>
+					<item id="3">
 						<description>Set TV library entry point - Recentlyadded</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20387</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20387])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="575">
+					</item>
+					<item id="4">
 						<description>Set TV library entry point - Genres</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>135</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[135])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="576">
+					</item>
+					<item id="5">
 						<description>Set TV library entry point - Years</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>652</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[652])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="577">
+					</item>
+					<item id="6">
 						<description>Set TV library entry point - Actors</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>344</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[344])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="578">
+					</item>
+					<item id="7">
 						<description>Set TV library entry point - Studios</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20388</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20388])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="579">
+					</item>
+					<item id="8">
 						<description>Set TV library entry point - Files</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>744</label>
 						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[744])</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
+					</item>
+				</content>
+			</control>
+		</control>	
+		<control type="group" id="580">
+			<visible allowhiddenfocus="true">ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)</visible>
+			<posx>433</posx>
+			<posy>206</posy>
+			<control type="image">
+				<description>Progess Dialog background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>433</width>
+				<height>430</height>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="label">
+				<description>heading label</description>
+				<posx>21</posx>
+				<posy>4</posy>
+				<width>389</width>
+				<font>font11</font>
+				<label>31682</label>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="image">
+				<description>separator image</description>
+				<posx>21</posx>
+				<posy>37</posy>
+				<width>389</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="list" id="581">
+				<description>Group Get Music Video Library Entry point Buttons</description>
+				<posx>21</posx>
+				<posy>45</posy>
+				<width>389</width>
+				<height>370</height>
+				<itemgap>0</itemgap>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+				<align>center</align>
+				<usecontrolcoords>false</usecontrolcoords>
+				<onleft>510</onleft>
+				<onright>510</onright>
+				<viewtype label="31028">list</viewtype>
+				<itemlayout height="40" width="389">
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
 						<aligny>center</aligny>
-					</control>
-				</control>
-			</control>
-			<control type="group" id="580">
-				<visible allowhiddenfocus="true">ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)</visible>
-				<posx>433</posx>
-				<posy>206</posy>
-				<control type="image">
-					<description>Progess Dialog background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>433</width>
-					<height>430</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
-				</control>
-				<control type="label">
-					<description>heading label</description>
-					<posx>21</posx>
-					<posy>7</posy>
-					<width>389</width>
-					<font>font12</font>
-					<label>31682</label>
-					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="image">
-					<description>separator image</description>
-					<posx>21</posx>
-					<posy>37</posy>
-					<width>389</width>
-					<height>6</height>
-					<texture>separator.png</texture>
-				</control>
-				<control type="grouplist" id="581">
-					<description>Group Get Music Video Library Entry point Buttons</description>
-					<posx>21</posx>
-					<posy>45</posy>
-					<width>389</width>
-					<height>370</height>
-					<itemgap>0</itemgap>
-					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
-					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
-					<onleft>510</onleft>
-					<onright>510</onright>
-					<onup>581</onup>
-					<ondown>581</ondown>
-					<control type="button" id="582">
-						<description>Set Music Video library entry point - Title</description>
 						<font>font12</font>
-						<height>40</height>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="389">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
 						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<height>40</height>
+						<align>left</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Set Music Video library entry point - Title</description>
 						<label>369</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[369])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="583">
+					</item>
+					<item id="2">
 						<description>Set Music Video library entry point - Root</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20108</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20108])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="584">
+					</item>
+					<item id="3">
 						<description>Set Music Video library entry point - Recentlyadded</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20390</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20390])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="585">
+					</item>
+					<item id="4">
 						<description>Set Music Video library entry point - Genres</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>135</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[135])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="586">
+					</item>
+					<item id="5">
 						<description>Set Music Video library entry point - Years</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>652</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[652])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="587">
+					</item>
+					<item id="6">
 						<description>Set Music Video library entry point - Artists</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>133</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[133])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="588">
+					</item>
+					<item id="7">
 						<description>Set Music Video library entry point - Directors</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20348</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20348])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="589">
+					</item>
+					<item id="8">
 						<description>Set Music Video library entry point - Studios</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>20388</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20388])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="590">
+					</item>
+					<item id="9">
 						<description>Set Music Video library entry point - Files</description>
-						<font>font12</font>
-						<height>40</height>
-						<width>389</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
 						<label>744</label>
 						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[744])</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-				</control>
+					</item>
+				</content>
 			</control>
+		</control>	
 	</controls>
 </window>

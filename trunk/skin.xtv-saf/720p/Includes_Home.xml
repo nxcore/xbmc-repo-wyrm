@@ -1502,8 +1502,6 @@
 								<width>120</width>
 								<height>168</height>
 								<aspectratio>stretch</aspectratio>
-								<bordertexture border="5">button-nofocus.png</bordertexture>
-								<bordersize>5</bordersize>
 								<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 						</itemlayout>
@@ -1516,8 +1514,6 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<aspectratio>keep</aspectratio>
-								<bordertexture border="5">button-nofocus.png</bordertexture>
-								<bordersize>5</bordersize>
 								<texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.ActualIcon]</texture>
 								<visible>!Control.HasFocus(9001)</visible>
 							</control>
@@ -1592,6 +1588,7 @@
 						</content>
 					</control>
 				</control>
+				<!-- TV Episode icons -->
 				<control type="group">
 					<include>background-fade</include>
 					<visible>Control.HasFocus(90102) | Control.HasFocus(9002)</visible>
@@ -1629,7 +1626,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<aspectratio>keep</aspectratio>
-								<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout height="210" width="252">
@@ -1656,7 +1653,7 @@
 								<aspectratio>keep</aspectratio>
 								<bordertexture border="5">folder-focus.png</bordertexture>
 								<bordersize>5</bordersize>
-								<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="label">
 								<posx>126</posx>
@@ -1676,41 +1673,42 @@
 								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.1.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.1.EpisodeNumber)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
-								<icon>-</icon>
+								<icon>$INFO[Window.Property(LatestEpisode.1.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
 							</item>
 							<item id="2">
 								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.2.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.2.EpisodeNumber)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
-								<icon>-</icon>
+								<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
 							</item>
 							<item id="3">
 								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.3.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.3.EpisodeNumber)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
-								<icon>-</icon>
+								<icon>$INFO[Window.Property(LatestEpisode.3.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
 							</item>
 							<item id="4">
 								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.4.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.4.EpisodeNumber)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
-								<icon>-</icon>
+								<icon>$INFO[Window.Property(LatestEpisode.4.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
 							</item>
 							<item id="5">
 								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.5.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.5.EpisodeNumber)]</label>
 								<label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
-								<icon>-</icon>
+								<icon>$INFO[Window.Property(LatestEpisode.5.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
 							</item>
 						</content>
 					</control>
 				</control>
 			</control>
+			<!-- Weather icons -->
 			<control type="group">
 				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 				<visible>Container(9000).HasFocus(5)</visible>

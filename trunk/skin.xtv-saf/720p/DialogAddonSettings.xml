@@ -119,7 +119,7 @@
 			<description>Default Category Button</description>
 			<height>50</height>
 			<width>407</width>
-			<textoffsetx>10</textoffsetx>
+			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -132,6 +132,7 @@
 		<control type="button" id="3">
 			<description>Default Button</description>
 			<height>50</height>
+			<textoffsetx>18</textoffsetx>
 			<font>font13</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>

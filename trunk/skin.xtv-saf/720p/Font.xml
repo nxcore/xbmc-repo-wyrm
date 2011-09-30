@@ -3,37 +3,33 @@
 		<font>
 			<name>rss20</name>
 			<filename>Ubuntu-R.ttf</filename>
-			<size>20</size>
+			<size>18</size>
+			<linespacing>1.0</linespacing>
 		</font>
 		<font>
 			<name>font11</name>
 			<filename>Ubuntu-R.ttf</filename>
-			<size>24</size>
-			<aspect>1.05</aspect>
+			<size>22</size>
 		</font>
 		<font>
 			<name>font12</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>24</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font13</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>25</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font18</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>31</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font20</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>36</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font22</name>
@@ -44,19 +40,19 @@
 			<name>font28</name>
 			<filename>Ubuntu-R.ttf</filename>
 			<size>48</size>
-			<aspect>1.05</aspect>
 		</font>
 	</fontset>
 	<fontset id="Bold" idloc="31576" unicode="true">
 		<font>
 			<name>rss20</name>
 			<filename>Ubuntu-B.ttf</filename>
-			<size>20</size>
+			<size>18</size>
+			<linespacing>1.0</linespacing>
 		</font>
 		<font>
 			<name>font11</name>
 			<filename>Ubuntu-B.ttf</filename>
-			<size>24</size>
+			<size>22</size>
 		</font>
 		<font>
 			<name>font12</name>
@@ -93,36 +89,33 @@
 		<font>
 			<name>rss20</name>
 			<filename>arial.ttf</filename>
+			<size>18</size>
+			<linespacing>1.0</linespacing>
 		</font>
 		<font>
 			<name>font11</name>
 			<filename>arial.ttf</filename>
-			<size>24</size>
-			<aspect>1.05</aspect>
+			<size>22</size>
 		</font>
 		<font>
 			<name>font12</name>
 			<filename>arial.ttf</filename>
 			<size>24</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font13</name>
 			<filename>arial.ttf</filename>
 			<size>25</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font18</name>
 			<filename>arial.ttf</filename>
 			<size>31</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font20</name>
 			<filename>arial.ttf</filename>
 			<size>36</size>
-			<aspect>1.05</aspect>
 		</font>
 		<font>
 			<name>font22</name>
@@ -133,7 +126,6 @@
 			<name>font28</name>
 			<filename>arial.ttf</filename>
 			<size>48</size>
-			<aspect>1.05</aspect>
 		</font>
 	</fontset>
 </fonts>
