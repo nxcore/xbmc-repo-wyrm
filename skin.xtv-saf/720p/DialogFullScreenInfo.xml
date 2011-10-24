@@ -1,8 +1,4 @@
-<window id="115">
-	<defaultcontrol always="true">1</defaultcontrol>
-	<visible>Player.Seeking | Player.DisplayAfterSeek | Window.IsActive(VideoOSD) | Window.IsActive(MusicOSD) | Player.Paused | Player.Forwarding | Player.Rewinding </visible>
-	<animation effect="fade" start="0" time="100">WindowOpen</animation>
-	<animation effect="fade" end="0" time="200">WindowClose</animation>
+<window type="dialog" id="142">
 	<coordinates>
 		<posx>0</posx>
 		<posy>640</posy>
@@ -18,7 +14,6 @@
 				<width>1359</width>
 				<texture>background.png</texture>
 				<colordiffuse>osd-background</colordiffuse>
-				<visible>[Window.IsActive(2005)] + ![Window.IsActive(MusicOSD)]</visible>
 			</control>
 			<!-- Media Icon -->
 			<control type="group">
@@ -105,23 +100,124 @@
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo)</visible>
 			</control>
-			<!-- music -->	
-			<control type="image">
-				<description>Music cover image</description>
-				<posx>8</posx>
-				<posy>-256</posy>
-				<width>250</width>
-				<height>250</height>
-				<align>left</align>
-				<aligny>bottom</aligny>
-				<texture diffuse="mask-rect.png">$INFO[MusicPlayer.Cover]</texture>
-				<aspectratio align="left">keep</aspectratio>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
-			</control>
 		</control>	
 		<!-- End of Media Icon -->
-		
+		<!-- Plot (Show if available)-->
+		<control type="textbox">
+			<posx>290</posx>
+			<posy>-180</posy>
+			<width>948</width>
+			<height>116</height>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<label>$INFO[VideoPlayer.Plot]</label>
+			<align>justify</align>
+			<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
+			<visible>!IsEmpty(VideoPlayer.Plot)</visible>
+		</control>
+		<!-- Plot Outline (Show if plot not found)-->
+		<control type="textbox">
+			<posx>290</posx>
+			<posy>-180</posy>
+			<width>948</width>
+			<height>116</height>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<label fallback="161">$INFO[VideoPlayer.PlotOutline]</label>
+			<align>justify</align>
+			<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+			<visible>!IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.Plot)</visible>
+		</control>
+		<!-- MPAA Rating -->
+		<!--<control type="group">
+			<posx>290</posx>
+			<posy>-56</posy>
+			<include>mpaa-ratings</include>
+		</control>-->
+		<!-- Media flags -->
+		<control type="grouplist">
+			<description>Group Media Flags</description>
+			<posx>792</posx>
+			<posy>-56</posy>
+			<width>453</width>
+			<height>60</height>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+			<itemgap>-8</itemgap>
+			<!-- Hack to check if media flag image is available -->
+			<control type="image" id="161">
+				<width>1</width>
+				<height>60</height>
+				<align>center</align>
+				<colordiffuse>00FFFFFF</colordiffuse>
+				<texture fallback="blank.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
+				<visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+			</control>
+			<control type="image" id="162">
+				<width>1</width>
+				<height>60</height>
+				<align>center</align>
+				<colordiffuse>00FFFFFF</colordiffuse>
+				<texture fallback="blank.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/images/video/,.png]</texture>
+				<visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+			</control>
+			<control type="image" id="163">
+				<description>Aspectratio Image</description>
+				<width>1</width>
+				<height>60</height>
+				<align>center</align>
+				<texture fallback="blank.png">$INFO[VideoPlayer.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
+				<colordiffuse>00FFFFFF</colordiffuse>
+				<visible>!IsEmpty(VideoPlayer.VideoAspect)</visible>
+			</control>
+			<control type="image" id="164">
+				<width>1</width>
+				<height>60</height>
+				<align>center</align>
+				<colordiffuse>00FFFFFF</colordiffuse>
+				<texture fallback="blank.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
+				<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+			</control>
+			<!-- Audio Codec -->
+			<control type="image" id="171">
+				<width>113</width>
+				<height>60</height>
+				<align>center</align>
+				<colordiffuse>FlagDiffuse</colordiffuse>
+				<texture>$INFO[VideoPlayer.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
+				<visible>!IsEmpty(VideoPlayer.AudioCodec) + !StringCompare(Control.GetLabel(161),blank.png)</visible>
+			</control>
+			<!-- Video Codec -->
+			<control type="image" id="172">
+				<width>113</width>
+				<height>60</height>
+				<align>center</align>
+				<colordiffuse>FlagDiffuse</colordiffuse>
+				<texture fallback="blank.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/images/video/,.png]</texture>
+				<visible>!IsEmpty(VideoPlayer.VideoCodec) + !StringCompare(Control.GetLabel(162),blank.png)</visible>
+			</control>
+			<!-- Video Aspect Ratio -->
+			<control type="image" id="173">
+				<description>Aspectratio Image</description>
+				<width>113</width>
+				<height>60</height>
+				<align>center</align>
+				<texture>$INFO[VideoPlayer.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
+				<colordiffuse>FlagDiffuse</colordiffuse>
+				<visible>!IsEmpty(VideoPlayer.VideoAspect) + !StringCompare(Control.GetLabel(163),blank.png)</visible>
+			</control>
+			<!-- Video Resolution -->
+			<control type="image" id="174">
+				<width>113</width>
+				<height>60</height>
+				<align>center</align>
+				<colordiffuse>FlagDiffuse</colordiffuse>
+				<texture>$INFO[VideoPlayer.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
+				<visible>!IsEmpty(VideoPlayer.VideoResolution) + !StringCompare(Control.GetLabel(164),blank.png)</visible>
+			</control>
+		</control>
 		<!-- Player action labels -->
 		<control type="group">
 			<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
@@ -333,85 +429,6 @@
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<!-- End Progress Bar -->
-			<!-- Seek Slider -->
-			<control type="slider" id="401">
-				<description>Seek Slider</description>
-				<posx>210</posx>
-				<posy>10</posy>
-				<width>864</width>
-				<height>20</height>
-				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
-				<textureslidernib>progress-marker.png</textureslidernib>
-				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
-			</control>
-			<!-- End Seek Slider -->
-		</control>
-		<!-- Start Progress Control for all Windows Except VideoFullScreen , MusicVisualisation and MyMusicPlaylist-->
-		<control type="group">
-			<visible>![Window.IsActive(2005) | Window.IsActive(2006) | Window.IsActive(500)]</visible>
-			<posx>725</posx>
-			<posy>-90</posy>
-			<control type="image">
-				<description>Popup Volume Dialog Background</description>
-				<posx>0</posx>
-				<posy>2</posy>
-				<width>354</width>
-				<height>87</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-			</control>
-			<control type="label">
-				<description>Elapsed Time Label</description>
-				<posx>146</posx>
-				<posy>25</posy>
-				<font>font12</font>
-				<align>right</align>
-				<info>Player.Time</info>
-				<width>177</width>
-				<height>20</height>
-				<visible>!Player.Seeking</visible>
-			</control>
-			<control type="label">
-				<description>Seek Time Label</description>
-				<posx>146</posx>
-				<posy>25</posy>
-				<font>font12</font>
-				<align>right</align>
-				<info>Player.SeekTime</info>
-				<width>177</width>
-				<height>20</height>
-				<visible>Player.Seeking</visible>
-			</control>
-			<control type="label">
-				<description>Duration Label</description>
-				<posx>156</posx>
-				<posy>25</posy>
-				<label>$INFO[Player.Duration,/ ]</label>
-				<font>font12</font>
-				<align>left</align>
-				<width>177</width>
-				<height>20</height>
-			</control>
-			<control type="progress">
-				<description>Progressbar Cache</description>
-				<posx>18</posx>
-				<posy>66</posy>
-				<width>300</width>
-				<height>8</height>
-				<info>Player.ProgressCache</info>
-				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
-				<colordiffuse>FF777777</colordiffuse>
-			</control>
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>18</posx>
-				<posy>66</posy>
-				<width>300</width>
-				<height>8</height>
-				<info>Player.Progress</info>
-				<colordiffuse>ProgressBarColor</colordiffuse>
-				<texturebg border="14,0,14,0">progress-background.png</texturebg>
-				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
-			</control>
 		</control>
 	</controls>
 </window>
