@@ -402,9 +402,21 @@
 				<visible>!IsEmpty(ListItem.Thumb)</visible>
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
 			</control>
+			<!-- Number of unwatched episodes -->
+			<control type="label">
+				<posx>17</posx>
+				<posy>302</posy>
+				<width>285</width>
+				<height>31</height>
+				<font>font11</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
+				<visible>!IsEmpty(ListItem.Property(UnWatchedEpisodes)) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+			</control>
 			<!-- Duration -->
 			<control type="group">
-				<visible>!IsEmpty(listitem.Duration)</visible>
+				<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 				<control type="label">
 					<posx>17</posx>
 					<posy>302</posy>

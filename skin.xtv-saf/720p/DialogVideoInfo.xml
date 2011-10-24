@@ -56,27 +56,6 @@
 				</control>
 			</control>
 			<!-- Title -->
-			<control type="group">
-				<visible>container.content(tvshows)</visible>
-				<control type="image" id="37016">
-					<posx>531</posx>
-					<posy>-31</posy>
-					<width>237</width>
-					<height>65</height>
-					<texture>$INFO[ListItem.FileNameAndPath]logo.png</texture>
-					<aligny>bottom</aligny>
-					<aspectratio align="left">keep</aspectratio>
-				</control>
-				<control type="image" id="39016">
-					<posx>531</posx>
-					<posy>-31</posy>
-					<width>237</width>
-					<height>65</height>
-					<texture>$INFO[ListItem.path]../logo.png</texture>
-					<aligny>bottom</aligny>
-					<aspectratio align="left">keep</aspectratio>
-				</control>
-			</control>
 			<control type="fadelabel">
 				<posx>531</posx>
 				<posy>-6</posy>
@@ -89,7 +68,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<info>ListItem.Title</info>
-				<visible>[IsEmpty(Control.GetLabel(37016)) + IsEmpty(Control.GetLabel(39016))] | !container.content(tvshows)</visible>
 				<animation effect="fade" time="200">WindowClose</animation>
 			</control>
 			<!-- MPAA Rating -->
@@ -237,7 +215,7 @@
 				<font>font18</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
-				<label>[B]$LOCALIZE[207][/B]</label>
+				<label>$LOCALIZE[207]</label>
 				<visible>!substring(Control.GetLabel(5),plot)</visible>
 			</control>
 			<control type="textbox">
@@ -274,7 +252,7 @@
 				<font>font18</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
-				<label>[B]$LOCALIZE[206][/B]</label>
+				<label>$LOCALIZE[206]</label>
 				<visible>substring(Control.GetLabel(5),plot)</visible>
 			</control>
 			<control type="list" id="50">
@@ -283,11 +261,11 @@
 				<width>708</width>
 				<height>287</height>
 				<onleft>999</onleft>
-				<onright>999</onright>
+				<onright>923</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="">list</viewtype>
-				<pagecontrol>23</pagecontrol>
+				<pagecontrol>923</pagecontrol>
 				<include>list-fade</include>
 				<scrolltime>1</scrolltime>
 				<orientation>vertical</orientation>
@@ -575,7 +553,7 @@
 			</control>
 		</control>
 		<!-- Scrollbar -->
-		<control type="scrollbar" id="23">
+		<control type="scrollbar" id="923">
 			<posx>1230</posx>
 			<posy>337</posy>
 			<width>24</width>
