@@ -2055,8 +2055,8 @@
 				<orientation>vertical</orientation>
 				<align>center</align>
 				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>514</onleft>
-				<onright>514</onright>
+				<onleft>524</onleft>
+				<onright>524</onright>
 				<viewtype label="31028">list</viewtype>
 				<itemlayout height="40" width="389">
 					<control type="label">
@@ -2228,8 +2228,8 @@
 				<orientation>vertical</orientation>
 				<align>center</align>
 				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>502</onleft>
-				<onright>502</onright>
+				<onleft>512</onleft>
+				<onright>512</onright>
 				<viewtype label="31028">list</viewtype>
 				<itemlayout height="40" width="389">
 					<control type="label">
@@ -2380,8 +2380,8 @@
 				<orientation>vertical</orientation>
 				<align>center</align>
 				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>506</onleft>
-				<onright>506</onright>
+				<onleft>516</onleft>
+				<onright>516</onright>
 				<viewtype label="31028">list</viewtype>
 				<itemlayout height="40" width="389">
 					<control type="label">
@@ -2525,8 +2525,8 @@
 				<orientation>vertical</orientation>
 				<align>center</align>
 				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>510</onleft>
-				<onright>510</onright>
+				<onleft>520</onleft>
+				<onright>520</onright>
 				<viewtype label="31028">list</viewtype>
 				<itemlayout height="40" width="389">
 					<control type="label">

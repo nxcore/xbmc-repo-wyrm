@@ -517,7 +517,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>![Skin.HasSetting(Fanart)] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies)</visible>
 				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
 				<!-- User has selected NO fanart -->
 				<control type="image">
@@ -608,9 +608,21 @@
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
 					<visible>!IsEmpty(ListItem.StarRating)</visible>
 				</control>
+				<!-- Number of unwatched episodes -->
+				<control type="label">
+					<posx>17</posx>
+					<posy>302</posy>
+					<width>285</width>
+					<height>31</height>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
+					<visible>!IsEmpty(ListItem.Property(UnWatchedEpisodes)) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				</control>
 				<!-- Duration -->
 				<control type="group">
-					<visible>!IsEmpty(listitem.Duration)</visible>
+					<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 					<control type="label">
 						<posx>17</posx>
 						<posy>302</posy>
@@ -683,12 +695,13 @@
 					<posx>17</posx>
 					<posy>467</posy>
 					<width>646</width>
-					<height>200</height>
+					<height>175</height>
 					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label>$INFO[ListItem.PlotOutline]</label>
 					<align>justify</align>
+					<aligny>top</aligny>
 					<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 				</control>
@@ -697,12 +710,13 @@
 					<posx>17</posx>
 					<posy>467</posy>
 					<width>646</width>
-					<height>200</height>
+					<height>175</height>
 					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<label fallback="161">$INFO[ListItem.Plot]</label>
 					<align>justify</align>
+					<aligny>top</aligny>
 					<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
 					<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 				</control>
