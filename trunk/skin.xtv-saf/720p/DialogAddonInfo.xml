@@ -7,10 +7,10 @@
 		<control type="group">
 			<visible>!Window.isVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
 			<control type="image">
-				<posx>61</posx>
-				<posy>112</posy>
-				<width>354</width>
-				<height>250</height>
+				<posx>105</posx>
+				<posy>105</posy>
+				<width>256</width>
+				<height>256</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
@@ -172,9 +172,9 @@
 					<control type="textbox" id="400">
 						<description>Description</description>
 						<posx>17</posx>
-						<posy>243</posy>
+						<posy>246</posy>
 						<width>734</width>
-						<height>202</height>
+						<height>180</height>
 						<font>font12</font>
 						<align>-</align>
 						<textcolor>button-text</textcolor>
@@ -227,9 +227,9 @@
 					<control type="textbox" id="400">
 						<description>Description</description>
 						<posx>17</posx>
-						<posy>243</posy>
+						<posy>246</posy>
 						<width>734</width>
-						<height>312</height>
+						<height>290</height>
 						<font>font12</font>
 						<align>-</align>
 						<textcolor>button-text</textcolor>
@@ -254,83 +254,74 @@
 					</control>
 				</control>
 			</control>
-			<control type="group" id="9000">
-				<posx>8</posx>
-				<posy>362</posy>
+			<control type="grouplist" id="9000">
+				<posx>80</posx>
+				<posy>370</posy>
+				<width>305</width>
+				<height>310</height>
+				<onleft>60</onleft>
+				<onright>60</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<itemgap>2</itemgap>				
 				<control type="button" id ="6">
 					<description>Enable Addon button</description>
-					<posx>106</posx>
-					<posy>0</posy>
-					<width>265</width>
-					<height>63</height>
+					<width>305</width>
+					<height>50</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24022</label>
 					<font>font13</font>
 					<align>center</align>
-					<onleft>60</onleft>
-					<onright>60</onright>
-					<onup>10</onup>
-					<ondown>7</ondown>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="7">
 					<description>Disable Addon button</description>
-					<posx>106</posx>
-					<posy>62</posy>
-					<width>265</width>
-					<height>63</height>
+					<width>305</width>
+					<height>50</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24021</label>
 					<font>font13</font>
 					<align>center</align>
-					<onleft>60</onleft>
-					<onright>60</onright>
-					<onup>6</onup>
-					<ondown>9</ondown>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="9">
 					<description>Addon Settings</description>
-					<posx>106</posx>
-					<posy>125</posy>
-					<width>265</width>
-					<height>63</height>
+					<width>305</width>
+					<height>50</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24020</label>
 					<font>font13</font>
 					<align>center</align>
-					<onleft>60</onleft>
-					<onright>60</onright>
-					<onup>7</onup>
-					<ondown>8</ondown>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="8">
 					<description>Update Addon button</description>
-					<posx>106</posx>
-					<posy>187</posy>
-					<width>265</width>
-					<height>63</height>
+					<width>305</width>
+					<height>50</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24069</label>
 					<font>font13</font>
 					<align>center</align>
-					<onleft>60</onleft>
-					<onright>60</onright>
-					<onup>9</onup>
-					<ondown>10</ondown>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="11">
+					<description>Rollback button</description>
+					<width>305</width>
+					<height>50</height>
+					<label>24048</label>
+					<font>font13</font>
+					<align>center</align>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="10">
 					<description>Changelog button</description>
-					<posx>106</posx>
-					<posy>250</posy>
-					<width>265</width>
-					<height>63</height>
+					<width>305</width>
+					<height>50</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24036</label>
 					<font>font13</font>
 					<align>center</align>
-					<onleft>60</onleft>
-					<onright>60</onright>
-					<onup>8</onup>
-					<ondown>6</ondown>
+					<aligny>center</aligny>
 				</control>
 			</control>
 		</control>
