@@ -1,3 +1,14 @@
+[B]1.1.2[/B]
+- Skin now coded in 720p.
+- Support for Global Search script (Eden build only).
+- Added Rollback button to addon info screen, to allow rolling back to previous versions of addons (Eden build only).
+- Added Peripheral settings support. (Eden build only).
+- Skin now coded in 720p (yes I have mentioned this already, but it's very important).
+- Added video info to "List" view, now matches "List2" view.
+- New horizontal Home menu, skin defaults to old vertical menu.
+- Fix to allow video info for a playing video.
+- Fixed a large number of bugs.
+
 [B]1.1.1[/B]
 - Post update bug fixes (lots of them).
 - Unifying release, Release for XBMC Dharma, XBMC pre Eden and Xbox builds.
