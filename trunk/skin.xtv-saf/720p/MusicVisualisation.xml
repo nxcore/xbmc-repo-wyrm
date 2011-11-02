@@ -11,14 +11,40 @@
 			<width>1280</width>
 			<height>720</height>
 		</control>
+		<control type="image" id="992">
+			<description>Music logo if available</description>
+			<posx>8</posx>
+			<posy>20</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
+			<aligny>bottom</aligny>
+			<aspectratio align="left">keep</aspectratio>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+		</control>
+		<control type="image" id="993">
+			<description>Otherwise try parent directory of above</description>
+			<posx>8</posx>
+			<posy>20</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture fallback="blank.png">$INFO[Player.FolderPath,,../logo.png]</texture>
+			<aligny>bottom</aligny>
+			<aspectratio align="left">keep</aspectratio>
+			<visible>StringCompare(Control.GetLabel(992),blank.png)</visible>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+		</control>
 		<!-- codec & viz infos -->
 		<control type="image">
 			<description>preset background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1345</width>
-			<height>150</height>
+			<height>185</height>
 			<texture>background.png</texture>
+			<colordiffuse>osd-background</colordiffuse>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.ShowCodec</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -81,6 +107,7 @@
 			<width>1345</width>
 			<height>187</height>
 			<texture>background.png</texture>
+			<colordiffuse>osd-background</colordiffuse>
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<visible>Player.HasMedia + Player.ShowInfo</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -152,7 +179,7 @@
 		<control type="label">
 			<description>Playlist</description>
 			<posx>1239</posx>
-			<posy>695</posy>
+			<posy>577</posy>
 			<width>265</width>
 			<height>37</height>
 			<align>right</align>
@@ -299,15 +326,34 @@
 			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
 		</control>
 		<control type="progress">
-			<posx>35</posx>
-			<posy>587</posy>
-			<width>389</width>
-			<height>15</height>
+			<description>Progressbar</description>
+			<posx>454</posx>
+			<posy>672</posy>
+			<width>790</width>
+			<height>16</height>
 			<info>Player.Progress</info>
+			<texturebg border="14,0,14,0">progress-background.png</texturebg>
+			<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
-			<visible>Skin.HasSetting(np-vis) + IntegerGreaterThan(System.Progressbar,0)</visible>
-			<visible>![Window.IsActive(script-XBMC_Lyrics-main.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml)]</visible>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
 		</control>
+		<!-- End Progress Bar -->
+		<!-- Seek Slider -->
+		<control type="slider" id="888">
+			<description>Seek Slider</description>
+			<posx>450</posx>
+			<posy>672</posy>
+			<width>790</width>
+			<height>20</height>
+			<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
+			<textureslidernib>progress-marker.png</textureslidernib>
+			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+			<action>seek</action>
+			<visible>!Skin.HasSetting(np-vis)</visible>
+			<visible>Player.HasMedia + Player.ShowInfo</visible>
+		</control>
+		<!-- End Seek Slider -->		
 		<control type="button" id="999">
 			<posx>-17</posx>
 			<posy>-12</posy>
