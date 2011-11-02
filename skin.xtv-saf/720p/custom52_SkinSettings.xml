@@ -2016,6 +2016,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)</visible>
 			<posx>433</posx>
 			<posy>137</posy>
+			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)">Conditional</animation>
 			<control type="image">
 				<description>Progess Dialog background</description>
 				<posx>0</posx>
@@ -2189,6 +2190,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)</visible>
 			<posx>433</posx>
 			<posy>192</posy>
+			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)">Conditional</animation>
 			<control type="image">
 				<description>Progess Dialog background</description>
 				<posx>0</posx>
@@ -2341,6 +2343,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)</visible>
 			<posx>433</posx>
 			<posy>206</posy>
+			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)">Conditional</animation>
 			<control type="image">
 				<description>Progess Dialog background</description>
 				<posx>0</posx>
@@ -2486,6 +2489,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)</visible>
 			<posx>433</posx>
 			<posy>206</posy>
+			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)">Conditional</animation>
 			<control type="image">
 				<description>Progess Dialog background</description>
 				<posx>0</posx>
