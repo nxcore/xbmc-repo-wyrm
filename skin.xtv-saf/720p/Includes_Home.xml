@@ -90,6 +90,19 @@
 				</control>
 			</control>
 		</control>
+		<!-- Bring up Player controls if go left -->
+		<control type="button" id="421">
+			<description>trigger player controls if selected</description>
+			<posy>-24</posy>
+			<posy>-24</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>ActivateWindow(PlayerControls)</onfocus>
+			<onfocus>SetFocus(9000)</onfocus>
+			<!--<visible>Player.Playing</visible>-->			
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>
 		
 		<!-- Markers for excess menu items -->
 		<control type="image">
@@ -117,7 +130,7 @@
 			<width>514</width>
 			<focusposition>3</focusposition>
 			<movement>4</movement>
-			<onleft>9000</onleft>
+			<onleft>421</onleft>
 			<onright>23</onright>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
