@@ -124,7 +124,7 @@
 					<posx>456</posx>
 					<posy>114</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<font>font12</font>
 					<label>100</label>
 					<textoffsetx>10</textoffsetx>
@@ -140,44 +140,69 @@
 				<control type="button" id="3">
 					<description>Sort by button</description>
 					<posx>456</posx>
-					<posy>170</posy>
+					<posy>164</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<font>font12</font>
 					<label>103</label>
 					<textoffsetx>10</textoffsetx>
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
-					<onright>4</onright>
+					<onright>50</onright>
 					<onup>2</onup>
-					<ondown>10</ondown>
+					<ondown>4</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
 				</control>
 				<control type="togglebutton" id="4">
-					<description>Sort asc</description>
-					<posx>758</posx>
-					<posy>190</posy>
-					<label>-</label>
-					<onleft>3</onleft>
+					<description>Sort direction</description>
+					<posx>456</posx>
+					<posy>214</posy>
+					<width>362</width>
+					<height>50</height>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<alttexturefocus>default-button.png</alttexturefocus>
+					<alttexturenofocus>-</alttexturenofocus>					
+					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+					<textoffsetx>10</textoffsetx>
+					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>2</onup>
+					<onup>3</onup>
+					<ondown>7</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="radiobutton" id="7">
+					<description>Stack button</description>
+					<posx>456</posx>
+					<posy>264</posy>
+					<width>362</width>
+					<height>50</height>
+					<label>346</label>
+					<font>font12</font>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>4</onup>
 					<ondown>10</ondown>
 					<textcolor>button-text</textcolor>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>330</radioposx>
 					<include>button-fade</include>
 				</control>
 				<control type="button" id="10">
 					<description>Show Button</description>
 					<posx>456</posx>
-					<posy>226</posy>
+					<posy>314</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>4</onup>
+					<onup>7</onup>
 					<ondown>8</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
@@ -186,7 +211,9 @@
 				<control type="button" id="14">
 					<description>Watched Toggle Button</description>
 					<posx>456</posx>
-					<posy>226</posy>
+					<posy>314</posy>
+					<width>362</width>
+					<height>50</height>
 					<label>20367</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -199,9 +226,9 @@
 				<control type="button" id="8">
 					<description>Search Button</description>
 					<posx>456</posx>
-					<posy>282</posy>
+					<posy>364</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<label>137</label>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
@@ -212,28 +239,32 @@
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
 				</control>
-				<control type="radiobutton" id="19">
+				<control type="edit" id="19">
 					<description>Filter</description>
 					<posx>456</posx>
-					<posy>340</posy>
+					<posy>414</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<font>font12</font>
 					<label>587</label>
+					<textwidth>340</textwidth>
+					<textcolor>button-text</textcolor>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<aligny>center</aligny>
+					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
-					<ondown>16</ondown>
-					<radioposx>330</radioposx>
-					<textcolor>button-text</textcolor>
+					<ondown>17</ondown>
 					<include>button-fade</include>
 				</control>
 				<control type="button" id="16">
 					<description>Party Mode button</description>
 					<posx>456</posx>
-					<posy>396</posy>
+					<posy>464</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<label>589</label>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
@@ -247,9 +278,9 @@
 				<control type="button" id="17">
 					<description>Flatten Library button</description>
 					<posx>456</posx>
-					<posy>452</posy>
+					<posy>514</posy>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<label>20411</label>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
@@ -263,10 +294,10 @@
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>
 					<posx>456</posx>
-					<posy>508</posy>
+					<posy>564</posy>
 					<label>20336</label>
 					<width>362</width>
-					<height>56</height>
+					<height>50</height>
 					<font>font12</font>
 					<onclick>xbmc.mastermode</onclick>
 					<selected>system.ismaster</selected>
@@ -282,7 +313,7 @@
 				<control type="label" id="18">
 					<description>No Info Scanned Label</description>
 					<posx>210</posx>
-					<posy>520</posy>
+					<posy>576</posy>
 					<width>858</width>
 					<height>116</height>
 					<font>font13</font>
