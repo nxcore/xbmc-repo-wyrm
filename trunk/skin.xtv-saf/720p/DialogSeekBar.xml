@@ -13,8 +13,8 @@
 			<control type="image">
 				<description>Seekbar Dialog background image</description>
 				<posx>-42</posx>
-				<posy>-184</posy>
-				<height>270</height>
+				<posy>0</posy>
+				<height>86</height>
 				<width>1359</width>
 				<texture>background.png</texture>
 				<colordiffuse>osd-background</colordiffuse>

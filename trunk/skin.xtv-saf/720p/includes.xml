@@ -220,6 +220,11 @@
 		</control>
 	</include>
 	
+	<!-- Give items a listselectedcolor colour wash to hilite item -->
+	<include name="useselectedcolor">
+		<colordiffuse>listselectedcolor</colordiffuse>
+	</include>
+	
 	<!-- MovieLibraryTitle Include -->
 	<include name="MovieLibraryTitle">
 		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
