@@ -1,5 +1,5 @@
 <window id="2006">
-	<onload condition="Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow)</onload>
+	<include condition="Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRunning))">StartArtistSlideshow</include>
 	<allowoverlay>no</allowoverlay>
 	<visible>!Window.IsVisible(2004)</visible>
 	<visible>!Window.IsVisible(2005)</visible>
@@ -12,6 +12,17 @@
 			<height>720</height>
 			<colordiffuse>solid-background</colordiffuse>
 			<texture>background.png</texture>
+			<visible>!Skin.String(custom-background)</visible>
+		</control>
+		<control type="image">
+			<description>custom background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<info>Skin.String(custom-background)</info>
+			<colordiffuse>osd-background</colordiffuse>
+			<visible>Skin.String(custom-background)</visible>
 		</control>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
@@ -19,33 +30,35 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>Skin.HasSetting(np-vis) + ![StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
 		</control>
-		<control type="multiimage" id="991">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="blank.png" background="true">$INFO[Window.Property(ArtistSlideshow)]</imagepath>
-			<aspectratio>keep</aspectratio>
-			<timeperimage>5000</timeperimage>
-			<fadetime>1000</fadetime>
-			<randomize>true</randomize>
-			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRefresh)) + !Skin.HasSetting(np-vis)</visible>
+		<control type="group">
+			<visible>!Skin.HasSetting(np-vis)</visible>		
+			<control type="multiimage" id="991">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath fallback="blank.png" background="true">$INFO[Window.Property(ArtistSlideshow)]</imagepath>
+				<aspectratio>keep</aspectratio>
+				<timeperimage>5000</timeperimage>
+				<fadetime>1000</fadetime>
+				<randomize>true</randomize>
+				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				<visible>Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRefresh))</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>1000</fadetime>
+				<visible>[StringCompare(Control.GetLabel(991),blank.png)) | !Skin.HasSetting(background-slideshow)]</visible>
+			</control>
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>1000</fadetime>
-			<visible>[StringCompare(Control.GetLabel(991),blank.png)) | !Skin.HasSetting(background-slideshow)] + !Skin.HasSetting(np-vis)</visible>
-		</control>
-		
 		<control type="group">
 			<visible>!Skin.HasSetting(np-vis)</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
@@ -179,26 +192,6 @@
 		<!-- "Now Playing" Stuff -->
 		<control type="group">
 			<visible>Skin.HasSetting(np-vis)</visible>
-			<control type="image">
-				<description>background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>background.png</texture>
-				<colordiffuse>osd-background</colordiffuse>
-				<visible>!Skin.String(custom-background)</visible>
-			</control>
-			<control type="image">
-				<description>custom background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<info>Skin.String(custom-background)</info>
-				<colordiffuse>osd-background</colordiffuse>
-				<visible>Skin.String(custom-background)</visible>
-			</control>
 			<!-- Start Tilted Album Cover -->
 			<control type="group">
 				<visible>Skin.HasSetting(tilted-icons)</visible>
