@@ -220,11 +220,6 @@
 		</control>
 	</include>
 	
-	<!-- Give items a listselectedcolor colour wash to hilite item -->
-	<include name="useselectedcolor">
-		<colordiffuse>listselectedcolor</colordiffuse>
-	</include>
-	
 	<!-- MovieLibraryTitle Include -->
 	<include name="MovieLibraryTitle">
 		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
@@ -1310,18 +1305,22 @@
 		<autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
 	</include>
 	<!-- End Autoscroll Includes -->
-	<!-- Start of Play content Includes -->
+	
+	<!-- Start of Run scripts Includes -->
 	<include name="StartupPlaylist">
 		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;,isdir)</onfocus>
 	</include>
 	<include name="StartupVideo">
-		<onfocus>XBMC.PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
+		<onfocus>PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
 	</include>
-	<!-- End of Play content Includes -->
 	<!-- Conditional onloads don't work for early pre-Eden builds, so use a conditional include instead -->
 	<include name="StartTVTunes">
-		<onload>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
-	</include>	
+		<onload>RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+	</include>
+	<include name="StartArtistSlideshow">
+		<onload>RunScript(script.artistslideshow)</onload>
+	</include>
+	<!-- End of Run scripts Includes -->	
 	<!-- Start of Library entry point Includes -->
 	<include name="RestartSkinMovies">
 		<onclick>Skin.Reset(updatemovieentry)</onclick>
