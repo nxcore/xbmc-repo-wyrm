@@ -494,6 +494,21 @@
 					<onleft>23</onleft>
 					<onright>999</onright>
 					<pagecontrol>23</pagecontrol>
+					<control type="radiobutton" id="307">
+						<description>Video On Home toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31819</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-video)</onclick>
+						<selected>Skin.HasSetting(home-video)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
 					<control type="radiobutton" id="302">
 						<description>Movies On Home toggle</description>
 						<font>font12</font>
@@ -641,6 +656,23 @@
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-favorites)</onclick>
 						<selected>Skin.HasSetting(home-favorites)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="radiobutton" id="314">
+						<description>Global search On Home toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31836</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-search)</onclick>
+						<selected>Skin.HasSetting(home-search)</selected>
+						<enable>System.HasAddon(script.globalsearch)</enable>
+						<disabledcolor>disabled-text</disabledcolor>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
