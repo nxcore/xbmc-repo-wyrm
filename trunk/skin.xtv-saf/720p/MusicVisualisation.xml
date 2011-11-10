@@ -56,7 +56,7 @@
 				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>1000</fadetime>
-				<visible>[StringCompare(Control.GetLabel(991),blank.png)) | !Skin.HasSetting(background-slideshow)]</visible>
+				<visible>[StringCompare(Control.GetLabel(991),blank.png) | (!Skin.HasSetting(background-slideshow))]</visible>
 			</control>
 		</control>
 		<control type="group">
