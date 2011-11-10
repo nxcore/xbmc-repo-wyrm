@@ -33,7 +33,7 @@
 					<height>128</height>
 					<width>128</width>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<texture background="true" fallback="DefaultAlbumCover.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 				</control>
 			</itemlayout>
@@ -52,7 +52,7 @@
 					<posy>90</posy>
 					<width>256</width>
 					<height>256</height>
-					<texture background="true" fallback="DefaultAlbumCover.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 				</control>
 			</focusedlayout>

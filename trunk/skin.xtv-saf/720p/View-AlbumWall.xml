@@ -85,11 +85,12 @@
 			<!-- Artist & Album name-->
 			<control type="label">
 				<posx>26</posx>
-				<posy>645</posy>
-				<width>1221</width>
-				<height>37</height>
+				<posy>640</posy>
+				<width>1228</width>
+				<height>36</height>
 				<font>font20</font>
 				<align>center</align>
+				<aligny>center</aligny>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<scroll>true</scroll>
@@ -140,12 +141,12 @@
 			</control>
 			<!-- Genre -->
 			<control type="label">
-				<posx>123</posx>
+				<posx>240</posx>
 				<posy>685</posy>
-				<width>902</width>
+				<width>800</width>
 				<height>37</height>
 				<font>font13</font>
-				<align>left</align>
+				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<scroll>true</scroll>

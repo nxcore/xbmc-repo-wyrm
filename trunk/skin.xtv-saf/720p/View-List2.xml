@@ -107,21 +107,23 @@
 				<height>125</height>
 				<visible>Container(51).OnPrevious</visible>
 				<animation effect="slide" end="-100,0" time="150" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(3).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>62</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -131,21 +133,23 @@
 				<height>162</height>
 				<visible>Container(51).OnPrevious</visible>
 				<animation effect="zoom" start="168,168,115,162" end="53,165,88,125" time="150" acceleration="-1" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>115</width>
-					<height>81</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>81</posy>
-					<width>115</width>
-					<height>81</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>115</width>
+						<height>81</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>81</posy>
+						<width>115</width>
+						<height>81</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -155,21 +159,23 @@
 				<height>243</height>
 				<visible>Container(51).OnPrevious</visible>
 				<animation effect="zoom" start="239,200,345,243" end="168,168,115,162" time="150" acceleration="-1" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>243</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>243</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -179,21 +185,23 @@
 				<height>243</height>
 				<visible>Container(51).OnPrevious</visible>
 				<animation effect="slide" start="0,0" end="400,-80" delay="50" time="150" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>53</posx>
-					<posy>0</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
-					<aspectratio align="left" aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>53</posx>
-					<posy>243</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
-					<aspectratio align="left" aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>53</posx>
+						<posy>0</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>53</posx>
+						<posy>243</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 		</control>
@@ -209,21 +217,23 @@
 				<height>125</height>
 				<visible>Container(51).OnNext</visible>
 				<animation effect="slide" end="100,0" time="150" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>62</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -233,21 +243,23 @@
 				<height>125</height>
 				<visible>Container(51).OnNext</visible>
 				<animation effect="zoom" start="53,137,88,125" end="168,168,115,162" time="150" acceleration="-1" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>62</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -257,23 +269,25 @@
 				<height>162</height>
 				<visible>Container(51).OnNext</visible>
 				<animation effect="zoom" start="168,168,115,162" end="238,200,345,243" time="150" tween ="circle" easing="in" acceleration="-1" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>53</posx>
-					<posy>0</posy>
-					<width>115</width>
-					<height>81</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
-					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>53</posx>
+						<posy>0</posy>
+						<width>115</width>
+						<height>81</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>53</posx>
+						<posy>81</posy>
+						<width>115</width>
+						<height>81</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
 				</control>
-				<control type="image">
-					<posx>53</posx>
-					<posy>81</posy>
-					<width>115</width>
-					<height>81</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
-					<aspectratio align="left" aligny="top">keep</aspectratio>
-				</control>
-			</control>
+			</control>	
 			<control type="group">
 				<posx>238</posx>
 				<posy>200</posy>
@@ -281,47 +295,53 @@
 				<height>243</height>
 				<visible>Container(51).OnNext</visible>
 				<animation effect="slide" start="0,0" end="-400,80" time="150" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>243</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>243</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 		</control>
+		<!-- Icons not moving -->
 		<control type="group">
 			<include>list-fade</include>
+			<visible>Control.IsVisible(51)</visible>
 			<visible>!Control.IsVisible(3001) + !Control.IsVisible(3002)</visible>
 			<control type="group">
 				<posx>53</posx>
 				<posy>137</posy>
 				<width>88</width>
 				<height>125</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
-					<width>88</width>
-					<height>62</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>62</posy>
+						<width>88</width>
+						<height>62</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 			<control type="group">
@@ -329,43 +349,47 @@
 				<posy>168</posy>
 				<width>115</width>
 				<height>162</height>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>115</width>
-					<height>81</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
-					<aspectratio aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>81</posy>
-					<width>115</width>
-					<height>81</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
-					<aspectratio aligny="top">keep</aspectratio>
-				</control>
+				<control type="group">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>115</width>
+						<height>81</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<aspectratio aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>81</posy>
+						<width>115</width>
+						<height>81</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
+				</control>	
 			</control>
 			<control type="group">
 				<posx>238</posx>
 				<posy>200</posy>
 				<width>345</width>
 				<height>243</height>
-				<control type="image">
-					<posx>79</posx>
-					<posy>0</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
-					<aspectratio align="left" aligny="bottom">keep</aspectratio>
-				</control>
-				<control type="image">
-					<posx>79</posx>
-					<posy>243</posy>
-					<width>345</width>
-					<height>243</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
-					<aspectratio align="left" aligny="top">keep</aspectratio>
+				<control type="group">
+					<control type="image">
+						<posx>79</posx>
+						<posy>0</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>79</posx>
+						<posy>243</posy>
+						<width>345</width>
+						<height>243</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
 				</control>
 			</control>
 		</control>
