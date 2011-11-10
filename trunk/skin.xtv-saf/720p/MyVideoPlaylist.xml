@@ -83,7 +83,7 @@
 					<posx>460</posx>
 					<posy>212</posy>
 					<width>398</width>
-					<height>306</height>
+					<height>356</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<include>button-fade</include>
 				</control>
@@ -100,7 +100,7 @@
 					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>22</onup>
+					<onup>1200</onup>
 					<ondown>28</ondown>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
@@ -165,7 +165,7 @@
 				<control type="button" id="22">
 					<description>Clear button</description>
 					<posx>477</posx>
-					<posy>450</posy>
+					<posy>449</posy>
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
@@ -177,9 +177,28 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>21</onup>
-					<ondown>20</ondown>
+					<ondown>1200</ondown>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="1200">
+					<description>PlayerControls</description>
+					<posx>456</posx>
+					<posy>505</posy>
+					<width>362</width>
+					<height>56</height>
+					<font>font12</font>
+					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>22</onup>
+					<ondown>20</ondown>
+					<onclick>ActivateWindow(playercontrols)</onclick>
+					<onclick>SetFocus(50)</onclick> 
+					<enable>Player.HasAudio | Player.HasVideo</enable>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
 					<include>button-fade</include>
 				</control>
 			</control>

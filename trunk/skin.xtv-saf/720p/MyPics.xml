@@ -52,7 +52,7 @@
 					<posx>460</posx>
 					<posy>162</posy>
 					<width>398</width>
-					<height>376</height>
+					<height>426</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<include>button-fade</include>
 				</control>
@@ -177,9 +177,28 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>7</onup>
-					<ondown>2</ondown>
+					<ondown>1200</ondown>
 					<radioposx>330</radioposx>
 					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="1200">
+					<description>PlayerControls</description>
+					<posx>477</posx>
+					<posy>525</posy>
+					<width>362</width>
+					<height>50</height>
+					<font>font12</font>
+					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>9</onup>
+					<ondown>2</ondown>
+					<onclick>ActivateWindow(playercontrols)</onclick>
+					<onclick>SetFocus(50)</onclick> 
+					<enable>Player.HasAudio | Player.HasVideo</enable>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
 					<include>button-fade</include>
 				</control>
 			</control>
