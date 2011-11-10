@@ -30,7 +30,7 @@
 			<posy>132</posy>
 			<width>385</width>
 			<height>350</height>
-			<texture fallback="DefaultAlbumCover.png">$INFO[ListItem.Icon]</texture>
+			<texture fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 			<aspectratio>stretch</aspectratio>
 			<visible>Control.IsVisible(50)</visible>
 			<include>list-fade</include>
@@ -166,7 +166,7 @@
 					<posx>460</posx>
 					<posy>212</posy>
 					<width>398</width>
-					<height>200</height>
+					<height>400</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<include>button-fade</include>
 				</control>
@@ -184,7 +184,7 @@
 					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
+					<onup>1200</onup>
 					<ondown>3</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
@@ -201,7 +201,7 @@
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
-					<onright>4</onright>
+					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
 					<textcolor>button-text</textcolor>
@@ -240,7 +240,7 @@
 					<selected>Window.IsVisible(mymusiclibrary)</selected>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>3</onup>
+					<onup>4</onup>
 					<ondown>19</ondown>
 					<radioposx>330</radioposx>
 					<textcolor>button-text</textcolor>
@@ -248,7 +248,7 @@
 				</control>
 				<control type="edit" id="19">
 					<description>Filter</description>
-					<posx>456</posx>
+					<posx>477</posx>
 					<posy>425</posy>
 					<width>362</width>
 					<height>50</height>
@@ -263,7 +263,41 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>5</onup>
+					<ondown>11</ondown>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="11">
+					<description>Rip CD</description>
+					<posx>477</posx>
+					<posy>475</posy>
+					<width>362</width>
+					<height>50</height>
+					<font>font12</font>
+					<label>600</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>19</onup>
+					<ondown>1200</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="1200">
+					<description>PlayerControls</description>
+					<posx>477</posx>
+					<posy>525</posy>
+					<width>362</width>
+					<height>50</height>
+					<font>font12</font>
+					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>19</onup>
 					<ondown>2</ondown>
+					<onclick>ActivateWindow(playercontrols)</onclick>
+					<onclick>SetFocus(50)</onclick>
+					<enable>Player.HasAudio | Player.HasVideo</enable>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
 					<include>button-fade</include>
 				</control>
 			</control>

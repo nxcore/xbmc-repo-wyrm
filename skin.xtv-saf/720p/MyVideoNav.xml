@@ -115,7 +115,7 @@
 					<posx>440</posx>
 					<posy>102</posy>
 					<width>398</width>
-					<height>506</height>
+					<height>570</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<include>button-fade</include>
 				</control>
@@ -132,7 +132,7 @@
 					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>11</onup>
+					<onup>1200</onup>
 					<ondown>3</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
@@ -256,7 +256,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
-					<ondown>17</ondown>
+					<ondown>16</ondown>
 					<include>button-fade</include>
 				</control>
 				<control type="button" id="16">
@@ -301,19 +301,39 @@
 					<font>font12</font>
 					<onclick>xbmc.mastermode</onclick>
 					<selected>system.ismaster</selected>
-					<visible>system.haslocks</visible>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>17</onup>
-					<ondown>2</ondown>
+					<ondown>1200</ondown>
 					<radioposx>330</radioposx>
+					<enable>system.haslocks</enable>
 					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="1200">
+					<description>PlayerControls</description>
+					<posx>456</posx>
+					<posy>614</posy>
+					<width>362</width>
+					<height>50</height>
+					<font>font12</font>
+					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>11</onup>
+					<ondown>2</ondown>
+					<onclick>ActivateWindow(playercontrols)</onclick>
+					<onclick>SetFocus(50)</onclick>
+					<enable>Player.HasAudio | Player.HasVideo</enable>
+					<textcolor>button-text</textcolor>
+					<disabledcolor>disabled-text</disabledcolor>
 					<include>button-fade</include>
 				</control>
 				<control type="label" id="18">
 					<description>No Info Scanned Label</description>
 					<posx>210</posx>
-					<posy>576</posy>
+					<posy>616</posy>
 					<width>858</width>
 					<height>116</height>
 					<font>font13</font>
