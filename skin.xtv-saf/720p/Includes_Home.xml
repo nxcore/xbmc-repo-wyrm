@@ -189,6 +189,13 @@
 				<item>
 					<icon>icon-video.png</icon>
 					<thumb>icon-video-blur1.png</thumb>
+					<label>3</label>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<visible>Skin.HasSetting(home-video)</visible>
+				</item>
+				<item>
+					<icon>icon-video.png</icon>
+					<thumb>icon-video-blur1.png</thumb>
 					<label>31026</label>
 					<include condition="!Skin.String(movie-libraryentry)">MovieLibraryTitle</include>
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[369])">MovieLibraryTitle</include>
@@ -367,7 +374,7 @@
 					<thumb>DefaultMusicSearch-blur1.png</thumb>
 					<label>137</label>
 					<onclick>RunScript(script.globalsearch)</onclick>
-					<visible>System.HasAddon(script.globalsearch)</visible>
+					<visible>Skin.HasSetting(home-search)</visible>
 				</item>
 				<item>
 					<icon>icon-settings.png</icon>
