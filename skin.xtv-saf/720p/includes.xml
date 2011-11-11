@@ -463,18 +463,6 @@
 	<include name="ListView-VideoIcon">
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
-			<control type="label">
-				<posx>20</posx>
-				<posy>50</posy>
-				<width>600</width>
-				<height>56</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Icon]</label>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<font>font13</font>
-			</control>
 			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
 				<effect type="rotatey" start="-20" end="-20" time="0"/>
 				<effect type="slide" end="10,0" time="0"/>
