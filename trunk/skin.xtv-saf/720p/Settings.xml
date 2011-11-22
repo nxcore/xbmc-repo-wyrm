@@ -1,5 +1,5 @@
 <window id="4">
-	<defaultcontrol always="false">3</defaultcontrol>
+	<defaultcontrol always="true">8999</defaultcontrol>
 	<previouswindow>50</previouswindow>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -21,323 +21,126 @@
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
-		<control type="group">
-			<control type="button" id="3">
-				<description>Appearance</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>112</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>480</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(AppearanceSettings)</onclick>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>999</onup>
-				<ondown>6</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>Appearance Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>125</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(3)</visible>
-			</control>
-			<control type="image">
-				<description>Appearance Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>125</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="6">
-				<description>My Videos</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>161</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>3</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(MyVideosSettings)</onclick>
-				<onleft>6</onleft>
-				<onright>6</onright>
-				<onup>3</onup>
-				<ondown>7</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>My Videos Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>172</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(6)</visible>
-			</control>
-			<control type="image">
-				<description>My Videos Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>172</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="7">
-				<description>My Music</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>210</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>2</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(MyMusicSettings)</onclick>
-				<onleft>7</onleft>
-				<onright>7</onright>
-				<onup>6</onup>
-				<ondown>9</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>My Music Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>222</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(7)</visible>
-			</control>
-			<control type="image">
-				<description>My Music Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>222</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="9">
-				<description>My Pictures</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>258</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>1</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(MyPicturesSettings)</onclick>
-				<onleft>9</onleft>
-				<onright>9</onright>
-				<onup>7</onup>
-				<ondown>10</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>My PicturesSkin Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>270</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(9)</visible>
-			</control>
-			<control type="image">
-				<description>My Pictures Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>270</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="10">
-				<description>My Weather</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>307</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>8</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>9</onup>
-				<ondown>8</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>My Weather Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>320</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(10)</visible>
-			</control>
-			<control type="image">
-				<description>My Weather Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>320</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="8">
-				<description>Addons</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>356</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>24001</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(AddonBrowser)</onclick>
-				<onleft>8</onleft>
-				<onright>8</onright>
-				<onup>10</onup>
-				<ondown>2</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>Addons Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>367</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(8)</visible>
-			</control>
-			<control type="image">
-				<description>Addons Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>367</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="2">
-				<description>Network</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>405</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>705</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(NetworkSettings)</onclick>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>8</onup>
-				<ondown>4</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>Network Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>417</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(2)</visible>
-			</control>
-			<control type="image">
-				<description>Network Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>417</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<control type="button" id="4">
-				<description>System</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>453</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>13000</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>ActivateWindow(SystemSettings)</onclick>
-				<onleft>4</onleft>
-				<onright>4</onright>
-				<onup>2</onup>
-				<ondown>999</ondown>
-				<textcolor>button-text</textcolor>
-			</control>
-			<control type="image">
-				<description>System Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>467</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(4)</visible>
-			</control>
-			<control type="image">
-				<description>System Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>467</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
-			</control>
-			<!-- xTV SAF Skin settings menu item -->
-			<control type="button" id="999">
-				<description>Skin Settings Button</description>
-				<font>font13</font>
-				<posx>716</posx>
-				<posy>502</posy>
-				<width>504</width>
-				<height>56</height>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>31556</label>
-				<textoffsetx>18</textoffsetx>
-				<onclick>XBMC.ActivateWindow(52)</onclick>
-				<onleft>999</onleft>
-				<onright>999</onright>
-				<onup>4</onup>
-				<ondown>3</ondown>
-				<textcolor>button-text</textcolor>
-				<aligny>center</aligny>
-			</control>
-			<control type="image">
-				<description>Skin Settings arrow focus image</description>
-				<posx>1161</posx>
-				<posy>515</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right-focus.png</texture>
-				<visible>Control.HasFocus(999)</visible>
-			</control>
-			<control type="image">
-				<description>Skin Settings arrow image</description>
-				<posx>1161</posx>
-				<posy>515</posy>
-				<width>38</width>
-				<height>27</height>
-				<texture>scroll-right.png</texture>
+		
+		<control type="group" description="Group 8999">
+			<visible>Control.IsVisible(8999)</visible>
+			<posx>780</posx>
+			<posy>112</posy>
+			<control type="list" id="8999">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>580</width>
+				<height>600</height>
+				<onup>8999</onup>
+				<ondown>8999</ondown>
+				<viewtype label="List">list</viewtype>
+				<scrolltime>220</scrolltime>
+				<itemlayout width="560" height="47">
+					<control type="label">
+						<posy>5</posy>
+						<posx>20</posx>
+						<height>30</height>
+						<width>440</width>
+						<font>font12</font>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="image">
+						<posy>10</posy>
+						<posx>440</posx>
+						<width>27</width>
+						<height>27</height>
+						<texture>scroll-right.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="560" height="47">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>47</height>
+						<texture>default-button.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>	
+					<control type="label">
+						<posy>5</posy>
+						<posx>20</posx>
+						<height>30</height>
+						<width>440</width>
+						<font>font12</font>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="image">
+						<posy>10</posy>
+						<posx>440</posx>
+						<width>27</width>
+						<height>27</height>
+						<texture>scroll-right-focus.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="0">
+						<description>Appearance</description>
+						<label>480</label>
+						<onclick>Activatewindow(AppearanceSettings)</onclick>
+					</item>
+					<item id="1">
+						<description>Videos</description>
+						<label>3</label>
+						<onclick>Activatewindow(VideosSettings)</onclick>
+					</item>
+					<item id="2">
+						<description>Music</description>
+						<label>2</label>
+						<onclick>Activatewindow(MusicSettings)</onclick>
+					</item>
+					<item id="3">
+						<description>Pictures</description>
+						<label>1</label>
+						<onclick>Activatewindow(PicturesSettings)</onclick>
+					</item>
+					<item id="4">
+						<description>Addons</description>
+						<label>24001</label>
+						<onclick>Activatewindow(AddonBrowser)</onclick>
+					</item>
+					<item id="5">
+						<description>Weather</description>
+						<label>8</label>
+						<onclick>Activatewindow(WeatherSettings)</onclick>
+					</item>
+					<item id="6">
+						<description>Network</description>
+						<label>705</label>
+						<onclick>Activatewindow(NetworkSettings)</onclick>
+					</item>
+					<item id="7">
+						<description>System</description>
+						<label>13000</label>
+						<onclick>Activatewindow(SystemSettings)</onclick>
+					</item>
+					<item id="8" description="Profiles">
+						<label>13200</label>
+						<onclick>ActivateWindow(Profiles)</onclick>
+					</item>
+					<item id="9" description="File manager">
+						<label>10003</label>
+						<onclick>ActivateWindow(filemanager)</onclick>
+					</item>
+					<item id="10" description="System Info">
+						<label>138</label>
+						<onclick>Activatewindow(systeminfo)</onclick>
+					</item>
+					<item id="11" description="Skin options">
+						<label>166</label>
+						<onclick>ActivateWindow(52)</onclick>
+					</item>
+				</content>
 			</control>
 		</control>
 	</controls>
