@@ -35,9 +35,9 @@
 			<control type="button" id="981">
 				<description>Startup Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>112</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -53,9 +53,9 @@
 			<control type="button" id="982">
 				<description>General Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>166</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -71,9 +71,9 @@
 			<control type="button" id="983">
 				<description>Home Window Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>220</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -89,9 +89,9 @@
 			<control type="button" id="984">
 				<description>Background Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>273</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -107,9 +107,9 @@
 			<control type="button" id="985">
 				<description>Media Sources Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>327</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -125,9 +125,9 @@
 			<control type="button" id="986">
 				<description>Views Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>381</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -143,9 +143,9 @@
 			<control type="button" id="987">
 				<description>Custom Settings Button</description>
 				<font>font12</font>
-				<posx>973</posx>
+				<posx>950</posx>
 				<posy>435</posy>
-				<width>283</width>
+				<width>305</width>
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -467,6 +467,34 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
+					</control>
+					<control type="button" id="213">
+						<description>Load new skin theme</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>460</textwidth>
+						<label>31835</label>
+						<onclick>RunScript(special://skin/scripts/ThemeInstaller.py , http://xbmc-repo-wyrm.googlecode.com/svn/trunk/XBMCThemes/)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+					</control>
+					<control type="button" id="214">
+						<description>Reset skin settings to defaults</description>
+						<font>font12</font>
+						<width>885</width>
+						<label>Reset Skin</label>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>460</textwidth>
+						<onclick>Skin.ResetSettings</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
 			</control>
