@@ -20,32 +20,10 @@
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
-		<control type="radiobutton" id="4">
-			<description>enable login screen</description>
-			<posx>716</posx>
-			<posy>112</posy>
-			<width>504</width>
-			<height>56</height>
-			<onright>2</onright>
-			<onup>4</onup>
-			<ondown>4</ondown>
-			<onleft>2</onleft>
-			<label>20096</label>
-			<radioposx>460</radioposx>
-			<textoffsetx>10</textoffsetx>
-			<textcolor>button-text</textcolor>
-		</control>
-		<control type="image">
-			<description>seperator</description>
-			<posx>716</posx>
-			<posy>165</posy>
-			<width>504</width>
-			<height>10</height>
-			<texture>separator.png</texture>
-		</control>
+
 		<control type="list" id="2">
 			<posx>716</posx>
-			<posy>175</posy>
+			<posy>112</posy>
 			<width>531</width>
 			<height>450</height>
 			<onleft>4</onleft>
@@ -102,7 +80,7 @@
 		<!-- Scroll Bar -->
 		<control type="scrollbar" id="23">
 			<posx>1239</posx>
-			<posy>175</posy>
+			<posy>112</posy>
 			<width>24</width>
 			<height>450</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
@@ -120,22 +98,29 @@
 		</control>
 		<control type="image">
 			<description>list item icon</description>
-			<posx>123</posx>
+			<posx>214</posx>
 			<posy>112</posy>
-			<width>453</width>
+			<width>320</width>
 			<height>320</height>
 			<texture fallback="unknown-user.png" diffuse="mask-rect.png">$INFO[Container(2).ListItem.Icon]</texture>
 			<aspectratio>keep</aspectratio>
 		</control>
-		<control type="image">
-			<description>list item icon reflection</description>
-			<posx>123</posx>
+		<control type="radiobutton" id="4">
+			<description>enable login screen</description>
+			<posx>122</posx>
 			<posy>440</posy>
-			<width>453</width>
-			<height>320</height>
-			<texture fallback="unknown-user.png" flipy="true" diffuse="mask-fade.png">$INFO[Container(2).ListItem.Icon]</texture>
-			<aspectratio>keep</aspectratio>
+			<width>504</width>
+			<height>56</height>
+			<onright>2</onright>
+			<onup>4</onup>
+			<ondown>4</ondown>
+			<onleft>2</onleft>
+			<label>20096</label>
+			<radioposx>460</radioposx>
+			<textoffsetx>20</textoffsetx>
+			<textcolor>button-text</textcolor>
 		</control>
+
 		<control type="fadelabel" id="3">
 			<description>Last loaded</description>
 			<posx>17</posx>
