@@ -23,7 +23,7 @@
 		</control>
 		
 		<include>ListView</include>
-		
+			
 		<control type="image">
 			<posx>70</posx>
 			<posy>112</posy>

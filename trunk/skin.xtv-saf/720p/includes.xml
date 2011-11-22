@@ -149,10 +149,10 @@
 	<include name="xtv-box">
 		<control type="image">
 			<description>Xtv Logo</description>
-			<posx>-53</posx>
-			<posy>87</posy>
-			<width>778</width>
-			<height>550</height>
+			<posx>150</posx>
+			<posy>150</posy>
+			<width>512</width>
+			<height>256</height>
 			<aspectratio>keep</aspectratio>
 			<texture>Xtv-Logo-Big.png</texture>
 			<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home) + !Window.Previous(Settings)">WindowOpen</animation>
@@ -379,7 +379,7 @@
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
-			<visible>Container.Scrolling</visible>
+			<visible>Container.Scrolling) + [IntegerGreaterThan(Container(50).NumItems,0)]</visible>
 			<animation effect="fade" time="50">Visible</animation>
 			<animation effect="fade" time="300" delay="500">Hidden</animation>
 			<posx>587</posx>
@@ -438,20 +438,20 @@
 			<control type="group">
 				<control type="image">
 					<description>list item icon</description>
-					<posx>122</posx>
-					<posy>118</posy>
-					<width>384</width>
-					<height>384</height>
+					<posx>154</posx>
+					<posy>150</posy>
+					<width>320</width>
+					<height>320</height>
 					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<include>icon-fade</include>
 				</control>
 				<control type="image">
 					<description>list item icon reflection</description>
-					<posx>122</posx>
-					<posy>503</posy>
-					<width>384</width>
-					<height>384</height>
+					<posx>154</posx>
+					<posy>474</posy>
+					<width>320</width>
+					<height>320</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<include>icon-fade</include>
@@ -670,7 +670,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>System.IdleTime(1)</visible>
+				<visible>System.IdleTime(1) + [!(IsEmpty(ListItem.Plot)) + !(IsEmpty(listitem.Duration))]</visible>
 				<animation effect="fade" time="300">Visible</animation>
 				<!-- Star Rating -->
 				<control type="image">
@@ -813,7 +813,7 @@
 				<height>418</height>
 				<texture>case-cd.png</texture>
 				<aspectratio aligny="center">keep</aspectratio>
-				<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
+				<visible>Skin.HasSetting(CDcase) + [Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
 			</control>
 			<control type="image">
 				<description>list item icon</description>
@@ -826,7 +826,7 @@
 				<include>list-fade</include>
 			</control>
 			<control type="group">
-				<visible>!IsEmpty(ListItem.Album)</visible>
+				<visible>[Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
 				<control type="image">
 					<description>seperator</description>
 					<posx>31</posx>
@@ -1344,7 +1344,7 @@
 		<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 	</include>
 	<include name="icon-ani">
-		<animation effect="zoom" start="140,145,230,460"  end="840,20,80,80" time="175" condition="Window.Previous(Home)">WindowOpen</animation>
+		<!--<animation effect="zoom" start="140,145,230,460"  end="840,20,80,80" time="175" condition="Window.Previous(Home)">WindowOpen</animation>-->
 	</include>
 	<include name="menu-slide">
 		<animation condition="Container(9000).Position(0)" effect="slide" start="0,0" end="0,0" time="0" reversible="true">Conditional</animation>

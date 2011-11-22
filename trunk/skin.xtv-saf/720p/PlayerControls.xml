@@ -2,7 +2,7 @@
 	<defaultcontrol always="false">214</defaultcontrol>
 	<animation effect="fade" start="0" time="100">WindowOpen</animation>
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
-	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
+	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation) + !Window.IsActive(KarVisualisation)</visible>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
