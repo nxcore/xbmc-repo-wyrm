@@ -74,17 +74,17 @@
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<height>56</height>
-			<textoffsetx>10</textoffsetx>
+			<textoffsetx>20</textoffsetx>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
 			<height>56</height>
-			<textoffsetx>10</textoffsetx>
+			<textoffsetx>20</textoffsetx>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default spincontrolex</description>
 			<height>56</height>
-			<textoffsetx>10</textoffsetx>
+			<textoffsetx>20</textoffsetx>
 		</control>
 		<control type="image" id="11">
 			<description>Default Seperator</description>
