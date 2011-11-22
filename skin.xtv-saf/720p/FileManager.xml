@@ -3,17 +3,42 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>background</include>
+		<control type="image">
+			<description>Settings Logo</description>
+			<include>icon-header-commons</include>
+			<texture>icon-settings.png</texture>
+		</control>
+		<control type="label">
+			<description>Settings Label</description>
+			<posx>946</posx>
+			<posy>40</posy>
+			<width>309</width>
+			<height>31</height>
+			<label>10003</label>
+			<font>font20</font>
+			<textcolor>button-text</textcolor>
+		</control>
+		
+		<control type="image">
+			<description>filemanager grid image</description>
+			<posy>80</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>filemanagergrid.png</texture>
+			<colordiffuse>dialog-background</colordiffuse>
+		</control>
+		
 		<control type="list" id="20">
 			<posx>134</posx>
-			<posy>165</posy>
+			<posy>175</posy>
 			<width>495</width>
-			<height>437</height>
+			<height>438</height>
 			<onleft>21</onleft>
 			<onright>21</onright>
 			<onup>20</onup>
 			<ondown>20</ondown>
 			<scrolltime>1</scrolltime>
-			<itemlayout height="32">
+			<itemlayout height="34">
 				<control type="image">
 					<width>504</width>
 					<height>37</height>
@@ -31,6 +56,7 @@
 					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
+					<textoffsetx>6</textoffsetx>
 				</control>
 				<control type="label">
 					<posx>460</posx>
@@ -45,7 +71,7 @@
 					<info>ListItem.Label2</info>
 				</control>
 			</itemlayout>
-			<focusedlayout height="32">
+			<focusedlayout height="34">
 				<control type="image">
 					<width>495</width>
 					<height>46</height>
@@ -66,7 +92,7 @@
 					<selectedcolor>listselectedtext</selectedcolor>
 					<scroll>true</scroll>
 					<info>ListItem.Label</info>
-					<textoffsetx>10</textoffsetx>
+					<textoffsetx>6</textoffsetx>
 				</control>
 				<control type="label">
 					<posx>460</posx>
@@ -83,16 +109,16 @@
 			</focusedlayout>
 		</control>
 		<control type="list" id="21">
-			<posx>658</posx>
-			<posy>165</posy>
+			<posx>652</posx>
+			<posy>175</posy>
 			<width>495</width>
-			<height>437</height>
+			<height>438</height>
 			<onleft>20</onleft>
 			<onright>20</onright>
 			<onup>21</onup>
 			<ondown>21</ondown>
 			<scrolltime>1</scrolltime>
-			<itemlayout height="32">
+			<itemlayout height="34">
 				<control type="image">
 					<width>504</width>
 					<height>37</height>
@@ -110,6 +136,7 @@
 					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
+					<textoffsetx>6</textoffsetx>
 				</control>
 				<control type="label">
 					<posx>460</posx>
@@ -124,7 +151,7 @@
 					<info>ListItem.Label2</info>
 				</control>
 			</itemlayout>
-			<focusedlayout height="32">
+			<focusedlayout height="34">
 				<control type="image">
 					<width>495</width>
 					<height>46</height>
@@ -145,7 +172,7 @@
 					<selectedcolor>listselectedtext</selectedcolor>
 					<scroll>true</scroll>
 					<info>ListItem.Label</info>
-					<textoffsetx>10</textoffsetx>
+					<textoffsetx>6</textoffsetx>
 				</control>
 				<control type="label">
 					<posx>460</posx>
@@ -161,99 +188,37 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="image">
-			<description>filemanager grid image</description>
-			<posy>62</posy>
-			<width>1280</width>
-			<height>900</height>
-			<texture>filemanagergrid.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
-		</control>
+
 		<control type="fadelabel" id="101">
 			<description>current Directory text label left</description>
 			<align>left</align>
-			<posx>138</posx>
-			<posy>118</posy>
+			<posx>160</posx>
+			<posy>128</posy>
 			<width>477</width>
 			<font>font12</font>
 		</control>
 		<control type="fadelabel" id="102">
 			<description>current Directory text label right</description>
 			<align>left</align>
-			<posx>649</posx>
-			<posy>118</posy>
+			<posx>678</posx>
+			<posy>128</posy>
 			<width>477</width>
 			<font>font12</font>
 		</control>
 		<control type="label" id="12">
 			<description>number of files in left list text label</description>
-			<posx>138</posx>
-			<posy>618</posy>
+			<posx>160</posx>
+			<posy>628</posy>
 			<label>-</label>
 			<font>font12</font>
 		</control>
 		<control type="label" id="13">
 			<description>number of files in right list text label</description>
-			<posx>649</posx>
-			<posy>618</posy>
+			<posx>678</posx>
+			<posy>628</posy>
 			<label>-</label>
 			<font>font12</font>
 		</control>
-		<control type="label">
-			<description>free space label</description>
-			<posx>130</posx>
-			<posy>68</posy>
-			<width>251</width>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<label>$INFO[System.Freespace(C)]</label>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<font>font12</font>
-			<align>left</align>
-			<textoffsetx>5</textoffsetx>
-		</control>
-		<control type="label">
-			<description>free space label</description>
-			<posx>366</posx>
-			<posy>68</posy>
-			<width>251</width>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<label>$INFO[System.Freespace(E)]</label>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<font>font12</font>
-			<align>left</align>
-			<textoffsetx>5</textoffsetx>
-		</control>
-		<control type="label">
-			<description>free space label</description>
-			<posx>624</posx>
-			<posy>68</posy>
-			<width>251</width>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<label>$INFO[System.Freespace(F)]</label>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<font>font12</font>
-			<align>left</align>
-			<textoffsetx>5</textoffsetx>
-		</control>
-		<control type="label">
-			<description>free space label</description>
-			<posx>895</posx>
-			<posy>68</posy>
-			<width>251</width>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<label>$INFO[System.Freespace(G)]</label>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<font>font12</font>
-			<align>left</align>
-			<textoffsetx>5</textoffsetx>
-		</control>
+
 	</controls>
 </window>

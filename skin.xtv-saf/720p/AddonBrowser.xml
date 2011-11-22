@@ -23,9 +23,9 @@
 		
 		<!-- Show Addon Status -->
 		<control type="fadelabel">
-			<posx>141</posx>
-			<posy>81</posy>
-			<width>453</width>
+			<posx>88</posx>
+			<posy>120</posy>
+			<width>452</width>
 			<height>25</height>
 			<font>font13</font>
 			<textcolor>button-text</textcolor>
