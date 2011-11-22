@@ -14,15 +14,27 @@
 			<texturefocus>-</texturefocus>
 			<animation effect="fade" delay="1000" end="100">Focus</animation>
 		</control>
-		<control type="image">
-			<description>Startup Background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>900</height>
-			<texture>background-startup-16x9.png</texture>
-			<animation effect="fade" end="0" time="1000">WindowClose</animation>
+		<control type="group">
 			<visible>!Skin.HasSetting(intro-vid)</visible>
-		</control>
+			<animation effect="fade" end="0" time="1000">WindowClose</animation>
+			<control type="image">
+				<description>solid background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>solid-background</colordiffuse>
+				<texture>background.png</texture>
+			</control>
+			<control type="image">
+				<description>Xtv Logo</description>
+				<posx>320</posx>
+				<posy>200</posy>
+				<width>640</width>
+				<height>320</height>
+				<aspectratio>keep</aspectratio>
+				<texture>Xtv-Logo-Big.png</texture>
+			</control>
+		</control>	
 	</controls>
 </window>
