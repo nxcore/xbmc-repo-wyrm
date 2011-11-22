@@ -21,128 +21,12 @@
 			<label>31030</label>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
-			<include>list-fade</include>
-		</control>
-		
-		<control type="image">
-			<description>list item icon</description>
-			<posx>187</posx>
-			<posy>132</posy>
-			<width>385</width>
-			<height>350</height>
-			<texture fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-			<aspectratio>stretch</aspectratio>
-			<visible>Control.IsVisible(50)</visible>
-			<include>list-fade</include>
-		</control>
-        <control type="image">
-			<posx>148</posx>
-			<posy>102</posy>
-			<width>438</width>
-			<height>412</height>
-			<texture>case-cd.png</texture>
-			<aspectratio>stretch</aspectratio>
-			<visible>Skin.HasSetting(CDcase) + Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-        </control>
-		<control type="image">
-			<description>seperator</description>
-			<posx>31</posx>
-			<posy>512</posy>
-			<width>654</width>
-			<height>6</height>
-			<texture>separator.png</texture>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="label">
-			<description>Artist label</description>
-			<posx>123</posx>
-			<posy>525</posy>
-			<width>177</width>
-			<height>25</height>
-			<label>31230</label>
-			<font>font11</font>
-			<align>right</align>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="label">
-			<description>Artist value</description>
-			<posx>159</posx>
-			<posy>525</posy>
-			<width>513</width>
-			<height>25</height>
-			<label>$INFO[ListItem.Artist]</label>
-			<scroll>true</scroll>
-			<font>font11</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="label">
-			<description>Genre label</description>
-			<posx>123</posx>
-			<posy>550</posy>
-			<width>177</width>
-			<height>25</height>
-			<label>31231</label>
-			<font>font11</font>
-			<align>right</align>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="label">
-			<description>Genre value</description>
-			<posx>159</posx>
-			<posy>550</posy>
-			<width>513</width>
-			<height>25</height>
-			<label>$INFO[ListItem.Genre]</label>
-			<scroll>true</scroll>
-			<font>font11</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="label">
-			<description>Year label</description>
-			<posx>123</posx>
-			<posy>575</posy>
-			<width>177</width>
-			<height>25</height>
-			<label>31232</label>
-			<font>font11</font>
-			<align>right</align>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="label">
-			<description>Year label</description>
-			<posx>159</posx>
-			<posy>575</posy>
-			<width>513</width>
-			<height>25</height>
-			<label>$INFO[ListItem.Year]</label>
-			<font>font11</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
-		</control>
-		<control type="image">
-			<description>seperator</description>
-			<posx>31</posx>
-			<posy>612</posy>
-			<width>654</width>
-			<height>6</height>
-			<texture>separator.png</texture>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Album)</visible>
 		</control>
 		
 		<include>memory-low</include>
 		
 		<include>ListView</include>
+		<include>ListView-MusicIcon</include>
 		<include condition="!Skin.HasSetting(views-musiclist2)">List2</include>
 		<include condition="!Skin.HasSetting(views-musicwrap)">AlbumWrapView</include>
 		<include condition="!Skin.HasSetting(views-musicwall)">AudioWallView</include>
