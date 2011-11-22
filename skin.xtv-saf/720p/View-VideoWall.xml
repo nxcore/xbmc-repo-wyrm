@@ -58,6 +58,19 @@
 						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />
 					</animation>
 					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<info>ListItem.Icon</info>
+					<visible>SubString(ListItem.Icon,Default,Left) + ![SubString(ListItem.Icon,DefaultFolder.png,Left)]</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>99</width>
+					<height>140</height>
+					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -65,37 +78,15 @@
 					<posy>1</posy>
 					<width>99</width>
 					<height>140</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<visible>SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>-6</posy>
-					<width>118</width>
-					<height>165</height>
-					<texture diffuse="mask-rect.png">mask-hilite.png</texture>
-					<aspectratio>stretch</aspectratio>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />
-					</animation>
-					<colordiffuse>IconGlow</colordiffuse>
+					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<bordertexture border="10">mask-hilite.png</bordertexture>
+					<bordersize>9</bordersize>
+					<info>ListItem.Icon</info>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
-				</control>
-				<control type="image">
-					<posx>5</posx>
-					<posy>5</posy>
-					<width>95</width>
-					<height>133</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />
-					</animation>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
 				</control>
 			</focusedlayout>
 		</control>
@@ -114,6 +105,7 @@
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				<visible>container.content(tvshows)</visible>
 			</control>
+			<!-- Title -->
 			<control type="label">
 				<posx>17</posx>
 				<posy>168</posy>
@@ -123,29 +115,12 @@
 				<align>left</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
+				<selectedcolor>listselectedtext</selectedcolor>
 				<scroll>true</scroll>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
-				<visible>[IsEmpty(Control.GetLabel(7016))] + container.content(tvshows)</visible>
-				<visible>!IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" delay="50" start="0" end="100" time="100">Visible</animation>
-				<animation effect="fade" time="200">WindowClose</animation>
-			</control>
-			<control type="label">
-				<posx>17</posx>
-				<posy>168</posy>
-				<width>460</width>
-				<height>37</height>
-				<font>font18</font>
-				<align>left</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<info>ListItem.Label</info>
-				<textoffsetx>0</textoffsetx>
-				<visible>!container.content(tvshows)</visible>
-				<visible>!IsEmpty(ListItem.Thumb)</visible>
-				<animation effect="fade" delay="50" start="0" end="100" time="100">Visible</animation>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [!container.content(tvshows) | IsEmpty(Control.GetLabel(7016))]</visible>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 			</control>
 			<!-- Go Back -->
@@ -161,7 +136,7 @@
 				<scroll>true</scroll>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
-				<visible>IsEmpty(ListItem.Title) + !Window.IsVisible(VideoFiles)</visible>
+				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 			<!-- Genre -->
 			<control type="label">
@@ -209,12 +184,12 @@
 				<posx>17</posx>
 				<posy>322</posy>
 				<width>460</width>
-				<height>342</height>
-				<font>font11</font>
+				<height>350</height>
+				<font>font13</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
-				<align>justify</align>
+				<align>left</align>
 				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>
@@ -223,12 +198,12 @@
 				<posx>17</posx>
 				<posy>322</posy>
 				<width>460</width>
-				<height>342</height>
-				<font>font11</font>
+				<height>350</height>
+				<font>font13</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
-				<align>justify</align>
+				<align>left</align>
 				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>
