@@ -184,9 +184,9 @@
 				<visible>Skin.String(skinsettingmenu,startup)</visible>
 				<control type="image">
 					<description>Startup Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>112</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -277,9 +277,9 @@
 				<visible>Skin.String(skinsettingmenu,general)</visible>
 				<control type="image">
 					<description>General Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>166</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -503,9 +503,9 @@
 				<visible>Skin.String(skinsettingmenu,home)</visible>
 				<control type="image">
 					<description>Home Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>220</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -743,9 +743,9 @@
 				<visible>Skin.String(skinsettingmenu,background)</visible>
 				<control type="image">
 					<description>Background Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>273</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -881,9 +881,9 @@
 				<visible>Skin.String(skinsettingmenu,sources)</visible>
 				<control type="image">
 					<description>Media Sources Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>327</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -971,9 +971,9 @@
 				<visible>Skin.String(skinsettingmenu,views)</visible>
 				<control type="image">
 					<description>Views Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>381</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -1367,9 +1367,9 @@
 				<visible>Skin.String(skinsettingmenu,custom)</visible>
 				<control type="image">
 					<description>Custom Settings Button Image</description>
-					<posx>973</posx>
+					<posx>950</posx>
 					<posy>435</posy>
-					<width>283</width>
+					<width>305</width>
 					<height>56</height>
 					<texture>default-button.png</texture>
 					<include>settingbutton-fade</include>
