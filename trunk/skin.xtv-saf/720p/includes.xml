@@ -379,8 +379,8 @@
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
-			<visible>Container.Scrolling) + [IntegerGreaterThan(Container(50).NumItems,0)]</visible>
-			<animation effect="fade" time="50">Visible</animation>
+			<visible>Container.Scrolling</visible>
+			<animation effect="fade" time="100">Visible</animation>
 			<animation effect="fade" time="300" delay="500">Hidden</animation>
 			<posx>587</posx>
 			<posy>42</posy>
@@ -392,6 +392,7 @@
 				<width>81</width>
 				<height>65</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<visible>!Window.IsVisible(progressdialog)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -404,6 +405,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<font>font28</font>
+				<visible>!Window.IsVisible(progressdialog)</visible>
 			</control>
 		</control>
 	</include>
@@ -468,7 +470,7 @@
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
 			<control type="group">
-				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]</visible>
+				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(progressdialog)</visible>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
