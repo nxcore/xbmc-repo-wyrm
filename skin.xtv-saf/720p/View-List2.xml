@@ -63,7 +63,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group" description="List furniture">
-			<visible>Control.IsVisible(51) + [[IntegerGreaterThan(Container(50).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,0) + system.getbool(filelists.showparentdiritems)]]</visible>
+			<visible>Control.IsVisible(51) + [[IntegerGreaterThan(Container(51).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(51).NumItems,0) + system.getbool(filelists.showparentdiritems)]]</visible>
 			<include>list-fade</include>
 			<control type="image" description="Slider">
 				<posx>716</posx>
