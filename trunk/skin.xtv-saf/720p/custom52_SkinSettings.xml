@@ -736,42 +736,25 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="317">
-						<description>Quit button quits</description>
+					<control type="togglebutton" id="319">
+						<description>Shutdown From Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
+						<height>50</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[13015]:</label>
-						<label2>$LOCALIZE[13009]</label2>
-						<onclick>Skin.SetString(home-quit,menu)</onclick>
-						<onclick>SetFocus(316)</onclick>
-						<textcolor>button-text</textcolor>
+						<alttexturefocus>default-button.png</alttexturefocus>
+						<alttexturenofocus>-</alttexturenofocus>					
+						<label>$LOCALIZE[13015]: $LOCALIZE[13009]</label>
+						<altlabel>$LOCALIZE[13015]: $LOCALIZE[31558]</altlabel>
+						<onclick>Skin.ToggleSetting(home-quit)</onclick>
+						<selected>!Skin.HasSetting(home-quit)</selected>
 						<aligny>center</aligny>
 						<textwidth>480</textwidth>
 						<textoffsetx>35</textoffsetx>
-						<enable>Skin.HasSetting(home-shutdown)</enable>
-						<include>button-fade</include>
-						<visible>Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quit)) | Skin.String(home-quit,quit)]</visible>
-					</control>
-					<control type="button" id="318">
-						<description>Quit button goes to power menu</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[13015]:</label>
-						<label2>$LOCALIZE[31558]</label2>
-						<onclick>Skin.SetString(home-quit,quit)</onclick>
-						<onclick>SetFocus(316)</onclick>
 						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textwidth>480</textwidth>
-						<textoffsetx>35</textoffsetx>
-						<enable>Skin.HasSetting(home-shutdown)</enable>
 						<include>button-fade</include>
-						<visible>Skin.HasSetting(home-shutdown) + [Skin.String(home-quit,menu)]</visible>
-					</control>
+					</control>	
 				</control>
 			</control>
 			<!--Background-->

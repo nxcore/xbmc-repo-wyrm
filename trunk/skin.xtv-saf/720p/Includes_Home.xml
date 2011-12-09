@@ -379,8 +379,8 @@
 				<item>
 					<icon>icon-settings.png</icon>
 					<thumb>icon-settings-blur1.png</thumb>
-					<label>31551</label>
-					<onclick>ActivateWindow(50)</onclick>
+					<label>5</label>
+					<onclick>ActivateWindow(Settings,,return)</onclick>
 				</item>
 				<item>
 					<icon>icon-disc.png</icon>
@@ -392,9 +392,16 @@
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
-					<label>31038</label>
-					<onclick>XBMC.ShutDown()</onclick>
-					<visible>Skin.HasSetting(home-shutdown)</visible>
+					<label>13009</label>
+					<onclick>XBMC.Quit()</onclick>
+					<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
+				</item>
+				<item>
+					<icon>shut-power.png</icon>
+					<thumb>shut-power-blur1.png</thumb>
+					<label>13009</label>
+					<onclick>ActivateWindow(shutdownmenu)</onclick>
+					<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
 				</item>
 			</content>
 		</control>
@@ -819,7 +826,7 @@
 				<width>1280</width>
 				<height>102</height>
 				<texture>white.png</texture>
-				<colordiffuse>FF404040</colordiffuse>
+				<colordiffuse>FF363636</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>-100</posx>
@@ -834,36 +841,184 @@
 			<visible>!Skin.HasSetting(home-time)</visible>
 			<!-- Show time on home screen -->
 			<control type="label">
-				<description>Date</description>
-				<posx>354</posx>
-				<posy>6</posy>
-				<width>566</width>
-				<height>37</height>
-				<label>$INFO[system.Date]</label>
-				<align>center</align>
-				<font>font18</font>
-			</control>
-			<control type="label">
 				<description>Time and Date</description>
 				<posx>354</posx>
-				<posy>40</posy>
+				<posy>10</posy>
 				<width>566</width>
-				<height>37</height>
-				<label>$INFO[system.Time(hh:mm xx)]</label>
+				<height>50</height>
+				<label>$INFO[system.Time(hh:mm xx)] $INFO[system.Date]</label>
 				<align>center</align>
 				<font>font18</font>
 			</control>
 		</control>
-		<!-- Default menu icon -->
-		<control type="image">
-			<posx>560</posx>
-			<posy>90</posy>
-			<width>160</width>
-			<height>160</height>
-			<texture>$INFO[Container(9000).ListItem.Icon]</texture>
-			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
-			<visible>Control.HasFocus(9000)</visible>
+		<control type="group">
+			<visible>!Skin.HasSetting(home-currentweather)</visible>
+			<!-- Weather Condition -->
+			<control type="label">
+				<description>Can't get current weather conditions</description>
+				<posx>1185</posx>
+				<posy>10</posy>
+				<width>212</width>
+				<height>50</height>
+				<wrapmultiline>true</wrapmultiline>
+				<label>412</label>
+				<font>font13</font>
+				<align>right</align>
+				<!--<aligny>center</aligny>-->
+				<visible>IsEmpty(Weather.Conditions)</visible>
+			</control>
+			<control type="group">
+				<visible>!IsEmpty(Weather.Conditions)</visible>
+				<control type="label">
+					<description>current condition label</description>
+					<posx>1070</posx>
+					<posy>10</posy>
+					<width>212</width>
+					<height>50</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$INFO[Weather.Conditions]</label>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="image">
+					<description>current weather icon</description>
+					<posx>1080</posx>
+					<posy>10</posy>
+					<height>50</height>
+					<width>50</width>
+					<texture>$INFO[Weather.Conditions]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!Skin.HasSetting(weather-animateicon)</visible>
+				</control>
+				<control type="multiimage">
+					<description>current weather animated icon</description>
+					<posx>1080</posx>
+					<posy>10</posy>
+					<width>50</width>
+					<height>50</height>
+					<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
+					<aspectratio>keep</aspectratio>
+					<timeperimage>200</timeperimage>
+					<randomize>false</randomize>
+					<fadetime>0</fadetime>
+					<visible>Skin.HasSetting(weather-animateicon)</visible>
+				</control>
+				<control type="label">
+					<description>current temp value</description>
+					<posx>1140</posx>
+					<posy>10</posy>
+					<width>120</width>
+					<height>50</height>
+					<font>font22</font>
+					<align>left</align>
+					<label>$INFO[Weather.Temperature]</label>
+				</control>
+			</control>
 		</control>
+		<!-- Shelf icons-->
+		<control type="group">
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-video.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9100)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-video.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9150)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-tv.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9200)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-musicvideo.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9250)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-music.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9300)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-photo.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9350)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-programs.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9400)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-weather.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9450)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-fav.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9500)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>DefaultMusicSearch.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9550)</visible>
+			</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-settings.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9600)</visible>
+			</control>
+		</control>
+
 		<!-- Main Horizontal menu bar -->
 		<control type="group">
 			<posx>0</posx>
@@ -882,24 +1037,26 @@
 				<height>6</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="list" id="9000">
-				<posx>0</posx>
-				<posy>2</posy>
+		</control>
+
+		<!--NAVBAR-->
+		<control type="group" description="Home NavBar">
+			<posx>0</posx>
+			<posy>290</posy>
+			<control type="list" id="9900" description="Home NavBar">
 				<width>1280</width>
 				<height>70</height>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>90161</onup>
-				<ondown>9010</ondown>
-				<pagecontrol>-</pagecontrol>
-				<focusposition>0</focusposition>
-				<orientation>horizontal</orientation>
+				<scrolltime>200</scrolltime>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
 				<itemgap>0</itemgap>
-				<include>background-fade</include>
+				<orientation>horizontal</orientation>
 				<itemlayout height="70" width="256">
 					<control type="label">
 						<posx>128</posx>
-						<posy>20</posy>
+						<posy>19</posy>
 						<width>256</width>
 						<height>32</height>
 						<font>font18</font>
@@ -917,12 +1074,11 @@
 						<height>70</height>
 						<align>center</align>
 						<texture>menu-focus.png</texture>
-						<visible>Control.HasFocus(9000)</visible>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
 						<posx>128</posx>
-						<posy>18</posy>
+						<posy>19</posy>
 						<width>256</width>
 						<height>32</height>
 						<font>font18</font>
@@ -935,1249 +1091,827 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
+						<description>Video Menu</description>
 						<label>3</label>
-						<onclick>ActivateWindow(Videos)</onclick>
-						<icon>DefaultMovies.png</icon>
+						<visible>Control.IsVisible(9100)</visible>
+						<onclick>-</onclick>
 					</item>
 					<item id="2">
-						<label>2</label>
-						<onclick>ActivateWindow(Music)</onclick>
-						<icon>DefaultAudio.png</icon>
+						<description>Movie Menu</description>
+						<label>20338</label>
+						<visible>Control.IsVisible(9150)</visible>
+						<onclick>-</onclick>
 					</item>
 					<item id="3">
-						<label>31031</label>
-						<onclick>ActivateWindow(Pictures)</onclick>
-						<icon>DefaultPicture.png</icon>
-						<visible>!Skin.HasSetting(home-photos)</visible>
+						<description>TV Show Menu</description>
+						<label>20343</label>
+						<visible>Control.IsVisible(9200)</visible>
+						<onclick>-</onclick>
 					</item>
 					<item id="4">
-						<label>24001</label>
-						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-						<icon>icon-scripts.png</icon>
-						<visible>Skin.HasSetting(home-programs)</visible>
+						<description>Music Video Menu</description>
+						<label>20391</label>
+						<visible>Control.IsVisible(9250)</visible>
+						<onclick>-</onclick>
 					</item>
 					<item id="5">
-						<label>8</label>
-						<onclick>ActivateWindow(Weather)</onclick>
-						<icon>-</icon>
-						<visible>Skin.HasSetting(home-weather)</visible>
+						<description>Music Menu</description>
+						<label>2</label>
+						<visible>Control.IsVisible(9300)</visible>
+						<onclick>-</onclick>
 					</item>
-					<item id="10">
-						<label>31652</label>
-						<onclick>ActivateWindow(Favourites)</onclick>
-						<icon>icon-fav.png</icon>
-						<visible>Skin.HasSetting(home-favorites)</visible>
+					<item id="6">
+						<description>Pictures Menu</description>
+						<label>31031</label>
+						<visible>Control.IsVisible(9350)</visible>
+						<onclick>-</onclick>
+					</item>
+					<item id="7">
+						<description>Addon Menu</description>
+						<label>24001</label>
+						<visible>Control.IsVisible(9400)</visible>
+						<onclick>-</onclick>
+					</item>
+					<item id="8">
+						<description>Weather Menu</description>
+						<label>8</label>
+						<visible>Control.IsVisible(9450)</visible>
+						<onclick>-</onclick>
 					</item>
 					<item id="9">
+						<description>Favourite Menu</description>
+						<label>1036</label>
+						<visible>Control.IsVisible(9500)</visible>
+						<onclick>-</onclick>
+					</item>
+					<item id="10">
+						<description>Search Menu</description>
+						<label>137</label>
+						<visible>Control.IsVisible(9550)</visible>
+						<onclick>-</onclick>
+					</item>
+					<item id="11">
+						<description>Setting Menu</description>
+						<label>5</label>
+						<onclick>-</onclick>
+						<visible>Control.IsVisible(9600)</visible>
+					</item>
+				</content>
+			</control>	
+		</control>		
+		<control type="grouplist" id="9000" description="Submenus">
+			<posx>0</posx>
+			<posy>365</posy>
+			<width>1280</width>
+			<height>280</height>
+			<align>center</align>
+			<orientation>horizontal</orientation>
+			<control type="list" id="9100" description="Videos">
+				<animation type="Conditional" condition="!Control.HasFocus(9100)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9600</onleft>
+				<onright>9150</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>3</label>
+						<onclick>ActivateWindow(Videos)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9150" description="Movies">
+				<animation type="Conditional" condition="!Control.HasFocus(9150)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9100</onleft>
+				<onright>9200</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>20338</label>
+						<onclick>ActivateWindow(Videos)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9200" description="TV Shows">
+				<animation type="Conditional" condition="!Control.HasFocus(9200)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9150</onleft>
+				<onright>9250</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>20343</label>
+						<onclick>ActivateWindow(Videos)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9250" description="Music Video">
+				<animation type="Conditional" condition="!Control.HasFocus(9250)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9200</onleft>
+				<onright>9300</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>20391</label>
+						<onclick>ActivateWindow(Videos)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9300" description="Music">
+				<animation type="Conditional" condition="!Control.HasFocus(9300)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9250</onleft>
+				<onright>9350</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>2</label>
+						<onclick>ActivateWindow(Music)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9350" description="Pictures">
+				<animation type="Conditional" condition="!Control.HasFocus(9350)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9300</onleft>
+				<onright>9400</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>31031</label>
+						<onclick>ActivateWindow(Pictures)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9400" description="Addons">
+				<animation type="Conditional" condition="!Control.HasFocus(9400)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9350</onleft>
+				<onright>9450</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>24001</label>
+						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9450" description="Weather">
+				<visible>Skin.HasSetting(home-weather)</visible>
+				<animation type="Conditional" condition="!Control.HasFocus(9450)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9400</onleft>
+				<onright>9500</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>8</label>
+						<onclick>ActivateWindow(Weather)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9500" description="Favourites">
+				<animation type="Conditional" condition="!Control.HasFocus(9500)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9450</onleft>
+				<onright>9550</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>1036</label>
+						<onclick>ActivateWindow(Favourites)</onclick>
+						<visible>Skin.HasSetting(home-favorites)</visible>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9550" description="GlobalSearch">
+				<animation type="Conditional" condition="!Control.HasFocus(9550)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9500</onleft>
+				<onright>9600</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>20</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>256</width>
+						<height>50</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
+						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
 						<label>137</label>
 						<onclick>RunScript(script.globalsearch)</onclick>
 						<icon>DefaultMusicSearch.png</icon>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</item>
-					<item id="8">
-						<label>341</label>
-						<onclick>PlayDVD()</onclick>
-						<icon>icon-disc.png</icon>
-						<visible>System.HasMediadvd</visible>
-					</item>
-					<item id="6">
-						<label>31551</label>
-						<onclick>ActivateWindow(50)</onclick>
-						<icon>icon-settings.png</icon>
-					</item>
 				</content>
 			</control>
-		</control>
-		<control type="group">
-			<control type="group">
-			<!-- Home menu sub menus -->
-				<posx>0</posx>
-				<posy>370</posy>
-				<include>menu-slide</include>
-				<control type="grouplist" id="9010">
-					<posx>0</posx>
-					<posy>5</posy>
-					<width>255</width>
-					<height>300</height>
-					<onleft>9000</onleft>
-					<onright>9001</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<itemgap>0</itemgap>
-
-						<!-- Start or buttons Used for the main VIDEO button -->
-						<control type="button" id="90101">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>342</label>
-							<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
-							<visible>!Skin.HasSetting(home-movie) + Library.HasContent(Movies)</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90102">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>20343</label>
-							<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
-							<visible>!Skin.HasSetting(home-tv) + Library.HasContent(TVShows)</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90103">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>20389</label>
-							<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
-							<visible>Skin.HasSetting(home-musicvideo) + Library.HasContent(MusicVideos)</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90108">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>$INFO[Skin.String(custom-playlist1label)]</label>
-							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
-							<visible>Skin.HasSetting(custom-playlist1) + !IsEmpty(Skin.String(custom-playlist1name))+ !IsEmpty(Skin.String(custom-playlist1icon))+ !IsEmpty(Skin.String(custom-playlist1label))</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90109">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>$INFO[Skin.String(custom-playlist2label)]</label>
-							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
-							<visible>Skin.HasSetting(custom-playlist2) + !IsEmpty(Skin.String(custom-playlist2name))+ !IsEmpty(Skin.String(custom-playlist2icon))+ !IsEmpty(Skin.String(custom-playlist2label))</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90110">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>$INFO[Skin.String(custom-playlist3label)]</label>
-							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
-							<visible>Skin.HasSetting(custom-playlist3) + !IsEmpty(Skin.String(custom-playlist3name))+ !IsEmpty(Skin.String(custom-playlist3icon))+ !IsEmpty(Skin.String(custom-playlist3label))</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90120">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>$INFO[Skin.String(custom-playlist4label)]</label>
-							<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
-							<visible>Skin.HasSetting(custom-playlist4) + !IsEmpty(Skin.String(custom-playlist4name))+ !IsEmpty(Skin.String(custom-playlist4icon))+ !IsEmpty(Skin.String(custom-playlist4label))</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90104">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>744</label>
-							<onclick>ActivateWindow(Videos,Files,return)</onclick>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90105">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>14022</label>
-							<onclick>ActivateWindow(VideoLibrary,Root)</onclick>
-							<visible>Library.HasContent(Video)</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90106">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>24001</label>
-							<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
-							<visible>Library.HasContent(Video)</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-						<control type="button" id="90107">
-							<height>50</height>
-							<width>256</width>
-							<textcolor>button-text</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font12</font>
-							<texturefocus border="5">default-button.png</texturefocus>
-							<texturenofocus border="5">-</texturenofocus>
-							<pulseonselect>true</pulseonselect>
-							<label>24001</label>
-							<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
-							<visible>!Library.HasContent(Video)</visible>
-							<visible>Container(9000).HasFocus(1)</visible>
-						</control>
-
-					<!-- Start or buttons Used for the main MUSIC button -->
-					<control type="button" id="90111">
-						<height>50</height>
+			<control type="list" id="9600" description="Settings">
+				<animation type="Conditional" condition="!Control.HasFocus(9600)">
+					<effect type="fade" start="100" end="1" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>256</width>
+				<height>275</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9550</onleft>
+				<onright>9100</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="50" width="256">
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
 						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>133</label>
-						<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
-					<control type="button" id="90112">
-						<height>50</height>
+				</itemlayout>
+				<focusedlayout height="50" width="256">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
 						<width>256</width>
-						<textcolor>button-text</textcolor>
+						<height>50</height>
 						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>132</label>
-						<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
 					</control>
-					<control type="button" id="90113">
-						<height>50</height>
+					<control type="label">
+						<posx>128</posx>
+						<posy>9</posy>
 						<width>256</width>
+						<height>32</height>
+						<font>font13</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>134</label>
-						<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
 					</control>
-					<control type="button" id="90118">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-mplaylist1label)]</label>
-						<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist1name)],return)</onclick>
-						<visible>Skin.HasSetting(custom-mplaylist1) + !IsEmpty(Skin.String(custom-mplaylist1name))+ !IsEmpty(Skin.String(custom-mplaylist1icon))+ !IsEmpty(Skin.String(custom-mplaylist1label))</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
-					</control>
-					<control type="button" id="90119">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-mplaylist2label)]</label>
-						<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist2name)],return)</onclick>
-						<visible>Skin.HasSetting(custom-mplaylist2) + !IsEmpty(Skin.String(custom-mplaylist2name))+ !IsEmpty(Skin.String(custom-mplaylist2icon))+ !IsEmpty(Skin.String(custom-mplaylist2label))</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
-					</control>
-					<control type="button" id="90114">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>744</label>
-						<onclick>ActivateWindow(MusicFiles,Root)</onclick>
-						<visible>Container(9000).HasFocus(2)</visible>
-					</control>
-					<control type="button" id="90115">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>14022</label>
-						<onclick>ActivateWindow(MusicLibrary,Root)</onclick>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
-					</control>
-					<control type="button" id="90116">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>24001</label>
-						<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
-						<visible>Library.HasContent(Music)</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
-					</control>
-					<control type="button" id="90117">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>24001</label>
-						<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
-						<visible>!Library.HasContent(Music)</visible>
-						<visible>Container(9000).HasFocus(2)</visible>
-					</control>
-					<!-- Start or buttons Used for the main Pictures button -->
-					<control type="button" id="90121">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>24001</label>
-						<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
-						<visible>Container(9000).HasFocus(3)</visible>
-					</control>
-					<!-- Start or buttons Used for the main Addons button -->
-					<control type="button" id="90171">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>31037</label>
-						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
-						<visible>Skin.HasSetting(home-youtube)</visible>
-						<visible>Container(9000).HasFocus(4)</visible>
-					</control>
-					<control type="button" id="90172">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-script1label)] </label>
-						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script1name)])</onclick>
-						<visible>Skin.HasSetting(custom-script1) + !IsEmpty(Skin.String(custom-script1label))+ !IsEmpty(Skin.String(custom-script1name))</visible>
-						<visible>Container(9000).HasFocus(4)</visible>
-					</control>
-					<control type="button" id="90173">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-script2label)] </label>
-						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script2name)])</onclick>
-						<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
-						<visible>Container(9000).HasFocus(4)</visible>
-					</control>
-					<control type="button" id="90174">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-script3label)] </label>
-						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script3name)])</onclick>
-						<visible>Skin.HasSetting(custom-script3) + !IsEmpty(Skin.String(custom-script3label))+ !IsEmpty(Skin.String(custom-script3name))</visible>
-						<visible>Container(9000).HasFocus(4)</visible>
-					</control>
-					<control type="button" id="90175">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>$INFO[Skin.String(custom-script4label)] </label>
-						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script4name)])</onclick>
-						<visible>Skin.HasSetting(custom-script4) + !IsEmpty(Skin.String(custom-script4label))+ !IsEmpty(Skin.String(custom-script4name))</visible>
-						<visible>Container(9000).HasFocus(4)</visible>
-					</control>
-					<!-- Start or buttons Used for the main Settings button -->
-					<control type="button" id="90142">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
+				</focusedlayout>
+				<content>
+					<item id="1">
 						<label>5</label>
 						<onclick>ActivateWindow(Settings,,return)</onclick>
-						<visible>Container(9000).HasFocus(6)</visible>
-					</control>
-					<control type="button" id="90143">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
+					</item>
+					<item id="2">
 						<label>130</label>
 						<onclick>ActivateWindow(SystemInfo)</onclick>
-						<visible>Container(9000).HasFocus(6)</visible>
-					</control>
-					<control type="button" id="90144">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
+					</item>
+					<item id="3">
 						<label>24033</label>
 						<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
-						<visible>Container(9000).HasFocus(6)</visible>
-					</control>
-					<control type="button" id="90154">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
-						<label>13009</label>
-						<onclick>XBMC.Quit()</onclick>
-						<visible>Container(9000).HasFocus(6)</visible>
-					</control>
-					<!-- Start or buttons Used for the main Optical Media button -->
-					<control type="button" id="90161">
-						<height>50</height>
-						<width>256</width>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<texturefocus border="5">default-button.png</texturefocus>
-						<texturenofocus border="5">-</texturenofocus>
-						<pulseonselect>true</pulseonselect>
+					</item>
+					<item id="4">
 						<label>13391</label>
 						<onclick>EjectTray()</onclick>
-						<visible>Container(9000).HasFocus(8)</visible>
-					</control>
-				</control>
+					</item>
+					<item id="5">
+						<label>13009</label>
+						<onclick>XBMC.Quit()</onclick>
+						<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
+					</item>
+					<item id="6">
+						<label>13009</label>
+						<onclick>ActivateWindow(shutdownmenu)</onclick>
+						<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
+					</item>
+				</content>
+			</control>	
+		</control>
+
+		<!-- media infos (music) -->
+		<control type="group">
+			<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
+			<include>media-slide</include>
+			<include>homemediainfo</include>
+			<control type="image">
+				<description>cover image</description>
+				<posx>20</posx>
+				<posy>556</posy>
+				<width>120</width>
+				<height>120</height>
+				<info>MusicPlayer.Cover</info>
+				<aspectratio align="right">keep</aspectratio>
 			</control>
-			<control type="group" id="9020">
-				<posx>10</posx>
-				<posy>50</posy>
-				<animation type="WindowClose" reversible="false">
-					<effect type="zoom" start="100" end="80" center="640,180" easing="in" tween="back" time="300" />
-					<effect type="fade" start="100" end="0" time="300" />
-				</animation>
-				<animation type="Visible" reversible="false">
-					<effect type="zoom" start="80" end="100" center="640,180" easing="out" tween="back" time="300" />
-					<effect type="fade" start="0" end="100" time="300" />
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="zoom" start="100" end="80" center="640,180" easing="in" tween="back" time="300" />
-					<effect type="fade" start="100" end="0" time="300" />
-				</animation>
-				<visible>Control.HasFocus(90101) | Control.HasFocus(90102) | Control.HasFocus(9001) | Control.HasFocus(9002)</visible>
-				<control type="group">
-					<include>background-fade</include>
-					<visible>Control.HasFocus(90101) | Control.HasFocus(9001)</visible>
-					<control type="label">
-						<description>Header label</description>
-						<posx>55</posx>
-						<posy>-40</posy>
-						<height>30</height>
-						<width>400</width>
-						<label>$LOCALIZE[20386]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="list" id="9001">
-						<posx>10</posx>
-						<posy>40</posy>
-						<width>1260</width>
-						<height>225</height>
-						<onleft>9010</onleft>
-						<onright>9002</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-						<viewtype label="31028">list</viewtype>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<orientation>horizontal</orientation>
-						<itemlayout height="168" width="210">
-							<control type="image">
-								<posx>35</posx>
-								<posy>0</posy>
-								<width>120</width>
-								<height>168</height>
-								<aspectratio>stretch</aspectratio>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-							</control>
-						</itemlayout>
-						<focusedlayout height="168" width="210">
-							<control type="image">
-								<posx>35</posx>
-								<posy>0</posy>
-								<width>120</width>
-								<height>168</height>
-								<align>center</align>
-								<aligny>center</aligny>
-								<aspectratio>keep</aspectratio>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-								<visible>!Control.HasFocus(9001)</visible>
-							</control>
-							<control type="image">
-								<posx>35</posx>
-								<posy>0</posy>
-								<width>120</width>
-								<height>168</height>
-								<aspectratio>stretch</aspectratio>
-								<bordertexture border="5">folder-focus.png</bordertexture>
-								<bordersize>5</bordersize>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-								<visible>Control.HasFocus(9001)</visible>
-							</control>
-							<control type="label">
-								<description>Item label</description>
-								<posx>94</posx>
-								<posy>170</posy>
-								<height>24</height>
-								<width>210</width>
-								<label>$INFO[ListItem.Label]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
-								<shadowcolor>shadow-text</shadowcolor>
-								<visible>Control.HasFocus(9001)</visible>
-							</control>
-						</focusedlayout>
-						<content>
-							<item id="1">
-								<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.1.Thumb)]</icon>
-								<thumb>-</thumb>
-							</item>
-							<item id="2">
-								<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.2.Thumb)]</icon>
-								<thumb>-</thumb>
-							</item>
-							<item id="3">
-								<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.3.Thumb)]</icon>
-								<thumb>-</thumb>
-							</item>
-							<item id="4">
-								<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.4.Thumb)]</icon>
-								<thumb>-</thumb>
-							</item>
-							<item id="5">
-								<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.5.Thumb)]</icon>
-								<thumb>-</thumb>
-							</item>
-							<item id="6">
-								<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.6.Thumb)]</icon>
-								<thumb>-</thumb>
-							</item>
-						</content>
-					</control>
-				</control>
-				<!-- TV Episode icons -->
-				<control type="group">
-					<include>background-fade</include>
-					<visible>Control.HasFocus(90102) | Control.HasFocus(9002)</visible>
-					<control type="label">
-						<description>Header label</description>
-						<posx>55</posx>
-						<posy>-40</posy>
-						<height>30</height>
-						<width>400</width>
-						<label>$LOCALIZE[20387]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="list" id="9002">
-						<posx>5</posx>
-						<posy>36</posy>
-						<width>1260</width>
-						<height>210</height>
-						<onleft>9001</onleft>
-						<onright>9000</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-						<viewtype label="31028">list</viewtype>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<orientation>horizontal</orientation>
-						<itemlayout height="210" width="252">
-							<control type="image">
-								<posx>40</posx>
-								<posy>50</posy>
-								<width>160</width>
-								<height>120</height>
-								<align>center</align>
-								<aligny>center</aligny>
-								<aspectratio>keep</aspectratio>
-								<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
-							</control>
-						</itemlayout>
-						<focusedlayout height="210" width="252">
-							<control type="label">
-								<posx>126</posx>
-								<posy>0</posy>
-								<height>50</height>
-								<width>252</width>
-								<label>$INFO[ListItem.Label2]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
-								<wrapmultiline>true</wrapmultiline>
-								<textcolor>button-text</textcolor>
-								<shadowcolor>shadow-text</shadowcolor>
-							</control>
-							<control type="image">
-								<posx>40</posx>
-								<posy>50</posy>
-								<width>160</width>
-								<height>120</height>
-								<align>center</align>
-								<aligny>center</aligny>
-								<aspectratio>keep</aspectratio>
-								<bordertexture border="5">folder-focus.png</bordertexture>
-								<bordersize>5</bordersize>
-								<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
-							</control>
-							<control type="label">
-								<posx>126</posx>
-								<posy>174</posy>
-								<height>24</height>
-								<width>252</width>
-								<label>$INFO[ListItem.Label]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
-								<textcolor>button-text</textcolor>
-								<shadowcolor>shadow-text</shadowcolor>
-							</control>
-						</focusedlayout>
-						<content>
-							<item id="1">
-								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.1.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.1.EpisodeNumber)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.1.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
-							</item>
-							<item id="2">
-								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.2.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.2.EpisodeNumber)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
-							</item>
-							<item id="3">
-								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.3.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.3.EpisodeNumber)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.3.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
-							</item>
-							<item id="4">
-								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.4.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.4.EpisodeNumber)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.4.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
-							</item>
-							<item id="5">
-								<label>$LOCALIZE[20373] $INFO[Window.Property(LatestEpisode.5.EpisodeSeason)] $LOCALIZE[20359] $INFO[Window.Property(LatestEpisode.5.EpisodeNumber)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestEpisode.5.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
-							</item>
-						</content>
-					</control>
-				</control>
+			<control type="label">
+				<description>Artist label</description>
+				<posx>154</posx>
+				<posy>551</posy>
+				<width>460</width>
+				<height>31</height>
+				<info>MusicPlayer.Artist</info>
+				<align>left</align>
+				<font>font11</font>
+				<scroll>true</scroll>
 			</control>
-			<!-- Weather icons -->
-			<control type="group">
-				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
-				<visible>Container(9000).HasFocus(5)</visible>
-				<control type="group">
-					<visible>Container(9000).HasFocus(5)</visible>
-					<include>background-fade</include>
-					<posx>10</posx>
-					<posy>64</posy>
-					<control type="label">
-						<description>Weather label</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<height>50</height>
-						<width>315</width>
-						<label>$INFO[Weather.Location]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<wrapmultiline>true</wrapmultiline>
-						<font>font11</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="image">
-						<description>current weather icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<height>96</height>
-						<width>96</width>
-						<texture>$INFO[Weather.Conditions]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="multiimage">
-						<description>current weather animated icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<width>96</width>
-						<height>96</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-						<visible>Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="label">
-						<description>Temp Label</description>
-						<posx>0</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>315</width>
-						<label>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Weather Conditions label</description>
-						<posx>0</posx>
-						<posy>198</posy>
-						<height>20</height>
-						<width>315</width>
-						<label>$INFO[Weather.Conditions]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</control>
-				<control type="group">
-				<posx>330</posx>
-				<posy>64</posy>
-					<control type="label">
-						<description>Weather label</description>
-						<posx>22</posx>
-						<posy>22</posy>
-						<height>30</height>
-						<width>250</width>
-						<label>$INFO[Window(Weather).Property(Day1.Title)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="image">
-						<description>Day 1 weather icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<height>96</height>
-						<width>96</width>
-						<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="multiimage">
-						<description>Day 1 weather animated icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<width>96</width>
-						<height>96</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
-						<!--<info>$INFO[Window(Weather).Property(Day1.FanartCode)]</info>-->
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-						<visible>Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="label">
-						<description>High Temp Label</description>
-						<posx>22</posx>
-						<posy>198</posy>
-						<height>24</height>
-						<width>125</width>
-						<label>$LOCALIZE[393]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>High Temp Value</description>
-						<posx>22</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>125</width>
-						<label>$INFO[Window(Weather).Property(Day1.HighTemp)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Low Temp Label</description>
-						<posx>148</posx>
-						<posy>198</posy>
-						<height>24</height>
-						<width>125</width>
-						<label>$LOCALIZE[391]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Low Temp Value</description>
-						<posx>148</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>125</width>
-						<label>$INFO[Window(Weather).Property(Day1.LowTemp)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</control>
-				<control type="group">
-					<posx>645</posx>
-					<posy>64</posy>
-					<control type="label">
-						<description>Weather label</description>
-						<posx>22</posx>
-						<posy>22</posy>
-						<height>30</height>
-						<width>250</width>
-						<label>$INFO[Window(Weather).Property(Day2.Title)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="image">
-						<description>Day 2 weather icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<height>96</height>
-						<width>96</width>
-						<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="multiimage">
-						<description>Day 2 weather animated icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<width>96</width>
-						<height>96</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-						<visible>Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="label">
-						<description>High Temp Label</description>
-						<posx>22</posx>
-						<posy>198</posy>
-						<height>24</height>
-						<width>125</width>
-						<label>$LOCALIZE[393]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>High Temp Value</description>
-						<posx>22</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>125</width>
-						<label>$INFO[Window(Weather).Property(Day2.HighTemp)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Low Temp Label</description>
-						<posx>148</posx>
-						<posy>198</posy>
-						<height>24</height>
-						<width>125</width>
-						<label>$LOCALIZE[391]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Low Temp Value</description>
-						<posx>148</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>125</width>
-						<label>$INFO[Window(Weather).Property(Day2.LowTemp)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</control>
-				<control type="group">
-					<posx>960</posx>
-					<posy>64</posy>
-					<control type="label">
-						<description>Weather label</description>
-						<posx>22</posx>
-						<posy>22</posy>
-						<height>30</height>
-						<width>250</width>
-						<label>$INFO[Window(Weather).Property(Day3.Title)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="image">
-						<description>Day 3 weather icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<height>96</height>
-						<width>96</width>
-						<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="multiimage">
-						<description>Day 3 weather animated icon</description>
-						<posx>110</posx>
-						<posy>60</posy>
-						<width>96</width>
-						<height>96</height>
-						<imagepath>special://skin/extras/images/weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>200</timeperimage>
-						<randomize>false</randomize>
-						<fadetime>0</fadetime>
-						<visible>Skin.HasSetting(weather-animateicon)</visible>
-					</control>
-					<control type="label">
-						<description>High Temp Label</description>
-						<posx>22</posx>
-						<posy>198</posy>
-						<height>24</height>
-						<width>125</width>
-						<label>$LOCALIZE[393]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>High Temp Value</description>
-						<posx>22</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>125</width>
-						<label>$INFO[Window(Weather).Property(Day3.HighTemp)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Low Temp Label</description>
-						<posx>148</posx>
-						<posy>198</posy>
-						<height>24</height>
-						<width>125</width>
-						<label>$LOCALIZE[391]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="label">
-						<description>Low Temp Value</description>
-						<posx>148</posx>
-						<posy>160</posy>
-						<height>38</height>
-						<width>125</width>
-						<label>$INFO[Window(Weather).Property(Day3.LowTemp)]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font22</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</control>
+			<control type="label">
+				<description>Album label</description>
+				<posx>154</posx>
+				<posy>582</posy>
+				<width>460</width>
+				<height>31</height>
+				<info>MusicPlayer.Album</info>
+				<align>left</align>
+				<font>font11</font>
+				<scroll>true</scroll>
 			</control>
-			<!-- media infos (music) -->
-			<control type="group">
-				<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
-				<include>media-slide</include>
-				<include>homemediainfo</include>
-				<control type="image">
-					<description>cover image</description>
-					<posx>20</posx>
-					<posy>556</posy>
-					<width>120</width>
-					<height>120</height>
-					<info>MusicPlayer.Cover</info>
-					<aspectratio align="right">keep</aspectratio>
-				</control>
-				<control type="label">
-					<description>Artist label</description>
-					<posx>154</posx>
-					<posy>551</posy>
-					<width>460</width>
-					<height>31</height>
-					<info>MusicPlayer.Artist</info>
-					<align>left</align>
-					<font>font11</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<description>Album label</description>
-					<posx>154</posx>
-					<posy>582</posy>
-					<width>460</width>
-					<height>31</height>
-					<info>MusicPlayer.Album</info>
-					<align>left</align>
-					<font>font11</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>154</posx>
-					<posy>614</posy>
-					<width>460</width>
-					<height>31</height>
-					<info>MusicPlayer.Title</info>
-					<align>left</align>
-					<font>font11</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<description>Time label</description>
-					<posx>154</posx>
-					<posy>645</posy>
-					<width>460</width>
-					<height>31</height>
-					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-					<align>left</align>
-					<font>font11</font>
-				</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>154</posx>
+				<posy>614</posy>
+				<width>460</width>
+				<height>31</height>
+				<info>MusicPlayer.Title</info>
+				<align>left</align>
+				<font>font11</font>
+				<scroll>true</scroll>
 			</control>
-			<!-- media infos (video) -->
-			<control type="group">
-				<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
-				<include>media-slide</include>
-				<include>homemediainfo</include>
-				<control type="videowindow">
-					<description>video preview window</description>
-					<posx>20</posx>
-					<posy>582</posy>
-					<width>166</width>
-					<height>100</height>
-				</control>
-				<control type="label">
-					<description>Now playing</description>
-					<posx>200</posx>
-					<posy>582</posy>
-					<width>280</width>
-					<height>31</height>
-					<label>13350</label>
-					<align>left</align>
-					<font>font12</font>
-					<textcolor>listselectedtext</textcolor>
-				</control>
-				<control type="label">
-					<description>Video Title label</description>
-					<posx>200</posx>
-					<posy>613</posy>
-					<width>420</width>
-					<height>31</height>
-					<info>VideoPlayer.Title</info>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<description>Time label</description>
-					<posx>200</posx>
-					<posy>645</posy>
-					<width>280</width>
-					<height>31</height>
-					<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-					<align>left</align>
-					<font>font12</font>
-					<scroll>true</scroll>
-				</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>154</posx>
+				<posy>645</posy>
+				<width>460</width>
+				<height>31</height>
+				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font11</font>
+			</control>
+		</control>
+		<!-- media infos (video) -->
+		<control type="group">
+			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
+			<include>media-slide</include>
+			<include>homemediainfo</include>
+			<control type="videowindow">
+				<description>video preview window</description>
+				<posx>20</posx>
+				<posy>582</posy>
+				<width>166</width>
+				<height>100</height>
+			</control>
+			<control type="label">
+				<description>Now playing</description>
+				<posx>200</posx>
+				<posy>582</posy>
+				<width>280</width>
+				<height>31</height>
+				<label>13350</label>
+				<align>left</align>
+				<font>font12</font>
+				<textcolor>listselectedtext</textcolor>
+			</control>
+			<control type="label">
+				<description>Video Title label</description>
+				<posx>200</posx>
+				<posy>613</posy>
+				<width>420</width>
+				<height>31</height>
+				<info>VideoPlayer.Title</info>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
+			</control>
+			<control type="label">
+				<description>Time label</description>
+				<posx>200</posx>
+				<posy>645</posy>
+				<width>280</width>
+				<height>31</height>
+				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<align>left</align>
+				<font>font12</font>
+				<scroll>true</scroll>
 			</control>
 		</control>
 	</include>
