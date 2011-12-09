@@ -83,7 +83,8 @@
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<control type="group">
-				<visible>Skin.HasSetting(background-fanart) + !IsEmpty(Skin.String(custom-background))</visible>
+				<!--<visible>Skin.HasSetting(background-fanart)</visible>-->
+				<visible>Skin.HasSetting(background-fanart) + [!(IsEmpty(Skin.String(custom-background)))]</visible>
 				<control type="image">
 					<description>Fanart background</description>
 					<posx>0</posx>

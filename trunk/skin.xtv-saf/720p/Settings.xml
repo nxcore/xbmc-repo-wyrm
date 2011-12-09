@@ -1,6 +1,5 @@
 <window id="4">
 	<defaultcontrol always="true">8999</defaultcontrol>
-	<previouswindow>50</previouswindow>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>background</include>
