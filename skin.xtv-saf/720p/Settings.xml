@@ -1,7 +1,26 @@
 <window id="4">
-	<defaultcontrol always="true">8999</defaultcontrol>
+	<defaultcontrol always="true">8998</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+		<control type="button" id="8998" description="Home Screen has changed, reload">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>0</width>
+			<height>0</height>
+			<onfocus>ReloadSkin()</onfocus>
+			<onfocus>Skin.Reset(home-changed)</onfocus>
+			<onfocus>Control.SetFocus(8999)</onfocus>
+			<visible>Skin.HasSetting(home-changed)</visible>
+		</control>
+		<control type="button" id="8998" description="Home Screen has Not changed">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>0</width>
+			<height>0</height>
+			<onfocus>Control.SetFocus(8999)</onfocus>
+			<visible>!Skin.HasSetting(home-changed)</visible>
+		</control>
+		
 		<include>background</include>
 		<include>xtv-box</include>
 		<include>Fake-Overlay</include>

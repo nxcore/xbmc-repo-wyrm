@@ -10,6 +10,7 @@
 			<width>1</width>
 			<height>1</height>
 			<include condition="Skin.HasSetting(startup-playlist)">StartupPlaylist</include>
+			<include>StartWatchlist</include>
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
@@ -20,11 +21,10 @@
 		<include>memory-low</include>
 		
 		<!-- Use Vertical Home menu-->
-		<!--<include condition="!Skin.HasSetting(horizontal-homemenu)">VertHomeMenu</include>-->
-		<include condition="true">VertHomeMenu</include>
+		<include condition="!Skin.HasSetting(horizontal-homemenu)">VertHomeMenu</include>
 		
 		<!-- Use Horizontal Home menu-->
-		<!--<include condition="Skin.HasSetting(horizontal-homemenu)">HorzHomeMenu</include>-->
+		<include condition="Skin.HasSetting(horizontal-homemenu)">HorzHomeMenu</include>
 		
 		<!-- RSS info -->
 		<include>page-info</include>
