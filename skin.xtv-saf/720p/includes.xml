@@ -1359,17 +1359,10 @@
 	<include name="icon-ani">
 		<!--<animation effect="zoom" start="140,145,230,460"  end="840,20,80,80" time="175" condition="Window.Previous(Home)">WindowOpen</animation>-->
 	</include>
-	<include name="menu-slide">
-		<animation condition="Container(9000).Position(0)" effect="slide" start="0,0" end="0,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9000).Position(1)" effect="slide" start="0,0" end="256,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9000).Position(2)" effect="slide" start="0,0" end="512,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9000).Position(3)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9000).Position(4)" effect="slide" start="0,0" end="1024,0" time="0" reversible="true">Conditional</animation>
-	</include>
 	<include name="media-slide">
-		<animation condition="Container(9000).Position(0)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9000).Position(1)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9000).Position(2)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(0)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(1)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(2)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
 	</include>
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
