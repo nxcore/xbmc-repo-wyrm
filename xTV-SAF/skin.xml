@@ -1,17 +1,12 @@
 <skin>
-  <defaultresolution>pal</defaultresolution>
-  <defaultresolutionwide>pal16x9</defaultresolutionwide>
+  <defaultresolution>720p</defaultresolution>
+  <defaultresolutionwide>720p</defaultresolutionwide>
   <version>2.11</version>
-  <skinversion>1.1.1</skinversion> 
+  <skinversion>1.2.0</skinversion> 
   <debugging>true</debugging>
   
   <credits>
     <skinname>Xtv SAF</skinname>
-    <name>by Terc, mbay, CHI3f, and Franklin Shen [manturafs]</name>
-    <name>I would like to thank:</name>
-    <name>xbox-scene for the knowledge and support</name>
-    <name>Apple for the inspiration</name>
-    <name>Corona for the beer</name>
-    <name>...and everybody who loves xbmc and the skin</name>
+	<name>xTV-SAF, a family friendly remake of a classic skin</name>
   </credits>
 </skin>
