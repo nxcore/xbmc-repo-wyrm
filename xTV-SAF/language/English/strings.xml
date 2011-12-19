@@ -198,7 +198,8 @@
 	<string id="31816">Tilt List View Icons</string>
 	<string id="31840">Tilt Wall View</string>
 	<string id="31817">Lock "View As" Panel</string>
-
+	
+	<string id="31819">Videos In Home Menu</string>
 	<string id="31843">Movies In Home Menu</string>
 	<string id="31844">TV Shows In Home Menu</string>
 	<string id="31842">Music Videos In Home Menu</string>
@@ -213,12 +214,12 @@
 	<string id="31826">Quit From Home Menu</string>
 	<string id="31832">Current Weather On Home Screen</string>
 	<string id="31833">Favourites On Home Menu</string>
+	<string id="31836">Search On Home Menu</string>
 	<string id="31890">Play Disc On Home Menu</string>
 	<string id="31891">Show subtitle button in OSD</string>
 	<string id="31892">Family Mode Toggle on Home Menu</string>
 	<string id="31893">Profile :</string>
 	<string id="31894">Wake external sources</string>
-	<string id="31895">Global Search in Home Menu</string>
 
 	<string id="31850">Script :</string>
 	<string id="31851">Plugin :</string>
