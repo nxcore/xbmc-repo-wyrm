@@ -183,6 +183,7 @@
 					<label>$LOCALIZE[14022] $LOCALIZE[456]</label>
 					<onclick>ReplaceWindow(myvideolibrary)</onclick>
 					<selected>Window.IsVisible(myvideolibrary)</selected>
+					<radioposx>350</radioposx>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>4</onup>
