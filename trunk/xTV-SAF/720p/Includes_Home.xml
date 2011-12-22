@@ -927,505 +927,44 @@
 				<visible>Control.HasFocus(9100)</visible>
 			</control>
 			<!-- Movie icons -->
-			<control type="group">
-				<include>background-fade</include>
-				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
-				<control type="group">
-					<control type="label">
-						<description>Recently added Movies label</description>
-						<posx>55</posx>
-						<posy>50</posy>
-						<height>30</height>
-						<width>400</width>
-						<label>$LOCALIZE[20386]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>font11</font>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-					<control type="list" id="9160">
-						<posx>10</posx>
-						<posy>88</posy>
-						<width>1260</width>
-						<height>225</height>
-						<onleft>9115</onleft>
-						<onright>9115</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-						<viewtype label="31028">list</viewtype>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<orientation>horizontal</orientation>
-						<itemlayout height="168" width="210">
-							<control type="image">
-								<posx>35</posx>
-								<posy>0</posy>
-								<width>120</width>
-								<height>168</height>
-								<aspectratio>stretch</aspectratio>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-							</control>
-						</itemlayout>
-						<focusedlayout height="168" width="210">
-							<control type="image">
-								<posx>35</posx>
-								<posy>0</posy>
-								<width>120</width>
-								<height>168</height>
-								<align>center</align>
-								<aligny>center</aligny>
-								<aspectratio>keep</aspectratio>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-								<visible>!Control.HasFocus(9160)</visible>
-							</control>
-							<control type="image">
-								<posx>30</posx>
-								<posy>-5</posy>
-								<width>130</width>
-								<height>178</height>
-								<aspectratio>stretch</aspectratio>
-								<bordertexture border="5">folder-focus.png</bordertexture>
-								<bordersize>5</bordersize>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-								<visible>Control.HasFocus(9160)</visible>
-							</control>
-							<control type="label">
-								<description>Item label</description>
-								<posx>94</posx>
-								<posy>172</posy>
-								<height>24</height>
-								<width>210</width>
-								<label>$INFO[ListItem.Label]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
-								<shadowcolor>shadow-text</shadowcolor>
-								<visible>Control.HasFocus(9160)</visible>
-							</control>
-						</focusedlayout>
-						<content>
-							<item id="1">
-								<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.1.Thumb)]</icon>
-							</item>
-							<item id="2">
-								<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.2.Thumb)]</icon>
-							</item>
-							<item id="3">
-								<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.3.Thumb)]</icon>
-							</item>
-							<item id="4">
-								<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.4.Thumb)]</icon>
-							</item>
-							<item id="5">
-								<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.5.Thumb)]</icon>
-							</item>
-							<item id="6">
-								<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.6.Thumb)]</icon>
-							</item>
-						</content>
-					</control>
-				</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-video.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9150)</visible>
 			</control>
 			<!-- TV Shows icons -->
-			<control type="group">
-				<include>background-fade</include>
-				<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
-				<control type="label">
-					<description>Header label</description>
-					<posx>55</posx>
-					<posy>50</posy>
-					<height>30</height>
-					<width>400</width>
-					<label>$LOCALIZE[20387]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="list" id="9210">
-					<posx>5</posx>
-					<posy>80</posy>
-					<width>1260</width>
-					<height>210</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<viewtype label="31028">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>horizontal</orientation>
-					<itemlayout height="210" width="252">
-						<control type="image">
-							<posx>40</posx>
-							<posy>50</posy>
-							<width>160</width>
-							<height>120</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-						</control>
-					</itemlayout>
-					<focusedlayout height="210" width="252">
-						<control type="label">
-							<posx>126</posx>
-							<posy>0</posy>
-							<height>50</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<wrapmultiline>true</wrapmultiline>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9210)</visible>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-							<visible>!Control.HasFocus(9210)</visible>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-							<visible>Control.HasFocus(9210)</visible>
-						</control>
-						<control type="label">
-							<posx>126</posx>
-							<posy>174</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9210)</visible>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber)]</label>
-							<label2>$INFO[Window(Home).Property(LatestEpisode.1.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.1.Thumb)]</icon>
-						</item>
-						<item id="2">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber)]</label>
-							<label2>$INFO[Window(Home).Property(LatestEpisode.2.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.2.Thumb)]</icon>
-						</item>
-						<item id="3">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber)]</label>
-							<label2>$INFO[Window(Home).Property(LatestEpisode.3.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.3.Thumb)]</icon>
-						</item>
-						<item id="4">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber)]</label>
-							<label2>$INFO[Window(Home).Property(LatestEpisode.4.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFOWindow(Home).Property(LatestEpisode.4.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.4.Thumb)]</icon>
-						</item>
-						<item id="5">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber)]</label>
-							<label2>$INFO[Window(Home).Property(LatestEpisode.5.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.5.Thumb)]</icon>
-						</item>
-					</content>
-				</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-tv.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9200)</visible>
 			</control>
 			<!-- Music Videos icons -->
-			<control type="group">
-				<include>background-fade</include>
-				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
-				<control type="label">
-					<description>Header label</description>
-					<posx>55</posx>
-					<posy>50</posy>
-					<height>30</height>
-					<width>400</width>
-					<label>$LOCALIZE[20390]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="list" id="9260">
-					<posx>5</posx>
-					<posy>80</posy>
-					<width>1260</width>
-					<height>210</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<viewtype label="31028">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>horizontal</orientation>
-					<itemlayout height="210" width="252">
-						<control type="image">
-							<posx>40</posx>
-							<posy>50</posy>
-							<width>160</width>
-							<height>120</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Icon]</texture>
-						</control>
-					</itemlayout>
-					<focusedlayout height="210" width="252">
-						<control type="label">
-							<posx>126</posx>
-							<posy>15</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>					
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!Control.HasFocus(9260)</visible>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>
-						<control type="label">
-							<posx>126</posx>
-							<posy>174</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.1.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</icon>
-						</item>
-						<item id="2">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</icon>
-						</item>
-						<item id="3">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</icon>
-						</item>
-						<item id="4">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</icon>
-						</item>
-						<item id="5">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestMusicVideo.5.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</icon>
-						</item>
-					</content>
-				</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-musicvideo.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9250)</visible>
 			</control>
 			<!-- Music icons -->
-			<control type="group">
-				<include>background-fade</include>
-				<visible>Control.HasFocus(9300) | Control.HasFocus(9310)</visible>
-				<control type="label">
-					<description>Header label</description>
-					<posx>55</posx>
-					<posy>50</posy>
-					<height>30</height>
-					<width>400</width>
-					<label>$LOCALIZE[359]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="list" id="9310">
-					<posx>5</posx>
-					<posy>80</posy>
-					<width>1260</width>
-					<height>210</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<viewtype label="31028">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>horizontal</orientation>
-					<itemlayout height="210" width="252">
-						<control type="image">
-							<posx>40</posx>
-							<posy>50</posy>
-							<width>160</width>
-							<height>120</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
-						</control>
-					</itemlayout>
-					<focusedlayout height="210" width="252">
-						<control type="label">
-							<posx>126</posx>
-							<posy>0</posy>
-							<height>50</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<wrapmultiline>true</wrapmultiline>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9310)</visible>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!Control.HasFocus(9310)</visible>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>Control.HasFocus(9310)</visible>
-						</control>
-						<control type="label">
-							<posx>126</posx>
-							<posy>174</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9310)</visible>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
-							<label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.1.Thumb)]</icon>
-						</item>
-						<item id="2">
-							<label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
-							<label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.2.Thumb)]</icon>
-						</item>
-						<item id="3">
-							<label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
-							<label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.3.Thumb)]</icon>
-						</item>
-						<item id="4">
-							<label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
-							<label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.4.Thumb)]</icon>
-						</item>
-						<item id="5">
-							<label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
-							<label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.5.Thumb)]</icon>
-						</item>
-					</content>
-				</control>
+			<control type="image">
+				<posx>560</posx>
+				<posy>70</posy>
+				<width>192</width>
+				<height>192</height>
+				<texture>icon-music.png</texture>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Control.HasFocus(9300)</visible>
 			</control>
 			<!-- Pictures icons -->
 			<control type="image">
@@ -2174,7 +1713,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9250</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
+				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="50" width="256">
@@ -2266,7 +1805,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9300</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
+				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="50" width="256">
@@ -2339,7 +1878,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9350</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
+				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="50" width="256">
