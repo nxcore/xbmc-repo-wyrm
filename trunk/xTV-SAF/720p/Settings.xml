@@ -142,19 +142,19 @@
 						<label>13000</label>
 						<onclick>Activatewindow(SystemSettings)</onclick>
 					</item>
-					<item id="8" description="Profiles">
+					<item id="8">
 						<label>13200</label>
 						<onclick>ActivateWindow(Profiles)</onclick>
 					</item>
-					<item id="9" description="File manager">
+					<item id="9">
 						<label>10003</label>
 						<onclick>ActivateWindow(filemanager)</onclick>
 					</item>
-					<item id="10" description="System Info">
+					<item id="10">
 						<label>138</label>
 						<onclick>Activatewindow(systeminfo)</onclick>
 					</item>
-					<item id="11" description="Skin options">
+					<item id="11">
 						<label>166</label>
 						<onclick>ActivateWindow(52)</onclick>
 					</item>
