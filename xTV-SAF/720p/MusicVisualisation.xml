@@ -96,7 +96,8 @@
 					<height>45</height>
 					<info>MusicPlayer.Title</info>
 					<align>left</align>
-					<font>font22</font>
+					<font>font18</font>
+					<scroll>true</scroll>
 				</control>
 				<control type="label">
 					<description>Artist label</description>
@@ -228,7 +229,7 @@
 				<height>40</height>
 				<info>MusicPlayer.Title</info>
 				<align>right</align>
-				<font>font22</font>
+				<font>font18</font>
 				<scroll>true</scroll>
 			</control>
 			<control type="label">

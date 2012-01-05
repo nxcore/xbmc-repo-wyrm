@@ -1,0 +1,98 @@
+<window id="121">
+	<defaultcontrol>2</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>250</posx>
+		<posy>25</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>748</width>
+			<height>594</height>
+			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
+			<colordiffuse>UnFocusedPosters</colordiffuse>
+		</control>	
+		<control type="label" id="2">
+			<description>heading label</description>
+			<posx>18</posx>
+			<posy>12</posy>
+			<width>712</width>
+			<height>37</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+			<label>-</label>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="image">
+			<posx>18</posx>
+			<posy>82</posy>
+			<width>400</width>
+			<height>2</height>
+			<texture>separator.png</texture>
+		</control>
+		<control type="grouplist" id="5">
+			<description>control area</description>
+			<posx>36</posx>
+			<posy>106</posy>
+			<width>694</width>
+			<height>475</height>
+			<itemgap>0</itemgap>
+			<pagecontrol>60</pagecontrol>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+		</control>
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<posx>9</posx>
+			<posy>187</posy>
+			<height>37</height>
+			<width>525</width>
+			<font>font12</font>
+			<textoffsetx>10</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="radiobutton" id="8">
+			<description>Default RadioButton</description>
+			<posx>9</posx>
+			<posy>187</posy>
+			<height>37</height>
+			<width>525</width>
+			<font>font12</font>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<textoffsetx>10</textoffsetx>
+			<aligny>center</aligny>
+			<textureradiofocus>check-box.png</textureradiofocus>
+			<textureradionofocus>check-boxNF.png</textureradionofocus>
+			<textcolor>button-text</textcolor>
+		</control>
+		<control type="spincontrolex" id="9">
+			<description>Default spincontrolex</description>
+			<posx>9</posx>
+			<posy>187</posy>
+			<height>37</height>
+			<width>525</width>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<textureup>scroll-up.png</textureup>
+			<texturedown>scroll-down.png</texturedown>
+			<textureupfocus>scroll-up-focus.png</textureupfocus>
+			<texturedownfocus>scroll-down-focus.png</texturedownfocus>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<selectedcolor>listselectedtext</selectedcolor>
+			<textoffsetx>10</textoffsetx>
+			<aligny>center</aligny>
+			<reverse>yes</reverse>
+		</control>
+	</controls>
+</window>

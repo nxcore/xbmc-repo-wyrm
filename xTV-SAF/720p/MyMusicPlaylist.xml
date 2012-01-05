@@ -41,6 +41,7 @@
 			<width>661</width>
 			<height>10</height>
 			<info>Player.Progress</info>
+			<colordiffuse>ProgressBarColor</colordiffuse>
 			<visible>Player.HasAudio + IntegerGreaterThan(System.Progressbar,0)</visible>
 		</control>
 		<control type="label">

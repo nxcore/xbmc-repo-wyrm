@@ -181,8 +181,9 @@
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
 					<label>$LOCALIZE[14022] $LOCALIZE[456]</label>
-					<onclick>ReplaceWindow(VideoFiles)</onclick>
+					<onclick>ReplaceWindow(VideoLibrary)</onclick>
 					<selected>Window.IsVisible(VideoLibrary)</selected>
+					<enable>Library.HasContent(Video)</enable>
 					<radioposx>350</radioposx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -335,6 +336,7 @@
 					<height>50</height>
 					<font>font12</font>
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>11</onup>
