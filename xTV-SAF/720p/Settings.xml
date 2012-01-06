@@ -123,9 +123,9 @@
 						<onclick>Activatewindow(PicturesSettings)</onclick>
 					</item>
 					<item id="4">
-						<description>Addons</description>
-						<label>24001</label>
-						<onclick>Activatewindow(AddonBrowser)</onclick>
+						<description>Programs</description>
+						<label>10001</label>
+						<onclick>ActivateWindow(ProgramsSettings)</onclick>
 					</item>
 					<item id="5">
 						<description>Weather</description>

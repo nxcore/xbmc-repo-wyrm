@@ -1,6 +1,11 @@
 <window id="106">
 	<defaultcontrol>1000</defaultcontrol>
 	<include>shutdown-ani</include>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
 	<controls>
 		<control type="image" id="997">
 			<description>background top image</description>

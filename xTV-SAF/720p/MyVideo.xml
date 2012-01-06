@@ -209,22 +209,6 @@
 					<radioposx>330</radioposx>
 					<include>button-fade</include>
 				</control>
-				<control type="button" id="10">
-					<description>Show Button</description>
-					<posx>456</posx>
-					<posy>364</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
-					<textoffsetx>10</textoffsetx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>7</onup>
-					<ondown>8</ondown>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
-					<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
-				</control>
 				<control type="button" id="14">
 					<description>Watched Toggle Button</description>
 					<posx>456</posx>
@@ -234,11 +218,10 @@
 					<label>20367</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>10</onup>
+					<onup>7</onup>
 					<ondown>8</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<visible>Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Search Button</description>
