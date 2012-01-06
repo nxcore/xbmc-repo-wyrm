@@ -34,7 +34,7 @@
 			<posx>973</posx>
 			<posy>112</posy>
 			<width>283</width>
-			<height>540</height>
+			<height>538</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
 			<onright>23</onright>
@@ -46,7 +46,7 @@
 			<posx>53</posx>
 			<posy>112</posy>
 			<width>885</width>
-			<height>540</height>
+			<height>538</height>
 			<itemgap>-2</itemgap>
 			<onleft>23</onleft>
 			<onright>3</onright>
