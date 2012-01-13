@@ -320,6 +320,20 @@
 					<visible>Skin.HasSetting(home-programs)</visible>
 				</item>
 				<item>
+					<icon>icon-programs.png</icon>
+					<thumb>icon-programs-blur1.png</thumb>
+					<label>15016</label>
+					<onclick>ActivateWindow(Programs,Games,return)</onclick>
+					<visible>Skin.HasSetting(home-games)</visible>
+				</item>
+				<item>
+					<icon>icon-programs.png</icon>
+					<thumb>icon-programs-blur1.png</thumb>
+					<label>20315</label>
+					<onclick>ActivateWindow(GameSaves,,return)</onclick>
+					<visible>Skin.HasSetting(home-gamesaves)</visible>
+				</item>
+				<item>
 					<icon>icon-photo.png</icon>
 					<thumb>icon-photo-blur1.png</thumb>
 					<label>31031</label>
