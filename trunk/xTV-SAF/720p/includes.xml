@@ -79,11 +79,12 @@
 				<width>1280</width>
 				<height>720</height>
 				<colordiffuse>fanart-background</colordiffuse>
+				<aspectratio>stretch</aspectratio>
 				<info>Skin.String(custom-background)</info>
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<control type="group">
-				<visible>Skin.HasSetting(background-fanart) + !IsEmpty(Skin.String(custom-background))</visible>
+				<visible>Skin.HasSetting(background-fanart)</visible>
 				<control type="image">
 					<description>Fanart background</description>
 					<posx>0</posx>
