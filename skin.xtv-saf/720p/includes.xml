@@ -83,8 +83,7 @@
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<control type="group">
-				<!--<visible>Skin.HasSetting(background-fanart)</visible>-->
-				<visible>Skin.HasSetting(background-fanart) + [!(IsEmpty(Skin.String(custom-background)))]</visible>
+				<visible>Skin.HasSetting(background-fanart)</visible>
 				<control type="image">
 					<description>Fanart background</description>
 					<posx>0</posx>
@@ -683,7 +682,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>System.IdleTime(1) + [!(IsEmpty(ListItem.Plot)) + !(IsEmpty(listitem.Duration))]</visible>
+				<visible>System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
 				<animation effect="fade" time="300">Visible</animation>
 				<!-- Star Rating -->
 				<control type="image">

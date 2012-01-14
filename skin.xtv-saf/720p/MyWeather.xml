@@ -42,7 +42,7 @@
 			<scroll>false</scroll>
 			<align>left</align>
 			<aligny>center</aligny>
-			<label>$INFO[Weather.Location]</label>
+			<label>$INFO[Window(Weather).Property(Location)]</label>
 		</control>
 		<control type="label">
 			<description>update label</description>
