@@ -1458,11 +1458,11 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<font>font12</font>
-						<label>Download TV logos</label>
-						<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=False)</onclick>
+						<label>Download Media artwork</label>
+						<onclick>XBMC.runscript(script.artwork.downloader)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
-						<enable>System.HasAddon(script.logo-downloader)</enable>
+						<enable>System.HasAddon(script.artwork.downloader)</enable>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
