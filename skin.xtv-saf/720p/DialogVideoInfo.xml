@@ -222,13 +222,13 @@
 				<posx>531</posx>
 				<posy>292</posy>
 				<width>654</width>
-				<height>295</height>
+				<height>298</height>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<align>justify</align>
-				<pagecontrol>23</pagecontrol>
+				<pagecontrol>923</pagecontrol>
 				<visible>!substring(Control.GetLabel(5),plot)</visible>
 				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
 			</control>
@@ -259,7 +259,7 @@
 				<posx>531</posx>
 				<posy>292</posy>
 				<width>708</width>
-				<height>287</height>
+				<height>305</height>
 				<onleft>999</onleft>
 				<onright>923</onright>
 				<onup>50</onup>
@@ -269,19 +269,19 @@
 				<include>list-fade</include>
 				<scrolltime>1</scrolltime>
 				<orientation>vertical</orientation>
-				<itemgap>7</itemgap>
-				<itemlayout height="32" width="375">
+				<itemgap>1</itemgap>
+				<itemlayout height="50" width="375">
 					<control type="image">
 						<width>663</width>
-						<height>37</height>
+						<height>50</height>
 						<posx>0</posx>
 						<posy>1</posy>
 					</control>
 					<control type="label">
-						<posx>17</posx>
-						<posy>3</posy>
+						<posx>20</posx>
+						<posy>-2</posy>
 						<width>610</width>
-						<height>46</height>
+						<height>50</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -290,21 +290,21 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="32" width="375">
+				<focusedlayout height="50" width="375">
 					<control type="image">
 						<posx>3</posx>
-						<posy>2</posy>
+						<posy>1</posy>
 						<width>663</width>
-						<height>46</height>
+						<height>50</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<texture border="2">default-button.png</texture>
 					</control>
 					<control type="label">
-						<posx>17</posx>
-						<posy>3</posy>
+						<posx>20</posx>
+						<posy>-2</posy>
 						<width>610</width>
-						<height>37</height>
+						<height>50</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -535,9 +535,9 @@
 					<font>font11</font>
 					<align>center</align>
 					<label>31694</label>
-					<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
+					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,medianame=$INFO[ListItem.TVShowTitle],clearlogo)</onclick>
 					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows)</visible>
+ 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
 				</control>
 				<control type="button" id="1114">
 					<description>Get TV Tune</description>
@@ -548,16 +548,16 @@
 					<label>31695</label>
 					<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
+					<visible>System.HasAddon(script.tvtunes) + Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
 				</control>
 			</control>
 		</control>
 		<!-- Scrollbar -->
 		<control type="scrollbar" id="923">
 			<posx>1230</posx>
-			<posy>337</posy>
+			<posy>340</posy>
 			<width>24</width>
-			<height>300</height>
+			<height>305</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
