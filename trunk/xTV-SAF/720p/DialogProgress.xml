@@ -22,7 +22,7 @@
 			<control type="label" id="1">
 				<description>dialog Heading</description>
 				<posx>336</posx>
-				<posy>272</posy>
+				<posy>275</posy>
 				<width>637</width>
 				<height>25</height>
 				<label>-</label>
@@ -45,7 +45,7 @@
 			<control type="label" id="3">
 				<description>dialog line 2</description>
 				<posx>336</posx>
-				<posy>350</posy>
+				<posy>355</posy>
 				<width>637</width>
 				<height>25</height>
 				<haspath>yes</haspath>
@@ -57,7 +57,7 @@
 			<control type="label" id="4">
 				<description>dialog line 3</description>
 				<posx>336</posx>
-				<posy>375</posy>
+				<posy>380</posy>
 				<width>637</width>
 				<height>25</height>
 				<haspath>yes</haspath>
@@ -69,12 +69,11 @@
 			<control type="progress">
 				<description>progress control</description>
 				<posx>336</posx>
-				<posy>407</posy>
+				<posy>410</posy>
 				<width>601</width>
 				<height>15</height>
 				<info>System.Progressbar</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
-				<visible>IntegerGreaterThan(System.Progressbar,0)</visible>
 			</control>
 			<control type="button" id="10">
 				<description>Cancel button</description>
