@@ -13,8 +13,8 @@
 			<description>Video Label</description>
 			<posx>946</posx>
 			<posy>25</posy>
-			<width>309</width>
-			<height>31</height>
+			<width>310</width>
+			<height>50</height>
 			<label>$LOCALIZE[10522]</label>
 			<font>font18</font>
 			<wrapmultiline>true</wrapmultiline>
@@ -51,7 +51,7 @@
 			<height>15</height>
 			<info>Player.Progress</info>
 			<colordiffuse>ProgressBarColor</colordiffuse>
-			<visible>Player.HasVideo + IntegerGreaterThan(System.Progressbar,0)</visible>
+			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="label">
 			<description>Time/Duration Label</description>
