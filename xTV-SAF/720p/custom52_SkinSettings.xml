@@ -827,22 +827,6 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="406">
-						<description>Background Artistslideshow Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>Use Artistslideshow script</label>
-						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
-						<selected>Skin.HasSetting(background-slideshow)</selected>
-						<enable>System.HasAddon(script.artistslideshow)</enable>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
 					<control type="radiobutton" id="407">
 						<description>Fanart as Thumb Toggle</description>
 						<font>font12</font>
