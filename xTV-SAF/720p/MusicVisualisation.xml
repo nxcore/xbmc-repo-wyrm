@@ -152,17 +152,6 @@
 					<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 					<colordiffuse>ProgressBarColor</colordiffuse>
 				</control>
-				<control type="slider">
-					<description>Seek Slider</description>
-					<posx>450</posx>
-					<posy>674</posy>
-					<width>790</width>
-					<height>20</height>
-					<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
-					<textureslidernib>progress-marker.png</textureslidernib>
-					<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
-					<action>seek</action>
-				</control>
 			</control>
 		</control>
 		<!-- "Now Playing" Stuff -->
@@ -274,17 +263,6 @@
 				<texturebg border="14,0,14,0">progress-background.png</texturebg>
 				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 				<colordiffuse>ProgressBarColor</colordiffuse>
-			</control>
-			<control type="slider">
-				<description>Seek Slider</description>
-				<posx>100</posx>
-				<posy>608</posy>
-				<width>440</width>
-				<height>20</height>
-				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
-				<textureslidernib>progress-marker.png</textureslidernib>
-				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
-				<action>seek</action>
 			</control>
 		</control>
 		<!-- Codec -->
