@@ -190,7 +190,7 @@
 					<icon>icon-video.png</icon>
 					<thumb>icon-video-blur1.png</thumb>
 					<label>3</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
 					<visible>Skin.HasSetting(home-video)</visible>
 				</item>
 				<item>

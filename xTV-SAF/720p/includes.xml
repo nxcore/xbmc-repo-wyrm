@@ -263,6 +263,10 @@
 	<include name="MovieLibraryStudios">
 		<onclick>ActivateWindow(VideoLibrary,MovieStudios,return)</onclick>
 	</include>
+	<!-- MovieLibraryFiles Include -->
+	<include name="MovieLibraryFiles">
+		<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
+	</include>
 	
 	<!-- TVLibraryTitle Include -->
 	<include name="TVLibraryTitle">
@@ -291,6 +295,10 @@
 	<!-- TVLibraryStudios Include -->
 	<include name="TVLibraryStudios">
 		<onclick>ActivateWindow(VideoLibrary,TvShowStudios,return)</onclick>
+	</include>
+	<!-- TVLibraryFiles Include -->
+	<include name="TVLibraryFiles">
+		<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
 	</include>
 	
 	<!-- MusicVideoLibraryTitle Include -->
@@ -324,6 +332,10 @@
 	<!-- MusicVideoLibraryStudios Include -->
 	<include name="MusicVideoLibraryStudios">
 		<onclick>ActivateWindow(VideoLibrary,MusicVideoStudios,return)</onclick>
+	</include>
+	<!-- MusicVideoLibraryFiles Include -->
+	<include name="MusicVideoLibraryFiles">
+		<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
 	</include>
 	
 	<!-- MusicVideoLibraryGenres Include -->
@@ -369,6 +381,10 @@
 	<!-- MusicLibrarySingles Include -->
 	<include name="MusicLibrarySingles">
 		<onclick>ActivateWindow(MusicLibrary,Singles,return)</onclick>
+	</include>
+	<!-- MusicLibraryFiles Include -->
+	<include name="MusicLibraryFiles">
+		<onclick>ActivateWindow(MyMusic,,return)</onclick>
 	</include>
 	
 	<!-- Start Current Sort Letter -->
