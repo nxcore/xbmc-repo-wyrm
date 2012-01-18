@@ -43,7 +43,7 @@
 			<texture>background.png</texture>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(HomeViewToggle) + [Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]]</visible>
+			<visible>Skin.HasSetting(HomeViewToggle) + (Player.HasVideo | (Player.HasAudio + Visualisation.Enabled))</visible>
 			<control type="visualisation">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -71,7 +71,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(HomeViewToggle) | !(Player.HasVideo | (Player.HasAudio + Visualisation.Enabled))</visible>
+			<visible>!(Skin.HasSetting(HomeViewToggle)) | !(Player.HasVideo | (Player.HasAudio + Visualisation.Enabled))</visible>
 			<control type="image">
 				<description>custom background</description>
 				<posx>0</posx>
