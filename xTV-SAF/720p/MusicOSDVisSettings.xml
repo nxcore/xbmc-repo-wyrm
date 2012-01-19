@@ -13,7 +13,7 @@
 			<width>748</width>
 			<height>594</height>
 			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
-			<colordiffuse>UnFocusedPosters</colordiffuse>
+			<!--<colordiffuse>UnFocusedPosters</colordiffuse>-->
 		</control>	
 		<control type="label" id="2">
 			<description>heading label</description>
