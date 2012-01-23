@@ -8,6 +8,15 @@
 	</coordinates>
 	<controls>
 		<control type="image">
+			<description>Panel</description>
+			<posx>-499</posx>
+			<posy>-25</posy>
+			<height>720</height>
+			<width>1280</width>
+			<texture>background.png</texture>
+			<colordiffuse>osd-background</colordiffuse>
+		</control>
+		<control type="image">
 			<description>Visualisation Preset Background image</description>
 			<posx>-17</posx>
 			<posy>-12</posy>
@@ -46,7 +55,7 @@
 			<posx>-1</posx>
 			<posy>50</posy>
 			<width>720</width>
-			<height>550</height>
+			<height>500</height>
 			<spinposx>371</spinposx>
 			<spinposy>390</spinposy>
 			<font>font12</font>
@@ -60,10 +69,10 @@
 			<ondown>2</ondown>
 		</control>
 		<control type="scrollbar" id="60">
-			<posx>730</posx>
+			<posx>710</posx>
             <posy>50</posy>
             <width>14</width>
-            <height>550</height>
+            <height>500</height>
             <texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
             <texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
             <texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
@@ -78,6 +87,5 @@
             <colordiffuse>ScrollBarColor</colordiffuse>
             <visible>Skin.HasSetting(sbar)</visible>
         </control>
-
 	</controls>
 </window>
