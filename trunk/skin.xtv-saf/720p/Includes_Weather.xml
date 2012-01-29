@@ -1019,7 +1019,7 @@
 							<width>198</width>
 							<height>25</height>
 							<align>center</align>
-							<font>font13</font>
+							<font>font11</font>
 							<label fallback="-">$LOCALIZE[419]: $INFO[Window.Property(Daily.5.HighTemperature)]$INFO[System.TemperatureUnits]</label>
 						</control>
 						<control type="label">
@@ -1944,7 +1944,7 @@
 			<posx>17</posx>
 			<posy>162</posy>
 			<width>1239</width>
-			<height>500</height>
+			<height>520</height>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
 			<onleft>6000</onleft>
@@ -1958,7 +1958,7 @@
 			<visible>Skin.String(WeatherPlus,2) + !IsEmpty(Window.Property(Daily.1.Outlook))</visible>
 			<control type="group">
 				<description>Hourly.1</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2034,7 +2034,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.2</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2110,7 +2110,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.3</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2186,7 +2186,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.4</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2262,7 +2262,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.5</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2338,7 +2338,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.6</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2414,7 +2414,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.7</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2490,7 +2490,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.8</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2566,7 +2566,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.9</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2642,7 +2642,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.10</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2718,7 +2718,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.11</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
@@ -2794,7 +2794,7 @@
 			</control>
 			<control type="group">
 				<description>Hourly.12</description>
-				<height>112</height>
+				<height>104</height>
 				<control type="label">
 					<posx>0</posx>
 					<posy>12</posy>
