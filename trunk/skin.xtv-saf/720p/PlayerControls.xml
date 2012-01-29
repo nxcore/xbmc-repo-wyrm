@@ -2,7 +2,7 @@
 	<defaultcontrol always="false">214</defaultcontrol>
 	<animation effect="fade" start="0" time="100">WindowOpen</animation>
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
-	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation) + !Window.IsActive(KarVisualisation)</visible>
+	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation) + !Window.IsActive(2009) + !Window.IsActive(121) + !Window.IsActive(122)</visible>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -14,7 +14,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>900</height>
+			<height>720</height>
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
@@ -132,12 +132,36 @@
 			<height>20</height>
 			<visible>Player.HasAudio</visible>
 		</control>
+		<control type="progress">
+			<description>Progressbar</description>
+			<posx>525</posx>
+			<posy>224</posy>
+			<width>440</width>
+			<height>16</height>
+			<info>Player.Progress</info>
+			<texturebg border="14,0,14,0">progress-background.png</texturebg>
+			<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+			<colordiffuse>ProgressBarColor</colordiffuse>
+			<visible>Player.HasAudio</visible>
+		</control>
+		<control type="slider">
+			<description>Seek Slider</description>
+			<posx>520</posx>
+			<posy>222</posy>
+			<width>440</width>
+			<height>20</height>
+			<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
+			<textureslidernib>progress-marker.png</textureslidernib>
+			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+			<action>seek</action>
+			<visible>Player.HasAudio</visible>
+		</control>
 		<!-- End of Media Info-->
 		<!-- Player buttons -->
 		<control type="grouplist" id="999">
 			<description>Group OSD Button</description>
 			<posx>354</posx>
-			<posy>240</posy>
+			<posy>245</posy>
 			<width>778</width>
 			<height>40</height>
 			<itemgap>3</itemgap>
@@ -291,6 +315,21 @@
 				<texturenofocus>osd-btn-rec.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Record)</onclick>
 				<visible>Player.CanRecord</visible>
+			</control>
+			<control type="image" id="940">
+				<description>Dummy</description>
+				<width>10</width>
+				<height>40</height>
+				<texture>-</texture>
+			</control>
+			<control type="button" id="220">
+				<description>Popup Vis Preset List</description>
+				<width>40</width>
+				<height>40</height>
+				<texturefocus>osd-btn-vis-focus.png</texturefocus>
+				<texturenofocus>osd-btn-vis.png</texturenofocus>
+				<onclick>XBMC.ActivateWindow(122)</onclick>
+				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="button" id="219">
 				<description>Popup Vis Settings</description>
