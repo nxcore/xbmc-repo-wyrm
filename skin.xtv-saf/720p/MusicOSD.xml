@@ -181,6 +181,20 @@
 				<onclick>XBMC.PlayerControl(Record)</onclick>
 				<visible>Player.CanRecord</visible>
 			</control>
+			<control type="image" id="940">
+				<description>Dummy</description>
+				<width>42</width>
+				<height>60</height>
+				<texture>-</texture>
+			</control>	
+			<control type="button" id="220">
+				<description>Popup Vis Preset List</description>
+				<width>60</width>
+				<height>60</height>
+				<texturefocus>osd-btn-vis-focus.png</texturefocus>
+				<texturenofocus>osd-btn-vis.png</texturenofocus>
+				<onclick>XBMC.ActivateWindow(122)</onclick>
+			</control>
 			<control type="button" id="219">
 				<description>Popup Vis Settings</description>
 				<width>60</width>
