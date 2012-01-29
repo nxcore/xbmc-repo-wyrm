@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">65</defaultcontrol>
 	<coordinates>
 		<posx>0</posx>
-		<posy>250</posy>
+		<posy>280</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
@@ -12,52 +12,52 @@
 			<control type="image">
 				<description>background</description>
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>20</posy>
 				<width>1280</width>
-				<height>482</height>
-				<colordiffuse>FF101005</colordiffuse>
-				<texture>volume-back.png</texture>
-				<!--<texture>background.png</texture>-->
+				<height>420</height>
+				<colordiffuse>FF363636</colordiffuse>
+				<texture>white.png</texture>
 			</control>
 			<control type="label" id="311">
 				<description>dialog Heading</description>
-				<posx>97</posx>
-				<posy>22</posy>
+				<posx>104</posx>
+				<posy>56</posy>
 				<width>1062</width>
 				<height>37</height>
-				<font>font22</font>
-				<textcolor>button-text</textcolor>
+				<font>font18</font>
+				<textcolor>disabled-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
-				<align>center</align>
+				<align>left</align>
 				<aligny>center</aligny>
+				<visible>IsEmpty(Control.GetLabel(310))</visible>
 			</control>
-			<!--<control type="image">
+			<control type="image">
 				<posx>74</posx>
-				<posy>64</posy>
+				<posy>54</posy>
 				<width>1122</width>
-				<height>50</height>
-				<texture border="8">scrollbar_bar.png</texture>
+				<height>48</height>
+				<texture border="8">scrollbar_background.png</texture>
 				<colordiffuse>FFFFFFFF</colordiffuse>
-			</control>-->
+			</control>
 			<control type="label" id="310">
 				<description>Edit Text</description>
 				<posx>97</posx>
-				<posy>66</posy>
+				<posy>56</posy>
 				<width>1062</width>
 				<height>37</height>
-				<font>font22</font>
-				<align>center</align>
+				<font>font18</font>
+				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="group">
 				<posx>0</posx>
-				<posy>131</posy>
+				<posy>120</posy>
 				<control type="button" id="49">
 					<description>'1' button</description>
 					<posx>88</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>8</onleft>
 					<onright>50</onright>
 					<onup>307</onup>
@@ -68,15 +68,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="50">
 					<description>'2' button</description>
 					<posx>177</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>49</onleft>
 					<onright>51</onright>
 					<onup>307</onup>
@@ -87,15 +86,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="51">
 					<description>'3' button</description>
 					<posx>265</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>50</onleft>
 					<onright>52</onright>
 					<onup>32</onup>
@@ -106,15 +104,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="52">
 					<description>'4' button</description>
 					<posx>354</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>51</onleft>
 					<onright>53</onright>
 					<onup>32</onup>
@@ -125,15 +122,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="53">
 					<description>'5' button</description>
 					<posx>442</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>52</onleft>
 					<onright>54</onright>
 					<onup>32</onup>
@@ -144,15 +140,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="54">
 					<description>'6' button</description>
 					<posx>531</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>53</onleft>
 					<onright>55</onright>
 					<onup>32</onup>
@@ -163,15 +158,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="55">
 					<description>'7' button</description>
 					<posx>619</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>54</onleft>
 					<onright>56</onright>
 					<onup>32</onup>
@@ -182,15 +176,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="56">
 					<description>'8' button</description>
 					<posx>708</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>55</onleft>
 					<onright>57</onright>
 					<onup>32</onup>
@@ -201,15 +194,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="57">
 					<description>'9' button</description>
 					<posx>796</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>56</onleft>
 					<onright>48</onright>
 					<onup>304</onup>
@@ -220,15 +212,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="48">
 					<description>'0' button</description>
 					<posx>885</posx>
 					<posy>0</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>57</onleft>
 					<onright>8</onright>
 					<onup>306</onup>
@@ -239,15 +230,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="8">
 					<description>'BACKSPACE' button</description>
 					<posx>973</posx>
 					<posy>0</posy>
 					<width>208</width>
-					<height>60</height>
+					<height>48</height>
 					<label>20181</label>
 					<onleft>48</onleft>
 					<onright>49</onright>
@@ -259,15 +249,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font13</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="81">
 					<description>'Q' button</description>
 					<posx>106</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>300</onleft>
 					<onright>87</onright>
 					<onup>49</onup>
@@ -278,15 +267,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="87">
 					<description>'W' button</description>
 					<posx>194</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>81</onleft>
 					<onright>69</onright>
 					<onup>50</onup>
@@ -297,15 +285,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="69">
 					<description>'E' button</description>
 					<posx>283</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>87</onleft>
 					<onright>82</onright>
 					<onup>51</onup>
@@ -316,15 +303,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="82">
 					<description>'R' button</description>
 					<posx>371</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>69</onleft>
 					<onright>84</onright>
 					<onup>52</onup>
@@ -335,15 +321,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="84">
 					<description>'T' button</description>
 					<posx>460</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>82</onleft>
 					<onright>89</onright>
 					<onup>53</onup>
@@ -354,15 +339,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="89">
 					<description>'Y' button</description>
 					<posx>548</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>84</onleft>
 					<onright>85</onright>
 					<onup>54</onup>
@@ -373,15 +357,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="85">
 					<description>'U' button</description>
 					<posx>637</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>89</onleft>
 					<onright>73</onright>
 					<onup>55</onup>
@@ -392,15 +375,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="73">
 					<description>'I' button</description>
 					<posx>725</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>85</onleft>
 					<onright>79</onright>
 					<onup>56</onup>
@@ -411,15 +393,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="79">
 					<description>'O' button</description>
 					<posx>814</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>73</onleft>
 					<onright>80</onright>
 					<onup>57</onup>
@@ -430,15 +411,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="80">
 					<description>'P' button</description>
 					<posx>902</posx>
 					<posy>62</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>79</onleft>
 					<onright>300</onright>
 					<onup>48</onup>
@@ -449,15 +429,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="300">
 					<description>DONE button</description>
 					<posx>991</posx>
 					<posy>62</posy>
 					<width>173</width>
-					<height>60</height>
+					<height>48</height>
 					<label>20177</label>
 					<onleft>80</onleft>
 					<onright>81</onright>
@@ -468,15 +447,14 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="65">
 					<description>'A' button</description>
 					<posx>123</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>303</onleft>
 					<onright>83</onright>
 					<onup>81</onup>
@@ -487,15 +465,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="83">
 					<description>'S' button</description>
 					<posx>212</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>65</onleft>
 					<onright>68</onright>
 					<onup>87</onup>
@@ -506,15 +483,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="68">
 					<description>'D' button</description>
 					<posx>300</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>83</onleft>
 					<onright>70</onright>
 					<onup>69</onup>
@@ -525,15 +501,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="70">
 					<description>'F' button</description>
 					<posx>389</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>68</onleft>
 					<onright>71</onright>
 					<onup>82</onup>
@@ -544,15 +519,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="71">
 					<description>'G' button</description>
 					<posx>477</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>70</onleft>
 					<onright>72</onright>
 					<onup>84</onup>
@@ -563,15 +537,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="72">
 					<description>'H' button</description>
 					<posx>566</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>71</onleft>
 					<onright>74</onright>
 					<onup>89</onup>
@@ -582,15 +555,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="74">
 					<description>'J' button</description>
 					<posx>654</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>72</onleft>
 					<onright>75</onright>
 					<onup>85</onup>
@@ -601,15 +573,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="75">
 					<description>'K' button</description>
 					<posx>743</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>74</onleft>
 					<onright>76</onright>
 					<onup>73</onup>
@@ -620,15 +591,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="76">
 					<description>'L' button</description>
 					<posx>831</posx>
 					<posy>125</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>75</onleft>
 					<onright>303</onright>
 					<onup>79</onup>
@@ -639,15 +609,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="togglebutton" id="303">
 					<description>CAPS LOCK button</description>
 					<posx>920</posx>
 					<posy>125</posy>
 					<width>223</width>
-					<height>60</height>
+					<height>48</height>
 					<label>20179</label>
 					<onleft>76</onleft>
 					<onright>65</onright>
@@ -660,15 +629,14 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="90">
 					<description>'Z' button</description>
 					<posx>138</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>302</onleft>
 					<onright>88</onright>
 					<onup>65</onup>
@@ -679,15 +647,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="88">
 					<description>'X' button</description>
 					<posx>230</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>90</onleft>
 					<onright>67</onright>
 					<onup>83</onup>
@@ -698,15 +665,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="67">
 					<description>'C' button</description>
 					<posx>318</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>88</onleft>
 					<onright>86</onright>
 					<onup>68</onup>
@@ -717,15 +683,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="86">
 					<description>'V' button</description>
 					<posx>407</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>67</onleft>
 					<onright>66</onright>
 					<onup>70</onup>
@@ -736,15 +701,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="66">
 					<description>'B' button</description>
 					<posx>495</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>86</onleft>
 					<onright>78</onright>
 					<onup>71</onup>
@@ -755,15 +719,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="78">
 					<description>'N' button</description>
 					<posx>584</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>66</onleft>
 					<onright>77</onright>
 					<onup>72</onup>
@@ -774,15 +737,14 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="77">
 					<description>'M' button</description>
 					<posx>672</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<onleft>78</onleft>
 					<onright>305</onright>
 					<onup>74</onup>
@@ -793,19 +755,17 @@
 					<aligny>center</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="305">
 					<description>previous button</description>
 					<posx>761</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<label>&lt;</label>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<onleft>77</onleft>
@@ -820,12 +780,11 @@
 					<description>next button</description>
 					<posx>849</posx>
 					<posy>187</posy>
-					<width>84</width>
-					<height>60</height>
+					<width>74</width>
+					<height>48</height>
 					<label>&gt;</label>
 					<font>font18</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<onleft>305</onleft>
@@ -841,7 +800,7 @@
 					<posx>938</posx>
 					<posy>187</posy>
 					<width>184</width>
-					<height>60</height>
+					<height>48</height>
 					<label>20178</label>
 					<onleft>306</onleft>
 					<onright>90</onright>
@@ -854,21 +813,19 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 				<control type="button" id="307">
 					<description>IP Input button</description>
 					<posx>88</posx>
 					<posy>250</posy>
 					<width>261</width>
-					<height>60</height>
+					<height>48</height>
 					<texturenofocus border="24">key-nofocus.png</texturenofocus>
 					<texturefocus border="24">key-focus.png</texturefocus>
 					<label>1006</label>
 					<font>font13</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<onleft>304</onleft>
@@ -878,10 +835,10 @@
 				</control>
 				<control type="button" id="32">
 					<description>SPACE button</description>
-					<posx>354</posx>
+					<posx>364</posx>
 					<posy>250</posy>
-					<width>548</width>
-					<height>60</height>
+					<width>528</width>
+					<height>48</height>
 					<onleft>307</onleft>
 					<onright>304</onright>
 					<onup>67</onup>
@@ -896,7 +853,7 @@
 					<posx>906</posx>
 					<posy>250</posy>
 					<width>261</width>
-					<height>60</height>
+					<height>48</height>
 					<label>20180</label>
 					<onleft>32</onleft>
 					<onright>307</onright>
@@ -909,8 +866,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>FF000000</textcolor>
-					<shadowcolor>00000000</shadowcolor>
+					<textcolor>shadow-text</textcolor>
 				</control>
 			</control>
 		</control>
