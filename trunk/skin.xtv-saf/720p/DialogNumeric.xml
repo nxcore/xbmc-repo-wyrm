@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">21</defaultcontrol>
 	<coordinates>
 		<posx>0</posx>
-		<posy>287</posy>
+		<posy>280</posy>
 	</coordinates>
 	<controls>
 		<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
@@ -10,35 +10,37 @@
 		<control type="image">
 			<description>background</description>
 			<posx>0</posx>
-			<posy>0</posy>
+			<posy>20</posy>
 			<width>1280</width>
-			<height>432</height>
-			<texture>background.png</texture>
+			<height>420</height>
+			<colordiffuse>FF363636</colordiffuse>
+			<texture>white.png</texture>
 		</control>
 		<control type="label" id="1">
 			<description>dialog Heading</description>
 			<posx>97</posx>
-			<posy>22</posy>
+			<posy>56</posy>
 			<width>1062</width>
 			<height>37</height>
 			<font>font22</font>
-			<textcolor>button-text</textcolor>
+			<textcolor>disabled-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<align>center</align>
 			<aligny>center</aligny>
+			<visible>IsEmpty(Control.GetLabel(4))</visible>
 		</control>
-		<!--<control type="image">
+		<control type="image">
 			<posx>74</posx>
-			<posy>68</posy>
+			<posy>56</posy>
 			<width>1122</width>
-			<height>45</height>
-			<texture border="8">progress-background.png</texture>
-			<colordiffuse>ProgressBarColor</colordiffuse>
-		</control>-->
+			<height>48</height>
+			<texture border="8">scrollbar_background.png</texture>
+			<colordiffuse>FFFFFFFF</colordiffuse>
+		</control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
 			<posx>97</posx>
-			<posy>72</posy>
+			<posy>58</posy>
 			<width>1062</width>
 			<height>37</height>
 			<font>font22</font>
@@ -53,8 +55,8 @@
 				<description>1 button</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -73,8 +75,8 @@
 				<description>2 button</description>
 				<posx>88</posx>
 				<posy>0</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -93,8 +95,8 @@
 				<description>3 button</description>
 				<posx>177</posx>
 				<posy>0</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -113,8 +115,8 @@
 				<description>Backspace button</description>
 				<posx>265</posx>
 				<posy>0</posy>
-				<width>84</width>
-				<height>125</height>
+				<width>74</width>
+				<height>110</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -133,8 +135,8 @@
 				<description>4 button</description>
 				<posx>0</posx>
 				<posy>62</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -153,8 +155,8 @@
 				<description>5 button</description>
 				<posx>88</posx>
 				<posy>62</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -173,8 +175,8 @@
 				<description>6 button</description>
 				<posx>177</posx>
 				<posy>62</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -193,8 +195,8 @@
 				<description>7 button</description>
 				<posx>0</posx>
 				<posy>125</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -213,8 +215,8 @@
 				<description>8 button</description>
 				<posx>88</posx>
 				<posy>125</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -233,8 +235,8 @@
 				<description>9 button</description>
 				<posx>177</posx>
 				<posy>125</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -253,8 +255,8 @@
 				<description>Done button</description>
 				<posx>265</posx>
 				<posy>125</posy>
-				<width>84</width>
-				<height>125</height>
+				<width>74</width>
+				<height>110</height>
 				<font>font13</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -274,8 +276,8 @@
 				<description>prev button</description>
 				<posx>0</posx>
 				<posy>187</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -294,8 +296,8 @@
 				<description>0 button</description>
 				<posx>88</posx>
 				<posy>187</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
@@ -314,8 +316,8 @@
 				<description>next button</description>
 				<posx>177</posx>
 				<posy>187</posy>
-				<width>84</width>
-				<height>60</height>
+				<width>74</width>
+				<height>48</height>
 				<font>font18</font>
 				<textcolor>FF000000</textcolor>
 				<shadowcolor>00000000</shadowcolor>
