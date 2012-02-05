@@ -1,0 +1,58 @@
+﻿<window id="110">
+	<defaultcontrol>0</defaultcontrol>
+	<include>shutdown-ani</include>
+	<controls>
+		<control type="image">
+			<posx>292</posx>
+			<posy>256</posy>
+			<width>690</width>
+			<height>237</height>
+			<texture border="8" diffuse="RndSquMask.png">button-menu-background.png</texture>
+			<colordiffuse>dialog-background</colordiffuse>
+		</control>
+		<control type="label" id="1">
+			<description>dialog Heading</description>
+			<posx>336</posx>
+			<posy>272</posy>
+			<width>600</width>
+			<height>37</height>
+			<label>12325</label>
+			<font>font13</font>
+            <textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="2">
+			<description>dialog line 1</description>
+			<posx>336</posx>
+			<posy>325</posy>
+			<width>600</width>
+			<height>37</height>
+			<label>12330</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="3">
+			<description>dialog line 2</description>
+			<posx>336</posx>
+			<posy>350</posy>
+			<width>600</width>
+			<height>37</height>
+			<label>12331</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label" id="4">
+			<description>dialog line 3</description>
+			<posx>336</posx>
+			<posy>375</posy>
+			<width>600</width>
+			<height>37</height>
+			<label>12323</label>
+			<font>font12</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+	</controls>
+</window>
