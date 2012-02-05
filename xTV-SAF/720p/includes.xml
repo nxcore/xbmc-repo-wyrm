@@ -43,35 +43,6 @@
 			<texture>background.png</texture>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(HomeViewToggle) + [Player.HasVideo | [Player.HasAudio + Visualisation.Enabled]]</visible>
-			<control type="visualisation">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>scale</aspectratio>
-				<visible>Player.HasAudio + Visualisation.Enabled</visible>
-			</control>
-			<control type="videowindow">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>scale</aspectratio>
-				<visible>Player.HasVideo</visible>
-			</control>
-			<control type="image">
-				<description>background to cover video and visualisation backgrounds</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>mask-background</colordiffuse>
-				<texture>background.png</texture>
-			</control>
-		</control>
-		<control type="group">
-			<visible>!Skin.HasSetting(HomeViewToggle) + !Player.HasVideo + ![Player.HasAudio + Visualisation.Enabled]</visible>
 			<control type="image">
 				<description>custom background</description>
 				<posx>0</posx>
@@ -98,51 +69,35 @@
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
-				<control type="group">
-					<visible>IsEmpty(ListItem.Property(Fanart_Image)) + IsEmpty(Fanart.Image) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,special://) | substring(Container.FolderPath,addon://)]</visible>
-					<!-- Following fanart hacks modified from Ronie's hacks in T! -->
-					<control type="image" id="1501">
-						<description>hack for (inside folder) fanart in programs pictures scripts</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<colordiffuse>fanart-background</colordiffuse>
-						<texture fallback="blank.png" background="true">$INFO[Container.FolderPath,,fanart.jpg]</texture>
-						<aspectratio>stretch</aspectratio>
-						<fadetime>300</fadetime>
-						<include>background-fade</include>
-					</control>
-					<control type="group">
-						<visible>!StringCompare(Control.GetLabel(1501),blank.png)</visible>
-						<control type="image" id="1502">
-							<description>hack for (inside folder) fanart in programs pictures scripts</description>
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1280</width>
-							<height>720</height>
-							<colordiffuse>fanart-background</colordiffuse>
-							<texture fallback="blank.png" background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-							<aspectratio>stretch</aspectratio>
-							<fadetime>300</fadetime>
-							<include>background-fade</include>
-						</control>
-						<control type="image" id="1503">
-							<description>hack for (folder) fanart in programs pictures scripts</description>
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1280</width>
-							<height>720</height>
-							<colordiffuse>fanart-background</colordiffuse>
-							<texture fallback="blank.png" background="true">$INFO[ListItem.FilenameAndPath,,fanart.jpg]</texture>
-							<aspectratio>stretch</aspectratio>
-							<fadetime>300</fadetime>
-							<include>background-fade</include>
-							<visible>!StringCompare(Control.GetLabel(1502),blank.png)</visible>
-						</control>
-					</control>
-				</control>
 			</control>
+		</control>
+		<control type="group">
+			<visible>Skin.HasSetting(HomeViewToggle)</visible>
+			<control type="visualisation">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>scale</aspectratio>
+				<visible>Player.HasAudio + Visualisation.Enabled</visible>
+			</control>
+			<control type="videowindow">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>scale</aspectratio>
+				<visible>Player.HasVideo</visible>
+			</control>
+		</control>
+		<control type="image">
+			<description>mask to fade backgrounds</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<colordiffuse>mask-background</colordiffuse>
+			<texture>background.png</texture>
 		</control>
 	</include>
 	
