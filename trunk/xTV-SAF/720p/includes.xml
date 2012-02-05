@@ -406,20 +406,20 @@
 			<control type="group">
 				<control type="image">
 					<description>list item icon</description>
-					<posx>154</posx>
+					<posx>122</posx>
 					<posy>150</posy>
-					<width>320</width>
-					<height>320</height>
+					<width>384</width>
+					<height>384</height>
 					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<include>icon-fade</include>
 				</control>
 				<control type="image">
 					<description>list item icon reflection</description>
-					<posx>154</posx>
+					<posx>122</posx>
 					<posy>474</posy>
-					<width>320</width>
-					<height>320</height>
+					<width>384</width>
+					<height>384</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<include>icon-fade</include>
