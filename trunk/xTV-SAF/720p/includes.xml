@@ -417,7 +417,7 @@
 				<control type="image">
 					<description>list item icon reflection</description>
 					<posx>122</posx>
-					<posy>474</posy>
+					<posy>534</posy>
 					<width>384</width>
 					<height>384</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
