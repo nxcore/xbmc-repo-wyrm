@@ -87,6 +87,7 @@
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<textoffsetx>20</textoffsetx>
+				<radioposx>920</radioposx>
 				<aligny>center</aligny>
 				<textureradiofocus>check-box.png</textureradiofocus>
 				<textureradionofocus>check-boxNF.png</textureradionofocus>
@@ -116,7 +117,7 @@
 				<description>Ok Button</description>
 				<posx>354</posx>
 				<posy>525</posy>
-				<width>159</width>
+				<width>200</width>
 				<height>43</height>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -132,7 +133,7 @@
 				<description>Cancel Button</description>
 				<posx>708</posx>
 				<posy>525</posy>
-				<width>159</width>
+				<width>200</width>
 				<height>43</height>
 				<align>center</align>
 				<aligny>center</aligny>
