@@ -52,19 +52,21 @@
 			<onright>9</onright>
 		</control>
 		<control type="scrollbar" id="30">
-			<posx>17</posx>
+			<posx>10</posx>
 			<posy>112</posy>
-			<width>44</width>
+			<width>24</width>
 			<height>545</height>
-			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>ScrollBarNib.png</textureslidernib>
-			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>9</onleft>
 			<onright>2</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<control type="group" id="9001">
 			<posx>132</posx>
@@ -172,7 +174,7 @@
 		<control type="image" id="6">
 			<description>Default Seperator</description>
 			<height>2</height>
-			<texture>separator2.png</texture>
+			<texture>separator.png</texture>
 		</control>
 		<control type="sliderex" id="8">
 			<description>Default Slider</description>

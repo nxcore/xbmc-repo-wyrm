@@ -306,6 +306,7 @@
 					<onup>17</onup>
 					<ondown>1200</ondown>
 					<radioposx>330</radioposx>
+					<textoffsetx>10</textoffsetx>
 					<enable>system.haslocks</enable>
 					<textcolor>button-text</textcolor>
 					<disabledcolor>disabled-text</disabledcolor>
