@@ -2,7 +2,8 @@
 	<include name="ListView">
 		<control type="group">
 			<posy>66</posy>
-			<visible>Control.IsVisible(50) + [[IntegerGreaterThan(Container(50).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,0) + system.getbool(filelists.showparentdiritems)]]</visible>
+			<visible>Control.IsVisible(50)</visible>
+			<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
 			<include>list-fade</include>
 			<control type="group">
 				<control type="image" description="Slider">
