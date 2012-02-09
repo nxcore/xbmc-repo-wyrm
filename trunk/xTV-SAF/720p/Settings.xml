@@ -174,16 +174,11 @@
 						<onclick>ActivateWindow(filemanager)</onclick>
 					</item>
 					<item id="10">
-						<description>Filemanager</description>
-						<label>10003</label>
-						<onclick>ActivateWindow(filemanager)</onclick>
-					</item>
-					<item id="11">
 						<description>System Info</description>
 						<label>138</label>
 						<onclick>Activatewindow(systeminfo)</onclick>
 					</item>
-					<item id="12">
+					<item id="11">
 						<description>Skin</description>
 						<label>166</label>
 						<onclick>ActivateWindow(52)</onclick>
