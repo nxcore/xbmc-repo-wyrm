@@ -682,6 +682,22 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
+					<control type="radiobutton" id="310">
+						<description>Gamesaves On Home toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>Game Saves on Home menu</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-gamesaves)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
+						<selected>Skin.HasSetting(home-gamesaves)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
 					<control type="radiobutton" id="313">
 						<description>Favorites On Home toggle</description>
 						<font>font12</font>

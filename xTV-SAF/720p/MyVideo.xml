@@ -128,7 +128,7 @@
 					<onclick>ReplaceWindow(VideoLibrary)</onclick>
 					<selected>Window.IsVisible(VideoLibrary)</selected>
 					<enable>Library.HasContent(Video)</enable>
-					<radioposx>350</radioposx>
+					<radioposx>330</radioposx>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>4</onup>
@@ -249,6 +249,7 @@
 					<onright>50</onright>
 					<onup>17</onup>
 					<ondown>1200</ondown>
+					<textoffsetx>10</textoffsetx>
 					<radioposx>330</radioposx>
 					<enable>system.haslocks</enable>
 					<textcolor>button-text</textcolor>

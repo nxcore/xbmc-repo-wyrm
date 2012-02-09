@@ -184,7 +184,7 @@
 				</control>
 				<control type="button" id="1200">
 					<description>PlayerControls</description>
-					<posx>456</posx>
+					<posx>477</posx>
 					<posy>505</posy>
 					<width>362</width>
 					<height>56</height>
