@@ -6,47 +6,17 @@
 		<include>#files</include>
 		<include>Fake-Overlay</include>
 		<control type="image">
-			<description>Settings Logo</description>
+			<description>Games Saves Logo</description>
 			<include>icon-header-commons</include>
-			<texture>icon-settings.png</texture>
+			<texture>DefaultFile.png</texture>
 		</control>
 		<control type="label">
-			<description>Settings Label</description>
+			<description>Games Saves Label</description>
 			<posx>952</posx>
 			<posy>50</posy>
-			<label>31013</label>
+			<label>15016</label>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
-		</control>
-
-		<control type="image">
-			<description>list item overlay</description>
-			<posx>552</posx>
-			<posy>506</posy>
-			<width>62</width>
-			<height>62</height>
-			<info>ListItem.Overlay</info>
-			<visible>Control.IsVisible(50)</visible>
-		</control>
-		<control type="image">
-			<description>list item overlay reflection</description>
-			<posx>552</posx>
-			<posy>569</posy>
-			<width>62</width>
-			<height>62</height>
-			<info>ListItem.Overlay</info>
-			<texture flipy="true" diffuse="RndFade.png">-</texture>
-			<visible>Control.IsVisible(50)</visible>
-		</control>
-		<control type="label">
-			<description>list id label</description>
-			<posx>214</posx>
-			<posy>525</posy>
-			<width>250</width>
-			<height>250</height>
-			<info>ListItem.Label2</info>
-			<textcolor>button-text</textcolor>
-			<visible>Control.IsVisible(50)</visible>
 		</control>
 		
 		<include>memory-low</include>

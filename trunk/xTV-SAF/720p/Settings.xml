@@ -39,25 +39,7 @@
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
-		<!-- Scrollbar -->
-		<control type="scrollbar" id="23">
-			<posx>1260</posx>
-			<posy>112</posy>
-			<width>24</width>
-			<height>542</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>8999</onleft>
-			<onright>8999</onright>
-			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar)</visible>
-		</control>
+
 		<control type="group" description="Group 8999">
 			<visible>Control.IsVisible(8999)</visible>
 			<posx>780</posx>
@@ -67,8 +49,6 @@
 				<posy>0</posy>
 				<width>580</width>
 				<height>600</height>
-				<onleft>23</onleft>
-				<onright>23</onright>
 				<onup>8999</onup>
 				<ondown>8999</ondown>
 				<pagecontrol>23</pagecontrol>

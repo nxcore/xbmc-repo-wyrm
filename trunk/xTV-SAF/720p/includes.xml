@@ -43,33 +43,42 @@
 			<texture>background.png</texture>
 			<visible>IsEmpty(Skin.String(custom-background))</visible>
 		</control>
+		<control type="image">
+			<description>custom background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<colordiffuse>fanart-background</colordiffuse>
+			<aspectratio>stretch</aspectratio>
+			<info>Skin.String(custom-background)</info>
+			<visible>!IsEmpty(Skin.String(custom-background))</visible>
+		</control>
 		<control type="group">
+			<visible>Skin.HasSetting(background-fanart)</visible>
+			<visible>![Player.HasVideo + Skin.HasSetting(HomeViewToggle)]</visible>
 			<control type="image">
-				<description>custom background</description>
+				<description>Fanart background</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
 				<colordiffuse>fanart-background</colordiffuse>
 				<aspectratio>stretch</aspectratio>
-				<info>Skin.String(custom-background)</info>
-				<visible>!IsEmpty(Skin.String(custom-background))</visible>
+				<fadetime>300</fadetime>
+				<include>background-fade</include>
+				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			</control>
-			<control type="group">
-				<visible>Skin.HasSetting(background-fanart)</visible>
-				<control type="image">
-					<description>Fanart background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<colordiffuse>fanart-background</colordiffuse>
-					<aspectratio>stretch</aspectratio>
-					<fadetime>300</fadetime>
-					<include>background-fade</include>
-					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-				</control>
+			<control type="image">
+				<description>mask to fade backgrounds</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>40FFFFFF</colordiffuse>
+				<texture>background.png</texture>
+				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -79,7 +88,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<aspectratio>scale</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<visible>Player.HasAudio + Visualisation.Enabled</visible>
 			</control>
 			<control type="videowindow">
@@ -87,18 +96,18 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<aspectratio>scale</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<visible>Player.HasVideo</visible>
 			</control>
-		</control>
-		<control type="image">
-			<description>mask to fade backgrounds</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<colordiffuse>mask-background</colordiffuse>
-			<texture>background.png</texture>
+			<control type="image">
+				<description>mask to fade backgrounds</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>40FFFFFF</colordiffuse>
+				<texture>background.png</texture>
+			</control>
 		</control>
 	</include>
 	
