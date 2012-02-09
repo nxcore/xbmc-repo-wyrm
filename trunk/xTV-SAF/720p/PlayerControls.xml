@@ -144,7 +144,7 @@
 			<colordiffuse>ProgressBarColor</colordiffuse>
 			<visible>Player.HasAudio</visible>
 		</control>
-		<control type="slider">
+		<!--<control type="slider">
 			<description>Seek Slider</description>
 			<posx>520</posx>
 			<posy>222</posy>
@@ -155,7 +155,7 @@
 			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 			<action>seek</action>
 			<visible>Player.HasAudio</visible>
-		</control>
+		</control>-->
 		<!-- End of Media Info-->
 		<!-- Player buttons -->
 		<control type="grouplist" id="999">
