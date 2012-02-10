@@ -15,11 +15,11 @@
 	<include file="View-Coverflow.xml">-</include>
 	<include file="View-AlbumCoverflow.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
-	
+
 	<include file="Includes_Weather.xml">-</include>
 	<include file="Includes_VertHome.xml">-</include>
 	<include file="Includes_HorzHome.xml">-</include>
-	
+
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -31,7 +31,7 @@
 			<aspectratio>scale</aspectratio>
 		</control>
 	</include>
-	
+
 	<!-- Begin background image include -->
 	<include name="background">
 		<control type="image">
@@ -111,7 +111,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 	<!-- Start xTV box image include -->
 	<include name="xtv-box">
 		<control type="image">
@@ -126,7 +126,7 @@
 			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 	</include>
-	
+
 	<!-- Begin Page info Includes -->
 	<include name="page-info">
 		<control type="image">
@@ -154,7 +154,7 @@
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 		</control>
 	</include>
-	
+
 	<!-- Begin Low free memory include -->
 	<include name="memory-low">
 		<control type="label">
@@ -172,14 +172,14 @@
 			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
 		</control>
 	</include>
-	
+
 	<!-- Start Home Media Overlay -->
 	<include name="homemediainfo">
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
 		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
 	</include>
-	
+
 	<!-- Start Number of Files Include -->
 	<include name="#files">
 		<control type="label" id="12">
@@ -196,7 +196,7 @@
 			<include>list-fade</include>
 		</control>
 	</include>
-	
+
 	<!-- MovieLibraryTitle Include -->
 	<include name="MovieLibraryTitle">
 		<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
@@ -233,7 +233,7 @@
 	<include name="MovieLibraryFiles">
 		<onclick>ActivateWindow(Videos,Files,return)</onclick>
 	</include>
-	
+
 	<!-- TVLibraryTitle Include -->
 	<include name="TVLibraryTitle">
 		<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
@@ -266,7 +266,7 @@
 	<include name="TVLibraryFiles">
 		<onclick>ActivateWindow(Videos,Files,return)</onclick>
 	</include>
-	
+
 	<!-- MusicVideoLibraryTitle Include -->
 	<include name="MusicVideoLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
@@ -303,7 +303,7 @@
 	<include name="MusicVideoLibraryFiles">
 		<onclick>ActivateWindow(Videos,Files,return)</onclick>
 	</include>
-	
+
 	<!-- MusicVideoLibraryGenres Include -->
 	<include name="MusicLibraryGenres">
 		<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
@@ -352,7 +352,7 @@
 	<include name="MusicLibraryFiles">
 		<onclick>ActivateWindow(MusicFiles)</onclick>
 	</include>
-	
+
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
@@ -447,7 +447,7 @@
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
 			<control type="group">
-				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(progressdialog)</visible>
+				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(movies)] + !Window.IsVisible(progressdialog)</visible>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
@@ -496,7 +496,7 @@
 						<include>icon-fade</include>
 					</control>
 				</control>
-			</control>			
+			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(Fanart) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="group">
@@ -544,6 +544,55 @@
 						<include>icon-fade</include>
 						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					</control>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(Fanart) + Container.Content(musicvideos) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<!-- User has selected NO fanart -->
+				<control type="image">
+					<description>list item icon</description>
+					<posx>90</posx>
+					<posy>120</posy>
+					<width>448</width>
+					<height>448</height>
+					<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+				<control type="image">
+					<description>list item icon reflection</description>
+					<posx>90</posx>
+					<posy>570</posy>
+					<width>448</width>
+					<height>448</height>
+					<texture background="true" flipy="true" fallback="DefaultMusicVideos.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(Fanart) + Container.Content(musicvideos) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<control type="image">
+					<description>list item icon</description>
+					<posx>90</posx>
+					<posy>120</posy>
+					<width>448</width>
+					<height>448</height>
+					<texture background="true" diffuse="mask-rect.png">DefaultMusicVideos.png</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
+				</control>
+				<control type="image">
+					<description>list item icon reflection</description>
+					<posx>90</posx>
+					<posy>570</posy>
+					<width>448</width>
+					<height>448</height>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
+					<aspectratio>keep</aspectratio>
+					<include>icon-fade</include>
 				</control>
 			</control>
 			<control type="group">
@@ -653,7 +702,7 @@
 				<animation effect="fade" time="300">Visible</animation>
 				<!-- Star Rating -->
 				<control type="image">
-					<posx>17</posx>
+					<posx>-15</posx>
 					<posy>268</posy>
 					<width>177</width>
 					<height>25</height>
@@ -1294,7 +1343,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 	<!-- Start Animation Includes -->
 	<include name="button-fade">
 		<animation effect="fade" start="0" time="300">Visible</animation>
@@ -1352,7 +1401,7 @@
 		<autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
 	</include>
 	<!-- End Autoscroll Includes -->
-	
+
 	<!-- Start of Run scripts Includes -->
 	<include name="StartupPlaylist">
 		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;,isdir)</onfocus>
@@ -1369,9 +1418,9 @@
 	</include>
 	<include name="StartWatchlist">
 		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>
-		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">SetProperty(xTVSAF_Watchlist,True)</onload> 
+		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">SetProperty(xTVSAF_Watchlist,True)</onload>
 	</include>
-	<!-- End of Run scripts Includes -->	
+	<!-- End of Run scripts Includes -->
 	<!-- Start of Library entry point Includes -->
 	<include name="RestartSkinMovies">
 		<onclick>Skin.Reset(updatemovieentry)</onclick>
