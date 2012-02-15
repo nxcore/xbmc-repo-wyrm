@@ -286,7 +286,7 @@
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
-			</control>	
+			</control>
 			<control type="group">
 				<posx>238</posx>
 				<posy>200</posy>
@@ -363,7 +363,7 @@
 						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
-				</control>	
+				</control>
 			</control>
 			<control type="group">
 				<posx>238</posx>
@@ -414,7 +414,7 @@
 			</control>
 			<!-- Star Rating -->
 			<control type="image">
-				<posx>17</posx>
+				<posx>-15</posx>
 				<posy>268</posy>
 				<width>177</width>
 				<height>25</height>
