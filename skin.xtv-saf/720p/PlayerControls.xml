@@ -254,6 +254,7 @@
 				<texturefocus>osd-btn-eject-focus.png</texturefocus>
 				<texturenofocus>osd-btn-eject.png</texturenofocus>
 				<onclick>XBMC.EjectTray()</onclick>
+				<onclick>SetFocus(214)</onclick>
 				<visible>System.HasMediadvd</visible>
 			</control>
 			<control type="button" id="210">
