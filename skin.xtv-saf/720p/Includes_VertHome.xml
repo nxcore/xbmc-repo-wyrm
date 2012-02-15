@@ -322,7 +322,7 @@
 				<item>
 					<icon>icon-photo.png</icon>
 					<thumb>icon-photo-blur1.png</thumb>
-					<label>31031</label>
+					<label>1</label>
 					<onclick>ActivateWindow(MyPictures,,return)</onclick>
 					<visible>!Skin.HasSetting(home-photos)</visible>
 				</item>
