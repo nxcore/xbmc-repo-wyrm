@@ -365,137 +365,10 @@
 					</content>
 				</control>
 			</control>
-			<!-- Music Videos icons -->
-			<control type="group">
-				<include>background-fade</include>
-				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
-				<control type="label">
-					<description>Header label</description>
-					<posx>55</posx>
-					<posy>50</posy>
-					<height>30</height>
-					<width>400</width>
-					<label>$LOCALIZE[20390]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font11</font>
-					<shadowcolor>shadow-text</shadowcolor>
-				</control>
-				<control type="list" id="9260">
-					<posx>5</posx>
-					<posy>80</posy>
-					<width>1260</width>
-					<height>210</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<viewtype label="31028">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>horizontal</orientation>
-					<itemlayout height="210" width="252">
-						<control type="image">
-							<posx>40</posx>
-							<posy>50</posy>
-							<width>160</width>
-							<height>120</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Icon]</texture>
-						</control>
-					</itemlayout>
-					<focusedlayout height="210" width="252">
-						<control type="label">
-							<posx>126</posx>
-							<posy>15</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>					
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!Control.HasFocus(9260)</visible>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>
-						<control type="label">
-							<posx>126</posx>
-							<posy>174</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.1.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</icon>
-						</item>
-						<item id="2">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</icon>
-						</item>
-						<item id="3">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</icon>
-						</item>
-						<item id="4">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</icon>
-						</item>
-						<item id="5">
-							<label>$INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestMusicVideo.5.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</icon>
-						</item>
-					</content>
-				</control>
-			</control>
 			<!-- Music icons -->
 			<control type="group">
 				<include>background-fade</include>
-				<visible>Control.HasFocus(9300) | Control.HasFocus(9310)</visible>
+				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
 				<control type="label">
 					<description>Header label</description>
 					<posx>55</posx>
@@ -508,7 +381,7 @@
 					<font>font11</font>
 					<shadowcolor>shadow-text</shadowcolor>
 				</control>
-				<control type="list" id="9310">
+				<control type="list" id="9260">
 					<posx>5</posx>
 					<posy>80</posy>
 					<width>1260</width>
@@ -546,7 +419,7 @@
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9310)</visible>
+							<visible>Control.HasFocus(9260)</visible>
 						</control>
 						<control type="image">
 							<posx>35</posx>
@@ -557,7 +430,7 @@
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!Control.HasFocus(9310)</visible>
+							<visible>!Control.HasFocus(9260)</visible>
 						</control>
 						<control type="image">
 							<posx>35</posx>
@@ -570,7 +443,7 @@
 							<bordertexture border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>Control.HasFocus(9310)</visible>
+							<visible>Control.HasFocus(9260)</visible>
 						</control>
 						<control type="label">
 							<posx>126</posx>
@@ -583,7 +456,7 @@
 							<font>font11</font>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9310)</visible>
+							<visible>Control.HasFocus(9260)</visible>
 						</control>
 					</focusedlayout>
 					<content>
@@ -628,7 +501,7 @@
 				<height>192</height>
 				<texture>icon-photo.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9350)</visible>
+				<visible>Control.HasFocus(9300)</visible>
 			</control>
 			<!-- Addons icons -->
 			<control type="image">
@@ -638,12 +511,12 @@
 				<height>192</height>
 				<texture>icon-programs.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9400)</visible>
+				<visible>Control.HasFocus(9350)</visible>
 			</control>
 			<!-- Weather icons -->
 			<control type="group">
 				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9450)</visible>
+				<visible>Control.HasFocus(9400)</visible>
 				<control type="group">
 					<include>background-fade</include>
 					<posx>10</posx>
@@ -998,26 +871,6 @@
 					</control>
 				</control>
 			</control>
-			<!-- Favourites icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>icon-fav.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9500)</visible>
-			</control>
-			<!-- Global Search icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>DefaultMusicSearch.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9550)</visible>
-			</control>
 			<!-- Settings icons -->
 			<control type="image">
 				<posx>560</posx>
@@ -1026,7 +879,7 @@
 				<height>192</height>
 				<texture>icon-settings.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9600)</visible>
+				<visible>Control.HasFocus(9450)</visible>
 			</control>
 		</control>
 
@@ -1052,10 +905,10 @@
 
 		<!--NAVBAR-->
 		<control type="group" description="Home NavBar">
-			<posx>0</posx>
-			<posy>290</posy>
 			<control type="list" id="9900" description="Home NavBar">
-				<width>1280</width>
+				<posx>10</posx>
+				<posy>290</posy>
+				<width>1260</width>
 				<height>70</height>
 				<scrolltime>200</scrolltime>
 				<onleft>-</onleft>
@@ -1065,11 +918,11 @@
 				<itemgap>0</itemgap>
 				<hitrect x="0" y="0" w="0" h="0" />
 				<orientation>horizontal</orientation>
-				<itemlayout height="70" width="256">
+				<itemlayout height="70" width="210">
 					<control type="label">
-						<posx>128</posx>
+						<posx>105</posx>
 						<posy>19</posy>
-						<width>256</width>
+						<width>210</width>
 						<height>32</height>
 						<font>font18</font>
 						<textcolor>button-text</textcolor>
@@ -1078,20 +931,20 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="256">
+				<focusedlayout height="70" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
+						<width>210</width>
 						<height>70</height>
 						<align>center</align>
 						<texture>menu-focus.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
+						<posx>105</posx>
 						<posy>19</posy>
-						<width>256</width>
+						<width>210</width>
 						<height>32</height>
 						<font>font18</font>
 						<textcolor>button-text</textcolor>
@@ -1106,124 +959,106 @@
 						<description>Video Menu</description>
 						<label>3</label>
 						<onclick>-</onclick>
-						<visible>Skin.HasSetting(home-video)</visible>
+						<visible>Skin.HasSetting(home-video) | Skin.HasSetting(home-youtube)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
 						<label>20338</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-movie)</visible>
+						<visible>!Skin.HasSetting(home-movie) | Skin.HasSetting(custom-playlist1) | Skin.HasSetting(custom-playlist2) | Skin.HasSetting(custom-script1) | Skin.HasSetting(custom-script2)</visible>
 					</item>
 					<item id="3">
 						<description>TV Show Menu</description>
 						<label>20343</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-tv)</visible>
+						<visible>!Skin.HasSetting(home-tv) | Skin.HasSetting(custom-playlist3) | Skin.HasSetting(custom-playlist4) | Skin.HasSetting(custom-script3) | Skin.HasSetting(custom-script4)</visible>
 					</item>
 					<item id="4">
-						<description>Music Video Menu</description>
-						<label>20391</label>
-						<onclick>-</onclick>
-						<visible>Skin.HasSetting(home-musicvideo)</visible>
-					</item>
-					<item id="5">
 						<description>Music Menu</description>
 						<label>2</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-music)</visible>
+						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(custom-mplaylist1) | Skin.HasSetting(custom-mplaylist2) | Skin.HasSetting(custom-script5) | Skin.HasSetting(custom-script6)</visible>
 					</item>
-					<item id="6">
+					<item id="5">
 						<description>Pictures Menu</description>
-						<label>31031</label>
+						<label>1</label>
 						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-photos)</visible>
 					</item>
-					<item id="7">
+					<item id="6">
 						<description>Addon Menu</description>
 						<label>24001</label>
 						<onclick>-</onclick>
 						<visible>Skin.HasSetting(home-programs)</visible>
 					</item>
-					<item id="8">
+					<item id="7">
 						<description>Weather Menu</description>
 						<label>8</label>
 						<onclick>-</onclick>
 						<visible>Skin.HasSetting(home-weather)</visible>
 					</item>
-					<item id="9">
-						<description>Favourite Menu</description>
-						<label>1036</label>
-						<onclick>-</onclick>
-						<visible>Skin.HasSetting(home-favorites)</visible>
-					</item>
-					<item id="10">
-						<description>Search Menu</description>
-						<label>137</label>
-						<onclick>-</onclick>
-						<visible>Skin.HasSetting(home-search)</visible>
-					</item>
-					<item id="11">
-						<description>Setting Menu</description>
-						<label>5</label>
+					<item id="8">
+						<description>System Menu</description>
+						<label>13000</label>
 						<onclick>-</onclick>
 					</item>
 				</content>
 			</control>	
 		</control>		
 		<control type="grouplist" id="9000" description="Submenus">
-			<posx>0</posx>
-			<posy>365</posy>
-			<width>1280</width>
-			<height>300</height>
+			<posx>10</posx>
+			<posy>360</posy>
+			<width>1260</width>
+			<height>320</height>
 			<onup>9800</onup>
 			<ondown>-</ondown>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="list" id="9100" description="Videos">
-				<visible>Skin.HasSetting(home-video)</visible>
+				<visible>Skin.HasSetting(home-video) | Skin.HasSetting(home-youtube)</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9100)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
-				<onleft>9600</onleft>
+				<onleft>9550</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9150</onright>
 				<onright>Control.Move(9900,1)</onright>
 				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1255,20 +1090,25 @@
 						<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
-					<item id="6" description="Video apps">
-						<label>24001</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons)</onclick>
+					<item id="6" description="YouTube plugin">
+						<label>31037</label>
+						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
+						<visible>Skin.HasSetting(home-youtube)</visible>
+					</item>
+					<item id="7" description="Video add-ons">
+						<label>1037</label>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
 			<control type="list" id="9150" description="Movies">
-				<visible>!Skin.HasSetting(home-movie)</visible>
+				<visible>!Skin.HasSetting(home-movie) | Skin.HasSetting(custom-playlist1) | Skin.HasSetting(custom-playlist2) | Skin.HasSetting(custom-script1) | Skin.HasSetting(custom-script2)</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9150) | Control.HasFocus(9160)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
 				<onleft>9100</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
@@ -1277,35 +1117,35 @@
 				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1348,20 +1188,20 @@
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script2name)])</onclick>
 						<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
 					</item>
-					<item id="6" description="Video apps">
-						<label>24001</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons)</onclick>
+					<item id="6" description="Video add-ons">
+						<label>1037</label>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
 			<control type="list" id="9200" description="TV Shows">
-				<visible>!Skin.HasSetting(home-tv)</visible>
+				<visible>!Skin.HasSetting(home-tv) | Skin.HasSetting(custom-playlist3) | Skin.HasSetting(custom-playlist4) | Skin.HasSetting(custom-script3) | Skin.HasSetting(custom-script4)</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9200) | Control.HasFocus(9210)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
 				<onleft>9150</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
@@ -1370,35 +1210,35 @@
 				<onup>9800</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1440,20 +1280,21 @@
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script4name)])</onclick>
 						<visible>Skin.HasSetting(custom-script4) + !IsEmpty(Skin.String(custom-script4label))+ !IsEmpty(Skin.String(custom-script4name))</visible>
 					</item>
-					<item id="6" description="Video apps">
-						<label>24001</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons)</onclick>
+					<item id="6" description="Video add-ons">
+						<label>1037</label>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
-			<control type="list" id="9250" description="Music Video">
-				<visible>Skin.HasSetting(home-musicvideo)</visible>
+
+			<control type="list" id="9250" description="Music">
+				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(custom-mplaylist1) | Skin.HasSetting(custom-mplaylist2) | Skin.HasSetting(custom-script5) | Skin.HasSetting(custom-script6)</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9250) | Control.HasFocus(9260)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
 				<onleft>9200</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
@@ -1462,108 +1303,35 @@
 				<onup>9800</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<label>31028</label>
-						<include condition="!Skin.String(musicvideo-libraryentry)">MusicVideoLibraryTitle</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[369])">MusicVideoLibraryTitle</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20108])">MusicVideoLibraryRoot</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20390])">MusicVideoLibraryRecentlyadded</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[135])">MusicVideoLibraryGenres</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[652])">MusicVideoLibraryYears</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[133])">MusicVideoLibraryArtists</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
-						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])">MusicVideoLibraryFiles</include>
-						<include condition="Skin.HasSetting(updatemusicvidentry)">RestartSkinMusicVid</include>
-					</item>
-					<item id="2" description="Video apps">
-						<label>24001</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons)</onclick>
-					</item>
-				</content>
-			</control>
-			<control type="list" id="9300" description="Music">
-				<visible>!Skin.HasSetting(home-music)</visible>
-				<animation type="Conditional" condition="![Control.HasFocus(9300) | Control.HasFocus(9310)]">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
-				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9250</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9350</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
-				<ondown>-</ondown>
-				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="50" width="256">
-					<control type="image">
-						<posx>0</posx>
+						<posx>105</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1590,40 +1358,117 @@
 						<include condition="Skin.HasSetting(updatemusicentry)">RestartSkinMusic</include>
 					</item>
 					<item id="2">
+						<label>31028</label>
+						<include condition="!Skin.String(musicvideo-libraryentry)">MusicVideoLibraryTitle</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[369])">MusicVideoLibraryTitle</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20108])">MusicVideoLibraryRoot</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20390])">MusicVideoLibraryRecentlyadded</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[135])">MusicVideoLibraryGenres</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[652])">MusicVideoLibraryYears</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[133])">MusicVideoLibraryArtists</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
+						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])">MusicVideoLibraryFiles</include>
+						<include condition="Skin.HasSetting(updatemusicvidentry)">RestartSkinMusicVid</include>
+					</item>
+					<item id="3">
 						<label>$INFO[Skin.String(custom-mplaylist1label)] </label>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist1name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-mplaylist1) + !IsEmpty(Skin.String(custom-mplaylist1name))+ !IsEmpty(Skin.String(custom-mplaylist1icon))+ !IsEmpty(Skin.String(custom-mplaylist1label))</visible>
 					</item>
-					<item id="3">
+					<item id="4">
 						<label>$INFO[Skin.String(custom-mplaylist2label)] </label>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist2name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-mplaylist2) + !IsEmpty(Skin.String(custom-mplaylist2name))+ !IsEmpty(Skin.String(custom-mplaylist2icon))+ !IsEmpty(Skin.String(custom-mplaylist2label))</visible>
 					</item>
-					<item id="4">
+					<item id="5">
 						<label>$INFO[Skin.String(custom-script5label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script5name)])</onclick>
 						<visible>Skin.HasSetting(custom-script5) + !IsEmpty(Skin.String(custom-script5label))+ !IsEmpty(Skin.String(custom-script5name))</visible>
 					</item>
-					<item id="5">
+					<item id="6">
 						<label>$INFO[Skin.String(custom-script6label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script6name)])</onclick>
 						<visible>Skin.HasSetting(custom-script6) + !IsEmpty(Skin.String(custom-script6label))+ !IsEmpty(Skin.String(custom-script6name))</visible>
 					</item>
-					<item id="4" description="Music addons">
+					<item id="7" description="Music addons">
 						<label>1038</label>
 						<onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
 						<onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
-			<control type="list" id="9350" description="Pictures">
+			<control type="list" id="9300" description="Pictures">
 				<visible>!Skin.HasSetting(home-photos)</visible>
+				<animation type="Conditional" condition="!Control.HasFocus(9300)">
+					<effect type="fade" start="100" end="0" time="100" reversible="true" />
+				</animation>
+				<posy>0</posy>
+				<width>210</width>
+				<height>320</height>
+				<scrolltime>200</scrolltime>
+				<onleft>9250</onleft>
+				<onleft>Control.Move(9900,-1)</onleft>
+				<onright>9350</onright>
+				<onright>Control.Move(9900,1)</onright>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<itemgap>0</itemgap>
+				<itemlayout height="40" width="210">
+					<control type="label">
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
+						<height>32</height>
+						<font>font11</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="210">
+					<control type="image">
+						<posx>0</posx>
+						<posy>4</posy>
+						<width>210</width>
+						<height>40</height>
+						<align>center</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
+						<height>32</height>
+						<font>font11</font>
+						<textcolor>button-text</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<include>background-fade</include>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>1</label>
+						<onclick>ActivateWindow(Pictures)</onclick>
+					</item>
+					<item id="2" description="Picture apps">
+						<label>1039</label>
+						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="9350" description="Addons">
+				<visible>Skin.HasSetting(home-programs)</visible>
 				<animation type="Conditional" condition="!Control.HasFocus(9350)">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
 				<onleft>9300</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
@@ -1632,35 +1477,35 @@
 				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1669,20 +1514,33 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
-						<label>31031</label>
-						<onclick>ActivateWindow(Pictures)</onclick>
+					<item id="1" description="Video add-ons">
+						<label>1037</label>
+						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+					</item>
+					<item id="2" description="Music addons">
+						<label>1038</label>
+						<onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
+						<onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
+					</item>
+					<item id="3" description="Picture apps">
+						<label>1039</label>
+						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+					</item>
+					<item id="4" description="Program add-ons">
+						<label>1043</label>
+						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
-			<control type="list" id="9400" description="Addons">
-				<visible>Skin.HasSetting(home-programs)</visible>
+			<control type="list" id="9400" description="Weather">
+				<visible>Skin.HasSetting(home-weather)</visible>
 				<animation type="Conditional" condition="!Control.HasFocus(9400)">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
 				<onleft>9350</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
@@ -1691,99 +1549,35 @@
 				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<label>31037</label>
-						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
-						<visible>Skin.HasSetting(home-youtube)</visible>
-					</item>
-					<item id="6">
-						<label>24001</label>
-						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-					</item>
-				</content>
-			</control>
-			<control type="list" id="9450" description="Weather">
-				<visible>Skin.HasSetting(home-weather)</visible>
-				<animation type="Conditional" condition="!Control.HasFocus(9450)">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
-				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9400</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9500</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<onup>-</onup>
-				<ondown>-</ondown>
-				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="50" width="256">
-					<control type="image">
-						<posx>0</posx>
+						<posx>105</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1798,169 +1592,50 @@
 					</item>
 				</content>
 			</control>
-			<control type="list" id="9500" description="Favourites">
-				<visible>Skin.HasSetting(home-favorites)</visible>
-				<animation type="Conditional" condition="!Control.HasFocus(9500)">
+			<control type="list" id="9450" description="Settings">
+				<animation type="Conditional" condition="!Control.HasFocus(9450)">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
+				<width>210</width>
+				<height>320</height>
 				<scrolltime>200</scrolltime>
-				<onleft>9450</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9550</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<onup>-</onup>
-				<ondown>-</ondown>
-				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="50" width="256">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<label>1036</label>
-						<onclick>ActivateWindow(Favourites)</onclick>
-					</item>
-				</content>
-			</control>
-			<control type="list" id="9550" description="GlobalSearch">
-				<visible>Skin.HasSetting(home-search)</visible>
-				<animation type="Conditional" condition="!Control.HasFocus(9550)">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
-				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9500</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9600</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<onup>-</onup>
-				<ondown>-</ondown>
-				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="50" width="256">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
-						<height>32</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<label>137</label>
-						<onclick>RunScript(script.globalsearch)</onclick>
-						<icon>DefaultMusicSearch.png</icon>
-					</item>
-				</content>
-			</control>
-			<control type="list" id="9600" description="Settings">
-				<animation type="Conditional" condition="!Control.HasFocus(9600)">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
-				<posy>0</posy>
-				<width>256</width>
-				<height>300</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9550</onleft>
+				<onleft>9400</onleft>
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9100</onright>
 				<onright>Control.Move(9900,1)</onright>
 				<onup>-</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
-				<itemlayout height="50" width="256">
+				<itemlayout height="40" width="210">
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="50" width="256">
+				<focusedlayout height="40" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
-						<width>256</width>
-						<height>50</height>
+						<width>210</width>
+						<height>40</height>
 						<align>center</align>
 						<texture>default-button.png</texture>
 						<include>background-fade</include>
 					</control>
 					<control type="label">
-						<posx>128</posx>
-						<posy>9</posy>
-						<width>256</width>
+						<posx>105</posx>
+						<posy>4</posy>
+						<width>210</width>
 						<height>32</height>
-						<font>font13</font>
+						<font>font11</font>
 						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1982,22 +1657,32 @@
 						<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 					</item>
 					<item id="4">
+						<label>1036</label>
+						<onclick>ActivateWindow(Favourites)</onclick>
+					</item>
+					<item id="5">
+						<label>137</label>
+						<onclick>RunScript(script.globalsearch)</onclick>
+						<icon>DefaultMusicSearch.png</icon>
+						<visible>Skin.HasSetting(home-search)</visible>
+					</item>
+					<item id="6">
 						<label>13391</label>
 						<onclick>EjectTray()</onclick>
 						<visible>System.HasMediadvd</visible>
 					</item>
-					<item id="5">
+					<item id="7">
 						<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 						<onclick>ActivateWindow(PlayerControls)</onclick>
 						<onclick>SetFocus(9000)</onclick>
 						<visible>Player.HasAudio | Player.HasVideo</visible>
 					</item>	
-					<item id="6">
+					<item id="8">
 						<label>13009</label>
 						<onclick>XBMC.Quit()</onclick>
 						<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
 					</item>
-					<item id="7">
+					<item id="9">
 						<label>13009</label>
 						<onclick>ActivateWindow(shutdownmenu)</onclick>
 						<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
