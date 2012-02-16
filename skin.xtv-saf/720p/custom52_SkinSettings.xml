@@ -462,6 +462,7 @@
 						<label>Use horizontal home menu</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(horizontal-homemenu)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(horizontal-homemenu)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
