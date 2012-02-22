@@ -228,7 +228,7 @@
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<align>justify</align>
-				<pagecontrol>23</pagecontrol>
+				<pagecontrol>1023</pagecontrol>
 				<visible>!substring(Control.GetLabel(5),plot)</visible>
 				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
 			</control>
@@ -528,31 +528,9 @@
 					<align>center</align>
 					<onclick>SetFocus(999)</onclick>
 				</control>
-				<control type="button" id="1113">
-					<description>Get Logo</description>
-					<width>208</width>
-					<height>57</height>
-					<font>font11</font>
-					<align>center</align>
-					<label>31694</label>
-					<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
-					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows)</visible>
-				</control>
-				<control type="button" id="1114">
-					<description>Get TV Tune</description>
-					<width>208</width>
-					<height>57</height>
-					<font>font11</font>
-					<align>center</align>
-					<label>31695</label>
-					<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-					<onclick>SetFocus(999)</onclick>
-					<visible>Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
-				</control>
 			</control>
 		</control>
-		<!-- Scrollbar -->
+		<!-- Cast Scrollbar -->
 		<control type="scrollbar" id="923">
 			<posx>1230</posx>
 			<posy>337</posy>
@@ -569,7 +547,26 @@
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar)</visible>
+			<visible>Skin.HasSetting(sbar) + substring(Control.GetLabel(5),plot)</visible>
+		</control>
+		<!-- Plot Scrollbar -->
+		<control type="scrollbar" id="1023">
+			<posx>1230</posx>
+			<posy>340</posy>
+			<width>24</width>
+			<height>305</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>999</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + !(substring(Control.GetLabel(5),plot))</visible>
 		</control>
 	</controls>
 </window>
