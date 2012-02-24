@@ -56,57 +56,49 @@
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(background-fanart)</visible>
-			<visible>![Player.HasVideo + Skin.HasSetting(HomeViewToggle)]</visible>
-			<control type="image">
-				<description>Fanart background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>fanart-background</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>300</fadetime>
-				<include>background-fade</include>
-				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle)</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(background-fanart)</visible>
+				<visible>![Player.HasAudio + Visualisation.Enabled] + !Player.HasVideo</visible>
+				<control type="image">
+					<description>Fanart background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<include>background-fade</include>
+					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+				</control>
 			</control>
-			<control type="image">
-				<description>mask to fade backgrounds</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>40FFFFFF</colordiffuse>
-				<texture>background.png</texture>
-				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.HasSetting(HomeViewToggle)</visible>
-			<control type="visualisation">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>Player.HasAudio + Visualisation.Enabled</visible>
-			</control>
-			<control type="videowindow">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>Player.HasVideo</visible>
-			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(HomeViewToggle)</visible>
+				<control type="visualisation">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<visible>Player.HasAudio + Visualisation.Enabled</visible>
+				</control>
+				<control type="videowindow">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<visible>Player.HasVideo</visible>
+				</control>
+			</control>	
 			<control type="image">
 				<description>mask to fade backgrounds</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<colordiffuse>40FFFFFF</colordiffuse>
+				<colordiffuse>C0FFFFFF</colordiffuse>
 				<texture>background.png</texture>
 			</control>
 		</control>
@@ -397,7 +389,7 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>50</onleft>
+			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
@@ -954,16 +946,16 @@
 				<description>video preview window</description>
 				<posx>35</posx>
 				<posy>5</posy>
-				<width>205</width>
-				<height>123</height>
+				<width>167</width>
+				<height>100</height>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
 				<description>Now playing</description>
-				<posx>254</posx>
-				<posy>20</posy>
-				<width>407</width>
-				<height>31</height>
+				<posx>212</posx>
+				<posy>14</posy>
+				<width>430</width>
+				<height>25</height>
 				<label>13350</label>
 				<align>left</align>
 				<font>font12</font>
@@ -972,10 +964,10 @@
 			</control>
 			<control type="label">
 				<description>Video Title label</description>
-				<posx>254</posx>
-				<posy>50</posy>
-				<width>407</width>
-				<height>31</height>
+				<posx>212</posx>
+				<posy>39</posy>
+				<width>430</width>
+				<height>25</height>
 				<info>VideoPlayer.Title</info>
 				<align>left</align>
 				<font>font12</font>
@@ -985,10 +977,10 @@
 			</control>
 			<control type="label">
 				<description>Time label</description>
-				<posx>254</posx>
-				<posy>80</posy>
-				<width>407</width>
-				<height>31</height>
+				<posx>212</posx>
+				<posy>64</posy>
+				<width>430</width>
+				<height>25</height>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 				<align>left</align>
 				<font>font12</font>
@@ -1001,18 +993,18 @@
 			<!-- Audio Stuff -->
 			<control type="image">
 				<description>cover image</description>
-				<posx>44</posx>
+				<posx>35</posx>
 				<posy>6</posy>
-				<width>141</width>
+				<width>100</width>
 				<height>100</height>
 				<info>MusicPlayer.Cover</info>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
 				<description>Artist label</description>
-				<posx>208</posx>
+				<posx>145</posx>
 				<posy>2</posy>
-				<width>415</width>
+				<width>475</width>
 				<height>25</height>
 				<info>MusicPlayer.Artist</info>
 				<align>left</align>
@@ -1023,9 +1015,9 @@
 			</control>
 			<control type="label">
 				<description>Album label</description>
-				<posx>208</posx>
+				<posx>145</posx>
 				<posy>27</posy>
-				<width>415</width>
+				<width>475</width>
 				<height>25</height>
 				<info>MusicPlayer.Album</info>
 				<align>left</align>
@@ -1036,9 +1028,9 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>208</posx>
+				<posx>145</posx>
 				<posy>52</posy>
-				<width>415</width>
+				<width>475</width>
 				<height>25</height>
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
@@ -1049,9 +1041,9 @@
 			</control>
 			<control type="label">
 				<description>Time label</description>
-				<posx>208</posx>
+				<posx>145</posx>
 				<posy>77</posy>
-				<width>415</width>
+				<width>475</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 				<align>left</align>

@@ -1,5 +1,8 @@
 <includes>
 	<include name="VertHomeMenu">
+			
+		<include>background</include>
+		
 		<control type="group">
 			<visible>!Skin.HasSetting(home-time)</visible>
 			<!-- show time on home screen -->
@@ -695,8 +698,8 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>5</onleft>
-			<onright>5</onright>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
