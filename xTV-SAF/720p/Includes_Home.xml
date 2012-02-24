@@ -99,7 +99,6 @@
 			<height>1</height>
 			<onfocus>ActivateWindow(PlayerControls)</onfocus>
 			<onfocus>SetFocus(9000)</onfocus>
-			<!--<visible>Player.Playing</visible>-->			
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
@@ -709,8 +708,8 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>5</onleft>
-			<onright>5</onright>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
