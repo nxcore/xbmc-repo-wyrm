@@ -15,16 +15,15 @@
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
-		
-		<include>background</include>
-		
-		<include>memory-low</include>
-		
+
 		<!-- Use Vertical Home menu-->
 		<include condition="!Skin.HasSetting(horizontal-homemenu)">VertHomeMenu</include>
 		
 		<!-- Use Horizontal Home menu-->
 		<include condition="Skin.HasSetting(horizontal-homemenu)">HorzHomeMenu</include>
+		
+		<!-- Low memory warning -->
+		<include>memory-low</include>
 		
 		<!-- RSS info -->
 		<include>page-info</include>
