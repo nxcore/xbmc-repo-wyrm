@@ -31,7 +31,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-5).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-5).Icon]</texture>
 					<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -41,7 +41,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-5).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-5).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -49,7 +49,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
 					<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -59,7 +59,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -67,7 +67,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
 					<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -77,7 +77,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -85,7 +85,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
 					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -95,7 +95,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -103,7 +103,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
 					<animation effect="rotatey" center="1434" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -113,7 +113,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1434" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -121,7 +121,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
 					<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -131,7 +131,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -139,7 +139,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
 					<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -149,7 +149,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -157,7 +157,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -167,7 +167,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="group">
@@ -178,7 +178,7 @@
 						<posy>0</posy>
 						<width>286</width>
 						<height>400</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
 						<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 						<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
 					</control>
@@ -189,14 +189,14 @@
 						<height>400</height>
 						<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 						<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
 					</control>
 					<control type="image">
 						<posx>654</posx>
 						<posy>0</posy>
 						<width>286</width>
 						<height>400</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
 						<animation effect="rotatey" center="1080" start="0" end="-60" time="200" reversible="false">Hidden</animation>
 						<animation effect="rotatey" center="1080" start="60" end="60" time="200" condition="true">Conditional</animation>
 					</control>
@@ -207,7 +207,7 @@
 						<height>400</height>
 						<animation effect="rotatey" center="1080" start="0" end="-60" time="200" reversible="false">Hidden</animation>
 						<animation effect="rotatey" center="1080" start="60" end="60" time="200" condition="true">Conditional</animation>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
 					</control>
 				</control>
 			</control>
@@ -222,7 +222,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
 					<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -232,7 +232,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -240,7 +240,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
 					<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -250,7 +250,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -258,7 +258,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
 					<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -268,7 +268,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -276,7 +276,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -286,7 +286,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -294,7 +294,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(5).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(5).Icon]</texture>
 					<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -304,7 +304,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(5).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(5).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -312,7 +312,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
 					<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -322,7 +322,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -330,7 +330,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
 					<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -340,7 +340,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -348,7 +348,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
 					<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -358,7 +358,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="group">
@@ -369,7 +369,7 @@
 						<posy>0</posy>
 						<width>286</width>
 						<height>400</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
 						<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 						<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
 					</control>
@@ -380,14 +380,14 @@
 						<height>400</height>
 						<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 						<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
 					</control>
 					<control type="image">
 						<posx>265</posx>
 						<posy>0</posy>
 						<width>286</width>
 						<height>400</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
 						<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
 						<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					</control>
@@ -398,7 +398,7 @@
 						<height>400</height>
 						<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
 						<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
+						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
 					</control>
 				</control>
 			</control>
@@ -412,7 +412,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
 					<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -422,7 +422,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -430,7 +430,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
 					<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -440,7 +440,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -448,7 +448,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
 					<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -458,7 +458,7 @@
 					<width>286</width>
 					<height>400</height>
 					<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
@@ -466,7 +466,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -475,7 +475,7 @@
 					<posy>468</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
 					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -484,7 +484,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
 					<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -493,7 +493,7 @@
 					<posy>468</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
 					<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -502,7 +502,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
 					<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -511,7 +511,7 @@
 					<posy>468</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
 					<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -520,7 +520,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
 					<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -529,7 +529,7 @@
 					<posy>468</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
 					<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -538,7 +538,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -547,7 +547,7 @@
 					<posy>468</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
 					<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
@@ -556,7 +556,7 @@
 					<posy>0</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
@@ -564,7 +564,7 @@
 					<posy>468</posy>
 					<width>286</width>
 					<height>400</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
