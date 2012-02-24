@@ -82,37 +82,6 @@
 				<colordiffuse>ScrollBarColor</colordiffuse>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
-			<!-- Artist & Album name-->
-			<control type="label">
-				<posx>26</posx>
-				<posy>640</posy>
-				<width>1228</width>
-				<height>36</height>
-				<font>font20</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
-				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
-			</control>
-			<!-- Icon label for Default icons -->
-			<control type="label">
-				<posx>26</posx>
-				<posy>645</posy>
-				<width>1221</width>
-				<height>37</height>
-				<font>font20</font>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<info>ListItem.Label</info>
-				<textoffsetx>0</textoffsetx>
-				<visible>SubString(ListItem.Icon,Default,Left)</visible>
-			</control>
 			<!-- Go Back -->
 			<control type="label">
 				<posx>26</posx>
@@ -128,32 +97,66 @@
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
-			<!-- Star Rating -->
-			<control type="image">
-				<posx>26</posx>
-				<posy>685</posy>
-				<width>177</width>
-				<height>25</height>
-				<info>ListItem.StarRating</info>
-				<colordiffuse>StarDiffuse</colordiffuse>
-				<visible>!SubString(ListItem.Icon,Default,Left)</visible>
-				<visible>!IsEmpty(ListItem.StarRating)</visible>
-			</control>
-			<!-- Genre -->
-			<control type="label">
-				<posx>240</posx>
-				<posy>685</posy>
-				<width>800</width>
-				<height>37</height>
-				<font>font13</font>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
-				<label>$INFO[ListItem.Genre]</label>
-				<textoffsetx>0</textoffsetx>
+			<control type="group">
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-			</control>
+				<!-- Artist & Album name-->
+				<control type="label">
+					<posx>26</posx>
+					<posy>640</posy>
+					<width>1228</width>
+					<height>36</height>
+					<font>font20</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
+					<textoffsetx>0</textoffsetx>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<!-- Icon label for Default icons -->
+				<control type="label">
+					<posx>26</posx>
+					<posy>645</posy>
+					<width>1221</width>
+					<height>37</height>
+					<font>font20</font>
+					<align>center</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<scroll>true</scroll>
+					<info>ListItem.Label</info>
+					<textoffsetx>0</textoffsetx>
+					<visible>SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<!-- Star Rating -->
+				<control type="image">
+					<posx>26</posx>
+					<posy>685</posy>
+					<width>177</width>
+					<height>25</height>
+					<info>ListItem.StarRating</info>
+					<colordiffuse>StarDiffuse</colordiffuse>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
+					<visible>!IsEmpty(ListItem.StarRating)</visible>
+				</control>
+				<!-- Genre -->
+				<control type="label">
+					<posx>240</posx>
+					<posy>685</posy>
+					<width>800</width>
+					<height>37</height>
+					<font>font13</font>
+					<align>center</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Genre]</label>
+					<textoffsetx>0</textoffsetx>
+					<visible>!Container.Content(genres)</visible>
+				</control>
+			</control>	
 		</control>
 	</include>
 </includes>

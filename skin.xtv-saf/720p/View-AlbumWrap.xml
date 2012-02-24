@@ -25,7 +25,7 @@
 					<texture background="true">case-cd.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
-					<visible>Skin.HasSetting(CDcase) + !IsEmpty(ListItem.Thumb)</visible>
+					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>-32</posx>
@@ -45,7 +45,7 @@
 					<width>305</width>
 					<texture>case-cd.png</texture>
 					<aspectratio aligny="center">stretch</aspectratio>
-					<visible>Skin.HasSetting(CDcase) + !IsEmpty(ListItem.Thumb)</visible>
+					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>36</posx>
@@ -106,7 +106,7 @@
 				<scroll>true</scroll>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
-				<visible>!IsEmpty(ListItem.Thumb)</visible>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 			<!-- Star Rating -->
 			<control type="image">
@@ -133,6 +133,7 @@
 				<scroll>true</scroll>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
+				<visible>!Container.Content(genres)</visible>
 			</control>
 		</control>
 	</include>

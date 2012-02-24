@@ -405,7 +405,7 @@
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>51</onleft>
-				<onright>9000</onright>
+				<onright>51</onright>
 				<include>list-fade</include>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
