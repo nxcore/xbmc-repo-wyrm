@@ -8,7 +8,7 @@
 		<control type="image">
 			<description>Games Saves Logo</description>
 			<include>icon-header-commons</include>
-			<texture>DefaultFile.png</texture>
+			<texture>icon-programs.png</texture>
 		</control>
 		<control type="label">
 			<description>Games Saves Label</description>
