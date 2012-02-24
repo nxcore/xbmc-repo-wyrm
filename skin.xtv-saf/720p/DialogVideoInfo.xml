@@ -228,7 +228,7 @@
 				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<align>justify</align>
-				<pagecontrol>923</pagecontrol>
+				<pagecontrol>1023</pagecontrol>
 				<visible>!substring(Control.GetLabel(5),plot)</visible>
 				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
 			</control>
@@ -552,7 +552,7 @@
 				</control>
 			</control>
 		</control>
-		<!-- Scrollbar -->
+		<!-- Cast Scrollbar -->
 		<control type="scrollbar" id="923">
 			<posx>1230</posx>
 			<posy>340</posy>
@@ -569,7 +569,26 @@
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar)</visible>
+			<visible>Skin.HasSetting(sbar) + substring(Control.GetLabel(5),plot)</visible>
+		</control>
+		<!-- Plot Scrollbar -->
+		<control type="scrollbar" id="1023">
+			<posx>1230</posx>
+			<posy>340</posy>
+			<width>24</width>
+			<height>305</height>
+			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>999</onright>
+			<include>list-fade</include>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<colordiffuse>ScrollBarColor</colordiffuse>
+			<visible>Skin.HasSetting(sbar) + !(substring(Control.GetLabel(5),plot))</visible>
 		</control>
 	</controls>
 </window>
