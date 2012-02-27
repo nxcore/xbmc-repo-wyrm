@@ -14,7 +14,7 @@
 			<description>Games Saves Label</description>
 			<posx>952</posx>
 			<posy>50</posy>
-			<label>15016</label>
+			<label>20315</label>
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
