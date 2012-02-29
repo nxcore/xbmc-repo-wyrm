@@ -147,119 +147,16 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>5</onup>
-					<ondown>10</ondown>
-					<textcolor>button-text</textcolor>
-					<textoffsetx>10</textoffsetx>
-					<radioposx>330</radioposx>
-					<include>button-fade</include>
-				</control>
-				<control type="button" id="14">
-					<description>Watched Toggle Button</description>
-					<posx>456</posx>
-					<posy>364</posy>
-					<width>362</width>
-					<height>50</height>
-					<label>20367</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>7</onup>
-					<ondown>8</ondown>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
-				</control>
-				<control type="button" id="8">
-					<description>Search Button</description>
-					<posx>456</posx>
-					<posy>414</posy>
-					<width>362</width>
-					<height>50</height>
-					<label>137</label>
-					<font>font12</font>
-					<textoffsetx>10</textoffsetx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>10</onup>
-					<ondown>19</ondown>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
-				</control>
-				<control type="edit" id="19">
-					<description>Filter</description>
-					<posx>456</posx>
-					<posy>464</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
-					<label>587</label>
-					<textwidth>340</textwidth>
-					<textcolor>button-text</textcolor>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<aligny>center</aligny>
-					<textoffsetx>10</textoffsetx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>8</onup>
-					<ondown>16</ondown>
-					<include>button-fade</include>
-				</control>
-				<control type="button" id="16">
-					<description>Party Mode button</description>
-					<posx>456</posx>
-					<posy>514</posy>
-					<width>362</width>
-					<height>50</height>
-					<label>589</label>
-					<font>font12</font>
-					<textoffsetx>10</textoffsetx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>19</onup>
-					<ondown>17</ondown>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
-				</control>
-				<control type="button" id="17">
-					<description>Flatten Library button</description>
-					<posx>456</posx>
-					<posy>564</posy>
-					<width>362</width>
-					<height>50</height>
-					<label>20411</label>
-					<font>font12</font>
-					<textoffsetx>10</textoffsetx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>16</onup>
-					<ondown>11</ondown>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
-				</control>
-				<control type="radiobutton" id="11">
-					<description>Unlock Shares</description>
-					<posx>456</posx>
-					<posy>614</posy>
-					<label>20336</label>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
-					<onclick>xbmc.mastermode</onclick>
-					<selected>system.ismaster</selected>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>17</onup>
 					<ondown>1200</ondown>
+					<textcolor>button-text</textcolor>
 					<textoffsetx>10</textoffsetx>
 					<radioposx>330</radioposx>
-					<enable>system.haslocks</enable>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
 					<include>button-fade</include>
 				</control>
 				<control type="button" id="1200">
 					<description>PlayerControls</description>
 					<posx>456</posx>
-					<posy>664</posy>
+					<posy>364</posy>
 					<width>362</width>
 					<height>50</height>
 					<font>font12</font>
@@ -267,7 +164,7 @@
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>11</onup>
+					<onup>7</onup>
 					<ondown>2</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
