@@ -181,8 +181,8 @@
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
 					<label>$LOCALIZE[14022] $LOCALIZE[456]</label>
-					<onclick>ReplaceWindow(VideoFiles)</onclick>
-					<selected>Window.IsVisible(VideoLibrary)</selected>
+					<onclick>ReplaceWindow(myvideofiles)</onclick>
+					<selected>Window.IsVisible(myvideolibrary)</selected>
 					<radioposx>330</radioposx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -191,6 +191,22 @@
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
 				</control>
+				<control type="button" id="10">
+					<description>Show Button</description>
+					<posx>456</posx>
+					<posy>314</posy>
+					<width>262</width>
+					<height>50</height>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>5</onup>
+					<ondown>8</ondown>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
+				</control>
 				<control type="button" id="14">
 					<description>Watched Toggle Button</description>
 					<posx>456</posx>
@@ -198,12 +214,15 @@
 					<width>362</width>
 					<height>50</height>
 					<label>20367</label>
+					<font>font12</font>
+					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>10</onup>
 					<ondown>8</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
+					<visible>Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Search Button</description>
@@ -283,13 +302,13 @@
 					<font>font12</font>
 					<onclick>xbmc.mastermode</onclick>
 					<selected>system.ismaster</selected>
+					<enable>system.haslocks</enable>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>17</onup>
 					<ondown>1200</ondown>
 					<radioposx>330</radioposx>
 					<textoffsetx>10</textoffsetx>
-					<enable>system.haslocks</enable>
 					<textcolor>button-text</textcolor>
 					<disabledcolor>disabled-text</disabledcolor>
 					<include>button-fade</include>
