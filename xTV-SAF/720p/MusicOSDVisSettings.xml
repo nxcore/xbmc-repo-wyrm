@@ -80,6 +80,7 @@
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textoffsetx>10</textoffsetx>
+			<radioposx>684</radioposx>
 			<aligny>center</aligny>
 			<textureradiofocus>check-box.png</textureradiofocus>
 			<textureradionofocus>check-boxNF.png</textureradionofocus>
