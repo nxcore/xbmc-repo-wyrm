@@ -49,7 +49,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<colordiffuse>fanart-background</colordiffuse>
+			<colordiffuse>solid-background</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 			<info>Skin.String(custom-background)</info>
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
@@ -97,7 +97,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<colordiffuse>C0FFFFFF</colordiffuse>
+				<colordiffuse>mask-background</colordiffuse>
 				<texture>background.png</texture>
 			</control>
 		</control>
