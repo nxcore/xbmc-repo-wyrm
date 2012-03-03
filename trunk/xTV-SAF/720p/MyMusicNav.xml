@@ -186,7 +186,7 @@
 					<shadowcolor>shadow-text</shadowcolor>
 					<include>button-fade</include>
 				</control>
-				<control type="radiobutton" id="16">
+				<control type="button" id="16">
 					<description>Party Mode button</description>
 					<posx>477</posx>
 					<posy>525</posy>
@@ -199,7 +199,6 @@
 					<textoffsetx>10</textoffsetx>
 					<onup>17</onup>
 					<ondown>1200</ondown>
-					<radioposx>330</radioposx>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<include>button-fade</include>
