@@ -187,7 +187,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>4</onup>
-					<ondown>7</ondown>
+					<ondown>10</ondown>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
 				</control>
@@ -195,7 +195,7 @@
 					<description>Show Button</description>
 					<posx>456</posx>
 					<posy>314</posy>
-					<width>262</width>
+					<width>362</width>
 					<height>50</height>
 					<font>font12</font>
 					<textoffsetx>10</textoffsetx>
