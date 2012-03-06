@@ -83,7 +83,7 @@
 				<texturenofocus>-</texturenofocus>
 				<textoffsetx>18</textoffsetx>
 				<aligny>center</aligny>
-				<radioposx>684</radioposx>
+				<radioposx>674</radioposx>
 				<textureradiofocus>check-box.png</textureradiofocus>
 				<textureradionofocus>check-boxNF.png</textureradionofocus>
 				<textcolor>button-text</textcolor>
