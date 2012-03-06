@@ -14,7 +14,6 @@
 			<height>720</height>
 			<colordiffuse>mask-background</colordiffuse>
 			<texture>background.png</texture>
-			<colordiffuse>UnFocusedPosters</colordiffuse>
 		</control>
 		<control type="image">
 			<description>background image</description>
@@ -22,8 +21,8 @@
 			<posy>0</posy>
 			<width>748</width>
 			<height>594</height>
-			<texture diffuse="RndSquMask.png" border="8">button-menu-background.png</texture>
-			<!--<colordiffuse>UnFocusedPosters</colordiffuse>-->
+			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<colordiffuse>UnFocusedPosters</colordiffuse>
 		</control>	
 		<control type="label" id="2">
 			<description>heading label</description>
@@ -40,7 +39,7 @@
 		<control type="image">
 			<posx>18</posx>
 			<posy>82</posy>
-			<width>400</width>
+			<width>712</width>
 			<height>2</height>
 			<texture>separator.png</texture>
 		</control>
@@ -62,7 +61,7 @@
 			<posx>9</posx>
 			<posy>187</posy>
 			<height>37</height>
-			<width>525</width>
+			<width>674</width>
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
 			<aligny>center</aligny>
@@ -75,12 +74,12 @@
 			<posx>9</posx>
 			<posy>187</posy>
 			<height>37</height>
-			<width>525</width>
+			<width>674</width>
 			<font>font12</font>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textoffsetx>10</textoffsetx>
-			<radioposx>684</radioposx>
+			<radioposx>648</radioposx>
 			<aligny>center</aligny>
 			<textureradiofocus>check-box.png</textureradiofocus>
 			<textureradionofocus>check-boxNF.png</textureradionofocus>
@@ -91,7 +90,7 @@
 			<posx>9</posx>
 			<posy>187</posy>
 			<height>37</height>
-			<width>525</width>
+			<width>674</width>
 			<texturefocus>default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textureup>scroll-up.png</textureup>
