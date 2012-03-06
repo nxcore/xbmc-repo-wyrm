@@ -176,11 +176,11 @@ def install_local_theme( theme ) :
         #xbmcgui.Dialog().ok( xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31429) )
         
         # Apply theme...
-        choice = xbmcgui.Dialog().yesno(xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31441))
-        if choice == True :
-            xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skintheme;%s)"  % theme )
-            xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skincolors;%s)" % theme )
-            xbmc.executebuiltin( "XBMC.ReloadSkin()")
+        #choice = xbmcgui.Dialog().yesno(xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31441))
+        #if choice == True :
+        #    xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skintheme;%s)"  % theme )
+        #    xbmc.executehttpapi( "SetGUISetting(3;lookandfeel.skincolors;%s)" % theme )
+        #    xbmc.executebuiltin( "XBMC.ReloadSkin()")
         
     except :
         # Message...
