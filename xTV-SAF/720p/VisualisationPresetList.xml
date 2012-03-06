@@ -30,7 +30,7 @@
 			<posx>0</posx>
 			<posy>2</posy>
 			<width>743</width>
-			<align>left</align>
+			<align>center</align>
 			<font>font12</font>
 			<textcolor>button-text</textcolor>
 		</control>
