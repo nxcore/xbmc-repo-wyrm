@@ -1024,7 +1024,7 @@
 						<height>56</height>
 						<label>[B][I]Video Views[/I][/B]</label>
 						<font>font12</font>
-						<textcolor>button-text</textcolor>
+						<textcolor>listselectedtext</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1121,7 +1121,7 @@
 						<height>56</height>
 						<label>[B][I]Music Views[/I][/B]</label>
 						<font>font12</font>
-						<textcolor>button-text</textcolor>
+						<textcolor>listselectedtext</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1201,7 +1201,7 @@
 						<height>56</height>
 						<label>[B][I]Photo Views[/I][/B]</label>
 						<font>font12</font>
-						<textcolor>button-text</textcolor>
+						<textcolor>listselectedtext</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1281,7 +1281,7 @@
 						<height>56</height>
 						<label>[B][I]Program/Script Views[/I][/B]</label>
 						<font>font12</font>
-						<textcolor>button-text</textcolor>
+						<textcolor>listselectedtext</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
