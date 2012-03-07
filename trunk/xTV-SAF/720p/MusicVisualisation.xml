@@ -52,7 +52,7 @@
 		</control>
 		<!-- infos -->
 		<control type="group">
-			<visible>Player.HasMedia + Player.ShowInfo</visible>
+			<visible>Player.ShowInfo</visible>
 			<control type="image" id="992">
 				<description>Music logo if available</description>
 				<posx>8</posx>
@@ -100,12 +100,12 @@
 				<height>45</height>
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
-				<font>font22</font>
+				<font>font18</font>
 			</control>
 			<control type="label">
 				<description>Artist label</description>
 				<posx>265</posx>
-				<posy>605</posy>
+				<posy>596</posy>
 				<width>787</width>
 				<height>37</height>
 				<info>MusicPlayer.Artist</info>
@@ -115,7 +115,7 @@
 			<control type="label">
 				<description>Album label</description>
 				<posx>265</posx>
-				<posy>635</posy>
+				<posy>626</posy>
 				<width>761</width>
 				<height>37</height>
 				<info>MusicPlayer.Album</info>
@@ -125,7 +125,7 @@
 			<control type="label">
 				<description>time label</description>
 				<posx>265</posx>
-				<posy>665</posy>
+				<posy>656</posy>
 				<width>761</width>
 				<height>37</height>
 				<label>$INFO[musicplayer.Time]$INFO[musicplayer.Duration, / ]</label>
@@ -144,10 +144,10 @@
 			</control>
 			<control type="label">
 				<description>PartyMode Enabled</description>
-				<posx>1239</posx>
-				<posy>680</posy>
-				<width>354</width>
-				<height>37</height>
+				<posx>1240</posx>
+				<posy>686</posy>
+				<width>250</width>
+				<height>30</height>
 				<label>589</label>
 				<visible>MusicPartyMode.Enabled</visible>
 				<align>right</align>
@@ -156,7 +156,7 @@
 			<control type="progress">
 				<description>Progressbar</description>
 				<posx>454</posx>
-				<posy>676</posy>
+				<posy>662</posy>
 				<width>790</width>
 				<height>16</height>
 				<info>Player.Progress</info>
