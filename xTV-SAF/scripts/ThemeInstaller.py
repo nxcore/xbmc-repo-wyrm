@@ -173,7 +173,7 @@ def install_local_theme( theme ) :
         zip.close()
         
         # Message...
-        #xbmcgui.Dialog().ok( xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31429) )
+        xbmcgui.Dialog().ok( xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31436) )
         
         # Apply theme...
         #choice = xbmcgui.Dialog().yesno(xbmc.getLocalizedString(31428), xbmc.getLocalizedString(31441))
