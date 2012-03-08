@@ -18,7 +18,7 @@
 		<control type="progress">
 			<description>progress control</description>
 			<posx>63</posx>
-			<posy>90</posy>
+			<posy>75</posy>
 			<width>226</width>
 			<height>40</height>
 			<info>Player.Volume</info>
@@ -28,12 +28,13 @@
 			<midtexture>volume-back.png</midtexture>
 			<righttexture>-</righttexture>
 			<overlaytexture>-</overlaytexture>
+			<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
 			<visible>IntegerGreaterThan(Player.Volume,-60)</visible>
 		</control>
 		<control type="image">
 			<description>Volume bar overlay</description>
 			<posx>63</posx>
-			<posy>90</posy>
+			<posy>75</posy>
 			<width>226</width>
 			<height>40</height>
 			<texture>volume-overlay.png</texture>
@@ -41,7 +42,7 @@
 		<control type="label" id="0">
 			<description>Volume Label</description>
 			<posx>123</posx>
-			<posy>20</posy>
+			<posy>10</posy>
 			<width>212</width>
 			<height>80</height>
 			<font>font22</font>
@@ -55,6 +56,18 @@
 			<width>113</width>
 			<height>80</height>
 			<texture>volume-thingy.png</texture>
+		</control>
+		<control type="label">
+			<description>Passthrough Label</description>
+			<posx>8</posx>
+			<posy>125</posy>
+			<width>340</width>
+			<height>20</height>
+			<label>$LOCALIZE[29802]</label>
+			<font>font12</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<visible>Player.Passthrough</visible>
 		</control>
 	</controls>
 </window>
