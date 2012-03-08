@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<views>50,51,54,57,58,59</views>
-	<include condition="Skin.HasSetting(tv_theme)">StartTVTunes</include>
+	<include condition="Skin.HasSetting(tv_theme) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">StartTVTunes</include>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
