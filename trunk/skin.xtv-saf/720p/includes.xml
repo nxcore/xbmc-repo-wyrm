@@ -50,7 +50,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<colordiffuse>fanart-background</colordiffuse>
+			<colordiffuse>solid-background</colordiffuse>
 			<aspectratio>stretch</aspectratio>
 			<info>Skin.String(custom-background)</info>
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
@@ -59,7 +59,7 @@
 			<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle)</visible>
 			<control type="group">
 				<visible>Skin.HasSetting(background-fanart)</visible>
-				<visible>![Player.HasAudio + Visualisation.Enabled] + !Player.HasVideo</visible>
+				<visible>![Player.HasAudio + Visualisation.Enabled + SubString(Window(videolibrary).Property(TvTunesIsAlive),True)] + !Player.HasVideo</visible>
 				<control type="image">
 					<description>Fanart background</description>
 					<posx>0</posx>
@@ -81,7 +81,7 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<visible>Player.HasAudio + Visualisation.Enabled</visible>
+					<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + Player.HasAudio + Visualisation.Enabled</visible>
 				</control>
 				<control type="videowindow">
 					<posx>0</posx>
@@ -98,7 +98,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<colordiffuse>C0FFFFFF</colordiffuse>
+				<colordiffuse>mask-background</colordiffuse>
 				<texture>background.png</texture>
 			</control>
 		</control>
@@ -1371,9 +1371,9 @@
 		<!--<animation effect="zoom" start="140,145,230,460"  end="840,20,80,80" time="175" condition="Window.Previous(Home)">WindowOpen</animation>-->
 	</include>
 	<include name="media-slide">
-		<animation condition="Container(9900).Position(0)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9900).Position(1)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9900).Position(2)" effect="slide" start="0,0" end="768,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(0)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(1)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(2)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
 	</include>
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
@@ -1400,14 +1400,14 @@
 
 	<!-- Start of Run scripts Includes -->
 	<include name="StartupPlaylist">
-		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;,isdir)</onfocus>
+		<onfocus>PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 	</include>
 	<include name="StartupVideo">
-		<onfocus>PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
+		<onfocus>PlayMedia($ESCINFO[Skin.String(intro-vid-location)])</onfocus>
 	</include>
 	<!-- Conditional onloads don't work for early pre-Eden builds, so use a conditional include instead -->
 	<include name="StartTVTunes">
-		<onload>RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+		<onload>RunScript(script.tvtunes,backend=True)</onload>
 	</include>
 	<include name="StartArtistSlideshow">
 		<onload>RunScript(script.artistslideshow)</onload>
