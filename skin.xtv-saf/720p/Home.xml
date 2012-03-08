@@ -9,8 +9,8 @@
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<include condition="Skin.HasSetting(startup-playlist)">StartupPlaylist</include>
-			<include>StartWatchlist</include>
+			<include condition="[Skin.HasSetting(startup-playlist) + !Window.Previous(settings)]">StartupPlaylist</include>
+			<!--<include>StartWatchlist</include>-->
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
