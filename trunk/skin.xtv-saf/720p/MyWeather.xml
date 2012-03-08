@@ -33,8 +33,8 @@
 		<control type="label">
 			<description>weather location label</description>
 			<posx>17</posx>
-			<posy>6</posy>
-			<width>637</width>
+			<posy>2</posy>
+			<width>636</width>
 			<height>37</height>
 			<font>font18</font>
 			<textcolor>button-text</textcolor>
@@ -47,15 +47,28 @@
 		<control type="label">
 			<description>update label</description>
 			<posx>17</posx>
-			<posy>37</posy>
-			<width>531</width>
-			<height>43</height>
+			<posy>38</posy>
+			<width>636</width>
+			<height>25</height>
 			<font>font11</font>
 			<label>$LOCALIZE[31531] - $INFO[Window.Property(Updated)]</label>
 			<align>left</align>
 			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
+		</control>
+		<control type="label">
+			<description>weather provider label</description>
+			<posx>17</posx>
+			<posy>64</posy>
+			<width>636</width>
+			<height>20</height>
+			<font>font11</font>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[410] - $INFO[Window(Weather).Property(WeatherProvider)]</label>
 		</control>
 		
 		<!-- Display a particular weather screen based on what plugin selected -->
