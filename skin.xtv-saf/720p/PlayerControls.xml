@@ -134,7 +134,7 @@
 		</control>
 		<control type="progress">
 			<description>Progressbar</description>
-			<posx>525</posx>
+			<posx>520</posx>
 			<posy>224</posy>
 			<width>440</width>
 			<height>16</height>
