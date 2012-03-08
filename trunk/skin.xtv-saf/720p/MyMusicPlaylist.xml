@@ -46,9 +46,9 @@
 		</control>
 		<control type="label">
 			<description>Time Label</description>
-			<posx>697</posx>
+			<posx>696</posx>
 			<posy>585</posy>
-			<width>230</width>
+			<width>180</width>
 			<align>right</align>
 			<font>font12</font>
 			<label>$INFO[Player.Time]$INFO[Player.Duration,/ ]</label>
@@ -57,26 +57,26 @@
 			<visible>Player.HasAudio</visible>
 		</control>
 		<control type="label">
-			<description>Now Playing Label</description>
+			<description>Artist label</description>
 			<posx>35</posx>
 			<posy>585</posy>
-			<width>424</width>
+			<width>480</width>
 			<height>25</height>
+			<info>MusicPlayer.Artist</info>
 			<font>font12</font>
-			<info>MusicPlayer.Title</info>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<visible>Player.HasAudio</visible>
 		</control>
 		<control type="label">
-			<description>Artist label</description>
+			<description>Now Playing Label</description>
 			<posx>35</posx>
-			<posy>612</posy>
-			<width>424</width>
+			<posy>615</posy>
+			<width>660</width>
 			<height>25</height>
-			<info>MusicPlayer.Artist</info>
 			<font>font12</font>
+			<info>MusicPlayer.Title</info>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
