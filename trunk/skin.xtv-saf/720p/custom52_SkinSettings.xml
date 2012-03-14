@@ -275,6 +275,14 @@
 			<!--General Settings-->
 			<control type="group">
 				<visible>Skin.String(skinsettingmenu,general)</visible>
+				<control type="image" id="6200">
+					<description>Hack to check if skin script directory present</description>
+					<posx>950</posx>
+					<posy>166</posy>
+					<width>16</width>
+					<height>16</height>
+					<texture fallback="blank.png">special://skin/scripts/CheckForScripts.png</texture>
+				</control>
 				<control type="image">
 					<description>General Settings Button Image</description>
 					<posx>950</posx>
@@ -482,6 +490,7 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
+						<visible>!StringCompare(Control.GetLabel(6200),blank.png)</visible>
 					</control>
 					<control type="button" id="214">
 						<description>Reset skin settings to defaults</description>
