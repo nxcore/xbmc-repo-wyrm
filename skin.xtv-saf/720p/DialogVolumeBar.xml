@@ -5,7 +5,7 @@
 		<posy>12</posy>
 	</coordinates>
 	<controls>
-		<visible>!Window.IsActive(113)</visible>
+		<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(MuteBug)]</visible>
 		<control type="image" id="0">
 			<description>Popup Volume Dialog Background</description>
 			<posx>0</posx>
