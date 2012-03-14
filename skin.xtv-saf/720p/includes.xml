@@ -59,7 +59,19 @@
 			<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle)</visible>
 			<control type="group">
 				<visible>Skin.HasSetting(background-fanart)</visible>
-				<visible>![Player.HasAudio + Visualisation.Enabled + SubString(Window(videolibrary).Property(TvTunesIsAlive),True)] + !Player.HasVideo</visible>
+				<visible>[!Player.HasAudio | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + !Player.HasVideo</visible>
+				<control type="multiimage" id="6100">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<timeperimage>4000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>300</fadetime>
+					<imagepath fallback="blank.png" background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
+					<aspectratio>scale</aspectratio>
+					<visible>!IsEmpty(ListItem.Path)</visible>
+				</control>
 				<control type="image">
 					<description>Fanart background</description>
 					<posx>0</posx>
@@ -68,9 +80,9 @@
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<include>background-fade</include>
+					<!--<include>background-fade</include>-->
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<visible>IsEmpty(Control.GetLabel(6100)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -81,7 +93,7 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + Player.HasAudio + Visualisation.Enabled</visible>
+					<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				</control>
 				<control type="videowindow">
 					<posx>0</posx>
@@ -100,6 +112,18 @@
 				<height>720</height>
 				<colordiffuse>mask-background</colordiffuse>
 				<texture>background.png</texture>
+			</control>
+			<control type="label">
+				<description>fanart debug</description>
+				<posx>10</posx>
+				<posy>40</posy>
+				<width>800</width>
+				<height>37</height>
+				<align>left</align>
+				<label>$INFO[Control.GetLabel(6100)]</label>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 		</control>
 	</include>
