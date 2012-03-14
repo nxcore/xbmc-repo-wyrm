@@ -1,8 +1,6 @@
 <window id="2006">
 	<include condition="Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRunning))">StartArtistSlideshow</include>
 	<allowoverlay>no</allowoverlay>
-	<visible>!Window.IsVisible(2004)</visible>
-	<visible>!Window.IsVisible(2005)</visible>
 	<controls>
 		<control type="image">
 			<description>solid background</description>
@@ -51,7 +49,7 @@
 					<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 					<aspectratio>scale</aspectratio>
 					<fadetime>1000</fadetime>
-					<visible>[StringCompare(Control.GetLabel(991),blank.png) | (!Skin.HasSetting(background-slideshow))]</visible>
+					<visible>StringCompare(Control.GetLabel(991),blank.png) | !Skin.HasSetting(background-slideshow)</visible>
 				</control>
 			</control>
 		</control>
