@@ -113,18 +113,6 @@
 				<colordiffuse>mask-background</colordiffuse>
 				<texture>background.png</texture>
 			</control>
-			<control type="label">
-				<description>fanart debug</description>
-				<posx>10</posx>
-				<posy>40</posy>
-				<width>800</width>
-				<height>37</height>
-				<align>left</align>
-				<label>$INFO[Control.GetLabel(6100)]</label>
-				<font>font13</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
 		</control>
 	</include>
 
