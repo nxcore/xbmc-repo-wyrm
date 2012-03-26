@@ -3,7 +3,27 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="group" id="100">
-			<include>background</include>
+			<control type="image">
+				<description>solid background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>solid-background</colordiffuse>
+				<texture>background.png</texture>
+				<visible>IsEmpty(Skin.String(custom-background))</visible>
+			</control>
+			<control type="image">
+				<description>custom background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>solid-background</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+				<info>Skin.String(custom-background)</info>
+				<visible>!IsEmpty(Skin.String(custom-background))</visible>
+			</control>
 			<!-- Fanart backgrounds for focused search item -->
 			<control type="image">
 				<posx>0</posx>
@@ -16,7 +36,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(111)</visible>
+				<visible>Control.HasFocus(111) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -29,7 +49,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(121)</visible>
+				<visible>Control.HasFocus(121) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -42,7 +62,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(131)</visible>
+				<visible>Control.HasFocus(131) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -55,7 +75,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(141)</visible>
+				<visible>Control.HasFocus(141) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -68,7 +88,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(151)</visible>
+				<visible>Control.HasFocus(151) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -81,7 +101,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(161)</visible>
+				<visible>Control.HasFocus(161) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -94,7 +114,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(171)</visible>
+				<visible>Control.HasFocus(171) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -107,7 +127,7 @@
 				<colordiffuse>fanart-background</colordiffuse>
 				<animation effect="fade" time="200">Visible</animation>
 				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(181)</visible>
+				<visible>Control.HasFocus(181) + IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -238,7 +258,7 @@
 							<control type="label">
 								<posx>110</posx>
 								<posy>10</posy>
-								<width>280</width>
+								<width>480</width>
 								<height>25</height>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 								<font>font12</font>
@@ -290,7 +310,7 @@
 								<posx>110</posx>
 								<posy>62</posy>
 								<width>480</width>
-								<height>70</height>
+								<height>88</height>
 								<label>$INFO[ListItem.Property(Plot)]</label>
 								<font>font12</font>
 								<textcolor>button-text</textcolor>
@@ -464,7 +484,7 @@
 							</control>
 							<control type="textbox">
 								<posx>110</posx>
-								<posy>622</posy>
+								<posy>62</posy>
 								<width>480</width>
 								<height>88</height>
 								<label>$INFO[ListItem.Property(Plot)]</label>
