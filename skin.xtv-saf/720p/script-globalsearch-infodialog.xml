@@ -13,7 +13,27 @@
 		<control type="group">
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
-			<include>background</include>
+			<control type="image">
+				<description>solid background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>solid-background</colordiffuse>
+				<texture>background.png</texture>
+				<visible>IsEmpty(Skin.String(custom-background))</visible>
+			</control>
+			<control type="image">
+				<description>custom background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>solid-background</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+				<info>Skin.String(custom-background)</info>
+				<visible>!IsEmpty(Skin.String(custom-background))</visible>
+			</control>
 			<control type="image" id="199">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -23,82 +43,120 @@
 				<aspectratio>scale</aspectratio>
 				<texture>$INFO[Container(100).ListItem.Property(Fanart_Image)]</texture>
 			</control>
+			
 			<control type="label">
-				<posx>40</posx>
-				<posy>58</posy>
-				<width>1200</width>
-				<height>38</height>
+				<posx>531</posx>
+				<posy>44</posy>
+				<width>708</width>
+				<height>65</height>
 				<font>font22</font>
-				<label>-</label>
-				<align>center</align>
+				<label>$INFO[Container(100).ListItem.Label]</label>
 				<aligny>center</aligny>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>true</scroll>
 				<label>$INFO[Container(100).ListItem.Label]</label>
 			</control>
+			
 			<control type="image">
-				<posx>40</posx>
-				<posy>100</posy>
-				<width>1200</width>
-				<height>4</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>separator.png</texture>
+				<description>Cover image</description>
+				<posx>58</posx>
+				<posy>118</posy>
+				<width>384</width>
+				<height>384</height>
+				<texture diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
 			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>108</posy>
-				<width>360</width>
-				<height>360</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Container(100).ListItem.Icon]</texture>
-			</control>
-			<control type="group">
+
+			<!-- Media flags -->
+			<control type="grouplist">
 				<visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
-				<control type="image">
-					<posx>80</posx>
-					<posy>425</posy>
-					<width>48</width>
-					<height>36</height>
-					<aspectratio>keep</aspectratio>
-					<texture>mediaflags/videoresolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
+				<description>Group Media Flags</description>
+				<posx>46</posx>
+				<posy>537</posy>
+				<width>453</width>
+				<height>60</height>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<itemgap>-8</itemgap>
+
+				<!-- Hack to check if media flag image is available -->
+				<control type="image" id="761">
+					<width>1</width>
+					<height>60</height>
+					<align>center</align>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<texture fallback="blank.png">special://skin/extras/images/audio/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
+					<visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
 				</control>
-				<control type="image">
-					<posx>130</posx>
-					<posy>425</posy>
-					<width>75</width>
-					<height>36</height>
-					<aspectratio>keep</aspectratio>
-					<texture>mediaflags/videocodec/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
+				<control type="image" id="762">
+					<width>1</width>
+					<height>60</height>
+					<align>center</align>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<texture fallback="blank.png">special://skin/extras/images/video/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
+					<visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
 				</control>
-				<control type="image">
-					<posx>207</posx>
-					<posy>425</posy>
-					<width>48</width>
-					<height>36</height>
-					<aspectratio>keep</aspectratio>
-					<texture>mediaflags/videoaspect/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
+				<control type="image" id="763">
+					<description>Aspectratio Image</description>
+					<width>1</width>
+					<height>60</height>
+					<align>center</align>
+					<texture fallback="blank.png">special://skin/extras/images/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect))</visible>
 				</control>
-				<control type="image">
-					<posx>257</posx>
-					<posy>425</posy>
-					<width>75</width>
-					<height>36</height>
-					<aspectratio>keep</aspectratio>
-					<texture>mediaflags/audiocodec/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
+				<control type="image" id="764">
+					<width>1</width>
+					<height>60</height>
+					<align>center</align>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					<texture fallback="blank.png">special://skin/extras/images/resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
+					<visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution))</visible>
 				</control>
-				<control type="image">
-					<posx>334</posx>
-					<posy>425</posy>
-					<width>48</width>
-					<height>36</height>
-					<aspectratio>keep</aspectratio>
-					<texture>mediaflags/audiochannels/$INFO[Container(100).ListItem.Property(AudioChannels),,.png]</texture>
+				<!-- Audio Codec -->
+				<control type="image" id="771">
+					<width>113</width>
+					<height>60</height>
+					<align>center</align>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture>special://skin/extras/images/audio/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
+					<visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec)) + !StringCompare(Control.GetLabel(761),blank.png)</visible>
+				</control>
+				<!-- Video Codec -->
+				<control type="image" id="772">
+					<width>113</width>
+					<height>60</height>
+					<align>center</align>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture fallback="blank.png">special://skin/extras/images/video/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
+					<visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec)) + !StringCompare(Control.GetLabel(762),blank.png)</visible>
+				</control>
+				<!-- Video Aspect Ratio -->
+				<control type="image" id="773">
+					<description>Aspectratio Image</description>
+					<width>113</width>
+					<height>60</height>
+					<align>center</align>
+					<texture>special://skin/extras/images/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect)) + !StringCompare(Control.GetLabel(763),blank.png)</visible>
+				</control>
+				<!-- Video Resolution -->
+				<control type="image" id="774">
+					<width>113</width>
+					<height>60</height>
+					<align>center</align>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture>special://skin/extras/images/resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
+					<visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution)) + !StringCompare(Control.GetLabel(764),blank.png)</visible>
 				</control>
 			</control>
+			<!-- Movie Info -->
 			<control type="group" id="101">
 				<control type="list" id="110">
 					<posx>430</posx>
-					<posy>118</posy>
+					<posy>175</posy>
 					<width>800</width>
 					<height>440</height>
 					<onleft>110</onleft>
@@ -113,11 +171,11 @@
 							<posy>0</posy>
 							<width>165</width>
 							<height>40</height>
-							<font>font11</font>
+							<font>font12</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
-							<selectedcolor>listselectedcolor</selectedcolor>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -125,11 +183,11 @@
 							<posy>0</posy>
 							<width>625</width>
 							<height>40</height>
-							<font>font11</font>
+							<font>font12</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
-							<selectedcolor>listselectedcolor</selectedcolor>
+							<shadowcolor>shadow-text</shadowcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -147,11 +205,11 @@
 							<posy>0</posy>
 							<width>165</width>
 							<height>40</height>
-							<font>font11</font>
+							<font>font12</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
-							<selectedcolor>listselectedcolor</selectedcolor>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -159,27 +217,15 @@
 							<posy>0</posy>
 							<width>625</width>
 							<height>40</height>
-							<font>font11</font>
+							<font>font12</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
-							<selectedcolor>listselectedcolor</selectedcolor>
+							<shadowcolor>shadow-text</shadowcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
 					<content>
-						<item>
-							<label>$LOCALIZE[20339]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Director)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Director))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[572]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Studio)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Studio))</visible>
-						</item>
 						<item>
 							<label>$LOCALIZE[515]:</label>
 							<label2>$INFO[Container(100).ListItem.Property(Genre)]</label2>
@@ -187,46 +233,10 @@
 							<visible>!IsEmpty(Container(100).ListItem.Property(Genre))</visible>
 						</item>
 						<item>
-							<label>$LOCALIZE[562]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Year)]</label2>
+							<label>$LOCALIZE[20339]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(Director)]</label2>
 							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Year))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[2050]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Duration),, $LOCALIZE[12391]]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Duration)) + !SubString(Container(100).ListItem.Property(Duration),min)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[2050]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Duration)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Duration)) + SubString(Container(100).ListItem.Property(Duration),min)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[563]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Rating)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Rating))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[202]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(TagLine)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(TagLine))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[203]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(PlotOutline)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(PlotOutline))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[20074]:</label>
-							<label2>$INFO[Container(100).ListItem.Property(Mpaa)]</label2>
-							<onclick>-</onclick>
-							<visible>!IsEmpty(Container(100).ListItem.Property(Mpaa))</visible>
+							<visible>!IsEmpty(Container(100).ListItem.Property(Director))</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[567]:</label>
@@ -235,6 +245,112 @@
 							<visible>!IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
 						</item>
 					</content>
+				</control>
+				<control type="group">
+					<visible>Control.IsVisible(110)</visible>
+					<posx>0</posx>
+					<posy>50</posy>					
+
+					<!-- Star Rating -->
+					<control type="image">
+						<posx>159</posx>
+						<posy>6</posy>
+						<width>215</width>
+						<height>27</height>
+						<info>Container(100).ListItem.Property(Rating)</info>
+						<colordiffuse>StarDiffuse</colordiffuse>
+						<visible>!IsEmpty(Container(100).ListItem.Property(Rating))</visible>
+					</control>
+					<!-- Studio -->
+					<control type="group">
+						<visible>!IsEmpty(Container(100).ListItem.Property(Studio))</visible>
+						<control type="image">
+							<posx>382</posx>
+							<posy>-30</posy>
+							<width>106</width>
+							<height>75</height>
+							<align>center</align>
+							<aligny>bottom</aligny>
+							<colordiffuse>StudioShadow</colordiffuse>
+							<aspectratio>keep</aspectratio>
+							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+						</control>
+						<control type="image">
+							<posx>380</posx>
+							<posy>-31</posy>
+							<width>106</width>
+							<height>75</height>
+							<align>center</align>
+							<aligny>bottom</aligny>
+							<colordiffuse>StudioDiffuse</colordiffuse>
+							<aspectratio>keep</aspectratio>
+							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+						</control>
+					</control>
+					<!-- Rating -->
+					<control type="image">
+						<posx>531</posx>
+						<posy>62</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
+						<texture>$VAR[GlobalSearchRating]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<!-- Duration -->
+					<control type="group">
+						<visible>!IsEmpty(Container(100).ListItem.Property(Duration))</visible>
+						<control type="label">
+							<posx>769</posx>
+							<posy>62</posy>
+							<width>265</width>
+							<height>62</height>
+							<aligny>center</aligny>
+							<font>font18</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+							<info>Container(100).ListItem.Property(Duration)</info>
+							<visible>substring(Container(100).ListItem.Property(Duration),hrs)</visible>
+						</control>
+						<control type="label">
+							<posx>769</posx>
+							<posy>62</posy>
+							<width>265</width>
+							<height>62</height>
+							<aligny>center</aligny>
+							<font>font18</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+							<info>Container(100).ListItem.Property(Duration)</info>
+							<visible>substring(Container(100).ListItem.Property(Duration),min)</visible>
+							<visible>!substring(Container(100).ListItem.Property(Duration),hrs)</visible>
+						</control>
+						<control type="label">
+							<posx>769</posx>
+							<posy>62</posy>
+							<width>265</width>
+							<height>62</height>
+							<aligny>center</aligny>
+							<font>font18</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+							<label>$INFO[Container(100).ListItem.Property(Duration),, mins]</label>
+							<visible>!substring(Container(100).ListItem.Property(Duration),min)</visible>
+						</control>
+					</control>
+					<!-- Year -->
+					<control type="label">
+						<posx>1062</posx>
+						<posy>62</posy>
+						<width>177</width>
+						<height>62</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font18</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>Container(100).ListItem.Property(Year)</info>
+					</control>					
 				</control>
 				<control type="list" id="120">
 					<posx>430</posx>
@@ -256,7 +372,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -290,7 +406,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -378,7 +494,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -412,7 +528,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -470,7 +586,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -504,7 +620,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -598,7 +714,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -632,7 +748,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -720,7 +836,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -754,7 +870,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -842,7 +958,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -876,7 +992,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -970,7 +1086,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1004,7 +1120,7 @@
 							<font>font11</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>listselectedcolor</textcolor>
+							<textcolor>button-text</textcolor>
 							<selectedcolor>listselectedcolor</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1079,33 +1195,67 @@
 					</content>
 				</control>
 			</control>
-			<control type="image">
-				<posx>40</posx>
-				<posy>478</posy>
-				<width>1200</width>
-				<height>4</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>separator.png</texture>
-			</control>
-			<control type="textbox">
-				<posx>60</posx>
-				<posy>488</posy>
-				<width>1160</width>
-				<height>114</height>
-				<font>font12</font>
-				<align>justify</align>
+
+			<control type="label">
+				<posx>531</posx>
+				<posy>315</posy>
+				<width>265</width>
+				<height>27</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font18</font>
 				<textcolor>button-text</textcolor>
-				<pagecontrol>195</pagecontrol>
-				<label>$INFO[Container(100).ListItem.Property(Plot)]</label>
-				<autoscroll time="3000" delay="20000" repeat="5000">true</autoscroll>
-				<visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$LOCALIZE[207]</label>
+				<visible>Control.IsVisible(110)</visible>
+			</control>
+			<control type="textbox">
+				<posx>531</posx>
+				<posy>342</posy>
+				<width>654</width>
+				<height>298</height>
+				<font>font11</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[Container(100).ListItem.Property(Plot)]</label>
+				<align>justify</align>
+				<pagecontrol>-</pagecontrol>
+				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
+				<visible>Control.IsVisible(110)</visible>
+			</control>
+			<control type="label">
+				<posx>531</posx>
+				<posy>335</posy>
+				<width>265</width>
+				<height>27</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$LOCALIZE[207]</label>
+				<visible>Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
+			</control>
+			<control type="textbox">
+				<posx>531</posx>
+				<posy>362</posy>
+				<width>654</width>
+				<height>298</height>
+				<font>font11</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[Container(100).ListItem.Property(Plot)]</label>
+				<align>justify</align>
+				<pagecontrol>-</pagecontrol>
+				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
+				<visible>Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
 			</control>
 			<control type="textbox">
 				<posx>60</posx>
 				<posy>488</posy>
 				<width>1160</width>
 				<height>114</height>
-				<font>font12</font>
+				<font>font11</font>
 				<align>justify</align>
 				<textcolor>button-text</textcolor>
 				<pagecontrol>195</pagecontrol>
@@ -1118,7 +1268,7 @@
 				<posy>488</posy>
 				<width>1160</width>
 				<height>114</height>
-				<font>font12</font>
+				<font>font11</font>
 				<align>justify</align>
 				<textcolor>button-text</textcolor>
 				<pagecontrol>195</pagecontrol>
@@ -1131,7 +1281,7 @@
 				<posy>488</posy>
 				<width>1160</width>
 				<height>100</height>
-				<font>font12</font>
+				<font>font11</font>
 				<align>justify</align>
 				<textcolor>button-text</textcolor>
 				<pagecontrol>195</pagecontrol>
@@ -1141,7 +1291,7 @@
 			</control>
 			<control type="spincontrol" id="195">
 				<posx>1152</posx>
-				<posy>604</posy>
+				<posy>624</posy>
 				<font>-</font>
 				<spinwidth>33</spinwidth>
 				<spinheight>22</spinheight>
@@ -1158,20 +1308,21 @@
 				<textcolor>-</textcolor>
 			</control>
 			<control type="grouplist" id="190">
-				<posx>40</posx>
-				<posy>656</posy>
-				<width>1200</width>
-				<height>57</height>
-				<itemgap>2</itemgap>
-				<align>center</align>
+				<posx>8</posx>
+				<posy>670</posy>
+				<width>1256</width>
+				<height>50</height>
+				<itemgap>0</itemgap>
+				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
+				<align>center</align>
 				<onleft>190</onleft>
 				<onright>190</onright>
 				<onup>195</onup>
 				<ondown>101</ondown>
 				<control type="button" id="191">
 					<width>250</width>
-					<height>57</height>
+					<height>50</height>
 					<label>$LOCALIZE[186]</label>
 					<font>font13</font>
 					<textcolor>button-text</textcolor>
@@ -1182,7 +1333,7 @@
 				</control>
 				<control type="button" id="192">
 					<width>250</width>
-					<height>57</height>
+					<height>50</height>
 					<label>-</label>
 					<font>font13</font>
 					<textcolor>button-text</textcolor>
@@ -1193,7 +1344,7 @@
 				</control>
 				<control type="button" id="193">
 					<width>250</width>
-					<height>57</height>
+					<height>50</height>
 					<label>-</label>
 					<font>font13</font>
 					<textcolor>button-text</textcolor>
