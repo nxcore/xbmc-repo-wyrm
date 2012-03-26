@@ -477,10 +477,14 @@
 				</control>
 			</control>
 			<!-- MPAA Rating -->
-			<control type="group">
+			<control type="image">
 				<posx>17</posx>
 				<posy>343</posy>
-				<include>mpaa-ratings</include>
+				<width>212</width>
+				<height>62</height>
+				<aligny>bottom</aligny>
+				<texture>$VAR[VideoRating]</texture>
+				<aspectratio>keep</aspectratio>
 			</control>
 			<!-- TV show Logo -->
 			<control type="group">
