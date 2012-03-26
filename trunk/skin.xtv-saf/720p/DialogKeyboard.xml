@@ -15,7 +15,7 @@
 				<posy>20</posy>
 				<width>1280</width>
 				<height>420</height>
-				<colordiffuse>FF363636</colordiffuse>
+				<colordiffuse>FF323232</colordiffuse>
 				<texture>white.png</texture>
 			</control>
 			<control type="label" id="311">
@@ -25,10 +25,10 @@
 				<width>1062</width>
 				<height>37</height>
 				<font>font18</font>
-				<textcolor>disabled-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
+				<textcolor>ff000000</textcolor>
+				<shadowcolor>-</shadowcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 				<visible>IsEmpty(Control.GetLabel(310))</visible>
 			</control>
 			<control type="image">
@@ -36,7 +36,7 @@
 				<posy>54</posy>
 				<width>1122</width>
 				<height>48</height>
-				<texture border="8">scrollbar_background.png</texture>
+				<texture border="8">white.png</texture>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 			</control>
 			<control type="label" id="310">
@@ -46,8 +46,10 @@
 				<width>1062</width>
 				<height>37</height>
 				<font>font18</font>
+				<textcolor>shadow-text</textcolor>
+				<shadowcolor>-</shadowcolor>
 				<align>left</align>
-				<aligny>center</aligny>
+				<aligny>top</aligny>
 			</control>
 			<control type="group">
 				<posx>0</posx>
@@ -65,10 +67,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="50">
 					<description>'2' button</description>
@@ -83,10 +86,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="51">
 					<description>'3' button</description>
@@ -101,10 +105,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="52">
 					<description>'4' button</description>
@@ -119,10 +124,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="53">
 					<description>'5' button</description>
@@ -137,10 +143,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="54">
 					<description>'6' button</description>
@@ -155,10 +162,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="55">
 					<description>'7' button</description>
@@ -173,10 +181,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="56">
 					<description>'8' button</description>
@@ -191,10 +200,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="57">
 					<description>'9' button</description>
@@ -209,10 +219,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="48">
 					<description>'0' button</description>
@@ -227,10 +238,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="8">
 					<description>'BACKSPACE' button</description>
@@ -246,10 +258,11 @@
 					<texturenofocus border="24">key-nofocus.png</texturenofocus>
 					<texturefocus border="24">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="81">
 					<description>'Q' button</description>
@@ -264,10 +277,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="87">
 					<description>'W' button</description>
@@ -282,10 +296,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="69">
 					<description>'E' button</description>
@@ -300,10 +315,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="82">
 					<description>'R' button</description>
@@ -318,10 +334,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="84">
 					<description>'T' button</description>
@@ -336,10 +353,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="89">
 					<description>'Y' button</description>
@@ -354,10 +372,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="85">
 					<description>'U' button</description>
@@ -372,10 +391,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="73">
 					<description>'I' button</description>
@@ -390,10 +410,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="79">
 					<description>'O' button</description>
@@ -408,10 +429,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="80">
 					<description>'P' button</description>
@@ -426,10 +448,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="300">
 					<description>DONE button</description>
@@ -445,9 +468,10 @@
 					<texturenofocus border="24">key-nofocus.png</texturenofocus>
 					<texturefocus border="24">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="65">
 					<description>'A' button</description>
@@ -462,10 +486,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="83">
 					<description>'S' button</description>
@@ -480,10 +505,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="68">
 					<description>'D' button</description>
@@ -498,10 +524,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="70">
 					<description>'F' button</description>
@@ -516,10 +543,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="71">
 					<description>'G' button</description>
@@ -534,10 +562,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="72">
 					<description>'H' button</description>
@@ -552,10 +581,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="74">
 					<description>'J' button</description>
@@ -570,10 +600,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="75">
 					<description>'K' button</description>
@@ -588,10 +619,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="76">
 					<description>'L' button</description>
@@ -606,10 +638,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="togglebutton" id="303">
 					<description>CAPS LOCK button</description>
@@ -627,9 +660,10 @@
 					<alttexturenofocus border="24">key-special-nofocus-on.png</alttexturenofocus>
 					<alttexturefocus border="24">key-special-focus-on.png</alttexturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="90">
 					<description>'Z' button</description>
@@ -644,10 +678,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="88">
 					<description>'X' button</description>
@@ -662,10 +697,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="67">
 					<description>'C' button</description>
@@ -680,10 +716,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="86">
 					<description>'V' button</description>
@@ -698,10 +735,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="66">
 					<description>'B' button</description>
@@ -716,10 +754,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="78">
 					<description>'N' button</description>
@@ -734,10 +773,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="77">
 					<description>'M' button</description>
@@ -752,10 +792,11 @@
 					<texturenofocus border="4">key-nofocus.png</texturenofocus>
 					<texturefocus border="4">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<textoffsetx>0</textoffsetx>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="305">
 					<description>previous button</description>
@@ -766,8 +807,9 @@
 					<label>&lt;</label>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<onleft>77</onleft>
 					<onright>306</onright>
 					<onup>75</onup>
@@ -785,8 +827,9 @@
 					<label>&gt;</label>
 					<font>font18</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<onleft>305</onleft>
 					<onright>302</onright>
 					<onup>76</onup>
@@ -811,9 +854,10 @@
 					<alttexturenofocus border="24">key-nofocus.png</alttexturenofocus>
 					<alttexturefocus border="24">key-focus.png</alttexturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 				<control type="button" id="307">
 					<description>IP Input button</description>
@@ -826,8 +870,9 @@
 					<label>1006</label>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<onleft>304</onleft>
 					<onright>32</onright>
 					<onup>90</onup>
@@ -846,7 +891,7 @@
 					<texturenofocus border="24">key-nofocus.png</texturenofocus>
 					<texturefocus border="24">key-focus.png</texturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 				<control type="togglebutton" id="304">
 					<description>Symbols button</description>
@@ -854,7 +899,7 @@
 					<posy>250</posy>
 					<width>261</width>
 					<height>48</height>
-					<label>20180</label>
+					<label>#+=</label>
 					<onleft>32</onleft>
 					<onright>307</onright>
 					<onup>302</onup>
@@ -864,9 +909,10 @@
 					<alttexturenofocus border="24">key-nofocus.png</alttexturenofocus>
 					<alttexturefocus border="24">key-focus.png</alttexturefocus>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
+					<shadowcolor>-</shadowcolor>
 				</control>
 			</control>
 		</control>
