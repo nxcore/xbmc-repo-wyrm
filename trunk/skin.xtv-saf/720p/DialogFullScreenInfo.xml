@@ -130,12 +130,7 @@
 			<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			<visible>!IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.Plot)</visible>
 		</control>
-		<!-- MPAA Rating -->
-		<!--<control type="group">
-			<posx>290</posx>
-			<posy>-56</posy>
-			<include>mpaa-ratings</include>
-		</control>-->
+
 		<!-- Media flags -->
 		<control type="grouplist">
 			<description>Group Media Flags</description>

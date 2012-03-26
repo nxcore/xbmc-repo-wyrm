@@ -143,10 +143,14 @@
 				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- MPAA Rating -->
-			<control type="group">
+			<control type="image">
 				<posx>272</posx>
 				<posy>367</posy>
-				<include>mpaa-ratings</include>
+				<width>212</width>
+				<height>62</height>
+				<aligny>bottom</aligny>
+				<texture>$VAR[VideoRating]</texture>
+				<aspectratio>keep</aspectratio>
 				<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Go Back -->

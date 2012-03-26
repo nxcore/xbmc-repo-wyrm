@@ -93,7 +93,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(58)</visible>
 			<include>SortLetterNotification</include>
-			<!-- Title -->
+			<!-- Show logo -->
 			<control type="image" id="7016">
 				<posx>17</posx>
 				<posy>112</posy>
@@ -154,10 +154,14 @@
 				<textoffsetx>0</textoffsetx>
 			</control>
 			<!-- MPAA Rating -->
-			<control type="group">
+			<control type="image">
 				<posx>17</posx>
 				<posy>256</posy>
-				<include>mpaa-ratings</include>
+				<width>212</width>
+				<height>62</height>
+				<aligny>bottom</aligny>
+				<texture>$VAR[VideoRating]</texture>
+				<aspectratio>keep</aspectratio>
 			</control>
 			<!-- Watched Overlay -->
 			<control type="image">

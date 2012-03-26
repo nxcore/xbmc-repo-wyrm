@@ -600,10 +600,14 @@
 				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
 			</control>
 			<!-- MPAA Rating -->
-			<control type="group">
+			<control type="image">
 				<posx>17</posx>
 				<posy>618</posy>
-				<include>mpaa-ratings</include>
+				<width>212</width>
+				<height>62</height>
+				<aligny>bottom</aligny>
+				<texture>$VAR[VideoRating]</texture>
+				<aspectratio>keep</aspectratio>
 			</control>
 			<!-- Star Rating -->
 			<control type="image">
