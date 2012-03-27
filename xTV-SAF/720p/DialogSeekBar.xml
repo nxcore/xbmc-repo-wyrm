@@ -346,9 +346,9 @@
 			</control>
 			<!-- End Seek Slider -->
 		</control>
-		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation and MyMusicPlaylist-->
+		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
 		<control type="group">
-			<visible>![Window.IsActive(2009) | Window.IsActive(2005) | Window.IsActive(2006) | Window.IsActive(500)]</visible>
+			<visible>![Window.IsActive(2009) | Window.IsActive(2005) | Window.IsActive(2006) | Window.IsActive(500) | Window.IsActive(PlayerControls)]</visible>
 			<posx>463</posx>
 			<posy>-620</posy>
 			<control type="image">
