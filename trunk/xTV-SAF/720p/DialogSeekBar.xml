@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<control type="image">
 				<description>Seekbar Dialog background image</description>
 				<posx>-42</posx>
@@ -272,7 +272,7 @@
 		
 		<control type="group">
 			<visible>[Window.IsVisible(FullscreenVideo)]</visible>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<!-- Player info labels -->
 			<control type="label">
 				<posx>53</posx>
@@ -348,7 +348,7 @@
 		</control>
 		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
 		<control type="group">
-			<visible>![Window.IsActive(2009) | Window.IsActive(2005) | Window.IsActive(2006) | Window.IsActive(500) | Window.IsActive(PlayerControls)]</visible>
+			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(karaoke) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
 			<posx>463</posx>
 			<posy>-620</posy>
 			<control type="image">
