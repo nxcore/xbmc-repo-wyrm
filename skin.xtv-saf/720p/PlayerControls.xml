@@ -82,7 +82,7 @@
 			<description>Time label</description>
 			<posx>354</posx>
 			<posy>200</posy>
-			<width>407</width>
+			<width>250</width>
 			<height>31</height>
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<align>left</align>
@@ -90,11 +90,35 @@
 			<scroll>true</scroll>
 			<visible>Player.HasVideo</visible>
 		</control>
+		<control type="progress">
+			<description>Progressbar</description>
+			<posx>604</posx>
+			<posy>208</posy>
+			<width>500</width>
+			<height>16</height>
+			<info>Player.Progress</info>
+			<texturebg border="14,0,14,0">progress-background.png</texturebg>
+			<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+			<colordiffuse>ProgressBarColor</colordiffuse>
+			<visible>Player.HasVideo</visible>
+		</control>
+		<control type="slider">
+			<description>Seek Slider</description>
+			<posx>604</posx>
+			<posy>206</posy>
+			<width>500</width>
+			<height>20</height>
+			<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
+			<textureslidernib>progress-marker.png</textureslidernib>
+			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+			<action>seek</action>
+			<visible>Player.HasVideo</visible>
+		</control>
 		<!-- Music -->
 		<control type="label">
 			<description>Album Artist</description>
 			<posx>354</posx>
-			<posy>131</posy>
+			<posy>132</posy>
 			<width>778</width>
 			<height>20</height>
 			<label>$INFO[MusicPlayer.Artist]</label>
@@ -104,7 +128,7 @@
 		<control type="label">
 			<description>Album Name</description>
 			<posx>354</posx>
-			<posy>156</posy>
+			<posy>160</posy>
 			<width>778</width>
 			<height>20</height>
 			<label>$INFO[MusicPlayer.Album]</label>
@@ -114,7 +138,7 @@
 		<control type="label">
 			<description>Track Name</description>
 			<posx>354</posx>
-			<posy>187</posy>
+			<posy>188</posy>
 			<width>778</width>
 			<height>20</height>
 			<label>$INFO[MusicPlayer.Title]</label>
@@ -124,7 +148,7 @@
 		<control type="label">
 			<description>Duration Label</description>
 			<posx>354</posx>
-			<posy>218</posy>
+			<posy>216</posy>
 			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 			<font>font12</font>
 			<align>left</align>
@@ -135,7 +159,7 @@
 		<control type="progress">
 			<description>Progressbar</description>
 			<posx>520</posx>
-			<posy>224</posy>
+			<posy>223</posy>
 			<width>440</width>
 			<height>16</height>
 			<info>Player.Progress</info>
@@ -147,7 +171,7 @@
 		<control type="slider">
 			<description>Seek Slider</description>
 			<posx>520</posx>
-			<posy>222</posy>
+			<posy>221</posy>
 			<width>440</width>
 			<height>20</height>
 			<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
