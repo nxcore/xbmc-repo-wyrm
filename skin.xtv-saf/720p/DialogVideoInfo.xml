@@ -34,7 +34,7 @@
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Studio)</visible>
 				<control type="image">
-					<posx>386</posx>
+					<posx>412</posx>
 					<posy>-26</posy>
 					<width>106</width>
 					<height>75</height>
@@ -45,7 +45,7 @@
 					<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
 				</control>
 				<control type="image">
-					<posx>384</posx>
+					<posx>410</posx>
 					<posy>-27</posy>
 					<width>106</width>
 					<height>75</height>
@@ -59,9 +59,9 @@
 			<!-- Title -->
 			<control type="fadelabel">
 				<posx>531</posx>
-				<posy>-6</posy>
+				<posy>-11</posy>
 				<width>708</width>
-				<height>65</height>
+				<height>40</height>
 				<scrollout>false</scrollout>
 				<pauseatend>200</pauseatend>
 				<scrollspeed>20</scrollspeed>
@@ -74,7 +74,7 @@
 			<!-- Genre -->
 			<control type="label">
 				<posx>531</posx>
-				<posy>40</posy>
+				<posy>35</posy>
 				<width>708</width>
 				<height>37</height>
 				<font>font13</font>
