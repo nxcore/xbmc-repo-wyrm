@@ -2264,14 +2264,14 @@
 		<control type="group" id="540">
 			<visible allowhiddenfocus="true">ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)</visible>
 			<posx>433</posx>
-			<posy>137</posy>
+			<posy>100</posy>
 			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)">Conditional</animation>
 			<control type="image">
 				<description>Progess Dialog background</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>433</width>
-				<height>545</height>
+				<height>575</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
@@ -2299,7 +2299,7 @@
 				<posx>21</posx>
 				<posy>45</posy>
 				<width>389</width>
-				<height>490</height>
+				<height>530</height>
 				<itemgap>0</itemgap>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
@@ -2313,7 +2313,7 @@
 						<posx>194</posx>
 						<posy>0</posy>
 						<width>389</width>
-						<height>40</height>
+						<height>34</height>
 						<description>Item label</description>
 						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
@@ -2337,7 +2337,7 @@
 						<posx>194</posx>
 						<posy>0</posy>
 						<width>389</width>
-						<height>40</height>
+						<height>34</height>
 						<description>Item label</description>
 						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
@@ -2349,83 +2349,90 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
+						<description>Set Music library entry point - Root</description>
+						<label>20108</label>
+						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[20108])</onclick>
+						<onclick>Skin.Reset(selectmusicentry)</onclick>
+						<onclick>SetFocus(500)</onclick>
+					</item>
+					<item id="2">
 						<description>Set Music library entry point - Genres</description>
 						<label>135</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[135])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="2">
+					<item id="3">
 						<description>Set Music library entry point - Artists</description>
 						<label>133</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[133])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="3">
+					<item id="4">
 						<description>Set Music library entry point - Albums</description>
 						<label>132</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[132])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="4">
+					<item id="5">
 						<description>Set Music library entry point - Songs</description>
 						<label>134</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[134])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="5">
+					<item id="6">
 						<description>Set Music library entry point - Top100Songs</description>
 						<label>10504</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10504])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="6">
+					<item id="7">
 						<description>Set Music library entry point - Top100Albums</description>
 						<label>10505</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10505])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="7">
+					<item id="8">
 						<description>Set Music library entry point - RecentlyAddedAlbums</description>
 						<label>359</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[359])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="8">
+					<item id="9">
 						<description>Set Music library entry point - RecentlyPlayededAlbums</description>
 						<label>517</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[517])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="9">
+					<item id="10">
 						<description>Set Music library entry point - Compilations</description>
 						<label>521</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[521])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="10">
+					<item id="11">
 						<description>Set Music library entry point - Years</description>
 						<label>652</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[652])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="11">
+					<item id="12">
 						<description>Set Music library entry point - Singles</description>
 						<label>1050</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[1050])</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
 						<onclick>SetFocus(500)</onclick>
 					</item>
-					<item id="12">
+					<item id="13">
 						<description>Set Music library entry point - Files</description>
 						<label>744</label>
 						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[744])</onclick>

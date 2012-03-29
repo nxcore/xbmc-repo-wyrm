@@ -306,6 +306,7 @@
 					<thumb>icon-music-blur1.png</thumb>
 					<label>31030</label>
 					<include condition="!Skin.String(music-libraryentry)">MusicLibraryAlbums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[20108])">MusicLibraryRoot</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[132])">MusicLibraryAlbums</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[135])">MusicLibraryGenres</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[133])">MusicLibraryArtists</include>

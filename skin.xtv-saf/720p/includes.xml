@@ -416,9 +416,9 @@
 	<include name="MusicLibraryFiles">
 		<onclick>ActivateWindow(MusicFiles)</onclick>
 	</include>
-	<!-- MusicLibraryFiles Include -->
+	<!-- MusicLibraryRoot Include -->
 	<include name="MusicLibraryRoot">
-		<onclick>ActivateWindow(MusicFiles)</onclick>
+		<onclick>ActivateWindow(MusicLibrary,,return)</onclick>
 	</include>
 
 	<!-- Start Current Sort Letter -->
