@@ -1641,6 +1641,23 @@
 					</control>
 					<!-- Plugin -->
 					<control type="button" id="713">
+						<description>Custom plugin 1 window</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<enable>Skin.HasSetting(custom-addon1)</enable>
+						<label>$LOCALIZE[31690] $LOCALIZE[146]</label> 
+						<label2>$INFO[Skin.String(custom-plugin1window)]</label2>
+						<onclick>Skin.SetBool(selectplugintype)</onclick>
+						<onclick>SetFocus(780)</onclick>
+						<onclick>Skin.SetString(custom-plugin1window,$INFO[Skin.String(plugin-windowtype)])</onclick>
+						<onclick>Skin.Reset(custom-script1loc)</onclick>
+						<visible>Skin.HasSetting(custom-addon1)</visible>
+					</control>
+					<control type="button" id="714">
 						<description>Custom plugin 1 folder</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1654,21 +1671,6 @@
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<onclick>Skin.SetString(custom-plugin1folder)</onclick>
-						<onclick>Skin.Reset(custom-script1loc)</onclick>
-						<visible>Skin.HasSetting(custom-addon1)</visible>
-					</control>
-					<control type="button" id="714">
-						<description>Custom plugin 1 window</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(custom-addon1)</enable>
-						<label>31445</label> 
-						<label2>$INFO[Skin.String(custom-plugin1window)]</label2>
-						<onclick>Skin.SetString(custom-plugin1window)</onclick>
 						<onclick>Skin.Reset(custom-script1loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon1)</visible>
 					</control>
@@ -2992,6 +2994,124 @@
 					</item>
 				</content>
 			</control>
-		</control>	
+		</control>
+		<control type="group" id="780">
+			<visible allowhiddenfocus="true">ControlGroup(780).HasFocus + Skin.HasSetting(selectplugintype)</visible>
+			<posx>433</posx>
+			<posy>206</posy>
+			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(780).HasFocus + Skin.HasSetting(selectmusicvidentry)">Conditional</animation>
+			<control type="image">
+				<description>Progess Dialog background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>433</width>
+				<height>430</height>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="label">
+				<description>heading label</description>
+				<posx>21</posx>
+				<posy>4</posy>
+				<width>389</width>
+				<font>font11</font>
+				<label>31442</label>
+				<align>center</align>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+			<control type="image">
+				<description>separator image</description>
+				<posx>21</posx>
+				<posy>37</posy>
+				<width>389</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="list" id="781">
+				<description>Group Get Plugin Type Buttons</description>
+				<posx>21</posx>
+				<posy>45</posy>
+				<width>389</width>
+				<height>370</height>
+				<itemgap>0</itemgap>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+				<align>center</align>
+				<usecontrolcoords>false</usecontrolcoords>
+				<onleft>520</onleft>
+				<onright>520</onright>
+				<viewtype label="31028">list</viewtype>
+				<itemlayout height="40" width="389">
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="389">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<align>left</align>
+						<texture>default-button.png</texture>
+						<include>background-fade</include>
+					</control>
+					<control type="label">
+						<posx>194</posx>
+						<posy>0</posy>
+						<width>389</width>
+						<height>40</height>
+						<description>Item label</description>
+						<label>$INFO[ListItem.Label]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<description>Set Plugin Window Type - Programs</description>
+						<label>0</label>
+						<onclick>Skin.SetString(plugin-windowtype,1)</onclick>
+						<onclick>Skin.Reset(selectplugintype)</onclick>
+						<onclick>SetFocus(700)</onclick>
+					</item>
+					<item id="2">
+						<description>Set Plugin Window Type - Pictures</description>
+						<label>1</label>
+						<onclick>Skin.SetString(plugin-windowtype,2)</onclick>
+						<onclick>Skin.Reset(selectplugintype)</onclick>
+						<onclick>SetFocus(700)</onclick>
+					</item>
+					<item id="3">
+						<description>Set Plugin Window Type - Video</description>
+						<label>2</label>
+						<onclick>Skin.SetString(plugin-windowtype,24)</onclick>
+						<onclick>Skin.Reset(selectplugintype)</onclick>
+						<onclick>SetFocus(700)</onclick>
+					</item>
+					<item id="4">
+						<description>Set Plugin Window Type - Music</description>
+						<label>3</label>
+						<onclick>Skin.SetString(plugin-windowtype,501)</onclick>
+						<onclick>Skin.Reset(selectplugintype)</onclick>
+						<onclick>SetFocus(700)</onclick>
+					</item>
+				</content>
+			</control>
+		</control>		
 	</controls>
 </window>
