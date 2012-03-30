@@ -247,6 +247,7 @@
 					<thumb>icon-music-blur1.png</thumb>
 					<label>31030</label>
 					<include condition="!Skin.String(music-libraryentry)">MusicLibraryAlbums</include>
+					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[20108])">MusicLibraryRoot</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[132])">MusicLibraryAlbums</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[135])">MusicLibraryGenres</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[133])">MusicLibraryArtists</include>
@@ -347,32 +348,68 @@
 					<visible>Skin.HasSetting(home-weather)</visible>
 				</item>
 				<item>
-					<icon>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</icon>
-					<thumb>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</thumb>
+					<description>Script1</description>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script1loc)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script1loc)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script1label)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script1name)])</onclick>
-					<visible>Skin.HasSetting(custom-script1) + !IsEmpty(Skin.String(custom-script1label))+ !IsEmpty(Skin.String(custom-script1name))</visible>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script1loc)])</onclick>
+					<visible>Skin.HasSetting(custom-addon1) + !IsEmpty(Skin.String(custom-addon1label))+ !IsEmpty(Skin.String(custom-script1loc))</visible>
 				</item>
 				<item>
-					<icon>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</icon>
-					<thumb>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</thumb>
+					<description>Plugin1</description>
+					<icon>icon-programs.png</icon>
+					<thumb>icon-programs-blur1.png</thumb>
+					<label>$INFO[Skin.String(custom-script1label)] </label>
+					<onclick>ActivateWindow($INFO[Skin.String(custom-plugin1window)],plugin://$INFO[Skin.String(custom-plugin1folder)])</onclick>
+					<visible>Skin.HasSetting(custom-addon1) + !IsEmpty(Skin.String(custom-addon1label)) + !IsEmpty(Skin.String(custom-plugin1window)) + !IsEmpty(Skin.String(custom-plugin1folder))</visible>
+				</item>
+				<item>
+					<description>Script2</description>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script2loc)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script2loc)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script2label)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script2name)])</onclick>
-					<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script2loc)])</onclick>
+					<visible>Skin.HasSetting(custom-addon2) + !IsEmpty(Skin.String(custom-addon2label))+ !IsEmpty(Skin.String(custom-script2loc))</visible>
 				</item>
 				<item>
-					<icon>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</icon>
-					<thumb>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</thumb>
+					<description>Plugin2</description>
+					<icon>icon-programs.png</icon>
+					<thumb>icon-programs-blur1.png</thumb>
+					<label>$INFO[Skin.String(custom-script2label)] </label>
+					<onclick>ActivateWindow($INFO[Skin.String(custom-plugin2window)],plugin://$INFO[Skin.String(custom-plugin2folder)])</onclick>
+					<visible>Skin.HasSetting(custom-addon2) + !IsEmpty(Skin.String(custom-addon2label)) + !IsEmpty(Skin.String(custom-plugin2window)) + !IsEmpty(Skin.String(custom-plugin2folder))</visible>
+				</item>
+				<item>
+					<description>Script3</description>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script3loc)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script3loc)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script3label)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script3name)])</onclick>
-					<visible>Skin.HasSetting(custom-script3) + !IsEmpty(Skin.String(custom-script3label))+ !IsEmpty(Skin.String(custom-script3name))</visible>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script3loc)])</onclick>
+					<visible>Skin.HasSetting(custom-addon3) + !IsEmpty(Skin.String(custom-addon3label))+ !IsEmpty(Skin.String(custom-script3loc))</visible>
 				</item>
 				<item>
-					<icon>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</icon>
-					<thumb>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</thumb>
+					<description>Plugin3</description>
+					<icon>icon-programs.png</icon>
+					<thumb>icon-programs-blur1.png</thumb>
+					<label>$INFO[Skin.String(custom-script3label)] </label>
+					<onclick>ActivateWindow($INFO[Skin.String(custom-plugin3window)],plugin://$INFO[Skin.String(custom-plugin3folder)])</onclick>
+					<visible>Skin.HasSetting(custom-addon3) + !IsEmpty(Skin.String(custom-addon3label)) + !IsEmpty(Skin.String(custom-plugin3window)) + !IsEmpty(Skin.String(custom-plugin3folder))</visible>
+				</item>
+				<item>
+					<description>Script4</description>
+					<icon>special://home/addons/$INFO[Skin.String(custom-script4loc)]/icon.png</icon>
+					<thumb>special://home/addons/$INFO[Skin.String(custom-script4loc)]/icon.png</thumb>
 					<label>$INFO[Skin.String(custom-script4label)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script4name)])</onclick>
-					<visible>Skin.HasSetting(custom-script4) + !IsEmpty(Skin.String(custom-script4label))+ !IsEmpty(Skin.String(custom-script4name))</visible>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script4loc)])</onclick>
+					<visible>Skin.HasSetting(custom-addon4) + !IsEmpty(Skin.String(custom-addon4label))+ !IsEmpty(Skin.String(custom-script4loc))</visible>
+				</item>
+				<item>
+					<description>Plugin4</description>
+					<icon>icon-programs.png</icon>
+					<thumb>icon-programs-blur1.png</thumb>
+					<label>$INFO[Skin.String(custom-script4label)] </label>
+					<onclick>ActivateWindow($INFO[Skin.String(custom-plugin4window)],plugin://$INFO[Skin.String(custom-plugin4folder)])</onclick>
+					<visible>Skin.HasSetting(custom-addon4) + !IsEmpty(Skin.String(custom-addon4label)) + !IsEmpty(Skin.String(custom-plugin4window)) + !IsEmpty(Skin.String(custom-plugin4folder))</visible>
 				</item>
 				<item>
 					<icon>icon-fav.png</icon>

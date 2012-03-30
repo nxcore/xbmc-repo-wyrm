@@ -343,6 +343,10 @@
 	<include name="MusicLibraryFiles">
 		<onclick>ActivateWindow(MyMusic,,return)</onclick>
 	</include>
+	<!-- MusicLibraryRoot Include -->
+	<include name="MusicLibraryRoot">
+		<onclick>ActivateWindow(MusicLibrary,,return)</onclick>
+	</include>
 	
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
