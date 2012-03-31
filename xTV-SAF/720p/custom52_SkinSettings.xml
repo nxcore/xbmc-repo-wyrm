@@ -1416,7 +1416,7 @@
 					<onleft>23</onleft>
 					<onright>999</onright>
 					<pagecontrol>23</pagecontrol>
-					<control type="radiobutton" id="705">
+					<control type="radiobutton" id="704">
 						<description>Subtitles in OSD toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1432,7 +1432,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="706">
+					<control type="button" id="705">
 						<description>Subtitle script location</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1451,93 +1451,7 @@
 						<textoffsetx>50</textoffsetx>
 						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
-					<control type="button" id="707">
-						<description>Subtitle script location</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(home-youtube)</visible>
-					</control>
-					<control type="radiobutton" id="711">
-						<description>Subtitles in OSD toggle</description>
-						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31891</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(osd-subtitles)</onclick>
-						<selected>Skin.HasSetting(osd-subtitles)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
-					</control>
-					<control type="button" id="713">
-						<description>Subtile script location</description>
-						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label> $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(osd-subscriptpath,special://xbmc)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>30</textoffsetx>
-						<visible>Skin.HasSetting(osd-subtitles)</visible>
-					</control>
-					<control type="radiobutton" id="714">
-						<description>Use TV Tunes</description>
-						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>Use TV Tunes</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
-						<selected>Skin.HasSetting(tv_theme)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
-					</control>
-					<control type="button" id="715">
-						<description>TV Tunes script location</description>
-						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(tvtunes-scriptlocation)</enable>
-						<label>$LOCALIZE[33082]:</label>
-						<label2>$INFO[Skin.String(tvtunes-scriptlocation)] </label2>
-						<onclick>XBMC.Skin.SetFile(tvtunes-scriptlocation,special://xbmc)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>20</textoffsetx>
-						<visible>Skin.HasSetting(tv_theme)</visible>
-					</control>
-					<control type="radiobutton" id="754">
+					<control type="radiobutton" id="706">
 						<description>Cinema script toggle</description>
 						<font>font12</font>
 						<width>500</width>
@@ -1553,7 +1467,7 @@
 						<textoffsetx>10</textoffsetx>
 						<radioposx>460</radioposx>
 					</control>
-					<control type="button" id="755">
+					<control type="button" id="707">
 						<description>Cinema script location</description>
 						<font>font12</font>
 						<width>500</width>
@@ -1564,14 +1478,14 @@
 						<enable>Skin.HasSetting(cinema-location)</enable>
 						<label>$LOCALIZE[33082]:</label>
 						<label2>$INFO[Skin.String(cinema-location)] </label2>
-						<onclick>XBMC.Skin.SetFile(cinema-location,special://xbmc)</onclick>
+						<onclick>Skin.SetFile(cinema-location,special://xbmc)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>20</textoffsetx>
 						<visible>Skin.HasSetting(cinema-script)</visible>
 					</control>
-					<control type="label" id="709">
+					<control type="label" id="708">
 						<description>Custom addons</description>
 						<width>885</width>
 						<height>56</height>
@@ -1583,7 +1497,7 @@
 						<textoffsetx>35</textoffsetx>
 						<label>[B]Custom Scripts/Plugins[/B]</label>
 					</control>
-					<control type="radiobutton" id="710">
+					<control type="radiobutton" id="709">
 						<description>Custom addon 1 toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1600,7 +1514,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="711">
+					<control type="button" id="710">
 						<description>Custom addon 1 label</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1608,18 +1522,16 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(custom-addon1)</enable>
 						<label>$LOCALIZE[21899] :</label>
 						<label2>$INFO[Skin.String(custom-addon1label)] </label2>
-						<onclick>XBMC.Skin.SetString(custom-addon1label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
+						<onclick>XBMC.Skin.SetString(custom-addon1label)</onclick>
 						<visible>Skin.HasSetting(custom-addon1)</visible>
 					</control>
 					<!-- Script -->
-					<control type="button" id="712">
+					<control type="button" id="711">
 						<description>Custom script 1 location</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1627,20 +1539,18 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(custom-addon1)</enable>
 						<label>31850</label>
 						<label2>$INFO[Skin.String(custom-script1loc)] </label2>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetFile(custom-script1loc,.py)</onclick>
 						<onclick>Skin.Reset(custom-plugin1folder)</onclick>
 						<onclick>Skin.Reset(custom-plugin1window)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-addon1)</visible>
 					</control>
 					<!-- Plugin -->
-					<control type="button" id="713">
+					<control type="button" id="712">
 						<description>Custom plugin 1 window</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1648,16 +1558,18 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(custom-addon1)</enable>
 						<label>$LOCALIZE[31690] $LOCALIZE[146]</label> 
 						<label2>$INFO[Skin.String(custom-plugin1window)]</label2>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectplugintype)</onclick>
 						<onclick>SetFocus(780)</onclick>
 						<onclick>Skin.SetString(custom-plugin1window,$INFO[Skin.String(plugin-windowtype)])</onclick>
 						<onclick>Skin.Reset(custom-script1loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon1)</visible>
 					</control>
-					<control type="button" id="714">
+					<control type="button" id="713">
 						<description>Custom plugin 1 folder</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1665,16 +1577,14 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(custom-addon1)</enable>
-						<label>31444</label>
+						<label>$LOCALIZE[31690] $LOCALIZE[20334]</label>
 						<label2>$INFO[Skin.String(custom-plugin1folder)]</label2>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<onclick>Skin.SetString(custom-plugin1folder)</onclick>
+						<onclick>Skin.SetPath(custom-plugin1folder)</onclick>
 						<onclick>Skin.Reset(custom-script1loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon1)</visible>
 					</control>
-					<control type="radiobutton" id="715">
+					<control type="radiobutton" id="714">
 						<description>Custom addon 2 toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1691,7 +1601,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="716">
+					<control type="button" id="715">
 						<description>Custom addon 2 label</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1710,7 +1620,7 @@
 						<visible>Skin.HasSetting(custom-addon2)</visible>
 					</control>
 					<!-- Script -->
-					<control type="button" id="717">
+					<control type="button" id="716">
 						<description>Custom script 2 location</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1729,7 +1639,7 @@
 						<visible>Skin.HasSetting(custom-addon2)</visible>
 					</control>
 					<!-- Plugin -->
-					<control type="button" id="718">
+					<control type="button" id="717">
 						<description>Custom plugin 2 folder</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1746,7 +1656,7 @@
 						<onclick>Skin.Reset(custom-script2loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon2)</visible>
 					</control>
-					<control type="button" id="719">
+					<control type="button" id="718">
 						<description>Custom plugin 2 window</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1761,7 +1671,7 @@
 						<onclick>Skin.Reset(custom-script2loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon2)</visible>
 					</control>
-					<control type="radiobutton" id="720">
+					<control type="radiobutton" id="719">
 						<description>Custom addon 3 toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1778,7 +1688,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="721">
+					<control type="button" id="720">
 						<description>Custom addon 3 label</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1797,7 +1707,7 @@
 						<visible>Skin.HasSetting(custom-addon3)</visible>
 					</control>
 					<!-- Script -->
-					<control type="button" id="722">
+					<control type="button" id="721">
 						<description>Custom script 3 location</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1818,7 +1728,7 @@
 						<visible>Skin.HasSetting(custom-addon3)</visible>
 					</control>
 					<!-- Plugin -->
-					<control type="button" id="723">
+					<control type="button" id="722">
 						<description>Custom plugin 3 folder</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1835,7 +1745,7 @@
 						<onclick>Skin.Reset(custom-script3loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon3)</visible>
 					</control>
-					<control type="button" id="724">
+					<control type="button" id="723">
 						<description>Custom plugin 3 window</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1850,7 +1760,7 @@
 						<onclick>Skin.Reset(custom-script3loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon3)</visible>
 					</control>
-					<control type="radiobutton" id="725">
+					<control type="radiobutton" id="724">
 						<description>Custom addon 4 toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1867,7 +1777,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="726">
+					<control type="button" id="725">
 						<description>Custom addon 4 label</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1886,7 +1796,7 @@
 						<visible>Skin.HasSetting(custom-addon4)</visible>
 					</control>
 					<!-- Script -->
-					<control type="button" id="727">
+					<control type="button" id="726">
 						<description>Custom script 4 location</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1905,7 +1815,7 @@
 						<visible>Skin.HasSetting(custom-addon2)</visible>
 					</control>
 					<!-- Plugin -->
-					<control type="button" id="728">
+					<control type="button" id="727">
 						<description>Custom plugin 4 folder</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1922,7 +1832,7 @@
 						<onclick>Skin.Reset(custom-script4loc)</onclick>
 						<visible>Skin.HasSetting(custom-addon4)</visible>
 					</control>
-					<control type="button" id="729">
+					<control type="button" id="728">
 						<description>Custom plugin 4 window</description>
 						<font>font12</font>
 						<width>885</width>
