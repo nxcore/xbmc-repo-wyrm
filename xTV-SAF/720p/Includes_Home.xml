@@ -206,7 +206,6 @@
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20348])">MovieLibraryDirectors</include>
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20388])">MovieLibraryStudios</include>
 					<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[744])">MovieLibraryFiles</include>
-					<include condition="Skin.HasSetting(updatemovieentry)">RestartSkinMovies</include>
 					<visible>!Skin.HasSetting(home-movie)</visible>
 				</item>
 				<item>
@@ -222,7 +221,6 @@
 					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[344])">TVLibraryActors</include>
 					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20388])">TVLibraryStudios</include>
 					<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[744])">TVLibraryFiles</include>
-					<include condition="Skin.HasSetting(updatetventry)">RestartSkinTV</include>
 					<visible>!Skin.HasSetting(home-tv)</visible>
 				</item>
 				<item>
@@ -239,7 +237,6 @@
 					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
 					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
 					<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])">MusicVideoLibraryFiles</include>
-					<include condition="Skin.HasSetting(updatemusicvidentry)">RestartSkinMusicVid</include>
 					<visible>Skin.HasSetting(home-musicvideo)</visible>
 				</item>
 				<item>
@@ -260,7 +257,6 @@
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[652])">MusicLibraryYears</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[1050])">MusicLibrarySingles</include>
 					<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[744])">MusicLibraryFiles</include>
-					<include condition="Skin.HasSetting(updatemusicentry)">RestartSkinMusic</include>
 					<visible>!Skin.HasSetting(home-music)</visible>
 				</item>
 				<item>
@@ -1722,7 +1718,6 @@
 						<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20348])">MovieLibraryDirectors</include>
 						<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20388])">MovieLibraryStudios</include>
 						<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[744])">MovieLibraryFiles</include>
-						<include condition="Skin.HasSetting(updatemovieentry)">RestartSkinMovies</include>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(custom-playlist1label)] </label>
@@ -1814,7 +1809,6 @@
 						<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[344])">TVLibraryActors</include>
 						<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20388])">TVLibraryStudios</include>
 						<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[744])">TVLibraryFiles</include>
-						<include condition="Skin.HasSetting(updatetventry)">RestartSkinTV</include>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(custom-playlist3label)] </label>
@@ -1907,7 +1901,6 @@
 						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20348])">MusicVideoLibraryDirectors</include>
 						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
 						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])">MusicVideoLibraryFiles</include>
-						<include condition="Skin.HasSetting(updatemusicvidentry)">RestartSkinMusicVid</include>
 					</item>
 					<item>
 						<label>10020</label>
@@ -1983,7 +1976,6 @@
 						<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[652])">MusicLibraryYears</include>
 						<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[1050])">MusicLibrarySingles</include>
 						<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[744])">MusicLibraryFiles</include>
-						<include condition="Skin.HasSetting(updatemusicentry)">RestartSkinMusic</include>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(custom-mplaylist1label)] </label>

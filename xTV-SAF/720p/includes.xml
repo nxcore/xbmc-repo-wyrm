@@ -1353,22 +1353,8 @@
 		<onfocus>PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
 	</include>
 	<!-- End of Run scripts Includes -->	
-	<!-- Start of Library entry point Includes -->
-	<include name="RestartSkinMovies">
-		<onclick>Skin.Reset(updatemovieentry)</onclick>
-		<onclick>ReloadSkin()</onclick>
+	<include name="ReloadSkin">
+		<onfocus>Skin.SetBool(home-reloaded)</onfocus>
+		<onfocus>ReloadSkin()</onfocus>
 	</include>
-	<include name="RestartSkinTV">
-		<onclick>Skin.Reset(updatetventry)</onclick>
-		<onclick>ReloadSkin()</onclick>
-	</include>
-	<include name="RestartSkinMusicVid">
-		<onclick>Skin.Reset(updatemusicvidentry)</onclick>
-		<onclick>ReloadSkin()</onclick>
-	</include>
-	<include name="RestartSkinMusic">
-		<onclick>Skin.Reset(updatemusicentry)</onclick>
-		<onclick>ReloadSkin()</onclick>
-	</include>
-	<!-- End of Library entry point Includes -->
 </includes>
