@@ -522,7 +522,7 @@
 					<onleft>23</onleft>
 					<onright>999</onright>
 					<pagecontrol>23</pagecontrol>
-					<control type="radiobutton" id="307">
+					<control type="radiobutton" id="302">
 						<description>Video On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -538,7 +538,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="302">
+					<control type="radiobutton" id="303">
 						<description>Movies On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -554,7 +554,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="303">
+					<control type="radiobutton" id="304">
 						<description>TV Shows On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -570,7 +570,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="304">
+					<control type="radiobutton" id="305">
 						<description>Music Videos On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -586,7 +586,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="305">
+					<control type="radiobutton" id="306">
 						<description>Music On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -602,7 +602,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="306">
+					<control type="radiobutton" id="307">
 						<description>Programs On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -701,7 +701,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="310">
+					<control type="radiobutton" id="313">
 						<description>Gamesaves On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -717,7 +717,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="313">
+					<control type="radiobutton" id="314">
 						<description>Favorites On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -763,7 +763,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="togglebutton" id="319">
+					<control type="togglebutton" id="317">
 						<description>Shutdown From Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
