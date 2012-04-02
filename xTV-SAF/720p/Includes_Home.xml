@@ -345,17 +345,17 @@
 				</item>
 				<item>
 					<description>Script1</description>
-					<icon>$INFO[Skin.String(custom1-scriptloc)]/../default.tbn</icon>
-					<thumb>$INFO[Skin.String(custom1-scriptloc)]/../default.tbn</thumb>
-					<label>$INFO[Skin.String(custom1-label)] </label>
+					<icon>$INFO[Skin.String(custom1-scripticon)]</icon>
+					<thumb>$INFO[Skin.String(custom1-scripticon)]</thumb>
+					<label>$INFO[Skin.String(custom1-label)]</label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(custom1-scriptloc)])</onclick>
 					<visible>Skin.HasSetting(custom1-addon) + !IsEmpty(Skin.String(custom1-label))+ !IsEmpty(Skin.String(custom1-scriptloc))</visible>
 				</item>
 				<item>
 					<description>Plugin1</description>
-					<icon>special://xbmc/Plugins/$INFO[Skin.String(custom1-pluginfolder)]/default.tbn</icon>
-					<thumb>special://xbmc/Plugins/$INFO[Skin.String(custom1-pluginfolder)]/default.tbn</thumb>
-					<label>$INFO[Skin.String(custom1-label)] </label>
+					<icon>$INFO[Skin.String(custom1-pluginicon)]</icon>
+					<thumb>$INFO[Skin.String(custom1-pluginicon)]</thumb>
+					<label>$INFO[Skin.String(custom1-label)]</label>
 					<onclick>ActivateWindow($INFO[Skin.String(custom1-pluginwindow)],plugin://$INFO[Skin.String(custom1-pluginfolder)])</onclick>
 					<visible>Skin.HasSetting(custom1-addon) + !IsEmpty(Skin.String(custom1-label)) + !IsEmpty(Skin.String(custom1-pluginwindow)) + !IsEmpty(Skin.String(custom1-pluginfolder))</visible>
 				</item>
