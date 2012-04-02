@@ -98,9 +98,10 @@
 				<posy>560</posy>
 				<width>761</width>
 				<height>45</height>
+				<font>font18</font>
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
-				<font>font18</font>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<description>Artist label</description>
@@ -108,9 +109,10 @@
 				<posy>596</posy>
 				<width>787</width>
 				<height>37</height>
+				<font>font12</font>
 				<info>MusicPlayer.Artist</info>
 				<align>left</align>
-				<font>font12</font>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<description>Album label</description>
@@ -118,9 +120,10 @@
 				<posy>626</posy>
 				<width>761</width>
 				<height>37</height>
+				<font>font12</font>
 				<info>MusicPlayer.Album</info>
 				<align>left</align>
-				<font>font12</font>
+				<scroll>true</scroll>
 			</control>
 			<control type="label">
 				<description>time label</description>
@@ -135,7 +138,7 @@
 			<control type="label">
 				<description>Playlist</description>
 				<posx>1239</posx>
-				<posy>580</posy>
+				<posy>568</posy>
 				<width>265</width>
 				<height>37</height>
 				<align>right</align>
