@@ -345,19 +345,19 @@
 				</item>
 				<item>
 					<description>Script1</description>
-					<icon>special://home/addons/$INFO[Skin.String(custom-script1loc)]/icon.png</icon>
-					<thumb>special://home/addons/$INFO[Skin.String(custom-script1loc)]/icon.png</thumb>
-					<label>$INFO[Skin.String(custom-script1label)] </label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(custom-script1loc)])</onclick>
-					<visible>Skin.HasSetting(custom-addon1) + !IsEmpty(Skin.String(custom-addon1label))+ !IsEmpty(Skin.String(custom-script1loc))</visible>
+					<icon>$INFO[Skin.String(custom1-scriptloc)]/icon.png</icon>
+					<thumb>$INFO[Skin.String(custom1-scriptloc)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom1-label)] </label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(custom1-scriptloc)])</onclick>
+					<visible>Skin.HasSetting(custom1-addon) + !IsEmpty(Skin.String(custom1-label))+ !IsEmpty(Skin.String(custom1-scriptloc))</visible>
 				</item>
 				<item>
 					<description>Plugin1</description>
-					<icon>icon-programs.png</icon>
-					<thumb>icon-programs-blur1.png</thumb>
-					<label>$INFO[Skin.String(custom-script1label)] </label>
-					<onclick>ActivateWindow($INFO[Skin.String(custom-plugin1window)],plugin://$INFO[Skin.String(custom-plugin1folder)])</onclick>
-					<visible>Skin.HasSetting(custom-addon1) + !IsEmpty(Skin.String(custom-addon1label)) + !IsEmpty(Skin.String(custom-plugin1window)) + !IsEmpty(Skin.String(custom-plugin1folder))</visible>
+					<icon>special://xbmc/Plugins/$INFO[Skin.String(custom1-pluginfolder)]/icon.png</icon>
+					<thumb>special://xbmc/Plugins/$INFO[Skin.String(custom1-pluginfolder)]/icon.png</thumb>
+					<label>$INFO[Skin.String(custom1-label)] </label>
+					<onclick>ActivateWindow($INFO[Skin.String(custom1-pluginwindow)],plugin://$INFO[Skin.String(custom1-pluginfolder)])</onclick>
+					<visible>Skin.HasSetting(custom1-addon) + !IsEmpty(Skin.String(custom1-label)) + !IsEmpty(Skin.String(custom1-pluginwindow)) + !IsEmpty(Skin.String(custom1-pluginfolder))</visible>
 				</item>
 				<item>
 					<description>Script2</description>

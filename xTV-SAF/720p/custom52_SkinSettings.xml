@@ -1506,9 +1506,9 @@
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[24000] 1</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-addon1)</onclick>
+						<onclick>Skin.ToggleSetting(custom1-addon)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-addon1)</selected>
+						<selected>Skin.HasSetting(custom1-addon)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1523,12 +1523,12 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-addon1label)] </label2>
+						<label2>$INFO[Skin.String(custom1-label)] </label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>XBMC.Skin.SetString(custom-addon1label)</onclick>
-						<visible>Skin.HasSetting(custom-addon1)</visible>
+						<onclick>XBMC.Skin.SetString(custom1-label)</onclick>
+						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<!-- Script -->
 					<control type="button" id="711">
@@ -1540,49 +1540,32 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom-script1loc)] </label2>
+						<label2>$INFO[Skin.String(custom1-scriptloc)] </label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetFile(custom-script1loc,.py)</onclick>
-						<onclick>Skin.Reset(custom-plugin1folder)</onclick>
-						<onclick>Skin.Reset(custom-plugin1window)</onclick>
-						<visible>Skin.HasSetting(custom-addon1)</visible>
+						<onclick>Skin.SetFile(custom1-scriptloc,.py)</onclick>
+						<onclick>Skin.Reset(custom1-pluginfolder)</onclick>
+						<onclick>Skin.Reset(custom1-pluginwindow)</onclick>
+						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<!-- Plugin -->
 					<control type="button" id="712">
-						<description>Custom plugin 1 window</description>
-						<font>font12</font>
+						<description>Custom plugin 1 location</description>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<label>$LOCALIZE[31690] $LOCALIZE[146]</label> 
-						<label2>$INFO[Skin.String(custom-plugin1window)]</label2>
+						<label>$LOCALIZE[31851]</label>
+						<label2>$INFO[Skin.String(custom1-pluginname)]</label2>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetBool(selectplugintype)</onclick>
-						<onclick>SetFocus(780)</onclick>
-						<onclick>Skin.SetString(custom-plugin1window,$INFO[Skin.String(plugin-windowtype)])</onclick>
-						<onclick>Skin.Reset(custom-script1loc)</onclick>
-						<visible>Skin.HasSetting(custom-addon1)</visible>
-					</control>
-					<control type="button" id="713">
-						<description>Custom plugin 1 folder</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<label>$LOCALIZE[31690] $LOCALIZE[20334]</label>
-						<label2>$INFO[Skin.String(custom-plugin1folder)]</label2>
-						<textcolor>button-text</textcolor>
-						<onclick>Skin.SetPath(custom-plugin1folder)</onclick>
-						<onclick>Skin.Reset(custom-script1loc)</onclick>
-						<visible>Skin.HasSetting(custom-addon1)</visible>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom1)</onclick>
+						<onclick>Skin.Reset(custom1-scriptloc)</onclick>
+						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<control type="radiobutton" id="714">
 						<description>Custom addon 2 toggle</description>
