@@ -336,7 +336,7 @@
 			<!-- Seek Slider -->
 			<control type="slider" id="401">
 				<description>Seek Slider</description>
-				<posx>214</posx>
+				<posx>212</posx>
 				<posy>10</posy>
 				<width>864</width>
 				<height>20</height>
