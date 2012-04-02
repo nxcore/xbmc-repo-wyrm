@@ -1514,24 +1514,9 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="710">
-						<description>Custom addon 1 label</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom1-label)] </label2>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<onclick>XBMC.Skin.SetString(custom1-label)</onclick>
-						<visible>Skin.HasSetting(custom1-addon)</visible>
-					</control>
+
 					<!-- Script -->
-					<control type="button" id="711">
+					<control type="button" id="710">
 						<description>Custom script 1 location</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1540,17 +1525,18 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom1-scriptloc)] </label2>
+						<label2>$INFO[Skin.String(custom1-scriptloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetFile(custom1-scriptloc,.py)</onclick>
 						<onclick>Skin.Reset(custom1-pluginfolder)</onclick>
 						<onclick>Skin.Reset(custom1-pluginwindow)</onclick>
+						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom1-scriptloc)])</onclick>
 						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<!-- Plugin -->
-					<control type="button" id="712">
+					<control type="button" id="711">
 						<description>Custom plugin 1 location</description>
 						<width>885</width>
 						<height>56</height>
@@ -1564,9 +1550,28 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom1)</onclick>
+						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom1-pluginname)])</onclick>
 						<onclick>Skin.Reset(custom1-scriptloc)</onclick>
 						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
+					<!-- Label -->
+					<control type="button" id="712">
+						<description>Custom addon 1 label</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<label>$LOCALIZE[21899] :</label>
+						<label2>$INFO[Skin.String(custom1-label)]</label2>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<onclick>XBMC.Skin.SetString(custom1-label)</onclick>
+						<visible>Skin.HasSetting(custom1-addon)</visible>
+					</control>
+					
 					<control type="radiobutton" id="714">
 						<description>Custom addon 2 toggle</description>
 						<font>font12</font>
