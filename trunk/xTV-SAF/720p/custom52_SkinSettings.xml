@@ -1525,14 +1525,14 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom1-scriptloc)]</label2>
+						<label2>$INFO[Skin.String(custom1-scriptname)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetFile(custom1-scriptloc,.py)</onclick>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,custom1)</onclick>
 						<onclick>Skin.Reset(custom1-pluginfolder)</onclick>
 						<onclick>Skin.Reset(custom1-pluginwindow)</onclick>
-						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom1-scriptloc)])</onclick>
+						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom1-scriptname)])</onclick>
 						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<!-- Plugin -->
