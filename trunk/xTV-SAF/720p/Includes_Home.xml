@@ -345,8 +345,8 @@
 				</item>
 				<item>
 					<description>Script1</description>
-					<icon>$INFO[Skin.String(custom1-scriptloc)]/default.tbn</icon>
-					<thumb>$INFO[Skin.String(custom1-scriptloc)]/default.tbn</thumb>
+					<icon>$INFO[Skin.String(custom1-scriptloc)]/../default.tbn</icon>
+					<thumb>$INFO[Skin.String(custom1-scriptloc)]/../default.tbn</thumb>
 					<label>$INFO[Skin.String(custom1-label)] </label>
 					<onclick>XBMC.RunScript($INFO[Skin.String(custom1-scriptloc)])</onclick>
 					<visible>Skin.HasSetting(custom1-addon) + !IsEmpty(Skin.String(custom1-label))+ !IsEmpty(Skin.String(custom1-scriptloc))</visible>
