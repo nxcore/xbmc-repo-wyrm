@@ -64,11 +64,14 @@ def main():
 	PlugType = getplugintype()
 	PluginLOCATION = os.path.join(PluginDIR, PlugType)
 	PlugName = getpluginname(PluginLOCATION)
+	PluginPath = os.path.join(PluginLOCATION, PlugName)
 	PluginFolder = os.path.join(PlugType, PlugName)
 	PluginWindow = getplugintypenumber(PlugType)
+	PluginIcon = os.path.join(PluginPath, 'default.tbn')
 
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginfolder," + PluginFolder + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginwindow," + PluginWindow + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + PluginIcon + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginname," + PlugName + ")")
 
 if __name__ == '__main__':
