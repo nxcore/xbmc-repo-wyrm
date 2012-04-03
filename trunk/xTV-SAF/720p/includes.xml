@@ -292,7 +292,7 @@
 	</include>
 	<!-- MusicVideoLibraryFiles Include -->
 	<include name="MusicVideoLibraryFiles">
-		<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
+		<onclick>ActivateWindow(MusicFiles,,return)</onclick>
 	</include>
 	
 	<!-- MusicVideoLibraryGenres Include -->
