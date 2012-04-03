@@ -1440,51 +1440,48 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
-						<enable>Skin.HasSetting(osd-subtitles)</enable>
 						<label> $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
+						<label2>$INFO[Skin.String(osd-subscriptpath)]</label2>
 						<haspath>true</haspath>
 						<onclick>Skin.SetFile(osd-subscriptpath,special://xbmc/script)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
-						<textoffsetx>50</textoffsetx>
+						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
 					<control type="radiobutton" id="706">
 						<description>Cinema script toggle</description>
 						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
+						<width>885</width>
+						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>Use Home Cinema script</label>
-						<textwidth>480</textwidth>
+						<textwidth>460</textwidth>
 						<onclick>Skin.ToggleSetting(cinema-script)</onclick>
 						<selected>Skin.HasSetting(cinema-script)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
-						<textoffsetx>10</textoffsetx>
-						<radioposx>460</radioposx>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="707">
 						<description>Cinema script location</description>
 						<font>font12</font>
-						<width>500</width>
-						<height>45</height>
+						<width>885</width>
+						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<enable>Skin.HasSetting(cinema-location)</enable>
+						<textwidth>460</textwidth>
 						<label>$LOCALIZE[33082]:</label>
-						<label2>$INFO[Skin.String(cinema-location)] </label2>
+						<label2>$INFO[Skin.String(cinema-location)]</label2>
 						<onclick>Skin.SetFile(cinema-location,special://xbmc/script)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
-						<textoffsetx>20</textoffsetx>
+						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(cinema-script)</visible>
 					</control>
+					
 					<control type="label" id="708">
 						<description>Custom addons</description>
 						<width>885</width>
