@@ -1,3 +1,8 @@
+# HomeScripts script by Wyrm (xTV-SAF) #
+# Prompt user for name of script and output skin strings #
+# containing required info to run script from the home screen #
+
+# main import's
 import xbmc,xbmcgui
 import os,sys
 

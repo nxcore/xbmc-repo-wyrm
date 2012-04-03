@@ -1,3 +1,8 @@
+# HomePlugins script by Wyrm (xTV-SAF) #
+# Prompt user for type and name of plugin and output skin strings #
+# containing required info to run plugin from the home screen #
+
+# main import's
 import xbmc,xbmcgui
 import fileinput,os,sys,re,string
 
@@ -69,6 +74,7 @@ def main():
 	PluginWindow = getplugintypenumber(PlugType)
 	PluginIcon = os.path.join(PluginPath, 'default.tbn')
 
+	# Write out Skin strings with plugin info
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginfolder," + PluginFolder + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginwindow," + PluginWindow + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + PluginIcon + ")")
