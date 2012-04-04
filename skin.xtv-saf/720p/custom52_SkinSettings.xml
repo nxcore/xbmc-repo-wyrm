@@ -670,6 +670,7 @@
 						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
 						<haspath>true</haspath>
 						<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
@@ -717,6 +718,7 @@
 						<label>31890</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>!Skin.HasSetting(home-playdisc)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -732,6 +734,7 @@
 						<label>31826</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(home-shutdown)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -750,6 +753,7 @@
 						<label>$LOCALIZE[13015]: $LOCALIZE[13009]</label>
 						<altlabel>$LOCALIZE[13015]: $LOCALIZE[31558]</altlabel>
 						<onclick>Skin.ToggleSetting(home-quit)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>!Skin.HasSetting(home-quit)</selected>
 						<aligny>center</aligny>
 						<textwidth>480</textwidth>
@@ -933,8 +937,8 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetBool(updatemovieentry)</onclick>
 						<onclick>Skin.SetBool(selectmovieentry)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(560)</onclick>
 					</control>
 					<control type="button" id="516">
@@ -949,8 +953,8 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetBool(updatetventry)</onclick>
 						<onclick>Skin.SetBool(selecttventry)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(570)</onclick>
 					</control>
 					<control type="button" id="520">
@@ -965,8 +969,8 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetBool(updatemusicvidentry)</onclick>
 						<onclick>Skin.SetBool(selectmusicvidentry)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(580)</onclick>
 					</control>
 					<control type="button" id="524">
@@ -981,8 +985,8 @@
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<onclick>Skin.SetBool(updatemusicentry)</onclick>
 						<onclick>Skin.SetBool(selectmusicentry)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(540)</onclick>
 					</control>
 				</control>
