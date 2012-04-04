@@ -1,5 +1,6 @@
 <window id="0">
 	<defaultcontrol always="false">420</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<animation effect="fade" start="0" end="0" time="10000" condition="Window.Previous(Startup) + Skin.HasSetting(intro-vid)">WindowOpen</animation>
 	<controls>
@@ -9,8 +10,9 @@
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<include condition="[Skin.HasSetting(startup-playlist) + !Window.Previous(settings)]">StartupPlaylist</include>
-			<!--<include>StartWatchlist</include>-->
+			<include condition="[Skin.HasSetting(startup-playlist) + !Skin.HasSetting(home-changed)]">StartupPlaylist</include>
+			<onfocus>Skin.Reset(home-changed)</onfocus>
+			<onfocus>Skin.Reset(home-reloaded)</onfocus>
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
