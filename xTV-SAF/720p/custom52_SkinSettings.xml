@@ -1818,6 +1818,7 @@
 						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(custom-playlist1)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(custom-playlist1)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1881,6 +1882,7 @@
 						<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(custom-playlist2)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(custom-playlist2)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1944,6 +1946,7 @@
 						<label>$LOCALIZE[636] $LOCALIZE[559] 3</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(custom-playlist3)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(custom-playlist3)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -2007,6 +2010,7 @@
 						<label>$LOCALIZE[636] $LOCALIZE[559] 4</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(custom-playlist4)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(custom-playlist4)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -2083,6 +2087,7 @@
 						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(custom-mplaylist1)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(custom-mplaylist1)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -2146,6 +2151,7 @@
 						<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(custom-mplaylist2)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(custom-mplaylist2)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
