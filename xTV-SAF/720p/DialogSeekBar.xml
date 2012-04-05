@@ -348,7 +348,7 @@
 		</control>
 		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
 		<control type="group">
-			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(karaoke) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
+			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(2009) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
 			<posx>463</posx>
 			<posy>-620</posy>
 			<control type="image">
