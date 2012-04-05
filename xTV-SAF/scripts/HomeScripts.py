@@ -34,9 +34,9 @@ def main():
 	ScriptIcon = os.path.join(ScriptLocation, 'default.tbn')
 
 	# Write out Skin strings with script info
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptloc," + ScriptLocation + ")")
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIcon + ")")
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptname," + ScriptName + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptloc," + ScriptLocation + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIcon + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptname," + ScriptName + ")")
 
 if __name__ == '__main__':
 	main()	
