@@ -292,7 +292,7 @@
 					<thumb>$INFO[Skin.String(custom-mplaylist1icon)]</thumb>
 					<label>$INFO[Skin.String(custom-mplaylist1label)] </label>
 					<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist1name)],return)</onclick>
-					<visible>Skin.HasSetting(custom-mplaylist1) + !IsEmpty(Skin.String(custom-mplaylist1name))+ !IsEmpty(Skin.String(custom-mplaylist1icon))+ !IsEmpty(Skin.String(custom-mplaylist1label))</visible>
+					<!--<visible>Skin.HasSetting(custom-mplaylist1) + !IsEmpty(Skin.String(custom-mplaylist1name))+ !IsEmpty(Skin.String(custom-mplaylist1icon))+ !IsEmpty(Skin.String(custom-mplaylist1label))</visible>-->
 				</item>
 				<item>
 					<icon>$INFO[Skin.String(custom-mplaylist2icon)]</icon>
