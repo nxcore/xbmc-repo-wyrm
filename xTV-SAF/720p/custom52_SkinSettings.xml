@@ -1439,7 +1439,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
+						<textwidth>480</textwidth>
 						<label> $LOCALIZE[31850]</label>
 						<label2>$INFO[Skin.String(osd-subscriptpath)]</label2>
 						<haspath>true</haspath>
@@ -1457,7 +1457,7 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>Use Home Cinema script</label>
-						<textwidth>460</textwidth>
+						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(cinema-script)</onclick>
 						<selected>Skin.HasSetting(cinema-script)</selected>
 						<textcolor>button-text</textcolor>
@@ -1472,7 +1472,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
+						<textwidth>480</textwidth>
 						<label>$LOCALIZE[33082]:</label>
 						<label2>$INFO[Skin.String(cinema-location)]</label2>
 						<onclick>Skin.SetFile(cinema-location,special://xbmc/script)</onclick>
@@ -1700,7 +1700,7 @@
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom3)</onclick>
 						<onclick>Skin.SetString(custom3-label,$INFO[Skin.String(custom3-pluginname)])</onclick>
 						<onclick>Skin.Reset(custom3-scriptloc)</onclick>
-						<visible>Skin.HasSetting(custom1-addon)</visible>
+						<visible>Skin.HasSetting(custom3-addon)</visible>
 					</control>
 					<!-- Label -->
 					<control type="button" id="720">
@@ -1835,9 +1835,8 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist1name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist1name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
+						<onclick>Skin.SetFile(custom-playlist1name,.xsp,special://skin/extras/playlists/video)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist1)</visible>
@@ -1853,7 +1852,6 @@
 						<label2>$INFO[Skin.String(custom-playlist1label)]</label2>
 						<onclick>Skin.SetString(custom-playlist1label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist1)</visible>
@@ -1869,7 +1867,6 @@
 						<label2>$INFO[Skin.String(custom-playlist1icon)]</label2>
 						<onclick>Skin.SetImage(custom-playlist1icon)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist1)</visible>
@@ -1901,9 +1898,8 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist2name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist2name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
+						<onclick>Skin.SetFile(custom-playlist2name,.xsp,special://skin/extras/playlists/video)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist2)</visible>
@@ -1919,7 +1915,6 @@
 						<label2>$INFO[Skin.String(custom-playlist2label)]</label2>
 						<onclick>Skin.SetString(custom-playlist2label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist2)</visible>
@@ -1935,7 +1930,6 @@
 						<label2>$INFO[Skin.String(custom-playlist2icon)]</label2>
 						<onclick>Skin.SetImage(custom-playlist2icon)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist2)</visible>
@@ -1967,9 +1961,8 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist3name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist3name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
+						<onclick>Skin.SetFile(custom-playlist3name,.xsp,special://skin/extras/playlists/video)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist3)</visible>
@@ -1985,7 +1978,6 @@
 						<label2>$INFO[Skin.String(custom-playlist3label)]</label2>
 						<onclick>Skin.SetString(custom-playlist3label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist3)</visible>
@@ -2001,7 +1993,6 @@
 						<label2>$INFO[Skin.String(custom-playlist3icon)]</label2>
 						<onclick>Skin.SetImage(custom-playlist3icon)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist3)</visible>
@@ -2033,9 +2024,8 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-playlist4name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist4name,.xsp,&quot;special://skin/extras/playlists/video&quot;)</onclick>
+						<onclick>Skin.SetFile(custom-playlist4name,.xsp,special://skin/extras/playlists/video)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist4)</visible>
@@ -2051,7 +2041,6 @@
 						<label2>$INFO[Skin.String(custom-playlist4label)]</label2>
 						<onclick>Skin.SetString(custom-playlist4label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist4)</visible>
@@ -2067,7 +2056,6 @@
 						<label2>$INFO[Skin.String(custom-playlist4icon)]</label2>
 						<onclick>Skin.SetImage(custom-playlist4icon)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-playlist4)</visible>
@@ -2112,9 +2100,8 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-mplaylist1name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-mplaylist1name,.xsp,&quot;special://skin/extras/playlists/music&quot;)</onclick>
+						<onclick>Skin.SetFile(custom-mplaylist1name,.xsp,special://skin/extras/playlists/music)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
@@ -2130,7 +2117,6 @@
 						<label2>$INFO[Skin.String(custom-mplaylist1label)]</label2>
 						<onclick>Skin.SetString(custom-mplaylist1label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
@@ -2146,7 +2132,6 @@
 						<label2>$INFO[Skin.String(custom-mplaylist1icon)]</label2>
 						<onclick>Skin.SetImage(custom-mplaylist1icon)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
@@ -2178,9 +2163,8 @@
 						<label>$LOCALIZE[559] :</label>
 						<label2>$INFO[Skin.String(custom-mplaylist2name)] </label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-mplaylist2name,.xsp,&quot;special://skin/extras/playlists/music&quot;)</onclick>
+						<onclick>Skin.SetFile(custom-mplaylist2name,.xsp,special://skin/extras/playlists/music)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
@@ -2196,7 +2180,6 @@
 						<label2>$INFO[Skin.String(custom-mplaylist2label)]</label2>
 						<onclick>Skin.SetString(custom-mplaylist2label)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
@@ -2212,7 +2195,6 @@
 						<label2>$INFO[Skin.String(custom-mplaylist2icon)]</label2>
 						<onclick>Skin.SetImage(custom-mplaylist2icon)</onclick>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
