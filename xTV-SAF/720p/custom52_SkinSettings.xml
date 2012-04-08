@@ -1523,14 +1523,11 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom1-scriptname)]</label2>
+						<label2>$INFO[Skin.String(custom1-scriptloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,custom1)</onclick>
-						<onclick>Skin.Reset(custom1-pluginfolder)</onclick>
-						<onclick>Skin.Reset(custom1-pluginwindow)</onclick>
-						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom1-scriptname)])</onclick>
 						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<!-- Plugin -->
@@ -1542,14 +1539,12 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[31851]</label>
-						<label2>$INFO[Skin.String(custom1-pluginname)]</label2>
+						<label2>$INFO[Skin.String(custom1-pluginfolder)]/$INFO[Skin.String(custom1-pluginname)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom1)</onclick>
-						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom1-pluginname)])</onclick>
-						<onclick>Skin.Reset(custom1-scriptloc)</onclick>
 						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
 					<!-- Label -->
@@ -1598,14 +1593,11 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom2-scriptname)]</label2>
+						<label2>$INFO[Skin.String(custom2-scriptloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,custom2)</onclick>
-						<onclick>Skin.Reset(custom2-pluginfolder)</onclick>
-						<onclick>Skin.Reset(custom2-pluginwindow)</onclick>
-						<onclick>Skin.SetString(custom2-label,$INFO[Skin.String(custom2-scriptname)])</onclick>
 						<visible>Skin.HasSetting(custom2-addon)</visible>
 					</control>
 					<!-- Plugin -->
@@ -1623,8 +1615,6 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom2)</onclick>
-						<onclick>Skin.SetString(custom1-label,$INFO[Skin.String(custom2-pluginname)])</onclick>
-						<onclick>Skin.Reset(custom2-scriptloc)</onclick>
 						<visible>Skin.HasSetting(custom2-addon)</visible>
 					</control>
 					<!-- Label -->
@@ -1673,14 +1663,11 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom3-scriptname)]</label2>
+						<label2>$INFO[Skin.String(custom3-scriptloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,custom3)</onclick>
-						<onclick>Skin.Reset(custom3-pluginfolder)</onclick>
-						<onclick>Skin.Reset(custom3-pluginwindow)</onclick>
-						<onclick>Skin.SetString(custom3-label,$INFO[Skin.String(custom3-scriptname)])</onclick>
 						<visible>Skin.HasSetting(custom3-addon)</visible>
 					</control>
 					<!-- Plugin -->
@@ -1698,8 +1685,6 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom3)</onclick>
-						<onclick>Skin.SetString(custom3-label,$INFO[Skin.String(custom3-pluginname)])</onclick>
-						<onclick>Skin.Reset(custom3-scriptloc)</onclick>
 						<visible>Skin.HasSetting(custom3-addon)</visible>
 					</control>
 					<!-- Label -->
@@ -1748,14 +1733,11 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>31850</label>
-						<label2>$INFO[Skin.String(custom4-scriptname)]</label2>
+						<label2>$INFO[Skin.String(custom4-scriptloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,custom4)</onclick>
-						<onclick>Skin.Reset(custom4-pluginfolder)</onclick>
-						<onclick>Skin.Reset(custom4-pluginwindow)</onclick>
-						<onclick>Skin.SetString(custom4-label,$INFO[Skin.String(custom4-scriptname)])</onclick>
 						<visible>Skin.HasSetting(custom4-addon)</visible>
 					</control>
 					<!-- Plugin -->
@@ -1773,8 +1755,6 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,custom4)</onclick>
-						<onclick>Skin.SetString(custom4-label,$INFO[Skin.String(custom4-pluginname)])</onclick>
-						<onclick>Skin.Reset(custom4-scriptloc)</onclick>
 						<visible>Skin.HasSetting(custom4-addon)</visible>
 					</control>
 					<!-- Label -->
