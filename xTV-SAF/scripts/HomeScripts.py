@@ -36,7 +36,11 @@ def main():
 	# Write out Skin strings with script info
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptloc," + ScriptLocation + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIcon + ")")
-	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptname," + ScriptName + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-label," + ScriptName + ")")
+	
+	# Reset homescript skin strings
+	xbmc.executebuiltin("XBMC.Skin.Reset(" + SkinStringName + "-pluginfolder)")
+	xbmc.executebuiltin("XBMC.Skin.Reset(" + SkinStringName + "-pluginwindow)")
 
 if __name__ == '__main__':
 	main()	

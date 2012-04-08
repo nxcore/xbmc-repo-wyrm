@@ -79,6 +79,10 @@ def main():
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginwindow," + PluginWindow + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + PluginIcon + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginname," + PlugName + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-label," + PlugName + ")")
+	
+	# Reset homescript skin strings
+	xbmc.executebuiltin("XBMC.Skin.Reset(" + SkinStringName + "-scriptloc)")
 
 if __name__ == '__main__':
 	main()	
