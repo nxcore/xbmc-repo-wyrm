@@ -1539,7 +1539,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[31851]</label>
-						<label2>$INFO[Skin.String(custom1-pluginfolder)]/$INFO[Skin.String(custom1-pluginname)]</label2>
+						<label2>$INFO[Skin.String(custom1-pluginfolder),,/]$INFO[Skin.String(custom1-pluginname)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1609,7 +1609,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[31851]</label>
-						<label2>$INFO[Skin.String(custom2-pluginname)]</label2>
+						<label2>$INFO[Skin.String(custom2-pluginfolder),,/]$INFO[Skin.String(custom2-pluginname)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1679,7 +1679,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[31851]</label>
-						<label2>$INFO[Skin.String(custom3-pluginname)]</label2>
+						<label2>$INFO[Skin.String(custom3-pluginfolder),,/]$INFO[Skin.String(custom3-pluginname)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1749,7 +1749,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[31851]</label>
-						<label2>$INFO[Skin.String(custom4-pluginname)]</label2>
+						<label2>$INFO[Skin.String(custom4-pluginfolder),,/]$INFO[Skin.String(custom4-pluginname)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
