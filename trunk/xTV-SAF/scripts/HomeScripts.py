@@ -41,6 +41,7 @@ def main():
 	# Reset homescript skin strings
 	xbmc.executebuiltin("XBMC.Skin.Reset(" + SkinStringName + "-pluginfolder)")
 	xbmc.executebuiltin("XBMC.Skin.Reset(" + SkinStringName + "-pluginwindow)")
+	xbmc.executebuiltin("XBMC.Skin.Reset(" + SkinStringName + "-pluginname)")
 
 if __name__ == '__main__':
 	main()	
