@@ -996,6 +996,639 @@
 					</control>
 				</control>
 			</control>
+			<control type="group" id="540">
+				<visible allowhiddenfocus="true">ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)</visible>
+				<posx>433</posx>
+				<posy>100</posy>
+				<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)">Conditional</animation>
+				<control type="image">
+					<description>Progess Dialog background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>433</width>
+					<height>575</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<colordiffuse>dialog-background</colordiffuse>
+				</control>
+				<control type="label">
+					<description>heading label</description>
+					<posx>21</posx>
+					<posy>4</posy>
+					<width>389</width>
+					<font>font12</font>
+					<label>31683</label>
+					<align>center</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="image">
+					<description>separator image</description>
+					<posx>21</posx>
+					<posy>37</posy>
+					<width>389</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="list" id="541">
+					<description>Group Get Music Library Entry point Buttons</description>
+					<posx>21</posx>
+					<posy>45</posy>
+					<width>389</width>
+					<height>530</height>
+					<itemgap>0</itemgap>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<align>center</align>
+					<usecontrolcoords>false</usecontrolcoords>
+					<onleft>524</onleft>
+					<onright>524</onright>
+					<viewtype label="31028">list</viewtype>
+					<itemlayout height="40" width="389">
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>34</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</itemlayout>
+					<focusedlayout height="40" width="389">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>default-button.png</texture>
+							<include>background-fade</include>
+						</control>
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>34</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<description>Set Music library entry point - Root</description>
+							<label>20108</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[20108])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="2">
+							<description>Set Music library entry point - Genres</description>
+							<label>135</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[135])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="3">
+							<description>Set Music library entry point - Artists</description>
+							<label>133</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[133])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="4">
+							<description>Set Music library entry point - Albums</description>
+							<label>132</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[132])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="5">
+							<description>Set Music library entry point - Songs</description>
+							<label>134</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[134])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="6">
+							<description>Set Music library entry point - Top100Songs</description>
+							<label>10504</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10504])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="7">
+							<description>Set Music library entry point - Top100Albums</description>
+							<label>10505</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10505])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="8">
+							<description>Set Music library entry point - RecentlyAddedAlbums</description>
+							<label>359</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[359])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="9">
+							<description>Set Music library entry point - RecentlyPlayededAlbums</description>
+							<label>517</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[517])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="10">
+							<description>Set Music library entry point - Compilations</description>
+							<label>521</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[521])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="11">
+							<description>Set Music library entry point - Years</description>
+							<label>652</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[652])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="12">
+							<description>Set Music library entry point - Singles</description>
+							<label>1050</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[1050])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="13">
+							<description>Set Music library entry point - Files</description>
+							<label>744</label>
+							<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[744])</onclick>
+							<onclick>Skin.Reset(selectmusicentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+					</content>
+				</control>
+			</control>	
+			<control type="group" id="560">
+				<visible allowhiddenfocus="true">ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)</visible>
+				<posx>433</posx>
+				<posy>192</posy>
+				<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)">Conditional</animation>
+				<control type="image">
+					<description>Progess Dialog background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>433</width>
+					<height>430</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<colordiffuse>dialog-background</colordiffuse>
+				</control>
+				<control type="label">
+					<description>heading label</description>
+					<posx>21</posx>
+					<posy>4</posy>
+					<width>389</width>
+					<font>font12</font>
+					<label>31680</label>
+					<align>center</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="image">
+					<description>separator image</description>
+					<posx>21</posx>
+					<posy>37</posy>
+					<width>389</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="list" id="561">
+					<description>Group Get Movie Library Entry point Buttons</description>
+					<posx>21</posx>
+					<posy>45</posy>
+					<width>389</width>
+					<height>370</height>
+					<itemgap>0</itemgap>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<align>center</align>
+					<usecontrolcoords>false</usecontrolcoords>
+					<onleft>512</onleft>
+					<onright>512</onright>
+					<viewtype label="31028">list</viewtype>
+					<itemlayout height="40" width="389">
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</itemlayout>
+					<focusedlayout height="40" width="389">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>default-button.png</texture>
+							<include>background-fade</include>
+						</control>
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<description>Set Movie library entry point - Title</description>
+							<label>369</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[369])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="2">
+							<description>Set Movie library entry point - Root</description>
+							<label>20108</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20108])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="3">
+							<description>Set Movie library entry point - Recentlyadded</description>
+							<label>20386</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20386])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="4">
+							<description>Set Movie library entry point - Genres</description>
+							<label>135</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[135])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="5">
+							<description>Set Movie library entry point - Years</description>
+							<label>652</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[652])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="6">
+							<description>Set Movie library entry point - Actors</description>
+							<label>344</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[344])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="7">
+							<description>Set Movie library entry point - Directors</description>
+							<label>20348</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20348])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="8">
+							<description>Set Movie library entry point - Studios</description>
+							<label>20388</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20388])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="9">
+							<description>Set Movie library entry point - Files</description>
+							<label>744</label>
+							<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[744])</onclick>
+							<onclick>Skin.Reset(selectmovieentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+					</content>
+				</control>
+			</control>	
+			<control type="group" id="570">
+				<visible allowhiddenfocus="true">ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)</visible>
+				<posx>433</posx>
+				<posy>206</posy>
+				<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)">Conditional</animation>
+				<control type="image">
+					<description>Progess Dialog background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>433</width>
+					<height>390</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<colordiffuse>dialog-background</colordiffuse>
+				</control>
+				<control type="label">
+					<description>heading label</description>
+					<posx>21</posx>
+					<posy>4</posy>
+					<width>389</width>
+					<font>font12</font>
+					<label>31681</label>
+					<align>center</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="image">
+					<description>separator image</description>
+					<posx>21</posx>
+					<posy>37</posy>
+					<width>389</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="list" id="571">
+					<description>Group Get TV Library Entry point Buttons</description>
+					<posx>21</posx>
+					<posy>45</posy>
+					<width>389</width>
+					<height>370</height>
+					<itemgap>0</itemgap>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<align>center</align>
+					<usecontrolcoords>false</usecontrolcoords>
+					<onleft>516</onleft>
+					<onright>516</onright>
+					<viewtype label="31028">list</viewtype>
+					<itemlayout height="40" width="389">
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</itemlayout>
+					<focusedlayout height="40" width="389">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>default-button.png</texture>
+							<include>background-fade</include>
+						</control>
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<description>Set TV library entry point - Title</description>
+							<label>369</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[369])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="2">
+							<description>Set TV library entry point - Root</description>
+							<label>20108</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20108])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="3">
+							<description>Set TV library entry point - Recentlyadded</description>
+							<label>20387</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20387])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="4">
+							<description>Set TV library entry point - Genres</description>
+							<label>135</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[135])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="5">
+							<description>Set TV library entry point - Years</description>
+							<label>652</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[652])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="6">
+							<description>Set TV library entry point - Actors</description>
+							<label>344</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[344])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="7">
+							<description>Set TV library entry point - Studios</description>
+							<label>20388</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20388])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="8">
+							<description>Set TV library entry point - Files</description>
+							<label>744</label>
+							<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[744])</onclick>
+							<onclick>Skin.Reset(selecttventry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+					</content>
+				</control>
+			</control>	
+			<control type="group" id="580">
+				<visible allowhiddenfocus="true">ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)</visible>
+				<posx>433</posx>
+				<posy>206</posy>
+				<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)">Conditional</animation>
+				<control type="image">
+					<description>Progess Dialog background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>433</width>
+					<height>430</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<colordiffuse>dialog-background</colordiffuse>
+				</control>
+				<control type="label">
+					<description>heading label</description>
+					<posx>21</posx>
+					<posy>4</posy>
+					<width>389</width>
+					<font>font11</font>
+					<label>31682</label>
+					<align>center</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="image">
+					<description>separator image</description>
+					<posx>21</posx>
+					<posy>37</posy>
+					<width>389</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="list" id="581">
+					<description>Group Get Music Video Library Entry point Buttons</description>
+					<posx>21</posx>
+					<posy>45</posy>
+					<width>389</width>
+					<height>370</height>
+					<itemgap>0</itemgap>
+					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<align>center</align>
+					<usecontrolcoords>false</usecontrolcoords>
+					<onleft>520</onleft>
+					<onright>520</onright>
+					<viewtype label="31028">list</viewtype>
+					<itemlayout height="40" width="389">
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</itemlayout>
+					<focusedlayout height="40" width="389">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>default-button.png</texture>
+							<include>background-fade</include>
+						</control>
+						<control type="label">
+							<posx>194</posx>
+							<posy>0</posy>
+							<width>389</width>
+							<height>40</height>
+							<description>Item label</description>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<description>Set Music Video library entry point - Title</description>
+							<label>369</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[369])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="2">
+							<description>Set Music Video library entry point - Root</description>
+							<label>20108</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20108])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="3">
+							<description>Set Music Video library entry point - Recentlyadded</description>
+							<label>20390</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20390])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="4">
+							<description>Set Music Video library entry point - Genres</description>
+							<label>135</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[135])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="5">
+							<description>Set Music Video library entry point - Years</description>
+							<label>652</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[652])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="6">
+							<description>Set Music Video library entry point - Artists</description>
+							<label>133</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[133])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="7">
+							<description>Set Music Video library entry point - Directors</description>
+							<label>20348</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20348])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="8">
+							<description>Set Music Video library entry point - Studios</description>
+							<label>20388</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20388])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+						<item id="9">
+							<description>Set Music Video library entry point - Files</description>
+							<label>744</label>
+							<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[744])</onclick>
+							<onclick>Skin.Reset(selectmusicvidentry)</onclick>
+							<onclick>SetFocus(500)</onclick>
+						</item>
+					</content>
+				</control>
+			</control>
 			<!-- Views Settings-->
 			<control type="group" id="600">
 				<visible>Skin.String(skinsettingmenu,views)</visible>
@@ -1775,19 +2408,7 @@
 						<visible>Skin.HasSetting(custom4-addon)</visible>
 					</control>
 					
-					<control type="label" id="730">
-						<description>Video Playlists</description>
-						<width>885</width>
-						<height>56</height>
-						<font>font12</font>
-						<textcolor>listselectedtext</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<label>[B]$LOCALIZE[20012][/B]</label>
-						<scroll>true</scroll>
-					</control>
+					<!-- Custom Playlist 1 -->
 					<control type="radiobutton" id="731">
 						<description>Custom Playlist1 toggle</description>
 						<font>font12</font>
@@ -1797,30 +2418,29 @@
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-playlist1)</onclick>
+						<onclick>Skin.ToggleSetting(custom1-playlist)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-playlist1)</selected>
+						<selected>Skin.HasSetting(custom1-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="732">
-						<description>Custom playlist1 location</description>
+						<description>Custom 1 Playlist location</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[559] :</label>
-						<label2>$INFO[Skin.String(custom-playlist1name)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist1name,.xsp,special://skin/extras/playlists/video)</onclick>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(custom1-playlistloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist1)</visible>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlaylists.py,custom1)</onclick>
+						<visible>Skin.HasSetting(custom1-playlist)</visible>
 					</control>
 					<control type="button" id="733">
 						<description>Custom playlist1 label</description>
@@ -1830,12 +2450,12 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-playlist1label)]</label2>
-						<onclick>Skin.SetString(custom-playlist1label)</onclick>
+						<label2>$INFO[Skin.String(custom1-playlistlabel)]</label2>
+						<onclick>Skin.SetString(custom1-playlistlabel)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist1)</visible>
+						<visible>Skin.HasSetting(custom1-playlist)</visible>
 					</control>
 					<control type="button" id="734">
 						<description>Custom playlist1 icon</description>
@@ -1845,13 +2465,15 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
-						<label2>$INFO[Skin.String(custom-playlist1icon)]</label2>
-						<onclick>Skin.SetImage(custom-playlist1icon)</onclick>
+						<label2>$INFO[Skin.String(custom1-playlisticon)]</label2>
+						<onclick>Skin.SetImage(custom1-playlisticon)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist1)</visible>
+						<visible>Skin.HasSetting(custom1-playlist)</visible>
 					</control>
+					
+					<!-- Custom Playlist 2 -->
 					<control type="radiobutton" id="735">
 						<description>Custom Playlist2 toggle</description>
 						<font>font12</font>
@@ -1861,30 +2483,29 @@
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-playlist2)</onclick>
+						<onclick>Skin.ToggleSetting(custom2-playlist)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-playlist2)</selected>
+						<selected>Skin.HasSetting(custom2-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="736">
-						<description>Custom playlist2 location</description>
+						<description>Custom 2 Playlist location</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[559] :</label>
-						<label2>$INFO[Skin.String(custom-playlist2name)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist2name,.xsp,special://skin/extras/playlists/video)</onclick>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(custom2-playlistloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist2)</visible>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlaylists.py,custom2)</onclick>
+						<visible>Skin.HasSetting(custom2-playlist)</visible>
 					</control>
 					<control type="button" id="737">
 						<description>Custom playlist2 label</description>
@@ -1894,12 +2515,12 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-playlist2label)]</label2>
-						<onclick>Skin.SetString(custom-playlist2label)</onclick>
+						<label2>$INFO[Skin.String(custom2-playlistlabel)]</label2>
+						<onclick>Skin.SetString(custom2-playlistlabel)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist2)</visible>
+						<visible>Skin.HasSetting(custom2-playlist)</visible>
 					</control>
 					<control type="button" id="738">
 						<description>Custom playlist2 icon</description>
@@ -1909,13 +2530,15 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
-						<label2>$INFO[Skin.String(custom-playlist2icon)]</label2>
-						<onclick>Skin.SetImage(custom-playlist2icon)</onclick>
+						<label2>$INFO[Skin.String(custom2-playlisticon)]</label2>
+						<onclick>Skin.SetImage(custom2-playlisticon)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist2)</visible>
+						<visible>Skin.HasSetting(custom2-playlist)</visible>
 					</control>
+					
+					<!-- Custom Playlist 3 -->
 					<control type="radiobutton" id="739">
 						<description>Custom Playlist3 toggle</description>
 						<font>font12</font>
@@ -1925,30 +2548,29 @@
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 3</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-playlist3)</onclick>
+						<onclick>Skin.ToggleSetting(custom3-playlist)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-playlist3)</selected>
+						<selected>Skin.HasSetting(custom3-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="740">
-						<description>Custom playlist3 location</description>
+						<description>Custom 3 Playlist location</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[559] :</label>
-						<label2>$INFO[Skin.String(custom-playlist3name)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist3name,.xsp,special://skin/extras/playlists/video)</onclick>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(custom3-playlistloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist3)</visible>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlaylists.py,custom3)</onclick>
+						<visible>Skin.HasSetting(custom3-playlist)</visible>
 					</control>
 					<control type="button" id="741">
 						<description>Custom playlist3 label</description>
@@ -1958,12 +2580,12 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-playlist3label)]</label2>
-						<onclick>Skin.SetString(custom-playlist3label)</onclick>
+						<label2>$INFO[Skin.String(custom3-playlistlabel)]</label2>
+						<onclick>Skin.SetString(custom3-playlistlabel)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist3)</visible>
+						<visible>Skin.HasSetting(custom3-playlist)</visible>
 					</control>
 					<control type="button" id="742">
 						<description>Custom playlist3 icon</description>
@@ -1973,13 +2595,15 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
-						<label2>$INFO[Skin.String(custom-playlist3icon)]</label2>
-						<onclick>Skin.SetImage(custom-playlist3icon)</onclick>
+						<label2>$INFO[Skin.String(custom3-playlisticon)]</label2>
+						<onclick>Skin.SetImage(custom3-playlisticon)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist3)</visible>
+						<visible>Skin.HasSetting(custom3-playlist)</visible>
 					</control>
+					
+					<!-- Custom Playlist 4 -->
 					<control type="radiobutton" id="743">
 						<description>Custom Playlist4 toggle</description>
 						<font>font12</font>
@@ -1989,30 +2613,29 @@
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[636] $LOCALIZE[559] 4</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-playlist4)</onclick>
+						<onclick>Skin.ToggleSetting(custom4-playlist)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-playlist4)</selected>
+						<selected>Skin.HasSetting(custom4-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="744">
-						<description>Custom playlist4 location</description>
+						<description>Custom 4 Playlist location</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[559] :</label>
-						<label2>$INFO[Skin.String(custom-playlist4name)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-playlist4name,.xsp,special://skin/extras/playlists/video)</onclick>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(custom4-playlistloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist4)</visible>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlaylists.py,custom4)</onclick>
+						<visible>Skin.HasSetting(custom4-playlist)</visible>
 					</control>
 					<control type="button" id="745">
 						<description>Custom playlist4 label</description>
@@ -2022,12 +2645,12 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-playlist4label)]</label2>
-						<onclick>Skin.SetString(custom-playlist4label)</onclick>
+						<label2>$INFO[Skin.String(custom4-playlistlabel)]</label2>
+						<onclick>Skin.SetString(custom4-playlistlabel)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist4)</visible>
+						<visible>Skin.HasSetting(custom4-playlist)</visible>
 					</control>
 					<control type="button" id="746">
 						<description>Custom playlist4 icon</description>
@@ -2037,788 +2660,144 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
-						<label2>$INFO[Skin.String(custom-playlist4icon)]</label2>
-						<onclick>Skin.SetImage(custom-playlist4icon)</onclick>
+						<label2>$INFO[Skin.String(custom4-playlisticon)]</label2>
+						<onclick>Skin.SetImage(custom4-playlisticon)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-playlist4)</visible>
+						<visible>Skin.HasSetting(custom4-playlist)</visible>
 					</control>
-					<control type="label" id="747">
-						<description>Music Playlists</description>
-						<width>885</width>
-						<height>56</height>
-						<font>font12</font>
-						<textcolor>listselectedtext</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<label>[B]$LOCALIZE[20011][/B]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="radiobutton" id="748">
-						<description>Custom Music Playlist1 toggle</description>
+					
+					<!-- Custom Playlist 5 -->
+					<control type="radiobutton" id="747">
+						<description>Custom Playlist5 toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[636] $LOCALIZE[559] 1</label>
+						<label>$LOCALIZE[636] $LOCALIZE[559] 5</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-mplaylist1)</onclick>
+						<onclick>Skin.ToggleSetting(custom5-playlist)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-mplaylist1)</selected>
+						<selected>Skin.HasSetting(custom5-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
+					</control>
+					<control type="button" id="748">
+						<description>Custom 5 Playlist location</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(custom5-playlistloc)]</label2>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlaylists.py,custom5)</onclick>
+						<visible>Skin.HasSetting(custom5-playlist)</visible>
 					</control>
 					<control type="button" id="749">
-						<description>Custom music playlist1 location</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[559] :</label>
-						<label2>$INFO[Skin.String(custom-mplaylist1name)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-mplaylist1name,.xsp,special://skin/extras/playlists/music)</onclick>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
-					</control>
-					<control type="button" id="750">
-						<description>Custom music playlist1 label</description>
+						<description>Custom playlist5 label</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-mplaylist1label)]</label2>
-						<onclick>Skin.SetString(custom-mplaylist1label)</onclick>
+						<label2>$INFO[Skin.String(custom5-playlistlabel)]</label2>
+						<onclick>Skin.SetString(custom5-playlistlabel)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
+						<visible>Skin.HasSetting(custom5-playlist)</visible>
 					</control>
-					<control type="button" id="751">
-						<description>Custom music playlist1 icon</description>
+					<control type="button" id="750">
+						<description>Custom playlist5 icon</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
-						<label2>$INFO[Skin.String(custom-mplaylist1icon)]</label2>
-						<onclick>Skin.SetImage(custom-mplaylist1icon)</onclick>
+						<label2>$INFO[Skin.String(custom5-playlisticon)]</label2>
+						<onclick>Skin.SetImage(custom5-playlisticon)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-mplaylist1)</visible>
+						<visible>Skin.HasSetting(custom5-playlist)</visible>
 					</control>
-					<control type="radiobutton" id="752">
-						<description>Custom Music Playlist2 toggle</description>
+					
+					<!-- Custom Playlist 6 -->
+					<control type="radiobutton" id="751">
+						<description>Custom Playlist6 toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[636] $LOCALIZE[559] 2</label>
+						<label>$LOCALIZE[636] $LOCALIZE[559] 6</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(custom-mplaylist2)</onclick>
+						<onclick>Skin.ToggleSetting(custom6-playlist)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
-						<selected>Skin.HasSetting(custom-mplaylist2)</selected>
+						<selected>Skin.HasSetting(custom6-playlist)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="753">
-						<description>Custom music playlist2 location</description>
+					<control type="button" id="752">
+						<description>Custom 6 Playlist location</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>$LOCALIZE[559] :</label>
-						<label2>$INFO[Skin.String(custom-mplaylist2name)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetFile(custom-mplaylist2name,.xsp,special://skin/extras/playlists/music)</onclick>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(custom6-playlistloc)]</label2>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomePlaylists.py,custom6)</onclick>
+						<visible>Skin.HasSetting(custom6-playlist)</visible>
 					</control>
-					<control type="button" id="754">
-						<description>Custom music playlist2 label</description>
+					<control type="button" id="753">
+						<description>Custom playlist6 label</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21899] :</label>
-						<label2>$INFO[Skin.String(custom-mplaylist2label)]</label2>
-						<onclick>Skin.SetString(custom-mplaylist2label)</onclick>
+						<label2>$INFO[Skin.String(custom6-playlistlabel)]</label2>
+						<onclick>Skin.SetString(custom6-playlistlabel)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
+						<visible>Skin.HasSetting(custom6-playlist)</visible>
 					</control>
-					<control type="button" id="755">
-						<description>Custom music playlist2 icon</description>
+					<control type="button" id="754">
+						<description>Custom playlist6 icon</description>
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>$LOCALIZE[21371] :</label>
-						<label2>$INFO[Skin.String(custom-mplaylist2icon)]</label2>
-						<onclick>Skin.SetImage(custom-mplaylist2icon)</onclick>
+						<label2>$INFO[Skin.String(custom6-playlisticon)]</label2>
+						<onclick>Skin.SetImage(custom6-playlisticon)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(custom-mplaylist2)</visible>
+						<visible>Skin.HasSetting(custom6-playlist)</visible>
 					</control>
 				</control>
-			</control>
-		</control>
-		<control type="group" id="540">
-			<visible allowhiddenfocus="true">ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)</visible>
-			<posx>433</posx>
-			<posy>100</posy>
-			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(540).HasFocus + Skin.HasSetting(selectmusicentry)">Conditional</animation>
-			<control type="image">
-				<description>Progess Dialog background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>433</width>
-				<height>575</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
-			</control>
-			<control type="label">
-				<description>heading label</description>
-				<posx>21</posx>
-				<posy>4</posy>
-				<width>389</width>
-				<font>font12</font>
-				<label>31683</label>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
-			<control type="image">
-				<description>separator image</description>
-				<posx>21</posx>
-				<posy>37</posy>
-				<width>389</width>
-				<height>6</height>
-				<texture>separator.png</texture>
-			</control>
-			<control type="list" id="541">
-				<description>Group Get Music Library Entry point Buttons</description>
-				<posx>21</posx>
-				<posy>45</posy>
-				<width>389</width>
-				<height>530</height>
-				<itemgap>0</itemgap>
-				<scrolltime>200</scrolltime>
-				<orientation>vertical</orientation>
-				<align>center</align>
-				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>524</onleft>
-				<onright>524</onright>
-				<viewtype label="31028">list</viewtype>
-				<itemlayout height="40" width="389">
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>34</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="389">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<align>left</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>34</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<description>Set Music library entry point - Root</description>
-						<label>20108</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[20108])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="2">
-						<description>Set Music library entry point - Genres</description>
-						<label>135</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[135])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="3">
-						<description>Set Music library entry point - Artists</description>
-						<label>133</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[133])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="4">
-						<description>Set Music library entry point - Albums</description>
-						<label>132</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[132])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="5">
-						<description>Set Music library entry point - Songs</description>
-						<label>134</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[134])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="6">
-						<description>Set Music library entry point - Top100Songs</description>
-						<label>10504</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10504])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="7">
-						<description>Set Music library entry point - Top100Albums</description>
-						<label>10505</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[10505])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="8">
-						<description>Set Music library entry point - RecentlyAddedAlbums</description>
-						<label>359</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[359])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="9">
-						<description>Set Music library entry point - RecentlyPlayededAlbums</description>
-						<label>517</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[517])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="10">
-						<description>Set Music library entry point - Compilations</description>
-						<label>521</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[521])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="11">
-						<description>Set Music library entry point - Years</description>
-						<label>652</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[652])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="12">
-						<description>Set Music library entry point - Singles</description>
-						<label>1050</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[1050])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="13">
-						<description>Set Music library entry point - Files</description>
-						<label>744</label>
-						<onclick>Skin.SetString(music-libraryentry,$LOCALIZE[744])</onclick>
-						<onclick>Skin.Reset(selectmusicentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-				</content>
-			</control>
-		</control>	
-		<control type="group" id="560">
-			<visible allowhiddenfocus="true">ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)</visible>
-			<posx>433</posx>
-			<posy>192</posy>
-			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)">Conditional</animation>
-			<control type="image">
-				<description>Progess Dialog background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>433</width>
-				<height>430</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
-			</control>
-			<control type="label">
-				<description>heading label</description>
-				<posx>21</posx>
-				<posy>4</posy>
-				<width>389</width>
-				<font>font12</font>
-				<label>31680</label>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
-			<control type="image">
-				<description>separator image</description>
-				<posx>21</posx>
-				<posy>37</posy>
-				<width>389</width>
-				<height>6</height>
-				<texture>separator.png</texture>
-			</control>
-			<control type="list" id="561">
-				<description>Group Get Movie Library Entry point Buttons</description>
-				<posx>21</posx>
-				<posy>45</posy>
-				<width>389</width>
-				<height>370</height>
-				<itemgap>0</itemgap>
-				<scrolltime>200</scrolltime>
-				<orientation>vertical</orientation>
-				<align>center</align>
-				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>512</onleft>
-				<onright>512</onright>
-				<viewtype label="31028">list</viewtype>
-				<itemlayout height="40" width="389">
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="389">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<align>left</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<description>Set Movie library entry point - Title</description>
-						<label>369</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[369])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="2">
-						<description>Set Movie library entry point - Root</description>
-						<label>20108</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20108])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="3">
-						<description>Set Movie library entry point - Recentlyadded</description>
-						<label>20386</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20386])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="4">
-						<description>Set Movie library entry point - Genres</description>
-						<label>135</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[135])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="5">
-						<description>Set Movie library entry point - Years</description>
-						<label>652</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[652])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="6">
-						<description>Set Movie library entry point - Actors</description>
-						<label>344</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[344])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="7">
-						<description>Set Movie library entry point - Directors</description>
-						<label>20348</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20348])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="8">
-						<description>Set Movie library entry point - Studios</description>
-						<label>20388</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[20388])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="9">
-						<description>Set Movie library entry point - Files</description>
-						<label>744</label>
-						<onclick>Skin.SetString(movie-libraryentry,$LOCALIZE[744])</onclick>
-						<onclick>Skin.Reset(selectmovieentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-				</content>
-			</control>
-		</control>	
-		<control type="group" id="570">
-			<visible allowhiddenfocus="true">ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)</visible>
-			<posx>433</posx>
-			<posy>206</posy>
-			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)">Conditional</animation>
-			<control type="image">
-				<description>Progess Dialog background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>433</width>
-				<height>390</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
-			</control>
-			<control type="label">
-				<description>heading label</description>
-				<posx>21</posx>
-				<posy>4</posy>
-				<width>389</width>
-				<font>font12</font>
-				<label>31681</label>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
-			<control type="image">
-				<description>separator image</description>
-				<posx>21</posx>
-				<posy>37</posy>
-				<width>389</width>
-				<height>6</height>
-				<texture>separator.png</texture>
-			</control>
-			<control type="list" id="571">
-				<description>Group Get TV Library Entry point Buttons</description>
-				<posx>21</posx>
-				<posy>45</posy>
-				<width>389</width>
-				<height>370</height>
-				<itemgap>0</itemgap>
-				<scrolltime>200</scrolltime>
-				<orientation>vertical</orientation>
-				<align>center</align>
-				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>516</onleft>
-				<onright>516</onright>
-				<viewtype label="31028">list</viewtype>
-				<itemlayout height="40" width="389">
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="389">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<align>left</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<description>Set TV library entry point - Title</description>
-						<label>369</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[369])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="2">
-						<description>Set TV library entry point - Root</description>
-						<label>20108</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20108])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="3">
-						<description>Set TV library entry point - Recentlyadded</description>
-						<label>20387</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20387])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="4">
-						<description>Set TV library entry point - Genres</description>
-						<label>135</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[135])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="5">
-						<description>Set TV library entry point - Years</description>
-						<label>652</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[652])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="6">
-						<description>Set TV library entry point - Actors</description>
-						<label>344</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[344])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="7">
-						<description>Set TV library entry point - Studios</description>
-						<label>20388</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[20388])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="8">
-						<description>Set TV library entry point - Files</description>
-						<label>744</label>
-						<onclick>Skin.SetString(tv-libraryentry,$LOCALIZE[744])</onclick>
-						<onclick>Skin.Reset(selecttventry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-				</content>
-			</control>
-		</control>	
-		<control type="group" id="580">
-			<visible allowhiddenfocus="true">ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)</visible>
-			<posx>433</posx>
-			<posy>206</posy>
-			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)">Conditional</animation>
-			<control type="image">
-				<description>Progess Dialog background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>433</width>
-				<height>430</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
-			</control>
-			<control type="label">
-				<description>heading label</description>
-				<posx>21</posx>
-				<posy>4</posy>
-				<width>389</width>
-				<font>font11</font>
-				<label>31682</label>
-				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
-			<control type="image">
-				<description>separator image</description>
-				<posx>21</posx>
-				<posy>37</posy>
-				<width>389</width>
-				<height>6</height>
-				<texture>separator.png</texture>
-			</control>
-			<control type="list" id="581">
-				<description>Group Get Music Video Library Entry point Buttons</description>
-				<posx>21</posx>
-				<posy>45</posy>
-				<width>389</width>
-				<height>370</height>
-				<itemgap>0</itemgap>
-				<scrolltime>200</scrolltime>
-				<orientation>vertical</orientation>
-				<align>center</align>
-				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>520</onleft>
-				<onright>520</onright>
-				<viewtype label="31028">list</viewtype>
-				<itemlayout height="40" width="389">
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="389">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<align>left</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>194</posx>
-						<posy>0</posy>
-						<width>389</width>
-						<height>40</height>
-						<description>Item label</description>
-						<label>$INFO[ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font12</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<description>Set Music Video library entry point - Title</description>
-						<label>369</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[369])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="2">
-						<description>Set Music Video library entry point - Root</description>
-						<label>20108</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20108])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="3">
-						<description>Set Music Video library entry point - Recentlyadded</description>
-						<label>20390</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20390])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="4">
-						<description>Set Music Video library entry point - Genres</description>
-						<label>135</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[135])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="5">
-						<description>Set Music Video library entry point - Years</description>
-						<label>652</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[652])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="6">
-						<description>Set Music Video library entry point - Artists</description>
-						<label>133</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[133])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="7">
-						<description>Set Music Video library entry point - Directors</description>
-						<label>20348</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20348])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="8">
-						<description>Set Music Video library entry point - Studios</description>
-						<label>20388</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[20388])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-					<item id="9">
-						<description>Set Music Video library entry point - Files</description>
-						<label>744</label>
-						<onclick>Skin.SetString(musicvideo-libraryentry,$LOCALIZE[744])</onclick>
-						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
-						<onclick>SetFocus(500)</onclick>
-					</item>
-				</content>
 			</control>
 		</control>
 		<control type="group" id="780">
