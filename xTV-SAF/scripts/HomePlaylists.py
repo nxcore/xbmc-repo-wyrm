@@ -41,19 +41,15 @@ def getplaylistname(Location):
 		return PlaylistNAME
 		
 def getplaylisticon(ListType):
-	# Assign a Icon to the playlist based on if it was in Video or Music
-	# sub directory of skins playlist directory
+
 		if 'music' in ListType:
 			IconName = 'DefaultAudio.png'
 			return IconName
 
-		elif 'video' in ListType:
+		else:
 			IconName = 'DefaultMovies.png'
 			return IconName
-
-		else:
-			sys.exit(2)
-		
+			
 def main():
 	SkinStringName = string.replace(str(sys.argv[1:]),"'","")
 	SkinStringName = string.replace(SkinStringName,"[","")
