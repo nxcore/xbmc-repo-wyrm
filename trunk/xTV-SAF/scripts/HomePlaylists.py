@@ -39,16 +39,6 @@ def getplaylistname(Location):
 		sys.exit(2)
 	else:
 		return PlaylistNAME
-		
-def getplaylisticon(ListType):
-
-		if 'music' in ListType:
-			IconName = 'DefaultAudio.png'
-			return IconName
-
-		else:
-			IconName = 'DefaultMovies.png'
-			return IconName
 			
 def main():
 	SkinStringName = string.replace(str(sys.argv[1:]),"'","")
@@ -56,15 +46,20 @@ def main():
 	SkinStringName = string.replace(SkinStringName,"]","")
 
 	PlaylistType = getplaylisttype()
+	if 'Music' in PlaylistType:
+		PlaylistIcon = 'DefaultAudio.png'
+
+	if 'Video' in PlaylistType:
+		PlaylistIcon = 'DefaultMovies.png'
+			
 	PlaylistLOCATION = os.path.join(PLAYLISTDIR, PlaylistType)
 	Playlist = getplaylistname(PlaylistLOCATION)
+	PlaylistLoc = os.path.join(PlaylistLOCATION, Playlist)
 	
 	PlaylistLabel = string.replace(Playlist,".xsp","")
 
-	PlaylistIcon = getplaylisticon(PlaylistType)
-
 	# Write out Skin strings with plugin info
-	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlistloc," + Playlist + ")")
+	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlistloc," + PlaylistLoc + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlistlabel," + PlaylistLabel + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlisticon," + PlaylistIcon + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlisttype," + PlaylistType + ")")
