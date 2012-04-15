@@ -643,46 +643,45 @@
 						<label>31821</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-youtube)</onclick>
+						<onclick>Skin.SetBool(home-changed)</onclick>
 						<selected>Skin.HasSetting(home-youtube)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
+					<!-- YouTube Script -->
 					<control type="button" id="310">
 						<description>YouTube script location</description>
 						<font>font12</font>
 						<width>885</width>
+						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<textoffsetx>35</textoffsetx>
-						<label>$LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(youtube-script)]</label2>
-						<haspath>true</haspath>
+						<textwidth>480</textwidth>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(youtube-scriptloc)]</label2>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<enable>Skin.HasSetting(home-youtube)</enable>
-						<onclick>Skin.SetFile(youtube-script,.py)</onclick>
-						<onclick>Skin.Reset(youtube-pluginfolder)</onclick>
-						<onclick>Skin.Reset(youtube-pluginname)</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,youtube)</onclick>
 						<visible>Skin.HasSetting(home-youtube)</visible>
 					</control>
+					<!-- YouTube Plugin -->
 					<control type="button" id="311">
 						<description>YouTube plugin location</description>
-						<font>font12</font>
 						<width>885</width>
+						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<textoffsetx>35</textoffsetx>
+						<textwidth>480</textwidth>
 						<label>$LOCALIZE[31851]</label>
-						<label2>$INFO[Skin.String(youtube-pluginname)]</label2>
+						<label2>$INFO[Skin.String(youtube-pluginfolder),,/]$INFO[Skin.String(youtube-pluginname)]</label2>
+						<font>font12</font>
 						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<enable>Skin.HasSetting(home-youtube)</enable>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
 						<onclick>XBMC.RunScript(special://skin/scripts/HomePlugins.py,youtube)</onclick>
-						<onclick>Skin.Reset(youtube-script)</onclick>
 						<visible>Skin.HasSetting(home-youtube)</visible>
 					</control>
 					<control type="radiobutton" id="312">
