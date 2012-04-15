@@ -345,11 +345,20 @@
 				</item>
 				
 				<item>
-					<icon>icon-youtube.png</icon>
-					<thumb>icon-youtube-blur1.png</thumb>
-					<label>31037</label>
-					<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
-					<visible>Skin.HasSetting(home-youtube)</visible>
+					<description>YouTube Script</description>
+					<icon>$INFO[Skin.String(youtube-scripticon)]</icon>
+					<thumb>$INFO[Skin.String(youtube-scripticon)]</thumb>
+					<label>$INFO[Skin.String(youtube-label)]</label>
+					<onclick>XBMC.RunScript($INFO[Skin.String(youtube-scriptloc)])</onclick>
+					<visible>Skin.HasSetting(home-youtube) + !IsEmpty(Skin.String(youtube-label))+ !IsEmpty(Skin.String(youtube-scriptloc))</visible>
+				</item>
+				<item>
+					<description>YouTube Plugin</description>
+					<icon>$INFO[Skin.String(youtube-pluginicon)]</icon>
+					<thumb>$INFO[Skin.String(youtube-pluginicon)]</thumb>
+					<label>$INFO[Skin.String(youtube-label)]</label>
+					<onclick>ActivateWindow($INFO[Skin.String(youtube-pluginwindow)],plugin://$INFO[Skin.String(youtube-pluginfolder)])</onclick>
+					<visible>Skin.HasSetting(home-youtube) + !IsEmpty(Skin.String(youtube-label)) + !IsEmpty(Skin.String(youtube-pluginwindow)) + !IsEmpty(Skin.String(youtube-pluginfolder))</visible>
 				</item>
 				<item>
 					<icon>icon-programs.png</icon>
