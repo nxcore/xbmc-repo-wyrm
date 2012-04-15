@@ -57,7 +57,7 @@ def main():
 	PlaylistLoc = os.path.join(PlaylistLOCATION, Playlist)
 	
 	PlaylistLabel = string.replace(Playlist,".xsp","")
-
+	
 	# Write out Skin strings with plugin info
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlistloc," + PlaylistLoc + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-playlistlabel," + PlaylistLabel + ")")
