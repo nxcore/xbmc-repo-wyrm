@@ -46,10 +46,11 @@ def main():
 	SkinStringName = string.replace(SkinStringName,"]","")
 
 	PlaylistType = getplaylisttype()
-	if 'Music' in PlaylistType:
+	
+	if 'Music' in PlaylistType :
 		PlaylistIcon = 'DefaultAudio.png'
 
-	if 'Video' in PlaylistType:
+	else :
 		PlaylistIcon = 'DefaultMovies.png'
 			
 	PlaylistLOCATION = os.path.join(PLAYLISTDIR, PlaylistType)
