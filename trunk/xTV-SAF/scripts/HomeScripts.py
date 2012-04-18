@@ -31,11 +31,16 @@ def main():
 	ScriptName = getscriptname()
 	
 	ScriptLocation = os.path.join(SCRIPTDIR, ScriptName)
-	ScriptIcon = os.path.join(ScriptLocation, 'default.tbn')
+	__scriptIconTBN__ = os.path.join(ScriptLocation,"default.tbn")
+	__scriptIconPNG__ = os.path.join(ScriptLocation,"default.png")
+	
+	if os.path.isfile( __addonIconTBN__ ):
+		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + __scriptIconTBN__ + ")")
+	elif os.path.isfile ( __addonIconPNG__ ):
+		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + __scriptIconPNG__ + ")")
 
 	# Write out Skin strings with script info
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptloc," + ScriptLocation + ")")
-	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIcon + ")")
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-label," + ScriptName + ")")
 	
 	# Reset homescript skin strings
