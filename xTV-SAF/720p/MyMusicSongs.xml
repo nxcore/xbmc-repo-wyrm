@@ -26,7 +26,7 @@
 		
 		<include>ListView</include>
 		<include>ListView-MusicIcon</include>
-		<include condition="!Skin.HasSetting(views-musiclist2)">List2</include>
+		<include condition="!Skin.HasSetting(views-musiclist2)">AlbumList2</include>
 		<include condition="!Skin.HasSetting(views-musicwrap)">AlbumWrapView</include>
 		<include condition="!Skin.HasSetting(views-musicwall)">AudioWallView</include>
 		<include condition="!Skin.HasSetting(views-musiccoverflow)">AlbumCoverflow</include>

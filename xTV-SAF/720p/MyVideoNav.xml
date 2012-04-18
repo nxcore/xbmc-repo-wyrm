@@ -87,7 +87,7 @@
 
 		<include>ListView</include>
 		<include>ListView-VideoIcon</include>
-		<include condition="!Skin.HasSetting(views-videolist2)">List2</include>
+		<include condition="!Skin.HasSetting(views-videolist2)">VideoList2</include>
 		<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
 		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
 		<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
