@@ -1,20 +1,26 @@
 <includes>
-	<include file="CommonViewTypes.xml">-</include>
 	<include file="Defaults.xml">-</include>
-	<include file="View-VideoBanner.xml">-</include>
+	
+	<include file="CommonViewTypes.xml">-</include>
+	<include file="View-Coverflow.xml">-</include>
 	<include file="View-Icon.xml">-</include>
 	<include file="View-List2.xml">-</include>
 	<include file="View-Wall.xml">-</include>
-	<include file="View-VideoWall.xml">-</include>
-	<include file="View-AlbumWall.xml">-</include>
-	<include file="View-PhotoWall.xml">-</include>
 	<include file="View-Wrap.xml">-</include>
-	<include file="View-VideoWrap.xml">-</include>
-	<include file="View-AlbumWrap.xml">-</include>
-	<include file="View-PhotoWrap.xml">-</include>
-	<include file="View-Coverflow.xml">-</include>
+	
 	<include file="View-AlbumCoverflow.xml">-</include>
+	<include file="View-AlbumList2.xml">-</include>
+	<include file="View-AlbumWall.xml">-</include>
+	<include file="View-AlbumWrap.xml">-</include>
+	
+	<include file="View-PhotoWall.xml">-</include>
+	<include file="View-PhotoWrap.xml">-</include>
+	
+	<include file="View-VideoBanner.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
+	<include file="View-VideoList2.xml">-</include>
+	<include file="View-VideoWall.xml">-</include>
+	<include file="View-VideoWrap.xml">-</include>
 	
 	<include file="Includes_Weather.xml">-</include>
 	<include file="Includes_Home.xml">-</include>
