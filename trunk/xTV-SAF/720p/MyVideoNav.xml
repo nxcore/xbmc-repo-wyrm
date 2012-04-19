@@ -85,14 +85,30 @@
 
 		<include>memory-low</include>
 
-		<include>ListView</include>
-		<include>ListView-VideoIcon</include>
-		<include condition="!Skin.HasSetting(views-videolist2)">VideoList2</include>
-		<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
-		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
-		<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
-		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
-
+		<control type="label">
+			<visible>!IntegerGreaterThan(Container.NumItems,1)</visible>
+			<posx>980</posx>
+			<posy>360</posy>
+			<width>600</width>
+			<height>37</height>
+			<label>No Displayable Content</label>
+			<font>font20</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<style>bold</style>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+		</control>		
+		<control>
+			<visible>IntegerGreaterThan(Container.NumItems,1)</visible>
+			<include>ListView</include>
+			<include>ListView-VideoIcon</include>
+			<include condition="!Skin.HasSetting(views-videolist2)">VideoList2</include>
+			<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
+			<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
+			<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
+			<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+		</control>
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>
