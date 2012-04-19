@@ -1,5 +1,5 @@
 <includes>
-	<include name="List2">
+	<include name="VideoList2">
 		<control type="fixedlist" id="51">
 			<viewtype label="31942">List2</viewtype>
 			<posx>678</posx>
