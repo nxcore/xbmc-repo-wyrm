@@ -31,13 +31,13 @@ def main():
 	ScriptName = getscriptname()
 	
 	ScriptLocation = os.path.join(SCRIPTDIR, ScriptName)
-	__scriptIconTBN__ = os.path.join(ScriptLocation,"default.tbn")
-	__scriptIconPNG__ = os.path.join(ScriptLocation,"default.png")
+	ScriptIconTBN = os.path.join(ScriptLocation,"default.tbn")
+	ScriptIconPNG = os.path.join(ScriptLocation,"default.png")
 	
-	if os.path.isfile( __addonIconTBN__ ):
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + __scriptIconTBN__ + ")")
-	elif os.path.isfile ( __addonIconPNG__ ):
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + __scriptIconPNG__ + ")")
+	if os.path.isfile( ScriptIconTBN_ ):
+		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIconTBN + ")")
+	elif os.path.isfile ( ScriptIconPNG ):
+		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIconPNG + ")")
 
 	# Write out Skin strings with script info
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scriptloc," + ScriptLocation + ")")

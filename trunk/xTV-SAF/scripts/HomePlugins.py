@@ -73,13 +73,13 @@ def main():
 	PluginFolder = os.path.join(PlugType, PlugName)
 	PluginWindow = getplugintypenumber(PlugType)
 	
-	__pluginIconTBN__ = os.path.join(PluginPath,"default.tbn")
-	__pluginIconPNG__ = os.path.join(PluginPath,"default.png")
+	PluginIconTBN = os.path.join(PluginPath,"default.tbn")
+	PluginIconPNG = os.path.join(PluginPath,"default.png")
 	
-	if os.path.isfile( __addonIconTBN__ ):
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + __pluginIconTBN__ + ")")
-	elif os.path.isfile ( __addonIconPNG__ ):
-		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + __pluginIconPNG__ + ")")
+	if os.path.isfile( PluginIconTBN ):
+		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + PluginIconTBN + ")")
+	elif os.path.isfile ( PluginIconPNG ):
+		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginicon," + PluginIconPNG + ")")
 
 	# Write out Skin strings with plugin info
 	xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-pluginfolder," + PluginFolder + ")")
