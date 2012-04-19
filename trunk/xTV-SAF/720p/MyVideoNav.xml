@@ -86,8 +86,8 @@
 		<include>memory-low</include>
 
 		<control type="label">
-			<visible>!IntegerGreaterThan(Container.NumItems,1)</visible>
-			<posx>980</posx>
+			<visible>StringCompare(Container.NumItems,0)</visible>
+			<posx>680</posx>
 			<posy>360</posy>
 			<width>600</width>
 			<height>37</height>
