@@ -34,7 +34,7 @@ def main():
 	ScriptIconTBN = os.path.join(ScriptLocation,"default.tbn")
 	ScriptIconPNG = os.path.join(ScriptLocation,"default.png")
 	
-	if os.path.isfile( ScriptIconTBN_ ):
+	if os.path.isfile( ScriptIconTBN ):
 		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIconTBN + ")")
 	elif os.path.isfile ( ScriptIconPNG ):
 		xbmc.executebuiltin("XBMC.Skin.SetString(" + SkinStringName + "-scripticon," + ScriptIconPNG + ")")
