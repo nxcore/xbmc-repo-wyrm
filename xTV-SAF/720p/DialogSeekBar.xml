@@ -336,13 +336,13 @@
 			<!-- Seek Slider -->
 			<control type="slider" id="401">
 				<description>Seek Slider</description>
-				<posx>212</posx>
+				<posx>210</posx>
 				<posy>10</posy>
 				<width>864</width>
 				<height>20</height>
 				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
-				<textureslidernib>progress-marker.png</textureslidernib>
-				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+				<textureslidernib border="8,0,8,0">progress-marker.png</textureslidernib>
+				<textureslidernibfocus border="8,0,8,0">progress-marker.png</textureslidernibfocus>
 			</control>
 			<!-- End Seek Slider -->
 		</control>

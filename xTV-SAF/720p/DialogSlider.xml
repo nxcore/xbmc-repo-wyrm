@@ -57,7 +57,7 @@
 				<height>20</height>
 				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
 				<textureslidernib border="8,0,8,0">progress-marker.png</textureslidernib>
-				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+				<textureslidernibfocus border="8,0,8,0">progress-marker.png</textureslidernibfocus>
 				<onleft>11</onleft>
 				<onright>11</onright>
 			</control>
