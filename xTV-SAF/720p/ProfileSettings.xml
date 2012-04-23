@@ -1,4 +1,5 @@
 <window id="130">
+	<backgroundcolor>0</backgroundcolor>
 	<visible>Window.IsActive(130) + !Window.IsActive(131)</visible>
 	<include>screen-fade</include>
 	<controls>
