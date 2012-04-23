@@ -1,5 +1,6 @@
 <window id="12">
 	<defaultcontrol>2</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>background</include>
