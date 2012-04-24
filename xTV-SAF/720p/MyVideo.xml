@@ -28,15 +28,34 @@
 			<include>list-fade</include>
 		</control>
 		
-		<include>memory-low</include>
+		<control type="label">
+			<description>No Content Label</description>
+			<posx>340</posx>
+			<posy>350</posy>
+			<width>600</width>
+			<height>37</height>
+			<label>No Content</label>
+			<font>font20</font>
+			<style>bold</style>
+			<textcolor>button-text</textcolor>
+			<shadowcolor>shadow-text</shadowcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<include>list-fade</include>
+			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
+		</control>
 		
 		<include>ListView</include>
-		<include>ListView-VideoIcon</include>
-		<include condition="!Skin.HasSetting(views-videolist2)">VideoList2</include>
-		<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
-		<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
-		<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
-		<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+		
+		<control type="group">
+			<visible>IntegerGreaterThan(Container.NumItems,0)</visible>
+			<include>ListView-VideoIcon</include>
+			<include condition="!Skin.HasSetting(views-videolist2)">VideoList2</include>
+			<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
+			<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
+			<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
+			<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+		</control>	
 		
 		<control type="group">
 			<posy>720</posy>
