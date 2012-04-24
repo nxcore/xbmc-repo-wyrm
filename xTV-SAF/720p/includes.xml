@@ -453,7 +453,7 @@
 				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !Window.IsVisible(progressdialog)</visible>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- No Fanart available -->
 					<control type="image">
 						<description>list item icon</description>
@@ -504,7 +504,7 @@
 				<visible>Skin.HasSetting(Fanart) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="group">
 					<visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- No Fanart available -->
 					<control type="image">
 						<description>list item icon</description>
@@ -529,7 +529,7 @@
 				</control>
 				<control type="group">
 					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- Fanart image -->
 					<control type="image">
 						<posx>90</posx>
@@ -551,7 +551,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<!-- User has selected NO fanart -->
 				<control type="image">
 					<description>list item icon</description>
@@ -576,7 +576,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="image">
 					<description>list item icon</description>
 					<posx>90</posx>
@@ -600,7 +600,7 @@
 			</control>
 			<control type="group">
 				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
@@ -627,7 +627,7 @@
 				</control>
 				<control type="group">
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- Show TV icon as the Default icon -->
 					<control type="image">
 						<description>list item icon</description>
@@ -652,7 +652,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus</visible>
+				<visible>System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus</visible>
 				<animation effect="fade" time="300">Visible</animation>
 				<!-- Star Rating -->
 				<control type="image">
