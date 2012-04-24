@@ -1,6 +1,6 @@
 <window id="34">
 	<defaultcontrol always="true">2</defaultcontrol>
-	<backgroundcolor>0</backgroundcolor>
+	 
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<controls>
