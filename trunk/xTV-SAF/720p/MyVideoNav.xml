@@ -87,7 +87,7 @@
 		<include>memory-low</include>
 		
 		<control type="label">
-			<description>Test</description>
+			<description>No Content label</description>
 			<posx>340</posx>
 			<posy>350</posy>
 			<width>600</width>
