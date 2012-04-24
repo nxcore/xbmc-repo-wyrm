@@ -33,7 +33,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>black.png</texture>
-			<aspectratio>stretch</aspectratio>
+			<aspectratio>scale</aspectratio>
 		</control>
 	</include>
 	
@@ -47,7 +47,7 @@
 			<height>720</height>
 			<texture>background.png</texture>
 			<colordiffuse>solid-background</colordiffuse>
-			<aspectratio>stretch</aspectratio>
+			<aspectratio>scale</aspectratio>
 			<visible>IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="image">
@@ -58,7 +58,7 @@
 			<height>720</height>
 			<texture>$INFO[Skin.String(custom-background)]</texture>
 			<colordiffuse>solid-background</colordiffuse>
-			<aspectratio>stretch</aspectratio>
+			<aspectratio>scale</aspectratio>
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
@@ -72,7 +72,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<fadetime>300</fadetime>
 					<include>background-fade</include>
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
@@ -86,7 +86,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<visible>Player.HasAudio + Visualisation.Enabled</visible>
 				</control>
 				<control type="videowindow">
@@ -94,7 +94,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<visible>Player.HasVideo</visible>
 				</control>
 			</control>	
@@ -106,7 +106,7 @@
 				<height>720</height>
 				<texture>background.png</texture>
 				<colordiffuse>mask-background</colordiffuse>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio>scale</aspectratio>
 			</control>
 		</control>
 	</include>
