@@ -1,7 +1,7 @@
 <window id="52">
 	<defaultcontrol always="true">999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	
+
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
@@ -755,7 +755,7 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<alttexturefocus>default-button.png</alttexturefocus>
-						<alttexturenofocus>-</alttexturenofocus>					
+						<alttexturenofocus>-</alttexturenofocus>
 						<label>$LOCALIZE[13015]: $LOCALIZE[13009]</label>
 						<altlabel>$LOCALIZE[13015]: $LOCALIZE[31558]</altlabel>
 						<onclick>Skin.ToggleSetting(home-quit)</onclick>
@@ -765,7 +765,7 @@
 						<textoffsetx>35</textoffsetx>
 						<textcolor>button-text</textcolor>
 						<include>button-fade</include>
-					</control>	
+					</control>
 				</control>
 			</control>
 			<!--Background-->
@@ -1160,7 +1160,7 @@
 						</item>
 					</content>
 				</control>
-			</control>	
+			</control>
 			<control type="group" id="560">
 				<visible allowhiddenfocus="true">ControlGroup(560).HasFocus + Skin.HasSetting(selectmovieentry)</visible>
 				<posx>433</posx>
@@ -1313,7 +1313,7 @@
 						</item>
 					</content>
 				</control>
-			</control>	
+			</control>
 			<control type="group" id="570">
 				<visible allowhiddenfocus="true">ControlGroup(570).HasFocus + Skin.HasSetting(selecttventry)</visible>
 				<posx>433</posx>
@@ -1459,7 +1459,7 @@
 						</item>
 					</content>
 				</control>
-			</control>	
+			</control>
 			<control type="group" id="580">
 				<visible allowhiddenfocus="true">ControlGroup(580).HasFocus + Skin.HasSetting(selectmusicvidentry)</visible>
 				<posx>433</posx>
@@ -2098,7 +2098,7 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(cinema-script)</visible>
 					</control>
-					
+
 					<control type="label" id="708">
 						<description>Custom addons</description>
 						<width>885</width>
@@ -2109,9 +2109,9 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<label>[B]Custom Scripts/Plugins[/B]</label>
+						<label>[B]$LOCALIZE[636] $LOCALIZE[31034]/$LOCALIZE[31690][/B]</label>
 					</control>
-					
+
 					<!-- Custom Addon 1 -->
 					<control type="radiobutton" id="709">
 						<description>Custom addon 1 toggle</description>
@@ -2181,7 +2181,7 @@
 						<onclick>XBMC.Skin.SetString(custom1-label)</onclick>
 						<visible>Skin.HasSetting(custom1-addon)</visible>
 					</control>
-					
+
 					<!-- Custom Addon 2 -->
 					<control type="radiobutton" id="713">
 						<description>Custom addon 2 toggle</description>
@@ -2251,7 +2251,7 @@
 						<onclick>XBMC.Skin.SetString(custom2-label)</onclick>
 						<visible>Skin.HasSetting(custom2-addon)</visible>
 					</control>
-					
+
 					<!-- Custom Addon 3 -->
 					<control type="radiobutton" id="717">
 						<description>Custom addon 3 toggle</description>
@@ -2321,7 +2321,7 @@
 						<onclick>XBMC.Skin.SetString(custom3-label)</onclick>
 						<visible>Skin.HasSetting(custom3-addon)</visible>
 					</control>
-					
+
 					<!-- Custom Addon 4 -->
 					<control type="radiobutton" id="721">
 						<description>Custom addon 4 toggle</description>
@@ -2391,7 +2391,19 @@
 						<onclick>XBMC.Skin.SetString(custom4-label)</onclick>
 						<visible>Skin.HasSetting(custom4-addon)</visible>
 					</control>
-					
+
+					<control type="label" id="730">
+						<description>Custom playlists</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textcolor>listselectedtext</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<label>[B]$LOCALIZE[636] $LOCALIZE[136][/B]</label>
+					</control>
 					<!-- Custom Playlist 1 -->
 					<control type="radiobutton" id="731">
 						<description>Custom Playlist1 toggle</description>
@@ -2456,7 +2468,7 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom1-playlist)</visible>
 					</control>
-					
+
 					<!-- Custom Playlist 2 -->
 					<control type="radiobutton" id="735">
 						<description>Custom Playlist2 toggle</description>
@@ -2521,7 +2533,7 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom2-playlist)</visible>
 					</control>
-					
+
 					<!-- Custom Playlist 3 -->
 					<control type="radiobutton" id="739">
 						<description>Custom Playlist3 toggle</description>
@@ -2586,7 +2598,7 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom3-playlist)</visible>
 					</control>
-					
+
 					<!-- Custom Playlist 4 -->
 					<control type="radiobutton" id="743">
 						<description>Custom Playlist4 toggle</description>
@@ -2651,7 +2663,7 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom4-playlist)</visible>
 					</control>
-					
+
 					<!-- Custom Playlist 5 -->
 					<control type="radiobutton" id="747">
 						<description>Custom Playlist5 toggle</description>
@@ -2716,7 +2728,7 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(custom5-playlist)</visible>
 					</control>
-					
+
 					<!-- Custom Playlist 6 -->
 					<control type="radiobutton" id="751">
 						<description>Custom Playlist6 toggle</description>
@@ -2901,6 +2913,6 @@
 					</item>
 				</content>
 			</control>
-		</control>		
+		</control>
 	</controls>
 </window>
