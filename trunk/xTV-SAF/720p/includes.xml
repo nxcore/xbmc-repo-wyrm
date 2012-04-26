@@ -478,6 +478,7 @@
 				</control>
 				<control type="group">
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<control type="image">
 						<description>list item icon</description>
 						<posx>90</posx>
