@@ -1227,6 +1227,16 @@
 						<width>212</width>
 						<height>62</height>
 						<aligny>bottom</aligny>
+						<texture>special://skin/extras/images/rating/australia_x.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>substring(listitem.mpaa,Australia:X)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>212</width>
+						<height>62</height>
+						<aligny>bottom</aligny>
 						<texture>special://skin/extras/images/rating/australia_r.png</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>substring(listitem.mpaa,Australia:R)</visible>
