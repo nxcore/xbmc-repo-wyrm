@@ -1,5 +1,5 @@
 <includes>
-	<include name="List2">
+	<include name="AlbumList2">
 		<control type="fixedlist" id="51">
 			<viewtype label="31942">List2</viewtype>
 			<posx>678</posx>
@@ -17,14 +17,6 @@
 			<preloaditems>5</preloaditems>
 			<pagecontrol>27</pagecontrol>
 			<itemlayout height="50">
-				<control type="image">
-					<posx>0</posx>
-					<posy>5</posy>
-					<width>42</width>
-					<height>30</height>
-					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>Skin.HasSetting(watched-overlay)</visible>
-				</control>
 				<control type="label">
 					<posx>53</posx>
 					<posy>-2</posy>
@@ -40,14 +32,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="50">
-				<control type="image">
-					<posx>0</posx>
-					<posy>5</posy>
-					<width>42</width>
-					<height>30</height>
-					<info>ListItem.Overlay</info>
-					<visible>Skin.HasSetting(watched-overlay)</visible>
-				</control>
 				<control type="label">
 					<posx>53</posx>
 					<posy>-2</posy>
@@ -113,7 +97,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(3).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -121,7 +105,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -139,7 +123,7 @@
 						<posy>0</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -147,7 +131,7 @@
 						<posy>81</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -165,7 +149,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -173,7 +157,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -191,7 +175,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -199,7 +183,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -222,7 +206,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -230,7 +214,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -248,7 +232,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -256,7 +240,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -274,7 +258,7 @@
 						<posy>0</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -282,11 +266,11 @@
 						<posy>81</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
-			</control>
+			</control>	
 			<control type="group">
 				<posx>238</posx>
 				<posy>200</posy>
@@ -300,7 +284,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -308,7 +292,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -328,7 +312,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -336,7 +320,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -352,7 +336,7 @@
 						<posy>0</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -360,10 +344,10 @@
 						<posy>81</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
-				</control>
+				</control>	
 			</control>
 			<control type="group">
 				<posx>238</posx>
@@ -376,7 +360,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -384,7 +368,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultAudio.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -405,24 +389,103 @@
 				<textureslidernib>-</textureslidernib>
 				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>51</onleft>
-				<onright>51</onright>
+				<onright>9000</onright>
 				<include>list-fade</include>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<colordiffuse>ScrollBarColor</colordiffuse>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
-			<!-- Star Rating -->
-			<control type="image">
-				<posx>-15</posx>
-				<posy>268</posy>
-				<width>177</width>
-				<height>25</height>
-				<info>ListItem.StarRating</info>
-				<colordiffuse>StarDiffuse</colordiffuse>
-				<visible>!IsEmpty(ListItem.Thumb)</visible>
-				<visible>!IsEmpty(ListItem.StarRating)</visible>
-			</control>
-		</control>	
+			<control type="group">
+				<visible>[Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				<control type="image">
+					<description>seperator</description>
+					<posx>31</posx>
+					<posy>512</posy>
+					<width>654</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+				<control type="label">
+					<description>Artist label</description>
+					<posx>123</posx>
+					<posy>525</posy>
+					<width>177</width>
+					<height>25</height>
+					<label>31230</label>
+					<font>font11</font>
+					<align>right</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Artist value</description>
+					<posx>159</posx>
+					<posy>525</posy>
+					<width>513</width>
+					<height>25</height>
+					<label>$INFO[ListItem.Artist]</label>
+					<scroll>true</scroll>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Genre label</description>
+					<posx>123</posx>
+					<posy>550</posy>
+					<width>177</width>
+					<height>25</height>
+					<label>31231</label>
+					<font>font11</font>
+					<align>right</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Genre value</description>
+					<posx>159</posx>
+					<posy>550</posy>
+					<width>513</width>
+					<height>25</height>
+					<label>$INFO[ListItem.Genre]</label>
+					<scroll>true</scroll>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Year label</description>
+					<posx>123</posx>
+					<posy>575</posy>
+					<width>177</width>
+					<height>25</height>
+					<label>31232</label>
+					<font>font11</font>
+					<align>right</align>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Year label</description>
+					<posx>159</posx>
+					<posy>575</posy>
+					<width>513</width>
+					<height>25</height>
+					<label>$INFO[ListItem.Year]</label>
+					<font>font11</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+				</control>
+				<control type="image">
+					<description>seperator</description>
+					<posx>31</posx>
+					<posy>612</posy>
+					<width>654</width>
+					<height>6</height>
+					<texture>separator.png</texture>
+				</control>
+			</control>	
+		</control>
 	</include>
 </includes>

@@ -1,6 +1,6 @@
 <includes>
 	<include name="VertHomeMenu">
-			
+		<backgroundcolor>0</backgroundcolor>	
 		<include>background</include>
 		
 		<control type="group">

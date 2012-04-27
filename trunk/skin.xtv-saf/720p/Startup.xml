@@ -1,5 +1,6 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="button" id="10">
@@ -23,8 +24,9 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<colordiffuse>solid-background</colordiffuse>
 				<texture>background.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>solid-background</colordiffuse>
 			</control>
 			<control type="image">
 				<description>Xtv Logo</description>

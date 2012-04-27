@@ -29,7 +29,7 @@
 					<height>128</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<texture diffuse="mask-squ.png" background="true">$INFO[ListItem.Icon]</texture>
+					<texture diffuse="mask-squ.png" background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 					<info>ListItem.Icon</info>
 				</control>
 			</itemlayout>
@@ -39,7 +39,7 @@
 					<posy>8</posy>
 					<width>128</width>
 					<height>128</height>
-					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<bordertexture border="9">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize>
@@ -57,7 +57,7 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 					<visible>SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 			</focusedlayout>

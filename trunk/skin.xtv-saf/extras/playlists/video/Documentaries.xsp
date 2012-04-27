@@ -2,5 +2,5 @@
 <smartplaylist type="tvshows">
     <name>Documentaries</name>
     <match>one</match>
-    <rule field="genre" operator="is">documentary</rule>
+    <rule field="genre" operator="contains">documentary</rule>
 </smartplaylist>
