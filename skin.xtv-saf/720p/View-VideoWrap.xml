@@ -132,9 +132,9 @@
 			<visible>Control.IsVisible(54)</visible>
 			<!-- Star Rating -->
 			<control type="image">
-				<posx>272</posx>
+				<posx>234</posx>
 				<posy>335</posy>
-				<width>177</width>
+				<width>200</width>
 				<height>25</height>
 				<info>ListItem.StarRating</info>
 				<colordiffuse>StarDiffuse</colordiffuse>

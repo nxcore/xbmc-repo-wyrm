@@ -1,27 +1,32 @@
 <includes>
 	<include file="Defaults.xml">-</include>
 	<include file="Includes_Variables.xml">-</include>
-	
+
 	<include file="CommonViewTypes.xml">-</include>
-	<include file="View-VideoBanner.xml">-</include>
+	<include file="View-Coverflow.xml">-</include>
 	<include file="View-Icon.xml">-</include>
 	<include file="View-List2.xml">-</include>
 	<include file="View-Wall.xml">-</include>
-	<include file="View-VideoWall.xml">-</include>
-	<include file="View-AlbumWall.xml">-</include>
-	<include file="View-PhotoWall.xml">-</include>
 	<include file="View-Wrap.xml">-</include>
-	<include file="View-VideoWrap.xml">-</include>
-	<include file="View-AlbumWrap.xml">-</include>
-	<include file="View-PhotoWrap.xml">-</include>
-	<include file="View-Coverflow.xml">-</include>
+
 	<include file="View-AlbumCoverflow.xml">-</include>
+	<include file="View-AlbumList2.xml">-</include>
+	<include file="View-AlbumWall.xml">-</include>
+	<include file="View-AlbumWrap.xml">-</include>
+
+	<include file="View-PhotoWall.xml">-</include>
+	<include file="View-PhotoWrap.xml">-</include>
+
+	<include file="View-VideoBanner.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
+	<include file="View-VideoList2.xml">-</include>
+	<include file="View-VideoWall.xml">-</include>
+	<include file="View-VideoWrap.xml">-</include>
 
 	<include file="Includes_Weather.xml">-</include>
 	<include file="Includes_VertHome.xml">-</include>
 	<include file="Includes_HorzHome.xml">-</include>
-	
+
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -42,8 +47,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<colordiffuse>solid-background</colordiffuse>
 			<texture>background.png</texture>
+			<colordiffuse>solid-background</colordiffuse>
+			<aspectratio>stretch</aspectratio>
 			<visible>IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="image">
@@ -52,9 +58,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
+			<texture>$INFO[Skin.String(custom-background)]</texture>
 			<colordiffuse>solid-background</colordiffuse>
 			<aspectratio>stretch</aspectratio>
-			<info>Skin.String(custom-background)</info>
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
@@ -71,7 +77,7 @@
 					<randomize>true</randomize>
 					<fadetime>300</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 				</control>
 				<control type="multiimage" id="6105">
@@ -83,7 +89,7 @@
 					<randomize>true</randomize>
 					<fadetime>300</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<visible>[Container.Content(TVShows) | Container.Content(Seasons)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 				</control>
 				<control type="multiimage" id="6110">
@@ -95,7 +101,7 @@
 					<randomize>true</randomize>
 					<fadetime>300</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)] + ![Player.HasVideo + Skin.HasSetting(VideoBackgrounds)]</visible>
 				</control>
 				<control type="group">
@@ -122,14 +128,14 @@
 						<texture background="true">$INFO[Fanart.Image]</texture>
 						<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + ![Container.Content(Seasons) + !IsEmpty(Control.GetLabel(6105))]+ ![Container.Content(Episodes) + !IsEmpty(Control.GetLabel(6110))]</visible>
 					</control>
-					<!-- TV Season fanarts --> 
+					<!-- TV Season fanarts -->
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1280</width>
 						<height>720</height>
 						<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
-						<aspectratio>scale</aspectratio>
+						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<visible>Container.Content(Seasons) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 					</control>
@@ -139,11 +145,11 @@
 						<width>1280</width>
 						<height>720</height>
 						<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
-						<aspectratio>scale</aspectratio>
+						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 					</control>
-				</control>	
+				</control>
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(HomeViewToggle)</visible>
@@ -172,6 +178,7 @@
 				<height>720</height>
 				<colordiffuse>mask-background</colordiffuse>
 				<texture>background.png</texture>
+				<aspectratio>stretch</aspectratio>
 			</control>
 		</control>
 	</include>
@@ -518,7 +525,7 @@
 				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(movies)] + !Window.IsVisible(progressdialog)</visible>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- No Fanart available -->
 					<control type="image">
 						<description>list item icon</description>
@@ -543,6 +550,7 @@
 				</control>
 				<control type="group">
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<control type="image">
 						<description>list item icon</description>
 						<posx>90</posx>
@@ -569,7 +577,7 @@
 				<visible>Skin.HasSetting(Fanart) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="group">
 					<visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- No Fanart available -->
 					<control type="image">
 						<description>list item icon</description>
@@ -594,7 +602,7 @@
 				</control>
 				<control type="group">
 					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !IsEmpty(listitem.Duration)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- Fanart image -->
 					<control type="image">
 						<posx>90</posx>
@@ -616,7 +624,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Fanart) + Container.Content(musicvideos) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<!-- User has selected NO fanart -->
 				<control type="image">
 					<description>list item icon</description>
@@ -641,7 +649,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Fanart) + Container.Content(musicvideos) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="image">
 					<description>list item icon</description>
 					<posx>90</posx>
@@ -665,7 +673,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<!-- User has selected NO fanart -->
 				<control type="image">
 					<description>list item icon</description>
@@ -690,7 +698,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="image">
 					<description>list item icon</description>
 					<posx>90</posx>
@@ -714,7 +722,7 @@
 			</control>
 			<control type="group">
 				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
@@ -741,7 +749,7 @@
 				</control>
 				<control type="group">
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<animation effect="zoom"  end="71" center="600,140" time="150" condition="System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- Show TV icon as the Default icon -->
 					<control type="image">
 						<description>list item icon</description>
@@ -766,7 +774,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>System.IdleTime(1) + !SubString(ListItem.Icon,DefaultFolderBack,Left)</visible>
+				<visible>System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus</visible>
 				<animation effect="fade" time="300">Visible</animation>
 				<!-- Star Rating -->
 				<control type="image">

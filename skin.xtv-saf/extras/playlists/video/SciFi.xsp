@@ -2,5 +2,5 @@
 <smartplaylist type="movies">
     <name>SciFi</name>
     <match>all</match>
-    <rule field="genre" operator="is">Sci-Fi</rule>
+    <rule field="genre" operator="contains">Sci-Fi</rule>
 </smartplaylist>

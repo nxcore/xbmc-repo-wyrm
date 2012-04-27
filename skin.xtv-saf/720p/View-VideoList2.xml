@@ -1,5 +1,5 @@
 <includes>
-	<include name="List2">
+	<include name="VideoList2">
 		<control type="fixedlist" id="51">
 			<viewtype label="31942">List2</viewtype>
 			<posx>678</posx>
@@ -113,7 +113,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(3).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -121,7 +121,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(3).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -139,7 +139,7 @@
 						<posy>0</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -147,7 +147,7 @@
 						<posy>81</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -165,7 +165,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -173,7 +173,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -191,7 +191,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -199,7 +199,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -222,7 +222,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -230,7 +230,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -248,7 +248,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -256,7 +256,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -274,7 +274,7 @@
 						<posy>0</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -282,7 +282,7 @@
 						<posy>81</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -300,7 +300,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -308,7 +308,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(-1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -328,7 +328,7 @@
 						<posy>0</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -336,7 +336,7 @@
 						<posy>62</posy>
 						<width>88</width>
 						<height>62</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(2).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -352,7 +352,7 @@
 						<posy>0</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -360,7 +360,7 @@
 						<posy>81</posy>
 						<width>115</width>
 						<height>81</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(1).Icon]</texture>
 						<aspectratio aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -376,7 +376,7 @@
 						<posy>0</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" diffuse="mask-rect.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -384,7 +384,7 @@
 						<posy>243</posy>
 						<width>345</width>
 						<height>243</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
+						<texture fallback="DefaultMovies.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(51).Listitem(0).Icon]</texture>
 						<aspectratio align="left" aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -423,6 +423,120 @@
 				<visible>!IsEmpty(ListItem.Thumb)</visible>
 				<visible>!IsEmpty(ListItem.StarRating)</visible>
 			</control>
-		</control>	
+			<!-- Number of unwatched episodes -->
+			<control type="label">
+				<posx>17</posx>
+				<posy>302</posy>
+				<width>285</width>
+				<height>31</height>
+				<font>font11</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
+				<visible>!IsEmpty(ListItem.Property(UnWatchedEpisodes)) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+			</control>
+			<!-- Duration -->
+			<control type="group">
+				<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+				<control type="label">
+					<posx>17</posx>
+					<posy>302</posy>
+					<width>265</width>
+					<height>31</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<info>ListItem.Duration</info>
+					<visible>substring(listitem.Duration,hrs)</visible>
+				</control>
+				<control type="label">
+					<posx>17</posx>
+					<posy>302</posy>
+					<width>265</width>
+					<height>31</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<info>ListItem.Duration</info>
+					<visible>substring(listitem.Duration,min)</visible>
+					<visible>!substring(listitem.Duration,hrs)</visible>
+				</control>
+				<control type="label">
+					<posx>17</posx>
+					<posy>302</posy>
+					<width>265</width>
+					<height>31</height>
+					<aligny>center</aligny>
+					<font>font18</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>$INFO[ListItem.Duration,, mins]</label>
+					<visible>!substring(listitem.Duration,min)</visible>
+				</control>
+			</control>
+			<!-- MPAA Rating -->
+			<control type="image">
+				<posx>17</posx>
+				<posy>343</posy>
+				<width>212</width>
+				<height>62</height>
+				<aligny>bottom</aligny>
+				<texture>$VAR[VideoRating]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<!-- TV show Logo -->
+			<control type="group">
+				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<control type="image" id="37016">
+					<posx>17</posx>
+					<posy>412</posy>
+					<width>184</width>
+					<height>50</height>
+					<texture fallback="blank.png">$INFO[ListItem.path]logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+				</control>
+				<control type="image" id="39016">
+					<posx>17</posx>
+					<posy>412</posy>
+					<width>184</width>
+					<height>50</height>
+					<texture>$INFO[ListItem.path]../logo.png</texture>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+					<visible>!StringCompare(Control.GetLabel(37016),blank.png)</visible>
+				</control>
+			</control>
+			<!-- Plot Outline -->
+			<control type="textbox">
+				<posx>17</posx>
+				<posy>467</posy>
+				<width>646</width>
+				<height>199</height>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+				<align>justify</align>
+				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+			</control>
+			<!-- Plot (Show if no outline available)-->
+			<control type="textbox">
+				<posx>17</posx>
+				<posy>467</posy>
+				<width>646</width>
+				<height>199</height>
+				<font>font12</font>
+				<textcolor>button-text</textcolor>
+				<shadowcolor>shadow-text</shadowcolor>
+				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<align>justify</align>
+				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
+				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+			</control>
+		</control>
 	</include>
 </includes>

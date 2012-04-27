@@ -1,5 +1,6 @@
 <window id="2004">
 	<defaultcontrol always="true">214</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
 	<visible>false</visible>
 	<visible>Player.HasVideo + !Skin.HasSetting(now-playing) + !Window.IsActive(2004)</visible>
 	<animation effect="fade" time="1000">WindowOpen</animation>
