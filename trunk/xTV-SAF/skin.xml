@@ -3,7 +3,7 @@
   <defaultresolutionwide>720p</defaultresolutionwide>
   <version>2.11</version>
   <skinversion>1.2.0</skinversion> 
-  <debugging>true</debugging>
+  <debugging>false</debugging>
   
   <credits>
     <skinname>Xtv SAF</skinname>
