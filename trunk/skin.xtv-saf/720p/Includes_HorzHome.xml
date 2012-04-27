@@ -152,8 +152,8 @@
 						<posy>88</posy>
 						<width>1260</width>
 						<height>225</height>
-						<onleft>9115</onleft>
-						<onright>9115</onright>
+						<onleft>-</onleft>
+						<onright>-</onright>
 						<onup>9000</onup>
 						<ondown>9000</ondown>
 						<viewtype label="31028">list</viewtype>
@@ -187,7 +187,8 @@
 								<posy>-5</posy>
 								<width>130</width>
 								<height>178</height>
-								<aspectratio>stretch</aspectratio>
+								<align>center</align>
+								<aligny>center</aligny>
 								<bordertexture border="5">folder-focus.png</bordertexture>
 								<bordersize>5</bordersize>
 								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
@@ -515,14 +516,142 @@
 				<visible>Control.HasFocus(9300)</visible>
 			</control>
 			<!-- Addons icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>icon-programs.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9350)</visible>
+			<control type="group">
+				<include>background-fade</include>
+				<visible>Control.HasFocus(9350) | Control.HasFocus(9360)</visible>
+				<control type="group">
+					<control type="label">
+						<description>Custom Addons label</description>
+						<posx>55</posx>
+						<posy>50</posy>
+						<height>30</height>
+						<width>400</width>
+						<label>$LOCALIZE[636] $LOCALIZE[24001]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font11</font>
+						<shadowcolor>shadow-text</shadowcolor>
+						<visible>IntegerGreaterThan(Container(9360).NumItems,0)</visible>
+					</control>
+					<control type="image">
+						<posx>560</posx>
+						<posy>70</posy>
+						<width>192</width>
+						<height>192</height>
+						<texture>icon-programs.png</texture>
+						<visible>!IntegerGreaterThan(Container(9360).NumItems,0)</visible>
+					</control>
+					<control type="list" id="9360">
+						<posx>10</posx>
+						<posy>88</posy>
+						<width>1260</width>
+						<height>225</height>
+						<onleft>-</onleft>
+						<onright>-</onright>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
+						<viewtype label="31028">list</viewtype>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<orientation>horizontal</orientation>
+						<itemlayout height="168" width="210">
+							<control type="image">
+								<posx>35</posx>
+								<posy>20</posy>
+								<width>128</width>
+								<height>128</height>
+								<texture fallback="icon-programs.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+							</control>
+						</itemlayout>
+						<focusedlayout height="168" width="210">
+							<control type="image">
+								<posx>35</posx>
+								<posy>20</posy>
+								<width>128</width>
+								<height>128</height>
+								<align>center</align>
+								<aligny>center</aligny>
+								<aspectratio>keep</aspectratio>
+								<texture fallback="icon-programs.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+								<visible>!Control.HasFocus(9360)</visible>
+							</control>
+							<control type="image">
+								<posx>30</posx>
+								<posy>15</posy>
+								<width>138</width>
+								<height>138</height>
+								<bordertexture border="5">folder-focus.png</bordertexture>
+								<bordersize>5</bordersize>
+								<texture fallback="icon-programs.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+								<visible>Control.HasFocus(9360)</visible>
+							</control>
+							<control type="label">
+								<description>Item label</description>
+								<posx>94</posx>
+								<posy>160</posy>
+								<height>24</height>
+								<width>210</width>
+								<label>$INFO[ListItem.Label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font11</font>
+								<shadowcolor>shadow-text</shadowcolor>
+								<visible>Control.HasFocus(9360)</visible>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+								<label>31037</label>
+								<label2></label2>
+								<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(youtube-scriptpath)]/icon.png</icon>
+								<visible>Skin.HasSetting(home-youtube)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Skin.String(custom-script1label)] </label>
+								<label2></label2>
+								<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script1name)])</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(custom-script1name)]/icon.png</icon>
+								<visible>Skin.HasSetting(custom-script1) + !IsEmpty(Skin.String(custom-script1label))+ !IsEmpty(Skin.String(custom-script1name))</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Skin.String(custom-script2label)] </label>
+								<label2></label2>
+								<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script2name)])</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(custom-script2name)]/icon.png</icon>
+								<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Skin.String(custom-script3label)] </label>
+								<label2></label2>
+								<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script3name)])</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(custom-script3name)]/icon.png</icon>
+								<visible>Skin.HasSetting(custom-script3) + !IsEmpty(Skin.String(custom-script3label))+ !IsEmpty(Skin.String(custom-script3name))</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Skin.String(custom-script4label)] </label>
+								<label2></label2>
+								<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script4name)])</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(custom-script4name)]/icon.png</icon>
+								<visible>Skin.HasSetting(custom-script4) + !IsEmpty(Skin.String(custom-script4label))+ !IsEmpty(Skin.String(custom-script4name))</visible>
+							</item>
+							<item id="6">
+								<label>$INFO[Skin.String(custom-script5label)] </label>
+								<label2></label2>
+								<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script5name)])</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(custom-script5name)]/icon.png</icon>
+								<visible>Skin.HasSetting(custom-script5) + !IsEmpty(Skin.String(custom-script5label))+ !IsEmpty(Skin.String(custom-script5name))</visible>
+							</item>
+							<item id="7">
+								<label>$INFO[Skin.String(custom-script6label)] </label>
+								<label2></label2>
+								<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script6name)])</onclick>
+								<icon>special://home/addons/$INFO[Skin.String(custom-script6name)]/icon.png</icon>
+								<visible>Skin.HasSetting(custom-script6) + !IsEmpty(Skin.String(custom-script6label))+ !IsEmpty(Skin.String(custom-script6name))</visible>
+							</item>
+						</content>
+					</control>
+				</control>
 			</control>
 			<!-- Weather icons -->
 			<control type="group">
