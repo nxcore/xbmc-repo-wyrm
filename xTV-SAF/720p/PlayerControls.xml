@@ -64,6 +64,7 @@
 			<height>31</height>
 			<label>13350</label>
 			<align>left</align>
+			<scroll>true</scroll>
 			<font>font12</font>
 			<textcolor>listselectedtext</textcolor>
 			<visible>Player.HasVideo</visible>
@@ -77,6 +78,7 @@
 			<label>$INFO[VideoPlayer.Title]</label>
 			<font>font12</font>
 			<align>left</align>
+			<scroll>true</scroll>
 		</control>
 		<control type="label">
 			<description>Time label</description>
@@ -113,6 +115,7 @@
 			<label>$INFO[MusicPlayer.Artist]</label>
 			<font>font12</font>
 			<align>left</align>
+			<scroll>true</scroll>
 		</control>
 		<control type="label">
 			<description>Album Name</description>
@@ -123,6 +126,7 @@
 			<label>$INFO[MusicPlayer.Album]</label>
 			<font>font12</font>
 			<align>left</align>
+			<scroll>true</scroll>
 		</control>
 		<control type="label">
 			<description>Track Name</description>
@@ -133,6 +137,7 @@
 			<label>$INFO[MusicPlayer.Title]</label>
 			<font>font12</font>
 			<align>left</align>
+			<scroll>true</scroll>
 		</control>
 		<control type="label">
 			<description>Duration Label</description>
