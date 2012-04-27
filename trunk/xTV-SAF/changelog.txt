@@ -1,13 +1,15 @@
 [B]1.2.0 XBOX[/B]
 - Skin now coded in 720p.
 - Added video info to "List" view, now matches "List2" view.
-- New horizontal Home menu, skin defaults to old vertical menu.
 - Lots of work on music visualisation/karaoke screens.
 - Skin now coded in 720p (yes I have mentioned this already, but it's very important).
 - Cleanup of video OSD screens, hopefully better layed out while reducing on screen footprint.
 - Major refactor of system menu.
 - Cleanup of a number of screens to improve navigation.
 - Fix to allow video info for a playing video.
+- Lots of work on custom addons and playlists, much more user
+  friendly way of entering required skin info, also now
+  'just works'  
 - And as always, fixed a large number of bugs.
 
 [B]1.1.1[/B]
