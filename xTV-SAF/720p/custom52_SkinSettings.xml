@@ -923,12 +923,44 @@
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmovieentry)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(560)</onclick>
+					</control>
+					<control type="radiobutton" id="513">
+						<description>Set Default Movie Source</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31852</label>
+						<onclick>Skin.ToggleSetting(setdefault-moviesource)</onclick>
+						<selected>Skin.HasSetting(setdefault-moviesource)</selected>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+						<visible>StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[744])</visible>
+					</control>
+					<control type="button" id="514">
+						<description>Default Movie Source selected</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31855</label>
+						<label2>$INFO[Skin.String(default-moviesource)]</label2>
+						<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,movie)</onclick>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<visible>StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[744])</visible>
 					</control>
 					<control type="button" id="516">
 						<description>Set TV library entry point</description>
@@ -939,12 +971,44 @@
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selecttventry)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(570)</onclick>
+					</control>
+					<control type="radiobutton" id="517">
+						<description>Set Default TV Source</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31853</label>
+						<onclick>Skin.ToggleSetting(setdefault-tvsource)</onclick>
+						<selected>Skin.HasSetting(setdefault-tvsource)</selected>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+						<visible>StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[744])</visible>
+					</control>
+					<control type="button" id="518">
+						<description>Default TV Source</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31855</label>
+						<label2>$INFO[Skin.String(default-tvsource)]</label2>
+						<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,tv)</onclick>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<visible>StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[744])</visible>
 					</control>
 					<control type="button" id="520">
 						<description>Set Music Video library entry point</description>
@@ -955,12 +1019,44 @@
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<shadowcolor>shadow-text</shadowcolor>
-						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmusicvidentry)</onclick>
 						<onclick>Skin.SetBool(home-changed)</onclick>
 						<onclick>SetFocus(580)</onclick>
+					</control>
+					<control type="radiobutton" id="521">
+						<description>Set Default Music Video Source</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31854</label>
+						<onclick>Skin.ToggleSetting(setdefault-musicvideosource)</onclick>
+						<selected>Skin.HasSetting(setdefault-musicvideosource)</selected>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+						<visible>StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])</visible>
+					</control>
+					<control type="button" id="522">
+						<description>Default Music Video Source</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31855</label>
+						<label2>$INFO[Skin.String(default-musicvideosource)]</label2>
+						<onclick>XBMC.RunScript(special://skin/scripts/VideoSource.py,musicvideo)</onclick>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<visible>StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])</visible>
 					</control>
 					<control type="button" id="524">
 						<description>Set Music library entry point</description>

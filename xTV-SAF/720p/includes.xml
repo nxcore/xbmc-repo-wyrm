@@ -1,30 +1,30 @@
 <includes>
 	<include file="Defaults.xml">-</include>
-	
+
 	<include file="CommonViewTypes.xml">-</include>
 	<include file="View-Coverflow.xml">-</include>
 	<include file="View-Icon.xml">-</include>
 	<include file="View-List2.xml">-</include>
 	<include file="View-Wall.xml">-</include>
 	<include file="View-Wrap.xml">-</include>
-	
+
 	<include file="View-AlbumCoverflow.xml">-</include>
 	<include file="View-AlbumList2.xml">-</include>
 	<include file="View-AlbumWall.xml">-</include>
 	<include file="View-AlbumWrap.xml">-</include>
-	
+
 	<include file="View-PhotoWall.xml">-</include>
 	<include file="View-PhotoWrap.xml">-</include>
-	
+
 	<include file="View-VideoBanner.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
 	<include file="View-VideoList2.xml">-</include>
 	<include file="View-VideoWall.xml">-</include>
 	<include file="View-VideoWrap.xml">-</include>
-	
+
 	<include file="Includes_Weather.xml">-</include>
 	<include file="Includes_Home.xml">-</include>
-	
+
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -35,7 +35,7 @@
 			<texture>black.png</texture>
 		</control>
 	</include>
-	
+
 	<!-- Begin background image include -->
 	<include name="background">
 		<control type="image">
@@ -91,7 +91,7 @@
 					<height>720</height>
 					<visible>Player.HasVideo</visible>
 				</control>
-			</control>	
+			</control>
 			<control type="image">
 				<description>mask to fade backgrounds</description>
 				<posx>0</posx>
@@ -103,7 +103,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 	<!-- Start xTV box image include -->
 	<include name="xtv-box">
 		<control type="image">
@@ -118,7 +118,7 @@
 			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 	</include>
-	
+
 	<!-- Begin Page info Includes -->
 	<include name="page-info">
 		<control type="image">
@@ -146,7 +146,7 @@
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 		</control>
 	</include>
-	
+
 	<!-- Begin Low free memory include -->
 	<include name="memory-low">
 		<control type="label">
@@ -164,14 +164,14 @@
 			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
 		</control>
 	</include>
-	
+
 	<!-- Start Home Media Overlay -->
 	<include name="homemediainfo">
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
 		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
 	</include>
-	
+
 	<!-- Start Number of Files Include -->
 	<include name="#files">
 		<control type="label" id="12">
@@ -188,7 +188,7 @@
 			<include>list-fade</include>
 		</control>
 	</include>
-	
+
 	<!-- MovieLibraryTitle Include -->
 	<include name="MovieLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
@@ -225,7 +225,11 @@
 	<include name="MovieLibraryFiles">
 		<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
 	</include>
-	
+	<!-- MovieCustomFiles Include -->
+	<include name="MovieCustomFiles">
+		<onclick>ActivateWindow(MyVideoFiles,$INFO[Skin.String(default-moviesource)],return)</onclick>
+	</include>
+
 	<!-- TVLibraryTitle Include -->
 	<include name="TVLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
@@ -258,7 +262,11 @@
 	<include name="TVLibraryFiles">
 		<onclick>ActivateWindow(MyVideoFiles,,return)</onclick>
 	</include>
-	
+	<!-- TVCustomFiles Include -->
+	<include name="TVCustomFiles">
+		<onclick>ActivateWindow(MyVideoFiles,$INFO[Skin.String(default-tvsource)],return)</onclick>
+	</include>
+
 	<!-- MusicVideoLibraryTitle Include -->
 	<include name="MusicVideoLibraryTitle">
 		<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
@@ -295,7 +303,11 @@
 	<include name="MusicVideoLibraryFiles">
 		<onclick>ActivateWindow(MusicFiles,,return)</onclick>
 	</include>
-	
+	<!-- MusicVideoCustomFiles Include -->
+	<include name="MusicVideoCustomFiles">
+		<onclick>ActivateWindow(MyVideoFiles,$INFO[Skin.String(default-musicvideosource)],return)</onclick>
+	</include>
+
 	<!-- MusicVideoLibraryGenres Include -->
 	<include name="MusicLibraryGenres">
 		<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
@@ -348,7 +360,7 @@
 	<include name="MusicLibraryRoot">
 		<onclick>ActivateWindow(MusicLibrary,,return)</onclick>
 	</include>
-	
+
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
@@ -493,7 +505,7 @@
 						<include>icon-fade</include>
 					</control>
 				</control>
-			</control>			
+			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(Fanart) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="group">
@@ -1301,7 +1313,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 	<!-- Start Animation Includes -->
 	<include name="button-fade">
 		<animation effect="fade" start="0" time="300">Visible</animation>
@@ -1356,7 +1368,7 @@
 		<autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
 	</include>
 	<!-- End Autoscroll Includes -->
-	
+
 	<!-- Start of Run scripts Includes -->
 	<include name="StartupPlaylist">
 		<onfocus>PlayMedia(&quot;$INFO[Skin.String(Startup_Playlist_Path)]&quot;,isdir)</onfocus>
@@ -1364,7 +1376,7 @@
 	<include name="StartupVideo">
 		<onfocus>PlayMedia(&quot;$INFO[Skin.String(intro-vid-location)]&quot;)</onfocus>
 	</include>
-	<!-- End of Run scripts Includes -->	
+	<!-- End of Run scripts Includes -->
 	<include name="ReloadSkin">
 		<onfocus>Skin.SetBool(home-reloaded)</onfocus>
 		<onfocus>ReloadSkin()</onfocus>
