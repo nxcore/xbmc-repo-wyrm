@@ -164,7 +164,7 @@
 			<posx>14</posx>
 			<posy>112</posy>
 			<width>24</width>
-			<height>542</height>
+			<height>540</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
