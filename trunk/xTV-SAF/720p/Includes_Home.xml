@@ -102,7 +102,7 @@
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
-		
+
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>960</posx>
@@ -120,7 +120,7 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(9000).HasNext</visible>
 		</control>
-		
+
 		<!-- main buttons -->
 		<control type="list" id="9000">
 			<posx>716</posx>
@@ -346,7 +346,7 @@
 					<onclick>XBMC.ActivateWindow(MusicLibrary,$INFO[Skin.String(custom6-playlistloc)],return)</onclick>
 					<visible>Skin.HasSetting(custom6-playlist) + Skin.String(custom6-playlisttype,music) + !IsEmpty(Skin.String(custom6-playlistloc))+ !IsEmpty(Skin.String(custom6-playlistlabel))+ !IsEmpty(Skin.String(custom6-playlisticon))</visible>
 				</item>
-				
+
 				<item>
 					<description>YouTube Script</description>
 					<icon>$INFO[Skin.String(youtube-scripticon)]</icon>
