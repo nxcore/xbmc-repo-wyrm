@@ -46,7 +46,7 @@
 				<onup>987</onup>
 				<ondown>982</ondown>
 				<onleft>100</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -64,7 +64,7 @@
 				<onup>981</onup>
 				<ondown>983</ondown>
 				<onleft>200</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -82,7 +82,7 @@
 				<onup>982</onup>
 				<ondown>984</ondown>
 				<onleft>300</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -100,7 +100,7 @@
 				<onup>983</onup>
 				<ondown>985</ondown>
 				<onleft>400</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -118,7 +118,7 @@
 				<onup>984</onup>
 				<ondown>986</ondown>
 				<onleft>500</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -136,7 +136,7 @@
 				<onup>985</onup>
 				<ondown>987</ondown>
 				<onleft>600</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -154,17 +154,17 @@
 				<onup>986</onup>
 				<ondown>981</ondown>
 				<onleft>700</onleft>
-				<onright>23</onright>
+				<onright>1223</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
 		</control>
 		<!-- Scrollbar -->
-		<control type="scrollbar" id="23">
+		<control type="scrollbar" id="1223">
 			<posx>14</posx>
-			<posy>104</posy>
+			<posy>112</posy>
 			<width>24</width>
-			<height>556</height>
+			<height>540</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
@@ -200,9 +200,9 @@
 					<itemgap>-2</itemgap>
 					<onup>101</onup>
 					<ondown>101</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<include>list-fade</include>
 					<control type="radiobutton" id="110">
 						<description>Intro Video Toggle</description>
@@ -293,9 +293,9 @@
 					<itemgap>-2</itemgap>
 					<onup>200</onup>
 					<ondown>200</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<control type="radiobutton" id="201">
 						<description>Scrollbar Toggle</description>
 						<font>font12</font>
@@ -504,9 +504,9 @@
 					<itemgap>-2</itemgap>
 					<onup>301</onup>
 					<ondown>301</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<control type="radiobutton" id="302">
 						<description>Video On Home toggle</description>
 						<font>font12</font>
@@ -789,9 +789,9 @@
 					<itemgap>-2</itemgap>
 					<onup>401</onup>
 					<ondown>401</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<control type="button" id="402">
 						<description>Custom Background Button</description>
 						<font>font12</font>
@@ -911,9 +911,9 @@
 					<itemgap>-2</itemgap>
 					<onup>501</onup>
 					<ondown>501</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<control type="button" id="512">
 						<description>Set Movie library entry point</description>
 						<width>885</width>
@@ -1730,9 +1730,9 @@
 					<itemgap>-2</itemgap>
 					<onup>601</onup>
 					<ondown>601</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<control type="radiobutton" id="611">
 						<description>View As Panel Lock Toggle</description>
 						<font>font12</font>
@@ -2126,9 +2126,9 @@
 					<itemgap>-2</itemgap>
 					<onup>701</onup>
 					<ondown>701</ondown>
-					<onleft>23</onleft>
+					<onleft>1223</onleft>
 					<onright>999</onright>
-					<pagecontrol>23</pagecontrol>
+					<pagecontrol>1223</pagecontrol>
 					<control type="radiobutton" id="704">
 						<description>Subtitles in OSD toggle</description>
 						<font>font12</font>
