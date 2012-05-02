@@ -128,8 +128,8 @@
 				<height>60</height>
 				<texturenofocus>osd-btn-subtitle.png</texturenofocus>
 				<texturefocus>osd-btn-subtitle-focus.png</texturefocus>
-				<onclick>XBMC.RunScript($INFO[Skin.String(osd-subscriptpath)])</onclick>
-				<visible>Skin.HasSetting(osd-subtitles)</visible>
+				<onclick>XBMC.RunScript($INFO[Skin.String(subtitle-scriptloc)])</onclick>
+				<visible>Skin.HasSetting(osd-subtitles) + !IsEmpty(Skin.String(subtitle-scriptloc))</visible>
 			</control>
 			<control type="image" id="940">
 				<description>Dummy</description>
