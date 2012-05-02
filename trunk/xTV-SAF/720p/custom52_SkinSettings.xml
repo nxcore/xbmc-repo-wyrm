@@ -164,7 +164,7 @@
 			<posx>14</posx>
 			<posy>112</posy>
 			<width>24</width>
-			<height>540</height>
+			<height>540</height> 
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
@@ -841,20 +841,6 @@
 						<label>31818</label>
 						<onclick>Skin.ToggleSetting(background-fanart)</onclick>
 						<selected>Skin.HasSetting(background-fanart)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="407">
-						<description>Fanart as Thumb Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31824</label>
-						<onclick>Skin.ToggleSetting(Fanart)</onclick>
-						<selected>Skin.HasSetting(Fanart)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -2153,10 +2139,10 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<label> $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)]</label2>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(subtitle-scriptloc)]</label2>
 						<haspath>true</haspath>
-						<onclick>Skin.SetFile(osd-subscriptpath,special://xbmc/script)</onclick>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,subtitle)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -2186,9 +2172,9 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
-						<label>$LOCALIZE[33082]:</label>
-						<label2>$INFO[Skin.String(cinema-location)]</label2>
-						<onclick>Skin.SetFile(cinema-location,special://xbmc/script)</onclick>
+						<label>31850</label>
+						<label2>$INFO[Skin.String(cinema-scriptloc)]</label2>
+						<onclick>XBMC.RunScript(special://skin/scripts/HomeScripts.py,cinema)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>

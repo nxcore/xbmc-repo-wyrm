@@ -444,8 +444,8 @@
 				<align>center</align>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
-				<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
-				<visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
+				<onclick>XBMC.RunScript($INFO[Skin.String(cinema-scriptloc)])</onclick>
+				<visible>Skin.HasSetting(cinema-script) + Container.Content(movies) + !IsEmpty(Skin.String(cinema-scriptloc))</visible>
 			</control>
 			<control type="button" id="11">
 				<description>Trailer</description>
