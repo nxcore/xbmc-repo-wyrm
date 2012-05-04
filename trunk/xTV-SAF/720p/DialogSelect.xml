@@ -52,7 +52,7 @@
 			<width>700</width>
 			<height>504</height>
 			<onleft>5</onleft>
-			<onright>5</onright>
+			<onright>23</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<scrolltime>1</scrolltime>
@@ -126,7 +126,7 @@
 			<font>font12</font>
 			<label>368</label>
 			<align>center</align>
-			<onleft>3</onleft>
+			<onleft>23</onleft>
 			<onright>3</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
@@ -142,6 +142,8 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>3</onleft>
+			<onright>5</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
