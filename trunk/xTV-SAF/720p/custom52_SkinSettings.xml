@@ -226,10 +226,9 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>210</textwidth>
+						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(intro-vid)</enable>
-						<label>31004</label>
-						<label2>$INFO[Skin.String(intro-vid-location)]</label2>
+						<label>$LOCALIZE[31004]> $INFO[Skin.String(intro-vid-location)]</label>
 						<onclick>Skin.SetFile(intro-vid-location,,special://skin/extras)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -243,7 +242,7 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31001</label>
-						<textwidth>250</textwidth>
+						<textwidth>400</textwidth>
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
 						<onclick>Skin.Reset(intro-vid)</onclick>
 						<selected>Skin.HasSetting(startup-playlist)</selected>
@@ -258,11 +257,8 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31002</label>
-						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
-						<haspath>true</haspath>
-						<scroll>false</scroll>
-						<textwidth>210</textwidth>
+						<label>$LOCALIZE[31002]> $INFO[Skin.String(Startup_Playlist_Path)]</label>
+						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
 						<textcolor>button-text</textcolor>
