@@ -1,6 +1,6 @@
 <window id="34">
 	<defaultcontrol always="true">2</defaultcontrol>
-	<backgroundcolor>0</backgroundcolor>
+	 
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<controls>
@@ -28,7 +28,7 @@
 			<width>531</width>
 			<height>450</height>
 			<onleft>4</onleft>
-			<onright>4</onright>
+			<onright>23</onright>
 			<onup>2</onup>
 			<ondown>2</ondown>
 			<scrolltime>1</scrolltime>
@@ -89,8 +89,8 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>5</onleft>
-			<onright>5</onright>
+			<onleft>2</onleft>
+			<onright>4</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
@@ -113,9 +113,9 @@
 			<width>504</width>
 			<height>56</height>
 			<onright>2</onright>
+			<onleft>23</onleft>
 			<onup>4</onup>
 			<ondown>4</ondown>
-			<onleft>2</onleft>
 			<label>20096</label>
 			<radioposx>460</radioposx>
 			<textoffsetx>20</textoffsetx>

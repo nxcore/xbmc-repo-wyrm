@@ -408,10 +408,10 @@
 					<orientation>horizontal</orientation>
 					<itemlayout height="210" width="252">
 						<control type="image">
-							<posx>40</posx>
-							<posy>50</posy>
+							<posx>46</posx>
+							<posy>24</posy>
 							<width>160</width>
-							<height>120</height>
+							<height>160</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
@@ -421,8 +421,8 @@
 					<focusedlayout height="210" width="252">
 						<control type="label">
 							<posx>126</posx>
-							<posy>0</posy>
-							<height>50</height>
+							<posy>-14</posy>
+							<height>48</height>
 							<width>252</width>
 							<label>$INFO[ListItem.Label2]</label>
 							<align>center</align>
@@ -434,10 +434,10 @@
 							<visible>Control.HasFocus(9260)</visible>
 						</control>
 						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>170</width>
-							<height>130</height>
+							<posx>46</posx>
+							<posy>24</posy>
+							<width>160</width>
+							<height>160</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
@@ -445,10 +445,10 @@
 							<visible>!Control.HasFocus(9260)</visible>
 						</control>
 						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
+							<posx>41</posx>
+							<posy>19</posy>
 							<width>170</width>
-							<height>130</height>
+							<height>170</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
@@ -459,7 +459,7 @@
 						</control>
 						<control type="label">
 							<posx>126</posx>
-							<posy>174</posy>
+							<posy>184</posy>
 							<height>24</height>
 							<width>252</width>
 							<label>$INFO[ListItem.Label]</label>
@@ -556,19 +556,19 @@
 						<orientation>horizontal</orientation>
 						<itemlayout height="168" width="210">
 							<control type="image">
-								<posx>35</posx>
-								<posy>20</posy>
-								<width>128</width>
-								<height>128</height>
+								<posx>18</posx>
+								<posy>5</posy>
+								<width>160</width>
+								<height>160</height>
 								<texture fallback="icon-programs.png" background="true">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout height="168" width="210">
 							<control type="image">
-								<posx>35</posx>
-								<posy>20</posy>
-								<width>128</width>
-								<height>128</height>
+								<posx>18</posx>
+								<posy>5</posy>
+								<width>160</width>
+								<height>160</height>
 								<align>center</align>
 								<aligny>center</aligny>
 								<aspectratio>keep</aspectratio>
@@ -576,10 +576,10 @@
 								<visible>!Control.HasFocus(9360)</visible>
 							</control>
 							<control type="image">
-								<posx>30</posx>
-								<posy>15</posy>
-								<width>138</width>
-								<height>138</height>
+								<posx>13</posx>
+								<posy>0</posy>
+								<width>170</width>
+								<height>170</height>
 								<bordertexture border="5">folder-focus.png</bordertexture>
 								<bordersize>5</bordersize>
 								<texture fallback="icon-programs.png" background="true">$INFO[ListItem.ActualIcon]</texture>
@@ -588,7 +588,7 @@
 							<control type="label">
 								<description>Item label</description>
 								<posx>94</posx>
-								<posy>160</posy>
+								<posy>175</posy>
 								<height>24</height>
 								<width>210</width>
 								<label>$INFO[ListItem.Label]</label>
