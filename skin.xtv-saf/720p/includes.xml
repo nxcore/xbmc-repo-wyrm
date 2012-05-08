@@ -78,7 +78,7 @@
 					<fadetime>300</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 					<aspectratio>stretch</aspectratio>
-					<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+					<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 				</control>
 				<control type="multiimage" id="6105">
 					<posx>0</posx>
@@ -472,7 +472,7 @@
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 			<textureslidernib>-</textureslidernib>
 			<textureslidernibfocus>-</textureslidernibfocus>
-			<onleft>9000</onleft>
+			<onleft>50</onleft>
 			<onright>9000</onright>
 			<include>list-fade</include>
 			<showonepage>false</showonepage>
@@ -522,12 +522,11 @@
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
 			<control type="group">
-				<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(movies)] + !Window.IsVisible(progressdialog)</visible>
+				<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(progressdialog)</visible>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-					<!-- No Fanart available -->
-					<control type="image">
+						<control type="image">
 						<description>list item icon</description>
 						<posx>90</posx>
 						<posy>120</posy>
@@ -574,18 +573,17 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Skin.HasSetting(Fanart) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+				<visible>Container.Content(MusicVideos)</visible>
+				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="group">
-					<visible>IsEmpty(Listitem.Property(Fanart_Image))</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-					<!-- No Fanart available -->
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<control type="image">
 						<description>list item icon</description>
 						<posx>90</posx>
 						<posy>120</posy>
 						<width>448</width>
 						<height>448</height>
-						<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>
@@ -595,137 +593,92 @@
 						<posy>570</posy>
 						<width>448</width>
 						<height>448</height>
-						<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" flipy="true" fallback="DefaultMusicVideos.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>
 				</control>
 				<control type="group">
-					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-					<!-- Fanart image -->
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<control type="image">
+						<description>list item icon</description>
 						<posx>90</posx>
 						<posy>120</posy>
 						<width>448</width>
 						<height>448</height>
+						<texture background="true" diffuse="mask-rect.png">DefaultMusicVideos.png</texture>
+						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					</control>
 					<control type="image">
+						<description>list item icon reflection</description>
 						<posx>90</posx>
 						<posy>570</posy>
 						<width>448</width>
 						<height>448</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
+						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					</control>
 				</control>
-			</control>
+			</control>	
 			<control type="group">
-				<visible>!Skin.HasSetting(Fanart) + Container.Content(musicvideos) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				<visible>Container.Content(movies)</visible>
 				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-				<!-- User has selected NO fanart -->
-				<control type="image">
-					<description>list item icon</description>
-					<posx>90</posx>
-					<posy>120</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<control type="image">
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
 				</control>
-				<control type="image">
-					<description>list item icon reflection</description>
-					<posx>90</posx>
-					<posy>570</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" flipy="true" fallback="DefaultMusicVideos.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
+				<control type="group">
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
+					<control type="image">
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
 				</control>
-			</control>
-			<control type="group">
-				<visible>!Skin.HasSetting(Fanart) + Container.Content(musicvideos) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-				<control type="image">
-					<description>list item icon</description>
-					<posx>90</posx>
-					<posy>120</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" diffuse="mask-rect.png">DefaultMusicVideos.png</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
-				</control>
-				<control type="image">
-					<description>list item icon reflection</description>
-					<posx>90</posx>
-					<posy>570</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
-				</control>
-			</control>
-			<control type="group">
-				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-				<!-- User has selected NO fanart -->
-				<control type="image">
-					<description>list item icon</description>
-					<posx>90</posx>
-					<posy>120</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
-				</control>
-				<control type="image">
-					<description>list item icon reflection</description>
-					<posx>90</posx>
-					<posy>570</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
-				</control>
-			</control>
-			<control type="group">
-				<visible>!Skin.HasSetting(Fanart) + Container.Content(movies) + SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
-				<control type="image">
-					<description>list item icon</description>
-					<posx>90</posx>
-					<posy>120</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
-				</control>
-				<control type="image">
-					<description>list item icon reflection</description>
-					<posx>90</posx>
-					<posy>570</posy>
-					<width>448</width>
-					<height>448</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
-					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
-				</control>
-			</control>
+			</control>	
 			<control type="group">
 				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<!-- Show Icon For TV SEASON/EPISODES even if Fanart selected -->
+					<!-- Show Icon For TV SHOW/SEASON/EPISODES -->
 					<control type="image">
 						<description>list item icon</description>
 						<posx>90</posx>
@@ -749,7 +702,6 @@
 				</control>
 				<control type="group">
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(listitem.Duration) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<!-- Show TV icon as the Default icon -->
 					<control type="image">
 						<description>list item icon</description>

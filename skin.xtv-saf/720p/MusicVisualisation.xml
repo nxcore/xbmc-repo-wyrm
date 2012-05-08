@@ -1,7 +1,7 @@
 <window id="2006">
-	<include condition="Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRunning))">StartArtistSlideshow</include>
 	<allowoverlay>no</allowoverlay>
-	<backgroundcolor>0</backgroundcolor>
+	<visible>!Window.IsVisible(2004)</visible>
+	<visible>!Window.IsVisible(2005)</visible>
 	<controls>
 		<control type="image">
 			<description>solid background</description>
@@ -28,20 +28,6 @@
 			<animation effect="fade" time="300">VisibleChange</animation>
 			<control type="group">
 				<!-- Backgroung fanart image -->		
-				<control type="multiimage" id="991">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<imagepath fallback="blank.png" background="true">$INFO[Window.Property(ArtistSlideshow)]</imagepath>
-					<aspectratio>keep</aspectratio>
-					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
-					<randomize>true</randomize>
-					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<visible>Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRefresh))</visible>
-				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -50,7 +36,6 @@
 					<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 					<aspectratio>scale</aspectratio>
 					<fadetime>1000</fadetime>
-					<visible>StringCompare(Control.GetLabel(991),blank.png) | !Skin.HasSetting(background-slideshow)</visible>
 				</control>
 			</control>
 		</control>
@@ -65,7 +50,7 @@
 				<height>720</height>
 			</control>
 		</control>
-		<!-- infos -->		
+		<!-- infos -->
 		<control type="group">
 			<visible>Player.ShowInfo</visible>
 			<control type="image" id="992">
@@ -171,7 +156,7 @@
 				<align>right</align>
 				<font>font12</font>
 			</control>
-			<control type="progress">
+			<control type="progress" id="1">
 				<description>Progressbar</description>
 				<posx>454</posx>
 				<posy>662</posy>
@@ -181,17 +166,7 @@
 				<texturebg border="14,0,14,0">progress-background.png</texturebg>
 				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 				<colordiffuse>ProgressBarColor</colordiffuse>
-			</control>
-			<control type="slider">
-				<description>Seek Slider</description>
-				<posx>454</posx>
-				<posy>660</posy>
-				<width>790</width>
-				<height>20</height>
-				<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
-				<textureslidernib>progress-marker.png</textureslidernib>
-				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
-				<action>seek</action>
+				<visible>true</visible>
 			</control>
 		</control>
 		<!-- Codec -->
@@ -220,9 +195,9 @@
 				<description>Presets label</description>
 				<posx>132</posx>
 				<posy>43</posy>
-				<width>991</width>
+				<width>220</width>
 				<height>37</height>
-				<label>Visual | fps: $INFO[System.FPS] -</label>
+				<label>Visual | fps: $INFO[System.FPS]</label>
 				<font>font11</font>
 				<align>left</align>
 			</control>
@@ -236,15 +211,15 @@
 				<font>font11</font>
 				<align>left</align>
 			</control>
-			<control type="label">
+			<control type="image">
 				<description>Preset locked image</description>
-				<posx>371</posx>
-				<posy>45</posy>
-				<width>21</width>
-				<height>18</height>
-				<visible>Visualisation.Locked</visible>
+				<posx>364</posx>
+				<posy>42</posy>
+				<width>32</width>
+				<height>32</height>
 				<texture>arenaitem-private.png</texture>
+				<visible>Visualisation.Locked</visible>
 			</control>
-		</control>		
+		</control>
 	</controls>
 </window>
