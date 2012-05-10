@@ -46,7 +46,7 @@
 				<onup>987</onup>
 				<ondown>982</ondown>
 				<onleft>100</onleft>
-				<onright>1223</onright>
+				<onright>971</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -64,7 +64,7 @@
 				<onup>981</onup>
 				<ondown>983</ondown>
 				<onleft>200</onleft>
-				<onright>1223</onright>
+				<onright>972</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -82,7 +82,7 @@
 				<onup>982</onup>
 				<ondown>984</ondown>
 				<onleft>300</onleft>
-				<onright>1223</onright>
+				<onright>973</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -100,7 +100,7 @@
 				<onup>983</onup>
 				<ondown>985</ondown>
 				<onleft>400</onleft>
-				<onright>1223</onright>
+				<onright>974</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -118,7 +118,7 @@
 				<onup>984</onup>
 				<ondown>986</ondown>
 				<onleft>500</onleft>
-				<onright>1223</onright>
+				<onright>975</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -136,7 +136,7 @@
 				<onup>985</onup>
 				<ondown>987</ondown>
 				<onleft>600</onleft>
-				<onright>1223</onright>
+				<onright>976</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -154,7 +154,7 @@
 				<onup>986</onup>
 				<ondown>981</ondown>
 				<onleft>700</onleft>
-				<onright>1223</onright>
+				<onright>977</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -269,7 +269,7 @@
 				</control>
 			</control>
 			<!--General Settings-->
-			<control type="group">
+			<control type="grouplist" id="200">
 				<visible>Skin.String(skinsettingmenu,general)</visible>
 				<!-- Scrollbar -->
 				<control type="scrollbar" id="972">
@@ -283,7 +283,7 @@
 					<textureslidernib>-</textureslidernib>
 					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>999</onleft>
-					<onright>200</onright>
+					<onright>201</onright>
 					<include>list-fade</include>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
@@ -300,18 +300,18 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<control type="grouplist" id="200">
+				<control type="grouplist" id="201">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
 					<height>540</height>
 					<itemgap>-2</itemgap>
-					<onup>200</onup>
-					<ondown>200</ondown>
+					<onup>201</onup>
+					<ondown>201</ondown>
 					<onleft>972</onleft>
 					<onright>999</onright>
 					<pagecontrol>972</pagecontrol>
-					<control type="radiobutton" id="201">
+					<control type="radiobutton" id="202">
 						<description>Scrollbar Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -325,7 +325,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="202">
+					<control type="radiobutton" id="203">
 						<description>Media Overlay Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -339,7 +339,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="203">
+					<control type="radiobutton" id="204">
 						<description>Now Playing Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -353,7 +353,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="204">
+					<control type="radiobutton" id="205">
 						<description>Watched/Unwatched Overlay Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -367,7 +367,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="206">
 						<description>Use Now Playing Screen Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -381,7 +381,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="207">
 						<description>Icon Tilt Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -395,7 +395,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="208">
 						<description>Video Wall Tilt Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -409,7 +409,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="209">
 						<description>Auto Scroll Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -423,7 +423,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="209">
+					<control type="radiobutton" id="210">
 						<description>Time On Home Screen toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -438,7 +438,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="211">
 						<description>Current Weather On Home Screen toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -453,7 +453,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="212">
 						<description>Animated Weather Icons toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -468,7 +468,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="212">
+					<control type="button" id="213">
 						<description>Load new skin theme</description>
 						<font>font12</font>
 						<width>885</width>
@@ -482,7 +482,7 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
-					<control type="button" id="213">
+					<control type="button" id="214">
 						<description>Reset skin settings to defaults</description>
 						<font>font12</font>
 						<width>885</width>
