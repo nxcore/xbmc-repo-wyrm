@@ -269,7 +269,7 @@
 				</control>
 			</control>
 			<!--General Settings-->
-			<control type="grouplist" id="200">
+			<control type="group" id="200">
 				<visible>Skin.String(skinsettingmenu,general)</visible>
 				<!-- Scrollbar -->
 				<control type="scrollbar" id="972">
