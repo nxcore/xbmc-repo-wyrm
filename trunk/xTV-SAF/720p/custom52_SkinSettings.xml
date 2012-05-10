@@ -2217,9 +2217,9 @@
 					<itemgap>-2</itemgap>
 					<onup>701</onup>
 					<ondown>701</ondown>
-					<onleft>1223</onleft>
+					<onleft>977</onleft>
 					<onright>999</onright>
-					<pagecontrol>1223</pagecontrol>
+					<pagecontrol>977</pagecontrol>
 					<control type="radiobutton" id="704">
 						<description>Subtitles in OSD toggle</description>
 						<font>font12</font>
