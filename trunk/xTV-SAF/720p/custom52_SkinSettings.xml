@@ -673,7 +673,6 @@
 						<description>YouTube script location</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
@@ -689,7 +688,6 @@
 					<control type="button" id="311">
 						<description>YouTube plugin location</description>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
@@ -784,7 +782,6 @@
 						<description>Shutdown From Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>50</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<alttexturefocus>default-button.png</alttexturefocus>
@@ -953,7 +950,6 @@
 					<control type="button" id="512">
 						<description>Set Movie library entry point</description>
 						<width>885</width>
-						<height>56</height>
 						<label>31680</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
 						<font>font12</font>
@@ -968,7 +964,6 @@
 					<control type="radiobutton" id="513">
 						<description>Set Default Movie Source</description>
 						<width>885</width>
-						<height>56</height>
 						<font>font12</font>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -985,7 +980,6 @@
 					<control type="button" id="514">
 						<description>Default Movie Source selected</description>
 						<width>885</width>
-						<height>56</height>
 						<font>font12</font>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1001,7 +995,6 @@
 					<control type="button" id="516">
 						<description>Set TV library entry point</description>
 						<width>885</width>
-						<height>56</height>
 						<label>31681</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
 						<font>font12</font>
@@ -1016,7 +1009,6 @@
 					<control type="radiobutton" id="517">
 						<description>Set Default TV Source</description>
 						<width>885</width>
-						<height>56</height>
 						<font>font12</font>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1033,7 +1025,6 @@
 					<control type="button" id="518">
 						<description>Default TV Source</description>
 						<width>885</width>
-						<height>56</height>
 						<font>font12</font>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1049,7 +1040,6 @@
 					<control type="button" id="520">
 						<description>Set Music Video library entry point</description>
 						<width>885</width>
-						<height>56</height>
 						<label>31682</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
 						<font>font12</font>
@@ -1064,7 +1054,6 @@
 					<control type="radiobutton" id="521">
 						<description>Set Default Music Video Source</description>
 						<width>885</width>
-						<height>56</height>
 						<font>font12</font>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1081,7 +1070,6 @@
 					<control type="button" id="522">
 						<description>Default Music Video Source</description>
 						<width>885</width>
-						<height>56</height>
 						<font>font12</font>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
@@ -1097,7 +1085,6 @@
 					<control type="button" id="524">
 						<description>Set Music library entry point</description>
 						<width>885</width>
-						<height>56</height>
 						<label>31683</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
 						<font>font12</font>
@@ -1791,7 +1778,6 @@
 						<description>View As Panel Lock Toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31817</label>
@@ -1807,7 +1793,6 @@
 						<description>Video views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
-						<height>56</height>
 						<label>[B][I]Video Views[/I][/B]</label>
 						<font>font12</font>
 						<textcolor>listselectedtext</textcolor>
@@ -1819,7 +1804,6 @@
 						<description>Video List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -1836,7 +1820,6 @@
 						<description>Video Banner view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31929</label>
@@ -1853,7 +1836,6 @@
 						<description>Video Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -1870,7 +1852,6 @@
 						<description>Video Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -1887,7 +1868,6 @@
 						<description>Video Coverflow view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31928</label>
@@ -1904,7 +1884,6 @@
 						<description>Music views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
-						<height>56</height>
 						<label>[B][I]Music Views[/I][/B]</label>
 						<font>font12</font>
 						<textcolor>listselectedtext</textcolor>
@@ -1916,7 +1895,6 @@
 						<description>Music List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -1933,7 +1911,6 @@
 						<description>Music Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -1950,7 +1927,6 @@
 						<description>Music Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -1967,7 +1943,6 @@
 						<description>Music Coverflow view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31928</label>
@@ -1984,7 +1959,6 @@
 						<description>Photo views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
-						<height>56</height>
 						<label>[B][I]Photo Views[/I][/B]</label>
 						<font>font12</font>
 						<textcolor>listselectedtext</textcolor>
@@ -1996,7 +1970,6 @@
 						<description>Photo List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -2013,7 +1986,6 @@
 						<description>Photo Icons view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31923</label>
@@ -2030,7 +2002,6 @@
 						<description>Photo Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -2047,7 +2018,6 @@
 						<description>Photo Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -2064,7 +2034,6 @@
 						<description>Program/Scripts views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
-						<height>56</height>
 						<label>[B][I]Program/Script Views[/I][/B]</label>
 						<font>font12</font>
 						<textcolor>listselectedtext</textcolor>
@@ -2076,7 +2045,6 @@
 						<description>Program/Scripts List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31921</label>
@@ -2093,7 +2061,6 @@
 						<description>Program/Scripts Icons view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31923</label>
@@ -2110,7 +2077,6 @@
 						<description>Program/Scripts Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31922</label>
@@ -2127,7 +2093,6 @@
 						<description>Program/Scripts Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31927</label>
@@ -2144,7 +2109,6 @@
 						<description>Program/Scripts Coverflow view toggle</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<label>31928</label>
