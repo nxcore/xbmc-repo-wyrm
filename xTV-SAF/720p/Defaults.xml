@@ -46,7 +46,7 @@
 		<posx>327</posx>
 		<posy>208</posy>
 		<width>26</width>
-		<height>18</height>
+		<height>56</height>
 		<texturefocus>scroll-up-focus.png</texturefocus>
 		<texturenofocus>scroll-up.png</texturenofocus>
 		<alttexturefocus>scroll-down-focus.png</alttexturefocus>
