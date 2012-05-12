@@ -46,7 +46,7 @@
 				<onup>987</onup>
 				<ondown>982</ondown>
 				<onleft>100</onleft>
-				<onright>971</onright>
+				<onright>998</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -159,29 +159,89 @@
 				<aligny>center</aligny>
 			</control>
 		</control>
+		<control type="group">
+			<!-- Sub Menus Scrollbars -->
+			<control type="scrollbar" id="972">
+				<description>General Settings Scrollbar</description>
+				<posx>14</posx>
+				<posy>112</posy>
+				<width>24</width>
+				<height>540</height> 
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>999</onleft>
+				<onright>201</onright>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar) + Skin.String(skinsettingmenu,general)</visible>
+			</control>
+			<control type="scrollbar" id="973">
+				<description>Home Settings Scrollbar</description>
+				<posx>14</posx>
+				<posy>112</posy>
+				<width>24</width>
+				<height>540</height> 
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>999</onleft>
+				<onright>301</onright>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar) + Skin.String(skinsettingmenu,home)</visible>
+			</control>
+			<control type="scrollbar" id="976">
+				<description>Views Settings Scrollbar</description>
+				<posx>14</posx>
+				<posy>112</posy>
+				<width>24</width>
+				<height>540</height> 
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>999</onleft>
+				<onright>601</onright>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar) + Skin.String(skinsettingmenu,views)</visible>
+			</control>
+			<control type="scrollbar" id="977">
+				<description>Custom Settings Scrollbar</description>
+				<posx>14</posx>
+				<posy>112</posy>
+				<width>24</width>
+				<height>540</height> 
+				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
+				<onleft>999</onleft>
+				<onright>701</onright>
+				<include>list-fade</include>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<colordiffuse>ScrollBarColor</colordiffuse>
+				<visible>Skin.HasSetting(sbar) + Skin.String(skinsettingmenu,custom)</visible>
+			</control>
+		</control>
 		<control type="group" id="998">
 			<!--Startup Settings-->
 			<control type="group" id="100">
 				<visible>Skin.String(skinsettingmenu,startup)</visible>
-				<!-- Scrollbar -->
-				<control type="scrollbar" id="971">
-					<posx>14</posx>
-					<posy>112</posy>
-					<width>24</width>
-					<height>540</height> 
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>999</onleft>
-					<onright>101</onright>
-					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar)</visible>
-				</control>
 				<control type="image">
 					<description>Startup Settings Button Image</description>
 					<posx>950</posx>
@@ -200,9 +260,8 @@
 					<itemgap>-2</itemgap>
 					<onup>101</onup>
 					<ondown>101</ondown>
-					<onleft>971</onleft>
+					<onleft>999</onleft>
 					<onright>999</onright>
-					<pagecontrol>971</pagecontrol>
 					<include>list-fade</include>
 					<control type="radiobutton" id="110">
 						<description>Intro Video Toggle</description>
@@ -271,25 +330,6 @@
 			<!--General Settings-->
 			<control type="group" id="200">
 				<visible>Skin.String(skinsettingmenu,general)</visible>
-				<!-- Scrollbar -->
-				<control type="scrollbar" id="972">
-					<posx>14</posx>
-					<posy>112</posy>
-					<width>24</width>
-					<height>540</height> 
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>999</onleft>
-					<onright>201</onright>
-					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar)</visible>
-				</control>
 				<control type="image">
 					<description>General Settings Button Image</description>
 					<posx>950</posx>
@@ -501,24 +541,6 @@
 			<!--Home Settings-->
 			<control type="group" id="300">
 				<visible>Skin.String(skinsettingmenu,home)</visible>
-				<control type="scrollbar" id="973">
-					<posx>14</posx>
-					<posy>112</posy>
-					<width>24</width>
-					<height>540</height> 
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>999</onleft>
-					<onright>301</onright>
-					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar)</visible>
-				</control>
 				<control type="image">
 					<description>Home Settings Button Image</description>
 					<posx>950</posx>
@@ -801,24 +823,6 @@
 			<!--Background-->
 			<control type="group" id="400">
 				<visible>Skin.String(skinsettingmenu,background)</visible>
-				<control type="scrollbar" id="974">
-					<posx>14</posx>
-					<posy>112</posy>
-					<width>24</width>
-					<height>540</height> 
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>999</onleft>
-					<onright>401</onright>
-					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar)</visible>
-				</control>
 				<control type="image">
 					<description>Background Settings Button Image</description>
 					<posx>950</posx>
@@ -837,9 +841,8 @@
 					<itemgap>-2</itemgap>
 					<onup>401</onup>
 					<ondown>401</ondown>
-					<onleft>974</onleft>
+					<onleft>999</onleft>
 					<onright>999</onright>
-					<pagecontrol>974</pagecontrol>
 					<control type="button" id="402">
 						<description>Custom Background Button</description>
 						<font>font12</font>
@@ -1735,24 +1738,6 @@
 			<!-- Views Settings-->
 			<control type="group" id="600">
 				<visible>Skin.String(skinsettingmenu,views)</visible>
-				<control type="scrollbar" id="976">
-					<posx>14</posx>
-					<posy>112</posy>
-					<width>24</width>
-					<height>540</height> 
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>999</onleft>
-					<onright>601</onright>
-					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar)</visible>
-				</control>
 				<control type="image">
 					<description>Views Settings Button Image</description>
 					<posx>950</posx>
@@ -2126,24 +2111,6 @@
 			<!--Custom-->
 			<control type="group" id="700">
 				<visible>Skin.String(skinsettingmenu,custom)</visible>
-				<control type="scrollbar" id="977">
-					<posx>14</posx>
-					<posy>112</posy>
-					<width>24</width>
-					<height>540</height> 
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<onleft>999</onleft>
-					<onright>701</onright>
-					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
-					<visible>Skin.HasSetting(sbar)</visible>
-				</control>
 				<control type="image">
 					<description>Custom Settings Button Image</description>
 					<posx>950</posx>
