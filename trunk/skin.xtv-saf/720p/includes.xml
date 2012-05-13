@@ -170,6 +170,21 @@
 					<visible>Player.HasVideo</visible>
 				</control>
 			</control>
+			<!-- Backgroung ArtistSlideshow fanart image -->
+			<control type="multiimage">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<aspectratio>keep</aspectratio>
+				<timeperimage>5000</timeperimage>
+				<fadetime>1000</fadetime>
+				<randomize>true</randomize>
+				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				<visible>Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRefresh))</visible>
+			</control>
 			<control type="image">
 				<description>mask to fade backgrounds</description>
 				<posx>0</posx>
@@ -1172,7 +1187,7 @@
 		<onload>RunScript(script.tvtunes,backend=True)</onload>
 	</include>
 	<include name="StartArtistSlideshow">
-		<onload>RunScript(script.artistslideshow)</onload>
+		<onload>RunScript(script.artistslideshow, daemon=True)</onload>
 	</include>
 	<include name="StartWatchlist">
 		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>
