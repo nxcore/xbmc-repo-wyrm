@@ -183,7 +183,7 @@
 				<randomize>true</randomize>
 				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-				<visible>Skin.HasSetting(background-slideshow) + IsEmpty(Window.Property(ArtistSlideshowRefresh))</visible>
+				<visible>Player.HasAudio + Skin.HasSetting(background-slideshow)</visible>
 			</control>
 			<control type="image">
 				<description>mask to fade backgrounds</description>
@@ -1048,10 +1048,10 @@
 			<!-- Audio Stuff -->
 			<control type="image">
 				<description>cover image</description>
-				<posx>35</posx>
-				<posy>6</posy>
-				<width>100</width>
-				<height>100</height>
+				<posx>24</posx>
+				<posy>2</posy>
+				<width>110</width>
+				<height>110</height>
 				<info>MusicPlayer.Cover</info>
 				<aspectratio>keep</aspectratio>
 			</control>
@@ -1063,7 +1063,7 @@
 				<height>25</height>
 				<info>MusicPlayer.Artist</info>
 				<align>left</align>
-				<font>font12</font>
+				<font>font11</font>
 				<scroll>true</scroll>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -1076,7 +1076,7 @@
 				<height>25</height>
 				<info>MusicPlayer.Album</info>
 				<align>left</align>
-				<font>font12</font>
+				<font>font11</font>
 				<scroll>true</scroll>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -1089,7 +1089,7 @@
 				<height>25</height>
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
-				<font>font12</font>
+				<font>font11</font>
 				<scroll>true</scroll>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -1187,7 +1187,7 @@
 		<onload>RunScript(script.tvtunes,backend=True)</onload>
 	</include>
 	<include name="StartArtistSlideshow">
-		<onload>RunScript(script.artistslideshow, daemon=True)</onload>
+		<onload>RunScript(script.artistslideshow,daemon=True)</onload>
 	</include>
 	<include name="StartWatchlist">
 		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>

@@ -722,18 +722,18 @@
 			<include>homemediainfo</include>
 			<control type="image">
 				<description>cover image</description>
-				<posx>17</posx>
-				<posy>542</posy>
-				<width>159</width>
-				<height>112</height>
+				<posx>20</posx>
+				<posy>536</posy>
+				<width>130</width>
+				<height>130</height>
 				<info>MusicPlayer.Cover</info>
-				<aspectratio align="right">keep</aspectratio>
+				<aspectratio align="center">keep</aspectratio>
 			</control>
 			<control type="label">
 				<description>Artist label</description>
-				<posx>194</posx>
+				<posx>170</posx>
 				<posy>537</posy>
-				<width>460</width>
+				<width>520</width>
 				<height>31</height>
 				<info>MusicPlayer.Artist</info>
 				<align>left</align>
@@ -742,9 +742,9 @@
 			</control>
 			<control type="label">
 				<description>Album label</description>
-				<posx>194</posx>
+				<posx>170</posx>
 				<posy>568</posy>
-				<width>460</width>
+				<width>520</width>
 				<height>31</height>
 				<info>MusicPlayer.Album</info>
 				<align>left</align>
@@ -753,9 +753,9 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>194</posx>
+				<posx>170</posx>
 				<posy>600</posy>
-				<width>460</width>
+				<width>520</width>
 				<height>31</height>
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
@@ -764,9 +764,9 @@
 			</control>
 			<control type="label">
 				<description>Time label</description>
-				<posx>194</posx>
+				<posx>170</posx>
 				<posy>631</posy>
-				<width>460</width>
+				<width>520</width>
 				<height>31</height>
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 				<align>left</align>

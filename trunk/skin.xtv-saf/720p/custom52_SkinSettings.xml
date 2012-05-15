@@ -855,20 +855,6 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="407">
-						<description>Fanart as Thumb Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31824</label>
-						<onclick>Skin.ToggleSetting(Fanart)</onclick>
-						<selected>Skin.HasSetting(Fanart)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="408">
 						<description>Use DVD case Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -882,7 +868,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="409">
+					<control type="radiobutton" id="408">
 						<description>Use CD case Toggle</description>
 						<font>font12</font>
 						<width>885</width>
