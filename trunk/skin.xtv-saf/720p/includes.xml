@@ -171,7 +171,7 @@
 						<texture background="true">$INFO[Fanart.Image]</texture>
 						<visible>!StringCompare(Control.GetLabel(6322),blank.png)</visible>
 					</control>
-				</control>	
+				</control>
 			</control>
 			<control type="group">
 				<visible>Container.Content(Episodes)</visible>
@@ -215,8 +215,34 @@
 						<fadetime>300</fadetime>
 						<visible>!StringCompare(Control.GetLabel(6332),blank.png) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 					</control>
-				</control>	
-			</control>	
+				</control>
+			</control>
+			<control type="group">
+				<visible>Player.HasAudio + Skin.HasSetting(background-slideshow)</visible>
+				<control type="image">
+					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<texture>black.png</texture>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="multiimage">
+					<description>Backgroung ArtistSlideshow fanart image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+					<aspectratio>keep</aspectratio>
+					<timeperimage>5000</timeperimage>
+					<fadetime>1000</fadetime>
+					<randomize>true</randomize>
+					<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+			</control>
 		</control>
 		<control type="group">
 			<visible>[Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] | Player.HasVideo</visible>
@@ -247,21 +273,6 @@
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
 					<visible>Player.HasAudio</visible>
-				</control>
-				<!-- Backgroung ArtistSlideshow fanart image -->
-				<control type="multiimage">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-					<aspectratio>scale</aspectratio>
-					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
-					<randomize>true</randomize>
-					<animation effect="fade" start="0" end="100" time="400">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<visible>Player.HasAudio + Skin.HasSetting(background-slideshow)</visible>
 				</control>
 			</control>
 		</control>
@@ -715,7 +726,7 @@
 						<include>icon-fade</include>
 					</control>
 				</control>
-			</control>	
+			</control>
 			<control type="group">
 				<visible>Container.Content(movies)</visible>
 				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
@@ -766,7 +777,7 @@
 						<include>icon-fade</include>
 					</control>
 				</control>
-			</control>	
+			</control>
 			<control type="group">
 				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
@@ -1194,6 +1205,7 @@
 		<width>80</width>
 		<height>80</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
+		<visible>!Skin.HasSetting(Gen2)</visible>
 	</include>
 
 	<!-- Start Animation Includes -->
