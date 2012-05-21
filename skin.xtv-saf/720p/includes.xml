@@ -139,12 +139,12 @@
 					<fadetime>300</fadetime>
 					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<imagepath fallback="blank.png" background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 				</control>
 				<control type="group">
-					<visible>!StringCompare(Control.GetLabel(6320),blank.png)</visible>
+					<visible>IsEmpty(Control.GetLabel(6320))</visible>
 					<!-- TV Season Fallback -->
 					<control type="image" id="6322">
 						<posx>0</posx>
@@ -156,7 +156,7 @@
 						<fadetime>300</fadetime>
 						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-						<visible>!IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+						<visible>IsEmpty(Control.GetLabel(6320)) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 					</control>
 					<control type="image">
 						<description>Season fallback fanart background</description>
@@ -169,7 +169,20 @@
 						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 						<texture background="true">$INFO[Fanart.Image]</texture>
-						<visible>!StringCompare(Control.GetLabel(6322),blank.png)</visible>
+						<visible>!IsEmpty(Fanart.Image)</visible>
+					</control>
+					<control type="image">
+						<description>TVShow fallback fanart background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<visible>IsEmpty(Control.GetLabel(6322)) + IsEmpty(Fanart.Image)</visible>
 					</control>
 				</control>
 			</control>
@@ -185,25 +198,13 @@
 					<fadetime>300</fadetime>
 					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<imagepath fallback="blank.png" background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+					<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
 				</control>
 				<control type="group">
-					<visible>!StringCompare(Control.GetLabel(6330),blank.png)</visible>
+					<visible>IsEmpty(Control.GetLabel(6330))</visible>
 					<control type="image" id="6332">
-						<description>Episode fallback fanart background</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<aspectratio>stretch</aspectratio>
-						<fadetime>300</fadetime>
-						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-						<texture fallback="blank.png" background="true">$INFO[Fanart.Image]</texture>
-					</control>
-					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1280</width>
@@ -213,12 +214,38 @@
 						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 						<fadetime>300</fadetime>
-						<visible>!StringCompare(Control.GetLabel(6332),blank.png) + !IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+						<visible>!IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+					</control>
+					<control type="image">
+						<description>Episode fallback fanart background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+						<texture background="true">$INFO[Fanart.Image]</texture>
+						<visible>[IsEmpty(Control.GetLabel(6332)) | stringcompare(ListItem.Label,..)] + !+ IsEmpty(Fanart.Image)</visible>
+					</control>
+					<control type="image">
+						<description>TVShow fallback fanart background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<visible>[IsEmpty(Control.GetLabel(6332)) | stringcompare(ListItem.Label,..)] + IsEmpty(Fanart.Image)</visible>
 					</control>
 				</control>
 			</control>
 			<control type="group">
-				<visible>Player.HasAudio + Skin.HasSetting(background-slideshow)</visible>
+				<visible>[Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + Skin.HasSetting(background-slideshow)</visible>
 				<control type="image">
 					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
 					<posx>0</posx>
