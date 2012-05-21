@@ -465,6 +465,7 @@
 			<itemlayout width="582" height="72">
 				<control type="group">
 					<visible>container.content(artists)</visible>
+					<animation effect="fade" start="100" end="60" condition="SubString(ListItem.Icon,Default,Left)">Conditional</animation>
 					<control type="image">
 						<posx>10</posx>
 						<posy>12</posy>
@@ -537,6 +538,7 @@
 				</control>
 				<control type="group">
 					<visible>container.content(artists)</visible>
+					<animation effect="fade" start="100" end="60" condition="SubString(ListItem.Icon,Default,Left)">Conditional</animation>
 					<control type="image">
 						<posx>10</posx>
 						<posy>12</posy>
@@ -619,7 +621,7 @@
 		<!-- Buttons -->
 		<control type="group">
 			<control type="button" id="5">
-				<description>Tracks/Review</description>
+				<description>Tracks/Review or Biography/Discography</description>
 				<posx>53</posx>
 				<posy>650</posy>
 				<width>354</width>
