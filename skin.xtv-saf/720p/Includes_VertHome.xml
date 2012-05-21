@@ -718,7 +718,7 @@
 		</control>
 		<!-- media infos (music) -->
 		<control type="group">
-			<visible>Skin.HasSetting(overlay) + Player.HasAudio + !Window.IsActive(PlayerControls)</visible>
+			<visible>Skin.HasSetting(overlay) + [Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + !Window.IsActive(PlayerControls)</visible>
 			<include>homemediainfo</include>
 			<control type="image">
 				<description>cover image</description>
