@@ -7,7 +7,7 @@
 		<include>background</include>
 		<control type="fadelabel">
 			<description>Album Name</description>
-			<posx>663</posx>
+			<posx>662</posx>
 			<posy>37</posy>
 			<width>584</width>
 			<height>46</height>
@@ -22,7 +22,7 @@
 		</control>
 		<control type="fadelabel">
 			<description>Artist Name</description>
-			<posx>663</posx>
+			<posx>662</posx>
 			<posy>37</posy>
 			<width>584</width>
 			<height>46</height>
@@ -120,7 +120,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 			</control>
-			
+
 			<control type="label">
 				<description>Year Value</description>
 				<posx>230</posx>
@@ -449,11 +449,11 @@
 		</control>
 		<!-- Track Listing -->
 		<control type="list" id="50">
-			<description>Track List Container</description>
-			<posx>663</posx>
-			<posy>112</posy>
-			<width>504</width>
-			<height>526</height>
+			<description>Track/Albums List Container</description>
+			<posx>660</posx>
+			<posy>106</posy>
+			<width>582</width>
+			<height>504</height>
 			<onleft>10</onleft>
 			<onright>5</onright>
 			<onup>50</onup>
@@ -462,147 +462,149 @@
 			<pagecontrol>23</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<visible>!Control.IsVisible(4)</visible>
-			<itemlayout width="250" height="32">
-				<control type="image">
-					<posx>8</posx>
-					<posy>3</posy>
-					<width>30</width>
-					<height>27</height>
-					<info>ListItem.Icon</info>
-					<aspectratio align="left">keep</aspectratio>
+			<itemlayout width="582" height="72">
+				<control type="group">
 					<visible>container.content(artists)</visible>
+					<control type="image">
+						<posx>10</posx>
+						<posy>12</posy>
+						<width>48</width>
+						<height>48</height>
+						<info>ListItem.Icon</info>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="label">
+						<posx>64</posx>
+						<posy>10</posy>
+						<width>500</width>
+						<height>24</height>
+						<font>font12</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>64</posx>
+						<posy>36</posy>
+						<width>200</width>
+						<height>24</height>
+						<font>font11</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
 				</control>
-				<control type="label">
-					<posx>8</posx>
-					<posy>0</posy>
-					<width>566</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>left</align>
-					<label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
+				<control type="group">
 					<visible>container.content(albums)</visible>
-				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>0</posy>
-					<width>566</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>left</align>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>container.content(artists)</visible>
-				</control>
-				<control type="label">
-					<posx>796</posx>
-					<posy>0</posy>
-					<width>177</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>right</align>
-					<label>$INFO[ListItem.Duration]</label>
-					<visible>container.content(albums)</visible>
-				</control>
-				<control type="label">
-					<posx>796</posx>
-					<posy>0</posy>
-					<width>177</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>right</align>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>container.content(artists)</visible>
+					<control type="label">
+						<posx>64</posx>
+						<posy>10</posy>
+						<width>500</width>
+						<height>24</height>
+						<font>font12</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>64</posx>
+						<posy>36</posy>
+						<width>200</width>
+						<height>24</height>
+						<font>font11</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.Duration]</label>
+					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout height="32">
+			<focusedlayout width="582" height="72">
 				<control type="image">
-					<width>495</width>
-					<height>46</height>
+					<width>582</width>
+					<height>72</height>
 					<posx>0</posx>
-					<posy>-5</posy>
+					<posy>0</posy>
 					<visible>Control.HasFocus(50)</visible>
 					<texture>default-button.png</texture>
 				</control>
-				<control type="image">
-					<posx>8</posx>
-					<posy>3</posy>
-					<width>30</width>
-					<height>27</height>
-					<info>ListItem.Icon</info>
-					<aspectratio align="left">keep</aspectratio>
+				<control type="group">
 					<visible>container.content(artists)</visible>
+					<control type="image">
+						<posx>10</posx>
+						<posy>12</posy>
+						<width>48</width>
+						<height>48</height>
+						<info>ListItem.Icon</info>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="label">
+						<posx>64</posx>
+						<posy>10</posy>
+						<width>500</width>
+						<height>24</height>
+						<font>font12</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>64</posx>
+						<posy>36</posy>
+						<width>200</width>
+						<height>24</height>
+						<font>font11</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
 				</control>
-				<control type="label">
-					<posx>8</posx>
-					<posy>0</posy>
-					<width>566</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>left</align>
-					<label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
+				<control type="group">
 					<visible>container.content(albums)</visible>
-				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>0</posy>
-					<width>566</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>left</align>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>container.content(artists)</visible>
-				</control>
-				<control type="label">
-					<posx>796</posx>
-					<posy>0</posy>
-					<width>177</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>right</align>
-					<label>$INFO[ListItem.Duration]</label>
-					<visible>container.content(albums)</visible>
-				</control>
-				<control type="label">
-					<posx>796</posx>
-					<posy>0</posy>
-					<width>177</width>
-					<height>40</height>
-					<font>font12</font>
-					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<align>right</align>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>container.content(artists)</visible>
+					<control type="label">
+						<posx>64</posx>
+						<posy>10</posy>
+						<width>500</width>
+						<height>24</height>
+						<font>font12</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>64</posx>
+						<posy>36</posy>
+						<width>200</width>
+						<height>24</height>
+						<font>font11</font>
+						<aligny>center</aligny>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.Duration]</label>
+					</control>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="image">
 			<description>Cover image</description>
-			<posx>141</posx>
+			<posx>202</posx>
 			<posy>62</posy>
-			<width>442</width>
-			<height>312</height>
+			<width>320</width>
+			<height>320</height>
 			<info>ListItem.Thumb</info>
 			<aspectratio>keep</aspectratio>
 		</control>
@@ -621,6 +623,7 @@
 				<posx>53</posx>
 				<posy>650</posy>
 				<width>354</width>
+				<height>56</height>
 				<label>182</label>
 				<onleft>10</onleft>
 				<onright>6</onright>
@@ -636,6 +639,7 @@
 				<posx>460</posx>
 				<posy>650</posy>
 				<width>354</width>
+				<height>56</height>
 				<label>184</label>
 				<font>font13</font>
 				<align>center</align>
@@ -651,6 +655,7 @@
 				<posx>867</posx>
 				<posy>650</posy>
 				<width>354</width>
+				<height>56</height>
 				<label>13405</label>
 				<align>center</align>
 				<font>font13</font>
@@ -662,10 +667,10 @@
 		</control>
 		<!-- Scrollbar -->
 		<control type="scrollbar" id="23">
-			<posx>1247</posx>
-			<posy>106</posy>
+			<posx>1246</posx>
+			<posy>110</posy>
 			<width>24</width>
-			<height>531</height>
+			<height>504</height>
 			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
