@@ -263,7 +263,7 @@
 					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="list" id="9210">
-					<posx>15</posx>
+					<posx>10</posx>
 					<posy>50</posy>
 					<width>1260</width>
 					<height>252</height>
@@ -277,9 +277,9 @@
 					<orientation>horizontal</orientation>
 					<itemlayout height="252" width="252">
 						<control type="image">
-							<posx>20</posx>
-							<posy>25</posy>
-							<width>200</width>
+							<posx>14</posx>
+							<posy>20</posy>
+							<width>220</width>
 							<height>200</height>
 							<align>center</align>
 							<aligny>bottom</aligny>
@@ -288,23 +288,10 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="252" width="252">
-						<control type="label">
-							<posx>126</posx>
-							<posy>10</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9210)</visible>
-						</control>
 						<control type="image">
-							<posx>20</posx>
-							<posy>25</posy>
-							<width>200</width>
+							<posx>14</posx>
+							<posy>20</posy>
+							<width>220</width>
 							<height>200</height>
 							<align>center</align>
 							<aligny>bottom</aligny>
@@ -313,9 +300,9 @@
 							<visible>!Control.HasFocus(9210)</visible>
 						</control>
 						<control type="image">
-							<posx>15</posx>
-							<posy>20</posy>
-							<width>210</width>
+							<posx>9</posx>
+							<posy>15</posy>
+							<width>230</width>
 							<height>210</height>
 							<align>center</align>
 							<aligny>bottom</aligny>
@@ -327,7 +314,7 @@
 						</control>
 						<control type="label">
 							<posx>126</posx>
-							<posy>195</posy>
+							<posy>168</posy>
 							<height>50</height>
 							<width>252</width>
 							<label>$INFO[ListItem.Label2]</label>
@@ -339,34 +326,47 @@
 							<shadowcolor>shadow-text</shadowcolor>
 							<visible>Control.HasFocus(9210)</visible>
 						</control>
+						<control type="label">
+							<posx>126</posx>
+							<posy>215</posy>
+							<height>24</height>
+							<width>252</width>
+							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font11</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+							<visible>Control.HasFocus(9210)</visible>
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber)]</label>
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.1.ShowTitle)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
 							<icon>$INFO[Window(Home).Property(LatestEpisode.1.Thumb)]</icon>
 						</item>
 						<item id="2">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber)]</label>
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.2.ShowTitle)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
 							<icon>$INFO[Window(Home).Property(LatestEpisode.2.Thumb)]</icon>
 						</item>
 						<item id="3">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber)]</label>
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.3.ShowTitle)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
 							<icon>$INFO[Window(Home).Property(LatestEpisode.3.Thumb)]</icon>
 						</item>
 						<item id="4">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber)]</label>
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.4.ShowTitle)]</label2>
 							<onclick>PlayMedia($INFOWindow(Home).Property(LatestEpisode.4.Path)])</onclick>
 							<icon>$INFO[Window(Home).Property(LatestEpisode.4.Thumb)]</icon>
 						</item>
 						<item id="5">
-							<label>S: $INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason)] E: $INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber)]</label>
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.5.ShowTitle)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
 							<icon>$INFO[Window(Home).Property(LatestEpisode.5.Thumb)]</icon>
