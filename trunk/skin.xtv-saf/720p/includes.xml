@@ -227,7 +227,7 @@
 						<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 						<texture background="true">$INFO[Fanart.Image]</texture>
-						<visible>[IsEmpty(Control.GetLabel(6332)) | stringcompare(ListItem.Label,..)] + !+ IsEmpty(Fanart.Image)</visible>
+						<visible>[IsEmpty(Control.GetLabel(6332)) | stringcompare(ListItem.Label,..)] + IsEmpty(Fanart.Image)</visible>
 					</control>
 					<control type="image">
 						<description>TVShow fallback fanart background</description>
@@ -245,7 +245,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>[Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + Skin.HasSetting(background-slideshow)</visible>
+				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True) + Skin.HasSetting(background-slideshow)</visible>
 				<control type="image">
 					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
 					<posx>0</posx>
@@ -1279,17 +1279,9 @@
 	</include>
 	<!-- End Visibility Includes -->
 	<!-- Start Autoscroll Includes -->
-	<include name="AutoScroll1x">
-		<align>justify</align>
-		<autoscroll time="3000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
-	</include>
 	<include name="AutoScroll2x">
 		<align>justify</align>
 		<autoscroll time="2000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
-	</include>
-	<include name="AutoScroll3x">
-		<align>justify</align>
-		<autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
 	</include>
 	<!-- End Autoscroll Includes -->
 
