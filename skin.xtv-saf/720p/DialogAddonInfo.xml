@@ -50,7 +50,7 @@
 					<posy>0</posy>
 					<width>601</width>
 					<height>31</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+					<label>$INFO[ListItem.Property(Addon.Type)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -74,7 +74,7 @@
 					<posy>37</posy>
 					<width>601</width>
 					<height>31</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+					<label>$INFO[ListItem.Property(Addon.Creator)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -98,7 +98,7 @@
 					<posy>75</posy>
 					<width>601</width>
 					<height>31</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
+					<label>$INFO[ListItem.Property(Addon.Version)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -142,7 +142,7 @@
 					<posy>150</posy>
 					<width>601</width>
 					<height>31</height>
-					<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
+					<label>$INFO[ListItem.Property(Addon.Summary)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>

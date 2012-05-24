@@ -407,7 +407,7 @@
 						<texturenofocus>-</texturenofocus>
 						<label>31823</label>
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
-						<selected>!Skin.HasSetting(AutoScroll)</selected>
+						<selected>Skin.HasSetting(AutoScroll)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
