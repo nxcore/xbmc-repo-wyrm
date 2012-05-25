@@ -15,7 +15,6 @@
 		<control type="image">
 			<description>Weather Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-weather.png</texture>
 			<visible>Skin.HasSetting(home-weather)</visible>
 		</control>

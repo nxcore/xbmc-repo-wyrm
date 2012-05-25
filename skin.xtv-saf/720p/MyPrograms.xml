@@ -10,7 +10,6 @@
 		<control type="image">
 			<description>Programs Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-programs.png</texture>
 		</control>
 		<control type="label">

@@ -11,7 +11,6 @@
 		<control type="image">
 			<description>Photos Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-photo-sml.png</texture>
 		</control>
 		<control type="label">

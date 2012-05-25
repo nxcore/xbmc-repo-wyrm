@@ -10,7 +10,6 @@
 		<control type="image">
 			<description>Music Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-music-sml.png</texture>
 		</control>
 		<control type="label">
