@@ -146,7 +146,6 @@
 			<control type="image">
 				<description>Search Logo</description>
 				<include>icon-header-commons</include>
-				<include>icon-ani</include>
 				<texture>DefaultMusicSearch.png</texture>
 				<visible>IsEmpty(Control.GetLabel(190))</visible>
 			</control>

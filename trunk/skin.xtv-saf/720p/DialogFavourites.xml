@@ -8,7 +8,6 @@
 		<control type="image">
 			<description>Favourites Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-fav-sml.png</texture>
 		</control>
 		<control type="label">

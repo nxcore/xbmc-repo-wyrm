@@ -12,7 +12,6 @@
 		<control type="image">
 			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-video-sml.png</texture>
 			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos)</visible>
 		</control>
@@ -47,7 +46,6 @@
 		<control type="image">
 			<description>TV Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-tv.png</texture>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
@@ -68,7 +66,6 @@
 		<control type="image">
 			<description>Music Videos Logo</description>
 			<include>icon-header-commons</include>
-			<include>icon-ani</include>
 			<texture>icon-musicvideo-sml.png</texture>
 			<visible>Container.Content(MusicVideos)</visible>
 		</control>
