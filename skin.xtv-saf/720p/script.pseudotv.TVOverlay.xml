@@ -126,7 +126,7 @@
     				<description>Show Name Label</description>
     				<width min="10" max="50">auto</width>
     				<height>45</height>
-    				<label>•</label>
+    				<label>:</label>
     				<font>font12</font>
     				<align>left</align>
 					<textcolor>button-text</textcolor>
