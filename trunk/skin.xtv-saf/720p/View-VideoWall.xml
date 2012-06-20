@@ -88,6 +88,18 @@
 					<info>ListItem.Icon</info>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
+				<!-- Watched Overlay -->
+				<control type="image">
+					<posx>80</posx>
+					<posy>-10</posy>
+					<width>32</width>
+					<height>32</height>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="100" end="140" center="auto" time="600" tween="back" easing="out" />
+					</animation>
+					<texture>$VAR[Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
@@ -162,15 +174,6 @@
 				<aligny>bottom</aligny>
 				<texture>$VAR[VideoRating]</texture>
 				<aspectratio>keep</aspectratio>
-			</control>
-			<!-- Watched Overlay -->
-			<control type="image">
-				<posx>238</posx>
-				<posy>256</posy>
-				<width>56</width>
-				<height>40</height>
-				<info>ListItem.Overlay</info>
-				<visible>Skin.HasSetting(watched-overlay)</visible>
 			</control>
 			<!-- Star Rating -->
 			<control type="image">

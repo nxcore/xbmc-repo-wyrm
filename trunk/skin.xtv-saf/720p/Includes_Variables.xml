@@ -63,4 +63,8 @@
 		<value condition="substring(Container(100).ListItem.Property(Mpaa),TV-14)">special://skin/extras/images/rating/TV-14.png</value>
 		<value condition="substring(Container(100).ListItem.Property(Mpaa),TV-MA)">special://skin/extras/images/rating/TV-MA.png</value>
 	</variable>
+	 <variable name="Overlay" description="Overlay image">
+		<value condition="ListItem.IsResumable">overlaypartialywatched.png</value>
+		<value>$INFO[ListItem.Overlay]</value>
+	</variable>
 </includes>

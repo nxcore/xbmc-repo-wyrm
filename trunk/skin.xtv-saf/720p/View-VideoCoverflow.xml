@@ -16,7 +16,16 @@
 			<preloaditems>9</preloaditems>
 			<pagecontrol>25</pagecontrol>
 			<itemlayout height="390" width="140"></itemlayout>
-			<focusedlayout height="410" width="320"></focusedlayout>
+			<focusedlayout height="410" width="320">
+				<control type="image">
+					<posx>590</posx>
+					<posy>350</posy>
+					<width>48</width>
+					<height>48</height>
+					<texture>$VAR[Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+			</focusedlayout>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
@@ -566,14 +575,6 @@
 					<height>400</height>
 					<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
 					<aspectratio>stretch</aspectratio>
-				</control>
-				<control type="image">
-					<posx>796</posx>
-					<posy>348</posy>
-					<width>60</width>
-					<height>60</height>
-					<info>ListItem.Overlay</info>
-					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 			</control>
 		</control>
