@@ -1,3 +1,6 @@
+[B]1.2.1[/B]
+- Changed Video watched/unwatched/partiallywatched flags to match iOS style flags
+
 [B]1.2.0[/B]
 - Skin now coded in 720p.
 - Added support artwork.downloader, globalsearch and artistslideshow scripts (Eden build only).

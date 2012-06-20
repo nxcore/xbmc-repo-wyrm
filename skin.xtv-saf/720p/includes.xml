@@ -252,7 +252,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>black.png</texture>
+					<texture background="true">black.png</texture>
 					<aspectratio>scale</aspectratio>
 				</control>
 				<control type="multiimage">
@@ -281,7 +281,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>black.png</texture>
+					<texture background="true">black.png</texture>
 					<aspectratio>scale</aspectratio>
 					<visible>Player.HasVideo</visible>
 				</control>
@@ -310,7 +310,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<colordiffuse>mask-background</colordiffuse>
-			<texture>background.png</texture>
+			<texture background="true">black.png</texture>
 			<aspectratio>stretch</aspectratio>
 		</control>
 	</include>
@@ -1232,7 +1232,7 @@
 		<width>80</width>
 		<height>80</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
-		<visible>!Skin.HasSetting(Gen2)</visible>
+		<visible>!Skin.HasSetting(horizontal-homemenu)</visible>
 	</include>
 
 	<!-- Start Animation Includes -->
