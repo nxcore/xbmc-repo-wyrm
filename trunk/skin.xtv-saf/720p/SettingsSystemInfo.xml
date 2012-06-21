@@ -277,7 +277,7 @@
 				<label>$LOCALIZE[31566] $LOCALIZE[31570]</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-				<visible>System.Platform.osx</visible>
+				<visible>System.Platform.osx + ![System.Platform.ios | System.Platform.atv2]</visible>
 			</control>
 			<control type="label">
 				<description>iOS Platform</description>
@@ -288,7 +288,7 @@
 				<label>$LOCALIZE[31566] $LOCALIZE[31569]</label>
 				<font>font13</font>
 				<textcolor>button-text</textcolor>
-				<visible>System.Platform.ios</visible>
+				<visible>System.Platform.ios + !System.Platform.atv2</visible>
 			</control>
 			<control type="label">
 				<description>AppleTV Platform</description>
