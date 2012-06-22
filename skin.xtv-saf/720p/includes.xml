@@ -38,7 +38,7 @@
 			<aspectratio>scale</aspectratio>
 		</control>
 	</include>
-
+ 
 	<!-- Begin background image include -->
 	<include name="background">
 		<control type="image">
