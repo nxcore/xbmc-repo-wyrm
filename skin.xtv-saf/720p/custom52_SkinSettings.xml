@@ -1456,7 +1456,7 @@
 						<textwidth>480</textwidth>
 						<font>font12</font>
 						<label>Download Media artwork</label>
-						<onclick>XBMC.runscript(script.artwork.downloader)</onclick>
+						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
