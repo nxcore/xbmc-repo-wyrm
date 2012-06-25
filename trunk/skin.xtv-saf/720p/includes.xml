@@ -936,7 +936,7 @@
 				</control>
 				<!-- TV show Logo -->
 				<control type="group">
-					<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 					<control type="image" id="37016">
 						<posx>17</posx>
 						<posy>412</posy>
