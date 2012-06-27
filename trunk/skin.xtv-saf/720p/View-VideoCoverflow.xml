@@ -355,7 +355,7 @@
 			<visible>Control.IsVisible(57)</visible>
 			<include>SortLetterNotification</include>
 			<!-- Show logo -->
-			<control type="image" id="7016">
+			<!--<control type="image" id="7016">
 				<posx>540</posx>
 				<posy>90</posy>
 				<width>182</width>
@@ -365,7 +365,7 @@
 				<aspectratio align="left">keep</aspectratio>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-			</control>
+			</control>-->
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="25">
 				<posx>17</posx>
