@@ -115,7 +115,7 @@
 				<aligny>bottom</aligny>
 				<aspectratio align="left">keep</aspectratio>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>container.content(tvshows)</visible>
+				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 			</control>
 			<!-- Title -->
 			<control type="label">
@@ -131,9 +131,8 @@
 				<scroll>true</scroll>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [!container.content(tvshows) | IsEmpty(Control.GetLabel(7016))]</visible>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [Container.Content(seasons) | Container.Content(episodes) | container.content(musicvideos) | IsEmpty(Control.GetLabel(7016))]</visible>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<animation effect="fade" time="200">WindowClose</animation>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
