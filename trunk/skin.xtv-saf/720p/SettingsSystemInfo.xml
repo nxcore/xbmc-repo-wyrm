@@ -188,6 +188,11 @@
 				<posy>525</posy>
 				<width>566</width>
 				<height>20</height>
+				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
 				<info>System.CPUUsage</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
@@ -208,6 +213,11 @@
 				<posy>568</posy>
 				<width>566</width>
 				<height>20</height>
+				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
+				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>-</textureslidernib>
+				<textureslidernibfocus>-</textureslidernibfocus>
 				<info>system.memory(used)</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
