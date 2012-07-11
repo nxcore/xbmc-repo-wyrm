@@ -1,5 +1,7 @@
 [B]1.2.1[/B]
 - Changed Video watched/unwatched/partiallywatched flags to match iOS style flags
+- Added support for script.xbmc.debug.log to new skin/support menu
+- Added Hitcher's debug info and screen grid to skin/support menu
 - Extend support for clearart and logo's to Movies
 
 [B]1.2.0[/B]
