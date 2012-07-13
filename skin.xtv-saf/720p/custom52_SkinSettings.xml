@@ -2287,17 +2287,45 @@
 						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
-						<enable>System.HasAddon(script.xbmc.debug.log)</enable>
+						<enable>System.HasAddon(script.xbmc.debug.log) + system.getbool(debug.showloginfo)</enable>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
-					<control type="image" id="803">
+					<control type="label" id="803">
+						<description>Note to turn on Debug logging</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<label>Note: Only FULL debug logs can be uploaded.</label>
+						<scroll>true</scroll>
+						<visible>!system.getbool(debug.showloginfo)</visible>
+					</control>
+					<control type="label" id="804">
+						<description>Note to turn on Debug logging</description>
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<label>Turn on debug logging in settings/system/debugging menu</label>
+						<scroll>true</scroll>
+						<visible>!system.getbool(debug.showloginfo)</visible>
+					</control>
+					<control type="image" id="805">
 						<description>Separator Image</description>
 						<width>865</width>
 						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="radiobutton" id="804">
+					<control type="radiobutton" id="806">
 						<description>Show skin debug grid toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -2313,7 +2341,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="805">
+					<control type="radiobutton" id="807">
 						<description>Show Skin Debug Info toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -2329,13 +2357,13 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="image" id="806">
+					<control type="image" id="808">
 						<description>Separator Image</description>
 						<width>865</width>
 						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
-					<control type="button" id="807">
+					<control type="button" id="809">
 						<description>Reset skin settings to defaults</description>
 						<font>font12</font>
 						<width>885</width>
