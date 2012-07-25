@@ -962,7 +962,7 @@
 					<posx>17</posx>
 					<posy>467</posy>
 					<width>646</width>
-					<height>175</height>
+					<height>174</height>
 					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
@@ -977,7 +977,7 @@
 					<posx>17</posx>
 					<posy>467</posy>
 					<width>646</width>
-					<height>175</height>
+					<height>174</height>
 					<font>font12</font>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
@@ -1291,14 +1291,10 @@
 	</include>
 	<!-- Conditional onloads don't work for early pre-Eden builds, so use a conditional include instead -->
 	<include name="StartTVTunes">
-		<onload>RunScript(script.tvtunes,backend=True)</onload>
+		<onload>RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	</include>
 	<include name="StartArtistSlideshow">
 		<onload>RunScript(script.artistslideshow,daemon=True)</onload>
-	</include>
-	<include name="StartWatchlist">
-		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>
-		<onload condition="IsEmpty(Window(Home).Property(xTVSAF_Watchlist))">SetProperty(xTVSAF_Watchlist,True)</onload>
 	</include>
 	<!-- End of Run scripts Includes -->
 	<include name="ReloadSkin">
