@@ -4,6 +4,7 @@
 - Added Hitcher's debug info and screen grid to skin/support menu
 - Added Play Album from Album info screen (Thanks Hitcher and Ronie for making this happen)
 - Extend support for clearart and logo's to Movies
+- A number of skin stability bug fixes. Horizontal home menu in particular is much more stable.
 
 [B]1.2.0[/B]
 - Skin now coded in 720p.
