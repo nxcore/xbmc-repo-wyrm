@@ -1112,7 +1112,7 @@
 	<!-- Start Fake Overlay Include -->
 	<include name="Fake-Overlay">
 		<control type="group">
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)]</visible>
+			<visible>Skin.HasSetting(overlay) + Player.HasVideo + ![Skin.HasSetting(HomeViewToggle)] + !Window.IsActive(PlayerControls)</visible>
 			<!-- Video Stuff -->
 			<control type="videowindow">
 				<description>video preview window</description>
@@ -1161,7 +1161,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + !Window.IsActive(PlayerControls)</visible>
 			<!-- Audio Stuff -->
 			<control type="image">
 				<description>cover image</description>
