@@ -1,3 +1,7 @@
+[B]1.2.2[/B]
+- Cleanup of a number of skin texture files.
+- A number of minor bug fixes.
+
 [B]1.2.1[/B]
 - Changed Video watched/unwatched/partiallywatched flags to match iOS style flags
 - Added support for script.xbmc.debug.log to new skin/support menu
