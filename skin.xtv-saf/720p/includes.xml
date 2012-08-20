@@ -36,6 +36,7 @@
 			<height>720</height>
 			<texture>black.png</texture>
 			<aspectratio>scale</aspectratio>
+			<colordiffuse>mask-background</colordiffuse>
 		</control>
 	</include>
  
