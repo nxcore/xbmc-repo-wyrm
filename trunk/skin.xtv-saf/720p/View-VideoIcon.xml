@@ -37,7 +37,7 @@
 					<font>font11</font>
 					<align>center</align>
 					<textcolor>button-text</textcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<shadowcolor>shadow-text</shadowcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
@@ -68,8 +68,8 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<textcolor>listselectedtext</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

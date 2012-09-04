@@ -1048,6 +1048,23 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="614">
+						<description>Video Icon view toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31923</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(views-videoicon)</onclick>
+						<selected>Skin.HasSetting(views-videoicon)</selected>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="radiobutton" id="615">
 						<description>Video Banner view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1064,7 +1081,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="615">
+					<control type="radiobutton" id="616">
 						<description>Video Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1081,7 +1098,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="616">
+					<control type="radiobutton" id="617">
 						<description>Video Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1098,7 +1115,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="617">
+					<control type="radiobutton" id="618">
 						<description>Video Coverflow view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1115,7 +1132,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="label" id="618">
+					<control type="label" id="619">
 						<description>Music views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
@@ -1127,7 +1144,7 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
-					<control type="radiobutton" id="619">
+					<control type="radiobutton" id="620">
 						<description>Music List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1144,7 +1161,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="620">
+					<control type="radiobutton" id="621">
 						<description>Music Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1161,7 +1178,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="621">
+					<control type="radiobutton" id="622">
 						<description>Music Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1178,7 +1195,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="622">
+					<control type="radiobutton" id="623">
 						<description>Music Coverflow view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1195,7 +1212,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="label" id="623">
+					<control type="label" id="624">
 						<description>Photo views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
@@ -1207,7 +1224,7 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
-					<control type="radiobutton" id="624">
+					<control type="radiobutton" id="625">
 						<description>Photo List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1224,7 +1241,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="625">
+					<control type="radiobutton" id="626">
 						<description>Photo Icons view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1241,7 +1258,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="626">
+					<control type="radiobutton" id="627">
 						<description>Photo Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1258,7 +1275,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="627">
+					<control type="radiobutton" id="628">
 						<description>Photo Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1275,7 +1292,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="label" id="628">
+					<control type="label" id="629">
 						<description>Program/Scripts views section heading</description>
 						<posx>88</posx>
 						<width>885</width>
@@ -1287,7 +1304,7 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
-					<control type="radiobutton" id="629">
+					<control type="radiobutton" id="630">
 						<description>Program/Scripts List2 view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1304,7 +1321,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="630">
+					<control type="radiobutton" id="631">
 						<description>Program/Scripts Icons view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1321,7 +1338,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="631">
+					<control type="radiobutton" id="632">
 						<description>Program/Scripts Wrap view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1338,7 +1355,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="632">
+					<control type="radiobutton" id="633">
 						<description>Program/Scripts Wall view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1355,7 +1372,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="633">
+					<control type="radiobutton" id="634">
 						<description>Program/Scripts Coverflow view toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1479,6 +1496,23 @@
 						<textoffsetx>35</textoffsetx>
 						<label>[B]$LOCALIZE[20338][/B]</label>
 					</control>
+					<!--<control type="button" id="710">
+						<description>Custom Movie Favourite 1</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<enable>System.HasAddon(script.favourites)</enable>
+						<label>$LOCALIZE[1036] 1</label>
+						<label2>$INFO[Skin.String(CustomMovies.1.Label)]</label2>
+						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.1)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+					</control>-->
 					<control type="radiobutton" id="710">
 						<description>Custom script 1 toggle</description>
 						<font>font12</font>
