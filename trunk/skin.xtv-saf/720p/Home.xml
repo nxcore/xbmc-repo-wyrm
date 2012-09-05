@@ -11,9 +11,7 @@
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<include condition="[Skin.HasSetting(startup-playlist) + !Skin.HasSetting(home-changed)]">StartupPlaylist</include>
-			<onfocus>Skin.Reset(home-changed)</onfocus>
-			<onfocus>Skin.Reset(home-reloaded)</onfocus>
+			<include condition="Skin.HasSetting(startup-playlist)">StartupPlaylist</include>
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>

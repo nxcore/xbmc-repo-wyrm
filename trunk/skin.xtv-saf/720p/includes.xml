@@ -1299,8 +1299,4 @@
 		<onload>RunScript(script.artistslideshow,daemon=True)</onload>
 	</include>
 	<!-- End of Run scripts Includes -->
-	<include name="ReloadSkin">
-		<onfocus>Skin.SetBool(home-reloaded)</onfocus>
-		<onfocus>ReloadSkin()</onfocus>
-	</include>
 </includes>
