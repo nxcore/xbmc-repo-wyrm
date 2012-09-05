@@ -1,18 +1,9 @@
 <window id="4">
-	<defaultcontrol always="true">8998</defaultcontrol>
+	<defaultcontrol always="true">8999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
 	<controls>
-		<control type="button" id="8998" description="If Home screen has changed, reload skin">
-			<posx>-10</posx>
-			<posy>-10</posy>
-			<width>0</width>
-			<height>0</height>
-			<onfocus>Control.SetFocus(8999)</onfocus>
-			<include condition="[Skin.HasSetting(home-changed) + !Skin.HasSetting(home-reloaded)]">ReloadSkin</include>
-		</control>
-		
 		<include>background</include>
 		<include>xtv-box</include>
 		<include>Fake-Overlay</include>
