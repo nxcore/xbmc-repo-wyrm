@@ -1,4 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
+  <!--
+	  CUSTOM WINDOWS LIST
+		_Overlay 50
+		_SkinSettings 1152
+		_HomeSettings 1153
+		_UpdateSettings 1154
+	-->
 	<include file="Defaults.xml">-</include>
 	<include file="Includes_Variables.xml">-</include>
 
