@@ -4,9 +4,9 @@
 <strings>
 	<!-- Start startup strings 31001 - 31025-->
 	<string id="31001">Use Startup Playlist</string>
-	<string id="31002">Choose Playlist</string>
+	<string id="31002">Choose Playlist:</string>
 	<string id="31003">Use Intro Video</string>
-	<string id="31004">Intro File :</string>
+	<string id="31004">Intro File:</string>
 	<!-- End startup strings -->
 
 	<!-- Start home strings 31026 - 31125-->
@@ -219,16 +219,16 @@
 	<string id="31890">Play Disc On Home Menu</string>
 	<string id="31891">Show subtitle button in OSD</string>
 	<string id="31892">Family Mode Toggle on Home Menu</string>
-	<string id="31893">Profile :</string>
+	<string id="31893">Profile:</string>
 	<string id="31894">Wake external sources</string>
 
-	<string id="31850">Script :</string>
-	<string id="31851">Plugin :</string>
+	<string id="31850">Script:</string>
+	<string id="31851">Plugin:</string>
 
 	<string id="31852">Set Default Movie source</string>
     <string id="31853">Set Default TV source</string>
 	<string id="31854">Set Default Music Video source</string>
-	<string id="31855">Source :</string>
+	<string id="31855">Source:</string>
 
 	<string id="31900">Video Views</string>
 	<string id="31901">Music Views</string>

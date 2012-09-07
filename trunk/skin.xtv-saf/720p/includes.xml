@@ -1277,12 +1277,6 @@
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
 	</include>
 	<!-- End Visibility Includes -->
-	<!-- Start Autoscroll Includes -->
-	<include name="AutoScroll2x">
-		<align>justify</align>
-		<autoscroll time="2000" delay="3000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
-	</include>
-	<!-- End Autoscroll Includes -->
 
 	<!-- Start of Run scripts Includes -->
 	<include name="StartupPlaylist">

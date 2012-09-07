@@ -211,11 +211,29 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(101).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(101).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="101">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>101</onup>
 					<ondown>101</ondown>
@@ -247,12 +265,12 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(intro-vid)</enable>
-						<label>$LOCALIZE[31004]> $INFO[Skin.String(intro-vid-location)]</label>
+						<label>- $LOCALIZE[31004] $INFO[Skin.String(intro-vid-location)]</label>
 						<onclick>Skin.SetFile(intro-vid-location,,special://skin/extras)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
-						<textoffsetx>50</textoffsetx>
+						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="radiobutton" id="112">
 						<description>Startup Playlist toggle</description>
@@ -276,14 +294,14 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[31002]> $INFO[Skin.String(Startup_Playlist_Path)]</label>
+						<label>- $LOCALIZE[31002] $INFO[Skin.String(Startup_Playlist_Path)]</label>
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
-						<textoffsetx>50</textoffsetx>
+						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
 			</control>
@@ -308,11 +326,29 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(200).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(200).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="200">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>200</onup>
 					<ondown>200</ondown>
@@ -342,20 +378,6 @@
 						<label>31802</label>
 						<onclick>Skin.ToggleSetting(overlay)</onclick>
 						<selected>Skin.HasSetting(overlay)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="203">
-						<description>Now Playing Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31804</label>
-						<onclick>Skin.ToggleSetting(now-playing)</onclick>
-						<selected>!Skin.HasSetting(now-playing)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -417,20 +439,6 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="208">
-						<description>Auto Scroll Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31823</label>
-						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
-						<selected>Skin.HasSetting(AutoScroll)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
 					<control type="radiobutton" id="209">
 						<description>Time On Home Screen toggle</description>
 						<font>font12</font>
@@ -477,21 +485,75 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="212">
-						<description>Horizontal home menu toggle</description>
+						<description>Subtitles in OSD toggle</description>
 						<font>font12</font>
 						<width>885</width>
+						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Use horizontal home menu</label>
+						<label>31891</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(horizontal-homemenu)</onclick>
-						<selected>Skin.HasSetting(horizontal-homemenu)</selected>
+						<onclick>Skin.ToggleSetting(osd-subtitles)</onclick>
+						<selected>Skin.HasSetting(osd-subtitles)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="213">
+						<description>Subtitle script location</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>460</textwidth>
+						<enable>Skin.HasSetting(osd-subtitles)</enable>
+						<label> $LOCALIZE[31850]</label>
+						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
+						<haspath>true</haspath>
+						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>50</textoffsetx>
+						<visible>Skin.HasSetting(osd-subtitles)</visible>
+					</control>
+					<control type="radiobutton" id="214">
+						<description>Use TV Tunes</description>
+						<font>font12</font>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>Use TV Tunes</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
+						<selected>Skin.HasSetting(tv_theme)</selected>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<enable>System.HasAddon(script.tvtunes)</enable>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="button" id="215">
+						<description>TV Logo Downloader Script</description>
+						<width>885</width>
+						<height>56</height>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<textwidth>480</textwidth>
+						<font>font12</font>
+						<label>Download Media artwork</label>
+						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
+						<textcolor>button-text</textcolor>
+						<disabledcolor>disabled-text</disabledcolor>
+						<enable>System.HasAddon(script.artwork.downloader)</enable>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+					</control>
+					<control type="button" id="216">
 						<description>Load new skin theme</description>
 						<font>font12</font>
 						<width>885</width>
@@ -521,18 +583,51 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(301).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(301).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="301">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>301</onup>
 					<ondown>301</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
-					<control type="radiobutton" id="307">
+					<control type="radiobutton" id="302">
+						<description>Horizontal home menu toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>Use horizontal home menu</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(horizontal-homemenu)</onclick>
+						<selected>Skin.HasSetting(horizontal-homemenu)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="radiobutton" id="303">
 						<description>Video On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -547,7 +642,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="302">
+					<control type="radiobutton" id="304">
 						<description>Movies On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -562,7 +657,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="303">
+					<control type="radiobutton" id="305">
 						<description>TV Shows On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -577,7 +672,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="304">
+					<control type="radiobutton" id="306">
 						<description>Music Videos On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -592,7 +687,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="305">
+					<control type="radiobutton" id="307">
 						<description>Music On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -607,7 +702,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="306">
+					<control type="radiobutton" id="308">
 						<description>Programs On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -622,7 +717,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="308">
+					<control type="radiobutton" id="309">
 						<description>Photos On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -637,7 +732,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="309">
+					<control type="radiobutton" id="310">
 						<description>Youtube On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -659,7 +754,7 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
-						<label>$LOCALIZE[31850]</label>
+						<label>- $LOCALIZE[31850]</label>
 						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
 						<haspath>true</haspath>
 						<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
@@ -699,7 +794,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="315">
+					<control type="radiobutton" id="314">
 						<description>Play Disc On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -714,7 +809,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="316">
+					<control type="radiobutton" id="315">
 						<description>Shutdown From Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -729,25 +824,22 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="togglebutton" id="319">
-						<description>Shutdown From Home toggle</description>
+					<control type="button" id="316">
+						<description>Shutdown From Home action</description>
 						<font>font12</font>
 						<width>885</width>
-						<height>50</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<alttexturefocus>default-button.png</alttexturefocus>
-						<alttexturenofocus>-</alttexturenofocus>					
-						<label>$LOCALIZE[13015]: $LOCALIZE[13009]</label>
-						<altlabel>$LOCALIZE[13015]: $LOCALIZE[31558]</altlabel>
+						<textwidth>460</textwidth>
+						<label>- $LOCALIZE[13015]:</label>
+						<label2>$VAR[QuitLabel2]</label2>
 						<onclick>Skin.ToggleSetting(home-quit)</onclick>
-						<selected>!Skin.HasSetting(home-quit)</selected>
-						<aligny>center</aligny>
-						<textwidth>480</textwidth>
-						<textoffsetx>35</textoffsetx>
 						<textcolor>button-text</textcolor>
-						<include>button-fade</include>
-					</control>	
+						<disabledcolor>disabled-text</disabledcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<enable>Skin.HasSetting(home-shutdown)</enable>
+					</control>
 				</control>
 			</control>
 			<!--Background-->
@@ -763,11 +855,29 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(401).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(401).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="401">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>401</onup>
 					<ondown>401</ondown>
@@ -834,7 +944,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Use Artistslideshow script</label>
+						<label>Use Artistslideshow as background</label>
 						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
 						<selected>Skin.HasSetting(background-slideshow)</selected>
 						<enable>System.HasAddon(script.artistslideshow)</enable>
@@ -887,11 +997,29 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(501).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(501).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="501">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>501</onup>
 					<ondown>501</ondown>
@@ -973,11 +1101,29 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(601).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(601).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="601">
 					<posx>53</posx>
 					<posy>112</posy>
 					<width>885</width>
-					<height>540</height>
+					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>601</onup>
 					<ondown>601</ondown>
@@ -1386,6 +1532,24 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(701).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(701).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="701">
 					<posx>53</posx>
 					<posy>112</posy>
@@ -1397,75 +1561,7 @@
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
-					<control type="radiobutton" id="705">
-						<description>Subtitles in OSD toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31891</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(osd-subtitles)</onclick>
-						<selected>Skin.HasSetting(osd-subtitles)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="button" id="706">
-						<description>Subtitle script location</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label> $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>50</textoffsetx>
-						<visible>Skin.HasSetting(osd-subtitles)</visible>
-					</control>
-					<control type="radiobutton" id="707">
-						<description>Use TV Tunes</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>Use TV Tunes</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
-						<selected>Skin.HasSetting(tv_theme)</selected>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<enable>System.HasAddon(script.tvtunes)</enable>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="button" id="708">
-						<description>TV Logo Downloader Script</description>
-						<width>885</width>
-						<height>56</height>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>480</textwidth>
-						<font>font12</font>
-						<label>Download Media artwork</label>
-						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<enable>System.HasAddon(script.artwork.downloader)</enable>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-					</control>
+
 					<control type="label" id="709">
 						<description>Movie Scripts</description>
 						<width>885</width>
@@ -2268,6 +2364,24 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
+				<!-- Markers for excess menu items -->
+				<control type="image">
+					<posx>480</posx>
+					<posy>88</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-up.png</texture>
+					<visible>Container(801).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>480</posx>
+					<posy>650</posy>
+					<height>27</height>
+					<width>38</width>
+					<texture>scroll-down.png</texture>
+					<visible>Container(801).HasNext</visible>
+				</control>
+				
 				<control type="grouplist" id="801">
 					<posx>53</posx>
 					<posy>112</posy>
