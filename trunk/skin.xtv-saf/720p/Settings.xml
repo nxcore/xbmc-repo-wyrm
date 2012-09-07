@@ -139,7 +139,7 @@
 					</item>
 					<item id="11" description="Skin options">
 						<label>166</label>
-						<onclick>ActivateWindow(52)</onclick>
+						<onclick>ActivateWindow(1152)</onclick>
 					</item>
 				</content>
 			</control>
