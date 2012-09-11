@@ -1235,37 +1235,37 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1" description="Files">
+					<item description="Files">
 						<label>744</label>
 						<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					</item>
-					<item id="2" description="Library">
+					<item description="Library">
 						<label>14022</label>
-						<onclick>ActivateWindow(VideoLibrary,Root)</onclick>
+						<onclick>ActivateWindow(Videos,videodb://,return)</onclick>
 					</item>
-					<item id="3" description="Movies">
+					<item description="Movies">
 						<label>342</label>
-						<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
+						<onclick>ActivateWindow(Videos,Movies,return)</onclick>
 						<visible>Library.HasContent(Movies)</visible>
 					</item>
-					<item id="4" description="TVShows">
+					<item description="TVShows">
 						<label>20343</label>
-						<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
+						<onclick>ActivateWindow(Videos,TvShows,return)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 					</item>
-					<item id="5" description="Music Videos">
+					<item description="Music Videos">
 						<label>20389</label>
-						<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+						<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
-					<item id="6" description="YouTube plugin">
+					<item description="YouTube plugin">
 						<label>31037</label>
 						<onclick>ActivateWindow(Videos,plugin://$INFO[Skin.String(youtube-scriptpath)],return)</onclick>
 						<visible>Skin.HasSetting(home-youtube)</visible>
 					</item>
-					<item id="7" description="Video add-ons">
+					<item description="Video add-ons">
 						<label>1037</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
@@ -1322,7 +1322,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>31026</label>
 						<include condition="!Skin.String(movie-libraryentry)">MovieLibraryTitle</include>
 						<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[369])">MovieLibraryTitle</include>
@@ -1335,29 +1335,29 @@
 						<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20388])">MovieLibraryStudios</include>
 						<include condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[744])">MovieLibraryFiles</include>
 					</item>
-					<item id="2">
+					<item>
 						<label>$INFO[Skin.String(custom-playlist1label)] </label>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist1name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-playlist1) + !IsEmpty(Skin.String(custom-playlist1name))+ !IsEmpty(Skin.String(custom-playlist1icon))+ !IsEmpty(Skin.String(custom-playlist1label))</visible>
 					</item>
-					<item id="3">
+					<item>
 						<label>$INFO[Skin.String(custom-playlist2label)] </label>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist2name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-playlist2) + !IsEmpty(Skin.String(custom-playlist2name))+ !IsEmpty(Skin.String(custom-playlist2icon))+ !IsEmpty(Skin.String(custom-playlist2label))</visible>
 					</item>
-					<item id="4">
+					<item>
 						<label>$INFO[Skin.String(custom-script1label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script1name)])</onclick>
 						<visible>Skin.HasSetting(custom-script1) + !IsEmpty(Skin.String(custom-script1label))+ !IsEmpty(Skin.String(custom-script1name))</visible>
 					</item>
-					<item id="5">
+					<item>
 						<label>$INFO[Skin.String(custom-script2label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script2name)])</onclick>
 						<visible>Skin.HasSetting(custom-script2) + !IsEmpty(Skin.String(custom-script2label))+ !IsEmpty(Skin.String(custom-script2name))</visible>
 					</item>
-					<item id="6" description="Video add-ons">
+					<item description="Video add-ons">
 						<label>1037</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
@@ -1414,7 +1414,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>31027</label>
 						<include condition="!Skin.String(tv-libraryentry)">TVLibraryTitle</include>
 						<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[369])">TVLibraryTitle</include>
@@ -1426,29 +1426,29 @@
 						<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20388])">TVLibraryStudios</include>
 						<include condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[744])">TVLibraryFiles</include>
 					</item>
-					<item id="2">
+					<item>
 						<label>$INFO[Skin.String(custom-playlist3label)] </label>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist3name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-playlist3) + !IsEmpty(Skin.String(custom-playlist3name))+ !IsEmpty(Skin.String(custom-playlist3icon))+ !IsEmpty(Skin.String(custom-playlist3label))</visible>
 					</item>
-					<item id="3">
+					<item>
 						<label>$INFO[Skin.String(custom-playlist4label)] </label>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,$INFO[Skin.String(custom-playlist4name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-playlist4) + !IsEmpty(Skin.String(custom-playlist4name))+ !IsEmpty(Skin.String(custom-playlist4icon))+ !IsEmpty(Skin.String(custom-playlist4label))</visible>
 					</item>
-					<item id="4">
+					<item>
 						<label>$INFO[Skin.String(custom-script3label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script3name)])</onclick>
 						<visible>Skin.HasSetting(custom-script3) + !IsEmpty(Skin.String(custom-script3label))+ !IsEmpty(Skin.String(custom-script3name))</visible>
 					</item>
-					<item id="5">
+					<item>
 						<label>$INFO[Skin.String(custom-script4label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script4name)])</onclick>
 						<visible>Skin.HasSetting(custom-script4) + !IsEmpty(Skin.String(custom-script4label))+ !IsEmpty(Skin.String(custom-script4name))</visible>
 					</item>
-					<item id="6" description="Video add-ons">
+					<item description="Video add-ons">
 						<label>1037</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					</item>
 				</content>
 			</control>
@@ -1506,7 +1506,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>2</label>
 						<include condition="!Skin.String(music-libraryentry)">MusicLibraryAlbums</include>
 						<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[20108])">MusicLibraryRoot</include>
@@ -1523,7 +1523,7 @@
 						<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[1050])">MusicLibrarySingles</include>
 						<include condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[744])">MusicLibraryFiles</include>
 					</item>
-					<item id="2">
+					<item>
 						<label>31028</label>
 						<include condition="!Skin.String(musicvideo-libraryentry)">MusicVideoLibraryTitle</include>
 						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[369])">MusicVideoLibraryTitle</include>
@@ -1536,27 +1536,27 @@
 						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20388])">MusicVideoLibraryStudios</include>
 						<include condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[744])">MusicVideoLibraryFiles</include>
 					</item>
-					<item id="3">
+					<item>
 						<label>$INFO[Skin.String(custom-mplaylist1label)] </label>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist1name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-mplaylist1) + !IsEmpty(Skin.String(custom-mplaylist1name))+ !IsEmpty(Skin.String(custom-mplaylist1icon))+ !IsEmpty(Skin.String(custom-mplaylist1label))</visible>
 					</item>
-					<item id="4">
+					<item>
 						<label>$INFO[Skin.String(custom-mplaylist2label)] </label>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,$INFO[Skin.String(custom-mplaylist2name)],return)</onclick>
 						<visible>Skin.HasSetting(custom-mplaylist2) + !IsEmpty(Skin.String(custom-mplaylist2name))+ !IsEmpty(Skin.String(custom-mplaylist2icon))+ !IsEmpty(Skin.String(custom-mplaylist2label))</visible>
 					</item>
-					<item id="5">
+					<item>
 						<label>$INFO[Skin.String(custom-script5label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script5name)])</onclick>
 						<visible>Skin.HasSetting(custom-script5) + !IsEmpty(Skin.String(custom-script5label))+ !IsEmpty(Skin.String(custom-script5name))</visible>
 					</item>
-					<item id="6">
+					<item>
 						<label>$INFO[Skin.String(custom-script6label)] </label>
 						<onclick>XBMC.RunAddon($INFO[Skin.String(custom-script6name)])</onclick>
 						<visible>Skin.HasSetting(custom-script6) + !IsEmpty(Skin.String(custom-script6label))+ !IsEmpty(Skin.String(custom-script6name))</visible>
 					</item>
-					<item id="7" description="Music addons">
+					<item description="Music addons">
 						<label>1038</label>
 						<onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
 						<onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
@@ -1616,11 +1616,11 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>1</label>
 						<onclick>ActivateWindow(Pictures)</onclick>
 					</item>
-					<item id="2" description="Picture apps">
+					<item description="Picture apps">
 						<label>1039</label>
 						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					</item>
@@ -1679,20 +1679,20 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1" description="Video add-ons">
+					<item description="Video add-ons">
 						<label>1037</label>
-						<onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					</item>
-					<item id="2" description="Music addons">
+					<item description="Music addons">
 						<label>1038</label>
 						<onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
 						<onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
 					</item>
-					<item id="3" description="Picture apps">
+					<item description="Picture apps">
 						<label>1039</label>
 						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					</item>
-					<item id="4" description="Program add-ons">
+					<item description="Program add-ons">
 						<label>1043</label>
 						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 					</item>
@@ -1751,7 +1751,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>8</label>
 						<onclick>ActivateWindow(Weather)</onclick>
 					</item>
@@ -1809,45 +1809,45 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>5</label>
 						<onclick>ActivateWindow(Settings,,return)</onclick>
 					</item>
-					<item id="2">
+					<item>
 						<label>130</label>
 						<onclick>ActivateWindow(SystemInfo)</onclick>
 					</item>
-					<item id="3">
+					<item>
 						<label>24033</label>
 						<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 					</item>
-					<item id="4">
+					<item>
 						<label>1036</label>
 						<onclick>ActivateWindow(Favourites)</onclick>
 					</item>
-					<item id="5">
+					<item>
 						<label>137</label>
 						<onclick>RunScript(script.globalsearch)</onclick>
 						<icon>DefaultMusicSearch.png</icon>
 						<visible>Skin.HasSetting(home-search)</visible>
 					</item>
-					<item id="6">
+					<item>
 						<label>13391</label>
 						<onclick>EjectTray()</onclick>
 						<visible>System.HasMediadvd</visible>
 					</item>
-					<item id="7">
+					<item>
 						<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 						<onclick>ActivateWindow(PlayerControls)</onclick>
 						<onclick>SetFocus(9000)</onclick>
 						<visible>Player.HasAudio | Player.HasVideo</visible>
 					</item>	
-					<item id="8">
+					<item>
 						<label>13009</label>
 						<onclick>XBMC.Quit()</onclick>
 						<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
 					</item>
-					<item id="9">
+					<item>
 						<label>13009</label>
 						<onclick>ActivateWindow(shutdownmenu)</onclick>
 						<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
