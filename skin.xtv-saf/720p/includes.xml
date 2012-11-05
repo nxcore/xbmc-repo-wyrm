@@ -380,7 +380,7 @@
 			<textcolor>warning-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
-			<visible>IntegerGreaterThan(system.memory(used.percent),90)</visible>
+			<visible>IntegerGreaterThan(system.memory(used.percent),95) + !Skin.HasSetting(hidememwarning)</visible>
 		</control>
 	</include>
 
