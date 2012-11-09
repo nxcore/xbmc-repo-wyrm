@@ -36,6 +36,7 @@
 	<string id="31131">Written by:</string>
 	<string id="31132">Starring:</string>
 	<string id="31133">Genre:</string>
+	<string id="31134">Start Time: </string>
 	<!-- End video strings -->
 
 	<!-- Start music strings 31226 -31325-->
@@ -109,6 +110,7 @@
 	<string id="31571">Memory Used:</string>
 	<string id="31572">Warning Memory Low:</string>
 	<string id="31573">AppleTV</string>
+	<string id="31574">Android</string>
 
 	<!-- Fontset names -->
 	<string id="31575">Default</string>
@@ -161,8 +163,12 @@
 	<string id="31693">Get Extras...</string>
 	<string id="31694">Get Logo</string>
 	<string id="31695">Get TV Tunes</string>
-
 	<!-- End Misc. strings -->
+	
+	<!-- Begin PVR strings 31700 - 31750 -->	
+	<string id="31700">Available Groups</string>
+
+	<!-- End PVR strings -->
 
 	<!-- Begin skin settings strings 31801 - 31999 -->
 	<string id="31801">Use Scrollbar</string>
