@@ -1,5 +1,5 @@
 <window id="4">
-	<defaultcontrol>8999</defaultcontrol>
+	<defaultcontrol>8998</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
@@ -22,17 +22,17 @@
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
-		<!--<control type="button" id="8998">
+		<control type="button" id="8998">
 			<description>Open update settings window</description>
 			<posy>-12</posy>
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<include condition="!Skin.HasSetting(SettingsUpdated)">UpdateOldSettings</include>
+			<include condition="!Skin.HasSetting(SettingsUpdated)">UpdateCustomSettings</include>
 			<onfocus>SetFocus(8999)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-		</control>-->
+		</control>
 		
 		<!-- Markers for control area items -->
 		<control type="image">
