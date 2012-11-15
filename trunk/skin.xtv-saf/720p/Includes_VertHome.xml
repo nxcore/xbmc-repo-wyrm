@@ -240,6 +240,13 @@
 				<item>
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
+					<label>Live TV</label>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<visible>System.GetBool(pvrmanager.enabled)</visible>
+				</item>
+				<item>
+					<icon>icon-tv.png</icon>
+					<thumb>icon-tv-blur1.png</thumb>
 					<label>31027</label>
 					<onclick>$VAR[TVLibEntry]</onclick>
 					<visible>!Skin.HasSetting(home-tv)</visible>

@@ -68,6 +68,10 @@
 		<value condition="ListItem.IsResumable">overlaypartialywatched.png</value>
 		<value>$INFO[ListItem.Overlay]</value>
 	</variable>
+	 <variable name="PVROverlay" description="PVR Overlay image">
+		<value condition="ListItem.IsRecording">overlayisrecording.png</value>
+		<value condition="ListItem.HasTimer">overlayhastimer.png</value>
+	</variable>
 	<variable name="PlaybackState">
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[31662]</value>
 		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
@@ -142,5 +146,12 @@
 	<variable name="MusicAddonEntry">
 		<value condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,Addons,return)</value>
 		<value>ActivateWindow(MusicFiles,Addons,return)</value>
+	</variable>
+	<variable name="PVRHeading" description="PVR Headings">
+		<value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
+		<value condition="Control.IsVisible(17)">$LOCALIZE[137]</value>
+		<value condition="Control.IsVisible(14)">$LOCALIZE[19040]</value>
+		<value condition="Control.IsVisible(13)">$LOCALIZE[19163]</value>
+		<value>$INFO[Container.FolderName]</value>
 	</variable>
 </includes>
