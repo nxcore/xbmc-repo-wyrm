@@ -26,7 +26,7 @@
 				<posx>0</posx>
 				<posy>192</posy>
 				<width>1280</width>
-				<height>102</height>
+				<height>104</height>
 				<texture>white.png</texture>
 				<colordiffuse>FF363636</colordiffuse>
 			</control>
@@ -134,7 +134,17 @@
 			<control type="group">
 				<include>background-fade</include>
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
+				<control type="image">
+					<posx>560</posx>
+					<posy>70</posy>
+					<width>192</width>
+					<height>192</height>
+					<texture>icon-video.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					<visible>IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
+				</control>
 				<control type="group">
+					<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
 					<control type="label">
 						<description>Recently added Movies label</description>
 						<posx>55</posx>
@@ -262,7 +272,17 @@
 					<font>font11</font>
 					<shadowcolor>shadow-text</shadowcolor>
 				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>70</posy>
+					<width>192</width>
+					<height>192</height>
+					<texture>icon-tv.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					<visible>IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
+				</control>
 				<control type="list" id="9210">
+					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 					<posx>10</posx>
 					<posy>50</posy>
 					<width>1260</width>
@@ -390,7 +410,17 @@
 					<font>font11</font>
 					<shadowcolor>shadow-text</shadowcolor>
 				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>70</posy>
+					<width>192</width>
+					<height>192</height>
+					<texture>icon-music.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					<visible>IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
+				</control>
 				<control type="list" id="9260">
+					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 					<posx>10</posx>
 					<posy>60</posy>
 					<width>1260</width>
@@ -948,9 +978,9 @@
 				<animation condition="[Control.HasFocus(9400) + Container(9900).Position(1)]" effect="slide" start="0,0" end="210,0" time="100" easing="inout" reversible="true">Conditional</animation>
 				<control type="image">
 					<posx>10</posx>
-					<posy>293</posy>
+					<posy>296</posy>
 					<width>210</width>
-					<height>70</height>
+					<height>64</height>
 					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<include>background-fade</include>
@@ -1145,7 +1175,7 @@
 				</content>
 			</control>
 			<control type="list" id="9150" description="Movies">
-				<visible>!Skin.HasSetting(home-movie) | Skin.HasSetting(custom-playlist1) | Skin.HasSetting(custom-playlist2) | Skin.HasSetting(custom-script1) | Skin.HasSetting(custom-script2)</visible>
+				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9150) | Control.HasFocus(9160)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
@@ -1157,7 +1187,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9200</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>-</onup>
+				<onup>9800</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="40" width="210">
@@ -1233,7 +1263,7 @@
 				</content>
 			</control>
 			<control type="list" id="9200" description="TV">
-				<visible>!Skin.HasSetting(home-tv) | Skin.HasSetting(custom-playlist3) | Skin.HasSetting(custom-playlist4) | Skin.HasSetting(custom-script3) | Skin.HasSetting(custom-script4)</visible>
+				<visible>!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path)) | System.GetBool(pvrmanager.enabled)</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9200) | Control.HasFocus(9210)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
@@ -1327,7 +1357,7 @@
 			</control>
 
 			<control type="list" id="9250" description="Music">
-				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(custom-mplaylist1) | Skin.HasSetting(custom-mplaylist2) | Skin.HasSetting(custom-script5) | Skin.HasSetting(custom-script6)</visible>
+				<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9250) | Control.HasFocus(9260)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>

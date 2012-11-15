@@ -24,7 +24,17 @@
 
 	<include file="View-PhotoWall.xml">-</include>
 	<include file="View-PhotoWrap.xml">-</include>
-
+	
+	<include file="View-PVRChannelList.xml">-</include>
+	<include file="View-PVREPG.xml">-</include>
+	<include file="View-PVRLiveTV.xml">-</include>
+	<include file="View-PVRNowNextList.xml">-</include>
+	<include file="View-PVRRadioList.xml">-</include>
+	<include file="View-PVRRecordList.xml">-</include>
+	<include file="View-PVRSearchList.xml">-</include>
+	<include file="View-PVRTimerList.xml">-</include>
+	<include file="View-PVRTVList.xml">-</include>
+	
 	<include file="View-VideoBanner.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
 	<include file="View-VideoList2.xml">-</include>
@@ -340,30 +350,31 @@
 
 	<!-- Begin Page info Includes -->
 	<include name="page-info">
-		<control type="image">
-			<description>RSS Logo</description>
-			<posx>5</posx>
-			<posy>680</posy>
-			<width>32</width>
-			<height>32</height>
-			<aspectratio>keep</aspectratio>
-			<texture>rss.png</texture>
+		<control type="group">
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-		</control>
-		<control type="rss">
-			<description>rss feed</description>
-			<posx>40</posx>
-			<posy>685</posy>
-			<width>1240</width>
-			<height>20</height>
-			<font>rss20</font>
-			<urlset>1</urlset>
-			<textcolor>info-text</textcolor>
-			<titlecolor>rss-title-text</titlecolor>
-			<headlinecolor>rss-headline-text</headlinecolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-		</control>
+			<control type="image">
+				<description>RSS Logo</description>
+				<posx>5</posx>
+				<posy>680</posy>
+				<width>32</width>
+				<height>32</height>
+				<aspectratio>keep</aspectratio>
+				<texture>rss.png</texture>
+			</control>
+			<control type="rss">
+				<description>rss feed</description>
+				<posx>40</posx>
+				<posy>685</posy>
+				<width>1240</width>
+				<height>20</height>
+				<font>rss20</font>
+				<urlset>1</urlset>
+				<textcolor>info-text</textcolor>
+				<titlecolor>rss-title-text</titlecolor>
+				<headlinecolor>rss-headline-text</headlinecolor>
+				<shadowcolor>shadow-text</shadowcolor>
+			</control>
+		</control>	
 	</include>
 
 	<!-- Begin Low free memory include -->
@@ -411,7 +422,7 @@
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
-			<visible>Container.Scrolling</visible>
+			<visible>Container.Scrolling + !Window.IsVisible(progressdialog)</visible>
 			<animation effect="fade" time="100">Visible</animation>
 			<animation effect="fade" time="300" delay="500">Hidden</animation>
 			<posx>587</posx>
@@ -424,7 +435,6 @@
 				<width>81</width>
 				<height>65</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<visible>!Window.IsVisible(progressdialog)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -437,7 +447,6 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<font>font28</font>
-				<visible>!Window.IsVisible(progressdialog)</visible>
 			</control>
 		</control>
 	</include>
@@ -1120,7 +1129,7 @@
 	<include name="View-as">
 		<animation effect="slide" time="0" start="0,0" end="0,-720" delay="0">Visible</animation>
 		<animation effect="fade" time="200" delay="300">WindowOpen</animation>
-		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus</visible>
+		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
 	<!-- End Visibility Includes -->
 
