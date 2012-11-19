@@ -119,7 +119,7 @@
 			</control>
 		</control>
 		<!-- Shelf icons-->
-		<control type="group" id="9800">
+		<control type="group">
 			<!-- Video icons -->
 			<control type="image">
 				<posx>560</posx>
@@ -131,7 +131,7 @@
 				<visible>Control.HasFocus(9100)</visible>
 			</control>
 			<!-- Movie icons -->
-			<control type="group">
+			<control type="group" id="9155">
 				<include>background-fade</include>
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
 				<control type="image">
@@ -257,7 +257,7 @@
 				</control>
 			</control>
 			<!-- TV Shows icons -->
-			<control type="group">
+			<control type="group" id="9205">
 				<include>background-fade</include>
 				<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
 				<control type="label">
@@ -334,7 +334,7 @@
 						</control>
 						<control type="label">
 							<posx>126</posx>
-							<posy>168</posy>
+							<posy>174</posy>
 							<height>50</height>
 							<width>252</width>
 							<label>$INFO[ListItem.Label2]</label>
@@ -395,7 +395,7 @@
 				</control>
 			</control>
 			<!-- Music icons -->
-			<control type="group">
+			<control type="group" id="9255">
 				<include>background-fade</include>
 				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
 				<control type="label">
@@ -992,7 +992,7 @@
 				<width>1260</width>
 				<height>70</height>
 				<scrolltime>200</scrolltime>
-				<onup>9800</onup>
+				<onup>-</onup>
 				<ondown>9000</ondown>
 				<itemgap>0</itemgap>
 				<hitrect x="0" y="0" w="0" h="0" />
@@ -1088,12 +1088,12 @@
 			<posy>360</posy>
 			<width>1260</width>
 			<height>320</height>
-			<onup>9800</onup>
+			<onup>-</onup>
 			<ondown>-</ondown>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="list" id="9100" description="Videos">
-				<visible>Skin.HasSetting(home-video) | Skin.HasSetting(home-youtube)</visible>
+				<visible>Skin.HasSetting(home-video)</visible>
 				<animation type="Conditional" condition="![Control.HasFocus(9100)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
@@ -1187,7 +1187,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9200</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
+				<onup>9155</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="40" width="210">
@@ -1275,7 +1275,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9250</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
+				<onup>9205</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="40" width="210">
@@ -1369,7 +1369,7 @@
 				<onleft>Control.Move(9900,-1)</onleft>
 				<onright>9300</onright>
 				<onright>Control.Move(9900,1)</onright>
-				<onup>9800</onup>
+				<onup>9255</onup>
 				<ondown>-</ondown>
 				<itemgap>0</itemgap>
 				<itemlayout height="40" width="210">
