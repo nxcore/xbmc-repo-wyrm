@@ -336,8 +336,8 @@
 					<visible>!IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				</item>
 				<item>
-					<icon>icon-programs.png</icon>
-					<thumb>icon-programs-blur1.png</thumb>
+					<icon>DefaultAddon.png</icon>
+					<thumb>DefaultAddon.png</thumb>
 					<label>31029</label>
 					<onclick>ActivateWindow(MyPrograms,,return)</onclick>
 					<visible>Skin.HasSetting(home-programs)</visible>
@@ -371,8 +371,8 @@
 					<visible>Skin.HasSetting(home-search)</visible>
 				</item>
 				<item>
-					<icon>unknown-user.png</icon>
-					<thumb>unknown-user.png</thumb>
+					<icon>shut-profile.png</icon>
+					<thumb>shut-profile.png</thumb>
 					<label>20092</label>
 					<onclick>ActivateWindow(profiles)</onclick>
 					<visible>Skin.HasSetting(home-profile)</visible>

@@ -755,36 +755,19 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="310">
-						<description>Youtube On Home toggle</description>
+						<description>Profiles On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31821</label>
+						<label>31830</label>
 						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(home-youtube)</onclick>
-						<selected>Skin.HasSetting(home-youtube)</selected>
+						<onclick>Skin.ToggleSetting(home-profile)</onclick>
+						<selected>Skin.HasSetting(home-profile)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
-					</control>
-					<control type="button" id="311">
-						<description>YouTube script location</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
-						<label>- $LOCALIZE[31850]</label>
-						<label2>$INFO[Skin.String(youtube-scriptpath)]</label2>
-						<haspath>true</haspath>
-						<onclick>Skin.SetAddon(youtube-scriptpath,xbmc.python.pluginsource)</onclick>
-						<textcolor>button-text</textcolor>
-						<disabledcolor>disabled-text</disabledcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(home-youtube)</visible>
 					</control>
 					<control type="radiobutton" id="312">
 						<description>Weather On Home toggle</description>
