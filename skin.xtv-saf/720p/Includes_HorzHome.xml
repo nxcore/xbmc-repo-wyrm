@@ -1717,13 +1717,12 @@
 					<item>
 						<label>137</label>
 						<onclick>RunScript(script.globalsearch)</onclick>
-						<icon>DefaultMusicSearch.png</icon>
 						<visible>Skin.HasSetting(home-search)</visible>
 					</item>
 					<item>
-						<label>13391</label>
-						<onclick>EjectTray()</onclick>
-						<visible>System.HasMediadvd</visible>
+						<label>31036</label>
+						<onclick>PlayDVD</onclick>
+						<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[16003] $LOCALIZE[478]</label>

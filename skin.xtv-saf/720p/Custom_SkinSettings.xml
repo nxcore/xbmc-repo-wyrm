@@ -808,7 +808,7 @@
 						<label>31890</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
-						<selected>!Skin.HasSetting(home-playdisc)</selected>
+						<selected>Skin.HasSetting(home-playdisc)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>

@@ -387,8 +387,8 @@
 					<icon>icon-disc.png</icon>
 					<thumb>icon-disc-blur1.png</thumb>
 					<label>31036</label>
-					<onclick>XBMC.PlayDVD</onclick>
-					<visible>System.HasMediaDVD + !Skin.HasSetting(home-playdisc)</visible>
+					<onclick>PlayDVD</onclick>
+					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
