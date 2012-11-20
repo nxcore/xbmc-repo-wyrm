@@ -84,6 +84,109 @@
 		<control type="group">
 			<visible>!Player.HasVideo | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 			<visible>Skin.HasSetting(background-fanart)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<fadetime>300</fadetime>
+				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			</control>
+			<control type="group">
+				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True) + Skin.HasSetting(background-slideshow)</visible>
+				<control type="image">
+					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<texture background="true">black.png</texture>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="multiimage">
+					<description>Backgroung ArtistSlideshow fanart image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+					<aspectratio>keep</aspectratio>
+					<timeperimage>5000</timeperimage>
+					<fadetime>1000</fadetime>
+					<randomize>true</randomize>
+					<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>[Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] | Player.HasVideo</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(HomeViewToggle)</visible>
+				<control type="image">
+					<description>mask out any backgrounds showing around video</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<texture background="true">black.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>Player.HasVideo</visible>
+				</control>
+				<control type="videowindow">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<visible>Player.HasVideo</visible>
+				</control>
+				<control type="visualisation">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<visible>Player.HasAudio</visible>
+				</control>
+			</control>
+		</control>
+		<control type="image">
+			<description>mask to fade backgrounds</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<colordiffuse>mask-background</colordiffuse>
+			<texture background="true">black.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+	</include>
+	<include name="backgroundvideo">
+		<control type="image">
+			<description>solid background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>background.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<visible>IsEmpty(Skin.String(custom-background))</visible>
+		</control>
+		<control type="image">
+			<description>custom background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Skin.String(custom-background)]</texture>
+			<aspectratio>stretch</aspectratio>
+			<visible>!IsEmpty(Skin.String(custom-background))</visible>
+		</control>
+		<control type="group">
+			<visible>!Player.HasVideo | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
+			<visible>Skin.HasSetting(background-fanart)</visible>
 			<control type="group">
 				<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
 				<control type="multiimage" id="6300">
@@ -332,7 +435,7 @@
 			<aspectratio>stretch</aspectratio>
 		</control>
 	</include>
-
+	
 	<!-- Start xTV box image include -->
 	<include name="xtv-box">
 		<control type="image">
