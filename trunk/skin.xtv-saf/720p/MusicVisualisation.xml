@@ -110,7 +110,7 @@
 				<height>215</height>
 				<posx>132</posx>
 				<posy>475</posy>
-				<texture fallback="cd-disc.png">$INFO[Player.FolderPath]/cdart.png</texture>
+				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio align="bottom">keep</aspectratio>
 			</control>
 			<control type="image">
