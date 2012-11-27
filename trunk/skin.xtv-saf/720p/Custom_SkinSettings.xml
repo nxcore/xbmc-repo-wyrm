@@ -769,6 +769,21 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
+					<control type="radiobutton" id="311">
+						<description>Search On Home toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31836</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-search)</onclick>
+						<selected>Skin.HasSetting(home-search)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
 					<control type="radiobutton" id="312">
 						<description>Weather On Home toggle</description>
 						<font>font12</font>
