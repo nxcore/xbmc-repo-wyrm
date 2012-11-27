@@ -338,8 +338,8 @@
 				<item>
 					<icon>DefaultAddon.png</icon>
 					<thumb>DefaultAddon.png</thumb>
-					<label>31029</label>
-					<onclick>ActivateWindow(MyPrograms,,return)</onclick>
+					<label>24001</label>
+					<onclick>ActivateWindow(1155,,return)</onclick>
 					<visible>Skin.HasSetting(home-programs)</visible>
 				</item>
 				<item>
