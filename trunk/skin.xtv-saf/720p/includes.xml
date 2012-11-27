@@ -6,6 +6,7 @@
 		_SkinSettings 1152
 		_HomeSettings 1153
 		_UpdateSettings 1154
+		_AddonsList 1155
 	-->
 	<include file="Defaults.xml">-</include>
 	<include file="Includes_Variables.xml">-</include>
