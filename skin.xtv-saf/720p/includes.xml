@@ -1228,6 +1228,13 @@
 		<animation condition="Container(9900).Position(1)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
 		<animation condition="Container(9900).Position(2)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
 	</include>
+	<include name="horizontalhome-center">
+		<animation condition="IntegerGreaterThan(Container(9900).NumItems,4) + !IntegerGreaterThan(Container(9900).NumItems,5)" effect="slide" start="0,0" end="105,0" time="0" easing="inout" reversible="true">Conditional</animation>
+		<animation condition="IntegerGreaterThan(Container(9900).NumItems,3) + !IntegerGreaterThan(Container(9900).NumItems,4)" effect="slide" start="0,0" end="210,0" time="0" easing="inout" reversible="true">Conditional</animation>
+		<animation condition="IntegerGreaterThan(Container(9900).NumItems,2) + !IntegerGreaterThan(Container(9900).NumItems,3)" effect="slide" start="0,0" end="315,0" time="0" easing="inout" reversible="true">Conditional</animation>
+		<animation condition="IntegerGreaterThan(Container(9900).NumItems,1) + !IntegerGreaterThan(Container(9900).NumItems,2)" effect="slide" start="0,0" end="420,0" time="0" easing="inout" reversible="true">Conditional</animation>
+		<animation condition="IntegerGreaterThan(Container(9900).NumItems,0) + !IntegerGreaterThan(Container(9900).NumItems,1)" effect="slide" start="0,0" end="525,0" time="0" easing="inout" reversible="true">Conditional</animation>
+	</include>
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
