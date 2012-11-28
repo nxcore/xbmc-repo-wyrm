@@ -271,6 +271,7 @@
 					<aligny>center</aligny>
 					<font>font11</font>
 					<shadowcolor>shadow-text</shadowcolor>
+					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 				</control>
 				<control type="image">
 					<posx>560</posx>
@@ -409,6 +410,7 @@
 					<aligny>center</aligny>
 					<font>font11</font>
 					<shadowcolor>shadow-text</shadowcolor>
+					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 				</control>
 				<control type="image">
 					<posx>560</posx>
@@ -927,7 +929,6 @@
 				<visible>Control.HasFocus(9450)</visible>
 			</control>
 		</control>
-
 		<!-- Main Horizontal menu bar -->
 		<control type="group">
 			<posx>0</posx>
@@ -947,9 +948,9 @@
 				<texture>separator.png</texture>
 			</control>
 		</control>
-
 		<!--NAVBAR-->
 		<control type="group" description="Home NavBar">
+			<include>horizontalhome-center</include>
 			<control type="list" id="9900" description="Home NavBar">
 				<posx>10</posx>
 				<posy>290</posy>
@@ -1007,47 +1008,45 @@
 						<description>Movie Menu</description>
 						<label>20338</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-movie) | Skin.HasSetting(custom-playlist1) | Skin.HasSetting(custom-playlist2) | Skin.HasSetting(custom-script1) | Skin.HasSetting(custom-script2)</visible>
+						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
 						<description>TV Show Menu</description>
 						<label>20343</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-tv) | Skin.HasSetting(custom-playlist3) | Skin.HasSetting(custom-playlist4) | Skin.HasSetting(custom-script3) | Skin.HasSetting(custom-script4)</visible>
-						<visible>!System.GetBool(pvrmanager.enabled)</visible>
+						<visible>!System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>
 					</item>
-					<item id="3">
+					<item id="4">
 						<description>TV Show Menu</description>
 						<label>19020</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-tv) | Skin.HasSetting(custom-playlist3) | Skin.HasSetting(custom-playlist4) | Skin.HasSetting(custom-script3) | Skin.HasSetting(custom-script4)</visible>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<visible>System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>	
 					</item>
-					<item id="4">
+					<item id="5">
 						<description>Music Menu</description>
 						<label>2</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(custom-mplaylist1) | Skin.HasSetting(custom-mplaylist2) | Skin.HasSetting(custom-script5) | Skin.HasSetting(custom-script6)</visible>
+						<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
-					<item id="5">
+					<item id="6">
 						<description>Pictures Menu</description>
 						<label>1</label>
 						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-photos)</visible>
 					</item>
-					<item id="6">
+					<item id="7">
 						<description>Addon Menu</description>
 						<label>24001</label>
 						<onclick>-</onclick>
 						<visible>Skin.HasSetting(home-programs)</visible>
 					</item>
-					<item id="7">
+					<item id="8">
 						<description>Weather Menu</description>
 						<label>8</label>
 						<onclick>-</onclick>
 						<visible>Skin.HasSetting(home-weather)</visible>
 					</item>
-					<item id="8">
+					<item id="9">
 						<description>System Menu</description>
 						<label>13000</label>
 						<onclick>-</onclick>
@@ -1056,6 +1055,7 @@
 			</control>
 		</control>
 		<control type="grouplist" id="9000" description="Submenus">
+			<include>horizontalhome-center</include>
 			<posx>10</posx>
 			<posy>360</posy>
 			<width>1260</width>
@@ -1197,6 +1197,7 @@
 					<item>
 						<label>31026</label>
 						<onclick>$VAR[MovieLibEntry]</onclick>
+						<visible>!Skin.HasSetting(home-movie)</visible>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(CustomMovies.1.Label)]</label>
@@ -1289,6 +1290,7 @@
 					<item>
 						<label>31027</label>
 						<onclick>$VAR[TVLibEntry]</onclick>
+						<visible>!Skin.HasSetting(home-tv)</visible>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(CustomTVShow.1.Label)]</label>
@@ -1377,10 +1379,12 @@
 					<item>
 						<label>2</label>
 						<onclick>$VAR[MusicLibEntry]</onclick>
+						<visible>!Skin.HasSetting(home-music)</visible>
 					</item>
 					<item>
 						<label>31028</label>
 						<onclick>$VAR[MusicVideoLibEntry]</onclick>
+						<visible>!Skin.HasSetting(home-music)</visible>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
