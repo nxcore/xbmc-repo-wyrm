@@ -59,7 +59,6 @@
 			<colordiffuse>mask-background</colordiffuse>
 		</control>
 	</include>
- 
 	<!-- Begin background image include -->
 	<include name="background">
 		<control type="image">
@@ -82,6 +81,21 @@
 			<aspectratio>stretch</aspectratio>
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
+		<control type="group">
+			<visible>Window.IsActive(weather) + [!Player.HasVideo | !Player.HasAudio]</visible>
+			<control type="multiimage">
+				<description>Use Custom weather condition backgrounds if location selected</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$INFO[Skin.String(custom-weatherbackgrounds)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+				<aspectratio>scale</aspectratio>
+				<timeperimage>5000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>2000</fadetime>
+			</control>
+		</control>	
 		<control type="group">
 			<visible>!Player.HasVideo | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 			<visible>Skin.HasSetting(background-fanart)</visible>
@@ -436,7 +450,6 @@
 			<aspectratio>stretch</aspectratio>
 		</control>
 	</include>
-	
 	<!-- Start xTV box image include -->
 	<include name="xtv-box">
 		<control type="image">
@@ -451,7 +464,6 @@
 			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 	</include>
-
 	<!-- Begin Page info Includes -->
 	<include name="page-info">
 		<control type="group">
@@ -480,7 +492,6 @@
 			</control>
 		</control>	
 	</include>
-
 	<!-- Begin Low free memory include -->
 	<include name="memory-low">
 		<control type="label">
@@ -498,14 +509,6 @@
 			<visible>IntegerGreaterThan(system.memory(used.percent),95) + !Skin.HasSetting(hidememwarning)</visible>
 		</control>
 	</include>
-
-	<!-- Start Home Media Overlay -->
-	<include name="homemediainfo">
-		<animation effect="fade" time="200">VisibleChange</animation>
-		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
-		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
-	</include>
-
 	<!-- Start Number of Files Include -->
 	<include name="#files">
 		<control type="label" id="12">
@@ -522,7 +525,6 @@
 			<include>list-fade</include>
 		</control>
 	</include>
-
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">
@@ -1223,10 +1225,15 @@
 		<animation effect="fade" end="0" time="200">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 	</include>
+	<include name="homemediainfo">
+		<animation effect="fade" time="200">VisibleChange</animation>
+		<animation effect="slide" time="500" start="-400,0" end="0,0" acceleration="-1.1" delay="0">WindowOpen</animation>
+		<animation effect="slide" time="300" start="0,0" end="-400,0" acceleration="-1.3" delay="0">WindowClose</animation>
+	</include>
 	<include name="media-slide">
 		<animation condition="Container(9900).Position(0)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
 		<animation condition="Container(9900).Position(1)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
-		<animation condition="Container(9900).Position(2)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
+		<animation condition="Container(9900).Position(2) + IntegerGreaterThan(Container(9900).NumItems,5)" effect="slide" start="0,0" end="640,0" time="0" reversible="true">Conditional</animation>
 	</include>
 	<include name="horizontalhome-center">
 		<animation condition="IntegerGreaterThan(Container(9900).NumItems,4) + !IntegerGreaterThan(Container(9900).NumItems,5)" effect="slide" start="0,0" end="105,0" time="0" easing="inout" reversible="true">Conditional</animation>

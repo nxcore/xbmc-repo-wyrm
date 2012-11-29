@@ -152,15 +152,15 @@
 	<string id="31803">Gesehen Status Overlay benutzen</string>
 	<string id="31804">Now Playing Anzeigen benutzen</string>
 	<string id="31823">Autoscroll aktivieren</string>
-	<string id="31824">Benutze Fanart als Vorschaubild</string>
 	<string id="31845">DVD Hülle anzeigen</string>
 	<string id="31846">CD Hülle anzeigen</string>
-	<string id="31805">Schriftfarbe ändern</string>
 	<string id="31806">Now Playing Visualisierungsstil</string>
 	<string id="31807">Benutzerdefinierten Hintergrund auswählen</string>
 	<string id="31808">Benutzerdefinierten Hintergrund zurücksetzen</string>
 	<string id="31809">Visualisierungen als Hintergrund benutzen</string>
 	<string id="31818">Fanart als Hintergrund benutzen</string>
+	<string id="31824">Choose Location Custom Wetter Hintergründe</string>
+	<string id="31805">Zurücksetzen Benutzerdefinierte Wetter Hintergründe</string>
 
 	<string id="31810">Filme Taste verlinkt zur Library</string>
 	<string id="31811">TV Taste verlinkt zur Library</string>
