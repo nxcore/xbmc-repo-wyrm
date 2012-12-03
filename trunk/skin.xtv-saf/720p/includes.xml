@@ -82,7 +82,7 @@
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<visible>Window.IsActive(weather) + [!Player.HasVideo | !Player.HasAudio]</visible>
+			<visible>Window.IsActive(weather) + !IsEmpty(Skin.String(custom-weatherbackgrounds)) + [!Player.HasVideo | !Player.HasAudio]</visible>
 			<control type="multiimage">
 				<description>Use Custom weather condition backgrounds if location selected</description>
 				<posx>0</posx>
@@ -97,8 +97,7 @@
 			</control>
 		</control>	
 		<control type="group">
-			<visible>!Player.HasVideo | SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
-			<visible>Skin.HasSetting(background-fanart)</visible>
+			<visible>Skin.HasSetting(background-fanart) + !Player.HasVideo</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -109,7 +108,7 @@
 				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			</control>
 			<control type="group">
-				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True) + Skin.HasSetting(background-slideshow)</visible>
+				<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
 					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
 					<posx>0</posx>
@@ -130,13 +129,13 @@
 					<timeperimage>5000</timeperimage>
 					<fadetime>1000</fadetime>
 					<randomize>true</randomize>
-					<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 			</control>
 		</control>
 		<control type="group">
-			<visible>[Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] | Player.HasVideo</visible>
+			<visible>Player.HasAudio | Player.HasVideo</visible>
 			<control type="group">
 				<visible>Skin.HasSetting(HomeViewToggle)</visible>
 				<control type="image">
@@ -381,7 +380,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True) + Skin.HasSetting(background-slideshow)</visible>
+				<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
 					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
 					<posx>0</posx>
@@ -402,15 +401,15 @@
 					<timeperimage>5000</timeperimage>
 					<fadetime>1000</fadetime>
 					<randomize>true</randomize>
-					<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 			</control>
 		</control>
 		<control type="group">
-			<visible>[Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] | Player.HasVideo</visible>
+			<visible>Skin.HasSetting(HomeViewToggle) + [Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] | Player.HasVideo</visible>
 			<control type="group">
-				<visible>Skin.HasSetting(HomeViewToggle)</visible>
+				<visible>Player.HasVideo</visible>
 				<control type="image">
 					<description>mask out any backgrounds showing around video</description>
 					<posx>0</posx>
@@ -419,7 +418,6 @@
 					<height>720</height>
 					<texture background="true">black.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="videowindow">
 					<posx>0</posx>
@@ -427,16 +425,15 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<visible>Player.HasVideo</visible>
 				</control>
-				<control type="visualisation">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<aspectratio>stretch</aspectratio>
-					<visible>Player.HasAudio</visible>
-				</control>
+			</control>	
+			<control type="visualisation">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<visible>Player.HasAudio</visible>
 			</control>
 		</control>
 		<control type="image">
