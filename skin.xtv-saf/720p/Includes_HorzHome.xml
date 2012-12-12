@@ -957,6 +957,7 @@
 				<width>1260</width>
 				<height>70</height>
 				<scrolltime>200</scrolltime>
+				<onup>-</onup>
 				<ondown>9000</ondown>
 				<onfocus>SetFocus(9000)</onfocus>
 				<itemgap>0</itemgap>
@@ -1002,7 +1003,7 @@
 						<description>Video Menu</description>
 						<label>3</label>
 						<onclick>-</onclick>
-						<visible>Skin.HasSetting(home-video) | Skin.HasSetting(home-youtube)</visible>
+						<visible>Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
@@ -1060,6 +1061,8 @@
 			<posy>360</posy>
 			<width>1260</width>
 			<height>320</height>
+			<onup>-</onup> 		
+			<ondown>-</ondown>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="list" id="9100" description="Videos">
