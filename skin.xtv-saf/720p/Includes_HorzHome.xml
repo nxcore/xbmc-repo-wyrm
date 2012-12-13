@@ -1027,7 +1027,7 @@
 						<description>Music Menu</description>
 						<label>2</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
+						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="6">
 						<description>Pictures Menu</description>
@@ -1387,7 +1387,7 @@
 					<item>
 						<label>31028</label>
 						<onclick>$VAR[MusicVideoLibEntry]</onclick>
-						<visible>!Skin.HasSetting(home-music)</visible>
+						<visible>Skin.HasSetting(home-musicvideo)</visible>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>

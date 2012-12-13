@@ -93,6 +93,7 @@
 		<value condition="!Skin.HasSetting(home-quit)">$LOCALIZE[31558]</value>
 	</variable>
 	<variable name="MovieLibEntry">
+		<value condition="!Library.HasContent(Movies)">ActivateWindow(Videos,Files,return)</value>
 		<value condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[369])">ActivateWindow(Videos,MovieTitles,return)</value>
 		<value condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20108])">ActivateWindow(Videos,Movies,return)</value>
 		<value condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[20386])">ActivateWindow(Videos,RecentlyAddedMovies,return)</value>
@@ -105,6 +106,7 @@
 		<value>ActivateWindow(Videos,MovieTitles,return)</value>
 	</variable>
 	<variable name="TVLibEntry">
+		<value condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,Files,return)</value>
 		<value condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[369])">ActivateWindow(Videos,TvShowTitles,return)</value>
 		<value condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20108])">ActivateWindow(Videos,TvShows,return)</value>
 		<value condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[20387])">ActivateWindow(Videos,RecentlyAddedEpisodes,return)</value>
@@ -116,6 +118,7 @@
 		<value>ActivateWindow(Videos,TvShowTitles,return)</value>
 	</variable>
 	<variable name="MusicLibEntry">
+		<value condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,,return)</value>
 		<value condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[20108])">ActivateWindow(MusicLibrary,root,return)</value>
 		<value condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[132])">ActivateWindow(MusicLibrary,Albums,return)</value>
 		<value condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[135])">ActivateWindow(MusicLibrary,Genres,return)</value>
@@ -132,6 +135,7 @@
 		<value>ActivateWindow(MusicLibrary,Albums,return)</value>
 	</variable>
 	<variable name="MusicVideoLibEntry">
+		<value condition="!Library.HasContent(MusicVideos)">ActivateWindow(Videos,Files,return)</value>
 		<value condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[369])">ActivateWindow(Videos,MusicVideoTitles,return)</value>
 		<value condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20108])">ActivateWindow(Videos,MusicVideos,return)</value>
 		<value condition="StringCompare(Skin.String(musicvideo-libraryentry),$LOCALIZE[20390])">ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</value>
@@ -144,7 +148,7 @@
 		<value>ActivateWindow(Videos,MusicVideoTitles,return)</value>
 	</variable>
 	<variable name="MusicAddonEntry">
-		<value condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,Addons,return)</value>
+		<value condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</value>
 		<value>ActivateWindow(MusicFiles,Addons,return)</value>
 	</variable>
 	<variable name="PVRHeading" description="PVR Headings">
