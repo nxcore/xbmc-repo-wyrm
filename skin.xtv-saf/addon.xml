@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.xtv-saf" version="1.2.2" name="xTV-SAF"	provider-name="Wyrm">
 	<requires>
 		<import addon="xbmc.gui" version="3.00"/>

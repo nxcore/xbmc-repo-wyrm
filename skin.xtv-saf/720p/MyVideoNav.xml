@@ -85,24 +85,7 @@
 		</control>
 		
 		<include>memory-low</include>
-		
-		<control type="label">
-			<description>Test</description>
-			<posx>340</posx>
-			<posy>350</posy>
-			<width>600</width>
-			<height>37</height>
-			<label>No Content</label>
-			<font>font20</font>
-			<style>bold</style>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<align>center</align>
-			<aligny>center</aligny>
-			<include>list-fade</include>
-			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
-		</control>
-		
+
 		<control type="group">
 			<visible>IntegerGreaterThan(Container.NumItems,0)</visible>
 			<include>ListView</include>
@@ -113,6 +96,24 @@
 			<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
 			<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
 			<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+		</control>
+
+		<control type="button" id="50">
+			<posx>678</posx>
+			<posy>116</posy>
+			<width>560</width>
+			<height>50</height>
+			<font>font12</font>
+			<label></label>
+			<onfocus>ActivateWindow(Videos,Files,return)</onfocus>
+			<textoffsetx>10</textoffsetx>
+			<texturefocus>default-button.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>button-text</textcolor>
+			<include>button-fade</include>
+			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
 		</control>
 		
 		<control type="group">

@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRChannelListView">
 		<control type="group">
 			<description>TV Guide Channel</description>

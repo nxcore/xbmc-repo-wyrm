@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRRadioListView">
 		<control type="group">
 			<visible>Control.IsVisible(12)</visible>
