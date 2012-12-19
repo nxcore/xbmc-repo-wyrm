@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRSearchListView">
 		<control type="group">
 			<description>TV Search group</description>

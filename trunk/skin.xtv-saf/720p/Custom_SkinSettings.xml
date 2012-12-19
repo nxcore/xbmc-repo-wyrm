@@ -1712,7 +1712,7 @@
 						<description>Reset skin settings to defaults</description>
 						<font>font12</font>
 						<width>885</width>
-						<label>Reset Skin</label>
+						<label>$LOCALIZE[20141] $LOCALIZE[20077] $LOCALIZE[20327]</label>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>

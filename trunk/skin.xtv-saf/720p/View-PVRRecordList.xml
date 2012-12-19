@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRRecordListView">
 		<control type="group">
 			<description>Recordings group</description>

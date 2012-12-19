@@ -240,7 +240,7 @@
 				<item>
 					<icon>icon-tv.png</icon>
 					<thumb>icon-tv-blur1.png</thumb>
-					<label>Live TV</label>
+					<label>19020</label>
 					<onclick>ActivateWindow(PVR)</onclick>
 					<visible>System.GetBool(pvrmanager.enabled)</visible>
 				</item>

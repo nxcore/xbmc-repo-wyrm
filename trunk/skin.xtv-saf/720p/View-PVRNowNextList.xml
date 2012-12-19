@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRNowNextListView">
 		<control type="group">
 			<description>TV Guide Now/Next</description>

@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRTimerListView">
 		<control type="group">
 			<description>Timers group</description>

@@ -93,7 +93,7 @@
 				<aspectratio>scale</aspectratio>
 				<timeperimage>5000</timeperimage>
 				<randomize>true</randomize>
-				<fadetime>2000</fadetime>
+				<fadetime>400</fadetime>
 			</control>
 		</control>	
 		<control type="group">
@@ -104,7 +104,7 @@
 				<width>1280</width>
 				<height>720</height>
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<fadetime>300</fadetime>
+				<fadetime>400</fadetime>
 				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			</control>
 			<control type="group">
@@ -127,7 +127,7 @@
 					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 					<aspectratio>keep</aspectratio>
 					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<randomize>true</randomize>
 				</control>
 			</control>
@@ -135,7 +135,7 @@
 		<control type="group">
 			<visible>Skin.HasSetting(HomeViewToggle)</visible>
 			<control type="group">
-				<visible>Player.HasAudio | Player.HasVideo</visible>
+				<visible>Player.HasVideo</visible>
 				<control type="image">
 					<description>mask out any backgrounds showing around video</description>
 					<posx>0</posx>
@@ -144,7 +144,6 @@
 					<height>720</height>
 					<texture background="true">black.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="videowindow">
 					<posx>0</posx>
@@ -152,16 +151,15 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<visible>Player.HasVideo</visible>
 				</control>
-				<control type="visualisation">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<aspectratio>stretch</aspectratio>
-					<visible>Player.HasAudio</visible>
-				</control>
+			</control>	
+			<control type="visualisation">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<visible>Player.HasAudio</visible>
 			</control>
 		</control>
 		<control type="image">
@@ -207,7 +205,7 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
@@ -222,7 +220,7 @@
 					<timeperimage>4000</timeperimage>
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Path)</visible>
@@ -234,7 +232,7 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
@@ -249,7 +247,7 @@
 					<timeperimage>4000</timeperimage>
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Path)</visible>
@@ -262,7 +260,7 @@
 					<width>1280</width>
 					<height>720</height>
 					<aspectratio>stretch</aspectratio>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<visible>IsEmpty(Control.GetLabel(6310)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
@@ -277,7 +275,7 @@
 					<timeperimage>4000</timeperimage>
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Path)</visible>
@@ -292,7 +290,7 @@
 						<height>720</height>
 						<texture fallback="blank.png" background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
 						<aspectratio>stretch</aspectratio>
-						<fadetime>1000</fadetime>
+						<fadetime>400</fadetime>
 						<visible>!IsEmpty(ListItem.Path)</visible>
 					</control>
 					<control type="group">
@@ -304,7 +302,7 @@
 							<width>1280</width>
 							<height>720</height>
 							<aspectratio>stretch</aspectratio>
-							<fadetime>1000</fadetime>
+							<fadetime>400</fadetime>
 							<texture background="true">$INFO[Fanart.Image]</texture>
 							<visible>!IsEmpty(Fanart.Image)</visible>
 						</control>
@@ -315,7 +313,7 @@
 							<width>1280</width>
 							<height>720</height>
 							<aspectratio>stretch</aspectratio>
-							<fadetime>1000</fadetime>
+							<fadetime>400</fadetime>
 							<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 							<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 						</control>
@@ -332,7 +330,7 @@
 					<timeperimage>4000</timeperimage>
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
+					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Path)</visible>
@@ -346,7 +344,7 @@
 						<height>720</height>
 						<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
 						<aspectratio>stretch</aspectratio>
-						<fadetime>1000</fadetime>
+						<fadetime>400</fadetime>
 						<visible>!IsEmpty(ListItem.Path)</visible>
 					</control>
 					<control type="group">
@@ -358,7 +356,7 @@
 							<width>1280</width>
 							<height>720</height>
 							<aspectratio>stretch</aspectratio>
-							<fadetime>1000</fadetime>
+							<fadetime>400</fadetime>
 							<texture background="true">$INFO[Fanart.Image]</texture>
 							<visible>!IsEmpty(Fanart.Image)</visible>
 						</control>
@@ -369,7 +367,7 @@
 							<width>1280</width>
 							<height>720</height>
 							<aspectratio>stretch</aspectratio>
-							<fadetime>1000</fadetime>
+							<fadetime>400</fadetime>
 							<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 							<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 						</control>
@@ -398,7 +396,7 @@
 						<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 						<aspectratio>keep</aspectratio>
 						<timeperimage>5000</timeperimage>
-						<fadetime>1000</fadetime>
+						<fadetime>400</fadetime>
 						<randomize>true</randomize>
 					</control>
 				</control>	
@@ -826,8 +824,7 @@
 					<height>25</height>
 					<info>ListItem.StarRating</info>
 					<colordiffuse>StarDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
-					<visible>!IsEmpty(ListItem.StarRating)</visible>
+					<visible>!IsEmpty(ListItem.StarRating) + !IsEmpty(ListItem.Thumb)</visible>
 				</control>
 				<!-- Number of unwatched episodes -->
 				<control type="label">

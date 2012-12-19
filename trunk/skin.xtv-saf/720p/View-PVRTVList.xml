@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="PVRTVListView">
 		<control type="group">
 			<visible>Control.IsVisible(11)</visible>
