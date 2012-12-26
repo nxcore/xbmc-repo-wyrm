@@ -128,12 +128,12 @@
 				<height>192</height>
 				<texture>icon-video.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9100)</visible>
+				<visible>ControlGroup(9100).HasFocus()</visible>
 			</control>
 			<!-- Movie icons -->
 			<control type="group" id="9155">
 				<include>background-fade</include>
-				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
+				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
 				<control type="image">
 					<posx>560</posx>
 					<posy>70</posy>
@@ -259,7 +259,7 @@
 			<!-- TV Shows icons -->
 			<control type="group" id="9205">
 				<include>background-fade</include>
-				<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
+				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
 				<control type="label">
 					<description>Header label</description>
 					<posx>55</posx>
@@ -398,7 +398,7 @@
 			<!-- Music icons -->
 			<control type="group" id="9255">
 				<include>background-fade</include>
-				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
+				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
 				<control type="label">
 					<description>Header label</description>
 					<posx>55</posx>
@@ -548,7 +548,7 @@
 				<height>192</height>
 				<texture>icon-photo.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9300)</visible>
+				<visible>ControlGroup(9300).HasFocus()</visible>
 			</control>
 			<!-- Addons icons -->
 			<control type="image">
@@ -558,12 +558,12 @@
 				<height>192</height>
 				<texture>DefaultAddon.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9350)</visible>
+				<visible>ControlGroup(9350).HasFocus()</visible>
 			</control>
 			<!-- Weather icons -->
 			<control type="group">
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9400)</visible>
+				<visible>ControlGroup(9400).HasFocus()</visible>
 				<control type="group">
 					<include>background-fade</include>
 					<posx>10</posx>
@@ -926,7 +926,7 @@
 				<height>192</height>
 				<texture>icon-settings.png</texture>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Control.HasFocus(9450)</visible>
+				<visible>ControlGroup(9450).HasFocus()</visible>
 			</control>
 		</control>
 		<!-- Main Horizontal menu bar -->
@@ -950,17 +950,16 @@
 		</control>
 		<!--NAVBAR-->
 		<control type="group" description="Home NavBar">
-			<include>horizontalhome-center</include>
+		<include>horizontalhome-center</include>
 			<control type="list" id="9900" description="Home NavBar">
 				<posx>10</posx>
 				<posy>290</posy>
 				<width>1260</width>
 				<height>70</height>
 				<scrolltime>200</scrolltime>
-				<onup>-</onup>
 				<ondown>9000</ondown>
-				<onfocus>SetFocus(9000)</onfocus>
 				<itemgap>0</itemgap>
+				<viewtype label="List">List</viewtype>
 				<orientation>horizontal</orientation>
 				<itemlayout height="70" width="210">
 					<control type="label">
@@ -1027,7 +1026,7 @@
 						<description>Music Menu</description>
 						<label>2</label>
 						<onclick>-</onclick>
-						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
+						<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="6">
 						<description>Pictures Menu</description>
@@ -1056,658 +1055,949 @@
 			</control>
 		</control>
 		<control type="grouplist" id="9000" description="Submenus">
-			<include>horizontalhome-center</include>
+		<include>horizontalhome-center</include>			
 			<posx>10</posx>
-			<posy>360</posy>
+			<posy>365</posy>
 			<width>1260</width>
 			<height>320</height>
-			<onup>-</onup> 		
-			<ondown>-</ondown>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
-			<control type="list" id="9100" description="Videos">
+			<control type="grouplist" id="9100">
 				<visible>Skin.HasSetting(home-video)</visible>
-				<animation type="Conditional" condition="![Control.HasFocus(9100)]">
+				<animation type="Conditional" condition="![ControlGroup(9100).HasFocus()]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onleft>9550</onleft>
-				<onright>Control.Move(9900,1)</onright>
-				<onright>9150</onright>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item description="Files">
-						<label>744</label>
-						<onclick>ActivateWindow(Videos,Files,return)</onclick>
-					</item>
-					<item description="Library">
-						<label>14022</label>
-						<onclick>ActivateWindow(Videos,videodb://,return)</onclick>
-					</item>
-					<item description="Movies">
-						<label>342</label>
-						<onclick>ActivateWindow(Videos,Movies,return)</onclick>
-						<visible>Library.HasContent(Movies)</visible>
-					</item>
-					<item description="TVShows">
-						<label>20343</label>
-						<onclick>ActivateWindow(Videos,TvShows,return)</onclick>
-						<visible>Library.HasContent(TVShows)</visible>
-					</item>
-					<item description="Music Videos">
-						<label>20389</label>
-						<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
-						<visible>Library.HasContent(MusicVideos)</visible>
-					</item>
-					<item description="Video add-ons">
-						<label>1037</label>
-						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
-					</item>
-				</content>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<control type="button" id="9120">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>744</label>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9450</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9122">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>14022</label>
+					<onclick>ActivateWindow(Videos,videodb://,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9450</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9124">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>342</label>
+					<onclick>ActivateWindow(Videos,Movies,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9450</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Library.HasContent(Movies)</visible>
+				</control>
+				<control type="button" id="9126">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>20343</label>
+					<onclick>ActivateWindow(Videos,TvShows,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9450</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Library.HasContent(TVShows)</visible>
+				</control>
+				<control type="button" id="9128">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>20389</label>
+					<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9450</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Library.HasContent(MusicVideos)</visible>
+				</control>
+				<control type="button" id="9130">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1037</label>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9450</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-			<control type="list" id="9150" description="Movies">
+			<control type="grouplist" id="9150">
 				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
-				<animation type="Conditional" condition="![Control.HasFocus(9150) | Control.HasFocus(9160)]">
+				<animation type="Conditional" condition="![ControlGroup(9150).HasFocus() | Control.HasFocus(9160)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9100</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9200</onright>
-				<onright>Control.Move(9900,1)</onright>
 				<onup>9155</onup>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>31026</label>
-						<onclick>$VAR[MovieLibEntry]</onclick>
-						<visible>!Skin.HasSetting(home-movie)</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMovies.1.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMovies.1.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMovies.1.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMovies.2.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMovies.2.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMovies.2.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMovies.3.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMovies.3.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMovies.3.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMovies.4.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMovies.4.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMovies.4.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMovies.5.Label)] </label>
-						<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
-					</item>
-					<item description="Video add-ons">
-						<label>1037</label>
-						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
-					</item>
-				</content>
+				<ondown>-</ondown>
+				<control type="button" id="9170">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>31026</label>
+					<onclick>$VAR[MovieLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9172">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMovies.1.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMovies.1.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMovies.1.Path))</visible>
+				</control>
+				<control type="button" id="9174">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMovies.2.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMovies.2.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMovies.2.Path))</visible>
+				</control>
+				<control type="button" id="9176">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMovies.3.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMovies.3.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMovies.3.Path))</visible>
+				</control>
+				<control type="button" id="9178">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMovies.4.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMovies.4.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMovies.4.Path))</visible>
+				</control>
+				<control type="button" id="9180">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMovies.5.Label)] </label>
+					<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
+				</control>
+				<control type="button" id="9182">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1037</label>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-			<control type="list" id="9200" description="TV">
-				<visible>!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path)) | System.GetBool(pvrmanager.enabled)</visible>
-				<animation type="Conditional" condition="![Control.HasFocus(9200) | Control.HasFocus(9210)]">
+			<control type="grouplist" id="9200" description="TV">
+				<visible>!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
+				<animation type="Conditional" condition="![ControlGroup(9200).HasFocus() | Control.HasFocus(9210)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9150</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9250</onright>
-				<onright>Control.Move(9900,1)</onright>
 				<onup>9205</onup>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>Live TV</label>
-						<onclick>ActivateWindow(PVR)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
-					</item>
-					<item>
-						<label>31027</label>
-						<onclick>$VAR[TVLibEntry]</onclick>
-						<visible>!Skin.HasSetting(home-tv)</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomTVShow.1.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomTVShow.1.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomTVShow.1.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomTVShow.2.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomTVShow.2.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomTVShow.2.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomTVShow.3.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomTVShow.3.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomTVShow.3.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomTVShow.4.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomTVShow.4.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomTVShow.4.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomTVShow.5.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomTVShow.5.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
-					</item>
-					<item description="Video add-ons">
-						<label>1037</label>
-						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
-					</item>
-				</content>
+				<ondown>-</ondown>
+				<control type="button" id="9220">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>19020</label>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>System.GetBool(pvrmanager.enabled)</visible>
+				</control>
+				<control type="button" id="9222">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>31027</label>
+					<onclick>$VAR[TVLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9224">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomTVShow.1.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomTVShow.1.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomTVShow.1.Path))</visible>
+				</control>
+				<control type="button" id="9226">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomTVShow.2.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomTVShow.2.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomTVShow.2.Path))</visible>
+				</control>
+				<control type="button" id="9228">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomTVShow.3.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomTVShow.3.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomTVShow.3.Path))</visible>
+				</control>
+				<control type="button" id="9230">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomTVShow.4.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomTVShow.4.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomTVShow.4.Path))</visible>
+				</control>
+				<control type="button" id="9232">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomTVShow.5.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomTVShow.5.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
+				</control>
+				<control type="button" id="9234">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1037</label>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-
-			<control type="list" id="9250" description="Music">
-				<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
-				<animation type="Conditional" condition="![Control.HasFocus(9250) | Control.HasFocus(9260)]">
+			<control type="grouplist" id="9250" description="Music">
+				<visible>!Skin.HasSetting(home-music) | !Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
+				<animation type="Conditional" condition="![ControlGroup(9250).HasFocus() | Control.HasFocus(9260)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9200</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9300</onright>
-				<onright>Control.Move(9900,1)</onright>
 				<onup>9255</onup>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>2</label>
-						<onclick>$VAR[MusicLibEntry]</onclick>
-						<visible>!Skin.HasSetting(home-music)</visible>
-					</item>
-					<item>
-						<label>31028</label>
-						<onclick>$VAR[MusicVideoLibEntry]</onclick>
-						<visible>Skin.HasSetting(home-musicvideo)</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMusic.1.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMusic.1.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMusic.2.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMusic.2.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMusic.2.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMusic.3.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMusic.3.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMusic.3.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMusic.4.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMusic.4.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMusic.4.Path))</visible>
-					</item>
-					<item>
-						<label>$INFO[Skin.String(CustomMusic.5.Label)]</label>
-						<onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
-						<visible>!IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
-					</item>
-					<item description="Music addons">
-						<label>1038</label>
-						<onclick>$VAR[MusicAddonEntry]</onclick>
-					</item>
-				</content>
+				<ondown>-</ondown>
+				<control type="button" id="9270">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>2</label>
+					<onclick>$VAR[MusicLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!Skin.HasSetting(home-music)</visible>
+				</control>
+				<control type="button" id="9272">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>31028</label>
+					<onclick>$VAR[MusicVideoLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!Skin.HasSetting(home-musicvideo)</visible>
+				</control>
+				<control type="button" id="9274">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMusic.1.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMusic.1.Path))</visible>
+				</control>
+				<control type="button" id="9276">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMusic.2.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMusic.2.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMusic.2.Path))</visible>
+				</control>
+				<control type="button" id="9278">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMusic.3.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMusic.3.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMusic.3.Path))</visible>
+				</control>
+				<control type="button" id="9280">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMusic.4.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMusic.4.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMusic.4.Path))</visible>
+				</control>
+				<control type="button" id="9282">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$INFO[Skin.String(CustomMusic.5.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>!IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
+				</control>
+				<control type="button" id="9284">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1038</label>
+					<onclick>$VAR[MusicAddonEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-			<control type="list" id="9300" description="Pictures">
+			<control type="grouplist" id="9300" description="Pictures">
 				<visible>!Skin.HasSetting(home-photos)</visible>
-				<animation type="Conditional" condition="!Control.HasFocus(9300)">
+				<animation type="Conditional" condition="!ControlGroup(9300).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9250</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9350</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>1</label>
-						<onclick>ActivateWindow(Pictures)</onclick>
-					</item>
-					<item description="Picture apps">
-						<label>1039</label>
-						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
-					</item>
-				</content>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<control type="button" id="9320">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1</label>
+					<onclick>ActivateWindow(Pictures)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9250</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9350</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9322">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1039</label>
+					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9250</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9350</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-			<control type="list" id="9350" description="Addons">
+			<control type="grouplist" id="9350" description="Addons">
 				<visible>Skin.HasSetting(home-programs)</visible>
-				<animation type="Conditional" condition="![Control.HasFocus(9350) | Control.HasFocus(9360)]">
+				<animation type="Conditional" condition="![ControlGroup(9350).HasFocus() | Control.HasFocus(9360)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9300</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9400</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item description="Video add-ons">
-						<label>1037</label>
-						<onclick>ActivateWindow(Videos,Addons,return)</onclick>
-					</item>
-					<item description="Music addons">
-						<label>1038</label>
-						<onclick>$VAR[MusicAddonEntry]</onclick>
-					</item>
-					<item description="Picture apps">
-						<label>1039</label>
-						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
-					</item>
-					<item description="Program add-ons">
-						<label>1043</label>
-						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-					</item>
-					<item>
-						<label>24033</label>
-						<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
-					</item>
-				</content>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<control type="button" id="9370">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1037</label>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9372">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1038</label>
+					<onclick>$VAR[MusicAddonEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9374">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1039</label>
+					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9376">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1043</label>
+					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9378">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>24033</label>
+					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-			<control type="list" id="9400" description="Weather">
+			<control type="grouplist" id="9400" description="Weather">
 				<visible>Skin.HasSetting(home-weather)</visible>
-				<animation type="Conditional" condition="!Control.HasFocus(9400)">
+				<animation type="Conditional" condition="!ControlGroup(9400).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9350</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9450</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>8</label>
-						<onclick>ActivateWindow(Weather)</onclick>
-					</item>
-				</content>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<control type="button" id="9420">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>8</label>
+					<onclick>ActivateWindow(Weather)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9350</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9450</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
 			</control>
-			<control type="list" id="9450" description="Settings">
-				<animation type="Conditional" condition="!Control.HasFocus(9450)">
+			<control type="grouplist" id="9450" description="Settings">
+				<animation type="Conditional" condition="!ControlGroup(9450).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
-				<posy>0</posy>
 				<width>210</width>
 				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onleft>9400</onleft>
-				<onleft>Control.Move(9900,-1)</onleft>
-				<onright>9100</onright>
-				<onright>Control.Move(9900,1)</onright>
-				<itemgap>0</itemgap>
-				<itemlayout height="40" width="210">
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="40" width="210">
-					<control type="image">
-						<posx>0</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>40</height>
-						<align>center</align>
-						<texture>default-button.png</texture>
-						<include>background-fade</include>
-					</control>
-					<control type="label">
-						<posx>105</posx>
-						<posy>4</posy>
-						<width>210</width>
-						<height>32</height>
-						<font>font11</font>
-						<textcolor>button-text</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>5</label>
-						<onclick>ActivateWindow(Settings,,return)</onclick>
-					</item>
-					<item>
-						<label>130</label>
-						<onclick>ActivateWindow(SystemInfo)</onclick>
-					</item>
-					<item>
-						<label>1036</label>
-						<onclick>ActivateWindow(Favourites)</onclick>
-					</item>
-					<item>
-						<label>20092</label>
-						<onclick>ActivateWindow(profiles)</onclick>
-						<visible>Skin.HasSetting(home-profile)</visible>
-					</item>
-					<item>
-						<label>137</label>
-						<onclick>RunScript(script.globalsearch)</onclick>
-						<visible>Skin.HasSetting(home-search)</visible>
-					</item>
-					<item>
-						<label>31036</label>
-						<onclick>PlayDVD</onclick>
-						<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
-						<onclick>ActivateWindow(PlayerControls)</onclick>
-						<onclick>SetFocus(9000)</onclick>
-						<visible>Player.HasAudio | Player.HasVideo</visible>
-					</item>
-					<item>
-						<label>13009</label>
-						<onclick>XBMC.Quit()</onclick>
-						<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
-					</item>
-					<item>
-						<label>13009</label>
-						<onclick>ActivateWindow(shutdownmenu)</onclick>
-						<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
-					</item>
-				</content>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<control type="button" id="9470">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>5</label>
+					<onclick>ActivateWindow(Settings,,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9472">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>130</label>
+					<onclick>ActivateWindow(SystemInfo)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9474">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+				</control>
+				<control type="button" id="9476">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>20092</label>
+					<onclick>ActivateWindow(profiles)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-profile)</visible>
+				</control>
+				<control type="button" id="9478">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>137</label>
+					<onclick>RunScript(script.globalsearch)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-search)</visible>
+				</control>
+				<control type="button" id="9480">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>31036</label>
+					<onclick>PlayDVD</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
+				</control>
+				<control type="button" id="9482">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+					<onclick>ActivateWindow(PlayerControls)</onclick>
+					<onclick>SetFocus(9000)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Player.HasAudio | Player.HasVideo</visible>
+				</control>
+				<control type="button" id="9484">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>13009</label>
+					<onclick>XBMC.Quit()</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
+				</control>
+				<control type="button" id="9486">
+					<width>210</width>
+					<height>40</height>
+					<font>font12</font>
+					<label>13009</label>
+					<onclick>ActivateWindow(shutdownmenu)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
+				</control>
 			</control>
 		</control>
-
 		<!-- media infos (music) -->
 		<control type="group">
 			<visible>Skin.HasSetting(overlay) + [Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + !Window.IsActive(PlayerControls)</visible>
