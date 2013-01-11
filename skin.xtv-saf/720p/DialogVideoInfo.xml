@@ -29,7 +29,7 @@
 				<align>center</align>
 				<info>ListItem.StarRating</info>
 				<colordiffuse>StarDiffuse</colordiffuse>
-				<visible>!IsEmpty(ListItem.StarRating) + !substring(Control.GetLabel(5),plot)</visible>
+				<visible>!IsEmpty(ListItem.StarRating) + !substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<!-- Studio -->
 			<control type="group">
@@ -237,7 +237,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label>$LOCALIZE[207]</label>
-				<visible>!substring(Control.GetLabel(5),plot)</visible>
+				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<control type="textbox">
 				<posx>531</posx>
@@ -250,19 +250,29 @@
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<align>justify</align>
 				<pagecontrol>1023</pagecontrol>
-				<visible>!substring(Control.GetLabel(5),plot)</visible>
+				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 				<autoscroll time="4000" delay="12000" repeat="8000">true</autoscroll>
 			</control>
-			<control type="image" id="3">
+			<control type="image">
 				<description>Cover image</description>
+				<posx>122</posx>
+				<posy>68</posy>
+				<width>286</width>
+				<height>412</height>
+				<aspectratio scalediffuse="true"  align="center" aligny="center">keep</aspectratio>
+				<texture diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+				<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
+			</control>
+			<control type="image">
 				<posx>59</posx>
 				<posy>68</posy>
 				<width>412</width>
 				<height>412</height>
-				<texture diffuse="mask-rect.png">-</texture>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<visible>!substring(Control.GetLabel(5),plot)</visible>
+				<aspectratio scalediffuse="true"  align="center" aligny="center">keep</aspectratio>
+				<texture diffuse="mask-rect.png">$INFO[Listitem.Icon]</texture>
+				<visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 			</control>
+
 			<!-- Cast -->
 			<control type="label">
 				<posx>531</posx>
@@ -274,7 +284,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<label>$LOCALIZE[206]</label>
-				<visible>substring(Control.GetLabel(5),plot)</visible>
+				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<control type="list" id="50">
 				<posx>531</posx>
@@ -344,7 +354,7 @@
 				<align>center</align>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
 				<texture diffuse="mask-rect.png">$INFO[Container(50).Listitem.Icon]</texture>
-				<visible>substring(Control.GetLabel(5),plot)</visible>
+				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 
 			<!-- Media flags -->
@@ -356,8 +366,7 @@
 				<height>60</height>
 				<align>center</align>
 				<orientation>horizontal</orientation>
-				<!--<itemgap>-8</itemgap>-->
-				<visible>!substring(Control.GetLabel(5),plot)</visible>
+				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 				<!-- Hack to check if media flag image is available -->
 				<control type="image" id="161">
 					<width>1</width>
@@ -534,21 +543,11 @@
 				<onup>996</onup>
 				<ondown>996</ondown>
 				<control type="button" id="10">
-					<description>Thumb</description>
+					<description>Choose Art</description>
 					<height>57</height>
 					<width>208</width>
 					<font>font11</font>
-					<label>13405</label>
-					<align>center</align>
-					<onclick>SetFocus(999)</onclick>
-					<onclick>Skin.Reset(selectvideoextras)</onclick>
-				</control>
-				<control type="button" id="12">
-					<description>Fanart</description>
-					<height>57</height>
-					<width>208</width>
-					<font>font11</font>
-					<label>20413</label>
+					<label>13511</label>
 					<align>center</align>
 					<onclick>SetFocus(999)</onclick>
 					<onclick>Skin.Reset(selectvideoextras)</onclick>
@@ -609,7 +608,7 @@
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar) + substring(Control.GetLabel(5),plot)</visible>
+			<visible>Skin.HasSetting(sbar) + substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 		</control>
 		<!-- Plot Scrollbar -->
 		<control type="scrollbar" id="1023">
@@ -628,7 +627,7 @@
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar) + !(substring(Control.GetLabel(5),plot))</visible>
+			<visible>Skin.HasSetting(sbar) + !substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 		</control>
 	</controls>
 </window>
