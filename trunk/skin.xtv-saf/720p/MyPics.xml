@@ -29,10 +29,10 @@
 		
 		<include>ListView-Icon</include>
 		<include>ListView</include>
-		<include condition="!Skin.HasSetting(views-photolist2)">List2</include>
-		<include condition="!Skin.HasSetting(views-photoicons)">IconView</include>
-		<include condition="!Skin.HasSetting(views-photowrap)">PhotoWrap</include>
-		<include condition="!Skin.HasSetting(views-photowall)">PhotoWall</include>
+		<include>List2</include>
+		<include>IconView</include>
+		<include>PhotoWrap</include>
+		<include>PhotoWall</include>
 		
 		<control type="group">
 			<posy>720</posy>

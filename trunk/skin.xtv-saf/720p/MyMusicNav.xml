@@ -29,10 +29,10 @@
 		
 		<include>ListView</include>
 		<include>ListView-MusicIcon</include>
-		<include condition="!Skin.HasSetting(views-musiclist2)">AlbumList2</include>
-		<include condition="!Skin.HasSetting(views-musicwrap)">AlbumWrapView</include>
-		<include condition="!Skin.HasSetting(views-musicwall)">AudioWallView</include>
-		<include condition="!Skin.HasSetting(views-musiccoverflow)">AlbumCoverflow</include>
+		<include>AlbumList2</include>
+		<include>AlbumWrapView</include>
+		<include>AudioWallView</include>
+		<include>AlbumCoverflow</include>
 		
 		<!-- Context Menu -->
 		<control type="group">
