@@ -47,11 +47,11 @@
 		
 		<include>ListView</include>
 		<include>ListView-Icon</include>
-		<include condition="!Skin.HasSetting(views-programlist2)">List2</include>
-		<include condition="!Skin.HasSetting(views-programicons)">IconView</include>
-		<include condition="!Skin.HasSetting(views-programwrap)">WrapView</include>
-		<include condition="!Skin.HasSetting(views-programwall)">WallView</include>
-		<include condition="!Skin.HasSetting(views-programcoverflow)">Coverflow</include>
+		<include>List2</include>
+		<include>IconView</include>
+		<include>WrapView</include>
+		<include>WallView</include>
+		<include>Coverflow</include>
 		
 		<control type="group">
 			<posy>720</posy>

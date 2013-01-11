@@ -90,12 +90,12 @@
 			<visible>IntegerGreaterThan(Container.NumItems,0)</visible>
 			<include>ListView</include>
 			<include>ListView-VideoIcon</include>
-			<include condition="!Skin.HasSetting(views-videolist2)">VideoList2</include>
-			<include condition="!Skin.HasSetting(views-videoicon)">VideoIconView</include>
-			<include condition="!Skin.HasSetting(views-videobanner)">BannerView</include>
-			<include condition="!Skin.HasSetting(views-videowrap)">VideoWrapView</include>
-			<include condition="!Skin.HasSetting(views-videowall)">VideoWallView</include>
-			<include condition="!Skin.HasSetting(views-videocoverflow)">VideoCoverflow</include>
+			<include>VideoList2</include>
+			<include>VideoIconView</include>
+			<include>BannerView</include>
+			<include>VideoWrapView</include>
+			<include>VideoWallView</include>
+			<include>VideoCoverflow</include>
 		</control>
 
 		<control type="button" id="50">
