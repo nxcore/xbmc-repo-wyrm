@@ -452,7 +452,7 @@
 			<width>512</width>
 			<height>256</height>
 			<aspectratio>keep</aspectratio>
-			<texture>Xtv-Logo-Big.png</texture>
+			<texture>xtv-logo-big.png</texture>
 			<animation effect="fade" start="0" delay="150" time="50" condition="Window.Previous(Home) + !Window.Previous(Settings)">WindowOpen</animation>
 			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
