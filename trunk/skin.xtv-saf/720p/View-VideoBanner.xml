@@ -4,73 +4,91 @@
 			<viewtype label="31947">Banner List</viewtype>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			<posx>0</posx>
-			<posy>140</posy>
+			<posy>110</posy>
 			<width>1280</width>
-			<height>424</height>
+			<height>514</height>
 			<pagecontrol>29</pagecontrol>
 			<onup>59</onup>
 			<ondown>59</ondown>
 			<onleft>9000</onleft>
 			<onright>29</onright>
-			<itemlayout height="90">
-				<control type="image">
-					<description>Cover</description>
-					<posx>672</posx>
-					<posy>6</posy>
-					<width>531</width>
-					<height>87</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
-				</control>
-				<control type="image">
-					<posx>672</posx>
-					<posy>6</posy>
-					<width>531</width>
-					<height>87</height>
-					<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				</control>
+			<itemlayout height="100">
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<control type="image">
+						<description>Banner</description>
+						<posx>630</posx>
+						<posy>0</posy>
+						<width>610</width>
+						<height>100</height>
+						<texture background="true">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>UnFocusedPosters</colordiffuse>
+						<visible>!IsEmpty(ListItem.Art(banner))</visible>
+					</control>
+					<control type="image">
+						<description>Otherwise try TV logo if available</description>
+						<posx>630</posx>
+						<posy>0</posy>
+						<width>610</width>
+						<height>100</height>
+						<texture fallback="DefaultTvshows.png">$INFO[ListItem.path]logo.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>UnFocusedPosters</colordiffuse>
+						<visible>IsEmpty(ListItem.Art(banner))</visible>
+					</control>
+				</control>	
 				<control type="image">
 					<description>Go Back Image</description>
-					<posx>672</posx>
-					<posy>6</posy>
-					<width>531</width>
-					<height>87</height>
+					<posx>630</posx>
+					<posy>0</posy>
+					<width>610</width>
+					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="154">
-				<animation effect="zoom" start="90" end="110" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>
+			<focusedlayout height="114">
+				<!--<animation effect="zoom" start="90" end="110" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>-->
 				<control type="image">
-					<description>Cover</description>
-					<posx>672</posx>
+					<description>Item Hi-lite</description>
+					<posx>655</posx>
 					<posy>0</posy>
-					<width>531</width>
-					<height>150</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<bordertexture border="9">mask-hilite.png</bordertexture>
-					<bordersize>9</bordersize>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
+					<width>560</width>
+					<height>114</height>
+					<texture  border="6" background="true">button-menu-background.png</texture>
 				</control>
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<control type="image">
+						<description>Banner</description>
+						<posx>630</posx>
+						<posy>6</posy>
+						<width>610</width>
+						<height>100</height>
+						<texture background="true">$INFO[ListItem.Art(banner)]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>!IsEmpty(ListItem.Art(banner))</visible>
+					</control>
+					<control type="image">
+						<description>Otherwise try TV logo if available</description>
+						<posx>630</posx>
+						<posy>6</posy>
+						<width>610</width>
+						<height>100</height>
+						<texture fallback="DefaultTvshows.png">$INFO[ListItem.path]logo.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>IsEmpty(ListItem.Art(banner))</visible>
+					</control>
+				</control>	
 				<control type="image">
-					<posx>672</posx>
-					<posy>0</posy>
-					<width>531</width>
-					<height>150</height>
-					<texture diffuse="mask-rect.png">DefaultVideo.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-				</control>
-				<control type="image">
-					<posx>672</posx>
-					<posy>0</posy>
-					<width>531</width>
-					<height>150</height>
+					<description>Go Back Image</description>
+					<posx>630</posx>
+					<posy>6</posy>
+					<width>610</width>
+					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -108,12 +126,12 @@
 					<posy>0</posy>
 					<width>531</width>
 					<height>237</height>
-					<visible>!IsEmpty(Listitem.Property(Fanart_Image))</visible>
+					<visible>!IsEmpty(ListItem.Art(fanart))</visible>
 					<control type="image">
 						<description>Mini Fanart</description>
 						<width>531</width>
 						<height>225</height>
-						<texture background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<fadetime>600</fadetime>
 					</control>
