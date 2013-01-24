@@ -1,44 +1,45 @@
 <window id="106">
-	<defaultcontrol>1000</defaultcontrol>
+	<defaultcontrol always="true">996</defaultcontrol>
 	<include>shutdown-ani</include>
+	<coordinates>
+		<origin x="0" y="0"/>
+	</coordinates>
 	<controls>
-		<control type="image" id="997">
-			<description>background top image</description>
-			<posx>0</posx>
-			<posy>-8</posy>
-			<width>557</width>
-			<height>8</height>
-			<texture border="7,7,7,0">dialog-context-top.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
-		</control>
-		<control type="image" id="999">
-			<description>background mid image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>557</width>
-			<height>296</height>
-			<texture border="7,0,7,0">dialog-context-middle.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
-		</control>
-		<control type="image" id="998">
-			<description>background bottom image</description>
-			<posx>0</posx>
-			<posy>-2</posy>
-			<width>557</width>
-			<height>8</height>
-			<texture border="7,0,7,7">dialog-context-bottom.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
-		</control>
-		<control type="button" id="1000">
-			<description>button template</description>
-			<posx>26</posx>
-			<posy>0</posy>
-			<width>504</width>
-			<height>50</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>default-button.png</texturefocus>
-		</control>
+		<control type="group">
+			<posx>365</posx>
+			<posy>102</posy>
+			<control type="image" id="999">
+				<description>background mid image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>536</width>
+				<height>650</height>
+				<texture border="16">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="grouplist" id="996">
+				<description>grouplist for context buttons</description>
+				<posx>16</posx>
+				<posy>16</posy>
+				<width>504</width>
+				<onup>996</onup>
+				<height max="616">auto</height>
+				<itemgap>0</itemgap>
+				<control type="button" id="1000">
+					<description>button template</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>504</width>
+					<height>50</height>
+					<textoffsety>6</textoffsety>
+					<align>center</align>
+					<aligny>top</aligny>
+					<onleft>Close</onleft>
+					<onright>Close</onright>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>default-button.png</texturefocus>
+				</control>
+			</control>
+		</control>	
 	</controls>
 </window>
