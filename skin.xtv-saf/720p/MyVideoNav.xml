@@ -127,6 +127,7 @@
 					<width>1280</width>
 					<height>900</height>
 					<texture>black.png</texture>
+					<colordiffuse>osd-background</colordiffuse>
 					<visible>!Skin.HasSetting(view-as-lock)</visible>
 				</control>
 				<control type="image">
