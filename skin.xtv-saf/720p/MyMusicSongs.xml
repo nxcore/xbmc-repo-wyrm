@@ -27,7 +27,6 @@
 		
 		<include>ListView</include>
 		<include>ListView-MusicIcon</include>
-		<include>AlbumList2</include>
 		<include>AlbumWrapView</include>
 		<include>AudioWallView</include>
 		<include>AlbumCoverflow</include>

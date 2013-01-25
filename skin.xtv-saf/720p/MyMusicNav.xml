@@ -29,7 +29,6 @@
 		
 		<include>ListView</include>
 		<include>ListView-MusicIcon</include>
-		<include>AlbumList2</include>
 		<include>AlbumWrapView</include>
 		<include>AudioWallView</include>
 		<include>AlbumCoverflow</include>
@@ -146,6 +145,7 @@
 					<onright>50</onright>
 					<onup>5</onup>
 					<ondown>19</ondown>
+					<onback>50</onback>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
 					<include>button-fade</include>
@@ -237,6 +237,7 @@
 					<onright>50</onright>
 					<onup>16</onup>
 					<ondown>2</ondown>
+					<onback>50</onback>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick> 
 					<enable>Player.HasAudio | Player.HasVideo</enable>

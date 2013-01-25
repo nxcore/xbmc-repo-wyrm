@@ -5,7 +5,7 @@
 		_Overlay 50
 		_SkinSettings 1152
 		_HomeSettings 1153
-		_UpdateSettings 1154
+		_GetArtwork.xml 1154
 		_AddonsList 1155
 	-->
 	<include file="Defaults.xml">-</include>
@@ -14,12 +14,10 @@
 	<include file="CommonViewTypes.xml">-</include>
 	<include file="View-Coverflow.xml">-</include>
 	<include file="View-Icon.xml">-</include>
-	<include file="View-List2.xml">-</include>
 	<include file="View-Wall.xml">-</include>
 	<include file="View-Wrap.xml">-</include>
 
 	<include file="View-AlbumCoverflow.xml">-</include>
-	<include file="View-AlbumList2.xml">-</include>
 	<include file="View-AlbumWall.xml">-</include>
 	<include file="View-AlbumWrap.xml">-</include>
 
@@ -38,7 +36,6 @@
 	
 	<include file="View-VideoBanner.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
-	<include file="View-VideoList2.xml">-</include>
 	<include file="View-VideoIcon.xml">-</include>
 	<include file="View-VideoWall.xml">-</include>
 	<include file="View-VideoWrap.xml">-</include>
@@ -773,7 +770,7 @@
 						<posy>120</posy>
 						<width>448</width>
 						<height>448</height>
-						<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>
@@ -783,7 +780,7 @@
 						<posy>570</posy>
 						<width>448</width>
 						<height>448</height>
-						<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>

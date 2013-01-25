@@ -29,7 +29,6 @@
 		
 		<include>ListView-Icon</include>
 		<include>ListView</include>
-		<include>List2</include>
 		<include>IconView</include>
 		<include>PhotoWrap</include>
 		<include>PhotoWall</include>
