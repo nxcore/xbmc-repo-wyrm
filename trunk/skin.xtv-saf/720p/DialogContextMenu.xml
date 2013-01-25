@@ -5,6 +5,15 @@
 		<origin x="0" y="0"/>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<description>Background shadow</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>900</height>
+			<texture>black.png</texture>
+			<colordiffuse>osd-background</colordiffuse>
+		</control>
 		<control type="group">
 			<posx>365</posx>
 			<posy>102</posy>
@@ -13,7 +22,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>536</width>
-				<height>650</height>
+				<height>630</height>
 				<texture border="16">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
@@ -23,7 +32,7 @@
 				<posy>16</posy>
 				<width>504</width>
 				<onup>996</onup>
-				<height max="616">auto</height>
+				<height max="600">auto</height>
 				<itemgap>0</itemgap>
 				<control type="button" id="1000">
 					<description>button template</description>
