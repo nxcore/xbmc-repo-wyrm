@@ -607,7 +607,7 @@
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
 			<control type="group">
-				<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(progressdialog)</visible>
+				<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
@@ -702,6 +702,55 @@
 						<width>448</width>
 						<height>448</height>
 						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Studios)</visible>
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<control type="image">
+						<posx>152</posx>
+						<posy>184</posy>
+						<width>322</width>
+						<height>322</height>
+						<colordiffuse>StudioShadow</colordiffuse>
+						<aspectratio>keep</aspectratio>
+						<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<posx>150</posx>
+						<posy>182</posy>
+						<width>322</width>
+						<height>322</height>
+						<colordiffuse>StudioDiffuse</colordiffuse>
+						<aspectratio>keep</aspectratio>
+						<texture fallback="DefaultVideo.png">special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
+						<include>icon-fade</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<control type="image">
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>
