@@ -47,7 +47,6 @@
 		
 		<include>ListView</include>
 		<include>ListView-Icon</include>
-		<include>List2</include>
 		<include>IconView</include>
 		<include>WrapView</include>
 		<include>WallView</include>

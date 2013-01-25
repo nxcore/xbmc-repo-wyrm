@@ -40,7 +40,6 @@
 		
 		<include>ListView</include>
 		<include>ListView-Icon</include>
-		<include condition="!Skin.HasSetting(views-programlist2)">List2</include>
 		<include condition="!Skin.HasSetting(views-programicons)">IconView</include>
 		<include condition="!Skin.HasSetting(views-programwrap)">WrapView</include>
 		<include condition="!Skin.HasSetting(views-programwall)">WallView</include>
