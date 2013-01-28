@@ -501,8 +501,7 @@
 				<font>font11</font>
 				<label>31693</label>
 				<align>center</align>
-				<onclick>SetFocus(995)</onclick>
-				<onclick>Skin.SetBool(selectvideoextras)</onclick>
+				<onclick>ActivateWindow(1154)</onclick>
 			</control>
 			<control type="button" id="6">
 				<description>Refresh</description>
@@ -513,84 +512,7 @@
 				<align>center</align>
 			</control>
 		</control>
-		<control type="group" id="995">
-			<visible allowhiddenfocus="true">ControlGroup(995).HasFocus + Skin.HasSetting(selectvideoextras)</visible>
-			<posx>531</posx>
-			<posy>256</posy>
-			<animation effect="slide" start="0,720" end="0,0" time="200" condition="ControlGroup(995).HasFocus + Skin.HasSetting(selectvideoextras)">Conditional</animation>
-			<control type="image">
-				<description>Progess Dialog background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>240</width>
-				<height>250</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
-			</control>
-			<control type="grouplist" id="996">
-				<description>Group Get Extras Images Buttons</description>
-				<posx>15</posx>
-				<posy>11</posy>
-				<width>208</width>
-				<height>230</height>
-				<itemgap>0</itemgap>
-				<scrolltime>200</scrolltime>
-				<orientation>vertical</orientation>
-				<align>center</align>
-				<usecontrolcoords>false</usecontrolcoords>
-				<onleft>999</onleft>
-				<onright>999</onright>
-				<onup>996</onup>
-				<ondown>996</ondown>
-				<control type="button" id="10">
-					<description>Choose Art</description>
-					<height>57</height>
-					<width>208</width>
-					<font>font11</font>
-					<label>13511</label>
-					<align>center</align>
-					<onclick>SetFocus(999)</onclick>
-					<onclick>Skin.Reset(selectvideoextras)</onclick>
-				</control>
-				<control type="button" id="1113">
-					<description>Get Logo</description>
-					<width>208</width>
-					<height>57</height>
-					<font>font11</font>
-					<align>center</align>
-					<label>31694</label>
-					<onclick>RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,medianame=$INFO[ListItem.TVShowTitle],clearlogo)</onclick>
-					<onclick>SetFocus(999)</onclick>
-					<onclick>Skin.Reset(selectvideoextras)</onclick>
- 					<visible>System.HasAddon(script.artwork.downloader) + Container.Content(TVShows)</visible>
-				</control>
-				<control type="button" id="1114">
-					<description>Get TV Tune</description>
-					<width>208</width>
-					<height>57</height>
-					<font>font11</font>
-					<align>center</align>
-					<label>31695</label>
-					<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-					<onclick>SetFocus(999)</onclick>
-					<onclick>Skin.Reset(selectvideoextras)</onclick>
-					<visible>System.HasAddon(script.tvtunes) + Container.Content(TVShows) + StringCompare(Container.FolderPath,videodb://2/2/)</visible>
-				</control>
-				<control type="button" id="1115">
-					<description>Get TV Tune</description>
-					<width>208</width>
-					<height>57</height>
-					<font>font11</font>
-					<align>center</align>
-					<label>31695</label>
-					<onclick condition="Container.Content(TVShows)">SetProperty(TVShowPath,$INFO[ListItem.FilenameAndPath],Home)</onclick>
-                    <onclick condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + Control.IsVisible(50)">SetProperty(ActorName,$INFO[Container(50).Listitem.Label],Home)</onclick>
-                    <onclick condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">SetProperty(DirectorName,$INFO[ListItem.Director],Home)</onclick>
-                    <onclick condition="[Container.Content(Movies) | Container.Content(Episodes)]">SetProperty(WriterName,$INFO[ListItem.Writer],Home)</onclick>
-					<visible>System.HasAddon(script.metadata.actors)</visible>
-				</control>
-			</control>
-		</control>
+
 		<!-- Cast Scrollbar -->
 		<control type="scrollbar" id="923">
 			<posx>1230</posx>
