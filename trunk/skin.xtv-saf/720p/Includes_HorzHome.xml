@@ -1506,7 +1506,7 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9250" description="Music">
-				<visible>!Skin.HasSetting(home-music) | !Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
+				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				<animation type="Conditional" condition="![ControlGroup(9250).HasFocus() | Control.HasFocus(9260)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
@@ -1552,7 +1552,7 @@
 					<aligny>top</aligny>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<visible>!Skin.HasSetting(home-musicvideo)</visible>
+					<visible>Skin.HasSetting(home-musicvideo)</visible>
 				</control>
 				<control type="button" id="9274">
 					<width>210</width>
