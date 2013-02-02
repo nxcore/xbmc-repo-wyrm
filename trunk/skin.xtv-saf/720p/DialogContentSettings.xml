@@ -69,9 +69,9 @@
 			<itemlayout height="44">
 				<control type="image">
 					<posx>8</posx>
-					<posy>8</posy>
-					<width>28</width>
-					<height>28</height>
+					<posy>4</posy>
+					<width>36</width>
+					<height>36</height>
 					<info>ListItem.Icon</info>
 				</control>
 				<control type="label">
@@ -96,9 +96,9 @@
 				</control>
 				<control type="image">
 					<posx>8</posx>
-					<posy>8</posy>
-					<width>28</width>
-					<height>28</height>
+					<posy>4</posy>
+					<width>36</width>
+					<height>36</height>
 					<info>ListItem.Icon</info>
 				</control>
 				<control type="label">
