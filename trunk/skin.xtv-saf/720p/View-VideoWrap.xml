@@ -42,7 +42,7 @@
 					<posy>340</posy>
 					<height>120</height>
 					<width>77</width>
-					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -59,23 +59,25 @@
 			</itemlayout>
 			<focusedlayout height="405" width="276">
 				<control type="image">
-					<posx>-5</posx>
-					<posy>100</posy>
-					<height>402</height>
-					<width>274</width>
-					<texture diffuse="mask-rect.png">mask-hilite.png</texture>
-					<aspectratio>stretch</aspectratio>
-					<colordiffuse>IconGlow</colordiffuse>
-					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
-				</control>
-				<control type="image">
 					<posx>25</posx>
-					<posy>143</posy>
+					<posy>150</posy>
 					<height>321</height>
 					<width>207</width>
 					<texture>case-dvd.png</texture>
+					<bordertexture border="16">mask-hilite.png</bordertexture>
+					<bordersize>10</bordersize>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>26</posx>
+					<posy>148</posy>
+					<height>312</height>
+					<width>203</width>
+					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<info>ListItem.Icon</info>
+					<visible>SubString(ListItem.Icon,Default,Left) + ![SubString(ListItem.Icon,DefaultFolder.png,Left)]</visible>
 				</control>
 				<control type="image">
 					<posx>26</posx>
@@ -87,13 +89,24 @@
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
-					<posx>26</posx>
-					<posy>148</posy>
-					<height>312</height>
-					<width>203</width>
-					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<posx>35</posx>
+					<posy>164</posy>
+					<height>292</height>
+					<width>183</width>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<aspectratio>stretch</aspectratio>
-					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<visible>Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>28</posx>
+					<posy>144</posy>
+					<height>328</height>
+					<width>213</width>
+					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<bordertexture border="16">mask-hilite.png</bordertexture>
+					<bordersize>10</bordersize>
+					<aspectratio>stretch</aspectratio>
+					<visible>!Skin.HasSetting(DVDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>430</posx>

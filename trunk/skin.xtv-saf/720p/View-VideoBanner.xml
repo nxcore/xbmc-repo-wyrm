@@ -236,9 +236,9 @@
 				<!-- Scroll Bar -->
 				<control type="scrollbar" id="29">
 					<posx>1239</posx>
-					<posy>137</posy>
+					<posy>105</posy>
 					<width>24</width>
-					<height>432</height>
+					<height>524</height>
 					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
 					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
