@@ -712,25 +712,47 @@
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					<control type="image">
-						<posx>152</posx>
-						<posy>184</posy>
-						<width>322</width>
-						<height>322</height>
-						<colordiffuse>StudioShadow</colordiffuse>
+						<description>list item icon</description>
+						<posx>90</posx>
+						<posy>120</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true">DefaultVideo.png</texture>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
 						<include>icon-fade</include>
 					</control>
 					<control type="image">
-						<posx>150</posx>
-						<posy>182</posy>
-						<width>322</width>
-						<height>322</height>
-						<colordiffuse>StudioDiffuse</colordiffuse>
+						<description>list item icon reflection</description>
+						<posx>90</posx>
+						<posy>570</posy>
+						<width>448</width>
+						<height>448</height>
+						<texture background="true" flipy="true">DefaultVideo.png</texture>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="DefaultVideo.png">special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
 						<include>icon-fade</include>
 					</control>
+					<control type="group"> 
+						<control type="image">
+							<posx>242</posx>
+							<posy>314</posy>
+							<width>161</width>
+							<height>161</height>
+							<colordiffuse>StudioShadow</colordiffuse>
+							<aspectratio>keep</aspectratio>
+							<texture>special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
+							<include>icon-fade</include>
+						</control>
+						<control type="image">
+							<posx>240</posx>
+							<posy>312</posy>
+							<width>161</width>
+							<height>161</height>
+							<colordiffuse>StudioDiffuse</colordiffuse>
+							<aspectratio>keep</aspectratio>
+							<texture>special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
+							<include>icon-fade</include>
+						</control>
+					</control>	
 				</control>
 				<control type="group">
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -767,7 +789,7 @@
 						<posy>120</posy>
 						<width>448</width>
 						<height>448</height>
-						<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>
@@ -777,7 +799,7 @@
 						<posy>570</posy>
 						<width>448</width>
 						<height>448</height>
-						<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
 						<aspectratio>keep</aspectratio>
 						<include>icon-fade</include>
 					</control>
