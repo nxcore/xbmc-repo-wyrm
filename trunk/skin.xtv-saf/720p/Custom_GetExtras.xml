@@ -1,6 +1,5 @@
 <window type="dialog" id="1154">
 	<defaultcontrol always="true">999</defaultcontrol>
-	<include>shutdown-ani</include>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="group">
@@ -14,6 +13,7 @@
 				<colordiffuse>osd-background</colordiffuse>
 			</control>
 			<control type="group">
+				<include>shutdown-ani</include>
 				<posx>337</posx>
 				<posy>195</posy>
 				<control type="image">
