@@ -21,10 +21,10 @@
 		</control>
 
 		<!-- Use Vertical Home menu-->
-		<include condition="!Skin.HasSetting(horizontal-homemenu)">VertHomeMenu</include>
+		<include condition="Skin.HasSetting(homemenu-vertical)">VertHomeMenu</include>
 		
 		<!-- Use Horizontal Home menu-->
-		<include condition="Skin.HasSetting(horizontal-homemenu)">HorzHomeMenu</include>
+		<include condition="Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)">HorzHomeMenu</include>
 		
 		<!-- Low memory warning -->
 		<include>memory-low</include>
