@@ -12,17 +12,35 @@
 			<include>icon-header-commons</include>
 			<texture>icon-programs.png</texture>
 		</control>
-		<control type="label">
-			<description>Programs Label</description>
+		<control type="grouplist">
 			<posx>946</posx>
 			<posy>50</posy>
-			<width>309</width>
+			<width>360</width>
 			<height>37</height>
-			<label>31029</label>
-			<font>font20</font>
-			<textcolor>button-text</textcolor>
-			<include>list-fade</include>
+			<align>left</align>
+			<aligny>center</aligny>
+			<orientation>horizontal</orientation>
+			<control type="label" description="Heading">
+				<description>Programs Label</description>
+				<width min="60" max="250">auto</width>
+				<height>37</height>
+				<label>31029</label>
+				<font>font20</font>
+				<aligny>center</aligny>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="label" description="Number of files">
+				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
+				<posy>13</posy>
+				<width min="40" max="110">auto</width>
+				<height>38</height>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<label>$INFO[Container.NumItems, (,)]</label>
+			</control>
 		</control>
+		
 		<control type="image">
 			<description>list item overlay</description>
 			<posx>548</posx>

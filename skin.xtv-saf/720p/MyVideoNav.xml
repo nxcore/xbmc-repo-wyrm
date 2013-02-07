@@ -15,52 +15,10 @@
 			<texture>icon-video-sml.png</texture>
 			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos)</visible>
 		</control>
-		<control type="label">
-			<description>Video Label</description>
-			<posx>946</posx>
-			<posy>50</posy>
-			<width>309</width>
-			<height>37</height>
-			<label>3</label>
-			<font>font20</font>
-			<style>bold</style>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<include>list-fade</include>
-			<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos)</visible>
-		</control>
-		<control type="label">
-			<description>Movie Label</description>
-			<posx>946</posx>
-			<posy>50</posy>
-			<width>309</width>
-			<height>37</height>
-			<label>31026</label>
-			<font>font20</font>
-			<style>bold</style>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<include>list-fade</include>
-			<visible>Container.Content(movies)</visible>
-		</control>
 		<control type="image">
 			<description>TV Logo</description>
 			<include>icon-header-commons</include>
 			<texture>icon-tv.png</texture>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-		</control>
-		<control type="label">
-			<description>TV Shows Label</description>
-			<posx>946</posx>
-			<posy>50</posy>
-			<width>309</width>
-			<height>37</height>
-			<label>31027</label>
-			<font>font20</font>
-			<style>bold</style>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<include>list-fade</include>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
 		<control type="image">
@@ -69,19 +27,34 @@
 			<texture>icon-musicvideo-sml.png</texture>
 			<visible>Container.Content(MusicVideos)</visible>
 		</control>
-		<control type="label">
-			<description>Music Video Label</description>
+
+		<control type="grouplist">
 			<posx>946</posx>
 			<posy>50</posy>
-			<width>309</width>
+			<width>360</width>
 			<height>37</height>
-			<label>31028</label>
-			<font>font20</font>
-			<style>bold</style>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<include>list-fade</include>
-			<visible>Container.Content(MusicVideos)</visible>
+			<align>left</align>
+			<aligny>center</aligny>
+			<orientation>horizontal</orientation>
+			<control type="label" description="Heading">
+				<description>Video screen headings</description>
+				<width min="60" max="250">auto</width>
+				<height>37</height>
+				<label>$VAR[VideoHeadings]</label>
+				<font>font20</font>
+				<aligny>center</aligny>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="label" description="Number of files">
+				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
+				<posy>13</posy>
+				<width min="40" max="110">auto</width>
+				<height>38</height>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<label>$INFO[Container.NumItems, (,)]</label>
+			</control>
 		</control>
 		
 		<include>memory-low</include>
