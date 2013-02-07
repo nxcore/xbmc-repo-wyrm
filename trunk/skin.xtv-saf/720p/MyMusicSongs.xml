@@ -12,15 +12,33 @@
 			<include>icon-header-commons</include>
 			<texture>icon-music-sml.png</texture>
 		</control>
-		<control type="label">
-			<description>Music Label</description>
+		<control type="grouplist">
 			<posx>946</posx>
 			<posy>50</posy>
-			<width>309</width>
+			<width>360</width>
 			<height>37</height>
-			<label>31030</label>
-			<font>font20</font>
-			<textcolor>button-text</textcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<orientation>horizontal</orientation>
+			<control type="label" description="Heading">
+				<description>Video screen headings</description>
+				<width min="60" max="250">auto</width>
+				<height>37</height>
+				<label>$VAR[MusicHeadings]</label>
+				<font>font20</font>
+				<aligny>center</aligny>
+				<textcolor>button-text</textcolor>
+			</control>
+			<control type="label" description="Number of files">
+				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
+				<posy>13</posy>
+				<width min="40" max="110">auto</width>
+				<height>38</height>
+				<font>font13</font>
+				<textcolor>button-text</textcolor>
+				<aligny>center</aligny>
+				<label>$INFO[Container.NumItems, (,)]</label>
+			</control>
 		</control>
 		
 		<include>memory-low</include>
