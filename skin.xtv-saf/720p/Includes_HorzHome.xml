@@ -986,55 +986,55 @@
 					<item id="1">
 						<description>Video Menu</description>
 						<label>3</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
 						<label>20338</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
 						<description>TV Show Menu</description>
 						<label>20343</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>!System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>
 					</item>
 					<item id="4">
 						<description>TV Show Menu</description>
 						<label>19020</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>	
 					</item>
 					<item id="5">
 						<description>Music Menu</description>
 						<label>2</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="6">
 						<description>Pictures Menu</description>
 						<label>1</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>!Skin.HasSetting(home-photos)</visible>
 					</item>
 					<item id="7">
 						<description>Addon Menu</description>
 						<label>24001</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(home-programs)</visible>
 					</item>
 					<item id="8">
 						<description>Weather Menu</description>
 						<label>8</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					<item id="9">
 						<description>System Menu</description>
 						<label>13000</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 				</content>
 			</control>
