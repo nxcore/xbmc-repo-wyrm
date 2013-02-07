@@ -60,14 +60,14 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>580</width>
-				<height>552</height>
+				<height>600</height>
 				<onup>8999</onup>
 				<ondown>8999</ondown>
 				<viewtype label="List">list</viewtype>
 				<scrolltime>220</scrolltime>
-				<itemlayout width="560" height="46">
+				<itemlayout width="560" height="50">
 					<control type="label">
-						<posy>4</posy>
+						<posy>8</posy>
 						<posx>20</posx>
 						<height>30</height>
 						<width>440</width>
@@ -85,17 +85,17 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="560" height="46">
+				<focusedlayout width="560" height="50">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>480</width>
-						<height>46</height>
+						<height>50</height>
 						<texture>default-button.png</texture>
 						<aspectratio>stretch</aspectratio>
 					</control>	
 					<control type="label">
-						<posy>4</posy>
+						<posy>8</posy>
 						<posx>20</posx>
 						<height>30</height>
 						<width>440</width>
