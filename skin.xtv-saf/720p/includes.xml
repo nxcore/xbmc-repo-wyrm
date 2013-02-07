@@ -513,6 +513,7 @@
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
+			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 	</include>
 	<!-- Start Current Sort Letter -->
