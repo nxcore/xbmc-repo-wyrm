@@ -19,8 +19,31 @@
 					<posy>5</posy>
 					<width>120</width>
 					<height>168</height>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
+					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<info>ListItem.Icon</info>
+					<visible>SubString(ListItem.Icon,Default,Left) + ![SubString(ListItem.Icon,DefaultFolder.png,Left)]</visible>
+				</control>
+				<control type="image">
+					<posx>90</posx>
+					<posy>5</posy>
+					<width>120</width>
+					<height>168</height>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
+					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+				</control>
+				<control type="image">
+					<posx>90</posx>
+					<posy>5</posy>
+					<width>120</width>
+					<height>168</height>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>224</posx>
