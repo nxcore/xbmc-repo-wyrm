@@ -44,7 +44,7 @@
 			<!-- Show time on home screen -->
 			<control type="label">
 				<description>Time and Date</description>
-				<posx>354</posx>
+				<posx>754</posx>
 				<posy>10</posy>
 				<width>566</width>
 				<height>50</height>
@@ -53,71 +53,7 @@
 				<font>font18</font>
 			</control>
 		</control>
-		<control type="group">
-			<visible>!Skin.HasSetting(home-currentweather)</visible>
-			<!-- Weather Condition -->
-			<control type="label">
-				<description>Can't get current weather conditions</description>
-				<posx>1185</posx>
-				<posy>10</posy>
-				<width>212</width>
-				<height>50</height>
-				<wrapmultiline>true</wrapmultiline>
-				<label>412</label>
-				<font>font13</font>
-				<align>right</align>
-				<!--<aligny>center</aligny>-->
-				<visible>IsEmpty(Weather.Conditions)</visible>
-			</control>
-			<control type="group">
-				<visible>!IsEmpty(Weather.Conditions)</visible>
-				<control type="label">
-					<description>current condition label</description>
-					<posx>1070</posx>
-					<posy>10</posy>
-					<width>212</width>
-					<height>50</height>
-					<wrapmultiline>true</wrapmultiline>
-					<label>$INFO[Weather.Conditions]</label>
-					<font>font13</font>
-					<align>right</align>
-					<aligny>center</aligny>
-				</control>
-				<control type="image">
-					<description>current weather icon</description>
-					<posx>1080</posx>
-					<posy>10</posy>
-					<height>50</height>
-					<width>50</width>
-					<texture>$INFO[Weather.Conditions]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>!Skin.HasSetting(weather-animateicon)</visible>
-				</control>
-				<control type="multiimage">
-					<description>current weather animated icon</description>
-					<posx>1080</posx>
-					<posy>10</posy>
-					<width>50</width>
-					<height>50</height>
-					<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
-					<aspectratio>keep</aspectratio>
-					<timeperimage>200</timeperimage>
-					<randomize>false</randomize>
-					<fadetime>0</fadetime>
-					<visible>Skin.HasSetting(weather-animateicon)</visible>
-				</control>
-				<control type="label">
-					<description>current temp value</description>
-					<posx>1140</posx>
-					<posy>10</posy>
-					<width>120</width>
-					<height>50</height>
-					<font>font22</font>
-					<align>left</align>
-					<label>$INFO[Weather.Temperature]</label>
-				</control>
-			</control>
-		</control>
+
 		<!-- Shelf icons-->
 		<control type="group">
 			<!-- Video icons -->
@@ -176,8 +112,8 @@
 								<posy>10</posy>
 								<width>130</width>
 								<height>178</height>
-								<aspectratio>stretch</aspectratio>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout height="245" width="210">
@@ -195,11 +131,26 @@
 								<posy>5</posy>
 								<width>140</width>
 								<height>188</height>
+								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<bordertexture border="10">mask-hilite.png</bordertexture>
+								<bordersize>9</bordersize>
+								<texture diffuse="mask-rect.png" fallback="blank.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+								<animation type="Focus" reversible="false">
+									<effect type="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out" />
+								</animation>
+								<visible>Control.HasFocus(9160) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
+							</control>
+							<control type="image">
+								<posx>25</posx>
+								<posy>5</posy>
+								<width>140</width>
+								<height>188</height>
 								<aspectratio>stretch</aspectratio>
-								<bordertexture border="5">folder-focus.png</bordertexture>
-								<bordersize>5</bordersize>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-								<visible>Control.HasFocus(9160)</visible>
+								<texture background="true" diffuse="mask-rect.png">DefaultMovies.png</texture>
+								<animation type="Focus" reversible="false">
+									<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
+								</animation>
+								<visible>Control.HasFocus(9160) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
 							</control>
 							<control type="label">
 								<description>Item label</description>
@@ -328,10 +279,27 @@
 							<align>center</align>
 							<aligny>bottom</aligny>
 							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.ActualIcon]</texture>
-							<visible>Control.HasFocus(9210)</visible>
+							<bordertexture border="10">mask-hilite.png</bordertexture>
+							<bordersize>9</bordersize>
+							<texture fallback="blank.png" background="true">$INFO[ListItem.ActualIcon]</texture>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out" />
+							</animation>
+							<visible>Control.HasFocus(9210) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
+						</control>
+						<control type="image">
+							<posx>14</posx>
+							<posy>20</posy>
+							<width>220</width>
+							<height>200</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
+							</animation>
+							<visible>Control.HasFocus(9210) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
 						</control>
 						<control type="label">
 							<posx>126</posx>
@@ -481,10 +449,27 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>Control.HasFocus(9260)</visible>
+							<bordertexture border="10">mask-hilite.png</bordertexture>
+							<bordersize>9</bordersize>
+							<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out" />
+							</animation>
+							<visible>Control.HasFocus(9260) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
+						</control>
+						<control type="image">
+							<posx>20</posx>
+							<posy>25</posy>
+							<width>170</width>
+							<height>170</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" diffuse="mask-rect.png">DefaultMusicAlbums.png</texture>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
+							</animation>
+							<visible>Control.HasFocus(9260) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
 						</control>
 						<control type="label">
 							<posx>105</posx>
@@ -1044,7 +1029,7 @@
 						<description>Weather Menu</description>
 						<label>8</label>
 						<onclick>-</onclick>
-						<visible>Skin.HasSetting(home-weather)</visible>
+						<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					<item id="9">
 						<description>System Menu</description>
@@ -1828,7 +1813,7 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9400" description="Weather">
-				<visible>Skin.HasSetting(home-weather)</visible>
+				<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
 				<animation type="Conditional" condition="!ControlGroup(9400).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
