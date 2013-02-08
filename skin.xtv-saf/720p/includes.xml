@@ -220,7 +220,7 @@
 					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 					<aspectratio>stretch</aspectratio>
-					<visible>!IsEmpty(ListItem.Path)</visible>
+					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
 				<control type="image">
 					<description>Fanart background</description>
@@ -247,7 +247,7 @@
 					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
-					<visible>!IsEmpty(ListItem.Path)</visible>
+					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
 				<!-- TV Show Fallback -->
 				<control type="image" id="6312">
@@ -275,7 +275,7 @@
 					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
-					<visible>!IsEmpty(ListItem.Path)</visible>
+					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
 				<control type="group">
 					<visible>IsEmpty(Control.GetLabel(6320))</visible>
@@ -330,7 +330,7 @@
 					<fadetime>400</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
-					<visible>!IsEmpty(ListItem.Path)</visible>
+					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
 				<control type="group">
 					<visible>IsEmpty(Control.GetLabel(6340))</visible>
