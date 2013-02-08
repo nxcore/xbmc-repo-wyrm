@@ -4,7 +4,7 @@
 	<allowoverlay>no</allowoverlay>
 	<include>screen-fade</include>
 	<controls>
-		<include>background</include>
+		<include>backgroundvideo</include>
 		<control type="button" id="7050">
 			<posy>-12</posy>
 			<posy>-12</posy>
@@ -57,6 +57,18 @@
 					<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
 				</control>
 			</control>
+			<!-- Show logo -->
+			<control type="image" id="7016">
+				<posx>531</posx>
+				<posy>-38</posy>
+				<width>266</width>
+				<height>74</height>
+				<texture background="true">$INFO[ListItem.path]logo.png</texture>
+				<aligny>bottom</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+			</control>
 			<!-- Title -->
 			<control type="fadelabel">
 				<posx>531</posx>
@@ -71,6 +83,7 @@
 				<shadowcolor>shadow-text</shadowcolor>
 				<info>ListItem.Title</info>
 				<animation effect="fade" time="200">WindowClose</animation>
+				<visible>IsEmpty(Control.GetLabel(7016))</visible>
 			</control>
 			<!-- Genre -->
 			<control type="label">
