@@ -1,7 +1,7 @@
 <includes>
 	<include name="AlbumCoverflow">
 		<control type="wraplist" id="57">
-			<viewtype label="31946">Wraplist</viewtype>
+			<viewtype label="31945">Wraplist</viewtype>
 			<posx>-141</posx>
 			<posy>187</posy>
 			<width>1416</width>

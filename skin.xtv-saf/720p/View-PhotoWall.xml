@@ -9,7 +9,7 @@
 			<onright>1358</onright>
 			<onup>58</onup>
 			<ondown>58</ondown>
-			<viewtype label="31945">Wall</viewtype>
+			<viewtype label="31944">Wall</viewtype>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<scrolltime>200</scrolltime>
 			<preloaditems>5</preloaditems>

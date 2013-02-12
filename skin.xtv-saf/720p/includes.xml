@@ -273,9 +273,9 @@
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
 					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path]$INFO[ListItem.TVShowTitle,,/extrafanart/]</imagepath>
+					<imagepath background="true">$ESCINFO[ListItem.TVShowTitle,ListItem.Path,/extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
-					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
+					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path) + !IsEmpty(ListItem.TVShowTitle)</visible>
 				</control>
 				<!-- TV Show Fallback -->
 				<control type="image">
@@ -465,6 +465,8 @@
 			<height>720</height>
 			<colordiffuse>mask-background</colordiffuse>
 			<texture background="true">black.png</texture>
+			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
+			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
 			<aspectratio>stretch</aspectratio>
 		</control>
 	</include>
@@ -603,7 +605,8 @@
 				<effect type="rotatey" start="-20" end="-20" time="0"/>
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
-			<control type="group">
+			<control type="group"> 
+				<visible>!Container.Content(Addons)</visible>
 				<control type="image">
 					<description>list item icon</description>
 					<posx>122</posx>
@@ -624,6 +627,55 @@
 					<aspectratio>keep</aspectratio>
 					<include>icon-fade</include>
 				</control>
+			</control>
+			<control type="group"> 
+				<visible>Container.Content(Addons)</visible>
+				<control type="group">
+					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<control type="image">
+						<description>list item icon</description>
+						<posx>122</posx>
+						<posy>150</posy>
+						<width>384</width>
+						<height>384</height>
+						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>122</posx>
+						<posy>534</posy>
+						<width>384</width>
+						<height>384</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>
+				<control type="group">
+					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+					<control type="image">
+						<description>list item icon</description>
+						<posx>122</posx>
+						<posy>150</posy>
+						<width>384</width>
+						<height>384</height>
+						<texture background="true">DefaultAddon.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+					<control type="image">
+						<description>list item icon reflection</description>
+						<posx>122</posx>
+						<posy>534</posy>
+						<width>384</width>
+						<height>384</height>
+						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
+						<aspectratio>keep</aspectratio>
+						<include>icon-fade</include>
+					</control>
+				</control>	
 			</control>
 		</control>
 	</include>
