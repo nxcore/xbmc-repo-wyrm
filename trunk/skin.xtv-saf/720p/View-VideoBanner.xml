@@ -1,7 +1,7 @@
 <includes>
 	<include name="BannerView">
 		<control type="list" id="59">
-			<viewtype label="31947">Banner List</viewtype>
+			<viewtype label="31946">Banner List</viewtype>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons)]</visible>
 			<posx>0</posx>
 			<posy>110</posy>

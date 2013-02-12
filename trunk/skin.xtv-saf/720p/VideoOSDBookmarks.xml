@@ -43,7 +43,7 @@
 			<ondown>23</ondown>
 			<onup>999</onup>
 			<scrolltime>200</scrolltime>
-			<viewtype label="31944">icon</viewtype>
+			<viewtype label="31943">icon</viewtype>
 			<pagecontrol>23</pagecontrol>
 			<orientation>horizontal</orientation>
 			<itemlayout height="200" width="320">

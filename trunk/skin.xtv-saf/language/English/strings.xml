@@ -3,10 +3,10 @@
 
 <strings>
 	<!-- Start startup strings 31001 - 31025-->
-	<string id="31001">Use Startup Playlist</string>
-	<string id="31002">Choose Playlist:</string>
-	<string id="31003">Use Intro Video</string>
-	<string id="31004">Intro File:</string>
+	<string id="31001">Use Startup playlist</string>
+	<string id="31002">Choose playlist:</string>
+	<string id="31003">Use Intro video</string>
+	<string id="31004">Intro file:</string>
 	<!-- End startup strings -->
 
 	<!-- Start home strings 31026 - 31125-->
@@ -18,13 +18,9 @@
 	<string id="31031">Photos</string>
 	<string id="31032">Weather</string>
 	<string id="31033">Files</string>
-	<string id="31034">Scripts</string>
 	<string id="31035">Settings</string>
 	<string id="31036">Play Disc</string>
-	<string id="31037">YouTube</string>
 	<string id="31038">Quit</string>
-	<string id="31039">Change to Adult Mode</string>
-	<string id="31040">Change to Family Mode</string>
 	<!-- End home strings -->
 
 	<!-- Start video strings 31126 - 31225-->
@@ -53,24 +49,6 @@
 	<!-- End photo strings -->
 
 	<!-- Start programs/script strings 31426 - 31525-->
-	<string id="31426">Gamesaves</string>
-    <string id="31427">Default source</string>
- 	<string id="31428">xTV Themes</string>
-	<string id="31429">Theme Installed</string>
-	<string id="31430">Theme already exists.</string>
-	<string id="31431">No themes found.</string>
-	<string id="31432">Downloading Theme:</string>
-	<string id="31433">Download Completed</string>
-	<string id="31434">Download Cancelled</string>
-	<string id="31435">Download Aborted</string>
-	<string id="31436">Go to Appearance settings to apply theme.</string>
-	<string id="31437">Failed to download theme from server.</string>
-	<string id="31438">Could not connect to server.</string>
-	<string id="31439">Check your connection or try again later.</string>
-	<string id="31440">Family Profile</string>
-	<string id="31441">Apply theme now?</string>
-	<string id="31442">Choose a Plugin Type</string>
-	<string id="31443">Choose a Plugin</string>
 	<!-- End script strings -->
 
 	<!-- Begin weather strings 31526 - 31550-->
@@ -89,11 +67,10 @@
 	<!-- Start system strings 31551 - 31650 -->
 	<string id="31551">System</string>
 	<string id="31552">File Manager</string>
-	<string id="31553">Scripts</string>
-	<string id="31554">Gamesaves</string>
+
 	<string id="31555">Profiles</string>
 	<string id="31556">Skin</string>
-	<string id="31557">About xTV</string>
+
 	<string id="31558">Power Menu</string>
 	<string id="31559">System Info</string>
 	<string id="31560">Support</string>
@@ -122,8 +99,8 @@
 	<!-- Begin Misc. strings 31651 - 31800 -->
 	<string id="31651">Muted</string>
 	<string id="31652">Favorites</string>
-	<string id="31653">Exit XBMC</string>
 
+	<string id="31654">Addon</string>
 	<string id="31655">Settings</string>
 	<string id="31656">Lyrics</string>
 	<string id="31657">Presets</string>
@@ -147,103 +124,87 @@
 	<string id="31675">Forward-16x</string>
 	<string id="31676">Forward-32x</string>
 
-	<string id="31680">Movie Library Entry point</string>
-	<string id="31681">TV Library Entry point</string>
-	<string id="31682">Music Video Library Entry point</string>
-	<string id="31683">Music Library Entry point</string>
+	<string id="31680">Movie library entry point</string>
+	<string id="31681">TV library entry point</string>
+	<string id="31682">Music Video library entry point</string>
+	<string id="31683">Music library entry point</string>
 
-	<string id="31685">Cannot run with this version of XBMC, upgrade required</string>
-	<string id="31686">XBMCScripts</string>
 	<string id="31687">Movie Trailers</string>
 	<string id="31688">Go Back</string>
 	
-	<string id="31690">Plugin</string>
-	<string id="31691">Go Back</string>
 	<string id="31692">Cinema</string>
 	<string id="31693">Get Extras...</string>
-	<string id="31694">Get Logo</string>
+
 	<string id="31695">Get TV Tunes</string>
+	<string id="31696">Video Addons</string>
+	<string id="31697">Music Addons</string>
+	<string id="31698">Picture Addons</string>
+	<string id="31699">Program Addons</string>
 	<!-- End Misc. strings -->
 	
 	<!-- Begin PVR strings 31700 - 31750 -->	
 	<string id="31700">Available Groups</string>
-
 	<!-- End PVR strings -->
 
 	<!-- Begin skin settings strings 31801 - 31999 -->
-	<string id="31801">Use Scrollbar</string>
-	<string id="31838">Use Letterbar</string>
-	<string id="31802">Use Media Overlays</string>
-	<string id="31803">Use Watched State Overlays</string>
-	<string id="31804">Use Now Playing Screens</string>
-	<string id="31823">Enable Autoscroll</string>
+	<string id="31801">Use scrollbar</string>
+	<string id="31802">Use media overlays</string>
+	<string id="31803">Use watched state overlays</string>
+	<string id="31804">Use Now Playing screens</string>
+	<string id="31823">Enable autoscroll</string>
+
+	<string id="31806">Now Playing style visuals</string>
+	<string id="31807">Choose Custom background</string>
+	<string id="31808">Reset Custom background</string>
+	<string id="31809">Use Visuals as background</string>
+	<string id="31818">Use Fanart as background</string>
+	<string id="31824">Location of Custom Weather backgrounds</string>
+	<string id="31805">Reset Custom Weather backgrounds</string>
 	<string id="31845">Show DVD case</string>
 	<string id="31846">Show CD case</string>
-	<string id="31806">Now Playing Style Visuals</string>
-	<string id="31807">Choose Custom Background</string>
-	<string id="31808">Reset Custom Background</string>
-	<string id="31809">Use Visuals as Background</string>
-	<string id="31818">Use Fanart as Background</string>
-	<string id="31824">Location of Custom Weather Backgrounds</string>
-	<string id="31805">Reset Custom Weather Backgrounds</string>
 	
-	<string id="31810">Movies Button Links to Library</string>
-	<string id="31811">TV Button Links to Library</string>
-	<string id="31847">Music Video Button Links to Library</string>
-	<string id="31849">Music Button Links to Library</string>
-
 	<string id="31841">Startup</string>
 	<string id="31813">General</string>
 	<string id="31814">Background</string>
 	<string id="31815">Home Menu</string>
 	<string id="31831">Media Sources</string>
-	<string id="31812">Download Themes</string>
-	<string id="31820">Information</string>
-	<string id="31834">Views</string>
-	<string id="31835">Install Theme</string>
-
-	<string id="31816">Tilt List View Icons</string>
-	<string id="31840">Tilt Wall View</string>
-	<string id="31817">Lock "View As" Panel</string>
 	
-	<string id="31819">Videos In Home Menu</string>
-	<string id="31843">Movies In Home Menu</string>
-	<string id="31844">TV Shows In Home Menu</string>
-	<string id="31842">Music Videos In Home Menu</string>
-	<string id="31827">Music in Home Menu</string>
-	<string id="31828">Addons in Home Menu</string>
-	<string id="31848">Scripts in Home Menu</string>
-	<string id="31829">Photos in Home Menu</string>
-	<string id="31830">Profiles in Home Menu</string>
-	<string id="31821">YouTube In Home Menu</string>
-	<string id="31822">Weather In Home Menu</string>
-	<string id="31825">Time On Home Screen</string>
-	<string id="31826">Quit From Home Menu</string>
-	<string id="31832">Current Weather On Home Screen</string>
-	<string id="31833">Favourites On Home Menu</string>
-	<string id="31836">Search On Home Menu</string>
-	<string id="31890">Play Disc On Home Menu</string>
+	<string id="31816">Tilt List view icons</string>
+	<string id="31840">Tilt Wall view</string>
+	<string id="31817">Lock "View As" panel</string>
+	
+	<string id="31819">Videos in Home menu</string>
+	<string id="31843">Movies in Home menu</string>
+	<string id="31844">TV Shows in Home menu</string>
+	<string id="31842">Music Videos in Home menu</string>
+	<string id="31827">Music in Home menu</string>
+	<string id="31828">Addons in Home menu</string>
+	<string id="31829">Pictures in Home menu</string>
+	<string id="31830">Profiles in Home menu</string>
+	<string id="31822">Weather in Home menu</string>
+	<string id="31833">Favourites in Home menu</string>
+	<string id="31836">Search in Home menu</string>
+	<string id="31890">Play Disc in Home menu</string>
+	<string id="31826">Quit From Home menu</string>
+	
+	<string id="31832">Current weather on Home screen</string>
+	<string id="31825">Time on Home screen</string>
+	<string id="31820">Animated weather icons</string>
 	<string id="31891">Show subtitle button in OSD</string>
-	<string id="31892">Family Mode Toggle on Home Menu</string>
-	<string id="31893">Profile:</string>
-	<string id="31894">Wake external sources</string>
-
-	<string id="31850">Script:</string>
-	<string id="31851">Plugin:</string>
-
-	<string id="31852">Set Default Movie source</string>
-    <string id="31853">Set Default TV source</string>
-	<string id="31854">Set Default Music Video source</string>
-	<string id="31855">Source:</string>
-
+	<string id="31852">Use TV Tunes</string>
+	<string id="31853">Download media artwork</string>
+	
 	<!-- Viewtype Names -->
 	<string id="31941">List</string>
-	<string id="31942">List2</string>
-	<string id="31943">Wrap</string>
-	<string id="31944">Icons</string>
-	<string id="31945">Wall</string>
-	<string id="31946">Coverflow</string>
-	<string id="31947">Banner</string>
+	<string id="31942">Wrap</string>
+	<string id="31943">Icons</string>
+	<string id="31944">Wall</string>
+	<string id="31945">Coverflow</string>
+	<string id="31946">Banner</string>
 
+	<!-- Spincontrol options -->
+	<string id="31951">Vertical</string>
+	<string id="31952">Horizontal</string>
+	<string id="31953">Icon</string>
 	<!-- End skin settings strings -->
 </strings>

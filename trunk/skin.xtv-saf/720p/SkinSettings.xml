@@ -124,11 +124,11 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="button" id="987">
+				<description>Custom Settings Button</description>
 				<posx>950</posx>
 				<posy>381</posy>
 				<width>305</width>
 				<height>56</height>
-				<description>Custom Settings Button</description>
 				<font>font12</font>
 				<width>305</width>
 				<height>56</height>
@@ -487,7 +487,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Animated Weather Icons</label>
+						<label>31820</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
 						<selected>Skin.HasSetting(weather-animateicon)</selected>
@@ -521,7 +521,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
 						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label> $LOCALIZE[31850]</label>
+						<label> $LOCALIZE[31654]:</label>
 						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
 						<haspath>true</haspath>
 						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
@@ -538,7 +538,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Use TV Tunes</label>
+						<label>31852</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
 						<selected>Skin.HasSetting(tv_theme)</selected>
@@ -557,7 +557,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<font>font12</font>
-						<label>Download Media artwork</label>
+						<label>31853</label>
 						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -673,13 +673,13 @@
 							</focusedlayout>
 							<content>
 								<item>
-									<label>Horizontal</label>
+									<label>31952</label>
 									<onclick>Skin.Reset(homemenu-horizontal)</onclick>
 									<onclick>Skin.SetBool(homemenu-vertical)</onclick>
 									<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 								</item>
 								<item>
-									<label>Vertical</label>
+									<label>31951</label>
 									<onclick>Skin.Reset(homemenu-vertical)</onclick>
 									<onclick>Skin.SetBool(homemenu-horizontal)</onclick>
 									<visible>Skin.HasSetting(homemenu-vertical)</visible>
@@ -718,13 +718,13 @@
 							</focusedlayout>
 							<content>
 								<item>
-									<label>Horizontal</label>
+									<label>31952</label>
 									<onclick>Skin.Reset(homemenu-horizontal)</onclick>
 									<onclick>Skin.SetBool(homemenu-vertical)</onclick>
 									<visible>Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)</visible>
 								</item>
 								<item>
-									<label>Vertical</label>
+									<label>31951</label>
 									<onclick>Skin.Reset(homemenu-vertical)</onclick>
 									<onclick>Skin.SetBool(homemenu-horizontal)</onclick>
 									<visible>Skin.HasSetting(homemenu-vertical)</visible>
@@ -1099,7 +1099,142 @@
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.String(custom-weatherbackgrounds)</visible>
 					</control>
-					<control type="radiobutton" id="410">
+					<control type="group" id="410">
+						<height>56</height>
+						<width>885</width>
+						<control type="list" id="411">
+							<posx>0</posx>
+							<posy>0</posy>
+							<height>56</height>
+							<width>885</width>
+							<font>font12</font>
+							<onup>409</onup>
+							<ondown>413</ondown>
+							<onleft>noop</onleft>
+							<onright>412</onright>
+							<scrolltime>0</scrolltime>
+							<itemlayout width="885" height="56"/>
+							<focusedlayout width="833" height="56">
+								<control type="image">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>885</width>
+									<height>56</height>
+									<texture>default-button.png</texture>
+									<visible>ControlGroup(410).HasFocus()</visible>
+								</control>
+								<control type="label">
+									<posx>35</posx>
+									<posy>10</posy>
+									<height>30</height>
+									<width>800</width>
+									<aligny>center</aligny>
+									<font>font12</font>
+									<textcolor>button-text</textcolor>
+									<label>Background visibilty</label>
+								</control>
+								<control type="label">
+									<posx>790</posx>
+									<posy>10</posy>
+									<height>30</height>
+									<width>800</width>
+									<align>right</align>
+									<aligny>center</aligny>
+									<font>font12</font>
+									<textcolor>button-text</textcolor>
+									<info>ListItem.Label</info>
+								</control>
+								<control type="image">
+									<posx>806</posx>
+									<posy>15</posy>
+									<width>27</width>
+									<height>25</height>
+									<texture>scroll-down-focus.png</texture>
+									<visible>Control.HasFocus(411)</visible>
+								</control>
+								<control type="image">
+									<posx>806</posx>
+									<posy>15</posy>
+									<width>27</width>
+									<height>25</height>
+									<texture>scroll-down.png</texture>
+									<visible>!Control.HasFocus(411)</visible>
+								</control>
+							</focusedlayout>
+							<content>
+								<item id="1">
+									<label>391</label>
+									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
+									<onclick>Skin.SetBool(background-visibiltymed)</onclick>
+									<visible>!Skin.HasSetting(background-visibiltymed) + !Skin.HasSetting(background-visibiltyhigh)</visible>
+								</item>
+								<item id="2">
+									<label>392</label>
+									<onclick>Skin.Reset(background-visibiltymed)</onclick>
+									<onclick>Skin.SetBool(background-visibiltyhigh)</onclick>
+									<visible>Skin.HasSetting(background-visibiltymed)</visible>
+								</item>
+								<item id="3">
+									<label>393</label>
+									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
+									<onclick>Skin.Reset(background-visibiltymed)</onclick>
+									<visible>Skin.HasSetting(background-visibiltyhigh)</visible>
+								</item>
+							</content>
+						</control>
+						<control type="list" id="412">
+							<posx>833</posx>
+							<posy>0</posy>
+							<height>56</height>
+							<width>27</width>
+							<font>font12</font>
+							<onup>409</onup>
+							<ondown>413</ondown>
+							<onleft>411</onleft>
+							<onright>999</onright>
+							<scrolltime>0</scrolltime>
+							<itemlayout width="27" height="56"/>
+							<focusedlayout width="27" height="56">
+								<control type="image">
+									<posx>0</posx>
+									<posy>15</posy>
+									<width>27</width>
+									<height>25</height>
+									<texture>scroll-up.png</texture>
+									<visible>!Control.HasFocus(412)</visible>
+								</control>
+								<control type="image">
+									<posx>0</posx>
+									<posy>15</posy>
+									<width>27</width>
+									<height>25</height>
+									<texture>scroll-up-focus.png</texture>
+									<visible>Control.HasFocus(412)</visible>
+								</control>
+							</focusedlayout>
+							<content>
+								<item id="1">
+									<label>391</label>
+									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
+									<onclick>Skin.SetBool(background-visibiltymed)</onclick>
+									<visible>!Skin.HasSetting(background-visibiltymed) + !Skin.HasSetting(background-visibiltyhigh)</visible>
+								</item>
+								<item id="2">
+									<label>392</label>
+									<onclick>Skin.Reset(background-visibiltymed)</onclick>
+									<onclick>Skin.SetBool(background-visibiltyhigh)</onclick>
+									<visible>Skin.HasSetting(background-visibiltymed)</visible>
+								</item>
+								<item id="3">
+									<label>393</label>
+									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
+									<onclick>Skin.Reset(background-visibiltymed)</onclick>
+									<visible>Skin.HasSetting(background-visibiltyhigh)</visible>
+								</item>
+							</content>
+						</control>
+					</control>
+					<control type="radiobutton" id="413">
 						<description>Use DVD case Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1113,7 +1248,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="411">
+					<control type="radiobutton" id="414">
 						<description>Use CD case Toggle</description>
 						<font>font12</font>
 						<width>885</width>

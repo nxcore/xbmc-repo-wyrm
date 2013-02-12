@@ -221,6 +221,7 @@
 		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
 		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
 		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.content(addons)">$LOCALIZE[31696]</value>
 		<value condition="Container.content(files)">$LOCALIZE[744]</value>
 		<value>$LOCALIZE[3]</value>
 	</variable>
@@ -233,6 +234,7 @@
 		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
 		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
 		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.content(addons)">$LOCALIZE[31697]</value>
 		<value condition="Container.content(files)">$LOCALIZE[744]</value>
 		<value>$LOCALIZE[31030]</value>
 	</variable>

@@ -9,7 +9,7 @@
 			<onright>28</onright>
 			<onup>58</onup>
 			<ondown>58</ondown>
-			<viewtype label="31945">Wall</viewtype>
+			<viewtype label="31944">Wall</viewtype>
 			<scrolltime>100</scrolltime>
 			<include>list-fade</include>
 			<pagecontrol>28</pagecontrol>

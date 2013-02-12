@@ -1,7 +1,7 @@
 <includes>
 	<include name="PhotoWrap">
 		<control type="wraplist" id="54">
-			<viewtype label="31943">Wraplist</viewtype>
+			<viewtype label="31942">Wraplist</viewtype>
 			<posx>10</posx>
 			<posy>193</posy>
 			<width>1256</width>
