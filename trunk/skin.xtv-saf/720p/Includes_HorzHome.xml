@@ -412,7 +412,7 @@
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="245" width="210">
@@ -438,7 +438,7 @@
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
 							<aligny>center</aligny>
-							<texture fallback="DefaultMusicAlbums.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
 							<visible>!Control.HasFocus(9260)</visible>
 						</control>
 						<control type="image">
@@ -465,7 +465,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
-							<texture background="true" diffuse="mask-rect.png">DefaultMusicAlbums.png</texture>
+							<texture background="true" diffuse="mask-rect.png">DefaultAudio.png</texture>
 							<animation type="Focus" reversible="false">
 								<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
 							</animation>
