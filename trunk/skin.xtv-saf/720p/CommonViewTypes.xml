@@ -71,7 +71,7 @@
 			<control type="group">
 				<control type="image" description="Slider">
 					<posx>716</posx>
-					<posy>398</posy>
+					<posy>396</posy>
 					<width>514</width>
 					<height>50</height>
 					<texture>default-button.png</texture>
