@@ -1,9 +1,9 @@
 <window id="107">
-	<animation effect="slide" time="400" start="300,0">WindowOpen</animation>
-	<animation effect="slide" time="400" end="300,0">WindowClose</animation>
+	<animation effect="slide" time="400" start="0,-200">WindowOpen</animation>
+	<animation effect="slide" time="400" end="0,-200">WindowClose</animation>
 	<coordinates>
-		<posx>584</posx>
-		<posy>568</posy>
+		<posx>348</posx>
+		<posy>5</posy>
 	</coordinates>
 	<controls>
 		<control type="image">
