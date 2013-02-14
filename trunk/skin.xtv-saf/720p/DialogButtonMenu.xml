@@ -10,21 +10,14 @@
 			<animation effect="fade" time="50">WindowOpen</animation>
 			<animation effect="fade" time="50">WindowClose</animation>
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>545</posy>
-			<width>1424</width>
-			<height>175</height>
-			<texture>sub-background.png</texture>
-			<include>shutdown-ani</include>
-		</control>
+
 		<control type="label">
-			<description>Time label</description>
+			<description>Profile Label</description>
 			<posx>17</posx>
 			<posy>0</posy>
 			<width>619</width>
 			<height>56</height>
-			<label>$INFO[system.Date] | $INFO[system.Time]</label>
+			<label>$LOCALIZE[20125] $INFO[System.ProfileName]</label>
 			<align>left</align>
 			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
@@ -33,12 +26,12 @@
 			<visible>System.LoggedOn</visible>
 		</control>
 		<control type="label">
-			<description>Profile Label</description>
+			<description>Time label</description>
 			<posx>1256</posx>
 			<posy>0</posy>
 			<width>619</width>
 			<height>56</height>
-			<label>$LOCALIZE[20125] $INFO[System.ProfileName]</label>
+			<label>$INFO[system.Time(hh:mm xx)] $INFO[system.Date]</label>
 			<align>right</align>
 			<aligny>center</aligny>
 			<textcolor>button-text</textcolor>
@@ -46,7 +39,7 @@
 			<font>font18</font>
 			<visible>System.LoggedOn</visible>
 		</control>
-		
+	
 		<control type="group">
 			<posx>0</posx>
 			<posy>500</posy>
