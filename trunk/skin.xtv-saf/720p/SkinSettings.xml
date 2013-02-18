@@ -42,7 +42,7 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>31841</label>
+				<label>31801</label>
 				<onfocus>Skin.SetString(skinsettingmenu,startup)</onfocus>
 				<onup>988</onup>
 				<ondown>982</ondown>
@@ -60,7 +60,7 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>31813</label>
+				<label>31802</label>
 				<onfocus>Skin.SetString(skinsettingmenu,general)</onfocus>
 				<onup>981</onup>
 				<ondown>983</ondown>
@@ -78,7 +78,7 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>31815</label>
+				<label>31803</label>
 				<onfocus>Skin.SetString(skinsettingmenu,home)</onfocus>
 				<onup>982</onup>
 				<ondown>984</ondown>
@@ -96,7 +96,7 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>31814</label>
+				<label>31804</label>
 				<onfocus>Skin.SetString(skinsettingmenu,background)</onfocus>
 				<onup>983</onup>
 				<ondown>985</ondown>
@@ -114,7 +114,7 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>31831</label>
+				<label>31805</label>
 				<onfocus>Skin.SetString(skinsettingmenu,sources)</onfocus>
 				<onup>984</onup>
 				<ondown>987</ondown>
@@ -134,14 +134,14 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>$LOCALIZE[636] $LOCALIZE[1036]</label>
+				<label>31806</label>
 				<onfocus>Skin.SetString(skinsettingmenu,custom)</onfocus>
 				<onclick>ActivateWindow(1153)</onclick>
 				<enable>System.HasAddon(script.favourites)</enable>
 				<onup>985</onup>
 				<ondown>988</ondown>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
@@ -172,7 +172,7 @@
 				<height>56</height>
 				<texturefocus>default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<label>31560</label>
+				<label>31807</label>
 				<onfocus>Skin.SetString(skinsettingmenu,support)</onfocus>
 				<onup>987</onup>
 				<ondown>981</ondown>
@@ -251,7 +251,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31003</label>
+						<label>31850</label>
 						<textwidth>250</textwidth>
 						<onclick>Skin.ToggleSetting(intro-vid)</onclick>
 						<onclick>Skin.Reset(startup-playlist)</onclick>
@@ -269,7 +269,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(intro-vid)</enable>
-						<label>- $LOCALIZE[31004] $INFO[Skin.String(intro-vid-location)]</label>
+						<label>- $LOCALIZE[31851] $INFO[Skin.String(intro-vid-location)]</label>
 						<onclick>Skin.SetFile(intro-vid-location,,special://skin/extras)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -282,7 +282,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31001</label>
+						<label>31852</label>
 						<textwidth>400</textwidth>
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
 						<onclick>Skin.Reset(intro-vid)</onclick>
@@ -298,7 +298,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>- $LOCALIZE[31002] $INFO[Skin.String(Startup_Playlist_Path)]</label>
+						<label>- $LOCALIZE[31853] $INFO[Skin.String(Startup_Playlist_Path)]</label>
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
@@ -358,7 +358,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31817</label>
+						<label>31880</label>
 						<onclick>Skin.ToggleSetting(view-as-lock)</onclick>
 						<selected>Skin.HasSetting(view-as-lock)</selected>
 						<textcolor>button-text</textcolor>
@@ -373,7 +373,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31801</label>
+						<label>31881</label>
 						<onclick>Skin.ToggleSetting(sbar)</onclick>
 						<selected>Skin.HasSetting(sbar)</selected>
 						<textcolor>button-text</textcolor>
@@ -387,7 +387,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31802</label>
+						<label>31883</label>
 						<onclick>Skin.ToggleSetting(overlay)</onclick>
 						<selected>Skin.HasSetting(overlay)</selected>
 						<textcolor>button-text</textcolor>
@@ -401,7 +401,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31803</label>
+						<label>31884</label>
 						<onclick>Skin.ToggleSetting(watched-overlay)</onclick>
 						<selected>Skin.HasSetting(watched-overlay)</selected>
 						<textcolor>button-text</textcolor>
@@ -415,7 +415,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31806</label>
+						<label>31885</label>
 						<onclick>Skin.ToggleSetting(np-vis)</onclick>
 						<selected>Skin.HasSetting(np-vis)</selected>
 						<textcolor>button-text</textcolor>
@@ -429,7 +429,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31816</label>
+						<label>31886</label>
 						<onclick>Skin.ToggleSetting(tilted-icons)</onclick>
 						<selected>Skin.HasSetting(tilted-icons)</selected>
 						<textcolor>button-text</textcolor>
@@ -443,7 +443,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31840</label>
+						<label>31887</label>
 						<onclick>Skin.ToggleSetting(tilted-videowall)</onclick>
 						<selected>Skin.HasSetting(tilted-videowall)</selected>
 						<textcolor>button-text</textcolor>
@@ -457,7 +457,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31825</label>
+						<label>31888</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-time)</onclick>
 						<selected>!Skin.HasSetting(home-time)</selected>
@@ -472,7 +472,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31832</label>
+						<label>31889</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
 						<selected>!Skin.HasSetting(home-currentweather)</selected>
@@ -487,7 +487,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31820</label>
+						<label>31890</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
 						<selected>Skin.HasSetting(weather-animateicon)</selected>
@@ -519,16 +519,16 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<textwidth>460</textwidth>
+						<textwidth>480</textwidth>
 						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label> $LOCALIZE[31654]:</label>
+						<label>- $LOCALIZE[31654]:</label>
 						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
 						<haspath>true</haspath>
 						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
 						<aligny>center</aligny>
-						<textoffsetx>50</textoffsetx>
+						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(osd-subtitles)</visible>
 					</control>
 					<control type="radiobutton" id="213">
@@ -538,7 +538,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31852</label>
+						<label>31892</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
 						<selected>Skin.HasSetting(tv_theme)</selected>
@@ -557,7 +557,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<font>font12</font>
-						<label>31853</label>
+						<label>31893</label>
 						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -641,7 +641,7 @@
 									<aligny>center</aligny>
 									<font>font12</font>
 									<textcolor>button-text</textcolor>
-									<label>Home menu type</label>
+									<label>31900</label>
 								</control>
 								<control type="label">
 									<posx>790</posx>
@@ -738,7 +738,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31819</label>
+						<label>31901</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-video)</onclick>
 						<selected>Skin.HasSetting(home-video)</selected>
@@ -753,7 +753,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31843</label>
+						<label>31902</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-movie)</onclick>
 						<selected>!Skin.HasSetting(home-movie)</selected>
@@ -768,7 +768,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31844</label>
+						<label>31903</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-tv)</onclick>
 						<selected>!Skin.HasSetting(home-tv)</selected>
@@ -783,7 +783,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31842</label>
+						<label>31904</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
 						<selected>Skin.HasSetting(home-musicvideo)</selected>
@@ -798,7 +798,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31827</label>
+						<label>31905</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-music)</onclick>
 						<selected>!Skin.HasSetting(home-music)</selected>
@@ -808,12 +808,12 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="308">
-						<description>Programs On Home toggle</description>
+						<description>Addons On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31828</label>
+						<label>31906</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-programs)</onclick>
 						<selected>Skin.HasSetting(home-programs)</selected>
@@ -823,12 +823,12 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="309">
-						<description>Photos On Home toggle</description>
+						<description>Pictures On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31829</label>
+						<label>31907</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-photos)</onclick>
 						<selected>!Skin.HasSetting(home-photos)</selected>
@@ -843,7 +843,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31830</label>
+						<label>31908</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-profile)</onclick>
 						<selected>Skin.HasSetting(home-profile)</selected>
@@ -853,27 +853,12 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="311">
-						<description>Search On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>31836</label>
-						<textwidth>480</textwidth>
-						<onclick>Skin.ToggleSetting(home-search)</onclick>
-						<selected>Skin.HasSetting(home-search)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="312">
 						<description>Weather On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31822</label>
+						<label>31909</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-weather)</onclick>
 						<selected>Skin.HasSetting(home-weather)</selected>
@@ -882,16 +867,31 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="313">
+					<control type="radiobutton" id="312">
 						<description>Favorites On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31833</label>
+						<label>31910</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-favorites)</onclick>
 						<selected>Skin.HasSetting(home-favorites)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="radiobutton" id="313">
+						<description>Search On Home toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>31911</label>
+						<textwidth>480</textwidth>
+						<onclick>Skin.ToggleSetting(home-search)</onclick>
+						<selected>Skin.HasSetting(home-search)</selected>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -903,7 +903,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31890</label>
+						<label>31912</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
 						<selected>Skin.HasSetting(home-playdisc)</selected>
@@ -918,7 +918,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31826</label>
+						<label>31913</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
 						<selected>Skin.HasSetting(home-shutdown)</selected>
@@ -934,7 +934,7 @@
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
-						<label>- $LOCALIZE[13015]:</label>
+						<label>- $LOCALIZE[31914]:</label>
 						<label2>$VAR[QuitLabel2]</label2>
 						<onclick>Skin.ToggleSetting(home-quit)</onclick>
 						<textcolor>button-text</textcolor>
@@ -993,7 +993,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31807</label>
+						<label>31860</label>
 						<onclick>Skin.SetImage(custom-background)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1006,7 +1006,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31808</label>
+						<label>31861</label>
 						<onclick>Skin.Reset(custom-background)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1019,7 +1019,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31809</label>
+						<label>31862</label>
 						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
 						<selected>Skin.HasSetting(HomeViewToggle)</selected>
 						<textcolor>button-text</textcolor>
@@ -1033,7 +1033,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31818</label>
+						<label>31863</label>
 						<onclick>Skin.ToggleSetting(background-fanart)</onclick>
 						<selected>Skin.HasSetting(background-fanart)</selected>
 						<textcolor>button-text</textcolor>
@@ -1047,7 +1047,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Use ExtraFanart as background</label>
+						<label>31864</label>
 						<onclick>Skin.ToggleSetting(background-extrafanart)</onclick>
 						<selected>Skin.HasSetting(background-extrafanart)</selected>
 						<enable>Skin.HasSetting(background-fanart)</enable>
@@ -1063,7 +1063,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Use Artistslideshow as background</label>
+						<label>31865</label>
 						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
 						<selected>Skin.HasSetting(background-slideshow)</selected>
 						<enable>System.HasAddon(script.artistslideshow)</enable>
@@ -1079,7 +1079,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31824</label>
+						<label>31866</label>
 						<onclick>Skin.SetPath(custom-weatherbackgrounds)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1092,7 +1092,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31805</label>
+						<label>31867</label>
 						<onclick>Skin.Reset(custom-weatherbackgrounds)</onclick>
 						<textcolor>button-text</textcolor>
 						<aligny>center</aligny>
@@ -1131,7 +1131,7 @@
 									<aligny>center</aligny>
 									<font>font12</font>
 									<textcolor>button-text</textcolor>
-									<label>Background visibilty</label>
+									<label>31868</label>
 								</control>
 								<control type="label">
 									<posx>790</posx>
@@ -1240,7 +1240,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31845</label>
+						<label>31869</label>
 						<onclick>Skin.ToggleSetting(DVDcase)</onclick>
 						<selected>Skin.HasSetting(DVDcase)</selected>
 						<textcolor>button-text</textcolor>
@@ -1254,7 +1254,7 @@
 						<width>885</width>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>31846</label>
+						<label>31870</label>
 						<onclick>Skin.ToggleSetting(CDcase)</onclick>
 						<selected>Skin.HasSetting(CDcase)</selected>
 						<textcolor>button-text</textcolor>
@@ -1310,7 +1310,7 @@
 						<description>Set Movie library entry point</description>
 						<width>885</width>
 						<height>56</height>
-						<label>31680</label>
+						<label>31920</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
@@ -1325,7 +1325,7 @@
 						<description>Set TV library entry point</description>
 						<width>885</width>
 						<height>56</height>
-						<label>31681</label>
+						<label>31921</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
@@ -1340,7 +1340,7 @@
 						<description>Set Music Video library entry point</description>
 						<width>885</width>
 						<height>56</height>
-						<label>31682</label>
+						<label>31922</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
@@ -1355,7 +1355,7 @@
 						<description>Set Music library entry point</description>
 						<width>885</width>
 						<height>56</height>
-						<label>31683</label>
+						<label>31923</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
@@ -1431,7 +1431,7 @@
 						<texturenofocus>-</texturenofocus>
 						<textwidth>480</textwidth>
 						<font>font12</font>
-						<label>Upload Debug Log file</label>
+						<label>31930</label>
 						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -1449,7 +1449,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<label>Note: Only FULL debug logs can be uploaded.</label>
+						<label>31931</label>
 						<scroll>true</scroll>
 						<visible>!system.getbool(debug.showloginfo)</visible>
 					</control>
@@ -1463,7 +1463,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<label>Turn on debug logging in settings/system/debugging menu</label>
+						<label>31932</label>
 						<scroll>true</scroll>
 						<visible>!system.getbool(debug.showloginfo)</visible>
 					</control>
@@ -1480,7 +1480,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Show Debug Grid</label>
+						<label>31933</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
 						<selected>Skin.HasSetting(DebugGrid)</selected>
@@ -1496,7 +1496,7 @@
 						<height>56</height>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
-						<label>Show Debug Info</label>
+						<label>31934</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
 						<selected>Skin.HasSetting(DebugInfo)</selected>
@@ -1515,7 +1515,7 @@
 						<description>Reset skin settings to defaults</description>
 						<font>font12</font>
 						<width>885</width>
-						<label>$LOCALIZE[20141] $LOCALIZE[20077] $LOCALIZE[20327]</label>
+						<label>$LOCALIZE[31935]</label>
 						<texturefocus>default-button.png</texturefocus>
 						<texturenofocus>-</texturenofocus>
 						<textwidth>460</textwidth>
@@ -1548,7 +1548,7 @@
 				<posy>4</posy>
 				<width>389</width>
 				<font>font12</font>
-				<label>31683</label>
+				<label>31923</label>
 				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -1729,7 +1729,7 @@
 				<posy>4</posy>
 				<width>389</width>
 				<font>font12</font>
-				<label>31680</label>
+				<label>31920</label>
 				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -1882,7 +1882,7 @@
 				<posy>4</posy>
 				<width>389</width>
 				<font>font12</font>
-				<label>31681</label>
+				<label>31921</label>
 				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -2028,7 +2028,7 @@
 				<posy>4</posy>
 				<width>389</width>
 				<font>font11</font>
-				<label>31682</label>
+				<label>31922</label>
 				<align>center</align>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
