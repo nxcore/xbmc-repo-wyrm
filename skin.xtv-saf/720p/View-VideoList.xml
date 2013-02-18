@@ -1,0 +1,162 @@
+<includes>
+	<include name="VideoListView">
+		<control type="fixedlist" id="50">
+			<viewtype label="31941">List</viewtype>
+			<posx>668</posx>
+			<posy>116</posy>
+			<width>550</width>
+			<height>532</height>
+			<focusposition>2</focusposition>
+			<movement>4</movement>
+			<onleft>9000</onleft>
+			<onright>23</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<include>list-fade</include>
+			<scrolltime>200</scrolltime>
+			<preloaditems>5</preloaditems>
+			<pagecontrol>23</pagecontrol>
+			<itemlayout width="570" height="76">
+				<control type="image">
+					<posx>10</posx>
+					<posy>22</posy>
+					<width>32</width>
+					<height>32</height>
+					<texture>$VAR[Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>53</posx>
+					<posy>22</posy>
+					<width>496</width>
+					<height>28</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+					<visible>IsEmpty(ListItem.Label2)</visible>
+				</control>
+				<control type="label">
+					<posx>53</posx>
+					<posy>10</posy>
+					<width>496</width>
+					<height>23</height>
+					<font>font11</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+					<visible>!IsEmpty(ListItem.Label2)</visible>
+				</control>
+				<control type="label">
+					<posx>53</posx>
+					<posy>36</posy>
+					<width>496</width>
+					<height>23</height>
+					<font>font11</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label2</info>
+					<visible>!IsEmpty(ListItem.Label2)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout width="570" height="76">
+				<control type="image">
+					<posx>10</posx>
+					<posy>22</posy>
+					<width>32</width>
+					<height>32</height>
+					<texture>$VAR[Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
+				<control type="label">
+					<posx>53</posx>
+					<posy>22</posy>
+					<width>496</width>
+					<height>28</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+					<visible>IsEmpty(ListItem.Label2)</visible>
+				</control>
+				<control type="label">
+					<posx>53</posx>
+					<posy>10</posy>
+					<width>496</width>
+					<height>23</height>
+					<font>font11</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label</info>
+					<visible>!IsEmpty(ListItem.Label2)</visible>
+				</control>
+				<control type="label">
+					<posx>53</posx>
+					<posy>36</posy>
+					<width>496</width>
+					<height>23</height>
+					<font>font11</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<selectedcolor>listselectedtext</selectedcolor>
+					<info>ListItem.Label2</info>
+					<visible>!IsEmpty(ListItem.Label2)</visible>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<posy>66</posy>
+			<visible>Control.IsVisible(50)</visible>
+			<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
+			<include>list-fade</include>
+			<control type="group">
+				<control type="image" description="Slider">
+					<posx>706</posx>
+					<posy>352</posy>
+					<width>524</width>
+					<height>76</height>
+					<texture>default-button.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-304"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-228"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-152"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-76"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,0"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,76"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,152"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>ListView-VideoIcon</include>
+			<include>SortLetterNotification</include>
+			<include>PageControl</include>
+		</control>
+	</include>
+</includes>

@@ -61,8 +61,7 @@
 
 		<control type="group">
 			<visible>IntegerGreaterThan(Container.NumItems,0)</visible>
-			<include>ListView</include>
-			<include>ListView-VideoIcon</include>
+			<include>VideoListView</include>
 			<include>VideoIconView</include>
 			<include>BannerView</include>
 			<include>VideoWrapView</include>
