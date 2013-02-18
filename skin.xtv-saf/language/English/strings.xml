@@ -3,10 +3,6 @@
 
 <strings>
 	<!-- Start startup strings 31001 - 31025-->
-	<string id="31001">Use Startup playlist</string>
-	<string id="31002">Choose playlist:</string>
-	<string id="31003">Use Intro video</string>
-	<string id="31004">Intro file:</string>
 	<!-- End startup strings -->
 
 	<!-- Start home strings 31026 - 31125-->
@@ -54,7 +50,7 @@
 	<!-- Begin weather strings 31526 - 31550-->
 	<string id="31526">High</string>
 	<string id="31527">Low</string>
-	<string id="31528">Current</string>
+	<string id="31528">Currently</string>
 	<string id="31529">Temp</string>
 	<string id="31530">Location</string>
 	<string id="31531">Last Updated</string>
@@ -62,6 +58,7 @@
 	<string id="31533">Average High</string>
 	<string id="31534">Record Low</string>
 	<string id="31535">Record High</string>
+	<string id="31536">Provider</string>
 	<!-- End weather strings -->
 
 	<!-- Start system strings 31551 - 31650 -->
@@ -73,7 +70,7 @@
 
 	<string id="31558">Power Menu</string>
 	<string id="31559">System Info</string>
-	<string id="31560">Support</string>
+
 	<string id="31561">XBMC Build:</string>
 	<string id="31562">XBMC Build Date:</string>
 	<string id="31563">Skin Version:</string>
@@ -124,11 +121,6 @@
 	<string id="31675">Forward-16x</string>
 	<string id="31676">Forward-32x</string>
 
-	<string id="31680">Movie library entry point</string>
-	<string id="31681">TV library entry point</string>
-	<string id="31682">Music Video library entry point</string>
-	<string id="31683">Music library entry point</string>
-
 	<string id="31687">Movie Trailers</string>
 	<string id="31688">Go Back</string>
 	
@@ -147,52 +139,73 @@
 	<!-- End PVR strings -->
 
 	<!-- Begin skin settings strings 31801 - 31999 -->
-	<string id="31801">Use scrollbar</string>
-	<string id="31802">Use media overlays</string>
-	<string id="31803">Use watched state overlays</string>
-	<string id="31804">Use Now Playing screens</string>
-	<string id="31823">Enable autoscroll</string>
-
-	<string id="31806">Now Playing style visuals</string>
-	<string id="31807">Choose Custom background</string>
-	<string id="31808">Reset Custom background</string>
-	<string id="31809">Use Visuals as background</string>
-	<string id="31818">Use Fanart as background</string>
-	<string id="31824">Location of Custom Weather backgrounds</string>
-	<string id="31805">Reset Custom Weather backgrounds</string>
-	<string id="31845">Show DVD case</string>
-	<string id="31846">Show CD case</string>
+	<string id="31801">Startup</string>
+	<string id="31802">General</string>
+	<string id="31803">Home Menu</string>
+	<string id="31804">Background</string>
+	<string id="31805">Media Sources</string>
+	<string id="31806">Custom Favourites</string>
+	<string id="31807">Support</string>
 	
-	<string id="31841">Startup</string>
-	<string id="31813">General</string>
-	<string id="31814">Background</string>
-	<string id="31815">Home Menu</string>
-	<string id="31831">Media Sources</string>
+	<string id="31850">Use Intro video</string>
+	<string id="31851">Intro file:</string>	
+	<string id="31852">Use Startup playlist</string>
+	<string id="31853">Choose playlist:</string>
 	
-	<string id="31816">Tilt List view icons</string>
-	<string id="31840">Tilt Wall view</string>
-	<string id="31817">Lock "View As" panel</string>
+	<string id="31860">Choose Custom background</string>
+	<string id="31861">Reset Custom background</string>
+	<string id="31862">Use Visuals as background</string>
+	<string id="31863">Use Fanart as background</string>
+	<string id="31864">Use ExtraFanart as background</string>
+	<string id="31865">Use Artistslideshow as background</string>
+	<string id="31866">Location of Custom Weather backgrounds</string>
+	<string id="31867">Reset Custom Weather backgrounds</string>
+	<string id="31868">Background visibilty</string>
+	<string id="31869">Show DVD case</string>
+	<string id="31870">Show CD case</string>
 	
-	<string id="31819">Videos in Home menu</string>
-	<string id="31843">Movies in Home menu</string>
-	<string id="31844">TV Shows in Home menu</string>
-	<string id="31842">Music Videos in Home menu</string>
-	<string id="31827">Music in Home menu</string>
-	<string id="31828">Addons in Home menu</string>
-	<string id="31829">Pictures in Home menu</string>
-	<string id="31830">Profiles in Home menu</string>
-	<string id="31822">Weather in Home menu</string>
-	<string id="31833">Favourites in Home menu</string>
-	<string id="31836">Search in Home menu</string>
-	<string id="31890">Play Disc in Home menu</string>
-	<string id="31826">Quit From Home menu</string>
-	
-	<string id="31832">Current weather on Home screen</string>
-	<string id="31825">Time on Home screen</string>
-	<string id="31820">Animated weather icons</string>
+	<string id="31880">Lock "View As" panel</string>
+	<string id="31881">Use scrollbar</string>
+	<string id="31882">Enable autoscroll</string>
+	<string id="31883">Use media overlays</string>
+	<string id="31884">Use watched state overlays</string>
+	<string id="31885">Now Playing style visuals</string>
+	<string id="31886">Tilt List view icons</string>
+	<string id="31887">Tilt Wall view</string>
+	<string id="31888">Time on Home screen</string>
+	<string id="31889">Current weather on Home screen</string>
+	<string id="31890">Animated weather icons</string>	
 	<string id="31891">Show subtitle button in OSD</string>
-	<string id="31852">Use TV Tunes</string>
-	<string id="31853">Download media artwork</string>
+	<string id="31892">Use TV Tunes</string>
+	<string id="31893">Download media artwork</string>
+	
+	<string id="31900">Home menu type</string>
+	<string id="31901">Videos in Home menu</string>
+	<string id="31902">Movies in Home menu</string>
+	<string id="31903">TV Shows in Home menu</string>
+	<string id="31904">Music Videos in Home menu</string>
+	<string id="31905">Music in Home menu</string>
+	<string id="31906">Addons in Home menu</string>
+	<string id="31907">Pictures in Home menu</string>
+	<string id="31908">Profiles in Home menu</string>
+	<string id="31909">Weather in Home menu</string>
+	<string id="31910">Favourites in Home menu</string>
+	<string id="31911">Search in Home menu</string>
+	<string id="31912">Play Disc in Home menu</string>
+	<string id="31913">Quit from Home menu</string>
+	<string id="31914">Quit button action</string>
+
+	<string id="31920">Movie library entry point</string>
+	<string id="31921">TV library entry point</string>
+	<string id="31922">Music Video library entry point</string>
+	<string id="31923">Music library entry point</string>
+
+	<string id="31930">Upload Debug Log file</string>
+	<string id="31931">Only FULL debug logs can be uploaded.</string>
+	<string id="31932">Turn on debug logging in settings/system/debugging menu</string>
+	<string id="31933">Show Debug Grid</string>
+	<string id="31934">Show Debug Info</string>
+	<string id="31935">Reset Skin settings to their defaults</string>
 	
 	<!-- Viewtype Names -->
 	<string id="31941">List</string>

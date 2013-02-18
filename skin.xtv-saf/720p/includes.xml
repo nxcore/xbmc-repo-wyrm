@@ -37,6 +37,7 @@
 	<include file="View-VideoBanner.xml">-</include>
 	<include file="View-VideoCoverflow.xml">-</include>
 	<include file="View-VideoIcon.xml">-</include>
+	<include file="View-VideoList.xml">-</include>
 	<include file="View-VideoWall.xml">-</include>
 	<include file="View-VideoWrap.xml">-</include>
 
