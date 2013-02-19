@@ -232,10 +232,6 @@
 				<width>548</width>
 				<height>536</height>
 				<font>font12</font>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
 				<pagecontrol>1423</pagecontrol>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -467,10 +463,6 @@
 				<width>548</width>
 				<height>536</height>
 				<font>font12</font>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
 				<pagecontrol>1423</pagecontrol>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>

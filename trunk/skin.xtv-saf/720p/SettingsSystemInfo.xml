@@ -65,7 +65,8 @@
 					<textoffsetx>18</textoffsetx>
 					<textcolor>button-text</textcolor>
 				</control>
-				<control type="button" id="99" description="Hardware">
+				<control type="button" id="99">
+					<description>PVR</description>
 					<visible>System.HasPVR</visible>
 					<width>354</width>
 					<label>19191</label>
@@ -198,8 +199,6 @@
 				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
 				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<info>System.CPUUsage</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
@@ -223,8 +222,6 @@
 				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
 				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<info>system.memory(used)</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>

@@ -33,7 +33,7 @@
 			<height>384</height>
 			<info>MusicPlayer.Cover</info>
 			<colordiffuse>FlagDiffuse</colordiffuse>
-			<aspectratio align="bottom">keep</aspectratio>
+			<aspectratio aligny="bottom">keep</aspectratio>
 		</control>
 		
 		<control type="progress">

@@ -114,10 +114,9 @@
 			<font>font13</font>
 			<texturenofocus>-</texturenofocus>
 			<textoffsetx>18</textoffsetx>
-			<textoffsetx2>36</textoffsetx2>
 			<radioposx>840</radioposx>
-			<textureradiofocus>check-box.png</textureradiofocus>
-			<textureradionofocus>check-boxNF.png</textureradionofocus>
+			<textureradioon>check-box.png</textureradioon>
+			<textureradiooff>check-boxNF.png</textureradiooff>
 			<textcolor>button-text</textcolor>
 		</control>
 		<control type="spincontrolex" id="9">

@@ -111,7 +111,7 @@
 				<posx>132</posx>
 				<posy>475</posy>
 				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath]/cdart.png</texture>
-				<aspectratio align="bottom">keep</aspectratio>
+				<aspectratio aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="image">
 				<description>cover image</description>
@@ -120,7 +120,7 @@
 				<width>225</width>
 				<height>225</height>
 				<info>MusicPlayer.Cover</info>
-				<aspectratio align="bottom">stretch</aspectratio>
+				<aspectratio aligny="bottom">stretch</aspectratio>
 			</control>
 			<control type="label">
 				<description>Title label</description>

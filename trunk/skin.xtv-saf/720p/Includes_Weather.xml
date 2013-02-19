@@ -667,45 +667,4 @@
 			<aspectratio align="right">keep</aspectratio>
 		</control>
 	</include>
-	<include name="Waiting_for_Data">
-		<control type="group">
-			<visible>IsEmpty(Window.Property(Daily.1.Outlook))</visible>
-			<control type="label">
-				<description>Downloading</description>
-				<posx>283</posx>
-				<posy>225</posy>
-				<width>708</width>
-				<height>50</height>
-				<font>font28</font>
-				<align>center</align>
-				<aligny>top</aligny>
-				<label>13413</label>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
-			<control type="image">
-				<description>Busy animation</description>
-				<posx>548</posx>
-				<posy>297</posy>
-				<width>128</width>
-				<height>128</height>
-				<texture>busy.png</texture>
-				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="true">conditional</animation>
-			</control>
-			<control type="label">
-				<description>Please wait</description>
-				<posx>283</posx>
-				<posy>437</posy>
-				<width>708</width>
-				<height>50</height>
-				<font>font28</font>
-				<align>center</align>
-				<aligny>top</aligny>
-				<label>20186</label>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-			</control>
-		</control>
-	</include>
 </includes>

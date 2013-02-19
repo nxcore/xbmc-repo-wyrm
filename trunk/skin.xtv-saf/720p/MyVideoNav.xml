@@ -36,7 +36,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
-			<control type="label" description="Heading">
+			<control type="label">
 				<description>Video screen headings</description>
 				<width min="60" max="250">auto</width>
 				<height>37</height>
@@ -45,7 +45,8 @@
 				<aligny>center</aligny>
 				<textcolor>button-text</textcolor>
 			</control>
-			<control type="label" description="Number of files">
+			<control type="label">
+				<description>Number of files</description>
 				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>

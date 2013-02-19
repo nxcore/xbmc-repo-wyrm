@@ -1,5 +1,5 @@
 <window id="4">
-	<defaultcontrol>8998</defaultcontrol>
+	<defaultcontrol>8999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
@@ -22,17 +22,6 @@
 			<font>font20</font>
 			<textcolor>button-text</textcolor>
 		</control>
-		<control type="button" id="8998">
-			<description>Open update settings window</description>
-			<posy>-12</posy>
-			<posy>-12</posy>
-			<width>1</width>
-			<height>1</height>
-			<include condition="!Skin.HasSetting(SettingsUpdated)">UpdateCustomSettings</include>
-			<onfocus>SetFocus(8999)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-		</control>
 		
 		<!-- Markers for control area items -->
 		<control type="image">
@@ -52,7 +41,7 @@
 			<visible>Container(8999).HasNext</visible>
 		</control>
 	
-		<control type="group" description="Group 8999">
+		<control type="group">
 			<visible>Control.IsVisible(8999)</visible>
 			<posx>780</posx>
 			<posy>112</posy>
@@ -124,7 +113,8 @@
 						<label>3</label>
 						<onclick>Activatewindow(VideosSettings)</onclick>
 					</item>
-					<item id="2" description="TV">
+					<item id="2">
+						<description>TV</description>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 						<label>19020</label>
 						<onclick>Activatewindow(PVRSettings)</onclick>
@@ -159,15 +149,18 @@
 						<label>13000</label>
 						<onclick>Activatewindow(SystemSettings)</onclick>
 					</item>
-					<item id="9" description="Profiles">
+					<item id="9">
+						<description>Profiles</description>
 						<label>13200</label>
 						<onclick>ActivateWindow(Profiles)</onclick>
 					</item>
-					<item id="10" description="File manager">
+					<item id="10">
+						<description>File manager</description>
 						<label>10003</label>
 						<onclick>ActivateWindow(filemanager)</onclick>
 					</item>
-					<item id="11" description="System Info">
+					<item id="11">
+						<description>System Info</description>
 						<label>138</label>
 						<onclick>Activatewindow(systeminfo)</onclick>
 					</item>

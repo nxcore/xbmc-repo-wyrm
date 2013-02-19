@@ -130,7 +130,6 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<disabledcolor>disabled-text</disabledcolor>
 			<texturefocus border="9">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 			<textureslidernib>progress-marker.png</textureslidernib>
 			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>

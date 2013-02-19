@@ -79,8 +79,6 @@
 				<texturesliderbackground border="7">scrollbar_background.png</texturesliderbackground>
 				<texturesliderbar border="7">scrollbar_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="7">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<info>System.Progressbar</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>

@@ -36,7 +36,7 @@
 					<width>225</width>
 					<height>225</height>
 					<info>MusicPlayer.Cover</info>
-					<aspectratio align="bottom">keep</aspectratio>
+					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="label">
 					<description>Title label</description>

@@ -6,7 +6,7 @@
 	<controls>
 		<include>backgroundvideo</include>
 		<control type="button" id="7050">
-			<posy>-12</posy>
+			<posx>-12</posx>
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
@@ -539,7 +539,6 @@
 			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>50</onleft>
 			<onright>999</onright>
-			<include>list-fade</include>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<colordiffuse>ScrollBarColor</colordiffuse>

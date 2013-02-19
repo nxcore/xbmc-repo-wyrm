@@ -44,7 +44,6 @@
 			<width>274</width>
 			<align>left</align>
 			<font>font12</font>
-			<style>bold</style>
 			<scroll>true</scroll>
 			<textcolor>button-text</textcolor>
 			<label>$LOCALIZE[20070]</label>

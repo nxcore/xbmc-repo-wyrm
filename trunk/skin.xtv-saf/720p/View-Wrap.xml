@@ -26,7 +26,6 @@
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture background="true" diffuse="mask-rect.png">-</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<aspectratio>keep</aspectratio>
 				</control>
 			</itemlayout>
 			<focusedlayout height="336" width="336">

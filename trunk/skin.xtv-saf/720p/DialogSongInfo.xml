@@ -148,14 +148,8 @@
 			<width>504</width>
 			<height>526</height>
 			<info>ListItem.Comment</info>
-			<onleft>5</onleft>
-			<onright>50</onright>
-			<onup>5</onup>
-			<ondown>5</ondown>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
-			<spinposx>3100</spinposx>
-			<spinposy>1900</spinposy>
 		</control>
 		<control type="button" id="10">
 			<description>OK button</description>

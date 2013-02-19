@@ -24,10 +24,7 @@
 			<info>Player.Volume</info>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 			<texturebg>blank.png</texturebg>
-			<lefttexture>-</lefttexture>
 			<midtexture>volume-back.png</midtexture>
-			<righttexture>-</righttexture>
-			<overlaytexture>-</overlaytexture>
 			<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
 			<visible>IntegerGreaterThan(Player.Volume,-60)</visible>
 		</control>

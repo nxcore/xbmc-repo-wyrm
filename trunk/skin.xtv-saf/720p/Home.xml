@@ -9,7 +9,7 @@
 	<controls>
 		<control type="button" id="420">
 			<description>trigger playlist if selected</description>
-			<posy>-12</posy>
+			<posx>-12</posx>
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>

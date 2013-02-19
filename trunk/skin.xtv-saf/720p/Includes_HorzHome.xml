@@ -942,10 +942,10 @@
 				<texture>separator.png</texture>
 			</control>
 		</control>
-		<!--NAVBAR-->
-		<control type="group" description="Home NavBar">
+		<!--Home NavBar-->
+		<control type="group">
 		<include>horizontalhome-center</include>
-			<control type="list" id="9900" description="Home NavBar">
+			<control type="list" id="9900">
 				<posx>10</posx>
 				<posy>290</posy>
 				<width>1260</width>
@@ -1048,7 +1048,8 @@
 				</content>
 			</control>
 		</control>
-		<control type="grouplist" id="9000" description="Submenus">
+		<!-- Home Sub menus -->
+		<control type="grouplist" id="9000">
 		<include>horizontalhome-center</include>			
 			<posx>10</posx>
 			<posy>365</posy>
@@ -1331,7 +1332,8 @@
 					<include>button-fade</include>
 				</control>
 			</control>
-			<control type="grouplist" id="9200" description="TV">
+			<!-- TV Sub Menu -->
+			<control type="grouplist" id="9200">
 				<visible>!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 				<animation type="Conditional" condition="![ControlGroup(9200).HasFocus() | Control.HasFocus(9210)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
@@ -1499,7 +1501,8 @@
 					<include>button-fade</include>
 				</control>
 			</control>
-			<control type="grouplist" id="9250" description="Music">
+			<!-- Music Sub menu -->
+			<control type="grouplist" id="9250">
 				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				<animation type="Conditional" condition="![ControlGroup(9250).HasFocus() | Control.HasFocus(9260)]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
@@ -1668,7 +1671,8 @@
 					<include>button-fade</include>
 				</control>
 			</control>
-			<control type="grouplist" id="9300" description="Pictures">
+			<!-- Pictures Sub menu -->
+			<control type="grouplist" id="9300">
 				<visible>!Skin.HasSetting(home-photos)</visible>
 				<animation type="Conditional" condition="!ControlGroup(9300).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
@@ -1716,9 +1720,10 @@
 					<include>button-fade</include>
 				</control>
 			</control>
-			<control type="grouplist" id="9350" description="Addons">
+			<!-- Addons Sub menu -->
+			<control type="grouplist" id="9350">
 				<visible>Skin.HasSetting(home-programs)</visible>
-				<animation type="Conditional" condition="![ControlGroup(9350).HasFocus() | Control.HasFocus(9360)]">
+				<animation type="Conditional" condition="![ControlGroup(9350).HasFocus()]">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>
 				<width>210</width>
@@ -1821,7 +1826,8 @@
 					<include>button-fade</include>
 				</control>
 			</control>
-			<control type="grouplist" id="9400" description="Weather">
+			<!-- Weather Sub menu -->
+			<control type="grouplist" id="9400">
 				<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
 				<animation type="Conditional" condition="!ControlGroup(9400).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
@@ -1850,7 +1856,8 @@
 					<include>button-fade</include>
 				</control>
 			</control>
-			<control type="grouplist" id="9450" description="Settings">
+			<!-- Settings Sub menu -->
+			<control type="grouplist" id="9450">
 				<animation type="Conditional" condition="!ControlGroup(9450).HasFocus()">
 					<effect type="fade" start="100" end="0" time="100" reversible="true" />
 				</animation>

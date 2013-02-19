@@ -20,7 +20,6 @@
 				<width>309</width>
 				<height>36</height>
 				<font>font20</font>
-				<style>bold</style>
 				<label>$LOCALIZE[19047]</label>
 				<align>center</align>
 				<aligny>center</aligny>

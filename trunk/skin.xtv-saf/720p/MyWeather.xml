@@ -96,8 +96,6 @@
 				<height>50</height>
 				<label>31530</label>
 				<font>font13</font>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>button-text</textcolor>

@@ -114,7 +114,6 @@
 				<height>46</height>
 				<width>700</width>
 				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<sliderwidth>192</sliderwidth>
 				<sliderheight>16</sliderheight>
 				<texturesliderbar>osd_slider_bg.png</texturesliderbar>
