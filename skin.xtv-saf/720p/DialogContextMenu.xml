@@ -32,7 +32,7 @@
 				<posy>16</posy>
 				<width>504</width>
 				<onup>996</onup>
-				<height max="600">auto</height>
+				<height  min="10" max="600">auto</height>
 				<itemgap>0</itemgap>
 				<control type="button" id="1000">
 					<description>button template</description>

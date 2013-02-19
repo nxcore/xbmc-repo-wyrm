@@ -96,7 +96,7 @@
 		<!-- Bring up Player controls if go left -->
 		<control type="button" id="421">
 			<description>trigger player controls if selected</description>
-			<posy>-24</posy>
+			<posx>-24</posx>
 			<posy>-24</posy>
 			<width>1</width>
 			<height>1</height>

@@ -91,10 +91,7 @@
 		<posx>177</posx>
 		<posy>406</posy>
 		<texturebg border="14,0,14,0">progress-background.png</texturebg>
-		<lefttexture>-</lefttexture>
 		<midtexture border="14,0,14,0">progress-middle.png</midtexture>
-		<righttexture>-</righttexture>
-		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="spincontrol">
 		<posx>584</posx>
@@ -113,7 +110,6 @@
 		<subtype>text</subtype>
 		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>-</aligny>
 	</default>
 	<default type="spincontrolex">
 		<posx>938</posx>

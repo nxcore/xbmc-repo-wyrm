@@ -177,7 +177,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.1.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMovies.1.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -210,7 +209,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.2.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMovies.2.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -243,7 +241,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.3.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMovies.3.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -276,7 +273,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.4.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMovies.4.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -309,7 +305,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.5.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMovies.5.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -386,7 +381,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomTVShow.1.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -419,7 +413,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomTVShow.2.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -452,7 +445,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomTVShow.3.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -485,7 +477,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomTVShow.4.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -518,7 +509,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomTVShow.5.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -595,7 +585,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.1.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMusic.1.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -628,7 +617,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.2.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMusic.2.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -661,7 +649,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.3.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMusic.3.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -694,7 +681,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.4.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMusic.4.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>
@@ -727,7 +713,6 @@
 						<textwidth>460</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.5.Icon)] </label2>
-						<haspath>true</haspath>
 						<onclick>Skin.SetFile(CustomMusic.5.Icon,.jpg|.png)</onclick>
 						<textcolor>button-text</textcolor>
 						<disabledcolor>disabled-text</disabledcolor>

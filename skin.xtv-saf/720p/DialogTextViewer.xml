@@ -69,7 +69,6 @@
 					<onright>23</onright>
 					<ondown>23</ondown>
 					<onup>23</onup>
-					<include>list-fade</include>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<colordiffuse>ScrollBarColor</colordiffuse>

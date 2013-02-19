@@ -46,7 +46,8 @@
 			<shadowcolor>shadow-text</shadowcolor>
 			<font>font12</font>
 		</control>
-		<control type="list" id="3" description="Type 3 Select">
+		<control type="list" id="3">
+			<description>Type 3 Select</description>
 			<posx>44</posx>
 			<posy>124</posy>
 			<width>700</width>
@@ -117,7 +118,8 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="list" id="6" description="Type 6 Select">
+		<control type="list" id="6">
+			<description>Type 6 Select</description>
 			<posx>44</posx>
 			<posy>124</posy>
 			<width>700</width>

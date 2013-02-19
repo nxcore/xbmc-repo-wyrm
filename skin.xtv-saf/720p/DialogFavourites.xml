@@ -18,7 +18,6 @@
 			<height>37</height>
 			<label>$LOCALIZE[1036]</label>
 			<font>font20</font>
-			<style>bold</style>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>

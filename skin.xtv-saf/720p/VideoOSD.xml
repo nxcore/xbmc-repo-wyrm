@@ -51,7 +51,6 @@
 				<width>42</width>
 				<height>60</height>
 				<texture>-</texture>
-				<texturenofocus>-</texturenofocus>
 			</control>	
 			<control type="button" id="217">
 				<description>Eject DVD</description>

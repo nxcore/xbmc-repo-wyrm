@@ -135,7 +135,8 @@
 			<visible>[IntegerGreaterThan(Container(999).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
 			<include>list-fade</include>
 			<control type="group">
-				<control type="image" description="Slider">
+				<control type="image">
+					<description>Slider</description>
 					<posx>716</posx>
 					<posy>398</posy>
 					<width>514</width>
