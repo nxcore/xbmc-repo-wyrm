@@ -56,9 +56,8 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" />
 					</animation>
-					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
-					<info>ListItem.Icon</info>
-					<visible>SubString(ListItem.Icon,Default,Left) + ![SubString(ListItem.Icon,DefaultFolder.png,Left)]</visible>
+					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>1</posx>
