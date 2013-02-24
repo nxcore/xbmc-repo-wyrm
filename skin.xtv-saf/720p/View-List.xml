@@ -75,7 +75,7 @@
 					<posy>396</posy>
 					<width>514</width>
 					<height>50</height>
-					<texture>default-button.png</texture>
+					<texture border="8">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-350"

@@ -1,10 +1,10 @@
-<window id="113">
+<window>
 	<defaultcontrol>1</defaultcontrol>
 	<controls>
 		<control type="group">
+			<visible>![Window.IsVisible(Seekbar) | Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(extendedprogressdialog)]</visible>
 			<posx>902</posx>
 			<posy>12</posy>
-			<animation effect="fade" start="100" end="0" time="600" condition="Window.IsActive(133) | Window.IsActive(112)">Conditional</animation>
 			<control type="image">
 				<description>Popup Music Scan Dialog Background</description>
 				<posx>0</posx>

@@ -68,6 +68,7 @@
 			<include>VideoWrapView</include>
 			<include>VideoWallView</include>
 			<include>VideoCoverflow</include>
+			<include>PVRLiveTVView</include>
 		</control>
 
 		<control type="button" id="50">

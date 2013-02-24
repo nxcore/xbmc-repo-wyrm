@@ -25,48 +25,182 @@
 					<texture>$VAR[Overlay]</texture>
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>22</posy>
-					<width>496</width>
-					<height>28</height>
-					<font>font13</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label</info>
-					<visible>IsEmpty(ListItem.Label2)</visible>
-				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>10</posy>
-					<width>496</width>
-					<height>23</height>
-					<font>font11</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label</info>
-					<visible>!IsEmpty(ListItem.Label2)</visible>
-				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>36</posy>
-					<width>496</width>
-					<height>23</height>
-					<font>font11</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label2</info>
-					<visible>!IsEmpty(ListItem.Label2)</visible>
-				</control>
+				<control type="group">
+					<visible>!Container.Content(Movies) + !Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !SubString(Container.FolderPath,addons)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.Label2)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label2</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+					</control>
+				</control>	
+				<control type="group">
+					<visible>SubString(Container.FolderPath,addons)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Property(Addon.Description)</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+					</control>
+				</control>	
+				<control type="group">
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.PlotOutline</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
+				</control>	
+				<control type="group">
+					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.Duration)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Duration)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<label>$VAR[VideoDuration]</label>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Duration)</visible>
+					</control>
+				</control>	
 			</itemlayout>
 			<focusedlayout width="570" height="76">
 				<control type="image">
@@ -77,48 +211,184 @@
 					<texture>$VAR[Overlay]</texture>
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>22</posy>
-					<width>496</width>
-					<height>28</height>
-					<font>font13</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label</info>
-					<visible>IsEmpty(ListItem.Label2)</visible>
+				<control type="group">
+					<visible>!Container.Content(Movies) + !Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !SubString(Container.FolderPath,addons)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.Label2)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label2</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+					</control>
 				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>10</posy>
-					<width>496</width>
-					<height>23</height>
-					<font>font11</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label</info>
-					<visible>!IsEmpty(ListItem.Label2)</visible>
+				<control type="group">
+					<visible>SubString(Container.FolderPath,addons)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<selectedcolor>listselectedtext</selectedcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Property(Addon.Description)</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+					</control>
 				</control>
-				<control type="label">
-					<posx>53</posx>
-					<posy>36</posy>
-					<width>496</width>
-					<height>23</height>
-					<font>font11</font>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
-					<info>ListItem.Label2</info>
-					<visible>!IsEmpty(ListItem.Label2)</visible>
-				</control>
+				<control type="group">
+					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.PlotOutline</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+					</control>
+				</control>	
+				<control type="group">
+					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
+					<control type="label">
+						<posx>53</posx>
+						<posy>22</posy>
+						<width>496</width>
+						<height>28</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<visible>IsEmpty(ListItem.Duration)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>10</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<info>ListItem.Label</info>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Duration)</visible>
+					</control>
+					<control type="label">
+						<posx>53</posx>
+						<posy>36</posy>
+						<width>496</width>
+						<height>23</height>
+						<font>font11</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
+						<label>$VAR[VideoDuration]</label>
+						<autoscroll>False</autoscroll>
+						<visible>!IsEmpty(ListItem.Duration)</visible>
+					</control>
+				</control>	
 			</focusedlayout>
 		</control>
 		<control type="group">
@@ -133,7 +403,7 @@
 					<posy>352</posy>
 					<width>524</width>
 					<height>76</height>
-					<texture>default-button.png</texture>
+					<texture border="8">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-304"
@@ -150,7 +420,6 @@
 					time="0" easing="inout" reversible="true">Conditional</animation>
 				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,152"
 					time="0" easing="inout" reversible="true">Conditional</animation>
-
 			</control>
 		</control>
 		<control type="group">

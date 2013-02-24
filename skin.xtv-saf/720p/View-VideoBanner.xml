@@ -21,7 +21,7 @@
 						<posy>0</posy>
 						<width>610</width>
 						<height>100</height>
-						<texture background="true">$INFO[ListItem.Art(banner)]</texture>
+						<texture background="true">$VAR[IconBanner]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
 						<visible>!IsEmpty(ListItem.Art(banner))</visible>
@@ -68,7 +68,7 @@
 						<posy>6</posy>
 						<width>610</width>
 						<height>100</height>
-						<texture background="true">$INFO[ListItem.Art(banner)]</texture>
+						<texture background="true">$VAR[IconBanner]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Art(banner))</visible>
 					</control>

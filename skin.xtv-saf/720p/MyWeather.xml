@@ -6,7 +6,6 @@
 		<include>background</include>
 		<control type="button" id="7050">
 			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<onleft>6000</onleft>
 			<onright>6000</onright>
 			<onup>9000</onup>
