@@ -11,7 +11,6 @@
 				<height>720</height>
 				<colordiffuse>solid-background</colordiffuse>
 				<texture>background.png</texture>
-				<visible>IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<!-- Build up home menu shelf image -->
 			<control type="image">
@@ -1047,6 +1046,17 @@
 					</item>
 				</content>
 			</control>
+		</control>
+		<!-- Horizontal Home menu logo -->
+		<control type="image">
+			<posx>1150</posx>
+			<posy>590</posy>
+			<width>100</width>
+			<height>100</height>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+			<colordiffuse>UnFocusedPosters</colordiffuse>
+			<texture background="true" fallback="blank.png">homelogo.png</texture>
+			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="100" reversible="true">Conditional</animation>
 		</control>
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
