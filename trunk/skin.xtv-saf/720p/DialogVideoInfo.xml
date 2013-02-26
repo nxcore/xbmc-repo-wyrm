@@ -273,8 +273,18 @@
 				<width>286</width>
 				<height>412</height>
 				<aspectratio scalediffuse="true"  align="center" aligny="center">keep</aspectratio>
-				<texture diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-				<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
+				<texture  fallback="DefaultMovies.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+				<visible>Container.Content(movies)</visible>
+			</control>
+			<control type="image">
+				<description>Cover image</description>
+				<posx>122</posx>
+				<posy>68</posy>
+				<width>286</width>
+				<height>412</height>
+				<aspectratio scalediffuse="true"  align="center" aligny="center">keep</aspectratio>
+				<texture fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<control type="image">
 				<posx>59</posx>
@@ -282,8 +292,8 @@
 				<width>412</width>
 				<height>412</height>
 				<aspectratio scalediffuse="true"  align="center" aligny="center">keep</aspectratio>
-				<texture diffuse="mask-rect.png">$INFO[Listitem.Icon]</texture>
-				<visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+				<texture fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+				<visible>Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 			</control>
 
 			<!-- Cast -->

@@ -106,7 +106,7 @@
     				<description>Show Name Label</description>
     				<width min="40" max="600">auto</width>
     				<height>45</height>
-    				<label>Now watching</label>
+    				<label>31709</label>
     				<font>font12</font>
     				<align>left</align>
 					<textcolor>button-text</textcolor>
@@ -116,7 +116,7 @@
     				<description>Show Name Label</description>
     				<width min="40" max="600">auto</width>
     				<height>45</height>
-    				<label>Show Name</label>
+    				<label>31710</label>
     				<font>font12</font>
     				<align>left</align>
 					<textcolor>button-text</textcolor>
@@ -136,7 +136,7 @@
     				<description>Show Title Label</description>
     				<width min="40" max="300">auto</width>
     				<height>45</height>
-    				<label>Show Title</label>
+    				<label>31711</label>
     				<font>font12</font>
     				<align>left</align>
 					<textcolor>button-text</textcolor>
@@ -151,7 +151,7 @@
                 <height>45</height>
                 <align>left</align>
                 <aligny>top</aligny>
-                <label>Show Description</label>
+                <label>31712</label>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
                 <font>font12</font>

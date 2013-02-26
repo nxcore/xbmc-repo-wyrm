@@ -31,10 +31,10 @@
 			</control>
 			<control type="image">
 				<description>Xtv Logo</description>
-				<posx>320</posx>
+				<posx>384</posx>
 				<posy>200</posy>
-				<width>640</width>
-				<height>320</height>
+				<width>512</width>
+				<height>256</height>
 				<aspectratio>keep</aspectratio>
 				<texture>xtv-logo-big.png</texture>
 			</control>

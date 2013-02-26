@@ -34,7 +34,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<label>Select scraper</label>
+					<label>31680</label>
 					<textcolor>button-text</textcolor>
 					<scroll>true</scroll>
 				</control>
@@ -116,7 +116,7 @@
 							<onclick>SendClick(movieinformation,10)</onclick>
 						</item>
 						<item id="2">
-							<label>Artwork Downloader</label>
+							<label>31681</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>Dialog.Close(2003)</onclick>
 							<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
@@ -124,7 +124,7 @@
 							<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 						</item>
 						<item id="3">
-							<label>TVTunes Downloader</label>
+							<label>31682</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[Window(Home).Property(TVShowPath)]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 							<visible>System.HasAddon(script.tvtunes) + Container.Content(TVShows)</visible>

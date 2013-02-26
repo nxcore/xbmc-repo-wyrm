@@ -25,9 +25,9 @@
 				<posx>0</posx>
 				<posy>192</posy>
 				<width>1280</width>
-				<height>104</height>
+				<height>106</height>
 				<texture>white.png</texture>
-				<colordiffuse>FF363636</colordiffuse>
+				<colordiffuse>FF404040</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>-100</posx>
@@ -56,28 +56,48 @@
 		<!-- Shelf icons-->
 		<control type="group">
 			<!-- Video icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>icon-video.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+			<control type="group">
 				<visible>ControlGroup(9100).HasFocus()</visible>
-			</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>55</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture>icon-video.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>215</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+			</control>	
 			<!-- Movie icons -->
 			<control type="group" id="9155">
 				<include>background-fade</include>
 				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
-				<control type="image">
-					<posx>560</posx>
-					<posy>70</posy>
-					<width>192</width>
-					<height>192</height>
-					<texture>icon-video.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<control type="group">
 					<visible>IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
-				</control>
+					<control type="image">
+						<posx>560</posx>
+						<posy>55</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture>icon-video.png</texture>
+						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					</control>
+					<control type="image">
+						<posx>560</posx>
+						<posy>215</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
+						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					</control>
+				</control>	
 				<control type="group">
 					<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
 					<control type="label">
@@ -223,14 +243,24 @@
 					<shadowcolor>shadow-text</shadowcolor>
 					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 				</control>
-				<control type="image">
-					<posx>560</posx>
-					<posy>70</posy>
-					<width>192</width>
-					<height>192</height>
-					<texture>icon-tv.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<control type="group">
 					<visible>IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
+					<control type="image">
+						<posx>560</posx>
+						<posy>55</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture>icon-tv.png</texture>
+						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					</control>
+					<control type="image">
+						<posx>560</posx>
+						<posy>215</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture flipy="true" diffuse="mask-fade.png">icon-tv.png</texture>
+						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					</control>
 				</control>
 				<control type="list" id="9210">
 					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
@@ -292,7 +322,7 @@
 							<width>220</width>
 							<height>200</height>
 							<align>center</align>
-							<aligny>center</aligny>
+							<aligny>bottom</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
 							<animation type="Focus" reversible="false">
@@ -379,14 +409,24 @@
 					<shadowcolor>shadow-text</shadowcolor>
 					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 				</control>
-				<control type="image">
-					<posx>560</posx>
-					<posy>70</posy>
-					<width>192</width>
-					<height>192</height>
-					<texture>icon-music.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<control type="group">
 					<visible>IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
+					<control type="image">
+						<posx>560</posx>
+						<posy>55</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture>icon-music.png</texture>
+						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					</control>
+					<control type="image">
+						<posx>560</posx>
+						<posy>215</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
+						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					</control>
 				</control>
 				<control type="list" id="9260">
 					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
@@ -525,35 +565,64 @@
 				</control>
 			</control>
 			<!-- Pictures icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>icon-photo.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+			<control type="group">
 				<visible>ControlGroup(9300).HasFocus()</visible>
-			</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>55</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture>icon-photo.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>215</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture flipy="true" diffuse="mask-fade.png">icon-photo.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+			</control>	
 			<!-- Addons icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>DefaultAddon.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+			<control type="group">
 				<visible>ControlGroup(9350).HasFocus()</visible>
-			</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>55</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture>DefaultAddon.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>215</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+			</control>	
 			<!-- Weather icons -->
 			<control type="group">
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				<visible>ControlGroup(9400).HasFocus()</visible>
 				<control type="image">
 					<posx>560</posx>
-					<posy>70</posy>
-					<width>192</width>
-					<height>192</height>
+					<posy>55</posy>
+					<width>160</width>
+					<height>160</height>
 					<texture>icon-weather.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					<visible>!Weather.IsFetched</visible>
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>215</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture flipy="true" diffuse="mask-fade.png">icon-weather.png</texture>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					<visible>!Weather.IsFetched</visible>
 				</control>
@@ -912,20 +981,39 @@
 				</control>	
 			</control>
 			<!-- Settings icons -->
-			<control type="image">
-				<posx>560</posx>
-				<posy>70</posy>
-				<width>192</width>
-				<height>192</height>
-				<texture>icon-settings.png</texture>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>ControlGroup(9450).HasFocus()</visible>
-			</control>
+			<control type="group">
+			<visible>ControlGroup(9450).HasFocus()</visible>
+				<control type="image">
+					<posx>560</posx>
+					<posy>55</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture>icon-settings.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>215</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture flipy="true" diffuse="mask-fade.png">icon-settings.png</texture>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				</control>
+			</control>	
 		</control>
 		<!-- Main Horizontal menu bar -->
 		<control type="group">
 			<posx>0</posx>
 			<posy>290</posy>
+			<control type="image">
+				<description>solid background</description>
+				<posx>0</posx>
+				<posy>4</posy>
+				<width>1280</width>
+				<height>430</height>
+				<colordiffuse>solid-background</colordiffuse>
+				<texture>black.png</texture>
+			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
