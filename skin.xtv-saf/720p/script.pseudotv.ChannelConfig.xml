@@ -21,7 +21,7 @@
             <posy>100</posy>
             <width>580</width>
             <height>45</height>
-            <label>Channel Configuration</label>
+            <label>31702</label>
 			<font>font18</font>
 			<textcolor>button-text</textcolor>
 			<shadowcolor>shadow-text</shadowcolor>
@@ -50,7 +50,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
                 <align>left</align>
-                <label>Channel</label>
+                <label>31703</label>
             </control>
             <control type="label">
                 <posx>515</posx>
@@ -60,7 +60,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
                 <align>right</align>
-                <label>Content</label>
+                <label>31704</label>
             </control>
             <control type="scrollbar" id="103">
 			    <posx>45r</posx>
@@ -185,7 +185,7 @@
 				<shadowcolor>shadow-text</shadowcolor>
                 <aligny>center</aligny>
                 <align>left</align>
-                <label>Channel Type:</label>
+                <label>$LOCALIZE[31705]:</label>
             </control>
             <control type="label" id="109">
                 <posx>480</posx>
@@ -223,7 +223,7 @@
                 <posy>180</posy>
                 <width>520</width>
                 <height>45</height>
-                <label>Advanced Channel Rules</label>
+                <label>31706</label>
                 <texturefocus border="5">default-button.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
 				<textcolor>button-text</textcolor>
@@ -628,7 +628,7 @@
 					<font>font13</font>
 					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-                    <label>Show in Order</label>
+                    <label>31707</label>
 					<textwidth>500</textwidth>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
@@ -651,7 +651,7 @@
                     <height>45</height>
 					<textcolor>button-text</textcolor>
 					<shadowcolor>shadow-text</shadowcolor>
-                    <label>Directory:</label>
+                    <label>$LOCALIZE[31708]:</label>
                     <aligny>center</aligny>
                     <align>left</align>
                 </control>
