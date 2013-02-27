@@ -142,7 +142,7 @@
 								<width>130</width>
 								<height>178</height>
 								<aspectratio>stretch</aspectratio>
-								<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+								<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Icon]</texture>
 								<visible>!Control.HasFocus(9160)</visible>
 							</control>
 							<control type="image">
