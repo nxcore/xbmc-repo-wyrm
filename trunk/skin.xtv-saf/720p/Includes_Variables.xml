@@ -155,6 +155,34 @@
 		<value condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</value>
 		<value>ActivateWindow(MusicFiles,Addons,return)</value>
 	</variable>
+	<variable name="VideoHeadings" description="Video screen headings">
+		<value condition="Container.content(movies)">$LOCALIZE[20342]</value>
+		<value condition="Container.content(tvshows)">$LOCALIZE[31027]</value>
+		<value condition="Container.content(seasons)">$LOCALIZE[33054]</value>
+		<value condition="Container.content(episodes)">$LOCALIZE[20360]</value>
+		<value condition="Container.content(actors)">$LOCALIZE[344]</value>
+		<value condition="Container.content(genres)">$LOCALIZE[135]</value>
+		<value condition="Container.content(years)">$LOCALIZE[652]</value>
+		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
+		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
+		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.content(addons)">$LOCALIZE[31696]</value>
+		<value condition="Container.content(files)">$LOCALIZE[744]</value>
+		<value>$LOCALIZE[3]</value>
+	</variable>
+	<variable name="MusicHeadings" description="Music screen headings">
+		<value condition="Container.content(songs)">$LOCALIZE[134]</value>
+		<value condition="Container.content(artists)">$LOCALIZE[133]</value>
+		<value condition="Container.content(albums)">$LOCALIZE[132]</value>
+		<value condition="Container.content(genres)">$LOCALIZE[135]</value>
+		<value condition="Container.content(years)">$LOCALIZE[652]</value>
+		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
+		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
+		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.content(addons)">$LOCALIZE[31697]</value>
+		<value condition="Container.content(files)">$LOCALIZE[744]</value>
+		<value>$LOCALIZE[31030]</value>
+	</variable>
 	<variable name="PVRHeading" description="PVR Headings">
 		<value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
 		<value condition="Control.IsVisible(17)">$LOCALIZE[137]</value>
@@ -216,33 +244,5 @@
 	<variable name="Icon(5)Poster">
 		<value condition="!IsEmpty(ListItem(5).Art(poster))">$INFO[ListItem(5).Art(poster)]</value>
 		<value>$INFO[ListItem(5).Icon]</value>
-	</variable>
-	<variable name="VideoHeadings" description="Video screen headings">
-		<value condition="Container.content(movies)">$LOCALIZE[20342]</value>
-		<value condition="Container.content(tvshows)">$LOCALIZE[31027]</value>
-		<value condition="Container.content(seasons)">$LOCALIZE[33054]</value>
-		<value condition="Container.content(episodes)">$LOCALIZE[20360]</value>
-		<value condition="Container.content(actors)">$LOCALIZE[344]</value>
-		<value condition="Container.content(genres)">$LOCALIZE[135]</value>
-		<value condition="Container.content(years)">$LOCALIZE[652]</value>
-		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
-		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
-		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
-		<value condition="Container.content(addons)">$LOCALIZE[31696]</value>
-		<value condition="Container.content(files)">$LOCALIZE[744]</value>
-		<value>$LOCALIZE[3]</value>
-	</variable>
-	<variable name="MusicHeadings" description="Music screen headings">
-		<value condition="Container.content(songs)">$LOCALIZE[134]</value>
-		<value condition="Container.content(artists)">$LOCALIZE[133]</value>
-		<value condition="Container.content(albums)">$LOCALIZE[132]</value>
-		<value condition="Container.content(genres)">$LOCALIZE[135]</value>
-		<value condition="Container.content(years)">$LOCALIZE[652]</value>
-		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
-		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
-		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
-		<value condition="Container.content(addons)">$LOCALIZE[31697]</value>
-		<value condition="Container.content(files)">$LOCALIZE[744]</value>
-		<value>$LOCALIZE[31030]</value>
 	</variable>
 </includes>
