@@ -1,4 +1,4 @@
-<window id="107">
+<window>
 	<animation effect="slide" time="400" start="0,-200">WindowOpen</animation>
 	<animation effect="slide" time="400" end="0,-200">WindowClose</animation>
 	<coordinates>

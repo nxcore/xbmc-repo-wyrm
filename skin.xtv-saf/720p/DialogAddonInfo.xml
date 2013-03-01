@@ -1,4 +1,4 @@
-<window id="146">
+<window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
@@ -184,18 +184,10 @@
 					<control type="scrollbar" id="60">
 						<posx>761</posx>
 						<posy>243</posy>
-						<width>24</width>
+						<width>22</width>
 						<height>202</height>
-						<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-						<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-						<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-						<textureslidernib>-</textureslidernib>
-						<textureslidernibfocus>-</textureslidernibfocus>
 						<onleft>9000</onleft>
 						<onright>61</onright>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
-						<colordiffuse>ScrollBarColor</colordiffuse>
 					</control>
 					<control type="label">
 						<description>Disclaimer txt</description>
@@ -237,18 +229,10 @@
 					<control type="scrollbar" id="61">
 						<posx>761</posx>
 						<posy>243</posy>
-						<width>24</width>
+						<width>22</width>
 						<height>312</height>
-						<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-						<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-						<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-						<textureslidernib>-</textureslidernib>
-						<textureslidernibfocus>-</textureslidernibfocus>
 						<onleft>60</onleft>
 						<onright>9000</onright>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
-						<colordiffuse>ScrollBarColor</colordiffuse>
 					</control>
 				</control>
 			</control>

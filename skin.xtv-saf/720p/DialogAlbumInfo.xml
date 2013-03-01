@@ -1,4 +1,4 @@
-<window id="2001">
+<window>
 	<defaultcontrol>35</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
@@ -715,41 +715,25 @@
 		<control type="scrollbar" id="23">
 			<posx>1246</posx>
 			<posy>90</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>576</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>50</onleft>
 			<onright>999</onright>
 			<ondown>23</ondown>
 			<onup>23</onup>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
 		</control>
 		<control type="scrollbar" id="1423">
 			<posx>1246</posx>
 			<posy>108</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>534</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>999</onleft>
 			<onright>999</onright>
 			<ondown>1423</ondown>
 			<onup>1423</onup>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar) + Control.IsVisible(4)</visible>
 		</control>
 	</controls>

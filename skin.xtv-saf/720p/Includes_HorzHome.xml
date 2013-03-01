@@ -154,9 +154,7 @@
 								<bordertexture border="10">mask-hilite.png</bordertexture>
 								<bordersize>9</bordersize>
 								<texture diffuse="mask-rect.png" fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-								<animation type="Focus" reversible="false">
-									<effect type="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out" />
-								</animation>
+								<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
 								<visible>Control.HasFocus(9160) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="image">
@@ -166,9 +164,7 @@
 								<height>188</height>
 								<aspectratio>stretch</aspectratio>
 								<texture background="true" diffuse="mask-rect.png">DefaultMovies.png</texture>
-								<animation type="Focus" reversible="false">
-									<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
-								</animation>
+								<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
 								<visible>Control.HasFocus(9160) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
 							</control>
 							<control type="label">
@@ -311,9 +307,7 @@
 							<bordertexture border="10">mask-hilite.png</bordertexture>
 							<bordersize>9</bordersize>
 							<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-							<animation type="Focus" reversible="false">
-								<effect type="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out" />
-							</animation>
+							<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							<visible>Control.HasFocus(9210) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
 						</control>
 						<control type="image">
@@ -325,9 +319,7 @@
 							<aligny>bottom</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
-							<animation type="Focus" reversible="false">
-								<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
-							</animation>
+							<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							<visible>Control.HasFocus(9210) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
 						</control>
 						<control type="label">
@@ -491,9 +483,7 @@
 							<bordertexture border="10">mask-hilite.png</bordertexture>
 							<bordersize>9</bordersize>
 							<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-							<animation type="Focus" reversible="false">
-								<effect type="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out" />
-							</animation>
+							<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							<visible>Control.HasFocus(9260) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
 						</control>
 						<control type="image">
@@ -505,9 +495,7 @@
 							<aligny>center</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" diffuse="mask-rect.png">DefaultAudio.png</texture>
-							<animation type="Focus" reversible="false">
-								<effect type="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out" />
-							</animation>
+							<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							<visible>Control.HasFocus(9260) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
 						</control>
 						<control type="label">
@@ -1157,9 +1145,7 @@
 			<orientation>horizontal</orientation>
 			<control type="grouplist" id="9100">
 				<visible>Skin.HasSetting(home-video)</visible>
-				<animation type="Conditional" condition="![ControlGroup(9100).HasFocus()]">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="![ControlGroup(9100).HasFocus()]" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1284,9 +1270,7 @@
 			</control>
 			<control type="grouplist" id="9150">
 				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
-				<animation type="Conditional" condition="![ControlGroup(9150).HasFocus() | Control.HasFocus(9160)]">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="![ControlGroup(9150).HasFocus() | Control.HasFocus(9160)]" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
@@ -1433,9 +1417,7 @@
 			<!-- TV Sub Menu -->
 			<control type="grouplist" id="9200">
 				<visible>!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
-				<animation type="Conditional" condition="![ControlGroup(9200).HasFocus() | Control.HasFocus(9210)]">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="![ControlGroup(9200).HasFocus() | Control.HasFocus(9210)]" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
@@ -1602,9 +1584,7 @@
 			<!-- Music Sub menu -->
 			<control type="grouplist" id="9250">
 				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
-				<animation type="Conditional" condition="![ControlGroup(9250).HasFocus() | Control.HasFocus(9260)]">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="![ControlGroup(9250).HasFocus() | Control.HasFocus(9260)]" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
@@ -1772,9 +1752,7 @@
 			<!-- Pictures Sub menu -->
 			<control type="grouplist" id="9300">
 				<visible>!Skin.HasSetting(home-photos)</visible>
-				<animation type="Conditional" condition="!ControlGroup(9300).HasFocus()">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1821,9 +1799,7 @@
 			<!-- Addons Sub menu -->
 			<control type="grouplist" id="9350">
 				<visible>Skin.HasSetting(home-programs)</visible>
-				<animation type="Conditional" condition="![ControlGroup(9350).HasFocus()]">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="![ControlGroup(9350).HasFocus()]" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1927,9 +1903,7 @@
 			<!-- Weather Sub menu -->
 			<control type="grouplist" id="9400">
 				<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
-				<animation type="Conditional" condition="!ControlGroup(9400).HasFocus()">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1956,9 +1930,7 @@
 			</control>
 			<!-- Settings Sub menu -->
 			<control type="grouplist" id="9450">
-				<animation type="Conditional" condition="!ControlGroup(9450).HasFocus()">
-					<effect type="fade" start="100" end="0" time="100" reversible="true" />
-				</animation>
+				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>

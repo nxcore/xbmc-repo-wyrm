@@ -1,4 +1,4 @@
-<window id="2901">
+<window>
 	<defaultcontrol always="true">214</defaultcontrol> 
 	<animation effect="fade" start="0" time="100">WindowOpen</animation>
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -36,7 +36,7 @@
 				<height>60</height>
 				<texturefocus>osd-btn-bookmark-focus.png</texturefocus>
 				<texturenofocus>osd-btn-bookmark.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(125)</onclick>
+				<onclick>XBMC.ActivateWindow(videobookmarks)</onclick>
 			</control>
 			<control type="button" id="918">
 				<description>playlist button</description>
@@ -44,7 +44,7 @@
 				<height>60</height>
 				<texturefocus>osd-btn-playlist-focus.png</texturefocus>
 				<texturenofocus>osd-btn-playlist.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(28)</onclick>
+				<onclick>XBMC.ActivateWindow(videoplaylist)</onclick>
 			</control>
 			<control type="image" id="931">
 				<description>Dummy</description>
@@ -144,7 +144,7 @@
 				<height>60</height>
 				<texturefocus>osd-btn-audio-focus.png</texturefocus>
 				<texturenofocus>osd-btn-audio.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(124)</onclick>
+				<onclick>XBMC.ActivateWindow(osdaudiosettings)</onclick>
 			</control>
 			<control type="button" id="920">
 				<description>Video Menu</description>
@@ -152,7 +152,7 @@
 				<height>60</height>
 				<texturefocus>osd-btn-video-focus.png</texturefocus>
 				<texturenofocus>osd-btn-video.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(123)</onclick>
+				<onclick>XBMC.ActivateWindow(osdvideosettings)</onclick>
 			</control>
 		</control>
 		<!-- End Player buttons -->

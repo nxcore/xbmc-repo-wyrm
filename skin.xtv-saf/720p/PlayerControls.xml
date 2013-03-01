@@ -353,7 +353,7 @@
 				<height>40</height>
 				<texturefocus>osd-btn-vis-focus.png</texturefocus>
 				<texturenofocus>osd-btn-vis.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(122)</onclick>
+				<onclick>XBMC.ActivateWindow(visualisationpresetlist)</onclick>
 				<visible>Player.HasAudio</visible>
 			</control>
 			<control type="button" id="219">

@@ -1,4 +1,4 @@
-<window id="122">
+<window>
 	<defaultcontrol>2</defaultcontrol>
 	<animation effect="fade" time="400">WindowOpen</animation>
 	<animation effect="fade" time="400">WindowClose</animation>
@@ -102,18 +102,10 @@
 			<posy>50</posy>
 			<width>14</width>
 			<height>500</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<pagecontrol>60</pagecontrol>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>

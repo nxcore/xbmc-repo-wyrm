@@ -1,4 +1,4 @@
-<window id="12">
+<window>
 	<defaultcontrol>2</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
@@ -35,7 +35,7 @@
 			<posx>973</posx>
 			<posy>112</posy>
 			<width>283</width>
-			<height>540</height>
+			<height>542</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
 			<onright>23</onright>
@@ -66,7 +66,7 @@
 			<posx>53</posx>
 			<posy>112</posy>
 			<width>885</width>
-			<height>540</height>
+			<height>542</height>
 			<itemgap>-2</itemgap>
 			<onleft>23</onleft>
 			<onright>3</onright>
@@ -78,20 +78,12 @@
 		<control type="scrollbar" id="23">
 			<posx>14</posx>
 			<posy>112</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>542</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>3</onleft>
 			<onright>5</onright>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
-			<visible>Skin.HasSetting(sbar)</visible>
+			<visible>Skin.HasSetting(sbar) + [Container(5).HasPrevious | Container(5).HasNext]</visible>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>

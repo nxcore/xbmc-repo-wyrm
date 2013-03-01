@@ -1,4 +1,4 @@
-<window id="28">
+<window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>no</allowoverlay>
@@ -51,10 +51,6 @@
 			<width>619</width>
 			<height>15</height>
 			<info>Player.Progress</info>
-			<texturesliderbackground border="7">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="7">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="7">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<colordiffuse>ProgressBarColor</colordiffuse>
 			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="label">

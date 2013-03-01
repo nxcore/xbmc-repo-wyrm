@@ -1,4 +1,4 @@
-<window id="10140">
+<window>
 	<defaultcontrol always="true">9</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<coordinates>
@@ -55,18 +55,10 @@
 		<control type="scrollbar" id="30">
 			<posx>10</posx>
 			<posy>112</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>545</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>9</onleft>
 			<onright>2</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<control type="group" id="9001">

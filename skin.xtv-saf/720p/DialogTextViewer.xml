@@ -1,4 +1,4 @@
-<window id="147">
+<window>
 	<defaultcontrol>23</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<controls>
@@ -58,20 +58,12 @@
 				<control type="scrollbar" id="23">
 					<posx>1239</posx>
 					<posy>112</posy>
-					<width>24</width>
+					<width>22</width>
 					<height>530</height>
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>23</onleft>
 					<onright>23</onright>
 					<ondown>23</ondown>
 					<onup>23</onup>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
 				</control>
 			</control>
 		</control>

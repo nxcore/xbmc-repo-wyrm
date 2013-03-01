@@ -1,4 +1,4 @@
-<window id="139">
+<window>
 	<defaultcontrol>5</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<include>screen-fade</include>
@@ -90,19 +90,11 @@
 		<control type="scrollbar" id="23">
 			<posx>1247</posx>
 			<posy>112</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>500</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>5</onleft>
 			<onright>5</onright>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>

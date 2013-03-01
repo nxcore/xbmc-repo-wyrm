@@ -1,4 +1,4 @@
-<window id="610">
+<window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -184,19 +184,12 @@
 			<control type="scrollbar" id="60">
 				<posx>440</posx>
 				<posy>100</posy>
-				<width>25</width>
+				<width>22</width>
 				<height>490</height>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>11</onleft>
 				<onright>11</onright>
 				<ondown>61</ondown>
 				<onup>61</onup>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 			<control type="label">
 				<description>Page Count Label</description>

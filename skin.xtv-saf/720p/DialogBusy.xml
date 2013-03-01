@@ -1,4 +1,4 @@
-<window id="136">
+<window>
 	<animation effect="fade" time="100">WindowOpen</animation>
 	<animation effect="fade" time="200">WindowClose</animation>
 	<controls>
@@ -19,10 +19,6 @@
 			<posy>432</posy>
 			<width>256</width>
 			<height>20</height>
-			<texturesliderbackground border="7">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="7">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="7">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
 	</controls>
 </window>

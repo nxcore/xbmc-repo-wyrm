@@ -1,4 +1,4 @@
-<window id="125">
+<window>
 	<defaultcontrol>999</defaultcontrol>
 	<coordinates>
 		<posx>265</posx>
@@ -95,17 +95,10 @@
 			<posy>500</posy>
 			<width>679</width>
 			<height>22</height>
-			<texturesliderbackground border="8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<ondown>999</ondown>
 			<onup>11</onup>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<!-- Option Buttons -->

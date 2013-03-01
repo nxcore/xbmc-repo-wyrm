@@ -138,17 +138,9 @@
 				<posy>112</posy>
 				<width>22</width>
 				<height>565</height>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>11</onleft>
 				<onright>11</onright>
 				<include>list-fade</include>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<colordiffuse>ScrollBarColor</colordiffuse>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>

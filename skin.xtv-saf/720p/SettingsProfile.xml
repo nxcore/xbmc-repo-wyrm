@@ -1,4 +1,4 @@
-<window id="34">
+<window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	 
 	<allowoverlay>yes</allowoverlay>
@@ -82,19 +82,11 @@
 		<control type="scrollbar" id="23">
 			<posx>1239</posx>
 			<posy>112</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>450</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>2</onleft>
 			<onright>4</onright>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<control type="image">
