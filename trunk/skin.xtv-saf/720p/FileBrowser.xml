@@ -1,4 +1,4 @@
-<window id="126">
+<window>
 	<defaultcontrol always="true">450</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include>shutdown-ani</include>
@@ -190,17 +190,9 @@
 			<posy>37</posy>
 			<width>22</width>
 			<height>417</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>460</onleft>
 			<onright>450</onright>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Control.IsVisible(450) + Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>

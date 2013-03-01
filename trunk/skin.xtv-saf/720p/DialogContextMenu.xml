@@ -1,4 +1,4 @@
-<window id="106">
+<window>
 	<defaultcontrol always="true">996</defaultcontrol>
 	<include>shutdown-ani</include>
 	<coordinates>
@@ -23,7 +23,7 @@
 				<posy>0</posy>
 				<width>536</width>
 				<height>630</height>
-				<texture border="16">button-menu-background.png</texture>
+				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
 			<control type="grouplist" id="996">

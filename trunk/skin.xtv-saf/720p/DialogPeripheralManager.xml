@@ -1,4 +1,4 @@
-<window id="10140">
+<window>
 	<defaultcontrol>20</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<include>screen-fade</include>
@@ -73,17 +73,10 @@
 			<control type="scrollbar" id="60">
 				<posx>1090</posx>
 				<posy>140</posy>
-				<width>20</width>
+				<width>22</width>
 				<height>467</height>
-				<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-				<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-				<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-				<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-				<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
 				<onleft>10</onleft>
 				<onright>9000</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 			<control type="label">
 				<description>name</description>

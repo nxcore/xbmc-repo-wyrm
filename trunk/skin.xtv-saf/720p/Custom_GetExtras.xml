@@ -22,7 +22,7 @@
 					<posy>0</posy>
 					<width>604</width>
 					<height>330</height>
-					<texture border="16">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label">
@@ -139,13 +139,6 @@
 					<height>184</height>
 					<onleft>999</onleft>
 					<onright>noop</onright>
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
-					<orientation>vertical</orientation>
-					<showonepage>false</showonepage>
 				</control>
 				<control type="button" id="10">
 					<posx>192</posx>

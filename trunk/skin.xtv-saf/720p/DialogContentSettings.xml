@@ -1,4 +1,4 @@
-<window id="132">
+<window>
 	<defaultcontrol>3</defaultcontrol>
 	<coordinates>
 		<posx>284</posx>
@@ -152,8 +152,8 @@
 			<aligny>center</aligny>
 			<radioposx>680</radioposx>
 			<textoffsetx>20</textoffsetx>
-			<textureradiofocus>check-box.png</textureradiofocus>
-			<textureradionofocus>check-boxNF.png</textureradionofocus>
+			<textureradioon>check-box.png</textureradioon>
+			<textureradiooff>check-boxNF.png</textureradiooff>
 		</control>
 		<control type="image" id="11">
 			<description>separator image</description>

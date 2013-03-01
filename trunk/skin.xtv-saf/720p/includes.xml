@@ -220,7 +220,7 @@
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
 					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+					<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
@@ -235,6 +235,19 @@
 					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
+				<control>
+					<description>debug label</description>
+					<posx>10</posx>
+					<posy>20</posy>
+					<width>900</width>
+					<height>37</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<label>Control.GetLabel(6300)</label>
+				</control>
 			</control>
 			<control type="group">
 				<visible>Container.Content(TVShows)</visible>
@@ -246,7 +259,7 @@
 					<randomize>true</randomize>
 					<timeperimage>5000</timeperimage>
 					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path,,/extrafanart/]</imagepath>
+					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
@@ -541,19 +554,11 @@
 		<control type="scrollbar" id="23">
 			<posx>1239</posx>
 			<posy>112</posy>
-			<width>24</width>
+			<width>22</width>
 			<height>555</height>
-			<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-			<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-			<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
 			<onleft>50</onleft>
 			<onright>9000</onright>
 			<include>list-fade</include>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
-			<colordiffuse>ScrollBarColor</colordiffuse>
 			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
 		</control>
 	</include>

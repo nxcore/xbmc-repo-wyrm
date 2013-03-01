@@ -1,4 +1,4 @@
-<window id="123">
+<window>
 	<defaultcontrol>5</defaultcontrol>
 	<animation effect="fade" time="400">WindowOpen</animation>
 	<animation effect="fade" time="400">WindowClose</animation>
@@ -84,8 +84,8 @@
 				<textoffsetx>18</textoffsetx>
 				<aligny>center</aligny>
 				<radioposx>684</radioposx>
-				<textureradiofocus>check-box.png</textureradiofocus>
-				<textureradionofocus>check-boxNF.png</textureradionofocus>
+				<textureradioon>check-box.png</textureradioon>
+				<textureradiooff>check-boxNF.png</textureradiooff>
 				<textcolor>button-text</textcolor>
 			</control>
 			<control type="spincontrolex" id="9">

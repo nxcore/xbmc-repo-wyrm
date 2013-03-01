@@ -79,17 +79,11 @@
 			<control type="scrollbar" id="60">
 				<posx>850</posx>
 				<posy>78</posy>
-				<width>25</width>
+				<width>22</width>
 				<height>560</height>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
 				<onleft>560</onleft>
 				<onright>2</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(560) + Skin.HasSetting(sbar)</visible>
-				<colordiffuse>ScrollBarColor</colordiffuse>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(560)</visible>

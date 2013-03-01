@@ -1,4 +1,4 @@
-<window id="605">
+<window>
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
@@ -53,16 +53,8 @@
 				<posy>5</posy>
 				<width>25</width>
 				<height>470</height>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<colordiffuse>ScrollBarColor</colordiffuse>
 				<onleft>9002</onleft>
 				<onright>20</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="20">
 				<posx>30</posx>
@@ -136,8 +128,7 @@
 						<posy>0</posy>
 						<width>420</width>
 						<height>60</height>
-						<texturefocus border="9">default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texture border="9">default-button.png</texture>
 						<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
 					</control>
 					<control type="image">

@@ -1,4 +1,4 @@
-<window id="120">
+<window>
 	<defaultcontrol>214</defaultcontrol>
 	<animation effect="fade" start="0" time="100">WindowOpen</animation>
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -102,7 +102,7 @@
 				<height>60</height>
 				<texturefocus>osd-btn-playlist-focus.png</texturefocus>
 				<texturenofocus>osd-btn-playlist.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(500)</onclick>
+				<onclick>XBMC.ActivateWindow(musicplaylist )</onclick>
 			</control>
 			<control type="image" id="930">
 				<description>Dummy</description>
@@ -192,7 +192,7 @@
 				<height>60</height>
 				<texturefocus>osd-btn-vis-focus.png</texturefocus>
 				<texturenofocus>osd-btn-vis.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(122)</onclick>
+				<onclick>XBMC.ActivateWindow(visualisationpresetlist)</onclick>
 			</control>
 			<control type="button" id="219">
 				<description>Popup Vis Settings</description>

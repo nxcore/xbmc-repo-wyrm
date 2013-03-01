@@ -1,4 +1,4 @@
-<window id="614">
+<window>
 	<animation effect="slide" start="0,-400" time="300">WindowOpen</animation>
 	<animation effect="slide" end="0,-400" time="300">WindowClose</animation>
 	<coordinates>
@@ -42,16 +42,12 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 			</control>
-			<control type="progress" id="31">
+			<control type="progress" id="32">
 				<description>progress control</description>
 				<posx>26</posx>
 				<posy>90</posy>
 				<width>654</width>
 				<height>20</height>
-				<texturesliderbackground border="7">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="7">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="7">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 		</control>
 	</controls>

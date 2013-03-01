@@ -21,7 +21,7 @@
 			<posx>8</posx>
 			<posy>-16</posy>
 			<width>360</width>
-			<texture border="32">button-menu-background.png</texture>
+			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="999">

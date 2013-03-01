@@ -93,19 +93,11 @@
 			<control type="scrollbar" id="1223">
 				<posx>14</posx>
 				<posy>112</posy>
-				<width>24</width>
+				<width>22</width>
 				<height>542</height>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<onleft>999</onleft>
 				<onright>998</onright>
 				<include>list-fade</include>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<colordiffuse>ScrollBarColor</colordiffuse>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 			<!--Custom Movie Settings-->

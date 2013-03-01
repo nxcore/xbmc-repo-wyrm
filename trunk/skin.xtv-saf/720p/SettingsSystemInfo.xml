@@ -1,4 +1,4 @@
-<window id="7">
+<window>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
@@ -196,11 +196,7 @@
 				<posy>525</posy>
 				<width>566</width>
 				<height>20</height>
-				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
 				<info>System.CPUUsage</info>
-				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="label">
 				<description>Memory Text</description>
@@ -219,11 +215,7 @@
 				<posy>568</posy>
 				<width>566</width>
 				<height>20</height>
-				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
 				<info>system.memory(used)</info>
-				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 		</control>
  		<control type="group">

@@ -1,4 +1,4 @@
-<window id="101">
+<window>
 	<defaultcontrol>10</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -9,13 +9,13 @@
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(selectdialog)</visible>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<control type="image">
 				<description>Progess Dialog background</description>
 				<posx>292</posx>
 				<posy>256</posy>
 				<width>690</width>
-				<height>237</height>
+				<height>238</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
@@ -75,12 +75,8 @@
 				<posx>336</posx>
 				<posy>408</posy>
 				<width>601</width>
-				<height>15</height>
-				<texturesliderbackground border="7">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="7">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="7">scrollbar_bar_focus.png</texturesliderbarfocus>
+				<height>16</height>
 				<info>System.Progressbar</info>
-				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="button" id="10">
 				<description>Cancel button</description>
@@ -92,10 +88,10 @@
 				<font>font12</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus border="5">default-button.png</texturefocus>
-				<onleft>10</onleft>
 				<align>center</align>
+				<texturefocus border="5">default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup>10</onup>
 				<ondown>10</ondown>

@@ -51,14 +51,13 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="114">
-				<!--<animation effect="zoom" start="90" end="110" center="auto" time="500" tween="back" easing="inout" reversible="false">Focus</animation>-->
 				<control type="image">
 					<description>Item Hi-lite</description>
 					<posx>655</posx>
 					<posy>0</posy>
 					<width>560</width>
 					<height>114</height>
-					<texture  border="6" background="true">button-menu-background.png</texture>
+					<texture border="8" diffuse="mask-squ.png" background="true">button-menu-background.png</texture>
 				</control>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -237,19 +236,11 @@
 				<control type="scrollbar" id="29">
 					<posx>1239</posx>
 					<posy>105</posy>
-					<width>24</width>
+					<width>22</width>
 					<height>524</height>
-					<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
 					<onleft>59</onleft>
 					<onright>9000</onright>
 					<include>list-fade</include>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<colordiffuse>ScrollBarColor</colordiffuse>
 					<visible>Skin.HasSetting(sbar)</visible>
 				</control>
 			</control>

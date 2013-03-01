@@ -91,7 +91,23 @@
 		<posx>177</posx>
 		<posy>406</posy>
 		<texturebg border="14,0,14,0">progress-background.png</texturebg>
+		<lefttexture>-</lefttexture>
 		<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+		<righttexture>-</righttexture>
+		<overlaytexture></overlaytexture>
+		<colordiffuse>ProgressBarColor</colordiffuse>
+	</default>
+	<default type="scrollbar">
+		<posx>1239</posx>
+		<posy>112</posy>
+		<texturesliderbackground border="11">scrollbar_background.png</texturesliderbackground>
+		<texturesliderbar border="11">scrollbar_bar.png</texturesliderbar>
+		<texturesliderbarfocus border="11">scrollbar_bar_focus.png</texturesliderbarfocus>
+		<textureslidernib>-</textureslidernib>
+		<textureslidernibfocus>-</textureslidernibfocus>
+		<showonepage>false</showonepage>
+		<orientation>vertical</orientation>
+		<colordiffuse>ScrollBarColor</colordiffuse>
 	</default>
 	<default type="spincontrol">
 		<posx>584</posx>

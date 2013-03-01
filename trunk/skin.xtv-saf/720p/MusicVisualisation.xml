@@ -1,7 +1,7 @@
-<window id="2006">
+<window>
 	<allowoverlay>no</allowoverlay>
-	<visible>!Window.IsVisible(2904)</visible>
-	<visible>!Window.IsVisible(2005)</visible>
+	<visible>!Window.IsVisible(videooverlay)</visible>
+	<visible>!Window.IsVisible(fullscreenvideo)</visible>
 	<controls>
 		<control type="image">
 			<description>solid background</description>

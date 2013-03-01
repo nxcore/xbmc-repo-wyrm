@@ -1,4 +1,4 @@
-<window id="603">
+<window>
 	<defaultcontrol>29</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -100,8 +100,8 @@
 			<description>Default RadioButton</description>
 			<height>46</height>
 			<font>font13</font>
-			<textureradiofocus>check-box.png</textureradiofocus>
-			<textureradionofocus>check-boxnf.png</textureradionofocus>
+			<textureradioon>check-box.png</textureradioon>
+			<textureradiooff>check-boxnf.png</textureradiooff>
 			<texturefocus border="9">default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textcolor>button-text</textcolor>

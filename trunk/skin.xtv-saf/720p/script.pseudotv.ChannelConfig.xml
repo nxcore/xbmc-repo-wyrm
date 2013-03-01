@@ -72,14 +72,6 @@
                 <onleft>102</onleft>
                 <onright>102</onright>
 				<include>list-fade</include>
-				<texturesliderbackground border="0,8,0,8">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="0,8,0,8">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,8,0,8">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-				<colordiffuse>ScrollBarColor</colordiffuse>
                 <visible>Control.IsVisible(102)</visible>
             </control>
 			<control type="list" id="102">

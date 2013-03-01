@@ -362,17 +362,10 @@
 				<posy>587</posy>
 				<width>1239</width>
 				<height>22</height>
-				<texturesliderbackground border="10">scrollbar_background.png</texturesliderbackground>
-				<texturesliderbar border="10">scrollbar_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="10">scrollbar_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
 				<onup>57</onup>
 				<ondown>9000</ondown>
 				<include>list-fade</include>
-				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
-				<colordiffuse>ScrollBarColor</colordiffuse>
 				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
 			</control>
 			<!-- MPAA Rating -->

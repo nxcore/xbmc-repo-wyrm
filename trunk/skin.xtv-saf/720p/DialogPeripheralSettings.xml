@@ -103,15 +103,8 @@
 			<posy>112</posy>
 			<width>44</width>
 			<height>545</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar-back.png</texturesliderbackground>
-			<texturesliderbar border="0,10,0,10">scrollbar-front-nofocus.png</texturesliderbar>
-			<texturesliderbarfocus border="0,10,0,10">scrollbar-front.png</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib-nofocus.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
 			<onleft>5</onleft>
 			<onright>2</onright>
-			<showonepage>false</showonepage>
-			<orientation>vertical</orientation>
 		</control>
 		<control type="group" id="9000">
 			<posx>132</posx>
