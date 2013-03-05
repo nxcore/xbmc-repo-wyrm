@@ -4,7 +4,7 @@
 			<viewtype label="31941">List</viewtype>
 			<posx>668</posx>
 			<posy>116</posy>
-			<width>550</width>
+			<width>555</width>
 			<height>532</height>
 			<focusposition>2</focusposition>
 			<movement>4</movement>
@@ -16,7 +16,7 @@
 			<scrolltime>200</scrolltime>
 			<preloaditems>5</preloaditems>
 			<pagecontrol>23</pagecontrol>
-			<itemlayout width="570" height="76">
+			<itemlayout width="575" height="76">
 				<control type="image">
 					<posx>10</posx>
 					<posy>22</posy>
@@ -30,7 +30,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -43,7 +43,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -57,7 +57,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -74,7 +74,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -87,7 +87,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -101,7 +101,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -118,7 +118,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -131,7 +131,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -145,7 +145,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -162,7 +162,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -175,7 +175,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -189,7 +189,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -202,7 +202,7 @@
 					</control>
 				</control>	
 			</itemlayout>
-			<focusedlayout width="570" height="76">
+			<focusedlayout width="575" height="76">
 				<control type="image">
 					<posx>10</posx>
 					<posy>22</posy>
@@ -216,7 +216,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -229,7 +229,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -243,7 +243,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -260,7 +260,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -274,7 +274,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -289,7 +289,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -306,7 +306,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -319,7 +319,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -333,7 +333,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -350,7 +350,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>28</height>
 						<font>font13</font>
 						<align>left</align>
@@ -363,7 +363,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>10</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -377,7 +377,7 @@
 					<control type="label">
 						<posx>53</posx>
 						<posy>36</posy>
-						<width>496</width>
+						<width>500</width>
 						<height>23</height>
 						<font>font11</font>
 						<align>left</align>
@@ -396,12 +396,13 @@
 			<visible>Control.IsVisible(50)</visible>
 			<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
 			<include>list-fade</include>
+			<include>button-pulse</include>
 			<control type="group">
 				<control type="image">
 					<description>Slider</description>
 					<posx>706</posx>
 					<posy>352</posy>
-					<width>524</width>
+					<width>528</width>
 					<height>76</height>
 					<texture border="8">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
