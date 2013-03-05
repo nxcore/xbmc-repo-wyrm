@@ -265,7 +265,7 @@
 				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
 			</control>
 			<control type="scrollbar" id="28">
-				<posx>1239</posx>
+				<posx>1244</posx>
 				<posy>120</posy>
 				<width>22</width>
 				<height>510</height>

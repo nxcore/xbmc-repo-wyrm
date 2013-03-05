@@ -34,7 +34,6 @@
 					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
-
 				<control type="image">
 					<posx>224</posx>
 					<posy>10</posy>
@@ -116,7 +115,7 @@
 			</focusedlayout>
 		</control>
 		<control type="scrollbar" id="29">
-			<posx>1239</posx>
+			<posx>1244</posx>
 			<posy>100</posy>
 			<width>22</width>
 			<height>588</height>

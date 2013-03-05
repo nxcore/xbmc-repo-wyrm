@@ -4,7 +4,7 @@
 			<viewtype label="31941">List</viewtype>
 			<posx>678</posx>
 			<posy>116</posy>
-			<width>540</width>
+			<width>544</width>
 			<height>550</height>
 			<focusposition>4</focusposition>
 			<movement>6</movement>
@@ -16,7 +16,7 @@
 			<scrolltime>200</scrolltime>
 			<preloaditems>5</preloaditems>
 			<pagecontrol>23</pagecontrol>
-			<itemlayout width="560" height="50">
+			<itemlayout width="564" height="50">
 				<control type="image">
 					<posx>10</posx>
 					<posy>8</posy>
@@ -28,7 +28,7 @@
 				<control type="label">
 					<posx>53</posx>
 					<posy>5</posy>
-					<width>486</width>
+					<width>490</width>
 					<height>26</height>
 					<font>font12</font>
 					<align>left</align>
@@ -39,7 +39,7 @@
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
-			<focusedlayout width="560" height="50">
+			<focusedlayout width="564" height="50">
 				<control type="image">
 					<posx>10</posx>
 					<posy>8</posy>
@@ -51,7 +51,7 @@
 				<control type="label">
 					<posx>53</posx>
 					<posy>5</posy>
-					<width>486</width>
+					<width>490</width>
 					<height>26</height>
 					<font>font12</font>
 					<align>left</align>
@@ -68,12 +68,13 @@
 			<visible>Control.IsVisible(50)</visible>
 			<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
 			<include>list-fade</include>
+			<include>button-pulse</include>
 			<control type="group">
 				<control type="image">
 					<description>Slider</description>
 					<posx>716</posx>
 					<posy>396</posy>
-					<width>514</width>
+					<width>518</width>
 					<height>50</height>
 					<texture border="8">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
