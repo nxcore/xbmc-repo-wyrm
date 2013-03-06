@@ -7,8 +7,8 @@
 				<control type="list" id="15">
 					<posx>678</posx>
 					<posy>118</posy>
-					<width>560</width>
-					<height>555</height>
+					<width>552</width>
+					<height>560</height>
 					<onup>15</onup>
 					<ondown>15</ondown>
 					<onleft>9000</onleft>
@@ -17,39 +17,37 @@
 					<scrolltime>200</scrolltime>
 					<preloaditems>2</preloaditems>
 					<pagecontrol>27</pagecontrol>
-					<itemlayout height="70">
+					<itemlayout width="552" height="70">
 						<control type="image">
-							<posx>12</posx>
-							<posy>4</posy>
-							<width>62</width>
-							<height>62</height>
+							<posx>11</posx>
+							<posy>11</posy>
+							<width>38</width>
+							<height>38</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>8</posy>
 							<width>482</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<selectedcolor>listselectedtext</selectedcolor>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>34</posy>
 							<width>280</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<selectedcolor>listselectedtext</selectedcolor>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
 							<posx>-30</posx>
@@ -59,39 +57,37 @@
 							<texture>$VAR[PVROverlay]</texture>
 						</control>
 					</itemlayout>
-					<focusedlayout height="70">
+					<focusedlayout width="552" height="70">
 						<control type="image">
-							<posx>12</posx>
-							<posy>4</posy>
-							<width>62</width>
-							<height>62</height>
+							<posx>11</posx>
+							<posy>11</posy>
+							<width>38</width>
+							<height>38</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>8</posy>
 							<width>482</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<selectedcolor>listselectedtext</selectedcolor>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>34</posy>
 							<width>280</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
 							<selectedcolor>listselectedtext</selectedcolor>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
 							<posx>-30</posx>
@@ -106,7 +102,7 @@
 					<posx>1239</posx>
 					<posy>112</posy>
 					<width>22</width>
-					<height>555</height>
+					<height>565</height>
 					<onleft>15</onleft>
 					<onright>15</onright>
 					<include>list-fade</include>

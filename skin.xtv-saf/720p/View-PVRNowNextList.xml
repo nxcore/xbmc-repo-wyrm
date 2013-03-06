@@ -8,7 +8,7 @@
 					<viewtype label="536">List</viewtype>
 					<posx>678</posx>
 					<posy>116</posy>
-					<width>540</width>
+					<width>552</width>
 					<height>560</height>
 					<onup>16</onup>
 					<ondown>16</ondown>
@@ -19,19 +19,18 @@
 					<pagecontrol>27</pagecontrol>
 					<itemlayout height="70">
 						<control type="image">
-							<posx>12</posx>
-							<posy>4</posy>
-							<width>62</width>
-							<height>62</height>
+							<posx>11</posx>
+							<posy>11</posy>
+							<width>48</width>
+							<height>48</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>8</posy>
-							<width>606</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<width>470</width>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -41,10 +40,9 @@
 						<control type="label">
 							<posx>80</posx>
 							<posy>34</posy>
-							<width>120</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<width>470</width>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -63,25 +61,24 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>540</width>
+							<width>552</width>
 							<height>70</height>
-							<texture border="5">default-button.png</texture>
+							<texture border="8">default-button.png</texture>
 							<animation effect="fade" time="200" reversible="false" tween="quadratic" easing="out">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>12</posx>
-							<posy>4</posy>
-							<width>62</width>
-							<height>62</height>
+							<posx>11</posx>
+							<posy>11</posy>
+							<width>48</width>
+							<height>48</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>8</posy>
-							<width>606</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<width>470</width>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -91,10 +88,9 @@
 						<control type="label">
 							<posx>80</posx>
 							<posy>34</posy>
-							<width>120</width>
-							<height>23</height>
-							<font>font12</font>
-							<align>left</align>
+							<width>470</width>
+							<height>24</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -110,7 +106,6 @@
 						</control>
 					</focusedlayout>
 				</control>
-
 				<control type="scrollbar" id="27">
 					<posx>1239</posx>
 					<posy>112</posy>

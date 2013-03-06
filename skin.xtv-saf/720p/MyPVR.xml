@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol>32</defaultcontrol>
+	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>background</include>
