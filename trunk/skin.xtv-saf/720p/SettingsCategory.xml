@@ -93,7 +93,7 @@
 			<height>56</height>
 			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
-			<texturefocus border="18">default-button.png</texturefocus>
+			<texturefocus border="8">default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textcolor>button-text</textcolor>
 		</control>
@@ -117,7 +117,7 @@
 			<posy>187</posy>
 			<width>870</width>
 			<height>56</height>
-			<texturefocus border="18">default-button.png</texturefocus>
+			<texturefocus border="8">default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textureup>scroll-up.png</textureup>
 			<texturedown>scroll-down.png</texturedown>
@@ -140,7 +140,7 @@
 			<font>font13</font>
 			<align>left</align>
 			<textoffsetx>18</textoffsetx>
-			<texturefocus border="18">default-button.png</texturefocus>
+			<texturefocus border="8">default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<textcolor>button-text</textcolor>
 		</control>

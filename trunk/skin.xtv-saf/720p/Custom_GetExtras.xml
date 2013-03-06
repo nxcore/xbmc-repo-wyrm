@@ -84,7 +84,7 @@
 							<posy>0</posy>
 							<width>534</width>
 							<height>46</height>
-							<texture border="2">default-button.png</texture>
+							<texture border="8">default-button.png</texture>
 							<visible>Control.HasFocus(999)</visible>
 						</control>
 						<control type="label">

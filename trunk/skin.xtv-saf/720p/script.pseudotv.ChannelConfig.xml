@@ -116,7 +116,7 @@
                         <posy>0</posy>
                         <width>515</width>
                         <height>45</height>
-                        <texture border="5">default-button.png</texture>
+                        <texture border="8">default-button.png</texture>
                     </control>
                     <control type="label">
                         <posx>30</posx>
@@ -195,7 +195,7 @@
                 <posy>60</posy>
                 <width>320</width>
                 <height>45</height>
-                <texturefocus border="5">default-button.png</texturefocus>
+                <texturefocus border="8">default-button.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onleft>111</onleft>
                 <onright>111</onright>
@@ -216,7 +216,7 @@
                 <width>520</width>
                 <height>45</height>
                 <label>31706</label>
-                <texturefocus border="5">default-button.png</texturefocus>
+                <texturefocus border="8">default-button.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -231,7 +231,7 @@
                 <width>240</width>
                 <height>45</height>
                 <label>186</label>
-                <texturefocus border="5">default-button.png</texturefocus>
+                <texturefocus border="8">default-button.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -247,7 +247,7 @@
                 <width>240</width>
                 <height>45</height>
                 <label>222</label>
-                <texturefocus border="5">default-button.png</texturefocus>
+                <texturefocus border="8">default-button.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
@@ -321,7 +321,7 @@
                     <posy>100</posy>
                     <width>320</width>
                     <height>45</height>
-                    <texturefocus border="5">default-button.png</texturefocus>
+                    <texturefocus border="8">default-button.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <onup>110</onup>
                     <ondown>114</ondown>
@@ -375,7 +375,7 @@
                     <posy>100</posy>
                     <width>320</width>
                     <height>45</height>
-                    <texturefocus border="5">default-button.png</texturefocus>
+                    <texturefocus border="8">default-button.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <onup>110</onup>
                     <ondown>114</ondown>
@@ -429,7 +429,7 @@
                     <posy>100</posy>
                     <width>320</width>
                     <height>45</height>
-                    <texturefocus border="5">default-button.png</texturefocus>
+                    <texturefocus border="8">default-button.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <onup>110</onup>
                     <ondown>114</ondown>
@@ -483,7 +483,7 @@
                     <posy>100</posy>
                     <width>320</width>
                     <height>45</height>
-                    <texturefocus border="5">default-button.png</texturefocus>
+                    <texturefocus border="8">default-button.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <onup>110</onup>
                     <ondown>114</ondown>
@@ -537,7 +537,7 @@
                     <posy>100</posy>
                     <width>320</width>
                     <height>45</height>
-                    <texturefocus border="5">default-button.png</texturefocus>
+                    <texturefocus border="8">default-button.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <onup>110</onup>
                     <ondown>114</ondown>
@@ -591,7 +591,7 @@
                     <posy>100</posy>
                     <width>320</width>
                     <height>45</height>
-                    <texturefocus border="5">default-button.png</texturefocus>
+                    <texturefocus border="8">default-button.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <onup>110</onup>
                     <ondown>194</ondown>
@@ -618,7 +618,7 @@
                     <onup>190</onup>
                     <ondown>114</ondown>
 					<font>font13</font>
-					<texturefocus>default-button.png</texturefocus>
+					<texturefocus border="8">default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
                     <label>31707</label>
 					<textwidth>500</textwidth>

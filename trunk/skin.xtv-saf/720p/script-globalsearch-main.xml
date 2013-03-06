@@ -184,8 +184,8 @@
 				<textcolor>button-text</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus border="5">default-button.png</texturefocus>
-				<texturenofocus border="5">-</texturenofocus>
+				<texturefocus border="8">default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<onup>101</onup>
 				<ondown>101</ondown>
 				<onleft>101</onleft>

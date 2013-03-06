@@ -33,7 +33,7 @@
 		<posy>250</posy>
 		<width>504</width>
 		<height>56</height>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
@@ -134,7 +134,7 @@
 		<height>41</height>
 		<spinwidth>27</spinwidth>
 		<spinheight>25</spinheight>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureup>scroll-up.png</textureup>
 		<texturedown>scroll-down.png</texturedown>
