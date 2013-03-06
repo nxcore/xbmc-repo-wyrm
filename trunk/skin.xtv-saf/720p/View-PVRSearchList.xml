@@ -138,7 +138,7 @@
 						<posy>0</posy>
 						<width>1160</width>
 						<height>46</height>
-						<texture border="5">default-button.png</texture>
+						<texture border="8">default-button.png</texture>
 					</control>
 					<control type="label">
 						<posx>52</posx>

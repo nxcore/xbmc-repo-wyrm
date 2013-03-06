@@ -3,76 +3,76 @@
 		<control type="group">
 			<description>Timers group</description>
 			<visible>Control.IsVisible(14)</visible>
-				<control type="group">
-					<visible>Control.IsVisible(14)</visible>
-					<posx>80</posx>
-					<posy>90</posy>
-					<control type="label">
-						<description>Channel header label</description>
-						<posx>0</posx>
-						<posy>23</posy>
-						<width>220</width>
-						<height>20</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>19029</label>
-					</control>
-					<control type="label">
-						<description>Title header label</description>
-						<posx>220</posx>
-						<posy>20</posy>
-						<width>300</width>
-						<height>23</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>369</label>
-					</control>
-					<control type="label">
-						<description>Schedule Time header label</description>
-						<posx>580</posx>
-						<posy>20</posy>
-						<width>300</width>
-						<height>23</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>19225</label>
-					</control>
-					<control type="label">
-						<description>Status header label</description>
-						<posx>940</posx>
-						<posy>20</posy>
-						<width>150</width>
-						<height>23</height>
-						<font>font13</font>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>126</label>
-					</control>
-					<control type="image">
-						<description>separator image</description>
-						<posx>-60</posx>
-						<posy>45</posy>
-						<width>1240</width>
-						<height>5</height>
-						<texture>separator.png</texture>
-					</control>
-				</control>	
+			<control type="group">
+				<visible>Control.IsVisible(14)</visible>
+				<posx>80</posx>
+				<posy>90</posy>
+				<control type="label">
+					<description>Channel header label</description>
+					<posx>0</posx>
+					<posy>23</posy>
+					<width>220</width>
+					<height>20</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>19029</label>
+				</control>
+				<control type="label">
+					<description>Title header label</description>
+					<posx>220</posx>
+					<posy>20</posy>
+					<width>300</width>
+					<height>23</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>369</label>
+				</control>
+				<control type="label">
+					<description>Schedule Time header label</description>
+					<posx>580</posx>
+					<posy>20</posy>
+					<width>300</width>
+					<height>23</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>19225</label>
+				</control>
+				<control type="label">
+					<description>Status header label</description>
+					<posx>940</posx>
+					<posy>20</posy>
+					<width>150</width>
+					<height>23</height>
+					<font>font13</font>
+					<textcolor>button-text</textcolor>
+					<shadowcolor>shadow-text</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>126</label>
+				</control>
+				<control type="image">
+					<description>separator image</description>
+					<posx>-60</posx>
+					<posy>45</posy>
+					<width>1240</width>
+					<height>5</height>
+					<texture>separator.png</texture>
+				</control>
+			</control>	
 			<control type="list" id="14">
 				<posx>48</posx>
 				<posy>150</posy>
 				<width>1160</width>
-				<height>528</height>
+				<height>500</height>
 				<onleft>9000</onleft>
 				<onright>27</onright>
 				<onup>14</onup>
@@ -82,12 +82,12 @@
 				<pagecontrol>27</pagecontrol>
 				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
-				<itemlayout height="44">
+				<itemlayout height="50">
 					<control type="label">
 						<posx>15</posx>
 						<posy>0</posy>
 						<width>180</width>
-						<height>44</height>
+						<height>50</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -99,7 +99,7 @@
 						<posx>200</posx>
 						<posy>0</posy>
 						<width>240</width>
-						<height>44</height>
+						<height>50</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<info>ListItem.ChannelName</info>
@@ -111,7 +111,7 @@
 						<posx>460</posx>
 						<posy>0</posy>
 						<width>655</width>
-						<height>44</height>
+						<height>50</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<info>ListItem.Date</info>
@@ -121,7 +121,7 @@
 					</control>
 					<control type="image">
 						<posx>1120</posx>
-						<posy>10</posy>
+						<posy>12</posy>
 						<width>26</width>
 						<height>26</height>
 						<texture>check-boxnf.png</texture>
@@ -129,26 +129,26 @@
 					</control>
 					<control type="image">
 						<posx>1120</posx>
-						<posy>10</posy>
+						<posy>12</posy>
 						<width>26</width>
 						<height>26</height>
 						<texture>check-box.png</texture>
 						<visible>StringCompare(ListItem.Comment,$LOCALIZE[305]) + !IsEmpty(ListItem.ChannelName)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="44">
+				<focusedlayout height="50">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1160</width>
-						<height>44</height>
-						<texture border="5">default-button.png</texture>
+						<height>50</height>
+						<texture border="8">default-button.png</texture>
 					</control>
 					<control type="label">
 						<posx>15</posx>
 						<posy>0</posy>
 						<width>180</width>
-						<height>44</height>
+						<height>50</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -160,7 +160,7 @@
 						<posx>200</posx>
 						<posy>0</posy>
 						<width>240</width>
-						<height>44</height>
+						<height>50</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<info>ListItem.ChannelName</info>
@@ -172,7 +172,7 @@
 						<posx>460</posx>
 						<posy>0</posy>
 						<width>655</width>
-						<height>44</height>
+						<height>50</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<info>ListItem.Date</info>
@@ -182,7 +182,7 @@
 					</control>
 					<control type="image">
 						<posx>1120</posx>
-						<posy>10</posy>
+						<posy>12</posy>
 						<width>26</width>
 						<height>26</height>
 						<texture>check-boxnf.png</texture>
@@ -190,7 +190,7 @@
 					</control>
 					<control type="image">
 						<posx>1120</posx>
-						<posy>10</posy>
+						<posy>12</posy>
 						<width>26</width>
 						<height>26</height>
 						<texture>check-box.png</texture>
@@ -202,19 +202,18 @@
 				<visible>PVR.HasTimer</visible>
 				<control type="label">
 					<posx>68</posx>
-					<posy>648</posy>
-					<height>44</height>
+					<posy>660</posy>
+					<height>50</height>
 					<font>font13</font>
 					<aligny>center</aligny>
 					<info>PVR.NextTimer</info>
 				</control>
 			</control>
-
 			<control type="scrollbar" id="27">
-				<posx>1238</posx>
-				<posy>112</posy>
+				<posx>1244</posx>
+				<posy>150</posy>
 				<width>22</width>
-				<height>555</height>
+				<height>500</height>
 				<onleft>14</onleft>
 				<onright>14</onright>
 				<include>list-fade</include>
