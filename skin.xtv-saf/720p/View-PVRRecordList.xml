@@ -15,20 +15,23 @@
 					<onright>27</onright>
 					<pagecontrol>27</pagecontrol>
 					<scrolltime>200</scrolltime>
+					<orientation>vertical</orientation>
+					<preloaditems>2</preloaditems>
+					<include>list-fade</include>
 					<itemlayout height="70">
 						<control type="image">
-							<posx>12</posx>
-							<posy>4</posy>
-							<width>62</width>
-							<height>62</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<posx>11</posx>
+							<posy>11</posy>
+							<width>48</width>
+							<height>48</height>
+							<texture fallback="DefaultTvshows.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>8</posy>
 							<width>470</width>
 							<height>23</height>
-							<font>font12</font>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -40,7 +43,7 @@
 							<posy>34</posy>
 							<width>240</width>
 							<height>23</height>
-							<font>font12</font>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -57,18 +60,18 @@
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="image">
-							<posx>12</posx>
-							<posy>4</posy>
-							<width>62</width>
-							<height>62</height>
-							<texture>$INFO[ListItem.Icon]</texture>
+							<posx>11</posx>
+							<posy>11</posy>
+							<width>48</width>
+							<height>48</height>
+							<texture fallback="DefaultTvshows.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<posx>80</posx>
 							<posy>8</posy>
 							<width>470</width>
-							<height>44</height>
-							<font>font12</font>
+							<height>23</height>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -80,7 +83,7 @@
 							<posy>34</posy>
 							<width>240</width>
 							<height>23</height>
-							<font>font12</font>
+							<font>font11</font>
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
@@ -91,9 +94,9 @@
 				</control>
 				<control type="scrollbar" id="27">
 					<posx>1239</posx>
-					<posy>112</posy>
+					<posy>116</posy>
 					<width>22</width>
-					<height>555</height>
+					<height>560</height>
 					<onleft>13</onleft>
 					<onright>9000</onright>
 					<include>list-fade</include>
