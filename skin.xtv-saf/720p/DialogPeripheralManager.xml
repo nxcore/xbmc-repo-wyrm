@@ -55,7 +55,7 @@
 						<width>400</width>
 						<height>30</height>
 						<visible>Control.HasFocus(20)</visible>
-						<texture border="7">default-button.png</texture>
+						<texture border="8">default-button.png</texture>
 					</control>
 					<control type="label">
 						<posx>10</posx>

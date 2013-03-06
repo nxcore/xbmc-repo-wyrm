@@ -8,13 +8,6 @@
 		<control type="group">
 			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>400</width>
-				<height>46</height>
-				<texture border="16,0,16,0">popup-small.png</texture>
-			</control>
-			<control type="image">
 				<description>Button Background</description>
 				<posx>0</posx>
 				<posy>0</posy>

@@ -49,8 +49,8 @@
 				<label>467</label>
 				<font>font12</font>
 				<textcolor>button-text</textcolor>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus  border="3">-</texturenofocus>
+				<texturefocus border="8">default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<onright>22</onright>
 				<onleft>22</onleft>
 				<onup>9001</onup>
@@ -76,7 +76,7 @@
 				<textoffsetx>24</textoffsetx>
 				<textwidth>750</textwidth>
 				<aligny>center</aligny>
-				<texturefocus>default-button.png</texturefocus>
+				<texturefocus border="8">default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<label>-</label>
 				<onup>22</onup>
@@ -129,7 +129,7 @@
 						<posy>0</posy>
 						<width>660</width>
 						<height>46</height>
-						<texture>default-button.png</texture>
+						<texture border="8">default-button.png</texture>
 						<visible>Control.HasFocus(10)</visible>
 					</control>
 					<control type="label">
@@ -157,7 +157,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<texturenofocus>-</texturenofocus>
-					<texturefocus>default-button.png</texturefocus>
+					<texturefocus border="8">default-button.png</texturefocus>
 					<onup>17</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -175,7 +175,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<texturenofocus>-</texturenofocus>
-					<texturefocus>default-button.png</texturefocus>
+					<texturefocus border="8">default-button.png</texturefocus>
 					<onup>13</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -193,7 +193,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<texturenofocus>-</texturenofocus>
-					<texturefocus>default-button.png</texturefocus>
+					<texturefocus border="8">default-button.png</texturefocus>
 					<onup>14</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -207,8 +207,8 @@
 				<height>46</height>
 				<label>21424</label>
 				<font>font12</font>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus  border="3">-</texturenofocus>
+				<texturefocus border="8">default-button.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
 				<onright>16</onright>
 				<onleft>16</onleft>
 				<onup>10</onup>
@@ -221,7 +221,7 @@
 				<height>46</height>
 				<label>21427</label>
 				<font>font12</font>
-				<texturefocus>default-button.png</texturefocus>
+				<texturefocus border="8">default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onright>17</onright>
 				<onleft>17</onleft>
@@ -235,7 +235,7 @@
 				<height>46</height>
 				<label>21429</label>
 				<font>font12</font>
-				<texturefocus>default-button.png</texturefocus>
+				<texturefocus border="8">default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onright>19</onright>
 				<onleft>19</onleft>
@@ -251,9 +251,9 @@
 				<textoffsetx>8</textoffsetx>
 				<align>right</align>
 				<aligny>center</aligny>
-				<texturefocus>default-button.png</texturefocus>
+				<texturefocus border="8">default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<alttexturefocus>default-button.png</alttexturefocus>
+				<alttexturefocus border="8">default-button.png</alttexturefocus>
 				<alttexturenofocus>-</alttexturenofocus>
 				<label>21431</label>
 				<altlabel>21430</altlabel>
@@ -274,7 +274,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<texturenofocus>-</texturenofocus>
-					<texturefocus>default-button.png</texturefocus>
+					<texturefocus border="8">default-button.png</texturefocus>
 					<label>186</label>
 					<onup>18</onup>
 					<onleft>21</onleft>
@@ -292,7 +292,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<texturenofocus>-</texturenofocus>
-					<texturefocus>default-button.png</texturefocus>
+					<texturefocus border="8">default-button.png</texturefocus>
 					<label>222</label>
 					<onup>18</onup>
 					<onleft>20</onleft>

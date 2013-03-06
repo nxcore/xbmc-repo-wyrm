@@ -89,7 +89,7 @@
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
 				<align>center</align>
-				<texturefocus border="5">default-button.png</texturefocus>
+				<texturefocus border="8">default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onleft>10</onleft>
 				<onright>10</onright>

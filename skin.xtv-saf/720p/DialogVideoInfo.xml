@@ -352,7 +352,7 @@
 						<height>50</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<texture border="2">default-button.png</texture>
+						<texture border="8">default-button.png</texture>
 					</control>
 					<control type="label">
 						<posx>20</posx>
@@ -490,9 +490,9 @@
 				<aligny>center</aligny>
 				<label>208</label>
 				<altlabel>1024</altlabel>
-				<texturefocus border="7">default-button.png</texturefocus>
+				<texturefocus border="8">default-button.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<alttexturefocus border="7">default-button.png</alttexturefocus>
+				<alttexturefocus border="8">default-button.png</alttexturefocus>
 				<alttexturenofocus>-</alttexturenofocus>
 				<usealttexture>Container.Content(TVShows)</usealttexture>
 			</control>

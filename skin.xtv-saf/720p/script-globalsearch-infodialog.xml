@@ -1678,8 +1678,8 @@
 					<textcolor>button-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="5">default-button.png</texturefocus>
-					<texturenofocus border="5">-</texturenofocus>
+					<texturefocus border="8">default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="192">
 					<width>250</width>
@@ -1689,8 +1689,8 @@
 					<textcolor>button-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="5">default-button.png</texturefocus>
-					<texturenofocus border="5">-</texturenofocus>
+					<texturefocus border="8">default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="193">
 					<width>250</width>
@@ -1700,8 +1700,8 @@
 					<textcolor>button-text</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus border="5">default-button.png</texturefocus>
-					<texturenofocus border="5">-</texturenofocus>
+					<texturefocus border="8">default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 			</control>
 		</control>
