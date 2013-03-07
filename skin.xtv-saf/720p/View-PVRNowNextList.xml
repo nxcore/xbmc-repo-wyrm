@@ -34,7 +34,6 @@
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
-							<selectedcolor>listselectedtext</selectedcolor>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
@@ -44,9 +43,8 @@
 							<height>24</height>
 							<font>font11</font>
 							<aligny>center</aligny>
-							<textcolor>button-text</textcolor>
+							<textcolor>disabled-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
-							<selectedcolor>listselectedtext</selectedcolor>
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
@@ -82,7 +80,6 @@
 							<aligny>center</aligny>
 							<textcolor>button-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
-							<selectedcolor>listselectedtext</selectedcolor>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
@@ -92,9 +89,8 @@
 							<height>24</height>
 							<font>font11</font>
 							<aligny>center</aligny>
-							<textcolor>button-text</textcolor>
+							<textcolor>disabled-text</textcolor>
 							<shadowcolor>shadow-text</shadowcolor>
-							<selectedcolor>listselectedtext</selectedcolor>
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">

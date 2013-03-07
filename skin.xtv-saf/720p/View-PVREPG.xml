@@ -57,7 +57,6 @@
 						<texture>separator.png</texture>
 					</control>
 				</rulerlayout>
-				
 				<channellayout height="52" width="280">
 					<animation effect="fade" start="110" time="200">UnFocus</animation>
 					<control type="image" id="1">
@@ -82,7 +81,8 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<textcolor>green</textcolor>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 						<selectedcolor>blue</selectedcolor>
 						<info>ListItem.ChannelNumber</info>
 						<visible>IsEmpty(ListItem.Icon)</visible>
@@ -123,7 +123,8 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<textcolor>green</textcolor>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 						<selectedcolor>blue</selectedcolor>
 						<info>ListItem.ChannelNumber</info>
 						<visible>IsEmpty(ListItem.Icon)</visible>
@@ -241,7 +242,7 @@
 				<posx>40</posx>
 				<posy>566</posy>
 				<width>1200</width>
-				<height>132</height>
+				<height>130</height>
 				<font>font11</font>
 				<align>left</align>
 				<info>ListItem.Plot</info>
