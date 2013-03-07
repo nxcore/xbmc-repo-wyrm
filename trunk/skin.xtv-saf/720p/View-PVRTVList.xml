@@ -46,7 +46,7 @@
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<textcolor>button-text</textcolor>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<control type="label">
 						<posx>80</posx>
@@ -56,8 +56,8 @@
 						<font>font11</font>
 						<aligny>center</aligny>
 						<info>ListItem.Title</info>
-						<textcolor>button-text</textcolor>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 				</itemlayout>
 				<focusedlayout height="70">
@@ -79,7 +79,7 @@
 						<aligny>center</aligny>
 						<info>ListItem.ChannelNumber</info>
 						<textcolor>button-text</textcolor>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<control type="image">
 						<posx>11</posx>
@@ -97,7 +97,7 @@
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<textcolor>button-text</textcolor>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<control type="label">
 						<posx>80</posx>
@@ -107,8 +107,8 @@
 						<font>font11</font>
 						<aligny>center</aligny>
 						<info>ListItem.Title</info>
-						<textcolor>button-text</textcolor>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<textcolor>disabled-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 				</focusedlayout>
 			</control>
