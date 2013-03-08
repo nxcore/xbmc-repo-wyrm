@@ -113,6 +113,22 @@
 				<texturenofocus>osd-btn-skipfwd.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Next)</onclick>
 			</control>
+			<control type="button" id="909">
+				<width>60</width>
+				<height>60</height>
+				<texturefocus>osd-btn-rec-focus.png</texturefocus>
+				<texturenofocus>osd-btn-rec.png</texturenofocus>
+				<onclick>PlayerControl(record)</onclick>
+				<visible>Player.CanRecord + !Player.Recording</visible>
+			</control>
+			<control type="button" id="910">
+				<width>60</width>
+				<height>60</height>
+				<texturefocus>osd-btn-rec-recording-focus.png</texturefocus>
+				<texturenofocus>osd-btn-rec-recording.png</texturenofocus>
+				<onclick>PlayerControl(record)</onclick>
+				<visible>Player.CanRecord + Player.Recording</visible>
+			</control>
 			<control type="button" id="208">
 				<description>DVD Menu</description>
 				<width>60</width>
