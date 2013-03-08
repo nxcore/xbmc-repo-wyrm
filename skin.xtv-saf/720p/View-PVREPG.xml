@@ -62,14 +62,14 @@
 					<control type="image" id="1">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>270</width>
+						<width>278</width>
 						<height>52</height>
 						<texture border="5">pstvButtonNoFocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>10</posx>
+						<posx>4</posx>
 						<posy>4</posy>
-						<width>45</width>
+						<width>44</width>
 						<height>44</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
@@ -88,12 +88,14 @@
 						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="label" id="1">
-						<posx>60</posx>
+						<posx>52</posx>
 						<posy>0</posy>
-						<width>200</width>
+						<width>218</width>
 						<height>52</height>
 						<font>font11</font>
 						<aligny>center</aligny>
+						<textcolor>button-text</textcolor>
+						<shadowcolor>shadow-text</shadowcolor>
 						<selectedcolor>listselectedtext</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.ChannelName]</label>
@@ -104,19 +106,19 @@
 					<control type="image" id="1">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>270</width>
+						<width>278</width>
 						<height>52</height>
 						<texture border="5">pstvButtonFocus.png</texture>
 					</control>
 					<control type="image">
-						<posx>10</posx>
+						<posx>4</posx>
 						<posy>4</posy>
-						<width>45</width>
+						<width>44</width>
 						<height>44</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>22</posx>
+						<posx>20</posx>
 						<posy>0</posy>
 						<width>45</width>
 						<height>52</height>
@@ -130,9 +132,9 @@
 						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="label" id="1">
-						<posx>60</posx>
+						<posx>52</posx>
 						<posy>0</posy>
-						<width>200</width>
+						<width>218</width>
 						<height>52</height>
 						<font>font11</font>
 						<aligny>center</aligny>

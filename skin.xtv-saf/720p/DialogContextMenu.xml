@@ -1,6 +1,5 @@
 <window>
 	<defaultcontrol always="true">996</defaultcontrol>
-	<include>shutdown-ani</include>
 	<coordinates>
 		<origin x="0" y="0"/>
 	</coordinates>
@@ -10,20 +9,21 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>900</height>
+			<height>720</height>
 			<texture>black.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="group">
 			<posx>365</posx>
 			<posy>102</posy>
+			<include>shutdown-ani</include>
 			<control type="image" id="999">
 				<description>background mid image</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>536</width>
-				<height>630</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<height>592</height>
+				<texture border="8">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
 			<control type="grouplist" id="996">
@@ -31,8 +31,8 @@
 				<posx>16</posx>
 				<posy>16</posy>
 				<width>504</width>
+				<height max="550">auto</height>
 				<onup>996</onup>
-				<height min="10" max="600">auto</height>
 				<itemgap>0</itemgap>
 				<control type="button" id="1000">
 					<description>button template</description>
@@ -45,8 +45,8 @@
 					<aligny>top</aligny>
 					<onleft>Close</onleft>
 					<onright>Close</onright>
-					<texturenofocus>-</texturenofocus>
 					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 			</control>
 		</control>	

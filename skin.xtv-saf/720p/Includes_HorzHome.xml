@@ -1428,6 +1428,9 @@
 					<font>font12</font>
 					<label>19020</label>
 					<onclick>ActivateWindow(PVR)</onclick>
+					<!--<onclick>Dialog.Close(all,true)</onclick>
+					<onclick>ActivateWindowAndFocus(PVR,31,0)</onclick>
+					<onclick>SetFocus(11)</onclick>-->
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>5</textoffsety>
 					<texturefocus>default-button.png</texturefocus>
