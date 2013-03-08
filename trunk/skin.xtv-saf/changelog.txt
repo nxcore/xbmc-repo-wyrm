@@ -10,7 +10,7 @@
 - User can now select the visibilty of the background fanart image (three different levels),
   can now also tell skin to ignore extrafanarts (useful for low speced machines).
 - Further work on cleaning up skin textures (also removed a number of redundant images).
-- A large number of bug fixes and code cleanups  
+- A large number of bug fixes / code cleanups  
 
 [B]1.2.2[/B]
 - Cleanup of a number of skin texture files.

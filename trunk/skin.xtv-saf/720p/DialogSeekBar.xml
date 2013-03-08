@@ -30,7 +30,7 @@
 					<control type="image" id="990">
 						<description>Use TV Clearart if available(episodes in season folders)</description>
 						<posx>8</posx>
-						<posy>-145</posy> 
+						<posy>-154</posy> 
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,../clearart.png]</texture>
@@ -39,7 +39,7 @@
 					<control type="image" id="991">
 						<description>Use TV Clearart if available(episodes in tv show folder)</description>
 						<posx>8</posx>
-						<posy>-145</posy> 
+						<posy>-154</posy> 
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
@@ -103,7 +103,7 @@
 					<control type="image" id="890">
 						<description>Use Movie Clearart if available</description>
 						<posx>8</posx>
-						<posy>-145</posy> 
+						<posy>-154</posy> 
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
