@@ -36,7 +36,7 @@
 			<height>5</height>
 			<texture>separator.png</texture>
 		</control>
-		
+
 		<control type="grouplist" id="5">
 			<description>control area</description>
 			<posx>30</posx>
