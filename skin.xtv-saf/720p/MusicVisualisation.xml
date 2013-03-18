@@ -112,6 +112,16 @@
 				<posy>475</posy>
 				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
+				<visible>!SubString(MusicPlayer.Cover,Default,Left)</visible>
+			</control>
+			<control type="image">
+				<posx>-5</posx>
+				<posy>450</posy>
+				<height>265</height>
+				<width>265</width>
+				<texture>case-cd.png</texture>
+				<aspectratio aligny="center">stretch</aspectratio>
+				<visible>Skin.HasSetting(CDcase) + !SubString(MusicPlayer.Cover,Default,Left)</visible>
 			</control>
 			<control type="image">
 				<description>cover image</description>
@@ -119,7 +129,7 @@
 				<posy>470</posy>
 				<width>225</width>
 				<height>225</height>
-				<info>MusicPlayer.Cover</info>
+				<texture fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio aligny="bottom">stretch</aspectratio>
 			</control>
 			<control type="label">

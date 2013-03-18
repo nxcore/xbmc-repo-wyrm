@@ -213,6 +213,8 @@
 		<texturesliderbar>seekslider.png</texturesliderbar>
 		<textureslidernib>progress-marker.png</textureslidernib>
 		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+		<controloffsetx>75</controloffsetx>
+		<controloffsety>0</controloffsety>
 	</default>
 	<default type="sliderex">
 		<description>Default Slider</description>

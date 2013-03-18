@@ -668,7 +668,7 @@
 				<width>350</width>
 				<height>350</height>
 				<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-				<aspectratio aligny="center" align="center">keep</aspectratio>
+				<aspectratio aligny="center" align="center">stretch</aspectratio>
 				<include>list-fade</include>
 			</control>
 			<control type="group">
@@ -886,7 +886,7 @@
 		<width>80</width>
 		<height>80</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
-		<visible>!Skin.HasSetting(horizontal-homemenu)</visible>
+		<visible>Skin.HasSetting(homemenu-vertical)</visible>
 	</include>
 
 	<!-- Start Animation Includes -->
