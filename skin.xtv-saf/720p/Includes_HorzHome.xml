@@ -277,10 +277,10 @@
 							<posx>14</posx>
 							<posy>20</posy>
 							<width>220</width>
-							<height>200</height>
+							<height>165</height>
 							<align>center</align>
-							<aligny>bottom</aligny>
-							<aspectratio>keep</aspectratio>
+							<aligny>top</aligny>
+							<aspectratio>stretch</aspectratio>
 							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 					</itemlayout>
@@ -289,10 +289,10 @@
 							<posx>14</posx>
 							<posy>20</posy>
 							<width>220</width>
-							<height>200</height>
+							<height>165</height>
 							<align>center</align>
-							<aligny>bottom</aligny>
-							<aspectratio>keep</aspectratio>
+							<aligny>top</aligny>
+							<aspectratio>stretch</aspectratio>
 							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
 							<visible>!Control.HasFocus(9210)</visible>
 						</control>
@@ -300,10 +300,10 @@
 							<posx>9</posx>
 							<posy>15</posy>
 							<width>230</width>
-							<height>210</height>
+							<height>172</height>
 							<align>center</align>
-							<aligny>bottom</aligny>
-							<aspectratio>keep</aspectratio>
+							<aligny>top</aligny>
+							<aspectratio>stretch</aspectratio>
 							<bordertexture border="10">mask-hilite.png</bordertexture>
 							<bordersize>9</bordersize>
 							<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -314,9 +314,9 @@
 							<posx>14</posx>
 							<posy>20</posy>
 							<width>220</width>
-							<height>200</height>
+							<height>165</height>
 							<align>center</align>
-							<aligny>bottom</aligny>
+							<aligny>top</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
 							<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
@@ -324,8 +324,8 @@
 						</control>
 						<control type="label">
 							<posx>126</posx>
-							<posy>174</posy>
-							<height>50</height>
+							<posy>188</posy>
+							<height>24</height>
 							<width>252</width>
 							<label>$INFO[ListItem.Label2]</label>
 							<align>center</align>
@@ -423,7 +423,7 @@
 				<control type="list" id="9260">
 					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 					<posx>10</posx>
-					<posy>60</posy>
+					<posy>50</posy>
 					<width>1260</width>
 					<height>245</height>
 					<onleft>noop</onleft>
@@ -437,48 +437,34 @@
 					<itemlayout height="245" width="210">
 						<control type="image">
 							<posx>25</posx>
-							<posy>30</posy>
+							<posy>20</posy>
 							<width>160</width>
 							<height>160</height>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="245" width="210">
-						<control type="label">
-							<posx>105</posx>
-							<posy>0</posy>
-							<height>24</height>
-							<width>210</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<wrapmultiline>true</wrapmultiline>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9260)</visible>
-						</control>
 						<control type="image">
 							<posx>25</posx>
-							<posy>30</posy>
+							<posy>20</posy>
 							<width>160</width>
 							<height>160</height>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
 							<visible>!Control.HasFocus(9260)</visible>
 						</control>
 						<control type="image">
 							<posx>20</posx>
-							<posy>25</posy>
+							<posy>15</posy>
 							<width>170</width>
 							<height>170</height>
 							<align>center</align>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="10">mask-hilite.png</bordertexture>
 							<bordersize>9</bordersize>
@@ -488,11 +474,11 @@
 						</control>
 						<control type="image">
 							<posx>20</posx>
-							<posy>25</posy>
+							<posy>15</posy>
 							<width>170</width>
 							<height>170</height>
 							<align>center</align>
-							<aligny>center</aligny>
+							<aligny>top</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" diffuse="mask-rect.png">DefaultAudio.png</texture>
 							<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
@@ -500,10 +486,23 @@
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>195</posy>
+							<posy>188</posy>
 							<height>24</height>
 							<width>210</width>
 							<label>$INFO[ListItem.Label]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font11</font>
+							<textcolor>button-text</textcolor>
+							<shadowcolor>shadow-text</shadowcolor>
+							<visible>Control.HasFocus(9260)</visible>
+						</control>
+						<control type="label">
+							<posx>105</posx>
+							<posy>215</posy>
+							<height>24</height>
+							<width>210</width>
+							<label>$INFO[ListItem.Label2]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
