@@ -15,7 +15,7 @@
 				<posx>292</posx>
 				<posy>256</posy>
 				<width>690</width>
-				<height>238</height>
+				<height>256</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
@@ -73,16 +73,16 @@
 			<control type="progress">
 				<description>progress control</description>
 				<posx>336</posx>
-				<posy>408</posy>
+				<posy>418</posy>
 				<width>601</width>
 				<height>16</height>
 				<info>System.Progressbar</info>
 			</control>
 			<control type="button" id="10">
 				<description>Cancel button</description>
-				<posx>559</posx>
-				<posy>430</posy>
-				<width>159</width>
+				<posx>558</posx>
+				<posy>450</posy>
+				<width>160</width>
 				<height>50</height>
 				<label>222</label>
 				<font>font12</font>
