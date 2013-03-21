@@ -1,8 +1,8 @@
 <includes>
 	<include name="VertHomeMenu">
-		<backgroundcolor>0</backgroundcolor>	
+		<backgroundcolor>0</backgroundcolor>
 		<include>background</include>
-		
+
 		<control type="group">
 			<visible>!Skin.HasSetting(home-time)</visible>
 			<!-- show time on home screen -->
@@ -105,7 +105,7 @@
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
-		
+
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>960</posx>
@@ -123,7 +123,7 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(9000).HasNext</visible>
 		</control>
-		
+
 		<!-- main buttons -->
 		<control type="list" id="9000">
 			<posx>716</posx>
@@ -395,14 +395,42 @@
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>XBMC.Quit()</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
+					<visible>Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
+				</item>
+				<item>
+					<icon>shut-power.png</icon>
+					<thumb>shut-power-blur1.png</thumb>
+					<label>13009</label>
+					<onclick>XBMC.Reboot()</onclick>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
+				</item>
+				<item>
+					<icon>shut-power.png</icon>
+					<thumb>shut-power-blur1.png</thumb>
+					<label>13009</label>
+					<onclick>XBMC.ShutDown()</onclick>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
+				</item>
+				<item>
+					<icon>shut-power.png</icon>
+					<thumb>shut-power-blur1.png</thumb>
+					<label>13009</label>
+					<onclick>XBMC.Hibernate()</onclick>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
+				</item>
+				<item>
+					<icon>shut-power.png</icon>
+					<thumb>shut-power-blur1.png</thumb>
+					<label>13009</label>
+					<onclick>XBMC.Suspend()</onclick>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>ActivateWindow(shutdownmenu)</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 				</item>
 			</content>
 		</control>

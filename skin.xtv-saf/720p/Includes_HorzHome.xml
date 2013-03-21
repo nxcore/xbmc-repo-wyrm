@@ -74,7 +74,7 @@
 					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
-			</control>	
+			</control>
 			<!-- Movie icons -->
 			<control type="group" id="9155">
 				<include>background-fade</include>
@@ -97,7 +97,7 @@
 						<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
 						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
-				</control>	
+				</control>
 				<control type="group">
 					<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
 					<control type="label">
@@ -570,7 +570,7 @@
 					<texture flipy="true" diffuse="mask-fade.png">icon-photo.png</texture>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
-			</control>	
+			</control>
 			<!-- Addons icons -->
 			<control type="group">
 				<visible>ControlGroup(9350).HasFocus()</visible>
@@ -590,7 +590,7 @@
 					<texture flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
-			</control>	
+			</control>
 			<!-- Weather icons -->
 			<control type="group">
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
@@ -965,7 +965,7 @@
 							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</control>
-				</control>	
+				</control>
 			</control>
 			<!-- Settings icons -->
 			<control type="group">
@@ -986,7 +986,7 @@
 					<texture flipy="true" diffuse="mask-fade.png">icon-settings.png</texture>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
-			</control>	
+			</control>
 		</control>
 		<!-- Main Horizontal menu bar -->
 		<control type="group">
@@ -1088,7 +1088,7 @@
 						<description>TV Show Menu</description>
 						<label>19020</label>
 						<onclick>noop</onclick>
-						<visible>System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>	
+						<visible>System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>
 					</item>
 					<item id="5">
 						<description>Music Menu</description>
@@ -1135,7 +1135,7 @@
 		</control>
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
-		<include>horizontalhome-center</include>			
+		<include>horizontalhome-center</include>
 			<posx>10</posx>
 			<posy>365</posy>
 			<width>1260</width>
@@ -2093,9 +2093,89 @@
 					<aligny>top</aligny>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<visible>Skin.HasSetting(home-shutdown) + Skin.HasSetting(home-quit)</visible>
+					<visible>Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
 				</control>
 				<control type="button" id="9486">
+					<width>210</width>
+					<height>46</height>
+					<font>font12</font>
+					<label>13009</label>
+					<onclick>XBMC.Reboot()</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
+				</control>
+				<control type="button" id="9488">
+					<width>210</width>
+					<height>46</height>
+					<font>font12</font>
+					<label>13009</label>
+					<onclick>XBMC.ShutDown()</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
+				</control>
+				<control type="button" id="9490">
+					<width>210</width>
+					<height>46</height>
+					<font>font12</font>
+					<label>13009</label>
+					<onclick>XBMC.Hibernate()</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
+				</control>
+				<control type="button" id="9492">
+					<width>210</width>
+					<height>46</height>
+					<font>font12</font>
+					<label>13009</label>
+					<onclick>XBMC.Suspend()</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>5</textoffsety>
+					<texturefocus>default-button.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9400</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9100</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>button-text</textcolor>
+					<include>button-fade</include>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
+				</control>
+				<control type="button" id="9494">
 					<width>210</width>
 					<height>46</height>
 					<font>font12</font>
@@ -2113,7 +2193,7 @@
 					<aligny>top</aligny>
 					<textcolor>button-text</textcolor>
 					<include>button-fade</include>
-					<visible>Skin.HasSetting(home-shutdown) + !Skin.HasSetting(home-quit)</visible>
+					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 				</control>
 			</control>
 		</control>

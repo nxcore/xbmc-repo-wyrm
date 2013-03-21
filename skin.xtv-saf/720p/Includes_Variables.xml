@@ -92,10 +92,6 @@
 		<value condition="Player.Forwarding32x + !Player.Seeking">$LOCALIZE[31676]</value>
 		<value condition="Player.DisplayAfterSeek + !Player.Seeking">$INFO[Player.SeekOffset]</value>
 	</variable>
-	<variable name="QuitLabel2" description="Label2 for skin settings Quit function item">
-		<value condition="Skin.HasSetting(home-quit)">$LOCALIZE[13009]</value>
-		<value condition="!Skin.HasSetting(home-quit)">$LOCALIZE[31558]</value>
-	</variable>
 	<variable name="MovieLibEntry">
 		<value condition="!Library.HasContent(Movies)">ActivateWindow(Videos,Files,return)</value>
 		<value condition="StringCompare(Skin.String(movie-libraryentry),$LOCALIZE[369])">ActivateWindow(Videos,MovieTitles,return)</value>
