@@ -57,6 +57,7 @@
 		<control type="group">
 			<!-- Video icons -->
 			<control type="group">
+				<include>background-fade</include>
 				<visible>ControlGroup(9100).HasFocus()</visible>
 				<control type="image">
 					<posx>560</posx>
@@ -64,7 +65,6 @@
 					<width>160</width>
 					<height>160</height>
 					<texture>icon-video.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="image">
 					<posx>560</posx>
@@ -72,7 +72,6 @@
 					<width>160</width>
 					<height>160</height>
 					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 			</control>
 			<!-- Movie icons -->
@@ -132,7 +131,7 @@
 								<width>130</width>
 								<height>178</height>
 								<aspectratio scalediffuse="true">stretch</aspectratio>
-								<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
+								<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout height="245" width="210">
@@ -142,81 +141,94 @@
 								<width>130</width>
 								<height>178</height>
 								<aspectratio>stretch</aspectratio>
-								<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Icon]</texture>
+								<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<visible>!Control.HasFocus(9160)</visible>
 							</control>
-							<control type="image">
-								<posx>25</posx>
-								<posy>5</posy>
-								<width>140</width>
-								<height>188</height>
-								<aspectratio scalediffuse="true">stretch</aspectratio>
-								<bordertexture border="10">mask-hilite.png</bordertexture>
-								<bordersize>9</bordersize>
-								<texture diffuse="mask-rect.png" fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-								<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								<visible>Control.HasFocus(9160) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
-							</control>
-							<control type="image">
-								<posx>25</posx>
-								<posy>5</posy>
-								<width>140</width>
-								<height>188</height>
-								<aspectratio>stretch</aspectratio>
-								<texture background="true" diffuse="mask-rect.png">DefaultMovies.png</texture>
-								<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								<visible>Control.HasFocus(9160) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
-							</control>
-							<control type="label">
-								<description>Item label</description>
-								<posx>94</posx>
-								<posy>195</posy>
-								<height>24</height>
-								<width>210</width>
-								<label>$INFO[ListItem.Label]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
-								<shadowcolor>shadow-text</shadowcolor>
+							<control type="group">
 								<visible>Control.HasFocus(9160)</visible>
+								<control type="image">
+									<posx>25</posx>
+									<posy>5</posy>
+									<width>140</width>
+									<height>188</height>
+									<aspectratio>stretch</aspectratio>
+									<texture border="10">mask-hilite.png</texture>
+									<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
+									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
+								</control>
+								<control type="image">
+									<posx>25</posx>
+									<posy>5</posy>
+									<width>140</width>
+									<height>188</height>
+									<aspectratio scalediffuse="true">stretch</aspectratio>
+									<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+									<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
+									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
+								</control>
+								<control type="label">
+									<description>Item label</description>
+									<posx>95</posx>
+									<posy>195</posy>
+									<height>24</height>
+									<width>210</width>
+									<label>$INFO[ListItem.Label]</label>
+									<align>center</align>
+									<aligny>center</aligny>
+									<font>font11</font>
+								</control>
 							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
 								<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.1.Thumb)]</icon>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.1.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
 							</item>
 							<item id="2">
 								<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.2.Thumb)]</icon>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.2.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
 							</item>
 							<item id="3">
 								<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.3.Thumb)]</icon>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.3.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
 							</item>
 							<item id="4">
 								<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.4.Thumb)]</icon>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.4.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.4.Thumb)]</thumb>
 							</item>
 							<item id="5">
 								<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.5.Thumb)]</icon>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.5.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.5.Thumb)]</thumb>
 							</item>
 							<item id="6">
 								<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
-								<label2></label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestMovie.6.Thumb)]</icon>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.6.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.6.Thumb)]</thumb>
+							</item>
+							<item id="7">
+								<label>$INFO[Window.Property(LatestMovie.7.Title)]</label>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.7.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.7.Thumb)]</thumb>
+							</item>
+							<item id="8">
+								<label>$INFO[Window.Property(LatestMovie.8.Title)]</label>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.8.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.8.Thumb)]</thumb>
+							</item>
+							<item id="9">
+								<label>$INFO[Window.Property(LatestMovie.9.Title)]</label>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.9.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.9.Thumb)]</thumb>
+							</item>
+							<item id="10">
+								<label>$INFO[Window.Property(LatestMovie.10.Title)]</label>
+								<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.10.Path)])</onclick>
+								<thumb>$INFO[Window.Property(LatestMovie.10.Thumb)]</thumb>
 							</item>
 						</content>
 					</control>
@@ -247,7 +259,6 @@
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-tv.png</texture>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 					<control type="image">
 						<posx>560</posx>
@@ -255,7 +266,6 @@
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-tv.png</texture>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 				</control>
 				<control type="list" id="9210">
@@ -281,7 +291,7 @@
 							<align>center</align>
 							<aligny>top</aligny>
 							<aspectratio>stretch</aspectratio>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="252" width="252">
@@ -293,93 +303,120 @@
 							<align>center</align>
 							<aligny>top</aligny>
 							<aspectratio>stretch</aspectratio>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 							<visible>!Control.HasFocus(9210)</visible>
 						</control>
-						<control type="image">
-							<posx>9</posx>
-							<posy>15</posy>
-							<width>230</width>
-							<height>172</height>
-							<align>center</align>
-							<aligny>top</aligny>
-							<aspectratio>stretch</aspectratio>
-							<bordertexture border="10">mask-hilite.png</bordertexture>
-							<bordersize>9</bordersize>
-							<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-							<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
-							<visible>Control.HasFocus(9210) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
-						</control>
-						<control type="image">
-							<posx>14</posx>
-							<posy>20</posy>
-							<width>220</width>
-							<height>165</height>
-							<align>center</align>
-							<aligny>top</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
-							<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
-							<visible>Control.HasFocus(9210) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
-						</control>
-						<control type="label">
-							<posx>126</posx>
-							<posy>188</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<wrapmultiline>true</wrapmultiline>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
+						<control type="group">
 							<visible>Control.HasFocus(9210)</visible>
-						</control>
-						<control type="label">
-							<posx>126</posx>
-							<posy>215</posy>
-							<height>24</height>
-							<width>252</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9210)</visible>
+							<control type="image">
+								<posx>9</posx>
+								<posy>15</posy>
+								<width>230</width>
+								<height>172</height>
+								<align>center</align>
+								<aligny>top</aligny>
+								<aspectratio>stretch</aspectratio>
+								<bordertexture border="10">mask-hilite.png</bordertexture>
+								<bordersize>9</bordersize>
+								<texture fallback="blank.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<visible>!SubString(ListItem.Thumb,Default,Left) + !IsEmpty(ListItem.Thumb)</visible>
+							</control>
+							<control type="image">
+								<posx>14</posx>
+								<posy>20</posy>
+								<width>220</width>
+								<height>165</height>
+								<align>center</align>
+								<aligny>top</aligny>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
+								<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<visible>[SubString(ListItem.Thumb,DefaultFolder.png,Left) | IsEmpty(ListItem.Thumb)]</visible>
+							</control>
+							<control type="label">
+								<posx>126</posx>
+								<posy>188</posy>
+								<height>24</height>
+								<width>252</width>
+								<label>$INFO[ListItem.Label2]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font11</font>
+								<wrapmultiline>true</wrapmultiline>
+							</control>
+							<control type="label">
+								<posx>126</posx>
+								<posy>215</posy>
+								<height>24</height>
+								<width>252</width>
+								<label>$INFO[ListItem.Label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font11</font>
+							</control>
 						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.1.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.1.Thumb)]</icon>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
 							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.2.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.2.Thumb)]</icon>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
 							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.3.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.3.Thumb)]</icon>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.3.Thumb)]</thumb>
 						</item>
 						<item id="4">
 							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.4.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFOWindow(Home).Property(LatestEpisode.4.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.4.Thumb)]</icon>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.4.Thumb)]</thumb>
 						</item>
 						<item id="5">
 							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber)]</label>
 							<label2>$INFO[Window(Home).Property(LatestEpisode.5.ShowTitle)]</label2>
-							<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
-							<icon>$INFO[Window(Home).Property(LatestEpisode.5.Thumb)]</icon>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.5.Thumb)]</thumb>
+						</item>
+						<item id="6">
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.6.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.6.EpisodeNumber)]</label>
+							<label2>$INFO[Window(Home).Property(LatestEpisode.6.ShowTitle)]</label2>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.6.Thumb)]</thumb>
+						</item>
+						<item id="7">
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.7.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.7.EpisodeNumber)]</label>
+							<label2>$INFO[Window(Home).Property(LatestEpisode.7.ShowTitle)]</label2>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.7.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.7.Thumb)]</thumb>
+						</item>
+						<item id="8">
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.8.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.8.EpisodeNumber)]</label>
+							<label2>$INFO[Window(Home).Property(LatestEpisode.8.ShowTitle)]</label2>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.8.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.8.Thumb)]</thumb>
+						</item>
+						<item id="9">
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.9.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.9.EpisodeNumber)]</label>
+							<label2>$INFO[Window(Home).Property(LatestEpisode.9.ShowTitle)]</label2>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.9.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.9.Thumb)]</thumb>
+						</item>
+						<item id="10">
+							<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(LatestEpisode.10.EpisodeSeason)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(LatestEpisode.10.EpisodeNumber)]</label>
+							<label2>$INFO[Window(Home).Property(LatestEpisode.10.ShowTitle)]</label2>
+							<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.10.Path)])</onclick>
+							<thumb>$INFO[Window(Home).Property(LatestEpisode.10.Thumb)]</thumb>
 						</item>
 					</content>
 				</control>
@@ -409,7 +446,6 @@
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-music.png</texture>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 					<control type="image">
 						<posx>560</posx>
@@ -417,7 +453,6 @@
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 				</control>
 				<control type="list" id="9260">
@@ -440,7 +475,7 @@
 							<posy>20</posy>
 							<width>160</width>
 							<height>160</height>
-							<aspectratio>keep</aspectratio>
+							<aspectratio>stretch</aspectratio>
 							<align>center</align>
 							<aligny>top</aligny>
 							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -452,63 +487,60 @@
 							<posy>20</posy>
 							<width>160</width>
 							<height>160</height>
-							<aspectratio>keep</aspectratio>
+							<aspectratio>stretch</aspectratio>
 							<align>center</align>
 							<aligny>top</aligny>
 							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
 							<visible>!Control.HasFocus(9260)</visible>
 						</control>
-						<control type="image">
-							<posx>20</posx>
-							<posy>15</posy>
-							<width>170</width>
-							<height>170</height>
-							<align>center</align>
-							<aligny>top</aligny>
-							<aspectratio>keep</aspectratio>
-							<bordertexture border="10">mask-hilite.png</bordertexture>
-							<bordersize>9</bordersize>
-							<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-							<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
-							<visible>Control.HasFocus(9260) + !SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
-						</control>
-						<control type="image">
-							<posx>20</posx>
-							<posy>15</posy>
-							<width>170</width>
-							<height>170</height>
-							<align>center</align>
-							<aligny>top</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture background="true" diffuse="mask-rect.png">DefaultAudio.png</texture>
-							<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
-							<visible>Control.HasFocus(9260) + [SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
-						</control>
-						<control type="label">
-							<posx>105</posx>
-							<posy>188</posy>
-							<height>24</height>
-							<width>210</width>
-							<label>$INFO[ListItem.Label]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
+						<control type="group">
 							<visible>Control.HasFocus(9260)</visible>
-						</control>
-						<control type="label">
-							<posx>105</posx>
-							<posy>215</posy>
-							<height>24</height>
-							<width>210</width>
-							<label>$INFO[ListItem.Label2]</label>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
-							<visible>Control.HasFocus(9260)</visible>
+							<control type="image">
+								<posx>20</posx>
+								<posy>15</posy>
+								<width>170</width>
+								<height>170</height>
+								<align>center</align>
+								<aligny>top</aligny>
+								<aspectratio>stretch</aspectratio>
+								<bordertexture border="10">mask-hilite.png</bordertexture>
+								<bordersize>9</bordersize>
+								<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
+								<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<visible>!SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
+							</control>
+							<control type="image">
+								<posx>20</posx>
+								<posy>15</posy>
+								<width>170</width>
+								<height>170</height>
+								<align>center</align>
+								<aligny>top</aligny>
+								<aspectratio>stretch</aspectratio>
+								<texture background="true" diffuse="mask-rect.png">DefaultAudio.png</texture>
+								<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<visible>[SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
+							</control>
+							<control type="label">
+								<posx>105</posx>
+								<posy>188</posy>
+								<height>24</height>
+								<width>210</width>
+								<label>$INFO[ListItem.Label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font11</font>
+							</control>
+							<control type="label">
+								<posx>105</posx>
+								<posy>215</posy>
+								<height>24</height>
+								<width>210</width>
+								<label>$INFO[ListItem.Label2]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font11</font>
+							</control>
 						</control>
 					</focusedlayout>
 					<content>
@@ -548,19 +580,43 @@
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
 							<icon>$INFO[Window.Property(LatestAlbum.6.Thumb)]</icon>
 						</item>
+						<item id="7">
+							<label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
+							<label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestAlbum.7.Thumb)]</icon>
+						</item>
+						<item id="8">
+							<label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
+							<label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestAlbum.8.Thumb)]</icon>
+						</item>
+						<item id="9">
+							<label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
+							<label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestAlbum.9.Thumb)]</icon>
+						</item>
+						<item id="10">
+							<label>$INFO[Window.Property(LatestAlbum.10.Title)]</label>
+							<label2>$INFO[Window.Property(LatestAlbum.10.Artist)]</label2>
+							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.10.Path)])</onclick>
+							<icon>$INFO[Window.Property(LatestAlbum.10.Thumb)]</icon>
+						</item>
 					</content>
 				</control>
 			</control>
 			<!-- Pictures icons -->
 			<control type="group">
 				<visible>ControlGroup(9300).HasFocus()</visible>
+				<include>background-fade</include>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
 					<texture>icon-photo.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="image">
 					<posx>560</posx>
@@ -568,19 +624,18 @@
 					<width>160</width>
 					<height>160</height>
 					<texture flipy="true" diffuse="mask-fade.png">icon-photo.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 			</control>
 			<!-- Addons icons -->
 			<control type="group">
 				<visible>ControlGroup(9350).HasFocus()</visible>
+				<include>background-fade</include>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
 					<texture>DefaultAddon.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="image">
 					<posx>560</posx>
@@ -588,35 +643,32 @@
 					<width>160</width>
 					<height>160</height>
 					<texture flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 			</control>
 			<!-- Weather icons -->
 			<control type="group">
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				<visible>ControlGroup(9400).HasFocus()</visible>
-				<control type="image">
-					<posx>560</posx>
-					<posy>55</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture>icon-weather.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<include>background-fade</include>
+				<control type="group">
 					<visible>!Weather.IsFetched</visible>
-				</control>
-				<control type="image">
-					<posx>560</posx>
-					<posy>215</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">icon-weather.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-					<visible>!Weather.IsFetched</visible>
+					<control type="image">
+						<posx>560</posx>
+						<posy>55</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture>icon-weather.png</texture>
+					</control>
+					<control type="image">
+						<posx>560</posx>
+						<posy>215</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture flipy="true" diffuse="mask-fade.png">icon-weather.png</texture>
+					</control>
 				</control>
 				<control type="group">
 					<visible>Weather.IsFetched</visible>
 					<control type="group">
-						<include>background-fade</include>
 						<posx>10</posx>
 						<posy>40</posy>
 						<control type="label">
@@ -628,7 +680,6 @@
 							<label>$INFO[Window(Weather).Property(Location)]</label>
 							<align>left</align>
 							<font>font18</font>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="label">
 							<description>Weather label</description>
@@ -970,13 +1021,13 @@
 			<!-- Settings icons -->
 			<control type="group">
 			<visible>ControlGroup(9450).HasFocus()</visible>
+				<include>background-fade</include>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
 					<texture>icon-settings.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="image">
 					<posx>560</posx>
@@ -984,7 +1035,6 @@
 					<width>160</width>
 					<height>160</height>
 					<texture flipy="true" diffuse="mask-fade.png">icon-settings.png</texture>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 			</control>
 		</control>
@@ -1018,7 +1068,8 @@
 		</control>
 		<!--Home NavBar-->
 		<control type="group">
-		<include>horizontalhome-center</include>
+			<include>horizontalhome-center</include>
+			<include>background-fade</include>
 			<control type="list" id="9900">
 				<posx>10</posx>
 				<posy>290</posy>
@@ -1050,7 +1101,6 @@
 						<height>66</height>
 						<align>center</align>
 						<texture>menu-focus.png</texture>
-						<include>background-fade</include>
 					</control>
 					<control type="label">
 						<posx>105</posx>
@@ -1062,7 +1112,6 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-						<include>background-fade</include>
 					</control>
 				</focusedlayout>
 				<content>
@@ -1135,7 +1184,7 @@
 		</control>
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
-		<include>horizontalhome-center</include>
+			<include>horizontalhome-center</include>
 			<posx>10</posx>
 			<posy>365</posy>
 			<width>1260</width>
@@ -1427,9 +1476,6 @@
 					<font>font12</font>
 					<label>19020</label>
 					<onclick>ActivateWindow(PVR)</onclick>
-					<!--<onclick>Dialog.Close(all,true)</onclick>
-					<onclick>ActivateWindowAndFocus(PVR,31,0)</onclick>
-					<onclick>SetFocus(11)</onclick>-->
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>5</textoffsety>
 					<texturefocus>default-button.png</texturefocus>
