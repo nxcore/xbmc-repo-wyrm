@@ -23,38 +23,22 @@
 			<visible>Skin.String(custom-background)</visible>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(np-vis)</visible>
 			<animation effect="fade" time="300">VisibleChange</animation>
-			<control type="group">
-				<!-- Backgroung fanart image -->
-				<control type="multiimage" id="991">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<imagepath fallback="blank.png" background="true">$INFO[Window.Property(ArtistSlideshow)]</imagepath>
-					<aspectratio>keep</aspectratio>
-					<timeperimage>5000</timeperimage>
-					<fadetime>1000</fadetime>
-					<randomize>true</randomize>
-					<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-					<visible>Skin.HasSetting(background-slideshow)</visible>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-					<aspectratio>scale</aspectratio>
-					<fadetime>1000</fadetime>
-					<visible>!Skin.HasSetting(background-slideshow)</visible>
-				</control>
+			<!-- Backgroung fanart image -->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>1000</fadetime>
+				<visible>!Skin.HasSetting(background-slideshow)</visible>
 			</control>
 		</control>
 		<control type="group">		
-			<visible>Skin.HasSetting(np-vis)</visible>
+			<visible>Skin.HasSetting(HomeViewToggle)</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
 			<!-- Background visualisation image -->
 			<control type="visualisation" id="2">
 				<description>visualisation</description>
@@ -62,8 +46,33 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
+				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 			</control>
 		</control>
+		<control type="group">
+			<visible>Skin.HasSetting(background-slideshow)</visible>
+			<animation effect="fade" time="300">VisibleChange</animation>
+			<control type="image">
+				<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">black.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="multiimage" id="991">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath fallback="blank.png" background="true">$INFO[Window.Property(ArtistSlideshow)]</imagepath>
+				<aspectratio>keep</aspectratio>
+				<timeperimage>5000</timeperimage>
+				<fadetime>1000</fadetime>
+				<randomize>true</randomize>
+			</control>
+		</control>	
 		<!-- infos -->
 		<control type="group">
 			<visible>Player.ShowInfo</visible>
