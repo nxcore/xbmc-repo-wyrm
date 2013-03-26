@@ -400,20 +400,6 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="205">
-						<description>Use Now Playing Screen Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<texturefocus>default-button.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>$LOCALIZE[31885]</label>
-						<onclick>Skin.ToggleSetting(np-vis)</onclick>
-						<selected>Skin.HasSetting(np-vis)</selected>
-						<textcolor>button-text</textcolor>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
 					<control type="radiobutton" id="206">
 						<description>Icon Tilt Toggle</description>
 						<font>font12</font>
