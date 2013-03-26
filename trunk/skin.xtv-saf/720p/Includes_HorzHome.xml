@@ -164,7 +164,6 @@
 									<aspectratio scalediffuse="true">stretch</aspectratio>
 									<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 									<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
-									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 								</control>
 								<control type="label">
 									<description>Item label</description>
@@ -290,8 +289,8 @@
 							<height>165</height>
 							<align>center</align>
 							<aligny>top</aligny>
-							<aspectratio>stretch</aspectratio>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio scalediffuse="true">stretch</aspectratio>
+							<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="252" width="252">
@@ -302,25 +301,23 @@
 							<height>165</height>
 							<align>center</align>
 							<aligny>top</aligny>
-							<aspectratio>stretch</aspectratio>
-							<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+							<aspectratio scalediffuse="true">stretch</aspectratio>
+							<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 							<visible>!Control.HasFocus(9210)</visible>
 						</control>
 						<control type="group">
 							<visible>Control.HasFocus(9210)</visible>
 							<control type="image">
-								<posx>9</posx>
-								<posy>15</posy>
-								<width>230</width>
-								<height>172</height>
+								<posx>14</posx>
+								<posy>20</posy>
+								<width>220</width>
+								<height>165</height>
 								<align>center</align>
 								<aligny>top</aligny>
 								<aspectratio>stretch</aspectratio>
-								<bordertexture border="10">mask-hilite.png</bordertexture>
-								<bordersize>9</bordersize>
-								<texture fallback="blank.png" background="true">$INFO[ListItem.Thumb]</texture>
-								<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								<visible>!SubString(ListItem.Thumb,Default,Left) + !IsEmpty(ListItem.Thumb)</visible>
+								<texture border="10">mask-hilite.png</texture>
+								<animation effect="zoom" start="100" end="112" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 							</control>
 							<control type="image">
 								<posx>14</posx>
@@ -329,10 +326,9 @@
 								<height>165</height>
 								<align>center</align>
 								<aligny>top</aligny>
-								<aspectratio>keep</aspectratio>
-								<texture background="true" diffuse="mask-rect.png">DefaultTvshows.png</texture>
-								<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								<visible>[SubString(ListItem.Thumb,DefaultFolder.png,Left) | IsEmpty(ListItem.Thumb)]</visible>
+								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							</control>
 							<control type="label">
 								<posx>126</posx>
@@ -490,7 +486,7 @@
 							<aspectratio>stretch</aspectratio>
 							<align>center</align>
 							<aligny>top</aligny>
-							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 							<visible>!Control.HasFocus(9260)</visible>
 						</control>
 						<control type="group">
@@ -500,26 +496,23 @@
 								<posy>15</posy>
 								<width>170</width>
 								<height>170</height>
+								<aspectratio>stretch</aspectratio>
 								<align>center</align>
 								<aligny>top</aligny>
-								<aspectratio>stretch</aspectratio>
-								<bordertexture border="10">mask-hilite.png</bordertexture>
-								<bordersize>9</bordersize>
-								<texture fallback="blank.png" background="true">$INFO[ListItem.Icon]</texture>
-								<animation effect="zoom" start="100" end="110" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								<visible>!SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.Icon)</visible>
+								<texture border="10">mask-hilite.png</texture>
+								<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 							</control>
 							<control type="image">
 								<posx>20</posx>
 								<posy>15</posy>
 								<width>170</width>
 								<height>170</height>
+								<aspectratio>stretch</aspectratio>
 								<align>center</align>
 								<aligny>top</aligny>
-								<aspectratio>stretch</aspectratio>
-								<texture background="true" diffuse="mask-rect.png">DefaultAudio.png</texture>
-								<animation effect="zoom" start="100" end="105" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								<visible>[SubString(ListItem.Icon,DefaultFolder.png,Left) | IsEmpty(ListItem.Icon)]</visible>
+								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							</control>
 							<control type="label">
 								<posx>105</posx>
@@ -548,61 +541,61 @@
 							<label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.1.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
 							<label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.2.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
 							<label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.3.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
 						</item>
 						<item id="4">
 							<label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.4.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
 						</item>
 						<item id="5">
 							<label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.5.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
 						</item>
 						<item id="6">
 							<label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.6.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
 						</item>
 						<item id="7">
 							<label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.7.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
 						</item>
 						<item id="8">
 							<label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.8.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
 						</item>
 						<item id="9">
 							<label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.9.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
 						</item>
 						<item id="10">
 							<label>$INFO[Window.Property(LatestAlbum.10.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.10.Artist)]</label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.10.Path)])</onclick>
-							<icon>$INFO[Window.Property(LatestAlbum.10.Thumb)]</icon>
+							<thumb>$INFO[Window.Property(LatestAlbum.10.Thumb)]</thumb>
 						</item>
 					</content>
 				</control>
