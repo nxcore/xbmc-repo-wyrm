@@ -27,6 +27,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="button">
 		<posx>531</posx>
@@ -57,6 +58,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 		<aligny>center</aligny>
 	</default>
 	<default type="fadelabel">
@@ -86,6 +88,7 @@
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
+		<pulseonselect>false</pulseonselect>
 		<colordiffuse>solid-background</colordiffuse>
 	</default>
 	<default type="progress">
@@ -124,6 +127,7 @@
 		<reverse>yes</reverse>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
+		<pulseonselect>false</pulseonselect>
 		<subtype>text</subtype>
 		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -145,6 +149,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 		<textoffsetx>18</textoffsetx>
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
@@ -178,6 +183,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 		<textoffsetx>18</textoffsetx>
 		<radioposx>460</radioposx>
 		<aligny>center</aligny>
@@ -199,6 +205,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 		<onleft>50</onleft>
 		<onright>50</onright>
 		<onup>3</onup>
