@@ -109,7 +109,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font11</font>
-						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<control type="list" id="9160">
 						<posx>10</posx>
@@ -175,6 +174,7 @@
 									<align>center</align>
 									<aligny>center</aligny>
 									<font>font11</font>
+									<include>button-fade</include>
 								</control>
 							</control>
 						</focusedlayout>
@@ -247,7 +247,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font11</font>
-					<shadowcolor>shadow-text</shadowcolor>
 					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 				</control>
 				<control type="group">
@@ -339,7 +338,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font11</font>
-								<wrapmultiline>true</wrapmultiline>
+								<include>button-fade</include>
 							</control>
 							<control type="label">
 								<posx>126</posx>
@@ -350,6 +349,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font11</font>
+								<include>button-fade</include>
 							</control>
 						</control>
 					</focusedlayout>
@@ -431,7 +431,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font11</font>
-					<shadowcolor>shadow-text</shadowcolor>
 					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 				</control>
 				<control type="group">
@@ -514,25 +513,28 @@
 								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
 							</control>
-							<control type="label">
-								<posx>105</posx>
-								<posy>188</posy>
-								<height>24</height>
-								<width>210</width>
-								<label>$INFO[ListItem.Label]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
-							</control>
-							<control type="label">
-								<posx>105</posx>
-								<posy>215</posy>
-								<height>24</height>
-								<width>210</width>
-								<label>$INFO[ListItem.Label2]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<font>font11</font>
+							<control type="group">
+								<animation effect="fade" time="100" delay="200">Focus</animation>
+								<control type="label">
+									<posx>105</posx>
+									<posy>188</posy>
+									<height>24</height>
+									<width>210</width>
+									<label>$INFO[ListItem.Label]</label>
+									<align>center</align>
+									<aligny>center</aligny>
+									<font>font11</font>
+								</control>
+								<control type="label">
+									<posx>105</posx>
+									<posy>215</posy>
+									<height>24</height>
+									<width>210</width>
+									<label>$INFO[ListItem.Label2]</label>
+									<align>center</align>
+									<aligny>center</aligny>
+									<font>font11</font>
+								</control>
 							</control>
 						</control>
 					</focusedlayout>
@@ -540,61 +542,61 @@
 						<item id="1">
 							<label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.1.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
 							<label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.2.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
 							<label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.3.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
 						</item>
 						<item id="4">
 							<label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.4.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
 						</item>
 						<item id="5">
 							<label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.5.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
 						</item>
 						<item id="6">
 							<label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.6.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
 						</item>
 						<item id="7">
 							<label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.7.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
 						</item>
 						<item id="8">
 							<label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.8.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
 						</item>
 						<item id="9">
 							<label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.9.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
 						</item>
 						<item id="10">
 							<label>$INFO[Window.Property(LatestAlbum.10.Title)]</label>
 							<label2>$INFO[Window.Property(LatestAlbum.10.Artist)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestAlbum.10.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(LatestAlbum.10.Path)])</onclick>
 							<thumb>$INFO[Window.Property(LatestAlbum.10.Thumb)]</thumb>
 						</item>
 					</content>
@@ -681,8 +683,6 @@
 							<height>24</height>
 							<width>500</width>
 							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 							<label>$INFO[Window(Weather).Property(WeatherProvider),$LOCALIZE[31536] - ]</label>
 						</control>
 						<control type="label">
@@ -695,8 +695,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font18</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="image">
 							<description>current weather icon</description>
@@ -731,7 +729,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font22</font>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="label">
 							<description>Weather Conditions label</description>
@@ -743,8 +740,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</control>
 					<control type="group">
@@ -760,8 +755,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font13</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="image">
 							<description>Day 1 weather icon</description>
@@ -796,8 +789,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font18</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="label">
 							<description>Weather Conditions label</description>
@@ -809,8 +800,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</control>
 					<control type="group">
@@ -826,8 +815,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font13</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="image">
 							<description>Day 2 weather icon</description>
@@ -862,8 +849,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font18</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="label">
 							<description>Weather Conditions label</description>
@@ -875,8 +860,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</control>
 					<control type="group">
@@ -892,8 +875,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font13</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="image">
 							<description>Day 3 weather icon</description>
@@ -928,7 +909,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font18</font>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="label">
 							<description>Weather Conditions label</description>
@@ -940,8 +920,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</control>
 					<control type="group">
@@ -957,8 +935,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font13</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="image">
 							<description>Day 4 weather icon</description>
@@ -993,7 +969,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font18</font>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 						<control type="label">
 							<description>Weather Conditions label</description>
@@ -1005,8 +980,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</control>
 				</control>
@@ -1080,7 +1053,6 @@
 						<width>210</width>
 						<height>32</height>
 						<font>font18</font>
-						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -1101,7 +1073,6 @@
 						<width>210</width>
 						<height>32</height>
 						<font>font18</font>
-						<textcolor>button-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -1111,55 +1082,55 @@
 					<item id="1">
 						<description>Video Menu</description>
 						<label>3</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9100)</onclick>
 						<visible>Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
 						<label>20338</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9150)</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
 						<description>TV Show Menu</description>
 						<label>20343</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9200)</onclick>
 						<visible>!System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>
 					</item>
 					<item id="4">
 						<description>TV Show Menu</description>
 						<label>19020</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9200)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled) + [!Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))]</visible>
 					</item>
 					<item id="5">
 						<description>Music Menu</description>
 						<label>2</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9250)</onclick>
 						<visible>!Skin.HasSetting(home-music) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="6">
 						<description>Pictures Menu</description>
 						<label>1</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9300)</onclick>
 						<visible>!Skin.HasSetting(home-photos)</visible>
 					</item>
 					<item id="7">
 						<description>Addon Menu</description>
 						<label>24001</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9350)</onclick>
 						<visible>Skin.HasSetting(home-programs)</visible>
 					</item>
 					<item id="8">
 						<description>Weather Menu</description>
 						<label>8</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9400)</onclick>
 						<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					<item id="9">
 						<description>System Menu</description>
 						<label>13000</label>
-						<onclick>noop</onclick>
+						<onclick>SetFocus(9450)</onclick>
 					</item>
 				</content>
 			</control>
@@ -1178,6 +1149,7 @@
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
 			<include>horizontalhome-center</include>
+			<include>background-fade</include>
 			<posx>10</posx>
 			<posy>365</posy>
 			<width>1260</width>
@@ -1198,36 +1170,28 @@
 					<label>744</label>
 					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9122">
 					<width>210</width>
 					<height>46</height>
 					<font>font12</font>
 					<label>14022</label>
-					<onclick>ActivateWindow(Videos,videodb://,return)</onclick>
+					<onclick>ActivateWindow(Videolibrary,root)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9124">
 					<width>210</width>
@@ -1236,17 +1200,13 @@
 					<label>342</label>
 					<onclick>ActivateWindow(Videos,Movies,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Library.HasContent(Movies)</visible>
 				</control>
 				<control type="button" id="9126">
@@ -1256,17 +1216,13 @@
 					<label>20343</label>
 					<onclick>ActivateWindow(Videos,TvShows,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Library.HasContent(TVShows)</visible>
 				</control>
 				<control type="button" id="9128">
@@ -1276,17 +1232,13 @@
 					<label>20389</label>
 					<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
 				<control type="button" id="9130">
@@ -1296,17 +1248,13 @@
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<control type="grouplist" id="9150">
@@ -1323,17 +1271,13 @@
 					<label>31026</label>
 					<onclick>$VAR[MovieLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9172">
 					<width>210</width>
@@ -1342,17 +1286,13 @@
 					<label>$INFO[Skin.String(CustomMovies.1.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMovies.1.Path))</visible>
 				</control>
 				<control type="button" id="9174">
@@ -1362,17 +1302,13 @@
 					<label>$INFO[Skin.String(CustomMovies.2.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMovies.2.Path))</visible>
 				</control>
 				<control type="button" id="9176">
@@ -1382,17 +1318,13 @@
 					<label>$INFO[Skin.String(CustomMovies.3.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMovies.3.Path))</visible>
 				</control>
 				<control type="button" id="9178">
@@ -1402,17 +1334,13 @@
 					<label>$INFO[Skin.String(CustomMovies.4.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMovies.4.Path))</visible>
 				</control>
 				<control type="button" id="9180">
@@ -1422,17 +1350,13 @@
 					<label>$INFO[Skin.String(CustomMovies.5.Label)] </label>
 					<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				</control>
 				<control type="button" id="9182">
@@ -1442,17 +1366,13 @@
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<!-- TV Sub Menu -->
@@ -1470,17 +1390,13 @@
 					<label>19020</label>
 					<onclick>ActivateWindow(PVR)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>System.GetBool(pvrmanager.enabled)</visible>
 				</control>
 				<control type="button" id="9222">
@@ -1490,17 +1406,13 @@
 					<label>31027</label>
 					<onclick>$VAR[TVLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9224">
 					<width>210</width>
@@ -1509,17 +1421,13 @@
 					<label>$INFO[Skin.String(CustomTVShow.1.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.1.Path))</visible>
 				</control>
 				<control type="button" id="9226">
@@ -1529,17 +1437,13 @@
 					<label>$INFO[Skin.String(CustomTVShow.2.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.2.Path))</visible>
 				</control>
 				<control type="button" id="9228">
@@ -1549,17 +1453,13 @@
 					<label>$INFO[Skin.String(CustomTVShow.3.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.3.Path))</visible>
 				</control>
 				<control type="button" id="9230">
@@ -1569,17 +1469,13 @@
 					<label>$INFO[Skin.String(CustomTVShow.4.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.4.Path))</visible>
 				</control>
 				<control type="button" id="9232">
@@ -1589,17 +1485,13 @@
 					<label>$INFO[Skin.String(CustomTVShow.5.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 				</control>
 				<control type="button" id="9234">
@@ -1609,17 +1501,13 @@
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<!-- Music Sub menu -->
@@ -1637,17 +1525,13 @@
 					<label>2</label>
 					<onclick>$VAR[MusicLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!Skin.HasSetting(home-music)</visible>
 				</control>
 				<control type="button" id="9272">
@@ -1657,17 +1541,13 @@
 					<label>31028</label>
 					<onclick>$VAR[MusicVideoLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-musicvideo)</visible>
 				</control>
 				<control type="button" id="9274">
@@ -1677,17 +1557,13 @@
 					<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMusic.1.Path))</visible>
 				</control>
 				<control type="button" id="9276">
@@ -1697,17 +1573,13 @@
 					<label>$INFO[Skin.String(CustomMusic.2.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMusic.2.Path))</visible>
 				</control>
 				<control type="button" id="9278">
@@ -1717,17 +1589,13 @@
 					<label>$INFO[Skin.String(CustomMusic.3.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMusic.3.Path))</visible>
 				</control>
 				<control type="button" id="9280">
@@ -1737,17 +1605,13 @@
 					<label>$INFO[Skin.String(CustomMusic.4.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMusic.4.Path))</visible>
 				</control>
 				<control type="button" id="9282">
@@ -1757,17 +1621,13 @@
 					<label>$INFO[Skin.String(CustomMusic.5.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>!IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				</control>
 				<control type="button" id="9284">
@@ -1777,17 +1637,13 @@
 					<label>1038</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<!-- Pictures Sub menu -->
@@ -1805,17 +1661,13 @@
 					<label>1</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9350</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9322">
 					<width>210</width>
@@ -1824,17 +1676,13 @@
 					<label>1039</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9350</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<!-- Addons Sub menu -->
@@ -1852,17 +1700,13 @@
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9400</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9372">
 					<width>210</width>
@@ -1871,17 +1715,13 @@
 					<label>1038</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9400</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9374">
 					<width>210</width>
@@ -1890,17 +1730,13 @@
 					<label>1039</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9400</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9376">
 					<width>210</width>
@@ -1909,17 +1745,13 @@
 					<label>1043</label>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9400</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9378">
 					<width>210</width>
@@ -1928,17 +1760,13 @@
 					<label>24033</label>
 					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9400</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<!-- Weather Sub menu -->
@@ -1956,17 +1784,13 @@
 					<label>8</label>
 					<onclick>ActivateWindow(Weather)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9350</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9450</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 			<!-- Settings Sub menu -->
@@ -1983,17 +1807,13 @@
 					<label>5</label>
 					<onclick>ActivateWindow(Settings,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9472">
 					<width>210</width>
@@ -2002,17 +1822,13 @@
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="9474">
 					<width>210</width>
@@ -2021,9 +1837,7 @@
 					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -2031,7 +1845,8 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
+					<pulseonselect>true</pulseonselect>
+					<visible>Skin.HasSetting(home-favorites)</visible>
 				</control>
 				<control type="button" id="9476">
 					<width>210</width>
@@ -2040,17 +1855,13 @@
 					<label>20092</label>
 					<onclick>ActivateWindow(profiles)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-profile)</visible>
 				</control>
 				<control type="button" id="9478">
@@ -2060,17 +1871,13 @@
 					<label>137</label>
 					<onclick>RunScript(script.globalsearch)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-search)</visible>
 				</control>
 				<control type="button" id="9480">
@@ -2080,17 +1887,13 @@
 					<label>31036</label>
 					<onclick>PlayDVD</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
 				</control>
 				<control type="button" id="9482">
@@ -2101,17 +1904,13 @@
 					<onclick>ActivateWindow(PlayerControls)</onclick>
 					<onclick>SetFocus(9000)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 				<control type="button" id="9484">
@@ -2119,19 +1918,15 @@
 					<height>46</height>
 					<font>font12</font>
 					<label>13009</label>
-					<onclick>XBMC.Quit()</onclick>
+					<onclick>XBMC.quit()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
 				</control>
 				<control type="button" id="9486">
@@ -2139,19 +1934,15 @@
 					<height>46</height>
 					<font>font12</font>
 					<label>13009</label>
-					<onclick>XBMC.Reboot()</onclick>
+					<onclick>XBMC.reboot()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
 				</control>
 				<control type="button" id="9488">
@@ -2159,19 +1950,15 @@
 					<height>46</height>
 					<font>font12</font>
 					<label>13009</label>
-					<onclick>XBMC.ShutDown()</onclick>
+					<onclick>XBMC.powerdown()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
 				</control>
 				<control type="button" id="9490">
@@ -2179,19 +1966,15 @@
 					<height>46</height>
 					<font>font12</font>
 					<label>13009</label>
-					<onclick>XBMC.Hibernate()</onclick>
+					<onclick>XBMC.hibernate()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
 				</control>
 				<control type="button" id="9492">
@@ -2199,19 +1982,15 @@
 					<height>46</height>
 					<font>font12</font>
 					<label>13009</label>
-					<onclick>XBMC.Suspend()</onclick>
+					<onclick>XBMC.suspend()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
 				</control>
 				<control type="button" id="9494">
@@ -2221,17 +2000,13 @@
 					<label>13009</label>
 					<onclick>ActivateWindow(shutdownmenu)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>5</textoffsety>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<textoffsety>6</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 				</control>
 			</control>

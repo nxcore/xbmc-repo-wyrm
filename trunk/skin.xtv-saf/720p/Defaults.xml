@@ -39,6 +39,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
 	</default>
