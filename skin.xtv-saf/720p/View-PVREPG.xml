@@ -197,6 +197,7 @@
 						<aligny>center</aligny>
 						<selectedcolor>listselectedtext</selectedcolor>
 						<align>left</align>
+						<scroll>false</scroll>
 						<wrapmultiline>true</wrapmultiline>
 						<info>ListItem.Label</info>
 					</control>

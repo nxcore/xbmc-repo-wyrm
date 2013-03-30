@@ -100,6 +100,7 @@
 		<righttexture>-</righttexture>
 		<overlaytexture></overlaytexture>
 		<colordiffuse>ProgressBarColor</colordiffuse>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="scrollbar">
 		<posx>1239</posx>
@@ -110,6 +111,7 @@
 		<textureslidernib>-</textureslidernib>
 		<textureslidernibfocus>-</textureslidernibfocus>
 		<showonepage>false</showonepage>
+		<pulseonselect>false</pulseonselect>
 		<orientation>vertical</orientation>
 		<colordiffuse>ScrollBarColor</colordiffuse>
 	</default>
@@ -176,7 +178,7 @@
 		<height>56</height>
 		<textureradiofocus>check-box.png</textureradiofocus>
 		<textureradionofocus>check-boxnf.png</textureradionofocus>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<label>215</label>
 		<font>font13</font>
@@ -195,7 +197,7 @@
 		<height>56</height>
 		<label>132</label>
 		<font>font13</font>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<texturebg>button-menu-background.png</texturebg>
 		<textureleft>scroll-left.png</textureleft>
@@ -221,6 +223,7 @@
 		<texturesliderbar>seekslider.png</texturesliderbar>
 		<textureslidernib>progress-marker.png</textureslidernib>
 		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+		<pulseonselect>false</pulseonselect>
 		<controloffsetx>75</controloffsetx>
 		<controloffsety>0</controloffsety>
 	</default>
@@ -233,11 +236,12 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>progress-marker.png</textureslidernib>
 		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
+		<pulseonselect>false</pulseonselect>
 		<sliderwidth>200</sliderwidth>
 		<sliderheight>16</sliderheight>
 		<textoffsetx>18</textoffsetx>
@@ -247,13 +251,15 @@
 	<default type="mover">
 		<posx>106</posx>
 		<posy>240</posy>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="resize">
 		<posx>106</posx>
 		<posy>240</posy>
-		<texturefocus border="9">default-button.png</texturefocus>
+		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
+		<pulseonselect>false</pulseonselect>
 	</default>
 </includes>

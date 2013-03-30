@@ -115,7 +115,6 @@
 					</item>
 					<item id="2">
 						<description>TV</description>
-						<!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
 						<label>19020</label>
 						<onclick>Activatewindow(PVRSettings)</onclick>
 					</item>
