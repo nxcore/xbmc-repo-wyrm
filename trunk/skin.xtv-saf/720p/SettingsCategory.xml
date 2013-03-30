@@ -140,9 +140,9 @@
 			<font>font13</font>
 			<align>left</align>
 			<textoffsetx>18</textoffsetx>
+			<pulseonselect>false</pulseonselect>
 			<texturefocus border="8">default-button.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textcolor>button-text</textcolor>
 		</control>
 	</controls>
 </window>
