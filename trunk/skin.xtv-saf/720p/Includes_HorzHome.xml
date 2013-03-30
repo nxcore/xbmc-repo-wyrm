@@ -1166,11 +1166,11 @@
 				<control type="button" id="9120">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>744</label>
 					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1181,11 +1181,11 @@
 				<control type="button" id="9122">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>14022</label>
 					<onclick>ActivateWindow(Videolibrary,root)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1196,11 +1196,11 @@
 				<control type="button" id="9124">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>342</label>
 					<onclick>ActivateWindow(Videos,Movies,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1212,11 +1212,11 @@
 				<control type="button" id="9126">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>20343</label>
 					<onclick>ActivateWindow(Videos,TvShows,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1228,11 +1228,11 @@
 				<control type="button" id="9128">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>20389</label>
 					<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1244,11 +1244,11 @@
 				<control type="button" id="9130">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9450</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1267,11 +1267,11 @@
 				<control type="button" id="9170">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>31026</label>
 					<onclick>$VAR[MovieLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1282,11 +1282,11 @@
 				<control type="button" id="9172">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMovies.1.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1298,11 +1298,11 @@
 				<control type="button" id="9174">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMovies.2.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1314,11 +1314,11 @@
 				<control type="button" id="9176">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMovies.3.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1330,11 +1330,11 @@
 				<control type="button" id="9178">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMovies.4.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMovies.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1346,11 +1346,11 @@
 				<control type="button" id="9180">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMovies.5.Label)] </label>
 					<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1362,11 +1362,11 @@
 				<control type="button" id="9182">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1386,11 +1386,11 @@
 				<control type="button" id="9220">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>19020</label>
 					<onclick>ActivateWindow(PVR)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1402,11 +1402,11 @@
 				<control type="button" id="9222">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>31027</label>
 					<onclick>$VAR[TVLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1417,11 +1417,11 @@
 				<control type="button" id="9224">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomTVShow.1.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1433,11 +1433,11 @@
 				<control type="button" id="9226">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomTVShow.2.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1449,11 +1449,11 @@
 				<control type="button" id="9228">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomTVShow.3.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1465,11 +1465,11 @@
 				<control type="button" id="9230">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomTVShow.4.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1481,11 +1481,11 @@
 				<control type="button" id="9232">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomTVShow.5.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomTVShow.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1497,11 +1497,11 @@
 				<control type="button" id="9234">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9150</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1521,11 +1521,11 @@
 				<control type="button" id="9270">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>2</label>
 					<onclick>$VAR[MusicLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1537,11 +1537,11 @@
 				<control type="button" id="9272">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>31028</label>
 					<onclick>$VAR[MusicVideoLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1553,11 +1553,11 @@
 				<control type="button" id="9274">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1569,11 +1569,11 @@
 				<control type="button" id="9276">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMusic.2.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1585,11 +1585,11 @@
 				<control type="button" id="9278">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMusic.3.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1601,11 +1601,11 @@
 				<control type="button" id="9280">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMusic.4.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1617,11 +1617,11 @@
 				<control type="button" id="9282">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$INFO[Skin.String(CustomMusic.5.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1633,11 +1633,11 @@
 				<control type="button" id="9284">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1038</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9200</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1657,11 +1657,11 @@
 				<control type="button" id="9320">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1672,11 +1672,11 @@
 				<control type="button" id="9322">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1039</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1696,11 +1696,11 @@
 				<control type="button" id="9370">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1037</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1711,11 +1711,11 @@
 				<control type="button" id="9372">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1038</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1726,11 +1726,11 @@
 				<control type="button" id="9374">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1039</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1741,11 +1741,11 @@
 				<control type="button" id="9376">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1043</label>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1756,11 +1756,11 @@
 				<control type="button" id="9378">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>24033</label>
 					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1780,11 +1780,11 @@
 				<control type="button" id="9420">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>8</label>
 					<onclick>ActivateWindow(Weather)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9350</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1803,11 +1803,11 @@
 				<control type="button" id="9470">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>5</label>
 					<onclick>ActivateWindow(Settings,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1818,11 +1818,11 @@
 				<control type="button" id="9472">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1833,11 +1833,11 @@
 				<control type="button" id="9474">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1845,17 +1845,16 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<textcolor>button-text</textcolor>
-					<pulseonselect>true</pulseonselect>
 					<visible>Skin.HasSetting(home-favorites)</visible>
 				</control>
 				<control type="button" id="9476">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>20092</label>
 					<onclick>ActivateWindow(profiles)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1867,11 +1866,11 @@
 				<control type="button" id="9478">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>137</label>
 					<onclick>RunScript(script.globalsearch)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1883,11 +1882,11 @@
 				<control type="button" id="9480">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>31036</label>
 					<onclick>PlayDVD</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1899,12 +1898,12 @@
 				<control type="button" id="9482">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 					<onclick>ActivateWindow(PlayerControls)</onclick>
 					<onclick>SetFocus(9000)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1916,11 +1915,11 @@
 				<control type="button" id="9484">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>13009</label>
 					<onclick>XBMC.quit()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1932,11 +1931,11 @@
 				<control type="button" id="9486">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>13009</label>
 					<onclick>XBMC.reboot()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1948,11 +1947,11 @@
 				<control type="button" id="9488">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>13009</label>
 					<onclick>XBMC.powerdown()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1964,11 +1963,11 @@
 				<control type="button" id="9490">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>13009</label>
 					<onclick>XBMC.hibernate()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1980,11 +1979,11 @@
 				<control type="button" id="9492">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>13009</label>
 					<onclick>XBMC.suspend()</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -1996,11 +1995,11 @@
 				<control type="button" id="9494">
 					<width>210</width>
 					<height>46</height>
-					<font>font12</font>
+					<font>font11</font>
 					<label>13009</label>
 					<onclick>ActivateWindow(shutdownmenu)</onclick>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>6</textoffsety>
+					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9400</onleft>
 					<onright>Control.Move(9900,1)</onright>
