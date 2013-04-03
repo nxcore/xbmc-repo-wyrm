@@ -125,7 +125,7 @@
 						<orientation>horizontal</orientation>
 						<itemlayout height="245" width="210">
 							<control type="image">
-								<posx>30</posx>
+								<posx>40</posx>
 								<posy>10</posy>
 								<width>130</width>
 								<height>178</height>
@@ -135,7 +135,7 @@
 						</itemlayout>
 						<focusedlayout height="245" width="210">
 							<control type="image">
-								<posx>30</posx>
+								<posx>40</posx>
 								<posy>10</posy>
 								<width>130</width>
 								<height>178</height>
@@ -146,7 +146,7 @@
 							<control type="group">
 								<visible>Control.HasFocus(9160)</visible>
 								<control type="image">
-									<posx>25</posx>
+									<posx>35</posx>
 									<posy>5</posy>
 									<width>140</width>
 									<height>188</height>
@@ -156,7 +156,7 @@
 									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 								</control>
 								<control type="image">
-									<posx>25</posx>
+									<posx>35</posx>
 									<posy>5</posy>
 									<width>140</width>
 									<height>188</height>
@@ -166,8 +166,8 @@
 								</control>
 								<control type="label">
 									<description>Item label</description>
-									<posx>95</posx>
-									<posy>195</posy>
+									<posx>105</posx>
+									<posy>200</posy>
 									<height>24</height>
 									<width>210</width>
 									<label>$INFO[ListItem.Label]</label>
@@ -1038,7 +1038,7 @@
 			<include>background-fade</include>
 			<control type="list" id="9900">
 				<posx>10</posx>
-				<posy>290</posy>
+				<posy>292</posy>
 				<width>1260</width>
 				<height>70</height>
 				<scrolltime>200</scrolltime>
@@ -1061,9 +1061,9 @@
 				<focusedlayout height="70" width="210">
 					<control type="image">
 						<posx>0</posx>
-						<posy>7</posy>
+						<posy>0</posy>
 						<width>210</width>
-						<height>66</height>
+						<height>70</height>
 						<align>center</align>
 						<texture>menu-focus.png</texture>
 					</control>
@@ -2008,6 +2008,87 @@
 					<aligny>top</aligny>
 					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 				</control>
+			</control>
+		</control>
+		<!-- Mask controls if more item top or bottom of displayed list -->
+		<control type="group">
+			<!-- Movie Sub menu -->
+			<visible>ControlGroup(9150).HasFocus()</visible>
+			<control type="image">
+				<posx>10</posx>
+				<posy>365</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture>mask-menu.png</texture>
+				<visible>Container(9150).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>623</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture flipy="true">mask-menu.png</texture>
+				<visible>Container(9150).HasNext</visible>
+			</control>
+		</control>
+		<control type="group">
+			<!-- TV Sub menu -->
+			<visible>ControlGroup(9200).HasFocus()</visible>
+			<control type="image">
+				<posx>10</posx>
+				<posy>365</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture>mask-menu.png</texture>
+				<visible>Container(9200).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>623</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture flipy="true">mask-menu.png</texture>
+				<visible>Container(9200).HasNext</visible>
+			</control>
+		</control>
+		<control type="group">
+			<!-- Music Sub menu -->
+			<visible>ControlGroup(9250).HasFocus()</visible>
+			<control type="image">
+				<posx>10</posx>
+				<posy>365</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture>mask-menu.png</texture>
+				<visible>Container(9250).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>623</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture flipy="true">mask-menu.png</texture>
+				<visible>Container(9250).HasNext</visible>
+			</control>
+		</control>
+		<control type="group">
+			<!-- Settings Sub menu -->
+			<visible>ControlGroup(9450).HasFocus()</visible>
+			<control type="image">
+				<posx>10</posx>
+				<posy>365</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture>mask-menu.png</texture>
+				<visible>Container(9450).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>623</posy>
+				<height>48</height>
+				<width>1260</width>
+				<texture flipy="true">mask-menu.png</texture>
+				<visible>Container(9450).HasNext</visible>
 			</control>
 		</control>
 		<!-- media infos (music) -->
