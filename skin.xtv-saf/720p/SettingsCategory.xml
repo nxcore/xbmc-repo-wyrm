@@ -93,9 +93,6 @@
 			<height>56</height>
 			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
@@ -104,12 +101,10 @@
 			<width>870</width>
 			<height>56</height>
 			<font>font13</font>
-			<texturenofocus>-</texturenofocus>
 			<textoffsetx>18</textoffsetx>
 			<radioposx>840</radioposx>
 			<textureradioon>check-box.png</textureradioon>
 			<textureradiooff>check-boxNF.png</textureradiooff>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
@@ -117,8 +112,6 @@
 			<posy>187</posy>
 			<width>870</width>
 			<height>56</height>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<textureup>scroll-up.png</textureup>
 			<texturedown>scroll-down.png</texturedown>
 			<textureupfocus>scroll-up-focus.png</textureupfocus>
@@ -128,7 +121,6 @@
 			<textoffsetx>18</textoffsetx>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="button" id="10">
 			<description>Default Category Button</description>
@@ -140,9 +132,6 @@
 			<font>font13</font>
 			<align>left</align>
 			<textoffsetx>18</textoffsetx>
-			<pulseonselect>false</pulseonselect>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 		</control>
 	</controls>
 </window>

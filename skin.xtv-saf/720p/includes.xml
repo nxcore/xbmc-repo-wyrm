@@ -899,9 +899,6 @@
 	<include name="settingbutton-fade">
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
 	</include>
-	<include name="button-pulse">
-		<animation effect="fade" start="100" end="70" time="1000" pulse="true" condition="Control.HasFocus(50)">Conditional</animation>
-	</include>
 	<include name="shutdown-ani">
 		<animation effect="slide" start="0,900" time="200">WindowOpen</animation>
 		<animation effect="slide" end="0,900" time="200">WindowClose</animation>
