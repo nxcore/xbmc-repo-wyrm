@@ -86,7 +86,6 @@
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-video.png</texture>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 					<control type="image">
 						<posx>560</posx>
@@ -94,7 +93,6 @@
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 				</control>
 				<control type="group">
@@ -132,17 +130,35 @@
 								<aspectratio scalediffuse="true">stretch</aspectratio>
 								<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
-						</itemlayout>
-						<focusedlayout height="245" width="210">
 							<control type="image">
 								<posx>40</posx>
-								<posy>10</posy>
+								<posy>188</posy>
 								<width>130</width>
 								<height>178</height>
-								<aspectratio>stretch</aspectratio>
-								<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
-								<visible>!Control.HasFocus(9160)</visible>
+								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
+						</itemlayout>
+						<focusedlayout height="245" width="210">
+							<control type="group">
+								<visible>!Control.HasFocus(9160)</visible>
+								<control type="image">
+									<posx>40</posx>
+									<posy>10</posy>
+									<width>130</width>
+									<height>178</height>
+									<aspectratio>stretch</aspectratio>
+									<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
+								</control>
+								<control type="image">
+									<posx>40</posx>
+									<posy>188</posy>
+									<width>130</width>
+									<height>178</height>
+									<aspectratio>stretch</aspectratio>
+									<texture fallback="DefaultMovies.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
+								</control>
+							</control>	
 							<control type="group">
 								<visible>Control.HasFocus(9160)</visible>
 								<control type="image">
@@ -155,15 +171,25 @@
 									<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 								</control>
-								<control type="image">
-									<posx>35</posx>
-									<posy>5</posy>
-									<width>140</width>
-									<height>188</height>
-									<aspectratio scalediffuse="true">stretch</aspectratio>
-									<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+								<control type="group">
 									<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
-								</control>
+									<control type="image">
+										<posx>35</posx>
+										<posy>5</posy>
+										<width>140</width>
+										<height>188</height>
+										<aspectratio scalediffuse="true">stretch</aspectratio>
+										<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+									</control>
+									<control type="image">
+										<posx>35</posx>
+										<posy>193</posy>
+										<width>140</width>
+										<height>188</height>
+										<aspectratio scalediffuse="true">stretch</aspectratio>
+										<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+									</control>
+								</control>	
 								<control type="label">
 									<description>Item label</description>
 									<posx>105</posx>
@@ -291,19 +317,41 @@
 							<aspectratio scalediffuse="true">stretch</aspectratio>
 							<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
-					</itemlayout>
-					<focusedlayout height="252" width="252">
 						<control type="image">
 							<posx>14</posx>
-							<posy>20</posy>
+							<posy>185</posy>
 							<width>220</width>
 							<height>165</height>
 							<align>center</align>
 							<aligny>top</aligny>
 							<aspectratio scalediffuse="true">stretch</aspectratio>
-							<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
-							<visible>!Control.HasFocus(9210)</visible>
+							<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
+					</itemlayout>
+					<focusedlayout height="252" width="252">
+						<control type="group">
+							<visible>!Control.HasFocus(9210)</visible>
+							<control type="image">
+								<posx>14</posx>
+								<posy>20</posy>
+								<width>220</width>
+								<height>165</height>
+								<align>center</align>
+								<aligny>top</aligny>
+								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+							</control>
+							<control type="image">
+								<posx>14</posx>
+								<posy>185</posy>
+								<width>220</width>
+								<height>165</height>
+								<align>center</align>
+								<aligny>top</aligny>
+								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+							</control>
+						</control>	
 						<control type="group">
 							<visible>Control.HasFocus(9210)</visible>
 							<control type="image">
@@ -318,16 +366,28 @@
 								<animation effect="zoom" start="100" end="112" center="auto" time="600" tween="back" easing="out">Focus</animation>
 								<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 							</control>
-							<control type="image">
-								<posx>14</posx>
-								<posy>20</posy>
-								<width>220</width>
-								<height>165</height>
-								<align>center</align>
-								<aligny>top</aligny>
-								<aspectratio scalediffuse="true">stretch</aspectratio>
-								<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+							<control type="group">
 								<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<control type="image">
+									<posx>14</posx>
+									<posy>20</posy>
+									<width>220</width>
+									<height>165</height>
+									<align>center</align>
+									<aligny>top</aligny>
+									<aspectratio scalediffuse="true">stretch</aspectratio>
+									<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+								</control>
+								<control type="image">
+									<posx>14</posx>
+									<posy>185</posy>
+									<width>220</width>
+									<height>165</height>
+									<align>center</align>
+									<aligny>top</aligny>
+									<aspectratio scalediffuse="true">stretch</aspectratio>
+									<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+								</control>
 							</control>
 							<control type="label">
 								<posx>126</posx>
@@ -473,21 +533,44 @@
 							<aspectratio>stretch</aspectratio>
 							<align>center</align>
 							<aligny>top</aligny>
-							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
-					</itemlayout>
-					<focusedlayout height="245" width="210">
 						<control type="image">
+							<description>list item icon reflection</description>
 							<posx>25</posx>
-							<posy>20</posy>
+							<posy>180</posy>
 							<width>160</width>
 							<height>160</height>
 							<aspectratio>stretch</aspectratio>
 							<align>center</align>
 							<aligny>top</aligny>
-							<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-							<visible>!Control.HasFocus(9260)</visible>
+							<texture fallback="DefaultAudio.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
 						</control>
+					</itemlayout>
+					<focusedlayout height="245" width="210">
+						<control type="group">
+							<visible>!Control.HasFocus(9260)</visible>
+							<control type="image">
+								<posx>25</posx>
+								<posy>20</posy>
+								<width>160</width>
+								<height>160</height>
+								<aspectratio>stretch</aspectratio>
+								<align>center</align>
+								<aligny>top</aligny>
+								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+							</control>
+							<control type="image">
+								<posx>25</posx>
+								<posy>180</posy>
+								<width>160</width>
+								<height>160</height>
+								<aspectratio>stretch</aspectratio>
+								<align>center</align>
+								<aligny>top</aligny>
+								<texture fallback="DefaultAudio.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
+							</control>
+						</control>	
 						<control type="group">
 							<visible>Control.HasFocus(9260)</visible>
 							<control type="image">
@@ -502,16 +585,28 @@
 								<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
 								<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
 							</control>
-							<control type="image">
-								<posx>20</posx>
-								<posy>15</posy>
-								<width>170</width>
-								<height>170</height>
-								<aspectratio>stretch</aspectratio>
-								<align>center</align>
-								<aligny>top</aligny>
-								<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+							<control type="group">
 								<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
+								<control type="image">
+									<posx>20</posx>
+									<posy>15</posy>
+									<width>170</width>
+									<height>170</height>
+									<aspectratio>stretch</aspectratio>
+									<align>center</align>
+									<aligny>top</aligny>
+									<texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+								</control>
+								<control type="image">
+									<posx>20</posx>
+									<posy>185</posy>
+									<width>170</width>
+									<height>170</height>
+									<aspectratio>stretch</aspectratio>
+									<align>center</align>
+									<aligny>top</aligny>
+									<texture fallback="DefaultAudio.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<animation effect="fade" time="100" delay="200">Focus</animation>
