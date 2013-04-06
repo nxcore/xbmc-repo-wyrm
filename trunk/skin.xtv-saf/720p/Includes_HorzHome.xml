@@ -200,7 +200,6 @@
 									<align>center</align>
 									<aligny>center</aligny>
 									<font>font11</font>
-									<include>button-fade</include>
 								</control>
 							</control>
 						</focusedlayout>
@@ -398,7 +397,6 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font11</font>
-								<include>button-fade</include>
 							</control>
 							<control type="label">
 								<posx>126</posx>
@@ -409,7 +407,6 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font11</font>
-								<include>button-fade</include>
 							</control>
 						</control>
 					</focusedlayout>
