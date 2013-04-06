@@ -251,59 +251,66 @@
 					<width>305</width>
 					<height>50</height>
 					<textoffsetx>20</textoffsetx>
+					<textoffsety>8</textoffsety>
 					<label>24022</label>
 					<font>font13</font>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 				<control type="button" id="7">
 					<description>Disable Addon button</description>
 					<width>305</width>
 					<height>50</height>
 					<textoffsetx>20</textoffsetx>
+					<textoffsety>8</textoffsety>
 					<label>24021</label>
 					<font>font13</font>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 				<control type="button" id="9">
 					<description>Addon Settings</description>
 					<width>305</width>
 					<height>50</height>
 					<textoffsetx>20</textoffsetx>
+					<textoffsety>8</textoffsety>
 					<label>24020</label>
 					<font>font13</font>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 				<control type="button" id="8">
 					<description>Update Addon button</description>
 					<width>305</width>
 					<height>50</height>
 					<textoffsetx>20</textoffsetx>
+					<textoffsety>8</textoffsety>
 					<label>24069</label>
 					<font>font13</font>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 				<control type="button" id="11">
 					<description>Rollback button</description>
 					<width>305</width>
 					<height>50</height>
+					<textoffsetx>20</textoffsetx>
+					<textoffsety>8</textoffsety>
 					<label>24048</label>
 					<font>font13</font>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 				<control type="button" id="10">
 					<description>Changelog button</description>
 					<width>305</width>
 					<height>50</height>
 					<textoffsetx>20</textoffsetx>
+					<textoffsety>8</textoffsety>
 					<label>24036</label>
 					<font>font13</font>
 					<align>center</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 				</control>
 			</control>
 		</control>
