@@ -87,7 +87,6 @@
 					<width>398</width>
 					<height>356</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="20">
 					<description>Shuffle button</description>
@@ -98,15 +97,10 @@
 					<font>font12</font>
 					<label>191</label>
 					<textoffsetx>10</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>1200</onup>
 					<ondown>28</ondown>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="radiobutton" id="28">
 					<description>Randomize button</description>
@@ -117,16 +111,11 @@
 					<font>font12</font>
 					<label>13319</label>
 					<textoffsetx>10</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>20</onup>
 					<ondown>26</ondown>
 					<radioposx>330</radioposx>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="26">
 					<description>Repeat button</description>
@@ -141,9 +130,6 @@
 					<onright>50</onright>
 					<onup>28</onup>
 					<ondown>21</ondown>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="21">
 					<description>Save button</description>
@@ -154,15 +140,10 @@
 					<font>font12</font>
 					<label>190</label>
 					<textoffsetx>10</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>26</onup>
 					<ondown>22</ondown>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="22">
 					<description>Clear button</description>
@@ -174,15 +155,10 @@
 					<label>192</label>
 					<label>31011</label>
 					<textoffsetx>10</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>21</onup>
 					<ondown>1200</ondown>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="1200">
 					<description>PlayerControls</description>
@@ -199,9 +175,6 @@
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick> 
 					<enable>Player.HasAudio | Player.HasVideo</enable>
-					<textcolor>button-text</textcolor>
-					<disabledcolor>disabled-text</disabledcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 		</control>

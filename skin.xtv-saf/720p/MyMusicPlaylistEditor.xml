@@ -222,7 +222,6 @@
 				<width>1280</width>
 				<height>900</height>
 				<texture>black.png</texture>
-				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">
@@ -232,7 +231,6 @@
 				<width>398</width>
 				<height>362</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 			<control type="button" id="6">
@@ -247,8 +245,6 @@
 				<onright>50</onright>
 				<onup>8</onup>
 				<ondown>7</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 			<control type="button" id="7">
@@ -263,8 +259,6 @@
 				<onright>50</onright>
 				<onup>6</onup>
 				<ondown>8</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 			<control type="button" id="8">
@@ -279,8 +273,6 @@
 				<onright>50</onright>
 				<onup>7</onup>
 				<ondown>6</ondown>
-				<textcolor>button-text</textcolor>
-				<include>button-fade</include>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 		</control>

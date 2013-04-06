@@ -894,7 +894,7 @@
 
 	<!-- Start Animation Includes -->
 	<include name="button-fade">
-		<animation effect="fade" start="0" time="200">Visible</animation>
+		<!--<animation effect="fade" start="0" time="200">Visible</animation>-->
 	</include>
 	<include name="settingbutton-fade">
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
