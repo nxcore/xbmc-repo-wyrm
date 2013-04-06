@@ -122,6 +122,8 @@
 		<texturedown>scroll-down.png</texturedown>
 		<textureupfocus>scroll-up-focus.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus.png</texturedownfocus>
+		<texturefocus border="8">default-button.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
 		<align>right</align>
 		<width>26</width>
 		<height>25</height>

@@ -1,5 +1,6 @@
 <window>
-	<defaultcontrol always="true">996</defaultcontrol>
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<backgroundcolor>0</backgroundcolor>
 	<coordinates>
 		<origin x="0" y="0"/>
 	</coordinates>
@@ -16,9 +17,8 @@
 		<control type="group">
 			<posx>365</posx>
 			<posy>102</posy>
-			<include>shutdown-ani</include>
 			<control type="image" id="999">
-				<description>background mid image</description>
+				<description>background image</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>512</width>
@@ -31,7 +31,7 @@
 				<posx>8</posx>
 				<posy>8</posy>
 				<width>496</width>
-				<height max="528">auto</height>
+				<height min="10" max="528">auto</height>
 				<onup>996</onup>
 				<itemgap>0</itemgap>
 				<control type="button" id="1000">
@@ -45,8 +45,6 @@
 					<aligny>top</aligny>
 					<onleft>Close</onleft>
 					<onright>Close</onright>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 				</control>
 			</control>
 		</control>	
