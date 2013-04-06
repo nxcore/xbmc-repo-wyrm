@@ -73,7 +73,6 @@
 					<width>396</width>
 					<height>476</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="2">
 					<description>View As Icons button</description>
@@ -90,7 +89,6 @@
 					<onright>50</onright>
 					<onup>1200</onup>
 					<ondown>3</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
@@ -107,7 +105,6 @@
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort direction</description>
@@ -115,10 +112,6 @@
 					<posy>275</posy>
 					<width>368</width>
 					<height>50</height>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<alttexturefocus>default-button.png</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>					
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 					<textoffsetx>18</textoffsetx>
@@ -128,7 +121,6 @@
 					<onright>50</onright>
 					<onup>3</onup>
 					<ondown>5</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Library button</description>
@@ -147,7 +139,6 @@
 					<onup>4</onup>
 					<ondown>8</ondown>
 					<radioposx>330</radioposx>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="8">
 					<description>Search button</description>
@@ -165,9 +156,6 @@
 					<onup>5</onup>
 					<ondown>19</ondown>
 					<onback>50</onback>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="edit" id="19">
 					<description>Filter</description>
@@ -188,7 +176,6 @@
 					<onright>50</onright>
 					<onup>8</onup>
 					<ondown>20</ondown>
-					<include>button-fade</include>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="20">
@@ -205,12 +192,10 @@
 					<onright>50</onright>
 					<onup>19</onup>
 					<ondown>17</ondown>
-					<textcolor>button-text</textcolor>
 					<textoffsetx>18</textoffsetx>
 					<aligny>top</aligny>
 					<textoffsety>8</textoffsety>
 					<radioposx>330</radioposx>
-					<include>button-fade</include>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="button" id="17">
@@ -228,7 +213,6 @@
 					<onright>50</onright>
 					<onup>20</onup>
 					<ondown>16</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="16">
 					<description>Party Mode button</description>
@@ -245,7 +229,6 @@
 					<textoffsety>8</textoffsety>
 					<onup>17</onup>
 					<ondown>1200</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="1200">
 					<description>PlayerControls</description>
@@ -266,9 +249,6 @@
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick> 
 					<enable>Player.HasAudio | Player.HasVideo</enable>
-					<disabledcolor>disabled-text</disabledcolor>
-					<include>button-fade</include>
-					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 			</control>
 		</control>

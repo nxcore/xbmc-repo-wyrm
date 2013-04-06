@@ -84,8 +84,6 @@
 			<texturenofocus>-</texturenofocus>
 			<align>center</align>
 			<aligny>center</aligny>
-			<textcolor>button-text</textcolor>
-			<include>button-fade</include>
 			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
 		</control>
 		
@@ -111,7 +109,6 @@
 					<width>396</width>
 					<height>572</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="2">
 					<description>View As Icons button</description>
@@ -128,7 +125,6 @@
 					<onright>50</onright>
 					<onup>1200</onup>
 					<ondown>3</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
@@ -145,7 +141,6 @@
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort direction</description>
@@ -153,10 +148,6 @@
 					<posy>194</posy>
 					<width>376</width>
 					<height>50</height>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<alttexturefocus>default-button.png</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>				
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 					<textoffsetx>18</textoffsetx>
@@ -166,7 +157,6 @@
 					<onright>50</onright>
 					<onup>3</onup>
 					<ondown>7</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Stack button</description>
@@ -184,7 +174,6 @@
 					<aligny>top</aligny>
 					<textoffsety>8</textoffsety>
 					<radioposx>330</radioposx>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="10">
 					<description>Show Button</description>
@@ -200,7 +189,6 @@
 					<onright>50</onright>
 					<onup>7</onup>
 					<ondown>8</ondown>
-					<include>button-fade</include>
 					<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="14">
@@ -216,7 +204,6 @@
 					<onright>50</onright>
 					<onup>10</onup>
 					<ondown>8</ondown>
-					<include>button-fade</include>
 					<visible>Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="8">
@@ -234,7 +221,6 @@
 					<onright>50</onright>
 					<onup>10</onup>
 					<ondown>19</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="edit" id="19">
 					<description>Filter</description>
@@ -256,7 +242,6 @@
 					<onup>8</onup>
 					<ondown>20</ondown>
 					<pulseonselect>false</pulseonselect>
-					<include>button-fade</include>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="20">
@@ -277,7 +262,6 @@
 					<textoffsety>8</textoffsety>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
-					<include>button-fade</include>
 					<visible>Container.CanFilterAdvanced</visible>					
 				</control>
 				<control type="button" id="16">
@@ -295,7 +279,6 @@
 					<onright>50</onright>
 					<onup>20</onup>
 					<ondown>17</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="17">
 					<description>Flatten Library button</description>
@@ -312,7 +295,6 @@
 					<onright>50</onright>
 					<onup>16</onup>
 					<ondown>11</ondown>
-					<include>button-fade</include>
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Unlock Shares</description>
@@ -333,8 +315,6 @@
 					<aligny>top</aligny>
 					<textoffsety>8</textoffsety>
 					<enable>system.haslocks</enable>
-					<disabledcolor>disabled-text</disabledcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="1200">
 					<description>PlayerControls</description>
@@ -354,8 +334,6 @@
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
 					<enable>Player.HasAudio | Player.HasVideo</enable>
-					<disabledcolor>disabled-text</disabledcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="label" id="18">
 					<description>No Info Scanned Label</description>
@@ -367,7 +345,6 @@
 					<label>-</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
 				</control>
 			</control>
 		</control>

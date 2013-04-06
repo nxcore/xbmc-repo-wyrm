@@ -156,10 +156,6 @@
 					<font>font12</font>
 					<label>19023</label>
 					<textoffsetx>20</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="33">
 					<description>Radio Channels</description>
@@ -170,10 +166,6 @@
 					<font>font12</font>
 					<label>19024</label>
 					<textoffsetx>20</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="31">
 					<description>TV Guide</description>
@@ -184,10 +176,6 @@
 					<label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="34">
 					<description>Recordings</description>
@@ -198,10 +186,6 @@
 					<label>19163</label>
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="35">
 					<description>Timers</description>
@@ -211,10 +195,6 @@
 					<height>50</height>
 					<label>19040</label>
 					<textoffsetx>20</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 				<control type="button" id="36">
 					<description>Search</description>
@@ -225,10 +205,6 @@
 					<label>137</label>
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<textcolor>button-text</textcolor>
-					<include>button-fade</include>
 				</control>
 			</control>
 		</control>
