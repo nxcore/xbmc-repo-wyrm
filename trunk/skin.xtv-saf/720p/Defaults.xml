@@ -11,6 +11,7 @@
 		<height>25</height>
 		<label>-</label>
 		<font>font13</font>
+		<scroll>false</scroll>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 	</default>
