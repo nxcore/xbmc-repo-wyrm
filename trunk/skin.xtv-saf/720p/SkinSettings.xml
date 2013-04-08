@@ -373,6 +373,20 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="203">
+						<description>Autoscroll Toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<texturefocus>default-button.png</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<label>$LOCALIZE[31882]</label>
+						<onclick>Skin.ToggleSetting(autoscroll)</onclick>
+						<selected>Skin.HasSetting(autoscroll)</selected>
+						<textcolor>button-text</textcolor>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="radiobutton" id="204">
 						<description>Media Overlay Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -386,7 +400,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="204">
+					<control type="radiobutton" id="205">
 						<description>Watched/Unwatched Overlay Toggle</description>
 						<font>font12</font>
 						<width>885</width>
