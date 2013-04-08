@@ -82,38 +82,70 @@
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<visible>Window.IsActive(weather) + !IsEmpty(Skin.String(custom-weatherbackgrounds)) + [!Player.HasVideo | !Player.HasAudio]</visible>
-			<control type="multiimage">
-				<description>Use Custom weather condition backgrounds if location selected</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<imagepath background="true">$INFO[Skin.String(custom-weatherbackgrounds)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-				<aspectratio>scale</aspectratio>
-				<timeperimage>5000</timeperimage>
-				<randomize>true</randomize>
-				<fadetime>400</fadetime>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<fadetime>400</fadetime>
-				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.HasSetting(HomeViewToggle)</visible>
+			<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="group">
-				<visible>Player.HasVideo</visible>
+				<visible>Window.IsActive(weather) + !IsEmpty(Skin.String(custom-weatherbackgrounds)) + [!Player.HasVideo | !Player.HasAudio]</visible>
+				<control type="multiimage">
+					<description>Use Custom weather condition backgrounds if location selected</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<imagepath background="true">$INFO[Skin.String(custom-weatherbackgrounds)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+					<aspectratio>scale</aspectratio>
+					<timeperimage>5000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>400</fadetime>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
 				<control type="image">
-					<description>mask out any backgrounds showing around video</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<fadetime>400</fadetime>
+					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(HomeViewToggle)</visible>
+				<control type="group">
+					<visible>Player.HasVideo</visible>
+					<control type="image">
+						<description>mask out any backgrounds showing around video</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<texture background="true">black.png</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+					<control type="videowindow">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+					</control>
+				</control>
+				<control type="visualisation">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<visible>Player.HasAudio</visible>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
+				<control type="image">
+					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
@@ -121,45 +153,18 @@
 					<texture background="true">black.png</texture>
 					<aspectratio>scale</aspectratio>
 				</control>
-				<control type="videowindow">
+				<control type="multiimage">
+					<description>Backgroung ArtistSlideshow fanart image</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<aspectratio>stretch</aspectratio>
+					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+					<aspectratio>keep</aspectratio>
+					<timeperimage>5000</timeperimage>
+					<fadetime>400</fadetime>
+					<randomize>true</randomize>
 				</control>
-			</control>
-			<control type="visualisation">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>Player.HasAudio</visible>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
-			<control type="image">
-				<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">black.png</texture>
-				<aspectratio>scale</aspectratio>
-			</control>
-			<control type="multiimage">
-				<description>Backgroung ArtistSlideshow fanart image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<aspectratio>keep</aspectratio>
-				<timeperimage>5000</timeperimage>
-				<fadetime>400</fadetime>
-				<randomize>true</randomize>
 			</control>
 		</control>
 		<control type="image">
@@ -197,179 +202,171 @@
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(background-fanart) + !stringcompare(ListItem.Label,..) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
+			<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="group">
-				<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(MusicVideos)]</visible>
-				<control type="image">
-					<description>Fanart background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<aspectratio>stretch</aspectratio>
-					<fadetime>400</fadetime>
-					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(movies) | Container.Content(MusicVideos)</visible>
-				<control type="multiimage" id="6300">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<randomize>true</randomize>
-					<timeperimage>5000</timeperimage>
-					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
-					<aspectratio>stretch</aspectratio>
-					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
-				</control>
-				<control type="image">
-					<description>Fanart background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<aspectratio>stretch</aspectratio>
-					<fadetime>400</fadetime>
-					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Art(fanart))</visible>
-				</control>
-				<control>
-					<description>debug label</description>
-					<posx>10</posx>
-					<posy>20</posy>
-					<width>900</width>
-					<height>37</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<label>Control.GetLabel(6300)</label>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(TVShows)</visible>
-				<control type="multiimage" id="6310">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<randomize>true</randomize>
-					<timeperimage>5000</timeperimage>
-					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-					<aspectratio>stretch</aspectratio>
-					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
-				</control>
-				<!-- TV Show Fallback -->
-				<control type="image">
-					<description>TVShow fallback fanart background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<aspectratio>stretch</aspectratio>
-					<fadetime>400</fadetime>
-					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>IsEmpty(Control.GetLabel(6310)) + !IsEmpty(ListItem.Art(fanart))</visible>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(Seasons)</visible>
-				<control type="multiimage" id="6320">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<randomize>true</randomize>
-					<timeperimage>5000</timeperimage>
-					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-					<aspectratio>stretch</aspectratio>
-					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
-				</control>
+				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
 				<control type="group">
-					<visible>IsEmpty(Control.GetLabel(6320))</visible>
-					<!-- TV Season Fallback -->
-					<control type="image" id="6322">
+					<visible>![Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(movies) | Container.Content(MusicVideos)]</visible>
+					<control type="image">
+						<description>Fanart background</description>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1280</width>
 						<height>720</height>
-						<texture fallback="blank.png" background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
 						<aspectratio>stretch</aspectratio>
-						<fadetime>400</fadetime>
-						<visible>!IsEmpty(ListItem.Path)</visible>
+						<fadetime>300</fadetime>
+						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 					</control>
-					<control type="group">
-						<visible>IsEmpty(Control.GetLabel(6322))</visible>
-						<control type="image">
-							<description>Season fallback fanart background</description>
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1280</width>
-							<height>720</height>
-							<aspectratio>stretch</aspectratio>
-							<fadetime>400</fadetime>
-							<texture background="true">$INFO[ListItem.Art(season.fanart)]</texture>
-							<visible>!IsEmpty(ListItem.Art(season.fanart))</visible>
-						</control>
-					</control>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(Episodes)</visible>
-				<control type="multiimage" id="6340">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<randomize>true</randomize>
-					<timeperimage>5000</timeperimage>
-					<fadetime>400</fadetime>
-					<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
-					<aspectratio>stretch</aspectratio>
-					<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 				</control>
 				<control type="group">
-					<visible>IsEmpty(Control.GetLabel(6340))</visible>
-					<control type="image" id="6342">
+					<visible>Container.Content(movies) | Container.Content(MusicVideos)</visible>
+					<control type="multiimage" id="6300">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1280</width>
 						<height>720</height>
-						<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+						<randomize>true</randomize>
+						<timeperimage>5000</timeperimage>
+						<fadetime>300</fadetime>
+						<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
 						<aspectratio>stretch</aspectratio>
-						<fadetime>400</fadetime>
-						<visible>!IsEmpty(ListItem.Path)</visible>
+						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
+					</control>
+					<control type="image">
+						<description>Fanart background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+						<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Art(fanart))</visible>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Container.Content(TVShows)</visible>
+					<control type="multiimage" id="6310">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<randomize>true</randomize>
+						<timeperimage>5000</timeperimage>
+						<fadetime>300</fadetime>
+						<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+						<aspectratio>stretch</aspectratio>
+						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
+					</control>
+					<!-- TV Show Fallback -->
+					<control type="image">
+						<description>TVShow fallback fanart background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+						<visible>IsEmpty(Control.GetLabel(6310)) + !IsEmpty(ListItem.Art(fanart))</visible>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Container.Content(Seasons)</visible>
+					<control type="multiimage" id="6320">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<randomize>true</randomize>
+						<timeperimage>5000</timeperimage>
+						<fadetime>300</fadetime>
+						<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+						<aspectratio>stretch</aspectratio>
+						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(Control.GetLabel(6342))</visible>
-						<control type="image">
-							<description>Episode fallback fanart background</description>
+						<visible>IsEmpty(Control.GetLabel(6320))</visible>
+						<!-- TV Season Fallback -->
+						<control type="image" id="6322">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>1280</width>
 							<height>720</height>
+							<texture fallback="blank.png" background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
 							<aspectratio>stretch</aspectratio>
-							<fadetime>400</fadetime>
-							<texture background="true">$INFO[Fanart.Image]</texture>
-							<visible>!IsEmpty(Fanart.Image)</visible>
+							<fadetime>300</fadetime>
+							<visible>!IsEmpty(ListItem.Path)</visible>
 						</control>
-						<control type="image">
-							<description>TVShow fallback fanart background</description>
+						<control type="group">
+							<visible>IsEmpty(Control.GetLabel(6322))</visible>
+							<control type="image">
+								<description>Season fallback fanart background</description>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>1280</width>
+								<height>720</height>
+								<aspectratio>stretch</aspectratio>
+								<fadetime>300</fadetime>
+								<texture background="true">$INFO[ListItem.Art(season.fanart)]</texture>
+								<visible>!IsEmpty(ListItem.Art(season.fanart))</visible>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Container.Content(Episodes)</visible>
+					<control type="multiimage" id="6340">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<randomize>true</randomize>
+						<timeperimage>5000</timeperimage>
+						<fadetime>300</fadetime>
+						<imagepath background="true">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+						<aspectratio>stretch</aspectratio>
+						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
+					</control>
+					<control type="group">
+						<visible>IsEmpty(Control.GetLabel(6340))</visible>
+						<control type="image" id="6342">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>1280</width>
 							<height>720</height>
+							<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
 							<aspectratio>stretch</aspectratio>
-							<fadetime>400</fadetime>
-							<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-							<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+							<fadetime>300</fadetime>
+							<visible>!IsEmpty(ListItem.Path)</visible>
+						</control>
+						<control type="group">
+							<visible>IsEmpty(Control.GetLabel(6342))</visible>
+							<control type="image">
+								<description>Episode fallback fanart background</description>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>1280</width>
+								<height>720</height>
+								<aspectratio>stretch</aspectratio>
+								<fadetime>300</fadetime>
+								<texture background="true">$INFO[Fanart.Image]</texture>
+								<visible>!IsEmpty(Fanart.Image)</visible>
+							</control>
+							<control type="image">
+								<description>TVShow fallback fanart background</description>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>1280</width>
+								<height>720</height>
+								<aspectratio>stretch</aspectratio>
+								<fadetime>300</fadetime>
+								<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+								<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+							</control>
 						</control>
 					</control>
 				</control>
@@ -428,7 +425,7 @@
 					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 					<aspectratio>keep</aspectratio>
 					<timeperimage>5000</timeperimage>
-					<fadetime>400</fadetime>
+					<fadetime>300</fadetime>
 					<randomize>true</randomize>
 				</control>
 			</control>
@@ -484,26 +481,27 @@
 				<textcolor>info-text</textcolor>
 				<titlecolor>rss-title-text</titlecolor>
 				<headlinecolor>rss-headline-text</headlinecolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 		</control>
 	</include>
 	<!-- Begin Low free memory include -->
 	<include name="memory-low">
-		<control type="label">
-			<description>low free memory label</description>
-			<posx>354</posx>
-			<posy>75</posy>
-			<width>566</width>
-			<height>37</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>font18</font>
-			<textcolor>warning-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
-			<visible>IntegerGreaterThan(system.memory(used.percent),95) + !Skin.HasSetting(hidememwarning)</visible>
-		</control>
+		<control type="group">
+			<visible>!Skin.HasSetting(hidememwarning)</visible>
+			<control type="label">
+				<description>low free memory label</description>
+				<posx>354</posx>
+				<posy>75</posy>
+				<width>566</width>
+				<height>37</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font18</font>
+				<textcolor>warning-text</textcolor>
+				<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
+				<visible>IntegerGreaterThan(system.memory(used.percent),95)</visible>
+			</control>
+		</control>	
 	</include>
 	<!-- Start Number of Files Include -->
 	<include name="#files">
@@ -516,8 +514,6 @@
 			<align>left</align>
 			<label>-</label>
 			<font>font13</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 			<include>list-fade</include>
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
@@ -547,8 +543,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.SortLetter]</label>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<font>font28</font>
 			</control>
 		</control>
@@ -573,6 +567,7 @@
 				<effect type="rotatey" start="-20" end="-20" time="0"/>
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
+			<include>icon-fade</include>
 			<control type="group">
 				<visible>!Container.Content(Addons)</visible>
 				<control type="image">
@@ -583,7 +578,6 @@
 					<height>384</height>
 					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
 				</control>
 				<control type="image">
 					<description>list item icon reflection</description>
@@ -593,7 +587,6 @@
 					<height>384</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
-					<include>icon-fade</include>
 				</control>
 			</control>
 			<control type="group">
@@ -608,7 +601,6 @@
 						<height>384</height>
 						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<include>icon-fade</include>
 					</control>
 					<control type="image">
 						<description>list item icon reflection</description>
@@ -618,7 +610,6 @@
 						<height>384</height>
 						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<include>icon-fade</include>
 					</control>
 				</control>
 				<control type="group">
@@ -631,7 +622,6 @@
 						<height>384</height>
 						<texture background="true">DefaultAddon.png</texture>
 						<aspectratio>keep</aspectratio>
-						<include>icon-fade</include>
 					</control>
 					<control type="image">
 						<description>list item icon reflection</description>
@@ -641,7 +631,6 @@
 						<height>384</height>
 						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
 						<aspectratio>keep</aspectratio>
-						<include>icon-fade</include>
 					</control>
 				</control>
 			</control>
@@ -655,6 +644,7 @@
 				<effect type="rotatey" start="-20" end="-20" time="0"/>
 				<effect type="slide" end="10,0" time="0"/>
 			</animation>
+			<include>icon-fade</include>
 			<control type="image">
 				<posx>144</posx>
 				<posy>98</posy>
@@ -672,7 +662,6 @@
 				<height>350</height>
 				<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio aligny="center" align="center">stretch</aspectratio>
-				<include>list-fade</include>
 			</control>
 			<control type="group">
 				<visible>[Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
@@ -693,8 +682,6 @@
 					<label>31230</label>
 					<font>font11</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Artist value</description>
@@ -705,8 +692,6 @@
 					<label>$INFO[ListItem.Artist]</label>
 					<scroll>true</scroll>
 					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Genre label</description>
@@ -717,8 +702,6 @@
 					<label>31231</label>
 					<font>font11</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Genre value</description>
@@ -729,8 +712,6 @@
 					<label>$INFO[ListItem.Genre]</label>
 					<scroll>true</scroll>
 					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Year label</description>
@@ -741,8 +722,6 @@
 					<label>31232</label>
 					<font>font11</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Year label</description>
@@ -752,8 +731,6 @@
 					<height>25</height>
 					<label>$INFO[ListItem.Year]</label>
 					<font>font11</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<description>seperator</description>
@@ -789,7 +766,6 @@
 				<align>left</align>
 				<font>font12</font>
 				<textcolor>listselectedtext</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Video Title label</description>
@@ -801,8 +777,6 @@
 				<align>left</align>
 				<font>font12</font>
 				<scroll>true</scroll>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Time label</description>
@@ -813,8 +787,6 @@
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 				<align>left</align>
 				<font>font12</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 		</control>
 		<control type="group">
@@ -839,8 +811,6 @@
 				<align>left</align>
 				<font>font11</font>
 				<scroll>true</scroll>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Album label</description>
@@ -852,8 +822,6 @@
 				<align>left</align>
 				<font>font11</font>
 				<scroll>true</scroll>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Title label</description>
@@ -865,8 +833,6 @@
 				<align>left</align>
 				<font>font11</font>
 				<scroll>true</scroll>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Time label</description>
@@ -877,8 +843,6 @@
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 				<align>left</align>
 				<font>font12</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 		</control>
 	</include>
@@ -893,9 +857,6 @@
 	</include>
 
 	<!-- Start Animation Includes -->
-	<include name="button-fade">
-		<!--<animation effect="fade" start="0" time="200">Visible</animation>-->
-	</include>
 	<include name="settingbutton-fade">
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
 	</include>
