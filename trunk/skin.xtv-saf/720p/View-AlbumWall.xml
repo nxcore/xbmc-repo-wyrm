@@ -71,7 +71,6 @@
 				<height>490</height>
 				<onleft>58</onleft>
 				<onright>9000</onright>
-				<include>list-fade</include>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 			<!-- Go Back -->
@@ -82,9 +81,7 @@
 				<height>37</height>
 				<font>font20</font>
 				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -100,9 +97,7 @@
 					<font>font20</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 					<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
 					<textoffsetx>0</textoffsetx>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
@@ -115,9 +110,7 @@
 					<height>37</height>
 					<font>font20</font>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 					<info>ListItem.Label</info>
 					<textoffsetx>0</textoffsetx>
 					<visible>SubString(ListItem.Icon,Default,Left)</visible>
@@ -141,9 +134,7 @@
 					<height>37</height>
 					<font>font13</font>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 					<label>$INFO[ListItem.Genre]</label>
 					<textoffsetx>0</textoffsetx>
 					<visible>!Container.Content(genres)</visible>

@@ -19,7 +19,6 @@
 			<height>37</height>
 			<label>31032</label>
 			<font>font20</font>
-			<textcolor>button-text</textcolor>
 		</control>
 		
 		<control type="group">
@@ -32,9 +31,7 @@
 				<width>636</width>
 				<height>37</height>
 				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>false</scroll>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
@@ -59,8 +56,6 @@
 				<width>636</width>
 				<height>20</height>
 				<font>font11</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Weather).Property(WeatherProvider),$LOCALIZE[31536] - ]</label>
@@ -94,8 +89,6 @@
 				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="button" id="2">
 				<description>Refresh button</description>

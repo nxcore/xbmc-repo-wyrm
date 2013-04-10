@@ -27,7 +27,7 @@
 				<label>[B]$INFO[ListItem.Property(Addon.Name)][/B]</label>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 			</control>
 			<control type="group">
 				<posx>477</posx>
@@ -54,7 +54,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 				</control>
 				<control type="label">
 					<description>Author txt</description>
@@ -102,7 +102,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 				</control>
 				<control type="label">
 					<description>Rating txt</description>
@@ -210,7 +210,7 @@
 						<font>font12</font>
 						<textcolor>button-text</textcolor>
 						<label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
-						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
 				</control>
 				<control type="group">

@@ -200,7 +200,6 @@
 				<font>font12</font>
 				<textcolor>button-text</textcolor>
 				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>($INFO[Container(11).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>

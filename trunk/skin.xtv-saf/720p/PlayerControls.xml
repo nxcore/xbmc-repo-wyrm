@@ -87,7 +87,7 @@
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<align>left</align>
 			<font>font12</font>
-			<scroll>true</scroll>
+			<scroll>Skin.HasSetting(autoscroll)</scroll>
 			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="progress">

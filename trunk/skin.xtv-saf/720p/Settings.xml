@@ -61,7 +61,7 @@
 						<height>30</height>
 						<width>440</width>
 						<font>font12</font>
-						<scroll>false</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -88,7 +88,7 @@
 						<height>30</height>
 						<width>440</width>
 						<font>font12</font>
-						<scroll>false</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
