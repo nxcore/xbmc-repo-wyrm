@@ -36,7 +36,7 @@
 					<font>font13</font>
 					<label>31680</label>
 					<textcolor>button-text</textcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 				</control>
 				<control type="image">
 					<posx>25</posx>

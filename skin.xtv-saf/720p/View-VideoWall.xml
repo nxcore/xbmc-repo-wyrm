@@ -122,10 +122,7 @@
 				<height>37</height>
 				<font>font18</font>
 				<align>left</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<selectedcolor>listselectedtext</selectedcolor>
-				<scroll>true</scroll>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [Container.Content(seasons) | Container.Content(episodes) | container.content(musicvideos) | IsEmpty(Control.GetLabel(7016))]</visible>
@@ -139,9 +136,7 @@
 				<height>37</height>
 				<font>font28</font>
 				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<scroll>true</scroll>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -154,10 +149,7 @@
 				<height>37</height>
 				<font>font11</font>
 				<align>left</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
-				<selectedcolor>listselectedtext</selectedcolor>
-				<scroll>true</scroll>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
 			</control>
@@ -169,8 +161,6 @@
 				<height>31</height>
 				<aligny>center</aligny>
 				<font>font18</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<label>$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]</label>
 				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
 			</control>
@@ -184,8 +174,6 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<info>ListItem.Duration</info>
 					<visible>substring(listitem.Duration,hrs)</visible>
 				</control>
@@ -196,8 +184,6 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<info>ListItem.Duration</info>
 					<visible>substring(listitem.Duration,min)</visible>
 					<visible>!substring(listitem.Duration,hrs)</visible>
@@ -209,8 +195,6 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<label>$INFO[ListItem.Duration,, mins]</label>
 					<visible>!substring(listitem.Duration,min)</visible>
 				</control>
@@ -243,12 +227,10 @@
 				<width>460</width>
 				<height>298</height>
 				<font>font13</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
 				<align>left</align>
 				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+				<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<!-- Plot (Show if no outline available)-->
 			<control type="textbox">
@@ -257,12 +239,10 @@
 				<width>460</width>
 				<height>298</height>
 				<font>font13</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<align>left</align>
 				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
-				<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+				<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="scrollbar" id="28">
 				<posx>1244</posx>
@@ -271,7 +251,6 @@
 				<height>510</height>
 				<onleft>58</onleft>
 				<onright>9000</onright>
-				<include>list-fade</include>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>

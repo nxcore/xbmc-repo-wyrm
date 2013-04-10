@@ -237,7 +237,7 @@
 				<shadowcolor>shadow-text</shadowcolor>
 				<info>ListItem.Property(Album_Description)</info>
 				<align>justify</align>
-				<autoscroll time="2000" delay="3000" repeat="6000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 				<visible>!Control.IsVisible(50)</visible>
 			</control>
 		</control>
@@ -468,7 +468,7 @@
 				<shadowcolor>shadow-text</shadowcolor>
 				<info>ListItem.Property(Artist_Description)</info>
 				<align>justify</align>
-				<autoscroll time="2000" delay="3000" repeat="6000">true</autoscroll>
+				<autoscroll time="2000" delay="3000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 				<visible>!Control.IsVisible(50)</visible>
 			</control>
 		</control>

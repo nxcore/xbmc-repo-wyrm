@@ -17,7 +17,6 @@
 			<height>31</height>
 			<label>10003</label>
 			<font>font20</font>
-			<textcolor>button-text</textcolor>
 		</control>
 		
 		<control type="image">
@@ -53,8 +52,6 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>left</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
 					<textoffsetx>6</textoffsetx>
@@ -66,8 +63,6 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label2</info>
 				</control>
@@ -88,10 +83,8 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>left</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 					<info>ListItem.Label</info>
 					<textoffsetx>6</textoffsetx>
 				</control>
@@ -102,8 +95,6 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label2</info>
 				</control>
@@ -133,8 +124,6 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>left</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
 					<textoffsetx>6</textoffsetx>
@@ -146,8 +135,6 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label2</info>
 				</control>
@@ -168,10 +155,8 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>left</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 					<info>ListItem.Label</info>
 					<textoffsetx>6</textoffsetx>
 				</control>
@@ -182,8 +167,6 @@
 					<height>27</height>
 					<font>font12</font>
 					<align>right</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label2</info>
 				</control>
@@ -220,6 +203,5 @@
 			<label>-</label>
 			<font>font12</font>
 		</control>
-
 	</controls>
 </window>

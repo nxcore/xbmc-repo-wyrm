@@ -21,8 +21,6 @@
 				<font>font18</font>
 				<align>center</align>
 				<aligny>bottom</aligny>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="image">
 				<description>Busy animation</description>
@@ -53,8 +51,6 @@
 					<font>font18</font>
 					<align>center</align>
 					<aligny>bottom</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current temp Value</description>
@@ -66,8 +62,6 @@
 					<align>right</align>
 					<aligny>bottom</aligny>
 					<label>[B]$INFO[Window.Property(Current.Temperature)][/B]$INFO[System.TemperatureUnits]</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -86,8 +80,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[402] :</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current dew label</description>
@@ -99,8 +91,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[405] :</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current humidity label</description>
@@ -112,8 +102,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[406] :</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current UV Index label</description>
@@ -125,8 +113,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[403] :</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current Wind label</description>
@@ -138,8 +124,6 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[404] :</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current feels like Value</description>
@@ -151,8 +135,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current dew Value</description>
@@ -164,8 +146,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current humidity Value</description>
@@ -177,8 +157,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<info>Window.Property(Current.Humidity)</info>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current UV Index Value</description>
@@ -190,8 +168,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<info>Window.Property(Current.UVIndex)</info>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="label">
 					<description>current Wind Value</description>
@@ -203,8 +179,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<info>Window.Property(Current.Wind)</info>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -231,8 +205,6 @@
 						<info>Window.Property(Day1.Title)</info>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day1_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day1_Icon</include>
@@ -246,8 +218,6 @@
 						<font>font22</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label">
@@ -260,9 +230,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -286,8 +254,6 @@
 						<info>Window.Property(Day2.Title)</info>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day2_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day2_Icon</include>
@@ -301,8 +267,6 @@
 						<font>font22</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label">
@@ -315,9 +279,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -341,8 +303,6 @@
 						<info>Window.Property(Day3.Title)</info>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day3_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day3_Icon</include>
@@ -356,8 +316,6 @@
 						<font>font22</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label">
@@ -370,9 +328,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -396,8 +352,6 @@
 						<info>Window.Property(Day4.Title)</info>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day4_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day4_Icon</include>
@@ -411,8 +365,6 @@
 						<font>font22</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label">
@@ -425,9 +377,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<textcolor>button-text</textcolor>
-						<shadowcolor>shadow-text</shadowcolor>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 					</control>
 					<control type="image">
 						<posx>34</posx>

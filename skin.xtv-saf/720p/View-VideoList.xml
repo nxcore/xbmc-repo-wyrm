@@ -46,7 +46,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -59,7 +59,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.Label2</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 				</control>	
@@ -85,7 +85,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 					<control type="label">
@@ -98,7 +98,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.Property(Addon.Description)</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 				</control>	
@@ -124,7 +124,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 					<control type="label">
@@ -137,7 +137,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.PlotOutline</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 				</control>	
@@ -163,7 +163,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="label">
@@ -176,7 +176,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<label>$VAR[VideoDuration]</label>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 				</control>	
@@ -212,7 +212,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -225,7 +225,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.Label2</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 				</control>
@@ -253,7 +253,7 @@
 						<aligny>center</aligny>
 						<selectedcolor>listselectedtext</selectedcolor>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 					<control type="label">
@@ -266,7 +266,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.Property(Addon.Description)</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 				</control>
@@ -292,7 +292,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 					<control type="label">
@@ -305,7 +305,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.PlotOutline</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 				</control>	
@@ -331,7 +331,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="label">
@@ -344,7 +344,7 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<label>$VAR[VideoDuration]</label>
-						<scroll>False</scroll>
+						<scroll>Skin.HasSetting(autoscroll)</scroll>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 				</control>	
@@ -389,9 +389,9 @@
 				</animation>
 				<control type="group">
 					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-						<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 							<control type="image">
 							<description>list item icon</description>
 							<posx>90</posx>
@@ -400,7 +400,6 @@
 							<height>448</height>
 							<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -410,12 +409,10 @@
 							<height>448</height>
 							<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 					<control type="group">
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-						<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 						<control type="image">
 							<description>list item icon</description>
 							<posx>90</posx>
@@ -424,7 +421,6 @@
 							<height>448</height>
 							<texture>DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -434,7 +430,6 @@
 							<height>448</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 				</control>
@@ -451,7 +446,6 @@
 							<height>448</height>
 							<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -461,7 +455,6 @@
 							<height>448</height>
 							<texture background="true" flipy="true" fallback="DefaultMusicVideos.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 					<control type="group">
@@ -474,7 +467,6 @@
 							<height>448</height>
 							<texture>DefaultMusicVideos.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -484,7 +476,6 @@
 							<height>448</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 				</control>
@@ -500,7 +491,6 @@
 							<height>448</height>
 							<texture>DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -510,7 +500,6 @@
 							<height>448</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="group"> 
 							<control type="image">
@@ -521,7 +510,6 @@
 								<colordiffuse>StudioShadow</colordiffuse>
 								<aspectratio>keep</aspectratio>
 								<texture>special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
-								<include>icon-fade</include>
 							</control>
 							<control type="image">
 								<posx>240</posx>
@@ -531,7 +519,6 @@
 								<colordiffuse>StudioDiffuse</colordiffuse>
 								<aspectratio>keep</aspectratio>
 								<texture>special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
-								<include>icon-fade</include>
 							</control>
 						</control>	
 					</control>
@@ -545,7 +532,6 @@
 							<height>448</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -555,7 +541,6 @@
 							<height>448</height>
 							<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 				</control>
@@ -572,7 +557,6 @@
 							<height>448</height>
 							<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -582,12 +566,10 @@
 							<height>448</height>
 							<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 					<control type="group">
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-						<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !IsEmpty(ListItem.Plot) + !ControlGroup(9000).HasFocus" reversible="true">Conditional</animation>
 						<control type="image">
 							<description>list item icon</description>
 							<posx>90</posx>
@@ -596,7 +578,6 @@
 							<height>448</height>
 							<texture>DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -606,7 +587,6 @@
 							<height>448</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 				</control>
@@ -624,7 +604,6 @@
 							<height>448</height>
 							<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -634,7 +613,6 @@
 							<height>448</height>
 							<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 					<control type="group">
@@ -648,7 +626,6 @@
 							<height>448</height>
 							<texture diffuse="mask-rect.png">DefaultTvshows.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
@@ -658,7 +635,6 @@
 							<height>448</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
 							<aspectratio>keep</aspectratio>
-							<include>icon-fade</include>
 						</control>
 					</control>
 				</control>
@@ -742,7 +718,7 @@
 						<align>justify</align>
 						<aligny>top</aligny>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-						<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+						<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
 					<!-- Plot (Show if no outline available)-->
 					<control type="textbox">
@@ -755,7 +731,7 @@
 						<align>justify</align>
 						<aligny>top</aligny>
 						<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
-						<autoscroll time="4000" delay="6000" repeat="8000">true</autoscroll>
+						<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
 				</control>
 			</control>

@@ -66,7 +66,7 @@
 					<textcolor>button-text</textcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 				</control>
 			</focusedlayout>
 		</control>

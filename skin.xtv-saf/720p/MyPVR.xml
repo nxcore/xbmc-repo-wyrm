@@ -45,7 +45,6 @@
 						<aspectratio>keep</aspectratio>
 						<align>center</align>
 						<aligny>top</aligny>
-						<include>icon-fade</include>
 						<visible>!IsEmpty(ListItem.Thumb)</visible>
 					</control>
 					<control type="image">
@@ -56,7 +55,6 @@
 						<aspectratio>keep</aspectratio>
 						<align>center</align>
 						<aligny>top</aligny>
-						<include>icon-fade</include>
 						<visible>IsEmpty(ListItem.Thumb) + !IsEmpty(ListItem.Icon)</visible>
 					</control>
 				</control>

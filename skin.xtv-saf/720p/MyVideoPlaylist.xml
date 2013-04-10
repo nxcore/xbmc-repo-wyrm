@@ -19,8 +19,6 @@
 			<label>$LOCALIZE[10522]</label>
 			<font>font18</font>
 			<wrapmultiline>true</wrapmultiline>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 		</control>
 		
 		<include>ListView</include>
@@ -43,9 +41,7 @@
 				<height>30</height>
 				<font>font12</font>
 				<info>VideoPlayer.Title</info>
-				<scroll>true</scroll>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
+				<scroll>Skin.HasSetting(autoscroll)</scroll>
 			</control>
 			<control type="progress">
 				<posx>53</posx>
@@ -62,8 +58,6 @@
 				<height>30</height>
 				<font>font12</font>
 				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 		</control>
 		<control type="group">

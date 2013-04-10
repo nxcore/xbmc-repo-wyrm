@@ -73,7 +73,7 @@
 					<aligny>center</aligny>
 					<textcolor>button-text</textcolor>
 					<selectedcolor>listselectedtext</selectedcolor>
-					<scroll>true</scroll>
+					<scroll>Skin.HasSetting(autoscroll)</scroll>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
