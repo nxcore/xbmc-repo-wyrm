@@ -20,7 +20,6 @@
 			<label>-</label>
 			<font>font13</font>
 			<align>center</align>
-            <textcolor>button-text</textcolor>
 		</control>
 		<control type="label" id="2">
 			<description>dialog line 1</description>
@@ -31,7 +30,6 @@
 			<label>-</label>
 			<font>font12</font>
 			<align>center</align>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="label" id="3">
 			<description>dialog line 2</description>
@@ -42,7 +40,6 @@
 			<label>-</label>
 			<font>font12</font>
 			<align>center</align>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="label" id="4">
 			<description>dialog line 3</description>
@@ -53,7 +50,6 @@
 			<label>-</label>
 			<font>font12</font>
 			<align>center</align>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="button" id="10">
 			<description>OK button</description>
@@ -65,8 +61,6 @@
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus border="8">default-button.png</texturefocus>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>10</onup>

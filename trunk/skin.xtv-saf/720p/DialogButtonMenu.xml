@@ -189,7 +189,6 @@
 					<font>font12</font>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textoffsety>6</textoffsety>
 					<label>$LOCALIZE[31329] [B]$INFO[System.Alarmpos][/B]</label>
 				</control>
 			</control>

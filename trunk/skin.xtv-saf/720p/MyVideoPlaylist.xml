@@ -41,7 +41,7 @@
 				<height>30</height>
 				<font>font12</font>
 				<info>VideoPlayer.Title</info>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="progress">
 				<posx>53</posx>

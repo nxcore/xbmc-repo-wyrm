@@ -144,7 +144,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 				</control>
 				<control type="textbox" id="400">

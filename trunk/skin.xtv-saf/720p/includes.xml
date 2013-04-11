@@ -688,7 +688,7 @@
 					<width>513</width>
 					<height>25</height>
 					<label>$INFO[ListItem.Artist]</label>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<font>font11</font>
 				</control>
 				<control type="label">
@@ -708,7 +708,7 @@
 					<width>513</width>
 					<height>25</height>
 					<label>$INFO[ListItem.Genre]</label>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<font>font11</font>
 				</control>
 				<control type="label">
@@ -774,7 +774,7 @@
 				<info>VideoPlayer.Title</info>
 				<align>left</align>
 				<font>font12</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Time label</description>
@@ -808,7 +808,7 @@
 				<info>MusicPlayer.Artist</info>
 				<align>left</align>
 				<font>font11</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Album label</description>
@@ -819,7 +819,7 @@
 				<info>MusicPlayer.Album</info>
 				<align>left</align>
 				<font>font11</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Title label</description>
@@ -830,7 +830,7 @@
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
 				<font>font11</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Time label</description>
@@ -852,6 +852,10 @@
 		<height>80</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
 		<visible>Skin.HasSetting(homemenu-vertical)</visible>
+	</include>
+	
+	<include name="scrolltext">
+		<scroll>true</scroll>
 	</include>
 
 	<!-- Start Animation Includes -->
@@ -898,11 +902,7 @@
 		<animation effect="fade" time="200" delay="300">WindowOpen</animation>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
-	<include name="hide-scrolling">
-		<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
-		<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-	</include>	
+	
 	<!-- End Visibility Includes -->
 
 	<!-- Start of Run scripts Includes -->

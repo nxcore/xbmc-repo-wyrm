@@ -23,8 +23,6 @@
 			<width>736</width>
 			<height>37</height>
 			<label>$LOCALIZE[1023]</label>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 			<align>center</align>
 		</control>
 		<control type="image">
@@ -42,8 +40,6 @@
 			<width>150</width>
 			<height>37</height>
 			<label>-</label>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 			<font>font12</font>
 		</control>
 		<control type="list" id="3">
@@ -81,8 +77,6 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 				</control>
@@ -101,7 +95,7 @@
 					<posy>0</posy>
 					<width>654</width>
 					<height>56</height>
-					<texture>default-button.png</texture>
+					<texture border="8">default-button.png</texture>
 				</control>
 				<control type="label">
 					<posx>70</posx>
@@ -111,8 +105,6 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 				</control>
@@ -153,8 +145,6 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 				</control>
@@ -183,8 +173,6 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 				</control>
@@ -203,9 +191,7 @@
 			<onright>3</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
-			<textcolor>button-text</textcolor>
 		</control>
-
 		<control type="scrollbar" id="23">
 			<posx>748</posx>
 			<posy>118</posy>
@@ -213,7 +199,6 @@
 			<height>512</height>
 			<onleft>3</onleft>
 			<onright>5</onright>
-			<include>list-fade</include>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>

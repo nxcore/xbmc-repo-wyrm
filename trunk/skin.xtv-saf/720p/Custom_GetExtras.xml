@@ -35,8 +35,7 @@
 					<aligny>center</aligny>
 					<font>font13</font>
 					<label>31680</label>
-					<textcolor>button-text</textcolor>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="image">
 					<posx>25</posx>
@@ -92,7 +91,6 @@
 							<posy>0</posy>
 							<width>494</width>
 							<height>46</height>
-							<textcolor>button-text</textcolor>
 							<info>ListItem.Label</info>
 							<aligny>center</aligny>
 							<font>font11</font>
@@ -102,7 +100,6 @@
 							<posy>0</posy>
 							<width>494</width>
 							<height>46</height>
-							<textcolor>button-text</textcolor>
 							<info>ListItem.Label2</info>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -149,9 +146,6 @@
 					<aligny>top</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
-					<textcolor>button-text</textcolor>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<font>font12</font>
 					<label>222</label>
 					<onup>999</onup>

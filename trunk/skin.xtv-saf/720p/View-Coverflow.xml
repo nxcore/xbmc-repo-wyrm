@@ -653,7 +653,7 @@
 				<height>37</height>
 				<font>font20</font>
 				<align>center</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 			</control>

@@ -123,10 +123,7 @@
 				<label>294</label>
 				<font>font11</font>
 				<textoffsetx>10</textoffsetx>
-				<textcolor>button-text</textcolor>
 				<align>center</align>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 			</control>
 			<control type="button" id="3">
 				<description>Clear Bookmark button</description>
@@ -135,10 +132,7 @@
 				<label>296</label>
 				<font>font11</font>
 				<textoffsetx>10</textoffsetx>
-				<textcolor>button-text</textcolor>
 				<align>center</align>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 			</control>
 			<control type="button" id="4">
 				<description>Set episode bookmark</description>
@@ -147,10 +141,7 @@
 				<label>20406</label>
 				<font>font11</font>
 				<textoffsetx>10</textoffsetx>
-				<textcolor>button-text</textcolor>
 				<align>center</align>
-				<texturefocus>default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<visible>videoplayer.content(episodes)</visible>
 			</control>
 		</control>	

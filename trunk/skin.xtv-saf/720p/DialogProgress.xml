@@ -28,8 +28,6 @@
 				<label>-</label>
 				<font>font13</font>
 				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label" id="2">
 				<description>dialog line 1</description>
@@ -41,8 +39,6 @@
 				<label>-</label>
 				<font>font11</font>
 				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label" id="3">
 				<description>dialog line 2</description>
@@ -54,8 +50,6 @@
 				<label>-</label>
 				<font>font11</font>
 				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label" id="4">
 				<description>dialog line 3</description>
@@ -67,8 +61,6 @@
 				<label>-</label>
 				<font>font11</font>
 				<align>center</align>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="progress">
 				<description>progress control</description>
@@ -86,11 +78,7 @@
 				<height>50</height>
 				<label>222</label>
 				<font>font12</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<align>center</align>
-				<texturefocus border="8">default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup>10</onup>

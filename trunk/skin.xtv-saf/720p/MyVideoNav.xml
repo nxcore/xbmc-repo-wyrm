@@ -83,8 +83,6 @@
 			<label></label>
 			<onfocus>ActivateWindow(Videos,Files,return)</onfocus>
 			<textoffsetx>18</textoffsetx>
-			<texturefocus>default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
@@ -234,9 +232,6 @@
 					<font>font12</font>
 					<label>587</label>
 					<textwidth>340</textwidth>
-					<textcolor>button-text</textcolor>
-					<texturefocus>default-button.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<aligny>top</aligny>
 					<textoffsety>8</textoffsety>
 					<textoffsetx>18</textoffsetx>
@@ -244,7 +239,6 @@
 					<onright>50</onright>
 					<onup>8</onup>
 					<ondown>20</ondown>
-					<pulseonselect>false</pulseonselect>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="20">

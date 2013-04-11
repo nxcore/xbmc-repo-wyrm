@@ -600,7 +600,7 @@
 				<height>37</height>
 				<font>font20</font>
 				<align>center</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -615,7 +615,7 @@
 					<height>37</height>
 					<font>font20</font>
 					<align>center</align>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>
 					<visible>ListItem.IsFolder</visible>
@@ -628,7 +628,7 @@
 					<height>37</height>
 					<font>font20</font>
 					<align>center</align>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>
 					<visible>!ListItem.IsFolder</visible>
@@ -641,7 +641,7 @@
 					<height>37</height>
 					<font>font18</font>
 					<align>center</align>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Genre]</label>
 					<textoffsetx>0</textoffsetx>
 					<visible>!Container.Content(genres)</visible>

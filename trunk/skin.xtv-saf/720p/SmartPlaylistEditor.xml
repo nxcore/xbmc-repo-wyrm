@@ -47,9 +47,6 @@
 				<height>46</height>
 				<label>467</label>
 				<font>font12</font>
-				<textcolor>button-text</textcolor>
-				<texturefocus border="8">default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<onright>22</onright>
 				<onleft>22</onleft>
 				<onup>9001</onup>

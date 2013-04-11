@@ -42,7 +42,7 @@
 			<width>274</width>
 			<align>left</align>
 			<font>font12</font>
-			<scroll>Skin.HasSetting(autoscroll)</scroll>
+			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			<label>$LOCALIZE[20070]</label>
 		</control>
 		<control type="label" id="1001">
@@ -51,7 +51,7 @@
 			<posy>387</posy>
 			<width>274</width>
 			<align>left</align>
-			<scroll>Skin.HasSetting(autoscroll)</scroll>
+			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			<font>font11</font>
 		</control>
 		<control type="grouplist" id="5">

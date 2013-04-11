@@ -44,9 +44,6 @@
 			<font>font18</font>
 			<align>center</align>
 			<aligny>center</aligny>
-			<textcolor>shadow-text</textcolor>
-			<shadowcolor>button-text</shadowcolor>
-			<disabledcolor>disabled-text</disabledcolor>
 		</control>
 		<control type="group">
 			<posx>442</posx>
@@ -58,8 +55,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -78,8 +73,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -98,8 +91,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -118,8 +109,6 @@
 				<width>74</width>
 				<height>110</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -138,8 +127,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -158,8 +145,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -178,8 +163,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -198,8 +181,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -218,8 +199,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -238,8 +217,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -258,8 +235,6 @@
 				<width>74</width>
 				<height>110</height>
 				<font>font13</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<angle>-90</angle>
@@ -279,8 +254,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<label>&lt;&lt;</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -299,8 +272,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textoffsetx>0</textoffsetx>
@@ -319,8 +290,6 @@
 				<width>74</width>
 				<height>48</height>
 				<font>font18</font>
-				<textcolor>shadow-text</textcolor>
-				<shadowcolor>button-text</shadowcolor>
 				<label>&gt;&gt;</label>
 				<align>center</align>
 				<aligny>center</aligny>
