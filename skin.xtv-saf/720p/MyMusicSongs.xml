@@ -27,7 +27,6 @@
 				<label>$VAR[MusicHeadings]</label>
 				<font>font20</font>
 				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
 			</control>
 			<control type="label">
 				<description>Number of files</description>
@@ -36,7 +35,6 @@
 				<width min="40" max="110">auto</width>
 				<height>38</height>
 				<font>font13</font>
-				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems, (,)]</label>
 			</control>
@@ -141,8 +139,6 @@
 					<font>font12</font>
 					<label>587</label>
 					<textwidth>340</textwidth>
-					<textcolor>button-text</textcolor>
-					<texturefocus>default-button.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<aligny>center</aligny>
 					<textoffsetx>10</textoffsetx>
@@ -166,7 +162,6 @@
 					<onright>50</onright>
 					<onup>19</onup>
 					<ondown>11</ondown>
-					<textcolor>button-text</textcolor>
 					<textoffsetx>10</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>Container.CanFilterAdvanced</visible>

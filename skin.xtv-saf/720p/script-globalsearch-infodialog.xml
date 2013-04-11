@@ -144,7 +144,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Cover Image -->
@@ -201,7 +201,7 @@
 						<height>37</height>
 						<font>font13</font>
 						<align>left</align>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(Genre)]</label>
 						<textoffsetx>0</textoffsetx>
 						<visible>!IsEmpty(Container(100).ListItem.Property(Genre))</visible>
@@ -397,7 +397,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Star Rating -->
@@ -428,7 +428,7 @@
 						<height>37</height>
 						<font>font13</font>
 						<align>left</align>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(Genre)]</label>
 						<textoffsetx>0</textoffsetx>
 						<visible>!IsEmpty(Container(100).ListItem.Property(Genre))</visible>
@@ -568,7 +568,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 					</control>
 					<!-- Cover Image -->
@@ -666,7 +666,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 					</control>
 					<!-- Title -->
@@ -678,7 +678,7 @@
 						<font>font18</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Star Rating -->
@@ -882,7 +882,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Genre -->
@@ -893,7 +893,7 @@
 						<height>37</height>
 						<font>font13</font>
 						<align>left</align>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(Genre)]</label>
 						<textoffsetx>0</textoffsetx>
 						<visible>!IsEmpty(Container(100).ListItem.Property(Genre))</visible>
@@ -1073,7 +1073,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Cover Image -->
@@ -1218,7 +1218,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Cover Image -->
@@ -1368,7 +1368,7 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<!-- Cover Image -->

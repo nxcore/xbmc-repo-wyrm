@@ -53,7 +53,7 @@
 			<font>font18</font>
 			<align>center</align>
 			<label>-</label>
-			<scroll>Skin.HasSetting(autoscroll)</scroll>
+			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
 		<control type="label" id="402">
 			<description>Description Button</description>
@@ -64,7 +64,7 @@
 			<label>-</label>
 			<font>font12</font>
 			<align>center</align>
-			<scroll>Skin.HasSetting(autoscroll)</scroll>
+			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
 	</controls>
 </window>

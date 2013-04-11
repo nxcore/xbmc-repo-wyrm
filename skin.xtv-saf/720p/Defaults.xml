@@ -182,6 +182,8 @@
 		<textureradionofocus>check-boxnf.png</textureradionofocus>
 		<texturefocus border="8">default-button.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
+		<textureradioon>check-box.png</textureradioon>
+		<textureradiooff>check-boxnf.png</textureradiooff>
 		<label>215</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
@@ -263,6 +265,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<pulseonselect>false</pulseonselect>
 		<textwidth>340</textwidth>
 		<textoffsetx>10</textoffsetx>
 		<textoffsety>8</textoffsety>

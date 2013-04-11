@@ -230,7 +230,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -279,7 +279,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -328,7 +328,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
 						<posx>34</posx>
@@ -377,7 +377,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
 						<posx>34</posx>

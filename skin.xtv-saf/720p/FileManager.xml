@@ -73,7 +73,7 @@
 					<height>46</height>
 					<posx>0</posx>
 					<posy>-5</posy>
-					<texture>default-button.png</texture>
+					<texture border="8">default-button.png</texture>
 					<visible>Control.HasFocus(20)</visible>
 				</control>
 				<control type="label">
@@ -84,7 +84,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<selectedcolor>listselectedtext</selectedcolor>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<info>ListItem.Label</info>
 					<textoffsetx>6</textoffsetx>
 				</control>
@@ -145,7 +145,7 @@
 					<height>46</height>
 					<posx>0</posx>
 					<posy>-5</posy>
-					<texture>default-button.png</texture>
+					<texture border="8">default-button.png</texture>
 					<visible>Control.HasFocus(21)</visible>
 				</control>
 				<control type="label">
@@ -156,7 +156,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<selectedcolor>listselectedtext</selectedcolor>
-					<scroll>Skin.HasSetting(autoscroll)</scroll>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<info>ListItem.Label</info>
 					<textoffsetx>6</textoffsetx>
 				</control>

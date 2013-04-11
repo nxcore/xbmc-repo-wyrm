@@ -46,8 +46,6 @@
 					<font>font12</font>
 					<label>31923</label>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<description>separator image</description>
@@ -82,8 +80,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout height="46" width="389">
@@ -93,7 +89,7 @@
 							<width>389</width>
 							<height>46</height>
 							<align>left</align>
-							<texture>default-button.png</texture>
+							<texture border="8">default-button.png</texture>
 							<include>background-fade</include>
 						</control>
 						<control type="label">
@@ -106,8 +102,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</focusedlayout>
 					<content>
@@ -227,8 +221,6 @@
 					<font>font12</font>
 					<label>31920</label>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<description>separator image</description>
@@ -258,13 +250,10 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout height="46" width="389">
@@ -274,7 +263,7 @@
 							<width>389</width>
 							<height>46</height>
 							<align>left</align>
-							<texture>default-button.png</texture>
+							<texture border="8">default-button.png</texture>
 							<include>background-fade</include>
 						</control>
 						<control type="label">
@@ -282,13 +271,10 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</focusedlayout>
 					<content>
@@ -380,8 +366,6 @@
 					<font>font12</font>
 					<label>31921</label>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<description>separator image</description>
@@ -411,13 +395,10 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout height="46" width="389">
@@ -427,7 +408,7 @@
 							<width>389</width>
 							<height>46</height>
 							<align>left</align>
-							<texture>default-button.png</texture>
+							<texture border="8">default-button.png</texture>
 							<include>background-fade</include>
 						</control>
 						<control type="label">
@@ -435,13 +416,10 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</focusedlayout>
 					<content>
@@ -526,8 +504,6 @@
 					<font>font12</font>
 					<label>31922</label>
 					<align>center</align>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<description>separator image</description>
@@ -562,8 +538,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</itemlayout>
 					<focusedlayout height="46" width="389">
@@ -573,7 +547,7 @@
 							<width>389</width>
 							<height>46</height>
 							<align>left</align>
-							<texture>default-button.png</texture>
+							<texture border="8">default-button.png</texture>
 							<include>background-fade</include>
 						</control>
 						<control type="label">
@@ -586,8 +560,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font12</font>
-							<textcolor>button-text</textcolor>
-							<shadowcolor>shadow-text</shadowcolor>
 						</control>
 					</focusedlayout>
 					<content>

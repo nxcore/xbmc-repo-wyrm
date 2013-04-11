@@ -161,7 +161,7 @@
 				<height>37</height>
 				<font>font22</font>
 				<align>left</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
@@ -174,7 +174,7 @@
 				<height>37</height>
 				<font>font22</font>
 				<align>left</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
@@ -187,7 +187,7 @@
 				<height>37</height>
 				<font>font13</font>
 				<align>left</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
 			</control>

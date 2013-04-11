@@ -62,11 +62,6 @@
 			<posy>0</posy>
 			<height>46</height>
 			<font>font13</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<disabledcolor>disabled-text</disabledcolor>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -77,13 +72,6 @@
 			<posy>0</posy>
 			<height>46</height>
 			<font>font13</font>
-			<textureradioon>check-box.png</textureradioon>
-			<textureradiooff>check-boxnf.png</textureradiooff>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<disabledcolor>disabled-text</disabledcolor>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -95,16 +83,11 @@
 			<height>46</height>
 			<spinwidth>27</spinwidth>
 			<spinheight>25</spinheight>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<textureup>scroll-up.png</textureup>
 			<texturedown>scroll-down.png</texturedown>
 			<textureupfocus>scroll-up-focus.png</textureupfocus>
 			<texturedownfocus>scroll-down-focus.png</texturedownfocus>
 			<font>font13</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<disabledcolor>disabled-text</disabledcolor>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -116,13 +99,6 @@
 			<posy>0</posy>
 			<height>46</height>
 			<font>font13</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<disabledcolor>disabled-text</disabledcolor>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturesliderbar>osd_slider_bg.png</texturesliderbar>
-			<textureslidernib>progress-marker.png</textureslidernib>
-			<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 			<sliderwidth>200</sliderwidth>
 			<sliderheight>16</sliderheight>
 			<textoffsetx>18</textoffsetx>
@@ -135,11 +111,6 @@
 			<posy>0</posy>
 			<height>46</height>
 			<font>font13</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<disabledcolor>disabled-text</disabledcolor>
-			<texturefocus border="8">default-button.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -155,8 +126,6 @@
 				<height>50</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus border="8">default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<label>186</label>
 				<font>font12</font>
 				<onup>5</onup>
@@ -172,8 +141,6 @@
 				<height>50</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus border="8">default-button.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
 				<label>192</label>
 				<font>font12</font>
 				<onup>5</onup>

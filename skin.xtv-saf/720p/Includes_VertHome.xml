@@ -147,8 +147,6 @@
 					<info>ListItem.label</info>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<posx>460</posx>
@@ -165,7 +163,7 @@
 					<posy>-2</posy>
 					<width>514</width>
 					<height>56</height>
-					<texture>default-button.png</texture>
+					<texture border="8">default-button.png</texture>
 				</control>
 				<control type="label">
 					<posx>26</posx>
@@ -175,8 +173,6 @@
 					<info>ListItem.label</info>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 				</control>
 				<control type="image">
 					<posx>460</posx>
@@ -747,7 +743,7 @@
 				<info>MusicPlayer.Artist</info>
 				<align>left</align>
 				<font>font12</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Album label</description>
@@ -758,7 +754,7 @@
 				<info>MusicPlayer.Album</info>
 				<align>left</align>
 				<font>font12</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Title label</description>
@@ -769,7 +765,7 @@
 				<info>MusicPlayer.Title</info>
 				<align>left</align>
 				<font>font12</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Time label</description>
@@ -813,7 +809,7 @@
 				<info>VideoPlayer.Title</info>
 				<align>left</align>
 				<font>font12</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
 				<description>Time label</description>
@@ -824,7 +820,7 @@
 				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 				<align>left</align>
 				<font>font12</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 		</control>
 	</include>

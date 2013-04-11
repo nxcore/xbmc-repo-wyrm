@@ -78,7 +78,7 @@
 				<height>37</height>
 				<font>font20</font>
 				<align>center</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -91,7 +91,7 @@
 				<height>37</height>
 				<font>font20</font>
 				<align>center</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -115,7 +115,7 @@
 				<height>37</height>
 				<font>font18</font>
 				<align>center</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!Container.Content(genres)</visible>

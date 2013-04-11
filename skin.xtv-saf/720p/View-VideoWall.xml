@@ -122,7 +122,7 @@
 				<height>37</height>
 				<font>font18</font>
 				<align>left</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Label</info>
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [Container.Content(seasons) | Container.Content(episodes) | container.content(musicvideos) | IsEmpty(Control.GetLabel(7016))]</visible>
@@ -136,7 +136,7 @@
 				<height>37</height>
 				<font>font28</font>
 				<align>center</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>31688</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -149,7 +149,7 @@
 				<height>37</height>
 				<font>font11</font>
 				<align>left</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<info>ListItem.Genre</info>
 				<textoffsetx>0</textoffsetx>
 			</control>

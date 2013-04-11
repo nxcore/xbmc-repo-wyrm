@@ -189,7 +189,7 @@
 						<aligny>center</aligny>
 						<selectedcolor>listselectedtext</selectedcolor>
 						<align>left</align>
-						<scroll>Skin.HasSetting(autoscroll)</scroll>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<wrapmultiline>true</wrapmultiline>
 						<info>ListItem.Label</info>
 					</control>

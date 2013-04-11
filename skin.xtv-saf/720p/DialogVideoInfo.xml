@@ -91,7 +91,7 @@
 				<height>37</height>
 				<font>font13</font>
 				<align>left</align>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.Genre]</label>
 				<textoffsetx>0</textoffsetx>
 			</control>
@@ -171,7 +171,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="161">$INFO[ListItem.Director]</label>
 			</control>
 			<!-- Writer -->
@@ -191,7 +191,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="161">$INFO[ListItem.Writer]</label>
 			</control>
 			<!-- Play count -->
@@ -211,7 +211,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<scroll>Skin.HasSetting(autoscroll)</scroll>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.PlayCount]</label>
 			</control>			
 			
