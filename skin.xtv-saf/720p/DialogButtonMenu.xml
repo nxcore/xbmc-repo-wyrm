@@ -6,8 +6,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-		<animation effect="fade" time="50">WindowOpen</animation>
-		<animation effect="fade" time="50">WindowClose</animation>
+		<include>screen-fade</include>
 		<control type="image">
 			<description>Background shadow</description>
 			<posx>0</posx>
@@ -34,7 +33,6 @@
 			<label>31558</label>
 			<align>center</align>
 			<font>font13</font>
-			<textcolor>button-text</textcolor>
 		</control>
 		<control type="image">
 			<description>seperator</description>

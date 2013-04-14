@@ -30,7 +30,6 @@
 			<font>font20</font>
 		</control>
 		<control type="group" id="999">
-			<include>list-fade</include>
 			<control type="button" id="981">
 				<description>Custom Movie Settings Button</description>
 				<font>font12</font>
@@ -74,7 +73,6 @@
 				<ondown>981</ondown>
 				<onleft>300</onleft>
 				<onright>1223</onright>
-				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 			</control>
 		</control>

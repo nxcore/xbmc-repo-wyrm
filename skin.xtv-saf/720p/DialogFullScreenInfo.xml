@@ -110,8 +110,6 @@
 			<width>948</width>
 			<height>116</height>
 			<font>font11</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 			<label>$INFO[VideoPlayer.Plot]</label>
 			<align>justify</align>
 			<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -124,8 +122,6 @@
 			<width>948</width>
 			<height>116</height>
 			<font>font11</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 			<label fallback="161">$INFO[VideoPlayer.PlotOutline]</label>
 			<align>justify</align>
 			<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>

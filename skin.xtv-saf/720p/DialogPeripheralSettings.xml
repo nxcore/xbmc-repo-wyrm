@@ -23,8 +23,6 @@
 			<label>$LOCALIZE[35000] $LOCALIZE[10004]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
 		<control type="grouplist" id="5">
@@ -49,8 +47,6 @@
 			<label>35004</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>

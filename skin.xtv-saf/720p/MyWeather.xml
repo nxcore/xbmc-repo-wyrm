@@ -2,9 +2,9 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>no</allowoverlay>
+	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>background</include>
-
 		<control type="image">
 			<description>Weather Logo</description>
 			<include>icon-header-commons</include>
@@ -46,8 +46,6 @@
 				<label>$LOCALIZE[31531] - $INFO[Window(Weather).Property(Updated)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 			</control>
 			<control type="label">
 				<description>weather provider label</description>
