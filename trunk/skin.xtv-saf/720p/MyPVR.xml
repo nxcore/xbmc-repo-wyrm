@@ -1,6 +1,7 @@
 <window>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
@@ -16,9 +17,6 @@
 			<width>309</width>
 			<height>36</height>
 			<font>font20</font>
-			<textcolor>button-text</textcolor>
-			<shadowcolor>shadow-text</shadowcolor>
-			<include>list-fade</include>
 			<label>$VAR[PVRHeading]</label>
 		</control>
 		

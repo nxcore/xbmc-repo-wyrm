@@ -157,8 +157,6 @@
 				<height>37</height>
 				<label>283</label>
 				<font>font20</font>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<visible>IsEmpty(Control.GetLabel(190))</visible>
 			</control>
 			<!-- No search results -->
@@ -169,7 +167,6 @@
 				<height>26</height>
 				<label>[B]$LOCALIZE[284][/B]</label>
 				<font>font13</font>
-				<textcolor>button-text</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>

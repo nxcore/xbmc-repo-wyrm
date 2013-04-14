@@ -26,7 +26,6 @@
 				<height>46</height>
 				<align>center</align>
 				<font>font18</font>
-				<textcolor>button-text</textcolor>
 			</control>
 			<control type="label" id="3">
 				<description>No Settings Label</description>
@@ -37,7 +36,6 @@
 				<align>center</align>
 				<label>13390</label>
 				<font>font12</font>
-				<textcolor>button-text</textcolor>
 			</control>
 			<control type="image">
 				<posx>8</posx>

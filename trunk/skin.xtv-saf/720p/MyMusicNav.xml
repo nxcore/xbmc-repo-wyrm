@@ -31,7 +31,7 @@
 			</control>
 			<control type="label">
 				<description>Number of files</description>
-				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
+				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>
 				<height>38</height>

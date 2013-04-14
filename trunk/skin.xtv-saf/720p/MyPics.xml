@@ -28,16 +28,14 @@
 				<label>1</label>
 				<font>font20</font>
 				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
 			</control>
 			<control type="label">
 				<description>Number of files</description>
-				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
+				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
 				<font>font13</font>
-				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems, (,)]</label>
 			</control>
@@ -129,8 +127,6 @@
 					<height>50</height>
 					<font>font12</font>
 					<label>587</label>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
 					<disabledcolor>disabled-text</disabledcolor>
 					<textwidth>340</textwidth>
 					<textoffsetx>10</textoffsetx>

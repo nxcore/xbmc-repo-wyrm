@@ -6,12 +6,10 @@
 	<previouswindow>Home</previouswindow>
 	<views>50,52,54,57,58,59</views>
 	<include condition="Skin.HasSetting(tv_theme) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">StartTVTunes</include>
-
 	<controls>
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
 		<include>#files</include>
-		
 		<control type="image">
 			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
@@ -46,21 +44,19 @@
 				<label>$VAR[VideoHeadings]</label>
 				<font>font20</font>
 				<aligny>center</aligny>
-				<textcolor>button-text</textcolor>
 			</control>
 			<control type="label">
 				<description>Number of files</description>
-				<visible>Skin.HasSetting(homemenu-horizontal)</visible>
+				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>
-				<height>38</height>
+				<height>37</height>
 				<font>font13</font>
-				<textcolor>button-text</textcolor>
 				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems, (,)]</label>
 			</control>
 		</control>
-		
+
 		<include>memory-low</include>
 
 		<control type="group">
@@ -87,7 +83,7 @@
 			<aligny>center</aligny>
 			<visible>!IntegerGreaterThan(Container.NumItems,0)</visible>
 		</control>
-		
+
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>
@@ -259,7 +255,7 @@
 					<textoffsety>8</textoffsety>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
-					<visible>Container.CanFilterAdvanced</visible>					
+					<visible>Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="button" id="16">
 					<description>Party Mode button</description>

@@ -23,8 +23,6 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>$LOCALIZE[20043]</label>
-				<textcolor>button-text</textcolor>
-				<shadowcolor>shadow-text</shadowcolor>
 				<visible>!Window.IsVisible(profilesettings)</visible>
 			</control>
 			<control type="image">

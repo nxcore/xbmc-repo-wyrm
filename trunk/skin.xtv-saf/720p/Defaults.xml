@@ -37,7 +37,6 @@
 		<width>504</width>
 		<height>56</height>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -52,9 +51,7 @@
 		<width>26</width>
 		<height>18</height>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<alttexturefocus border="8">default-button.png</alttexturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
 		<label>-</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
@@ -110,8 +107,6 @@
 		<texturesliderbackground border="11">scrollbar_background.png</texturesliderbackground>
 		<texturesliderbar border="11">scrollbar_bar.png</texturesliderbar>
 		<texturesliderbarfocus border="11">scrollbar_bar_focus.png</texturesliderbarfocus>
-		<textureslidernib>-</textureslidernib>
-		<textureslidernibfocus>-</textureslidernibfocus>
 		<showonepage>false</showonepage>
 		<pulseonselect>false</pulseonselect>
 		<orientation>vertical</orientation>
@@ -144,7 +139,6 @@
 		<spinwidth>27</spinwidth>
 		<spinheight>25</spinheight>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<textureup>scroll-up.png</textureup>
 		<texturedown>scroll-down.png</texturedown>
 		<textureupfocus>scroll-up-focus.png</textureupfocus>
@@ -181,7 +175,6 @@
 		<textureradiofocus>check-box.png</textureradiofocus>
 		<textureradionofocus>check-boxnf.png</textureradionofocus>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<textureradioon>check-box.png</textureradioon>
 		<textureradiooff>check-boxnf.png</textureradiooff>
 		<label>215</label>
@@ -202,7 +195,6 @@
 		<label>132</label>
 		<font>font13</font>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<texturebg>button-menu-background.png</texturebg>
 		<textureleft>scroll-left.png</textureleft>
 		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
@@ -241,7 +233,6 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>progress-marker.png</textureslidernib>
 		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
@@ -259,7 +250,6 @@
 		<width>362</width>
 		<height>50</height>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<font>font12</font>
 		<label>587</label>
 		<textcolor>button-text</textcolor>
@@ -275,14 +265,12 @@
 		<posx>106</posx>
 		<posy>240</posy>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="resize">
 		<posx>106</posx>
 		<posy>240</posy>
 		<texturefocus border="8">default-button.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 </includes>

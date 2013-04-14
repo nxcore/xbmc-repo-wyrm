@@ -33,9 +33,6 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
@@ -56,9 +53,6 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<textcolor>button-text</textcolor>
-					<shadowcolor>shadow-text</shadowcolor>
-					<selectedcolor>listselectedtext</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
@@ -92,8 +86,7 @@
 					time="0" easing="inout" reversible="true">Conditional</animation>
 				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,-50"
 					time="0" easing="inout" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,0"
-					time="0" easing="inout" reversible="true">Conditional</animation>
+				<!-- Postion 7 no movement -->
 				<animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,50"
 					time="0" easing="inout" reversible="true">Conditional</animation>
 				<animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,100"
