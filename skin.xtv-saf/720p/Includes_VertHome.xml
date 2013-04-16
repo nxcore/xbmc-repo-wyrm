@@ -2,7 +2,6 @@
 	<include name="VertHomeMenu">
 		<backgroundcolor>0</backgroundcolor>
 		<include>background</include>
-
 		<control type="group">
 			<visible>!Skin.HasSetting(home-time)</visible>
 			<!-- show time on home screen -->
@@ -28,7 +27,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(home-currentweather)</visible>
+			<visible>Skin.HasSetting(home-currentweather)</visible>
 			<!-- Weather Condition -->
 			<control type="label">
 				<description>Can't get current weather conditions</description>
@@ -189,7 +188,7 @@
 					<thumb>icon-video-blur1.png</thumb>
 					<label>3</label>
 					<onclick>ActivateWindow(Videos,Files,return)</onclick>
-					<visible>Skin.HasSetting(home-video)</visible>
+					<visible>!Skin.HasSetting(home-video)</visible>
 				</item>
 				<item>
 					<icon>icon-video.png</icon>
@@ -336,14 +335,14 @@
 					<thumb>DefaultAddon.png</thumb>
 					<label>24001</label>
 					<onclick>ActivateWindow(1155,,return)</onclick>
-					<visible>Skin.HasSetting(home-programs)</visible>
+					<visible>!Skin.HasSetting(home-programs)</visible>
 				</item>
 				<item>
 					<icon>icon-photo.png</icon>
 					<thumb>icon-photo-blur1.png</thumb>
 					<label>1</label>
 					<onclick>ActivateWindow(MyPictures,,return)</onclick>
-					<visible>!Skin.HasSetting(home-photos)</visible>
+					<visible>Skin.HasSetting(home-photos)</visible>
 				</item>
 				<item>
 					<icon>icon-weather.png</icon>
@@ -391,42 +390,42 @@
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>XBMC.Quit()</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>XBMC.Reboot()</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>XBMC.ShutDown()</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>XBMC.Hibernate()</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>XBMC.Suspend()</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
 				</item>
 				<item>
 					<icon>shut-power.png</icon>
 					<thumb>shut-power-blur1.png</thumb>
 					<label>13009</label>
 					<onclick>ActivateWindow(shutdownmenu)</onclick>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 				</item>
 			</content>
 		</control>

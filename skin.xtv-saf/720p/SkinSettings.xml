@@ -34,11 +34,12 @@
 			<control type="button" id="981">
 				<description>Startup Settings Button</description>
 				<font>font12</font>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>112</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<label>31801</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,startup)</onfocus>
 				<onup>988</onup>
 				<ondown>982</ondown>
@@ -49,11 +50,12 @@
 			<control type="button" id="982">
 				<description>General Settings Button</description>
 				<font>font12</font>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>166</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<label>31802</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,general)</onfocus>
 				<onup>981</onup>
 				<ondown>983</ondown>
@@ -64,11 +66,12 @@
 			<control type="button" id="983">
 				<description>Home Window Settings Button</description>
 				<font>font12</font>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>220</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<label>31803</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,home)</onfocus>
 				<onup>982</onup>
 				<ondown>984</ondown>
@@ -79,11 +82,12 @@
 			<control type="button" id="984">
 				<description>Background Settings Button</description>
 				<font>font12</font>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>273</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<label>31804</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,background)</onfocus>
 				<onup>983</onup>
 				<ondown>985</ondown>
@@ -94,11 +98,12 @@
 			<control type="button" id="985">
 				<description>Media Sources Settings Button</description>
 				<font>font12</font>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>327</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<label>31805</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,sources)</onfocus>
 				<onup>984</onup>
 				<ondown>987</ondown>
@@ -108,12 +113,13 @@
 			</control>
 			<control type="button" id="987">
 				<description>Custom Settings Button</description>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>381</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<font>font12</font>
 				<label>31806</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,custom)</onfocus>
 				<onclick>ActivateWindow(1153)</onclick>
 				<enable>System.HasAddon(script.favourites)</enable>
@@ -124,7 +130,7 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="image">
-				<posx>1220</posx>
+				<posx>1222</posx>
 				<posy>396</posy>
 				<width>27</width>
 				<height>27</height>
@@ -133,7 +139,7 @@
 				<visible>!Control.HasFocus(987)</visible>
 			</control>
 			<control type="image">
-				<posx>1220</posx>
+				<posx>1222</posx>
 				<posy>396</posy>
 				<width>27</width>
 				<height>27</height>
@@ -144,11 +150,12 @@
 			<control type="button" id="988">
 				<description>Support Settings Button</description>
 				<font>font12</font>
-				<posx>950</posx>
+				<posx>940</posx>
 				<posy>435</posy>
-				<width>305</width>
+				<width>320</width>
 				<height>56</height>
 				<label>31807</label>
+				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,support)</onfocus>
 				<onup>987</onup>
 				<ondown>981</ondown>
@@ -173,9 +180,9 @@
 				<visible>Skin.String(skinsettingmenu,startup)</visible>
 				<control type="image">
 					<description>Startup Settings Button Image</description>
-					<posx>950</posx>
+					<posx>940</posx>
 					<posy>112</posy>
-					<width>305</width>
+					<width>320</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -266,9 +273,9 @@
 				<visible>Skin.String(skinsettingmenu,general)</visible>
 				<control type="image">
 					<description>General Settings Button Image</description>
-					<posx>950</posx>
+					<posx>940</posx>
 					<posy>166</posy>
-					<width>305</width>
+					<width>320</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -400,7 +407,7 @@
 						<label>31889</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
-						<selected>!Skin.HasSetting(home-currentweather)</selected>
+						<selected>Skin.HasSetting(home-currentweather)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -477,9 +484,9 @@
 				<visible>Skin.String(skinsettingmenu,home)</visible>
 				<control type="image">
 					<description>Home Settings Button Image</description>
-					<posx>950</posx>
+					<posx>940</posx>
 					<posy>220</posy>
-					<width>305</width>
+					<width>320</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -642,7 +649,7 @@
 						<label>31901</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-video)</onclick>
-						<selected>Skin.HasSetting(home-video)</selected>
+						<selected>!Skin.HasSetting(home-video)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -702,7 +709,7 @@
 						<label>31906</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-programs)</onclick>
-						<selected>Skin.HasSetting(home-programs)</selected>
+						<selected>!Skin.HasSetting(home-programs)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -714,7 +721,7 @@
 						<label>31907</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-photos)</onclick>
-						<selected>!Skin.HasSetting(home-photos)</selected>
+						<selected>Skin.HasSetting(home-photos)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -786,7 +793,7 @@
 						<label>31913</label>
 						<textwidth>480</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
-						<selected>Skin.HasSetting(home-shutdown)</selected>
+						<selected>!Skin.HasSetting(home-shutdown)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -967,9 +974,9 @@
 				<visible>Skin.String(skinsettingmenu,background)</visible>
 				<control type="image">
 					<description>Background Settings Button Image</description>
-					<posx>950</posx>
+					<posx>940</posx>
 					<posy>273</posy>
-					<width>305</width>
+					<width>320</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -1252,9 +1259,9 @@
 				<visible>Skin.String(skinsettingmenu,sources)</visible>
 				<control type="image">
 					<description>Media Sources Settings Button Image</description>
-					<posx>950</posx>
+					<posx>940</posx>
 					<posy>327</posy>
-					<width>305</width>
+					<width>320</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -1361,9 +1368,9 @@
 				<visible>Skin.String(skinsettingmenu,support)</visible>
 				<control type="image">
 					<description>Support Settings Button Image</description>
-					<posx>950</posx>
+					<posx>940</posx>
 					<posy>435</posy>
-					<width>305</width>
+					<width>320</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 					<include>settingbutton-fade</include>
@@ -1468,6 +1475,7 @@
 						<label>$LOCALIZE[31935]</label>
 						<textwidth>460</textwidth>
 						<onclick>Skin.ResetSettings</onclick>
+						<onclick>ReplaceWindow(skinsettings)</onclick> 
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
