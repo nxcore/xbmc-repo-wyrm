@@ -1192,7 +1192,7 @@
 						<description>Video Menu</description>
 						<label>3</label>
 						<onclick>SetFocus(9100)</onclick>
-						<visible>Skin.HasSetting(home-video)</visible>
+						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
@@ -1216,19 +1216,19 @@
 						<description>Pictures Menu</description>
 						<label>1</label>
 						<onclick>SetFocus(9300)</onclick>
-						<visible>!Skin.HasSetting(home-photos)</visible>
+						<visible>Skin.HasSetting(home-photos)</visible>
 					</item>
 					<item id="6">
 						<description>Addon Menu</description>
 						<label>24001</label>
 						<onclick>SetFocus(9350)</onclick>
-						<visible>Skin.HasSetting(home-programs)</visible>
+						<visible>!Skin.HasSetting(home-programs)</visible>
 					</item>
 					<item id="7">
 						<description>Weather Menu</description>
 						<label>8</label>
 						<onclick>SetFocus(9400)</onclick>
-						<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
+						<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					<item id="8">
 						<description>System Menu</description>
@@ -1250,7 +1250,7 @@
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="grouplist" id="9100">
-				<visible>Skin.HasSetting(home-video)</visible>
+				<visible>!Skin.HasSetting(home-video)</visible>
 				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -1741,7 +1741,7 @@
 			</control>
 			<!-- Pictures Sub menu -->
 			<control type="grouplist" id="9300">
-				<visible>!Skin.HasSetting(home-photos)</visible>
+				<visible>Skin.HasSetting(home-photos)</visible>
 				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -1780,7 +1780,7 @@
 			</control>
 			<!-- Addons Sub menu -->
 			<control type="grouplist" id="9350">
-				<visible>Skin.HasSetting(home-programs)</visible>
+				<visible>!Skin.HasSetting(home-programs)</visible>
 				<animation condition="!ControlGroup(9350).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -1864,7 +1864,7 @@
 			</control>
 			<!-- Weather Sub menu -->
 			<control type="grouplist" id="9400">
-				<visible>Skin.HasSetting(home-weather) | !Skin.HasSetting(home-currentweather)</visible>
+				<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
 				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -2018,7 +2018,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
 				</control>
 				<control type="button" id="9486">
 					<width>210</width>
@@ -2034,7 +2034,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
 				</control>
 				<control type="button" id="9488">
 					<width>210</width>
@@ -2050,7 +2050,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
 				</control>
 				<control type="button" id="9490">
 					<width>210</width>
@@ -2066,7 +2066,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
 				</control>
 				<control type="button" id="9492">
 					<width>210</width>
@@ -2082,7 +2082,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
 				</control>
 				<control type="button" id="9494">
 					<width>210</width>
@@ -2098,7 +2098,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
+					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 				</control>
 			</control>
 		</control>
