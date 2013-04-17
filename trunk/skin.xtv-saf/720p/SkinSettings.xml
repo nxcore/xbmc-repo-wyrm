@@ -1432,7 +1432,7 @@
 					</control>
 					<control type="image" id="805">
 						<description>Separator Image</description>
-						<width>865</width>
+						<width>885</width>
 						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
@@ -1464,7 +1464,8 @@
 					</control>
 					<control type="image" id="808">
 						<description>Separator Image</description>
-						<width>865</width>
+						<posx>4</posx>
+						<width>885</width>
 						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
