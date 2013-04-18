@@ -78,7 +78,6 @@
 				<height>431</height>
 				<texture fallback="shut-fav.png" background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
-				<include>list-fade</include>
 			</control>
 			<control type="image">
 				<description>list item icon reflection</description>
@@ -88,7 +87,6 @@
 				<height>431</height>
 				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
-				<include>list-fade</include>
 			</control>
 		</control>
 		<control type="label" id="12">

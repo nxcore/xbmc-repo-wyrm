@@ -217,7 +217,6 @@
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
-					<include>list-fade</include>
 					<control type="radiobutton" id="110">
 						<description>Intro Video Toggle</description>
 						<font>font12</font>
@@ -1464,7 +1463,7 @@
 					</control>
 					<control type="image" id="808">
 						<description>Separator Image</description>
-						<posx>4</posx>
+
 						<width>885</width>
 						<height>6</height>
 						<texture>separator.png</texture>

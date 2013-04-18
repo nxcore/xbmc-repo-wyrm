@@ -16,7 +16,6 @@
 				<pagecontrol>27</pagecontrol>
 				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
-				<include>list-fade</include>
 				<itemlayout height="70">
 					<control type="label">
 						<posx>38</posx>

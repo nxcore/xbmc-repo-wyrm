@@ -514,7 +514,6 @@
 			<align>left</align>
 			<label>-</label>
 			<font>font13</font>
-			<include>list-fade</include>
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 	</include>
@@ -555,7 +554,6 @@
 			<height>555</height>
 			<onleft>50</onleft>
 			<onright>9000</onright>
-			<include>list-fade</include>
 			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
 		</control>
 	</include>
@@ -865,10 +863,6 @@
 	<include name="shutdown-ani">
 		<animation effect="slide" start="0,900" time="200">WindowOpen</animation>
 		<animation effect="slide" end="0,900" time="200">WindowClose</animation>
-	</include>
-	<include name="list-fade">
-		<animation effect="fade" start="0" time="50" condition="Window.Previous(Home)">WindowOpen</animation>
-		<animation effect="fade" start="0" time="10" condition="Window.Next(Home)">WindowClose</animation>
 	</include>
 	<include name="background-fade">
 		<animation effect="fade" time="200">Visible</animation>

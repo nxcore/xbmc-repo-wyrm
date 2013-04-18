@@ -290,7 +290,6 @@
 				<ondown>50</ondown>
 				<viewtype label="">list</viewtype>
 				<pagecontrol>923</pagecontrol>
-				<include>list-fade</include>
 				<scrolltime>1</scrolltime>
 				<orientation>vertical</orientation>
 				<itemgap>1</itemgap>

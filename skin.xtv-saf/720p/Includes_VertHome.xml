@@ -717,7 +717,6 @@
 			<height>512</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
-			<include>list-fade</include>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<!-- media infos (music) -->
