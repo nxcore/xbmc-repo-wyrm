@@ -11,7 +11,6 @@
 			<ondown>58</ondown>
 			<viewtype label="31944">Wall</viewtype>
 			<scrolltime>100</scrolltime>
-			<include>list-fade</include>
 			<pagecontrol>28</pagecontrol>
 			<preloaditems>6</preloaditems>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>

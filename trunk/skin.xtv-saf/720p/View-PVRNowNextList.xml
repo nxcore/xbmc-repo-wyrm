@@ -14,7 +14,6 @@
 					<ondown>16</ondown>
 					<onleft>9000</onleft>
 					<onright>27</onright>
-					<include>list-fade</include>
 					<scrolltime>200</scrolltime>
 					<pagecontrol>27</pagecontrol>
 					<itemlayout height="70">

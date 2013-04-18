@@ -13,7 +13,6 @@
 					<ondown>15</ondown>
 					<onleft>9000</onleft>
 					<onright>27</onright>
-					<include>list-fade</include>
 					<scrolltime>200</scrolltime>
 					<preloaditems>2</preloaditems>
 					<pagecontrol>27</pagecontrol>

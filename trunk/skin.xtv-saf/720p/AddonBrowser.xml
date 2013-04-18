@@ -11,7 +11,6 @@
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>
-
 		<control type="grouplist">
 			<posx>946</posx>
 			<posy>50</posy>
@@ -38,28 +37,13 @@
 				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems, (,)]</label>
 			</control>
-		</control>		
-		<!-- Show Addon Status -->
-		<control type="fadelabel">
-			<posx>88</posx>
-			<posy>120</posy>
-			<width>452</width>
-			<height>25</height>
-			<font>font13</font>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-			<align>center</align>
-			<aligny>center</aligny>
-			<label>$INFO[ListItem.Property(Addon.Status)]</label>
 		</control>
-		
 		<include>ListView</include>
 		<include>ListView-Icon</include>
 		<include condition="!Skin.HasSetting(views-programicons)">IconView</include>
 		<include condition="!Skin.HasSetting(views-programwrap)">WrapView</include>
 		<include condition="!Skin.HasSetting(views-programwall)">WallView</include>
 		<include condition="!Skin.HasSetting(views-programcoverflow)">Coverflow</include>
-		
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>

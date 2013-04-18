@@ -80,7 +80,6 @@
 			<height>542</height>
 			<onleft>3</onleft>
 			<onright>5</onright>
-			<include>list-fade</include>
 			<visible>Skin.HasSetting(sbar) + [Container(5).HasPrevious | Container(5).HasNext]</visible>
 		</control>
 		<control type="button" id="7">
