@@ -96,6 +96,7 @@
 			<posx>53</posx>
 			<posy>187</posy>
 			<width>870</width>
+			<textwidth>810</textwidth>
 			<height>56</height>
 			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
