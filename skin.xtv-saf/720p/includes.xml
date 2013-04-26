@@ -473,9 +473,9 @@
 			<control type="rss">
 				<description>rss feed</description>
 				<posx>40</posx>
-				<posy>685</posy>
+				<posy>680</posy>
 				<width>1240</width>
-				<height>20</height>
+				<height>22</height>
 				<font>rss20</font>
 				<urlset>1</urlset>
 				<textcolor>info-text</textcolor>

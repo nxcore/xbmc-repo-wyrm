@@ -36,7 +36,7 @@
 		<posy>250</posy>
 		<width>504</width>
 		<height>56</height>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
