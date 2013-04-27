@@ -149,11 +149,11 @@
 				<height>31</height>
 				<aligny>center</aligny>
 				<font>font18</font>
-				<label>$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]</label>
-				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
+				<label>$LOCALIZE[20360]: $INFO[ListItem.Property(NumEpisodes)]</label>
+				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 			</control>
 			<control type="group">
-				<visible>!IsEmpty(listitem.Duration)</visible>
+				<visible>!IsEmpty(listitem.Duration) + !Container.Content(TVShows) + !Container.Content(seasons)</visible>
 				<!-- Duration -->
 				<control type="label">
 					<posx>17</posx>
