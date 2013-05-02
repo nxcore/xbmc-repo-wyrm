@@ -88,6 +88,7 @@
 						<font>font11</font>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="label">
 						<posx>80</posx>
@@ -98,6 +99,7 @@
 						<aligny>center</aligny>
 						<info>ListItem.Title</info>
 						<textcolor>disabled-text</textcolor>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 				</focusedlayout>
 			</control>
