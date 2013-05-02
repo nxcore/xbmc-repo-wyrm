@@ -46,7 +46,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -59,7 +58,6 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.Label2</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 					</control>
 				</control>	
@@ -85,7 +83,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 					<control type="label">
@@ -98,7 +95,6 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.Property(Addon.Description)</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 				</control>	
@@ -124,7 +120,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 					<control type="label">
@@ -137,7 +132,6 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<info>ListItem.PlotOutline</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 				</control>	
@@ -163,7 +157,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="label">
@@ -176,7 +169,6 @@
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<label>$VAR[VideoDuration]</label>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 					</control>
 				</control>	
@@ -201,6 +193,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -241,6 +234,7 @@
 						<aligny>center</aligny>
 						<selectedcolor>listselectedtext</selectedcolor>
 						<info>ListItem.Label</info>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 					<control type="label">
@@ -711,7 +705,7 @@
 						<posx>17</posx>
 						<posy>467</posy>
 						<width>646</width>
-						<height>174</height>
+						<height>186</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.PlotOutline]</label>
 						<align>justify</align>
@@ -724,7 +718,7 @@
 						<posx>17</posx>
 						<posy>467</posy>
 						<width>646</width>
-						<height>174</height>
+						<height>186</height>
 						<font>font12</font>
 						<label fallback="161">$INFO[ListItem.Plot]</label>
 						<align>justify</align>
