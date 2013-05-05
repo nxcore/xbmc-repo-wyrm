@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol>3</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -30,9 +30,9 @@
 		</control>
 		<control type="grouplist" id="3">
 			<description>button area</description>
-			<posx>973</posx>
+			<posx>940</posx>
 			<posy>112</posy>
-			<width>283</width>
+			<width>320</width>
 			<height>542</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
@@ -88,6 +88,7 @@
 			<posy>187</posy>
 			<width>870</width>
 			<height>56</height>
+			<textwidth>810</textwidth>
 			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 		</control>
@@ -117,7 +118,7 @@
 			<description>Default Category Button</description>
 			<posx>53</posx>
 			<posy>187</posy>
-			<width>283</width>
+			<width>320</width>
 			<height>56</height>
 			<label>224</label>
 			<font>font13</font>

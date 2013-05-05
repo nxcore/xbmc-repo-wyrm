@@ -184,7 +184,7 @@
 					<posy>112</posy>
 					<width>320</width>
 					<height>56</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
@@ -276,7 +276,7 @@
 					<posy>166</posy>
 					<width>320</width>
 					<height>56</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
@@ -448,7 +448,7 @@
 						<font>font12</font>
 						<width>885</width>
 						<height>56</height>
-						<textwidth>480</textwidth>
+						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(osd-subtitles)</enable>
 						<label>- $LOCALIZE[31654]:</label>
 						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
@@ -475,7 +475,7 @@
 						<description>TV Logo Downloader Script</description>
 						<width>885</width>
 						<height>56</height>
-						<textwidth>480</textwidth>
+						<textwidth>785</textwidth>
 						<font>font12</font>
 						<label>31893</label>
 						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
@@ -494,7 +494,7 @@
 					<posy>220</posy>
 					<width>320</width>
 					<height>56</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
@@ -548,7 +548,7 @@
 									<posy>0</posy>
 									<width>885</width>
 									<height>56</height>
-									<texture border="8">default-button.png</texture>
+									<texture border="7">default-button.png</texture>
 									<visible>ControlGroup(320).HasFocus()</visible>
 								</control>
 								<control type="label">
@@ -825,7 +825,7 @@
 									<posy>0</posy>
 									<width>885</width>
 									<height>56</height>
-									<texture border="8">default-button.png</texture>
+									<texture border="7">default-button.png</texture>
 									<visible>ControlGroup(316).HasFocus()</visible>
 								</control>
 								<control type="label">
@@ -984,7 +984,7 @@
 					<posy>273</posy>
 					<width>320</width>
 					<height>56</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
@@ -1022,6 +1022,7 @@
 						<font>font12</font>
 						<width>885</width>
 						<label>31860</label>
+						<textwidth>785</textwidth>
 						<onclick>Skin.SetImage(custom-background)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1032,6 +1033,7 @@
 						<font>font12</font>
 						<width>885</width>
 						<label>31861</label>
+						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-background)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1092,6 +1094,7 @@
 						<font>font12</font>
 						<width>885</width>
 						<label>31866</label>
+						<textwidth>785</textwidth>
 						<onclick>Skin.SetPath(custom-weatherbackgrounds)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1102,6 +1105,7 @@
 						<font>font12</font>
 						<width>885</width>
 						<label>31867</label>
+						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-weatherbackgrounds)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1128,7 +1132,7 @@
 									<posy>0</posy>
 									<width>885</width>
 									<height>56</height>
-									<texture border="8">default-button.png</texture>
+									<texture border="7">default-button.png</texture>
 									<visible>ControlGroup(410).HasFocus()</visible>
 								</control>
 								<control type="label">
@@ -1275,7 +1279,7 @@
 					<posy>327</posy>
 					<width>320</width>
 					<height>56</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
@@ -1384,7 +1388,7 @@
 					<posy>435</posy>
 					<width>320</width>
 					<height>56</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
@@ -1421,7 +1425,7 @@
 						<description>XBMC Log Uploader Script</description>
 						<width>885</width>
 						<height>56</height>
-						<textwidth>480</textwidth>
+						<textwidth>750</textwidth>
 						<font>font12</font>
 						<label>31930</label>
 						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
@@ -1476,7 +1480,6 @@
 					</control>
 					<control type="image" id="808">
 						<description>Separator Image</description>
-
 						<width>885</width>
 						<height>6</height>
 						<texture>separator.png</texture>
@@ -1486,7 +1489,7 @@
 						<font>font12</font>
 						<width>885</width>
 						<label>$LOCALIZE[31935]</label>
-						<textwidth>460</textwidth>
+						<textwidth>785</textwidth>
 						<onclick>Skin.ResetSettings</onclick>
 						<onclick>ReplaceWindow(skinsettings)</onclick> 
 						<aligny>center</aligny>
