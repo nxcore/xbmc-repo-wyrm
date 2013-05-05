@@ -50,8 +50,8 @@
 		<posy>208</posy>
 		<width>26</width>
 		<height>18</height>
-		<texturefocus border="8">default-button.png</texturefocus>
-		<alttexturefocus border="8">default-button.png</alttexturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
+		<alttexturefocus border="7">default-button.png</alttexturefocus>
 		<label>-</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
@@ -138,7 +138,7 @@
 		<height>41</height>
 		<spinwidth>27</spinwidth>
 		<spinheight>25</spinheight>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<textureup>scroll-up.png</textureup>
 		<texturedown>scroll-down.png</texturedown>
 		<textureupfocus>scroll-up-focus.png</textureupfocus>
@@ -174,7 +174,7 @@
 		<height>56</height>
 		<textureradiofocus>check-box.png</textureradiofocus>
 		<textureradionofocus>check-boxnf.png</textureradionofocus>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<textureradioon>check-box.png</textureradioon>
 		<textureradiooff>check-boxnf.png</textureradiooff>
 		<label>215</label>
@@ -194,7 +194,7 @@
 		<height>56</height>
 		<label>132</label>
 		<font>font13</font>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<texturebg>button-menu-background.png</texturebg>
 		<textureleft>scroll-left.png</textureleft>
 		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
@@ -232,7 +232,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>progress-marker.png</textureslidernib>
 		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
@@ -249,7 +249,7 @@
 		<posy>393</posy>
 		<width>362</width>
 		<height>50</height>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<font>font12</font>
 		<label>587</label>
 		<textcolor>button-text</textcolor>
@@ -264,13 +264,13 @@
 	<default type="mover">
 		<posx>106</posx>
 		<posy>240</posy>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="resize">
 		<posx>106</posx>
 		<posy>240</posy>
-		<texturefocus border="8">default-button.png</texturefocus>
+		<texturefocus border="7">default-button.png</texturefocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 </includes>
