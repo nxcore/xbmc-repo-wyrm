@@ -1338,7 +1338,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1037</label>
+					<label>24001</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1456,7 +1456,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1037</label>
+					<label>24001</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1591,7 +1591,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1037</label>
+					<label>24001</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1727,7 +1727,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1038</label>
+					<label>24001</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1766,7 +1766,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1039</label>
+					<label>24001</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1790,7 +1790,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1037</label>
+					<label>3</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1805,7 +1805,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1038</label>
+					<label>2</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1820,7 +1820,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1039</label>
+					<label>1</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1835,7 +1835,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>1043</label>
+					<label>0</label>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1850,7 +1850,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>24033</label>
+					<label>21452</label>
 					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
