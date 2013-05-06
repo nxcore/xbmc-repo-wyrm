@@ -25,7 +25,7 @@
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 				<control type="group">
-					<visible>!Container.Content(Movies) + !Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !SubString(Container.FolderPath,addons)</visible>
+					<visible>![Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Addons)]</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -37,32 +37,33 @@
 						<info>ListItem.Label</info>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.Label2)</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<info>ListItem.Label2</info>
-						<visible>!IsEmpty(ListItem.Label2)</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<info>ListItem.Label2</info>
+						</control>
+					</control>	
 				</control>	
 				<control type="group">
-					<visible>SubString(Container.FolderPath,addons)</visible>
+					<visible>Container.Content(Addons)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -74,29 +75,30 @@
 						<info>ListItem.Label</info>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<info>ListItem.Property(Addon.Description)</info>
-						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<info>ListItem.Property(Addon.Description)</info>
+						</control>
+					</control>	
 				</control>	
 				<control type="group">
 					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
@@ -111,29 +113,30 @@
 						<info>ListItem.Label</info>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<info>ListItem.PlotOutline</info>
-						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<info>ListItem.PlotOutline</info>
+						</control>
+					</control>	
 				</control>	
 				<control type="group">
 					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
@@ -148,29 +151,30 @@
 						<info>ListItem.Label</info>
 						<visible>IsEmpty(ListItem.Duration)</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.Duration)</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<label>$VAR[VideoDuration]</label>
-						<visible>!IsEmpty(ListItem.Duration)</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<label>$VAR[VideoDuration]</label>
+						</control>
+					</control>	
 				</control>	
 			</itemlayout>
 			<focusedlayout width="575" height="76">
@@ -183,7 +187,7 @@
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 				<control type="group">
-					<visible>!Container.Content(Movies) + !Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !SubString(Container.FolderPath,addons)</visible>
+					<visible>![Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Addons)]</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -196,34 +200,35 @@
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.Label2)</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<info>ListItem.Label2</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<visible>!IsEmpty(ListItem.Label2)</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<info>ListItem.Label2</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+					</control>	
 				</control>
 				<control type="group">
-					<visible>SubString(Container.FolderPath,addons)</visible>
+					<visible>Container.Content(Addons)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -237,32 +242,33 @@
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
-						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<info>ListItem.Property(Addon.Description)</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<selectedcolor>listselectedtext</selectedcolor>
+							<info>ListItem.Label</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<info>ListItem.Property(Addon.Description)</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+					</control>	
 				</control>
 				<control type="group">
 					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
@@ -275,33 +281,35 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<info>ListItem.PlotOutline</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<info>ListItem.PlotOutline</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+					</control>	
 				</control>	
 				<control type="group">
 					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
@@ -314,33 +322,35 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
+						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Duration)</visible>
 					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>10</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<control type="group">
 						<visible>!IsEmpty(ListItem.Duration)</visible>
-					</control>
-					<control type="label">
-						<posx>53</posx>
-						<posy>36</posy>
-						<width>500</width>
-						<height>23</height>
-						<font>font11</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>disabled-text</textcolor>
-						<label>$VAR[VideoDuration]</label>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<visible>!IsEmpty(ListItem.Duration)</visible>
-					</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>10</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<info>ListItem.Label</info>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+						<control type="label">
+							<posx>53</posx>
+							<posy>36</posy>
+							<width>500</width>
+							<height>23</height>
+							<font>font11</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>disabled-text</textcolor>
+							<label>$VAR[VideoDuration]</label>
+							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+						</control>
+					</control>	
 				</control>	
 			</focusedlayout>
 		</control>
