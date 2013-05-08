@@ -202,8 +202,9 @@
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>
-			<animation effect="fade" start="0" end="100" time="200" delay="400">Visible</animation>
+			<visible>!Container().Scrolling</visible>
+			<!--<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>-->
+			<animation effect="fade" start="0" end="100" time="2000" delay="300" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="group">
 				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
@@ -372,6 +373,16 @@
 				</control>
 			</control>
 		</control>
+		<!--<control type="image">
+			<description>solid background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>background.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<animation effect="fade" start="100" end="0" time="400" condition="[Container().OnScrollNext | Container().OnScrollPrevious]">Conditional</animation>
+		</control>-->
 		<control type="group">
 			<visible>Skin.HasSetting(HomeViewToggle)</visible>
 			<control type="group">
