@@ -14,7 +14,12 @@
 			<width>1</width>
 			<height>1</height>
 			<include condition="Skin.HasSetting(startup-playlist)">StartupPlaylist</include>
+			<onleft>Control.SetFocus(9000)</onleft>
+			<onright>Control.SetFocus(9000)</onright>
+			<onup>Control.SetFocus(9000)</onup>
+			<ondown>Control.SetFocus(9000)</ondown>
 			<onfocus>Control.SetFocus(9000)</onfocus>
+			<onclick>Control.SetFocus(9000)</onclick>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 		</control>
