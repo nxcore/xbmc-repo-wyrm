@@ -1790,7 +1790,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>3</label>
+					<label>157</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
