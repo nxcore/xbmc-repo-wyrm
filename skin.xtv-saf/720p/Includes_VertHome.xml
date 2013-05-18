@@ -444,7 +444,7 @@
 					<posy>0</posy>
 					<width>88</width>
 					<height>62</height>
-					<info>Container(9000).Listitem(3).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(3).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -452,8 +452,7 @@
 					<posy>62</posy>
 					<width>88</width>
 					<height>62</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(3).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(3).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -469,7 +468,7 @@
 					<posy>0</posy>
 					<width>115</width>
 					<height>81</height>
-					<info>Container(9000).Listitem(2).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -477,8 +476,7 @@
 					<posy>81</posy>
 					<width>115</width>
 					<height>81</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(2).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -494,7 +492,7 @@
 					<posy>0</posy>
 					<width>407</width>
 					<height>287</height>
-					<info>Container(9000).Listitem(1).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -502,8 +500,7 @@
 					<posy>287</posy>
 					<width>407</width>
 					<height>287</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(1).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -519,6 +516,7 @@
 					<posy>0</posy>
 					<width>407</width>
 					<height>287</height>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).ActualIcon]</texture>
 					<info>Container(9000).Listitem(0).ActualIcon</info>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
@@ -527,8 +525,7 @@
 					<posy>287</posy>
 					<width>407</width>
 					<height>287</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(0).ActualIcon</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(0).ActualIcon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -548,7 +545,7 @@
 					<posy>0</posy>
 					<width>88</width>
 					<height>62</height>
-					<info>Container(9000).Listitem(2).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -556,8 +553,7 @@
 					<posy>62</posy>
 					<width>88</width>
 					<height>62</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(2).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -573,7 +569,7 @@
 					<posy>0</posy>
 					<width>88</width>
 					<height>62</height>
-					<info>Container(9000).Listitem(1).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -581,8 +577,7 @@
 					<posy>62</posy>
 					<width>88</width>
 					<height>62</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(1).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -598,7 +593,7 @@
 					<posy>0</posy>
 					<width>115</width>
 					<height>81</height>
-					<info>Container(9000).Listitem(0).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -606,8 +601,7 @@
 					<posy>81</posy>
 					<width>115</width>
 					<height>81</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(0).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -623,7 +617,7 @@
 					<posy>0</posy>
 					<width>407</width>
 					<height>287</height>
-					<info>Container(9000).Listitem(-1).ActualIcon</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(-1).ActualIcon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -631,8 +625,7 @@
 					<posy>287</posy>
 					<width>407</width>
 					<height>287</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(-1).ActualIcon</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(-1).ActualIcon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -649,7 +642,7 @@
 					<posy>0</posy>
 					<width>88</width>
 					<height>62</height>
-					<info>Container(9000).Listitem(2).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -657,8 +650,7 @@
 					<posy>62</posy>
 					<width>88</width>
 					<height>62</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(2).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -672,7 +664,7 @@
 					<posy>0</posy>
 					<width>115</width>
 					<height>81</height>
-					<info>Container(9000).Listitem(1).Thumb</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -680,8 +672,7 @@
 					<posy>81</posy>
 					<width>115</width>
 					<height>81</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(1).Thumb</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
@@ -695,7 +686,7 @@
 					<posy>0</posy>
 					<width>407</width>
 					<height>287</height>
-					<info>Container(9000).Listitem(0).ActualIcon</info>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).ActualIcon]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -703,8 +694,7 @@
 					<posy>287</posy>
 					<width>407</width>
 					<height>287</height>
-					<texture flipy="true" diffuse="mask-fade.png"/>
-					<info>Container(9000).Listitem(0).ActualIcon</info>
+					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(0).ActualIcon]</texture>
 					<aspectratio aligny="top">keep</aspectratio>
 				</control>
 			</control>
