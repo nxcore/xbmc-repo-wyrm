@@ -232,7 +232,7 @@
 						<randomize>true</randomize>
 						<timeperimage>5000</timeperimage>
 						<fadetime>300</fadetime>
-						<imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
+						<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
 						<aspectratio>stretch</aspectratio>
 						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 					</control>
