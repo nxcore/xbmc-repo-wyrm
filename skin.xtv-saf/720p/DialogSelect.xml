@@ -214,14 +214,14 @@
 				<control type="image">
 					<posx>54</posx>
 					<posy>0</posy>
-					<width>654</width>
+					<width>648</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 				</control>
 				<control type="label">
 					<posx>70</posx>
 					<posy>-4</posy>
-					<width>608</width>
+					<width>618</width>
 					<height>56</height>
 					<font>font11</font>
 					<align>left</align>
