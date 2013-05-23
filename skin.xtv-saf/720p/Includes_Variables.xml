@@ -42,7 +42,7 @@
 		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:UC)">special://skin/extras/images/rating/bbfc_uc.png</value>
 		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:PG)">special://skin/extras/images/rating/bbfc_pg.png</value>
 		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:12)">special://skin/extras/images/rating/bbfc_12.png</value>
-		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:12A)">special://skin/extras/images/rating/bbfc_12A.png</value>
+		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:12A)">special://skin/extras/images/rating/bbfc_12.png</value>
 		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:15)">special://skin/extras/images/rating/bbfc_15.png</value>
 		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:18)">special://skin/extras/images/rating/bbfc_18.png</value>
 		<value condition="StringCompare(Container(100).ListItem.Property(Mpaa),UK:R18)">special://skin/extras/images/rating/bbfc_R18.png</value>

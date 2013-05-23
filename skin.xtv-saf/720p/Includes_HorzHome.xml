@@ -106,7 +106,7 @@
 						<label>$LOCALIZE[20386]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>font11</font>
+						<font>font13</font>
 					</control>
 					<control type="list" id="9160">
 						<posx>10</posx>
@@ -272,7 +272,7 @@
 					<label>$LOCALIZE[20387]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font11</font>
+					<font>font13</font>
 					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 				</control>
 				<control type="group">
@@ -490,7 +490,7 @@
 					<label>$LOCALIZE[359]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font11</font>
+					<font>font13</font>
 					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 				</control>
 				<control type="group">

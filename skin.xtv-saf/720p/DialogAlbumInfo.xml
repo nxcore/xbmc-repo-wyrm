@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol>35</defaultcontrol>
+	<defaultcontrol always="true">999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
