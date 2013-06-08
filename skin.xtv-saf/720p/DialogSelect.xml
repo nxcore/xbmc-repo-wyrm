@@ -48,9 +48,9 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="scrollbar" id="23">
-				<posx>1039</posx>
+				<posx>1044</posx>
 				<posy>124</posy>
-				<width>22</width>
+				<width>20</width>
 				<height>448</height>
 				<onleft>5</onleft>
 				<onright>3</onright>
@@ -78,9 +78,9 @@
 				<texture>separator.png</texture>
 			</control>
 			<control type="scrollbar" id="26">
-				<posx>874</posx>
+				<posx>878</posx>
 				<posy>126</posy>
-				<width>22</width>
+				<width>20</width>
 				<height>392</height>
 				<onleft>5</onleft>
 				<onright>6</onright>

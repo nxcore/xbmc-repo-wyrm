@@ -91,9 +91,9 @@
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="24">
 				<posx>18</posx>
-				<posy>658</posy>
+				<posy>660</posy>
 				<width>1240</width>
-				<height>22</height>
+				<height>20</height>
 				<onup>54</onup>
 				<ondown>9000</ondown>
 				<orientation>horizontal</orientation>

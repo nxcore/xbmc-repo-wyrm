@@ -218,9 +218,9 @@
 				<include>SortLetterNotification</include>
 				<!-- Scroll Bar -->
 				<control type="scrollbar" id="29">
-					<posx>1239</posx>
+					<posx>1244</posx>
 					<posy>105</posy>
-					<width>22</width>
+					<width>20</width>
 					<height>524</height>
 					<onleft>59</onleft>
 					<onright>9000</onright>

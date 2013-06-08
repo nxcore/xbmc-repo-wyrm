@@ -44,10 +44,10 @@
 			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="1354">
-				<posx>17</posx>
+				<posx>14</posx>
 				<posy>612</posy>
 				<width>1239</width>
-				<height>22</height>
+				<height>20</height>
 				<onup>54</onup>
 				<ondown>9000</ondown>
 				<orientation>horizontal</orientation>

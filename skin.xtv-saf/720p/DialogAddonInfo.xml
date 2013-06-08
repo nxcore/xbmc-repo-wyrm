@@ -173,9 +173,9 @@
 						<pagecontrol>60</pagecontrol>
 					</control>
 					<control type="scrollbar" id="60">
-						<posx>761</posx>
+						<posx>765</posx>
 						<posy>243</posy>
-						<width>22</width>
+						<width>20</width>
 						<height>202</height>
 						<onleft>9000</onleft>
 						<onright>61</onright>
@@ -215,9 +215,9 @@
 						<pagecontrol>61</pagecontrol>
 					</control>
 					<control type="scrollbar" id="61">
-						<posx>761</posx>
+						<posx>765</posx>
 						<posy>243</posy>
-						<width>22</width>
+						<width>20</width>
 						<height>312</height>
 						<onleft>60</onleft>
 						<onright>9000</onright>

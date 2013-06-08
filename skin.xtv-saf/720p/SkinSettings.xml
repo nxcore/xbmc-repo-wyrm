@@ -167,9 +167,9 @@
 		<control type="group" id="998">
 			<!-- Scrollbar -->
 			<control type="scrollbar" id="1223">
-				<posx>14</posx>
+				<posx>10</posx>
 				<posy>112</posy>
-				<width>22</width>
+				<width>20</width>
 				<height>542</height>
 				<onleft>999</onleft>
 				<onright>998</onright>

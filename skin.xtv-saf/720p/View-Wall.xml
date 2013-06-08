@@ -91,9 +91,9 @@
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 			<control type="scrollbar" id="1358">
-				<posx>1240</posx>
+				<posx>1244</posx>
 				<posy>102</posy>
-				<width>22</width>
+				<width>20</width>
 				<height>490</height>
 				<onleft>58</onleft>
 				<onright>9000</onright>
