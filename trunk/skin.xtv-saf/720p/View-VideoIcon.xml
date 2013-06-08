@@ -106,13 +106,14 @@
 					<font>font11</font>
 					<align>center</align>
 					<info>ListItem.Label</info>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="scrollbar" id="29">
 			<posx>1244</posx>
 			<posy>100</posy>
-			<width>22</width>
+			<width>20</width>
 			<height>588</height>
 			<onleft>52</onleft>
 			<onright>9000</onright>

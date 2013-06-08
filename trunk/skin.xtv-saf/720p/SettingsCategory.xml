@@ -74,9 +74,9 @@
 		</control>
 		<!-- Scrollbar -->
 		<control type="scrollbar" id="23">
-			<posx>14</posx>
+			<posx>10</posx>
 			<posy>112</posy>
-			<width>22</width>
+			<width>20</width>
 			<height>542</height>
 			<onleft>3</onleft>
 			<onright>5</onright>

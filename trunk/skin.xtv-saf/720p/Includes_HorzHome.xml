@@ -1147,18 +1147,18 @@
 			<include>horizontalhome-center</include>
 			<control type="list" id="9900">
 				<posx>10</posx>
-				<posy>292</posy>
+				<posy>295</posy>
 				<width>1260</width>
-				<height>70</height>
+				<height>66</height>
 				<scrolltime>200</scrolltime>
 				<ondown>9000</ondown>
 				<itemgap>0</itemgap>
 				<viewtype label="List">List</viewtype>
 				<orientation>horizontal</orientation>
-				<itemlayout height="70" width="210">
+				<itemlayout height="66" width="210">
 					<control type="label">
 						<posx>105</posx>
-						<posy>19</posy>
+						<posy>17</posy>
 						<width>210</width>
 						<height>32</height>
 						<font>font18</font>
@@ -1167,18 +1167,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="210">
+				<focusedlayout height="66" width="210">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>210</width>
-						<height>70</height>
+						<height>66</height>
 						<align>center</align>
 						<texture>menu-focus.png</texture>
 					</control>
 					<control type="label">
 						<posx>105</posx>
-						<posy>19</posy>
+						<posy>17</posy>
 						<width>210</width>
 						<height>32</height>
 						<font>font18</font>

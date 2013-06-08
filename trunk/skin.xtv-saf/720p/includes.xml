@@ -558,9 +558,9 @@
 	</include>
 	<include name="PageControl">
 		<control type="scrollbar" id="23">
-			<posx>1244</posx>
+			<posx>1246</posx>
 			<posy>112</posy>
-			<width>22</width>
+			<width>20</width>
 			<height>555</height>
 			<onleft>50</onleft>
 			<onright>9000</onright>
