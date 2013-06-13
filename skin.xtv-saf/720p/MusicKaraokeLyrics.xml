@@ -96,8 +96,6 @@
 					<width>790</width>
 					<height>16</height>
 					<info>Player.Progress</info>
-					<texturebg border="14,0,14,0">progress-background.png</texturebg>
-					<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 					<colordiffuse>ProgressBarColor</colordiffuse>
 				</control>
 				<control type="slider">
@@ -107,9 +105,6 @@
 					<width>790</width>
 					<height>20</height>
 					<info>Player.Progress</info>
-					<texturesliderbar border="8,0,8,0">seekslider.png</texturesliderbar>
-					<textureslidernib>progress-marker.png</textureslidernib>
-					<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 				</control>
 			</control>
 		</control>
