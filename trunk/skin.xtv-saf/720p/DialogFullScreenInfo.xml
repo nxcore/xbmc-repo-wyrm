@@ -107,8 +107,8 @@
 		<control type="textbox">
 			<posx>290</posx>
 			<posy>-180</posy>
-			<width>948</width>
-			<height>116</height>
+			<width>960</width>
+			<height>128</height>
 			<font>font11</font>
 			<label>$INFO[VideoPlayer.Plot]</label>
 			<align>justify</align>
@@ -119,8 +119,8 @@
 		<control type="textbox">
 			<posx>290</posx>
 			<posy>-180</posy>
-			<width>948</width>
-			<height>116</height>
+			<width>960</width>
+			<height>128</height>
 			<font>font11</font>
 			<label fallback="161">$INFO[VideoPlayer.PlotOutline]</label>
 			<align>justify</align>
@@ -131,8 +131,8 @@
 		<!-- Media flags -->
 		<control type="grouplist">
 			<description>Group Media Flags</description>
-			<posx>792</posx>
-			<posy>-56</posy>
+			<posx>804</posx>
+			<posy>-50</posy>
 			<width>453</width>
 			<height>60</height>
 			<align>right</align>
@@ -214,146 +214,15 @@
 		<control type="group">
 			<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
 			<control type="label">
-				<description>Cache Label</description>
+				<description>Playback State Label</description>
 				<posx>424</posx>
-				<posy>40</posy>
+				<posy>30</posy>
+				<height>38</height>
 				<width>424</width>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font22</font>
-				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-				<visible>[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
-			</control>
-			<control type="label">
-				<description>Seeking Label</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>$LOCALIZE[773] $INFO[Player.SeekOffset]</label>
-				<visible>Player.Seeking</visible>
-			</control>
-			<control type="label">
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31662</label>
-				<visible>Player.Paused + !Player.Caching</visible>
-			</control>
-			<control type="label">
-				<description>rewind 2x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31666</label>
-				<visible>Player.Rewinding2x</visible>
-			</control>
-			<control type="label">
-				<description>forward 2x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31672</label>
-				<visible>Player.Forwarding2x</visible>
-			</control>
-			<control type="label">
-				<description>rewind 4x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31667</label>
-				<visible>Player.Rewinding4x</visible>
-			</control>
-			<control type="label">
-				<description>forward 4x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31673</label>
-				<visible>Player.Forwarding4x</visible>
-			</control>
-			<control type="label">
-				<description>rewind 8x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31668</label>
-				<visible>Player.Rewinding8x</visible>
-			</control>
-			<control type="label">
-				<description>forward 8x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31674</label>
-				<visible>Player.Forwarding8x</visible>
-			</control>
-			<control type="label">
-				<description>rewind 16x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31669</label>
-				<visible>Player.Rewinding16x</visible>
-			</control>
-			<control type="label">
-				<description>forward 16x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31675</label>
-				<visible>Player.Forwarding16x</visible>
-			</control>
-			<control type="label">
-				<description>rewind 32x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>31670</label>
-				<font>font22</font>
-				<visible>Player.Rewinding32x</visible>
-			</control>
-			<control type="label">
-				<description>forward 32x</description>
-				<posx>424</posx>
-				<posy>40</posy>
-				<width>424</width>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-				<label>31676</label>
-				<visible>Player.Forwarding32x</visible>
+				<label>$VAR[PlaybackState]</label>
 			</control>
 		</control>
 		<!-- End Player action labels -->
@@ -363,74 +232,52 @@
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
 			<!-- Player info labels -->
 			<control type="label">
-				<posx>53</posx>
+				<posx>224</posx>
 				<posy>5</posy>
-				<width>354</width>
+				<width>220</width>
 				<height>31</height>
-				<font>font13</font>
-				<label>$INFO[VideoPlayer.Time]</label>
+				<font>font11</font>
+				<label>($INFO[System.Time]) $INFO[VideoPlayer.Time]</label>
+				<align>right</align>
 			</control>
 			<control type="label">
-				<posx>53</posx>
-				<posy>35</posy>
-				<width>424</width>
-				<height>31</height>
-				<font>font13</font>
-				<label>$LOCALIZE[31128] $INFO[System.Time]</label>
-			</control>
-			<control type="label">
-				<posx>1239</posx>
+				<posx>1048</posx>
 				<posy>5</posy>
-				<width>354</width>
+				<width>220</width>
 				<height>31</height>
-				<align>right</align>
-				<font>font13</font>
-				<label>$INFO[VideoPlayer.Duration]</label>
-			</control>
-			<control type="label">
-				<posx>1239</posx>
-				<posy>35</posy>
-				<width>424</width>
-				<height>31</height>
-				<align>right</align>
-				<font>font13</font>
-				<label>$LOCALIZE[31129] $INFO[Player.FinishTime]</label>
+				<align>left</align>
+				<font>font11</font>
+				<label>- $INFO[VideoPlayer.TimeRemaining] ($INFO[Player.FinishTime])</label>
 			</control>
 			<!-- End Player info labels -->
 			
 			<!-- Progress bar -->
 			<control type="progress">
 				<description>Progressbar Cache</description>
-				<posx>214</posx>
+				<posx>238</posx>
 				<posy>12</posy>
-				<width>864</width>
+				<width>800</width>
 				<height>16</height>
 				<info>Player.ProgressCache</info>
-				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 				<colordiffuse>FF777777</colordiffuse>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>214</posx>
+				<posx>238</posx>
 				<posy>12</posy>
-				<width>864</width>
+				<width>800</width>
 				<height>16</height>
 				<info>Player.Progress</info>
-				<texturebg border="14,0,14,0">progress-background.png</texturebg>
-				<midtexture border="14,0,14,0">progress-middle.png</midtexture>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<!-- End Progress Bar -->
 			<control type="slider">
 				<description>Seek Slider</description>
-				<posx>214</posx>
+				<posx>238</posx>
 				<posy>10</posy>
-				<width>864</width>
+				<width>800</width>
 				<height>20</height>
 				<info>Player.Progress</info>
-				<texturesliderbar>seekslider.png</texturesliderbar>
-				<textureslidernib>progress-marker.png</textureslidernib>
-				<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 			</control>
 		</control>
 	</controls>

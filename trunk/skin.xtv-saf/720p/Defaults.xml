@@ -93,9 +93,9 @@
 	<default type="progress">
 		<posx>177</posx>
 		<posy>406</posy>
-		<texturebg border="14,0,14,0">progress-background.png</texturebg>
+		<texturebg border="8,0,8,0">progress-background.png</texturebg>
 		<lefttexture>-</lefttexture>
-		<midtexture border="14,0,14,0">progress-middle.png</midtexture>
+		<midtexture border="8,0,8,0">progress-bar.png</midtexture>
 		<righttexture>-</righttexture>
 		<overlaytexture></overlaytexture>
 		<colordiffuse>ProgressBarColor</colordiffuse>
@@ -216,7 +216,7 @@
 		<posy>48</posy>
 		<width>672</width>
 		<height>20</height>
-		<texturesliderbar>seekslider.png</texturesliderbar>
+		<texturesliderbar>blank.png</texturesliderbar>
 		<textureslidernib>progress-marker.png</textureslidernib>
 		<textureslidernibfocus>progress-marker.png</textureslidernibfocus>
 		<pulseonselect>false</pulseonselect>
