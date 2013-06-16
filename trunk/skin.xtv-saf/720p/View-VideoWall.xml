@@ -16,7 +16,7 @@
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="slide" end="70,0" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="zoom" start="100" end="120" center="auto" time="0" tween="back" easing="out" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
-			<itemlayout height="169" width="120">
+			<itemlayout height="169" width="120" condition="!Container.Content(Addons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
@@ -34,11 +34,33 @@
 					<height>169</height>
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="169" width="120">
+			<itemlayout height="169" width="120" condition="Container.Content(Addons)">
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>119</width>
+					<height>169</height>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<visible>stringcompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>119</width>
+					<height>169</height>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
+					<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+					<visible>!stringcompare(ListItem.Label,..)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="169" width="120" condition="!Container.Content(Addons)">
 				<control type="group">
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="100" end="140" center="auto" time="400" tween="back" easing="out" />
@@ -69,7 +91,7 @@
 						<width>101</width>
 						<height>144</height>
 						<aspectratio>stretch</aspectratio>
-						<texture diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 				</control>	
@@ -86,6 +108,42 @@
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 			</focusedlayout>
+			<focusedlayout height="169" width="120" condition="Container.Content(Addons)">
+				<control type="group">
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="100" end="140" center="auto" time="400" tween="back" easing="out" />
+					</animation>
+					<control type="image">
+						<posx>1</posx>
+						<posy>1</posy>
+						<width>119</width>
+						<height>169</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<visible>stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>169</height>
+						<texture>mask-hilite.png</texture>
+						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+						<visible>![Container().OnScrollNext | Container().OnScrollPrevious] + !SubString(ListItem.Icon,Default,Left)</visible>
+					</control>
+					<control type="image">
+						<posx>9</posx>
+						<posy>12</posy>
+						<width>101</width>
+						<height>144</height>
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+				</control>	
+			</focusedlayout>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(58)</visible>
@@ -96,24 +154,25 @@
 				<posy>112</posy>
 				<width>354</width>
 				<height>97</height>
-				<texture background="true">$INFO[ListItem.path]logo.png</texture>
+				<texture fallback="blank.png" background="true">$INFO[ListItem.path,,logo.png]</texture>
 				<aligny>bottom</aligny>
 				<aspectratio align="left">keep</aspectratio>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 			</control>
 			<!-- Title -->
 			<control type="label">
 				<posx>17</posx>
-				<posy>168</posy>
+				<posy>112</posy>
 				<width>460</width>
-				<height>37</height>
-				<font>font18</font>
+				<height>74</height>
+				<font>font20</font>
 				<align>left</align>
+				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<info>ListItem.Label</info>
+				<label>$INFO[ListItem.Label]</label>
+				<wrapmultiline>true</wrapmultiline>
 				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [Container.Content(seasons) | Container.Content(episodes) | container.content(musicvideos) | IsEmpty(Control.GetLabel(7016))]</visible>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7016),blank.png,Left)</visible>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<!-- Go Back -->
@@ -148,7 +207,7 @@
 				<width>354</width>
 				<height>31</height>
 				<aligny>center</aligny>
-				<font>font18</font>
+				<font>font12</font>
 				<label>$LOCALIZE[20360]: $INFO[ListItem.Property(NumEpisodes)]</label>
 				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 			</control>
@@ -161,7 +220,7 @@
 					<width>200</width>
 					<height>25</height>
 					<aligny>center</aligny>
-					<font>font13</font>
+					<font>font12</font>
 					<info>ListItem.Duration</info>
 					<visible>substring(listitem.Duration,hrs)</visible>
 				</control>
@@ -171,7 +230,7 @@
 					<width>200</width>
 					<height>25</height>
 					<aligny>center</aligny>
-					<font>font13</font>
+					<font>font12</font>
 					<info>ListItem.Duration</info>
 					<visible>substring(listitem.Duration,min)</visible>
 					<visible>!substring(listitem.Duration,hrs)</visible>
@@ -182,7 +241,7 @@
 					<width>200</width>
 					<height>25</height>
 					<aligny>center</aligny>
-					<font>font13</font>
+					<font>font12</font>
 					<label>$INFO[ListItem.Duration,, mins]</label>
 					<visible>!substring(listitem.Duration,min)</visible>
 				</control>
@@ -213,8 +272,8 @@
 				<posx>17</posx>
 				<posy>350</posy>
 				<width>460</width>
-				<height>298</height>
-				<font>font13</font>
+				<height>316</height>
+				<font>font12</font>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
 				<align>left</align>
 				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
@@ -225,8 +284,8 @@
 				<posx>17</posx>
 				<posy>350</posy>
 				<width>460</width>
-				<height>298</height>
-				<font>font13</font>
+				<height>316</height>
+				<font>font12</font>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<align>left</align>
 				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
