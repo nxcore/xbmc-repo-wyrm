@@ -200,8 +200,8 @@
 			<visible>true</visible>
 			<control type="button" id="208">
 				<description>DVD Menu</description>
-				<width>60</width>
-				<height>60</height>
+				<width>40</width>
+				<height>40</height>
 				<texturefocus>osd-btn-dvdmenu-focus.png</texturefocus>
 				<texturenofocus>osd-btn-dvdmenu.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
@@ -209,8 +209,8 @@
 			</control>
 			<control type="button" id="950">
 				<description>Subtitles Menu</description>
-				<width>60</width>
-				<height>60</height>
+				<width>40</width>
+				<height>40</height>
 				<texturenofocus>osd-btn-subtitle.png</texturenofocus>
 				<texturefocus>osd-btn-subtitle-focus.png</texturefocus>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
