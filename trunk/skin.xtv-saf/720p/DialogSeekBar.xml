@@ -102,10 +102,11 @@
 					<control type="image" id="890">
 						<description>Use Movie Clearart if available</description>
 						<posx>8</posx>
-						<posy>-138</posy> 
+						<posy>-144</posy> 
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
+						<aligny>bottom</aligny>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="group">
@@ -124,7 +125,7 @@
 						<control type="group">
 							<visible>StringCompare(Control.GetLabel(891),blank.png)</visible>
 							<control type="image" id="892">
-								<description>Otherwise try TV folder.jpg if available(episodes in season folders)</description>
+								<description>Otherwise try Movie folder.jpg if available</description>
 								<posx>80</posx>
 								<posy>-180</posy>
 								<width>132</width>

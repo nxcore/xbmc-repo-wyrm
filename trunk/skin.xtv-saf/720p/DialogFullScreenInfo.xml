@@ -89,17 +89,57 @@
 				</control>
 			</control>
 			<!-- movies -->
-			<control type="image">
-				<description>Video cover image</description>
-				<posx>80</posx>
-				<posy>-180</posy>
-				<width>132</width>
-				<height>180</height>
-				<aligny>bottom</aligny>
-				<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
-				<aspectratio align="left">keep</aspectratio>
-				<animation effect="fade" time="200">VisibleChange</animation>
+			<control type="group">
 				<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo)</visible>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="image" id="890">
+					<description>Use Movie Clearart if available</description>
+					<posx>8</posx>
+					<posy>-144</posy> 
+					<width>275</width>
+					<height>145</height>
+					<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
+					<aligny>bottom</aligny>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="group">
+					<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
+					<control type="image" id="891">
+						<description>Otherwise try Movie logo if available</description>
+						<posx>8</posx>
+						<posy>-75</posy>
+						<width>276</width>
+						<height>75</height>
+						<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
+						<aligny>bottom</aligny>
+						<aspectratio align="left">keep</aspectratio>
+						<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
+					</control>
+					<control type="group">
+						<visible>StringCompare(Control.GetLabel(891),blank.png)</visible>
+						<control type="image" id="892">
+							<description>Otherwise try Movie folder.jpg if available</description>
+							<posx>80</posx>
+							<posy>-180</posy>
+							<width>132</width>
+							<height>180</height>
+							<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+							<aligny>bottom</aligny>
+							<aspectratio align="left">keep</aspectratio>
+						</control>
+						<control type="image" id="893">
+							<description>Fallback to video cover image if no clearart or logo</description>
+							<posx>80</posx>
+							<posy>-180</posy>
+							<width>132</width>
+							<height>180</height>
+							<aligny>bottom</aligny>
+							<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>StringCompare(Control.GetLabel(892),blank.png)</visible>
+						</control>
+					</control>
+				</control>
 			</control>
 		</control>	
 		<!-- End of Media Icon -->
