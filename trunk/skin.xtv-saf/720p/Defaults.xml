@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<default type="image">
 		<posx>0</posx>
@@ -12,6 +13,7 @@
 		<label>-</label>
 		<font>font13</font>
 		<scroll>false</scroll>
+		<scrollsuffix> • </scrollsuffix>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<selectedcolor>listselectedtext</selectedcolor>
@@ -68,6 +70,9 @@
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
+		<scrollout>false</scrollout>
+		<pauseatend>4000</pauseatend>
+		<scrollsuffix> • </scrollsuffix>
 	</default>
 	<default type="textbox">
 		<posx>389</posx>
