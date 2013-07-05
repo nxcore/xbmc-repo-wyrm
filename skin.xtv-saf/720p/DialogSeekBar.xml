@@ -169,16 +169,27 @@
 		<!-- Player action labels -->
 		<control type="group">
 			<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
-			<control type="label">
-				<description>Playback State Label</description>
-				<posx>424</posx>
-				<posy>30</posy>
-				<height>38</height>
-				<width>424</width>
+			<control type="grouplist">
+				<posx>408</posx>
+				<posy>17</posy>
+				<width>464</width>
+				<height>64</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font22</font>
-				<label>$VAR[PlaybackState]</label>
+				<orientation>horizontal</orientation>
+				<control type="image">
+					<width>64</width>
+					<height>64</height>
+					<texture>$VAR[PlayStateImage]</texture>
+				</control>
+				<control type="label">
+					<description>Video screen headings</description>
+					<width min="150" max="400">auto</width>
+					<height>64</height>
+					<label>$VAR[PlayStateTxt]</label>
+					<font>font22</font>
+					<aligny>center</aligny>
+				</control>
 			</control>
 		</control>
 		<!-- End Player action labels -->
