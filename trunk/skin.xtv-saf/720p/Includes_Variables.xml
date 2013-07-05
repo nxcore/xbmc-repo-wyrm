@@ -76,21 +76,27 @@
 		<value condition="!substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
-	<variable name="PlaybackState">
-		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[31662]</value>
+	<variable name="PlayStateImage">
+		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">osd-btn-pause.png</value>
+		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">osd-btn-pause.png</value>
+		<value condition="Player.Seeking + !substring(Player.SeekOffset,-)">osd-btn-fastfwd.png</value>
+		<value condition="Player.Seeking + substring(Player.SeekOffset,-)">osd-btn-rewind.png</value>
+		<value condition="!Player.Seeking + [Player.Rewinding2x | Player.Rewinding4x | Player.Rewinding8x | Player.Rewinding16x | Player.Rewinding32x]">osd-btn-rewind.png</value>
+		<value condition="!Player.Seeking + [Player.Forwarding2x | Player.Forwarding4x | Player.Forwarding8x | Player.Forwarding16x | Player.Forwarding32x]">osd-btn-fastfwd.png</value>
+		<value condition="Player.DisplayAfterSeek + !Player.Seeking + !substring(Player.SeekOffset,-)">osd-btn-fastfwd.png</value>
+		<value condition="Player.DisplayAfterSeek + !Player.Seeking + substring(Player.SeekOffset,-)">osd-btn-rewind.png</value>
+	</variable>
+	<variable name="PlayStateTxt">
+		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek"></value>
 		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
-		<value condition="Player.Seeking">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
-		<value condition="Player.Rewinding2x + !Player.Seeking">$LOCALIZE[31666]</value>
-		<value condition="Player.Rewinding4x + !Player.Seeking">$LOCALIZE[31667]</value>
-		<value condition="Player.Rewinding8x + !Player.Seeking">$LOCALIZE[31668]</value>
-		<value condition="Player.Rewinding16x + !Player.Seeking">$LOCALIZE[31669]</value>
-		<value condition="Player.Rewinding32x + !Player.Seeking">$LOCALIZE[31670]</value>
-		<value condition="Player.Forwarding2x + !Player.Seeking">$LOCALIZE[31672]</value>
-		<value condition="Player.Forwarding4x + !Player.Seeking">$LOCALIZE[31673]</value>
-		<value condition="Player.Forwarding8x + !Player.Seeking">$LOCALIZE[31674]</value>
-		<value condition="Player.Forwarding16x + !Player.Seeking">$LOCALIZE[31675]</value>
-		<value condition="Player.Forwarding32x + !Player.Seeking">$LOCALIZE[31676]</value>
-		<value condition="Player.DisplayAfterSeek + !Player.Seeking">$INFO[Player.SeekOffset]</value>
+		<value condition="Player.Seeking">$INFO[Player.SeekOffset]</value>
+		<value condition="!Player.Seeking + [Player.Rewinding2x | Player.Forwarding2x]">x2</value>
+		<value condition="!Player.Seeking + [Player.Rewinding4x | Player.Forwarding4x]">x4</value>
+		<value condition="!Player.Seeking + [Player.Rewinding8x | Player.Forwarding8x]">x8</value>
+		<value condition="!Player.Seeking + [Player.Rewinding16x | Player.Forwarding16x]">x16</value>
+		<value condition="!Player.Seeking + [Player.Rewinding32x | Player.Forwarding32x]">x32</value>
+		<value condition="!Player.Seeking + Player.DisplayAfterSeek + !substring(Player.SeekOffset,-)">$INFO[Player.SeekOffset]</value>
+		<value condition="!Player.Seeking + Player.DisplayAfterSeek + substring(Player.SeekOffset,-)">$INFO[Player.SeekOffset]</value>
 	</variable>
 	<variable name="MovieLibEntry">
 		<value condition="!Library.HasContent(Movies)">ActivateWindow(Videos,Files,return)</value>
