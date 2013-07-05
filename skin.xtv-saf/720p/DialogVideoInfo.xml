@@ -59,16 +59,14 @@
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<!-- Title -->
-				<control type="fadelabel">
+				<control type="label">
 					<posx>531</posx>
 					<posy>-11</posy>
 					<width>708</width>
 					<height>40</height>
-					<scrollout>false</scrollout>
-					<pauseatend>200</pauseatend>
-					<scrollspeed>20</scrollspeed>
 					<font>font22</font>
 					<info>ListItem.Label</info>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<animation effect="fade" time="200">WindowClose</animation>
 					<visible>IsEmpty(Control.GetLabel(7016))</visible>
 				</control>
@@ -86,16 +84,14 @@
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<!-- Title -->
-				<control type="fadelabel">
+				<control type="label">
 					<posx>531</posx>
 					<posy>-11</posy>
 					<width>708</width>
 					<height>40</height>
-					<scrollout>false</scrollout>
-					<pauseatend>200</pauseatend>
-					<scrollspeed>20</scrollspeed>
 					<font>font22</font>
 					<info>ListItem.Label</info>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<animation effect="fade" time="200">WindowClose</animation>
 					<visible>IsEmpty(Control.GetLabel(7018))</visible>
 				</control>
@@ -103,16 +99,14 @@
 			<control type="group">
 				<visible>!Container.Content(tvshows) + !Container.Content(movies)</visible>
 				<!-- Title -->
-				<control type="fadelabel">
+				<control type="label">
 					<posx>531</posx>
 					<posy>-11</posy>
 					<width>708</width>
 					<height>40</height>
-					<scrollout>false</scrollout>
-					<pauseatend>200</pauseatend>
-					<scrollspeed>20</scrollspeed>
 					<font>font22</font>
 					<info>ListItem.Label</info>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<animation effect="fade" time="200">WindowClose</animation>
 				</control>
 			</control>
