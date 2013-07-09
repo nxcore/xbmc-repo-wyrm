@@ -1944,7 +1944,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>20092</label>
-					<onclick>ActivateWindow(profiles)</onclick>
+					<onclick>System.LogOff</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
