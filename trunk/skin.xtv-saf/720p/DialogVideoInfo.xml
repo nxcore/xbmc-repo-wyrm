@@ -259,10 +259,23 @@
 				<width>654</width>
 				<height>298</height>
 				<font>font13</font>
-				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<label>$INFO[ListItem.Plot]</label>
 				<align>justify</align>
 				<pagecontrol>1023</pagecontrol>
-				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
+				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207]) +!IsEmpty(ListItem.Plot)</visible>
+				<autoscroll time="4000" delay="8000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
+			</control>
+			<!-- Plot outline (Show if no plot available)-->
+			<control type="textbox">
+				<posx>531</posx>
+				<posy>292</posy>
+				<width>654</width>
+				<height>298</height>
+				<font>font13</font>
+				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+				<align>justify</align>
+				<pagecontrol>1023</pagecontrol>
+				<visible>IsEmpty(ListItem.Plot)</visible>
 				<autoscroll time="4000" delay="8000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="image">
@@ -481,6 +494,16 @@
 				<label>208</label>
 				<altlabel>1024</altlabel>
 				<usealttexture>Container.Content(TVShows)</usealttexture>
+			</control>
+			<control type="button" id="19">
+				<description>Edit Library entries</description>
+				<height>57</height>
+				<width>208</width>
+				<font>font11</font>
+				<label>21435</label>
+				<align>center</align>
+				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+				<visible>system.hasaddon(script.libraryeditor)</visible>
 			</control>
 			<control type="button" id="18">
 				<description>Home Cinema Experience</description>
