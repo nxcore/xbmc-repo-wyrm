@@ -369,7 +369,7 @@
 					<icon>shut-profile.png</icon>
 					<thumb>shut-profile.png</thumb>
 					<label>20092</label>
-					<onclick>ActivateWindow(profiles)</onclick>
+					<onclick>System.LogOff</onclick>
 					<visible>Skin.HasSetting(home-profile)</visible>
 				</item>
 				<item>

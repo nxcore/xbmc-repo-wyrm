@@ -2,8 +2,8 @@
 	<defaultcontrol always="false">420</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
-	<onload condition="Window.Previous(settings) + [Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)]">Control.SetFocus(9900,8)</onload>
-	<onload condition="Window.Previous(settings) + [Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)]">Control.SetFocus(9450,1)</onload>
+	<onload condition="[Window.Previous(settings) | Window.Previous(loginscreen)] + [Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)]">Control.SetFocus(9900,8)</onload>
+	<onload condition="[Window.Previous(settings) | Window.Previous(loginscreen)] + [Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)]">Control.SetFocus(9450,1)</onload>
 	<include condition="Skin.HasSetting(background-slideshow)">StartArtistSlideshow</include>
 	<animation effect="fade" start="0" end="0" time="10000" condition="Window.Previous(Startup) + Skin.HasSetting(intro-vid)">WindowOpen</animation>
 	<controls>
