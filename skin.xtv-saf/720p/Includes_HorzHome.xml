@@ -1276,7 +1276,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>14022</label>
-					<onclick>ActivateWindow(Videolibrary,root)</onclick>
+					<onclick>ActivateWindow(Videolibrary,root,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -1752,7 +1752,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>1</label>
-					<onclick>ActivateWindow(Pictures)</onclick>
+					<onclick>ActivateWindow(Pictures,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -1875,7 +1875,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>8</label>
-					<onclick>ActivateWindow(Weather)</onclick>
+					<onclick>ActivateWindow(Weather,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

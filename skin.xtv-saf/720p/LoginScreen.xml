@@ -153,5 +153,16 @@
 					time="0" easing="inout" reversible="true">Conditional</animation>
 			</control>
 		</control>
+		<control type="label">
+			<description>Current Profile Name</description>
+			<posx>228</posx>
+			<posy>677</posy>
+			<width>824</width>
+			<height>31</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[13204] $INFO[System.ProfileName]</label>
+			<font>font18</font>
+		</control>
 	</controls>
 </window>
