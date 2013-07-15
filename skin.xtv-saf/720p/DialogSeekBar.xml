@@ -22,10 +22,10 @@
 			</control>
 			<!-- Media Icon -->
 			<control type="group">
-				<visible>!Window.IsVisible(fullscreeninfo)</visible>
+				<visible>Window.IsVisible(FullscreenVideo) + !Window.IsVisible(fullscreeninfo)</visible>
 				<control type="group">
 				<!-- tvshows -->
-					<visible>VideoPlayer.Content(episodes) + Window.IsVisible(FullscreenVideo)</visible>
+					<visible>VideoPlayer.Content(episodes)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<control type="image" id="990">
 						<description>Use TV Clearart if available(episodes in season folders)</description>
@@ -97,7 +97,7 @@
 				</control>
 				<!-- movies -->
 				<control type="group">
-					<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo)</visible>
+					<visible>VideoPlayer.Content(Movies)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<control type="image" id="890">
 						<description>Use Movie Clearart if available</description>
@@ -146,6 +146,21 @@
 								<visible>StringCompare(Control.GetLabel(892),blank.png)</visible>
 							</control>
 						</control>
+					</control>
+				</control>
+				<!-- Anything other than Movies and TV Episodes or Music-->
+				<control type="group">
+					<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(episodes)]</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<control type="image">
+						<description>Fallback to Thumb image if not TV Episode or Movie playing</description>
+						<posx>80</posx>
+						<posy>-180</posy>
+						<width>132</width>
+						<height>180</height>
+						<aligny>bottom</aligny>
+						<texture diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
+						<aspectratio align="left">keep</aspectratio>
 					</control>
 				</control>
 			</control>	

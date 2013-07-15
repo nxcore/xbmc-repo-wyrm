@@ -17,130 +17,148 @@
 			</control>
 			<!-- Media Icon -->
 			<control type="group">
-				<visible>VideoPlayer.Content(episodes) + Window.IsVisible(FullscreenVideo)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<!-- tvshows -->
-				<control type="image" id="990">
-					<description>Use TV Clearart if available(episodes in season folders)</description>
-					<posx>8</posx>
-					<posy>-154</posy> 
-					<width>275</width>
-					<height>145</height>
-					<texture fallback="blank.png">$INFO[Player.FolderPath,,../clearart.png]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image" id="991">
-					<description>Use TV Clearart if available(episodes in tv show folder)</description>
-					<posx>8</posx>
-					<posy>-154</posy> 
-					<width>275</width>
-					<height>145</height>
-					<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>StringCompare(Control.GetLabel(990),blank.png)</visible>
-				</control>
+				<visible>Window.IsVisible(FullscreenVideo)</visible>
 				<control type="group">
-					<visible>StringCompare(Control.GetLabel(990),blank.png) + StringCompare(Control.GetLabel(991),blank.png)</visible>
-					<control type="image" id="992">
-						<description>Otherwise try TV logo if available(episodes in season folders)</description>
+					<visible>VideoPlayer.Content(episodes)</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<!-- tvshows -->
+					<control type="image" id="990">
+						<description>Use TV Clearart if available(episodes in season folders)</description>
 						<posx>8</posx>
-						<posy>-75</posy>
-						<width>276</width>
-						<height>75</height>
-						<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
-						<aligny>bottom</aligny>
-						<aspectratio align="left">keep</aspectratio>
+						<posy>-154</posy> 
+						<width>275</width>
+						<height>145</height>
+						<texture fallback="blank.png">$INFO[Player.FolderPath,,../clearart.png]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
-					<control type="image" id="993">
-						<description>Otherwise try TV logo if available(episodes in tv show folder)</description>
+					<control type="image" id="991">
+						<description>Use TV Clearart if available(episodes in tv show folder)</description>
 						<posx>8</posx>
-						<posy>-75</posy>
-						<width>276</width>
-						<height>75</height>
-						<texture fallback="blank.png">$INFO[Player.FolderPath,,../logo.png]</texture>
-						<aligny>bottom</aligny>
-						<aspectratio align="left">keep</aspectratio>
-						<visible>StringCompare(Control.GetLabel(992),blank.png)</visible>
+						<posy>-154</posy> 
+						<width>275</width>
+						<height>145</height>
+						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>StringCompare(Control.GetLabel(990),blank.png)</visible>
 					</control>
 					<control type="group">
-						<visible>StringCompare(Control.GetLabel(992),blank.png) + StringCompare(Control.GetLabel(993),blank.png)</visible>
-						<control type="image" id="994">
-							<description>Otherwise try TV folder.jpg if available(episodes in season folders)</description>
-							<posx>80</posx>
-							<posy>-180</posy>
-							<width>132</width>
-							<height>180</height>
-							<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+						<visible>StringCompare(Control.GetLabel(990),blank.png) + StringCompare(Control.GetLabel(991),blank.png)</visible>
+						<control type="image" id="992">
+							<description>Otherwise try TV logo if available(episodes in season folders)</description>
+							<posx>8</posx>
+							<posy>-75</posy>
+							<width>276</width>
+							<height>75</height>
+							<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
 							<aligny>bottom</aligny>
 							<aspectratio align="left">keep</aspectratio>
 						</control>
-						<control type="image" id="995">
-							<description>Otherwise try TV folder.jpg if available(episodes in tv show folder)</description>
-							<posx>80</posx>
-							<posy>-180</posy>
-							<width>132</width>
-							<height>180</height>
-							<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,../folder.jpg]</texture>
+						<control type="image" id="993">
+							<description>Otherwise try TV logo if available(episodes in tv show folder)</description>
+							<posx>8</posx>
+							<posy>-75</posy>
+							<width>276</width>
+							<height>75</height>
+							<texture fallback="blank.png">$INFO[Player.FolderPath,,../logo.png]</texture>
 							<aligny>bottom</aligny>
 							<aspectratio align="left">keep</aspectratio>
-							<visible>StringCompare(Control.GetLabel(994),blank.png)</visible>
+							<visible>StringCompare(Control.GetLabel(992),blank.png)</visible>
+						</control>
+						<control type="group">
+							<visible>StringCompare(Control.GetLabel(992),blank.png) + StringCompare(Control.GetLabel(993),blank.png)</visible>
+							<control type="image" id="994">
+								<description>Otherwise try TV folder.jpg if available(episodes in season folders)</description>
+								<posx>80</posx>
+								<posy>-180</posy>
+								<width>132</width>
+								<height>180</height>
+								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+								<aligny>bottom</aligny>
+								<aspectratio align="left">keep</aspectratio>
+							</control>
+							<control type="image" id="995">
+								<description>Otherwise try TV folder.jpg if available(episodes in tv show folder)</description>
+								<posx>80</posx>
+								<posy>-180</posy>
+								<width>132</width>
+								<height>180</height>
+								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,../folder.jpg]</texture>
+								<aligny>bottom</aligny>
+								<aspectratio align="left">keep</aspectratio>
+								<visible>StringCompare(Control.GetLabel(994),blank.png)</visible>
+							</control>
 						</control>
 					</control>
 				</control>
-			</control>
-			<!-- movies -->
-			<control type="group">
-				<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="image" id="890">
-					<description>Use Movie Clearart if available</description>
-					<posx>8</posx>
-					<posy>-144</posy> 
-					<width>275</width>
-					<height>145</height>
-					<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
-					<aligny>bottom</aligny>
-					<aspectratio>keep</aspectratio>
-				</control>
+				<!-- movies -->
 				<control type="group">
-					<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
-					<control type="image" id="891">
-						<description>Otherwise try Movie logo if available</description>
+					<visible>VideoPlayer.Content(Movies)</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<control type="image" id="890">
+						<description>Use Movie Clearart if available</description>
 						<posx>8</posx>
-						<posy>-75</posy>
-						<width>276</width>
-						<height>75</height>
-						<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
+						<posy>-144</posy> 
+						<width>275</width>
+						<height>145</height>
+						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
 						<aligny>bottom</aligny>
-						<aspectratio align="left">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="group">
 						<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
-					</control>
-					<control type="group">
-						<visible>StringCompare(Control.GetLabel(891),blank.png)</visible>
-						<control type="image" id="892">
-							<description>Otherwise try Movie folder.jpg if available</description>
-							<posx>80</posx>
-							<posy>-180</posy>
-							<width>132</width>
-							<height>180</height>
-							<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+						<control type="image" id="891">
+							<description>Otherwise try Movie logo if available</description>
+							<posx>8</posx>
+							<posy>-75</posy>
+							<width>276</width>
+							<height>75</height>
+							<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
 							<aligny>bottom</aligny>
 							<aspectratio align="left">keep</aspectratio>
+							<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
 						</control>
-						<control type="image" id="893">
-							<description>Fallback to video cover image if no clearart or logo</description>
-							<posx>80</posx>
-							<posy>-180</posy>
-							<width>132</width>
-							<height>180</height>
-							<aligny>bottom</aligny>
-							<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
-							<aspectratio align="left">keep</aspectratio>
-							<visible>StringCompare(Control.GetLabel(892),blank.png)</visible>
+						<control type="group">
+							<visible>StringCompare(Control.GetLabel(891),blank.png)</visible>
+							<control type="image" id="892">
+								<description>Otherwise try Movie folder.jpg if available</description>
+								<posx>80</posx>
+								<posy>-180</posy>
+								<width>132</width>
+								<height>180</height>
+								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+								<aligny>bottom</aligny>
+								<aspectratio align="left">keep</aspectratio>
+							</control>
+							<control type="image" id="893">
+								<description>Fallback to video cover image if no clearart or logo</description>
+								<posx>80</posx>
+								<posy>-180</posy>
+								<width>132</width>
+								<height>180</height>
+								<aligny>bottom</aligny>
+								<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
+								<aspectratio align="left">keep</aspectratio>
+								<visible>StringCompare(Control.GetLabel(892),blank.png)</visible>
+							</control>
 						</control>
 					</control>
 				</control>
-			</control>
+				<!-- Anything other than Movies and TV Episodes -->
+				<control type="group">
+					<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(episodes)]</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<control type="image">
+						<description>Fallback to Thumb image if not TV Episode or Movie playing</description>
+						<posx>80</posx>
+						<posy>-180</posy>
+						<width>132</width>
+						<height>180</height>
+						<aligny>bottom</aligny>
+						<texture diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+				</control>
+			</control>	
 		</control>	
 		<!-- End of Media Icon -->
 		<!-- Plot (Show if available)-->
