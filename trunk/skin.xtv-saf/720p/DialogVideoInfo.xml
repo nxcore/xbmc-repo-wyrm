@@ -241,7 +241,6 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.PlayCount]</label>
 			</control>			
-			
 			<!-- Plot -->
 			<control type="label">
 				<posx>531</posx>
@@ -278,34 +277,48 @@
 				<visible>IsEmpty(ListItem.Plot)</visible>
 				<autoscroll time="4000" delay="8000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
+			<control type="group">
+				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
+				<control type="image">
+					<description>Cover image</description>
+					<posx>122</posx>
+					<posy>68</posy>
+					<width>286</width>
+					<height>412</height>
+					<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultMovies.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<visible>Container.Content(movies)</visible>
+				</control>
+				<control type="image">
+					<description>Cover image</description>
+					<posx>122</posx>
+					<posy>68</posy>
+					<width>286</width>
+					<height>412</height>
+					<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<visible>Container.Content(tvshows)</visible>
+				</control>
+				<control type="image">
+					<posx>59</posx>
+					<posy>68</posy>
+					<width>412</width>
+					<height>412</height>
+					<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<visible>Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+				</control>
+			</control>	
 			<control type="image">
-				<description>Cover image</description>
-				<posx>122</posx>
+				<description>Actor image</description>
+				<posx>26</posx>
 				<posy>68</posy>
-				<width>286</width>
+				<width>415</width>
 				<height>412</height>
-				<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
-				<texture background="true" fallback="DefaultMovies.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-				<visible>Container.Content(movies)</visible>
-			</control>
-			<control type="image">
-				<description>Cover image</description>
-				<posx>122</posx>
-				<posy>68</posy>
-				<width>286</width>
-				<height>412</height>
-				<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
-				<texture background="true" fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-				<visible>Container.Content(tvshows)</visible>
-			</control>
-			<control type="image">
-				<posx>59</posx>
-				<posy>68</posy>
-				<width>412</width>
-				<height>412</height>
-				<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
-				<texture background="true" fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-				<visible>Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+				<align>center</align>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
+				<texture diffuse="mask-rect.png">$INFO[Container(50).Listitem.Icon]</texture>
+				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 
 			<!-- Cast -->
@@ -374,18 +387,6 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="image">
-				<description>Actor image</description>
-				<posx>26</posx>
-				<posy>68</posy>
-				<width>415</width>
-				<height>412</height>
-				<align>center</align>
-				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture diffuse="mask-rect.png">$INFO[Container(50).Listitem.Icon]</texture>
-				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
-			</control>
-
 			<!-- Media flags -->
 			<control type="grouplist">
 				<description>Group Media Flags</description>
@@ -554,7 +555,6 @@
 				<align>center</align>
 			</control>
 		</control>
-
 		<!-- Cast Scrollbar -->
 		<control type="scrollbar" id="923">
 			<posx>1234</posx>
