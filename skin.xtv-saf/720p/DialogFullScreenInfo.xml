@@ -161,12 +161,22 @@
 			</control>	
 		</control>	
 		<!-- End of Media Icon -->
-		<!-- Plot (Show if available)-->
-		<control type="textbox">
+		<control type="label">
 			<posx>290</posx>
 			<posy>-180</posy>
 			<width>960</width>
-			<height>128</height>
+			<height>25</height>
+			<label>$INFO[VideoPlayer.Title]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font13</font>
+		</control>
+		<!-- Plot (Show if available)-->
+		<control type="textbox">
+			<posx>290</posx>
+			<posy>-150</posy>
+			<width>960</width>
+			<height>104</height>
 			<font>font11</font>
 			<label>$INFO[VideoPlayer.Plot]</label>
 			<align>justify</align>
@@ -176,30 +186,30 @@
 		<!-- Plot Outline (Show if plot not found)-->
 		<control type="textbox">
 			<posx>290</posx>
-			<posy>-180</posy>
+			<posy>-150</posy>
 			<width>960</width>
-			<height>128</height>
+			<height>104</height>
 			<font>font11</font>
 			<label fallback="161">$INFO[VideoPlayer.PlotOutline]</label>
 			<align>justify</align>
 			<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
-			<visible>!IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.Plot)</visible>
+			<visible>!IsEmpty(VideoPlayer.PlotOutline) + IsEmpty(VideoPlayer.Plot)</visible>
 		</control>
 
 		<!-- Media flags -->
 		<control type="grouplist">
 			<description>Group Media Flags</description>
 			<posx>804</posx>
-			<posy>-50</posy>
+			<posy>-40</posy>
 			<width>453</width>
-			<height>60</height>
+			<height>50</height>
 			<align>right</align>
 			<orientation>horizontal</orientation>
 			<itemgap>-8</itemgap>
 			<!-- Hack to check if media flag image is available -->
 			<control type="image" id="161">
 				<width>1</width>
-				<height>60</height>
+				<height>50</height>
 				<align>center</align>
 				<colordiffuse>00FFFFFF</colordiffuse>
 				<texture fallback="blank.png">$INFO[VideoPlayer.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
@@ -207,7 +217,7 @@
 			</control>
 			<control type="image" id="162">
 				<width>1</width>
-				<height>60</height>
+				<height>50</height>
 				<align>center</align>
 				<colordiffuse>00FFFFFF</colordiffuse>
 				<texture fallback="blank.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/images/video/,.png]</texture>
@@ -216,7 +226,7 @@
 			<control type="image" id="163">
 				<description>Aspectratio Image</description>
 				<width>1</width>
-				<height>60</height>
+				<height>50</height>
 				<align>center</align>
 				<texture fallback="blank.png">$INFO[VideoPlayer.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
 				<colordiffuse>00FFFFFF</colordiffuse>
@@ -224,7 +234,7 @@
 			</control>
 			<control type="image" id="164">
 				<width>1</width>
-				<height>60</height>
+				<height>50</height>
 				<align>center</align>
 				<colordiffuse>00FFFFFF</colordiffuse>
 				<texture fallback="blank.png">$INFO[VideoPlayer.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
@@ -232,8 +242,8 @@
 			</control>
 			<!-- Audio Codec -->
 			<control type="image" id="171">
-				<width>113</width>
-				<height>60</height>
+				<width>67</width>
+				<height>50</height>
 				<align>center</align>
 				<colordiffuse>FlagDiffuse</colordiffuse>
 				<texture>$INFO[VideoPlayer.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
@@ -241,8 +251,8 @@
 			</control>
 			<!-- Video Codec -->
 			<control type="image" id="172">
-				<width>113</width>
-				<height>60</height>
+				<width>67</width>
+				<height>50</height>
 				<align>center</align>
 				<colordiffuse>FlagDiffuse</colordiffuse>
 				<texture fallback="blank.png">$INFO[VideoPlayer.VideoCodec,special://skin/extras/images/video/,.png]</texture>
@@ -251,8 +261,8 @@
 			<!-- Video Aspect Ratio -->
 			<control type="image" id="173">
 				<description>Aspectratio Image</description>
-				<width>113</width>
-				<height>60</height>
+				<width>67</width>
+				<height>50</height>
 				<align>center</align>
 				<texture>$INFO[VideoPlayer.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
 				<colordiffuse>FlagDiffuse</colordiffuse>
@@ -260,8 +270,8 @@
 			</control>
 			<!-- Video Resolution -->
 			<control type="image" id="174">
-				<width>113</width>
-				<height>60</height>
+				<width>67</width>
+				<height>50</height>
 				<align>center</align>
 				<colordiffuse>FlagDiffuse</colordiffuse>
 				<texture>$INFO[VideoPlayer.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
