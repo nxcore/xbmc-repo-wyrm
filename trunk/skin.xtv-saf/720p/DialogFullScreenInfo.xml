@@ -161,6 +161,8 @@
 			</control>	
 		</control>	
 		<!-- End of Media Icon -->
+
+		<!-- Title of currently playing video -->
 		<control type="label">
 			<posx>290</posx>
 			<posy>-180</posy>
@@ -170,11 +172,67 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font13</font>
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
 		</control>
+		<!-- Title of Live TV Program -->
+		<control type="group">
+			<visible>VideoPlayer.Content(LiveTV)</visible>
+			<control type="label">
+				<posx>290</posx>
+				<posy>-180</posy>
+				<width>475</width>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ,]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+			</control>
+			<!-- Tv Show title up next -->
+			<control type="label">
+				<posx>1250</posx>
+				<posy>-180</posy>
+				<width>475</width>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ,]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<textcolor>disabled-text</textcolor>
+				<font>font13</font>
+			</control>
+			<!-- TV Channel Number -->
+			<control type="label">
+				<posx>385</posx>
+				<posy>-40</posy>
+				<width>100</width>
+				<height>38</height>
+				<label>$INFO[VideoPlayer.ChannelNumber]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font22</font>
+			</control>
+			<!-- TV Channel Name -->
+			<control type="label">
+				<posx>390</posx>
+				<posy>-28</posy>
+				<width>400</width>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.ChannelName]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+			</control>
+		</control>
+		<control type="image">
+			<posx>290</posx>
+			<posy>-152</posy>
+			<width>960</width>
+			<height>5</height>
+			<texture>separator.png</texture>
+		</control>		
 		<!-- Plot (Show if available)-->
 		<control type="textbox">
 			<posx>290</posx>
-			<posy>-150</posy>
+			<posy>-146</posy>
 			<width>960</width>
 			<height>104</height>
 			<font>font11</font>
@@ -186,11 +244,11 @@
 		<!-- Plot Outline (Show if plot not found)-->
 		<control type="textbox">
 			<posx>290</posx>
-			<posy>-150</posy>
+			<posy>-146</posy>
 			<width>960</width>
 			<height>104</height>
 			<font>font11</font>
-			<label fallback="161">$INFO[VideoPlayer.PlotOutline]</label>
+			<label>$INFO[VideoPlayer.PlotOutline]</label>
 			<align>justify</align>
 			<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 			<visible>!IsEmpty(VideoPlayer.PlotOutline) + IsEmpty(VideoPlayer.Plot)</visible>
