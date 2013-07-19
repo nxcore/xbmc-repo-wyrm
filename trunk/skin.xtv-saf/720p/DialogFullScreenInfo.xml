@@ -68,23 +68,25 @@
 							<visible>StringCompare(Control.GetLabel(992),blank.png) + StringCompare(Control.GetLabel(993),blank.png)</visible>
 							<control type="image" id="994">
 								<description>Otherwise try TV folder.jpg if available(episodes in season folders)</description>
-								<posx>80</posx>
+								<posx>56</posx>
 								<posy>-180</posy>
-								<width>132</width>
+								<width>180</width>
 								<height>180</height>
 								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+								<align>center</align>
 								<aligny>bottom</aligny>
-								<aspectratio align="left">keep</aspectratio>
+								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image" id="995">
 								<description>Otherwise try TV folder.jpg if available(episodes in tv show folder)</description>
-								<posx>80</posx>
+								<posx>56</posx>
 								<posy>-180</posy>
-								<width>132</width>
+								<width>180</width>
 								<height>180</height>
 								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,../folder.jpg]</texture>
+								<align>center</align>
 								<aligny>bottom</aligny>
-								<aspectratio align="left">keep</aspectratio>
+								<aspectratio>keep</aspectratio>
 								<visible>StringCompare(Control.GetLabel(994),blank.png)</visible>
 							</control>
 						</control>
@@ -121,23 +123,25 @@
 							<visible>StringCompare(Control.GetLabel(891),blank.png)</visible>
 							<control type="image" id="892">
 								<description>Otherwise try Movie folder.jpg if available</description>
-								<posx>80</posx>
+								<posx>56</posx>
 								<posy>-180</posy>
-								<width>132</width>
+								<width>180</width>
 								<height>180</height>
 								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+								<align>center</align>
 								<aligny>bottom</aligny>
-								<aspectratio align="left">keep</aspectratio>
+								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image" id="893">
 								<description>Fallback to video cover image if no clearart or logo</description>
-								<posx>80</posx>
+								<posx>56</posx>
 								<posy>-180</posy>
-								<width>132</width>
+								<width>180</width>
 								<height>180</height>
+								<align>center</align>
 								<aligny>bottom</aligny>
 								<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
-								<aspectratio align="left">keep</aspectratio>
+								<aspectratio>keep</aspectratio>
 								<visible>StringCompare(Control.GetLabel(892),blank.png)</visible>
 							</control>
 						</control>
@@ -149,13 +153,14 @@
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<control type="image">
 						<description>Fallback to Thumb image if not TV Episode or Movie playing</description>
-						<posx>80</posx>
+						<posx>56</posx>
 						<posy>-180</posy>
-						<width>132</width>
+						<width>180</width>
 						<height>180</height>
+						<align>center</align>
 						<aligny>bottom</aligny>
 						<texture diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
-						<aspectratio align="left">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
 			</control>	
@@ -174,9 +179,33 @@
 			<font>font13</font>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 		</control>
-		<!-- Title of Live TV Program -->
+		<!-- Details of Live TV Program -->
 		<control type="group">
 			<visible>VideoPlayer.Content(LiveTV)</visible>
+			<!-- TV Channel Number -->
+			<control type="label">
+				<posx>8</posx>
+				<posy>-260</posy>
+				<width>150</width>
+				<height>48</height>
+				<textcolor>FF00AAFF</textcolor>
+				<label>$INFO[VideoPlayer.ChannelNumber]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font28</font>
+			</control>
+			<!-- TV Channel Name -->
+			<control type="label">
+				<posx>8</posx>
+				<posy>-210</posy>
+				<width>400</width>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.ChannelName]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+			</control>
+			<!-- Title of Live TV Program -->
 			<control type="label">
 				<posx>290</posx>
 				<posy>-180</posy>
@@ -197,28 +226,6 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<textcolor>disabled-text</textcolor>
-				<font>font13</font>
-			</control>
-			<!-- TV Channel Number -->
-			<control type="label">
-				<posx>385</posx>
-				<posy>-40</posy>
-				<width>100</width>
-				<height>38</height>
-				<label>$INFO[VideoPlayer.ChannelNumber]</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-			</control>
-			<!-- TV Channel Name -->
-			<control type="label">
-				<posx>390</posx>
-				<posy>-28</posy>
-				<width>400</width>
-				<height>25</height>
-				<label>$INFO[VideoPlayer.ChannelName]</label>
-				<align>left</align>
-				<aligny>center</aligny>
 				<font>font13</font>
 			</control>
 		</control>
