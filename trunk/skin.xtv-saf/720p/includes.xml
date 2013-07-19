@@ -82,8 +82,8 @@
 			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
-			<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>
-			<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
+			<visible>!Container().Scrolling</visible>
+			<animation effect="fade" start="0" end="100" time="500" delay="2500">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="group">
 				<visible>Window.IsActive(weather) + !IsEmpty(Skin.String(custom-weatherbackgrounds)) + [!Player.HasVideo | !Player.HasAudio]</visible>
@@ -178,6 +178,7 @@
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
 			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
 			<aspectratio>stretch</aspectratio>
+			<visible>!IsEmpty(Skin.String(custom-weatherbackgrounds)) | Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 		</control>
 	</include>
 	<include name="backgroundvideo">
@@ -203,8 +204,7 @@
 		</control>
 		<control type="group">
 			<visible>!Container().Scrolling</visible>
-			<!--<visible>![Container().OnScrollNext | Container().OnScrollPrevious]</visible>-->
-			<animation effect="fade" start="0" end="100" time="2000" delay="300" tween="quadratic" easing="out">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="2500" delay="500" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="group">
 				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
@@ -219,11 +219,11 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-						<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+						<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(movies) | Container.Content(MusicVideos)</visible>
+					<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Title)</visible>
 					<control type="multiimage" id="6300">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -249,7 +249,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(TVShows)</visible>
+					<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Title)</visible>
 					<control type="multiimage" id="6310">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -276,7 +276,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Seasons)</visible>
+					<visible>Container.Content(Seasons) + !IsEmpty(ListItem.Title)</visible>
 					<control type="multiimage" id="6320">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -319,7 +319,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Episodes)</visible>
+					<visible>Container.Content(Episodes) + !IsEmpty(ListItem.Title)</visible>
 					<control type="multiimage" id="6340">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -373,16 +373,6 @@
 				</control>
 			</control>
 		</control>
-		<!--<control type="image">
-			<description>solid background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>background.png</texture>
-			<aspectratio>stretch</aspectratio>
-			<animation effect="fade" start="100" end="0" time="400" condition="[Container().OnScrollNext | Container().OnScrollPrevious]">Conditional</animation>
-		</control>-->
 		<control type="group">
 			<visible>Skin.HasSetting(HomeViewToggle)</visible>
 			<control type="group">
@@ -452,6 +442,7 @@
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
 			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
 			<aspectratio>stretch</aspectratio>
+			<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 		</control>
 	</include>
 	<!-- Start xTV box image include -->
