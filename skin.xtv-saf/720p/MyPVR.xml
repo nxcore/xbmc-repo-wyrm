@@ -1,9 +1,10 @@
 <window>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<backgroundcolor>0</backgroundcolor>
 	<previouswindow>Home</previouswindow>
 	<controls>
-		<include>background</include>
+		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
 		<control type="image">
 			<description>TV Logo</description>
@@ -32,7 +33,7 @@
 				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
 				<control type="group">
-					<visible>!Player.HasVideo</visible>
+					<visible>!Player.HasVideo | [Player.HasVideo + Skin.HasSetting(HomeViewToggle)]</visible>
 					<posx>0</posx>
 					<width>256</width>
 					<height>256</height>
@@ -69,6 +70,7 @@
 						<height>256</height>
 						<align>center</align>
 						<aligny>top</aligny>
+						<visible>!Skin.HasSetting(HomeViewToggle)</visible>
 					</control>
 				</control>
 				<control type="label">
