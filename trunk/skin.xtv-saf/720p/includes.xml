@@ -767,7 +767,7 @@
 	<!-- Start Fake Overlay Include -->
 	<include name="Fake-Overlay">
 		<control type="group">
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Skin.HasSetting(HomeViewToggle) + !Window.IsActive(PlayerControls)</visible>
+			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !VideoPlayer.Content(livetv) + !Skin.HasSetting(HomeViewToggle) + !Window.IsActive(PlayerControls)</visible>
 			<!-- Video Stuff -->
 			<control type="videowindow">
 				<description>video preview window</description>
