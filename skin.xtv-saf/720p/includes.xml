@@ -522,8 +522,8 @@
 	<include name="SortLetterNotification">
 		<control type="group">
 			<visible>Container.Scrolling + !Window.IsVisible(progressdialog)</visible>
-			<animation effect="fade" time="100">Visible</animation>
-			<animation effect="fade" time="300" delay="500">Hidden</animation>
+			<animation effect="fade" time="200">Visible</animation>
+			<animation effect="fade" time="200" delay="500">Hidden</animation>
 			<posx>587</posx>
 			<posy>42</posy>
 			<width>81</width>
@@ -917,7 +917,7 @@
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
-		<animation effect="slide" time="0" start="0,0" end="0,-720" delay="0">Visible</animation>
+		<animation effect="slide" time="0" start="0,0" end="0,-720">Visible</animation>
 		<animation effect="fade" time="200" delay="300">WindowOpen</animation>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
