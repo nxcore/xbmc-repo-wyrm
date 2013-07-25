@@ -1,63 +1,48 @@
 <includes>
 	<include name="HorzHomeMenu">
 		<include>screen-fade</include>
-		<control type="group">
-			<!-- Use solid background image -->
-			<control type="image">
-				<description>solid background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>solid-background</colordiffuse>
-				<texture>background.png</texture>
-			</control>
-			<!-- Build up home menu shelf image -->
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>192</height>
-				<texture>white.png</texture>
-				<colordiffuse>FF606060</colordiffuse>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>192</posy>
-				<width>1280</width>
-				<height>106</height>
-				<texture>white.png</texture>
-				<colordiffuse>FF404040</colordiffuse>
-			</control>
-			<control type="image">
-				<posx>-100</posx>
-				<posy>-20</posy>
-				<width>1480</width>
-				<height>310</height>
-				<texture>menu-mask.png</texture>
-				<colordiffuse>BBF9F9F9</colordiffuse>
-			</control>
+		<!-- Build up home menu shelf image -->
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>192</height>
+			<texture>white.png</texture>
+			<colordiffuse>FF606060</colordiffuse>
 		</control>
-		<control type="group">
+		<control type="image">
+			<posx>0</posx>
+			<posy>192</posy>
+			<width>1280</width>
+			<height>106</height>
+			<texture>white.png</texture>
+			<colordiffuse>FF404040</colordiffuse>
+		</control>
+		<control type="image">
+			<posx>-100</posx>
+			<posy>-20</posy>
+			<width>1480</width>
+			<height>310</height>
+			<texture>menu-mask.png</texture>
+			<colordiffuse>BBF9F9F9</colordiffuse>
+		</control>
+		<!-- Show time on home screen -->
+		<control type="label">
+			<description>Time and Date</description>
+			<posx>754</posx>
+			<posy>10</posy>
+			<width>566</width>
+			<height>50</height>
+			<label>$INFO[system.Time(hh:mm xx)] $INFO[system.Date]</label>
+			<align>center</align>
+			<font>font18</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
-			<!-- Show time on home screen -->
-			<control type="label">
-				<description>Time and Date</description>
-				<posx>754</posx>
-				<posy>10</posy>
-				<width>566</width>
-				<height>50</height>
-				<label>$INFO[system.Time(hh:mm xx)] $INFO[system.Date]</label>
-				<align>center</align>
-				<font>font18</font>
-			</control>
 		</control>
 
 		<!-- Shelf icons-->
 		<control type="group">
 			<!-- Video icons -->
 			<control type="group">
-				<include>background-fade</include>
 				<visible>ControlGroup(9100).HasFocus()</visible>
 				<control type="image">
 					<posx>560</posx>
@@ -76,7 +61,6 @@
 			</control>
 			<!-- Movie icons -->
 			<control type="group" id="9155">
-				<include>background-fade</include>
 				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
 				<control type="group">
 					<visible>IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
@@ -261,7 +245,6 @@
 			</control>
 			<!-- TV Shows icons -->
 			<control type="group" id="9205">
-				<include>background-fade</include>
 				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
 				<control type="label">
 					<description>Header label</description>
@@ -479,7 +462,6 @@
 			</control>
 			<!-- Music icons -->
 			<control type="group" id="9255">
-				<include>background-fade</include>
 				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
 				<control type="label">
 					<description>Header label</description>
@@ -702,7 +684,6 @@
 			<!-- Pictures icons -->
 			<control type="group">
 				<visible>ControlGroup(9300).HasFocus()</visible>
-				<include>background-fade</include>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
@@ -721,7 +702,6 @@
 			<!-- Addons icons -->
 			<control type="group">
 				<visible>ControlGroup(9350).HasFocus()</visible>
-				<include>background-fade</include>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
@@ -740,7 +720,6 @@
 			<!-- Weather icons -->
 			<control type="group">
 				<visible>ControlGroup(9400).HasFocus()</visible>
-				<include>background-fade</include>
 				<control type="group">
 					<visible>!Weather.IsFetched</visible>
 					<control type="image">
@@ -1096,7 +1075,6 @@
 			<!-- Settings icons -->
 			<control type="group">
 			<visible>ControlGroup(9450).HasFocus()</visible>
-				<include>background-fade</include>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
@@ -1114,36 +1092,31 @@
 			</control>
 		</control>
 		<!-- Main Horizontal menu bar -->
-		<control type="group">
+		<control type="image">
+			<description>solid background</description>
+			<posx>0</posx>
+			<posy>294</posy>
+			<width>1280</width>
+			<height>430</height>
+			<colordiffuse>solid-background</colordiffuse>
+			<texture>black.png</texture>
+		</control>
+		<control type="image">
 			<posx>0</posx>
 			<posy>290</posy>
-			<control type="image">
-				<description>solid background</description>
-				<posx>0</posx>
-				<posy>4</posy>
-				<width>1280</width>
-				<height>430</height>
-				<colordiffuse>solid-background</colordiffuse>
-				<texture>black.png</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>6</height>
-				<texture>separator.png</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>70</posy>
-				<width>1280</width>
-				<height>6</height>
-				<texture>separator.png</texture>
-			</control>
+			<width>1280</width>
+			<height>6</height>
+			<texture>separator.png</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>360</posy>
+			<width>1280</width>
+			<height>6</height>
+			<texture>separator.png</texture>
 		</control>
 		<!--Home NavBar-->
 		<control type="group">
-			<include>background-fade</include>
 			<include>horizontalhome-center</include>
 			<control type="list" id="9900">
 				<posx>10</posx>
@@ -1241,7 +1214,6 @@
 
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
-			<include>background-fade</include>
 			<include>horizontalhome-center</include>
 			<posx>10</posx>
 			<posy>365</posy>
@@ -1251,7 +1223,7 @@
 			<orientation>horizontal</orientation>
 			<control type="grouplist" id="9100">
 				<visible>!Skin.HasSetting(home-video)</visible>
-				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1352,7 +1324,7 @@
 			</control>
 			<control type="grouplist" id="9150">
 				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
-				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
@@ -1471,7 +1443,7 @@
 			<!-- TV Sub Menu -->
 			<control type="grouplist" id="9200">
 				<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
-				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
@@ -1606,7 +1578,7 @@
 			<!-- Music Sub menu -->
 			<control type="grouplist" id="9250">
 				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
-				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
@@ -1742,7 +1714,7 @@
 			<!-- Pictures Sub menu -->
 			<control type="grouplist" id="9300">
 				<visible>Skin.HasSetting(home-photos)</visible>
-				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1781,7 +1753,7 @@
 			<!-- Addons Sub menu -->
 			<control type="grouplist" id="9350">
 				<visible>!Skin.HasSetting(home-programs)</visible>
-				<animation condition="!ControlGroup(9350).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9350).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1865,7 +1837,7 @@
 			<!-- Weather Sub menu -->
 			<control type="grouplist" id="9400">
 				<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
-				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1888,7 +1860,7 @@
 			</control>
 			<!-- Settings Sub menu -->
 			<control type="grouplist" id="9450">
-				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0" time="100">Conditional</animation>
+				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -2192,7 +2164,7 @@
 			<aspectratio align="center" aligny="center">keep</aspectratio>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<texture background="true" fallback="blank.png">homelogo.png</texture>
-			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="100" reversible="true">Conditional</animation>
+			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
 		</control>
 		<!-- media infos (music) -->
 		<control type="group">
