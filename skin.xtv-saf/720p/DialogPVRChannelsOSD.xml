@@ -3,7 +3,7 @@
 	<coordinates>
 		<system>1</system>
 		<posx>780</posx>
-		<posy>20</posy>
+		<posy>35</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
@@ -12,7 +12,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>480</width>
-				<height>680</height>
+				<height>650</height>
 				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
@@ -55,7 +55,7 @@
 				<posx>12</posx>
 				<posy>70</posy>
 				<width>420</width>
-				<height>552</height>
+				<height>510</height>
 				<onleft>60</onleft>
 				<onright>60</onright>
 				<onup>11</onup>
@@ -63,7 +63,7 @@
 				<viewtype label="535">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="92" width="420">
+				<itemlayout height="102" width="420">
 					<control type="label">
 						<posx>12</posx>
 						<posy>12</posy>
@@ -155,12 +155,12 @@
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout height="92" width="420">
+				<focusedlayout height="102" width="420">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>420</width>
-						<height>92</height>
+						<height>102</height>
 						<texture border="8">default-button.png</texture>
 						<visible>Control.HasFocus(11)</visible>
 					</control>
@@ -262,7 +262,7 @@
 				<posx>440</posx>
 				<posy>70</posy>
 				<width>20</width>
-				<height>552</height>
+				<height>510</height>
 				<onleft>11</onleft>
 				<onright>11</onright>
 				<ondown>61</ondown>
@@ -271,7 +271,7 @@
 			<control type="label">
 				<description>number of files text label</description>
 				<posx>450</posx>
-				<posy>630</posy>
+				<posy>600</posy>
 				<width>400</width>
 				<height>25</height>
 				<align>right</align>
