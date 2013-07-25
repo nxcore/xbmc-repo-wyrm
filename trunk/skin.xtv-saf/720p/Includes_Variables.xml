@@ -65,8 +65,9 @@
 		<value condition="substring(Container(100).ListItem.Property(Mpaa),TV-MA)">special://skin/extras/images/rating/TV-MA.png</value>
 	</variable>
 	 <variable name="Overlay" description="Overlay image">
-		<value condition="ListItem.IsResumable">overlaypartialywatched.png</value>
-		<value>$INFO[ListItem.Overlay]</value>
+		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,-1) + ![IntegerGreaterThan(ListItem.PercentPlayed,19)]">overlayunwatched.png</value>
+		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,19) + ![IntegerGreaterThan(ListItem.PercentPlayed,81)]">overlaypartialywatched.png</value>
+		<value>overlaywatched.png</value>
 	</variable>
 	 <variable name="PVROverlay" description="PVR Overlay image">
 		<value condition="ListItem.IsRecording">overlayisrecording.png</value>

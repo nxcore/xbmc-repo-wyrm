@@ -1040,18 +1040,6 @@
 						<visible>Skin.String(custom-background)</visible>
 					</control>
 					<control type="radiobutton" id="404">
-						<description>Media In Background Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<label>31862</label>
-						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
-						<selected>Skin.HasSetting(HomeViewToggle)</selected>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="405">
 						<description>Background Fanart Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1063,7 +1051,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="406">
+					<control type="radiobutton" id="405">
 						<description>Background ExtraFanart Toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -1072,6 +1060,18 @@
 						<onclick>Skin.ToggleSetting(background-extrafanart)</onclick>
 						<selected>Skin.HasSetting(background-extrafanart)</selected>
 						<enable>Skin.HasSetting(background-fanart)</enable>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<radioposx>830</radioposx>
+					</control>
+					<control type="radiobutton" id="406">
+						<description>Media In Background Toggle</description>
+						<font>font12</font>
+						<width>885</width>
+						<label>31862</label>
+						<textwidth>750</textwidth>
+						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
+						<selected>Skin.HasSetting(HomeViewToggle)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
