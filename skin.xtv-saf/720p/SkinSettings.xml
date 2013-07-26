@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
-
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
