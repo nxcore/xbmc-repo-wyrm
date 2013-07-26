@@ -245,7 +245,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-						<visible>IsEmpty(Control.GetLabel(6300)) + !IsEmpty(ListItem.Art(fanart))</visible>
+						<visible>[IsEmpty(Control.GetLabel(6300)) | !Skin.HasSetting(background-extrafanart)] + !IsEmpty(ListItem.Art(fanart))</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -272,7 +272,7 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-						<visible>IsEmpty(Control.GetLabel(6310)) + !IsEmpty(ListItem.Art(fanart))</visible>
+						<visible>[IsEmpty(Control.GetLabel(6310)) | !Skin.HasSetting(background-extrafanart)] + !IsEmpty(ListItem.Art(fanart))</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -290,7 +290,7 @@
 						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(Control.GetLabel(6320))</visible>
+						<visible>IsEmpty(Control.GetLabel(6320)) | !Skin.HasSetting(background-extrafanart)</visible>
 						<!-- TV Season Fallback -->
 						<control type="image" id="6322">
 							<posx>0</posx>
@@ -333,7 +333,7 @@
 						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path)</visible>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(Control.GetLabel(6340))</visible>
+						<visible>IsEmpty(Control.GetLabel(6340)) | !Skin.HasSetting(background-extrafanart)</visible>
 						<control type="image" id="6342">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -405,30 +405,27 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(background-slideshow)</visible>
-			<control type="group">
-				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
-				<control type="image">
-					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<texture background="true">black.png</texture>
-					<aspectratio>scale</aspectratio>
-				</control>
-				<control type="multiimage">
-					<description>Backgroung ArtistSlideshow fanart image</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-					<aspectratio>keep</aspectratio>
-					<timeperimage>5000</timeperimage>
-					<fadetime>300</fadetime>
-					<randomize>true</randomize>
-				</control>
+			<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
+			<control type="image">
+				<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">black.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="multiimage">
+				<description>Backgroung ArtistSlideshow fanart image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<aspectratio>keep</aspectratio>
+				<timeperimage>5000</timeperimage>
+				<fadetime>300</fadetime>
+				<randomize>true</randomize>
 			</control>
 		</control>
 		<control type="image">

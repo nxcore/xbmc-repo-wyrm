@@ -42,7 +42,7 @@
 					<width>26</width>
 					<texture>$VAR[Overlay]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<visible>Skin.HasSetting(watched-overlay)</visible>
+					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="405" width="276">
@@ -80,7 +80,7 @@
 					<height>48</height>
 					<width>48</width>
 					<texture>$VAR[Overlay]</texture>
-					<visible>Skin.HasSetting(watched-overlay)</visible>
+					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 			</focusedlayout>
 		</control>
@@ -98,26 +98,6 @@
 				<ondown>9000</ondown>
 				<orientation>horizontal</orientation>
 				<visible>Skin.HasSetting(sbar)</visible>
-			</control>
-			<!-- Star Rating -->
-			<control type="image">
-				<posx>234</posx>
-				<posy>335</posy>
-				<width>200</width>
-				<height>25</height>
-				<info>ListItem.StarRating</info>
-				<colordiffuse>StarDiffuse</colordiffuse>
-				<visible>!IsEmpty(ListItem.Thumb) + !IsEmpty(ListItem.StarRating)</visible>
-			</control>
-			<!-- MPAA Rating -->
-			<control type="image">
-				<posx>272</posx>
-				<posy>367</posy>
-				<width>212</width>
-				<height>62</height>
-				<aligny>bottom</aligny>
-				<texture>$VAR[VideoRating]</texture>
-				<aspectratio>keep</aspectratio>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
@@ -145,18 +125,42 @@
 				<textoffsetx>0</textoffsetx>
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			</control>
-			<!-- Genre -->
-			<control type="label">
-				<posx>272</posx>
-				<posy>474</posy>
-				<width>929</width>
-				<height>37</height>
-				<font>font13</font>
-				<align>left</align>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<info>ListItem.Genre</info>
-				<textoffsetx>0</textoffsetx>
-			</control>
+			<control type="group">
+				<visible>!IsEmpty(ListItem.Title)</visible>
+				<!-- Star Rating -->
+				<control type="image">
+					<posx>234</posx>
+					<posy>335</posy>
+					<width>200</width>
+					<height>25</height>
+					<info>ListItem.StarRating</info>
+					<colordiffuse>StarDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.StarRating)</visible>
+				</control>
+				<!-- MPAA Rating -->
+				<control type="image">
+					<posx>272</posx>
+					<posy>367</posy>
+					<width>212</width>
+					<height>62</height>
+					<aligny>bottom</aligny>
+					<texture>$VAR[VideoRating]</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<!-- Genre -->
+				<control type="label">
+					<posx>272</posx>
+					<posy>474</posy>
+					<width>929</width>
+					<height>37</height>
+					<font>font13</font>
+					<align>left</align>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<info>ListItem.Genre</info>
+					<textoffsetx>0</textoffsetx>
+					<visible>!IsEmpty(ListItem.Genre)</visible>
+				</control>
+			</control>	
 		</control>
 	</include>
 </includes>

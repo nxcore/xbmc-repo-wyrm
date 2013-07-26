@@ -25,7 +25,7 @@
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<visible>stringcompare(ListItem.Label,..)</visible>
+					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>1</posx>
@@ -35,7 +35,7 @@
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
-					<visible>!stringcompare(ListItem.Label,..)</visible>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
 			<itemlayout height="169" width="120" condition="Container.Content(Addons)">
@@ -47,7 +47,7 @@
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<visible>stringcompare(ListItem.Label,..)</visible>
+					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="image">
 					<posx>1</posx>
@@ -57,7 +57,7 @@
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
-					<visible>!stringcompare(ListItem.Label,..)</visible>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="169" width="120" condition="!Container.Content(Addons)">
@@ -72,7 +72,7 @@
 						<height>169</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<visible>stringcompare(ListItem.Label,..)</visible>
+						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -92,7 +92,7 @@
 						<height>144</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
-						<visible>!stringcompare(ListItem.Label,..)</visible>
+						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 				</control>	
 				<!-- Watched Overlay -->
@@ -105,7 +105,7 @@
 						<effect type="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" />
 					</animation>
 					<texture>$VAR[Overlay]</texture>
-					<visible>Skin.HasSetting(watched-overlay)</visible>
+					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 			</focusedlayout>
 			<focusedlayout height="169" width="120" condition="Container.Content(Addons)">
@@ -120,7 +120,7 @@
 						<height>169</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<visible>stringcompare(ListItem.Label,..)</visible>
+						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -140,7 +140,7 @@
 						<height>144</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
-						<visible>!stringcompare(ListItem.Label,..)</visible>
+						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 				</control>	
 			</focusedlayout>
@@ -158,6 +158,7 @@
 				<aligny>bottom</aligny>
 				<aspectratio align="left">keep</aspectratio>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>!IsEmpty(ListItem.Title)</visible>
 			</control>
 			<!-- Title -->
 			<control type="label">
@@ -188,31 +189,32 @@
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
-			<!-- Genre -->
-			<control type="label">
-				<posx>17</posx>
-				<posy>212</posy>
-				<width>460</width>
-				<height>37</height>
-				<font>font11</font>
-				<align>left</align>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<info>ListItem.Genre</info>
-				<textoffsetx>0</textoffsetx>
-			</control>
-			<!-- Watched TV episodes -->
-			<control type="label">
-				<posx>17</posx>
-				<posy>246</posy>
-				<width>354</width>
-				<height>31</height>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<label>$LOCALIZE[20360]: $INFO[ListItem.Property(NumEpisodes)]</label>
-				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
-			</control>
 			<control type="group">
-				<visible>!IsEmpty(listitem.Duration) + !Container.Content(TVShows) + !Container.Content(seasons)</visible>
+				<visible>!IsEmpty(ListItem.Title)</visible>
+				<!-- Genre -->
+				<control type="label">
+					<posx>17</posx>
+					<posy>212</posy>
+					<width>460</width>
+					<height>37</height>
+					<font>font11</font>
+					<align>left</align>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<info>ListItem.Genre</info>
+					<textoffsetx>0</textoffsetx>
+					<visible>!IsEmpty(ListItem.Genre)</visible>
+				</control>
+				<!-- Watched TV episodes -->
+				<control type="label">
+					<posx>17</posx>
+					<posy>246</posy>
+					<width>354</width>
+					<height>31</height>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<label>$LOCALIZE[20360]: $INFO[ListItem.Property(NumEpisodes)]</label>
+					<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
+				</control>
 				<!-- Duration -->
 				<control type="label">
 					<posx>17</posx>
@@ -221,76 +223,55 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<info>ListItem.Duration</info>
-					<visible>substring(listitem.Duration,hrs)</visible>
+					<label>$VAR[VideoDuration]</label>
+					<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 				</control>
-				<control type="label">
+				<!-- MPAA Rating -->
+				<control type="image">
 					<posx>17</posx>
-					<posy>250</posy>
-					<width>200</width>
-					<height>25</height>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<info>ListItem.Duration</info>
-					<visible>substring(listitem.Duration,min)</visible>
-					<visible>!substring(listitem.Duration,hrs)</visible>
+					<posy>280</posy>
+					<width>212</width>
+					<height>62</height>
+					<aligny>bottom</aligny>
+					<texture>$VAR[VideoRating]</texture>
+					<aspectratio>keep</aspectratio>
 				</control>
-				<control type="label">
+				<!-- Star Rating -->
+				<control type="image">
+					<posx>300</posx>
+					<posy>292</posy>
+					<width>177</width>
+					<height>25</height>
+					<info>ListItem.StarRating</info>
+					<align>right</align>
+					<colordiffuse>StarDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.StarRating)</visible>
+				</control>
+				<!-- Plot Outline -->
+				<control type="textbox">
 					<posx>17</posx>
-					<posy>250</posy>
-					<width>200</width>
-					<height>25</height>
-					<aligny>center</aligny>
+					<posy>350</posy>
+					<width>460</width>
+					<height>316</height>
 					<font>font12</font>
-					<label>$INFO[ListItem.Duration,, mins]</label>
-					<visible>!substring(listitem.Duration,min)</visible>
+					<label fallback="161">$INFO[ListItem.PlotOutline]</label>
+					<align>left</align>
+					<visible>!IsEmpty(ListItem.PlotOutline)</visible>
+					<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 				</control>
-			</control>
-			<!-- MPAA Rating -->
-			<control type="image">
-				<posx>17</posx>
-				<posy>280</posy>
-				<width>212</width>
-				<height>62</height>
-				<aligny>bottom</aligny>
-				<texture>$VAR[VideoRating]</texture>
-				<aspectratio>keep</aspectratio>
-			</control>
-			<!-- Star Rating -->
-			<control type="image">
-				<posx>300</posx>
-				<posy>292</posy>
-				<width>177</width>
-				<height>25</height>
-				<info>ListItem.StarRating</info>
-				<align>right</align>
-				<colordiffuse>StarDiffuse</colordiffuse>
-				<visible>!IsEmpty(ListItem.StarRating)</visible>
-			</control>
-			<!-- Plot Outline -->
-			<control type="textbox">
-				<posx>17</posx>
-				<posy>350</posy>
-				<width>460</width>
-				<height>316</height>
-				<font>font12</font>
-				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
-				<align>left</align>
-				<visible>!IsEmpty(ListItem.PlotOutline)</visible>
-				<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
-			</control>
-			<!-- Plot (Show if no outline available)-->
-			<control type="textbox">
-				<posx>17</posx>
-				<posy>350</posy>
-				<width>460</width>
-				<height>316</height>
-				<font>font12</font>
-				<label fallback="161">$INFO[ListItem.Plot]</label>
-				<align>left</align>
-				<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
-				<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
-			</control>
+				<!-- Plot (Show if no outline available)-->
+				<control type="textbox">
+					<posx>17</posx>
+					<posy>350</posy>
+					<width>460</width>
+					<height>316</height>
+					<font>font12</font>
+					<label fallback="161">$INFO[ListItem.Plot]</label>
+					<align>left</align>
+					<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
+					<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
+				</control>
+			</control>	
 			<control type="scrollbar" id="28">
 				<posx>1244</posx>
 				<posy>120</posy>

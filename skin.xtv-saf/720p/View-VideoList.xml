@@ -60,8 +60,8 @@
 							<textcolor>disabled-text</textcolor>
 							<info>ListItem.Label2</info>
 						</control>
-					</control>	
-				</control>	
+					</control>
+				</control>
 				<control type="group">
 					<visible>Container.Content(Addons)</visible>
 					<control type="label">
@@ -98,8 +98,8 @@
 							<textcolor>disabled-text</textcolor>
 							<info>ListItem.Property(Addon.Description)</info>
 						</control>
-					</control>	
-				</control>	
+					</control>
+				</control>
 				<control type="group">
 					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 					<control type="label">
@@ -136,8 +136,8 @@
 							<textcolor>disabled-text</textcolor>
 							<info>ListItem.PlotOutline</info>
 						</control>
-					</control>	
-				</control>	
+					</control>
+				</control>
 				<control type="group">
 					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
 					<control type="label">
@@ -174,8 +174,8 @@
 							<textcolor>disabled-text</textcolor>
 							<label>$VAR[VideoDuration]</label>
 						</control>
-					</control>	
-				</control>	
+					</control>
+				</control>
 			</itemlayout>
 			<focusedlayout width="575" height="76">
 				<control type="image">
@@ -225,7 +225,7 @@
 							<info>ListItem.Label2</info>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
-					</control>	
+					</control>
 				</control>
 				<control type="group">
 					<visible>Container.Content(Addons)</visible>
@@ -268,7 +268,7 @@
 							<info>ListItem.Property(Addon.Description)</info>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
-					</control>	
+					</control>
 				</control>
 				<control type="group">
 					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
@@ -309,8 +309,8 @@
 							<info>ListItem.PlotOutline</info>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
-					</control>	
-				</control>	
+					</control>
+				</control>
 				<control type="group">
 					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
 					<control type="label">
@@ -350,8 +350,8 @@
 							<label>$VAR[VideoDuration]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
-					</control>	
-				</control>	
+					</control>
+				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
@@ -504,7 +504,7 @@
 							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
-						<control type="group"> 
+						<control type="group">
 							<control type="image">
 								<posx>242</posx>
 								<posy>314</posy>
@@ -523,7 +523,7 @@
 								<aspectratio>keep</aspectratio>
 								<texture>special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
 							</control>
-						</control>	
+						</control>
 					</control>
 					<control type="group">
 						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -688,7 +688,7 @@
 						<aspectratio>keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Mpaa)</visible>
 					</control>
-					<!-- Logo --> 
+					<!-- Logo -->
 					<control type="group">
 						<control type="image">
 							<posx>17</posx>
@@ -722,7 +722,7 @@
 								<visible>!StringCompare(Control.GetLabel(37016),blank.png)</visible>
 							</control>
 						</control>
-					</control>	
+					</control>
 					<!-- Plot Outline -->
 					<control type="textbox">
 						<posx>17</posx>
