@@ -245,4 +245,8 @@
 		<value condition="!IsEmpty(ListItem(5).Art(poster))">$INFO[ListItem(5).Art(poster)]</value>
 		<value>$INFO[ListItem(5).Icon]</value>
 	</variable>
+    <variable name="VideoLogo">
+        <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(TVShows) | Container.Content(Movies)]">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(TVShows) | Container.Content(Movies)]]">$INFO[ListItem.path,,logo.png]</value>
+    </variable>
 </includes>

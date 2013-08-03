@@ -690,12 +690,13 @@
 					</control>
 					<!-- Logo -->
 					<control type="group">
+						<visible>!Skin.HasSetting(hide-chrome)</visible>
 						<control type="image">
 							<posx>17</posx>
 							<posy>412</posy>
 							<width>184</width>
 							<height>50</height>
-							<texture fallback="blank.png">$INFO[ListItem.path]logo.png</texture>
+							<texture fallback="blank.png">$VAR[VideoLogo]</texture>
 							<aligny>bottom</aligny>
 							<aspectratio align="left">keep</aspectratio>
 							<visible>[Container.Content(movies) | Container.Content(tvshows)]</visible>
