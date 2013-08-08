@@ -500,7 +500,7 @@
 				<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
 				<visible>IntegerGreaterThan(system.memory(used.percent),95)</visible>
 			</control>
-		</control>	
+		</control>
 	</include>
 	<!-- Start Number of Files Include -->
 	<include name="#files">
@@ -542,17 +542,6 @@
 				<label>$INFO[ListItem.SortLetter]</label>
 				<font>font28</font>
 			</control>
-		</control>
-	</include>
-	<include name="PageControl">
-		<control type="scrollbar" id="23">
-			<posx>1246</posx>
-			<posy>112</posy>
-			<width>20</width>
-			<height>555</height>
-			<onleft>50</onleft>
-			<onright>9000</onright>
-			<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
 		</control>
 	</include>
 	<!-- Start List Item Icon Include -->
@@ -680,7 +669,7 @@
 					<texture background="true" flipy="true" diffuse="mask-fade.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio aligny="center" align="center">stretch</aspectratio>
 				</control>
-			</control>	
+			</control>
 			<control type="group">
 				<visible>[Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
 				<control type="image">
@@ -873,7 +862,7 @@
 		<aspectratio aligny="bottom">keep</aspectratio>
 		<visible>Skin.HasSetting(homemenu-vertical)</visible>
 	</include>
-	
+
 	<include name="scrolltext">
 		<scroll>true</scroll>
 	</include>
@@ -912,28 +901,13 @@
 		<animation condition="IntegerGreaterThan(Container(9900).NumItems,0) + !IntegerGreaterThan(Container(9900).NumItems,1)" effect="slide" start="0,0" end="525,0" time="0" easing="inout" reversible="true">Conditional</animation>
 	</include>
 	<!-- End Animation Includes -->
+
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
 		<animation effect="slide" time="0" start="0,0" end="0,-720">Visible</animation>
 		<animation effect="fade" time="200" delay="300">WindowOpen</animation>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
-	
 	<!-- End Visibility Includes -->
 
-	<!-- Start of Run scripts Includes -->
-	<include name="StartupPlaylist">
-		<onfocus>PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
-	</include>
-	<include name="StartupVideo">
-		<onfocus>PlayMedia($ESCINFO[Skin.String(intro-vid-location)])</onfocus>
-	</include>
-	<!-- Conditional onloads don't work for early pre-Eden builds, so use a conditional include instead -->
-	<include name="StartTVTunes">
-		<onload>RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
-	</include>
-	<include name="StartArtistSlideshow">
-		<onload>RunScript(script.artistslideshow,daemon=True)</onload>
-	</include>
-	<!-- End of Run scripts Includes -->
 </includes>
