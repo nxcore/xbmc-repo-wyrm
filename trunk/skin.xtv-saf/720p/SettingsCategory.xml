@@ -36,7 +36,7 @@
 			<height>542</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
-			<onright>23</onright>
+			<onright>9000</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
 		</control>
@@ -78,10 +78,20 @@
 			<posy>112</posy>
 			<width>20</width>
 			<height>542</height>
-			<onleft>3</onleft>
+			<onleft>9000</onleft>
 			<onright>5</onright>
 			<visible>Skin.HasSetting(sbar) + [Container(5).HasPrevious | Container(5).HasNext]</visible>
 		</control>
+		<control type="textbox" id="6">
+			<description>Setting description area</description>
+			<posx>53</posx>
+			<posy>654</posy>
+			<width>870</width>
+			<height>62</height>
+			<font>font13</font>
+			<align>justify</align>
+			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+		</control> 
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<posx>53</posx>
@@ -123,6 +133,67 @@
 			<label>224</label>
 			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
+		</control>
+		<!-- Show "View-as" menu -->
+		<control type="group">
+			<posy>720</posy>
+			<include>View-as</include>
+			<control type="group" id="9000">
+				<visible>!Skin.HasSetting(view-as-lock) + !IsEmpty(Control.GetLabel(21))</visible>
+				<control type="image">
+					<description>Background shadow</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<texture>black.png</texture>
+					<colordiffuse>osd-background</colordiffuse>
+					<visible>!Skin.HasSetting(view-as-lock)</visible>
+				</control>
+				<control type="image">
+					<description>Button Background</description>
+					<posx>440</posx>
+					<posy>282</posy>
+					<width>396</width>
+					<height>125</height>
+					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				</control>
+				<control type="button" id="20">
+					<description>Setting level button</description>
+					<posx>450</posx>
+					<posy>294</posy>
+					<width>376</width>
+					<height>50</height>
+					<label>10037</label>
+					<font>font12</font>
+					<textoffsetx>18</textoffsetx>
+					<aligny>top</aligny>
+					<textoffsety>8</textoffsety>
+					<radioposx>330</radioposx>
+					<onright>23</onright>
+					<onleft>3</onleft>
+					<onup>21</onup>
+					<ondown>21</ondown>
+					<onclick>SettingsLevelChange</onclick>
+				</control>
+				<control type="button" id="21">
+					<description>Reset button</description> 
+					<posx>450</posx> 
+					<posy>344</posy> 
+					<width>376</width> 
+					<height>50</height> 
+					<textoffsety>8</textoffsety> 
+					<label>10035</label> 
+					<font>font12</font> 
+					<align>right</align> 
+					<aligny>top</aligny> 
+					<onleft>3</onleft> 
+					<onright>23</onright> 
+					<onup>20</onup> 
+					<ondown>20</ondown>
+					<onclick>SettingsReset</onclick>					
+				</control> 
+			</control>
 		</control>
 	</controls>
 </window>
