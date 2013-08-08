@@ -124,7 +124,15 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>SortLetterNotification</include>
-			<include>PageControl</include>
+			<control type="scrollbar" id="23">
+				<posx>1246</posx>
+				<posy>112</posy>
+				<width>20</width>
+				<height>555</height>
+				<onleft>50</onleft>
+				<onright>9000</onright>
+				<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+			</control>
 		</control>
 	</include>
 </includes>
