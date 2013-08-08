@@ -202,8 +202,6 @@
 					<align>right</align> 
 					<aligny>center</aligny> 
 					<label>$INFO[System.ProfileAutoLogin]</label> 
-					<scroll>Control.HasFocus(5)</scroll> 
-					<scrollspeed>30</scrollspeed> 
 					<visible>!System.HasLoginScreen + false</visible> 
 				</control> 
 			</control>
