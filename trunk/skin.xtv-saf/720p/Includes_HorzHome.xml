@@ -26,6 +26,18 @@
 			<texture>menu-mask.png</texture>
 			<colordiffuse>BBF9F9F9</colordiffuse>
 		</control>
+		<!-- Hidden button to startup startup-playlist and resync home menu items id they get out of sync -->
+		<control type="button" id="420">
+			<description>trigger playlist if selected</description>
+			<posx>-12</posx>
+			<posy>-12</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
+			<onfocus condition="Window.Previous(settings)">Control.SetFocus(9900,8)</onfocus>
+			<onfocus condition="Window.Previous(settings)">Control.SetFocus(9450,1)</onfocus>
+			<onfocus>Control.SetFocus(9000)</onfocus>
+		</control>
 		<!-- Show time on home screen -->
 		<control type="label">
 			<description>Time and Date</description>
@@ -38,6 +50,12 @@
 			<font>font18</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
+
+		<!-- Low memory warning -->
+		<include>memory-low</include>
+
+		<!-- RSS info -->
+		<include>page-info</include>
 
 		<!-- Shelf icons-->
 		<control type="group">
@@ -142,7 +160,7 @@
 									<aspectratio>stretch</aspectratio>
 									<texture fallback="DefaultMovies.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
 								</control>
-							</control>	
+							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9160)</visible>
 								<control type="image">
@@ -173,7 +191,7 @@
 										<aspectratio scalediffuse="true">stretch</aspectratio>
 										<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 									</control>
-								</control>	
+								</control>
 								<control type="label">
 									<description>Item label</description>
 									<posx>105</posx>
@@ -334,7 +352,7 @@
 								<aspectratio scalediffuse="true">stretch</aspectratio>
 								<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
-						</control>	
+						</control>
 						<control type="group">
 							<visible>Control.HasFocus(9210)</visible>
 							<control type="image">
@@ -552,7 +570,7 @@
 								<aligny>top</aligny>
 								<texture fallback="DefaultAudio.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
-						</control>	
+						</control>
 						<control type="group">
 							<visible>Control.HasFocus(9260)</visible>
 							<control type="image">
@@ -1164,49 +1182,49 @@
 					<item id="1">
 						<description>Video Menu</description>
 						<label>3</label>
-						<onclick>SetFocus(9100)</onclick>
+						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
 						<label>20338</label>
-						<onclick>SetFocus(9150)</onclick>
+						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 						</item>
 					<item id="3">
 						<description>TV Menu</description>
 						<label>19020</label>
-						<onclick>SetFocus(9200)</onclick>
+						<onclick>-</onclick>
 						<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 					</item>
 					<item id="4">
 						<description>Music Menu</description>
 						<label>2</label>
-						<onclick>SetFocus(9250)</onclick>
+						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="5">
 						<description>Pictures Menu</description>
 						<label>1</label>
-						<onclick>SetFocus(9300)</onclick>
+						<onclick>-</onclick>
 						<visible>Skin.HasSetting(home-photos)</visible>
 					</item>
 					<item id="6">
 						<description>Addon Menu</description>
 						<label>24001</label>
-						<onclick>SetFocus(9350)</onclick>
+						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-programs)</visible>
 					</item>
 					<item id="7">
 						<description>Weather Menu</description>
 						<label>8</label>
-						<onclick>SetFocus(9400)</onclick>
+						<onclick>-</onclick>
 						<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					<item id="8">
 						<description>System Menu</description>
 						<label>13000</label>
-						<onclick>SetFocus(9450)</onclick>
+						<onclick>-</onclick>
 					</item>
 				</content>
 			</control>

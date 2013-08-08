@@ -1,7 +1,30 @@
 <includes>
 	<include name="VertHomeMenu">
-		<backgroundcolor>0</backgroundcolor>
 		<include>background</include>
+		<include>screen-fade</include>
+		<control type="button" id="420">
+			<description>trigger playlist if selected</description>
+			<posx>-12</posx>
+			<posy>-12</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
+			<onfocus>Control.SetFocus(9000)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>
+		<!-- Bring up Player controls if go left -->
+		<control type="button" id="421">
+			<description>trigger player controls if selected</description>
+			<posx>-24</posx>
+			<posy>-24</posy>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>ActivateWindow(PlayerControls)</onfocus>
+			<onfocus>Control.SetFocus(9000)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>
 		<control type="group">
 			<visible>!Skin.HasSetting(home-time)</visible>
 			<!-- show time on home screen -->
@@ -92,18 +115,12 @@
 				</control>
 			</control>
 		</control>
-		<!-- Bring up Player controls if go left -->
-		<control type="button" id="421">
-			<description>trigger player controls if selected</description>
-			<posx>-24</posx>
-			<posy>-24</posy>
-			<width>1</width>
-			<height>1</height>
-			<onfocus>ActivateWindow(PlayerControls)</onfocus>
-			<onfocus>SetFocus(9000)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-		</control>
+
+		<!-- Low memory warning -->
+		<include>memory-low</include>
+
+		<!-- RSS info -->
+		<include>page-info</include>
 
 		<!-- Markers for excess menu items -->
 		<control type="image">
