@@ -56,13 +56,13 @@
 			<height>456</height>
 			<focusposition>1</focusposition>
 			<movement>2</movement>
-			<onleft>9000</onleft>
-			<onright>23</onright>
+			<onleft>52</onleft>
+			<onright>52</onright>
 			<onup>52</onup>
 			<ondown>52</ondown>
 			<scrolltime>200</scrolltime>
 			<preloaditems>4</preloaditems>
-			<pagecontrol>23</pagecontrol>
+			<pagecontrol>-</pagecontrol>
 			<itemlayout width="800" height="114">
 				<control type="image">
 					<posx>0</posx>
@@ -133,7 +133,7 @@
 		<control type="group">
 			<posy>66</posy>
 			<visible>Control.IsVisible(52)</visible>
-			<visible>[IntegerGreaterThan(Container(52).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(52).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
+			<!--<visible>[IntegerGreaterThan(Container(52).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(52).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>-->
 			<control type="group">
 				<control type="image">
 					<description>Slider</description>
