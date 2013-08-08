@@ -171,7 +171,7 @@
 				<align>left</align>
 				<font>font13</font>
 			</control>
-			<control type="label">
+			<!--<control type="label">
 				<description>CPU Text</description>
 				<posx>0</posx>
 				<posy>520</posy>
@@ -208,7 +208,7 @@
 				<width>566</width>
 				<height>18</height>
 				<info>system.memory(used)</info>
-			</control>
+			</control>-->
 		</control>
  		<control type="group">
 			<visible>Control.HasFocus(100)</visible>
