@@ -5,7 +5,7 @@
 	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>backgroundvideo</include>
-		<include>Fake-Overlay</include>
+		<!--<include>Fake-Overlay</include>-->
 		<control type="image">
 			<description>TV Logo</description>
 			<include>icon-header-commons</include>
@@ -26,7 +26,7 @@
 			<control type="grouplist">
 				<visible>Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16)</visible>
 				<animation effect="fade" start="0" end="100" time="200" delay="100">Visible</animation>
-				<posx>10</posx>
+				<posx>20</posx>
 				<posy>116</posy>
 				<width>628</width>
 				<height>578</height>
@@ -59,20 +59,21 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Player.HasVideo</visible>
+					<posx>0</posx>
 					<width>512</width>
 					<height>256</height>
 					<animation effect="fade" start="0" end="100" time="200" delay="100">Visible</animation>
+					<animation effect="zoom" start="100" end="0" time="0">WindowClose</animation>
+					<visible>Player.HasVideo + !Skin.HasSetting(HomeViewToggle)</visible>
 					<control type="videowindow">
-						<animation effect="zoom" start="100" end="0" time="0">WindowClose</animation>
 						<posx>58</posx>
 						<width>512</width>
 						<height>256</height>
+						<aspectratio>keep</aspectratio>
 						<align>center</align>
 						<aligny>top</aligny>
-						<visible>!Skin.HasSetting(HomeViewToggle)</visible>
 					</control>
-				</control>
+				</control>	
 				<control type="label">
 					<info>ListItem.Title</info>
 					<width>628</width>
