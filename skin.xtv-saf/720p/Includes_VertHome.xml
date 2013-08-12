@@ -355,6 +355,41 @@
 					<visible>!Skin.HasSetting(home-programs)</visible>
 				</item>
 				<item>
+					<icon>$INFO[Skin.String(CustomAddon.1.Icon)]</icon>
+					<thumb>$INFO[Skin.String(CustomAddon.1.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomAddon.1.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.1.Path)]</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.1.Path))</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(CustomAddon.2.Icon)]</icon>
+					<thumb>$INFO[Skin.String(CustomAddon.2.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomAddon.2.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.2.Path)]</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.2.Path))</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(CustomAddon.3.Icon)]</icon>
+					<thumb>$INFO[Skin.String(CustomAddon.3.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomAddon.3.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.3.Path)]</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.3.Path))</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(CustomAddon.4.Icon)]</icon>
+					<thumb>$INFO[Skin.String(CustomAddon.4.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomAddon.4.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.4.Path)]</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.4.Path))</visible>
+				</item>
+				<item>
+					<icon>$INFO[Skin.String(CustomAddon.5.Icon)]</icon>
+					<thumb>$INFO[Skin.String(CustomAddon.5.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomAddon.5.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.5.Path))</visible>
+				</item>
+				<item>
 					<icon>icon-photo.png</icon>
 					<thumb>icon-photo-blur1.png</thumb>
 					<label>1</label>

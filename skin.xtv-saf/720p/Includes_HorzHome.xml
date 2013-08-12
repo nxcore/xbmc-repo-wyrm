@@ -36,7 +36,7 @@
 			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus condition="Window.Previous(settings)">Control.SetFocus(9900,8)</onfocus>
 			<onfocus condition="Window.Previous(settings)">Control.SetFocus(9450,1)</onfocus>
-			<onfocus>Control.SetFocus(9000)</onfocus>
+			<onfocus condition="!Window.Previous(settings)">Control.SetFocus(9000)</onfocus>
 		</control>
 		<!-- Show time on home screen -->
 		<control type="label">
@@ -1780,6 +1780,86 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
+					<label>$INFO[Skin.String(CustomAddon.1.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.1.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!IsEmpty(Skin.String(CustomAddon.1.Path))</visible>
+				</control>
+				<control type="button" id="9372">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>$INFO[Skin.String(CustomAddon.2.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.2.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!IsEmpty(Skin.String(CustomAddon.2.Path))</visible>
+				</control>
+				<control type="button" id="9374">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>$INFO[Skin.String(CustomAddon.3.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.3.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!IsEmpty(Skin.String(CustomAddon.3.Path))</visible>
+				</control>
+				<control type="button" id="9376">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>$INFO[Skin.String(CustomAddon.4.Label)]</label>
+					<onclick>$INFO[Skin.String(CustomAddon.4.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!IsEmpty(Skin.String(CustomAddon.4.Path))</visible>
+				</control>
+				<control type="button" id="9378">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>$INFO[Skin.String(CustomAddon.5.Label)] </label>
+					<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9400</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!IsEmpty(Skin.String(CustomAddon.5.Path))</visible>
+				</control>
+				<control type="button" id="9380">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
 					<label>157</label>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
@@ -1791,7 +1871,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9372">
+				<control type="button" id="9382">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -1806,7 +1886,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9374">
+				<control type="button" id="9384">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -1821,7 +1901,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9376">
+				<control type="button" id="9386">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -1836,7 +1916,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9378">
+				<control type="button" id="9388">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
