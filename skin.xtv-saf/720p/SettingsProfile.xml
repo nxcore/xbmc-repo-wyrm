@@ -1,6 +1,6 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
-	 
+
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<controls>
@@ -106,17 +106,17 @@
 			<aligny>center</aligny>
 		</control>
 		<control type="label">
-			<description>Profile to Auto login</description>		
-			<posx>10</posx> 
-			<posy>500</posy> 
-			<width>696</width> 
-			<height>40</height> 
-			<font>font12</font> 
-			<align>center</align> 
-			<aligny>center</aligny> 
-			<label>$LOCALIZE[14061]: $INFO[System.ProfileAutoLogin]</label> 
-			<visible>!System.HasLoginScreen + !IsEmpty(System.ProfileAutoLogin)</visible> 
-		</control> 
+			<description>Profile to Auto login</description>
+			<posx>10</posx>
+			<posy>500</posy>
+			<width>696</width>
+			<height>40</height>
+			<font>font12</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[14061]: $INFO[System.ProfileAutoLogin]</label>
+			<visible>!System.HasLoginScreen + !IsEmpty(System.ProfileAutoLogin)</visible>
+		</control>
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>
@@ -157,53 +157,53 @@
 					<onup>4</onup>
 					<ondown>5</ondown>
 				</control>
-				<control type="button" id="5"> 
-					<description>Choose auto login user</description> 
-					<posx>450</posx> 
-					<posy>344</posy> 
-					<width>376</width> 
-					<height>50</height> 
-					<textoffsety>8</textoffsety> 
-					<label>31960</label> 
-					<font>font12</font> 
-					<align>right</align> 
-					<aligny>top</aligny> 
-					<onleft>23</onleft> 
-					<onright>2</onright> 
-					<onup>4</onup> 
-					<ondown>4</ondown> 
+				<control type="button" id="5">
+					<description>Choose auto login user</description>
+					<posx>450</posx>
+					<posy>344</posy>
+					<width>376</width>
+					<height>50</height>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<label>14061</label>
+					<font>font12</font>
+					<aligny>top</aligny>
+					<onleft>23</onleft>
+					<onright>2</onright>
+					<onup>4</onup>
+					<ondown>4</ondown>
 					<enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
-					<visible>!System.HasLoginScreen + false</visible> 
-				</control> 
-				<control type="button"> 
-					<description>Choose auto login user (grayed out)</description> 
-					<posx>450</posx> 
-					<posy>394</posy> 
-					<width>376</width> 
-					<height>50</height> 
-					<textoffsety>8</textoffsety> 
-					<label>31960</label> 
-					<font>font12</font> 
-					<align>right</align> 
-					<aligny>top</aligny> 
-					<onleft>23</onleft> 
-					<onright>2</onright> 
-					<onup>5</onup> 
-					<ondown>4</ondown> 
-					<visible>System.HasLoginScreen + false</visible> 
-					<enable>false</enable> 
-				</control> 
-				<control type="label"> 
-					<posx>450</posx> 
-					<posy>394</posy> 
-					<width>376</width> 
-					<height>50</height> 
-					<font>font12</font> 
-					<align>right</align> 
-					<aligny>center</aligny> 
-					<label>$INFO[System.ProfileAutoLogin]</label> 
-					<visible>!System.HasLoginScreen + false</visible> 
-				</control> 
+					<visible>!System.HasLoginScreen</visible>
+				</control>
+				<control type="button">
+					<description>Choose auto login user (grayed out)</description>
+					<posx>450</posx>
+					<posy>394</posy>
+					<width>376</width>
+					<height>50</height>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<label>14061</label>
+					<font>font12</font>
+					<aligny>top</aligny>
+					<onleft>23</onleft>
+					<onright>2</onright>
+					<onup>5</onup>
+					<ondown>4</ondown>
+					<visible>System.HasLoginScreen</visible>
+					<enable>false</enable>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>394</posy>
+					<width>376</width>
+					<height>50</height>
+					<font>font12</font>
+					<align>right</align>
+					<aligny>top</aligny>
+					<label>$INFO[System.ProfileAutoLogin]</label>
+					<visible>!System.HasLoginScreen</visible>
+				</control>
 			</control>
 		</control>
 	</controls>

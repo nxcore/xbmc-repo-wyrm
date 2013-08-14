@@ -34,9 +34,10 @@
 			<width>1</width>
 			<height>1</height>
 			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
-			<onfocus condition="Window.Previous(settings)">Control.SetFocus(9900,8)</onfocus>
-			<onfocus condition="Window.Previous(settings)">Control.SetFocus(9450,1)</onfocus>
-			<onfocus condition="!Window.Previous(settings)">Control.SetFocus(9000)</onfocus>
+			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9900,8)</onfocus>
+			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9450,1)</onfocus>
+			<onfocus condition="!Window.Previous(settings) | !Window.Previous(systeminfo)">Control.SetFocus(9900)</onfocus>
+			<onfocus condition="!Window.Previous(settings) | !Window.Previous(systeminfo)">Control.SetFocus(9000)</onfocus>
 		</control>
 		<!-- Show time on home screen -->
 		<control type="label">
