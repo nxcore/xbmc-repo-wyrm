@@ -20,7 +20,7 @@
 				<height>451</height>
 				<pagecontrol>10</pagecontrol>
 				<scrolltime>350</scrolltime>
-				<timeblocks>34</timeblocks>
+				<timeblocks>40</timeblocks>
 				<rulerunit>6</rulerunit>
 				<onleft>31</onleft>
 				<onright>31</onright>
@@ -77,7 +77,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>blue</selectedcolor>
+						<selectedcolor>listselectedtext</selectedcolor>
 						<info>ListItem.ChannelNumber</info>
 						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
@@ -117,7 +117,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>blue</selectedcolor>
+						<selectedcolor>listselectedtext</selectedcolor>
 						<info>ListItem.ChannelNumber</info>
 						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
