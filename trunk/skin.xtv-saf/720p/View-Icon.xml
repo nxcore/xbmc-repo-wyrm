@@ -45,9 +45,7 @@
 					<height>160</height>
 					<info>ListItem.Icon</info>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" />
-					</animation>
+					<animation effect="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
 				</control>
 				<control type="image">
 					<posx>141</posx>
