@@ -53,9 +53,7 @@
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<bordertexture border="10">picturepanel.png</bordertexture>
 					<bordersize>10</bordersize>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" />
-					</animation>
+					<animation effect="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
 					<visible>!SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
@@ -64,9 +62,7 @@
 					<width>128</width>
 					<height>128</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" />
-					</animation>
+					<animation effect="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>SubString(ListItem.Icon,Default,Left)</visible>
 				</control>

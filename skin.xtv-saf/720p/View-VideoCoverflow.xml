@@ -311,23 +311,11 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			<include>SortLetterNotification</include>
-			<!-- Scroll Bar -->
-			<control type="scrollbar" id="25">
-				<posx>17</posx>
-				<posy>590</posy>
-				<width>1239</width>
-				<height>20</height>
-				<onup>57</onup>
-				<ondown>9000</ondown>
-				<orientation>horizontal</orientation>
-				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
-			</control>
 			<control type="group">
-			<visible>!Skin.HasSetting(hide-chrome)</visible>
+				<visible>!Skin.HasSetting(hide-chrome) + !IsEmpty(ListItem.Title)</visible>
 				<!-- Show logo -->
-				<control type="image" id="7016">
+				<control type="image" id="7018">
 					<posx>564</posx>
 					<posy>612</posy>
 					<width>234</width>
@@ -337,7 +325,6 @@
 					<aligny>bottom</aligny>
 					<aspectratio align="left">keep</aspectratio>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<!-- Title -->
 				<control type="label">
@@ -350,23 +337,24 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>
-					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7016),blank.png,Left) + !IsEmpty(ListItem.Title)</visible>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					<visible>SubString(Control.GetLabel(7018),blank.png,Left</visible>
 				</control>
 			</control>
-			<!-- Title -->
-			<control type="label">
-				<posx>220</posx>
-				<posy>626</posy>
-				<width>832</width>
-				<height>37</height>
-				<font>font22</font>
-				<align>center</align>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<label>$INFO[ListItem.Label]</label>
-				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [IsEmpty(ListItem.Title) | Skin.HasSetting(hide-chrome)]</visible>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+			<control type="group">
+				<visible>Skin.HasSetting(hide-chrome)</visible>
+				<!-- Title -->
+				<control type="label">
+					<posx>220</posx>
+					<posy>626</posy>
+					<width>832</width>
+					<height>37</height>
+					<font>font22</font>
+					<align>center</align>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<label>$INFO[ListItem.Label]</label>
+					<textoffsetx>0</textoffsetx>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				</control>
 			</control>
 			<!-- Go Back -->
 			<control type="label">
@@ -416,7 +404,18 @@
 					<label>$VAR[VideoDuration]</label>
 					<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 				</control>
-			</control>	
+			</control>
+			<!-- Scroll Bar -->
+			<control type="scrollbar" id="25">
+				<posx>17</posx>
+				<posy>590</posy>
+				<width>1239</width>
+				<height>20</height>
+				<onup>57</onup>
+				<ondown>9000</ondown>
+				<orientation>horizontal</orientation>
+				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
+			</control>
 		</control>
 	</include>
 </includes>

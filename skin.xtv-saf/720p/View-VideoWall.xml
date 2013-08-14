@@ -62,9 +62,7 @@
 			</itemlayout>
 			<focusedlayout height="169" width="120" condition="!Container.Content(Addons)">
 				<control type="group">
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="100" end="140" center="auto" time="400" tween="back" easing="out" />
-					</animation>
+					<animation effect="zoom" start="90" end="140" center="auto" time="400" tween="back" easing="out" reversible="false">focus</animation>
 					<control type="image">
 						<posx>1</posx>
 						<posy>1</posy>
@@ -101,18 +99,14 @@
 					<posy>-10</posy>
 					<width>32</width>
 					<height>32</height>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" />
-					</animation>
+					<animation effect="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
 					<texture>$VAR[Overlay]</texture>
 					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 			</focusedlayout>
 			<focusedlayout height="169" width="120" condition="Container.Content(Addons)">
 				<control type="group">
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" start="100" end="140" center="auto" time="400" tween="back" easing="out" />
-					</animation>
+					<animation effect="zoom" start="90" end="140" center="auto" time="400" tween="back" easing="out" reversible="false">focus</animation>
 					<control type="image">
 						<posx>1</posx>
 						<posy>1</posy>
@@ -150,7 +144,7 @@
 			<include>SortLetterNotification</include>
 			<!-- Show logo -->
 			<control type="group">
-				<visible>!Skin.HasSetting(hide-chrome)</visible>
+				<visible>!Skin.HasSetting(hide-chrome) + !IsEmpty(ListItem.Title)</visible>
 				<control type="image" id="7016">
 					<posx>17</posx>
 					<posy>112</posy>
@@ -160,7 +154,6 @@
 					<aligny>bottom</aligny>
 					<aspectratio align="left">keep</aspectratio>
 					<animation effect="fade" delay="200" start="0" end="100" time="200">Visible</animation>
-					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<!-- Title -->
 				<control type="label">
@@ -175,26 +168,27 @@
 					<label>$INFO[ListItem.Label]</label>
 					<wrapmultiline>true</wrapmultiline>
 					<textoffsetx>0</textoffsetx>
-					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7016),blank.png,Left) + !IsEmpty(ListItem.Title)</visible>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+					<visible>SubString(Control.GetLabel(7016),blank.png,Left)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(hide-chrome)</visible>
+				<!-- Title -->
+				<control type="label">
+					<posx>17</posx>
+					<posy>112</posy>
+					<width>460</width>
+					<height>74</height>
+					<font>font20</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					<label>$INFO[ListItem.Label]</label>
+					<wrapmultiline>true</wrapmultiline>
+					<textoffsetx>0</textoffsetx>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</control>	
-			<!-- Title -->
-			<control type="label">
-				<posx>17</posx>
-				<posy>112</posy>
-				<width>460</width>
-				<height>74</height>
-				<font>font20</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<label>$INFO[ListItem.Label]</label>
-				<wrapmultiline>true</wrapmultiline>
-				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [IsEmpty(ListItem.Title) | Skin.HasSetting(hide-chrome)]</visible>
-				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-			</control>
 			<!-- Go Back -->
 			<control type="label">
 				<posx>17</posx>
