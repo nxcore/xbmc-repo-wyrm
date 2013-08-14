@@ -88,6 +88,7 @@
 			<posy>654</posy>
 			<width>870</width>
 			<height>62</height>
+			<textcolor>listselectedtext</textcolor>
 			<font>font13</font>
 			<align>justify</align>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
