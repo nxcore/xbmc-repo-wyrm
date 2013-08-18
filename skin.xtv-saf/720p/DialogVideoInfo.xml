@@ -494,7 +494,7 @@
 				<aligny>center</aligny>
 				<label>208</label>
 				<altlabel>1024</altlabel>
-				<usealttexture>Container.Content(TVShows)</usealttexture>
+				<usealttexture>Container.Content(tvshows)</usealttexture>
 			</control>
 			<control type="button" id="19">
 				<description>Edit Library entries</description>
@@ -516,7 +516,7 @@
 				<onclick>Playlist.Clear</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
 				<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
-				<visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
+				<visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
 			</control>
 			<control type="button" id="11">
 				<description>Trailer</description>
@@ -526,7 +526,7 @@
 				<label>20410</label>
 				<align>center</align>
 				<enable>!IsEmpty(ListItem.Trailer)</enable>
-				<visible>Container.Content(Movies)</visible>
+				<visible>Container.Content(movies)</visible>
 			</control>
 			<control type="button" id="5">
 				<description>Cast/Plot</description>

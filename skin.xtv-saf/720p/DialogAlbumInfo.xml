@@ -16,7 +16,7 @@
 			<scrollspeed>20</scrollspeed>
 			<label>$INFO[ListItem.Album]</label>
 			<font>font22</font>
-			<visible>container.content(albums)</visible>
+			<visible>Container.Content(albums)</visible>
 		</control>
 		<control type="fadelabel">
 			<description>Artist Name</description>
@@ -29,11 +29,11 @@
 			<scrollspeed>20</scrollspeed>
 			<label>$INFO[ListItem.Artist]</label>
 			<font>font22</font>
-			<visible>container.content(artists)</visible>
+			<visible>Container.Content(artists)</visible>
 		</control>
 		<!-- Album -->
 		<control type="group">
-			<visible>container.content(albums)</visible>
+			<visible>Container.Content(albums)</visible>
 			<control type="label">
 				<description>Artist value</description>
 				<posx>172</posx>
@@ -213,7 +213,7 @@
 		</control>
 		<!-- Artist -->
 		<control type="group">
-			<visible>container.content(artists)</visible>
+			<visible>Container.Content(artists)</visible>
 			<control type="label">
 				<description>Artist value</description>
 				<posx>172</posx>
@@ -428,7 +428,7 @@
 			<visible>!Control.IsVisible(4)</visible>
 			<itemlayout width="582" height="72">
 				<control type="group">
-					<visible>container.content(artists)</visible>
+					<visible>Container.Content(artists)</visible>
 					<animation effect="fade" start="100" end="60" condition="SubString(ListItem.Icon,Default,Left)">Conditional</animation>
 					<control type="image">
 						<posx>10</posx>
@@ -462,7 +462,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>container.content(albums)</visible>
+					<visible>Container.Content(albums)</visible>
 					<control type="label">
 						<posx>15</posx>
 						<posy>10</posy>
@@ -497,7 +497,7 @@
 					<texture border="8">default-button.png</texture>
 				</control>
 				<control type="group">
-					<visible>container.content(artists)</visible>
+					<visible>Container.Content(artists)</visible>
 					<animation effect="fade" start="100" end="60" condition="SubString(ListItem.Icon,Default,Left)">Conditional</animation>
 					<control type="image">
 						<posx>10</posx>
@@ -531,7 +531,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>container.content(albums)</visible>
+					<visible>Container.Content(albums)</visible>
 					<control type="label">
 						<posx>15</posx>
 						<posy>10</posy>

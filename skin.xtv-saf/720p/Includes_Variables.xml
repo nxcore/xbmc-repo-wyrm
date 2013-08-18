@@ -78,17 +78,13 @@
 		<value condition="substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
 	<variable name="PlayStateImage">
-		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">osd-btn-pause.png</value>
-		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">osd-btn-pause.png</value>
-		<value condition="Player.Seeking + !substring(Player.SeekOffset,-)">osd-btn-fastfwd.png</value>
-		<value condition="Player.Seeking + substring(Player.SeekOffset,-)">osd-btn-rewind.png</value>
+		<value condition="Player.Paused + !Player.Seeking + !Player.DisplayAfterSeek">osd-btn-pause.png</value>
+		<value condition="Player.Forwarding">osd-btn-fastfwd.png</value>
+		<value condition="Player.Rewinding">osd-btn-rewind.png</value>
 		<value condition="!Player.Seeking + [Player.Rewinding2x | Player.Rewinding4x | Player.Rewinding8x | Player.Rewinding16x | Player.Rewinding32x]">osd-btn-rewind.png</value>
 		<value condition="!Player.Seeking + [Player.Forwarding2x | Player.Forwarding4x | Player.Forwarding8x | Player.Forwarding16x | Player.Forwarding32x]">osd-btn-fastfwd.png</value>
-		<value condition="Player.DisplayAfterSeek + !Player.Seeking + !substring(Player.SeekOffset,-)">osd-btn-fastfwd.png</value>
-		<value condition="Player.DisplayAfterSeek + !Player.Seeking + substring(Player.SeekOffset,-)">osd-btn-rewind.png</value>
 	</variable>
 	<variable name="PlayStateTxt">
-		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek"></value>
 		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
 		<value condition="Player.Seeking">$INFO[Player.SeekOffset]</value>
 		<value condition="!Player.Seeking + [Player.Rewinding2x | Player.Forwarding2x]">x2</value>
@@ -159,31 +155,31 @@
 		<value>ActivateWindow(MusicFiles,Addons,return)</value>
 	</variable>
 	<variable name="VideoHeadings" description="Video screen headings">
-		<value condition="Container.content(movies)">$LOCALIZE[20342]</value>
-		<value condition="Container.content(tvshows)">$LOCALIZE[31027]</value>
-		<value condition="Container.content(seasons)">$LOCALIZE[33054]</value>
-		<value condition="Container.content(episodes)">$LOCALIZE[20360]</value>
-		<value condition="Container.content(actors)">$LOCALIZE[344]</value>
-		<value condition="Container.content(genres)">$LOCALIZE[135]</value>
-		<value condition="Container.content(years)">$LOCALIZE[652]</value>
-		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
-		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
-		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
-		<value condition="Container.content(addons)">$LOCALIZE[31696]</value>
-		<value condition="Container.content(files)">$LOCALIZE[744]</value>
+		<value condition="Container.Content(movies)">$LOCALIZE[20342]</value>
+		<value condition="Container.Content(tvshows)">$LOCALIZE[31027]</value>
+		<value condition="Container.Content(seasons)">$LOCALIZE[33054]</value>
+		<value condition="Container.Content(episodes)">$LOCALIZE[20360]</value>
+		<value condition="Container.Content(actors)">$LOCALIZE[344]</value>
+		<value condition="Container.Content(genres)">$LOCALIZE[135]</value>
+		<value condition="Container.Content(years)">$LOCALIZE[652]</value>
+		<value condition="Container.Content(studios)">$LOCALIZE[20388]</value>
+		<value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
+		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.Content(addons)">$LOCALIZE[31696]</value>
+		<value condition="Container.Content(files)">$LOCALIZE[744]</value>
 		<value>$LOCALIZE[3]</value>
 	</variable>
 	<variable name="MusicHeadings" description="Music screen headings">
-		<value condition="Container.content(songs)">$LOCALIZE[134]</value>
-		<value condition="Container.content(artists)">$LOCALIZE[133]</value>
-		<value condition="Container.content(albums)">$LOCALIZE[132]</value>
-		<value condition="Container.content(genres)">$LOCALIZE[135]</value>
-		<value condition="Container.content(years)">$LOCALIZE[652]</value>
-		<value condition="Container.content(studios)">$LOCALIZE[20388]</value>
-		<value condition="Container.content(directors)">$LOCALIZE[20348]</value>
-		<value condition="Container.content(musicvideos)">$LOCALIZE[20389]</value>
-		<value condition="Container.content(addons)">$LOCALIZE[31697]</value>
-		<value condition="Container.content(files)">$LOCALIZE[744]</value>
+		<value condition="Container.Content(songs)">$LOCALIZE[134]</value>
+		<value condition="Container.Content(artists)">$LOCALIZE[133]</value>
+		<value condition="Container.Content(albums)">$LOCALIZE[132]</value>
+		<value condition="Container.Content(genres)">$LOCALIZE[135]</value>
+		<value condition="Container.Content(years)">$LOCALIZE[652]</value>
+		<value condition="Container.Content(studios)">$LOCALIZE[20388]</value>
+		<value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
+		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.Content(addons)">$LOCALIZE[31697]</value>
+		<value condition="Container.Content(files)">$LOCALIZE[744]</value>
 		<value>$LOCALIZE[31030]</value>
 	</variable>
 	<variable name="PVRHeading" description="PVR Headings">
@@ -246,8 +242,8 @@
 		<value>$INFO[ListItem(5).Icon]</value>
 	</variable>
     <variable name="VideoLogo">
-        <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(TVShows) | Container.Content(Movies)]">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(TVShows) | Container.Content(Movies)]]">$INFO[ListItem.path,,logo.png]</value>
+        <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(movies)]]">$INFO[ListItem.path,,logo.png]</value>
 		<value>blank.png</value>
     </variable>
 </includes>

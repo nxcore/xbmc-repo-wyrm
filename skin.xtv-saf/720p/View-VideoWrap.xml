@@ -171,7 +171,7 @@
 					<aligny>center</aligny>
 					<font>font18</font>
 					<label>$VAR[VideoDuration]</label>
-					<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 				</control>
 				<!-- Star Rating -->
 				<control type="image">
