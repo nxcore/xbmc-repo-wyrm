@@ -16,7 +16,7 @@
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="slide" end="70,0" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="zoom" start="100" end="120" center="auto" time="0" tween="back" easing="out" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
-			<itemlayout height="169" width="120" condition="!Container.Content(Addons)">
+			<itemlayout height="169" width="120" condition="!Container.Content(addons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
@@ -38,7 +38,7 @@
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
-			<itemlayout height="169" width="120" condition="Container.Content(Addons)">
+			<itemlayout height="169" width="120" condition="Container.Content(addons)">
 				<control type="image">
 					<posx>1</posx>
 					<posy>1</posy>
@@ -60,7 +60,7 @@
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout height="169" width="120" condition="!Container.Content(Addons)">
+			<focusedlayout height="169" width="120" condition="!Container.Content(addons)">
 				<control type="group">
 					<animation effect="zoom" start="90" end="140" center="auto" time="400" tween="back" easing="out" reversible="false">focus</animation>
 					<control type="image">
@@ -104,7 +104,7 @@
 					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 			</focusedlayout>
-			<focusedlayout height="169" width="120" condition="Container.Content(Addons)">
+			<focusedlayout height="169" width="120" condition="Container.Content(addons)">
 				<control type="group">
 					<animation effect="zoom" start="90" end="140" center="auto" time="400" tween="back" easing="out" reversible="false">focus</animation>
 					<control type="image">
@@ -226,7 +226,7 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$LOCALIZE[20360]: $INFO[ListItem.Property(NumEpisodes)]</label>
-					<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
+					<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 				</control>
 				<!-- Duration -->
 				<control type="label">
@@ -237,7 +237,7 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$VAR[VideoDuration]</label>
-					<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 				</control>
 				<!-- MPAA Rating -->
 				<control type="image">

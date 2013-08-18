@@ -25,7 +25,7 @@
 					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="group">
-					<visible>![Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Addons)]</visible>
+					<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -63,7 +63,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Addons)</visible>
+					<visible>Container.Content(addons)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -101,7 +101,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -139,7 +139,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
+					<visible>Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -187,7 +187,7 @@
 					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="group">
-					<visible>![Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Addons)]</visible>
+					<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -228,7 +228,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Addons)</visible>
+					<visible>Container.Content(addons)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -271,7 +271,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -312,7 +312,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Episodes)</visible>
+					<visible>Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)</visible>
 					<control type="label">
 						<posx>53</posx>
 						<posy>22</posy>
@@ -391,7 +391,7 @@
 					<effect type="slide" end="10,0" time="0"/>
 				</animation>
 				<control type="group">
-					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(MusicVideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
+					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -437,7 +437,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(MusicVideos)</visible>
+					<visible>Container.Content(musicvideos)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
@@ -483,7 +483,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Studios)</visible>
+					<visible>Container.Content(studios)</visible>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 						<control type="image">
