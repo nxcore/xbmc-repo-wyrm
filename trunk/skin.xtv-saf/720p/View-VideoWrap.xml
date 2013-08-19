@@ -12,9 +12,10 @@
 			<ondown>24</ondown>
 			<focusposition>0</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>13</preloaditems>
+			<preloaditems>2</preloaditems>
 			<scrolltime>0</scrolltime>
 			<pagecontrol>24</pagecontrol>
+			<include>visible-fade</include>
 			<itemlayout height="292" width="90">
 				<control type="image">
 					<posx>-5</posx>
@@ -86,7 +87,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
-			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
+			<include>visible-fade</include>
 			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="24">
@@ -129,7 +130,7 @@
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7016),blank.png,Left) + !IsEmpty(ListItem.Title)</visible>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
-			</control>	
+			</control>
 			<!-- Title -->
 			<control type="label">
 				<posx>272</posx>
@@ -193,7 +194,7 @@
 					<texture>$VAR[VideoRating]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
-			</control>	
+			</control>
 		</control>
 	</include>
 </includes>

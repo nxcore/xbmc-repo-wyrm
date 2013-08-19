@@ -13,8 +13,9 @@
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<scrolltime>200</scrolltime>
-			<preloaditems>5</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>
+			<include>visible-fade</include>
 			<itemlayout width="575" height="76">
 				<control type="label">
 					<posx>53</posx>
@@ -96,6 +97,7 @@
 			<posy>66</posy>
 			<visible>Control.IsVisible(50)</visible>
 			<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
+			<include>visible-fade</include>
 			<control type="group">
 				<control type="image">
 					<description>Slider</description>
@@ -123,6 +125,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
+			<include>visible-fade</include>
 			<include>SortLetterNotification</include>
 			<control type="scrollbar" id="23">
 				<posx>1246</posx>
@@ -131,7 +134,7 @@
 				<height>555</height>
 				<onleft>50</onleft>
 				<onright>9000</onright>
-				<visible>Skin.HasSetting(sbar) + Control.IsVisible(50)</visible>
+				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>
 	</include>

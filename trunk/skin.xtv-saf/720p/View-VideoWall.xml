@@ -12,7 +12,8 @@
 			<viewtype label="31944">Wall</viewtype>
 			<scrolltime>100</scrolltime>
 			<pagecontrol>28</pagecontrol>
-			<preloaditems>6</preloaditems>
+			<preloaditems>2</preloaditems>
+			<include>visible-fade</include>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="slide" end="70,0" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="zoom" start="100" end="120" center="auto" time="0" tween="back" easing="out" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
@@ -92,7 +93,7 @@
 						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-				</control>	
+				</control>
 				<!-- Watched Overlay -->
 				<control type="image">
 					<posx>80</posx>
@@ -136,11 +137,12 @@
 						<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-				</control>	
+				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(58)</visible>
+			<include>visible-fade</include>
 			<include>SortLetterNotification</include>
 			<!-- Show logo -->
 			<control type="group">
@@ -168,6 +170,7 @@
 					<label>$INFO[ListItem.Label]</label>
 					<wrapmultiline>true</wrapmultiline>
 					<textoffsetx>0</textoffsetx>
+					<animation effect="fade" delay="200" start="0" end="100" time="200">Visible</animation>
 					<visible>SubString(Control.GetLabel(7016),blank.png,Left)</visible>
 				</control>
 			</control>
@@ -188,7 +191,7 @@
 					<textoffsetx>0</textoffsetx>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
-			</control>	
+			</control>
 			<!-- Go Back -->
 			<control type="label">
 				<posx>17</posx>
@@ -284,7 +287,7 @@
 					<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
 					<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 				</control>
-			</control>	
+			</control>
 			<control type="scrollbar" id="28">
 				<posx>1244</posx>
 				<posy>120</posy>

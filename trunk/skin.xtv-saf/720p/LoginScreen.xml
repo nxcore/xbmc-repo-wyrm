@@ -62,7 +62,7 @@
 			<onup>52</onup>
 			<ondown>52</ondown>
 			<scrolltime>200</scrolltime>
-			<preloaditems>4</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>-</pagecontrol>
 			<itemlayout width="800" height="114">
 				<control type="image">

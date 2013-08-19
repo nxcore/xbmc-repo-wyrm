@@ -13,8 +13,9 @@
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<scrolltime>200</scrolltime>
-			<preloaditems>5</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>
+			<include>visible-fade</include>
 			<itemlayout width="575" height="76">
 				<control type="image">
 					<posx>10</posx>
@@ -358,6 +359,7 @@
 			<posy>66</posy>
 			<visible>Control.IsVisible(50)</visible>
 			<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
+			<include>visible-fade</include>
 			<control type="group">
 				<control type="image">
 					<description>Slider</description>
@@ -390,6 +392,7 @@
 					<effect type="rotatey" start="-20" end="-20" time="0"/>
 					<effect type="slide" end="10,0" time="0"/>
 				</animation>
+				<include>visible-fade</include>
 				<control type="group">
 					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
 					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>

@@ -13,13 +13,15 @@
 			<scrolltime>100</scrolltime>
 			<focusposition>2</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>9</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>25</pagecontrol>
+			<include>visible-fade</include>
 			<itemlayout height="390" width="140"></itemlayout>
 			<focusedlayout height="410" width="320"></focusedlayout>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
+			<include>visible-fade</include>
 			<control type="group" id="3011">
 				<posx>10</posx>
 				<posy>170</posy>
@@ -311,6 +313,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
+			<include>visible-fade</include>
 			<include>SortLetterNotification</include>
 			<control type="group">
 				<visible>!Skin.HasSetting(hide-chrome) + !IsEmpty(ListItem.Title)</visible>
@@ -337,7 +340,7 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>
-					<visible>SubString(Control.GetLabel(7018),blank.png,Left</visible>
+					<visible>SubString(Control.GetLabel(7018),blank.png,Left)</visible>
 				</control>
 			</control>
 			<control type="group">
