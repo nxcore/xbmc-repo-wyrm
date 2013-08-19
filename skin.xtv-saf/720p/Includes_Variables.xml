@@ -157,8 +157,6 @@
 	<variable name="VideoHeadings" description="Video screen headings">
 		<value condition="Container.Content(movies)">$LOCALIZE[20342]</value>
 		<value condition="Container.Content(tvshows)">$LOCALIZE[31027]</value>
-		<value condition="Container.Content(seasons)">$LOCALIZE[33054]</value>
-		<value condition="Container.Content(episodes)">$LOCALIZE[20360]</value>
 		<value condition="Container.Content(actors)">$LOCALIZE[344]</value>
 		<value condition="Container.Content(genres)">$LOCALIZE[135]</value>
 		<value condition="Container.Content(years)">$LOCALIZE[652]</value>
@@ -167,10 +165,10 @@
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
 		<value condition="Container.Content(addons)">$LOCALIZE[31696]</value>
 		<value condition="Container.Content(files)">$LOCALIZE[744]</value>
+		<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
 		<value>$LOCALIZE[3]</value>
 	</variable>
 	<variable name="MusicHeadings" description="Music screen headings">
-		<value condition="Container.Content(songs)">$LOCALIZE[134]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[133]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[132]</value>
 		<value condition="Container.Content(genres)">$LOCALIZE[135]</value>
@@ -180,6 +178,7 @@
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
 		<value condition="Container.Content(addons)">$LOCALIZE[31697]</value>
 		<value condition="Container.Content(files)">$LOCALIZE[744]</value>
+		<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
 		<value>$LOCALIZE[31030]</value>
 	</variable>
 	<variable name="PVRHeading" description="PVR Headings">

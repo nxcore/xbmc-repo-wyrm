@@ -32,7 +32,7 @@
 			<onup>999</onup>
 			<ondown>999</ondown>
 			<scrolltime>200</scrolltime>
-			<preloaditems>5</preloaditems>
+			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>
 			<itemlayout width="560" height="56">
 				<control type="label">

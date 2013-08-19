@@ -12,7 +12,7 @@
 			<ondown>1254</ondown>
 			<focusposition>0</focusposition>
 			<orientation>horizontal</orientation>
-			<preloaditems>7</preloaditems>
+			<preloaditems>2</preloaditems>
 			<scrolltime>0</scrolltime>
 			<pagecontrol>1254</pagecontrol>
 			<itemlayout height="154" width="154">

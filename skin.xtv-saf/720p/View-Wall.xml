@@ -13,7 +13,7 @@
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<scrolltime>200</scrolltime>
 			<pagecontrol>1358</pagecontrol>
-			<preloaditems>8</preloaditems>
+			<preloaditems>2</preloaditems>
 			<itemlayout height="144" width="144">
 				<control type="image">
 					<posx>0</posx>
