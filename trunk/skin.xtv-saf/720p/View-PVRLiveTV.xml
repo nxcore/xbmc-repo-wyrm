@@ -14,7 +14,6 @@
 				<ondown>560</ondown>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<include>visible-fade</include>
 				<visible>Container.Content(LiveTV)</visible>
 				<itemlayout height="40" width="760">
 					<control type="label">
@@ -82,7 +81,6 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(560)</visible>
-				<include>visible-fade</include>
 				<posx>910</posx>
 				<posy>80</posy>
 				<control type="image">

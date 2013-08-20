@@ -12,7 +12,6 @@
 			<ondown>59</ondown>
 			<onleft>9000</onleft>
 			<onright>29</onright>
-			<include>visible-fade</include>
 			<itemlayout height="100">
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -38,7 +37,7 @@
 						<colordiffuse>UnFocusedPosters</colordiffuse>
 						<visible>IsEmpty(ListItem.Art(banner))</visible>
 					</control>
-				</control>	
+				</control>
 				<control type="image">
 					<description>Go Back Image</description>
 					<posx>630</posx>
@@ -82,7 +81,7 @@
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>IsEmpty(ListItem.Art(banner))</visible>
 					</control>
-				</control>	
+				</control>
 				<control type="image">
 					<description>Go Back Image</description>
 					<posx>630</posx>
@@ -216,7 +215,6 @@
 				</control>
 			</control>
 			<control type="group">
-				<include>visible-fade</include>
 				<include>SortLetterNotification</include>
 				<!-- Scroll Bar -->
 				<control type="scrollbar" id="29">

@@ -29,42 +29,61 @@
 		</control>
 		<control type="grouplist">
 			<posx>946</posx>
-			<posy>50</posy>
-			<width>360</width>
-			<height>37</height>
+			<posy>35</posy>
+			<width>365</width>
+			<height>72</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label">
 				<description>Video screen headings</description>
-				<width min="60" max="250">auto</width>
-				<height>37</height>
+				<width min="60" max="275">auto</width>
+				<height>72</height>
 				<label>$VAR[VideoHeadings]</label>
-				<font>font20</font>
-				<aligny>center</aligny>
+				<font>font18</font>
+				<wrapmultiline>true</wrapmultiline>
+				<aligny>top</aligny>
 			</control>
 			<control type="label">
 				<description>Number of files</description>
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>
-				<width min="40" max="110">auto</width>
-				<height>37</height>
+				<width min="40" max="90">auto</width>
+				<height>38</height>
 				<font>font13</font>
 				<aligny>center</aligny>
-				<label>$INFO[Container.NumItems, (,)]</label>
+				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
 		</control>
 		<!-- Display warning if free memory is low -->
 		<include>memory-low</include>
 
 		<!-- Various Views of Video library node -->
-		<include>VideoListView</include>
-		<include>VideoIconView</include>
-		<include>BannerView</include>
-		<include>VideoWrapView</include>
-		<include>VideoWallView</include>
-		<include>VideoCoverflow</include>
-		<include>PVRLiveTVView</include>
+		<control type="group">
+			<visible>!IsEmpty(ListItem.Label)</visible>
+			<include>VideoListView</include>
+			<include>VideoIconView</include>
+			<include>BannerView</include>
+			<include>VideoWrapView</include>
+			<include>VideoWallView</include>
+			<include>VideoCoverflow</include>
+			<include>PVRLiveTVView</include>
+		</control>
+		<!-- No Label tag means video addon is busy pulling in content, so show a busy animation -->
+		<control type="group">
+			<visible>IsEmpty(ListItem.Label) + System.IdleTime(1) + !Window.IsVisible(busydialog)</visible>
+			<include>fadebackground</include>
+			<control type="image">
+				<description>Busy animation</description>
+				<posx>576</posx>
+				<posy>290</posy>
+				<width>128</width>
+				<height>128</height>
+				<texture>busy.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="360" end="0" center="auto" time="5400" loop="true" condition="true">conditional</animation>
+			</control>
+		</control>
 
 		<control type="group">
 			<posy>720</posy>
