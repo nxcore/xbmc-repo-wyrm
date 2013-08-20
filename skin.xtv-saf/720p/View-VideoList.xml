@@ -395,7 +395,7 @@
 				<include>visible-fade</include>
 				<control type="group">
 					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
@@ -441,7 +441,7 @@
 				</control>
 				<control type="group">
 					<visible>Container.Content(musicvideos)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
@@ -552,7 +552,7 @@
 				</control>
 				<control type="group">
 					<visible>Container.Content(movies)</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
@@ -598,7 +598,7 @@
 				</control>
 				<control type="group">
 					<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
+					<animation effect="zoom" end="71" center="600,140" time="150" condition="System.IdleTime(1) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<!-- Show Icon For TV SHOW/SEASON/EPISODES -->
@@ -645,7 +645,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>System.IdleTime(2) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)</visible>
+					<visible>System.IdleTime(1) + !ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)</visible>
 					<animation effect="fade" time="300">Visible</animation>
 					<!-- Star Rating -->
 					<control type="image">
