@@ -207,9 +207,9 @@
 			<animation effect="fade" start="0" end="100" time="2500" delay="500" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="group">
-				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
+				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo] + !IsEmpty(ListItem.Title)</visible>
 				<control type="group">
-					<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Title)</visible>
+					<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
 					<control type="image">
 						<description>Fanart background</description>
 						<posx>0</posx>
@@ -223,7 +223,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(fanart))</visible>
+					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Art(fanart))</visible>
 					<control type="multiimage" id="6300">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -245,92 +245,11 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-						<visible>[IsEmpty(Control.GetLabel(6300)) | !Skin.HasSetting(background-extrafanart)] + !IsEmpty(ListItem.Art(fanart))</visible>
+						<visible>[IsEmpty(Control.GetLabel(6300)) | !Skin.HasSetting(background-extrafanart)]</visible>
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Title)</visible>
-					<control type="multiimage" id="6310">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<randomize>true</randomize>
-						<timeperimage>5000</timeperimage>
-						<fadetime>300</fadetime>
-						<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-						<aspectratio>stretch</aspectratio>
-						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path) + !IsEmpty(ListItem.Art(fanart))</visible>
-					</control>
-					<!-- TV Show Fallback -->
-					<control type="image">
-						<description>TVShow fallback fanart background</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<aspectratio>stretch</aspectratio>
-						<fadetime>300</fadetime>
-						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-						<visible>[IsEmpty(Control.GetLabel(6310)) | !Skin.HasSetting(background-extrafanart)] + !IsEmpty(ListItem.Art(fanart))</visible>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Container.Content(seasons) + !IsEmpty(ListItem.Title)</visible>
-					<control type="multiimage" id="6320">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<randomize>true</randomize>
-						<timeperimage>5000</timeperimage>
-						<fadetime>300</fadetime>
-						<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-						<aspectratio>stretch</aspectratio>
-						<visible>Skin.HasSetting(background-extrafanart) + !IsEmpty(ListItem.Path) + !IsEmpty(ListItem.Art(season.fanart))</visible>
-					</control>
-					<control type="group">
-						<visible>IsEmpty(Control.GetLabel(6320)) | !Skin.HasSetting(background-extrafanart)</visible>
-						<!-- TV Season Fallback -->
-						<control type="image" id="6322">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1280</width>
-							<height>720</height>
-							<texture fallback="blank.png" background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
-							<aspectratio>stretch</aspectratio>
-							<fadetime>300</fadetime>
-							<visible>!IsEmpty(ListItem.Path)</visible>
-						</control>
-						<control type="group">
-							<visible>IsEmpty(Control.GetLabel(6322))</visible>
-							<control type="image">
-								<description>Season fallback Season fanart background</description>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>1280</width>
-								<height>720</height>
-								<aspectratio>stretch</aspectratio>
-								<fadetime>300</fadetime>
-								<texture background="true">$INFO[ListItem.Art(season.fanart)]</texture>
-								<visible>!IsEmpty(ListItem.Art(season.fanart))</visible>
-							</control>
-							<control type="image">
-								<description>Season fallback TVShow fanart background</description>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>1280</width>
-								<height>720</height>
-								<aspectratio>stretch</aspectratio>
-								<fadetime>300</fadetime>
-								<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-								<visible>!IsEmpty(ListItem.Art(fanart))</visible>
-							</control>
-						</control>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Container.Content(episodes) + !IsEmpty(ListItem.Title)</visible>
+					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
 					<control type="multiimage" id="6340">
 						<posx>0</posx>
 						<posy>0</posy>
