@@ -145,7 +145,7 @@
 			<!-- Show logo -->
 			<control type="group">
 				<visible>!Skin.HasSetting(hide-chrome) + !IsEmpty(ListItem.Title)</visible>
-				<control type="image" id="7016">
+				<control type="image" id="7116">
 					<posx>17</posx>
 					<posy>112</posy>
 					<width>354</width>
@@ -169,7 +169,7 @@
 					<wrapmultiline>true</wrapmultiline>
 					<textoffsetx>0</textoffsetx>
 					<animation effect="fade" delay="200" start="0" end="100" time="200">Visible</animation>
-					<visible>SubString(Control.GetLabel(7016),blank.png,Left)</visible>
+					<visible>SubString(Control.GetLabel(7116),blank.png,Left)</visible>
 				</control>
 			</control>
 			<control type="group">
