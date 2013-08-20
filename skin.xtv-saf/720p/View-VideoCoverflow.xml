@@ -15,13 +15,11 @@
 			<orientation>horizontal</orientation>
 			<preloaditems>2</preloaditems>
 			<pagecontrol>25</pagecontrol>
-			<include>visible-fade</include>
 			<itemlayout height="390" width="140"></itemlayout>
 			<focusedlayout height="410" width="320"></focusedlayout>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<include>visible-fade</include>
 			<control type="group" id="3011">
 				<posx>10</posx>
 				<posy>170</posy>
@@ -313,7 +311,6 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<include>visible-fade</include>
 			<include>SortLetterNotification</include>
 			<control type="group">
 				<visible>!Skin.HasSetting(hide-chrome) + !IsEmpty(ListItem.Title)</visible>

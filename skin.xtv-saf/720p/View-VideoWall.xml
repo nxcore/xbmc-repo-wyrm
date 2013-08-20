@@ -13,7 +13,6 @@
 			<scrolltime>100</scrolltime>
 			<pagecontrol>28</pagecontrol>
 			<preloaditems>2</preloaditems>
-			<include>visible-fade</include>
 			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="slide" end="70,0" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
 			<animation effect="zoom" start="100" end="120" center="auto" time="0" tween="back" easing="out" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
@@ -142,7 +141,6 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(58)</visible>
-			<include>visible-fade</include>
 			<include>SortLetterNotification</include>
 			<!-- Show logo -->
 			<control type="group">
