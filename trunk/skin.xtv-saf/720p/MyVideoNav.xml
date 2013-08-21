@@ -60,7 +60,7 @@
 
 		<!-- Various Views of Video library node -->
 		<control type="group">
-			<visible>!IsEmpty(ListItem.Label)</visible>
+			<visible>![IsEmpty(ListItem.Label) + IsEmpty(Container().ListItem(1).Label)]</visible>
 			<include>VideoListView</include>
 			<include>VideoIconView</include>
 			<include>BannerView</include>
@@ -71,7 +71,7 @@
 		</control>
 		<!-- No Label tag means video addon is busy pulling in content, so show a busy animation -->
 		<control type="group">
-			<visible>IsEmpty(ListItem.Label) + System.IdleTime(1) + !Window.IsVisible(busydialog)</visible>
+			<visible>IsEmpty(ListItem.Label) + IsEmpty(Container().ListItem(1).Label) + System.IdleTime(1) + !Window.IsVisible(busydialog)</visible>
 			<include>fadebackground</include>
 			<control type="image">
 				<description>Busy animation</description>

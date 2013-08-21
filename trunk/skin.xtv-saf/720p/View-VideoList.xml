@@ -356,7 +356,7 @@
 		</control>
 		<control type="group">
 			<posy>66</posy>
-			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Label)</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
 				<control type="image">
 					<description>Slider</description>
@@ -366,7 +366,6 @@
 					<height>76</height>
 					<texture border="8">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
-					<visible>!IsEmpty(ListItem.Label)</visible>
 				</control>
 				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-304"
 					time="0" easing="inout" reversible="true">Conditional</animation>
@@ -392,24 +391,23 @@
 				</animation>
 				<control type="group">
 					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
-					<animation effect="zoom" end="71" center="600,140" condition="!ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left) + !IsEmpty(ListItem.Label)</visible>
 							<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -418,19 +416,19 @@
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture>DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -438,24 +436,23 @@
 				</control>
 				<control type="group">
 					<visible>Container.Content(musicvideos)</visible>
-					<animation effect="zoom" end="71" center="600,140" condition="!ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture background="true" flipy="true" fallback="DefaultMusicVideos.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -464,19 +461,19 @@
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture>DefaultMusicVideos.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -549,24 +546,23 @@
 				</control>
 				<control type="group">
 					<visible>Container.Content(movies)</visible>
-					<animation effect="zoom" end="71" center="600,140" condition="!ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -575,19 +571,19 @@
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture>DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -595,25 +591,24 @@
 				</control>
 				<control type="group">
 					<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-					<animation effect="zoom" end="71" center="600,140" condition="!ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)" reversible="true">Conditional</animation>
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<!-- Show Icon For TV SHOW/SEASON/EPISODES -->
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -623,19 +618,19 @@
 						<!-- Show TV icon as the Default icon -->
 						<control type="image">
 							<description>list item icon</description>
-							<posx>90</posx>
+							<posx>230</posx>
 							<posy>120</posy>
-							<width>448</width>
-							<height>448</height>
+							<width>318</width>
+							<height>318</height>
 							<texture diffuse="mask-rect.png">DefaultTvshows.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
 							<description>list item icon reflection</description>
-							<posx>90</posx>
-							<posy>570</posy>
-							<width>448</width>
-							<height>448</height>
+							<posx>230</posx>
+							<posy>438</posy>
+							<width>318</width>
+							<height>318</height>
 							<texture flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -695,7 +690,7 @@
 							<posy>412</posy>
 							<width>184</width>
 							<height>50</height>
-							<texture fallback="blank.png">$VAR[VideoLogo]</texture>
+							<texture fallback="blank.png">$VAR[ListViewVideoLogo]</texture>
 							<aligny>bottom</aligny>
 							<aspectratio align="left">keep</aspectratio>
 						</control>
