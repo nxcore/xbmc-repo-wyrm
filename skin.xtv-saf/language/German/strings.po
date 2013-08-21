@@ -2,33 +2,19 @@
 # Addon Name: xTV-SAF
 # Addon id: skin.xtv-saf
 # Addon Provider: Wyrm
-# Translators:
-# crush89 <lukas.m.dittmer@me.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-07-17 08:01+0000\n"
-"Last-Translator: TeamXBMC <xbmctranslations@gmail.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
 "Language-Team: German (http://www.transifex.com/projects/p/xbmc-skins/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgctxt "Addon Summary"
-msgid "A family friendly remake of CHI3f's xTV skin"
-msgstr "Eine familienfreundliche Überarbeitung von CHI3f's xTV Skin"
-
-msgctxt "Addon Description"
-msgid ""
-"xTV-SAF is a 'Front Row' like skin for XBMC. It provides a number of updated"
-" features not available in the original AppleTV interface and builds on "
-"CHI3f's original xTV skin. All this in a simple, Spouse Acceptable form "
-"(Factor) that is easy for kids and adults to find what they are looking for."
-msgstr "XTV-SAF ist ein \"Front Row\" ähnlicher Skin für XBMC. Es bietet eine vielzahl an Features, welche nicht im originalen AppleTV Interface zu finden sind. Alle diese Funktionen sind in einem Easy-to-use Formfaktor, in dem sich sowohl Kinder als auch Erwachsene sofort zurecht finden."
 
 msgctxt "#31026"
 msgid "Movies"
@@ -212,7 +198,7 @@ msgstr "MS Windows"
 
 msgctxt "#31569"
 msgid "iOS"
-msgstr "iOS"
+msgstr "XBox"
 
 msgctxt "#31570"
 msgid "Mac OS X"
@@ -249,10 +235,6 @@ msgstr "XBMC Standard"
 msgctxt "#31651"
 msgid "Muted"
 msgstr "Stumm"
-
-msgctxt "#31652"
-msgid "Favourites"
-msgstr "Favoriten"
 
 msgctxt "#31654"
 msgid "Addon"
@@ -372,47 +354,47 @@ msgstr "Beschreibung anzeigen"
 
 msgctxt "#31801"
 msgid "Startup"
-msgstr "Startfenster"
+msgstr "Scrollbar benutzen"
 
 msgctxt "#31802"
 msgid "General"
-msgstr "Allgemein"
+msgstr "Media Overlays benutzen"
 
 msgctxt "#31803"
 msgid "Home Menu"
-msgstr "Hauptmenü"
+msgstr "Gesehen Status Overlay benutzen"
 
 msgctxt "#31804"
 msgid "Background"
-msgstr "Hintergrund"
+msgstr "Now Playing Anzeigen benutzen"
 
 msgctxt "#31805"
 msgid "Media Sources"
-msgstr "Medien-Quellen"
+msgstr "Zurücksetzen Benutzerdefinierte Wetter Hintergründe"
 
 msgctxt "#31806"
 msgid "Custom Favourites"
-msgstr "Eigene Favoriten"
+msgstr "Now Playing Visualisierungsstil"
 
 msgctxt "#31807"
 msgid "Support"
-msgstr "Support"
+msgstr "Benutzerdefinierten Hintergrund auswählen"
 
 msgctxt "#31850"
 msgid "Use Intro video"
-msgstr "Nutze Intro Video"
+msgstr "Script :"
 
 msgctxt "#31851"
 msgid "Intro file:"
-msgstr "Wähle Datei:"
+msgstr "Intro-Datei:"
 
 msgctxt "#31852"
 msgid "Use Startup playlist"
-msgstr "Nutze Startup Playliste"
+msgstr "Standard Filmquelle setzen"
 
 msgctxt "#31853"
 msgid "Choose playlist:"
-msgstr "Wähle Playlist:"
+msgstr "Standard TV Quelle setzen"
 
 msgctxt "#31860"
 msgid "Choose Custom background"
@@ -424,7 +406,7 @@ msgstr "Benutzerdefinierten Hintergrund zurücksetzen"
 
 msgctxt "#31862"
 msgid "Use Visuals as background"
-msgstr "Benutze Visualisierung/Bild als Hintergrund"
+msgstr "Benutze Visualisierungen als Hintergrund"
 
 msgctxt "#31863"
 msgid "Use Fanart as background"
@@ -464,7 +446,7 @@ msgstr "Sperre \"View as\" Panel"
 
 msgctxt "#31881"
 msgid "Use scrollbar"
-msgstr "Zeige Scrollbalken"
+msgstr "Scrollbalken verwenden"
 
 msgctxt "#31882"
 msgid "Enable autoscroll"
@@ -472,11 +454,11 @@ msgstr "Aktiviere Autoscroll"
 
 msgctxt "#31883"
 msgid "Use media overlays"
-msgstr "Nutze Media-Overlays"
+msgstr "Benutze Media-Overlays"
 
 msgctxt "#31884"
 msgid "Use watched state overlays"
-msgstr "Nutze 'Bereits Gesehen'-Overlays"
+msgstr "Verwende 'Bereits Gesehen'-Overlays"
 
 msgctxt "#31886"
 msgid "Tilt List view icons"
@@ -484,19 +466,19 @@ msgstr "Icons in Listenansicht neigen"
 
 msgctxt "#31887"
 msgid "Tilt Wall view"
-msgstr "Icons in Wandansicht neigen"
+msgstr "Icons in Wall view neigen"
 
 msgctxt "#31888"
 msgid "Time on Home screen"
-msgstr "Zeit im Hauptmenü anzeigen"
+msgstr "Zeit auf Homescreen anzeigen"
 
 msgctxt "#31889"
 msgid "Current weather on Home screen"
-msgstr "Aktuelles Wetter im Hauptmenü anzeigen"
+msgstr "Aktuelles Wetter am Homescreen anzeigen"
 
 msgctxt "#31890"
 msgid "Animated weather icons"
-msgstr "Animierte Wetter-Symbole"
+msgstr "CD abspielen im Home Menü"
 
 msgctxt "#31891"
 msgid "Show subtitle button in OSD"
@@ -504,63 +486,63 @@ msgstr "Zeige Untertiteltaste im OSD"
 
 msgctxt "#31892"
 msgid "Use TV Tunes"
-msgstr "Nutze TV Tunes"
+msgstr "Familienmodusauswahl im Home Menü"
 
 msgctxt "#31893"
 msgid "Download media artwork"
-msgstr "Lade Artwork herunter"
+msgstr "Profile :"
 
 msgctxt "#31900"
 msgid "Home menu type"
-msgstr "Hauptmenü Typ"
+msgstr "Video Anzeigen"
 
 msgctxt "#31901"
 msgid "Videos in Home menu"
-msgstr "Videos im Hauptmenü"
+msgstr "Musik Anzeigen"
 
 msgctxt "#31902"
 msgid "Movies in Home menu"
-msgstr "Filme im Hauptmenü"
+msgstr "Foto Anzeigen"
 
 msgctxt "#31903"
 msgid "TV Shows in Home menu"
-msgstr "TV Serien im Hauptmenü"
+msgstr "Skripte/Programme Anzeigen"
 
 msgctxt "#31904"
 msgid "Music Videos in Home menu"
-msgstr "Musikvideos im Hauptmenü"
+msgstr "(Clicken zum öffnen)"
 
 msgctxt "#31905"
 msgid "Music in Home menu"
-msgstr "Musik im Hauptmenü"
+msgstr "Musik im Homemenü"
 
 msgctxt "#31906"
 msgid "Addons in Home menu"
-msgstr "Addons im Hauptmenü"
+msgstr "Addons im Homemenü"
 
 msgctxt "#31907"
 msgid "Pictures in Home menu"
-msgstr "Bilder im Hauptmenü"
+msgstr "Bilder im Homemenü"
 
 msgctxt "#31908"
 msgid "Profiles in Home menu"
-msgstr "Profile im Hauptmenü"
+msgstr "Profile im Homemenü"
 
 msgctxt "#31909"
 msgid "Weather in Home menu"
-msgstr "Wetter im Hauptmenü"
+msgstr "Wetter im Homemenü"
 
 msgctxt "#31910"
 msgid "Favourites in Home menu"
-msgstr "Favoriten im Hauptmenü"
+msgstr "Favoriten im Homemenü"
 
 msgctxt "#31911"
 msgid "Search in Home menu"
-msgstr "Suchen im Hauptmenü"
+msgstr "Suchen im Homemenü"
 
 msgctxt "#31912"
 msgid "Play Disc in Home menu"
-msgstr "Disk abspielen im Hauptmenü"
+msgstr "Disk abspielen im Homemenü"
 
 msgctxt "#31913"
 msgid "Quit from Home menu"
@@ -576,15 +558,15 @@ msgstr "Startpunkt in Film-Bibliothek"
 
 msgctxt "#31921"
 msgid "TV library entry point"
-msgstr "Startpunkt in TV-Bibliothek"
+msgstr "\"Liste2\" Ansicht verstecken"
 
 msgctxt "#31922"
 msgid "Music Video library entry point"
-msgstr "Startpunkt in Musikvideo-Bibliothek"
+msgstr "\"Hülle\" Ansicht verstecken"
 
 msgctxt "#31923"
 msgid "Music library entry point"
-msgstr "Startpunkt in Musik-Bibliothek"
+msgstr "\"Symbole\" Ansicht verstecken"
 
 msgctxt "#31930"
 msgid "Upload Debug Log file"
@@ -608,23 +590,23 @@ msgstr "Liste"
 
 msgctxt "#31942"
 msgid "Wrap"
-msgstr "Wrap"
+msgstr "Liste2"
 
 msgctxt "#31943"
 msgid "Icons"
-msgstr "Icons"
+msgstr "Hülle"
 
 msgctxt "#31944"
 msgid "Wall"
-msgstr "Wand"
+msgstr "Symbole"
 
 msgctxt "#31945"
 msgid "Coverflow"
-msgstr "Coverflow"
+msgstr "Wand"
 
 msgctxt "#31946"
 msgid "Banner"
-msgstr "Banner"
+msgstr "Coverfluss"
 
 msgctxt "#31951"
 msgid "Vertical"
