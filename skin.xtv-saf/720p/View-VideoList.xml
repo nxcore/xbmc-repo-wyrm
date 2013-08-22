@@ -34,7 +34,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="group">
@@ -47,7 +47,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>53</posx>
@@ -58,7 +58,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</control>
 				</control>
@@ -72,7 +72,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
 					<control type="group">
@@ -85,7 +85,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>53</posx>
@@ -96,7 +96,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<info>ListItem.Property(Addon.Description)</info>
+							<label>$INFO[ListItem.Property(Addon.Description)]</label>
 						</control>
 					</control>
 				</control>
@@ -110,7 +110,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
 					<control type="group">
@@ -123,7 +123,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>53</posx>
@@ -134,7 +134,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<info>ListItem.PlotOutline</info>
+							<label>$INFO[ListItem.PlotOutline</label>
 						</control>
 					</control>
 				</control>
@@ -148,7 +148,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Duration)</visible>
 					</control>
 					<control type="group">
@@ -161,7 +161,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
 							<posx>53</posx>
@@ -196,7 +196,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
@@ -210,7 +210,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
@@ -222,7 +222,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<info>ListItem.Label2</info>
+							<label>$INFO[ListItem.Label2]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 					</control>
@@ -238,7 +238,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselectedtext</selectedcolor>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
@@ -253,7 +253,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>listselectedtext</selectedcolor>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
@@ -265,7 +265,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<info>ListItem.Property(Addon.Description)</info>
+							<label>$INFO[ListItem.Property(Addon.Description)]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 					</control>
@@ -280,7 +280,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
@@ -294,7 +294,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
@@ -306,7 +306,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<info>ListItem.PlotOutline</info>
+							<label>$INFO[ListItem.PlotOutline]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 					</control>
@@ -321,7 +321,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Duration)</visible>
 					</control>
@@ -335,7 +335,7 @@
 							<font>font11</font>
 							<align>left</align>
 							<aligny>center</aligny>
-							<info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
