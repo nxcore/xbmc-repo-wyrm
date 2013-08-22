@@ -36,8 +36,8 @@
 			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9900,8)</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9450,1)</onfocus>
-			<onfocus condition="!Window.Previous(settings) | !Window.Previous(systeminfo)">Control.SetFocus(9900)</onfocus>
-			<onfocus condition="!Window.Previous(settings) | !Window.Previous(systeminfo)">Control.SetFocus(9000)</onfocus>
+			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9900)</onfocus>
+			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9000)</onfocus>
 		</control>
 		<!-- Show time on home screen -->
 		<control type="label">
@@ -2285,7 +2285,7 @@
 				<posy>551</posy>
 				<width>520</width>
 				<height>31</height>
-				<info>MusicPlayer.Artist</info>
+				<label>$INFO[MusicPlayer.Artist]</label>
 				<align>left</align>
 				<font>font11</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -2296,7 +2296,7 @@
 				<posy>582</posy>
 				<width>520</width>
 				<height>31</height>
-				<info>MusicPlayer.Album</info>
+				<label>$INFO[MusicPlayer.Album]</label>
 				<align>left</align>
 				<font>font11</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -2307,7 +2307,7 @@
 				<posy>614</posy>
 				<width>520</width>
 				<height>31</height>
-				<info>MusicPlayer.Title</info>
+				<label>$INFO[MusicPlayer.Title]</label>
 				<align>left</align>
 				<font>font11</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -2352,7 +2352,7 @@
 				<posy>613</posy>
 				<width>420</width>
 				<height>31</height>
-				<info>VideoPlayer.Title</info>
+				<label>$INFO[VideoPlayer.Title]</label>
 				<align>left</align>
 				<font>font12</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
