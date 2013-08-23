@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <!--
+	<!--
 	  CUSTOM WINDOWS LIST
 		_Overlay 50
 		_SkinSettings 1152
@@ -10,43 +10,36 @@
 		_LibraryEntry 1156
 		_PinLock 1157
 	-->
-	<include file="Defaults.xml"/>
-	<include file="Includes_Variables.xml"/>
-
-	<include file="View-Coverflow.xml"/>
-	<include file="View-Icon.xml"/>
-	<include file="View-List.xml"/>
-	<include file="View-Wall.xml"/>
-	<include file="View-Wrap.xml"/>
-
-	<include file="View-AlbumCoverflow.xml"/>
-	<include file="View-AlbumWall.xml"/>
-	<include file="View-AlbumWrap.xml"/>
-
-	<include file="View-PhotoWall.xml"/>
-	<include file="View-PhotoWrap.xml"/>
-
-	<include file="View-PVRChannelList.xml"/>
-	<include file="View-PVREPG.xml"/>
-	<include file="View-PVRLiveTV.xml"/>
-	<include file="View-PVRNowNextList.xml"/>
-	<include file="View-PVRRadioList.xml"/>
-	<include file="View-PVRRecordList.xml"/>
-	<include file="View-PVRSearchList.xml"/>
-	<include file="View-PVRTimerList.xml"/>
-	<include file="View-PVRTVList.xml"/>
-
-	<include file="View-VideoBanner.xml"/>
-	<include file="View-VideoCoverflow.xml"/>
-	<include file="View-VideoIcon.xml"/>
-	<include file="View-VideoList.xml"/>
-	<include file="View-VideoWall.xml"/>
-	<include file="View-VideoWrap.xml"/>
-
-	<include file="Includes_Weather.xml"/>
-	<include file="Includes_VertHome.xml"/>
-	<include file="Includes_HorzHome.xml"/>
-
+	<include file="Defaults.xml" />
+	<include file="Includes_Variables.xml" />
+	<include file="View-Coverflow.xml" />
+	<include file="View-Icon.xml" />
+	<include file="View-List.xml" />
+	<include file="View-Wall.xml" />
+	<include file="View-Wrap.xml" />
+	<include file="View-AlbumCoverflow.xml" />
+	<include file="View-AlbumWall.xml" />
+	<include file="View-AlbumWrap.xml" />
+	<include file="View-PhotoWall.xml" />
+	<include file="View-PhotoWrap.xml" />
+	<include file="View-PVRChannelList.xml" />
+	<include file="View-PVREPG.xml" />
+	<include file="View-PVRLiveTV.xml" />
+	<include file="View-PVRNowNextList.xml" />
+	<include file="View-PVRRadioList.xml" />
+	<include file="View-PVRRecordList.xml" />
+	<include file="View-PVRSearchList.xml" />
+	<include file="View-PVRTimerList.xml" />
+	<include file="View-PVRTVList.xml" />
+	<include file="View-VideoBanner.xml" />
+	<include file="View-VideoCoverflow.xml" />
+	<include file="View-VideoIcon.xml" />
+	<include file="View-VideoList.xml" />
+	<include file="View-VideoWall.xml" />
+	<include file="View-VideoWrap.xml" />
+	<include file="Includes_Weather.xml" />
+	<include file="Includes_VertHome.xml" />
+	<include file="Includes_HorzHome.xml" />
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -224,40 +217,40 @@
 				</control>
 				<control type="group">
 					<visible>Container.Content(addons)</visible>
+					<control type="image">
+						<description>Fallback fanart background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1280</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>300</fadetime>
+						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+						<visible>!IsEmpty(ListItem.Art(fanart))</visible>
+					</control>
+					<control type="group">
+						<visible>IsEmpty(ListItem.Art(fanart))</visible>
 						<control type="image">
-							<description>Fallback fanart background</description>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>1280</width>
 							<height>720</height>
 							<aspectratio>stretch</aspectratio>
 							<fadetime>300</fadetime>
-							<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-							<visible>!IsEmpty(ListItem.Art(fanart))</visible>
+							<texture background="true">$INFO[Fanart.Image]</texture>
+							<visible>!IsEmpty(Fanart.Image)</visible>
 						</control>
-						<control type="group">
-							<visible>IsEmpty(ListItem.Art(fanart))</visible>
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>1280</width>
-								<height>720</height>
-								<aspectratio>stretch</aspectratio>
-								<fadetime>300</fadetime>
-								<texture background="true">$INFO[Fanart.Image]</texture>
-								<visible>!IsEmpty(Fanart.Image)</visible>
-							</control>
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>1280</width>
-								<height>720</height>
-								<aspectratio>stretch</aspectratio>
-								<fadetime>300</fadetime>
-								<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-								<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
-							</control>
-						</control>	
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>1280</width>
+							<height>720</height>
+							<aspectratio>stretch</aspectratio>
+							<fadetime>300</fadetime>
+							<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+							<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+						</control>
+					</control>
 				</control>
 				<control type="group">
 					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Art(fanart))</visible>
@@ -348,7 +341,7 @@
 									<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 									<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 								</control>
-							</control>	
+							</control>
 						</control>
 					</control>
 				</control>
@@ -415,7 +408,7 @@
 									<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 									<visible>IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 								</control>
-							</control>	
+							</control>
 						</control>
 					</control>
 				</control>
@@ -599,8 +592,8 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>visible-fade</include>
 			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-				<effect type="rotatey" start="-20" end="-20" time="0"/>
-				<effect type="slide" end="10,0" time="0"/>
+				<effect type="rotatey" start="-20" end="-20" time="0" />
+				<effect type="slide" end="10,0" time="0" />
 			</animation>
 			<control type="group">
 				<visible>!Container.Content(addons)</visible>
@@ -676,8 +669,8 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>visible-fade</include>
 			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-				<effect type="rotatey" start="-20" end="-20" time="0"/>
-				<effect type="slide" end="10,0" time="0"/>
+				<effect type="rotatey" start="-20" end="-20" time="0" />
+				<effect type="slide" end="10,0" time="0" />
 			</animation>
 			<control type="group">
 				<visible>!Container.Content(addons)</visible>
@@ -913,11 +906,9 @@
 		<aspectratio aligny="bottom">keep</aspectratio>
 		<visible>Skin.HasSetting(homemenu-vertical)</visible>
 	</include>
-
 	<include name="scrolltext">
 		<scroll>true</scroll>
 	</include>
-
 	<!-- Start Animation Includes -->
 	<include name="settingbutton-fade">
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
@@ -956,7 +947,6 @@
 		<animation condition="IntegerGreaterThan(Container(9900).NumItems,0) + !IntegerGreaterThan(Container(9900).NumItems,1)" effect="slide" start="0,0" end="525,0" time="0" easing="inout" reversible="true">Conditional</animation>
 	</include>
 	<!-- End Animation Includes -->
-
 	<!-- Start Visibility Includes -->
 	<include name="View-as">
 		<animation effect="slide" time="0" start="0,0" end="0,-720">Visible</animation>
@@ -964,5 +954,4 @@
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
 	<!-- End Visibility Includes -->
-
 </includes>

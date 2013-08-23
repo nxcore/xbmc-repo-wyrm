@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="HorzHomeMenu">
 		<include>screen-fade</include>
@@ -51,13 +52,10 @@
 			<font>font18</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
-
 		<!-- Low memory warning -->
 		<include>memory-low</include>
-
 		<!-- RSS info -->
 		<include>page-info</include>
-
 		<!-- Shelf icons-->
 		<control type="group">
 			<!-- Video icons -->
@@ -1093,7 +1091,7 @@
 			</control>
 			<!-- Settings icons -->
 			<control type="group">
-			<visible>ControlGroup(9450).HasFocus()</visible>
+				<visible>ControlGroup(9450).HasFocus()</visible>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
@@ -1191,7 +1189,7 @@
 						<label>20338</label>
 						<onclick>-</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
-						</item>
+					</item>
 					<item id="3">
 						<description>TV Menu</description>
 						<label>19020</label>
@@ -1230,7 +1228,6 @@
 				</content>
 			</control>
 		</control>
-
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
 			<include>horizontalhome-center</include>

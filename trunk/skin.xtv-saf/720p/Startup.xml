@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<controls>
@@ -33,6 +34,6 @@
 				<aspectratio>keep</aspectratio>
 				<texture>xtv-logo-big.png</texture>
 			</control>
-		</control>	
+		</control>
 	</controls>
 </window>

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <window>
-	<!--<animation effect="fade" time="250" delay="500">WindowOpen</animation>
-	<animation effect="fade" time="100">WindowClose</animation>-->
+	<animation effect="fade" time="250" delay="500">WindowOpen</animation>
+	<animation effect="fade" time="100">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
