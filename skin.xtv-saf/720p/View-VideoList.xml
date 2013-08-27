@@ -134,7 +134,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
-							<label>$INFO[ListItem.PlotOutline</label>
+							<label>$INFO[ListItem.PlotOutline]</label>
 						</control>
 					</control>
 				</control>
