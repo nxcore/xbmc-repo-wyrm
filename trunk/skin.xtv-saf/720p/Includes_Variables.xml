@@ -251,4 +251,13 @@
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + Container.Content(episodes)">$INFO[ListItem.Path,,../logo.png]</value>
 		<value>blank.png</value>
     </variable>
+    <variable name="QuitAction">
+        <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])">XBMC.quit()</value>
+        <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])">XBMC.reboot()</value>
+        <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])">XBMC.powerdown()</value>
+        <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])">XBMC.hibernate()</value>
+        <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])">XBMC.suspend()</value>
+        <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])">ActivateWindow(shutdownmenu)</value>
+		<value>XBMC.quit()</value>
+    </variable>
 </includes>

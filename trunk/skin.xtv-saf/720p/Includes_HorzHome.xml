@@ -27,7 +27,7 @@
 			<texture>menu-mask.png</texture>
 			<colordiffuse>BBF9F9F9</colordiffuse>
 		</control>
-		<!-- Hidden button to startup startup-playlist and resync home menu items id they get out of sync -->
+		<!-- Hidden button to startup startup-playlist and resync home menu items if they get out of sync -->
 		<control type="button" id="420">
 			<description>trigger playlist if selected</description>
 			<posx>-12</posx>
@@ -36,8 +36,10 @@
 			<height>1</height>
 			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9900,8)</onfocus>
-			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9450,1)</onfocus>
+			<onfocus>noop</onfocus>
+			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9450)</onfocus>
 			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9900)</onfocus>
+			<onfocus>noop</onfocus>
 			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9000)</onfocus>
 		</control>
 		<!-- Show time on home screen -->
@@ -1181,49 +1183,49 @@
 					<item id="1">
 						<description>Video Menu</description>
 						<label>3</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9100)</onclick>
 						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
 						<label>20338</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9150)</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
 						<description>TV Menu</description>
 						<label>19020</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9200)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 					</item>
 					<item id="4">
 						<description>Music Menu</description>
 						<label>2</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9250)</onclick>
 						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="5">
 						<description>Pictures Menu</description>
 						<label>1</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9300)</onclick>
 						<visible>Skin.HasSetting(home-photos)</visible>
 					</item>
 					<item id="6">
 						<description>Addon Menu</description>
 						<label>24001</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9350)</onclick>
 						<visible>!Skin.HasSetting(home-programs)</visible>
 					</item>
 					<item id="7">
 						<description>Weather Menu</description>
 						<label>8</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9400)</onclick>
 						<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					<item id="8">
 						<description>System Menu</description>
 						<label>13000</label>
-						<onclick>-</onclick>
+						<onclick>Control.SetFocus(9450)</onclick>
 					</item>
 				</content>
 			</control>
@@ -2077,7 +2079,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>13009</label>
-					<onclick>XBMC.quit()</onclick>
+					<onclick>$VAR[QuitAction]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -2086,87 +2088,7 @@
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown) + [IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])]</visible>
-				</control>
-				<control type="button" id="9486">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>13009</label>
-					<onclick>XBMC.reboot()</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
-				</control>
-				<control type="button" id="9488">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>13009</label>
-					<onclick>XBMC.powerdown()</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
-				</control>
-				<control type="button" id="9490">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>13009</label>
-					<onclick>XBMC.hibernate()</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
-				</control>
-				<control type="button" id="9492">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>13009</label>
-					<onclick>XBMC.suspend()</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
-				</control>
-				<control type="button" id="9494">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>13009</label>
-					<onclick>ActivateWindow(shutdownmenu)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown) + StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
+					<visible>!Skin.HasSetting(home-shutdown)</visible>
 				</control>
 			</control>
 		</control>

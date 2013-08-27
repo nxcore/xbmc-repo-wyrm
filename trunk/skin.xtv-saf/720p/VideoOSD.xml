@@ -234,7 +234,7 @@
 					<width>220</width>
 					<height>31</height>
 					<font>font11</font>
-					<label>($INFO[System.Time]) $INFO[VideoPlayer.Time]</label>
+					<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
 					<align>right</align>
 				</control>
 				<control type="label">
@@ -244,7 +244,7 @@
 					<height>31</height>
 					<align>left</align>
 					<font>font11</font>
-					<label>- $INFO[VideoPlayer.TimeRemaining] ($INFO[Player.FinishTime])</label>
+					<label>- $INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 				</control>
 				<!-- Progress bar -->
 				<control type="progress">
