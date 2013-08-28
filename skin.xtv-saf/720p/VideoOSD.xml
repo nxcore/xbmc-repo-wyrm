@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol always="true">214</defaultcontrol> 
+	<defaultcontrol always="true">214</defaultcontrol>
 	<animation effect="fade" start="0" time="100">WindowOpen</animation>
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
 	<animation effect="fade" end="0" time="200" condition="[Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]">Conditional</animation>
@@ -13,7 +13,7 @@
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-		
+
 		<!-- End Player info labels -->
 		<control type="group">
 			<posx>0</posx>
@@ -40,7 +40,7 @@
 						<control type="image" id="990">
 							<description>Use TV Clearart if available(episodes in season folders)</description>
 							<posx>8</posx>
-							<posy>-138</posy> 
+							<posy>-138</posy>
 							<width>275</width>
 							<height>145</height>
 							<texture fallback="blank.png">$INFO[Player.FolderPath,,../clearart.png]</texture>
@@ -49,7 +49,7 @@
 						<control type="image" id="991">
 							<description>Use TV Clearart if available(episodes in tv show folder)</description>
 							<posx>8</posx>
-							<posy>-138</posy> 
+							<posy>-138</posy>
 							<width>275</width>
 							<height>145</height>
 							<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
@@ -114,7 +114,7 @@
 						<control type="image" id="890">
 							<description>Use Movie Clearart if available</description>
 							<posx>8</posx>
-							<posy>-144</posy> 
+							<posy>-144</posy>
 							<width>275</width>
 							<height>145</height>
 							<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
@@ -178,8 +178,8 @@
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
-				</control>	
-				<!-- music -->	
+				</control>
+				<!-- music -->
 				<control type="image">
 					<description>Music cover image</description>
 					<posx>8</posx>
@@ -193,9 +193,9 @@
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
 				</control>
-			</control>	
+			</control>
 			<!-- End of Media Icon -->
-		
+
 			<!-- Player action labels -->
 			<control type="group">
 				<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation) | Player.DisplayAfterSeek | Player.Seeking]</visible>
@@ -223,7 +223,7 @@
 				</control>
 			</control>
 			<!-- End Player action labels -->
-			
+
 			<control type="group">
 				<visible>[Window.IsVisible(FullscreenVideo)]</visible>
 				<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
@@ -317,7 +317,7 @@
 				<width>42</width>
 				<height>60</height>
 				<texture>-</texture>
-			</control>	
+			</control>
 			<control type="button" id="217">
 				<description>Eject DVD</description>
 				<width>60</width>
@@ -347,7 +347,7 @@
 			<control type="togglebutton" id="213">
 				<description>Play</description>
 				<width>60</width>
-				<height>60</height>	
+				<height>60</height>
 				<texturefocus>osd-btn-pause-focus.png</texturefocus>
 				<texturenofocus>osd-btn-pause.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -419,7 +419,7 @@
 				<width>42</width>
 				<height>60</height>
 				<texture>-</texture>
-			</control>	
+			</control>
 			<control type="button" id="921">
 				<description>Audio Menu</description>
 				<width>60</width>
@@ -473,7 +473,7 @@
 			<control type="togglebutton" id="213">
 				<description>Play</description>
 				<width>60</width>
-				<height>60</height>	
+				<height>60</height>
 				<texturefocus>osd-btn-pause-focus.png</texturefocus>
 				<texturenofocus>osd-btn-pause.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -537,7 +537,7 @@
 				<texturenofocus>osd-btn-video.png</texturenofocus>
 				<onclick>XBMC.ActivateWindow(osdvideosettings)</onclick>
 			</control>
-		</control>			
+		</control>
 		<!-- End Player buttons -->
 	</controls>
 </window>
