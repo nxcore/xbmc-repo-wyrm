@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
-	
+
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
@@ -132,7 +132,7 @@
 					<texture>scroll-down.png</texture>
 					<visible>Container(101).HasNext</visible>
 				</control>
-				
+
 				<control type="grouplist" id="101">
 					<posx>53</posx>
 					<posy>112</posy>
@@ -296,7 +296,7 @@
 					<texture>scroll-down.png</texture>
 					<visible>Container(201).HasNext</visible>
 				</control>
-				
+
 				<control type="grouplist" id="201">
 					<posx>53</posx>
 					<posy>112</posy>
@@ -460,7 +460,7 @@
 					<texture>scroll-down.png</texture>
 					<visible>Container(301).HasNext</visible>
 				</control>
-				
+
 				<control type="grouplist" id="301">
 					<posx>53</posx>
 					<posy>112</posy>
@@ -624,7 +624,7 @@
 					<texture>scroll-down.png</texture>
 					<visible>Container(401).HasNext</visible>
 				</control>
-				
+
 				<control type="grouplist" id="401">
 					<posx>53</posx>
 					<posy>112</posy>
@@ -758,6 +758,6 @@
 					</control>
 				</control>
 			</control>
-		</control>	
+		</control>
 	</controls>
 </window>
