@@ -309,7 +309,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="12" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="12" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(111)</visible>
 							</control>
@@ -473,7 +473,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(121)</visible>
 							</control>
@@ -600,7 +600,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(131)</visible>
 							</control>
@@ -727,7 +727,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(141)</visible>
 							</control>
@@ -872,7 +872,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(151)</visible>
 							</control>
@@ -1008,7 +1008,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(161)</visible>
 							</control>
@@ -1127,7 +1127,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(171)</visible>
 							</control>
@@ -1256,7 +1256,7 @@
 								<posy>5</posy>
 								<width>600</width>
 								<height>170</height>
-								<texture border="6" diffuse="mask-rect.png">volume-back.png</texture>
+								<texture border="6" diffuse="mask-rect.png">colours/blue.png</texture>
 								<colordiffuse>mask-background</colordiffuse>
 								<visible>Control.HasFocus(181)</visible>
 							</control>

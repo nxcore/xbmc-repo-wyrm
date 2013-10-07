@@ -185,7 +185,17 @@
 				<width>42</width>
 				<height>60</height>
 				<texture>-</texture>
-			</control>	
+			</control>
+			<control type="button" id="950">
+				<description>Lyrics Menu</description>
+				<width>60</width>
+				<height>60</height>
+				<texturenofocus>osd-btn-lyric.png</texturenofocus>
+				<texturefocus>osd-btn-lyric-focus.png</texturefocus>
+				<onclick>Dialog.Close(MusicOSD)</onclick>
+				<onclick>XBMC.RunScript($INFO[Skin.String(osd-lyricpath)])</onclick>
+				<visible>!IsEmpty(Skin.String(osd-lyricpath))</visible>
+			</control>
 			<control type="button" id="220">
 				<description>Popup Vis Preset List</description>
 				<width>60</width>

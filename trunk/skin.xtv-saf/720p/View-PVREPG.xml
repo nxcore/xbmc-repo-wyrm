@@ -29,10 +29,10 @@
 				<rulerlayout height="35" width="40">
 					<control type="image" id="1">
 						<width>40</width>
-						<height>29</height>
+						<height>35</height>
 						<posx>0</posx>
 						<posy>0</posy>
-						<texture border="5">blank.png</texture>
+						<texture>blank.png</texture>
 					</control>
 					<control type="label" id="2">
 						<posx>10</posx>
@@ -60,7 +60,8 @@
 						<posy>0</posy>
 						<width>298</width>
 						<height>52</height>
-						<texture border="5">pstvButtonNoFocus.png</texture>
+						<texture border="5">colours/grey.png</texture>
+						<colordiffuse>osd-background</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>4</posx>
@@ -100,7 +101,8 @@
 						<posy>0</posy>
 						<width>298</width>
 						<height>52</height>
-						<texture border="5">pstvButtonFocus.png</texture>
+						<texture border="5">colours/blue.png</texture>
+						<colordiffuse>osd-background</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>4</posx>
@@ -168,7 +170,8 @@
 						<height>52</height>
 						<posx>0</posx>
 						<posy>0</posy>
-						<texture border="3">pstvButtonFocus.png</texture>
+						<texture border="3">colours/blue.png</texture>
+						<colordiffuse>osd-background</colordiffuse>
 					</control>
 					<control type="image" id="2">
 						<width>40</width>
@@ -176,7 +179,8 @@
 						<posx>0</posx>
 						<posy>0</posy>
 						<aspectratio>stretch</aspectratio>
-						<texture border="3">pstvButtonFocus.png</texture>
+						<texture>colours/blue.png</texture>
+						<colordiffuse>osd-background</colordiffuse>
 					</control>
 					<control type="label" id="1">
 						<posx>20</posx>
@@ -243,4 +247,4 @@
 			</control>
 		</control>
 	</include>
-</includes>	
+</includes>

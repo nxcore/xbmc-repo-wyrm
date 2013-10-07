@@ -211,7 +211,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>900</height>
-				<texture>black.png</texture>
+				<texture>colours/black.png</texture>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">

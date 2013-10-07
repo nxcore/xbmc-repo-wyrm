@@ -37,7 +37,7 @@
 			<orientation>horizontal</orientation>
 			<control type="label">
 				<description>Video screen headings</description>
-				<width min="60" max="275">auto</width>
+				<width min="40" max="275">auto</width>
 				<height>72</height>
 				<label>$VAR[VideoHeadings]</label>
 				<font>font18</font>
@@ -96,7 +96,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>black.png</texture>
+					<texture>colours/black.png</texture>
 					<colordiffuse>osd-background</colordiffuse>
 					<visible>!Skin.HasSetting(view-as-lock)</visible>
 				</control>

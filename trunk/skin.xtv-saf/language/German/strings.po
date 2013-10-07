@@ -198,7 +198,7 @@ msgstr "MS Windows"
 
 msgctxt "#31569"
 msgid "iOS"
-msgstr "XBox"
+msgstr "iOS"
 
 msgctxt "#31570"
 msgid "Mac OS X"
