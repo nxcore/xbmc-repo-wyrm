@@ -429,7 +429,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="211">
+					<!--<control type="radiobutton" id="211">
 						<description>Subtitles in OSD toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -455,8 +455,52 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.HasSetting(osd-subtitles)</visible>
+					</control>-->
+					<control type="button" id="213">
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textwidth>785</textwidth>
+						<label>OSD Lyrics</label>
+						<label2>$INFO[system.addontitle(Skin.String(osd-lyricpath))]</label2>
+						<onclick>Skin.SetAddon(osd-lyricpath,xbmc.python.lyrics)</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
 					</control>
-					<control type="radiobutton" id="213">
+					<control type="button" id="214">
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textwidth>785</textwidth>
+						<label>- $LOCALIZE[24020]</label>
+						<enable>!IsEmpty(Skin.String(osd-lyricpath))</enable>
+						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-lyricpath)])</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+					</control> 
+					<control type="button" id="215">
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textwidth>785</textwidth>
+						<label>OSD Subscript</label>
+						<label2>$INFO[system.addontitle(Skin.String(osd-subscriptpath))]</label2>
+						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+					</control>
+					<control type="button" id="216">
+						<width>885</width>
+						<height>56</height>
+						<font>font12</font>
+						<textwidth>785</textwidth>
+						<label>- $LOCALIZE[24020]</label>
+						<enable>!IsEmpty(Skin.String(osd-subscriptpath))</enable>
+						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-subscriptpath)])</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+					</control>
+					<control type="radiobutton" id="217">
 						<description>Use TV Tunes</description>
 						<font>font12</font>
 						<width>885</width>
@@ -470,7 +514,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="button" id="214">
+					<control type="button" id="218">
 						<description>TV Logo Downloader Script</description>
 						<width>885</width>
 						<height>56</height>
