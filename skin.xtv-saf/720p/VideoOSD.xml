@@ -412,7 +412,7 @@
 				<texturefocus>osd-btn-subtitle-focus.png</texturefocus>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
 				<onclick>XBMC.RunScript($INFO[Skin.String(osd-subscriptpath)])</onclick>
-				<visible>Skin.HasSetting(osd-subtitles)</visible>
+				<visible>!IsEmpty(Skin.String(osd-subscriptpath))</visible>
 			</control>
 			<control type="image" id="940">
 				<description>Dummy</description>
