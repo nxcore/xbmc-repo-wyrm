@@ -115,13 +115,13 @@
 				</control>
 			</control>
 		</control>
-
+		
 		<!-- Low memory warning -->
-		<include>memory-low</include>
-
+		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
+		
 		<!-- RSS info -->
-		<include>page-info</include>
-
+		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
+		
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>960</posx>

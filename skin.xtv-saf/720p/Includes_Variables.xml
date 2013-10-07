@@ -188,6 +188,17 @@
 		<value condition="Control.IsVisible(13)">$LOCALIZE[19163]</value>
 		<value>$INFO[Container.FolderName]</value>
 	</variable>
+	<variable name="HomeHeading" description="Current Horizontal Home Menu Headings">
+		<value condition="Container(9900).HasFocus(1)">Control.SetFocus(9100)</value>
+		<value condition="Container(9900).HasFocus(2)">Control.SetFocus(9150)</value>
+		<value condition="Container(9900).HasFocus(3)">Control.SetFocus(9200)</value>
+		<value condition="Container(9900).HasFocus(4)">Control.SetFocus(9250)</value>
+		<value condition="Container(9900).HasFocus(5)">Control.SetFocus(9300)</value>
+		<value condition="Container(9900).HasFocus(6)">Control.SetFocus(9350)</value>
+		<value condition="Container(9900).HasFocus(7)">Control.SetFocus(9400)</value>
+		<value condition="Container(9900).HasFocus(8)">Control.SetFocus(9450)</value>
+	</variable>	
+	Container(id).HasFocus(item_number)
 	<variable name="IconBanner">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value>$INFO[ListItem.Icon]</value>
@@ -242,12 +253,16 @@
 	</variable>
     <variable name="VideoLogo">
         <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="!IsEmpty(ListItem.Art(tvshow.clearlogo)) + Container.Content(tvshows)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(movies)]">$INFO[ListItem.path,,logo.png]</value>
 		<value>blank.png</value>
     </variable>
     <variable name="ListViewVideoLogo">
         <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)]">$INFO[ListItem.path,,logo.png]</value>
+        <value condition="IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons)]">$INFO[ListItem.path,,logo.png]</value>
+        <value condition="IsEmpty(ListItem.Art(tvshow.clearlogo)) + Container.Content(episodes) + !IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + Container.Content(episodes)">$INFO[ListItem.Path,,../logo.png]</value>
 		<value>blank.png</value>
     </variable>
