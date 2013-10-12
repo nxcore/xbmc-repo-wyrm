@@ -43,9 +43,6 @@
 		<!-- Low memory warning -->
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
 		
-		<!-- RSS info -->
-		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
-		
 		<!-- Shelf icons-->
 		<control type="group">
 			<!-- Video icons -->
@@ -1830,6 +1827,10 @@
 			<texture background="true" fallback="blank.png">homelogo.png</texture>
 			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
 		</control>
+		
+		<!-- RSS info -->
+		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
+		
 		<!-- media infos (music) -->
 		<control type="group">
 			<visible>Skin.HasSetting(overlay) + [Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + !Window.IsActive(PlayerControls)</visible>
