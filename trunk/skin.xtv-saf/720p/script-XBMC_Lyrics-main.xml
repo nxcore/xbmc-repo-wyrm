@@ -98,7 +98,7 @@
 				<posy>50</posy>
 				<width>550</width>
 				<height>30</height>
-				<label>Lyrics Source - $INFO[Control.GetLabel(200)]</label>
+				<label>$LOCALIZE[21870] - $INFO[Control.GetLabel(200)]</label>
 				<font>font12</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -116,7 +116,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font18</font>
-				<label>$LOCALIZE[SCRIPT0]</label>
+				<label>$ADDON[script.cu.lrclyrics 0]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 			</control>
@@ -224,7 +224,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<selectedcolor>listselectedtext</selectedcolor>
-				<label>Choose Your Song</label>
+				<label>$LOCALIZE[179]?</label>
 				<visible>Control.IsVisible(120) + ![Control.IsVisible(100) | Control.IsVisible(110)]</visible>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
