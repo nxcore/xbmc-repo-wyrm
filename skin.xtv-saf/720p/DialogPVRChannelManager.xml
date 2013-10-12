@@ -71,7 +71,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
@@ -83,7 +83,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
@@ -119,7 +119,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 						<visible>ListItem.Property(ActiveChannel)</visible>
 					</control>
@@ -131,7 +131,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
 						<visible>!ListItem.Property(ActiveChannel)</visible>
 					</control>
@@ -151,7 +151,7 @@
 						<font>font11</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
 					</control>
 				</focusedlayout>

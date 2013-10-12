@@ -41,7 +41,7 @@
 						<height>29</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -78,7 +78,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<info>ListItem.ChannelNumber</info>
 						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
@@ -89,7 +89,7 @@
 						<height>52</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
@@ -119,7 +119,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<info>ListItem.ChannelNumber</info>
 						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
@@ -130,7 +130,7 @@
 						<height>52</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
@@ -151,7 +151,7 @@
 						<height>48</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<wrapmultiline>true</wrapmultiline>
 						<info>ListItem.Label</info>
@@ -189,7 +189,7 @@
 						<height>48</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<wrapmultiline>true</wrapmultiline>

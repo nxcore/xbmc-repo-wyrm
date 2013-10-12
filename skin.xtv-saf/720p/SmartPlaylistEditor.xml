@@ -112,7 +112,7 @@
 						<height>46</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<selectedcolor>listselectedcolor</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<font>font12</font>
 					</control>
 				</itemlayout>
@@ -132,7 +132,7 @@
 						<height>46</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<selectedcolor>listselectedcolor</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<font>font12</font>
 					</control>
 				</focusedlayout>

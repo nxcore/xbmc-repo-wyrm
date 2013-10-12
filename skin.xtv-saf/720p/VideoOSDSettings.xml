@@ -85,7 +85,7 @@
 				<height>46</height>
 				<width>700</width>
 				<font>font12</font>
-				<selectedcolor>listselectedtext</selectedcolor>
+				<selectedcolor>listselected-text</selectedcolor>
 				<textoffsetx>18</textoffsetx>
 				<aligny>center</aligny>
 				<reverse>yes</reverse>

@@ -74,7 +74,7 @@
 					<width>380</width>
 					<height>28</height>
 					<font>font12</font>
-					<selectedcolor>listselectedcolor</selectedcolor>
+					<selectedcolor>listselected-text</selectedcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
 				</control>
@@ -101,7 +101,7 @@
 					<width>380</width>
 					<height>28</height>
 					<font>font12</font>
-					<selectedcolor>listselectedcolor</selectedcolor>
+					<selectedcolor>listselected-text</selectedcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
 				</control>

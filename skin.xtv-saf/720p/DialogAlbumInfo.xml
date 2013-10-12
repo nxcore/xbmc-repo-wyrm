@@ -445,7 +445,7 @@
 						<height>24</height>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -456,7 +456,7 @@
 						<height>24</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -470,7 +470,7 @@
 						<height>24</height>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
 					</control>
@@ -481,7 +481,7 @@
 						<height>24</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Duration]</label>
 					</control>
@@ -514,7 +514,7 @@
 						<height>24</height>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -525,7 +525,7 @@
 						<height>24</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -539,7 +539,7 @@
 						<height>24</height>
 						<font>font12</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
 					</control>
@@ -550,7 +550,7 @@
 						<height>24</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Duration]</label>
 					</control>
