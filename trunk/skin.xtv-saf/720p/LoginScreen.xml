@@ -113,7 +113,7 @@
 					<font>font18</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<selectedcolor>listselected-text</selectedcolor>
 					<info>ListItem.Label</info>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>

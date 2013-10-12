@@ -130,7 +130,7 @@
 				<height>370</height>
 				<align>center</align>
 				<font>font13</font>
-				<selectedcolor>listselectedtext</selectedcolor>
+				<selectedcolor>listselected-text</selectedcolor>
 				<onup>100</onup>
 				<ondown>100</ondown>
 				<onleft>101</onleft>
@@ -223,7 +223,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<selectedcolor>listselectedtext</selectedcolor>
+				<selectedcolor>listselected-text</selectedcolor>
 				<label>$LOCALIZE[179]?</label>
 				<visible>Control.IsVisible(120) + ![Control.IsVisible(100) | Control.IsVisible(110)]</visible>
 			</control>
@@ -247,7 +247,7 @@
 						<width>1240</width>
 						<height>40</height>
 						<font>font13</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
@@ -260,7 +260,7 @@
 						<width>1240</width>
 						<height>40</height>
 						<font>font13</font>
-						<textcolor>listselectedtext</textcolor>
+						<textcolor>listselected-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>

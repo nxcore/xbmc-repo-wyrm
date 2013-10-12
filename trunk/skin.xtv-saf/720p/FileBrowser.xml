@@ -60,7 +60,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<selectedcolor>listselected-text</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
@@ -80,7 +80,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<selectedcolor>listselected-text</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

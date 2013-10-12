@@ -57,7 +57,7 @@
 						<width>100</width>
 						<height>30</height>
 						<font>font13</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
@@ -84,7 +84,7 @@
 						<width>300</width>
 						<height>30</height>
 						<font>font12</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -96,7 +96,7 @@
 						<width>250</width>
 						<height>30</height>
 						<font>font12</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -118,7 +118,7 @@
 						<width>100</width>
 						<height>30</height>
 						<font>font13</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
@@ -145,7 +145,7 @@
 						<width>300</width>
 						<height>30</height>
 						<font>font12</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -157,7 +157,7 @@
 						<width>250</width>
 						<height>30</height>
 						<font>font12</font>
-						<selectedcolor>listselectedtext</selectedcolor>
+						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>

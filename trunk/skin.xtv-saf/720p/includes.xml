@@ -1158,7 +1158,7 @@
 				<label>13350</label>
 				<align>left</align>
 				<font>font12</font>
-				<textcolor>listselectedtext</textcolor>
+				<textcolor>listselected-text</textcolor>
 			</control>
 			<control type="label">
 				<description>Video Title label</description>

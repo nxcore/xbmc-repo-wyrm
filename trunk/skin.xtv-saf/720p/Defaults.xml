@@ -16,7 +16,7 @@
 		<scrollsuffix> • </scrollsuffix>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
-		<selectedcolor>listselectedtext</selectedcolor>
+		<selectedcolor>listselected-text</selectedcolor>
 	</default>
 	<default type="spinbutton">
 		<posx>531</posx>
@@ -260,6 +260,7 @@
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
+		<invalidcolor>invalid-text</invalidcolor>
 		<pulseonselect>false</pulseonselect>
 		<textwidth>340</textwidth>
 		<textoffsetx>10</textoffsetx>
