@@ -3,6 +3,7 @@
 	<!--
 	  CUSTOM WINDOWS LIST
 		_Overlay 50
+		_Custom_3DDialogSelect 1151
 		_SkinSettings 1152
 		_HomeSettings 1153
 		_GetArtwork.xml 1154
@@ -611,7 +612,7 @@
 				<font>font18</font>
 			</control>
 			<control type="label">
-				<description>Weather label</description>
+				<description>Weather Provider label</description>
 				<posx>20</posx>
 				<posy>10</posy>
 				<height>24</height>
@@ -619,7 +620,30 @@
 				<font>font11</font>
 				<label>$INFO[Window(Weather).Property(WeatherProvider),$LOCALIZE[31536] - ]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				<visible>IsEmpty(Window(Weather).Property(WeatherProviderLogo))</visible>
 			</control>
+			<control type="group">
+				<control type="image">
+					<description>weather provider logo shadow</description>
+					<posx>21</posx>
+					<posy>11</posy>
+					<width>180</width>
+					<height>45</height>
+					<colordiffuse>StudioShadow</colordiffuse>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
+				</control>
+				<control type="image">
+					<description>weather provider logo</description>
+					<posx>20</posx>
+					<posy>10</posy>
+					<width>180</width>
+					<height>45</height>
+					<colordiffuse>StudioDiffuse</colordiffuse>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
+				</control>
+			</control>	
 			<control type="label">
 				<description>Current label</description>
 				<posx>0</posx>
