@@ -420,6 +420,15 @@
 				<height>60</height>
 				<texture>-</texture>
 			</control>
+			<control type="button" id="923">
+				<description>3D Selection List</description>
+				<width>60</width>
+				<height>60</height>
+				<texturefocus>osd-btn-3D-focus.png</texturefocus>
+				<texturenofocus>osd-btn-3D.png</texturenofocus>
+				<onclick>XBMC.ActivateWindow(1151)</onclick>
+				<visible>VideoPlayer.IsStereoscopic</visible>
+			</control>
 			<control type="button" id="921">
 				<description>Audio Menu</description>
 				<width>60</width>
