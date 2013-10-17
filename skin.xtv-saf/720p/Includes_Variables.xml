@@ -275,4 +275,8 @@
         <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])">ActivateWindow(shutdownmenu)</value>
 		<value>XBMC.quit()</value>
     </variable>
+	<variable name="PlayList">
+		<value condition="Player.HasVideo">ActivateWindow(videoplaylist)</value>
+		<value condition="Player.HasAudio">ActivateWindow(musicplaylist)</value>
+	</variable> 
 </includes>
