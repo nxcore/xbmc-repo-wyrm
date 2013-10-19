@@ -197,8 +197,11 @@
 		<value condition="Container(9900).HasFocus(6)">Control.SetFocus(9350)</value>
 		<value condition="Container(9900).HasFocus(7)">Control.SetFocus(9400)</value>
 		<value condition="Container(9900).HasFocus(8)">Control.SetFocus(9450)</value>
-	</variable>	
-	Container(id).HasFocus(item_number)
+	</variable>
+	<variable name="TVHeadingName" description="Current String to use for TV headings">
+		<value condition="Skin.HasSetting(homemenu-vertical)">$LOCALIZE[31027]</value>
+		<value>$LOCALIZE[19020]</value>
+	</variable>
 	<variable name="IconBanner">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value>$INFO[ListItem.Icon]</value>
