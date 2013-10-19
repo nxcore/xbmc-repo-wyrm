@@ -34,15 +34,15 @@
 			<height>1</height>
 			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus>Control.SetFocus(9900)</onfocus>
-			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->			
+			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->
 		</control>
-	
+
 		<!-- Show time on home screen -->
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include>
-		
+
 		<!-- Low memory warning -->
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
-		
+
 		<!-- Shelf icons-->
 		<control type="group">
 			<!-- Video icons -->
@@ -149,18 +149,7 @@
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9160)</visible>
-								<control type="image">
-									<posx>35</posx>
-									<posy>5</posy>
-									<width>140</width>
-									<height>188</height>
-									<aspectratio>stretch</aspectratio>
-									<texture border="10">mask-hilite.png</texture>
-									<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
-									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
-								</control>
 								<control type="group">
-									<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<control type="image">
 										<posx>35</posx>
 										<posy>5</posy>
@@ -168,6 +157,9 @@
 										<height>188</height>
 										<aspectratio scalediffuse="true">stretch</aspectratio>
 										<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+										<bordertexture border="10">mask-hilite.png</bordertexture>
+										<bordersize>10</bordersize>
+										<animation effect="zoom" start="100" end="116" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									</control>
 									<control type="image">
 										<posx>35</posx>
@@ -194,7 +186,8 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)">MovieLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)">MovieRecent</include>
+						<include condition="!System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)">MovieLatest</include>
 						<include condition="StringCompare(Skin.String(shelf-movieimages),Recommended) | StringCompare(Skin.String(shelf-movieimages),All)">MovieRecommended</include>
 						</content>
 					</control>
@@ -254,7 +247,7 @@
 								<height>165</height>
 								<align>center</align>
 								<aligny>top</aligny>
-								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<aspectratio scalediffuse="true">keep</aspectratio>
 								<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
 							<control type="image">
@@ -264,7 +257,7 @@
 								<height>165</height>
 								<align>center</align>
 								<aligny>top</aligny>
-								<aspectratio scalediffuse="true">stretch</aspectratio>
+								<aspectratio scalediffuse="true">keep</aspectratio>
 								<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 							</control>
 						</itemlayout>
@@ -278,7 +271,7 @@
 									<height>165</height>
 									<align>center</align>
 									<aligny>top</aligny>
-									<aspectratio scalediffuse="true">stretch</aspectratio>
+									<aspectratio scalediffuse="true">keep</aspectratio>
 									<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 								</control>
 								<control type="image">
@@ -288,26 +281,13 @@
 									<height>165</height>
 									<align>center</align>
 									<aligny>top</aligny>
-									<aspectratio scalediffuse="true">stretch</aspectratio>
+									<aspectratio scalediffuse="true">keep</aspectratio>
 									<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 								</control>
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9210)</visible>
-								<control type="image">
-									<posx>14</posx>
-									<posy>20</posy>
-									<width>220</width>
-									<height>165</height>
-									<align>center</align>
-									<aligny>top</aligny>
-									<aspectratio>stretch</aspectratio>
-									<texture border="10">mask-hilite.png</texture>
-									<animation effect="zoom" start="100" end="112" center="auto" time="600" tween="back" easing="out">Focus</animation>
-									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
-								</control>
 								<control type="group">
-									<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<control type="image">
 										<posx>14</posx>
 										<posy>20</posy>
@@ -315,8 +295,11 @@
 										<height>165</height>
 										<align>center</align>
 										<aligny>top</aligny>
-										<aspectratio scalediffuse="true">stretch</aspectratio>
+										<aspectratio scalediffuse="true">keep</aspectratio>
 										<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+										<bordertexture border="10">mask-hilite.png</bordertexture>
+										<bordersize>10</bordersize>
+										<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									</control>
 									<control type="image">
 										<posx>14</posx>
@@ -325,7 +308,7 @@
 										<height>165</height>
 										<align>center</align>
 										<aligny>top</aligny>
-										<aspectratio scalediffuse="true">stretch</aspectratio>
+										<aspectratio scalediffuse="true">keep</aspectratio>
 										<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 									</control>
 								</control>
@@ -353,14 +336,15 @@
 										<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 										<font>font11</font>
 									</control>
-								</control>	
-							</control>	
+								</control>
+							</control>
 						</focusedlayout>
 						<content>
-						<include condition="StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeRecent</include>
+						<include condition="!System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeLatest</include>
 						<include condition="StringCompare(Skin.String(shelf-tvshowimages),Recommended) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeRecommended</include>
 						</content>
-					</control>	
+					</control>
 				</control>
 			</control>
 			<!-- Music icons -->
@@ -458,20 +442,7 @@
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9260)</visible>
-								<control type="image">
-									<posx>20</posx>
-									<posy>15</posy>
-									<width>170</width>
-									<height>170</height>
-									<aspectratio>stretch</aspectratio>
-									<align>center</align>
-									<aligny>top</aligny>
-									<texture border="10">mask-hilite.png</texture>
-									<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
-									<visible>!SubString(ListItem.Thumb,Default,Left)</visible>
-								</control>
 								<control type="group">
-									<animation effect="zoom" start="100" end="102" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<control type="image">
 										<posx>20</posx>
 										<posy>15</posy>
@@ -481,6 +452,9 @@
 										<align>center</align>
 										<aligny>top</aligny>
 										<texture diffuse="mask-squ.png" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+										<bordertexture border="10">mask-hilite.png</bordertexture>
+										<bordersize>10</bordersize>
+										<animation effect="zoom" start="100" end="115" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									</control>
 									<control type="image">
 										<posx>20</posx>
@@ -521,10 +495,11 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumRecent</include>
+						<include condition="!System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumLatest</include>
 						<include condition="StringCompare(Skin.String(shelf-musicimages),Recommended) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumRecommended</include>
 						</content>
-					</control>	
+					</control>
 				</control>
 			</control>
 			<!-- Pictures icons -->
@@ -705,9 +680,9 @@
 						<content>
 						<!--<include>AddonFavourites</include>-->
 						</content>
-					</control>	
+					</control>
 				</control>
-			</control>			
+			</control>
 			<!-- Weather icons -->
 			<control type="group">
 				<visible>ControlGroup(9400).HasFocus()</visible>
@@ -1705,8 +1680,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 					<onclick>ActivateWindow(PlayerControls)</onclick>
-					<onclick>Control.SetFocus(9900,8)</onclick>
-					<onclick>Control.SetFocus(9450)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -1827,10 +1800,10 @@
 			<texture background="true" fallback="blank.png">homelogo.png</texture>
 			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
 		</control>
-		
+
 		<!-- RSS info -->
 		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
-		
+
 		<!-- media infos (music) -->
 		<control type="group">
 			<visible>Skin.HasSetting(overlay) + [Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + !Window.IsActive(PlayerControls)</visible>
