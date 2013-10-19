@@ -53,7 +53,7 @@
 				<posy>166</posy>
 				<width>305</width>
 				<height>56</height>
-				<label>31027</label>
+				<label>$VAR[TVHeadingName]</label>
 				<onfocus>Skin.SetString(customsettingmenu,tv)</onfocus>
 				<onup>981</onup>
 				<ondown>983</ondown>
@@ -215,7 +215,8 @@
 								<item id="2">
 									<description>Recent</description>
 									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-movieimages,Recommended)</onclick>
+									<onclick condition="System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-movieimages,Recommended)</onclick>
+									<onclick condition="!System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-movieimages,Icon)</onclick>
 									<visible>StringCompare(Skin.String(shelf-movieimages),Recent)</visible>
 								</item>
 								<item id="3">
@@ -266,7 +267,8 @@
 								<item id="1">
 									<description>Icon</description>
 									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-movieimages,All)</onclick>
+									<onclick condition="System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-movieimages,All)</onclick>
+									<onclick condition="!System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-movieimages,Recent)</onclick>
 									<visible>IsEmpty(Skin.String(shelf-movieimages)) | StringCompare(Skin.String(shelf-movieimages),Icon)</visible>
 								</item>
 								<item id="4">
@@ -524,7 +526,8 @@
 								<item id="2">
 									<description>Recent</description>
 									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
+									<onclick condition="System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
+									<onclick condition="!System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-tvshowimages,Icon)</onclick>
 									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recent)</visible>
 								</item>
 								<item id="3">
@@ -575,7 +578,8 @@
 								<item id="1">
 									<description>Icon</description>
 									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,All)</onclick>
+									<onclick condition="System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-tvshowimages,All)</onclick>
+									<onclick condition="!System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-tvshowimages,Recent)</onclick>
 									<visible>IsEmpty(Skin.String(shelf-tvshowimages)) | StringCompare(Skin.String(shelf-tvshowimages),Icon)</visible>
 								</item>
 								<item id="4">
@@ -834,6 +838,8 @@
 									<description>Recent</description>
 									<label>Recent</label>
 									<onclick>Skin.SetString(shelf-musicimages,Recommended)</onclick>
+									<onclick condition="System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-musicimages,Recommended)</onclick>
+									<onclick condition="!System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-musicimages,Icon)</onclick>
 									<visible>StringCompare(Skin.String(shelf-musicimages),Recent)</visible>
 								</item>
 								<item id="3">
@@ -884,7 +890,8 @@
 								<item id="1">
 									<description>Icon</description>
 									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-musicimages,All)</onclick>
+									<onclick condition="System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-musicimages,All)</onclick>
+									<onclick condition="!System.HasAddon(service.skin.widgets)">Skin.SetString(shelf-musicimages,Recent)</onclick>
 									<visible>IsEmpty(Skin.String(shelf-musicimages)) | StringCompare(Skin.String(shelf-musicimages),Icon)</visible>
 								</item>
 								<item id="4">
