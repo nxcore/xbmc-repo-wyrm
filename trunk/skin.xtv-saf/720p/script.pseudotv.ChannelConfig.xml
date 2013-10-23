@@ -57,7 +57,7 @@
                 <label>31704</label>
             </control>
             <control type="scrollbar" id="103">
-			    <posx>46r</posx>
+			    <posx>46</posx>
                 <posy>40</posy>
                 <width>20</width>
                 <height>405</height>
