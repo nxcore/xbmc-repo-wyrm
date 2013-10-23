@@ -1,4 +1,5 @@
 <window>
+	<onload condition="Skin.HasSetting(background-slideshow)">RunScript(script.artistslideshow)</onload>
 	<allowoverlay>no</allowoverlay>
 	<visible>!Window.IsVisible(videooverlay)</visible>
 	<visible>!Window.IsVisible(fullscreenvideo)</visible>
