@@ -25,14 +25,13 @@
 			<texture>menu-mask.png</texture>
 			<colordiffuse>BBF9F9F9</colordiffuse>
 		</control>
-		<!-- Hidden button to startup startup-playlist and resync home menu items if they get out of sync -->
+		<!-- Hidden button to resync home menu items if they get out of sync -->
 		<control type="button" id="420">
 			<description>trigger playlist if selected</description>
 			<posx>-12</posx>
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus>Control.SetFocus(9900)</onfocus>
 			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->
 		</control>
@@ -44,7 +43,7 @@
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
 
 		<!-- Shelf icons-->
-		<control type="group">
+		<control type="group" id="9800">
 			<!-- Video icons -->
 			<control type="group">
 				<visible>ControlGroup(9100).HasFocus()</visible>
@@ -186,9 +185,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)">MovieRecent</include>
-						<include condition="!System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)">MovieLatest</include>
-						<include condition="StringCompare(Skin.String(shelf-movieimages),Recommended) | StringCompare(Skin.String(shelf-movieimages),All)">MovieRecommended</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)]">MovieRecent</include>
+						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)]">MovieLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),Recommended) | StringCompare(Skin.String(shelf-movieimages),All)]">MovieRecommended</include>
 						</content>
 					</control>
 				</control>
@@ -340,9 +339,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeRecent</include>
-						<include condition="!System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeLatest</include>
-						<include condition="StringCompare(Skin.String(shelf-tvshowimages),Recommended) | StringCompare(Skin.String(shelf-tvshowimages),All)">EpisodeRecommended</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeRecent</include>
+						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),Recommended) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeRecommended</include>
 						</content>
 					</control>
 				</control>
@@ -495,9 +494,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumRecent</include>
-						<include condition="!System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumLatest</include>
-						<include condition="StringCompare(Skin.String(shelf-musicimages),Recommended) | StringCompare(Skin.String(shelf-musicimages),All)">AlbumRecommended</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)]">AlbumRecent</include>
+						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)]">AlbumLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),Recommended) | StringCompare(Skin.String(shelf-musicimages),All)]">AlbumRecommended</include>
 						</content>
 					</control>
 				</control>
@@ -685,9 +684,9 @@
 			</control>
 			<!-- Weather icons -->
 			<control type="group">
-				<visible>ControlGroup(9400).HasFocus()</visible>
+				<visible>ControlGroup(9400).HasFocus() + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 				<control type="group">
-					<visible>!Weather.IsFetched | !Skin.HasSetting(home-currentweather)</visible>
+					<visible>!Weather.IsFetched</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -752,7 +751,7 @@
 			<texture>separator.png</texture>
 		</control>
 		<!--Home NavBar-->
-		<control type="group">
+		<control type="group" id="9850">
 			<include>horizontalhome-center</include>
 			<control type="list" id="9900">
 				<posx>10</posx>
@@ -837,7 +836,7 @@
 						<description>Weather Menu</description>
 						<label>8</label>
 						<onclick>Control.SetFocus(9400)</onclick>
-						<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
+						<visible>!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 					</item>
 					<item id="8">
 						<description>System Menu</description>
@@ -849,16 +848,17 @@
 		</control>
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
-			<include>horizontalhome-center</include>
 			<posx>10</posx>
 			<posy>365</posy>
-			<width>1260</width>
+			<width>210</width>
 			<height>306</height>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<control type="grouplist" id="9100">
+				<include>horizontalhome-slide</include>
 				<visible>!Skin.HasSetting(home-video)</visible>
 				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -958,8 +958,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9150">
+				<include>horizontalhome-slide</include>
 				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
@@ -1077,8 +1079,10 @@
 			</control>
 			<!-- TV Sub Menu -->
 			<control type="grouplist" id="9200">
+				<include>horizontalhome-slide</include>
 				<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
@@ -1212,8 +1216,10 @@
 			</control>
 			<!-- Music Sub menu -->
 			<control type="grouplist" id="9250">
+				<include>horizontalhome-slide</include>
 				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
@@ -1348,8 +1354,10 @@
 			</control>
 			<!-- Pictures Sub menu -->
 			<control type="grouplist" id="9300">
+				<include>horizontalhome-slide</include>
 				<visible>Skin.HasSetting(home-photos)</visible>
 				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1387,8 +1395,10 @@
 			</control>
 			<!-- Addons Sub menu -->
 			<control type="grouplist" id="9350">
+				<include>horizontalhome-slide</include>
 				<visible>!Skin.HasSetting(home-programs)</visible>
 				<animation condition="!ControlGroup(9350).HasFocus() + !Control.HasFocus(9360)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9355</onup>
@@ -1461,7 +1471,7 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>$INFO[Skin.String(CustomAddon.5.Label)] </label>
+					<label>$INFO[Skin.String(CustomAddon.5.Label)]</label>
 					<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -1551,8 +1561,10 @@
 			</control>
 			<!-- Weather Sub menu -->
 			<control type="grouplist" id="9400">
-				<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
+				<include>horizontalhome-slide</include>
+				<visible>!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1575,7 +1587,9 @@
 			</control>
 			<!-- Settings Sub menu -->
 			<control type="grouplist" id="9450">
+				<include>horizontalhome-slide</include>
 				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1805,107 +1819,108 @@
 		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
 
 		<!-- media infos (music) -->
-		<control type="group">
-			<visible>Skin.HasSetting(overlay) + [Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)] + !Window.IsActive(PlayerControls)</visible>
+		<control type="group" id="9950">
+			<visible>Skin.HasSetting(overlay) + !Window.IsActive(PlayerControls)</visible>
 			<include>media-slide</include>
 			<include>homemediainfo</include>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>556</posy>
-				<width>120</width>
-				<height>120</height>
-				<texture background="true">$INFO[MusicPlayer.Cover]</texture>
-				<aspectratio align="center">keep</aspectratio>
+			<control type="group" id="9960">
+				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
+				<control type="image">
+					<description>cover image</description>
+					<posx>15</posx>
+					<posy>556</posy>
+					<width>120</width>
+					<height>120</height>
+					<texture background="true">$INFO[MusicPlayer.Cover]</texture>
+					<aspectratio align="center">keep</aspectratio>
+				</control>
+				<control type="label">
+					<description>Artist label</description>
+					<posx>150</posx>
+					<posy>551</posy>
+					<width>520</width>
+					<height>31</height>
+					<label>$INFO[MusicPlayer.Artist]</label>
+					<align>left</align>
+					<font>font11</font>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				</control>
+				<control type="label">
+					<description>Album label</description>
+					<posx>150</posx>
+					<posy>582</posy>
+					<width>520</width>
+					<height>31</height>
+					<label>$INFO[MusicPlayer.Album]</label>
+					<align>left</align>
+					<font>font11</font>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<posx>150</posx>
+					<posy>614</posy>
+					<width>520</width>
+					<height>31</height>
+					<label>$INFO[MusicPlayer.Title]</label>
+					<align>left</align>
+					<font>font11</font>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				</control>
+				<control type="label">
+					<description>Time label</description>
+					<posx>150</posx>
+					<posy>645</posy>
+					<width>520</width>
+					<height>31</height>
+					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+					<align>left</align>
+					<font>font11</font>
+				</control>
 			</control>
-			<control type="label">
-				<description>Artist label</description>
-				<posx>150</posx>
-				<posy>551</posy>
-				<width>520</width>
-				<height>31</height>
-				<label>$INFO[MusicPlayer.Artist]</label>
-				<align>left</align>
-				<font>font11</font>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-			</control>
-			<control type="label">
-				<description>Album label</description>
-				<posx>150</posx>
-				<posy>582</posy>
-				<width>520</width>
-				<height>31</height>
-				<label>$INFO[MusicPlayer.Album]</label>
-				<align>left</align>
-				<font>font11</font>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-			</control>
-			<control type="label">
-				<description>Title label</description>
-				<posx>150</posx>
-				<posy>614</posy>
-				<width>520</width>
-				<height>31</height>
-				<label>$INFO[MusicPlayer.Title]</label>
-				<align>left</align>
-				<font>font11</font>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-			</control>
-			<control type="label">
-				<description>Time label</description>
-				<posx>150</posx>
-				<posy>645</posy>
-				<width>520</width>
-				<height>31</height>
-				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-				<align>left</align>
-				<font>font11</font>
-			</control>
-		</control>
-		<!-- media infos (video) -->
-		<control type="group">
-			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
-			<include>media-slide</include>
-			<include>homemediainfo</include>
-			<control type="videowindow">
-				<description>video preview window</description>
-				<posx>20</posx>
-				<posy>582</posy>
-				<width>166</width>
-				<height>100</height>
-			</control>
-			<control type="label">
-				<description>Now playing</description>
-				<posx>200</posx>
-				<posy>582</posy>
-				<width>280</width>
-				<height>31</height>
-				<label>13350</label>
-				<align>left</align>
-				<font>font12</font>
-				<textcolor>listselected-text</textcolor>
-			</control>
-			<control type="label">
-				<description>Video Title label</description>
-				<posx>200</posx>
-				<posy>613</posy>
-				<width>420</width>
-				<height>31</height>
-				<label>$INFO[VideoPlayer.Title]</label>
-				<align>left</align>
-				<font>font12</font>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-			</control>
-			<control type="label">
-				<description>Time label</description>
-				<posx>200</posx>
-				<posy>645</posy>
-				<width>280</width>
-				<height>31</height>
-				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-				<align>left</align>
-				<font>font12</font>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+			<!-- media infos (video) -->
+			<control type="group" id="9970">
+				<visible>Player.HasVideo</visible>
+				<control type="videowindow">
+					<description>video preview window</description>
+					<posx>20</posx>
+					<posy>582</posy>
+					<width>166</width>
+					<height>100</height>
+				</control>
+				<control type="label">
+					<description>Now playing</description>
+					<posx>200</posx>
+					<posy>582</posy>
+					<width>280</width>
+					<height>31</height>
+					<label>13350</label>
+					<align>left</align>
+					<font>font12</font>
+					<textcolor>listselected-text</textcolor>
+				</control>
+				<control type="label">
+					<description>Video Title label</description>
+					<posx>200</posx>
+					<posy>613</posy>
+					<width>420</width>
+					<height>31</height>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<align>left</align>
+					<font>font12</font>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				</control>
+				<control type="label">
+					<description>Time label</description>
+					<posx>200</posx>
+					<posy>645</posy>
+					<width>280</width>
+					<height>31</height>
+					<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+					<align>left</align>
+					<font>font12</font>
+					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				</control>
 			</control>
 		</control>
 	</include>

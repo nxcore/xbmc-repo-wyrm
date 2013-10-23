@@ -413,6 +413,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
 						<selected>Skin.HasSetting(home-currentweather)</selected>
+						<enable>!IsEmpty(Weather.plugin)</enable>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -429,33 +430,6 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<!--<control type="radiobutton" id="211">
-						<description>Subtitles in OSD toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<label>31891</label>
-						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(osd-subtitles)</onclick>
-						<selected>Skin.HasSetting(osd-subtitles)</selected>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="button" id="212">
-						<description>Subtitle script location</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
-						<textwidth>785</textwidth>
-						<enable>Skin.HasSetting(osd-subtitles)</enable>
-						<label>- $LOCALIZE[31654]:</label>
-						<label2>$INFO[Skin.String(osd-subscriptpath)] </label2>
-						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(osd-subtitles)</visible>
-					</control>-->
 					<control type="button" id="213">
 						<width>885</width>
 						<height>56</height>
@@ -795,6 +769,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-weather)</onclick>
 						<selected>Skin.HasSetting(home-weather)</selected>
+						<enable>!IsEmpty(Weather.plugin)</enable>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
