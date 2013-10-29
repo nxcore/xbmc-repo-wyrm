@@ -42,6 +42,7 @@
 	<include file="Includes_VertHome.xml" />
 	<include file="Includes_HorzHome.xml" />
 	<include file="Includes_Shelf.xml" />
+	
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -504,7 +505,7 @@
 		<control type="image">
 			<description>RSS Logo</description>
 			<posx>5</posx>
-			<posy>680</posy>
+			<posy>682</posy>
 			<width>32</width>
 			<height>32</height>
 			<aspectratio>keep</aspectratio>
@@ -513,7 +514,7 @@
 		<control type="rss">
 			<description>rss feed</description>
 			<posx>40</posx>
-			<posy>680</posy>
+			<posy>682</posy>
 			<width>1240</width>
 			<height>22</height>
 			<font>rss20</font>
@@ -592,363 +593,6 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<font>font28</font>
-			</control>
-		</control>
-	</include>
-	<!-- Shelf weather forecast -->
-	<include name="ShelfWeatherForecast">
-		<control type="group">
-			<posx>10</posx>
-			<posy>40</posy>
-			<control type="label">
-				<description>Weather label</description>
-				<posx>20</posx>
-				<posy>-30</posy>
-				<height>50</height>
-				<width>320</width>
-				<label>$INFO[Window(Weather).Property(Location)]</label>
-				<align>left</align>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font18</font>
-			</control>
-			<control type="label">
-				<description>Weather Provider label</description>
-				<posx>20</posx>
-				<posy>10</posy>
-				<height>24</height>
-				<width>500</width>
-				<font>font11</font>
-				<label>$INFO[Window(Weather).Property(WeatherProvider),$LOCALIZE[31536] - ]</label>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<visible>IsEmpty(Window(Weather).Property(WeatherProviderLogo))</visible>
-			</control>
-			<control type="group">
-				<control type="image">
-					<description>weather provider logo shadow</description>
-					<posx>21</posx>
-					<posy>11</posy>
-					<width>180</width>
-					<height>45</height>
-					<colordiffuse>StudioShadow</colordiffuse>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
-				</control>
-				<control type="image">
-					<description>weather provider logo</description>
-					<posx>20</posx>
-					<posy>10</posy>
-					<width>180</width>
-					<height>45</height>
-					<colordiffuse>StudioDiffuse</colordiffuse>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
-				</control>
-			</control>	
-			<control type="label">
-				<description>Current label</description>
-				<posx>0</posx>
-				<posy>50</posy>
-				<height>32</height>
-				<width>250</width>
-				<label>31528</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font18</font>
-			</control>
-			<control type="image">
-				<description>current weather icon</description>
-				<posx>77</posx>
-				<posy>86</posy>
-				<height>96</height>
-				<width>96</width>
-				<texture background="true">$INFO[Weather.Conditions]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>!Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="multiimage">
-				<description>current weather animated icon</description>
-				<posx>77</posx>
-				<posy>86</posy>
-				<width>96</width>
-				<height>96</height>
-				<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
-				<aspectratio>keep</aspectratio>
-				<timeperimage>200</timeperimage>
-				<randomize>false</randomize>
-				<fadetime>0</fadetime>
-				<visible>Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="label">
-				<description>Temp Label</description>
-				<posx>0</posx>
-				<posy>184</posy>
-				<height>38</height>
-				<width>250</width>
-				<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font22</font>
-			</control>
-			<control type="label">
-				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>222</posy>
-				<height>20</height>
-				<width>250</width>
-				<label>$INFO[Weather.Conditions]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
-			</control>
-		</control>
-		<control type="group">
-			<posx>270</posx>
-			<posy>64</posy>
-			<control type="label">
-				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
-				<height>26</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day1.Title)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
-			</control>
-			<control type="image">
-				<description>Day 1 weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<height>80</height>
-				<width>80</width>
-				<texture background="true">$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>!Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="multiimage">
-				<description>Day 1 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<width>80</width>
-				<height>80</height>
-				<imagepath>special://skin/extras/images/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
-				<aspectratio>keep</aspectratio>
-				<timeperimage>200</timeperimage>
-				<randomize>false</randomize>
-				<fadetime>0</fadetime>
-				<visible>Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="label">
-				<description>Day 1 temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
-				<height>38</height>
-				<width>240</width>
-				<label>[COLOR red]$INFO[Window(Weather).Property(Day1.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day1.LowTemp)][/COLOR]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font18</font>
-			</control>
-			<control type="label">
-				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day1.Outlook)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
-			</control>
-		</control>
-		<control type="group">
-			<posx>520</posx>
-			<posy>64</posy>
-			<control type="label">
-				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
-				<height>26</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day2.Title)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
-			</control>
-			<control type="image">
-				<description>Day 2 weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<height>80</height>
-				<width>80</width>
-				<texture background="true">$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>!Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="multiimage">
-				<description>Day 2 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<width>80</width>
-				<height>80</height>
-				<imagepath>special://skin/extras/images/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
-				<aspectratio>keep</aspectratio>
-				<timeperimage>200</timeperimage>
-				<randomize>false</randomize>
-				<fadetime>0</fadetime>
-				<visible>Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="label">
-				<description>Day 2 temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
-				<height>38</height>
-				<width>240</width>
-				<label>[COLOR red]$INFO[Window(Weather).Property(Day2.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day2.LowTemp)][/COLOR]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font18</font>
-			</control>
-			<control type="label">
-				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day2.Outlook)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
-			</control>
-		</control>
-		<control type="group">
-			<posx>770</posx>
-			<posy>64</posy>
-			<control type="label">
-				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
-				<height>26</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day3.Title)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
-			</control>
-			<control type="image">
-				<description>Day 3 weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<height>80</height>
-				<width>80</width>
-				<texture background="true">$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>!Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="multiimage">
-				<description>Day 3 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<width>80</width>
-				<height>80</height>
-				<imagepath>special://skin/extras/images/weather/$INFO[Window(Weather).Property(Day3.FanartCode)]</imagepath>
-				<aspectratio>keep</aspectratio>
-				<timeperimage>200</timeperimage>
-				<randomize>false</randomize>
-				<fadetime>0</fadetime>
-				<visible>Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="label">
-				<description>Day 3 Temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
-				<height>38</height>
-				<width>240</width>
-				<label>[COLOR red]$INFO[Window(Weather).Property(Day3.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day3.LowTemp)][/COLOR]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font18</font>
-			</control>
-			<control type="label">
-				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day3.Outlook)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
-			</control>
-		</control>
-		<control type="group">
-			<posx>1020</posx>
-			<posy>64</posy>
-			<control type="label">
-				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
-				<height>26</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day4.Title)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
-			</control>
-			<control type="image">
-				<description>Day 4 weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<height>80</height>
-				<width>80</width>
-				<texture background="true">$INFO[Window(Weather).Property(Day4.OutlookIcon)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>!Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="multiimage">
-				<description>Day 4 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
-				<width>80</width>
-				<height>80</height>
-				<imagepath>special://skin/extras/images/weather/$INFO[Window(Weather).Property(Day4.FanartCode)]</imagepath>
-				<aspectratio>keep</aspectratio>
-				<timeperimage>200</timeperimage>
-				<randomize>false</randomize>
-				<fadetime>0</fadetime>
-				<visible>Skin.HasSetting(weather-animateicon)</visible>
-			</control>
-			<control type="label">
-				<description>Day 4 Temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
-				<height>38</height>
-				<width>240</width>
-				<label>[COLOR red]$INFO[Window(Weather).Property(Day4.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day4.LowTemp)][/COLOR]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font18</font>
-			</control>
-			<control type="label">
-				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
-				<width>240</width>
-				<label>$INFO[Window(Weather).Property(Day4.Outlook)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
 			</control>
 		</control>
 	</include>
@@ -1295,16 +939,12 @@
 		<animation effect="fade" time="400">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</include>
-	<include name="homemediainfo">
-		<animation effect="fade" time="200">VisibleChange</animation>
-		<animation effect="slide" time="500" start="-400,0" end="0,0" delay="0">WindowOpen</animation>
-		<animation effect="slide" time="300" start="0,0" end="-400,0" delay="0">WindowClose</animation>
-	</include>
 	<include name="media-slide">
 		<animation condition="Container(9900).Position(0)" effect="slide" start="0,0" end="640,0" time="0" easing="inout" reversible="true">Conditional</animation>
 		<animation condition="Container(9900).Position(1)" effect="slide" start="0,0" end="640,0" time="0" easing="inout" reversible="true">Conditional</animation>
 		<animation condition="Container(9900).Position(2) + IntegerGreaterThan(Container(9900).NumItems,5)" effect="slide" start="0,0" end="640,0" time="0" easing="inout" reversible="true">Conditional</animation>
-	</include>
+		<animation effect="fade" time="50" delay="200">Focus</animation>
+		</include>
 	<include name="horizontalhome-center">
 		<animation condition="IntegerGreaterThan(Container(9900).NumItems,4) + !IntegerGreaterThan(Container(9900).NumItems,5)" effect="slide" start="0,0" end="105,0" time="0" easing="inout" reversible="true">Conditional</animation>
 		<animation condition="IntegerGreaterThan(Container(9900).NumItems,3) + !IntegerGreaterThan(Container(9900).NumItems,4)" effect="slide" start="0,0" end="210,0" time="0" easing="inout" reversible="true">Conditional</animation>
@@ -1319,6 +959,7 @@
 		<animation condition="Container(9900).Position(3)" effect="slide" start="0,0" end="630,0" reversible="true">Conditional</animation>
 		<animation condition="Container(9900).Position(4)" effect="slide" start="0,0" end="840,0" reversible="true">Conditional</animation>
 		<animation condition="Container(9900).Position(5)" effect="slide" start="0,0" end="1050,0" reversible="true">Conditional</animation>
+		<!--<animation effect="fade" time="50" delay="200">Focus</animation>-->
 	</include>
 	<!-- End Animation Includes -->
 	<!-- Start Visibility Includes -->

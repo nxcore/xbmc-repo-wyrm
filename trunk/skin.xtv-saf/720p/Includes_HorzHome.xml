@@ -27,15 +27,13 @@
 		</control>
 		<!-- Hidden button to resync home menu items if they get out of sync -->
 		<control type="button" id="420">
-			<description>trigger playlist if selected</description>
 			<posx>-12</posx>
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<onfocus>Control.SetFocus(9900)</onfocus>
+			<onfocus>SetFocus(9900)</onfocus>
 			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->
 		</control>
-
 		<!-- Show time on home screen -->
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include>
 
@@ -684,7 +682,7 @@
 			</control>
 			<!-- Weather icons -->
 			<control type="group">
-				<visible>ControlGroup(9400).HasFocus() + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
+				<visible>ControlGroup(9400).HasFocus()</visible>
 				<control type="group">
 					<visible>!Weather.IsFetched</visible>
 					<control type="image">
@@ -704,7 +702,7 @@
 				</control>
 				<control type="group">
 					<visible>Weather.IsFetched</visible>
-					<include condition="Skin.HasSetting(home-currentweather)">ShelfWeatherForecast</include>
+					<include condition="!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]">ShelfWeather</include>
 				</control>
 			</control>
 			<!-- Settings icons -->
@@ -799,49 +797,49 @@
 					<item id="1">
 						<description>Video Menu</description>
 						<label>3</label>
-						<onclick>Control.SetFocus(9100)</onclick>
+						<onclick>SetFocus(9100)</onclick>
 						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Movie Menu</description>
 						<label>20338</label>
-						<onclick>Control.SetFocus(9150)</onclick>
+						<onclick>SetFocus(9150)</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
 						<description>TV Menu</description>
 						<label>19020</label>
-						<onclick>Control.SetFocus(9200)</onclick>
+						<onclick>SetFocus(9200)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 					</item>
 					<item id="4">
 						<description>Music Menu</description>
 						<label>2</label>
-						<onclick>Control.SetFocus(9250)</onclick>
+						<onclick>SetFocus(9250)</onclick>
 						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="5">
 						<description>Pictures Menu</description>
 						<label>1</label>
-						<onclick>Control.SetFocus(9300)</onclick>
+						<onclick>SetFocus(9300)</onclick>
 						<visible>Skin.HasSetting(home-photos)</visible>
 					</item>
 					<item id="6">
 						<description>Addon Menu</description>
 						<label>24001</label>
-						<onclick>Control.SetFocus(9350)</onclick>
+						<onclick>SetFocus(9350)</onclick>
 						<visible>!Skin.HasSetting(home-programs)</visible>
 					</item>
 					<item id="7">
 						<description>Weather Menu</description>
 						<label>8</label>
-						<onclick>Control.SetFocus(9400)</onclick>
+						<onclick>SetFocus(9400)</onclick>
 						<visible>!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 					</item>
 					<item id="8">
 						<description>System Menu</description>
 						<label>13000</label>
-						<onclick>Control.SetFocus(9450)</onclick>
+						<onclick>SetFocus(9450)</onclick>
 					</item>
 				</content>
 			</control>
@@ -854,11 +852,11 @@
 			<height>306</height>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
+			<include>horizontalhome-slide</include>-->
 			<control type="grouplist" id="9100">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>!Skin.HasSetting(home-video)</visible>
 				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -958,10 +956,9 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9150">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
@@ -1079,10 +1076,9 @@
 			</control>
 			<!-- TV Sub Menu -->
 			<control type="grouplist" id="9200">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
@@ -1216,10 +1212,9 @@
 			</control>
 			<!-- Music Sub menu -->
 			<control type="grouplist" id="9250">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
@@ -1354,10 +1349,9 @@
 			</control>
 			<!-- Pictures Sub menu -->
 			<control type="grouplist" id="9300">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>Skin.HasSetting(home-photos)</visible>
 				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1395,10 +1389,9 @@
 			</control>
 			<!-- Addons Sub menu -->
 			<control type="grouplist" id="9350">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>!Skin.HasSetting(home-programs)</visible>
 				<animation condition="!ControlGroup(9350).HasFocus() + !Control.HasFocus(9360)" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9355</onup>
@@ -1561,10 +1554,9 @@
 			</control>
 			<!-- Weather Sub menu -->
 			<control type="grouplist" id="9400">
-				<include>horizontalhome-slide</include>
+				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
-				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1587,9 +1579,8 @@
 			</control>
 			<!-- Settings Sub menu -->
 			<control type="grouplist" id="9450">
-				<include>horizontalhome-slide</include>
-				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
@@ -1812,7 +1803,7 @@
 			<aspectratio align="center" aligny="center">keep</aspectratio>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<texture background="true" fallback="blank.png">homelogo.png</texture>
-			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
+			<animation condition="Container(9900).Position(5) | [Skin.HasSetting(overlay) + [Player.HasAudio | Player.HasVideo]]" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
 		</control>
 
 		<!-- RSS info -->
@@ -1822,7 +1813,6 @@
 		<control type="group" id="9950">
 			<visible>Skin.HasSetting(overlay) + !Window.IsActive(PlayerControls)</visible>
 			<include>media-slide</include>
-			<include>homemediainfo</include>
 			<control type="group" id="9960">
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
