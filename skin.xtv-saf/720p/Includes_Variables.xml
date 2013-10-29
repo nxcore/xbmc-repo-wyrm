@@ -65,9 +65,8 @@
 		<value condition="substring(Container(100).ListItem.Property(Mpaa),TV-MA)">special://skin/extras/images/rating/TV-MA.png</value>
 	</variable>
 	 <variable name="Overlay" description="Overlay image">
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,-1) + ![IntegerGreaterThan(ListItem.PercentPlayed,19)]">overlayunwatched.png</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,19) + ![IntegerGreaterThan(ListItem.PercentPlayed,81)]">overlaypartialywatched.png</value>
-		<value>overlaywatched.png</value>
+		<value condition="ListItem.IsResumable">overlaypartialywatched.png</value>
+		<value>$INFO[ListItem.Overlay]</value>
 	</variable>
 	 <variable name="PVROverlay" description="PVR Overlay image">
 		<value condition="ListItem.IsRecording">overlayisrecording.png</value>
@@ -188,15 +187,15 @@
 		<value condition="Control.IsVisible(13)">$LOCALIZE[19163]</value>
 		<value>$INFO[Container.FolderName]</value>
 	</variable>
-	<variable name="HomeHeading" description="Current Horizontal Home Menu Headings">
-		<value condition="Container(9900).HasFocus(1)">Control.SetFocus(9100)</value>
-		<value condition="Container(9900).HasFocus(2)">Control.SetFocus(9150)</value>
-		<value condition="Container(9900).HasFocus(3)">Control.SetFocus(9200)</value>
-		<value condition="Container(9900).HasFocus(4)">Control.SetFocus(9250)</value>
-		<value condition="Container(9900).HasFocus(5)">Control.SetFocus(9300)</value>
-		<value condition="Container(9900).HasFocus(6)">Control.SetFocus(9350)</value>
-		<value condition="Container(9900).HasFocus(7)">Control.SetFocus(9400)</value>
-		<value condition="Container(9900).HasFocus(8)">Control.SetFocus(9450)</value>
+	<variable name="HomeHeading" description="Resync Horizontal Home Submenu with Headings">
+		<value condition="Container(9900).HasFocus(1)">SetFocus(9100)</value>
+		<value condition="Container(9900).HasFocus(2)">SetFocus(9150)</value>
+		<value condition="Container(9900).HasFocus(3)">SetFocus(9200)</value>
+		<value condition="Container(9900).HasFocus(4)">SetFocus(9250)</value>
+		<value condition="Container(9900).HasFocus(5)">SetFocus(9300)</value>
+		<value condition="Container(9900).HasFocus(6)">SetFocus(9350)</value>
+		<value condition="Container(9900).HasFocus(7)">SetFocus(9400)</value>
+		<value condition="Container(9900).HasFocus(8)">SetFocus(9450)</value>
 	</variable>
 	<variable name="TVHeadingName" description="Current String to use for TV headings">
 		<value condition="Skin.HasSetting(homemenu-vertical)">$LOCALIZE[31027]</value>
@@ -261,14 +260,23 @@
 		<value>blank.png</value>
     </variable>
     <variable name="ListViewVideoLogo">
-        <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)]">$INFO[ListItem.path,,logo.png]</value>
         <value condition="IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons)]">$INFO[ListItem.path,,logo.png]</value>
-        <value condition="IsEmpty(ListItem.Art(tvshow.clearlogo)) + Container.Content(episodes) + !IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + Container.Content(episodes)">$INFO[ListItem.Path,,../logo.png]</value>
 		<value>blank.png</value>
     </variable>
+    <variable name="PlayerVideoClearart">
+        <value condition="!IsEmpty(Player.Art(clearart)) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)]">$INFO[Player.Art(clearart)]</value>
+        <value condition="!IsEmpty(Player.Art(tvshow.clearart)) + VideoPlayer.Content(episodes)">$INFO[Player.Art(tvshow.clearart)]</value>
+		<value>blank.png</value>
+    </variable>
+    <variable name="PlayerVideoLogo">
+        <value condition="!IsEmpty(Player.Art(clearlogo)) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)]">$INFO[Player.Art(clearlogo)]</value>
+        <value condition="!IsEmpty(Player.Art(tvshow.clearlogo)) + VideoPlayer.Content(episodes)">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value>blank.png</value>
+	</variable>	
     <variable name="QuitAction">
         <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])">XBMC.quit()</value>
         <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])">XBMC.reboot()</value>
