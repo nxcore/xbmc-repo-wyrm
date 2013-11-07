@@ -451,7 +451,7 @@
 						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-lyricpath)])</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-					</control> 
+					</control>
 					<control type="button" id="215">
 						<width>885</width>
 						<height>56</height>
@@ -1509,7 +1509,7 @@
 						<label>$LOCALIZE[31935]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.ResetSettings</onclick>
-						<onclick>ReplaceWindow(skinsettings)</onclick> 
+						<onclick>ReplaceWindow(skinsettings)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>

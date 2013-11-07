@@ -34,6 +34,7 @@
 			<onfocus>SetFocus(9900)</onfocus>
 			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->
 		</control>
+
 		<!-- Show time on home screen -->
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include>
 
@@ -147,16 +148,26 @@
 							<control type="group">
 								<visible>Control.HasFocus(9160)</visible>
 								<control type="group">
+									<animation effect="zoom" start="100" end="116" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<control type="image">
 										<posx>35</posx>
 										<posy>5</posy>
 										<width>140</width>
 										<height>188</height>
 										<aspectratio scalediffuse="true">stretch</aspectratio>
-										<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+										<texture diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 										<bordertexture border="10">mask-hilite.png</bordertexture>
 										<bordersize>10</bordersize>
-										<animation effect="zoom" start="100" end="116" center="auto" time="600" tween="back" easing="out">Focus</animation>
+										<visible>!IsEmpty(ListItem.Thumb)</visible>
+									</control>
+									<control type="image">
+										<posx>35</posx>
+										<posy>5</posy>
+										<width>140</width>
+										<height>188</height>
+										<aspectratio scalediffuse="true">stretch</aspectratio>
+										<texture>DefaultMovies.png</texture>
+										<visible>IsEmpty(ListItem.Thumb)</visible>
 									</control>
 									<control type="image">
 										<posx>35</posx>
@@ -285,6 +296,7 @@
 							<control type="group">
 								<visible>Control.HasFocus(9210)</visible>
 								<control type="group">
+									<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<control type="image">
 										<posx>14</posx>
 										<posy>20</posy>
@@ -293,10 +305,21 @@
 										<align>center</align>
 										<aligny>top</aligny>
 										<aspectratio scalediffuse="true">keep</aspectratio>
-										<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+										<texture diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 										<bordertexture border="10">mask-hilite.png</bordertexture>
 										<bordersize>10</bordersize>
-										<animation effect="zoom" start="100" end="114" center="auto" time="600" tween="back" easing="out">Focus</animation>
+										<visible>!IsEmpty(ListItem.Thumb)</visible>
+									</control>
+									<control type="image">
+										<posx>14</posx>
+										<posy>20</posy>
+										<width>220</width>
+										<height>165</height>
+										<align>center</align>
+										<aligny>top</aligny>
+										<aspectratio scalediffuse="true">keep</aspectratio>
+										<texture>DefaultTvshows.png</texture>
+										<visible>IsEmpty(ListItem.Thumb)</visible>
 									</control>
 									<control type="image">
 										<posx>14</posx>
@@ -339,6 +362,7 @@
 						<content>
 						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeRecent</include>
 						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeLatest</include>
+						<include condition="System.HasAddon(script.tv.show.next.aired) + [StringCompare(Skin.String(shelf-tvshowimages),NextAired) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeNextAired</include>
 						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),Recommended) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeRecommended</include>
 						</content>
 					</control>
@@ -440,6 +464,7 @@
 							<control type="group">
 								<visible>Control.HasFocus(9260)</visible>
 								<control type="group">
+									<animation effect="zoom" start="100" end="115" center="auto" time="600" tween="back" easing="out">Focus</animation>
 									<control type="image">
 										<posx>20</posx>
 										<posy>15</posy>
@@ -448,10 +473,21 @@
 										<aspectratio>stretch</aspectratio>
 										<align>center</align>
 										<aligny>top</aligny>
-										<texture diffuse="mask-squ.png" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+										<texture diffuse="mask-squ.png" background="true">$INFO[ListItem.Thumb]</texture>
 										<bordertexture border="10">mask-hilite.png</bordertexture>
 										<bordersize>10</bordersize>
-										<animation effect="zoom" start="100" end="115" center="auto" time="600" tween="back" easing="out">Focus</animation>
+										<visible>!IsEmpty(ListItem.Thumb)</visible>										
+									</control>
+									<control type="image">
+										<posx>20</posx>
+										<posy>15</posy>
+										<width>170</width>
+										<height>170</height>
+										<aspectratio>stretch</aspectratio>
+										<align>center</align>
+										<aligny>top</aligny>
+										<texture>DefaultAudio.png</texture>
+										<visible>IsEmpty(ListItem.Thumb)</visible>										
 									</control>
 									<control type="image">
 										<posx>20</posx>

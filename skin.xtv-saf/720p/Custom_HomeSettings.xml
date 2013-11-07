@@ -531,12 +531,18 @@
 									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recent)</visible>
 								</item>
 								<item id="3">
+									<description>Next Aired</description>
+									<label>Next Aired</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),NextAired)</visible>
+								</item>
+								<item id="4">
 									<description>Recommended</description>
 									<label>Recommended</label>
 									<onclick>Skin.SetString(shelf-tvshowimages,All)</onclick>
 									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recommended)</visible>
 								</item>
-								<item id="4">
+								<item id="5">
 									<description>All</description>
 									<label>All</label>
 									<onclick>Skin.SetString(shelf-tvshowimages,Icon)</onclick>
@@ -582,17 +588,23 @@
 									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,Recent)</onclick>
 									<visible>IsEmpty(Skin.String(shelf-tvshowimages)) | StringCompare(Skin.String(shelf-tvshowimages),Icon)</visible>
 								</item>
-								<item id="4">
+								<item id="5">
 									<description>All</description>
 									<label>All</label>
 									<onclick>Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
 									<visible>StringCompare(Skin.String(shelf-tvshowimages),All)</visible>
 								</item>
-								<item id="3">
+								<item id="4">
 									<description>Recommended</description>
 									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Recent)</onclick>
+									<onclick>Skin.SetString(shelf-tvshowimages,NextAired)</onclick>
 									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recommended)</visible>
+								</item>
+								<item id="3">
+									<description>Next Aired</description>
+									<label>NextAired</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,Recent)</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),NextAired)</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
