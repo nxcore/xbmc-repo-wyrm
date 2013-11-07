@@ -1,5 +1,6 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
+	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,silent=True)</onload>
 	<controls>
 		<control type="button" id="10">
 			<description>Play the startup video if required</description>
