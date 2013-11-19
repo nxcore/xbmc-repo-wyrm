@@ -297,11 +297,15 @@ msgid "Settings"
 msgstr ""
 
 msgctxt "#31656"
-msgid "Lyrics"
+msgid "OSD Lyrics"
 msgstr ""
 
 msgctxt "#31657"
 msgid "Presets"
+msgstr ""
+
+msgctxt "#31658"
+msgid "OSD Subtitles"
 msgstr ""
 
 msgctxt "#31659"
@@ -533,6 +537,10 @@ msgctxt "#31884"
 msgid "Use watched state overlays"
 msgstr ""
 
+msgctxt "#31885"
+msgid "OSD Lyrics"
+msgstr""
+
 msgctxt "#31886"
 msgid "Tilt List view icons"
 msgstr ""
@@ -554,7 +562,7 @@ msgid "Animated weather icons"
 msgstr ""
 
 msgctxt "#31891"
-msgid "Show subtitle button in OSD"
+msgid "OSD Subtitles"
 msgstr ""
 
 msgctxt "#31892"
@@ -705,4 +713,34 @@ msgstr ""
 
 msgctxt "#31953"
 msgid "Icon"
+msgstr ""
+
+msgctxt "#31954"
+msgid "Recent"
+msgstr ""
+
+msgctxt "#31955"
+msgid "Recommended"
+msgstr ""
+
+msgctxt "#31956"
+msgid "NextAired"
+msgstr ""
+
+#Shelficon headings
+
+msgctxt "#31960"
+msgid "Recommended Movies"
+msgstr ""
+
+msgctxt "#31961"
+msgid "Next Aired Episodes"
+msgstr ""
+
+msgctxt "#31962"
+msgid "Recommended TV Episodes"
+msgstr ""
+
+msgctxt "#31963"
+msgid "Recommended Albums"
 msgstr ""
