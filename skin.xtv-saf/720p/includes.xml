@@ -18,20 +18,10 @@
 	<include file="View-List.xml" />
 	<include file="View-Wall.xml" />
 	<include file="View-Wrap.xml" />
-	<include file="View-AlbumCoverflow.xml" />
-	<include file="View-AlbumWall.xml" />
-	<include file="View-AlbumWrap.xml" />
+	<include file="View-Music.xml" />
 	<include file="View-PhotoWall.xml" />
 	<include file="View-PhotoWrap.xml" />
-	<include file="View-PVRChannelList.xml" />
-	<include file="View-PVREPG.xml" />
-	<include file="View-PVRLiveTV.xml" />
-	<include file="View-PVRNowNextList.xml" />
-	<include file="View-PVRRadioList.xml" />
-	<include file="View-PVRRecordList.xml" />
-	<include file="View-PVRSearchList.xml" />
-	<include file="View-PVRTimerList.xml" />
-	<include file="View-PVRTVList.xml" />
+	<include file="View-PVR.xml" />
 	<include file="View-VideoBanner.xml" />
 	<include file="View-VideoCoverflow.xml" />
 	<include file="View-VideoIcon.xml" />
@@ -915,6 +905,11 @@
 		<height>80</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
 		<visible>Skin.HasSetting(homemenu-vertical)</visible>
+	</include>
+	<include name="settings-submenu-common">
+		<width>885</width>
+		<height>56</height>
+		<font>font12</font>
 	</include>
 	<include name="scrolltext">
 		<scroll>true</scroll>

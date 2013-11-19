@@ -34,7 +34,39 @@
 			<onfocus>SetFocus(9900)</onfocus>
 			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->
 		</control>
-
+		<!--<control type="label">
+			<description>Item label</description>
+			<posx>5</posx>
+			<posy>5</posy>
+			<height>24</height>
+			<width>210</width>
+			<label>$INFO[Container(9900).ListItem(-1).Label]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font11</font>
+		</control>
+		<control type="label">
+			<description>Item label</description>
+			<posx>220</posx>
+			<posy>5</posy>
+			<height>24</height>
+			<width>210</width>
+			<label>$INFO[Control.GetLabel(9900)]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font11</font>
+		</control>
+		<control type="label">
+			<description>Item label</description>
+			<posx>435</posx>
+			<posy>5</posy>
+			<height>24</height>
+			<width>210</width>
+			<label>$INFO[Container(9900).ListItem(1).Label]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font11</font>
+		</control>-->
 		<!-- Show time on home screen -->
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include>
 
@@ -65,7 +97,7 @@
 			<control type="group" id="9155">
 				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9160).NumItems,0)] | [StringCompare(Skin.String(shelf-movieimages),Icon)]</visible>
+					<visible>![IntegerGreaterThan(Container(9160).NumItems,0)] | [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -82,7 +114,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9160).NumItems,0)] + ![StringCompare(Skin.String(shelf-movieimages),Icon)]</visible>
+					<visible>[IntegerGreaterThan(Container(9160).NumItems,0)] + ![StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
 					<control type="label">
 						<description>Movies shelf icons label</description>
 						<posx>55</posx>
@@ -194,9 +226,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)]">MovieRecent</include>
-						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-movieimages),Recent) | StringCompare(Skin.String(shelf-movieimages),All)]">MovieLatest</include>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),Recommended) | StringCompare(Skin.String(shelf-movieimages),All)]">MovieRecommended</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecent</include>
+						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecommended</include>
 						</content>
 					</control>
 				</control>
@@ -205,7 +237,7 @@
 			<control type="group" id="9205">
 				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9210).NumItems,0)] | [StringCompare(Skin.String(shelf-tvshowimages),Icon)]</visible>
+					<visible>![IntegerGreaterThan(Container(9210).NumItems,0)] | [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -222,7 +254,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9210).NumItems,0)] + ![StringCompare(Skin.String(shelf-tvshowimages),Icon)]</visible>
+					<visible>[IntegerGreaterThan(Container(9210).NumItems,0)] + ![StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
 					<control type="label">
 						<description>TV Episodes shelf icons label</description>
 						<posx>55</posx>
@@ -360,10 +392,10 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeRecent</include>
-						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-tvshowimages),Recent) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeLatest</include>
-						<include condition="System.HasAddon(script.tv.show.next.aired) + [StringCompare(Skin.String(shelf-tvshowimages),NextAired) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeNextAired</include>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),Recommended) | StringCompare(Skin.String(shelf-tvshowimages),All)]">EpisodeRecommended</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecent</include>
+						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeLatest</include>
+						<include condition="System.HasAddon(script.tv.show.next.aired) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeNextAired</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecommended</include>
 						</content>
 					</control>
 				</control>
@@ -372,7 +404,7 @@
 			<control type="group" id="9255">
 				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9260).NumItems,0)] | [StringCompare(Skin.String(shelf-musicimages),Icon)]</visible>
+					<visible>![IntegerGreaterThan(Container(9260).NumItems,0)] | [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -389,7 +421,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9260).NumItems,0)] + ![StringCompare(Skin.String(shelf-musicimages),Icon)]</visible>
+					<visible>[IntegerGreaterThan(Container(9260).NumItems,0)] + ![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
 					<control type="label">
 						<description>Album shelf icons label</description>
 						<posx>55</posx>
@@ -476,7 +508,7 @@
 										<texture diffuse="mask-squ.png" background="true">$INFO[ListItem.Thumb]</texture>
 										<bordertexture border="10">mask-hilite.png</bordertexture>
 										<bordersize>10</bordersize>
-										<visible>!IsEmpty(ListItem.Thumb)</visible>										
+										<visible>!IsEmpty(ListItem.Thumb)</visible>
 									</control>
 									<control type="image">
 										<posx>20</posx>
@@ -487,7 +519,7 @@
 										<align>center</align>
 										<aligny>top</aligny>
 										<texture>DefaultAudio.png</texture>
-										<visible>IsEmpty(ListItem.Thumb)</visible>										
+										<visible>IsEmpty(ListItem.Thumb)</visible>
 									</control>
 									<control type="image">
 										<posx>20</posx>
@@ -528,9 +560,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)]">AlbumRecent</include>
-						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-musicimages),Recent) | StringCompare(Skin.String(shelf-musicimages),All)]">AlbumLatest</include>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),Recommended) | StringCompare(Skin.String(shelf-musicimages),All)]">AlbumRecommended</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecent</include>
+						<include condition="!System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumLatest</include>
+						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecommended</include>
 						</content>
 					</control>
 				</control>
@@ -557,7 +589,7 @@
 			<control type="group" id="9355">
 				<visible>ControlGroup(9350).HasFocus() | Control.HasFocus(9360)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9360).NumItems,0)] | [StringCompare(Skin.String(shelf-addonimages),Icon)]</visible>
+					<visible>![IntegerGreaterThan(Container(9360).NumItems,0)] | [StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31953])]</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -574,7 +606,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9360).NumItems,0)] + ![StringCompare(Skin.String(shelf-addonimages),Icon)]</visible>
+					<visible>[IntegerGreaterThan(Container(9360).NumItems,0)] + ![StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31953])]</visible>
 					<control type="label">
 						<description>Addons shelf icons label</description>
 						<posx>55</posx>
@@ -888,7 +920,8 @@
 			<height>306</height>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
-			<include>horizontalhome-slide</include>-->
+			<include>horizontalhome-center</include>
+			<include>horizontalhome-slide</include>
 			<control type="grouplist" id="9100">
 				<animation effect="fade" time="50" delay="200">Focus</animation>
 				<visible>!Skin.HasSetting(home-video)</visible>

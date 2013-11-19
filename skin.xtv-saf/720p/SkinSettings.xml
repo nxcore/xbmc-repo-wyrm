@@ -218,8 +218,7 @@
 					<pagecontrol>1223</pagecontrol>
 					<control type="radiobutton" id="110">
 						<description>Intro Video Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31850</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(intro-vid)</onclick>
@@ -231,8 +230,7 @@
 					</control>
 					<control type="button" id="111">
 						<description>Intro Video Location</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(intro-vid)</enable>
 						<label>- $LOCALIZE[31851] $INFO[Skin.String(intro-vid-location)]</label>
@@ -242,8 +240,7 @@
 					</control>
 					<control type="radiobutton" id="112">
 						<description>Startup Playlist toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31852</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
@@ -255,8 +252,7 @@
 					</control>
 					<control type="button" id="113">
 						<description>Choose Playlist button</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>- $LOCALIZE[31853] $INFO[Skin.String(Startup_Playlist_Path)]</label>
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
@@ -310,9 +306,7 @@
 					<pagecontrol>1223</pagecontrol>
 					<control type="radiobutton" id="201">
 						<description>View As Panel Lock Toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31880]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(view-as-lock)</onclick>
@@ -323,8 +317,7 @@
 					</control>
 					<control type="radiobutton" id="202">
 						<description>Scrollbar Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31881]</label>
 						<onclick>Skin.ToggleSetting(sbar)</onclick>
 						<textwidth>750</textwidth>
@@ -335,8 +328,7 @@
 					</control>
 					<control type="radiobutton" id="203">
 						<description>Autoscroll Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31882]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(autoscroll)</onclick>
@@ -347,8 +339,7 @@
 					</control>
 					<control type="radiobutton" id="204">
 						<description>Media Overlay Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31883] </label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(overlay)</onclick>
@@ -359,8 +350,7 @@
 					</control>
 					<control type="radiobutton" id="205">
 						<description>Watched/Unwatched Overlay Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31884]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(watched-overlay)</onclick>
@@ -371,8 +361,7 @@
 					</control>
 					<control type="radiobutton" id="206">
 						<description>Icon Tilt Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31886]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(tilted-icons)</onclick>
@@ -383,8 +372,7 @@
 					</control>
 					<control type="radiobutton" id="207">
 						<description>Video Wall Tilt Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31887]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(tilted-videowall)</onclick>
@@ -395,8 +383,7 @@
 					</control>
 					<control type="radiobutton" id="208">
 						<description>Time On Home Screen toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31888</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-time)</onclick>
@@ -407,8 +394,7 @@
 					</control>
 					<control type="radiobutton" id="209">
 						<description>Current Weather On Home Screen toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31889</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
@@ -420,8 +406,7 @@
 					</control>
 					<control type="radiobutton" id="210">
 						<description>Animated Weather Icons toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31890</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
@@ -431,20 +416,16 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="button" id="213">
-						<width>885</width>
-						<height>56</height>
-						<font>font12</font>
+						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
-						<label>OSD Lyrics</label>
+						<label>31656</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-lyricpath))]</label2>
 						<onclick>Skin.SetAddon(osd-lyricpath,xbmc.python.lyrics)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="214">
-						<width>885</width>
-						<height>56</height>
-						<font>font12</font>
+						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
 						<label>- $LOCALIZE[24020]</label>
 						<enable>!IsEmpty(Skin.String(osd-lyricpath))</enable>
@@ -453,20 +434,16 @@
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="215">
-						<width>885</width>
-						<height>56</height>
-						<font>font12</font>
+						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
-						<label>OSD Subscript</label>
+						<label>31658</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-subscriptpath))]</label2>
 						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="216">
-						<width>885</width>
-						<height>56</height>
-						<font>font12</font>
+						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
 						<label>- $LOCALIZE[24020]</label>
 						<enable>!IsEmpty(Skin.String(osd-subscriptpath))</enable>
@@ -476,9 +453,7 @@
 					</control>
 					<control type="radiobutton" id="217">
 						<description>Use TV Tunes</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31892</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
@@ -490,11 +465,9 @@
 					</control>
 					<control type="button" id="218">
 						<description>TV Logo Downloader Script</description>
-						<width>885</width>
-						<height>56</height>
-						<textwidth>785</textwidth>
-						<font>font12</font>
+						<include>settings-submenu-common</include>
 						<label>31893</label>
+						<textwidth>785</textwidth>
 						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
 						<aligny>center</aligny>
@@ -667,8 +640,7 @@
 					</control>
 					<control type="radiobutton" id="303">
 						<description>Video On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31901</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-video)</onclick>
@@ -679,8 +651,7 @@
 					</control>
 					<control type="radiobutton" id="304">
 						<description>Movies On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31902</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-movie)</onclick>
@@ -691,8 +662,7 @@
 					</control>
 					<control type="radiobutton" id="305">
 						<description>TV Shows On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31903</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-tv)</onclick>
@@ -703,8 +673,7 @@
 					</control>
 					<control type="radiobutton" id="306">
 						<description>Music Videos On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31904</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
@@ -715,8 +684,7 @@
 					</control>
 					<control type="radiobutton" id="307">
 						<description>Music On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31905</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-music)</onclick>
@@ -727,8 +695,7 @@
 					</control>
 					<control type="radiobutton" id="308">
 						<description>Addons On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31906</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-programs)</onclick>
@@ -739,8 +706,7 @@
 					</control>
 					<control type="radiobutton" id="309">
 						<description>Pictures On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31907</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-photos)</onclick>
@@ -751,8 +717,7 @@
 					</control>
 					<control type="radiobutton" id="310">
 						<description>Profiles On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31908</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-profile)</onclick>
@@ -763,8 +728,7 @@
 					</control>
 					<control type="radiobutton" id="311">
 						<description>Weather On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31909</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-weather)</onclick>
@@ -776,8 +740,7 @@
 					</control>
 					<control type="radiobutton" id="312">
 						<description>Favorites On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31910</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-favorites)</onclick>
@@ -788,8 +751,7 @@
 					</control>
 					<control type="radiobutton" id="313">
 						<description>Search On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31911</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-search)</onclick>
@@ -800,8 +762,7 @@
 					</control>
 					<control type="radiobutton" id="314">
 						<description>Play Disc On Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31912</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
@@ -812,8 +773,7 @@
 					</control>
 					<control type="radiobutton" id="315">
 						<description>Shutdown From Home toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31913</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
@@ -1037,8 +997,7 @@
 					<pagecontrol>1223</pagecontrol>
 					<control type="button" id="402">
 						<description>Custom Background Button</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31860</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetImage(custom-background)</onclick>
@@ -1048,8 +1007,7 @@
 					</control>
 					<control type="button" id="403">
 						<description>Reset Custom Background Button</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31861</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-background)</onclick>
@@ -1059,8 +1017,7 @@
 					</control>
 					<control type="radiobutton" id="404">
 						<description>Background Fanart Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31863</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-fanart)</onclick>
@@ -1071,8 +1028,7 @@
 					</control>
 					<control type="radiobutton" id="405">
 						<description>Background ExtraFanart Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31864</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-extrafanart)</onclick>
@@ -1084,8 +1040,7 @@
 					</control>
 					<control type="radiobutton" id="406">
 						<description>Media In Background Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31862</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
@@ -1096,8 +1051,7 @@
 					</control>
 					<control type="radiobutton" id="407">
 						<description>Background Artistslideshow Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31865</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
@@ -1109,8 +1063,7 @@
 					</control>
 					<control type="button" id="408">
 						<description>Custom Weather Background Button</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31866</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetPath(custom-weatherbackgrounds)</onclick>
@@ -1120,8 +1073,7 @@
 					</control>
 					<control type="button" id="409">
 						<description>Reset Custom Weather Background Button</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31867</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-weatherbackgrounds)</onclick>
@@ -1264,8 +1216,7 @@
 					</control>
 					<control type="radiobutton" id="413">
 						<description>Use DVD case Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31869</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DVDcase)</onclick>
@@ -1276,8 +1227,7 @@
 					</control>
 					<control type="radiobutton" id="414">
 						<description>Use CD case Toggle</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>31870</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(CDcase)</onclick>
@@ -1332,11 +1282,9 @@
 					<pagecontrol>1223</pagecontrol>
 					<control type="button" id="512">
 						<description>Set Movie library entry point</description>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31920</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
-						<font>font12</font>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmovieentry)</onclick>
@@ -1345,11 +1293,9 @@
 					</control>
 					<control type="button" id="516">
 						<description>Set TV library entry point</description>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31921</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
-						<font>font12</font>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selecttventry)</onclick>
@@ -1358,11 +1304,9 @@
 					</control>
 					<control type="button" id="520">
 						<description>Set Music Video library entry point</description>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31922</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
-						<font>font12</font>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmusicvidentry)</onclick>
@@ -1371,11 +1315,9 @@
 					</control>
 					<control type="button" id="524">
 						<description>Set Music library entry point</description>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31923</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
-						<font>font12</font>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmusicentry)</onclick>
@@ -1441,11 +1383,9 @@
 					<pagecontrol>1223</pagecontrol>
 					<control type="button" id="802">
 						<description>XBMC Log Uploader Script</description>
-						<width>885</width>
-						<height>56</height>
-						<textwidth>750</textwidth>
-						<font>font12</font>
+						<include>settings-submenu-common</include>
 						<label>31930</label>
+						<textwidth>750</textwidth>
 						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
 						<enable>System.HasAddon(script.xbmc.debug.log) + system.getbool(debug.showloginfo)</enable>
 						<aligny>center</aligny>
@@ -1453,9 +1393,7 @@
 					</control>
 					<control type="radiobutton" id="804">
 						<description>System Debug toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>20191</label>
 						<textwidth>750</textwidth>
 						<onclick>XBMC.ToggleDebug</onclick>
@@ -1472,9 +1410,7 @@
 					</control>
 					<control type="radiobutton" id="806">
 						<description>Show skin debug grid toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31933</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
@@ -1485,9 +1421,7 @@
 					</control>
 					<control type="radiobutton" id="807">
 						<description>Show Skin Debug Info toggle</description>
-						<font>font12</font>
-						<width>885</width>
-						<height>56</height>
+						<include>settings-submenu-common</include>
 						<label>31934</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
@@ -1504,8 +1438,7 @@
 					</control>
 					<control type="button" id="809">
 						<description>Reset skin settings to defaults</description>
-						<font>font12</font>
-						<width>885</width>
+						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31935]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.ResetSettings</onclick>

@@ -208,28 +208,28 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-movieimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-movieimages)) | StringCompare(Skin.String(shelf-movieimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick>Skin.SetString(shelf-movieimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-movieimages)) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,Recommended)</onclick>
-									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-movieimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,$LOCALIZE[31955])</onclick>
+									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954])</visible>
 								</item>
 								<item id="3">
 									<description>Recommended</description>
-									<label>Recommended</label>
+									<label>$LOCALIZE[31955]</label>
 									<onclick>Skin.SetString(shelf-movieimages,All)</onclick>
-									<visible>StringCompare(Skin.String(shelf-movieimages),Recommended)</visible>
+									<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="4">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-movieimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-movieimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-movieimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])</visible>
 								</item>
 							</content>
 						</control>
@@ -266,28 +266,28 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,All)</onclick>
-									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-movieimages)) | StringCompare(Skin.String(shelf-movieimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,$LOCALIZE[593])</onclick>
+									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-movieimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-movieimages)) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="4">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-movieimages,Recommended)</onclick>
-									<visible>StringCompare(Skin.String(shelf-movieimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-movieimages,$LOCALIZE[31955])</onclick>
+									<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])</visible>
 								</item>
 								<item id="3">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-movieimages,Recent)</onclick>
-									<visible>StringCompare(Skin.String(shelf-movieimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-movieimages,$LOCALIZE[31954])</onclick>
+									<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-movieimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-movieimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick>Skin.SetString(shelf-movieimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954])</visible>
 								</item>
 							</content>
 						</control>
@@ -519,34 +519,34 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-tvshowimages)) | StringCompare(Skin.String(shelf-tvshowimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-tvshowimages)) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
-									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,$LOCALIZE[31955])</onclick>
+									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954])</visible>
 								</item>
 								<item id="3">
 									<description>Next Aired</description>
-									<label>Next Aired</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),NextAired)</visible>
+									<label>$LOCALIZE[31956]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31955])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956])</visible>
 								</item>
 								<item id="4">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,All)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[593])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="5">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])</visible>
 								</item>
 							</content>
 						</control>
@@ -583,34 +583,34 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,All)</onclick>
-									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-tvshowimages)) | StringCompare(Skin.String(shelf-tvshowimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,$LOCALIZE[593])</onclick>
+									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-tvshowimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-tvshowimages)) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="5">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Recommended)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31955])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])</visible>
 								</item>
 								<item id="4">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,NextAired)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31956])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="3">
 									<description>Next Aired</description>
-									<label>NextAired</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Recent)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),NextAired)</visible>
+									<label>$LOCALIZE[31956]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31954])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-tvshowimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-tvshowimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick>Skin.SetString(shelf-tvshowimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954])</visible>
 								</item>
 							</content>
 						</control>
@@ -842,29 +842,29 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-musicimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-musicimages)) | StringCompare(Skin.String(shelf-musicimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-musicimages)) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-musicimages,Recommended)</onclick>
-									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,Recommended)</onclick>
-									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-musicimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[31955])</onclick>
+									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,$LOCALIZE[31955])</onclick>
+									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954])</visible>
 								</item>
 								<item id="3">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-musicimages,All)</onclick>
-									<visible>StringCompare(Skin.String(shelf-musicimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[593])</onclick>
+									<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="4">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-musicimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-musicimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])</visible>
 								</item>
 							</content>
 						</control>
@@ -901,28 +901,28 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,All)</onclick>
-									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-musicimages)) | StringCompare(Skin.String(shelf-musicimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick condition="!IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,$LOCALIZE[593])</onclick>
+									<onclick condition="IsEmpty(Window(Home).Property(SkinWidgets_Running))">Skin.SetString(shelf-musicimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-musicimages)) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="4">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-musicimages,Recommended)</onclick>
-									<visible>StringCompare(Skin.String(shelf-musicimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[31955])</onclick>
+									<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])</visible>
 								</item>
 								<item id="3">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-musicimages,Recent)</onclick>
-									<visible>StringCompare(Skin.String(shelf-musicimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[31954])</onclick>
+									<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-musicimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-musicimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick>Skin.SetString(shelf-musicimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954])</visible>
 								</item>
 							</content>
 						</control>
@@ -1154,27 +1154,27 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-addonimages,Recent)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-addonimages)) | StringCompare(Skin.String(shelf-addonimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[31954])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-addonimages)) | StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-addonimages,Recommended)</onclick>
-									<visible>StringCompare(Skin.String(shelf-addonimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[31955])</onclick>
+									<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31954])</visible>
 								</item>
 								<item id="3">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-addonimages,All)</onclick>
-									<visible>StringCompare(Skin.String(shelf-addonimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[593])</onclick>
+									<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="4">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-addonimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-addonimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[593])</visible>
 								</item>
 							</content>
 						</control>
@@ -1211,27 +1211,27 @@
 							<content>
 								<item id="1">
 									<description>Icon</description>
-									<label>Icon</label>
-									<onclick>Skin.SetString(shelf-addonimages,All)</onclick>
-									<visible>IsEmpty(Skin.String(shelf-addonimages)) | StringCompare(Skin.String(shelf-addonimages),Icon)</visible>
+									<label>$LOCALIZE[31953]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[593])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-addonimages)) | StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31953])</visible>
 								</item>
 								<item id="4">
 									<description>All</description>
-									<label>All</label>
-									<onclick>Skin.SetString(shelf-addonimages,Recommended)</onclick>
-									<visible>StringCompare(Skin.String(shelf-addonimages),All)</visible>
+									<label>$LOCALIZE[593]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[31955])</onclick>
+									<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[593])</visible>
 								</item>
 								<item id="3">
 									<description>Recommended</description>
-									<label>Recommended</label>
-									<onclick>Skin.SetString(shelf-addonimages,Recent)</onclick>
-									<visible>StringCompare(Skin.String(shelf-addonimages),Recommended)</visible>
+									<label>$LOCALIZE[31955]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[31954])</onclick>
+									<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31955])</visible>
 								</item>
 								<item id="2">
 									<description>Recent</description>
-									<label>Recent</label>
-									<onclick>Skin.SetString(shelf-addonimages,Icon)</onclick>
-									<visible>StringCompare(Skin.String(shelf-addonimages),Recent)</visible>
+									<label>$LOCALIZE[31954]</label>
+									<onclick>Skin.SetString(shelf-addonimages,$LOCALIZE[31953])</onclick>
+									<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31954])</visible>
 								</item>
 							</content>
 						</control>
