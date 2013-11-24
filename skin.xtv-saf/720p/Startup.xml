@@ -18,7 +18,7 @@
 		</control>
 		<control type="group">
 			<visible>!Skin.HasSetting(intro-vid)</visible>
-			<animation effect="fade" end="0" delay="200" time="600">WindowClose</animation>
+			<animation effect="fade" end="0" delay="2000" time="400">WindowClose</animation>
 			<control type="image">
 				<description>Xtv Logo</description>
 				<posx>384</posx>
