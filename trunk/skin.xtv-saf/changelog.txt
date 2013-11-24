@@ -4,7 +4,8 @@
 - Added 4K flag image to support flagging of 4K videos.
 - Added support for changing 3D mode in video OSD.
 - Added support for weather provider icons.
-- Added support for Next Aired TV Show script. 
+- Added support for Next Aired TV Show script.
+- Added support for MCE pvr dialogs.
 - Numerous bugfixes and code optimisations.
  
 [B]1.3.3[/B]
