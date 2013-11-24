@@ -23,8 +23,8 @@
 			<width>1062</width>
 			<height>37</height>
 			<font>font18</font>
-			<textcolor>shadow-text</textcolor>
-			<shadowcolor>button-text</shadowcolor>
+			<textcolor>disabled-text</textcolor>
+			<shadowcolor>button-textshadow-text</shadowcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>IsEmpty(Control.GetLabel(4))</visible>
@@ -43,6 +43,8 @@
 			<width>1062</width>
 			<height>37</height>
 			<font>font18</font>
+			<textcolor>shadow-text</textcolor>
+			<shadowcolor>button-textshadow-text</shadowcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 		</control>
