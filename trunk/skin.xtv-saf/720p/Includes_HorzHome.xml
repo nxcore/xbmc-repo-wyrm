@@ -62,11 +62,79 @@
 			<posy>5</posy>
 			<height>24</height>
 			<width>210</width>
-			<label>$INFO[Container(9900).ListItem(1).Label]</label>
+			<label>$INFO[Container(9900).ListItem(0).Label]</label>
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font11</font>
 		</control>-->
+		
+		<!-- Hack to determine which heading is currently focused -->
+		<!-- Used to make the correct sub headings list visible -->
+		<control type="image" id="301">
+			<posx>8</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Container(9900).ListItem(0).Label,$LOCALIZE[3])</visible>
+		</control>		
+		<control type="image" id="302">
+			<posx>16</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Control.GetLabel(9900),$LOCALIZE[20338])</visible>
+		</control>
+		<control type="image" id="303">
+			<posx>24</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Container(9900).ListItem(0).Label,$LOCALIZE[19020])</visible>
+		</control>		
+		<control type="image" id="304">
+			<posx>32</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Control.GetLabel(9900),$LOCALIZE[2])</visible>
+		</control>
+		<control type="image" id="305">
+			<posx>40</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Container(9900).ListItem(0).Label,$LOCALIZE[1])</visible>
+		</control>		
+		<control type="image" id="306">
+			<posx>48</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Control.GetLabel(9900),$LOCALIZE[24001])</visible>
+		</control>
+		<control type="image" id="307">
+			<posx>56</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Container(9900).ListItem(0).Label,$LOCALIZE[8])</visible>
+		</control>		
+		<control type="image" id="308">
+			<posx>64</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>8</height>
+			<texture>colours/blue.png</texture>
+			<visible>StringCompare(Control.GetLabel(9900),$LOCALIZE[13000])</visible>
+		</control>		
+		
 		<!-- Show time on home screen -->
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include>
 
@@ -1647,141 +1715,145 @@
 				</control>
 			</control>
 			<!-- Settings Sub menu -->
-			<control type="grouplist" id="9450">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
-				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+			<control type="group">
 				<width>210</width>
 				<height>306</height>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<control type="button" id="9470">
+				<control type="grouplist" id="9450">
+					<animation effect="fade" time="50" delay="200">Focus</animation>
+					<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>5</label>
-					<onclick>ActivateWindow(Settings,,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9472">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>130</label>
-					<onclick>ActivateWindow(SystemInfo)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9474">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>1036</label>
-					<onclick>ActivateWindow(Favourites)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-favorites)</visible>
-				</control>
-				<control type="button" id="9476">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>20092</label>
-					<onclick>System.LogOff</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-profile)</visible>
-				</control>
-				<control type="button" id="9478">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>137</label>
-					<onclick>RunScript(script.globalsearch)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>Skin.HasSetting(home-search)</visible>
-				</control>
-				<control type="button" id="9480">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>31036</label>
-					<onclick>PlayDVD</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
-				</control>
-				<control type="button" id="9482">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
-					<onclick>ActivateWindow(PlayerControls)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>Player.HasAudio | Player.HasVideo</visible>
-				</control>
-				<control type="button" id="9484">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>13009</label>
-					<onclick>$VAR[QuitAction]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9100</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-shutdown)</visible>
+					<height>306</height>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<control type="button" id="9470">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>5</label>
+						<onclick>ActivateWindow(Settings,,return)</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+					</control>
+					<control type="button" id="9472">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>130</label>
+						<onclick>ActivateWindow(SystemInfo)</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+					</control>
+					<control type="button" id="9474">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>1036</label>
+						<onclick>ActivateWindow(Favourites)</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+						<visible>Skin.HasSetting(home-favorites)</visible>
+					</control>
+					<control type="button" id="9476">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>20092</label>
+						<onclick>System.LogOff</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+						<visible>Skin.HasSetting(home-profile)</visible>
+					</control>
+					<control type="button" id="9478">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>137</label>
+						<onclick>RunScript(script.globalsearch)</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+						<visible>Skin.HasSetting(home-search)</visible>
+					</control>
+					<control type="button" id="9480">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>31036</label>
+						<onclick>PlayDVD</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+						<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
+					</control>
+					<control type="button" id="9482">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
+						<onclick>ActivateWindow(PlayerControls)</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+						<visible>Player.HasAudio | Player.HasVideo</visible>
+					</control>
+					<control type="button" id="9484">
+						<width>210</width>
+						<height>46</height>
+						<font>font11</font>
+						<label>13009</label>
+						<onclick>$VAR[QuitAction]</onclick>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>8</textoffsety>
+						<onleft>Control.Move(9900,-1)</onleft>
+						<onleft>9400</onleft>
+						<onright>Control.Move(9900,1)</onright>
+						<onright>9100</onright>
+						<align>center</align>
+						<aligny>top</aligny>
+						<visible>!Skin.HasSetting(home-shutdown)</visible>
+					</control>
 				</control>
 			</control>
-		</control>
+		</control>	
 		<!-- Mask controls if more item top or bottom of displayed list -->
 		<control type="group">
 			<!-- Movie Sub menu -->
