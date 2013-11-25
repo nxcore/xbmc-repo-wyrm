@@ -315,7 +315,7 @@ msgstr ""
 #empty strings from id 31660 to 31679
 
 msgctxt "#31680"
-msgid "Select scraper"
+msgid "Default Artwork Downloader"
 msgstr ""
 
 msgctxt "#31681"
@@ -323,7 +323,7 @@ msgid "Artwork Downloader"
 msgstr ""
 
 msgctxt "#31682"
-msgid "TVTunes Downloader"
+msgid "Theme Downloader"
 msgstr ""
 
 #empty strings from id 31683 to 31687
@@ -332,21 +332,21 @@ msgctxt "#31688"
 msgid "Go Back"
 msgstr ""
 
-#empty strings from id 31689 to 31691
+msgctxt "#31689"
+msgid "Edit Library"
+msgstr ""
+
+#empty strings from id 31690 to 31691
 
 msgctxt "#31692"
 msgid "Cinema"
 msgstr ""
 
 msgctxt "#31693"
-msgid "Get Extras..."
+msgid "More Options..."
 msgstr ""
 
-#empty string with id 31694
-
-msgctxt "#31695"
-msgid "Get TV Tunes"
-msgstr ""
+#empty string with id 31694 to 31695
 
 msgctxt "#31696"
 msgid "Video Addons"

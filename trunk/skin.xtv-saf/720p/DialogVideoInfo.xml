@@ -3,6 +3,7 @@
 	<defaultcontrol>999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>no</allowoverlay>
+	<onload condition="Skin.HasSetting(tv_theme)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<include>screen-fade</include>
 	<controls>
 		<include>backgroundvideo</include>
@@ -511,16 +512,6 @@
 				<altlabel>1024</altlabel>
 				<usealttexture>Container.Content(tvshows)</usealttexture>
 			</control>
-			<control type="button" id="19">
-				<description>Edit Library entries</description>
-				<height>57</height>
-				<width>208</width>
-				<font>font11</font>
-				<label>21435</label>
-				<align>center</align>
-				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
-				<visible>system.hasaddon(script.libraryeditor)</visible>
-			</control>
 			<control type="button" id="18">
 				<description>Home Cinema Experience</description>
 				<height>57</height>
@@ -552,15 +543,6 @@
 				<align>center</align>
 				<onclick>SetFocus(50)</onclick>
 			</control>
-			<control type="button" id="1115">
-				<description>Get Extras...</description>
-				<height>57</height>
-				<width>208</width>
-				<font>font11</font>
-				<label>31693</label>
-				<align>center</align>
-				<onclick>ActivateWindow(1154)</onclick>
-			</control>
 			<control type="button" id="6">
 				<description>Refresh</description>
 				<height>57</height>
@@ -568,6 +550,15 @@
 				<font>font11</font>
 				<label>184</label>
 				<align>center</align>
+			</control>
+			<control type="button" id="1115">
+				<description>More Options...</description>
+				<height>57</height>
+				<width>208</width>
+				<font>font11</font>
+				<label>31693</label>
+				<align>center</align>
+				<onclick>ActivateWindow(1154)</onclick>
 			</control>
 		</control>
 		<!-- Cast Scrollbar -->
