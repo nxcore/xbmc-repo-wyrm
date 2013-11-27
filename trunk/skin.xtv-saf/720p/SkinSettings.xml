@@ -359,7 +359,7 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="206">
+					<!--<control type="radiobutton" id="206">
 						<description>Icon Tilt Toggle</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31886]</label>
@@ -380,7 +380,7 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
-					</control>
+					</control>-->
 					<control type="radiobutton" id="208">
 						<description>Time On Home Screen toggle</description>
 						<include>settings-submenu-common</include>
