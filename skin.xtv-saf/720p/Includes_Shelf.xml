@@ -711,81 +711,81 @@
 	<include name="AlbumRecommended">
 		<item id="191">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Play))</visible>
 		</item>
 		<item id="192">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Play))</visible>
 		</item>
 		<item id="193">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Play))</visible>
 		</item>
 		<item id="194">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Play))</visible>
 		</item>
 		<item id="195">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Play))</visible>
 		</item>
 		<item id="196">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Play))</visible>
 		</item>
 		<item id="197">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Play))</visible>
 		</item>
 		<item id="198">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Play))</visible>
 		</item>
 		<item id="199">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Play))</visible>
 		</item>
 		<item id="200">
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
-			<label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist )]</label2>
+			<label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb )]</thumb>
+			<thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Play))</visible>
 		</item>

@@ -277,6 +277,52 @@
 		<value condition="!IsEmpty(Player.Art(tvshow.clearlogo)) + VideoPlayer.Content(episodes)">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value>blank.png</value>
 	</variable>
+	<variable name="MovieShelfIcon0">
+		<value condition="Container(9160).Position(0)">$INFO[Container(9160).ListItemNoWrap(-1).Thumb]</value>
+		<value condition="Container(9160).Position(1)">$INFO[Container(9160).ListItemNoWrap(-2).Thumb]</value>
+		<value condition="Container(9160).Position(2)">$INFO[Container(9160).ListItemNoWrap(-3).Thumb]</value>
+		<value condition="Container(9160).Position(3)">$INFO[Container(9160).ListItemNoWrap(-4).Thumb]</value>
+		<value condition="Container(9160).Position(4)">$INFO[Container(9160).ListItemNoWrap(-5).Thumb]</value>
+		<value condition="Container(9160).Position(5)">$INFO[Container(9160).ListItemNoWrap(-6).Thumb]</value>
+	</variable>
+	<variable name="MovieShelfIcon7">
+		<value condition="Container(9160).Position(0)">$INFO[Container(9160).ListItemNoWrap(6).Thumb]</value>
+		<value condition="Container(9160).Position(1)">$INFO[Container(9160).ListItemNoWrap(5).Thumb]</value>
+		<value condition="Container(9160).Position(2)">$INFO[Container(9160).ListItemNoWrap(4).Thumb]</value>
+		<value condition="Container(9160).Position(3)">$INFO[Container(9160).ListItemNoWrap(3).Thumb]</value>
+		<value condition="Container(9160).Position(4)">$INFO[Container(9160).ListItemNoWrap(2).Thumb]</value>
+		<value condition="Container(9160).Position(5)">$INFO[Container(9160).ListItemNoWrap(1).Thumb]</value>
+	</variable>
+	<variable name="TVShowShelfIcon0">
+		<value condition="Container(9210).Position(0)">$INFO[Container(9210).ListItemNoWrap(-1).Thumb]</value>
+		<value condition="Container(9210).Position(1)">$INFO[Container(9210).ListItemNoWrap(-2).Thumb]</value>
+		<value condition="Container(9210).Position(2)">$INFO[Container(9210).ListItemNoWrap(-3).Thumb]</value>
+		<value condition="Container(9210).Position(3)">$INFO[Container(9210).ListItemNoWrap(-4).Thumb]</value>
+		<value condition="Container(9210).Position(4)">$INFO[Container(9210).ListItemNoWrap(-5).Thumb]</value>
+	</variable>
+	<variable name="TVShowShelfIcon7">
+		<value condition="Container(9210).Position(0)">$INFO[Container(9210).ListItemNoWrap(5).Thumb]</value>
+		<value condition="Container(9210).Position(1)">$INFO[Container(9210).ListItemNoWrap(4).Thumb]</value>
+		<value condition="Container(9210).Position(2)">$INFO[Container(9210).ListItemNoWrap(3).Thumb]</value>
+		<value condition="Container(9210).Position(3)">$INFO[Container(9210).ListItemNoWrap(2).Thumb]</value>
+		<value condition="Container(9210).Position(4)">$INFO[Container(9210).ListItemNoWrap(1).Thumb]</value>
+	</variable>
+	<variable name="MusicShelfIcon0">
+		<value condition="Container(9260).Position(0)">$INFO[Container(9260).ListItemNoWrap(-1).Thumb]</value>
+		<value condition="Container(9260).Position(1)">$INFO[Container(9260).ListItemNoWrap(-2).Thumb]</value>
+		<value condition="Container(9260).Position(2)">$INFO[Container(9260).ListItemNoWrap(-3).Thumb]</value>
+		<value condition="Container(9260).Position(3)">$INFO[Container(9260).ListItemNoWrap(-4).Thumb]</value>
+		<value condition="Container(9260).Position(4)">$INFO[Container(9260).ListItemNoWrap(-5).Thumb]</value>
+		<value condition="Container(9260).Position(5)">$INFO[Container(9260).ListItemNoWrap(-6).Thumb]</value>
+	</variable>
+	<variable name="MusicShelfIcon7">
+		<value condition="Container(9260).Position(0)">$INFO[Container(9260).ListItemNoWrap(6).Thumb]</value>
+		<value condition="Container(9260).Position(1)">$INFO[Container(9260).ListItemNoWrap(5).Thumb]</value>
+		<value condition="Container(9260).Position(2)">$INFO[Container(9260).ListItemNoWrap(4).Thumb]</value>
+		<value condition="Container(9260).Position(3)">$INFO[Container(9260).ListItemNoWrap(3).Thumb]</value>
+		<value condition="Container(9260).Position(4)">$INFO[Container(9260).ListItemNoWrap(2).Thumb]</value>
+		<value condition="Container(9260).Position(5)">$INFO[Container(9260).ListItemNoWrap(1).Thumb]</value>
+	</variable>
 	<variable name="QuitAction">
 		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])">XBMC.quit()</value>
 		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])">XBMC.reboot()</value>
