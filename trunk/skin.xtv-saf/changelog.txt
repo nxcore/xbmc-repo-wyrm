@@ -8,6 +8,7 @@
 - Added support for Next Aired TV Show script.
 - Added support for MCE pvr dialogs.
 - Added support for v4.0.0 of TV Tunes script, now plays theme in video info screen and plays movie themes.
+- Added support to horizontal home menu screen for a custom watermark image in the lower right corner of screen.
 - Reworked custom video info extras dialog, all extra options have been moved to this dialog and 
   strings updated to better describe each options action.
 - Numerous bugfixes and code optimisations.
