@@ -415,6 +415,26 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
+					<control type="button" id="211">
+						<description>Custom Homescreen Watermark Image</description>
+						<include>settings-submenu-common</include>
+						<label>31871</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.SetImage(custom-watermark)</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<visible>Skin.HasSetting(homemenu-horizontal) + !Skin.String(custom-watermark)</visible>
+					</control>
+					<control type="button" id="212">
+						<description>Reset Custom Homescreen Watermark Image</description>
+						<include>settings-submenu-common</include>
+						<label>31872</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(custom-watermark)</onclick>
+						<aligny>center</aligny>
+						<textoffsetx>35</textoffsetx>
+						<visible>Skin.HasSetting(homemenu-horizontal) + Skin.String(custom-watermark)</visible>
+					</control>
 					<control type="button" id="213">
 						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>

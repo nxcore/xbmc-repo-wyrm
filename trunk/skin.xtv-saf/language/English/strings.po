@@ -515,7 +515,15 @@ msgctxt "#31870"
 msgid "Show CD case"
 msgstr ""
 
-#empty strings from id 31871 to 31879
+msgctxt "#31871"
+msgid "Choose Homescreen Watermark Image"
+msgstr ""
+
+msgctxt "#31872"
+msgid "Reset Homescreen Watermark Image"
+msgstr ""
+
+#empty strings from id 31873 to 31879
 
 msgctxt "#31880"
 msgid "Lock \"View As\" panel"
