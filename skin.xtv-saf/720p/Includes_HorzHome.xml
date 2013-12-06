@@ -163,6 +163,7 @@
 		<!--Home NavBar-->
 		<control type="group" id="9850">
 			<include>horizontalhome-center</include>
+			<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260) | Control.HasFocus(9360)" effect="fade" start="100" end="65">Conditional</animation>
 			<control type="list" id="9900">
 				<posx>10</posx>
 				<posy>295</posy>
@@ -267,7 +268,7 @@
 			<include>horizontalhome-center</include>
 			<include>horizontalhome-slide</include>
 			<control type="grouplist" id="9100">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>!Skin.HasSetting(home-video)</visible>
 				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
@@ -369,9 +370,9 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9150">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
-				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9150).HasFocus() | Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
@@ -489,9 +490,9 @@
 			</control>
 			<!-- TV Sub Menu -->
 			<control type="grouplist" id="9200">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
-				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9200).HasFocus() | Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
@@ -625,9 +626,9 @@
 			</control>
 			<!-- Music Sub menu -->
 			<control type="grouplist" id="9250">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
-				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9250).HasFocus() | Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
@@ -762,7 +763,7 @@
 			</control>
 			<!-- Pictures Sub menu -->
 			<control type="grouplist" id="9300">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>Skin.HasSetting(home-photos)</visible>
 				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
@@ -802,9 +803,9 @@
 			</control>
 			<!-- Addons Sub menu -->
 			<control type="grouplist" id="9350">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>!Skin.HasSetting(home-programs)</visible>
-				<animation condition="!ControlGroup(9350).HasFocus() + !Control.HasFocus(9360)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9350).HasFocus() | Control.HasFocus(9360)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9355</onup>
@@ -967,7 +968,7 @@
 			</control>
 			<!-- Weather Sub menu -->
 			<control type="grouplist" id="9400">
-				<animation effect="fade" time="50" delay="200">Focus</animation>
+				<animation effect="fade" time="50" delay="300">Focus</animation>
 				<visible>!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
@@ -995,7 +996,7 @@
 				<width>210</width>
 				<height>306</height>
 				<control type="grouplist" id="9450">
-					<animation effect="fade" time="50" delay="200">Focus</animation>
+					<animation effect="fade" time="50" delay="300">Focus</animation>
 					<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 					<width>210</width>
 					<height>306</height>
@@ -1101,6 +1102,7 @@
 						<font>font11</font>
 						<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 						<onclick>ActivateWindow(PlayerControls)</onclick>
+						<onclick>SetFocus(9450)</onclick>
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>8</textoffsety>
 						<onleft>Control.Move(9900,-1)</onleft>
@@ -1211,12 +1213,12 @@
 				<visible>Container(9450).HasNext</visible>
 			</control>
 		</control>
-		<!-- Horizontal Home menu logo -->
+		<!-- Horizontal Home menu watermark -->
 		<control type="image">
-			<posx>1150</posx>
-			<posy>590</posy>
-			<width>100</width>
-			<height>100</height>
+			<posx>1065</posx>
+			<posy>490</posy>
+			<width>200</width>
+			<height>200</height>
 			<aspectratio align="center" aligny="center">keep</aspectratio>
 			<texture background="true" fallback="blank.png">$INFO[Skin.String(custom-watermark)]</texture>
 			<animation condition="Container(9900).Position(5) | [Skin.HasSetting(overlay) + [Player.HasAudio | Player.HasVideo]]" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
