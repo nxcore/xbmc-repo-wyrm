@@ -77,7 +77,7 @@
 		<control type="scrollbar" id="23">
 			<posx>10</posx>
 			<posy>112</posy>
-			<width>20</width>
+			<width>18</width>
 			<height>542</height>
 			<onleft>9000</onleft>
 			<onright>5</onright>
@@ -193,7 +193,7 @@
 					<onright>23</onright> 
 					<onup>20</onup> 
 					<ondown>20</ondown>
-					<onclick>SettingsReset</onclick>					
+					<onclick>SettingsReset</onclick>
 				</control> 
 			</control>
 		</control>

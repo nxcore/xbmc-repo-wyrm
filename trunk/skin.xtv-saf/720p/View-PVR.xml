@@ -374,7 +374,7 @@
 			<control type="scrollbar" id="27">
 				<posx>1244</posx>
 				<posy>112</posy>
-				<width>20</width>
+				<width>18</width>
 				<height>565</height>
 				<onleft>11</onleft>
 				<onright>11</onright>
@@ -487,7 +487,7 @@
 			<control type="scrollbar" id="27">
 				<posx>1244</posx>
 				<posy>112</posy>
-				<width>20</width>
+				<width>18</width>
 				<height>565</height>
 				<onleft>12</onleft>
 				<onright>12</onright>
@@ -776,7 +776,7 @@
 			<control type="scrollbar" id="27">
 				<posx>1244</posx>
 				<posy>150</posy>
-				<width>20</width>
+				<width>18</width>
 				<height>500</height>
 				<onleft>14</onleft>
 				<onright>14</onright>
@@ -873,7 +873,7 @@
 				<control type="scrollbar" id="27">
 					<posx>1244</posx>
 					<posy>112</posy>
-					<width>20</width>
+					<width>18</width>
 					<height>565</height>
 					<onleft>15</onleft>
 					<onright>15</onright>
@@ -981,7 +981,7 @@
 				<control type="scrollbar" id="27">
 					<posx>1244</posx>
 					<posy>112</posy>
-					<width>20</width>
+					<width>18</width>
 					<height>555</height>
 					<onleft>16</onleft>
 					<onright>16</onright>
@@ -1154,7 +1154,7 @@
 			<control type="scrollbar" id="27">
 				<posx>1244</posx>
 				<posy>146</posy>
-				<width>20</width>
+				<width>18</width>
 				<height>506</height>
 				<onleft>17</onleft>
 				<onright>9000</onright>
@@ -1236,7 +1236,7 @@
 			<control type="scrollbar" id="60">
 				<posx>854</posx>
 				<posy>78</posy>
-				<width>20</width>
+				<width>18</width>
 				<height>560</height>
 				<onleft>560</onleft>
 				<onright>2</onright>

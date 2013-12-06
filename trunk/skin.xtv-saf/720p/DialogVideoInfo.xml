@@ -565,7 +565,7 @@
 		<control type="scrollbar" id="923">
 			<posx>1234</posx>
 			<posy>340</posy>
-			<width>20</width>
+			<width>18</width>
 			<height>305</height>
 			<onleft>50</onleft>
 			<onright>999</onright>
@@ -575,7 +575,7 @@
 		<control type="scrollbar" id="1023">
 			<posx>1234</posx>
 			<posy>340</posy>
-			<width>20</width>
+			<width>18</width>
 			<height>305</height>
 			<onleft>50</onleft>
 			<onright>999</onright>

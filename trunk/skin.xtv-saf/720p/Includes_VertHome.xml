@@ -715,12 +715,13 @@
 		<!-- Scroll Bar -->
 		<control type="scrollbar" id="23">
 			<posx>1244</posx>
-			<posy>140</posy>
-			<width>22</width>
+			<posy>142</posy>
+			<width>18</width>
 			<height>512</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<visible>Skin.HasSetting(sbar)</visible>
+			<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 		</control>
 		<!-- media infos (music) -->
 		<control type="group" id="9950">

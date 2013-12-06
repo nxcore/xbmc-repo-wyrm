@@ -92,7 +92,7 @@
 			<posx>110</posx>
 			<posy>500</posy>
 			<width>679</width>
-			<height>20</height>
+			<height>18</height>
 			<ondown>999</ondown>
 			<onup>11</onup>
 			<orientation>horizontal</orientation>
