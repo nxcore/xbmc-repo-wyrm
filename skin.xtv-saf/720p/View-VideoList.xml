@@ -727,11 +727,12 @@
 			<include>SortLetterNotification</include>
 			<control type="scrollbar" id="23">
 				<posx>1246</posx>
-				<posy>112</posy>
-				<width>20</width>
-				<height>555</height>
+				<posy>108</posy>
+				<width>18</width>
+				<height>546</height>
 				<onleft>50</onleft>
 				<onright>9000</onright>
+				<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>

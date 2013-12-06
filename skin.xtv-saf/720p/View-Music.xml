@@ -75,10 +75,11 @@
 				<posx>17</posx>
 				<posy>616</posy>
 				<width>1239</width>
-				<height>20</height>
+				<height>18</height>
 				<onup>54</onup>
 				<ondown>9000</ondown>
 				<orientation>horizontal</orientation>
+				<animation condition="!Control.HasFocus(1254) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 			<!-- Go Back -->
@@ -718,10 +719,11 @@
 				<posx>17</posx>
 				<posy>590</posy>
 				<width>1239</width>
-				<height>20</height>
+				<height>18</height>
 				<onup>57</onup>
 				<ondown>9000</ondown>
 				<orientation>horizontal</orientation>
+				<animation condition="!Control.HasFocus(1257) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
 			</control>
 			<!-- Go Back -->
@@ -920,10 +922,11 @@
 			<control type="scrollbar" id="1258">
 				<posx>1244</posx>
 				<posy>112</posy>
-				<width>20</width>
+				<width>18</width>
 				<height>490</height>
 				<onleft>58</onleft>
 				<onright>9000</onright>
+				<animation condition="!Control.HasFocus(1258) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>

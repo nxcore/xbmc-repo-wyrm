@@ -79,7 +79,7 @@
 		<control type="scrollbar" id="23">
 			<posx>1244</posx>
 			<posy>112</posy>
-			<width>20</width>
+			<width>18</width>
 			<height>450</height>
 			<onleft>2</onleft>
 			<onright>4</onright>

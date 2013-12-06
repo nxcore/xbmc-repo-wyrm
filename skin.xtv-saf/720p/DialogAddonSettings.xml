@@ -53,7 +53,7 @@
 		<control type="scrollbar" id="30">
 			<posx>10</posx>
 			<posy>112</posy>
-			<width>20</width>
+			<width>18</width>
 			<height>545</height>
 			<onleft>9</onleft>
 			<onright>2</onright>
