@@ -862,7 +862,7 @@
 					<animation effect="fade" time="200" delay="150" reversible="false">Focus</animation>
 					<animation condition="!ControlGroup(9000).HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>-->
 					<animation condition="ControlGroup(9000).HasFocus(9150)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<animation condition="Control.HasFocus(9160)" effect="fade" start="100" end="0" time="100" reversible="true">Conditional</animation>
+					<animation condition="Control.HasFocus(9160)" effect="fade" start="100" end="60" time="100" reversible="true">Conditional</animation>
 					<width>210</width>
 					<height>276</height>
 					<scrolltime>200</scrolltime>
@@ -952,7 +952,7 @@
 					<animation effect="fade" time="200" delay="150" reversible="false">Focus</animation>
 					<animation condition="!ControlGroup(9000).HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>-->
 					<animation condition="ControlGroup(9000).HasFocus(9200)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<animation condition="Control.HasFocus(9210)" effect="fade" start="100" end="0" time="100" reversible="true">Conditional</animation>
+					<animation condition="Control.HasFocus(9210)" effect="fade" start="100" end="60" time="100" reversible="true">Conditional</animation>
 					<width>210</width>
 					<height>276</height>
 					<scrolltime>200</scrolltime>
@@ -1047,7 +1047,7 @@
 					<animation effect="fade" time="200" delay="150" reversible="false">Focus</animation>
 					<animation condition="!ControlGroup(9000).HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>-->
 					<animation condition="ControlGroup(9000).HasFocus(9250)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<animation condition="Control.HasFocus(9260)" effect="fade" start="100" end="0" time="100" reversible="true">Conditional</animation>
+					<animation condition="Control.HasFocus(9260)" effect="fade" start="100" end="60" time="100" reversible="true">Conditional</animation>
 					<width>210</width>
 					<height>276</height>
 					<scrolltime>200</scrolltime>
@@ -1207,7 +1207,7 @@
 					<animation effect="fade" time="200" delay="150" reversible="false">Focus</animation>
 					<animation condition="!ControlGroup(9000).HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>-->
 					<animation condition="ControlGroup(9000).HasFocus(9350)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<animation condition="Control.HasFocus(9360)" effect="fade" start="100" end="0" time="100" reversible="true">Conditional</animation>
+					<animation condition="Control.HasFocus(9360)" effect="fade" start="100" end="60" time="100" reversible="true">Conditional</animation>
 					<width>210</width>
 					<height>276</height>
 					<scrolltime>200</scrolltime>
