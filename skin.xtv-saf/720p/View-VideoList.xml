@@ -386,10 +386,6 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
-				<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-					<effect type="rotatey" start="-20" end="-20" time="0"/>
-					<effect type="slide" end="10,0" time="0"/>
-				</animation>
 				<control type="group">
 					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
 					<control type="group">
@@ -623,7 +619,7 @@
 							<posy>120</posy>
 							<width>318</width>
 							<height>318</height>
-							<texture diffuse="mask-rect.png">DefaultTvshows.png</texture>
+							<texture>DefaultTvshows.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
