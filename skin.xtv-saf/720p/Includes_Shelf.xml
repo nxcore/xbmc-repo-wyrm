@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="MovieLatest">
-		<item id="101">
+		<item>
 			<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.1.Path)])</onclick>
 			<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
 		</item>
-		<item id="102">
+		<item>
 			<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.2.Path)])</onclick>
 			<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
 		</item>
-		<item id="103">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.3.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.3.Title))</visible>
 		</item>
-		<item id="104">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.4.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.4.Title))</visible>
 		</item>
-		<item id="105">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.5.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.5.Title))</visible>
 		</item>
-		<item id="106">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.6.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.6.Title))</visible>
 		</item>
-		<item id="107">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.7.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.7.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.7.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.7.Title))</visible>
 		</item>
-		<item id="108">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.8.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.8.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.8.Title))</visible>
 		</item>
-		<item id="109">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.9.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.9.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.9.Thumb)]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(LatestMovie.9.Title))</visible>
 		</item>
-		<item id="110">
+		<item>
 			<label>$INFO[Window(Home).Property(LatestMovie.10.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.10.Path)])</onclick>
 			<thumb>$INFO[Window(Home).Property(LatestMovie.10.Thumb)]</thumb>
@@ -73,70 +73,70 @@
 		</item>
 	</include>
 	<include name="MovieRecent">
-		<item id="111">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
 		</item>
-		<item id="112">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.2.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.2.Title))</visible>
 		</item>
-		<item id="113">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.3.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.3.Title))</visible>
 		</item>
-		<item id="114">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.4.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.4.Title))</visible>
 		</item>
-		<item id="115">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.5.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.5.Title))</visible>
 		</item>
-		<item id="116">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.6.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.6.Title))</visible>
 		</item>
-		<item id="117">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.7.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.7.Title))</visible>
 		</item>
-		<item id="118">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.8.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.8.Title))</visible>
 		</item>
-		<item id="119">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.9.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[20386]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Title))</visible>
 		</item>
-		<item id="120">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.10.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(poster))]</thumb>
@@ -145,70 +145,70 @@
 		</item>
 	</include>
 	<include name="MovieRecommended">
-		<item id="121">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
 		</item>
-		<item id="122">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
 		</item>
-		<item id="123">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
 		</item>
-		<item id="124">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
 		</item>
-		<item id="125">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
 		</item>
-		<item id="126">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
 		</item>
-		<item id="127">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
 		</item>
-		<item id="128">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
 		</item>
-		<item id="129">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</thumb>
 			<property name="ItemType">$LOCALIZE[31960]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
 		</item>
-		<item id="130">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
 			<thumb>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</thumb>

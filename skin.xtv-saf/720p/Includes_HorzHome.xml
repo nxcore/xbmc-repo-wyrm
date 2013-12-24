@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="HorzHomeMenu">
-		<include>screen-fade</include>
-		<!-- Build up home menu shelf image -->
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>192</height>
-			<texture>colours/grey.png</texture>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>192</posy>
-			<width>1280</width>
-			<height>102</height>
-			<texture>colours/midgrey.png</texture>
-		</control>
-		<control type="image">
-			<posx>-100</posx>
-			<posy>-20</posy>
-			<width>1480</width>
-			<height>310</height>
-			<texture>menu-mask.png</texture>
-			<colordiffuse>BBF9F9F9</colordiffuse>
-		</control>
 		<!-- Hidden button to resync home menu items if they get out of sync -->
 		<control type="button" id="420">
 			<posx>-12</posx>
@@ -33,6 +9,33 @@
 			<height>1</height>
 			<onfocus>SetFocus(9900)</onfocus>
 			<onfocus>$VAR[HomeHeading]</onfocus> <!-- Refocus sub menu to match menu heading -->
+		</control>
+		<include>screen-fade</include>
+		<!-- Build up home menu shelf image -->
+		<control type="group">
+			<visible>![Window.IsActive(videolibrary) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>192</height>
+				<texture>colours/grey.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>192</posy>
+				<width>1280</width>
+				<height>102</height>
+				<texture>colours/midgrey.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>294</height>
+				<texture>menu-mask.png</texture>
+				<colordiffuse>BBF9F9F9</colordiffuse>
+			</control>
 		</control>
 
 		<!-- Show time on home screen -->
@@ -108,7 +111,7 @@
 						<animation effect="rotatey" center="0" start="0" end="-60" time="600" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>1150</posx>
+						<posx>1148</posx>
 						<posy>70</posy>
 						<width>130</width>
 						<height>178</height>
@@ -260,7 +263,7 @@
 						<animation effect="rotatey" center="0" start="-60" end="-60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>1136</posx>
+						<posx>1134</posx>
 						<posy>58</posy>
 						<width>178</width>
 						<height>178</height>
@@ -431,15 +434,15 @@
 						<animation effect="rotatey" center="0" start="0" end="-60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>1150</posx>
+						<posx>1136</posx>
 						<posy>65</posy>
 						<width>164</width>
 						<height>164</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[MusicShelfIcon7]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="1215" y="159"/>
-						<animation effect="rotatey" center="1280" start="60" end="60" time="300" condition="true">Conditional</animation>
+						<camera x="1212" y="159"/>
+						<animation effect="rotatey" center="1276" start="60" end="60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="list" id="9260">
 						<posx>10</posx>
@@ -640,28 +643,22 @@
 			</control>
 		</control>
 		<!-- Main Horizontal menu bar -->
-		<control type="image">
-			<description>solid background</description>
-			<posx>0</posx>
-			<posy>294</posy>
-			<width>1280</width>
-			<height>430</height>
-			<colordiffuse>solid-background</colordiffuse>
-			<texture>colours/black.png</texture>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>290</posy>
-			<width>1280</width>
-			<height>6</height>
-			<texture>separator.png</texture>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>360</posy>
-			<width>1280</width>
-			<height>6</height>
-			<texture>separator.png</texture>
+		<control type="group">
+			<visible>Window.IsActive(home)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>290</posy>
+				<width>1280</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>360</posy>
+				<width>1280</width>
+				<height>6</height>
+				<texture>separator.png</texture>
+			</control>
 		</control>
 		<!--Home NavBar-->
 		<control type="group" id="9850">
@@ -907,6 +904,7 @@
 					</focusedlayout>
 					<content>
 						<item id="0" description="Movies">
+							<visible>!Skin.HasSetting(home-movie)</visible>
 							<label>31026</label>
 							<onclick>$VAR[MovieLibEntry]</onclick>
 						</item>
@@ -1002,6 +1000,7 @@
 							<onclick>ActivateWindow(PVR)</onclick>
 						</item>
 						<item id="1" description="TV Shows Library">
+							<visible>!Skin.HasSetting(home-tv)</visible>
 							<label>31027</label>
 							<onclick>$VAR[TVLibEntry]</onclick>
 						</item>
