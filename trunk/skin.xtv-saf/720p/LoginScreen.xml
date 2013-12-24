@@ -2,7 +2,6 @@
 <window>
 	<defaultcontrol always="true">52</defaultcontrol>
 	<visible>!Window.IsActive(startup)</visible>
-	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>screen-fade</include>
