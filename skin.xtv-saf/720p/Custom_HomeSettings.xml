@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1153">
 	<defaultcontrol always="true">999</defaultcontrol>
-	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
-
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
