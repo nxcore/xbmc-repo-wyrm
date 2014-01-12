@@ -3,14 +3,6 @@
 	<include name="VertHomeMenu">
 		<include>background</include>
 		<include>screen-fade</include>
-		<control type="button" id="420">
-			<description>Move focus to main home menu group</description>
-			<posx>-12</posx>
-			<posy>-12</posy>
-			<width>1</width>
-			<height>1</height>
-			<onfocus>Control.SetFocus(9000)</onfocus>
-		</control>
 		<!-- Bring up Player controls if go left -->
 		<control type="button" id="421">
 			<description>trigger player controls if selected</description>
@@ -726,7 +718,6 @@
 		<!-- media infos (music) -->
 		<control type="group" id="9950">
 			<visible>Skin.HasSetting(overlay) + !Window.IsActive(PlayerControls)</visible>
-			<include>media-slide</include>
 			<control type="group" id="9960">
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
