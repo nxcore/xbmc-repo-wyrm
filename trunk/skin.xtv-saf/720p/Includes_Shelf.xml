@@ -790,43 +790,6 @@
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
 		</item>
 	</include>
-	<include name="AddonFavourites">
-		<item id="201">
-			<label>$INFO[Skin.String(CustomAddon.1.Label)]</label>
-			<onclick>$INFO[Skin.String(CustomAddon.1.Path)]</onclick>
-			<thumb>$INFO[Skin.String(CustomAddon.1.Icon)]</thumb>
-			<property name="ItemType">$LOCALIZE[1036]</property>
-			<visible>!IsEmpty(Skin.String(CustomAddon.1.Path))</visible>
-		</item>
-		<item id="202">
-			<label>$INFO[Skin.String(CustomAddon.2.Label)]</label>
-			<onclick>$INFO[Skin.String(CustomAddon.2.Path)]</onclick>
-			<thumb>$INFO[Skin.String(CustomAddon.2.Icon)]</thumb>
-			<property name="ItemType">$LOCALIZE[1036]</property>
-			<visible>!IsEmpty(Skin.String(CustomAddon.2.Path))</visible>
-		</item>
-		<item id="203">
-			<label>$INFO[Skin.String(CustomAddon.3.Label)]</label>
-			<onclick>$INFO[Skin.String(CustomAddon.3.Path)]</onclick>
-			<thumb>$INFO[Skin.String(CustomAddon.3.Icon)]</thumb>
-			<property name="ItemType">$LOCALIZE[1036]</property>
-			<visible>!IsEmpty(Skin.String(CustomAddon.3.Path))</visible>
-		</item>
-		<item id="204">
-			<label>$INFO[Skin.String(CustomAddon.4.Label)]</label>
-			<onclick>$INFO[Skin.String(CustomAddon.4.Path)]</onclick>
-			<thumb>$INFO[Skin.String(CustomAddon.4.Icon)]</thumb>
-			<property name="ItemType">$LOCALIZE[1036]</property>
-			<visible>!IsEmpty(Skin.String(CustomAddon.4.Path))</visible>
-		</item>
-		<item id="205">
-			<label>$INFO[Skin.String(CustomAddon.5.Label)]</label>
-			<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
-			<thumb>$INFO[Skin.String(CustomAddon.5.Icon)]</thumb>
-			<property name="ItemType">$LOCALIZE[1036]</property>
-			<visible>!IsEmpty(Skin.String(CustomAddon.5.Path))</visible>
-		</item>
-	</include>
 	<!-- Shelf weather forecast -->
 	<include name="ShelfWeather">
 		<control type="group">

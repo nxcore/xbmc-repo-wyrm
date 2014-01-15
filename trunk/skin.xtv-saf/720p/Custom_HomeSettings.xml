@@ -174,7 +174,7 @@
 									<width>800</width>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<label>Shelf Images</label>
+									<label>$LOCALIZE[536]</label>
 								</control>
 								<control type="label">
 									<posx>790</posx>
@@ -485,7 +485,7 @@
 									<width>800</width>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<label>Shelf Images</label>
+									<label>$LOCALIZE[536]</label>
 								</control>
 								<control type="label">
 									<posx>790</posx>
@@ -808,7 +808,7 @@
 									<width>800</width>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<label>Shelf Images</label>
+									<label>$LOCALIZE[536]</label>
 								</control>
 								<control type="label">
 									<posx>790</posx>
