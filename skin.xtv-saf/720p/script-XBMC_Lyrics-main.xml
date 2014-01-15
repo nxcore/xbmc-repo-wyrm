@@ -106,7 +106,7 @@
 			<control type="label" id="200">
 				<description>Scraper label</description>
 				<visible>false</visible>
-			</control>			
+			</control>
 			<control type="label">
 				<description>header label</description>
 				<posx>946</posx>
@@ -117,8 +117,6 @@
 				<aligny>center</aligny>
 				<font>font18</font>
 				<label>$ADDON[script.cu.lrclyrics 0]</label>
-				<align>right</align>
-				<aligny>center</aligny>
 			</control>
 
 			<!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
