@@ -700,7 +700,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>311</posy>
+					<posy>292</posy>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -708,8 +708,8 @@
 					<aligny>center</aligny>
 					<label>$VAR[VideoList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="311"/>
-					<animation effect="rotatex" center="311" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<camera x="105" y="292"/>
+					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -717,9 +717,9 @@
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9100)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
@@ -727,10 +727,10 @@
 					<onright>9170</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -739,17 +739,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -837,7 +837,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>311</posy>
+					<posy>292</posy>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -845,8 +845,8 @@
 					<aligny>center</aligny>
 					<label>$VAR[MovieList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="311"/>
-					<animation effect="rotatex" center="311" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<camera x="105" y="292"/>
+					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -854,9 +854,9 @@
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9150)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9155</onup>
 					<ondown>noop</ondown>
@@ -864,10 +864,10 @@
 					<onright>9220</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -876,17 +876,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -983,7 +983,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>311</posy>
+					<posy>292</posy>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -991,8 +991,8 @@
 					<aligny>center</aligny>
 					<label>$VAR[TVShowList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="311"/>
-					<animation effect="rotatex" center="311" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<camera x="105" y="292"/>
+					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -1000,9 +1000,9 @@
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9200)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9205</onup>
 					<ondown>noop</ondown>
@@ -1010,10 +1010,10 @@
 					<onright>9270</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1022,17 +1022,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1135,7 +1135,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>311</posy>
+					<posy>292</posy>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -1143,8 +1143,8 @@
 					<aligny>center</aligny>
 					<label>$VAR[MusicList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="311"/>
-					<animation effect="rotatex" center="311" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<camera x="105" y="292"/>
+					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -1152,9 +1152,9 @@
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9250)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9255</onup>
 					<ondown>noop</ondown>
@@ -1162,10 +1162,10 @@
 					<onright>9320</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1174,17 +1174,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1274,9 +1274,9 @@
 					<animation condition="!Control.HasFocus(9300)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9300)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
@@ -1284,10 +1284,10 @@
 					<onright>9370</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1296,17 +1296,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1372,7 +1372,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>311</posy>
+					<posy>292</posy>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -1380,8 +1380,8 @@
 					<aligny>center</aligny>
 					<label>$VAR[AddonList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="311"/>
-					<animation effect="rotatex" center="311" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<camera x="105" y="292"/>
+					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -1389,9 +1389,9 @@
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9350)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9355</onup>
 					<ondown>noop</ondown>
@@ -1399,10 +1399,10 @@
 					<onright>9420</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1411,17 +1411,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1519,9 +1519,9 @@
 					<animation condition="!Control.HasFocus(9400)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9400)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
@@ -1529,10 +1529,10 @@
 					<onright>9470</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1541,17 +1541,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1611,7 +1611,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>311</posy>
+					<posy>292</posy>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -1619,8 +1619,8 @@
 					<aligny>center</aligny>
 					<label>$VAR[SystemList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="311"/>
-					<animation effect="rotatex" center="311" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<camera x="105" y="292"/>
+					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -1628,9 +1628,9 @@
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9450)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<posx>0</posx>
-					<posy>86</posy>
+					<posy>82</posy>
 					<width>210</width>
-					<height>225</height>
+					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
@@ -1638,10 +1638,10 @@
 					<onright>9120</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
-					<itemlayout height="45" width="210">
+					<itemlayout height="42" width="210">
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1650,17 +1650,17 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="45" width="210">
+					<focusedlayout height="42" width="210">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>210</width>
-							<height>45</height>
+							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
 							<posx>105</posx>
-							<posy>12</posy>
+							<posy>8</posy>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1724,10 +1724,10 @@
 
 		<!-- Horizontal Home menu watermark -->
 		<control type="image">
-			<posx>1116</posx>
-			<posy>624</posy>
-			<width>96</width>
-			<height>96</height>
+			<posx>1100</posx>
+			<posy>592</posy>
+			<width>128</width>
+			<height>128</height>
 			<aspectratio align="center" aligny="top">keep</aspectratio>
 			<texture background="true" fallback="blank.png">$INFO[Skin.String(custom-watermark)]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
@@ -1748,16 +1748,16 @@
 				<control type="image">
 					<description>cover image</description>
 					<posx>15</posx>
-					<posy>624</posy>
-					<width>96</width>
-					<height>96</height>
+					<posy>592</posy>
+					<width>128</width>
+					<height>128</height>
 					<texture background="true">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio align="center">keep</aspectratio>
 				</control>
 				<control type="label">
 					<description>Artist label</description>
-					<posx>130</posx>
-					<posy>624</posy>
+					<posx>162</posx>
+					<posy>592</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
@@ -1767,8 +1767,8 @@
 				</control>
 				<control type="label">
 					<description>Album label</description>
-					<posx>130</posx>
-					<posy>648</posy>
+					<posx>162</posx>
+					<posy>624</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Album]</label>
@@ -1778,8 +1778,8 @@
 				</control>
 				<control type="label">
 					<description>Title label</description>
-					<posx>130</posx>
-					<posy>672</posy>
+					<posx>162</posx>
+					<posy>656</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Title]</label>
@@ -1790,7 +1790,7 @@
 				<control type="label">
 					<description>Time label</description>
 					<posx>130</posx>
-					<posy>696</posy>
+					<posy>688</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
@@ -1803,14 +1803,14 @@
 				<visible>Player.HasVideo</visible>
 				<control type="videowindow">
 					<description>video preview window</description>
-					<posx>20</posx>
-					<posy>624</posy>
-					<width>160</width>
-					<height>96</height>
+					<posx>10</posx>
+					<posy>592</posy>
+					<width>214</width>
+					<height>128</height>
 				</control>
 				<control type="label">
 					<description>Now playing</description>
-					<posx>200</posx>
+					<posx>234</posx>
 					<posy>624</posy>
 					<width>280</width>
 					<height>23</height>
@@ -1821,8 +1821,8 @@
 				</control>
 				<control type="label">
 					<description>Video Title label</description>
-					<posx>200</posx>
-					<posy>650</posy>
+					<posx>234</posx>
+					<posy>656</posy>
 					<width>520</width>
 					<height>23</height>
 					<label>$INFO[VideoPlayer.Title]</label>
@@ -1832,8 +1832,8 @@
 				</control>
 				<control type="label">
 					<description>Time label</description>
-					<posx>200</posx>
-					<posy>676</posy>
+					<posx>234</posx>
+					<posy>688</posy>
 					<width>280</width>
 					<height>23</height>
 					<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
