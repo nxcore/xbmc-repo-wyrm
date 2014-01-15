@@ -130,8 +130,8 @@
 			<control type="image">
 				<posx>1222</posx>
 				<posy>396</posy>
-				<width>27</width>
-				<height>27</height>
+				<width>32</width>
+				<height>32</height>
 				<texture>scroll-right.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>!Control.HasFocus(987)</visible>
@@ -139,8 +139,8 @@
 			<control type="image">
 				<posx>1222</posx>
 				<posy>396</posy>
-				<width>27</width>
-				<height>27</height>
+				<width>32</width>
+				<height>32</height>
 				<texture>scroll-right-focus.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Control.HasFocus(987)</visible>
@@ -190,16 +190,16 @@
 				<control type="image">
 					<posx>480</posx>
 					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-up.png</texture>
 					<visible>Container(101).HasPrevious</visible>
 				</control>
 				<control type="image">
 					<posx>480</posx>
 					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-down.png</texture>
 					<visible>Container(101).HasNext</visible>
 				</control>
@@ -278,16 +278,16 @@
 				<control type="image">
 					<posx>480</posx>
 					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-up.png</texture>
 					<visible>Container(200).HasPrevious</visible>
 				</control>
 				<control type="image">
 					<posx>480</posx>
 					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-down.png</texture>
 					<visible>Container(200).HasNext</visible>
 				</control>
@@ -511,16 +511,16 @@
 				<control type="image">
 					<posx>480</posx>
 					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-up.png</texture>
 					<visible>Container(301).HasPrevious</visible>
 				</control>
 				<control type="image">
 					<posx>480</posx>
 					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-down.png</texture>
 					<visible>Container(301).HasNext</visible>
 				</control>
@@ -581,17 +581,17 @@
 								</control>
 								<control type="image">
 									<posx>806</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(321)</visible>
 								</control>
 								<control type="image">
 									<posx>806</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down.png</texture>
 									<visible>!Control.HasFocus(321)</visible>
 								</control>
@@ -615,28 +615,28 @@
 							<posx>833</posx>
 							<posy>0</posy>
 							<height>56</height>
-							<width>27</width>
+							<width>32</width>
 							<font>font12</font>
 							<onup>316</onup>
 							<ondown>303</ondown>
 							<onleft>321</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
-							<itemlayout width="27" height="56"/>
-							<focusedlayout width="27" height="56">
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(322)</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
 									<visible>Control.HasFocus(322)</visible>
 								</control>
@@ -846,17 +846,17 @@
 								</control>
 								<control type="image">
 									<posx>806</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(317)</visible>
 								</control>
 								<control type="image">
 									<posx>806</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down.png</texture>
 									<visible>!Control.HasFocus(317)</visible>
 								</control>
@@ -904,28 +904,28 @@
 							<posx>833</posx>
 							<posy>0</posy>
 							<height>56</height>
-							<width>27</width>
+							<width>32</width>
 							<font>font12</font>
 							<onup>315</onup>
 							<ondown>320</ondown>
 							<onleft>317</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
-							<itemlayout width="27" height="56"/>
-							<focusedlayout width="27" height="56">
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(318)</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
 									<visible>Control.HasFocus(318)</visible>
 								</control>
@@ -989,16 +989,16 @@
 				<control type="image">
 					<posx>480</posx>
 					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-up.png</texture>
 					<visible>Container(401).HasPrevious</visible>
 				</control>
 				<control type="image">
 					<posx>480</posx>
 					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-down.png</texture>
 					<visible>Container(401).HasNext</visible>
 				</control>
@@ -1145,17 +1145,17 @@
 								</control>
 								<control type="image">
 									<posx>806</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(411)</visible>
 								</control>
 								<control type="image">
 									<posx>806</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down.png</texture>
 									<visible>!Control.HasFocus(411)</visible>
 								</control>
@@ -1185,28 +1185,28 @@
 							<posx>833</posx>
 							<posy>0</posy>
 							<height>56</height>
-							<width>27</width>
+							<width>32</width>
 							<font>font12</font>
 							<onup>409</onup>
 							<ondown>413</ondown>
 							<onleft>411</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
-							<itemlayout width="27" height="56"/>
-							<focusedlayout width="27" height="56">
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(412)</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>10</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
 									<visible>Control.HasFocus(412)</visible>
 								</control>
@@ -1274,16 +1274,16 @@
 				<control type="image">
 					<posx>480</posx>
 					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-up.png</texture>
 					<visible>Container(501).HasPrevious</visible>
 				</control>
 				<control type="image">
 					<posx>480</posx>
 					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-down.png</texture>
 					<visible>Container(501).HasNext</visible>
 				</control>
@@ -1375,16 +1375,16 @@
 				<control type="image">
 					<posx>480</posx>
 					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-up.png</texture>
 					<visible>Container(801).HasPrevious</visible>
 				</control>
 				<control type="image">
 					<posx>480</posx>
 					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
+					<height>32</height>
+					<width>32</width>
 					<texture>scroll-down.png</texture>
 					<visible>Container(801).HasNext</visible>
 				</control>
