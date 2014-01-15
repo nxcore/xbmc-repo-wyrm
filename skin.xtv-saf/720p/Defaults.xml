@@ -82,8 +82,8 @@
 		<textureupfocus>scroll-up-focus.png</textureupfocus>
 		<texturedownfocus>scroll-down-focus.png</texturedownfocus>
 		<align>right</align>
-		<width>26</width>
-		<height>25</height>
+		<width>32</width>
+		<height>32</height>
 		<font>font13</font>
 		<reverse>yes</reverse>
 		<textcolor>button-text</textcolor>
@@ -94,8 +94,8 @@
 		<textoffsety>0</textoffsety>
 	</default>
 	<default type="spincontrolex">
-		<spinwidth>27</spinwidth>
-		<spinheight>25</spinheight>
+		<spinwidth>32</spinwidth>
+		<spinheight>32</spinheight>
 		<texturefocus border="7">default-button.png</texturefocus>
 		<textureup>scroll-up.png</textureup>
 		<texturedown>scroll-down.png</texturedown>
