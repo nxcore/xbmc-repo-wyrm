@@ -37,8 +37,8 @@
 					<width>376</width>
 					<height>40</height>
 					<font>font13</font>
-					<!--<label>36501</label>-->
-					<label>3D Settings</label>
+					<!--<label>3D Settings</label>-->
+					<label>3D $LOCALIZE[5]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -53,7 +53,8 @@
 					<textoffsetx>30</textoffsetx>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<label>Enabled</label>
+					<!--<label>Enable</label>-->
+					<label>$LOCALIZE[305]</label>
 					<radioposx>330</radioposx>
 					<onclick>ToggleStereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
@@ -68,7 +69,8 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textoffsetx>30</textoffsetx>
-					<label>Change mode</label>
+					<!--<label>Change mode</label>-->
+					<label>$LOCALIZE[240]</label>
 					<onclick>StereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
@@ -81,7 +83,8 @@
 					<textoffsetx>30</textoffsetx>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<label>Watch as 2D</label>
+					<!--<label>Watch as 2D</label>-->
+					<label>2D ?</label>
 					<radioposx>330</radioposx>
 					<onclick>StereoModeToMono</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
@@ -108,8 +111,8 @@
 					<width>376</width>
 					<height>40</height>
 					<font>font13</font>
-					<!--<label>36501</label>-->
-					<label>3D Settings</label>
+					<!--<label>3D Settings</label>-->
+					<label>3D $LOCALIZE[5]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -124,7 +127,8 @@
 					<textoffsetx>30</textoffsetx>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<label>Enabled</label>
+					<!--<label>Enable</label>-->
+					<label>$LOCALIZE[305]</label>
 					<radioposx>330</radioposx>
 					<onclick>ToggleStereoMode</onclick>
 					<selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
@@ -139,7 +143,8 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textoffsetx>30</textoffsetx>
-					<label>Change mode</label>
+					<!--<label>Change mode</label>-->
+					<label>$LOCALIZE[240]</label>
 					<onclick>StereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
@@ -152,7 +157,8 @@
 					<textoffsetx>30</textoffsetx>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<label>Watch as 2D</label>
+					<!--<label>Watch as 2D</label>-->
+					<label>2D ?</label>
 					<radioposx>330</radioposx>
 					<onclick>StereoModeToMono</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
