@@ -29,9 +29,9 @@
 					<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -67,9 +67,9 @@
 					<visible>Container.Content(addons)</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -105,9 +105,9 @@
 					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -143,9 +143,9 @@
 					<visible>Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -191,9 +191,9 @@
 					<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -232,9 +232,9 @@
 					<visible>Container.Content(addons)</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -275,9 +275,9 @@
 					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -316,9 +316,9 @@
 					<visible>Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)</visible>
 					<control type="label">
 						<posx>46</posx>
-						<posy>20</posy>
+						<posy>22</posy>
 						<width>506</width>
-						<height>28</height>
+						<height>23</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
