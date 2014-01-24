@@ -9,28 +9,28 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: German (http://www.transifex.com/projects/p/xbmc-skins/language/de/)\n"
+"Language-Team: Malay (http://www.transifex.com/projects/p/xbmc-skins/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgctxt "#31026"
 msgid "Movies"
-msgstr "Filme"
+msgstr "Cereka"
 
 msgctxt "#31027"
 msgid "TV Shows"
-msgstr "TV Serien"
+msgstr "Rancangan TV"
 
 msgctxt "#31028"
 msgid "Music Videos"
-msgstr "Musik Videos"
+msgstr "Video Muzik"
 
 msgctxt "#31029"
 msgid "Programs"
-msgstr "Programme"
+msgstr "Program"
 
 msgctxt "#31030"
 msgid "Music"
@@ -38,55 +38,55 @@ msgstr "Musik"
 
 msgctxt "#31031"
 msgid "Photos"
-msgstr "Fotos"
+msgstr "Foto"
 
 msgctxt "#31032"
 msgid "Weather"
-msgstr "Wetter"
+msgstr "Cuaca"
 
 msgctxt "#31033"
 msgid "Files"
-msgstr "Dateien"
+msgstr "Fail"
 
 msgctxt "#31035"
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Seting"
 
 msgctxt "#31036"
 msgid "Play Disc"
-msgstr "Disk abspielen"
+msgstr "Main Cakera"
 
 msgctxt "#31038"
 msgid "Quit"
-msgstr "Verlassen"
+msgstr "Keluar"
 
 msgctxt "#31126"
 msgid "Movie Trailers"
-msgstr "Filmtrailer"
+msgstr "Treler Cereka"
 
 msgctxt "#31127"
 msgid "Director:"
-msgstr "Regisseur:"
+msgstr "Pengarah:"
 
 msgctxt "#31128"
 msgid "Current Time: "
-msgstr "Momentane Zeit: "
+msgstr "Masa Semasa:"
 
 msgctxt "#31129"
 msgid "Finish Time: "
-msgstr "Endzeit: "
+msgstr "Masa Tamat:"
 
 msgctxt "#31130"
 msgid "Directed by:"
-msgstr "Regie von:"
+msgstr "Diarah oleh:"
 
 msgctxt "#31131"
 msgid "Written by:"
-msgstr "Geschrieben von:"
+msgstr "Ditulis oleh:"
 
 msgctxt "#31132"
 msgid "Starring:"
-msgstr "Mit:"
+msgstr "Dibintangi:"
 
 msgctxt "#31133"
 msgid "Genre:"
@@ -94,7 +94,7 @@ msgstr "Genre:"
 
 msgctxt "#31134"
 msgid "Start Time: "
-msgstr "Startzeit:"
+msgstr "Masa Mula:"
 
 msgctxt "#31226"
 msgid "CDDB"
@@ -102,19 +102,19 @@ msgstr "CDDB"
 
 msgctxt "#31227"
 msgid "Playlist Editor"
-msgstr "Playlisten Editor"
+msgstr "Penyunting Senarai Main"
 
 msgctxt "#31228"
 msgid "Song Info"
-msgstr "Lied Info"
+msgstr "Maklumat Lagu"
 
 msgctxt "#31229"
 msgid "Rating"
-msgstr "Bewertung"
+msgstr "Penarafan"
 
 msgctxt "#31230"
 msgid "Artist:"
-msgstr "Künstler:"
+msgstr "Artis:"
 
 msgctxt "#31231"
 msgid "Genre:"
@@ -122,71 +122,71 @@ msgstr "Genre:"
 
 msgctxt "#31232"
 msgid "Year:"
-msgstr "Jahr:"
+msgstr "Tahun:"
 
 msgctxt "#31528"
 msgid "Currently"
-msgstr "Derzeit"
+msgstr "Kini"
 
 msgctxt "#31530"
 msgid "Location"
-msgstr "Ort"
+msgstr "Lokasi"
 
 msgctxt "#31531"
 msgid "Last Updated"
-msgstr "Letztes Update"
+msgstr "Terakhid Dikemaskini"
 
 msgctxt "#31536"
 msgid "Provider"
-msgstr "Anbieter"
+msgstr "Penyedia"
 
 msgctxt "#31551"
 msgid "System"
-msgstr "System"
+msgstr "Sistem"
 
 msgctxt "#31552"
 msgid "File Manager"
-msgstr "Dateianager"
+msgstr "Pengurus Fail"
 
 msgctxt "#31555"
 msgid "Profiles"
-msgstr "Profile"
+msgstr "Profil"
 
 msgctxt "#31556"
 msgid "Skin"
-msgstr "Skin"
+msgstr "Kulit"
 
 msgctxt "#31558"
 msgid "Power Menu"
-msgstr "Power Menü"
+msgstr "Menu Kuasa"
 
 msgctxt "#31559"
 msgid "System Info"
-msgstr "System Info"
+msgstr "Maklumat Sistem"
 
 msgctxt "#31561"
 msgid "XBMC Build:"
-msgstr "XBMC Version:"
+msgstr "Binaan XBMC:"
 
 msgctxt "#31562"
 msgid "XBMC Build Date:"
-msgstr "XBMC Versionsdatum:"
+msgstr "Tarikh Binaan XBMC:"
 
 msgctxt "#31563"
 msgid "Skin Version:"
-msgstr "Skin Version:"
+msgstr "Versi Kulit:"
 
 msgctxt "#31564"
 msgid "Current Theme:"
-msgstr "Derzeitiges Thema:"
+msgstr "Tema Semasa:"
 
 msgctxt "#31565"
 msgid "Screen Mode:"
-msgstr "Bildmodus:"
+msgstr "Mod Skrin:"
 
 msgctxt "#31566"
 msgid "System Platform:"
-msgstr "System Plattform:"
+msgstr "Platform Sistem:"
 
 msgctxt "#31567"
 msgid "Linux"
@@ -206,11 +206,11 @@ msgstr "Mac OS X"
 
 msgctxt "#31571"
 msgid "Memory Used:"
-msgstr "Speicher-Auslastung"
+msgstr "Ingatan Digunakan:"
 
 msgctxt "#31572"
 msgid "Warning Memory Low:"
-msgstr "Achtung! Wenig Speicher vorhanden:"
+msgstr "Amaran Ingatan Rendah:"
 
 msgctxt "#31573"
 msgid "AppleTV"
@@ -222,367 +222,407 @@ msgstr "Android"
 
 msgctxt "#31575"
 msgid "Default"
-msgstr "Standard"
+msgstr "Lalai"
 
 msgctxt "#31576"
 msgid "Bold"
-msgstr "Fett"
+msgstr "Tebal"
 
 msgctxt "#31577"
 msgid "XBMC Default"
-msgstr "XBMC Standard"
+msgstr "Lalai XBMC"
 
 msgctxt "#31651"
 msgid "Muted"
-msgstr "Stumm"
+msgstr "Senyap"
 
 msgctxt "#31652"
 msgid "Favourites"
-msgstr "Favoriten"
+msgstr "Kegemaran"
 
 msgctxt "#31654"
 msgid "Addon"
-msgstr "Addon"
+msgstr "Tambahan"
 
 msgctxt "#31655"
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Seting"
+
+msgctxt "#31656"
+msgid "OSD Lyrics"
+msgstr "Lirik OSD"
 
 msgctxt "#31657"
 msgid "Presets"
-msgstr "Voreinstellungen"
+msgstr "Praset"
+
+msgctxt "#31658"
+msgid "OSD Subtitles"
+msgstr "Sarikata OSD"
 
 msgctxt "#31659"
 msgid "Playlist"
-msgstr "Playliste"
+msgstr "Senarai Main"
+
+msgctxt "#31680"
+msgid "Default Artwork Downloader"
+msgstr "Pemuat Kerja Seni Lalai"
 
 msgctxt "#31681"
 msgid "Artwork Downloader"
-msgstr "Artwork Downloader"
+msgstr "Pemuat Turun Kerja Seni"
+
+msgctxt "#31682"
+msgid "Theme Downloader"
+msgstr "Pemuat Turun Tema"
 
 msgctxt "#31688"
 msgid "Go Back"
-msgstr "Zurück"
+msgstr "Kembali"
+
+msgctxt "#31689"
+msgid "Edit Library"
+msgstr "Sunting Pustaka"
 
 msgctxt "#31692"
 msgid "Cinema"
-msgstr "Kino"
+msgstr "Wayang"
+
+msgctxt "#31693"
+msgid "More Options..."
+msgstr "Lagi Pilihan..."
 
 msgctxt "#31696"
 msgid "Video Addons"
-msgstr "Video Addons"
+msgstr "Tambahan Video"
 
 msgctxt "#31697"
 msgid "Music Addons"
-msgstr "Musik Addons"
+msgstr "Tambahan Muzik"
 
 msgctxt "#31698"
 msgid "Picture Addons"
-msgstr "Bilder Addons"
+msgstr "Tambahan Gambar"
 
 msgctxt "#31699"
 msgid "Program Addons"
-msgstr "Programm Addons"
+msgstr "Tambahan Program"
 
 msgctxt "#31700"
 msgid "Available Groups"
-msgstr "Verfügbare Gruppen"
+msgstr "Kumpulan Tersedia"
 
 msgctxt "#31701"
 msgid "Channel Rules"
-msgstr "Kanalregeln"
+msgstr "Peraturan Saluran"
 
 msgctxt "#31702"
 msgid "Channel Configuration"
-msgstr "Kannalkonfiguration"
+msgstr "Konfigurasi Saluran"
 
 msgctxt "#31703"
 msgid "Channel"
-msgstr "Kanal"
+msgstr "Saluran"
 
 msgctxt "#31704"
 msgid "Content"
-msgstr "Inhalt"
+msgstr "Kandungan"
 
 msgctxt "#31705"
 msgid "Channel Type"
-msgstr "Kanaltyp"
+msgstr "Jenis Saluran"
 
 msgctxt "#31706"
 msgid "Advanced Channel Rules"
-msgstr "Erweiterte Kanalregeln"
+msgstr "Peraturan Saluran Lanjutan"
 
 msgctxt "#31707"
 msgid "Show in Order"
-msgstr "In Reihenfolge anzeigen"
+msgstr "Tunjuk dalam Tertib"
 
 msgctxt "#31708"
 msgid "Directory"
-msgstr "Verzeichnis"
+msgstr "Direktori"
 
 msgctxt "#31709"
 msgid "Now watching"
-msgstr "Läuft gerade"
+msgstr "Kini menonton"
 
 msgctxt "#31710"
 msgid "Show Name"
-msgstr "Namen anzeigen"
+msgstr "Tunjuk Nama"
 
 msgctxt "#31711"
 msgid "Show Title"
-msgstr "Titel anzeigen"
+msgstr "Tunjuk Tajuk"
 
 msgctxt "#31712"
 msgid "Show Description"
-msgstr "Beschreibung anzeigen"
+msgstr "Tunjuk Keterangan"
 
 msgctxt "#31801"
 msgid "Startup"
-msgstr "Startup"
+msgstr "Permulaan"
 
 msgctxt "#31802"
 msgid "General"
-msgstr "Allgemein"
+msgstr "Am"
 
 msgctxt "#31803"
 msgid "Home Menu"
-msgstr "Hauptmenü"
+msgstr "Menu Rumah"
 
 msgctxt "#31804"
 msgid "Background"
-msgstr "Hintergrund"
+msgstr "Latar belakang"
 
 msgctxt "#31805"
 msgid "Media Sources"
-msgstr "Medien-Quellen"
+msgstr "Sumber Media"
 
 msgctxt "#31806"
 msgid "Custom Favourites"
-msgstr "Eigene Favoriten"
+msgstr "Kegemaran Suai"
 
 msgctxt "#31807"
 msgid "Support"
-msgstr "Support"
+msgstr "Sokongan"
 
 msgctxt "#31850"
 msgid "Use Intro video"
-msgstr "Nutze Intro Video"
+msgstr "Guna video Pengenalan"
 
 msgctxt "#31851"
 msgid "Intro file:"
-msgstr "Intro-Datei:"
+msgstr "Fail pengenalan:"
 
 msgctxt "#31852"
 msgid "Use Startup playlist"
-msgstr "Nutze Startup Playliste"
+msgstr "Guna senarai main Permulaan"
 
 msgctxt "#31853"
 msgid "Choose playlist:"
-msgstr "Wähle Playliste:"
+msgstr "Pilih senarai main:"
 
 msgctxt "#31860"
 msgid "Choose Custom background"
-msgstr "Benutzerdefinierten Hintergrund wählen"
+msgstr "Pilih latar belakang Suai"
 
 msgctxt "#31861"
 msgid "Reset Custom background"
-msgstr "Benutzerdefinierten Hintergrund zurücksetzen"
+msgstr "Tetap semula latar belakang Suai"
 
 msgctxt "#31862"
 msgid "Use Visuals as background"
-msgstr "Benutze Visualisierungen als Hintergrund"
+msgstr "Guna Visual sebagai latar belakang"
 
 msgctxt "#31863"
 msgid "Use Fanart as background"
-msgstr "Benutze Fanart als Hingrund"
+msgstr "Guna Seni Peminat sebagai latar belakang"
 
 msgctxt "#31864"
 msgid "Use ExtraFanart as background"
-msgstr "Benutze ExtraFanart als Hintergrund"
+msgstr "Guna Seni Peminat Ekstra sebagai latar belakang"
 
 msgctxt "#31865"
 msgid "Use Artistslideshow as background"
-msgstr "Verwende Interpretenslideshow als Hintergrund"
+msgstr "Guna Paparan slaid artis sebagai latar belakang"
 
 msgctxt "#31866"
 msgid "Location of Custom Weather backgrounds"
-msgstr "Standort für benutzerdefinierten Wetterhintergrund"
+msgstr "Lokasi latar belakang Cuaca Suai"
 
 msgctxt "#31867"
 msgid "Reset Custom Weather backgrounds"
-msgstr "Benutzerdefinierten Wetter-Hintergrund zurücksetzen"
+msgstr "Tetap semula latar belakang Cuaca Suai"
 
 msgctxt "#31868"
 msgid "Background visibilty"
-msgstr "Hintergrundsichtbarkeit"
+msgstr "Ketampakan latar belakang"
 
 msgctxt "#31869"
 msgid "Show DVD case"
-msgstr "Zeige DVD-Hülle"
+msgstr "Tunjuk bekas DVD"
 
 msgctxt "#31870"
 msgid "Show CD case"
-msgstr "Zeige CD-Hülle"
+msgstr "Tunjuk bekas CD"
+
+msgctxt "#31871"
+msgid "Choose Homescreen Watermark Image"
+msgstr "Pilih Imej Tera Air Skrin Rumah"
+
+msgctxt "#31872"
+msgid "Reset Homescreen Watermark Image"
+msgstr "Tetap Semula Imej Tera Air Skrin Rumah"
 
 msgctxt "#31880"
 msgid "Lock \"View As\" panel"
-msgstr "Sperre \"View as\" Panel"
+msgstr "Kunci panel \"Lihat Sebagai\""
 
 msgctxt "#31881"
 msgid "Use scrollbar"
-msgstr "Scrollbalken verwenden"
+msgstr "Guna palang  tatal"
 
 msgctxt "#31882"
 msgid "Enable autoscroll"
-msgstr "Aktiviere Autoscroll"
+msgstr "Benarkan tatal-sendiri"
 
 msgctxt "#31883"
 msgid "Use media overlays"
-msgstr "Benutze Media-Overlays"
+msgstr "Guna tindihan media"
 
 msgctxt "#31884"
 msgid "Use watched state overlays"
-msgstr "Verwende 'Bereits Gesehen'-Overlays"
+msgstr "Guna tindihan keadaan ditonton"
+
+msgctxt "#31885"
+msgid "OSD Lyrics"
+msgstr "Lirik OSD"
 
 msgctxt "#31886"
 msgid "Tilt List view icons"
-msgstr "Icons in Listenansicht neigen"
+msgstr "Condongkan ikon paparan senarai"
 
 msgctxt "#31887"
 msgid "Tilt Wall view"
-msgstr "Icons in Wandansicht neigen"
+msgstr "Condongkan paparan Dinding"
 
 msgctxt "#31888"
 msgid "Time on Home screen"
-msgstr "Zeit im Hauptmenü anzeigen"
+msgstr "Masa pada skrin Rumah"
 
 msgctxt "#31889"
 msgid "Current weather on Home screen"
-msgstr "Aktuelles Wetter im Hauptmenü anzeigen"
+msgstr "Cuaca semasa pada skrin Rumah"
 
 msgctxt "#31890"
 msgid "Animated weather icons"
-msgstr "Animierte Wetter-Symbole"
+msgstr "Ikon cuaca beranimasi"
+
+msgctxt "#31891"
+msgid "OSD Subtitles"
+msgstr "Sari Kata OSD"
 
 msgctxt "#31892"
 msgid "Use TV Tunes"
-msgstr "Nutze TV Tunes"
+msgstr "Guna Talaa TV"
 
 msgctxt "#31893"
 msgid "Download media artwork"
-msgstr "Lade Medien Artwork herunter"
+msgstr "Muat turun kerja seni media"
 
 msgctxt "#31900"
 msgid "Home menu type"
-msgstr "Hauptmenü Stil"
+msgstr "Jenis menu rumah"
 
 msgctxt "#31901"
 msgid "Videos in Home menu"
-msgstr "Videos im Hauptmenü"
+msgstr "Video dalam menu Rumah"
 
 msgctxt "#31902"
 msgid "Movies in Home menu"
-msgstr "Filme im Hauptmenü"
+msgstr "Cereka dalam menu Rumah"
 
 msgctxt "#31903"
 msgid "TV Shows in Home menu"
-msgstr "TV Serien im Hauptmenü"
+msgstr "Rancangan TV dalam menu Rumah"
 
 msgctxt "#31904"
 msgid "Music Videos in Home menu"
-msgstr "Musikvideos im Hauptmenü"
+msgstr "Video Muzik dalam menu Rumah"
 
 msgctxt "#31905"
 msgid "Music in Home menu"
-msgstr "Musik im Hauptmenü"
+msgstr "Muzik dalam menu Rumah"
 
 msgctxt "#31906"
 msgid "Addons in Home menu"
-msgstr "Addons im Hauptmenü"
+msgstr "Tambahan menu Rumah"
 
 msgctxt "#31907"
 msgid "Pictures in Home menu"
-msgstr "Bilder im Hauptmenü"
+msgstr "Gambar dalam menu Rumah"
 
 msgctxt "#31908"
 msgid "Profiles in Home menu"
-msgstr "Profile im Hauptmenü"
+msgstr "Profil dalam menu Rumah"
 
 msgctxt "#31909"
 msgid "Weather in Home menu"
-msgstr "Wetter im Hauptmenü"
+msgstr "Cuaca dalam menu Rumah"
 
 msgctxt "#31910"
 msgid "Favourites in Home menu"
-msgstr "Favoriten im Hauptmenü"
+msgstr "Kegemaran dalam menu Rumah"
 
 msgctxt "#31911"
 msgid "Search in Home menu"
-msgstr "Suche im Hauptmenü"
+msgstr "Gelintar dalam menu Rumah"
 
 msgctxt "#31912"
 msgid "Play Disc in Home menu"
-msgstr "Disk abspielen im Homemenü"
+msgstr "Main Cakera dalam menu Rumah"
 
 msgctxt "#31913"
 msgid "Quit from Home menu"
-msgstr "Beenden im Hauptmenü"
+msgstr "Keluar dari menu Rumah"
 
 msgctxt "#31914"
 msgid "Quit button action"
-msgstr "Beenden-Knopf Aktion"
+msgstr "Tindakan butang keluar"
 
 msgctxt "#31920"
 msgid "Movie library entry point"
-msgstr "Startpunkt in Film-Bibliothek"
+msgstr "Titik masukan pustaka cereka"
 
 msgctxt "#31921"
 msgid "TV library entry point"
-msgstr "Startpunkt in TV-Bibliothek"
+msgstr "Titik masukan pustaka TV"
 
 msgctxt "#31922"
 msgid "Music Video library entry point"
-msgstr "Startpunkt in Musikvideo-Bibliothek"
+msgstr "Titik masukan pustaka Video Muzik"
 
 msgctxt "#31923"
 msgid "Music library entry point"
-msgstr "Startpunkt in Musik-Bibliothek"
+msgstr "Titik masukan pustaka muzik"
 
 msgctxt "#31930"
 msgid "Upload Debug Log file"
-msgstr "Debug Log Datei hochladen"
+msgstr "Muat Naik fail Log Nyahpepijat"
 
 msgctxt "#31933"
 msgid "Show Debug Grid"
-msgstr "Zeige Debug Raster"
+msgstr "Tunjuk Grid Nyahpepijat"
 
 msgctxt "#31934"
 msgid "Show Debug Info"
-msgstr "Zeige Debug-Informationen"
+msgstr "Tunjuk Maklumat Nyahpepijat"
 
 msgctxt "#31935"
 msgid "Reset Skin settings to their defaults"
-msgstr "Skin-Einstellungen zurücksetzen"
+msgstr "Tetap semula tetapan Kulit ke lalainya"
 
 msgctxt "#31941"
 msgid "List"
-msgstr "Liste"
+msgstr "Senarai"
 
 msgctxt "#31942"
 msgid "Wrap"
-msgstr "Infohüllen"
+msgstr "Lilit"
 
 msgctxt "#31943"
 msgid "Icons"
-msgstr "Symbole"
+msgstr "Ikon"
 
 msgctxt "#31944"
 msgid "Wall"
-msgstr "Wand"
+msgstr "Dinding"
 
 msgctxt "#31945"
 msgid "Coverflow"
-msgstr "Coverflow"
+msgstr "Aliran Kulit Hadapan"
 
 msgctxt "#31946"
 msgid "Banner"
@@ -590,20 +630,40 @@ msgstr "Banner"
 
 msgctxt "#31951"
 msgid "Vertical"
-msgstr "Vertikal"
+msgstr "Menengak"
 
 msgctxt "#31952"
 msgid "Horizontal"
-msgstr "Horizontal"
+msgstr "Mengufuk"
 
 msgctxt "#31953"
 msgid "Icon"
-msgstr "Icon"
+msgstr "Ikon"
 
 msgctxt "#31954"
 msgid "Recent"
-msgstr "Letzte"
+msgstr "Baru-Baru Ini"
 
 msgctxt "#31955"
 msgid "Recommended"
-msgstr "Empfohlene Filme"
+msgstr "Disaran"
+
+msgctxt "#31956"
+msgid "NextAired"
+msgstr "Keudara Berikutnya"
+
+msgctxt "#31960"
+msgid "Recommended Movies"
+msgstr "Cereka Disaran"
+
+msgctxt "#31961"
+msgid "Next Aired Episodes"
+msgstr "Episod Keudara Berikutnya"
+
+msgctxt "#31962"
+msgid "Recommended TV Episodes"
+msgstr "Episod TV Disaran"
+
+msgctxt "#31963"
+msgid "Recommended Albums"
+msgstr "Album Disaran"
