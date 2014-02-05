@@ -15,6 +15,11 @@
 			<scrolltime>200</scrolltime>
 			<pagecontrol>1358</pagecontrol>
 			<preloaditems>2</preloaditems>
+			<animation type="TYPE" condition="Skin.HasSetting(tiltmiscwallicon)" reversible="false">
+				<effect type="rotatey" start="-15" end="-15" time="0"/>
+				<effect type="slide" end="65,0" time="0"/>
+				<effect type="zoom" start="100" end="115" center="auto" time="0" tween="back" easing="out"/>
+			</animation>
 			<itemlayout height="144" width="144">
 				<control type="image">
 					<posx>0</posx>

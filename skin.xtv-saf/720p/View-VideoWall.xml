@@ -14,9 +14,11 @@
 			<scrolltime>100</scrolltime>
 			<pagecontrol>28</pagecontrol>
 			<preloaditems>2</preloaditems>
-			<animation effect="rotatey" start="-15" end="-15" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
-			<animation effect="slide" end="70,0" time="0" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
-			<animation effect="zoom" start="100" end="120" center="auto" time="0" tween="back" easing="out" condition="Skin.HasSetting(tilted-videowall)">Conditional</animation>
+			<animation type="TYPE" condition="Skin.HasSetting(tiltvideowallicon)" reversible="false">
+				<effect type="rotatey" start="-15" end="-15" time="0"/>
+				<effect type="slide" end="70,0" time="0"/>
+				<effect type="zoom" start="100" end="120" center="auto" time="0" tween="back" easing="out"/>
+			</animation>
 			<itemlayout height="169" width="120" condition="!Container.Content(addons)">
 				<control type="image">
 					<posx>1</posx>
