@@ -45,7 +45,6 @@
 		<!-- Various Views of Addons Browser -->
 		<control type="group">
 			<include>ListView</include>
-			<include>ListView-Icon</include>
 			<include>IconView</include>
 			<include>WrapView</include>
 			<include>WallView</include>
@@ -55,8 +54,8 @@
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>
-			<control type="group" id="9000">
-				<visible>!Skin.HasSetting(view-as-lock)</visible>
+			<control type="group">
+				<visible>ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
 				<control type="image">
 					<description>Background shadow</description>
 					<posx>0</posx>
@@ -68,108 +67,101 @@
 				</control>
 				<control type="image">
 					<description>Button Background</description>
-					<posx>465</posx>
+					<posx>440</posx>
 					<posy>212</posy>
-					<width>385</width>
-					<height>300</height>
+					<width>396</width>
+					<height>360</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				</control>
+			</control>
+			<control type="grouplist" id="9000">
+				<posx>450</posx>
+				<posy>224</posy>
+				<width>376</width>
+				<height>336</height>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onback>50</onback>
+				<itemgap>0</itemgap>
 				<control type="button" id="2">
 					<description>View As Icons button</description>
-					<posx>477</posx>
-					<posy>225</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
 					<label>100</label>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<aligny>top</aligny>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>7</onup>
-					<ondown>3</ondown>
+				</control>
+				<control type="radiobutton" id="1198">
+					<description>Tilt Icon List view</description>
+					<width>376</width>
+					<height>48</height>
+					<label>$LOCALIZE[31886]</label>
+					<font>font11</font>
+					<onclick>Skin.ToggleSetting(tiltmisclisticon)</onclick>
+					<selected>Skin.HasSetting(tiltmisclisticon)</selected>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>330</radioposx>
+					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
+				</control>
+				<control type="radiobutton" id="1197">
+					<description>Tilt Icon Wall view</description>
+					<width>376</width>
+					<height>48</height>
+					<label>$LOCALIZE[31886]</label>
+					<font>font11</font>
+					<onclick>Skin.ToggleSetting(tiltmiscwallicon)</onclick>
+					<selected>Skin.HasSetting(tiltmiscwallicon)</selected>
+					<textoffsetx>10</textoffsetx>
+					<radioposx>330</radioposx>
+					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>
-					<posx>477</posx>
-					<posy>281</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
 					<label>103</label>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<aligny>top</aligny>
-					<onleft>50</onleft>
-					<onright>4</onright>
-					<onup>2</onup>
-					<ondown>5</ondown>
 				</control>
 				<control type="togglebutton" id="4">
-					<description>Sort asc/dsc</description>
-					<posx>796</posx>
-					<posy>300</posy>
-					<width>362</width>
-					<height>50</height>
-					<label>-</label>
-					<textoffsety>8</textoffsety>
-					<aligny>top</aligny>
-					<onleft>3</onleft>
-					<onright>50</onright>
-					<onup>2</onup>
-					<ondown>5</ondown>
+					<description>Sort direction</description>
+					<width>376</width>
+					<height>48</height>
+					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+					<font>font11</font>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Enable auto-updates</description>
-					<posx>477</posx>
-					<posy>337</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<aligny>top</aligny>
 					<label>24063</label>
 					<radioposx>330</radioposx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>3</onup>
-					<ondown>6</ondown>
 				</control>
 				<control type="radiobutton" id ="6">
 					<description>No notifications</description>
-					<posx>477</posx>
-					<posy>393</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<aligny>top</aligny>
 					<label>25000</label>
 					<radioposx>330</radioposx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>5</onup>
-					<ondown>7</ondown>
 				</control>
 				<control type="radiobutton" id ="7">
 					<description>Hide foreign</description>
-					<posx>477</posx>
-					<posy>449</posy>
-					<width>362</width>
-					<height>50</height>
-					<font>font12</font>
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<aligny>top</aligny>
 					<label>25001</label>
 					<radioposx>330</radioposx>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>6</onup>
-					<ondown>2</ondown>
 				</control>
 			</control>
 		</control>

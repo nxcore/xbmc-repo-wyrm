@@ -28,13 +28,10 @@
 				<colordiffuse>BBF9F9F9</colordiffuse>
 			</control>
 		</control>
-
 		<!-- Show time on home screen -->
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include>
-
 		<!-- Low memory warning -->
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
-
 		<!-- Shelf icons-->
 		<control type="group" id="9800">
 			<!-- Video icons -->
@@ -96,7 +93,7 @@
 						<aspectratio scalediffuse="true">stretch</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon0]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="65" y="159"/>
+						<camera x="65" y="159" />
 						<animation effect="rotatey" center="0" start="0" end="-60" time="600" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -107,7 +104,7 @@
 						<aspectratio scalediffuse="true">stretch</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon7]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="1215" y="159"/>
+						<camera x="1215" y="159" />
 						<animation effect="rotatey" center="1280" start="0" end="60" time="600" condition="true">Conditional</animation>
 					</control>
 					<control type="list" id="9160">
@@ -174,9 +171,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecent</include>
-						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieLatest</include>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecommended</include>
+							<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecent</include>
+							<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieLatest</include>
+							<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecommended</include>
 						</content>
 					</control>
 					<control type="group">
@@ -192,18 +189,12 @@
 							<texture border="9">mask-hilite2.png</texture>
 							<aspectratio>stretch</aspectratio>
 						</control>
-						<animation condition="Container(9160).Position(0)" effect="slide" start="0,0" end="0,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9160).Position(1)" effect="slide" start="0,0" end="210,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9160).Position(2)" effect="slide" start="0,0" end="420,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9160).Position(3)" effect="slide" start="0,0" end="630,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9160).Position(4)" effect="slide" start="0,0" end="840,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9160).Position(5)" effect="slide" start="0,0" end="1050,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9160).Position(0)" effect="slide" start="0,0" end="0,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9160).Position(1)" effect="slide" start="0,0" end="210,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9160).Position(2)" effect="slide" start="0,0" end="420,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9160).Position(3)" effect="slide" start="0,0" end="630,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9160).Position(4)" effect="slide" start="0,0" end="840,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9160).Position(5)" effect="slide" start="0,0" end="1050,0" time="200" easing="inout" reversible="true">Conditional</animation>
 					</control>
 				</control>
 			</control>
@@ -248,7 +239,7 @@
 						<aspectratio scalediffuse="false">keep</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[TVShowShelfIcon0]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="62" y="159"/>
+						<camera x="62" y="159" />
 						<animation effect="rotatey" center="0" start="-60" end="-60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -259,7 +250,7 @@
 						<aspectratio scalediffuse="false">keep</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[TVShowShelfIcon7]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="1214" y="159"/>
+						<camera x="1214" y="159" />
 						<animation effect="rotatey" center="1280" start="60" end="60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="list" id="9210">
@@ -346,10 +337,10 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecent</include>
-						<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeLatest</include>
-						<include condition="System.HasAddon(script.tv.show.next.aired) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeNextAired</include>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecommended</include>
+							<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecent</include>
+							<include condition="![System.HasAddon(service.skin.widgets)] + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeLatest</include>
+							<include condition="System.HasAddon(script.tv.show.next.aired) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeNextAired</include>
+							<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecommended</include>
 						</content>
 					</control>
 					<control type="group">
@@ -365,16 +356,11 @@
 							<texture border="9">mask-hilite2.png</texture>
 							<aspectratio>stretch</aspectratio>
 						</control>
-						<animation condition="Container(9210).Position(0)" effect="slide" start="0,0" end="0,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9210).Position(1)" effect="slide" start="0,0" end="252,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9210).Position(2)" effect="slide" start="0,0" end="504,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9210).Position(3)" effect="slide" start="0,0" end="756,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9210).Position(4)" effect="slide" start="0,0" end="1008,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9210).Position(0)" effect="slide" start="0,0" end="0,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9210).Position(1)" effect="slide" start="0,0" end="252,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9210).Position(2)" effect="slide" start="0,0" end="504,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9210).Position(3)" effect="slide" start="0,0" end="756,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9210).Position(4)" effect="slide" start="0,0" end="1008,0" time="200" easing="inout" reversible="true">Conditional</animation>
 					</control>
 				</control>
 			</control>
@@ -419,7 +405,7 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[MusicShelfIcon0]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="65" y="159"/>
+						<camera x="65" y="159" />
 						<animation effect="rotatey" center="0" start="0" end="-60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -430,7 +416,7 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="mask-rect.png" background="true">$VAR[MusicShelfIcon7]</texture>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<camera x="1212" y="159"/>
+						<camera x="1212" y="159" />
 						<animation effect="rotatey" center="1276" start="60" end="60" time="300" condition="true">Conditional</animation>
 					</control>
 					<control type="list" id="9260">
@@ -518,9 +504,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecent</include>
-						<include condition="!System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumLatest</include>
-						<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecommended</include>
+							<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecent</include>
+							<include condition="!System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumLatest</include>
+							<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecommended</include>
 						</content>
 					</control>
 					<control type="group">
@@ -534,18 +520,12 @@
 							<texture border="9">mask-hilite2.png</texture>
 							<aspectratio>stretch</aspectratio>
 						</control>
-						<animation condition="Container(9260).Position(0)" effect="slide" start="0,0" end="0,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9260).Position(1)" effect="slide" start="0,0" end="210,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9260).Position(2)" effect="slide" start="0,0" end="420,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9260).Position(3)" effect="slide" start="0,0" end="630,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9260).Position(4)" effect="slide" start="0,0" end="840,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
-						<animation condition="Container(9260).Position(5)" effect="slide" start="0,0" end="1050,0"
-							time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9260).Position(0)" effect="slide" start="0,0" end="0,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9260).Position(1)" effect="slide" start="0,0" end="210,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9260).Position(2)" effect="slide" start="0,0" end="420,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9260).Position(3)" effect="slide" start="0,0" end="630,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9260).Position(4)" effect="slide" start="0,0" end="840,0" time="200" easing="inout" reversible="true">Conditional</animation>
+						<animation condition="Container(9260).Position(5)" effect="slide" start="0,0" end="1050,0" time="200" easing="inout" reversible="true">Conditional</animation>
 					</control>
 				</control>
 			</control>
@@ -693,7 +673,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[VideoList0]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="72"/>
+					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -708,7 +688,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[VideoList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="292"/>
+					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -830,7 +810,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[MovieList0]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="72"/>
+					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -845,7 +825,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[MovieList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="292"/>
+					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -976,7 +956,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[TVShowList0]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="72"/>
+					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -991,7 +971,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[TVShowList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="292"/>
+					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1128,7 +1108,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[MusicList0]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="72"/>
+					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1143,7 +1123,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[MusicList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="292"/>
+					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1317,14 +1297,14 @@
 					</focusedlayout>
 					<content>
 						<item id="0" description="Pictures">
-						<label>$LOCALIZE[1]</label>
-						<label2>$LOCALIZE[1]</label2>
-						<onclick>ActivateWindow(Pictures,,return)</onclick>
+							<label>$LOCALIZE[1]</label>
+							<label2>$LOCALIZE[1]</label2>
+							<onclick>ActivateWindow(Pictures,,return)</onclick>
 						</item>
 						<item id="1" description="Picture Addons">
-						<label>$LOCALIZE[24001]</label>
-						<label2>$LOCALIZE[1]</label2>
-						<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+							<label>$LOCALIZE[24001]</label>
+							<label2>$LOCALIZE[1]</label2>
+							<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 						</item>
 					</content>
 				</control>
@@ -1365,7 +1345,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[AddonList0]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="72"/>
+					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1380,7 +1360,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[AddonList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="292"/>
+					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1604,7 +1584,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[SystemList0]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="72"/>
+					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1619,7 +1599,7 @@
 					<aligny>center</aligny>
 					<label>$VAR[SystemList6]</label>
 					<textcolor>disabled-text</textcolor>
-					<camera x="105" y="292"/>
+					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1721,7 +1701,6 @@
 				</control>
 			</control>
 		</control>
-
 		<!-- Horizontal Home menu watermark -->
 		<control type="image">
 			<posx>1100</posx>
@@ -1733,13 +1712,12 @@
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<visible>!IsEmpty(Skin.String(custom-watermark))</visible>
 		</control>
-
 		<!-- RSS info -->
 		<control type="group" id="9940">
-			<visible>![Skin.HasSetting(overlay) + [Player.HasAudio | Player.HasVideo]]</visible> <!-- Don't show RSS if Video or Music overlay showing -->
+			<visible>![Skin.HasSetting(overlay) + [Player.HasAudio | Player.HasVideo]]</visible>
+			<!-- Don't show RSS if Video or Music overlay showing -->
 			<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
 		</control>
-
 		<!-- media infos (music) -->
 		<control type="group" id="9950">
 			<visible>Skin.HasSetting(overlay) + !Window.IsActive(PlayerControls)</visible>
@@ -1747,17 +1725,17 @@
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
 					<description>cover image</description>
-					<posx>15</posx>
-					<posy>592</posy>
-					<width>128</width>
-					<height>128</height>
-					<texture background="true">$INFO[MusicPlayer.Cover]</texture>
+					<posx>30</posx>
+					<posy>616</posy>
+					<width>96</width>
+					<height>96</height>
+					<texture background="true" fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio align="center">keep</aspectratio>
 				</control>
 				<control type="label">
 					<description>Artist label</description>
 					<posx>162</posx>
-					<posy>592</posy>
+					<posy>616</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
@@ -1768,7 +1746,7 @@
 				<control type="label">
 					<description>Album label</description>
 					<posx>162</posx>
-					<posy>624</posy>
+					<posy>640</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Album]</label>
@@ -1779,7 +1757,7 @@
 				<control type="label">
 					<description>Title label</description>
 					<posx>162</posx>
-					<posy>656</posy>
+					<posy>664</posy>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Title]</label>
@@ -1789,7 +1767,7 @@
 				</control>
 				<control type="label">
 					<description>Time label</description>
-					<posx>130</posx>
+					<posx>162</posx>
 					<posy>688</posy>
 					<width>520</width>
 					<height>22</height>
