@@ -182,7 +182,7 @@
 				<posy>0</posy>
 				<width>858</width>
 				<align>left</align>
-				<label>$LOCALIZE[31563] xTV-SAF v1.3.4</label>
+				<label>$LOCALIZE[31563] xTV-SAF v1.3.5</label>
 				<font>font13</font>
 			</control>
 			<control type="label">
