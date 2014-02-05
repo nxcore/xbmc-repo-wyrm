@@ -31,8 +31,8 @@
 	<include file="Includes_Weather.xml" />
 	<include file="Includes_VertHome.xml" />
 	<include file="Includes_HorzHome.xml" />
+	<include file="Includes_IconHome.xml" />
 	<include file="Includes_Shelf.xml" />
-	
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -600,214 +600,6 @@
 			</control>
 		</control>
 	</include>
-	<!-- Start List Item Icon Include -->
-	<include name="ListView-Icon">
-		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
-			<include>visible-fade</include>
-			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-				<effect type="rotatey" start="-20" end="-20" time="0" />
-				<effect type="slide" end="10,0" time="0" />
-			</animation>
-			<control type="group">
-				<visible>!Container.Content(addons)</visible>
-				<control type="image">
-					<description>list item icon</description>
-					<posx>122</posx>
-					<posy>150</posy>
-					<width>384</width>
-					<height>384</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image">
-					<description>list item icon reflection</description>
-					<posx>122</posx>
-					<posy>534</posy>
-					<width>384</width>
-					<height>384</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(addons)</visible>
-				<control type="group">
-					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<control type="image">
-						<description>list item icon</description>
-						<posx>122</posx>
-						<posy>150</posy>
-						<width>384</width>
-						<height>384</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="image">
-						<description>list item icon reflection</description>
-						<posx>122</posx>
-						<posy>534</posy>
-						<width>384</width>
-						<height>384</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-				</control>
-				<control type="group">
-					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-					<control type="image">
-						<description>list item icon</description>
-						<posx>122</posx>
-						<posy>150</posy>
-						<width>384</width>
-						<height>384</height>
-						<texture background="true">DefaultAddon.png</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="image">
-						<description>list item icon reflection</description>
-						<posx>122</posx>
-						<posy>534</posy>
-						<width>384</width>
-						<height>384</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-				</control>
-			</control>
-		</control>
-	</include>
-	<!-- Start Music List Item Icon Include -->
-	<include name="ListView-MusicIcon">
-		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
-			<include>visible-fade</include>
-			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-				<effect type="rotatey" start="-20" end="-20" time="0" />
-				<effect type="slide" end="10,0" time="0" />
-			</animation>
-			<control type="group">
-				<visible>!Container.Content(addons)</visible>
-				<control type="image">
-					<posx>144</posx>
-					<posy>98</posy>
-					<width>418</width>
-					<height>418</height>
-					<texture>case-cd.png</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-					<visible>Skin.HasSetting(CDcase) + [Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
-				</control>
-				<control type="image">
-					<description>list item icon</description>
-					<posx>190</posx>
-					<posy>134</posy>
-					<width>350</width>
-					<height>350</height>
-					<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Container.Content(addons)</visible>
-				<control type="image">
-					<description>list item icon</description>
-					<posx>190</posx>
-					<posy>134</posy>
-					<width>350</width>
-					<height>350</height>
-					<texture background="true" diffuse="mask-rect.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<description>list item icon reflection</description>
-					<posx>190</posx>
-					<posy>484</posy>
-					<width>350</width>
-					<height>350</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
-				</control>
-			</control>
-			<control type="group">
-				<visible>[Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
-				<control type="image">
-					<description>seperator</description>
-					<posx>31</posx>
-					<posy>512</posy>
-					<width>654</width>
-					<height>6</height>
-					<texture>separator.png</texture>
-				</control>
-				<control type="label">
-					<description>Artist label</description>
-					<posx>123</posx>
-					<posy>525</posy>
-					<width>177</width>
-					<height>25</height>
-					<label>31230</label>
-					<font>font11</font>
-					<align>right</align>
-				</control>
-				<control type="label">
-					<description>Artist value</description>
-					<posx>159</posx>
-					<posy>525</posy>
-					<width>513</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Artist]</label>
-					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<font>font11</font>
-				</control>
-				<control type="label">
-					<description>Genre label</description>
-					<posx>123</posx>
-					<posy>550</posy>
-					<width>177</width>
-					<height>25</height>
-					<label>31231</label>
-					<font>font11</font>
-					<align>right</align>
-				</control>
-				<control type="label">
-					<description>Genre value</description>
-					<posx>159</posx>
-					<posy>550</posy>
-					<width>513</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Genre]</label>
-					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<font>font11</font>
-				</control>
-				<control type="label">
-					<description>Year label</description>
-					<posx>123</posx>
-					<posy>575</posy>
-					<width>177</width>
-					<height>25</height>
-					<label>31232</label>
-					<font>font11</font>
-					<align>right</align>
-				</control>
-				<control type="label">
-					<description>Year label</description>
-					<posx>159</posx>
-					<posy>575</posy>
-					<width>513</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Year]</label>
-					<font>font11</font>
-				</control>
-				<control type="image">
-					<description>seperator</description>
-					<posx>31</posx>
-					<posy>612</posy>
-					<width>654</width>
-					<height>6</height>
-					<texture>separator.png</texture>
-				</control>
-			</control>
-		</control>
-	</include>
 	<!-- Start Fake Overlay Include -->
 	<include name="Fake-Overlay">
 		<control type="group">
@@ -863,7 +655,7 @@
 				<posy>2</posy>
 				<width>110</width>
 				<height>110</height>
-				<info>MusicPlayer.Cover</info>
+				<texture background="true" fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
