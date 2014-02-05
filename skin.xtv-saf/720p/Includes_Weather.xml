@@ -33,7 +33,7 @@
 				<aspectratio>keep</aspectratio>
 				<animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="true">conditional</animation>
 			</control>
-		</control>	
+		</control>
 		<control type="group">
 			<visible>Weather.IsFetched</visible>
 			<control type="group">

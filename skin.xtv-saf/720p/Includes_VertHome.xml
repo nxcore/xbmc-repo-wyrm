@@ -103,13 +103,10 @@
 				</control>
 			</control>
 		</control>
-
 		<!-- Low memory warning -->
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
-
 		<!-- RSS info -->
 		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
-
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>960</posx>
@@ -127,7 +124,6 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(9000).HasNext</visible>
 		</control>
-
 		<!-- main buttons -->
 		<control type="list" id="9000">
 			<posx>716</posx>
@@ -161,7 +157,7 @@
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</itemlayout>
-			<focusedlayout  width="560" height="56">
+			<focusedlayout width="560" height="56">
 				<control type="image">
 					<posx>0</posx>
 					<posy>-2</posy>
