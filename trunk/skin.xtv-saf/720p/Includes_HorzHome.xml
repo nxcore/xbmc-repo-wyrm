@@ -1701,7 +1701,7 @@
 				</control>
 			</control>
 		</control>
-		<!-- Horizontal Home menu watermark -->
+		<!-- Home menu watermark -->
 		<control type="image">
 			<posx>1100</posx>
 			<posy>592</posy>

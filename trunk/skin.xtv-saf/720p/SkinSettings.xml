@@ -358,28 +358,6 @@
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<!--<control type="radiobutton" id="206">
-						<description>Icon Tilt Toggle</description>
-						<include>settings-submenu-common</include>
-						<label>$LOCALIZE[31886]</label>
-						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(tilted-icons)</onclick>
-						<selected>Skin.HasSetting(tilted-icons)</selected>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="207">
-						<description>Video Wall Tilt Toggle</description>
-						<include>settings-submenu-common</include>
-						<label>$LOCALIZE[31887]</label>
-						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(tilted-videowall)</onclick>
-						<selected>Skin.HasSetting(tilted-videowall)</selected>
-						<aligny>center</aligny>
-						<textoffsetx>35</textoffsetx>
-						<radioposx>830</radioposx>
-					</control>-->
 					<control type="radiobutton" id="208">
 						<description>Time On Home Screen toggle</description>
 						<include>settings-submenu-common</include>
@@ -422,7 +400,7 @@
 						<onclick>Skin.SetImage(custom-watermark)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(homemenu-horizontal) + !Skin.String(custom-watermark)</visible>
+						<visible>!Skin.String(custom-watermark)</visible>
 					</control>
 					<control type="button" id="212">
 						<description>Reset Custom Homescreen Watermark Image</description>
@@ -432,7 +410,7 @@
 						<onclick>Skin.Reset(custom-watermark)</onclick>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
-						<visible>Skin.HasSetting(homemenu-horizontal) + Skin.String(custom-watermark)</visible>
+						<visible>Skin.String(custom-watermark)</visible>
 					</control>
 					<control type="button" id="213">
 						<include>settings-submenu-common</include>
@@ -601,13 +579,19 @@
 									<label>31952</label>
 									<onclick>Skin.Reset(homemenu-horizontal)</onclick>
 									<onclick>Skin.SetBool(homemenu-vertical)</onclick>
-									<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
+									<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal) + !Skin.HasSetting(homemenu-icon)]</visible>
 								</item>
 								<item>
 									<label>31951</label>
 									<onclick>Skin.Reset(homemenu-vertical)</onclick>
-									<onclick>Skin.SetBool(homemenu-horizontal)</onclick>
+									<onclick>Skin.SetBool(homemenu-icon)</onclick>
 									<visible>Skin.HasSetting(homemenu-vertical)</visible>
+								</item>
+								<item>
+									<label>31953</label>
+									<onclick>Skin.Reset(homemenu-icon)</onclick>
+									<onclick>Skin.SetBool(homemenu-horizontal)</onclick>
+									<visible>Skin.HasSetting(homemenu-icon)</visible>
 								</item>
 							</content>
 						</control>
@@ -645,8 +629,14 @@
 								<item>
 									<label>31952</label>
 									<onclick>Skin.Reset(homemenu-horizontal)</onclick>
+									<onclick>Skin.SetBool(homemenu-icon)</onclick>
+									<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal) + !Skin.HasSetting(homemenu-icon)]</visible>
+								</item>
+								<item>
+									<label>31953</label>
+									<onclick>Skin.Reset(homemenu-icon)</onclick>
 									<onclick>Skin.SetBool(homemenu-vertical)</onclick>
-									<visible>Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)</visible>
+									<visible>Skin.HasSetting(homemenu-icon)</visible>
 								</item>
 								<item>
 									<label>31951</label>
