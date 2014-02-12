@@ -10,14 +10,33 @@
 			<include>icon-header-commons</include>
 			<texture>icon-fav-sml.png</texture>
 		</control>
-		<control type="label">
-			<description>Favourites Label</description>
+		<control type="grouplist">
 			<posx>946</posx>
-			<posy>50</posy>
-			<width>309</width>
-			<height>37</height>
-			<label>$LOCALIZE[1036]</label>
-			<font>font20</font>
+			<posy>35</posy>
+			<width>365</width>
+			<height>72</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<orientation>horizontal</orientation>
+			<control type="label"><!-- Favorites Heading Label -->
+				<description>Video screen headings</description>
+				<width min="40" max="275">auto</width>
+				<height>72</height>
+				<label>$LOCALIZE[1036]</label>
+				<font>font18</font>
+				<wrapmultiline>true</wrapmultiline>
+				<aligny>top</aligny>
+			</control>
+			<control type="label">
+				<description>Number of files</description>
+				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
+				<posy>13</posy>
+				<width min="40" max="90">auto</width>
+				<height>38</height>
+				<font>font13</font>
+				<aligny>center</aligny>
+				<label>$INFO[Container(450).NumItems,(,)]</label>
+			</control>
 		</control>
 		<control type="list" id="450">
 			<posx>708</posx>
@@ -98,6 +117,7 @@
 			<align>left</align>
 			<label>$INFO[Container(450).NumItems] $LOCALIZE[127]</label>
 			<font>font13</font>
+			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 		<control type="scrollbar" id="423">
 			<posx>1244</posx>
