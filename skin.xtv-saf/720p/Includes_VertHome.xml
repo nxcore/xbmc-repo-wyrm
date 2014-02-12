@@ -105,12 +105,11 @@
 		</control>
 		<!-- Low memory warning -->
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
-		<!-- RSS info -->
-		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
+
 		<!-- Markers for excess menu items -->
 		<control type="image">
 			<posx>960</posx>
-			<posy>118</posy>
+			<posy>96</posy>
 			<height>27</height>
 			<width>38</width>
 			<texture>scroll-up.png</texture>
@@ -118,7 +117,7 @@
 		</control>
 		<control type="image">
 			<posx>960</posx>
-			<posy>644</posy>
+			<posy>610</posy>
 			<height>27</height>
 			<width>38</width>
 			<texture>scroll-down.png</texture>
@@ -127,8 +126,8 @@
 		<!-- main buttons -->
 		<control type="list" id="9000">
 			<posx>716</posx>
-			<posy>144</posy>
-			<height>504</height>
+			<posy>118</posy>
+			<height>495</height>
 			<width>514</width>
 			<focusposition>3</focusposition>
 			<movement>4</movement>
@@ -138,45 +137,45 @@
 			<ondown>9000</ondown>
 			<scrolltime>1</scrolltime>
 			<pagecontrol>23</pagecontrol>
-			<itemlayout width="560" height="56">
+			<itemlayout width="560" height="55">
 				<control type="label">
 					<posx>26</posx>
-					<posy>-5</posy>
+					<posy>14</posy>
 					<width>430</width>
-					<height>56</height>
+					<height>24</height>
 					<info>ListItem.label</info>
 					<aligny>center</aligny>
 					<font>font13</font>
 				</control>
 				<control type="image">
 					<posx>460</posx>
-					<posy>10</posy>
+					<posy>14</posy>
 					<width>38</width>
 					<height>27</height>
 					<texture>scroll-right.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</itemlayout>
-			<focusedlayout width="560" height="56">
+			<focusedlayout width="560" height="55">
 				<control type="image">
 					<posx>0</posx>
-					<posy>-2</posy>
+					<posy>0</posy>
 					<width>514</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 				</control>
 				<control type="label">
 					<posx>26</posx>
-					<posy>-5</posy>
+					<posy>14</posy>
 					<width>430</width>
-					<height>56</height>
+					<height>24</height>
 					<info>ListItem.label</info>
 					<aligny>center</aligny>
 					<font>font13</font>
 				</control>
 				<control type="image">
 					<posx>460</posx>
-					<posy>10</posy>
+					<posy>14</posy>
 					<width>38</width>
 					<height>27</height>
 					<texture>scroll-right-focus.png</texture>
@@ -711,6 +710,19 @@
 			<visible>Skin.HasSetting(sbar)</visible>
 			<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 		</control>
+		<!-- Home menu watermark -->
+		<control type="image">
+			<posx>1100</posx>
+			<posy>592</posy>
+			<width>128</width>
+			<height>128</height>
+			<aspectratio align="center" aligny="top">keep</aspectratio>
+			<texture background="true" fallback="blank.png">$INFO[Skin.String(custom-watermark)]</texture>
+			<colordiffuse>UnFocusedPosters</colordiffuse>
+			<visible>!IsEmpty(Skin.String(custom-watermark))</visible>
+		</control>
+		<!-- RSS info -->
+		<include condition="system.getbool(lookandfeel.enablerssfeeds)">page-info</include>
 		<!-- media infos (music) -->
 		<control type="group" id="9950">
 			<visible>Skin.HasSetting(overlay) + !Window.IsActive(PlayerControls)</visible>
