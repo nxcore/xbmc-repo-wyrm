@@ -16,7 +16,6 @@
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>
-			<!--<include>visible-fade</include>-->
 			<itemlayout width="575" height="66">
 				<control type="label">
 					<posx>46</posx>
