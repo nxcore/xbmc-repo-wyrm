@@ -594,26 +594,20 @@
 			<orientation>vertical</orientation>
 			<scrolltime tween="sine" easing="inout">280</scrolltime>
 			<itemlayout height="160" width="252">
-				<control type="image" description="background">
+				<control type="image" description="icon">
 					<posx>28</posx>
 					<posy>10</posy>
 					<width>195</width>
 					<height>110</height>
-					<texture>$INFO[ListItem.Property(colour)]</texture>
-				</control>
-				<control type="image" description="icon">
-					<posx>60</posx>
-					<posy>26</posy>
-					<width>132</width>
-					<height>75</height>
-					<texture>$INFO[ListItem.thumb]</texture>
+					<aspectratio>stretch</aspectratio>
+					<texture diffuse="homeiconmask.png">$INFO[ListItem.thumb]</texture>
 				</control>
 				<control type="image" description="gloss">
 					<posx>28</posx>
 					<posy>10</posy>
 					<width>195</width>
 					<height>110</height>
-					<texture>homeiconmask.png</texture>
+					<texture>homeicongloss.png</texture>
 				</control>
 				<control type="label" description="label">
 					<posx>126</posx>
@@ -627,26 +621,20 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="160" width="252">
-				<control type="image" description="background">
+				<control type="image" description="icon">
 					<posx>28</posx>
 					<posy>10</posy>
 					<width>195</width>
 					<height>110</height>
-					<texture>$INFO[ListItem.Property(colour)]</texture>
-				</control>
-				<control type="image" description="icon">
-					<posx>60</posx>
-					<posy>26</posy>
-					<width>132</width>
-					<height>75</height>
-					<texture>$INFO[ListItem.thumb]</texture>
+					<aspectratio>stretch</aspectratio>
+					<texture diffuse="homeiconmask.png">$INFO[ListItem.thumb]</texture>
 				</control>
 				<control type="image" description="gloss">
 					<posx>28</posx>
 					<posy>10</posy>
 					<width>195</width>
 					<height>110</height>
-					<texture>homeiconmask.png</texture>
+					<texture>homeicongloss.png</texture>
 				</control>
 				<control type="image" description="hilite">
 					<posx>22</posx>
@@ -671,7 +659,6 @@
 					<thumb>special://skin/extras/homeicons/icons/movie.png</thumb>
 					<label>$LOCALIZE[31026]</label>
 					<label2>$LOCALIZE[31026]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$VAR[MovieLibEntry]</onclick>
 				</item>
 				<item><!-- TV Shows -->
@@ -679,7 +666,6 @@
 					<thumb>special://skin/extras/homeicons/icons/tv.png</thumb>
 					<label>$LOCALIZE[20343]</label>
 					<label2>$LOCALIZE[20343]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>$VAR[TVLibEntry]</onclick>
 				</item>
 				<item><!-- Music -->
@@ -687,7 +673,6 @@
 					<thumb>special://skin/extras/homeicons/icons/music.png</thumb>
 					<label>$LOCALIZE[2]</label>
 					<label2>$LOCALIZE[2]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$VAR[MusicLibEntry]</onclick>
 				</item>
 				<item><!-- Weather -->
@@ -695,14 +680,12 @@
 					<thumb>special://skin/extras/homeicons/icons/weather.png</thumb>
 					<label>$LOCALIZE[8]</label>
 					<label2>$LOCALIZE[8]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgltblue.png</property>
 					<onclick>ActivateWindow(Weather,,return)</onclick>
 				</item>
 				<item><!-- System menu -->
 					<thumb>special://skin/extras/homeicons/icons/setting.png</thumb>
 					<label>$LOCALIZE[13000]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggrey.png</property>
 					<onclick>ActivateWindow(Settings,,return)</onclick>
 				</item>
 				<item><!-- Music Videos -->
@@ -710,7 +693,6 @@
 					<thumb>special://skin/extras/homeicons/icons/music.png</thumb>
 					<label>$LOCALIZE[31028]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$VAR[MusicVideoLibEntry]</onclick>
 				</item>
 				<item><!-- Live TV -->
@@ -718,7 +700,6 @@
 					<thumb>special://skin/extras/homeicons/icons/tv.png</thumb>
 					<label>$LOCALIZE[19020]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>ActivateWindow(PVR)</onclick>
 				</item>
 				<item><!-- Addons menu -->
@@ -726,7 +707,6 @@
 					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
 					<label>$LOCALIZE[24001]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>ActivateWindow(1155,,return)</onclick>
 				</item>
 				<item><!-- Pictures -->
@@ -734,7 +714,6 @@
 					<thumb>special://skin/extras/homeicons/icons/pics.png</thumb>
 					<label>$LOCALIZE[1]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgwhite.png</property>
 					<onclick>ActivateWindow(MyPictures,,return)</onclick>
 				</item>
 				<item><!-- Favourites -->
@@ -742,166 +721,145 @@
 					<thumb>special://skin/extras/homeicons/icons/favs.png</thumb>
 					<label>$LOCALIZE[31652]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgorange.png</property>
 					<onclick>ActivateWindow(Favourites)</onclick>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomMovies.1.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomMovies.1.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomMovies.1.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomMovies.1.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMovies.1.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomMovies.2.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomMovies.2.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomMovies.2.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomMovies.2.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMovies.2.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomMovies.3.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomMovies.3.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomMovies.3.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomMovies.3.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMovies.3.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomMovies.4.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomMovies.4.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomMovies.4.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomMovies.4.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMovies.4.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomMovies.5.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomMovies.5.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomMovies.5.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomTVShow.1.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomTVShow.1.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomTVShow.1.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>$INFO[Skin.String(CustomTVShow.1.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.1.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomTVShow.2.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomTVShow.2.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomTVShow.2.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>$INFO[Skin.String(CustomTVShow.2.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.2.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomTVShow.3.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomTVShow.3.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomTVShow.3.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>$INFO[Skin.String(CustomTVShow.3.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.3.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomTVShow.4.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomTVShow.4.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomTVShow.4.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>$INFO[Skin.String(CustomTVShow.4.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.4.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
-					<label>$INFO[Skin.String(CustomTVShow.5.Label)] </label>
+					<thumb>$INFO[Skin.String(CustomTVShow.5.Icon)]</thumb>
+					<label>$INFO[Skin.String(CustomTVShow.5.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>$INFO[Skin.String(CustomTVShow.5.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomMusic.1.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$INFO[Skin.String(CustomMusic.1.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMusic.1.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomMusic.2.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomMusic.2.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$INFO[Skin.String(CustomMusic.2.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMusic.2.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomMusic.3.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomMusic.3.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$INFO[Skin.String(CustomMusic.3.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMusic.3.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomMusic.4.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomMusic.4.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$INFO[Skin.String(CustomMusic.4.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMusic.4.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomMusic.5.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomMusic.5.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbggreen.png</property>
 					<onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomAddon.1.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomAddon.1.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomAddon.1.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.1.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomAddon.2.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomAddon.2.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomAddon.2.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.2.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomAddon.3.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomAddon.3.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomAddon.3.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.3.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomAddon.4.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomAddon.4.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomAddon.4.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.4.Path))</visible>
 				</item>
 				<item>
-					<thumb>special://skin/extras/homeicons/icons/addons.png</thumb>
+					<thumb>$INFO[Skin.String(CustomAddon.5.Icon)]</thumb>
 					<label>$INFO[Skin.String(CustomAddon.5.Label)]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgblue.png</property>
 					<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.5.Path))</visible>
 				</item>
@@ -910,7 +868,6 @@
 					<thumb>special://skin/extras/homeicons/icons/search.png</thumb>
 					<label>$LOCALIZE[137]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgpurple.png</property>
 					<onclick>RunScript(script.globalsearch)</onclick>
 				</item>
 				<item><!-- Profiles -->
@@ -918,14 +875,12 @@
 					<thumb>special://skin/extras/homeicons/icons/users.png</thumb>
 					<label>$LOCALIZE[20092]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgltblue.png</property>
 					<onclick>System.LogOff</onclick>
 				</item>
 				<item><!-- Quit -->
 					<thumb>special://skin/extras/homeicons/icons/quit.png</thumb>
 					<label>$LOCALIZE[13009]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<property name="colour">special://skin/extras/homeicons/colours/homeiconbgred.png</property>
 					<onclick>$VAR[QuitAction]</onclick>
 				</item>
 			</content>
