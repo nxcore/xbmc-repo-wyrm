@@ -597,4 +597,14 @@
 		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Art(banner))]</value>
 		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Art(banner))]</value>
 	</variable>
+		<variable name="SystemPlatform" description="What platform is system running on">
+		<value condition="System.Platform.Windows">$LOCALIZE[31566] $LOCALIZE[31568]</value>
+		<value condition="System.Platform.ATV2">$LOCALIZE[31566] $LOCALIZE[31573]</value>
+		<value condition="System.Platform.IOS">$LOCALIZE[31566] $LOCALIZE[31569]</value>
+		<value condition="System.Platform.OSX">$LOCALIZE[31566] $LOCALIZE[31570]</value>
+		<value condition="System.Platform.Android">$LOCALIZE[31566] $LOCALIZE[31574]</value>
+		<value condition="System.Platform.Linux.RaspberryPi">$LOCALIZE[31566] $LOCALIZE[31578]</value>
+		<value condition="System.Platform.Linux">$LOCALIZE[31566] $LOCALIZE[31567]</value>
+		<value>$LOCALIZE[13205]</value><!-- Unknown platform type -->
+	</variable>
 </includes>
