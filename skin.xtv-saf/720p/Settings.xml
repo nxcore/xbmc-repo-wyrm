@@ -21,7 +21,7 @@
 			<label>31035</label>
 			<font>font20</font>
 		</control>
-		
+
 		<!-- Markers for control area items -->
 		<control type="image">
 			<posx>1000</posx>
@@ -39,7 +39,7 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(8999).HasNext</visible>
 		</control>
-	
+
 		<control type="group">
 			<visible>Control.IsVisible(8999)</visible>
 			<posx>780</posx>
@@ -52,7 +52,6 @@
 				<onup>8999</onup>
 				<ondown>8999</ondown>
 				<viewtype label="List">list</viewtype>
-				<scrolltime>220</scrolltime>
 				<itemlayout width="560" height="50">
 					<control type="label">
 						<posy>8</posy>

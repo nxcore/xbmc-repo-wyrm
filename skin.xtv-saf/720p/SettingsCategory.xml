@@ -80,7 +80,7 @@
 			<height>542</height>
 			<onleft>9000</onleft>
 			<onright>5</onright>
-			<visible>Skin.HasSetting(sbar) + [Container(5).HasPrevious | Container(5).HasNext]</visible>
+			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<control type="textbox" id="6">
 			<description>Setting description area</description>
@@ -89,7 +89,7 @@
 			<width>870</width>
 			<height>62</height>
 			<textcolor>listselected-text</textcolor>
-			<font>font13</font>
+			<font>font12</font>
 			<align>justify</align>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control> 
@@ -100,7 +100,7 @@
 			<width>870</width>
 			<height>56</height>
 			<textwidth>810</textwidth>
-			<font>font13</font>
+			<font>font12</font>
 			<invalidcolor>invalid-text</invalidcolor>
 			<textoffsetx>18</textoffsetx>
 		</control>
@@ -111,7 +111,7 @@
 			<width>870</width>
 			<textwidth>810</textwidth>
 			<height>56</height>
-			<font>font13</font>
+			<font>font12</font>
 			<textoffsetx>18</textoffsetx>
 			<radioposx>840</radioposx>
 		</control>
@@ -121,7 +121,7 @@
 			<posy>187</posy>
 			<width>870</width>
 			<height>56</height>
-			<font>font13</font>
+			<font>font12</font>
 			<textoffsetx>18</textoffsetx>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -133,7 +133,7 @@
 			<width>320</width>
 			<height>56</height>
 			<label>224</label>
-			<font>font13</font>
+			<font>font12</font>
 			<textoffsetx>18</textoffsetx>
 		</control>
 		<!-- Show "View-as" menu -->
