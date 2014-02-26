@@ -37,13 +37,13 @@
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
-					<posx>-4</posx>
+					<posx>-10</posx>
 					<posy>320</posy>
 					<height>18</height>
 					<width>26</width>
 					<texture>$VAR[Overlay]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="405" width="276">
@@ -81,7 +81,7 @@
 					<height>48</height>
 					<width>48</width>
 					<texture>$VAR[Overlay]</texture>
-					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 			</focusedlayout>
 		</control>
