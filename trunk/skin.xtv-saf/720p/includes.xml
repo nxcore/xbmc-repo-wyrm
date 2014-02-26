@@ -476,6 +476,124 @@
 			<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 		</control>
 	</include>
+	<include name="player-mediaicon">
+		<!-- Player Media Icon -->
+		<control type="group">
+			<control type="group">
+				<visible>Window.IsVisible(FullscreenVideo) + !Window.IsVisible(fullscreeninfo)</visible>
+				<control type="group">
+					<control type="group">
+						<visible>VideoPlayer.Content(Movies)</visible><!-- movies -->
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<control type="image" id="890">
+							<description>Use Movie Clearart if available</description>
+							<posx>8</posx>
+							<posy>-144</posy>
+							<width>275</width>
+							<height>145</height>
+							<texture>$VAR[PlayerVideoClearart]</texture>
+							<aligny>bottom</aligny>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="group">
+							<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
+							<control type="image" id="891">
+								<description>Otherwise try Movie logo if available</description>
+								<posx>8</posx>
+								<posy>-75</posy>
+								<width>276</width>
+								<height>75</height>
+								<texture>$VAR[PlayerVideoLogo]</texture>
+								<aligny>bottom</aligny>
+								<aspectratio align="left">keep</aspectratio>
+							</control>
+							<control type="image">
+								<description>Fallback to video cover image if no clearart or logo</description>
+								<posx>56</posx>
+								<posy>-180</posy>
+								<width>180</width>
+								<height>180</height>
+								<align>center</align>
+								<aligny>bottom</aligny>
+								<texture diffuse="mask-rect.png">$VAR[PlayerVideoCover]</texture>
+								<aspectratio>keep</aspectratio>
+								<visible>StringCompare(Control.GetLabel(891),blank.png)</visible>
+							</control>
+						</control>
+					</control>
+					<control type="group">
+						<visible>VideoPlayer.Content(episodes)</visible><!-- tvshows -->
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<control type="image" id="990">
+							<description>Use TV Clearart if available</description>
+							<posx>8</posx>
+							<posy>-138</posy>
+							<width>275</width>
+							<height>145</height>
+							<texture>$VAR[PlayerVideoClearart]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="group">
+							<visible>StringCompare(Control.GetLabel(990),blank.png)</visible>
+							<control type="image" id="991">
+								<description>Use TV Clearlogo if available</description>
+								<posx>8</posx>
+								<posy>-75</posy>
+								<width>276</width>
+								<height>75</height>
+								<texture>$VAR[PlayerVideoLogo]</texture>
+								<aligny>bottom</aligny>
+								<aspectratio align="left">keep</aspectratio>
+							</control>
+							<control type="image">
+								<description>Fallback to video cover image if no clearart or logo</description>
+								<posx>56</posx>
+								<posy>-180</posy>
+								<width>180</width>
+								<height>180</height>
+								<align>center</align>
+								<aligny>bottom</aligny>
+								<texture diffuse="mask-rect.png">$VAR[PlayerVideoCover]</texture>
+								<aspectratio>keep</aspectratio>
+								<visible>StringCompare(Control.GetLabel(991),blank.png)</visible>
+							</control>
+						</control>
+					</control>
+				</control>
+				<!-- Any video other than Movies and TV Episodes -->
+				<control type="group">
+					<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(episodes)]</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<control type="image">
+						<description>Fallback to Thumb image if not TV Episode or Movie playing</description>
+						<posx>56</posx>
+						<posy>-180</posy>
+						<width>180</width>
+						<height>180</height>
+						<align>center</align>
+						<aligny>bottom</aligny>
+						<texture diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+			</control>
+			<!-- music -->
+			<control type="image">
+				<description>Music cover image</description>
+				<posx>8</posx>
+				<posy>-256</posy>
+				<width>250</width>
+				<height>250</height>
+				<align>left</align>
+				<aligny>bottom</aligny>
+				<texture diffuse="mask-rect.png">$INFO[MusicPlayer.Cover]</texture>
+				<aspectratio align="left">keep</aspectratio>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
+			</control>
+		</control>
+		<!-- End of Media Icon -->
+	</include>
 	<!-- Start xTV box image include -->
 	<include name="xtv-box">
 		<control type="image">
