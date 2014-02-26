@@ -40,6 +40,15 @@
 					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
+					<!-- Watched Overlay -->
+				<control type="image">
+					<posx>90</posx>
+					<posy>-4</posy>
+					<width>32</width>
+					<height>32</height>
+					<texture>$VAR[Overlay]</texture>
+					<visible>Skin.HasSetting(watched-overlay)</visible>
+				</control>
 			</itemlayout>
 			<itemlayout height="169" width="120" condition="Container.Content(addons)">
 				<control type="image">
@@ -95,16 +104,15 @@
 						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-				</control>
-				<!-- Watched Overlay -->
-				<control type="image">
-					<posx>80</posx>
-					<posy>-10</posy>
-					<width>32</width>
-					<height>32</height>
-					<animation effect="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
-					<texture>$VAR[Overlay]</texture>
-					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
+					<!-- Watched Overlay -->
+					<control type="image">
+						<posx>84</posx>
+						<posy>4</posy>
+						<width>32</width>
+						<height>32</height>
+						<texture>$VAR[Overlay]</texture>
+						<visible>Skin.HasSetting(watched-overlay)</visible>
+					</control>
 				</control>
 			</focusedlayout>
 			<focusedlayout height="169" width="120" condition="Container.Content(addons)">
