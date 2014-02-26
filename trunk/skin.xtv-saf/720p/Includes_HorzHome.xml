@@ -34,24 +34,6 @@
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include>
 		<!-- Shelf icons-->
 		<control type="group" id="9800">
-			<!-- Video icons -->
-			<control type="group" id="9105">
-				<visible>Control.HasFocus(9100)</visible>
-				<control type="image">
-					<posx>560</posx>
-					<posy>55</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture>icon-video.png</texture>
-				</control>
-				<control type="image">
-					<posx>560</posx>
-					<posy>215</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
-				</control>
-			</control>
 			<!-- Movie icons -->
 			<control type="group" id="9155">
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
@@ -529,46 +511,8 @@
 					</control>
 				</control>
 			</control>
-			<!-- Pictures icons -->
-			<control type="group">
-				<visible>Control.HasFocus(9300)</visible>
-				<control type="image">
-					<posx>560</posx>
-					<posy>55</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture>icon-photo.png</texture>
-				</control>
-				<control type="image">
-					<posx>560</posx>
-					<posy>215</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">icon-photo.png</texture>
-				</control>
-			</control>
-			<!-- Addons icons -->
-			<control type="group" id="9355">
-				<visible>Control.HasFocus(9350)</visible>
-				<control type="group">
-					<control type="image">
-						<posx>560</posx>
-						<posy>55</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture>DefaultAddon.png</texture>
-					</control>
-					<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
-					</control>
-				</control>
-			</control>
 			<!-- Weather icons -->
-			<control type="group">
+			<control type="group" id="9405">
 				<visible>Control.HasFocus(9400)</visible>
 				<control type="group">
 					<visible>!Weather.IsFetched</visible>
@@ -592,22 +536,22 @@
 					<include condition="!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]">ShelfWeather</include>
 				</control>
 			</control>
-			<!-- Settings icons -->
+			<!-- Default Shelf icons -->
 			<control type="group">
-				<visible>Control.HasFocus(9450)</visible>
+				<visible>![Control.IsVisible(9155) | Control.IsVisible(9205) | Control.IsVisible(9255) | Control.IsVisible(9405)]</visible>
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture>icon-settings.png</texture>
+					<texture>$VAR[HorzHomeShelfIcon]</texture>
 				</control>
 				<control type="image">
 					<posx>560</posx>
 					<posy>215</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">icon-settings.png</texture>
+					<texture flipy="true" diffuse="mask-fade.png">$VAR[HorzHomeShelfIcon]</texture>
 				</control>
 			</control>
 		</control>
