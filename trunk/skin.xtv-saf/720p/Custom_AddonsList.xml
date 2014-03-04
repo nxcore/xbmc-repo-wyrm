@@ -18,7 +18,7 @@
 			<posy>50</posy>
 			<width>309</width>
 			<height>37</height>
-			<label>24001</label>
+			<label>$LOCALIZE[24001]</label>
 			<font>font20</font>
 		</control>
 		<control type="list" id="999">
@@ -44,7 +44,7 @@
 					<textoffsety>4</textoffsety>
 					<align>left</align>
 					<aligny>top</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout width="560" height="56">
@@ -57,7 +57,7 @@
 					<textoffsety>4</textoffsety>
 					<align>left</align>
 					<aligny>top</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 			<content>
@@ -71,31 +71,31 @@
 				<item id="2">
 					<description>Video Addons</description>
 					<icon>DefaultAddon.png</icon>
-					<label>1037</label>
+					<label>$LOCALIZE[1037]</label>
 					<onclick>ActivateWindow(Videos,Addons)</onclick>
 				</item>
 				<item id="3">
 					<description>Music Addons</description>
 					<icon>DefaultAddon.png</icon>
-					<label>1038</label>
+					<label>$LOCALIZE[1038]</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 				</item>
 				<item id="4">
 					<description>Picture Addons</description>
 					<icon>DefaultAddon.png</icon>
-					<label>1039</label>
+					<label>$LOCALIZE[1039]</label>
 					<onclick>XBMC.ActivateWindow(Pictures,Addons)</onclick>
 				</item>
 				<item id="5">
 					<description>Program Addons</description>
 					<icon>DefaultAddon.png</icon>
-					<label>1043</label>
+					<label>$LOCALIZE[1043]</label>
 					<onclick>ActivateWindow(Programs,Addons)</onclick>
 				</item>
 				<item id="6">
 					<description>Get More Addons</description>
 					<icon>DefaultAddon.png</icon>
-					<label>21452</label>
+					<label>$LOCALIZE[21452]</label>
 					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 				</item>
 			</content>

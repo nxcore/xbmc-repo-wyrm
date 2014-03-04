@@ -302,7 +302,7 @@
 				<posy>0</posy>
 				<width>818</width>
 				<height>1</height>
-				<texture>white.png</texture>
+				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
@@ -505,7 +505,7 @@
 				<posy>0</posy>
 				<width>818</width>
 				<height>1</height>
-				<texture>white.png</texture>
+				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
@@ -708,7 +708,7 @@
 				<posy>0</posy>
 				<width>818</width>
 				<height>1</height>
-				<texture>white.png</texture>
+				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
@@ -911,7 +911,7 @@
 				<posy>0</posy>
 				<width>818</width>
 				<height>1</height>
-				<texture>white.png</texture>
+				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
@@ -1114,7 +1114,7 @@
 				<posy>0</posy>
 				<width>818</width>
 				<height>1</height>
-				<texture>white.png</texture>
+				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
@@ -1317,7 +1317,7 @@
 				<posy>0</posy>
 				<width>818</width>
 				<height>1</height>
-				<texture>white.png</texture>
+				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
