@@ -37,7 +37,6 @@
 					<width>376</width>
 					<height>40</height>
 					<font>font13</font>
-					<!--<label>3D Settings</label>-->
 					<label>3D $LOCALIZE[5]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -53,7 +52,6 @@
 					<textoffsetx>30</textoffsetx>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<!--<label>Enable</label>-->
 					<label>$LOCALIZE[305]</label>
 					<radioposx>330</radioposx>
 					<onclick>ToggleStereoMode</onclick>
@@ -69,7 +67,6 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textoffsetx>30</textoffsetx>
-					<!--<label>Change mode</label>-->
 					<label>$LOCALIZE[240]</label>
 					<onclick>StereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
@@ -111,7 +108,6 @@
 					<width>376</width>
 					<height>40</height>
 					<font>font13</font>
-					<!--<label>3D Settings</label>-->
 					<label>3D $LOCALIZE[5]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -127,7 +123,6 @@
 					<textoffsetx>30</textoffsetx>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<!--<label>Enable</label>-->
 					<label>$LOCALIZE[305]</label>
 					<radioposx>330</radioposx>
 					<onclick>ToggleStereoMode</onclick>
@@ -143,7 +138,6 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textoffsetx>30</textoffsetx>
-					<!--<label>Change mode</label>-->
 					<label>$LOCALIZE[240]</label>
 					<onclick>StereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>

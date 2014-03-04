@@ -274,7 +274,7 @@
 						<font>font18</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<info>ListItem.ChannelNumber</info>
+						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="image">
 						<posx>11</posx>
@@ -290,16 +290,26 @@
 						<height>24</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="progress">
+						<posx>80</posx>
+						<posy>34</posy>
+						<width>460</width>
+						<height>6</height>
+						<reveal>true</reveal>
+						<info>ListItem.Progress</info>
+						<texturebg>blank.png</texturebg>
+						<colordiffuse>disabled-text</colordiffuse>
 					</control>
 					<control type="label">
 						<posx>80</posx>
-						<posy>34</posy>
+						<posy>39</posy>
 						<width>470</width>
-						<height>24</height>
+						<height>22</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<info>ListItem.Title</info>
+						<label>$INFO[ListItem.Title]</label>
 						<textcolor>disabled-text</textcolor>
 					</control>
 				</itemlayout>
@@ -320,7 +330,7 @@
 						<font>font18</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<info>ListItem.ChannelNumber</info>
+						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="image">
 						<posx>11</posx>
@@ -333,20 +343,30 @@
 						<posx>80</posx>
 						<posy>8</posy>
 						<width>470</width>
-						<height>24</height>
+						<height>22</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+					</control>
+					<control type="progress">
+						<posx>80</posx>
+						<posy>34</posy>
+						<width>460</width>
+						<height>6</height>
+						<reveal>true</reveal>
+						<info>ListItem.Progress</info>
+						<texturebg>blank.png</texturebg>
+						<colordiffuse>ProgressBarColor</colordiffuse>
 					</control>
 					<control type="label">
 						<posx>80</posx>
-						<posy>34</posy>
+						<posy>39</posy>
 						<width>470</width>
-						<height>24</height>
+						<height>22</height>
 						<font>font11</font>
 						<aligny>center</aligny>
-						<info>ListItem.Title</info>
+						<label>$INFO[ListItem.Title]</label>
 						<textcolor>disabled-text</textcolor>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -378,6 +398,7 @@
 				<height>565</height>
 				<onleft>11</onleft>
 				<onright>11</onright>
+				<animation condition="!Control.HasFocus(27) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>

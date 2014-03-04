@@ -36,7 +36,7 @@
 				<posy>112</posy>
 				<width>305</width>
 				<height>56</height>
-				<label>31026</label>
+				<label>$LOCALIZE[31026]</label>
 				<onfocus>Skin.SetString(customsettingmenu,movie)</onfocus>
 				<onup>984</onup>
 				<ondown>982</ondown>
@@ -66,7 +66,7 @@
 				<posy>220</posy>
 				<width>305</width>
 				<height>56</height>
-				<label>2</label>
+				<label>$LOCALIZE[2]</label>
 				<onfocus>Skin.SetString(customsettingmenu,music)</onfocus>
 				<onup>982</onup>
 				<ondown>984</ondown>
@@ -81,7 +81,7 @@
 				<posy>274</posy>
 				<width>305</width>
 				<height>56</height>
-				<label>31654</label>
+				<label>$LOCALIZE[31654]</label>
 				<onfocus>Skin.SetString(customsettingmenu,addon)</onfocus>
 				<onup>983</onup>
 				<ondown>981</ondown>
@@ -184,7 +184,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>
@@ -495,7 +495,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>
@@ -818,7 +818,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>
@@ -1130,7 +1130,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>

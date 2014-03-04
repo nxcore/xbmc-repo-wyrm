@@ -15,7 +15,7 @@
 			<posx>150</posx>
 			<posy>60</posy>
 			<width>1038</width>
-			<height>556</height>
+			<height>540</height>
 			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 			<visible>Control.IsVisible(3)</visible>
@@ -25,7 +25,7 @@
 			<posx>140</posx>
 			<posy>60</posy>
 			<width>1038</width>
-			<height>600</height>
+			<height>516</height>
 			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 			<visible>Control.IsVisible(6)</visible>
@@ -90,7 +90,7 @@
 			</control>
 			<control type="image">
 				<posx>904</posx>
-				<posy>186</posy>
+				<posy>190</posy>
 				<height>256</height>
 				<width>256</width>
 				<texture fallback="icon-scripts.png">$INFO[Container(6).ListItem.Icon]</texture>
@@ -98,8 +98,8 @@
 			</control>
 			<control type="label">
 				<description>Number of objects</description>
-				<posx>1154</posx>
-				<posy>542</posy>
+				<posx>1100</posx>
+				<posy>532</posy>
 				<width>400</width>
 				<height>37</height>
 				<font>font13</font>
@@ -178,7 +178,7 @@
 			<width>250</width>
 			<height>56</height>
 			<font>font12</font>
-			<label>186</label>
+			<label>$LOCALIZE[186]</label>
 			<align>center</align>
 			<onleft>3</onleft>
 			<onright>23</onright>

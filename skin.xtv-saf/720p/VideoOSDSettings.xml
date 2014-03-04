@@ -100,7 +100,7 @@
 				<sliderwidth>192</sliderwidth>
 				<sliderheight>16</sliderheight>
 				<font>font12</font>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>button-text</focusedcolor>
 				<textoffsetx>18</textoffsetx>
 			</control>
 		</control>
