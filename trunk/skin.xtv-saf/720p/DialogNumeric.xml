@@ -63,7 +63,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12311</label>
+				<label>$LOCALIZE[12311]</label>
 				<onleft>23</onleft>
 				<onright>12</onright>
 				<onup>20</onup>
@@ -83,7 +83,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12312</label>
+				<label>$LOCALIZE[12312]</label>
 				<onleft>11</onleft>
 				<onright>13</onright>
 				<onup>10</onup>
@@ -103,7 +103,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12313</label>
+				<label>$LOCALIZE[12313]</label>
 				<onleft>12</onleft>
 				<onright>23</onright>
 				<onup>22</onup>
@@ -143,7 +143,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12314</label>
+				<label>$LOCALIZE[12314]</label>
 				<onleft>23</onleft>
 				<onright>15</onright>
 				<onup>11</onup>
@@ -163,7 +163,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12315</label>
+				<label>$LOCALIZE[12315]</label>
 				<onleft>14</onleft>
 				<onright>16</onright>
 				<onup>12</onup>
@@ -183,7 +183,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12316</label>
+				<label>$LOCALIZE[12316]</label>
 				<onleft>15</onleft>
 				<onright>23</onright>
 				<onup>13</onup>
@@ -203,7 +203,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12317</label>
+				<label>$LOCALIZE[12317]</label>
 				<onleft>21</onleft>
 				<onright>18</onright>
 				<onup>14</onup>
@@ -223,7 +223,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12318</label>
+				<label>$LOCALIZE[12318]</label>
 				<onleft>17</onleft>
 				<onright>19</onright>
 				<onup>15</onup>
@@ -243,7 +243,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12319</label>
+				<label>$LOCALIZE[12319]</label>
 				<onleft>18</onleft>
 				<onright>21</onright>
 				<onup>16</onup>
@@ -279,7 +279,7 @@
 					<width>110</width>
 					<height>46</height>
 					<font>font18</font>
-					<label>20177</label>
+					<label>$LOCALIZE[20177]</label>
 					<textcolor>shadow-text</textcolor>
 					<shadowcolor>button-textshadow-text</shadowcolor>
 					<align>center</align>
@@ -319,7 +319,7 @@
 				<textoffsetx>0</textoffsetx>
 				<texturenofocus border="6">key-nofocus.png</texturenofocus>
 				<texturefocus border="6">key-focus.png</texturefocus>
-				<label>12310</label>
+				<label>$LOCALIZE[12310]</label>
 				<onleft>20</onleft>
 				<onright>22</onright>
 				<onup>18</onup>

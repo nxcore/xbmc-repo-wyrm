@@ -23,7 +23,6 @@
 					<width>506</width>
 					<height>23</height>
 					<font>font12</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Label2)</visible>
@@ -36,7 +35,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font11</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -46,7 +44,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font11</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
@@ -60,7 +57,6 @@
 					<width>506</width>
 					<height>23</height>
 					<font>font12</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Label2)</visible>
@@ -73,7 +69,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font11</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -83,7 +78,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font11</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>disabled-text</textcolor>
 						<label>$INFO[ListItem.Label2]</label>

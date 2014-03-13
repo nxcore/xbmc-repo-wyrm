@@ -115,7 +115,7 @@
 			<posy>50</posy>
 			<width>309</width>
 			<height>37</height>
-			<label>31032</label>
+			<label>$LOCALIZE[31032]</label>
 			<font>font20</font>
 		</control>
 
@@ -128,7 +128,6 @@
 				<height>37</height>
 				<font>font18</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 			</control>
@@ -139,7 +138,6 @@
 				<height>25</height>
 				<font>font11</font>
 				<label>$LOCALIZE[31531] - $INFO[Window(Weather).Property(Updated)]</label>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="group">
@@ -168,7 +166,6 @@
 				<width>636</width>
 				<height>20</height>
 				<font>font11</font>
-				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Weather).Property(WeatherProvider),$LOCALIZE[31536] - ]</label>
 				<visible>IsEmpty(Window(Weather).Property(WeatherProviderLogo))</visible>
@@ -197,7 +194,6 @@
 				<height>50</height>
 				<label>$LOCALIZE[31530]</label>
 				<font>font13</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="button" id="2"><!-- Refresh button -->

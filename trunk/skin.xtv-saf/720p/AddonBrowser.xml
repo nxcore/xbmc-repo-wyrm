@@ -23,7 +23,7 @@
 				<description>Addons Label</description>
 				<width min="60" max="250">auto</width>
 				<height>38</height>
-				<label>24001</label>
+				<label>$LOCALIZE[24001]</label>
 				<font>font20</font>
 				<aligny>center</aligny>
 			</control>
@@ -90,7 +90,7 @@
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<label>100</label>
+					<label>$LOCALIZE[100]</label>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<aligny>top</aligny>
@@ -124,7 +124,7 @@
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<label>103</label>
+					<label>$LOCALIZE[103]</label>
 					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="togglebutton" id="4">
@@ -142,7 +142,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<label>24063</label>
+					<label>$LOCALIZE[24063]</label>
 					<radioposx>330</radioposx>
 				</control>
 				<control type="radiobutton" id ="6">
@@ -151,7 +151,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<label>25000</label>
+					<label>$LOCALIZE[25000]</label>
 					<radioposx>330</radioposx>
 				</control>
 				<control type="radiobutton" id ="7">
@@ -160,7 +160,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<label>25001</label>
+					<label>$LOCALIZE[25001]</label>
 					<radioposx>330</radioposx>
 				</control>
 			</control>

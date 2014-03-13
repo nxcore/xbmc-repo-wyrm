@@ -67,7 +67,6 @@
 				<posy>5</posy>
 				<width>220</width>
 				<height>31</height>
-				<align>left</align>
 				<font>font11</font>
 				<label>- $INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 			</control>
@@ -125,7 +124,7 @@
 				<posy>25</posy>
 				<font>font12</font>
 				<align>right</align>
-				<info>Player.Time</info>
+				<label>$INFO[Player.Time]</label>
 				<width>177</width>
 				<height>20</height>
 				<visible>!Player.Seeking</visible>
@@ -136,7 +135,7 @@
 				<posy>25</posy>
 				<font>font12</font>
 				<align>right</align>
-				<info>Player.SeekTime</info>
+				<label>$INFO[Player.SeekTime]</label>
 				<width>177</width>
 				<height>20</height>
 				<visible>Player.Seeking</visible>
@@ -147,7 +146,6 @@
 				<posy>25</posy>
 				<label>$INFO[Player.Duration,/ ]</label>
 				<font>font12</font>
-				<align>left</align>
 				<width>177</width>
 				<height>20</height>
 			</control>

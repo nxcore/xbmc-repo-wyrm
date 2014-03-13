@@ -77,7 +77,6 @@
 					<posy>5</posy>
 					<width>220</width>
 					<height>31</height>
-					<align>left</align>
 					<font>font11</font>
 					<label>- $INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 				</control>

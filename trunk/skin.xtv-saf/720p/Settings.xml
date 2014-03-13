@@ -18,7 +18,7 @@
 			<posy>50</posy>
 			<width>504</width>
 			<height>37</height>
-			<label>31035</label>
+			<label>$LOCALIZE[31035]</label>
 			<font>font20</font>
 		</control>
 
@@ -102,62 +102,62 @@
 				<content>
 					<item id="0">
 						<description>Appearance</description>
-						<label>480</label>
+						<label>$LOCALIZE[480]</label>
 						<onclick>Activatewindow(AppearanceSettings)</onclick>
 					</item>
 					<item id="1">
 						<description>Videos</description>
-						<label>3</label>
+						<label>$LOCALIZE[3]</label>
 						<onclick>Activatewindow(VideosSettings)</onclick>
 					</item>
 					<item id="2">
 						<description>TV</description>
-						<label>19020</label>
+						<label>$LOCALIZE[19020]</label>
 						<onclick>Activatewindow(PVRSettings)</onclick>
 					</item>
 					<item id="3">
 						<description>Music</description>
-						<label>2</label>
+						<label>$LOCALIZE[2]</label>
 						<onclick>Activatewindow(MusicSettings)</onclick>
 					</item>
 					<item id="4">
 						<description>Pictures</description>
-						<label>1</label>
+						<label>$LOCALIZE[1]</label>
 						<onclick>Activatewindow(PicturesSettings)</onclick>
 					</item>
 					<item id="5">
 						<description>Addons</description>
-						<label>24001</label>
+						<label>$LOCALIZE[24001]</label>
 						<onclick>Activatewindow(AddonBrowser)</onclick>
 					</item>
 					<item id="6">
 						<description>Weather</description>
-						<label>8</label>
+						<label>$LOCALIZE[8]</label>
 						<onclick>Activatewindow(WeatherSettings)</onclick>
 					</item>
 					<item id="7">
 						<description>Services</description>
-						<label>14036</label>
+						<label>$LOCALIZE[14036]</label>
 						<onclick>Activatewindow(servicesettings)</onclick>
 					</item>
 					<item id="8">
 						<description>System</description>
-						<label>13000</label>
+						<label>$LOCALIZE[13000]</label>
 						<onclick>Activatewindow(SystemSettings)</onclick>
 					</item>
 					<item id="9">
 						<description>Profiles</description>
-						<label>13200</label>
+						<label>$LOCALIZE[13200]</label>
 						<onclick>ActivateWindow(Profiles)</onclick>
 					</item>
 					<item id="10">
 						<description>File manager</description>
-						<label>10003</label>
+						<label>$LOCALIZE[10003]</label>
 						<onclick>ActivateWindow(filemanager)</onclick>
 					</item>
 					<item id="11">
 						<description>System Info</description>
-						<label>138</label>
+						<label>$LOCALIZE[138]</label>
 						<onclick>Activatewindow(systeminfo)</onclick>
 					</item>
 				</content>

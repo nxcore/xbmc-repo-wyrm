@@ -173,7 +173,6 @@
 					<width>460</width>
 					<height>74</height>
 					<font>font20</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
@@ -192,7 +191,6 @@
 					<width>460</width>
 					<height>74</height>
 					<font>font20</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
@@ -210,7 +208,7 @@
 				<font>font28</font>
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<label>31688</label>
+				<label>$LOCALIZE[31688]</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
@@ -223,9 +221,8 @@
 					<width>460</width>
 					<height>37</height>
 					<font>font11</font>
-					<align>left</align>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<info>ListItem.Genre</info>
+					<label>$INFO[ListItem.Genre]</label>
 					<textoffsetx>0</textoffsetx>
 					<visible>!IsEmpty(ListItem.Genre)</visible>
 				</control>
@@ -267,7 +264,7 @@
 					<posy>292</posy>
 					<width>177</width>
 					<height>25</height>
-					<info>ListItem.StarRating</info>
+					<texture>$INFO[ListItem.StarRating]</texture>
 					<align>right</align>
 					<colordiffuse>StarDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.StarRating)</visible>
@@ -280,7 +277,6 @@
 					<height>316</height>
 					<font>font12</font>
 					<label fallback="161">$INFO[ListItem.PlotOutline]</label>
-					<align>left</align>
 					<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 					<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 				</control>
@@ -292,7 +288,6 @@
 					<height>316</height>
 					<font>font12</font>
 					<label fallback="161">$INFO[ListItem.Plot]</label>
-					<align>left</align>
 					<visible>IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.Plot)</visible>
 					<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 				</control>

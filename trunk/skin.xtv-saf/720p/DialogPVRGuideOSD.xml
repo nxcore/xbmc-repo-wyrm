@@ -59,7 +59,6 @@
 						<height>30</height>
 						<font>font13</font>
 						<selectedcolor>listselected-text</selectedcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
@@ -120,7 +119,6 @@
 						<height>30</height>
 						<font>font13</font>
 						<selectedcolor>listselected-text</selectedcolor>
-						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>

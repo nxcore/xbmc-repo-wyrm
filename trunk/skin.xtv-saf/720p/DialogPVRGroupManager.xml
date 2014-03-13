@@ -20,7 +20,7 @@
 					<width>320</width>
 					<height>30</height>
 					<font>font18</font>
-					<label>19143</label>
+					<label>$LOCALIZE[19143]</label>
 					<align>center</align>
 					<aligny>bottom</aligny>
 				</control>
@@ -70,7 +70,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<align>left</align>
 								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
@@ -98,7 +97,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<align>left</align>
 								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
@@ -155,7 +153,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<align>left</align>
 								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
@@ -183,7 +180,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<align>left</align>
 								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
@@ -212,7 +208,7 @@
 						<width>350</width>
 						<height>70</height>
 						<font>font13</font>
-						<label>31700</label>
+						<label>$LOCALIZE[31700]</label>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
@@ -237,7 +233,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</itemlayout>
 						<focusedlayout height="46">
@@ -258,7 +254,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
-								<info>ListItem.Label</info>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</focusedlayout>
 					</control>
@@ -315,7 +311,7 @@
 						<description>OK</description>
 						<width>250</width>
 						<height>50</height>
-						<label>186</label>
+						<label>$LOCALIZE[186]</label>
 						<font>font12</font>
 						<align>center</align>
 						<aligny>center</aligny>

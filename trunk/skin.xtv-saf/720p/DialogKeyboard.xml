@@ -34,7 +34,6 @@
 				<font>font18</font>
 				<textcolor>disabled-text</textcolor>
 				<shadowcolor>button-textshadow-text</shadowcolor>
-				<align>left</align>
 				<aligny>center</aligny>
 				<visible>IsEmpty(Control.GetLabel(310))</visible>
 			</control>
@@ -47,7 +46,6 @@
 				<font>font18</font>
 				<textcolor>shadow-text</textcolor>
 				<shadowcolor>button-textshadow-text</shadowcolor>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="group">
@@ -249,7 +247,7 @@
 					<posy>0</posy>
 					<width>208</width>
 					<height>48</height>
-					<label>20181</label>
+					<label>$LOCALIZE[20181]</label>
 					<onleft>48</onleft>
 					<onright>49</onright>
 					<onup>304</onup>
@@ -467,7 +465,7 @@
 					<posy>62</posy>
 					<width>173</width>
 					<height>48</height>
-					<label>20177</label>
+					<label>$LOCALIZE[20177]</label>
 					<onleft>80</onleft>
 					<onright>81</onright>
 					<onup>8</onup>
@@ -657,7 +655,7 @@
 					<posy>125</posy>
 					<width>223</width>
 					<height>48</height>
-					<label>20179</label>
+					<label>$LOCALIZE[20179]</label>
 					<onleft>76</onleft>
 					<onright>65</onright>
 					<onup>300</onup>
@@ -851,7 +849,7 @@
 					<posy>187</posy>
 					<width>184</width>
 					<height>48</height>
-					<label>20178</label>
+					<label>$LOCALIZE[20178]</label>
 					<onleft>306</onleft>
 					<onright>90</onright>
 					<onup>303</onup>
@@ -874,7 +872,7 @@
 					<height>48</height>
 					<texturenofocus border="24">key-nofocus.png</texturenofocus>
 					<texturefocus border="24">key-focus.png</texturefocus>
-					<label>1006</label>
+					<label>$LOCALIZE[1006]</label>
 					<font>font13</font>
 					<textcolor>shadow-text</textcolor>
 					<shadowcolor>-</shadowcolor>
@@ -897,7 +895,7 @@
 					<ondown>51</ondown>
 					<texturenofocus border="24">key-nofocus.png</texturenofocus>
 					<texturefocus border="24">key-focus.png</texturefocus>
-					<label>20182</label>
+					<label>$LOCALIZE[20182]</label>
 					<font>font13</font>
 					<textcolor>disabled-text</textcolor>
 					<shadowcolor>button-textshadow-text</shadowcolor>

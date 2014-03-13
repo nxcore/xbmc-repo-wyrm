@@ -4,8 +4,7 @@
 	<include>shutdown-ani</include>
 	<controls>
 		<control type="group" id="100">
-			<control type="image">
-				<description>solid background</description>
+			<control type="image"><!-- Solid background -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -14,15 +13,14 @@
 				<texture>background.png</texture>
 				<visible>IsEmpty(Skin.String(custom-background))</visible>
 			</control>
-			<control type="image">
-				<description>custom background</description>
+			<control type="image"><!-- Custom background -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
 				<colordiffuse>solid-background</colordiffuse>
 				<aspectratio>stretch</aspectratio>
-				<info>Skin.String(custom-background)</info>
+				<texture>$INFO[Skin.String(custom-background)]</texture>
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<!-- Fanart backgrounds for focused search item -->
@@ -143,25 +141,22 @@
 				<animation effect="fade" time="200">Hidden</animation>
 				<visible>!ControlGroup(101).HasFocus</visible>
 			</control>
-			<!-- Search results logo and lable -->
-			<control type="image">
-				<description>Search Logo</description>
+			<!-- Search results logo and label -->
+			<control type="image"><!-- Heading icon (show is home menu type is vertical) -->
 				<include>icon-header-commons</include>
 				<texture>DefaultMusicSearch.png</texture>
-				<visible>IsEmpty(Control.GetLabel(190))</visible>
+				<visible>IsEmpty(Control.GetLabel(190)) + Skin.HasSetting(homemenu-vertical)</visible>
 			</control>
-			<control type="label">
-				<description>Search Label</description>
+			<control type="label"><!-- Heading label -->
 				<posx>946</posx>
 				<posy>50</posy>
 				<width>309</width>
 				<height>37</height>
-				<label>283</label>
+				<label>$LOCALIZE[283]</label>
 				<font>font20</font>
 				<visible>IsEmpty(Control.GetLabel(190))</visible>
 			</control>
-			<!-- No search results -->
-			<control type="label" id="199">
+			<control type="label" id="199"><!-- No search results -->
 				<posx>40</posx>
 				<posy>358</posy>
 				<width>1200</width>
@@ -171,8 +166,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
-			<!-- New search button -->
-			<control type="button" id="198">
+			<control type="button" id="198"><!-- New search button -->
 				<posx>535</posx>
 				<posy>664</posy>
 				<width>250</width>
@@ -186,8 +180,8 @@
 				<onleft>101</onleft>
 				<onright>101</onright>
 			</control>
-			<!-- Movies results -->
-			<control type="grouplist" id="101">
+
+			<control type="grouplist" id="101"><!-- Movies results -->
 				<visible>IsEmpty(Control.GetLabel(190))</visible>
 				<posx>30</posx>
 				<posy>80</posy>
@@ -304,8 +298,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -387,8 +380,8 @@
 						</focusedlayout>
 					</control>
 				</control>
-				<!-- TV Shows results -->
-				<control type="group" id="129">
+
+				<control type="group" id="129"><!-- TV Shows results -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1200</width>
@@ -468,8 +461,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -522,8 +514,8 @@
 						</focusedlayout>
 					</control>
 				</control>
-				<!-- TV Seasons results -->
-				<control type="group" id="139">
+
+				<control type="group" id="139"><!-- TV Seasons results -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1200</width>
@@ -595,8 +587,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -641,8 +632,8 @@
 						</focusedlayout>
 					</control>
 				</control>
-				<!-- TV Episodes results -->
-				<control type="group" id="149">
+
+				<control type="group" id="149"><!-- TV Episodes results -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
@@ -722,8 +713,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -776,8 +766,8 @@
 						</focusedlayout>
 					</control>
 				</control>
-				<!-- Music video search results -->
-				<control type="group" id="159">
+
+				<control type="group" id="159"><!-- Music video search results -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1200</width>
@@ -867,8 +857,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -1003,8 +992,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -1049,8 +1037,8 @@
 						</focusedlayout>
 					</control>
 				</control>
-				<!-- Music albums search results -->
-				<control type="group" id="179">
+
+				<control type="group" id="179"><!-- Music albums search results -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1200</width>
@@ -1122,8 +1110,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -1168,8 +1155,8 @@
 						</focusedlayout>
 					</control>
 				</control>
-				<!-- Music songs search results -->
-				<control type="group" id="189">
+
+				<control type="group" id="189"><!-- Music songs search results -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1200</width>
@@ -1251,8 +1238,7 @@
 							</control>
 						</itemlayout>
 						<focusedlayout width="600" height="170">
-							<!-- Focused search result background-->
-							<control type="image">
+							<control type="image"><!-- Focused search result background-->
 								<posx>0</posx>
 								<posy>5</posy>
 								<width>600</width>
@@ -1311,8 +1297,7 @@
 			<control type="group">
 				<visible>!IsEmpty(Control.GetLabel(190))</visible>
 				<include>fadebackground</include>
-				<!-- Searching label -->
-				<control type="label" id="190">
+				<control type="label" id="190"><!-- Searching label -->
 					<posx>660</posx>
 					<posy>225</posy>
 					<width>800</width>
@@ -1322,29 +1307,25 @@
 					<align>right</align>
 					<aligny>center</aligny>
 				</control>
-				<!-- Search categories -->
-				<control type="label" id="191">
+				<control type="label" id="191"><!-- Search categories -->
 					<posx>660</posx>
 					<posy>225</posy>
 					<width>800</width>
 					<height>25</height>
 					<label>-</label>
 					<font>font22</font>
-					<align>left</align>
 					<aligny>center</aligny>
 				</control>
-				<control type="image">
-					<description>Busy animation</description>
+				<control type="image"><!-- Busy animation -->
 					<posx>548</posx>
 					<posy>297</posy>
 					<width>128</width>
 					<height>128</height>
 					<texture>busy.png</texture>
 					<aspectratio>keep</aspectratio>
-					<animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="true">conditional</animation>
+					<animation effect="rotate" start="360" end="0" center="auto" time="5400" loop="true" condition="true">conditional</animation>
 				</control>
-				<control type="label">
-					<description>Please wait</description>
+				<control type="label"><!-- Busy text -->
 					<posx>283</posx>
 					<posy>437</posy>
 					<width>708</width>
@@ -1352,7 +1333,7 @@
 					<font>font28</font>
 					<align>center</align>
 					<aligny>top</aligny>
-					<label>20186</label>
+					<label>$LOCALIZE[20186]</label>
 				</control>
 			</control>
 		</control>

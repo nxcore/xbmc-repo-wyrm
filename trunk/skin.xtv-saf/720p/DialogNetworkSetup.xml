@@ -22,8 +22,7 @@
 			<posx>17</posx>
 			<posy>-2</posy>
 			<width>743</width>
-			<align>left</align>
-			<label>1007</label>
+			<label>$LOCALIZE[1007]</label>
 			<font>font12</font>
 		</control>
 		<control type="spincontrolex" id="10">
@@ -36,7 +35,7 @@
 			<textoffsetx>12</textoffsetx>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
-			<label>1008</label>
+			<label>$LOCALIZE[1008]</label>
 			<onup>18</onup>
 			<ondown>11</ondown>
 			<onleft>10</onleft>
@@ -65,7 +64,7 @@
 			<height>40</height>
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
-			<label>1024</label>
+			<label>$LOCALIZE[1024]</label>
 			<align>center</align>
 			<aligny>center</aligny>
 			<onup>10</onup>
@@ -97,7 +96,7 @@
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
 			<aligny>center</aligny>
-			<label>1013</label>
+			<label>$LOCALIZE[1013]</label>
 			<onup>16</onup>
 			<onleft>13</onleft>
 			<onright>13</onright>
@@ -112,7 +111,7 @@
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
 			<aligny>center</aligny>
-			<label>1014</label>
+			<label>$LOCALIZE[1014]</label>
 			<onup>13</onup>
 			<onleft>14</onleft>
 			<onright>14</onright>
@@ -127,7 +126,7 @@
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
 			<aligny>center</aligny>
-			<label>15052</label>
+			<label>$LOCALIZE[15052]</label>
 			<onup>14</onup>
 			<onleft>15</onleft>
 			<onright>15</onright>
@@ -143,7 +142,7 @@
 			<textoffsetx>10</textoffsetx>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>186</label>
+			<label>$LOCALIZE[186]</label>
 			<onup>15</onup>
 			<onleft>19</onleft>
 			<onright>19</onright>
@@ -159,7 +158,7 @@
 			<textoffsetx>10</textoffsetx>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>222</label>
+			<label>$LOCALIZE[222]</label>
 			<onup>15</onup>
 			<onleft>18</onleft>
 			<onright>18</onright>

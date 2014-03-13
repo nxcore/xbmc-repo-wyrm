@@ -25,7 +25,7 @@
 				<width>867</width>
 				<align>center</align>
 				<font>font13</font>
-				<label>21421</label>
+				<label>$LOCALIZE[21421]</label>
 			</control>
 			<control type="image">
 				<description>separator image</description>
@@ -41,7 +41,7 @@
 				<posy>62</posy>
 				<width>849</width>
 				<font>font12</font>
-				<label>21422</label>
+				<label>$LOCALIZE[21422]</label>
 			</control>
 			<control type="group" id="9001">
 				<control type="spincontrolex" id="15">
@@ -98,7 +98,7 @@
 					<textoffsetx>12</textoffsetx>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>186</label>
+					<label>$LOCALIZE[186]</label>
 					<onup>17</onup>
 					<onleft>19</onleft>
 					<onright>20</onright>
@@ -114,7 +114,7 @@
 					<textoffsetx>12</textoffsetx>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>1024</label>
+					<label>$LOCALIZE[1024]</label>
 					<onup>17</onup>
 					<onleft>18</onleft>
 					<onright>19</onright>
@@ -130,7 +130,7 @@
 					<textoffsetx>12</textoffsetx>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>222</label>
+					<label>$LOCALIZE[222]</label>
 					<onup>17</onup>
 					<onleft>20</onleft>
 					<onright>18</onright>

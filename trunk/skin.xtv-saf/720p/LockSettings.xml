@@ -98,7 +98,7 @@
 				<height>43</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>186</label>
+				<label>$LOCALIZE[186]</label>
 				<onleft>29</onleft>
 				<onright>29</onright>
 				<onup>5</onup>
@@ -112,7 +112,7 @@
 				<height>43</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>222</label>
+				<label>$LOCALIZE[222]</label>
 				<onleft>28</onleft>
 				<onright>28</onright>
 				<onup>5</onup>

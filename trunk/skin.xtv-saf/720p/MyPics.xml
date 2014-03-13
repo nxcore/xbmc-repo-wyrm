@@ -25,7 +25,7 @@
 				<description>Heading label</description>
 				<width min="60" max="250">auto</width>
 				<height>37</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font20</font>
 				<aligny>center</aligny>
 			</control>
@@ -90,7 +90,7 @@
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<label>100</label>
+					<label>$LOCALIZE[100]</label>
 					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="radiobutton" id="1198">
@@ -122,7 +122,7 @@
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<label>103</label>
+					<label>$LOCALIZE[103]</label>
 					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="togglebutton" id="4">
@@ -139,7 +139,7 @@
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<label>587</label>
+					<label>$LOCALIZE[587]</label>
 					<disabledcolor>disabled-text</disabledcolor>
 					<textwidth>340</textwidth>
 					<textoffsetx>10</textoffsetx>
@@ -149,7 +149,7 @@
 					<width>376</width>
 					<height>48</height>
 					<textoffsetx>10</textoffsetx>
-					<label>108</label>
+					<label>$LOCALIZE[108]</label>
 					<font>font11</font>
 				</control>
 				<control type="button" id="7">
@@ -166,7 +166,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<label>13319</label>
+					<label>$LOCALIZE[13319]</label>
 					<radioposx>330</radioposx>
 				</control>
 				<control type="button" id="1200">

@@ -16,7 +16,7 @@
 			<posy>25</posy>
 			<width>309</width>
 			<height>31</height>
-			<label>31556</label>
+			<label>$LOCALIZE[31556]</label>
 			<font>font20</font>
 		</control>
 		<control type="label">
@@ -36,7 +36,7 @@
 				<posy>112</posy>
 				<width>320</width>
 				<height>56</height>
-				<label>31801</label>
+				<label>$LOCALIZE[31801]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,startup)</onfocus>
 				<onup>988</onup>
@@ -52,7 +52,7 @@
 				<posy>166</posy>
 				<width>320</width>
 				<height>56</height>
-				<label>31802</label>
+				<label>$LOCALIZE[31802]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,general)</onfocus>
 				<onup>981</onup>
@@ -68,7 +68,7 @@
 				<posy>220</posy>
 				<width>320</width>
 				<height>56</height>
-				<label>31803</label>
+				<label>$LOCALIZE[31803]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,home)</onfocus>
 				<onup>982</onup>
@@ -84,7 +84,7 @@
 				<posy>273</posy>
 				<width>320</width>
 				<height>56</height>
-				<label>31804</label>
+				<label>$LOCALIZE[31804]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,background)</onfocus>
 				<onup>983</onup>
@@ -100,7 +100,7 @@
 				<posy>327</posy>
 				<width>320</width>
 				<height>56</height>
-				<label>31805</label>
+				<label>$LOCALIZE[31805]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,sources)</onfocus>
 				<onup>984</onup>
@@ -116,7 +116,7 @@
 				<width>320</width>
 				<height>56</height>
 				<font>font12</font>
-				<label>31806</label>
+				<label>$LOCALIZE[31806]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,custom)</onfocus>
 				<onclick>ActivateWindow(1153)</onclick>
@@ -152,7 +152,7 @@
 				<posy>435</posy>
 				<width>320</width>
 				<height>56</height>
-				<label>31807</label>
+				<label>$LOCALIZE[31807]</label>
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,support)</onfocus>
 				<onup>987</onup>
@@ -218,7 +218,7 @@
 					<control type="radiobutton" id="110">
 						<description>Intro Video Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31850</label>
+						<label>$LOCALIZE[31850]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(intro-vid)</onclick>
 						<onclick>Skin.Reset(startup-playlist)</onclick>
@@ -240,7 +240,7 @@
 					<control type="radiobutton" id="112">
 						<description>Startup Playlist toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31852</label>
+						<label>$LOCALIZE[31852]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
 						<onclick>Skin.Reset(intro-vid)</onclick>
@@ -361,7 +361,7 @@
 					<control type="radiobutton" id="208">
 						<description>Time On Home Screen toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31888</label>
+						<label>$LOCALIZE[31888]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-time)</onclick>
 						<selected>!Skin.HasSetting(home-time)</selected>
@@ -372,7 +372,7 @@
 					<control type="radiobutton" id="209">
 						<description>Current Weather On Home Screen toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31889</label>
+						<label>$LOCALIZE[31889]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
 						<selected>Skin.HasSetting(home-currentweather)</selected>
@@ -384,7 +384,7 @@
 					<control type="radiobutton" id="210">
 						<description>Animated Weather Icons toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31890</label>
+						<label>$LOCALIZE[31890]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
 						<selected>Skin.HasSetting(weather-animateicon)</selected>
@@ -395,7 +395,7 @@
 					<control type="button" id="211">
 						<description>Custom Homescreen Watermark Image</description>
 						<include>settings-submenu-common</include>
-						<label>31871</label>
+						<label>$LOCALIZE[31871]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetImage(custom-watermark)</onclick>
 						<aligny>center</aligny>
@@ -405,7 +405,7 @@
 					<control type="button" id="212">
 						<description>Reset Custom Homescreen Watermark Image</description>
 						<include>settings-submenu-common</include>
-						<label>31872</label>
+						<label>$LOCALIZE[31872]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-watermark)</onclick>
 						<aligny>center</aligny>
@@ -415,7 +415,7 @@
 					<control type="button" id="213">
 						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
-						<label>31656</label>
+						<label>$LOCALIZE[31656]</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-lyricpath))]</label2>
 						<onclick>Skin.SetAddon(osd-lyricpath,xbmc.python.lyrics)</onclick>
 						<aligny>center</aligny>
@@ -433,7 +433,7 @@
 					<control type="button" id="215">
 						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
-						<label>31658</label>
+						<label>$LOCALIZE[31658]</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-subscriptpath))]</label2>
 						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
 						<aligny>center</aligny>
@@ -451,7 +451,7 @@
 					<control type="radiobutton" id="217">
 						<description>Use TV Tunes</description>
 						<include>settings-submenu-common</include>
-						<label>31892</label>
+						<label>$LOCALIZE[31892]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
 						<selected>Skin.HasSetting(tv_theme)</selected>
@@ -463,7 +463,7 @@
 					<control type="button" id="218">
 						<description>TV Logo Downloader Script</description>
 						<include>settings-submenu-common</include>
-						<label>31893</label>
+						<label>$LOCALIZE[31893]</label>
 						<textwidth>785</textwidth>
 						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
@@ -545,7 +545,7 @@
 									<width>800</width>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<label>31900</label>
+									<label>$LOCALIZE[31900]</label>
 								</control>
 								<control type="label">
 									<posx>790</posx>
@@ -555,7 +555,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>
@@ -576,19 +576,19 @@
 							</focusedlayout>
 							<content>
 								<item>
-									<label>31952</label>
+									<label>$LOCALIZE[31952]</label>
 									<onclick>Skin.Reset(homemenu-horizontal)</onclick>
 									<onclick>Skin.SetBool(homemenu-vertical)</onclick>
 									<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal) + !Skin.HasSetting(homemenu-icon)]</visible>
 								</item>
 								<item>
-									<label>31951</label>
+									<label>$LOCALIZE[31951]</label>
 									<onclick>Skin.Reset(homemenu-vertical)</onclick>
 									<onclick>Skin.SetBool(homemenu-icon)</onclick>
 									<visible>Skin.HasSetting(homemenu-vertical)</visible>
 								</item>
 								<item>
-									<label>31953</label>
+									<label>$LOCALIZE[31953]</label>
 									<onclick>Skin.Reset(homemenu-icon)</onclick>
 									<onclick>Skin.SetBool(homemenu-horizontal)</onclick>
 									<visible>Skin.HasSetting(homemenu-icon)</visible>
@@ -627,19 +627,19 @@
 							</focusedlayout>
 							<content>
 								<item>
-									<label>31952</label>
+									<label>$LOCALIZE[31952]</label>
 									<onclick>Skin.Reset(homemenu-horizontal)</onclick>
 									<onclick>Skin.SetBool(homemenu-icon)</onclick>
 									<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal) + !Skin.HasSetting(homemenu-icon)]</visible>
 								</item>
 								<item>
-									<label>31953</label>
+									<label>$LOCALIZE[31953]</label>
 									<onclick>Skin.Reset(homemenu-icon)</onclick>
 									<onclick>Skin.SetBool(homemenu-vertical)</onclick>
 									<visible>Skin.HasSetting(homemenu-icon)</visible>
 								</item>
 								<item>
-									<label>31951</label>
+									<label>$LOCALIZE[31951]</label>
 									<onclick>Skin.Reset(homemenu-vertical)</onclick>
 									<onclick>Skin.SetBool(homemenu-horizontal)</onclick>
 									<visible>Skin.HasSetting(homemenu-vertical)</visible>
@@ -650,7 +650,7 @@
 					<control type="radiobutton" id="303">
 						<description>Video On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31901</label>
+						<label>$LOCALIZE[31901]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-video)</onclick>
 						<selected>!Skin.HasSetting(home-video)</selected>
@@ -661,7 +661,7 @@
 					<control type="radiobutton" id="304">
 						<description>Movies On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31902</label>
+						<label>$LOCALIZE[31902]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-movie)</onclick>
 						<selected>!Skin.HasSetting(home-movie)</selected>
@@ -672,7 +672,7 @@
 					<control type="radiobutton" id="305">
 						<description>TV Shows On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31903</label>
+						<label>$LOCALIZE[31903]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-tv)</onclick>
 						<selected>!Skin.HasSetting(home-tv)</selected>
@@ -683,7 +683,7 @@
 					<control type="radiobutton" id="306">
 						<description>Music Videos On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31904</label>
+						<label>$LOCALIZE[31904]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
 						<selected>Skin.HasSetting(home-musicvideo)</selected>
@@ -694,7 +694,7 @@
 					<control type="radiobutton" id="307">
 						<description>Music On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31905</label>
+						<label>$LOCALIZE[31905]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-music)</onclick>
 						<selected>!Skin.HasSetting(home-music)</selected>
@@ -705,7 +705,7 @@
 					<control type="radiobutton" id="308">
 						<description>Addons On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31906</label>
+						<label>$LOCALIZE[31906]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-programs)</onclick>
 						<selected>!Skin.HasSetting(home-programs)</selected>
@@ -716,7 +716,7 @@
 					<control type="radiobutton" id="309">
 						<description>Pictures On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31907</label>
+						<label>$LOCALIZE[31907]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-photos)</onclick>
 						<selected>Skin.HasSetting(home-photos)</selected>
@@ -727,7 +727,7 @@
 					<control type="radiobutton" id="310">
 						<description>Profiles On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31908</label>
+						<label>$LOCALIZE[31908]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-profile)</onclick>
 						<selected>Skin.HasSetting(home-profile)</selected>
@@ -738,7 +738,7 @@
 					<control type="radiobutton" id="311">
 						<description>Weather On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31909</label>
+						<label>$LOCALIZE[31909]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-weather)</onclick>
 						<selected>Skin.HasSetting(home-weather)</selected>
@@ -750,7 +750,7 @@
 					<control type="radiobutton" id="312">
 						<description>Favorites On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31910</label>
+						<label>$LOCALIZE[31910]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-favorites)</onclick>
 						<selected>Skin.HasSetting(home-favorites)</selected>
@@ -761,7 +761,7 @@
 					<control type="radiobutton" id="313">
 						<description>Search On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31911</label>
+						<label>$LOCALIZE[31911]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-search)</onclick>
 						<selected>Skin.HasSetting(home-search)</selected>
@@ -772,7 +772,7 @@
 					<control type="radiobutton" id="314">
 						<description>Play Disc On Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31912</label>
+						<label>$LOCALIZE[31912]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
 						<selected>Skin.HasSetting(home-playdisc)</selected>
@@ -783,7 +783,7 @@
 					<control type="radiobutton" id="315">
 						<description>Shutdown From Home toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31913</label>
+						<label>$LOCALIZE[31913]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
 						<selected>!Skin.HasSetting(home-shutdown)</selected>
@@ -832,7 +832,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>
@@ -854,37 +854,37 @@
 							<content>
 								<item id="1">
 									<description>Quit</description>
-									<label>13009</label>
+									<label>$LOCALIZE[13009]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[31558])</onclick>
 									<visible>IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])</visible>
 								</item>
 								<item id="2">
 									<description>Shutdown Menu</description>
-									<label>31558</label>
+									<label>$LOCALIZE[31558]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13005])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 								</item>
 								<item id="3">
 									<description>Powerdown</description>
-									<label>13005</label>
+									<label>$LOCALIZE[13005]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13010])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
 								</item>
 								<item id="4">
 									<description>Hibernate</description>
-									<label>13010</label>
+									<label>$LOCALIZE[13010]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13011])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
 								</item>
 								<item id="5">
 									<description>Suspend</description>
-									<label>13011</label>
+									<label>$LOCALIZE[13011]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13013])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
 								</item>
 								<item id="6">
 									<description>Reboot</description>
-									<label>13013</label>
+									<label>$LOCALIZE[13013]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13009])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
 								</item>
@@ -923,37 +923,37 @@
 							<content>
 								<item id="1">
 									<description>Quit</description>
-									<label>13009</label>
+									<label>$LOCALIZE[13009]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13013])</onclick>
 									<visible>IsEmpty(Skin.String(home-quitaction)) | StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])</visible>
 								</item>
 								<item id="2">
 									<description>Reboot</description>
-									<label>13013</label>
+									<label>$LOCALIZE[13013]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13011])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])</visible>
 								</item>
 								<item id="3">
 									<description>Suspend</description>
-									<label>13011</label>
+									<label>$LOCALIZE[13011]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13010])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])</visible>
 								</item>
 								<item id="4">
 									<description>Hibernate</description>
-									<label>13010</label>
+									<label>$LOCALIZE[13010]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13005])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])</visible>
 								</item>
 								<item id="5">
 									<description>Powerdown</description>
-									<label>13005</label>
+									<label>$LOCALIZE[13005]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[31558])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])</visible>
 								</item>
 								<item id="6">
 									<description>Shutdown Menu</description>
-									<label>31558</label>
+									<label>$LOCALIZE[31558]</label>
 									<onclick>Skin.SetString(home-quitaction,$LOCALIZE[13009])</onclick>
 									<visible>StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])</visible>
 								</item>
@@ -1007,7 +1007,7 @@
 					<control type="button" id="402">
 						<description>Custom Background Button</description>
 						<include>settings-submenu-common</include>
-						<label>31860</label>
+						<label>$LOCALIZE[31860]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetImage(custom-background)</onclick>
 						<aligny>center</aligny>
@@ -1017,7 +1017,7 @@
 					<control type="button" id="403">
 						<description>Reset Custom Background Button</description>
 						<include>settings-submenu-common</include>
-						<label>31861</label>
+						<label>$LOCALIZE[31861]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-background)</onclick>
 						<aligny>center</aligny>
@@ -1027,7 +1027,7 @@
 					<control type="radiobutton" id="404">
 						<description>Background Fanart Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31863</label>
+						<label>$LOCALIZE[31863]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-fanart)</onclick>
 						<selected>Skin.HasSetting(background-fanart)</selected>
@@ -1038,7 +1038,7 @@
 					<control type="radiobutton" id="405">
 						<description>Background ExtraFanart Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31864</label>
+						<label>$LOCALIZE[31864]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-extrafanart)</onclick>
 						<selected>Skin.HasSetting(background-extrafanart)</selected>
@@ -1050,7 +1050,7 @@
 					<control type="radiobutton" id="406">
 						<description>Media In Background Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31862</label>
+						<label>$LOCALIZE[31862]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
 						<selected>Skin.HasSetting(HomeViewToggle)</selected>
@@ -1061,7 +1061,7 @@
 					<control type="radiobutton" id="407">
 						<description>Background Artistslideshow Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31865</label>
+						<label>$LOCALIZE[31865]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
 						<selected>Skin.HasSetting(background-slideshow)</selected>
@@ -1073,7 +1073,7 @@
 					<control type="button" id="408">
 						<description>Custom Weather Background Button</description>
 						<include>settings-submenu-common</include>
-						<label>31866</label>
+						<label>$LOCALIZE[31866]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetPath(custom-weatherbackgrounds)</onclick>
 						<aligny>center</aligny>
@@ -1083,7 +1083,7 @@
 					<control type="button" id="409">
 						<description>Reset Custom Weather Background Button</description>
 						<include>settings-submenu-common</include>
-						<label>31867</label>
+						<label>$LOCALIZE[31867]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-weatherbackgrounds)</onclick>
 						<aligny>center</aligny>
@@ -1131,7 +1131,7 @@
 									<align>right</align>
 									<aligny>center</aligny>
 									<font>font12</font>
-									<info>ListItem.Label</info>
+									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
 									<posx>806</posx>
@@ -1152,19 +1152,19 @@
 							</focusedlayout>
 							<content>
 								<item id="1">
-									<label>391</label>
+									<label>$LOCALIZE[391]</label>
 									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
 									<onclick>Skin.SetBool(background-visibiltymed)</onclick>
 									<visible>!Skin.HasSetting(background-visibiltymed) + !Skin.HasSetting(background-visibiltyhigh)</visible>
 								</item>
 								<item id="2">
-									<label>392</label>
+									<label>$LOCALIZE[392]</label>
 									<onclick>Skin.Reset(background-visibiltymed)</onclick>
 									<onclick>Skin.SetBool(background-visibiltyhigh)</onclick>
 									<visible>Skin.HasSetting(background-visibiltymed)</visible>
 								</item>
 								<item id="3">
-									<label>393</label>
+									<label>$LOCALIZE[393]</label>
 									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
 									<onclick>Skin.Reset(background-visibiltymed)</onclick>
 									<visible>Skin.HasSetting(background-visibiltyhigh)</visible>
@@ -1203,19 +1203,19 @@
 							</focusedlayout>
 							<content>
 								<item id="1">
-									<label>391</label>
+									<label>$LOCALIZE[391]</label>
 									<onclick>Skin.Reset(background-visibiltymed)</onclick>
 									<onclick>Skin.SetBool(background-visibiltyhigh)</onclick>
 									<visible>!Skin.HasSetting(background-visibiltymed) + !Skin.HasSetting(background-visibiltyhigh)</visible>
 								</item>
 								<item id="3">
-									<label>393</label>
+									<label>$LOCALIZE[393]</label>
 									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
 									<onclick>Skin.SetBool(background-visibiltymed)</onclick>
 									<visible>Skin.HasSetting(background-visibiltyhigh)</visible>
 								</item>
 								<item id="2">
-									<label>392</label>
+									<label>$LOCALIZE[392]</label>
 									<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
 									<onclick>Skin.Reset(background-visibiltymed)</onclick>
 									<visible>Skin.HasSetting(background-visibiltymed)</visible>
@@ -1226,7 +1226,7 @@
 					<control type="radiobutton" id="413">
 						<description>Use DVD case Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31869</label>
+						<label>$LOCALIZE[31869]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DVDcase)</onclick>
 						<selected>Skin.HasSetting(DVDcase)</selected>
@@ -1237,7 +1237,7 @@
 					<control type="radiobutton" id="414">
 						<description>Use CD case Toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31870</label>
+						<label>$LOCALIZE[31870]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(CDcase)</onclick>
 						<selected>Skin.HasSetting(CDcase)</selected>
@@ -1292,7 +1292,7 @@
 					<control type="button" id="512">
 						<description>Set Movie library entry point</description>
 						<include>settings-submenu-common</include>
-						<label>31920</label>
+						<label>$LOCALIZE[31920]</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1303,7 +1303,7 @@
 					<control type="button" id="516">
 						<description>Set TV library entry point</description>
 						<include>settings-submenu-common</include>
-						<label>31921</label>
+						<label>$LOCALIZE[31921]</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1314,7 +1314,7 @@
 					<control type="button" id="520">
 						<description>Set Music Video library entry point</description>
 						<include>settings-submenu-common</include>
-						<label>31922</label>
+						<label>$LOCALIZE[31922]</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1325,7 +1325,7 @@
 					<control type="button" id="524">
 						<description>Set Music library entry point</description>
 						<include>settings-submenu-common</include>
-						<label>31923</label>
+						<label>$LOCALIZE[31923]</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
@@ -1393,7 +1393,7 @@
 					<control type="button" id="802">
 						<description>XBMC Log Uploader Script</description>
 						<include>settings-submenu-common</include>
-						<label>31930</label>
+						<label>$LOCALIZE[31930]</label>
 						<textwidth>750</textwidth>
 						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
 						<enable>System.HasAddon(script.xbmc.debug.log) + system.getbool(debug.showloginfo)</enable>
@@ -1403,7 +1403,7 @@
 					<control type="radiobutton" id="804">
 						<description>System Debug toggle</description>
 						<include>settings-submenu-common</include>
-						<label>20191</label>
+						<label>$LOCALIZE[20191]</label>
 						<textwidth>750</textwidth>
 						<onclick>XBMC.ToggleDebug</onclick>
 						<selected>system.getbool(debug.showloginfo)</selected>
@@ -1420,7 +1420,7 @@
 					<control type="radiobutton" id="806">
 						<description>Show skin debug grid toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31933</label>
+						<label>$LOCALIZE[31933]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
 						<selected>Skin.HasSetting(DebugGrid)</selected>
@@ -1431,7 +1431,7 @@
 					<control type="radiobutton" id="807">
 						<description>Show Skin Debug Info toggle</description>
 						<include>settings-submenu-common</include>
-						<label>31934</label>
+						<label>$LOCALIZE[31934]</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
 						<selected>Skin.HasSetting(DebugInfo)</selected>

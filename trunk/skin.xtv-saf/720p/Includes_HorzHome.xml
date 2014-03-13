@@ -420,7 +420,7 @@
 					<content>
 						<item id="0"><!-- Movies -->
 							<visible>!Skin.HasSetting(home-movie)</visible>
-							<label>31026</label>
+							<label>$LOCALIZE[31026]</label>
 							<label2>$LOCALIZE[20338]</label2>
 							<onclick>$VAR[MovieLibEntry]</onclick>
 						</item>
@@ -455,7 +455,7 @@
 							<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
 						</item>
 						<item id="6"><!-- Video addons -->
-							<label>24001</label>
+							<label>$LOCALIZE[24001]</label>
 							<label2>$LOCALIZE[20338]</label2>
 							<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 						</item>
@@ -571,7 +571,7 @@
 						</item>
 						<item id="1"><!-- TV shows library -->
 							<visible>!Skin.HasSetting(home-tv)</visible>
-							<label>31027</label>
+							<label>$LOCALIZE[31027]</label>
 							<label2>$LOCALIZE[19020]</label2>
 							<onclick>$VAR[TVLibEntry]</onclick>
 						</item>
@@ -606,7 +606,7 @@
 							<onclick>$INFO[Skin.String(CustomTVShow.5.Path)]</onclick>
 						</item>
 						<item id="7"><!-- Video addons -->
-							<label>24001</label>
+							<label>$LOCALIZE[24001]</label>
 							<label2>$LOCALIZE[19020]</label2>
 							<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 						</item>
@@ -716,13 +716,13 @@
 					<content>
 						<item id="0"><!-- Music -->
 							<visible>!Skin.HasSetting(home-music)</visible>
-							<label>2</label>
+							<label>$LOCALIZE[2]</label>
 							<label2>$LOCALIZE[2]</label2>
 							<onclick>$VAR[MusicLibEntry]</onclick>
 						</item>
 						<item id="1"><!-- Music videos -->
 							<visible>Skin.HasSetting(home-musicvideo)</visible>
-							<label>31028</label>
+							<label>$LOCALIZE[31028]</label>
 							<label2>$LOCALIZE[2]</label2>
 							<onclick>$VAR[MusicVideoLibEntry]</onclick>
 						</item>
@@ -757,7 +757,7 @@
 							<onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
 						</item>
 						<item id="7"><!-- Music addons -->
-							<label>24001</label>
+							<label>$LOCALIZE[24001]</label>
 							<label2>$LOCALIZE[2]</label2>
 							<onclick>$VAR[MusicAddonEntry]</onclick>
 						</item>
@@ -980,27 +980,27 @@
 							<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
 						</item>
 						<item id="5"><!-- Video addons -->
-							<label>157</label>
+							<label>$LOCALIZE[157]</label>
 							<label2>$LOCALIZE[24001]</label2>
 							<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 						</item>
 						<item id="6"><!-- Music addons -->
-							<label>2</label>
+							<label>$LOCALIZE[2]</label>
 							<label2>$LOCALIZE[24001]</label2>
 							<onclick>$VAR[MusicAddonEntry]</onclick>
 						</item>
 						<item id="7"><!-- Picture addons -->
-							<label>1</label>
+							<label>$LOCALIZE[1]</label>
 							<label2>$LOCALIZE[24001]</label2>
 							<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
 						</item>
 						<item id="8"><!-- Program addons -->
-							<label>0</label>
+							<label>$LOCALIZE[0]</label>
 							<label2>$LOCALIZE[24001]</label2>
 							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 						</item>
 						<item id="9"><!-- Addon browser -->
-							<label>21452</label>
+							<label>$LOCALIZE[21452]</label>
 							<label2>$LOCALIZE[24001]</label2>
 							<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
 						</item>

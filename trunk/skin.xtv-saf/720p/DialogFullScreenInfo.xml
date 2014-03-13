@@ -191,7 +191,6 @@
 				<height>48</height>
 				<textcolor>FF00AAFF</textcolor>
 				<label>$INFO[VideoPlayer.ChannelNumber]</label>
-				<align>left</align>
 				<aligny>center</aligny>
 				<font>font28</font>
 			</control>
@@ -202,7 +201,6 @@
 				<width>400</width>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.ChannelName]</label>
-				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 			</control>
@@ -213,7 +211,6 @@
 				<width>475</width>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ,]</label>
-				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 			</control>
@@ -390,7 +387,6 @@
 				<posy>5</posy>
 				<width>220</width>
 				<height>31</height>
-				<align>left</align>
 				<font>font11</font>
 				<label>- $INFO[VideoPlayer.TimeRemaining] ($INFO[Player.FinishTime])</label>
 			</control>

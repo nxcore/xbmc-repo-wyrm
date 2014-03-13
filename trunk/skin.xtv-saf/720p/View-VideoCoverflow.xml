@@ -366,7 +366,7 @@
 				<font>font22</font>
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<label>31688</label>
+				<label>$LOCALIZE[31688]</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
@@ -388,7 +388,7 @@
 					<posy>681</posy>
 					<width>200</width>
 					<height>25</height>
-					<info>ListItem.StarRating</info>
+					<texture>$INFO[ListItem.StarRating]</texture>
 					<align>right</align>
 					<colordiffuse>StarDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.StarRating)</visible>

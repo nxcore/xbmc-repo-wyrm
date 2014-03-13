@@ -19,7 +19,7 @@
 			<font>font20</font>
 			<label>$VAR[PVRHeading]</label>
 		</control>
-		
+
 		<!-- Current Icon/Channel playing -->
 		<control type="group">
 			<control type="grouplist">
@@ -72,9 +72,9 @@
 						<align>center</align>
 						<aligny>top</aligny>
 					</control>
-				</control>	
+				</control>
 				<control type="label">
-					<info>ListItem.Title</info>
+					<label>$INFO[ListItem.Title]</label>
 					<width>628</width>
 					<height>34</height>
 					<font>font18</font>
@@ -104,7 +104,7 @@
 					<height>214</height>
 					<font>font12</font>
 					<align>left</align>
-					<info>ListItem.Plot</info>
+					<label>$INFO[ListItem.Plot]</label>
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="image">
@@ -115,7 +115,7 @@
 				</control>
 			</control>
 		</control>
-			
+
 		<control type="group" id="50">
 			<include>PVRTVListView</include>
 			<include>PVRRadioListView</include>
@@ -126,7 +126,7 @@
 			<include>PVRNowNextListView</include>
 			<include>PVRSearchListView</include>
 		</control>
-		
+
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>
@@ -155,7 +155,7 @@
 					<width>362</width>
 					<height>50</height>
 					<font>font12</font>
-					<label>19023</label>
+					<label>$LOCALIZE[19023]</label>
 					<textoffsetx>20</textoffsetx>
 				</control>
 				<control type="button" id="33">
@@ -165,7 +165,7 @@
 					<width>362</width>
 					<height>50</height>
 					<font>font12</font>
-					<label>19024</label>
+					<label>$LOCALIZE[19024]</label>
 					<textoffsetx>20</textoffsetx>
 				</control>
 				<control type="button" id="31">
@@ -184,7 +184,7 @@
 					<posy>150</posy>
 					<width>362</width>
 					<height>50</height>
-					<label>19163</label>
+					<label>$LOCALIZE[19163]</label>
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
 				</control>
@@ -194,7 +194,7 @@
 					<posy>200</posy>
 					<width>362</width>
 					<height>50</height>
-					<label>19040</label>
+					<label>$LOCALIZE[19040]</label>
 					<textoffsetx>20</textoffsetx>
 				</control>
 				<control type="button" id="36">
@@ -203,7 +203,7 @@
 					<posy>250</posy>
 					<width>362</width>
 					<height>50</height>
-					<label>137</label>
+					<label>$LOCALIZE[137]</label>
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
 				</control>

@@ -21,7 +21,6 @@
 			<height>62</height>
 			<font>font18</font>
 			<label>$LOCALIZE[35000] $LOCALIZE[10004]</label>
-			<align>left</align>
 			<aligny>center</aligny>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
@@ -44,8 +43,7 @@
 			<width>796</width>
 			<height>50</height>
 			<font>font18</font>
-			<label>35004</label>
-			<align>left</align>
+			<label>$LOCALIZE[35004]</label>
 			<aligny>center</aligny>
 		</control>
 		<control type="button" id="7">
@@ -98,7 +96,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<label>186</label>
+				<label>$LOCALIZE[186]</label>
 				<onleft>50</onleft>
 				<onright>29</onright>
 				<onup>5</onup>
@@ -113,7 +111,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<label>222</label>
+				<label>$LOCALIZE[222]</label>
 				<onleft>28</onleft>
 				<onright>50</onright>
 				<onup>5</onup>
@@ -128,7 +126,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<label>409</label>
+				<label>$LOCALIZE[409]</label>
 				<onleft>29</onleft>
 				<onright>28</onright>
 				<onup>5</onup>

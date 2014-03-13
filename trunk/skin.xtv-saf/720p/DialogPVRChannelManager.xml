@@ -70,7 +70,6 @@
 						<width>454</width>
 						<height>24</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
@@ -82,7 +81,6 @@
 						<width>454</width>
 						<height>24</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
@@ -118,7 +116,6 @@
 						<width>454</width>
 						<height>24</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
@@ -130,7 +127,6 @@
 						<width>454</width>
 						<height>24</height>
 						<font>font12</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
@@ -150,7 +146,6 @@
 						<width>500</width>
 						<height>24</height>
 						<font>font11</font>
-						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
@@ -170,7 +165,6 @@
 					<height>24</height>
 					<font>font13</font>
 					<label>[I]$LOCALIZE[31702][/I]</label>
-					<align>left</align>
 					<aligny>center</aligny>
 				</control>
 				<control type="radiobutton" id ="7">
@@ -181,9 +175,8 @@
 					<height>50</height>
 					<font>font11</font>
 					<focusedcolor>button-text</focusedcolor>
-					<align>left</align>
 					<aligny>center</aligny>
-					<label>19074</label>
+					<label>$LOCALIZE[19074]</label>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>540</radioposx>
 					<onleft>20</onleft>
@@ -199,7 +192,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<focusedcolor>button-text</focusedcolor>
-					<align>left</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[19201] </label>
 					<textwidth>538</textwidth>
@@ -216,7 +208,7 @@
 					<width>580</width>
 					<height>50</height>
 					<font>font11</font>
-					<label>19202</label>
+					<label>$LOCALIZE[19202]</label>
 					<textoffsetx>18</textoffsetx>
 					<onleft>20</onleft>
 					<onright>9</onright>
@@ -230,7 +222,7 @@
 					<width>28</width>
 					<height>28</height>
 					<aspectratio>keep</aspectratio>
-					<info>ListItem.Property(Icon)</info>
+					<texture>$INFO[ListItem.Property(Icon)]</texture>
 				</control>
 				<control type="radiobutton" id ="12">
 					<description>EPG activated</description>
@@ -240,9 +232,8 @@
 					<height>50</height>
 					<font>font11</font>
 					<focusedcolor>button-text</focusedcolor>
-					<align>left</align>
 					<aligny>center</aligny>
-					<label>19206</label>
+					<label>$LOCALIZE[19206]</label>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>540</radioposx>
 					<onleft>20</onleft>
@@ -257,7 +248,7 @@
 					<width>580</width>
 					<height>50</height>
 					<font>font11</font>
-					<label>19200</label>
+					<label>$LOCALIZE[19200]</label>
 					<onright>13</onright>
 					<onleft>20</onleft>
 					<onup>12</onup>
@@ -271,9 +262,8 @@
 					<height>50</height>
 					<font>font11</font>
 					<focusedcolor>button-text</focusedcolor>
-					<align>left</align>
 					<aligny>center</aligny>
-					<label>19267</label>
+					<label>$LOCALIZE[19267]</label>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>540</radioposx>
 					<onleft>20</onleft>
@@ -293,7 +283,6 @@
 					<height>24</height>
 					<font>font13</font>
 					<label>[I]$LOCALIZE[31706][/I]</label>
-					<align>left</align>
 					<aligny>center</aligny>
 				</control>
 				<control type="button" id ="30">
@@ -305,7 +294,7 @@
 					<font>font11</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>19205</label>
+					<label>$LOCALIZE[19205]</label>
 					<onleft>20</onleft>
 					<onright>34</onright>
 					<onup>14</onup>
@@ -321,7 +310,7 @@
 					<visible>IsEmpty(Window.Property(IsRadio))</visible>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>19024</label>
+					<label>$LOCALIZE[19024]</label>
 					<onleft>30</onleft>
 					<onright>34</onright>
 					<onup>14</onup>
@@ -337,7 +326,7 @@
 					<visible>!IsEmpty(Window.Property(IsRadio))</visible>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>19023</label>
+					<label>$LOCALIZE[19023]</label>
 					<onleft>30</onleft>
 					<onright>34</onright>
 					<onup>14</onup>
@@ -352,7 +341,7 @@
 					<font>font11</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>19204</label>
+					<label>$LOCALIZE[19204]</label>
 					<onleft>20</onleft>
 					<onright>33</onright>
 					<onup>30</onup>
@@ -367,7 +356,7 @@
 					<font>font11</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>19203</label>
+					<label>$LOCALIZE[19203]</label>
 					<onleft>20</onleft>
 					<onright>32</onright>
 					<onup>33</onup>
@@ -382,7 +371,7 @@
 					<font>font11</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>19211</label>
+					<label>$LOCALIZE[19211]</label>
 					<onleft>31</onleft>
 					<onright>32</onright>
 					<onup>33</onup>
@@ -399,7 +388,7 @@
 				<posy>0</posy>
 				<width>300</width>
 				<height>50</height>
-				<label>186</label>
+				<label>$LOCALIZE[186]</label>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -414,7 +403,7 @@
 				<posy>0</posy>
 				<width>300</width>
 				<height>50</height>
-				<label>14070</label>
+				<label>$LOCALIZE[14070]</label>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -429,7 +418,7 @@
 				<posy>0</posy>
 				<width>300</width>
 				<height>50</height>
-				<label>222</label>
+				<label>$LOCALIZE[222]</label>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>

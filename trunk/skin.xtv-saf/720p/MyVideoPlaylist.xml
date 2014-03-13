@@ -20,9 +20,9 @@
 			<font>font18</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
-		
+
 		<include>ListView</include>
-		
+
 		<control type="videowindow">
 			<posx>53</posx>
 			<posy>125</posy>
@@ -30,7 +30,7 @@
 			<height>437</height>
 			<aspectratio>keep</aspectratio>
 		</control>
-		
+
 		<control type="group">
 			<visible>Player.HasVideo</visible>
 			<control type="label">
@@ -40,7 +40,7 @@
 				<width>619</width>
 				<height>30</height>
 				<font>font12</font>
-				<info>VideoPlayer.Title</info>
+				<label>$INFO[VideoPlayer.Title]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="progress">
@@ -89,7 +89,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>191</label>
+					<label>$LOCALIZE[191]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -103,7 +103,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>13319</label>
+					<label>$LOCALIZE[13319]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -132,7 +132,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>190</label>
+					<label>$LOCALIZE[190]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -146,8 +146,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>192</label>
-					<label>31011</label>
+					<label>$LOCALIZE[192]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -167,7 +166,7 @@
 					<onup>22</onup>
 					<ondown>20</ondown>
 					<onclick>ActivateWindow(playercontrols)</onclick>
-					<onclick>SetFocus(50)</onclick> 
+					<onclick>SetFocus(50)</onclick>
 					<enable>Player.HasAudio | Player.HasVideo</enable>
 				</control>
 			</control>
