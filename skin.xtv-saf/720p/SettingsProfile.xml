@@ -17,7 +17,7 @@
 			<posy>50</posy>
 			<width>309</width>
 			<height>37</height>
-			<label>31555</label>
+			<label>$LOCALIZE[31555]</label>
 			<font>font20</font>
 		</control>
 
@@ -46,10 +46,9 @@
 					<width>504</width>
 					<height>56</height>
 					<font>font12</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>listselected-text</selectedcolor>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="56">
@@ -67,11 +66,10 @@
 					<width>447</width>
 					<height>56</height>
 					<font>font12</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>listselected-text</selectedcolor>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 		</control>
@@ -146,7 +144,7 @@
 					<posy>294</posy>
 					<width>376</width>
 					<height>50</height>
-					<label>20096</label>
+					<label>$LOCALIZE[20096]</label>
 					<font>font12</font>
 					<textoffsetx>18</textoffsetx>
 					<aligny>top</aligny>
@@ -165,7 +163,7 @@
 					<height>50</height>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>8</textoffsety>
-					<label>14061</label>
+					<label>$LOCALIZE[14061]</label>
 					<font>font12</font>
 					<aligny>top</aligny>
 					<onleft>23</onleft>
@@ -183,7 +181,7 @@
 					<height>50</height>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>8</textoffsety>
-					<label>14061</label>
+					<label>$LOCALIZE[14061]</label>
 					<font>font12</font>
 					<aligny>top</aligny>
 					<onleft>23</onleft>

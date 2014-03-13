@@ -24,10 +24,10 @@
 					<height>720</height>
 					<colordiffuse>solid-background</colordiffuse>
 					<aspectratio>stretch</aspectratio>
-					<info>Skin.String(custom-background)</info>
+					<texture>$INFO[Skin.String(custom-background)]</texture>
 					<visible>!IsEmpty(Skin.String(custom-background))</visible>
 				</control>
-				
+
 				<control type="label" id="1">
 					<description>header label</description>
 					<posx>35</posx>
@@ -60,7 +60,7 @@
 					<ondown>23</ondown>
 					<onup>23</onup>
 				</control>
-				
+
 			</control>
 		</control>
 	</controls>

@@ -122,7 +122,7 @@
 			<texture>scroll-down.png</texture>
 			<visible>Container(9000).HasNext</visible>
 		</control>
-		
+
 		<control type="list" id="9000"><!-- Home menu list -->
 			<posx>716</posx>
 			<posy>118</posy>
@@ -516,7 +516,6 @@
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).ActualIcon]</texture>
-					<info>Container(9000).Listitem(0).ActualIcon</info>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
@@ -733,7 +732,7 @@
 					<posy>536</posy>
 					<width>130</width>
 					<height>130</height>
-					<info>MusicPlayer.Cover</info>
+					<texture>$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio align="center">keep</aspectratio>
 				</control>
 				<control type="label">
@@ -742,8 +741,7 @@
 					<posy>537</posy>
 					<width>520</width>
 					<height>31</height>
-					<info>MusicPlayer.Artist</info>
-					<align>left</align>
+					<label>$INFO[MusicPlayer.Artist]</label>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -753,8 +751,7 @@
 					<posy>568</posy>
 					<width>520</width>
 					<height>31</height>
-					<info>MusicPlayer.Album</info>
-					<align>left</align>
+					<label>$INFO[MusicPlayer.Album]</label>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -764,8 +761,7 @@
 					<posy>600</posy>
 					<width>520</width>
 					<height>31</height>
-					<info>MusicPlayer.Title</info>
-					<align>left</align>
+					<label>$INFO[MusicPlayer.Title]</label>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -776,7 +772,6 @@
 					<width>520</width>
 					<height>31</height>
 					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-					<align>left</align>
 					<font>font12</font>
 				</control>
 			</control>
@@ -797,7 +792,6 @@
 					<width>398</width>
 					<height>31</height>
 					<label>$LOCALIZE[13350]</label>
-					<align>left</align>
 					<font>font12</font>
 					<textcolor>listselected-text</textcolor>
 				</control>
@@ -807,8 +801,7 @@
 					<posy>568</posy>
 					<width>398</width>
 					<height>31</height>
-					<info>VideoPlayer.Title</info>
-					<align>left</align>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -819,7 +812,6 @@
 					<width>398</width>
 					<height>31</height>
 					<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-					<align>left</align>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>

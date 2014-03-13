@@ -58,7 +58,6 @@
 					<posy>0</posy>
 					<width>470</width>
 					<height>25</height>
-					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$INFO[ListItem.StartDate]</label>
@@ -80,7 +79,6 @@
 					<posy>35</posy>
 					<width>470</width>
 					<height>25</height>
-					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$INFO[ListItem.StartTime]</label>
@@ -102,7 +100,6 @@
 					<posy>70</posy>
 					<width>470</width>
 					<height>25</height>
-					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<label>$INFO[ListItem.ChannelName]</label>
@@ -124,7 +121,6 @@
 					<posy>105</posy>
 					<width>470</width>
 					<label>$INFO[ListItem.Duration]</label>
-					<align>left</align>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -145,7 +141,6 @@
 					<posy>140</posy>
 					<width>470</width>
 					<label fallback="161">$INFO[ListItem.Genre]</label>
-					<align>left</align>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -203,7 +198,7 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<label>186</label>
+					<label>$LOCALIZE[186]</label>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>

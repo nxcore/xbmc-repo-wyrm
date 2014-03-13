@@ -802,7 +802,6 @@
 				<height>50</height>
 				<width>320</width>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
-				<align>left</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font18</font>
 			</control>
@@ -845,7 +844,7 @@
 				<posy>50</posy>
 				<height>32</height>
 				<width>250</width>
-				<label>31528</label>
+				<label>$LOCALIZE[31528]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>

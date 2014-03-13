@@ -69,7 +69,7 @@
 			<posy>176</posy>
 			<width>265</width>
 			<height>50</height>
-			<label>107</label>
+			<label>$LOCALIZE[107]</label>
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -84,7 +84,7 @@
 			<posy>176</posy>
 			<width>265</width>
 			<height>50</height>
-			<label>106</label>
+			<label>$LOCALIZE[106]</label>
 			<font>font12</font>
 			<align>center</align>
 			<aligny>center</aligny>

@@ -20,20 +20,20 @@
 			<font>font18</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
-		
+
 		<include>ListView</include>
-			
+
 		<control type="image">
 			<description>cover image</description>
 			<posx>180</posx>
 			<posy>112</posy>
 			<width>384</width>
 			<height>384</height>
-			<info>MusicPlayer.Cover</info>
+			<texture>$INFO[MusicPlayer.Cover]</info>
 			<colordiffuse>FlagDiffuse</colordiffuse>
 			<aspectratio aligny="bottom">keep</aspectratio>
 		</control>
-		
+
 		<control type="group">
 			<visible>Player.HasAudio</visible>
 			<control type="progress">
@@ -59,7 +59,7 @@
 				<posy>585</posy>
 				<width>480</width>
 				<height>25</height>
-				<info>MusicPlayer.Artist</info>
+				<label>$INFO[MusicPlayer.Artist]</label>
 				<font>font12</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
@@ -70,7 +70,7 @@
 				<width>660</width>
 				<height>25</height>
 				<font>font12</font>
-				<info>MusicPlayer.Title</info>
+				<label>$INFO[MusicPlayer.Title]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 		</control>
@@ -103,7 +103,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>191</label>
+					<label>$LOCALIZE[191]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -117,7 +117,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>13319</label>
+					<label>$LOCALIZE[13319]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -146,7 +146,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>190</label>
+					<label>$LOCALIZE[190]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -160,7 +160,7 @@
 					<width>362</width>
 					<height>56</height>
 					<font>font12</font>
-					<label>192</label>
+					<label>$LOCALIZE[192]</label>
 					<textoffsetx>10</textoffsetx>
 					<onleft>50</onleft>
 					<onright>50</onright>

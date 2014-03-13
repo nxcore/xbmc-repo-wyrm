@@ -30,7 +30,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
-					<label>31693</label>
+					<label>$LOCALIZE[31693]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="image">

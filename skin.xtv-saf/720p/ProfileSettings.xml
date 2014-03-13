@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<visible>Window.IsActive(130) + !Window.IsActive(131)</visible>
+	<visible>Window.IsActive(profilesettings) + !Window.IsActive(locksettings)</visible>
 	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
@@ -22,7 +22,6 @@
 			<posx>946</posx>
 			<posy>56</posy>
 			<width>309</width>
-			<align>left</align>
 			<font>font18</font>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
@@ -41,7 +40,6 @@
 			<posx>17</posx>
 			<posy>356</posy>
 			<width>274</width>
-			<align>left</align>
 			<font>font12</font>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			<label>$LOCALIZE[20070]</label>
@@ -51,7 +49,6 @@
 			<posx>17</posx>
 			<posy>387</posy>
 			<width>274</width>
-			<align>left</align>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			<font>font11</font>
 		</control>
@@ -96,7 +93,7 @@
 			<height>56</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>186</label>
+			<label>$LOCALIZE[186]</label>
 			<onleft>29</onleft>
 			<onright>29</onright>
 			<onup>5</onup>
@@ -110,7 +107,7 @@
 			<height>56</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>222</label>
+			<label>$LOCALIZE[222]</label>
 			<onleft>28</onleft>
 			<onright>28</onright>
 			<onup>5</onup>

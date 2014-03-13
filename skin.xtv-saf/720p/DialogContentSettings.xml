@@ -23,14 +23,13 @@
 			<width>176</width>
 			<height>176</height>
 			<aspectratio>keep</aspectratio>
-			<info>ListItem.Icon</info>
+			<texture>$INFO[ListItem.Icon]</texture>
 		</control>
 		<control type="label" id="1000">
 			<description>directory contains label</description>
 			<posx>17</posx>
 			<posy>10</posy>
 			<width>380</width>
-			<align>left</align>
 			<font>font12</font>
 			<label>$LOCALIZE[20344]</label>
 		</control>
@@ -67,7 +66,7 @@
 					<posy>3</posy>
 					<width>40</width>
 					<height>40</height>
-					<info>ListItem.Icon</info>
+					<texture>$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>54</posx>
@@ -76,8 +75,7 @@
 					<height>28</height>
 					<font>font12</font>
 					<selectedcolor>listselected-text</selectedcolor>
-					<align>left</align>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="46">
@@ -94,7 +92,7 @@
 					<posy>3</posy>
 					<width>40</width>
 					<height>40</height>
-					<info>ListItem.Icon</info>
+					<texture>$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>54</posx>
@@ -103,8 +101,7 @@
 					<height>28</height>
 					<font>font12</font>
 					<selectedcolor>listselected-text</selectedcolor>
-					<align>left</align>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 		</control>
@@ -154,7 +151,7 @@
 			<width>210</width>
 			<height>50</height>
 			<align>center</align>
-			<label>5</label>
+			<label>$LOCALIZE[5]</label>
 			<font>font12</font>
 			<onleft>29</onleft>
 			<onright>28</onright>
@@ -168,7 +165,7 @@
 			<width>210</width>
 			<height>50</height>
 			<align>center</align>
-			<label>186</label>
+			<label>$LOCALIZE[186]</label>
 			<font>font12</font>
 			<onleft>6</onleft>
 			<onright>29</onright>
@@ -182,7 +179,7 @@
 			<width>210</width>
 			<height>50</height>
 			<align>center</align>
-			<label>222</label>
+			<label>$LOCALIZE[222]</label>
 			<font>font12</font>
 			<onleft>28</onleft>
 			<onright>6</onright>

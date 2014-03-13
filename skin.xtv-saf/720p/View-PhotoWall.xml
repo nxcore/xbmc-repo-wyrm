@@ -80,7 +80,7 @@
 				<font>font22</font>
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<info>ListItem.Label</info>
+				<label>$INFO[ListItem.Label]</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
@@ -93,7 +93,7 @@
 				<font>font22</font>
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<label>31688</label>
+				<label>$LOCALIZE[31688]</label>
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
@@ -106,7 +106,7 @@
 				<font>font13</font>
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<info>ListItem.PictureResolution</info>
+				<label>$INFO[ListItem.PictureResolution]</label>
 				<textoffsetx>0</textoffsetx>
 			</control>
 			<control type="scrollbar" id="1358">

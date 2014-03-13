@@ -128,7 +128,7 @@
 				<posy>0</posy>
 				<width>30</width>
 				<height>40</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -141,7 +141,6 @@
 				<height>40</height>
 				<label>-</label>
 				<font>font12</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 		</control>
@@ -162,7 +161,7 @@
 				<posy>0</posy>
 				<width>30</width>
 				<height>40</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -175,7 +174,6 @@
 				<height>40</height>
 				<label>-</label>
 				<font>font12</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 		</control>
@@ -196,7 +194,7 @@
 				<posy>0</posy>
 				<width>30</width>
 				<height>40</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -209,7 +207,6 @@
 				<height>40</height>
 				<label>-</label>
 				<font>font13</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 		</control>
@@ -230,7 +227,7 @@
 				<posy>0</posy>
 				<width>30</width>
 				<height>40</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -243,7 +240,6 @@
 				<height>40</height>
 				<label>-</label>
 				<font>font12</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 		</control>
@@ -264,7 +260,7 @@
 				<posy>0</posy>
 				<width>30</width>
 				<height>40</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -277,7 +273,6 @@
 				<height>40</height>
 				<label>-</label>
 				<font>font12</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 		</control>
@@ -298,7 +293,7 @@
 				<posy>0</posy>
 				<width>30</width>
 				<height>40</height>
-				<label>1</label>
+				<label>$LOCALIZE[1]</label>
 				<font>font12</font>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -311,7 +306,6 @@
 				<height>40</height>
 				<label>-</label>
 				<font>font13</font>
-				<align>left</align>
 				<aligny>center</aligny>
 			</control>
 		</control>

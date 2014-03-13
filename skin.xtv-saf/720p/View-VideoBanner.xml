@@ -108,7 +108,7 @@
 				<font>font28</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>31688</label>
+				<label>$LOCALIZE[31688]</label>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 			<control type="grouplist">
@@ -141,7 +141,6 @@
 					<width>557</width>
 					<height>37</height>
 					<font>font18</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>

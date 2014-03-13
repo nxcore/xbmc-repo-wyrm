@@ -134,7 +134,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
@@ -163,7 +162,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
@@ -212,7 +210,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
@@ -241,7 +238,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>

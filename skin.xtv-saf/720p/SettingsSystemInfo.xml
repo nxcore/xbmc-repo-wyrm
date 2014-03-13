@@ -16,7 +16,7 @@
 			<posy>50</posy>
 			<width>309</width>
 			<height>37</height>
-			<label>31559</label>
+			<label>$LOCALIZE[31559]</label>
 			<font>font20</font>
 		</control>
 		<control type="grouplist" id="9000">
@@ -33,42 +33,42 @@
 				<description>Summary</description>
 				<width>354</width>
 				<height>45</height>
-				<label>128</label>
+				<label>$LOCALIZE[128]</label>
 				<textoffsetx>18</textoffsetx>
 			</control>
 			<control type="button" id="94">
 				<description>storage</description>
 				<width>354</width>
 				<height>45</height>
-				<label>13277</label>
+				<label>$LOCALIZE[13277]</label>
 				<textoffsetx>18</textoffsetx>
 			</control>
 			<control type="button" id="96">
 				<description>network</description>
 				<width>354</width>
 				<height>45</height>
-				<label>13279</label>
+				<label>$LOCALIZE[13279]</label>
 				<textoffsetx>18</textoffsetx>
 			</control>
 			<control type="button" id="97">
 				<description>video</description>
 				<width>354</width>
 				<height>45</height>
-				<label>13280</label>
+				<label>$LOCALIZE[13280]</label>
 				<textoffsetx>18</textoffsetx>
 			</control>
 			<control type="button" id="98">
 				<description>hardware</description>
 				<width>354</width>
 				<height>45</height>
-				<label>13281</label>
+				<label>$LOCALIZE[13281]</label>
 				<textoffsetx>18</textoffsetx>
 			</control>
 			<control type="button" id="99">
 				<description>PVR</description>
 				<width>354</width>
 				<height>45</height>
-				<label>19191</label>
+				<label>$LOCALIZE[19191]</label>
 				<textoffsetx>18</textoffsetx>
 				<visible>System.HasPVR</visible>
 			</control>
@@ -76,7 +76,7 @@
 				<description>skin</description>
 				<width>354</width>
 				<height>45</height>
-				<label>166</label>
+				<label>$LOCALIZE[166]</label>
 				<textoffsetx>18</textoffsetx>
 			</control>
 		</control>

@@ -34,7 +34,6 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="fadelabel">
-		<align>left</align>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -115,7 +114,7 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<font>font13</font>
-		<label>167</label>
+		<label>$LOCALIZE[167]</label>
 		<texturecheckmark>check-box.png</texturecheckmark>
 		<texturecheckmarknofocus>check-boxnf.png</texturecheckmarknofocus>
 		<markwidth>32</markwidth>
@@ -129,7 +128,7 @@
 		<texturefocus border="7">default-button.png</texturefocus>
 		<textureradioon>check-box.png</textureradioon>
 		<textureradiooff>check-boxnf.png</textureradiooff>
-		<label>215</label>
+		<label>$LOCALIZE[215]</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -140,7 +139,7 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="selectbutton">
-		<label>132</label>
+		<label>$LOCALIZE[132]</label>
 		<font>font13</font>
 		<texturefocus border="7">default-button.png</texturefocus>
 		<texturebg>button-menu-background.png</texturebg>
@@ -188,7 +187,7 @@
 		<description>Filter</description>
 		<texturefocus border="7">default-button.png</texturefocus>
 		<font>font12</font>
-		<label>587</label>
+		<label>$LOCALIZE[587]</label>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
