@@ -53,7 +53,6 @@
 				<posy>13</posy>
 				<width min="40" max="90">auto</width>
 				<height>38</height>
-				<font>font13</font>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.Total),(,)]</label>
 			</control>
@@ -64,7 +63,6 @@
 			<width>203</width>
 			<height>37</height>
 			<label>$INFO[Window(Home).Property(NextAired.Total),, $LOCALIZE[127]]</label>
-			<font>font13</font>
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 		<control type="group"><!-- Monday -->
@@ -101,7 +99,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[41][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="200">
@@ -303,7 +300,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[42][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="201">
@@ -505,7 +501,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[43][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="202">
@@ -707,7 +702,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[44][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="203">
@@ -909,7 +903,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[45][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="204">
@@ -1111,7 +1104,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[46][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="205">
@@ -1313,7 +1305,6 @@
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[47][/B]</label>
-				<font>font13</font>
 				<align>right</align>
 			</control>
 			<control type="list" id="206">
@@ -1547,7 +1538,6 @@
 					<width>350</width>
 					<height>90</height>
 					<label>$VAR[NextAiredLabel2]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1580,7 +1570,6 @@
 					<width>350</width>
 					<height>22</height>
 					<label>$VAR[NextAiredLabel5]   $VAR[NextAiredLabel6]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>

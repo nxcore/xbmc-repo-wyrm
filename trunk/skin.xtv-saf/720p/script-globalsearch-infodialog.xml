@@ -181,7 +181,6 @@
 						<posy>35</posy>
 						<width>708</width>
 						<height>37</height>
-						<font>font13</font>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(Genre)]</label>
 						<textoffsetx>0</textoffsetx>
@@ -388,7 +387,6 @@
 						<posy>35</posy>
 						<width>708</width>
 						<height>37</height>
-						<font>font13</font>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(Genre)]</label>
 						<textoffsetx>0</textoffsetx>
@@ -816,7 +814,6 @@
 						<posy>35</posy>
 						<width>708</width>
 						<height>37</height>
-						<font>font13</font>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(Genre)]</label>
 						<textoffsetx>0</textoffsetx>
@@ -1438,7 +1435,6 @@
 					<width>250</width>
 					<height>50</height>
 					<label>$LOCALIZE[186]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -1446,7 +1442,6 @@
 					<width>250</width>
 					<height>50</height>
 					<label>-</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -1454,7 +1449,6 @@
 					<width>250</width>
 					<height>50</height>
 					<label>-</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

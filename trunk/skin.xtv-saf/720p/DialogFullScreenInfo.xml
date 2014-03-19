@@ -26,7 +26,7 @@
 					<control type="image" id="990">
 						<description>Use TV Clearart if available(episodes in season folders)</description>
 						<posx>8</posx>
-						<posy>-154</posy> 
+						<posy>-154</posy>
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,../clearart.png]</texture>
@@ -35,7 +35,7 @@
 					<control type="image" id="991">
 						<description>Use TV Clearart if available(episodes in tv show folder)</description>
 						<posx>8</posx>
-						<posy>-154</posy> 
+						<posy>-154</posy>
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
@@ -100,7 +100,7 @@
 					<control type="image" id="890">
 						<description>Use Movie Clearart if available</description>
 						<posx>8</posx>
-						<posy>-144</posy> 
+						<posy>-144</posy>
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
@@ -164,8 +164,8 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
-			</control>	
-		</control>	
+			</control>
+		</control>
 		<!-- End of Media Icon -->
 
 		<!-- Title of currently playing video -->
@@ -177,7 +177,6 @@
 			<label>$INFO[VideoPlayer.Title]</label>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>font13</font>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 		</control>
 		<!-- Details of Live TV Program -->
@@ -189,7 +188,7 @@
 				<posy>-260</posy>
 				<width>150</width>
 				<height>48</height>
-				<textcolor>FF00AAFF</textcolor>
+				<textcolor>info-text</textcolor>
 				<label>$INFO[VideoPlayer.ChannelNumber]</label>
 				<aligny>center</aligny>
 				<font>font28</font>
@@ -202,7 +201,6 @@
 				<height>25</height>
 				<label>$INFO[VideoPlayer.ChannelName]</label>
 				<aligny>center</aligny>
-				<font>font13</font>
 			</control>
 			<!-- Title of Live TV Program -->
 			<control type="label">
@@ -212,7 +210,6 @@
 				<height>25</height>
 				<label>$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ,]</label>
 				<aligny>center</aligny>
-				<font>font13</font>
 			</control>
 			<!-- Tv Show title up next -->
 			<control type="label">
@@ -224,7 +221,6 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<textcolor>disabled-text</textcolor>
-				<font>font13</font>
 			</control>
 		</control>
 		<control type="image">
@@ -233,7 +229,7 @@
 			<width>960</width>
 			<height>5</height>
 			<texture>separator.png</texture>
-		</control>		
+		</control>
 		<!-- Plot (Show if available)-->
 		<control type="textbox">
 			<posx>290</posx>
@@ -368,7 +364,7 @@
 			</control>
 		</control>
 		<!-- End Player action labels -->
-		
+
 		<control type="group">
 			<visible>[Window.IsVisible(FullscreenVideo)]</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
@@ -391,7 +387,7 @@
 				<label>- $INFO[VideoPlayer.TimeRemaining] ($INFO[Player.FinishTime])</label>
 			</control>
 			<!-- End Player info labels -->
-			
+
 			<!-- Progress bar -->
 			<control type="progress">
 				<description>Progressbar Cache</description>

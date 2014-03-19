@@ -144,7 +144,6 @@
 				<width>212</width>
 				<height>50</height>
 				<label>$LOCALIZE[13405]</label>
-				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<onback>SendClick(10)</onback>
@@ -159,7 +158,6 @@
 				<width>212</width>
 				<height>50</height>
 				<label>$LOCALIZE[10523]</label>
-				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<onback>SendClick(10)</onback>
@@ -183,7 +181,6 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31229]</label>
-				<font>font13</font>
 			</control>
 			<control type="button" id="14"><!-- Decrease Rating -->
 				<posx>862</posx>

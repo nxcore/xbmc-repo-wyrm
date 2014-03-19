@@ -251,7 +251,6 @@
 					<posy>124</posy>
 					<width>250</width>
 					<height>24</height>
-					<font>font13</font>
 					<align>center</align>
 					<label>$INFO[ListItem.label]</label>
 				</control>

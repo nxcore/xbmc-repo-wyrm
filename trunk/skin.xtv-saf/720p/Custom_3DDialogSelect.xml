@@ -20,8 +20,8 @@
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 		</control>
 		<control type="group" id="499">
-			<!-- STEREOSCOPIC 3D !LiveTV -->
-			<control type="grouplist" id="500">
+
+			<control type="grouplist" id="500"><!-- STEREOSCOPIC 3D !LiveTV -->
 				<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<posx>730</posx>
@@ -36,7 +36,6 @@
 					<description>Header</description>
 					<width>376</width>
 					<height>40</height>
-					<font>font13</font>
 					<label>3D $LOCALIZE[5]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -91,8 +90,8 @@
 					<selected>StringCompare(System.StereoscopicMode,7)</selected>
 				</control>
 			</control>
-			<!-- STEREOSCOPIC 3D LiveTV -->
-			<control type="grouplist" id="550">
+
+			<control type="grouplist" id="550"><!-- STEREOSCOPIC 3D LiveTV -->
 				<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<posx>730</posx>
@@ -107,7 +106,6 @@
 					<description>Header</description>
 					<width>376</width>
 					<height>40</height>
-					<font>font13</font>
 					<label>3D $LOCALIZE[5]</label>
 					<align>center</align>
 					<aligny>center</aligny>

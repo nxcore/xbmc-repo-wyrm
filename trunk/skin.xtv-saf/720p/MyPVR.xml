@@ -90,7 +90,6 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[31134] $INFO[ListItem.StartTime] - $LOCALIZE[31129] $INFO[ListItem.EndTime]</label>
-					<font>font13</font>
 				</control>
 				<control type="image">
 					<visible>!IsEmpty(ListItem.Title)</visible>

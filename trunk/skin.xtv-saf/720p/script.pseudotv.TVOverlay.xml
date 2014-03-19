@@ -63,7 +63,6 @@
 				<posy>645</posy>
 				<width>354</width>
 				<height>31</height>
-				<font>font13</font>
 				<label>$INFO[VideoPlayer.Time]</label>
 			</control>
 			<control type="label">
@@ -71,7 +70,6 @@
 				<posy>675</posy>
 				<width>424</width>
 				<height>31</height>
-				<font>font13</font>
 				<label>$LOCALIZE[31128] $INFO[System.Time]</label>
 			</control>
 			<control type="label">
@@ -80,7 +78,6 @@
 				<width>354</width>
 				<height>31</height>
 				<align>right</align>
-				<font>font13</font>
 				<label>$INFO[VideoPlayer.Duration]</label>
 			</control>
 			<control type="label">
@@ -89,7 +86,6 @@
 				<width>424</width>
 				<height>31</height>
 				<align>right</align>
-				<font>font13</font>
 				<label>$LOCALIZE[31129] $INFO[Player.FinishTime]</label>
 			</control>
 			<!-- End Player info labels -->
@@ -149,7 +145,7 @@
 					<control type="image" id="990">
 						<description>Use TV Clearart if available(episodes in season folders)</description>
 						<posx>8</posx>
-						<posy>495</posy> 
+						<posy>495</posy>
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,../clearart.png]</texture>
@@ -158,7 +154,7 @@
 					<control type="image" id="991">
 						<description>Use TV Clearart if available(episodes in tv show folder)</description>
 						<posx>8</posx>
-						<posy>495</posy> 
+						<posy>495</posy>
 						<width>275</width>
 						<height>145</height>
 						<texture fallback="blank.png">$INFO[Player.FolderPath,,clearart.png]</texture>
@@ -226,7 +222,7 @@
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo)</visible>
 				</control>
-			</control>	
+			</control>
 			<!-- End of Media Icon -->
 			<control type="image" id="506">
 				<description>Channel Logo</description>

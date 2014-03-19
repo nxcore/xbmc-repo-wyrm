@@ -228,7 +228,6 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<label>$LOCALIZE[24022]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -239,7 +238,6 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<label>$LOCALIZE[24021]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -250,7 +248,6 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<label>$LOCALIZE[24020]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -261,7 +258,6 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<label>$LOCALIZE[24069]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -272,7 +268,6 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<label>$LOCALIZE[24048]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -283,7 +278,6 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<label>$LOCALIZE[24036]</label>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>

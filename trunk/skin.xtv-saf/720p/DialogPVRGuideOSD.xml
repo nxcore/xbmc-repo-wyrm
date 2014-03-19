@@ -57,7 +57,6 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>30</height>
-						<font>font13</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
@@ -117,7 +116,6 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>30</height>
-						<font>font13</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>

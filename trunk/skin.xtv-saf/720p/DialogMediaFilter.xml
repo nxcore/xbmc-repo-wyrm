@@ -9,8 +9,7 @@
 		<posy>90</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<description>Media Filter background image</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>-26</posx>
 			<posy>-18</posy>
 			<width>780</width>
@@ -18,12 +17,10 @@
 			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
-		<control type="label" id="2">
-			<description>header label</description>
+		<control type="label" id="2"><!-- Dialog heading -->
 			<posx>14</posx>
 			<posy>-7</posy>
 			<width>745</width>
-			<font>font13</font>
 			<label>$LOCALIZE[587]</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -35,8 +32,7 @@
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="grouplist" id="5">
-			<description>control area</description>
+		<control type="grouplist" id="5"><!-- Control area -->
 			<posx>-10</posx>
 			<posy>30</posy>
 			<width>720</width>
@@ -55,26 +51,21 @@
 			<onleft>5</onleft>
 			<onright>9001</onright>
 		</control>
-		<control type="button" id="7">
-			<description>Default Button</description>
+		<control type="button" id="7"><!-- Default button -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>46</height>
-			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 			<aligny>center</aligny>
 		</control>
-		<control type="radiobutton" id="8">
-			<description>Default RadioButton</description>
+		<control type="radiobutton" id="8"><!-- Default radio button -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>46</height>
-			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 			<aligny>center</aligny>
 		</control>
-		<control type="spincontrolex" id="9">
-			<description>Default SpinControlex</description>
+		<control type="spincontrolex" id="9"><!-- Default spincontrolex -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>46</height>
@@ -84,30 +75,25 @@
 			<texturedown>scroll-down.png</texturedown>
 			<textureupfocus>scroll-up-focus.png</textureupfocus>
 			<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
-		<control type="sliderex" id="10">
-			<description>Default Slider</description>
+		<control type="sliderex" id="10"><!-- Default slider -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>46</height>
-			<font>font13</font>
 			<sliderwidth>200</sliderwidth>
 			<sliderheight>16</sliderheight>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
 		</control>
-		<control type="edit" id="12">
-			<description>Default Edit</description>
+		<control type="edit" id="12"><!-- Default edit -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>46</height>
-			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -115,8 +101,7 @@
 		<control type="group" id="9001">
 			<posx>104</posx>
 			<posy>480</posy>
-			<control type="button" id="28">
-				<description>Ok Button</description>
+			<control type="button" id="28"><!-- OK button -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>256</width>
@@ -130,8 +115,7 @@
 				<onright>27</onright>
 				<ondown>5</ondown>
 			</control>
-			<control type="button" id="27">
-				<description>Clear Button</description>
+			<control type="button" id="27"><!-- Clear button -->
 				<posx>270</posx>
 				<posy>0</posy>
 				<width>256</width>

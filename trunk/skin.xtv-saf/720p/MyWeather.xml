@@ -193,7 +193,6 @@
 				<width>250</width>
 				<height>50</height>
 				<label>$LOCALIZE[31530]</label>
-				<font>font13</font>
 				<aligny>center</aligny>
 			</control>
 			<control type="button" id="2"><!-- Refresh button -->
@@ -202,7 +201,6 @@
 				<width>309</width>
 				<height>50</height>
 				<label>$LOCALIZE[103]</label>
-				<font>font13</font>
 				<align>center</align>
 				<onleft>3</onleft>
 				<onright>4</onright>
@@ -215,7 +213,6 @@
 				<width>309</width>
 				<height>50</height>
 				<label>$LOCALIZE[5]</label>
-				<font>font13</font>
 				<align>center</align>
 				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 				<onleft>2</onleft>

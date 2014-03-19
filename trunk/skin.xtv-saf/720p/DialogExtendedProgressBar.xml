@@ -26,7 +26,6 @@
 				<posy>12</posy>
 				<width>654</width>
 				<height>25</height>
-				<font>font13</font>
 				<label>-</label>
 			</control>
 			<control type="label" id="31">
@@ -36,7 +35,6 @@
 				<width>654</width>
 				<height>25</height>
 				<haspath>yes</haspath>
-				<font>font13</font>
 				<label>-</label>
 			</control>
 			<control type="progress" id="32">

@@ -910,7 +910,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
 			</control>
 			<control type="image">
 				<description>Day 1 weather icon</description>
@@ -972,7 +971,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
 			</control>
 			<control type="image">
 				<description>Day 2 weather icon</description>
@@ -1034,7 +1032,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
 			</control>
 			<control type="image">
 				<description>Day 3 weather icon</description>
@@ -1096,7 +1093,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
 			</control>
 			<control type="image">
 				<description>Day 4 weather icon</description>

@@ -27,7 +27,6 @@
 				<width>637</width>
 				<height>25</height>
 				<label>-</label>
-				<font>font13</font>
 				<align>center</align>
 			</control>
 			<control type="label" id="2">

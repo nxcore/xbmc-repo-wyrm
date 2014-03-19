@@ -31,7 +31,6 @@
 			<posy>110</posy>
 			<width>200</width>
 			<height>50</height>
-			<font>font13</font>
 			<label>$LOCALIZE[19133]</label>
 			<aligny>center</aligny>
 		</control>
@@ -42,7 +41,6 @@
 			<posy>110</posy>
 			<width>1010</width>
 			<height>50</height>
-			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
