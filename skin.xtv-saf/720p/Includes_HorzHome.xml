@@ -156,6 +156,13 @@
 
 		<control type="group"><!-- Main Horizontal menu bar -->
 			<visible>Window.IsActive(home)</visible>
+			<control type="image"><!-- Background image for menu area -->
+				<posx>0</posx>
+				<posy>292</posy>
+				<width>1280</width>
+				<height>428</height>
+				<texture>colours/black.png</texture>
+			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>290</posy>

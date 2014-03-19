@@ -64,7 +64,6 @@
 				<posy>560</posy>
 				<width>400</width>
 				<height>24</height>
-				<font>font13</font>
 				<label>$INFO[Container(3).NumItems] $LOCALIZE[127]</label>
 				<align>right</align>
 			</control>
@@ -102,7 +101,6 @@
 				<posy>532</posy>
 				<width>400</width>
 				<height>37</height>
-				<font>font13</font>
 				<label>$INFO[Container(6).NumItems] $LOCALIZE[127]</label>
 				<align>right</align>
 			</control>

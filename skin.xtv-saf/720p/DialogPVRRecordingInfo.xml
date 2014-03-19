@@ -22,7 +22,6 @@
 			<posy>20</posy>
 			<width>650</width>
 			<height>30</height>
-			<font>font13</font>
 			<label>$LOCALIZE[19053]</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -33,7 +32,6 @@
 			<posy>70</posy>
 			<width>650</width>
 			<height>30</height>
-			<font>font13</font>
 			<label>$INFO[ListItem.Title]</label>
 			<align>center</align>
 			<aligny>center</aligny>

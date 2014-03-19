@@ -519,7 +519,6 @@
 					<height>45</height>
 					<onup>190</onup>
 					<ondown>114</ondown>
-					<font>font13</font>
 					<label>$LOCALIZE[31707]</label>
 					<textwidth>500</textwidth>
 					<aligny>center</aligny>

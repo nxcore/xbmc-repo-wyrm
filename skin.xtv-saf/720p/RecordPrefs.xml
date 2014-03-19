@@ -16,8 +16,6 @@
 			<posy>12</posy>
 			<width>650</width>
 			<height>37</height>
-			<label>-</label>
-			<font>font13</font>
 			<label>$ADDON[pvr.wmc 30100]</label>
 		</control>
 		<control type="label" id="20"><!-- Program title -->

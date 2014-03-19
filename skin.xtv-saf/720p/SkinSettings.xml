@@ -43,7 +43,6 @@
 				<ondown>982</ondown>
 				<onleft>100</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="982">
 				<description>General Settings Button</description>
@@ -59,7 +58,6 @@
 				<ondown>983</ondown>
 				<onleft>200</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="983">
 				<description>Home Window Settings Button</description>
@@ -75,7 +73,6 @@
 				<ondown>984</ondown>
 				<onleft>300</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="984">
 				<description>Background Settings Button</description>
@@ -91,7 +88,6 @@
 				<ondown>985</ondown>
 				<onleft>400</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="985">
 				<description>Media Sources Settings Button</description>
@@ -107,7 +103,6 @@
 				<ondown>987</ondown>
 				<onleft>500</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="987">
 				<description>Custom Settings Button</description>
@@ -125,7 +120,6 @@
 				<ondown>988</ondown>
 				<onleft>noop</onleft>
 				<onright>noop</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="image">
 				<posx>1222</posx>
@@ -159,7 +153,6 @@
 				<ondown>981</ondown>
 				<onleft>800</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 		</control>
 		<control type="group" id="998">
@@ -223,7 +216,6 @@
 						<onclick>Skin.ToggleSetting(intro-vid)</onclick>
 						<onclick>Skin.Reset(startup-playlist)</onclick>
 						<selected>Skin.HasSetting(intro-vid)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -234,7 +226,6 @@
 						<enable>Skin.HasSetting(intro-vid)</enable>
 						<label>- $LOCALIZE[31851] $INFO[Skin.String(intro-vid-location)]</label>
 						<onclick>Skin.SetFile(intro-vid-location,,special://skin/extras)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="radiobutton" id="112">
@@ -245,7 +236,6 @@
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
 						<onclick>Skin.Reset(intro-vid)</onclick>
 						<selected>Skin.HasSetting(startup-playlist)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -256,7 +246,6 @@
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
@@ -310,7 +299,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(view-as-lock)</onclick>
 						<selected>Skin.HasSetting(view-as-lock)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -321,7 +309,6 @@
 						<onclick>Skin.ToggleSetting(sbar)</onclick>
 						<textwidth>750</textwidth>
 						<selected>Skin.HasSetting(sbar)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -332,7 +319,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(autoscroll)</onclick>
 						<selected>Skin.HasSetting(autoscroll)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -343,7 +329,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(overlay)</onclick>
 						<selected>Skin.HasSetting(overlay)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -354,7 +339,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(watched-overlay)</onclick>
 						<selected>Skin.HasSetting(watched-overlay)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -365,7 +349,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-time)</onclick>
 						<selected>!Skin.HasSetting(home-time)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -377,7 +360,6 @@
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
 						<selected>Skin.HasSetting(home-currentweather)</selected>
 						<enable>!IsEmpty(Weather.plugin)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -388,7 +370,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
 						<selected>Skin.HasSetting(weather-animateicon)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -398,7 +379,6 @@
 						<label>$LOCALIZE[31871]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetImage(custom-watermark)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>!Skin.String(custom-watermark)</visible>
 					</control>
@@ -408,7 +388,6 @@
 						<label>$LOCALIZE[31872]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-watermark)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.String(custom-watermark)</visible>
 					</control>
@@ -418,7 +397,6 @@
 						<label>$LOCALIZE[31656]</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-lyricpath))]</label2>
 						<onclick>Skin.SetAddon(osd-lyricpath,xbmc.python.lyrics)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="214">
@@ -427,7 +405,6 @@
 						<label>- $LOCALIZE[24020]</label>
 						<enable>!IsEmpty(Skin.String(osd-lyricpath))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-lyricpath)])</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="215">
@@ -436,7 +413,6 @@
 						<label>$LOCALIZE[31658]</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-subscriptpath))]</label2>
 						<onclick>Skin.SetAddon(osd-subscriptpath,xbmc.python.subtitles)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="216">
@@ -445,7 +421,6 @@
 						<label>- $LOCALIZE[24020]</label>
 						<enable>!IsEmpty(Skin.String(osd-subscriptpath))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-subscriptpath)])</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="radiobutton" id="217">
@@ -456,7 +431,6 @@
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
 						<selected>Skin.HasSetting(tv_theme)</selected>
 						<enable>System.HasAddon(script.tvtunes)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -467,7 +441,6 @@
 						<textwidth>785</textwidth>
 						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
@@ -522,7 +495,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>316</onup>
 							<ondown>303</ondown>
 							<onleft>noop</onleft>
@@ -600,7 +572,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>32</width>
-							<font>font12</font>
 							<onup>316</onup>
 							<ondown>303</ondown>
 							<onleft>321</onleft>
@@ -654,7 +625,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-video)</onclick>
 						<selected>!Skin.HasSetting(home-video)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -665,7 +635,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-movie)</onclick>
 						<selected>!Skin.HasSetting(home-movie)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -676,7 +645,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-tv)</onclick>
 						<selected>!Skin.HasSetting(home-tv)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -687,7 +655,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
 						<selected>Skin.HasSetting(home-musicvideo)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -698,7 +665,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-music)</onclick>
 						<selected>!Skin.HasSetting(home-music)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -709,7 +675,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-programs)</onclick>
 						<selected>!Skin.HasSetting(home-programs)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -720,7 +685,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-photos)</onclick>
 						<selected>Skin.HasSetting(home-photos)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -731,7 +695,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-profile)</onclick>
 						<selected>Skin.HasSetting(home-profile)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -743,7 +706,6 @@
 						<onclick>Skin.ToggleSetting(home-weather)</onclick>
 						<selected>Skin.HasSetting(home-weather)</selected>
 						<enable>!IsEmpty(Weather.plugin)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -754,7 +716,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-favorites)</onclick>
 						<selected>Skin.HasSetting(home-favorites)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -765,7 +726,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-search)</onclick>
 						<selected>Skin.HasSetting(home-search)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -776,7 +736,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
 						<selected>Skin.HasSetting(home-playdisc)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -787,7 +746,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
 						<selected>!Skin.HasSetting(home-shutdown)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -799,7 +757,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>315</onup>
 							<ondown>320</ondown>
 							<onleft>noop</onleft>
@@ -895,7 +852,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>32</width>
-							<font>font12</font>
 							<onup>315</onup>
 							<ondown>320</ondown>
 							<onleft>317</onleft>
@@ -1010,7 +966,6 @@
 						<label>$LOCALIZE[31860]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetImage(custom-background)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>!Skin.String(custom-background)</visible>
 					</control>
@@ -1020,7 +975,6 @@
 						<label>$LOCALIZE[31861]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-background)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.String(custom-background)</visible>
 					</control>
@@ -1031,7 +985,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-fanart)</onclick>
 						<selected>Skin.HasSetting(background-fanart)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1043,7 +996,6 @@
 						<onclick>Skin.ToggleSetting(background-extrafanart)</onclick>
 						<selected>Skin.HasSetting(background-extrafanart)</selected>
 						<enable>Skin.HasSetting(background-fanart)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1054,7 +1006,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
 						<selected>Skin.HasSetting(HomeViewToggle)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1066,7 +1017,6 @@
 						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
 						<selected>Skin.HasSetting(background-slideshow)</selected>
 						<enable>System.HasAddon(script.artistslideshow)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1076,7 +1026,6 @@
 						<label>$LOCALIZE[31866]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.SetPath(custom-weatherbackgrounds)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>!Skin.String(custom-weatherbackgrounds)</visible>
 					</control>
@@ -1086,7 +1035,6 @@
 						<label>$LOCALIZE[31867]</label>
 						<textwidth>785</textwidth>
 						<onclick>Skin.Reset(custom-weatherbackgrounds)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<visible>Skin.String(custom-weatherbackgrounds)</visible>
 					</control>
@@ -1098,7 +1046,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>409</onup>
 							<ondown>413</ondown>
 							<onleft>noop</onleft>
@@ -1176,7 +1123,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>32</width>
-							<font>font12</font>
 							<onup>409</onup>
 							<ondown>413</ondown>
 							<onleft>411</onleft>
@@ -1230,7 +1176,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DVDcase)</onclick>
 						<selected>Skin.HasSetting(DVDcase)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1241,7 +1186,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(CDcase)</onclick>
 						<selected>Skin.HasSetting(CDcase)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1294,7 +1238,6 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31920]</label>
 						<label2>$INFO[Skin.String(movie-libraryentry)]</label2>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmovieentry)</onclick>
 						<onclick>ActivateWindow(1156)</onclick>
@@ -1305,7 +1248,6 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31921]</label>
 						<label2>$INFO[Skin.String(tv-libraryentry)]</label2>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selecttventry)</onclick>
 						<onclick>ActivateWindow(1156)</onclick>
@@ -1316,7 +1258,6 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31922]</label>
 						<label2>$INFO[Skin.String(musicvideo-libraryentry)]</label2>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmusicvidentry)</onclick>
 						<onclick>ActivateWindow(1156)</onclick>
@@ -1327,7 +1268,6 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31923]</label>
 						<label2>$INFO[Skin.String(music-libraryentry)]</label2>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<onclick>Skin.SetBool(selectmusicentry)</onclick>
 						<onclick>ActivateWindow(1156)</onclick>
@@ -1397,7 +1337,6 @@
 						<textwidth>750</textwidth>
 						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
 						<enable>System.HasAddon(script.xbmc.debug.log) + system.getbool(debug.showloginfo)</enable>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="radiobutton" id="804">
@@ -1407,12 +1346,10 @@
 						<textwidth>750</textwidth>
 						<onclick>XBMC.ToggleDebug</onclick>
 						<selected>system.getbool(debug.showloginfo)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="image" id="805">
-						<description>Separator Image</description>
 						<width>885</width>
 						<height>6</height>
 						<texture>separator.png</texture>
@@ -1424,7 +1361,6 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
 						<selected>Skin.HasSetting(DebugGrid)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
@@ -1435,12 +1371,10 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
 						<selected>Skin.HasSetting(DebugInfo)</selected>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="image" id="808">
-						<description>Separator Image</description>
 						<width>885</width>
 						<height>6</height>
 						<texture>separator.png</texture>
@@ -1452,7 +1386,6 @@
 						<textwidth>785</textwidth>
 						<onclick>Skin.ResetSettings</onclick>
 						<onclick>ReplaceWindow(skinsettings)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>

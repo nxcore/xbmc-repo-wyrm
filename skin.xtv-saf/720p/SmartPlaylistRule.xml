@@ -24,7 +24,6 @@
 				<posy>12</posy>
 				<width>867</width>
 				<align>center</align>
-				<font>font13</font>
 				<label>$LOCALIZE[21421]</label>
 			</control>
 			<control type="image">

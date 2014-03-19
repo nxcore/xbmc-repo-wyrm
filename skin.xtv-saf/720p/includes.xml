@@ -282,7 +282,6 @@
 			<width>400</width>
 			<label>$INFO[Container(9160).ListItem.Property(ItemType)]</label>
 			<aligny>center</aligny>
-			<font>font13</font>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -405,7 +404,6 @@
 			<width>400</width>
 			<label>$INFO[Container(9210).ListItem.Property(ItemType)]</label>
 			<aligny>center</aligny>
-			<font>font13</font>
 		</control>
 		<control type="image">
 			<posx>-30</posx>
@@ -548,7 +546,6 @@
 			<width>400</width>
 			<label>$INFO[Container(9260).ListItem.Property(ItemType)]</label>
 			<aligny>center</aligny>
-			<font>font13</font>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -985,7 +982,6 @@
 			<posy>682</posy>
 			<width>203</width>
 			<height>37</height>
-			<font>font13</font>
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 	</include>
@@ -1132,7 +1128,10 @@
 	<include name="scrolltext">
 		<scroll>true</scroll>
 	</include>
-
+	<include name="overlaylabel-dimension">
+		<width>780</width>
+		<height>21</height>
+	</include>
 	<!-- Start Animation Includes -->
 	<include name="settingbutton-fade">
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>

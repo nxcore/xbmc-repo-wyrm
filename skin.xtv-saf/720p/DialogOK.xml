@@ -23,7 +23,6 @@
 			<width>650</width>
 			<height>37</height>
 			<label>-</label>
-			<font>font13</font>
 			<align>center</align>
 		</control>
 		<control type="image">

@@ -20,7 +20,6 @@
 			<posx>16</posx>
 			<posy>-2</posy>
 			<width>1080</width>
-			<font>font13</font>
 			<label>$LOCALIZE[1023]</label>
 			<align>center</align>
 		</control>
@@ -31,7 +30,6 @@
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-
 		<control type="list" id="450">
 			<posx>53</posx>
 			<posy>43</posy>

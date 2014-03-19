@@ -24,7 +24,6 @@
 				<width>318</width>
 				<height>20</height>
 				<aligny>center</aligny>
-				<font>font13</font>
 			</control>
 			<control type="label" id="12">
 				<description>Slider Value</description>
@@ -34,7 +33,6 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 			</control>
 			<control type="image">
 				<description>Seekslider background</description>

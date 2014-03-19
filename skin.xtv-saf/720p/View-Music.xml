@@ -1180,7 +1180,6 @@
 					<posy>685</posy>
 					<width>800</width>
 					<height>37</height>
-					<font>font13</font>
 					<align>center</align>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Genre]</label>

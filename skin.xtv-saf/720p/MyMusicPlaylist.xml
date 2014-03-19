@@ -29,7 +29,7 @@
 			<posy>112</posy>
 			<width>384</width>
 			<height>384</height>
-			<texture>$INFO[MusicPlayer.Cover]</info>
+			<texture>$INFO[MusicPlayer.Cover]</texture>
 			<colordiffuse>FlagDiffuse</colordiffuse>
 			<aspectratio aligny="bottom">keep</aspectratio>
 		</control>

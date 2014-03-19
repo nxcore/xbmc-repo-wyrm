@@ -72,7 +72,6 @@
 						<posy>0</posy>
 						<width>45</width>
 						<height>52</height>
-						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
@@ -112,7 +111,6 @@
 						<posy>0</posy>
 						<width>45</width>
 						<height>52</height>
-						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
@@ -216,7 +214,6 @@
 				<aligny>center</aligny>
 				<align>right</align>
 				<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
-				<font>font13</font>
 			</control>
 			<control type="image">
 				<visible>!IsEmpty(ListItem.Title)</visible>
@@ -377,7 +374,6 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.ChannelNumber]</label>
-					<font>font13</font>
 				</control>
 			</control>
 			<control type="scrollbar" id="27">
@@ -610,7 +606,6 @@
 					<posy>23</posy>
 					<width>220</width>
 					<height>20</height>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[19029]</label>
@@ -620,7 +615,6 @@
 					<posy>20</posy>
 					<width>300</width>
 					<height>23</height>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[369]</label>
@@ -630,7 +624,6 @@
 					<posy>20</posy>
 					<width>300</width>
 					<height>23</height>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[19225]</label>
@@ -640,7 +633,6 @@
 					<posy>20</posy>
 					<width>150</width>
 					<height>23</height>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[126]</label>
@@ -691,7 +683,6 @@
 						<posy>0</posy>
 						<width>655</width>
 						<height>50</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
@@ -725,7 +716,6 @@
 						<posy>0</posy>
 						<width>180</width>
 						<height>50</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -734,7 +724,6 @@
 						<posy>0</posy>
 						<width>240</width>
 						<height>50</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
@@ -743,7 +732,6 @@
 						<posy>0</posy>
 						<width>655</width>
 						<height>50</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
@@ -771,7 +759,6 @@
 					<posx>68</posx>
 					<posy>660</posy>
 					<height>50</height>
-					<font>font13</font>
 					<aligny>center</aligny>
 					<label>$INFO[PVR.NextTimer]</label>
 				</control>
@@ -1002,7 +989,6 @@
 					<posy>20</posy>
 					<width>240</width>
 					<height>24</height>
-					<font>font13</font>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[19148]</label>
 					<visible>Control.IsVisible(17)</visible>
@@ -1012,7 +998,6 @@
 					<posy>20</posy>
 					<width>350</width>
 					<height>24</height>
-					<font>font13</font>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[369]</label>
 					<visible>Control.IsVisible(17)</visible>
@@ -1022,7 +1007,6 @@
 					<posy>20</posy>
 					<width>260</width>
 					<height>24</height>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[21820]</label>
@@ -1033,7 +1017,6 @@
 					<posy>20</posy>
 					<width>140</width>
 					<height>24</height>
-					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[126]</label>
@@ -1177,7 +1160,6 @@
 						<posy>0</posy>
 						<width>730</width>
 						<height>40</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -1206,7 +1188,6 @@
 						<posy>0</posy>
 						<width>730</width>
 						<height>40</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -1254,7 +1235,6 @@
 					<label>$INFO[ListItem.Label2]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font13</font>
 					<scrollout>false</scrollout>
 					<pauseatend>1000</pauseatend>
 				</control>

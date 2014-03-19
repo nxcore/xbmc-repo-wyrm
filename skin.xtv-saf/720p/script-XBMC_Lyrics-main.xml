@@ -114,7 +114,6 @@
 				<width>1240</width>
 				<height>370</height>
 				<align>center</align>
-				<font>font13</font>
 				<selectedcolor>listselected-text</selectedcolor>
 				<pagecontrol>101</pagecontrol>
 			</control>
@@ -148,7 +147,6 @@
 						<posy>0</posy>
 						<width>1240</width>
 						<height>40</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<align>center</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -200,7 +198,6 @@
 				<height>30</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<selectedcolor>listselected-text</selectedcolor>
 				<label>$LOCALIZE[179]?</label>
 				<visible>Control.IsVisible(120) + ![Control.IsVisible(100) | Control.IsVisible(110)]</visible>
@@ -224,7 +221,6 @@
 						<posy>0</posy>
 						<width>1240</width>
 						<height>40</height>
-						<font>font13</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -237,7 +233,6 @@
 						<posy>0</posy>
 						<width>1240</width>
 						<height>40</height>
-						<font>font13</font>
 						<textcolor>listselected-text</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>

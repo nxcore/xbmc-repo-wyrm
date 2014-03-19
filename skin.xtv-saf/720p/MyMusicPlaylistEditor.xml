@@ -81,7 +81,7 @@
 					<font>font12</font>
 					<align>right</align>
 					<selectedcolor>listselected-text</selectedcolor>
-					<label>$INFO[ListItem.Label2]</info>
+					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
 		</control>

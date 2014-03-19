@@ -27,7 +27,6 @@
 				<width>743</width>
 				<height>46</height>
 				<align>center</align>
-				<font>font13</font>
 				<label>$LOCALIZE[21432]</label>
 			</control>
 			<control type="image">

@@ -143,7 +143,6 @@
 				<posy>35</posy>
 				<width>708</width>
 				<height>37</height>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.Genre]</label>
 				<textoffsetx>0</textoffsetx>
@@ -207,7 +206,6 @@
 				<posx>531</posx>
 				<posy>155</posy>
 				<width>265</width>
-				<font>font13</font>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31130]</label>
 			</control>
@@ -216,7 +214,6 @@
 				<posy>155</posy>
 				<width>451</width>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="161">$INFO[ListItem.Director]</label>
 			</control>
@@ -225,7 +222,6 @@
 				<posy>185</posy>
 				<width>265</width>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<label>$LOCALIZE[31131]</label>
 			</control>
 			<control type="label">
@@ -233,7 +229,6 @@
 				<posy>185</posy>
 				<width>451</width>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="161">$INFO[ListItem.Writer]</label>
 			</control>
@@ -242,7 +237,6 @@
 				<posy>215</posy>
 				<width>265</width>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<label>$LOCALIZE[567]:</label>
 			</control>
 			<control type="label">
@@ -250,7 +244,6 @@
 				<posy>215</posy>
 				<width>451</width>
 				<aligny>center</aligny>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.PlayCount]</label>
 			</control>
@@ -268,7 +261,6 @@
 				<posy>292</posy>
 				<width>654</width>
 				<height>298</height>
-				<font>font13</font>
 				<label>$INFO[ListItem.Plot]</label>
 				<align>justify</align>
 				<pagecontrol>1023</pagecontrol>
@@ -280,7 +272,6 @@
 				<posy>292</posy>
 				<width>654</width>
 				<height>298</height>
-				<font>font13</font>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
 				<align>justify</align>
 				<pagecontrol>1023</pagecontrol>
@@ -363,7 +354,6 @@
 						<width>610</width>
 						<height>50</height>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -382,7 +372,6 @@
 						<width>610</width>
 						<height>50</height>
 						<aligny>center</aligny>
-						<font>font13</font>
 						<scrollspeed>30</scrollspeed>
 						<label>$INFO[ListItem.Label]</label>
 					</control>

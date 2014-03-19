@@ -42,7 +42,6 @@
 				<ondown>982</ondown>
 				<onleft>100</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="982">
 				<description>Custom TV Settings Button</description>
@@ -57,7 +56,6 @@
 				<ondown>983</ondown>
 				<onleft>200</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="983">
 				<description>Custom Music Settings Button</description>
@@ -72,7 +70,6 @@
 				<ondown>984</ondown>
 				<onleft>300</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="984">
 				<description>Custom Addons Settings Button</description>
@@ -87,7 +84,6 @@
 				<ondown>981</ondown>
 				<onleft>400</onleft>
 				<onright>1223</onright>
-				<aligny>center</aligny>
 			</control>
 		</control>
 		<control type="group" id="998">
@@ -151,7 +147,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>114</onup>
 							<ondown>105</ondown>
 							<onleft>noop</onleft>
@@ -236,7 +231,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>27</width>
-							<font>font12</font>
 							<onup>114</onup>
 							<ondown>105</ondown>
 							<onleft>103</onleft>
@@ -299,7 +293,6 @@
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomMovies.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.1)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="106">
@@ -311,7 +304,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMovies.1.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="107">
@@ -323,7 +315,6 @@
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomMovies.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.2)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="108">
@@ -335,7 +326,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMovies.2.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="109">
@@ -347,7 +337,6 @@
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomMovies.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.3)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="110">
@@ -359,7 +348,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMovies.3.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="111">
@@ -371,7 +359,6 @@
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomMovies.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.4)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="112">
@@ -383,7 +370,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMovies.4.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="113">
@@ -395,7 +381,6 @@
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomMovies.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.5)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="114">
@@ -407,7 +392,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMovies.5.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMovies.5.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
@@ -462,7 +446,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>214</onup>
 							<ondown>205</ondown>
 							<onleft>noop</onleft>
@@ -553,7 +536,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>27</width>
-							<font>font12</font>
 							<onup>214</onup>
 							<ondown>205</ondown>
 							<onleft>203</onleft>
@@ -622,7 +604,6 @@
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.1)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="206">
@@ -634,7 +615,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.1.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="207">
@@ -646,7 +626,6 @@
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.2)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="208">
@@ -658,7 +637,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.2.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="209">
@@ -670,7 +648,6 @@
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.3)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="210">
@@ -682,7 +659,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.3.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="211">
@@ -694,7 +670,6 @@
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.4)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="212">
@@ -706,7 +681,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.4.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="213">
@@ -718,7 +692,6 @@
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.5)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="214">
@@ -730,7 +703,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.5.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
@@ -785,7 +757,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>314</onup>
 							<ondown>305</ondown>
 							<onleft>noop</onleft>
@@ -871,7 +842,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>27</width>
-							<font>font12</font>
 							<onup>314</onup>
 							<ondown>305</ondown>
 							<onleft>303</onleft>
@@ -934,7 +904,6 @@
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomMusic.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.1)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="306">
@@ -946,7 +915,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMusic.1.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="307">
@@ -958,7 +926,6 @@
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomMusic.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.2)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="308">
@@ -970,7 +937,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMusic.2.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="309">
@@ -982,7 +948,6 @@
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomMusic.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.3)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="310">
@@ -994,7 +959,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMusic.3.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="311">
@@ -1006,7 +970,6 @@
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomMusic.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.4)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="312">
@@ -1018,7 +981,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMusic.4.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="313">
@@ -1030,7 +992,6 @@
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomMusic.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.5)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="314">
@@ -1042,7 +1003,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomMusic.5.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomMusic.5.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
@@ -1097,7 +1057,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<font>font12</font>
 							<onup>414</onup>
 							<ondown>405</ondown>
 							<onleft>noop</onleft>
@@ -1181,7 +1140,6 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>27</width>
-							<font>font12</font>
 							<onup>414</onup>
 							<ondown>405</ondown>
 							<onleft>403</onleft>
@@ -1243,7 +1201,6 @@
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomAddon.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.1)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="406">
@@ -1255,7 +1212,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomAddon.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomAddon.1.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="407">
@@ -1267,7 +1223,6 @@
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomAddon.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.2)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="408">
@@ -1279,7 +1234,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomAddon.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomAddon.2.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="409">
@@ -1291,7 +1245,6 @@
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomAddon.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.3)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="410">
@@ -1303,7 +1256,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomAddon.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomAddon.3.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="411">
@@ -1315,7 +1267,6 @@
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomAddon.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.4)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="412">
@@ -1327,7 +1278,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomAddon.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomAddon.4.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="413">
@@ -1339,7 +1289,6 @@
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomAddon.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.5)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 					<control type="button" id="414">
@@ -1351,7 +1300,6 @@
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomAddon.5.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomAddon.5.Icon,.jpg|.png)</onclick>
-						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>

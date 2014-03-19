@@ -38,7 +38,6 @@
 						<posy>0</posy>
 						<width>380</width>
 						<height>30</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
@@ -58,7 +57,6 @@
 						<posy>0</posy>
 						<width>380</width>
 						<height>30</height>
-						<font>font13</font>
 						<aligny>center</aligny>
 						<selectedcolor>blue</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
@@ -80,8 +78,7 @@
 				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35502]</label>
-				<font>font13</font>
-				<textcolor>blue</textcolor>
+				<textcolor>info-text</textcolor>
 			</control>
 			<control type="label">
 				<description>name value</description>
@@ -90,7 +87,6 @@
 				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Label]</label>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
@@ -100,8 +96,7 @@
 				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35500]</label>
-				<font>font13</font>
-				<textcolor>blue</textcolor>
+				<textcolor>info-text</textcolor>
 			</control>
 			<control type="label">
 				<description>location value</description>
@@ -110,7 +105,6 @@
 				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Property(Bus)] - $INFO[Container(20).ListItem.Property(Location)]</label>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
@@ -120,8 +114,7 @@
 				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35501]</label>
-				<font>font13</font>
-				<textcolor>blue</textcolor>
+				<textcolor>info-text</textcolor>
 			</control>
 			<control type="label">
 				<description>class value</description>
@@ -130,7 +123,6 @@
 				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Property(Class)]</label>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
@@ -140,8 +132,7 @@
 				<width>160</width>
 				<height>29</height>
 				<label>$LOCALIZE[35503]</label>
-				<font>font13</font>
-				<textcolor>blue</textcolor>
+				<textcolor>info-text</textcolor>
 			</control>
 			<control type="label">
 				<description>vendor value</description>
@@ -150,7 +141,6 @@
 				<width>400</width>
 				<height>29</height>
 				<label fallback="13205">$INFO[Container(20).ListItem.Property(Vendor)]</label>
-				<font>font13</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="group" id="9000">
@@ -165,7 +155,6 @@
 					<height>50</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font13</font>
 					<label>$LOCALIZE[186]</label>
 					<onup>20</onup>
 					<onleft>11</onleft>
@@ -180,7 +169,6 @@
 					<height>50</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font13</font>
 					<label>$LOCALIZE[5]</label>
 					<onup>20</onup>
 					<onleft>10</onleft>

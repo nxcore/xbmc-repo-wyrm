@@ -52,14 +52,12 @@
 			<posx>97</posx>
 			<posy>325</posy>
 			<label>-</label>
-			<font>font13</font>
 		</control>
 		<control type="label" id="3">
 			<description>help information</description>
 			<posx>97</posx>
 			<posy>350</posy>
 			<label>-</label>
-			<font>font13</font>
 		</control>
 	</controls>
 </window>

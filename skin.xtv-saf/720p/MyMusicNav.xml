@@ -35,7 +35,6 @@
 				<posy>13</posy>
 				<width min="30" max="110">auto</width>
 				<height>38</height>
-				<font>font13</font>
 				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
@@ -71,7 +70,7 @@
 					<height>544</height>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				</control>
-			</control>	
+			</control>
 			<control type="grouplist" id="9000">
 				<posx>472</posx>
 				<posy>100</posy>

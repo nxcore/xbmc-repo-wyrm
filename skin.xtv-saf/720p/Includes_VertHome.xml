@@ -24,7 +24,6 @@
 				<height>25</height>
 				<label>$INFO[System.Date]</label>
 				<align>center</align>
-				<font>font13</font>
 			</control>
 			<control type="label">
 				<description>Time and Date</description>
@@ -48,7 +47,6 @@
 				<height>50</height>
 				<wrapmultiline>true</wrapmultiline>
 				<label>$LOCALIZE[412]</label>
-				<font>font13</font>
 				<align>right</align>
 				<aligny>center</aligny>
 				<visible>IsEmpty(Weather.Conditions)</visible>
@@ -63,7 +61,6 @@
 					<height>50</height>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[Weather.Conditions]</label>
-					<font>font13</font>
 					<align>right</align>
 					<aligny>center</aligny>
 				</control>
@@ -144,7 +141,6 @@
 					<height>24</height>
 					<label>$INFO[ListItem.Label]</label>
 					<aligny>center</aligny>
-					<font>font13</font>
 				</control>
 				<control type="image">
 					<posx>460</posx>
@@ -170,7 +166,6 @@
 					<height>24</height>
 					<label>$INFO[ListItem.Label]</label>
 					<aligny>center</aligny>
-					<font>font13</font>
 				</control>
 				<control type="image">
 					<posx>460</posx>

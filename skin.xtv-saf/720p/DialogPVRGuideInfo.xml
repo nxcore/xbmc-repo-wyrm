@@ -154,7 +154,6 @@
 						<description>Switch to Channel</description>
 						<height>56</height>
 						<width>256</width>
-						<font>font13</font>
 						<label>$LOCALIZE[19165]</label>
 						<align>center</align>
 					</control>
@@ -162,7 +161,6 @@
 						<description>Record</description>
 						<height>56</height>
 						<width>256</width>
-						<font>font13</font>
 						<label>-</label>
 						<align>center</align>
 					</control>
@@ -170,7 +168,6 @@
 						<description>OK</description>
 						<height>56</height>
 						<width>256</width>
-						<font>font13</font>
 						<label>$LOCALIZE[186]</label>
 						<align>center</align>
 					</control>

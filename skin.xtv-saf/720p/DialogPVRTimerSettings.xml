@@ -23,7 +23,6 @@
 			<posy>20</posy>
 			<width>650</width>
 			<height>30</height>
-			<font>font13</font>
 			<label>-</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -85,7 +84,6 @@
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<height>46</height>
-			<font>font13</font>
 			<focusedcolor>button-text</focusedcolor>
 			<textoffsetx>18</textoffsetx>
 			<aligny>center</aligny>
@@ -93,7 +91,6 @@
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
 			<height>46</height>
-			<font>font13</font>
 			<textoffsetx>18</textoffsetx>
 			<aligny>center</aligny>
 			<radioposx>630</radioposx>
@@ -102,14 +99,12 @@
 			<description>Default spincontrolex</description>
 			<height>46</height>
 			<focusedcolor>button-text</focusedcolor>
-			<font>font13</font>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
 		<control type="sliderex" id="10">
 			<description>Default Slider</description>
 			<height>46</height>
-			<font>font13</font>
 		</control>
 		<control type="image" id="11">
 			<description>Default Seperator</description>
@@ -119,7 +114,6 @@
 		<control type="edit" id="12">
 			<description>Default Edit</description>
 			<height>46</height>
-			<font>font13</font>
 			<focusedcolor>button-text</focusedcolor>
 		</control>
 	</controls>

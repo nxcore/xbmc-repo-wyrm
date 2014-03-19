@@ -35,7 +35,6 @@
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="416">$INFO[ListItem.Artist]</label>
-				<font>font13</font>
 			</control>
 			<control type="label"><!-- Year heading -->
 				<posx>220</posx>
@@ -197,7 +196,6 @@
 				<align>center</align>
 				<label fallback="416">$INFO[ListItem.Artist]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font13</font>
 			</control>
 			<control type="label"><!-- Born heading -->
 				<posx>220</posx>
@@ -390,7 +388,7 @@
 						<posy>12</posy>
 						<width>48</width>
 						<height>48</height>
-						<label>$INFO[ListItem.Icon]</label>
+						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
 					<control type="label">
@@ -541,7 +539,6 @@
 				<width>250</width>
 				<height>57</height>
 				<label>$LOCALIZE[208]</label>
-				<font>font13</font>
 				<align>center</align>
 				<onclick>RunScript(script.playalbum,artist=$ESCINFO[ListItem.Artist]&amp;album=$ESCINFO[ListItem.Album])</onclick>
 				<visible>system.hasaddon(script.playalbum)</visible>
@@ -550,14 +547,12 @@
 				<width>250</width>
 				<height>57</height>
 				<label>$LOCALIZE[182]</label>
-				<font>font13</font>
 				<align>center</align>
 			</control>
 			<control type="button" id="6"><!-- Refresh -->
 				<width>250</width>
 				<height>57</height>
 				<label>$LOCALIZE[184]</label>
-				<font>font13</font>
 				<align>center</align>
 			</control>
 			<control type="button" id="10"><!-- Get Album cover -->
@@ -565,13 +560,11 @@
 				<height>57</height>
 				<label>$LOCALIZE[13405]</label>
 				<align>center</align>
-				<font>font13</font>
 			</control>
 			<control type="button" id="16"><!-- CDArtManager Script -->
 				<width>250</width>
 				<height>57</height>
 				<label>$LOCALIZE[31693]</label>
-				<font>font13</font>
 				<align>center</align>
 				<onclick>RunScript(script.cdartmanager)</onclick>
 				<visible>system.hasaddon(script.cdartmanager)</visible>

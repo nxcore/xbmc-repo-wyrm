@@ -163,7 +163,6 @@
 					<posy>0</posy>
 					<width>580</width>
 					<height>24</height>
-					<font>font13</font>
 					<label>[I]$LOCALIZE[31702][/I]</label>
 					<aligny>center</aligny>
 				</control>
@@ -232,7 +231,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<focusedcolor>button-text</focusedcolor>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19206]</label>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>540</radioposx>
@@ -262,7 +260,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<focusedcolor>button-text</focusedcolor>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19267]</label>
 					<textoffsetx>18</textoffsetx>
 					<radioposx>540</radioposx>
@@ -281,7 +278,6 @@
 					<posy>0</posy>
 					<width>480</width>
 					<height>24</height>
-					<font>font13</font>
 					<label>[I]$LOCALIZE[31706][/I]</label>
 					<aligny>center</aligny>
 				</control>
@@ -293,7 +289,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19205]</label>
 					<onleft>20</onleft>
 					<onright>34</onright>
@@ -309,7 +304,6 @@
 					<font>font11</font>
 					<visible>IsEmpty(Window.Property(IsRadio))</visible>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19024]</label>
 					<onleft>30</onleft>
 					<onright>34</onright>
@@ -325,7 +319,6 @@
 					<font>font11</font>
 					<visible>!IsEmpty(Window.Property(IsRadio))</visible>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19023]</label>
 					<onleft>30</onleft>
 					<onright>34</onright>
@@ -340,7 +333,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19204]</label>
 					<onleft>20</onleft>
 					<onright>33</onright>
@@ -355,7 +347,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19203]</label>
 					<onleft>20</onleft>
 					<onright>32</onright>
@@ -370,7 +361,6 @@
 					<height>50</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19211]</label>
 					<onleft>31</onleft>
 					<onright>32</onright>
@@ -391,7 +381,6 @@
 				<label>$LOCALIZE[186]</label>
 				<font>font12</font>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onleft>6</onleft>
 				<onright>5</onright>
 				<onup>31</onup>
@@ -406,7 +395,6 @@
 				<label>$LOCALIZE[14070]</label>
 				<font>font12</font>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onleft>4</onleft>
 				<onright>6</onright>
 				<onup>31</onup>
@@ -421,7 +409,6 @@
 				<label>$LOCALIZE[222]</label>
 				<font>font12</font>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onleft>5</onleft>
 				<onright>4</onright>
 				<onup>31</onup>

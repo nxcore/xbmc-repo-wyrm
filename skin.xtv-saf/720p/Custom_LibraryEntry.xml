@@ -49,7 +49,6 @@
 					<align>center</align>
 				</control>
 				<control type="image">
-					<description>separator image</description>
 					<posx>21</posx>
 					<posy>38</posy>
 					<width>389</width>
@@ -76,7 +75,6 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -98,7 +96,6 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -224,7 +221,6 @@
 					<align>center</align>
 				</control>
 				<control type="image">
-					<description>separator image</description>
 					<posx>21</posx>
 					<posy>38</posy>
 					<width>389</width>
@@ -369,7 +365,6 @@
 					<align>center</align>
 				</control>
 				<control type="image">
-					<description>separator image</description>
 					<posx>21</posx>
 					<posy>38</posy>
 					<width>389</width>
@@ -507,7 +502,6 @@
 					<align>center</align>
 				</control>
 				<control type="image">
-					<description>separator image</description>
 					<posx>21</posx>
 					<posy>38</posy>
 					<width>389</width>
@@ -534,7 +528,6 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -556,7 +549,6 @@
 							<posy>2</posy>
 							<width>389</width>
 							<height>34</height>
-							<description>Item label</description>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
