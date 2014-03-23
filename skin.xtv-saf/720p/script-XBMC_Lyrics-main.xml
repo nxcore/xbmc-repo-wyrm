@@ -92,7 +92,6 @@
 				<height>30</height>
 				<label>$LOCALIZE[21870] - $INFO[Control.GetLabel(200)]</label>
 				<font>font12</font>
-				<aligny>center</aligny>
 			</control>
 			<control type="label" id="200">
 				<visible>false</visible>
@@ -102,7 +101,6 @@
 				<posy>50</posy>
 				<width>360</width>
 				<height>37</height>
-				<aligny>center</aligny>
 				<font>font18</font>
 				<label>$ADDON[script.cu.lrclyrics 0]</label>
 			</control>
@@ -147,7 +145,6 @@
 						<posy>0</posy>
 						<width>1240</width>
 						<height>40</height>
-						<aligny>center</aligny>
 						<align>center</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -160,7 +157,6 @@
 						<height>50</height>
 						<font>font22</font>
 						<textcolor>lightblue</textcolor>
-						<aligny>center</aligny>
 						<align>center</align>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!Control.HasFocus(110)</visible>
@@ -172,7 +168,6 @@
 						<height>50</height>
 						<font>font22</font>
 						<textcolor>lightblue</textcolor>
-						<aligny>center</aligny>
 						<align>center</align>
 						<label fallback="--">$INFO[ListItem.Label]</label>
 						<visible>Control.HasFocus(110)</visible>
@@ -197,7 +192,6 @@
 				<width>1240</width>
 				<height>30</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<selectedcolor>listselected-text</selectedcolor>
 				<label>$LOCALIZE[179]?</label>
 				<visible>Control.IsVisible(120) + ![Control.IsVisible(100) | Control.IsVisible(110)]</visible>
@@ -223,7 +217,6 @@
 						<height>40</height>
 						<selectedcolor>listselected-text</selectedcolor>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -235,7 +228,6 @@
 						<height>40</height>
 						<textcolor>listselected-text</textcolor>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>

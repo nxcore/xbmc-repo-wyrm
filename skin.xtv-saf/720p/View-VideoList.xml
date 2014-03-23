@@ -33,7 +33,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
@@ -45,7 +44,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -54,7 +52,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -68,7 +65,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
 					</control>
@@ -80,7 +76,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -89,7 +84,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.Property(Addon.Description)]</label>
 						</control>
@@ -103,7 +97,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
 					</control>
@@ -115,7 +108,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -124,7 +116,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.PlotOutline]</label>
 						</control>
@@ -138,7 +129,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Duration)</visible>
 					</control>
@@ -150,7 +140,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -159,7 +148,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$VAR[VideoDuration]</label>
 						</control>
@@ -183,7 +171,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Label2)</visible>
@@ -196,7 +183,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
@@ -206,7 +192,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -221,7 +206,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -235,7 +219,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<selectedcolor>listselected-text</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -246,7 +229,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.Property(Addon.Description)]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -261,7 +243,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
@@ -274,7 +255,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
@@ -284,7 +264,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.PlotOutline]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -299,7 +278,6 @@
 						<width>506</width>
 						<height>23</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Duration)</visible>
@@ -312,7 +290,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
@@ -322,7 +299,6 @@
 							<width>506</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$VAR[VideoDuration]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -572,9 +548,8 @@
 					</control>
 					<control type="group">
 						<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-						<control type="group">
+						<control type="group"><!-- Show Icon For TV SHOW/SEASON/EPISODES -->
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-							<!-- Show Icon For TV SHOW/SEASON/EPISODES -->
 							<control type="image">
 								<description>list item icon</description>
 								<posx>230</posx>
@@ -594,9 +569,8 @@
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
-						<control type="group">
+						<control type="group"><!-- Show TV icon as the Default icon -->
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-							<!-- Show TV icon as the Default icon -->
 							<control type="image">
 								<description>list item icon</description>
 								<posx>230</posx>
@@ -620,8 +594,7 @@
 				</control>
 				<control type="group">
 					<visible>!ControlGroup(9000).HasFocus + !IsEmpty(ListItem.Title)</visible>
-					<!-- Star Rating -->
-					<control type="image">
+					<control type="image"><!-- Star Rating -->
 						<posx>-15</posx>
 						<posy>268</posy>
 						<width>177</width>
@@ -630,8 +603,7 @@
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<visible>!IsEmpty(ListItem.StarRating)</visible>
 					</control>
-					<!-- Number of unwatched episodes -->
-					<control type="label">
+					<control type="label"><!-- Number of unwatched episodes -->
 						<posx>17</posx>
 						<posy>302</posy>
 						<width>285</width>
@@ -640,21 +612,18 @@
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
 						<visible>!IsEmpty(ListItem.Property(UnWatchedEpisodes)) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
-					<!-- Duration -->
-					<control type="group">
+					<control type="group"><!-- Duration -->
 						<visible>!IsEmpty(listitem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 						<control type="label">
 							<posx>17</posx>
 							<posy>302</posy>
 							<width>265</width>
 							<height>31</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$VAR[VideoDuration]</label>
 						</control>
 					</control>
-					<!-- MPAA Rating -->
-					<control type="image">
+					<control type="image"><!-- MPAA Rating -->
 						<posx>17</posx>
 						<posy>343</posy>
 						<width>212</width>
@@ -664,8 +633,7 @@
 						<aspectratio>keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Mpaa)</visible>
 					</control>
-					<!-- Logo -->
-					<control type="group">
+					<control type="group"><!-- Logo -->
 						<visible>!Skin.HasSetting(hide-chrome)</visible>
 						<control type="image">
 							<posx>17</posx>
@@ -677,8 +645,7 @@
 							<aspectratio align="left">keep</aspectratio>
 						</control>
 					</control>
-					<!-- Plot Outline -->
-					<control type="textbox">
+					<control type="textbox"><!-- Plot Outline -->
 						<posx>17</posx>
 						<posy>467</posy>
 						<width>646</width>
@@ -690,8 +657,7 @@
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 						<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
-					<!-- Plot (Show if no outline available)-->
-					<control type="textbox">
+					<control type="textbox"><!-- Plot (Show if no outline available)-->
 						<posx>17</posx>
 						<posy>467</posy>
 						<width>646</width>
@@ -712,7 +678,7 @@
 				<width>18</width>
 				<height>546</height>
 				<onleft>50</onleft>
-				<onright>9000</onright>
+				<onright>noop</onright>
 				<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>

@@ -69,7 +69,6 @@
 				<font>font12</font>
 				<textoffsetx>24</textoffsetx>
 				<textwidth>750</textwidth>
-				<aligny>center</aligny>
 				<label>-</label>
 				<onup>22</onup>
 				<onleft>12</onleft>
@@ -108,7 +107,6 @@
 						<posy>0</posy>
 						<width>619</width>
 						<height>46</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<selectedcolor>listselected-text</selectedcolor>
 						<font>font12</font>
@@ -128,7 +126,6 @@
 						<posy>0</posy>
 						<width>619</width>
 						<height>46</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<selectedcolor>listselected-text</selectedcolor>
 						<font>font12</font>
@@ -143,10 +140,8 @@
 					<height>46</height>
 					<width>177</width>
 					<font>font12</font>
-					<textoffsetx>18</textoffsetx>
 					<label>$LOCALIZE[15019]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 					<onup>17</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -159,10 +154,8 @@
 					<height>46</height>
 					<width>177</width>
 					<font>font12</font>
-					<textoffsetx>18</textoffsetx>
 					<label>$LOCALIZE[1210]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 					<onup>13</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -175,10 +168,8 @@
 					<height>46</height>
 					<width>177</width>
 					<font>font12</font>
-					<textoffsetx>18</textoffsetx>
 					<label>$LOCALIZE[21435]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 					<onup>14</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -229,7 +220,6 @@
 				<font>font12</font>
 				<textoffsetx>8</textoffsetx>
 				<align>right</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[21431]</label>
 				<altlabel>$LOCALIZE[21430]</altlabel>
 				<onright>18</onright>
@@ -247,7 +237,6 @@
 					<font>font12</font>
 					<textoffsetx>12</textoffsetx>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[186]</label>
 					<onup>18</onup>
 					<onleft>21</onleft>
@@ -263,7 +252,6 @@
 					<font>font12</font>
 					<textoffsetx>12</textoffsetx>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[222]</label>
 					<onup>18</onup>
 					<onleft>20</onleft>

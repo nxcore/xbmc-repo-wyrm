@@ -22,7 +22,6 @@
 					<width>256</width>
 					<height>46</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
@@ -31,7 +30,6 @@
 					<width>414</width>
 					<height>46</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</itemlayout>
@@ -49,7 +47,6 @@
 					<width>256</width>
 					<height>46</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
@@ -58,7 +55,6 @@
 					<width>414</width>
 					<height>46</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
@@ -74,7 +70,6 @@
 			<bordersize>6</bordersize>
 			<visible>!IsEmpty(ListItem.Thumb)</visible>
         </control>
-		<!-- Scrollbar -->
 		<control type="scrollbar" id="23">
 			<posx>1250</posx>
 			<posy>112</posy>

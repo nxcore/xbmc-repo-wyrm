@@ -400,7 +400,6 @@
 					<width>265</width>
 					<height>31</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<font>font18</font>
 					<label>$VAR[VideoDuration]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
@@ -413,7 +412,7 @@
 				<width>1239</width>
 				<height>18</height>
 				<onup>57</onup>
-				<ondown>9000</ondown>
+				<ondown>noop</ondown>
 				<orientation>horizontal</orientation>
 				<animation condition="!Control.HasFocus(25) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>

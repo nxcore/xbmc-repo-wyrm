@@ -11,6 +11,7 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<invalidcolor>invalid-text</invalidcolor>
 		<selectedcolor>listselected-text</selectedcolor>
+		<aligny>center</aligny>
 	</default>
 	<default type="button">
 		<texturefocus border="7">default-button.png</texturefocus>
@@ -19,7 +20,7 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<pulseonselect>false</pulseonselect>
-		<textoffsetx>10</textoffsetx>
+		<textoffsetx>18</textoffsetx>
 		<aligny>center</aligny>
 	</default>
 	<default type="togglebutton">
@@ -31,6 +32,7 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<pulseonselect>false</pulseonselect>
+		<textoffsetx>18</textoffsetx>
 		<aligny>center</aligny>
 	</default>
 	<default type="fadelabel">
@@ -89,8 +91,6 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<pulseonselect>false</pulseonselect>
 		<subtype>text</subtype>
-		<textoffsetx>0</textoffsetx>
-		<textoffsety>0</textoffsety>
 	</default>
 	<default type="spincontrolex">
 		<spinwidth>32</spinwidth>

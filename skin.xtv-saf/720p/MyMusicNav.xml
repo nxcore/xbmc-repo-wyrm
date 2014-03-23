@@ -35,7 +35,6 @@
 				<posy>13</posy>
 				<width min="30" max="110">auto</width>
 				<height>38</height>
-				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
 		</control>
@@ -88,7 +87,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[100]</label>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="radiobutton" id="1198">
 					<description>Tilt Icon List view</description>
@@ -98,7 +96,6 @@
 					<font>font11</font>
 					<onclick>Skin.ToggleSetting(tiltmusiclisticon)</onclick>
 					<selected>Skin.HasSetting(tiltmusiclisticon)</selected>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
 				</control>
@@ -110,7 +107,6 @@
 					<font>font11</font>
 					<onclick>Skin.ToggleSetting(tiltmusicwallicon)</onclick>
 					<selected>Skin.HasSetting(tiltmusicwallicon)</selected>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
@@ -120,7 +116,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[103]</label>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort direction</description>
@@ -129,7 +124,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Library button</description>
@@ -137,7 +131,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[29800]</label>
-					<textoffsetx>18</textoffsetx>
 					<selected>Window.IsVisible(musiclibrary)</selected>
 					<radioposx>330</radioposx>
 				</control>
@@ -147,7 +140,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[137]</label>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="edit" id="19">
 					<description>Filter</description>
@@ -156,7 +148,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[587]</label>
 					<textwidth>340</textwidth>
-					<textoffsetx>18</textoffsetx>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="98">
@@ -167,7 +158,6 @@
 					<font>font11</font>
 					<selected>Container.Filtered</selected>
 					<onclick>Filter</onclick>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
@@ -177,7 +167,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[31226]</label>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="button" id="16">
 					<description>Party Mode button</description>
@@ -185,7 +174,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[589]</label>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="button" id="1199">
 					<description>Go to playlist</description>
@@ -193,7 +181,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[13350]</label>
-					<textoffsetx>18</textoffsetx>
 					<onclick>$VAR[PlayList]</onclick>
 					<visible>Player.HasMedia</visible>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -206,7 +193,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<textoffsetx>18</textoffsetx>
 					<onclick condition="SubString(System.BuildVersion,12.,Left)">UpdateLibrary(music)</onclick>
 				</control>
 				<control type="button" id="1200">
@@ -215,7 +201,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
-					<textoffsetx>18</textoffsetx>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
 					<visible>Player.HasAudio | Player.HasVideo</visible>

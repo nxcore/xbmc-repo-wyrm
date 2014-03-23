@@ -208,7 +208,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9100).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -219,7 +218,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[VideoList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
@@ -234,7 +232,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[VideoList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
@@ -264,7 +261,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -283,7 +279,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -345,7 +340,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9150).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -356,7 +350,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[MovieList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
@@ -371,7 +364,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[MovieList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
@@ -401,7 +393,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -420,7 +411,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -490,7 +480,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9200).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -501,7 +490,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[TVShowList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
@@ -516,7 +504,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[TVShowList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
@@ -546,7 +533,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -565,7 +551,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -641,7 +626,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9250).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -652,7 +636,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[MusicList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
@@ -667,7 +650,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[MusicList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
@@ -697,7 +679,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -716,7 +697,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -792,7 +772,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9300).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -818,7 +797,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -837,7 +815,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -876,7 +853,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9350).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -887,7 +863,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[AddonList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
@@ -902,7 +877,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[AddonList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
@@ -932,7 +906,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -951,7 +924,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -1035,7 +1007,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9400).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -1061,7 +1032,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -1080,7 +1050,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
@@ -1113,7 +1082,6 @@
 					<height>32</height>
 					<font>font18</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[Container(9450).ListItem.Label2]</label>
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
@@ -1124,7 +1092,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[SystemList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
@@ -1139,7 +1106,6 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$VAR[SystemList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
@@ -1169,7 +1135,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -1188,7 +1153,6 @@
 							<height>22</height>
 							<font>font11</font>
 							<align>center</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>

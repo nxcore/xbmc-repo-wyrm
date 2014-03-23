@@ -6,7 +6,7 @@
 	<views>50,52,54,57,58,59,560</views>
 	<onload condition="Skin.HasSetting(tv_theme) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<controls>
-		<visible>!Window.IsVisible(songinformation)</visible>
+		<visible>!Window.IsVisible(movieinformation)</visible>
 		<include>screen-fade</include>
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
@@ -30,13 +30,13 @@
 			<posx>946</posx>
 			<posy>35</posy>
 			<width>365</width>
-			<height>72</height>
+			<height>80</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Video screen heading -->
 				<width min="40" max="275">auto</width>
-				<height>72</height>
+				<height>80</height>
 				<label>$VAR[VideoHeadings]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
@@ -44,10 +44,8 @@
 			</control>
 			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
-				<posy>13</posy>
 				<width min="40" max="90">auto</width>
-				<height>38</height>
-				<aligny>center</aligny>
+				<height>46</height>
 				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
 		</control>
@@ -105,7 +103,7 @@
 				<posy>40</posy>
 				<width>376</width>
 				<height>624</height>
-				<onleft>50</onleft>
+				<onleft>noop</onleft>
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
@@ -116,9 +114,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[100]</label>
-					<textoffsetx>18</textoffsetx>
-					<aligny>top</aligny>
-					<textoffsety>8</textoffsety>
 				</control>
 				<control type="radiobutton" id="1198"><!-- Tilt list view icons button  -->
 					<width>376</width>
@@ -127,7 +122,6 @@
 					<font>font11</font>
 					<onclick>Skin.ToggleSetting(tiltvideolisticon)</onclick>
 					<selected>Skin.HasSetting(tiltvideolisticon)</selected>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
 				</control>
@@ -138,7 +132,6 @@
 					<font>font11</font>
 					<onclick>Skin.ToggleSetting(tiltvideowallicon)</onclick>
 					<selected>Skin.HasSetting(tiltvideowallicon)</selected>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
@@ -147,7 +140,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[103]</label>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="togglebutton" id="4"><!-- Sort direction button -->
 					<width>376</width>
@@ -155,21 +147,18 @@
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 					<font>font11</font>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="radiobutton" id="7"><!-- Stack button -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[346]</label>
 					<font>font11</font>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 				</control>
 				<control type="button" id="10"><!-- Show button -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<textoffsetx>18</textoffsetx>
 					<visible>!Skin.HasSetting(watched_filtering_toggle)</visible>
 				</control>
 				<control type="button" id="14"><!-- Watched video toggle button -->
@@ -184,7 +173,6 @@
 					<height>48</height>
 					<label>$LOCALIZE[137]</label>
 					<font>font11</font>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="edit" id="19"><!-- Filter button -->
 					<width>376</width>
@@ -192,7 +180,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[587]</label>
 					<textwidth>340</textwidth>
-					<textoffsetx>18</textoffsetx>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="98"><!-- Advanced filter button -->
@@ -202,7 +189,6 @@
 					<font>font11</font>
 					<selected>Container.Filtered</selected>
 					<onclick>Filter</onclick>
-					<textoffsetx>18</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
@@ -211,7 +197,6 @@
 					<height>48</height>
 					<label>$LOCALIZE[589]</label>
 					<font>font11</font>
-					<textoffsetx>18</textoffsetx>
 					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="button" id="17"><!-- Flatten library button -->
@@ -219,7 +204,6 @@
 					<height>48</height>
 					<label>$LOCALIZE[20411]</label>
 					<font>font11</font>
-					<textoffsetx>18</textoffsetx>
 				</control>
 				<control type="radiobutton" id="11"><!-- Unlock shares button -->
 					<label>$LOCALIZE[20336]</label>
@@ -229,7 +213,6 @@
 					<onclick>xbmc.mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<radioposx>330</radioposx>
-					<textoffsetx>18</textoffsetx>
 					<visible>system.haslocks</visible>
 				</control>
 				<control type="button" id="1199"><!-- Goto playlist button -->
@@ -237,7 +220,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[13350]</label>
-					<textoffsetx>18</textoffsetx>
 					<onclick>$VAR[PlayList]</onclick>
 					<visible>Player.HasMedia</visible>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -249,7 +231,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<textoffsetx>18</textoffsetx>
 					<onclick condition="SubString(System.BuildVersion,12.,Left)">UpdateLibrary(video)</onclick>
 				</control>
 				<control type="button" id="1200"><!-- player controls button -->
@@ -257,7 +238,6 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
-					<textoffsetx>18</textoffsetx>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
 					<visible>Player.HasAudio | Player.HasVideo</visible>

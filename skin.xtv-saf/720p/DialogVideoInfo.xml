@@ -164,7 +164,6 @@
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font18</font>
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>substring(listitem.Duration,hrs)</visible>
@@ -175,7 +174,6 @@
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font18</font>
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>substring(listitem.Duration,min) + !substring(listitem.Duration,hrs)</visible>
@@ -186,7 +184,6 @@
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font18</font>
 					<label>$INFO[ListItem.Duration,, mins]</label>
 					<visible>!substring(listitem.Duration,min)</visible>
@@ -198,7 +195,6 @@
 				<width>177</width>
 				<height>62</height>
 				<align>right</align>
-				<aligny>center</aligny>
 				<font>font18</font>
 				<label>$INFO[ListItem.Year]</label>
 			</control>
@@ -206,14 +202,12 @@
 				<posx>531</posx>
 				<posy>155</posy>
 				<width>265</width>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[31130]</label>
 			</control>
 			<control type="label">
 				<posx>769</posx>
 				<posy>155</posy>
 				<width>451</width>
-				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="161">$INFO[ListItem.Director]</label>
 			</control>
@@ -221,14 +215,12 @@
 				<posx>531</posx>
 				<posy>185</posy>
 				<width>265</width>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[31131]</label>
 			</control>
 			<control type="label">
 				<posx>769</posx>
 				<posy>185</posy>
 				<width>451</width>
-				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="161">$INFO[ListItem.Writer]</label>
 			</control>
@@ -236,14 +228,12 @@
 				<posx>531</posx>
 				<posy>215</posy>
 				<width>265</width>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[567]:</label>
 			</control>
 			<control type="label">
 				<posx>769</posx>
 				<posy>215</posy>
 				<width>451</width>
-				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.PlayCount]</label>
 			</control>
@@ -251,7 +241,6 @@
 				<posx>531</posx>
 				<posy>265</posy>
 				<width>265</width>
-				<aligny>center</aligny>
 				<font>font18</font>
 				<label>$LOCALIZE[207]</label>
 				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
@@ -322,7 +311,6 @@
 				<posx>531</posx>
 				<posy>265</posy>
 				<width>265</width>
-				<aligny>center</aligny>
 				<font>font18</font>
 				<label>$LOCALIZE[206]</label>
 				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
@@ -353,7 +341,6 @@
 						<posy>-2</posy>
 						<width>610</width>
 						<height>50</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -371,7 +358,6 @@
 						<posy>-2</posy>
 						<width>610</width>
 						<height>50</height>
-						<aligny>center</aligny>
 						<scrollspeed>30</scrollspeed>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -471,7 +457,6 @@
 				<width>208</width>
 				<font>font11</font>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[208]</label>
 				<altlabel>$LOCALIZE[1024]</altlabel>
 				<usealttexture>Container.Content(tvshows)</usealttexture>

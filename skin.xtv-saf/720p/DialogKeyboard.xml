@@ -32,7 +32,6 @@
 				<font>font18</font>
 				<textcolor>disabled-text</textcolor>
 				<shadowcolor>button-text</shadowcolor>
-				<aligny>center</aligny>
 				<visible>IsEmpty(Control.GetLabel(310))</visible>
 			</control>
 			<control type="label" id="310"><!-- Entered text -->
@@ -43,7 +42,6 @@
 				<font>font18</font>
 				<textcolor>shadow-text</textcolor>
 				<shadowcolor>button-text</shadowcolor>
-				<aligny>center</aligny>
 			</control>
 			<control type="group">
 				<posx>0</posx>

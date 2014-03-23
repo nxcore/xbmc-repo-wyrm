@@ -71,7 +71,6 @@
 			<label>$LOCALIZE[186]</label>
 			<font>font12</font>
 			<align>center</align>
-			<aligny>center</aligny>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>10</onup>

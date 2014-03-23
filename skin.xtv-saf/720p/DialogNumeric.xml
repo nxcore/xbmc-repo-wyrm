@@ -24,7 +24,6 @@
 			<textcolor>disabled-text</textcolor>
 			<shadowcolor>button-text</shadowcolor>
 			<align>center</align>
-			<aligny>center</aligny>
 			<visible>IsEmpty(Control.GetLabel(4))</visible>
 		</control>
 		<control type="image"><!-- Entered text background -->
@@ -43,7 +42,6 @@
 			<textcolor>shadow-text</textcolor>
 			<shadowcolor>button-text</shadowcolor>
 			<align>center</align>
-			<aligny>center</aligny>
 		</control>
 		<control type="group">
 			<posx>442</posx>
@@ -254,9 +252,8 @@
 					<font>font18</font>
 					<label>$LOCALIZE[20177]</label>
 					<textcolor>shadow-text</textcolor>
-					<shadowcolor>button-textshadow-text</shadowcolor>
+					<shadowcolor>button-text</shadowcolor>
 					<align>center</align>
-					<aligny>center</aligny>
 					<animation effect="rotate" center="auto" end="-90" time="300" condition="true">Conditional</animation>
 				</control>
 			</control>
