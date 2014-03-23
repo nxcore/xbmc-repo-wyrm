@@ -11,7 +11,7 @@
 			<pagecontrol>29</pagecontrol>
 			<onup>59</onup>
 			<ondown>59</ondown>
-			<onleft>9000</onleft>
+			<onleft>noop</onleft>
 			<onright>29</onright>
 			<itemlayout height="100">
 				<control type="group">
@@ -107,7 +107,6 @@
 				<height>50</height>
 				<font>font28</font>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[31688]</label>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
@@ -141,7 +140,6 @@
 					<width>557</width>
 					<height>37</height>
 					<font>font18</font>
-					<aligny>center</aligny>
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -217,7 +215,7 @@
 					<width>18</width>
 					<height>524</height>
 					<onleft>59</onleft>
-					<onright>9000</onright>
+					<onright>noop</onright>
 					<animation condition="!Control.HasFocus(29) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 					<visible>Skin.HasSetting(sbar)</visible>
 				</control>

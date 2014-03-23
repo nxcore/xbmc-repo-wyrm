@@ -145,7 +145,6 @@
 				<height>50</height>
 				<label>$LOCALIZE[13405]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onback>SendClick(10)</onback>
 				<onleft>15</onleft>
 				<onright>12</onright>
@@ -159,7 +158,6 @@
 				<height>50</height>
 				<label>$LOCALIZE[10523]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onback>SendClick(10)</onback>
 				<onleft>13</onleft>
 				<onright>14</onright>
@@ -179,7 +177,6 @@
 				<posy>650</posy>
 				<width>123</width>
 				<height>50</height>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[31229]</label>
 			</control>
 			<control type="button" id="14"><!-- Decrease Rating -->

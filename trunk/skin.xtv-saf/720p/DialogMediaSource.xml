@@ -7,8 +7,7 @@
 		<posy>205</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<description>Media Source background image</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>-26</posx>
 			<posy>-18</posy>
 			<width>920</width>
@@ -16,7 +15,7 @@
 			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
-		<control type="label" id="2">
+		<control type="label" id="2"><!-- Heading -->
 			<description>Heading Label</description>
 			<posx>10</posx>
 			<posy>-2</posy>
@@ -27,15 +26,13 @@
 			<font>font12</font>
 		</control>
 		<control type="image">
-			<description>seperator</description>
 			<posx>10</posx>
 			<posy>35</posy>
 			<width>848</width>
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="label">
-			<description>path label</description>
+		<control type="label"><!-- Path heading -->
 			<posx>10</posx>
 			<posy>43</posy>
 			<width>848</width>
@@ -60,7 +57,6 @@
 					<width>540</width>
 					<height>46</height>
 					<font>font12</font>
-					<aligny>center</aligny>
 					<selectedcolor>listselected-text</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -80,15 +76,13 @@
 					<width>540</width>
 					<height>23</height>
 					<font>font12</font>
-					<aligny>center</aligny>
 					<selectedcolor>listselected-text</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<control type="button" id="11">
-				<description>Browse Button</description>
+			<control type="button" id="11"><!-- Browse -->
 				<posx>580</posx>
 				<posy>75</posy>
 				<width>280</width>
@@ -97,14 +91,12 @@
 				<textoffsetx>12</textoffsetx>
 				<label>$LOCALIZE[1024]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onup>noop</onup>
 				<onleft>10</onleft>
 				<onright>noop</onright>
 				<ondown>13</ondown>
 			</control>
-			<control type="button" id="13">
-				<description>Add Path Button</description>
+			<control type="button" id="13"><!-- Add path -->
 				<posx>580</posx>
 				<posy>125</posy>
 				<width>280</width>
@@ -113,14 +105,12 @@
 				<textoffsetx>12</textoffsetx>
 				<label>$LOCALIZE[15019]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onup>11</onup>
 				<onleft>10</onleft>
 				<onright>noop</onright>
 				<ondown>14</ondown>
 			</control>
-			<control type="button" id="14">
-				<description>Remove Path Button</description>
+			<control type="button" id="14"><!-- Remove path -->
 				<posx>580</posx>
 				<posy>175</posy>
 				<width>280</width>
@@ -129,15 +119,13 @@
 				<textoffsetx>12</textoffsetx>
 				<label>$LOCALIZE[1210]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 				<onup>13</onup>
 				<onleft>10</onleft>
 				<onright>noop</onright>
 				<ondown>12</ondown>
 			</control>
 		</control>
-		<control type="label">
-			<description>Name Label</description>
+		<control type="label"><!-- Name heading -->
 			<posx>10</posx>
 			<posy>231</posy>
 			<width>743</width>
@@ -145,8 +133,7 @@
 			<font>font12</font>
 			<label>$LOCALIZE[1022]</label>
 		</control>
-		<control type="button" id="12">
-			<description>Name Button</description>
+		<control type="button" id="12"><!-- Name -->
 			<posx>10</posx>
 			<posy>262</posy>
 			<width>566</width>
@@ -154,7 +141,6 @@
 			<font>font12</font>
 			<textoffsetx>12</textoffsetx>
 			<textwidth>500</textwidth>
-			<aligny>center</aligny>
 			<label>-</label>
 			<onup>10</onup>
 			<onleft>12</onleft>
@@ -172,24 +158,20 @@
 			<ondown>-</ondown>
 			<onleft>900</onleft>
 			<onright>900</onright>
-			<control type="button" id="18">
-				<description>Ok Button</description>
+			<control type="button" id="18"><!-- OK Button -->
 				<width>280</width>
 				<height>46</height>
 				<font>font12</font>
 				<textoffsetx>12</textoffsetx>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[186]</label>
 			</control>
-			<control type="button" id="19">
-				<description>Cancel Button</description>
+			<control type="button" id="19"><!-- Cancel button -->
 				<width>280</width>
 				<height>46</height>
 				<font>font12</font>
 				<textoffsetx>12</textoffsetx>
 				<align>center</align>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[222]</label>
 			</control>
 		</control>

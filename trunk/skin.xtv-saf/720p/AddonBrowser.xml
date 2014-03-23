@@ -6,43 +6,37 @@
 		<include>background</include>
 		<include>#files</include>
 		<include>Fake-Overlay</include>
-		<control type="image">
-			<description>Settings Logo</description>
+		<control type="image"><!-- Addons logo -->
 			<include>icon-header-commons</include>
 			<texture>DefaultAddon.png</texture>
 		</control>
 		<control type="grouplist">
 			<posx>946</posx>
-			<posy>50</posy>
-			<width>360</width>
-			<height>37</height>
+			<posy>35</posy>
+			<width>365</width>
+			<height>80</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
-			<control type="label">
-				<description>Addons Label</description>
-				<width min="60" max="250">auto</width>
-				<height>38</height>
+			<control type="label"><!-- Addons heading -->
+				<width min="40" max="275">auto</width>
+				<height>80</height>
 				<label>$LOCALIZE[24001]</label>
-				<font>font20</font>
-				<aligny>center</aligny>
+				<font>font18</font>
+				<wrapmultiline>true</wrapmultiline>
+				<aligny>top</aligny>
 			</control>
-			<control type="label">
-				<description>Number of files</description>
+			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
-				<posy>13</posy>
-				<width min="40" max="110">auto</width>
-				<height>38</height>
-				<aligny>center</aligny>
+				<width min="40" max="90">auto</width>
+				<height>46</height>
 				<label>$INFO[Container.NumItems, (,)]</label>
 			</control>
 		</control>
 
-		<!-- Display warning if free memory is low -->
-		<include>memory-low</include>
+		<include>memory-low</include><!-- Display warning if free memory is low -->
 
-		<!-- Various Views of Addons Browser -->
-		<control type="group">
+		<control type="group"><!-- Various Views of Addons Browser -->
 			<include>ListView</include>
 			<include>IconView</include>
 			<include>WrapView</include>
@@ -50,13 +44,12 @@
 			<include>Coverflow</include>
 		</control>
 
-		<control type="group">
+		<control type="group"><!-- View-As Menu -->
 			<posy>720</posy>
 			<include>View-as</include>
 			<control type="group">
 				<visible>ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
-				<control type="image">
-					<description>Background shadow</description>
+				<control type="image"><!-- Background shadow -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
@@ -64,8 +57,7 @@
 					<texture>colours/black.png</texture>
 					<colordiffuse>osd-background</colordiffuse>
 				</control>
-				<control type="image">
-					<description>Button Background</description>
+				<control type="image"><!-- Button background -->
 					<posx>440</posx>
 					<posy>212</posy>
 					<width>396</width>
@@ -84,18 +76,15 @@
 				<ondown>9000</ondown>
 				<onback>50</onback>
 				<itemgap>0</itemgap>
-				<control type="button" id="2">
+				<control type="button" id="2"><!-- View as button -->
 					<description>View As Icons button</description>
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[100]</label>
 					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<aligny>top</aligny>
 				</control>
-				<control type="radiobutton" id="1198">
-					<description>Tilt Icon List view</description>
+				<control type="radiobutton" id="1198"><!-- Tilt list view icons button  -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[31886]</label>
@@ -106,8 +95,7 @@
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
 				</control>
-				<control type="radiobutton" id="1197">
-					<description>Tilt Icon Wall view</description>
+				<control type="radiobutton" id="1197"><!-- Tilt wall view icons button -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[31886]</label>
@@ -118,16 +106,14 @@
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
-				<control type="button" id="3">
-					<description>Sort by button</description>
+				<control type="button" id="3"><!-- Sort by button -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[103]</label>
 					<textoffsetx>10</textoffsetx>
 				</control>
-				<control type="togglebutton" id="4">
-					<description>Sort direction</description>
+				<control type="togglebutton" id="4"><!-- Sort direction button -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
@@ -135,8 +121,7 @@
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
 				</control>
-				<control type="radiobutton" id="5">
-					<description>Enable auto-updates</description>
+				<control type="radiobutton" id="5"><!-- Auto updates button -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
@@ -144,8 +129,7 @@
 					<label>$LOCALIZE[24063]</label>
 					<radioposx>330</radioposx>
 				</control>
-				<control type="radiobutton" id ="6">
-					<description>No notifications</description>
+				<control type="radiobutton" id ="6"><!-- Notifications button -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
@@ -153,8 +137,7 @@
 					<label>$LOCALIZE[25000]</label>
 					<radioposx>330</radioposx>
 				</control>
-				<control type="radiobutton" id ="7">
-					<description>Hide foreign</description>
+				<control type="radiobutton" id ="7"><!-- Hide foreign button -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>

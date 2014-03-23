@@ -14,10 +14,9 @@
 			<onfocus>Control.SetFocus(9000)</onfocus>
 		</control>
 
-		<control type="group"><!-- show time on home screen -->
+		<control type="group"><!-- Show time on home screen -->
 			<visible>!Skin.HasSetting(home-time)</visible>
-			<control type="label">
-				<description>Date</description>
+			<control type="label"><!-- Date -->
 				<posx>354</posx>
 				<posy>18</posy>
 				<width>566</width>
@@ -25,8 +24,7 @@
 				<label>$INFO[System.Date]</label>
 				<align>center</align>
 			</control>
-			<control type="label">
-				<description>Time and Date</description>
+			<control type="label"><!-- Time -->
 				<posx>354</posx>
 				<posy>56</posy>
 				<width>566</width>
@@ -39,8 +37,7 @@
 
 		<control type="group"><!-- Weather Condition -->
 			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.plugin)</visible>
-			<control type="label">
-				<description>Can't get current weather conditions</description>
+			<control type="label"><!-- Can't get current weather conditions -->
 				<posx>1185</posx>
 				<posy>31</posy>
 				<width>212</width>
@@ -48,13 +45,11 @@
 				<wrapmultiline>true</wrapmultiline>
 				<label>$LOCALIZE[412]</label>
 				<align>right</align>
-				<aligny>center</aligny>
 				<visible>IsEmpty(Weather.Conditions)</visible>
 			</control>
 			<control type="group">
 				<visible>!IsEmpty(Weather.Conditions)</visible>
-				<control type="label">
-					<description>current condition label</description>
+				<control type="label"><!-- Current conditions -->
 					<posx>1132</posx>
 					<posy>6</posy>
 					<width>212</width>
@@ -62,10 +57,8 @@
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[Weather.Conditions]</label>
 					<align>right</align>
-					<aligny>center</aligny>
 				</control>
-				<control type="label">
-					<description>current temp value</description>
+				<control type="label"><!-- Current temperature -->
 					<posx>1132</posx>
 					<posy>56</posy>
 					<width>132</width>
@@ -75,8 +68,7 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[Weather.Temperature]</label>
 				</control>
-				<control type="image">
-					<description>current weather icon</description>
+				<control type="image"><!-- Current weather condition icon -->
 					<posx>1141</posx>
 					<posy>18</posy>
 					<height>87</height>
@@ -85,8 +77,7 @@
 					<aspectratio>keep</aspectratio>
 					<visible>!Skin.HasSetting(weather-animateicon)</visible>
 				</control>
-				<control type="multiimage">
-					<description>current weather animated icon</description>
+				<control type="multiimage"><!-- Current weather condition animated icon -->
 					<posx>1141</posx>
 					<posy>18</posy>
 					<width>123</width>
@@ -140,7 +131,6 @@
 					<width>430</width>
 					<height>24</height>
 					<label>$INFO[ListItem.Label]</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="image">
 					<posx>460</posx>
@@ -165,7 +155,6 @@
 					<width>430</width>
 					<height>24</height>
 					<label>$INFO[ListItem.Label]</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="image">
 					<posx>460</posx>

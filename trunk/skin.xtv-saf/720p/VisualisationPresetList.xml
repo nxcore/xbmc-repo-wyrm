@@ -68,7 +68,6 @@
 					<width>668</width>
 					<height>45</height>
 					<font>font12</font>
-					<aligny>center</aligny>
 					<selectedcolor>listselected-text</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -87,7 +86,6 @@
 					<width>668</width>
 					<height>45</height>
 					<font>font12</font>
-					<aligny>center</aligny>
 					<selectedcolor>listselected-text</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>

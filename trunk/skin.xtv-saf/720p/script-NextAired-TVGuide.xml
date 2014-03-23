@@ -53,7 +53,6 @@
 				<posy>13</posy>
 				<width min="40" max="90">auto</width>
 				<height>38</height>
-				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.Total),(,)]</label>
 			</control>
 		</control>
@@ -1507,7 +1506,6 @@
 					<width>110</width>
 					<height>160</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<texture>$VAR[NextAiredImage1]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + [StringCompare(Window(Home).Property(TVGuide.ThumbType),0) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)]</visible>
 				</control>
@@ -1517,7 +1515,6 @@
 					<width>244</width>
 					<height>45</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<texture>$VAR[NextAiredImage5]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 				</control>
@@ -1528,7 +1525,6 @@
 					<height>160</height>
 					<aspectratio>keep</aspectratio>
 					<align>center</align>
-					<aligny>center</aligny>
 					<texture>$VAR[NextAiredImage2]</texture>
 					<visible>!IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs))</visible>
 				</control>
@@ -1539,7 +1535,6 @@
 					<height>90</height>
 					<label>$VAR[NextAiredLabel2]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Run Time -->
@@ -1550,7 +1545,6 @@
 					<label>$VAR[NextAiredLabel3]</label>
 					<font>font12</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Genre -->
@@ -1561,7 +1555,6 @@
 					<label>$VAR[NextAiredLabel4]</label>
 					<font>font11</font>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Time and Date -->
@@ -1571,7 +1564,6 @@
 					<height>22</height>
 					<label>$VAR[NextAiredLabel5]   $VAR[NextAiredLabel6]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 			</control>

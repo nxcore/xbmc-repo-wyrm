@@ -105,9 +105,8 @@
 				<align>right</align>
 			</control>
 		</control>
-		<control type="list" id="3">
+		<control type="list" id="3"><!-- Type 3 Select -->
 			<animation condition="Control.HasFocus(5)" effect="fade" start="100" end="65">Conditional</animation>
-			<description>Type 3 Select</description>
 			<posx>200</posx>
 			<posy>124</posy>
 			<width>700</width>
@@ -132,7 +131,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -160,15 +158,13 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="button" id="5">
-			<description>Manual Button</description>
+		<control type="button" id="5"><!-- Manual -->
 			<posx>910</posx>
 			<posy>124</posy>
 			<width>250</width>
@@ -182,8 +178,7 @@
 			<ondown>noop</ondown>
 		</control>
 
-		<control type="list" id="6">
-			<description>Type 6 Select</description>
+		<control type="list" id="6"><!-- Type 6 Select -->
 			<posx>168</posx>
 			<posy>126</posy>
 			<width>700</width>
@@ -208,7 +203,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -236,7 +230,6 @@
 					<width>614</width>
 					<height>56</height>
 					<font>font11</font>
-					<aligny>center</aligny>
 					<selectedcolor>button-text</selectedcolor>
 					<label>$INFO[ListItem.Label] [I]$INFO[ListItem.Label2, - ] [/I]</label>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>

@@ -121,7 +121,6 @@
 					<width>929</width>
 					<height>38</height>
 					<font>font22</font>
-					<aligny>center</aligny>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<wrapmultiline>true</wrapmultiline>
@@ -137,7 +136,6 @@
 				<width>929</width>
 				<height>38</height>
 				<font>font22</font>
-				<aligny>center</aligny>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label>$INFO[ListItem.Label]</label>
 				<wrapmultiline>true</wrapmultiline>
@@ -166,7 +164,6 @@
 					<width>204</width>
 					<height>31</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<font>font18</font>
 					<label>$VAR[VideoDuration]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>

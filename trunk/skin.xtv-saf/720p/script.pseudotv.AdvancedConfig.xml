@@ -26,18 +26,16 @@
 			<height>45</height>
 			<label>$LOCALIZE[31701]</label>
 			<font>font18</font>
-			<aligny>center</aligny>
 			<align>center</align>
 		</control>
 		<control type="image">
-			<description>seperator</description>
 			<posx>330</posx>
 			<posy>145</posy>
 			<width>620</width>
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-		
+
 		<control type="group" id="105">
 			<posx>322</posx>
 			<posy>150</posy>
@@ -126,7 +124,7 @@
 					<onclick>SetProperty(itempress,126)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				
+
 				<control type="button" id="130">
 					<description>Rule for editing</description>
 					<posx>30</posx>

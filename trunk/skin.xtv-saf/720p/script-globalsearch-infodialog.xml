@@ -129,7 +129,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -202,7 +201,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration)]</label>
 							<visible>substring(Container(100).ListItem.Property(Duration),hrs)</visible>
@@ -212,7 +210,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration)]</label>
 							<visible>substring(Container(100).ListItem.Property(Duration),min) + !substring(Container(100).ListItem.Property(Duration),hrs)</visible>
@@ -222,7 +219,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration),, mins]</label>
 							<visible>!substring(Container(100).ListItem.Property(Duration),min)</visible>
@@ -233,7 +229,6 @@
 						<posy>62</posy>
 						<width>177</width>
 						<height>62</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$INFO[Container(100).ListItem.Property(Year)]</label>
 					</control>
@@ -242,7 +237,6 @@
 						<posy>275</posy>
 						<width>265</width>
 						<height>27</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$LOCALIZE[207]</label>
 					</control>
@@ -276,7 +270,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -285,7 +278,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -296,7 +288,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -305,7 +296,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -360,7 +350,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -406,7 +395,6 @@
 						<posy>62</posy>
 						<width>177</width>
 						<height>62</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$INFO[Container(100).ListItem.Property(Year)]</label>
 					</control>
@@ -415,7 +403,6 @@
 						<posy>275</posy>
 						<width>265</width>
 						<height>27</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$LOCALIZE[207]</label>
 					</control>
@@ -449,7 +436,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -458,7 +444,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -469,7 +454,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -478,7 +462,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -514,7 +497,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 					</control>
@@ -545,7 +527,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -554,7 +535,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -565,7 +545,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -574,7 +553,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -604,7 +582,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 					</control>
@@ -615,7 +592,6 @@
 						<height>40</height>
 						<font>font18</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -644,7 +620,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration)]</label>
 							<visible>substring(Container(100).ListItem.Property(Duration),hrs)</visible>
@@ -654,7 +629,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration)]</label>
 							<visible>substring(Container(100).ListItem.Property(Duration),min) + !substring(Container(100).ListItem.Property(Duration),hrs)</visible>
@@ -664,7 +638,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration),, mins]</label>
 							<visible>!substring(Container(100).ListItem.Property(Duration),min)</visible>
@@ -675,7 +648,6 @@
 						<posy>280</posy>
 						<width>265</width>
 						<height>27</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$LOCALIZE[207]</label>
 					</control>
@@ -709,7 +681,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -718,7 +689,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -729,7 +699,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -738,7 +707,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -805,7 +773,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -834,7 +801,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration)]</label>
 							<visible>substring(Container(100).ListItem.Property(Duration),hrs)</visible>
@@ -844,7 +810,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration)]</label>
 							<visible>substring(Container(100).ListItem.Property(Duration),min) + !substring(Container(100).ListItem.Property(Duration),hrs)</visible>
@@ -854,7 +819,6 @@
 							<posy>62</posy>
 							<width>265</width>
 							<height>62</height>
-							<aligny>center</aligny>
 							<font>font18</font>
 							<label>$INFO[Container(100).ListItem.Property(Duration),, mins]</label>
 							<visible>!substring(Container(100).ListItem.Property(Duration),min)</visible>
@@ -866,7 +830,6 @@
 						<posy>62</posy>
 						<width>177</width>
 						<height>62</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$INFO[Container(100).ListItem.Property(Year)]</label>
 					</control>
@@ -875,7 +838,6 @@
 						<posy>275</posy>
 						<width>265</width>
 						<height>27</height>
-						<aligny>center</aligny>
 						<font>font18</font>
 						<label>$LOCALIZE[207]</label>
 					</control>
@@ -909,7 +871,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -918,7 +879,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -929,7 +889,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -938,7 +897,6 @@
 							<width>235</width>
 							<height>40</height>
 							<font>font12</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -980,7 +938,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -1023,7 +980,6 @@
 							<height>40</height>
 							<font>font11</font>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -1032,7 +988,6 @@
 							<width>625</width>
 							<height>40</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -1044,7 +999,6 @@
 							<height>40</height>
 							<font>font11</font>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -1053,7 +1007,6 @@
 							<width>625</width>
 							<height>40</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -1120,7 +1073,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -1163,7 +1115,6 @@
 							<height>40</height>
 							<font>font11</font>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -1172,7 +1123,6 @@
 							<width>625</width>
 							<height>40</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -1184,7 +1134,6 @@
 							<height>40</height>
 							<font>font11</font>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -1193,7 +1142,6 @@
 							<width>625</width>
 							<height>40</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -1265,7 +1213,6 @@
 						<height>40</height>
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
@@ -1308,7 +1255,6 @@
 							<height>40</height>
 							<font>font11</font>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -1317,7 +1263,6 @@
 							<width>625</width>
 							<height>40</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
@@ -1329,7 +1274,6 @@
 							<height>40</height>
 							<font>font11</font>
 							<align>right</align>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -1338,7 +1282,6 @@
 							<width>625</width>
 							<height>40</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
@@ -1436,21 +1379,18 @@
 					<height>50</height>
 					<label>$LOCALIZE[186]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 				</control>
 				<control type="button" id="192">
 					<width>250</width>
 					<height>50</height>
 					<label>-</label>
 					<align>center</align>
-					<aligny>center</aligny>
 				</control>
 				<control type="button" id="193">
 					<width>250</width>
 					<height>50</height>
 					<label>-</label>
 					<align>center</align>
-					<aligny>center</aligny>
 				</control>
 			</control>
 		</control>

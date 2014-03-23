@@ -10,8 +10,7 @@
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>
-		<control type="label">
-			<description>System Label</description>
+		<control type="label"><!-- Screen heading -->
 			<posx>946</posx>
 			<posy>50</posy>
 			<width>309</width>
@@ -19,71 +18,56 @@
 			<label>$LOCALIZE[31559]</label>
 			<font>font20</font>
 		</control>
-		<control type="grouplist" id="9000">
-			<description>main menu</description>
-			<posx>916</posx>
+		<control type="grouplist" id="9000"><!-- Main menu -->
+			<posx>940</posx>
 			<posy>112</posy>
-			<width>354</width>
+			<width>305</width>
 			<height>315</height>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
-			<control type="button" id="95">
-				<description>Summary</description>
-				<width>354</width>
+			<control type="button" id="95"><!-- Summary -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[128]</label>
-				<textoffsetx>18</textoffsetx>
 			</control>
-			<control type="button" id="94">
-				<description>storage</description>
-				<width>354</width>
+			<control type="button" id="94"><!-- Storage info -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[13277]</label>
-				<textoffsetx>18</textoffsetx>
 			</control>
-			<control type="button" id="96">
-				<description>network</description>
-				<width>354</width>
+			<control type="button" id="96"><!-- Network info -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[13279]</label>
-				<textoffsetx>18</textoffsetx>
 			</control>
-			<control type="button" id="97">
-				<description>video</description>
-				<width>354</width>
+			<control type="button" id="97"><!-- Video info -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[13280]</label>
-				<textoffsetx>18</textoffsetx>
 			</control>
-			<control type="button" id="98">
-				<description>hardware</description>
-				<width>354</width>
+			<control type="button" id="98"><!-- Hardware info -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[13281]</label>
-				<textoffsetx>18</textoffsetx>
 			</control>
-			<control type="button" id="99">
-				<description>PVR</description>
-				<width>354</width>
+			<control type="button" id="99"><!-- PVR info -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[19191]</label>
-				<textoffsetx>18</textoffsetx>
 				<visible>System.HasPVR</visible>
 			</control>
-			<control type="button" id="100">
-				<description>skin</description>
-				<width>354</width>
+			<control type="button" id="100"><!-- Skin info -->
+				<width>305</width>
 				<height>45</height>
 				<label>$LOCALIZE[166]</label>
-				<textoffsetx>18</textoffsetx>
 			</control>
 		</control>
 		<control type="grouplist">
 			<posx>34</posx>
 			<posy>112</posy>
-			<width>876</width>
+			<width>890</width>
 			<height>450</height>
 			<itemgap>0</itemgap>
 			<onleft>noop</onleft>
@@ -93,71 +77,61 @@
 			<orientation>vertical</orientation>
 			<visible>!Control.HasFocus(100)</visible>
 			<control type="label" id="2">
-				<description>Label 2</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="3">
-				<description>Label 3</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="4">
-				<description>Label 4</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="5">
-				<description>Label 5</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="6">
-				<description>Label 6</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="7">
-				<description>Label 7</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="8">
-				<description>Label 8</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="9">
-				<description>Label 9</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="10">
-				<description>Label 10</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="11">
-				<description>Label 11</description>
-				<width>876</width>
+				<width>890</width>
 				<height>45</height>
 				<label>-</label>
 				<font>font12</font>
@@ -166,7 +140,7 @@
 		<control type="grouplist">
 			<posx>34</posx>
 			<posy>112</posy>
-			<width>876</width>
+			<width>890</width>
 			<height>225</height>
 			<itemgap>0</itemgap>
 			<onleft>noop</onleft>
@@ -175,43 +149,38 @@
 			<ondown>noop</ondown>
 			<orientation>vertical</orientation>
 			<visible>Control.HasFocus(100)</visible>
-			<control type="label">
-				<description>Skin Version</description>
+			<control type="label"><!-- Skin version -->
 				<height>45</height>
 				<label>$LOCALIZE[31563] xTV-SAF v1.3.5</label>
 				<font>font12</font>
 			</control>
-			<control type="label">
-				<description>Current Theme</description>
+			<control type="label"><!-- Current theme -->
 				<height>45</height>
 				<label>$LOCALIZE[31564] $INFO[Skin.CurrentTheme]</label>
 				<font>font12</font>
 			</control>
-			<control type="label">
-				<description>Screen Mode</description>
+			<control type="label"><!-- Screen mode -->
 				<height>45</height>
 				<label>$LOCALIZE[31565] $INFO[System.ScreenMode]</label>
 				<font>font12</font>
 			</control>
-			<control type="label"><!-- Platform system is running on --> 
+			<control type="label"><!-- Platform system is running on -->
 				<height>45</height>
 				<label>$VAR[SystemPlatform]</label>
 				<font>font12</font>
 			</control>
 		</control>
-		<control type="label">
-			<description>XBMC BUILD Version</description>
+		<control type="label"><!-- XBMC build version -->
 			<posx>34</posx>
 			<posy>608</posy>
-			<width>876</width>
+			<width>890</width>
 			<label>$INFO[System.BuildVersion,$LOCALIZE[144] ,]</label>
 			<font>font12</font>
 		</control>
-		<control type="label">
-			<description>XBMC BUILD Date</description>
+		<control type="label"><!-- XBMC build date -->
 			<posx>34</posx>
 			<posy>638</posy>
-			<width>876</width>
+			<width>890</width>
 			<label>$INFO[System.BuildDate,$LOCALIZE[552]: ,]</label>
 			<font>font12</font>
 		</control>

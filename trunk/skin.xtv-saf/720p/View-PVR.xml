@@ -38,7 +38,6 @@
 						<width>34</width>
 						<height>29</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -73,7 +72,6 @@
 						<width>45</width>
 						<height>52</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.ChannelNumber]</label>
 						<visible>IsEmpty(ListItem.Icon)</visible>
@@ -84,7 +82,6 @@
 						<width>238</width>
 						<height>52</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
@@ -112,7 +109,6 @@
 						<width>45</width>
 						<height>52</height>
 						<align>center</align>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.ChannelNumber]</label>
 						<visible>IsEmpty(ListItem.Icon)</visible>
@@ -123,7 +119,6 @@
 						<width>238</width>
 						<height>52</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
@@ -143,7 +138,6 @@
 						<width>10</width>
 						<height>48</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<wrapmultiline>true</wrapmultiline>
 						<label>$INFO[ListItem.Label]</label>
@@ -180,7 +174,6 @@
 						<width>10</width>
 						<height>48</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<selectedcolor>listselected-text</selectedcolor>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<wrapmultiline>true</wrapmultiline>
@@ -202,7 +195,6 @@
 				<width>700</width>
 				<height>32</height>
 				<font>font18</font>
-				<aligny>center</aligny>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label"><!-- Start time -->
@@ -211,7 +203,6 @@
 				<posy>574</posy>
 				<width>320</width>
 				<height>24</height>
-				<aligny>center</aligny>
 				<align>right</align>
 				<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
 			</control>
@@ -223,7 +214,7 @@
 				<height>5</height>
 				<texture>separator.png</texture>
 			</control>
-			<control type="textbox"><!-- Plat -->
+			<control type="textbox"><!-- Plot -->
 				<posx>30</posx>
 				<posy>608</posy>
 				<width>1220</width>
@@ -259,7 +250,6 @@
 						<height>66</height>
 						<font>font18</font>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="image">
@@ -275,7 +265,6 @@
 						<width>470</width>
 						<height>24</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="progress">
@@ -294,7 +283,6 @@
 						<width>470</width>
 						<height>22</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<textcolor>disabled-text</textcolor>
 					</control>
@@ -315,7 +303,6 @@
 						<height>66</height>
 						<font>font18</font>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="image">
@@ -331,7 +318,6 @@
 						<width>470</width>
 						<height>22</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -351,7 +337,6 @@
 						<width>470</width>
 						<height>22</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<textcolor>disabled-text</textcolor>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -372,7 +357,6 @@
 					<width>100</width>
 					<height>100</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$INFO[ListItem.ChannelNumber]</label>
 				</control>
 			</control>
@@ -413,7 +397,6 @@
 						<height>66</height>
 						<font>font18</font>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="image">
@@ -429,7 +412,6 @@
 						<width>470</width>
 						<height>24</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -438,7 +420,6 @@
 						<width>470</width>
 						<height>24</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<textcolor>disabled-text</textcolor>
 					</control>
@@ -459,7 +440,6 @@
 						<height>66</height>
 						<font>font18</font>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelNumber]</label>
 					</control>
 					<control type="image">
@@ -475,7 +455,6 @@
 						<width>470</width>
 						<height>24</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -484,7 +463,6 @@
 						<width>470</width>
 						<height>24</height>
 						<font>font11</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Title]</label>
 						<textcolor>disabled-text</textcolor>
 					</control>
@@ -532,7 +510,6 @@
 							<width>470</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -541,7 +518,6 @@
 							<width>240</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.Date]</label>
 						</control>
@@ -567,7 +543,6 @@
 							<width>470</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -576,7 +551,6 @@
 							<width>240</width>
 							<height>23</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.Date]</label>
 						</control>
@@ -607,7 +581,6 @@
 					<width>220</width>
 					<height>20</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19029]</label>
 				</control>
 				<control type="label"><!-- Title heading -->
@@ -616,7 +589,6 @@
 					<width>300</width>
 					<height>23</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[369]</label>
 				</control>
 				<control type="label"><!-- Schedule time heading -->
@@ -625,7 +597,6 @@
 					<width>300</width>
 					<height>23</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19225]</label>
 				</control>
 				<control type="label"><!-- Status heading -->
@@ -634,7 +605,6 @@
 					<width>150</width>
 					<height>23</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[126]</label>
 				</control>
 				<control type="image">
@@ -666,7 +636,6 @@
 						<width>180</width>
 						<height>50</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -675,7 +644,6 @@
 						<width>240</width>
 						<height>50</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
@@ -683,7 +651,6 @@
 						<posy>0</posy>
 						<width>655</width>
 						<height>50</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="image">
@@ -716,7 +683,6 @@
 						<posy>0</posy>
 						<width>180</width>
 						<height>50</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -724,7 +690,6 @@
 						<posy>0</posy>
 						<width>240</width>
 						<height>50</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
@@ -732,7 +697,6 @@
 						<posy>0</posy>
 						<width>655</width>
 						<height>50</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="image">
@@ -759,7 +723,6 @@
 					<posx>68</posx>
 					<posy>660</posy>
 					<height>50</height>
-					<aligny>center</aligny>
 					<label>$INFO[PVR.NextTimer]</label>
 				</control>
 			</control>
@@ -804,7 +767,6 @@
 							<width>482</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -813,7 +775,6 @@
 							<width>280</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
@@ -838,7 +799,6 @@
 							<width>482</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -847,7 +807,6 @@
 							<width>280</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 						<control type="image">
@@ -901,7 +860,6 @@
 							<width>470</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -910,7 +868,6 @@
 							<width>470</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.StartTime]</label>
 						</control>
@@ -944,7 +901,6 @@
 							<width>470</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
@@ -953,7 +909,6 @@
 							<width>470</width>
 							<height>24</height>
 							<font>font11</font>
-							<aligny>center</aligny>
 							<textcolor>disabled-text</textcolor>
 							<label>$INFO[ListItem.StartTime]</label>
 						</control>
@@ -989,7 +944,6 @@
 					<posy>20</posy>
 					<width>240</width>
 					<height>24</height>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[19148]</label>
 					<visible>Control.IsVisible(17)</visible>
 				</control>
@@ -998,7 +952,6 @@
 					<posy>20</posy>
 					<width>350</width>
 					<height>24</height>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[369]</label>
 					<visible>Control.IsVisible(17)</visible>
 				</control>
@@ -1008,7 +961,6 @@
 					<width>260</width>
 					<height>24</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[21820]</label>
 					<visible>Control.IsVisible(17)</visible>
 				</control>
@@ -1018,7 +970,6 @@
 					<width>140</width>
 					<height>24</height>
 					<align>center</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[126]</label>
 					<visible>Control.IsVisible(17)</visible>
 				</control>
@@ -1052,7 +1003,6 @@
 						<width>240</width>
 						<height>24</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
@@ -1061,7 +1011,6 @@
 						<width>350</width>
 						<height>24</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -1071,7 +1020,6 @@
 						<height>24</height>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="image">
@@ -1096,7 +1044,6 @@
 						<width>240</width>
 						<height>24</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>
 					<control type="label">
@@ -1105,7 +1052,6 @@
 						<width>350</width>
 						<height>24</height>
 						<font>font12</font>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -1115,7 +1061,6 @@
 						<height>24</height>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="image">
@@ -1160,7 +1105,6 @@
 						<posy>0</posy>
 						<width>730</width>
 						<height>40</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -1170,7 +1114,6 @@
 						<height>40</height>
 						<font>font12</font>
 						<align>right</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
@@ -1188,7 +1131,6 @@
 						<posy>0</posy>
 						<width>730</width>
 						<height>40</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -1199,7 +1141,6 @@
 						<height>40</height>
 						<font>font12</font>
 						<align>right</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -1234,7 +1175,6 @@
 					<height>25</height>
 					<label>$INFO[ListItem.Label2]</label>
 					<align>center</align>
-					<aligny>center</aligny>
 					<scrollout>false</scrollout>
 					<pauseatend>1000</pauseatend>
 				</control>
