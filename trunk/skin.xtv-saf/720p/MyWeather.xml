@@ -5,8 +5,7 @@
 	<previouswindow>Home</previouswindow>
 	<controls>
 		<control type="group"><!-- Weather screen background image -->
-			<control type="image">
-				<description>solid background</description>
+			<control type="image"><!-- Solid background -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -128,7 +127,6 @@
 				<height>37</height>
 				<font>font18</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<aligny>center</aligny>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 			</control>
 			<control type="label"><!-- Update label -->
@@ -138,7 +136,6 @@
 				<height>25</height>
 				<font>font11</font>
 				<label>$LOCALIZE[31531] - $INFO[Window(Weather).Property(Updated)]</label>
-				<aligny>center</aligny>
 			</control>
 			<control type="group">
 				<control type="image"><!-- Weather provider logo -->
@@ -166,7 +163,6 @@
 				<width>636</width>
 				<height>20</height>
 				<font>font11</font>
-				<aligny>center</aligny>
 				<label>$INFO[Window(Weather).Property(WeatherProvider),$LOCALIZE[31536] - ]</label>
 				<visible>IsEmpty(Window(Weather).Property(WeatherProviderLogo))</visible>
 			</control>
@@ -192,7 +188,6 @@
 				<width>250</width>
 				<height>50</height>
 				<label>$LOCALIZE[31530]</label>
-				<aligny>center</aligny>
 			</control>
 			<control type="button" id="2"><!-- Refresh button -->
 				<posx>486</posx>

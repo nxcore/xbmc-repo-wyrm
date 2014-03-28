@@ -57,7 +57,7 @@
 					<texture>colours/black.png</texture>
 					<colordiffuse>osd-background</colordiffuse>
 				</control>
-				<control type="image"><!-- Button background -->
+				<control type="image"><!-- Dialog background -->
 					<posx>440</posx>
 					<posy>212</posy>
 					<width>396</width>
@@ -77,7 +77,6 @@
 				<onback>50</onback>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View as button -->
-					<description>View As Icons button</description>
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>

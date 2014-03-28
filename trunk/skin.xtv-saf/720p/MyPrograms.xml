@@ -26,7 +26,6 @@
 				<height>37</height>
 				<label>$LOCALIZE[31029]</label>
 				<font>font20</font>
-				<aligny>center</aligny>
 			</control>
 			<control type="label">
 				<description>Number of files</description>
@@ -34,7 +33,6 @@
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
-				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems, (,)]</label>
 			</control>
 		</control>

@@ -112,7 +112,6 @@
 						<visible>ListItem.HasEpg</visible>
 					</control>
 					<control type="progress">
-						<description>Progressbar</description>
 						<posx>110</posx>
 						<posy>78</posy>
 						<width>225</width>
@@ -241,8 +240,7 @@
 				<ondown>61</ondown>
 				<onup>61</onup>
 			</control>
-			<control type="label">
-				<description>number of files text label</description>
+			<control type="label"><!-- Number of files text label -->
 				<posx>450</posx>
 				<posy>600</posy>
 				<width>400</width>
