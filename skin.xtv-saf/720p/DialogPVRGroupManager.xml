@@ -43,7 +43,6 @@
 						<height>70</height>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="list" id="11">
 						<posx>5</posx>
@@ -70,7 +69,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 							</control>
@@ -97,7 +95,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 							</control>
@@ -126,7 +123,6 @@
 						<height>70</height>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="list" id="12">
 						<posx>5</posx>
@@ -153,7 +149,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 							</control>
@@ -180,7 +175,6 @@
 								<width>320</width>
 								<height>30</height>
 								<font>font11</font>
-								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 							</control>
@@ -209,7 +203,6 @@
 						<height>70</height>
 						<label>$LOCALIZE[31700]</label>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="list" id="13">
 						<posx>5</posx>
@@ -230,7 +223,6 @@
 								<height>30</height>
 								<font>font11</font>
 								<align>center</align>
-								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -251,7 +243,6 @@
 								<height>30</height>
 								<font>font11</font>
 								<align>center</align>
-								<aligny>center</aligny>
 								<selectedcolor>listselected-text</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -286,7 +277,6 @@
 						<label>$LOCALIZE[15019] $LOCALIZE[19141]</label>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="button" id="27">
 						<description>Rename Group</description>
@@ -295,7 +285,6 @@
 						<label>$LOCALIZE[118] $LOCALIZE[19141]</label>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="button" id="28">
 						<description>Delete Group</description>
@@ -304,7 +293,6 @@
 						<label>$LOCALIZE[117] $LOCALIZE[19141]</label>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 					<control type="button" id="29">
 						<description>OK</description>
@@ -313,7 +301,6 @@
 						<label>$LOCALIZE[186]</label>
 						<font>font12</font>
 						<align>center</align>
-						<aligny>center</aligny>
 					</control>
 				</control>
 			</control>

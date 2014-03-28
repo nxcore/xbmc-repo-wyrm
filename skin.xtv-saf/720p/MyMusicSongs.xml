@@ -36,7 +36,6 @@
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
-				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
 		</control>
@@ -90,7 +89,6 @@
 					<font>font12</font>
 					<label>$LOCALIZE[100]</label>
 					<textoffsetx>10</textoffsetx>
-					<aligny>center</aligny>
 				</control>
 				<control type="radiobutton" id="1198">
 					<description>Tilt Icon List view</description>

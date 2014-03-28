@@ -649,7 +649,7 @@
 						<posx>17</posx>
 						<posy>467</posy>
 						<width>646</width>
-						<height>186</height>
+						<height>196</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.PlotOutline]</label>
 						<align>justify</align>
@@ -661,7 +661,7 @@
 						<posx>17</posx>
 						<posy>467</posy>
 						<width>646</width>
-						<height>186</height>
+						<height>196</height>
 						<font>font12</font>
 						<label fallback="161">$INFO[ListItem.Plot]</label>
 						<align>justify</align>

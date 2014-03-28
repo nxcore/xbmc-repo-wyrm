@@ -5,13 +5,11 @@
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-		<control type="image">
-			<description>Settings Logo</description>
+		<control type="image"><!-- Settings logo -->
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>
-		<control type="label">
-			<description>Settings Label</description>
+		<control type="label"><!-- Settings label line 1 -->
 			<posx>946</posx>
 			<posy>25</posy>
 			<width>309</width>
@@ -19,8 +17,7 @@
 			<label>$LOCALIZE[636] $LOCALIZE[1036]</label>
 			<font>font18</font>
 		</control>
-		<control type="label">
-			<description>Settings Label</description>
+		<control type="label"><!-- Settings label line 2 -->
 			<posx>946</posx>
 			<posy>62</posy>
 			<width>309</width>
@@ -96,8 +93,7 @@
 
 			<control type="group" id="100"><!--Custom Movie Settings-->
 				<visible>Skin.String(customsettingmenu,movie)</visible>
-				<control type="image">
-					<description>Custom Movie Settings Button Image</description>
+				<control type="image"><!-- Movie settings button image -->
 					<posx>940</posx>
 					<posy>112</posy>
 					<width>305</width>
@@ -345,8 +341,7 @@
 
 			<control type="group" id="200"><!--Custom TV Settings-->
 				<visible>Skin.String(customsettingmenu,tv)</visible>
-				<control type="image">
-					<description>Custom TV Settings Button Image</description>
+				<control type="image"><!-- TVShows settings button image -->
 					<posx>940</posx>
 					<posy>166</posy>
 					<width>305</width>
@@ -529,80 +524,70 @@
 							</content>
 						</control>
 					</control>
-					<control type="button" id="205">
-						<description>Custom TVShow Favourite 1</description>
+					<control type="button" id="205"><!-- TVShow favourite 1 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.1)</onclick>
 					</control>
-					<control type="button" id="206">
-						<description>Custom TVShow Favourite 1 Icon location</description>
+					<control type="button" id="206"><!-- TVShow favourite 1 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.1.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="207">
-						<description>Custom TVShow Favourite 2</description>
+					<control type="button" id="207"><!-- TVShow favourite 2 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.2)</onclick>
 					</control>
-					<control type="button" id="208">
-						<description>Custom TVShow Favourite 2 Icon location</description>
+					<control type="button" id="208"><!-- TVShow favourite 2 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.2.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="209">
-						<description>Custom TVShow Favourite 3</description>
+					<control type="button" id="209"><!-- TVShow favourite 3 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.3)</onclick>
 					</control>
-					<control type="button" id="210">
-						<description>Custom TVShow Favourite 3 Icon location</description>
+					<control type="button" id="210"><!-- TVShow favourite 3 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.3.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="211">
-						<description>Custom TVShow Favourite 4</description>
+					<control type="button" id="211"><!-- TVShow favourite 4 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.4)</onclick>
 					</control>
-					<control type="button" id="212">
-						<description>Custom TVShow Favourite 4 Icon location</description>
+					<control type="button" id="212"><!-- TVShow favourite 4 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.4.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="213">
-						<description>Custom TVShow Favourite 5</description>
+					<control type="button" id="213"><!-- TVShow favourite 5 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.5)</onclick>
 					</control>
-					<control type="button" id="214">
-						<description>Custom TVShow Favourite 5 Icon location</description>
+					<control type="button" id="214"><!-- TVShow favourite 5 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
@@ -612,10 +597,9 @@
 				</control>
 			</control>
 
-			<control type="group" id="300"><!--Custom Music Settings-->
+			<control type="group" id="300"><!--Custom Music settings-->
 				<visible>Skin.String(customsettingmenu,music)</visible>
-				<control type="image">
-					<description>Custom Music Settings Button Image</description>
+				<control type="image"><!-- Music settings button image -->
 					<posx>940</posx>
 					<posy>220</posy>
 					<width>305</width>
@@ -864,8 +848,7 @@
 
 			<control type="group" id="400"><!--Custom Addon Settings-->
 				<visible>Skin.String(customsettingmenu,addon)</visible>
-				<control type="image">
-					<description>Custom Addon Settings Button Image</description>
+				<control type="image"><!-- Addon settings button image -->
 					<posx>940</posx>
 					<posy>274</posy>
 					<width>305</width>

@@ -269,7 +269,6 @@
 					<ondown>33</ondown>
 				</control>
 				<control type="button" id ="34"><!-- TV/Radio -->
-					<description>TV/Radio Button</description>
 					<posx>295</posx>
 					<posy>28</posy>
 					<width>285</width>

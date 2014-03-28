@@ -42,6 +42,7 @@
 		<scrollout>false</scrollout>
 		<pauseatend>4000</pauseatend>
 		<scrollsuffix> • </scrollsuffix>
+		<aligny>center</aligny>
 	</default>
 	<default type="textbox">
 		<spinwidth>16</spinwidth>
@@ -167,7 +168,6 @@
 		<controloffsety>0</controloffsety>
 	</default>
 	<default type="sliderex">
-		<description>Default Slider</description>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -184,7 +184,6 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="edit">
-		<description>Filter</description>
 		<texturefocus border="7">default-button.png</texturefocus>
 		<font>font12</font>
 		<label>$LOCALIZE[587]</label>
@@ -194,9 +193,9 @@
 		<invalidcolor>invalid-text</invalidcolor>
 		<pulseonselect>false</pulseonselect>
 		<textwidth>340</textwidth>
-		<textoffsetx>10</textoffsetx>
+		<textoffsetx>18</textoffsetx>
 		<textoffsety>8</textoffsety>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 	</default>
 	<default type="mover">
 		<texturefocus border="7">default-button.png</texturefocus>

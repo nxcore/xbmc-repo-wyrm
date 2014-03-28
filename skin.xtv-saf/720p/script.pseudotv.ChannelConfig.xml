@@ -23,7 +23,6 @@
 			<height>45</height>
 			<label>$LOCALIZE[31702]</label>
 			<font>font18</font>
-			<aligny>center</aligny>
 			<align>center</align>
 		</control>
 		<control type="image">
@@ -82,7 +81,6 @@
 						<posy>0</posy>
 						<width>150</width>
 						<height>45</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -90,7 +88,6 @@
 						<posy>0</posy>
 						<width>420</width>
 						<height>45</height>
-						<aligny>center</aligny>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -108,7 +105,6 @@
 						<posy>0</posy>
 						<width>150</width>
 						<height>45</height>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -116,7 +112,6 @@
 						<posy>0</posy>
 						<width>420</width>
 						<height>45</height>
-						<aligny>center</aligny>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
@@ -134,7 +129,6 @@
 				<posy>10</posy>
 				<width>620</width>
 				<height>45</height>
-				<aligny>center</aligny>
 				<align>center</align>
 				<label></label>
 			</control>
@@ -150,7 +144,6 @@
 				<posy>60</posy>
 				<width>200</width>
 				<height>45</height>
-				<aligny>center</aligny>
 				<label>$LOCALIZE[31705]:</label>
 			</control>
 			<control type="label" id="109">
@@ -158,7 +151,6 @@
 				<posy>60</posy>
 				<width>270</width>
 				<height>45</height>
-				<aligny>center</aligny>
 				<align>right</align>
 				<label></label>
 			</control>
@@ -226,7 +218,6 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[559]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="button" id="130">
 					<posx>220</posx>
@@ -249,14 +240,12 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[705]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="142">
 					<posx>480</posx>
 					<posy>100</posy>
 					<width>270</width>
 					<height>45</height>
-					<aligny>center</aligny>
 					<align>right</align>
 					<label></label>
 				</control>
@@ -295,14 +284,12 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[572]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="152">
 					<posx>480</posx>
 					<posy>100</posy>
 					<width>270</width>
 					<height>45</height>
-					<aligny>center</aligny>
 					<align>right</align>
 					<label></label>
 				</control>
@@ -341,14 +328,12 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[515]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="162">
 					<posx>480</posx>
 					<posy>100</posy>
 					<width>270</width>
 					<height>45</height>
-					<aligny>center</aligny>
 					<align>right</align>
 					<label></label>
 				</control>
@@ -387,14 +372,12 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[515]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="172">
 					<posx>480</posx>
 					<posy>100</posy>
 					<width>270</width>
 					<height>45</height>
-					<aligny>center</aligny>
 					<align>right</align>
 					<label></label>
 				</control>
@@ -433,14 +416,12 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[515]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="182">
 					<posx>480</posx>
 					<posy>100</posy>
 					<width>270</width>
 					<height>45</height>
-					<aligny>center</aligny>
 					<align>right</align>
 					<label></label>
 				</control>
@@ -479,14 +460,12 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[20343]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="label" id="192">
 					<posx>480</posx>
 					<posy>100</posy>
 					<width>270</width>
 					<height>45</height>
-					<aligny>center</aligny>
 					<align>right</align>
 					<label></label>
 				</control>
@@ -521,7 +500,6 @@
 					<ondown>114</ondown>
 					<label>$LOCALIZE[31707]</label>
 					<textwidth>500</textwidth>
-					<aligny>center</aligny>
 					<textoffsetx>10</textoffsetx>
 					<radioposx>540</radioposx>
 				</control>
@@ -538,7 +516,6 @@
 					<width>200</width>
 					<height>45</height>
 					<label>$LOCALIZE[31708]:</label>
-					<aligny>center</aligny>
 				</control>
 				<control type="button" id="200">
 					<posx>220</posx>

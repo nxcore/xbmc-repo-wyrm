@@ -788,7 +788,6 @@
 					<ondown>49</ondown>
 				</control>
 				<control type="button" id="32"><!-- SPACE button -->
-					<description>SPACE button</description>
 					<posx>364</posx>
 					<posy>250</posy>
 					<width>528</width>

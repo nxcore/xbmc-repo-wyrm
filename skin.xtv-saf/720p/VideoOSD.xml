@@ -62,18 +62,19 @@
 					<posy>5</posy>
 					<width>220</width>
 					<height>31</height>
-					<font>font11</font>
+					<font>rss20</font>
 					<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
 					<align>right</align>
 				</control>
 				<control type="label">
 					<posx>1048</posx>
 					<posy>5</posy>
-					<width>220</width>
+					<width>230</width>
 					<height>31</height>
-					<font>font11</font>
-					<label>- $INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
+					<font>rss20</font>
+					<label>-$INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 				</control>
+
 				<!-- Progress bar -->
 				<control type="progress">
 					<posx>238</posx>

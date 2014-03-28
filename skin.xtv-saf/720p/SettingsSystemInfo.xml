@@ -5,8 +5,7 @@
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-		<control type="image">
-			<description>Settings Logo</description>
+		<control type="image"><!-- Settings logo -->
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>

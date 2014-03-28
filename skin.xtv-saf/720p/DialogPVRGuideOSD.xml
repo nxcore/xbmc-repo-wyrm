@@ -26,7 +26,6 @@
 				<font>font12</font>
 				<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 			</control>
 			<control type="label">
 				<description>Selected item's date</description>
@@ -37,7 +36,6 @@
 				<font>font11</font>
 				<label>$INFO[Container(11).ListItem.StartDate]</label>
 				<align>center</align>
-				<aligny>center</aligny>
 			</control>
 			<control type="list" id="11">
 				<posx>30</posx>
@@ -58,7 +56,6 @@
 						<width>100</width>
 						<height>30</height>
 						<selectedcolor>listselected-text</selectedcolor>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="image">
@@ -85,7 +82,6 @@
 						<font>font12</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
 					</control>
@@ -97,7 +93,6 @@
 						<font>font12</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
 					</control>
@@ -117,7 +112,6 @@
 						<width>100</width>
 						<height>30</height>
 						<selectedcolor>listselected-text</selectedcolor>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="image">
@@ -144,7 +138,6 @@
 						<font>font12</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
 					</control>
@@ -156,7 +149,6 @@
 						<font>font12</font>
 						<selectedcolor>listselected-text</selectedcolor>
 						<align>right</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
 					</control>
@@ -180,7 +172,6 @@
 				<height>20</height>
 				<font>font12</font>
 				<align>right</align>
-				<aligny>center</aligny>
 				<label>($INFO[Container(11).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
 			</control>
 		</control>

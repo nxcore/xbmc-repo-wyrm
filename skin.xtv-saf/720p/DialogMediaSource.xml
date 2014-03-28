@@ -16,9 +16,8 @@
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label" id="2"><!-- Heading -->
-			<description>Heading Label</description>
 			<posx>10</posx>
-			<posy>-2</posy>
+			<posy>-8</posy>
 			<width>848</width>
 			<height>46</height>
 			<align>center</align>
@@ -26,15 +25,15 @@
 			<font>font12</font>
 		</control>
 		<control type="image">
-			<posx>10</posx>
-			<posy>35</posy>
+			<posx>8</posx>
+			<posy>30</posy>
 			<width>848</width>
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="label"><!-- Path heading -->
 			<posx>10</posx>
-			<posy>43</posy>
+			<posy>32</posy>
 			<width>848</width>
 			<height>46</height>
 			<font>font12</font>
@@ -127,7 +126,7 @@
 		</control>
 		<control type="label"><!-- Name heading -->
 			<posx>10</posx>
-			<posy>231</posy>
+			<posy>225</posy>
 			<width>743</width>
 			<height>46</height>
 			<font>font12</font>
@@ -135,7 +134,7 @@
 		</control>
 		<control type="button" id="12"><!-- Name -->
 			<posx>10</posx>
-			<posy>262</posy>
+			<posy>272</posy>
 			<width>566</width>
 			<height>46</height>
 			<font>font12</font>
@@ -149,7 +148,7 @@
 		</control>
 		<control type="grouplist" id="900">
 			<posx>10</posx>
-			<posy>318</posy>
+			<posy>320</posy>
 			<width>566</width>
 			<height>46</height>
 			<itemgap>6</itemgap>

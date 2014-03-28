@@ -73,7 +73,6 @@
 					<width>300</width>
 					<height>43</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[402] :</label>
 				</control>
 				<control type="label"><!-- Current dew heading -->
@@ -82,7 +81,6 @@
 					<width>300</width>
 					<height>43</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[405] :</label>
 				</control>
 				<control type="label"><!-- Current humidity heading -->
@@ -91,7 +89,6 @@
 					<width>300</width>
 					<height>43</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[406] :</label>
 				</control>
 				<control type="label"><!-- Current UV index heading -->
@@ -100,7 +97,6 @@
 					<width>300</width>
 					<height>43</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[403] :</label>
 				</control>
 				<control type="label"><!-- Current Wind heading -->
@@ -109,7 +105,6 @@
 					<width>300</width>
 					<height>43</height>
 					<align>right</align>
-					<aligny>center</aligny>
 					<label>$LOCALIZE[404] :</label>
 				</control>
 				<control type="label"><!-- Current feels like value -->
@@ -117,7 +112,6 @@
 					<posy>412</posy>
 					<width>531</width>
 					<height>43</height>
-					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
 				</control>
 				<control type="label"><!-- Current dew value -->
@@ -125,7 +119,6 @@
 					<posy>443</posy>
 					<width>531</width>
 					<height>43</height>
-					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
 				</control>
 				<control type="label"><!-- Current humidity value -->
@@ -133,7 +126,6 @@
 					<posy>475</posy>
 					<width>531</width>
 					<height>43</height>
-					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.Humidity)]</label>
 				</control>
 				<control type="label"><!-- Current UV index value -->
@@ -141,7 +133,6 @@
 					<posy>506</posy>
 					<width>531</width>
 					<height>43</height>
-					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.UVIndex)]</label>
 				</control>
 				<control type="label"><!-- Current wind value -->
@@ -149,7 +140,6 @@
 					<posy>537</posy>
 					<width>531</width>
 					<height>43</height>
-					<aligny>center</aligny>
 					<label>$INFO[Window.Property(Current.Wind)]</label>
 				</control>
 			</control>
@@ -173,7 +163,6 @@
 						<height>43</height>
 						<font>font18</font>
 						<label>$INFO[Window.Property(Day1.Title)]</label>
-						<aligny>center</aligny>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day1_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day1_Icon</include>
@@ -184,18 +173,15 @@
 						<height>38</height>
 						<label>[COLOR red]$INFO[Window(Weather).Property(Day1.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day1.LowTemp)][/COLOR]</label>
 						<font>font22</font>
-						<aligny>center</aligny>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label"><!-- Condition label -->
-						<description></description>
 						<posx>256</posx>
 						<posy>98</posy>
 						<width>300</width>
 						<height>25</height>
 						<label>$INFO[Window.Property(Day1.Outlook)]</label>
 						<align>center</align>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
@@ -216,7 +202,6 @@
 						<height>43</height>
 						<font>font18</font>
 						<label>$INFO[Window.Property(Day2.Title)]</label>
-						<aligny>center</aligny>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day2_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day2_Icon</include>
@@ -227,7 +212,6 @@
 						<height>38</height>
 						<label>[COLOR red]$INFO[Window(Weather).Property(Day2.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day2.LowTemp)][/COLOR]</label>
 						<font>font22</font>
-						<aligny>center</aligny>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label"><!-- Condition label -->
@@ -237,7 +221,6 @@
 						<height>25</height>
 						<label>$INFO[Window.Property(Day2.Outlook)]</label>
 						<align>center</align>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
@@ -249,18 +232,15 @@
 					</control>
 				</control>
 				<control type="group"><!-- Day 3 -->
-					<description>day 3</description>
 					<posx>34</posx>
 					<posy>344</posy>
 					<control type="label"><!-- Day label -->
-						<description>Day label</description>
 						<posx>60</posx>
 						<posy>10</posy>
 						<width>814</width>
 						<height>43</height>
 						<font>font18</font>
 						<label>$INFO[Window.Property(Day3.Title)]</label>
-						<aligny>center</aligny>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day3_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day3_Icon</include>
@@ -271,18 +251,15 @@
 						<height>38</height>
 						<label>[COLOR red]$INFO[Window(Weather).Property(Day3.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day3.LowTemp)][/COLOR]</label>
 						<font>font22</font>
-						<aligny>center</aligny>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label"><!-- Condition label -->
-						<description>conditions label</description>
 						<posx>256</posx>
 						<posy>98</posy>
 						<width>300</width>
 						<height>25</height>
 						<label>$INFO[Window.Property(Day3.Outlook)]</label>
 						<align>center</align>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">
@@ -303,7 +280,6 @@
 						<height>43</height>
 						<font>font18</font>
 						<label>$INFO[Window.Property(Day4.Title)]</label>
-						<aligny>center</aligny>
 					</control>
 					<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Day4_Icon</include>
 					<include condition="!Skin.HasSetting(weather-animateicon)">Weather_Day4_Icon</include>
@@ -314,7 +290,6 @@
 						<height>38</height>
 						<label>[COLOR red]$INFO[Window(Weather).Property(Day4.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day4.LowTemp)][/COLOR]</label>
 						<font>font22</font>
-						<aligny>center</aligny>
 						<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 					</control>
 					<control type="label"><!-- Condition label -->
@@ -324,7 +299,6 @@
 						<height>25</height>
 						<label>$INFO[Window.Property(Day4.Outlook)]</label>
 						<align>center</align>
-						<aligny>center</aligny>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="image">

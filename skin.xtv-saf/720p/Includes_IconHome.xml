@@ -47,13 +47,7 @@
 					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>299</posy>
-					<width>1280</width>
-					<height>224</height>
-					<texture>menu-homebg.png</texture>
-				</control>
+
 			</control>
 
 			<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include><!-- Show time on home screen -->
@@ -184,7 +178,23 @@
 			</control>
 		</control>
 
-		<control type="panel" id="9000"><!-- Home menu panel -->
+		<control type="image"><!-- Background image for icon area -->
+			<posx>0</posx>
+			<posy>299</posy>
+			<width>1280</width>
+			<height>421</height>
+			<texture>colours/black.png</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>299</posy>
+			<width>1280</width>
+			<height>224</height>
+			<texture>menu-homebg.png</texture>
+			<visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()</visible>
+		</control>
+
+		<control type="panel" id="9000"><!-- Home menu icon panel -->
 			<animation condition="![Container(9000).Row(0) | Container(9000).Row(1)] | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-260" time="200">Conditonal</animation>
 			<width>1260</width>
 			<height>640</height>

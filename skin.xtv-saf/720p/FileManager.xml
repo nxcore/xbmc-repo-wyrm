@@ -4,8 +4,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>background</include>
-		<control type="image">
-			<description>Settings Logo</description>
+		<control type="image"><!-- Settings Logo -->
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
 		</control>

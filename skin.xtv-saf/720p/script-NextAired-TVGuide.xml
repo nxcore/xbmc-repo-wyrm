@@ -36,13 +36,13 @@
 			<posx>946</posx>
 			<posy>35</posy>
 			<width>365</width>
-			<height>72</height>
+			<height>80</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Screen heading -->
 				<width min="40" max="275">auto</width>
-				<height>72</height>
+				<height>80</height>
 				<label>$LOCALIZE[31956]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
@@ -50,9 +50,8 @@
 			</control>
 			<control type="label"><!-- Number of files (Use for non Vertical home menu) -->
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
-				<posy>13</posy>
 				<width min="40" max="90">auto</width>
-				<height>38</height>
+				<height>46</height>
 				<label>$INFO[Window(Home).Property(NextAired.Total),(,)]</label>
 			</control>
 		</control>

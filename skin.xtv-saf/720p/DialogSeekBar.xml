@@ -47,7 +47,7 @@
 				</control>
 			</control>
 		</control>
-		<!-- End Player action labels -->
+
 		<control type="group">
 			<visible>[Window.IsVisible(FullscreenVideo)]</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
@@ -57,19 +57,19 @@
 				<posy>5</posy>
 				<width>220</width>
 				<height>31</height>
-				<font>font11</font>
+				<font>rss20</font>
 				<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
 				<align>right</align>
 			</control>
 			<control type="label">
 				<posx>1048</posx>
 				<posy>5</posy>
-				<width>220</width>
+				<width>230</width>
 				<height>31</height>
-				<font>font11</font>
-				<label>- $INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
+				<font>rss20</font>
+				<label>-$INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 			</control>
-			<!-- End Player info labels -->
+
 			<control type="group">
 				<visible>!Window.IsVisible(fullscreeninfo)</visible>
 				<!-- Progress bar -->
@@ -91,17 +91,14 @@
 					<info>Player.Progress</info>
 					<colordiffuse>ProgressBarColor</colordiffuse>
 				</control>
-				<!-- End Progress Bar -->
-				<!-- Seek Slider -->
-				<control type="slider" id="401">
-					<description>Seek Slider</description>
+				
+				<control type="slider" id="401"><!-- Seek Slider -->
 					<posx>238</posx>
 					<posy>10</posy>
 					<width>800</width>
 					<height>20</height>
 					<action>seek</action>
 				</control>
-				<!-- End Seek Slider -->
 			</control>
 		</control>
 		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
