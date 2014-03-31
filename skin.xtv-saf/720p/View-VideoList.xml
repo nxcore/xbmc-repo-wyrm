@@ -311,8 +311,7 @@
 			<posy>56</posy>
 			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
-				<control type="image">
-					<description>Slider</description>
+				<control type="image"><!-- Button focus slider -->
 					<posx>674</posx>
 					<posy>330</posy>
 					<width>560</width>
@@ -351,42 +350,22 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left) + !IsEmpty(ListItem.Label)</visible>
 								<control type="image">
-								<description>list item icon</description>
-								<posx>230</posx>
+								<posx>90</posx>
 								<posy>120</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+								<width>448</width>
+								<height>448</height>
+								<texture fallback="DefaultVideo.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
-								<posx>230</posx>
+								<posx>90</posx>
 								<posy>120</posy>
-								<width>318</width>
-								<height>318</height>
+								<width>448</width>
+								<height>448</height>
 								<texture>DefaultVideo.png</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
@@ -396,42 +375,22 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>230</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
-								<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture background="true" flipy="true" fallback="DefaultMusicVideos.png" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+								<texture background="true" fallback="DefaultMusicVideos.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>230</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
 								<texture>DefaultMusicVideos.png</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture flipy="true" diffuse="mask-fade.png">DefaultMusicVideos.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
@@ -441,21 +400,11 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>90</posx>
 								<posy>120</posy>
 								<width>448</width>
 								<height>448</height>
 								<texture>DefaultVideo.png</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>90</posx>
-								<posy>570</posy>
-								<width>448</width>
-								<height>448</height>
-								<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="group">
@@ -482,21 +431,11 @@
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>90</posx>
 								<posy>120</posy>
 								<width>448</width>
 								<height>448</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>90</posx>
-								<posy>570</posy>
-								<width>448</width>
-								<height>448</height>
-								<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
@@ -506,42 +445,22 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>230</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
-								<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture background="true" flipy="true" fallback="DefaultVideo.png" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
+								<texture background="true" fallback="DefaultVideo.png" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>230</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
 								<texture>DefaultVideo.png</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
@@ -551,42 +470,22 @@
 						<control type="group"><!-- Show Icon For TV SHOW/SEASON/EPISODES -->
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>230</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
-								<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture fallback="DefaultTvshows.png" background="true" flipy="true" diffuse="mask-fade.png">$VAR[IconPoster]</texture>
+								<texture fallback="DefaultTvshows.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>
 						<control type="group"><!-- Show TV icon as the Default icon -->
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<description>list item icon</description>
 								<posx>230</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
 								<texture>DefaultTvshows.png</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
-							<control type="image">
-								<description>list item icon reflection</description>
-								<posx>230</posx>
-								<posy>438</posy>
-								<width>318</width>
-								<height>318</height>
-								<texture flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 						</control>

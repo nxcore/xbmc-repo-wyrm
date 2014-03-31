@@ -23,7 +23,7 @@
 			<posy>102</posy>
 			<width>380</width>
 			<height>500</height>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="label">
 			<description>Power menu heading</description>

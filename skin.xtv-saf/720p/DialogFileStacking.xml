@@ -12,7 +12,7 @@
 			<posy>0</posy>
 			<width>650</width>
 			<height>225</height>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label">
@@ -40,7 +40,7 @@
 			<align>left</align>
 			<wrapmultiline>true</wrapmultiline>
 			<font>font11</font>
-			<label>33081</label>
+			<label>$LOCALIZE[33081]</label>
 		</control>
 		<control type="image">
 			<posx>45</posx>

@@ -208,7 +208,7 @@
 				<posy>212</posy>
 				<width>398</width>
 				<height>362</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<texture border="8">button-menu-background.png</texture>
 				<visible allowhiddenfocus="true">Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8)</visible>
 			</control>
 			<control type="button" id="6"><!-- Open button -->

@@ -33,7 +33,7 @@
 					<posy>0</posy>
 					<width>433</width>
 					<height>655</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
@@ -187,7 +187,7 @@
 					<posy>0</posy>
 					<width>433</width>
 					<height>475</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
@@ -317,7 +317,7 @@
 					<posy>0</posy>
 					<width>433</width>
 					<height>430</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
@@ -441,7 +441,7 @@
 					<posy>0</posy>
 					<width>433</width>
 					<height>475</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->

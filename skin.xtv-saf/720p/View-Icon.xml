@@ -45,7 +45,7 @@
 					<width>160</width>
 					<height>160</height>
 					<texture>$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="zoom" start="100" end="130" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
 				</control>
 				<control type="image">

@@ -65,7 +65,7 @@
 								<posy>-180</posy>
 								<width>180</width>
 								<height>180</height>
-								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+								<texture fallback="blank.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
 								<align>center</align>
 								<aligny>bottom</aligny>
 								<aspectratio>keep</aspectratio>
@@ -75,7 +75,7 @@
 								<posy>-180</posy>
 								<width>180</width>
 								<height>180</height>
-								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,../folder.jpg]</texture>
+								<texture fallback="blank.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Player.FolderPath,,../folder.jpg]</texture>
 								<align>center</align>
 								<aligny>bottom</aligny>
 								<aspectratio>keep</aspectratio>
@@ -115,7 +115,7 @@
 								<posy>-180</posy>
 								<width>180</width>
 								<height>180</height>
-								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
+								<texture fallback="blank.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
 								<align>center</align>
 								<aligny>bottom</aligny>
 								<aspectratio>keep</aspectratio>
@@ -127,7 +127,7 @@
 								<height>180</height>
 								<align>center</align>
 								<aligny>bottom</aligny>
-								<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
+								<texture scalediffuse="false" diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>StringCompare(Control.GetLabel(892),blank.png)</visible>
 							</control>
@@ -145,7 +145,7 @@
 						<height>180</height>
 						<align>center</align>
 						<aligny>bottom</aligny>
-						<texture diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
+						<texture scalediffuse="false" diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>

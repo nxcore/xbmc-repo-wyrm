@@ -274,8 +274,8 @@
 					<posy>68</posy>
 					<width>286</width>
 					<height>412</height>
-					<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
-					<texture background="true" fallback="DefaultMovies.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultMovies.png" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<visible>Container.Content(movies)</visible>
 				</control>
 				<control type="image"><!-- Video cover-->
@@ -283,8 +283,8 @@
 					<posy>68</posy>
 					<width>286</width>
 					<height>412</height>
-					<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
-					<texture background="true" fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultTvshows.png" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 				<control type="image">
@@ -292,8 +292,8 @@
 					<posy>68</posy>
 					<width>412</width>
 					<height>412</height>
-					<aspectratio scalediffuse="true" align="center" aligny="center">keep</aspectratio>
-					<texture background="true" fallback="DefaultTvshows.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultTvshows.png" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<visible>Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 				</control>
 			</control>
@@ -304,7 +304,7 @@
 				<height>412</height>
 				<align>center</align>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture diffuse="mask-rect.png">$INFO[Container(50).Listitem.Icon]</texture>
+				<texture scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(50).Listitem.Icon]</texture>
 				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<control type="label"><!-- Cast -->

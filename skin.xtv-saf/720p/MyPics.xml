@@ -68,7 +68,7 @@
 					<posy>142</posy>
 					<width>396</width>
 					<height>466</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 				</control>
 			</control>
 			<control type="grouplist" id="9000">
@@ -155,7 +155,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
-					<label>361</label>
+					<label>$LOCALIZE[361]</label>
 				</control>
 				<control type="radiobutton" id="9">
 					<description>Randomize button</description>

@@ -37,7 +37,7 @@
 					<height>169</height>
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+					<texture fallback="DefaultVideo.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 					<!-- Watched Overlay -->
@@ -68,7 +68,7 @@
 					<height>169</height>
 					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+					<texture fallback="DefaultAddon.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
@@ -101,7 +101,7 @@
 						<width>101</width>
 						<height>144</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+						<texture fallback="DefaultVideo.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 					<!-- Watched Overlay -->
@@ -144,7 +144,7 @@
 						<width>101</width>
 						<height>144</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+						<texture fallback="DefaultAddon.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 				</control>

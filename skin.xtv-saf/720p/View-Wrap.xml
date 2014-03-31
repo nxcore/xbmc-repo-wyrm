@@ -24,7 +24,7 @@
 					<width>160</width>
 					<height>160</height>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 				</control>
 			</itemlayout>
@@ -35,7 +35,7 @@
 					<width>320</width>
 					<height>320</height>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 				</control>
 			</focusedlayout>
 		</control>

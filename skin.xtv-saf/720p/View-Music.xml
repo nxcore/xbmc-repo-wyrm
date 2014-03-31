@@ -85,8 +85,7 @@
 				<posy>56</posy>
 				<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
 				<control type="group">
-					<control type="image">
-						<description>Slider</description>
+					<control type="image"><!-- Button focus slider -->
 						<posx>702</posx>
 						<posy>330</posy>
 						<width>532</width>
@@ -129,19 +128,6 @@
 						<visible>Skin.HasSetting(CDcase) + [Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
 					</control>
 					<control type="image">
-						<description>list item icon</description>
-						<posx>190</posx>
-						<posy>134</posy>
-						<width>350</width>
-						<height>350</height>
-						<texture background="true"  diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Container.Content(addons)</visible>
-					<control type="image">
-						<description>list item icon</description>
 						<posx>190</posx>
 						<posy>134</posy>
 						<width>350</width>
@@ -149,13 +135,15 @@
 						<texture background="true" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
 					</control>
+				</control>
+				<control type="group">
+					<visible>Container.Content(addons)</visible>
 					<control type="image">
-						<description>list item icon reflection</description>
 						<posx>190</posx>
-						<posy>484</posy>
+						<posy>134</posy>
 						<width>350</width>
 						<height>350</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio aligny="center" align="center">stretch</aspectratio>
 					</control>
 				</control>
@@ -163,15 +151,13 @@
 			<control type="group">
 				<visible>[Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
 				<control type="image">
-					<description>seperator</description>
 					<posx>31</posx>
 					<posy>512</posy>
 					<width>654</width>
 					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
-				<control type="label">
-					<description>Artist label</description>
+				<control type="label"><!-- Artist heading -->
 					<posx>124</posx>
 					<posy>525</posy>
 					<width>177</width>
@@ -180,8 +166,7 @@
 					<font>font11</font>
 					<align>right</align>
 				</control>
-				<control type="label">
-					<description>Artist value</description>
+				<control type="label"><!-- Artist -->
 					<posx>160</posx>
 					<posy>525</posy>
 					<width>513</width>
@@ -190,8 +175,7 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<font>font11</font>
 				</control>
-				<control type="label">
-					<description>Genre label</description>
+				<control type="label"><!-- Genre heading -->
 					<posx>124</posx>
 					<posy>550</posy>
 					<width>177</width>
@@ -200,8 +184,7 @@
 					<font>font11</font>
 					<align>right</align>
 				</control>
-				<control type="label">
-					<description>Genre value</description>
+				<control type="label"><!-- Genre -->
 					<posx>160</posx>
 					<posy>550</posy>
 					<width>513</width>
@@ -210,8 +193,7 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<font>font11</font>
 				</control>
-				<control type="label">
-					<description>Year label</description>
+				<control type="label"><!-- Year heading -->
 					<posx>124</posx>
 					<posy>575</posy>
 					<width>177</width>
@@ -220,8 +202,7 @@
 					<font>font11</font>
 					<align>right</align>
 				</control>
-				<control type="label">
-					<description>Year label</description>
+				<control type="label"><!-- Year -->
 					<posx>160</posx>
 					<posy>575</posy>
 					<width>513</width>
@@ -229,8 +210,7 @@
 					<label>$INFO[ListItem.Year]</label>
 					<font>font11</font>
 				</control>
-				<control type="label">
-					<description>Rating Title</description>
+				<control type="label"><!-- Rating heading -->
 					<posx>124</posx>
 					<posy>600</posy>
 					<width>177</width>
@@ -238,8 +218,7 @@
 					<font>font11</font>
 					<align>right</align>
 				</control>
-				<control type="image">
-					<description>Rating value</description>
+				<control type="image"><!-- Rating -->
 					<posx>136</posx>
 					<posy>600</posy>
 					<width>150</width>
@@ -248,7 +227,6 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
-					<description>seperator</description>
 					<posx>31</posx>
 					<posy>634</posy>
 					<width>654</width>
@@ -341,8 +319,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
-			<!-- Scroll Bar -->
-			<control type="scrollbar" id="1254">
+			<control type="scrollbar" id="1254"><!-- Scroll Bar -->
 				<posx>17</posx>
 				<posy>616</posy>
 				<width>1239</width>
@@ -353,8 +330,7 @@
 				<animation condition="!Control.HasFocus(1254) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
-			<!-- Go Back -->
-			<control type="label">
+			<control type="label"><!-- Go Back -->
 				<posx>26</posx>
 				<posy>637</posy>
 				<width>1221</width>
@@ -366,7 +342,6 @@
 				<textoffsetx>0</textoffsetx>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
-			<!-- Label -->
 			<control type="label">
 				<posx>26</posx>
 				<posy>637</posy>
@@ -379,8 +354,7 @@
 				<textoffsetx>0</textoffsetx>
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
-			<!-- Star Rating -->
-			<control type="image">
+			<control type="image"><!-- Star Rating -->
 				<posx>26</posx>
 				<posy>687</posy>
 				<width>177</width>
@@ -388,8 +362,7 @@
 				<texture>$VAR[MusicRating]</texture>
 				<visible>!SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.StarRating)</visible>
 			</control>
-			<!-- Genre -->
-			<control type="label">
+			<control type="label"><!-- Genre -->
 				<posx>212</posx>
 				<posy>681</posy>
 				<width>849</width>
@@ -438,30 +411,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-5).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>88</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(-4).Icon]</texture>
 				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>88</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -474,30 +429,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>177</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>265</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(-2).Icon]</texture>
 				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>265</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -510,30 +447,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>1008</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1434" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>920</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
 				<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>920</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -546,29 +465,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>831</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>743</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
 				<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>743</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="group">
@@ -585,16 +487,6 @@
 					<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
-					<posx>460</posx>
-					<posy>290</posy>
-					<width>288</width>
-					<height>288</height>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-					<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
-					<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
-				</control>
-				<control type="image">
 					<posx>654</posx>
 					<posy>0</posy>
 					<width>288</width>
@@ -603,16 +495,6 @@
 					<visible>Container.OnNext</visible>
 					<animation effect="rotatey" center="1080" start="0" end="-60" time="200" reversible="false">Hidden</animation>
 					<animation effect="rotatey" center="1080" start="60" end="60" time="200" condition="true">Conditional</animation>
-				</control>
-				<control type="image">
-					<posx>654</posx>
-					<posy>290</posy>
-					<width>288</width>
-					<height>288</height>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="1080" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="1080" start="60" end="60" time="200" condition="true">Conditional</animation>
-					<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
 				</control>
 			</control>
 		</control>
@@ -632,30 +514,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>-88</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
 				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -668,30 +532,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>88</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>177</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
 				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>177</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -704,30 +550,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>920</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(5).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>831</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(4).Icon]</texture>
 				<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>831</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -740,30 +568,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>743</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>654</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(2).Icon]</texture>
 				<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>654</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="group">
@@ -780,16 +590,6 @@
 					<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 				</control>
 				<control type="image">
-					<posx>460</posx>
-					<posy>290</posy>
-					<width>288</width>
-					<height>288</height>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
-					<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
-					<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
-				</control>
-				<control type="image">
 					<posx>265</posx>
 					<posy>0</posy>
 					<width>288</width>
@@ -798,16 +598,6 @@
 					<visible>Container.OnPrevious</visible>
 					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
 					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				</control>
-				<control type="image">
-					<posx>265</posx>
-					<posy>290</posy>
-					<width>288</width>
-					<height>288</height>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-					<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
 				</control>
 			</control>
 		</control>
@@ -826,30 +616,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-4).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>88</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(-3).Icon]</texture>
 				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>88</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-3).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -862,30 +634,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>177</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-2).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>265</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(-1).Icon]</texture>
 				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>265</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(-1).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -898,30 +652,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>920</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1345" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(4).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>831</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(3).Icon]</texture>
 				<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>831</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1257" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(3).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -934,30 +670,12 @@
 				<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
-				<posx>743</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1168" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(2).Icon]</texture>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
 				<posx>654</posx>
 				<posy>0</posy>
 				<width>288</width>
 				<height>288</height>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(1).Icon]</texture>
 				<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
-			</control>
-			<control type="image">
-				<posx>654</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<animation effect="rotatey" center="1080" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(1).Icon]</texture>
 				<visible>[IntegerGreaterThan(Container(57).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
 			</control>
 			<control type="image">
@@ -969,21 +687,11 @@
 				<visible>!Contol.HasFocus(57)</visible>
 				<texture background="true" fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[ListItem(0).Icon]</texture>
 			</control>
-			<control type="image">
-				<posx>477</posx>
-				<posy>290</posy>
-				<width>288</width>
-				<height>288</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Contol.HasFocus(57)</visible>
-				<texture flipy="true" background="true" fallback="DefaultAudio.png" diffuse="mask-fade.png">$INFO[ListItem(0).Icon]</texture>
-			</control>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
 			<include>SortLetterNotification</include>
-			<!-- Scroll Bar -->
-			<control type="scrollbar" id="1257">
+			<control type="scrollbar" id="1257"><!-- Scroll Bar -->
 				<posx>17</posx>
 				<posy>590</posy>
 				<width>1239</width>
@@ -994,8 +702,7 @@
 				<animation condition="!Control.HasFocus(1257) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar) + [[IntegerGreaterThan(Container(57).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(57).NumItems,9) + system.getbool(filelists.showparentdiritems)]]</visible>
 			</control>
-			<!-- Go Back -->
-			<control type="label">
+			<control type="label"><!-- Go Back -->
 				<posx>26</posx>
 				<posy>618</posy>
 				<width>1221</width>
@@ -1009,8 +716,7 @@
 			</control>
 			<control type="group">
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				<!-- Artist & Album name-->
-				<control type="label">
+				<control type="label"><!-- Artist & Album name-->
 					<posx>26</posx>
 					<posy>618</posy>
 					<width>1221</width>
@@ -1022,8 +728,7 @@
 					<textoffsetx>0</textoffsetx>
 					<visible>ListItem.IsFolder</visible>
 				</control>
-				<!-- Track name-->
-				<control type="label">
+				<control type="label"><!-- Track name-->
 					<posx>26</posx>
 					<posy>618</posy>
 					<width>1221</width>
@@ -1035,8 +740,7 @@
 					<textoffsetx>0</textoffsetx>
 					<visible>!ListItem.IsFolder</visible>
 				</control>
-				<!-- Genre -->
-				<control type="label">
+				<control type="label"><!-- Genre -->
 					<posx>194</posx>
 					<posy>668</posy>
 					<width>885</width>
@@ -1048,8 +752,7 @@
 					<textoffsetx>0</textoffsetx>
 					<visible>!Container.Content(genres)</visible>
 				</control>
-				<!-- Star Rating -->
-				<control type="image">
+				<control type="image"><!-- Star Rating -->
 					<posx>35</posx>
 					<posy>681</posy>
 					<width>177</width>

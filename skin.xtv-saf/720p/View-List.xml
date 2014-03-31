@@ -85,8 +85,7 @@
 				<posy>56</posy>
 				<visible>[IntegerGreaterThan(Container(50).NumItems,0) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(50).NumItems,-1) + system.getbool(filelists.showparentdiritems)]</visible>
 				<control type="group">
-					<control type="image">
-						<description>Slider</description>
+					<control type="image"><!-- Button focus slider -->
 						<posx>702</posx>
 						<posy>330</posy>
 						<width>532</width>
@@ -120,21 +119,11 @@
 				<control type="group">
 					<visible>!Container.Content(addons)</visible>
 					<control type="image">
-						<description>list item icon</description>
 						<posx>122</posx>
 						<posy>150</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="image">
-						<description>list item icon reflection</description>
-						<posx>122</posx>
-						<posy>534</posy>
-						<width>384</width>
-						<height>384</height>
-						<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" scalediffuse="false" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -143,42 +132,22 @@
 					<control type="group">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
-							<description>list item icon</description>
 							<posx>122</posx>
 							<posy>150</posy>
 							<width>384</width>
 							<height>384</height>
-							<texture background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
-						<control type="image">
-							<description>list item icon reflection</description>
-							<posx>122</posx>
-							<posy>534</posy>
-							<width>384</width>
-							<height>384</height>
-							<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" scalediffuse="false" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
 					<control type="group">
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 						<control type="image">
-							<description>list item icon</description>
 							<posx>122</posx>
 							<posy>150</posy>
 							<width>384</width>
 							<height>384</height>
 							<texture background="true">DefaultAddon.png</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
-						<control type="image">
-							<description>list item icon reflection</description>
-							<posx>122</posx>
-							<posy>534</posy>
-							<width>384</width>
-							<height>384</height>
-							<texture background="true" flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>

@@ -39,7 +39,7 @@
 						<posx>186</posx>
 						<width>256</width>
 						<height>256</height>
-						<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultTvshows.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio>keep</aspectratio>
 						<align>center</align>
 						<aligny>top</aligny>
@@ -130,7 +130,7 @@
 				<posy>202</posy>
 				<width>398</width>
 				<height>328</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<posx>458</posx>
