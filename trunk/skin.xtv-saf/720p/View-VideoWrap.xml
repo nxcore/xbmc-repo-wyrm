@@ -32,7 +32,7 @@
 					<posy>340</posy>
 					<height>120</height>
 					<width>77</width>
-					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<texture background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
@@ -73,7 +73,7 @@
 					<height>312</height>
 					<width>203</width>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture diffuse="mask-rect.png" background="true" fallback="DefaultVideo.png">$VAR[IconPoster]</texture>
+					<texture scalediffuse="false" diffuse="mask-rect.png" background="true" fallback="DefaultVideo.png">$VAR[IconPoster]</texture>
 				</control>
 				<control type="image">
 					<posx>230</posx>

@@ -11,7 +11,7 @@
 				<posy>112</posy>
 				<width>1062</width>
 				<height>468</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<texture border="8">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
 			<control type="label">

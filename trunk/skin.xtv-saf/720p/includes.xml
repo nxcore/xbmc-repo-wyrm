@@ -286,8 +286,8 @@
 			<posy>70</posy>
 			<width>130</width>
 			<height>178</height>
-			<aspectratio scalediffuse="true">stretch</aspectratio>
-			<texture diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon0]</texture>
+			<aspectratio>stretch</aspectratio>
+			<texture scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon0]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="65" y="159" />
 			<animation effect="rotatey" center="0" start="0" end="-60" time="600" condition="true">Conditional</animation>
@@ -297,8 +297,8 @@
 			<posy>70</posy>
 			<width>130</width>
 			<height>178</height>
-			<aspectratio scalediffuse="true">stretch</aspectratio>
-			<texture diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon7]</texture>
+			<aspectratio>stretch</aspectratio>
+			<texture scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon7]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="1215" y="159" />
 			<animation effect="rotatey" center="1280" start="0" end="60" time="600" condition="true">Conditional</animation>
@@ -543,7 +543,7 @@
 			<width>164</width>
 			<height>164</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<texture diffuse="mask-rect.png" background="true">$VAR[MusicShelfIcon0]</texture>
+			<texture diffuse="mask-squ.png" background="true">$VAR[MusicShelfIcon0]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="65" y="159" />
 			<animation effect="rotatey" center="0" start="0" end="-60" time="300" condition="true">Conditional</animation>
@@ -554,7 +554,7 @@
 			<width>164</width>
 			<height>164</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<texture diffuse="mask-rect.png" background="true">$VAR[MusicShelfIcon7]</texture>
+			<texture diffuse="mask-squ.png" background="true">$VAR[MusicShelfIcon7]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="1212" y="159" />
 			<animation effect="rotatey" center="1276" start="60" end="60" time="300" condition="true">Conditional</animation>
@@ -762,8 +762,8 @@
 						<height>180</height>
 						<align>center</align>
 						<aligny>bottom</aligny>
-						<texture diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
-						<aspectratio scalediffuse="false">keep</aspectratio>
+						<texture scalediffuse="false" diffuse="mask-rect.png">$INFO[Player.Art(thumb)]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
 			</control>
@@ -775,7 +775,7 @@
 				<width>250</width>
 				<height>250</height>
 				<aligny>bottom</aligny>
-				<texture diffuse="mask-rect.png">$INFO[MusicPlayer.Cover]</texture>
+				<texture diffuse="mask-squ.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio scalediffuse="false" align="left">keep</aspectratio>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<visible>Player.HasAudio + Window.IsVisible(Visualisation) + !Window.IsVisible(MusicOSD) + !Player.ShowInfo</visible>
@@ -795,7 +795,7 @@
 					<posy>616</posy>
 					<width>96</width>
 					<height>96</height>
-					<texture background="true" fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
+					<texture background="true" scalediffuse="false" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio align="center">keep</aspectratio>
 				</control>
 				<control type="label">
@@ -985,7 +985,7 @@
 				<posy>0</posy>
 				<width>81</width>
 				<height>65</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<texture border="8">button-menu-background.png</texture>
 				<visible>!IsEmpty(ListItem.SortLetter)</visible>
 			</control>
 			<control type="label">

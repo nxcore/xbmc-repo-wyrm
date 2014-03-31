@@ -21,7 +21,7 @@
 					<height>168</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<texture background="true">DefaultVideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -31,7 +31,7 @@
 					<height>168</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<texture background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -60,7 +60,7 @@
 					<height>168</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="zoom" start="100" end="124" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
-					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<texture background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -70,7 +70,7 @@
 					<height>168</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<animation effect="zoom" start="100" end="124" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
-					<texture background="true" diffuse="mask-rect.png">DefaultVideo.png</texture>
+					<texture background="true">DefaultVideo.png</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -78,7 +78,7 @@
 					<posy>5</posy>
 					<width>120</width>
 					<height>168</height>
-					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<texture fallback="DefaultVideo.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<bordertexture border="10">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize>
 					<aspectratio align="center" aligny="center">keep</aspectratio>

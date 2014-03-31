@@ -85,15 +85,7 @@
 				<posy>156</posy>
 				<width>610</width>
 				<height>431</height>
-				<texture fallback="shut-fav.png" background="true" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
-			</control>
-			<control type="image"><!-- Reflected list itim icon -->
-				<posx>35</posx>
-				<posy>587</posy>
-				<width>610</width>
-				<height>431</height>
-				<texture fallback="shut-fav.png" background="true" flipy="true" diffuse="mask-fade.png" border="3">$INFO[ListItem.Icon]</texture>
+				<texture fallback="shut-fav.png" background="true" scalediffuse="false" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 		</control>

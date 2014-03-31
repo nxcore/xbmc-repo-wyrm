@@ -23,7 +23,7 @@
 			<posy>13</posy>
 			<width>754</width>
 			<height>593</height>
-			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="label" id="3">

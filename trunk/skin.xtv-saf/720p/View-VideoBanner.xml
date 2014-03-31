@@ -58,7 +58,7 @@
 					<posy>0</posy>
 					<width>560</width>
 					<height>114</height>
-					<texture border="8" diffuse="mask-squ.png" background="true">button-menu-background.png</texture>
+					<texture border="8" background="true">button-menu-background.png</texture>
 				</control>
 				<control type="group">
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>

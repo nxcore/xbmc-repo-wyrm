@@ -137,7 +137,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="image"><!-- Star Rating -->
@@ -368,7 +368,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultMovies.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture fallback="DefaultMovies.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="label"><!-- Genre -->
@@ -505,7 +505,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultTvshows.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture fallback="DefaultTvshows.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 				</control>
@@ -791,7 +791,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture fallback="DefaultMusicVideos.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="group"><!-- Duration -->
@@ -946,7 +946,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture fallback="DefaultAudio.png" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="textbox">
@@ -1081,7 +1081,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture fallback="DefaultAudio.png" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="textbox">
@@ -1221,7 +1221,7 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultAudio.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<texture fallback="DefaultAudio.png" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="textbox"><!-- Song Comment -->

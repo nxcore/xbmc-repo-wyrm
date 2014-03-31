@@ -15,14 +15,13 @@
 			<width>360</width>
 			<height>0</height>
 			<texture>blank.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="998">
 			<description>background mid image</description>
 			<posx>8</posx>
 			<posy>-16</posy>
 			<width>360</width>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="999">
@@ -32,7 +31,6 @@
 			<width>360</width>
 			<height>0</height>
 			<texture>blank.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="button" id="1001">
 			<posx>20</posx>

@@ -16,7 +16,7 @@
 			<posy>60</posy>
 			<width>1038</width>
 			<height>540</height>
-			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 			<visible>Control.IsVisible(3)</visible>
 		</control>
@@ -26,7 +26,7 @@
 			<posy>60</posy>
 			<width>1038</width>
 			<height>516</height>
-			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 			<visible>Control.IsVisible(6)</visible>
 		</control>

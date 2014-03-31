@@ -94,7 +94,7 @@
 					<posy>212</posy>
 					<width>398</width>
 					<height>306</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 				</control>
 				<control type="button" id="20">
 					<description>Shuffle button</description>

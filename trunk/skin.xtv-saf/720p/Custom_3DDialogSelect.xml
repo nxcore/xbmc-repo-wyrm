@@ -15,7 +15,7 @@
 			<posy>100</posy>
 			<width>396</width>
 			<height>216</height>
-			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 		</control>
 		<control type="group" id="499">

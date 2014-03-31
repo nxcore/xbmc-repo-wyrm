@@ -101,15 +101,7 @@
 					<posy>150</posy>
 					<width>384</width>
 					<height>384</height>
-					<texture background="true" diffuse="mask-rect.png">$INFO[Container(999).Listitem.ActualIcon]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image"><!-- list item icon reflection -->
-					<posx>122</posx>
-					<posy>534</posy>
-					<width>384</width>
-					<height>384</height>
-					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(999).Listitem.ActualIcon]</texture>
+					<texture background="true" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(999).Listitem.ActualIcon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 			</control>

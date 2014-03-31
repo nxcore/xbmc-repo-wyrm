@@ -163,8 +163,8 @@
 						<posy>55</posy>
 						<width>320</width>
 						<height>160</height>
-						<aspectratio scalediffuse="true">keep</aspectratio>
-						<texture background="true" diffuse="mask-rect.png" fallback="xtv-logo-big.png">$INFO[Skin.String(custom-watermark)]</texture>
+						<aspectratio>keep</aspectratio>
+						<texture background="true" scalediffuse="false" diffuse="mask-rect.png" fallback="xtv-logo-big.png">$INFO[Skin.String(custom-watermark)]</texture>
 					</control>
 					<control type="image">
 						<posx>480</posx>

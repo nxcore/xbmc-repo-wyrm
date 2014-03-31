@@ -140,7 +140,7 @@
 					<posy>282</posy>
 					<width>396</width>
 					<height>125</height>
-					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+					<texture border="8">button-menu-background.png</texture>
 				</control>
 				<control type="grouplist" id="9000">
 					<posx>450</posx>

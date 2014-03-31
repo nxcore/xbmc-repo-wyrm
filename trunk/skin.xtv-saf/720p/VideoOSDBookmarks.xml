@@ -11,7 +11,7 @@
 			<posy>0</posy>
 			<width>885</width>
 			<height>600</height>
-			<texture diffuse="mask-squ.png" border="8">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 		</control>
 		<control type="label"><!-- Heading label -->

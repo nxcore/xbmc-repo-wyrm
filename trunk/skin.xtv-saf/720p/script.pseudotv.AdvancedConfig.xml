@@ -17,7 +17,7 @@
 			<posy>100</posy>
 			<width>640</width>
 			<height>520</height>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="label">
 			<posx>330</posx>
