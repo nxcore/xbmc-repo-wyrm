@@ -9,64 +9,64 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/xbmc-skins/language/gl/)\n"
+"Language-Team: Swedish (http://www.transifex.com/projects/p/xbmc-skins/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31026"
 msgid "Movies"
-msgstr "Filmes"
+msgstr "Movies"
 
 msgctxt "#31027"
 msgid "TV Shows"
-msgstr "Series de TV"
+msgstr "TV Shows"
 
 msgctxt "#31028"
 msgid "Music Videos"
-msgstr "Vídeos Musicais"
+msgstr "Musikvideor"
 
 msgctxt "#31029"
 msgid "Programs"
-msgstr "Aplicativos"
+msgstr "Programs"
 
 msgctxt "#31030"
 msgid "Music"
-msgstr "Música"
+msgstr "Musik"
 
 msgctxt "#31032"
 msgid "Weather"
-msgstr "Tempo meteorolóxico"
+msgstr "Väder"
 
 msgctxt "#31035"
 msgid "Settings"
-msgstr "Configuracións"
+msgstr "Inställningar"
 
 msgctxt "#31036"
 msgid "Play Disc"
-msgstr "Reproducir Disco"
+msgstr "Spela Disc"
 
 msgctxt "#31128"
 msgid "Current Time: "
-msgstr "Tempo Actual:"
+msgstr "Current Time: "
 
 msgctxt "#31129"
 msgid "Finish Time: "
-msgstr "Final:"
+msgstr "Sluttid: "
 
 msgctxt "#31130"
 msgid "Directed by:"
-msgstr "Dirixido por:"
+msgstr "Regisserad av:"
 
 msgctxt "#31131"
 msgid "Written by:"
-msgstr "Escrito por:"
+msgstr "Författad av:"
 
 msgctxt "#31134"
 msgid "Start Time: "
-msgstr "Comezo:"
+msgstr "Starttid:"
 
 msgctxt "#31226"
 msgid "CDDB"
@@ -74,71 +74,71 @@ msgstr "CDDB"
 
 msgctxt "#31227"
 msgid "Playlist Editor"
-msgstr "Editor da Listaxe de Reprodución"
+msgstr "Playlist Editor"
 
 msgctxt "#31229"
 msgid "Rating"
-msgstr "Valoración"
+msgstr "Rating"
 
 msgctxt "#31230"
 msgid "Artist:"
-msgstr "Artista:"
+msgstr "Artist:"
 
 msgctxt "#31231"
 msgid "Genre:"
-msgstr "Xénero:"
+msgstr "Genre:"
 
 msgctxt "#31232"
 msgid "Year:"
-msgstr "Ano:"
+msgstr "År:"
 
 msgctxt "#31528"
 msgid "Currently"
-msgstr "Actualmente"
+msgstr "Nuvarande"
 
 msgctxt "#31530"
 msgid "Location"
-msgstr "Localización"
+msgstr "Plats"
 
 msgctxt "#31531"
 msgid "Last Updated"
-msgstr "Última actualización"
+msgstr "Sist uppdaterad"
 
 msgctxt "#31536"
 msgid "Provider"
-msgstr "Provedor"
+msgstr "Leverantör"
 
 msgctxt "#31555"
 msgid "Profiles"
-msgstr "Perfís"
+msgstr "Profiles"
 
 msgctxt "#31556"
 msgid "Skin"
-msgstr "Pel"
+msgstr "Skin Settings"
 
 msgctxt "#31558"
 msgid "Power Menu"
-msgstr "Menú Enerxía"
+msgstr "Power Meny"
 
 msgctxt "#31559"
 msgid "System Info"
-msgstr "Información do Sistema"
+msgstr "Systeminformation"
 
 msgctxt "#31563"
 msgid "Skin Version:"
-msgstr "Versión do Tema:"
+msgstr "Skin Version:"
 
 msgctxt "#31564"
 msgid "Current Theme:"
-msgstr "Tema Actual:"
+msgstr "Aktuellt tema:"
 
 msgctxt "#31565"
 msgid "Screen Mode:"
-msgstr "Modo da Pantalla:"
+msgstr "Helskärmsläge:"
 
 msgctxt "#31566"
 msgid "System Platform:"
-msgstr "Plataforma do Sistema:"
+msgstr "Systemplattform:"
 
 msgctxt "#31567"
 msgid "Linux"
@@ -150,7 +150,7 @@ msgstr "MS Windows"
 
 msgctxt "#31569"
 msgid "iOS"
-msgstr "iOS"
+msgstr "XBox"
 
 msgctxt "#31570"
 msgid "Mac OS X"
@@ -158,7 +158,7 @@ msgstr "Mac OS X"
 
 msgctxt "#31572"
 msgid "Warning Memory Low:"
-msgstr "Atención Pouca Memoria:"
+msgstr "Varning - lågt minne:"
 
 msgctxt "#31573"
 msgid "AppleTV"
@@ -170,355 +170,363 @@ msgstr "Android"
 
 msgctxt "#31575"
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "Standard"
 
 msgctxt "#31576"
 msgid "Bold"
-msgstr "Negra"
+msgstr "Fet"
 
 msgctxt "#31577"
 msgid "XBMC Default"
-msgstr "XBMC Predefinido"
+msgstr "XBMC standard"
+
+msgctxt "#31578"
+msgid "Raspberry Pi"
+msgstr "Raspberry Pi"
 
 msgctxt "#31651"
 msgid "Muted"
-msgstr "Sen Son"
+msgstr "Dämpade"
 
 msgctxt "#31652"
 msgid "Favourites"
-msgstr "Favoritos"
+msgstr "Favoriter"
 
 msgctxt "#31654"
 msgid "Addon"
-msgstr "Complemento"
+msgstr "Tillägg"
 
 msgctxt "#31656"
 msgid "OSD Lyrics"
-msgstr "Letras no OSD"
+msgstr "OSD-sångtexter"
 
 msgctxt "#31658"
 msgid "OSD Subtitles"
-msgstr "Subtítulos no OSD"
+msgstr "OSD-undertexter"
 
 msgctxt "#31659"
 msgid "Playlist"
-msgstr "Lista de reprodución"
+msgstr "Playlist"
 
 msgctxt "#31680"
 msgid "Default Artwork Downloader"
-msgstr "Descargador Predefinido de Artwork"
+msgstr "Standard bildnedladdare"
 
 msgctxt "#31681"
 msgid "Artwork Downloader"
-msgstr "Descargador de Ilustracións"
+msgstr "Omslagsnedladdare"
 
 msgctxt "#31682"
 msgid "Theme Downloader"
-msgstr "Descargador de Temas"
+msgstr "Temanedladdare"
 
 msgctxt "#31688"
 msgid "Go Back"
-msgstr "Atrás"
+msgstr "Gå bakåt"
 
 msgctxt "#31689"
 msgid "Edit Library"
-msgstr "Editar Biblioteca"
+msgstr "Redigera bibliotek"
 
 msgctxt "#31692"
 msgid "Cinema"
-msgstr "Cine"
+msgstr "Cinema"
 
 msgctxt "#31693"
 msgid "More Options..."
-msgstr "Máis Opcións..."
+msgstr "Fler alternativ..."
 
 msgctxt "#31696"
 msgid "Video Addons"
-msgstr "Complementos de Vídeo"
+msgstr "Videotillägg"
 
 msgctxt "#31697"
 msgid "Music Addons"
-msgstr "Complementos de Música"
+msgstr "Misuktillägg"
 
 msgctxt "#31700"
 msgid "Available Groups"
-msgstr "Grupos dispoñíbeis"
+msgstr "Tillgängliga grupper"
 
 msgctxt "#31701"
 msgid "Channel Rules"
-msgstr "Regras da Canles"
+msgstr "Kanalregler"
 
 msgctxt "#31702"
 msgid "Channel Configuration"
-msgstr "Configuración da Canle"
+msgstr "Kanalkonfiguration"
 
 msgctxt "#31703"
 msgid "Channel"
-msgstr "Canle"
+msgstr "Kanal"
 
 msgctxt "#31704"
 msgid "Content"
-msgstr "Contido"
+msgstr "Innehåll"
 
 msgctxt "#31705"
 msgid "Channel Type"
-msgstr "Tipo de Canle"
+msgstr "Kanaltyp"
 
 msgctxt "#31706"
 msgid "Advanced Channel Rules"
-msgstr "Regras Avanzadas da Canle"
+msgstr "Avancerade kanalregler"
 
 msgctxt "#31707"
 msgid "Show in Order"
-msgstr "Amosar en orde"
+msgstr "Visa i ordning"
 
 msgctxt "#31708"
 msgid "Directory"
-msgstr "Directorio"
+msgstr "Katalog"
 
 msgctxt "#31709"
 msgid "Now watching"
-msgstr "Vendo agora"
+msgstr "Visas nu"
 
 msgctxt "#31710"
 msgid "Show Name"
-msgstr "Amosar Nome"
+msgstr "Programnamn"
 
 msgctxt "#31711"
 msgid "Show Title"
-msgstr "Amosar Título"
+msgstr "Programtitel"
 
 msgctxt "#31712"
 msgid "Show Description"
-msgstr "Amosar Descrición"
+msgstr "Visa beskrivning"
 
 msgctxt "#31801"
 msgid "Startup"
-msgstr "Arrinque"
+msgstr "Använd Scrollbar"
 
 msgctxt "#31802"
 msgid "General"
-msgstr "Xeral"
+msgstr "Använd Media Overlays"
 
 msgctxt "#31803"
 msgid "Home Menu"
-msgstr "Menú Principal"
+msgstr "Använd Watched State Overlays"
 
 msgctxt "#31804"
 msgid "Background"
-msgstr "Fondo"
+msgstr "Använd Now Playing Screens"
 
 msgctxt "#31805"
 msgid "Media Sources"
-msgstr "Fontes de Medios"
+msgstr "Återställ anpassade Väder bakgrunder"
 
 msgctxt "#31806"
 msgid "Custom Favourites"
-msgstr "Marcadores Personalizados"
+msgstr "Now Playing Style Visuals"
 
 msgctxt "#31807"
 msgid "Support"
-msgstr "Soporte"
+msgstr "Välj Custom Bakgrund"
 
 msgctxt "#31850"
 msgid "Use Intro video"
-msgstr "Usar vídeo de Inicio"
+msgstr "Script :"
 
 msgctxt "#31851"
 msgid "Intro file:"
-msgstr "Ficheiro de inicio:"
+msgstr "Introfil:"
 
 msgctxt "#31852"
 msgid "Use Startup playlist"
-msgstr "Estabelecer fonte predefinida para os Filmes"
+msgstr "Set Default Movie källa"
 
 msgctxt "#31853"
 msgid "Choose playlist:"
-msgstr "Seleccionar Listaxe de reprodución:"
+msgstr "Set Default TV-källa"
 
 msgctxt "#31860"
 msgid "Choose Custom background"
-msgstr "Seleccionar Fondo personalizado"
+msgstr "Välj anpassad bakgrund"
 
 msgctxt "#31861"
 msgid "Reset Custom background"
-msgstr "Restabelecer Fondo personalizado"
+msgstr "Nollställ anpassad bakgrund"
 
 msgctxt "#31862"
 msgid "Use Visuals as background"
-msgstr "Usar Vistas como fondos"
+msgstr "Använd visualisering som bakgrund"
 
 msgctxt "#31863"
 msgid "Use Fanart as background"
-msgstr "Usar Fanart como fondo"
+msgstr "Använd fanart som bakgrund"
 
 msgctxt "#31864"
 msgid "Use ExtraFanart as background"
-msgstr "Usar ExtraFanart como fondo"
+msgstr "Använd extra fanart som bakgrund"
 
 msgctxt "#31865"
 msgid "Use Artistslideshow as background"
-msgstr "Usar diapositivas de artistas como fondo"
+msgstr "Använd artistbildspel som bakgrund"
 
 msgctxt "#31866"
 msgid "Location of Custom Weather backgrounds"
-msgstr "Localización do fondo personalizado do Tempo"
+msgstr "Plats för anpassade väderbakgrunder"
 
 msgctxt "#31867"
 msgid "Reset Custom Weather backgrounds"
-msgstr "Restabelecer o fondo personalizado do Tempo"
+msgstr "Nollställ anpassade väderbakgrunder"
 
 msgctxt "#31868"
 msgid "Background visibilty"
-msgstr "Visibilidade do Fondo"
+msgstr "Bakgrundsvisibilitet"
 
 msgctxt "#31869"
 msgid "Show DVD case"
-msgstr "Amosar Caixa de DVD"
+msgstr "Visa DVD-fodral"
 
 msgctxt "#31870"
 msgid "Show CD case"
-msgstr "Amosar Caixa de CD"
+msgstr "Visa CD-fodral"
 
 msgctxt "#31871"
 msgid "Choose Homescreen Watermark Image"
-msgstr "Escoller a Marca de Auga da Pantalla Principal"
+msgstr "Välj bild för hemskärmens vattenstämpel"
 
 msgctxt "#31872"
 msgid "Reset Homescreen Watermark Image"
-msgstr "Restabelecer a Marca de Auga da Pantalla Principal"
+msgstr "Nollställ hemskärmens vattenstämpel"
 
 msgctxt "#31880"
 msgid "Lock \"View As\" panel"
-msgstr "Bloquear \"Ver como\" panel"
+msgstr "Lås \"Vy som\"-panel"
 
 msgctxt "#31881"
 msgid "Use scrollbar"
-msgstr "Usar barras de desprazamento"
+msgstr "Använd rullningslist"
 
 msgctxt "#31882"
 msgid "Enable autoscroll"
-msgstr "Habilitar autodesprazamento"
+msgstr "Aktivera automatisk rullning"
 
 msgctxt "#31883"
 msgid "Use media overlays"
-msgstr "Usar capas de medios"
+msgstr "Använd mediaöverlägg"
 
 msgctxt "#31884"
 msgid "Use watched state overlays"
-msgstr "Usar capas para o estado de visto"
+msgstr "Använd överlägg för 'visade' objekt"
+
+msgctxt "#31886"
+msgid "Tilt icons"
+msgstr "Luta ikoner"
 
 msgctxt "#31888"
 msgid "Time on Home screen"
-msgstr "Hora na Pantalla Principal"
+msgstr "Visa klocka på hemskärmen"
 
 msgctxt "#31889"
 msgid "Current weather on Home screen"
-msgstr "Tempo Actual na Pantalla Principal"
+msgstr "Visa nuvarande väder på hemskärmen"
 
 msgctxt "#31890"
 msgid "Animated weather icons"
-msgstr "Iconas do Tempo Animadas"
+msgstr "Spela Disc On Home Menu"
 
 msgctxt "#31892"
 msgid "Use TV Tunes"
-msgstr "Usar Emisións de TV"
+msgstr "Använd titelspår för TV-program"
 
 msgctxt "#31893"
 msgid "Download media artwork"
-msgstr "Descargar ilustración do medio"
+msgstr "Ladda ner mediabilder"
 
 msgctxt "#31900"
 msgid "Home menu type"
-msgstr "Tipo do Menú Principal"
+msgstr "Videovisningar"
 
 msgctxt "#31901"
 msgid "Videos in Home menu"
-msgstr "Vídeos no Menú Principal"
+msgstr "Music Views"
 
 msgctxt "#31902"
 msgid "Movies in Home menu"
-msgstr "Filmes no Menú Principal"
+msgstr "Photo Visningar"
 
 msgctxt "#31903"
 msgid "TV Shows in Home menu"
-msgstr "Series de TV no Menú Principal"
+msgstr "Script / Program Visningar"
 
 msgctxt "#31904"
 msgid "Music Videos in Home menu"
-msgstr "Vídeos Musicais no Menú Principal"
+msgstr " (Klicka för att öppna)"
 
 msgctxt "#31905"
 msgid "Music in Home menu"
-msgstr "Música no Menú Principal"
+msgstr "Visa 'Musik' på hemmenyn"
 
 msgctxt "#31906"
 msgid "Addons in Home menu"
-msgstr "Complementos no Menú Principal"
+msgstr "Visa 'Tillägg' på hemmenyn"
 
 msgctxt "#31907"
 msgid "Pictures in Home menu"
-msgstr "Imaxes no Menú Principal"
+msgstr "Visa 'Bilder' på hemmenyn"
 
 msgctxt "#31908"
 msgid "Profiles in Home menu"
-msgstr "Perfís no Menú Principal"
+msgstr "Visa 'Profiler' i hemmenyn"
 
 msgctxt "#31909"
 msgid "Weather in Home menu"
-msgstr "O Tempo no Menú Principal"
+msgstr "Visa 'Väder' i hemmenyn"
 
 msgctxt "#31910"
 msgid "Favourites in Home menu"
-msgstr "Marcadores no Menú Principal"
+msgstr "Visa 'Favoriter' i hemmenyn"
 
 msgctxt "#31911"
 msgid "Search in Home menu"
-msgstr "Buscar no Menú Principal"
+msgstr "Visa 'Sök' i hemmenyn"
 
 msgctxt "#31912"
 msgid "Play Disc in Home menu"
-msgstr "Reproducir Disco no Menú Principal"
+msgstr "Visa 'Spela skiva' i hemmenyn"
 
 msgctxt "#31913"
 msgid "Quit from Home menu"
-msgstr "Saír dende o Menú Principal"
+msgstr "Visa 'Avsluta' i hemmenyn"
 
 msgctxt "#31914"
 msgid "Quit button action"
-msgstr "Accíon do botón Saír"
+msgstr "Funktion för avsluta-knappen"
 
 msgctxt "#31920"
 msgid "Movie library entry point"
-msgstr "Punto de entrada da biblioteca de filmes"
+msgstr "Startpunkt för filmbiblioteket"
 
 msgctxt "#31921"
 msgid "TV library entry point"
-msgstr "Puntro de entrada da biblioteca de TV"
+msgstr "Hide \"List2\" view"
 
 msgctxt "#31922"
 msgid "Music Video library entry point"
-msgstr "Punto de entrada d biblioteca de vídeos musicais"
+msgstr "Hide \"Wrap\" view"
 
 msgctxt "#31923"
 msgid "Music library entry point"
-msgstr "Punto de entrada da biblioteca de música"
+msgstr "Hide \"Ikoner\" view"
 
 msgctxt "#31930"
 msgid "Upload Debug Log file"
-msgstr "Subir o ficheiro de rexistro de depuración"
+msgstr "Ladda upp debugloggen"
 
 msgctxt "#31933"
 msgid "Show Debug Grid"
-msgstr "Amosar a Grella de Depuración"
+msgstr "Visa debugrutnät"
 
 msgctxt "#31934"
 msgid "Show Debug Info"
-msgstr "Amosar Información de Depuración"
+msgstr "Visa debuginfo"
 
 msgctxt "#31935"
 msgid "Reset Skin settings to their defaults"
-msgstr "Restabelecer o Tema ao seus valores predefinidos"
+msgstr "Nollställ skalet till sina standardinställningar"
 
 msgctxt "#31941"
 msgid "List"
@@ -526,56 +534,60 @@ msgstr "Lista"
 
 msgctxt "#31942"
 msgid "Wrap"
-msgstr "Axustar"
+msgstr "Vira runt"
 
 msgctxt "#31943"
 msgid "Icons"
-msgstr "Iconas"
+msgstr "Ikoner"
 
 msgctxt "#31944"
 msgid "Wall"
-msgstr "Muro"
+msgstr "Vägg"
 
 msgctxt "#31945"
 msgid "Coverflow"
-msgstr "Fluxo da carátula"
+msgstr "Omslagsflöde"
 
 msgctxt "#31946"
 msgid "Banner"
-msgstr "Pancarta"
+msgstr "Banderoll"
 
 msgctxt "#31951"
 msgid "Vertical"
-msgstr "Vertical"
+msgstr "Vertikal"
 
 msgctxt "#31952"
 msgid "Horizontal"
-msgstr "Horizontal"
+msgstr "Horisontell"
 
 msgctxt "#31953"
 msgid "Icon"
-msgstr "Icona"
+msgstr "Ikon"
 
 msgctxt "#31954"
 msgid "Recent"
-msgstr "Recente"
+msgstr "Nyligen"
 
 msgctxt "#31955"
 msgid "Recommended"
-msgstr "Recomendado"
+msgstr "Rekommenderad"
+
+msgctxt "#31956"
+msgid "NextAired"
+msgstr "Kommandesändning"
 
 msgctxt "#31960"
 msgid "Recommended Movies"
-msgstr "Filmes Recomendados"
+msgstr "Rekommenderade filmer"
 
 msgctxt "#31961"
 msgid "Next Aired Episodes"
-msgstr "Seguintes Episodios"
+msgstr "Uppkommande avsnitt"
 
 msgctxt "#31962"
 msgid "Recommended TV Episodes"
-msgstr "Episodios Recomendados"
+msgstr "Rekommenderade TV-avsnitt"
 
 msgctxt "#31963"
 msgid "Recommended Albums"
-msgstr "Álbums Recomendados"
+msgstr "Rekommenderade album"
