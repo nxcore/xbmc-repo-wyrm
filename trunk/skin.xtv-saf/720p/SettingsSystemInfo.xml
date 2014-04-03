@@ -25,7 +25,6 @@
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 			<itemgap>0</itemgap>
-			<orientation>vertical</orientation>
 			<control type="button" id="95"><!-- Summary -->
 				<width>305</width>
 				<height>45</height>
@@ -67,73 +66,82 @@
 			<posx>34</posx>
 			<posy>112</posy>
 			<width>890</width>
-			<height>450</height>
-			<itemgap>0</itemgap>
+			<height>550</height>
+			<itemgap>5</itemgap>
 			<onleft>noop</onleft>
 			<onright>noop</onright>
 			<onup>noop</onup>
 			<ondown>noop</ondown>
-			<orientation>vertical</orientation>
 			<visible>!Control.HasFocus(100)</visible>
 			<control type="label" id="2">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="3">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="4">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="5">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="6">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="7">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="8">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="9">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="10">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="11">
 				<width>890</width>
 				<height>45</height>
 				<label>-</label>
-				<font>font12</font>
+				<font>font11</font>
+				<wrapmultiline>true</wrapmultiline>
 			</control>
 		</control>
 		<control type="grouplist">
@@ -141,47 +149,39 @@
 			<posy>112</posy>
 			<width>890</width>
 			<height>225</height>
-			<itemgap>0</itemgap>
+			<itemgap>5</itemgap>
 			<onleft>noop</onleft>
 			<onright>noop</onright>
 			<onup>noop</onup>
 			<ondown>noop</ondown>
-			<orientation>vertical</orientation>
 			<visible>Control.HasFocus(100)</visible>
 			<control type="label"><!-- Skin version -->
 				<height>45</height>
 				<label>$LOCALIZE[31563] xTV-SAF v1.3.5</label>
-				<font>font12</font>
+				<font>font11</font>
 			</control>
 			<control type="label"><!-- Current theme -->
 				<height>45</height>
 				<label>$LOCALIZE[31564] $INFO[Skin.CurrentTheme]</label>
-				<font>font12</font>
+				<font>font11</font>
 			</control>
 			<control type="label"><!-- Screen mode -->
 				<height>45</height>
 				<label>$LOCALIZE[31565] $INFO[System.ScreenMode]</label>
-				<font>font12</font>
+				<font>font11</font>
 			</control>
 			<control type="label"><!-- Platform system is running on -->
 				<height>45</height>
 				<label>$VAR[SystemPlatform]</label>
-				<font>font12</font>
+				<font>font11</font>
 			</control>
 		</control>
-		<control type="label"><!-- XBMC build version -->
+		<control type="label"><!-- XBMC build version and date -->
 			<posx>34</posx>
-			<posy>608</posy>
-			<width>890</width>
-			<label>$INFO[System.BuildVersion,$LOCALIZE[144] ,]</label>
-			<font>font12</font>
-		</control>
-		<control type="label"><!-- XBMC build date -->
-			<posx>34</posx>
-			<posy>638</posy>
-			<width>890</width>
-			<label>$INFO[System.BuildDate,$LOCALIZE[552]: ,]</label>
-			<font>font12</font>
+			<posy>688</posy>
+			<width>1212</width>
+			<label>$INFO[System.BuildVersion,$LOCALIZE[144] ,] $INFO[System.BuildDate,(,)]</label>
+			<font>font11</font>
 		</control>
 	</controls>
 </window>

@@ -47,7 +47,6 @@
 					<ondown>999</ondown>
 					<onright>noop</onright>
 					<pagecontrol>noop</pagecontrol>
-					<orientation>vertical</orientation>
 					<itemlayout height="50">
 						<control type="label">
 							<posx>20</posx>

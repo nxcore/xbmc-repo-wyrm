@@ -51,6 +51,7 @@
 				<height>550</height>
 				<onup>8999</onup>
 				<ondown>8999</ondown>
+				<scrolltime tween="sine" easing="out">100</scrolltime>
 				<viewtype label="List">list</viewtype>
 				<itemlayout width="560" height="50">
 					<control type="label">

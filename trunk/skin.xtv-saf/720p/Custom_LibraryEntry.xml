@@ -58,7 +58,6 @@
 					<height>598</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
 					<align>center</align>
 					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
@@ -212,7 +211,6 @@
 					<height>414</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
 					<align>center</align>
 					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
@@ -342,7 +340,6 @@
 					<height>368</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
 					<align>center</align>
 					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
@@ -466,7 +463,6 @@
 					<height>414</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
 					<align>center</align>
 					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>

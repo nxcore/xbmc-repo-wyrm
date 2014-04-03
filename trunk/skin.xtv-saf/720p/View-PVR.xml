@@ -240,7 +240,6 @@
 				<ondown>11</ondown>
 				<scrolltime>200</scrolltime>
 				<pagecontrol>27</pagecontrol>
-				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
 				<itemlayout height="70">
 					<control type="label">
@@ -387,7 +386,6 @@
 				<ondown>12</ondown>
 				<scrolltime>200</scrolltime>
 				<pagecontrol>27</pagecontrol>
-				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
 				<itemlayout height="70">
 					<control type="label">
@@ -494,7 +492,6 @@
 					<onright>27</onright>
 					<pagecontrol>27</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<orientation>vertical</orientation>
 					<preloaditems>2</preloaditems>
 					<itemlayout height="70">
 						<control type="image">
@@ -627,7 +624,6 @@
 				<scrolltime>200</scrolltime>
 				<viewtype label="536">List</viewtype>
 				<pagecontrol>27</pagecontrol>
-				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
 				<itemlayout height="50">
 					<control type="label">
@@ -994,7 +990,6 @@
 				<scrolltime>200</scrolltime>
 				<viewtype label="536">List</viewtype>
 				<pagecontrol>27</pagecontrol>
-				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
 				<itemlayout height="46">
 					<control type="label">

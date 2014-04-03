@@ -59,7 +59,7 @@
 					<width>1280</width>
 					<height>720</height>
 					<texture>colours/black.png</texture>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="multiimage" id="991">
 					<posx>0</posx>
@@ -267,7 +267,7 @@
 				<height>265</height>
 				<width>265</width>
 				<texture>case-cd.png</texture>
-				<aspectratio aligny="center">stretch</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<visible>Skin.HasSetting(CDcase) + !SubString(MusicPlayer.Cover,Default,Left)</visible>
 			</control>
 			<control type="image"><!-- Album cover -->

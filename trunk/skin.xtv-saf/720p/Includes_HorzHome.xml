@@ -196,7 +196,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<visible>Control.HasFocus(9100)</visible>
@@ -328,7 +327,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="Control.HasFocus(9160)" effect="fade" start="100" end="65">Conditional</animation>
 					<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
@@ -468,7 +466,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="Control.HasFocus(9210)" effect="fade" start="100" end="65">Conditional</animation>
 					<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
@@ -614,7 +611,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 					<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
@@ -760,7 +756,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="!Control.HasFocus(9300)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<visible>Control.HasFocus(9300)</visible>
@@ -841,7 +836,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<visible>Control.HasFocus(9350)</visible>
@@ -995,7 +989,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="!Control.HasFocus(9400)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<visible>Control.HasFocus(9400)</visible>
@@ -1070,7 +1063,6 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>66</height>
-					<align>center</align>
 					<texture>menu-focus.png</texture>
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<visible>Control.HasFocus(9450)</visible>
@@ -1213,7 +1205,7 @@
 			<posy>592</posy>
 			<width>128</width>
 			<height>128</height>
-			<aspectratio align="center" aligny="top">keep</aspectratio>
+			<aspectratio aligny="top">keep</aspectratio>
 			<texture background="true" fallback="blank.png">$INFO[Skin.String(custom-watermark)]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<visible>!IsEmpty(Skin.String(custom-watermark))</visible>

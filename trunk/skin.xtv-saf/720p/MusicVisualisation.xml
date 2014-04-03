@@ -55,7 +55,7 @@
 				<width>1280</width>
 				<height>720</height>
 				<texture>colours/black.png</texture>
-				<aspectratio>scale</aspectratio>
+				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="multiimage" id="991"><!-- ArtistSlideshow Fanart -->
 				<posx>0</posx>
@@ -77,8 +77,7 @@
 				<width>400</width>
 				<height>155</height>
 				<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
+				<aspectratio align="left" aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="image" id="993"><!-- Otherwise try parent directory of above -->
 				<posx>8</posx>
@@ -86,8 +85,7 @@
 				<width>400</width>
 				<height>155</height>
 				<texture fallback="blank.png">$INFO[Player.FolderPath,,../logo.png]</texture>
-				<aligny>bottom</aligny>
-				<aspectratio align="left">keep</aspectratio>
+				<aspectratio align="left" aligny="bottom">keep</aspectratio>
 				<visible>StringCompare(Control.GetLabel(992),blank.png)</visible>
 			</control>
 			<control type="image"><!-- media info background image -->
@@ -120,7 +118,7 @@
 				<height>265</height>
 				<width>265</width>
 				<texture>case-cd.png</texture>
-				<aspectratio aligny="center">stretch</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<visible>Skin.HasSetting(CDcase) + !SubString(MusicPlayer.Cover,Default,Left)</visible>
 			</control>
 			<control type="image"><!-- Cover image -->

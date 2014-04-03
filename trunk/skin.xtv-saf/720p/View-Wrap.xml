@@ -23,7 +23,7 @@
 					<posy>212</posy>
 					<width>160</width>
 					<height>160</height>
-					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 				</control>
@@ -34,7 +34,7 @@
 					<posy>52</posy>
 					<width>320</width>
 					<height>320</height>
-					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
 				</control>
 			</focusedlayout>

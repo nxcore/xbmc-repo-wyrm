@@ -8,8 +8,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<control type="image">
-				<description>background image</description>
+			<control type="image"><!-- Dialog background image -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>480</width>
@@ -17,8 +16,7 @@
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 
-			<control type="label">
-				<description>header label</description>
+			<control type="label"><!-- Dialog heading -->
 				<posx>40</posx>
 				<posy>16</posy>
 				<width>430</width>
@@ -27,8 +25,7 @@
 				<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
 				<align>center</align>
 			</control>
-			<control type="label">
-				<description>Selected item's date</description>
+			<control type="label"><!-- Selected items date -->
 				<posx>40</posx>
 				<posy>60</posy>
 				<width>430</width>
@@ -164,8 +161,7 @@
 				<ondown>61</ondown>
 				<onup>61</onup>
 			</control>
-			<control type="label">
-				<description>Page Count Label</description>
+			<control type="label"><!-- Page count -->
 				<posx>450</posx>
 				<posy>610</posy>
 				<width>400</width>

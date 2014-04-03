@@ -68,7 +68,7 @@
 					<width>307</width>
 					<height>172</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<bordertexture border="9">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize>
 				</control>

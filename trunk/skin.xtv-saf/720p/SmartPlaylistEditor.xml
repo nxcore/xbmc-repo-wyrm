@@ -11,8 +11,7 @@
 	<controls>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SelectDialog) | Window.IsVisible(smartplaylistrule)">Conditional</animation>
-			<control type="image" id="0">
-				<description>background image</description>
+			<control type="image" id="0"><!-- Dialog background image -->
 				<posx>-26</posx>
 				<posy>-60</posy>
 				<width>920</width>
@@ -20,8 +19,7 @@
 				<texture border="8">button-menu-background.png</texture>
 				<colordiffuse>dialog-background</colordiffuse>
 			</control>
-			<control type="label">
-				<description>heading label</description>
+			<control type="label"><!-- Dialog heading -->
 				<posx>61</posx>
 				<posy>-37</posy>
 				<width>743</width>
@@ -30,7 +28,6 @@
 				<label>$LOCALIZE[21432]</label>
 			</control>
 			<control type="image">
-				<description>separator image</description>
 				<posx>61</posx>
 				<posy>-6</posy>
 				<width>743</width>
@@ -38,8 +35,7 @@
 				<texture>separator.png</texture>
 			</control>
 
-			<control type="spincontrolex" id="22">
-				<description>Set Playlist type</description>
+			<control type="spincontrolex" id="22"><!-- Set playlist type -->
 				<posx>0</posx>
 				<posy>18</posy>
 				<width>868</width>
@@ -51,7 +47,7 @@
 				<onup>9001</onup>
 				<ondown>12</ondown>
 			</control>
-			<control type="label">
+			<control type="label"><!-- Name heading -->
 				<description>Name Label</description>
 				<posx>17</posx>
 				<posy>62</posy>
@@ -60,8 +56,7 @@
 				<font>font12</font>
 				<label>$LOCALIZE[21433]</label>
 			</control>
-			<control type="button" id="12">
-				<description>Name Button</description>
+			<control type="button" id="12"><!-- Name -->
 				<posx>0</posx>
 				<posy>93</posy>
 				<width>868</width>
@@ -75,8 +70,7 @@
 				<onright>12</onright>
 				<ondown>10</ondown>
 			</control>
-			<control type="label">
-				<description>rules label</description>
+			<control type="label"><!-- Rules -->
 				<posx>17</posx>
 				<posy>143</posy>
 				<width>743</width>
@@ -84,8 +78,7 @@
 				<font>font12</font>
 				<label>$LOCALIZE[21434]</label>
 			</control>
-			<control type="list" id="10">
-				<description>Rules List Control</description>
+			<control type="list" id="10"><!-- Rules list -->
 				<posx>0</posx>
 				<posy>175</posy>
 				<width>660</width>
@@ -133,8 +126,7 @@
 				</focusedlayout>
 			</control>
 			<control type="group" id="9000">
-				<control type="button" id="13">
-					<description>Add Rule Button</description>
+				<control type="button" id="13"><!-- Add rule -->
 					<posx>690</posx>
 					<posy>175</posy>
 					<height>46</height>
@@ -147,8 +139,7 @@
 					<onright>10</onright>
 					<ondown>14</ondown>
 				</control>
-				<control type="button" id="14">
-					<description>Remove Rule Button</description>
+				<control type="button" id="14"><!-- Remove rule -->
 					<posx>690</posx>
 					<posy>217</posy>
 					<height>46</height>
@@ -161,8 +152,7 @@
 					<onright>10</onright>
 					<ondown>15</ondown>
 				</control>
-				<control type="button" id="15">
-					<description>Edit Rule Button</description>
+				<control type="button" id="15"><!-- Edit rule -->
 					<posx>690</posx>
 					<posy>260</posy>
 					<height>46</height>
@@ -228,8 +218,7 @@
 				<ondown>9001</ondown>
 			</control>
 			<control type="group" id="9001">
-				<control type="button" id="20">
-					<description>Ok Button</description>
+				<control type="button" id="20"><!-- OK -->
 					<posx>177</posx>
 					<posy>481</posy>
 					<width>250</width>
@@ -243,8 +232,7 @@
 					<onright>21</onright>
 					<ondown>22</ondown>
 				</control>
-				<control type="button" id="21">
-					<description>Cancel Button</description>
+				<control type="button" id="21"><!-- Cancel -->
 					<posx>513</posx>
 					<posy>481</posy>
 					<width>250</width>

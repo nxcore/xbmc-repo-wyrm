@@ -45,15 +45,6 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="textbox">
-		<spinwidth>16</spinwidth>
-		<spinheight>16</spinheight>
-		<spinposx>420</spinposx>
-		<spinposy>210</spinposy>
-		<textureup>scroll-up.png</textureup>
-		<texturedown>scroll-down.png</texturedown>
-		<textureupfocus>scroll-up-focus.png</textureupfocus>
-		<texturedownfocus>scroll-down-focus.png</texturedownfocus>
-		<image>icon-folder.png</image>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -75,7 +66,6 @@
 		<texturesliderbarfocus border="8">scrollbar_bar_focus.png</texturesliderbarfocus>
 		<showonepage>false</showonepage>
 		<pulseonselect>false</pulseonselect>
-		<orientation>vertical</orientation>
 		<colordiffuse>ScrollBarColor</colordiffuse>
 	</default>
 	<default type="spincontrol">

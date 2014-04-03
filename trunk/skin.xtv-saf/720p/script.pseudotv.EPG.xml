@@ -331,7 +331,7 @@
 			<posy>445</posy>
 			<width>270</width>
 			<height>150</height>
-			<aspectratio aligny="center">keep</aspectratio>
+			<aspectratio>keep</aspectratio>
 		</control>
 	</controls>
 </window>

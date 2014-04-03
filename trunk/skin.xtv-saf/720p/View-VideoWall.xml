@@ -35,9 +35,9 @@
 					<posy>1</posy>
 					<width>119</width>
 					<height>169</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture fallback="DefaultVideo.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 					<!-- Watched Overlay -->
@@ -66,9 +66,9 @@
 					<posy>1</posy>
 					<width>119</width>
 					<height>169</height>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture fallback="DefaultAddon.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+					<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
@@ -90,7 +90,7 @@
 						<width>120</width>
 						<height>169</height>
 						<texture>mask-hilite.png</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 						<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 						<visible>![Container().OnScrollNext | Container().OnScrollPrevious] + !SubString(ListItem.Icon,Default,Left)</visible>
@@ -100,8 +100,8 @@
 						<posy>12</posy>
 						<width>101</width>
 						<height>144</height>
-						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultVideo.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 					<!-- Watched Overlay -->
@@ -133,7 +133,7 @@
 						<width>120</width>
 						<height>169</height>
 						<texture>mask-hilite.png</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 						<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
 						<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 						<visible>![Container().OnScrollNext | Container().OnScrollPrevious] + !SubString(ListItem.Icon,Default,Left)</visible>
@@ -143,8 +143,8 @@
 						<posy>12</posy>
 						<width>101</width>
 						<height>144</height>
-						<aspectratio>stretch</aspectratio>
-						<texture fallback="DefaultAddon.png" scalediffuse="false" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
 				</control>
@@ -161,8 +161,7 @@
 					<width>354</width>
 					<height>97</height>
 					<texture fallback="blank.png">$VAR[VideoLogo]</texture>
-					<aligny>bottom</aligny>
-					<aspectratio align="left">keep</aspectratio>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<animation effect="fade" delay="200" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="label"><!-- Title -->

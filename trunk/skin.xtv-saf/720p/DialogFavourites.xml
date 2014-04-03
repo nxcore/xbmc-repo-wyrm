@@ -85,8 +85,8 @@
 				<posy>156</posy>
 				<width>610</width>
 				<height>431</height>
-				<texture fallback="shut-fav.png" background="true" scalediffuse="false" diffuse="mask-rect.png" border="3">$INFO[ListItem.Icon]</texture>
-				<aspectratio>keep</aspectratio>
+				<texture fallback="shut-fav.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
 			</control>
 		</control>
 		<control type="label" id="12"><!-- Number of files (show if vertical home menu) -->

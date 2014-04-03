@@ -7,8 +7,7 @@
 	</coordinates>
 	<include>shutdown-ani</include>
 	<controls>
-		<control type="image">
-			<description>OK Dialog background</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>690</width>
@@ -16,8 +15,7 @@
 			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
-		<control type="label" id="1">
-			<description>dialog Heading</description>
+		<control type="label" id="1"><!-- Dialog heading -->
 			<posx>20</posx>
 			<posy>12</posy>
 			<width>650</width>
@@ -32,8 +30,7 @@
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="label" id="2">
-			<description>dialog line 1</description>
+		<control type="label" id="2"><!-- Dialog line 1 -->
 			<posx>20</posx>
 			<posy>76</posy>
 			<width>650</width>
@@ -42,8 +39,7 @@
 			<font>font11</font>
 			<align>center</align>
 		</control>
-		<control type="label" id="3">
-			<description>dialog line 2</description>
+		<control type="label" id="3"><!-- Dialog line 2 -->
 			<posx>20</posx>
 			<posy>106</posy>
 			<width>650</width>
@@ -52,8 +48,7 @@
 			<font>font11</font>
 			<align>center</align>
 		</control>
-		<control type="label" id="4">
-			<description>dialog line 3</description>
+		<control type="label" id="4"><!-- Dialog line 3 -->
 			<posx>20</posx>
 			<posy>130</posy>
 			<width>650</width>
@@ -62,8 +57,7 @@
 			<font>font11</font>
 			<align>center</align>
 		</control>
-		<control type="button" id="10">
-			<description>OK button</description>
+		<control type="button" id="10"><!-- OK -->
 			<posx>212</posx>
 			<posy>176</posy>
 			<width>265</width>

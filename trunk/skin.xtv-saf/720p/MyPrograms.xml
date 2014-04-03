@@ -72,8 +72,7 @@
 			<include>View-as</include>
 			<control type="group">
 				<visible>ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
-				<control type="image">
-					<description>Background shadow</description>
+				<control type="image"><!-- Background shadow -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
@@ -81,7 +80,7 @@
 					<texture>colours/black.png</texture>
 					<colordiffuse>osd-background</colordiffuse>
 				</control>
-				<control type="image">
+				<control type="image"><!-- Button background -->
 					<description>Button Background</description>
 					<posx>440</posx>
 					<posy>212</posy>
@@ -101,16 +100,14 @@
 				<ondown>9000</ondown>
 				<onback>50</onback>
 				<itemgap>0</itemgap>
-				<control type="button" id="2">
-					<description>View As Icons button</description>
+				<control type="button" id="2"><!-- View type -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[100]</label>
 					<textoffsetx>10</textoffsetx>
 				</control>
-				<control type="radiobutton" id="1198">
-					<description>Tilt Icon List view</description>
+				<control type="radiobutton" id="1198"><!-- Tilt icon list view -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[31886]</label>
@@ -121,8 +118,7 @@
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
 				</control>
-				<control type="radiobutton" id="1197">
-					<description>Tilt Icon Wall view</description>
+				<control type="radiobutton" id="1197"><!-- Tilt icon wall view -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[31886]</label>
@@ -133,16 +129,14 @@
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
-				<control type="button" id="3">
-					<description>Sort by button</description>
+				<control type="button" id="3"><!-- Sort by -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[103]</label>
 					<textoffsetx>10</textoffsetx>
 				</control>
-				<control type="togglebutton" id="4">
-					<description>Sort direction</description>
+				<control type="togglebutton" id="4"><!-- Sort direction -->
 					<width>376</width>
 					<height>48</height>
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
@@ -150,8 +144,7 @@
 					<font>font11</font>
 					<textoffsetx>10</textoffsetx>
 				</control>
-				<control type="edit" id="19">
-					<description>Filter</description>
+				<control type="edit" id="19"><!-- Filter -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
@@ -160,8 +153,7 @@
 					<textwidth>340</textwidth>
 					<textoffsetx>10</textoffsetx>
 				</control>
-				<control type="button" id="1200">
-					<description>PlayerControls</description>
+				<control type="button" id="1200"><!-- Player controls -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>

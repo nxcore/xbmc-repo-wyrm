@@ -354,8 +354,8 @@
 								<posy>120</posy>
 								<width>448</width>
 								<height>448</height>
-								<texture fallback="DefaultVideo.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-								<aspectratio>keep</aspectratio>
+								<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+								<aspectratio scalediffuse="false">keep</aspectratio>
 							</control>
 						</control>
 						<control type="group">
@@ -379,8 +379,8 @@
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
-								<texture background="true" fallback="DefaultMusicVideos.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
-								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+								<aspectratio scalediffuse="false">keep</aspectratio>
 							</control>
 						</control>
 						<control type="group">
@@ -445,12 +445,12 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>230</posx>
+								<posx>320</posx>
 								<posy>120</posy>
-								<width>318</width>
+								<width>227</width>
 								<height>318</height>
-								<texture background="true" fallback="DefaultVideo.png" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultVideo.png" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 						</control>
 						<control type="group">
@@ -474,8 +474,8 @@
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
-								<texture fallback="DefaultTvshows.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
-								<aspectratio>keep</aspectratio>
+								<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+								<aspectratio scalediffuse="false">keep</aspectratio>
 							</control>
 						</control>
 						<control type="group"><!-- Show TV icon as the Default icon -->

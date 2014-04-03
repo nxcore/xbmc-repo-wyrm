@@ -11,8 +11,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<description>Background</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>320</posx>
 			<posy>100</posy>
 			<width>640</width>
@@ -42,8 +41,7 @@
 			<width>575</width>
 			<height>345</height>
 			<control type="group" id="104">
-				<control type="button" id="120">
-					<description>Rule Entry 1</description>
+				<control type="button" id="120"><!-- Rule entry 1 -->
 					<posx>30</posx>
 					<posy>0</posy>
 					<ondown>121</ondown>
@@ -53,8 +51,7 @@
 					<onclick>SetProperty(itempress,120)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				<control type="button" id="121">
-					<description>Rule Entry 2</description>
+				<control type="button" id="121"><!-- Rule entry 2 -->
 					<posx>30</posx>
 					<posy>50</posy>
 					<onup>120</onup>
@@ -65,8 +62,7 @@
 					<onclick>SetProperty(itempress,121)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				<control type="button" id="122">
-					<description>Rule Entry 3</description>
+				<control type="button" id="122"><!-- Rule entry 3 -->
 					<posx>30</posx>
 					<posy>100</posy>
 					<onup>121</onup>
@@ -77,8 +73,7 @@
 					<onclick>SetProperty(itempress,122)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				<control type="button" id="123">
-					<description>Rule Entry 4</description>
+				<control type="button" id="123"><!-- Rule entry 4 -->
 					<posx>30</posx>
 					<posy>150</posy>
 					<onup>122</onup>
@@ -89,8 +84,7 @@
 					<onclick>SetProperty(itempress,123)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				<control type="button" id="124">
-					<description>Rule Entry 5</description>
+				<control type="button" id="124"><!-- Rule entry 5 -->
 					<posx>30</posx>
 					<posy>200</posy>
 					<onup>123</onup>
@@ -101,8 +95,7 @@
 					<onclick>SetProperty(itempress,124)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				<control type="button" id="125">
-					<description>Rule Entry 6</description>
+				<control type="button" id="125"><!-- Rule entry 6 -->
 					<posx>30</posx>
 					<posy>250</posy>
 					<onup>124</onup>
@@ -113,8 +106,7 @@
 					<onclick>SetProperty(itempress,125)</onclick>
 					<onclick>SetFocus(130)</onclick>
 				</control>
-				<control type="button" id="126">
-					<description>Rule Entry 7</description>
+				<control type="button" id="126"><!-- Rule entry 7 -->
 					<posx>30</posx>
 					<posy>300</posy>
 					<onup>125</onup>
@@ -125,8 +117,7 @@
 					<onclick>SetFocus(130)</onclick>
 				</control>
 
-				<control type="button" id="130">
-					<description>Rule for editing</description>
+				<control type="button" id="130"><!-- Rule for editing -->
 					<posx>30</posx>
 					<posy>0</posy>
 					<ondown>102</ondown>
@@ -154,15 +145,13 @@
 						<effect type="slide" start="0,300" time="500" />
 					</animation>
 				</control>
-				<control type="group" id="102">
-					<description>Controls for editing</description>
+				<control type="group" id="102"><!-- Controls for editing -->
 					<posx>30</posx>
 					<posy>50</posy>
 					<width>575</width>
 					<height>400</height>
 					<visible>StringCompare(Window.Property(itempress),120) | StringCompare(Window.Property(itempress),121) | StringCompare(Window.Property(itempress),122) | StringCompare(Window.Property(itempress),123) | StringCompare(Window.Property(itempress),124) | StringCompare(Window.Property(itempress),125) | StringCompare(Window.Property(itempress),126)</visible>
-					<control type="button" id="131">
-						<description>Rule type</description>
+					<control type="button" id="131"><!-- Rule type -->
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>575</width>
