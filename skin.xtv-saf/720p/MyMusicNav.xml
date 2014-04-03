@@ -52,8 +52,7 @@
 			<include>View-as</include>
 			<control type="group">
 				<visible>ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
-				<control type="image">
-					<description>Background shadow</description>
+				<control type="image"><!-- Background shadow -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
@@ -61,8 +60,7 @@
 					<texture>colours/black.png</texture>
 					<colordiffuse>osd-background</colordiffuse>
 				</control>
-				<control type="image">
-					<description>Button Background</description>
+				<control type="image"><!-- Button background -->
 					<posx>460</posx>
 					<posy>90</posy>
 					<width>396</width>
@@ -81,15 +79,13 @@
 				<ondown>9000</ondown>
 				<onback>50</onback>
 				<itemgap>0</itemgap>
-				<control type="button" id="2">
-					<description>View As Icons button</description>
+				<control type="button" id="2"><!-- View type -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[100]</label>
 				</control>
-				<control type="radiobutton" id="1198">
-					<description>Tilt Icon List view</description>
+				<control type="radiobutton" id="1198"><!-- Tilt icon list view -->
 					<width>372</width>
 					<height>48</height>
 					<label>$LOCALIZE[31886]</label>
@@ -99,8 +95,7 @@
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
 				</control>
-				<control type="radiobutton" id="1197">
-					<description>Tilt Icon Wall view</description>
+				<control type="radiobutton" id="1197"><!-- Tilt icon wall view -->
 					<width>372</width>
 					<height>48</height>
 					<label>$LOCALIZE[31886]</label>
@@ -110,23 +105,20 @@
 					<radioposx>330</radioposx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
-				<control type="button" id="3">
-					<description>Sort by button</description>
+				<control type="button" id="3"><!-- Sort by -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[103]</label>
 				</control>
-				<control type="togglebutton" id="4">
-					<description>Sort direction</description>
+				<control type="togglebutton" id="4"><!-- Sort direction -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 				</control>
-				<control type="radiobutton" id="5">
-					<description>Library button</description>
+				<control type="radiobutton" id="5"><!-- Library -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
@@ -134,15 +126,13 @@
 					<selected>Window.IsVisible(musiclibrary)</selected>
 					<radioposx>330</radioposx>
 				</control>
-				<control type="button" id="8">
-					<description>Search button</description>
+				<control type="button" id="8"><!-- Search -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[137]</label>
 				</control>
-				<control type="edit" id="19">
-					<description>Filter</description>
+				<control type="edit" id="19"><!-- Filter -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
@@ -150,7 +140,7 @@
 					<textwidth>340</textwidth>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
-				<control type="radiobutton" id="98">
+				<control type="radiobutton" id="98"><!-- Advanced filter -->
 					<description>Advanced Filter</description>
 					<width>372</width>
 					<height>48</height>
@@ -161,22 +151,19 @@
 					<radioposx>330</radioposx>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
-				<control type="button" id="17">
-					<description>CDDB Button</description>
+				<control type="button" id="17"><!-- CDDB -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[31226]</label>
 				</control>
-				<control type="button" id="16">
-					<description>Party Mode button</description>
+				<control type="button" id="16"><!-- Party mode -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[589]</label>
 				</control>
-				<control type="button" id="1199">
-					<description>Go to playlist</description>
+				<control type="button" id="1199"><!-- Goto playlist -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
@@ -186,8 +173,7 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 					<visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist)</visible>
 				</control>
-				<control type="togglebutton" id="20">
-					<description>Update library</description>
+				<control type="togglebutton" id="20"><!-- Update library -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
@@ -195,8 +181,7 @@
 					<altlabel>$LOCALIZE[13353]</altlabel>
 					<onclick condition="SubString(System.BuildVersion,12.,Left)">UpdateLibrary(music)</onclick>
 				</control>
-				<control type="button" id="1200">
-					<description>PlayerControls</description>
+				<control type="button" id="1200"><!-- Player controls -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>

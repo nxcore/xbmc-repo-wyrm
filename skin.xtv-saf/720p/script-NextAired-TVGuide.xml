@@ -1504,7 +1504,6 @@
 					<posy>100</posy>
 					<width>110</width>
 					<height>160</height>
-					<align>center</align>
 					<texture>$VAR[NextAiredImage1]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + [StringCompare(Window(Home).Property(TVGuide.ThumbType),0) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)]</visible>
 				</control>
@@ -1513,7 +1512,6 @@
 					<posy>140</posy>
 					<width>244</width>
 					<height>45</height>
-					<align>center</align>
 					<texture>$VAR[NextAiredImage5]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 				</control>
@@ -1523,7 +1521,6 @@
 					<width>244</width>
 					<height>160</height>
 					<aspectratio>keep</aspectratio>
-					<align>center</align>
 					<texture>$VAR[NextAiredImage2]</texture>
 					<visible>!IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs))</visible>
 				</control>

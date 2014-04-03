@@ -9,14 +9,13 @@
 	</coordinates>
 	<controls>
 		<control type="image" id="997">
-			<description>background top image</description>
 			<posx>0</posx>
 			<posy>-16</posy>
 			<width>360</width>
 			<height>0</height>
 			<texture>blank.png</texture>
 		</control>
-		<control type="image" id="998">
+		<control type="image" id="998"><!-- Dialog background image -->
 			<description>background mid image</description>
 			<posx>8</posx>
 			<posy>-16</posy>
@@ -25,7 +24,6 @@
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="image" id="999">
-			<description>background bottom image</description>
 			<posx>0</posx>
 			<posy>360</posy>
 			<width>360</width>

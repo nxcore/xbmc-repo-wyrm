@@ -372,7 +372,6 @@
 			<onright>23</onright>
 			<onup>50</onup>
 			<ondown>50</ondown>
-			<orientation>vertical</orientation>
 			<pagecontrol>23</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<visible>!Control.IsVisible(4)</visible>
@@ -497,7 +496,6 @@
 			<width>320</width>
 			<height>320</height>
 			<texture>$INFO[ListItem.Thumb]</texture>
-			<align>center</align>
 			<aspectratio>keep</aspectratio>
 		</control>
 		<control type="image">

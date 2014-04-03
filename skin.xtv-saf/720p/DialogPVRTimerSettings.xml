@@ -7,8 +7,7 @@
 		<posy>30</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<description>background image</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>730</width>
@@ -16,8 +15,7 @@
 			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
-		<control type="label" id="2">
-			<description>header label</description>
+		<control type="label" id="2"><!-- Dialog heading -->
 			<posx>40</posx>
 			<posy>20</posy>
 			<width>650</width>
@@ -33,8 +31,7 @@
 			<texture>separator.png</texture>
 		</control>
 
-		<control type="grouplist" id="5">
-			<description>control area</description>
+		<control type="grouplist" id="5"><!-- Control area -->
 			<posx>30</posx>
 			<posy>70</posy>
 			<width>670</width>
@@ -48,8 +45,7 @@
 		<control type="group" id="9001">
 			<posx>160</posx>
 			<posy>590</posy>
-			<control type="button" id="28">
-				<description>OK Button</description>
+			<control type="button" id="28"><!-- OK -->
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>200</width>
@@ -62,8 +58,7 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 			</control>
-			<control type="button" id="29">
-				<description>Cancel Button</description>
+			<control type="button" id="29"><!-- Cancel -->
 				<posx>210</posx>
 				<posy>0</posy>
 				<width>200</width>
@@ -77,33 +72,27 @@
 				<ondown>5</ondown>
 			</control>
 		</control>
-		<control type="button" id="7">
-			<description>Default Button</description>
+		<control type="button" id="7"><!-- Default button -->
 			<height>46</height>
 			<focusedcolor>button-text</focusedcolor>
 		</control>
-		<control type="radiobutton" id="8">
-			<description>Default RadioButton</description>
+		<control type="radiobutton" id="8"><!-- Default radiobutton -->
 			<height>46</height>
 			<radioposx>630</radioposx>
 		</control>
-		<control type="spincontrolex" id="9">
-			<description>Default spincontrolex</description>
+		<control type="spincontrolex" id="9"><!-- Default spincontrolex -->
 			<height>46</height>
 			<focusedcolor>button-text</focusedcolor>
 			<reverse>yes</reverse>
 		</control>
-		<control type="sliderex" id="10">
-			<description>Default Slider</description>
+		<control type="sliderex" id="10"><!-- Default slider -->
 			<height>46</height>
 		</control>
 		<control type="image" id="11">
-			<description>Default Seperator</description>
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="edit" id="12">
-			<description>Default Edit</description>
+		<control type="edit" id="12"><!-- Default edit -->
 			<height>46</height>
 			<focusedcolor>button-text</focusedcolor>
 		</control>

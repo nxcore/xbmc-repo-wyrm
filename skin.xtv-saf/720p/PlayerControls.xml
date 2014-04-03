@@ -10,8 +10,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
-			<description>Dim current screen</description>
+		<control type="image"><!-- Background shadow -->
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -19,8 +18,7 @@
 			<texture>colours/black.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-		<control type="image">
-			<description>Player Controls background image</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>123</posx>
 			<posy>125</posy>
 			<height>175</height>
@@ -34,14 +32,12 @@
  		<control type="group">
 			<visible>Player.HasVideo</visible>
 			<control type="videowindow">
-				<description>video preview window</description>
 				<posx>150</posx>
 				<posy>137</posy>
 				<width>212</width>
 				<height>150</height>
 			</control>
-			<control type="label">
-				<description>Now playing</description>
+			<control type="label"><!-- Now playing -->
 				<posx>354</posx>
 				<posy>137</posy>
 				<width>778</width>
@@ -52,7 +48,6 @@
 				<textcolor>listselected-text</textcolor>
 			</control>
 			<control type="label">
-				<description>Video Name</description>
 				<posx>354</posx>
 				<posy>168</posy>
 				<width>778</width>
@@ -71,7 +66,6 @@
 				<align>right</align>
 			</control>
 			<control type="progress">
-				<description>Progressbar</description>
 				<posx>550</posx>
 				<posy>213</posy>
 				<width>380</width>
@@ -80,7 +74,6 @@
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="slider">
-				<description>Seek Slider</description>
 				<posx>550</posx>
 				<posy>211</posy>
 				<width>380</width>
@@ -100,7 +93,6 @@
  		<control type="group">
 			<visible>Player.HasAudio</visible>
 			<control type="image">
-				<description>Music cover image</description>
 				<posx>132</posx>
 				<posy>137</posy>
 				<width>212</width>
@@ -113,7 +105,6 @@
 				<visible>!Window.IsActive(visualisation)</visible>
 			</control>
 			<control type="label">
-				<description>Album Artist</description>
 				<posx>354</posx>
 				<posy>132</posy>
 				<width>778</width>
@@ -123,7 +114,6 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<description>Album Name</description>
 				<posx>354</posx>
 				<posy>160</posy>
 				<width>778</width>
@@ -133,7 +123,6 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<description>Track Name</description>
 				<posx>354</posx>
 				<posy>188</posy>
 				<width>778</width>
@@ -143,7 +132,6 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<description>Duration Label</description>
 				<posx>510</posx>
 				<posy>216</posy>
 				<label>$INFO[MusicPlayer.Time]</label>
@@ -162,7 +150,6 @@
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="slider">
-				<description>Seek Slider</description>
 				<posx>520</posx>
 				<posy>221</posy>
 				<width>440</width>
@@ -170,7 +157,6 @@
 				<action>seek</action>
 			</control>
 			<control type="label">
-				<description>Duration Label</description>
 				<posx>970</posx>
 				<posy>216</posy>
 				<label>- $INFO[MusicPlayer.TimeRemaining]</label>

@@ -8,7 +8,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-		<control type="image">
+		<control type="image"><!-- Background shadow -->
 			<description>Panel</description>
 			<posx>0</posx>
 			<posy>0</posy>
@@ -17,8 +17,7 @@
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-		<control type="image">
-			<description>Visualisation Preset Background image</description>
+		<control type="image"><!-- Dialog background image -->
 			<posx>482</posx>
 			<posy>13</posy>
 			<width>754</width>
@@ -26,16 +25,14 @@
 			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-		<control type="label" id="3">
-			<description>Presets Label</description>
+		<control type="label" id="3"><!-- Presets -->
 			<posx>502</posx>
 			<posy>27</posy>
 			<width>716</width>
 			<align>center</align>
 			<font>font12</font>
 		</control>
-		<control type="label" id="4">
-			<description>No Presets Label</description>
+		<control type="label" id="4"><!-- NO presets -->
 			<posx>502</posx>
 			<posy>237</posy>
 			<width>716</width>

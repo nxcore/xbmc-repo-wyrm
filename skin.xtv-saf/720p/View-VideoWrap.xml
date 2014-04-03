@@ -32,9 +32,9 @@
 					<posy>340</posy>
 					<height>120</height>
 					<width>77</width>
-					<texture background="true" scalediffuse="false" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<aspectratio>stretch</aspectratio>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 				<control type="image">
 					<posx>-10</posx>
@@ -55,7 +55,7 @@
 						<height>364</height>
 						<width>270</width>
 						<texture>mask-hilite.png</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
 						<posx>26</posx>
@@ -72,8 +72,8 @@
 					<posy>148</posy>
 					<height>312</height>
 					<width>203</width>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
-					<texture scalediffuse="false" diffuse="mask-rect.png" background="true" fallback="DefaultVideo.png">$VAR[IconPoster]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture diffuse="mask-rect.png" background="true" fallback="DefaultVideo.png">$VAR[IconPoster]</texture>
 				</control>
 				<control type="image">
 					<posx>230</posx>
@@ -109,8 +109,7 @@
 					<width>314</width>
 					<height>86</height>
 					<texture fallback="blank.png">$VAR[VideoLogo]</texture>
-					<aligny>bottom</aligny>
-					<aspectratio align="left">keep</aspectratio>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>

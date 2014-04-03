@@ -54,7 +54,6 @@
 				<control type="image" id="761">
 					<width>1</width>
 					<height>60</height>
-					<align>center</align>
 					<colordiffuse>00FFFFFF</colordiffuse>
 					<texture fallback="blank.png">special://skin/extras/images/audio/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
@@ -62,7 +61,6 @@
 				<control type="image" id="762">
 					<width>1</width>
 					<height>60</height>
-					<align>center</align>
 					<colordiffuse>00FFFFFF</colordiffuse>
 					<texture fallback="blank.png">special://skin/extras/images/video/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
@@ -70,7 +68,6 @@
 				<control type="image" id="763">
 					<width>1</width>
 					<height>60</height>
-					<align>center</align>
 					<texture fallback="blank.png">special://skin/extras/images/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
 					<colordiffuse>00FFFFFF</colordiffuse>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect))</visible>
@@ -78,7 +75,6 @@
 				<control type="image" id="764">
 					<width>1</width>
 					<height>60</height>
-					<align>center</align>
 					<colordiffuse>00FFFFFF</colordiffuse>
 					<texture fallback="blank.png">special://skin/extras/images/resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution))</visible>
@@ -86,7 +82,6 @@
 				<control type="image" id="771"><!-- Audio Codec -->
 					<width>81</width>
 					<height>60</height>
-					<align>center</align>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture>special://skin/extras/images/audio/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec)) + !StringCompare(Control.GetLabel(761),blank.png)</visible>
@@ -94,7 +89,6 @@
 				<control type="image" id="772"><!-- Video Codec -->
 					<width>81</width>
 					<height>60</height>
-					<align>center</align>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture fallback="blank.png">special://skin/extras/images/video/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec)) + !StringCompare(Control.GetLabel(762),blank.png)</visible>
@@ -102,7 +96,6 @@
 				<control type="image" id="773"><!-- Video Aspect Ratio -->
 					<width>81</width>
 					<height>60</height>
-					<align>center</align>
 					<texture>special://skin/extras/images/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect)) + !StringCompare(Control.GetLabel(763),blank.png)</visible>
@@ -110,7 +103,6 @@
 				<control type="image" id="774"><!-- Video Resolution -->
 					<width>81</width>
 					<height>60</height>
-					<align>center</align>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture>special://skin/extras/images/resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution)) + !StringCompare(Control.GetLabel(764),blank.png)</visible>
@@ -137,15 +129,14 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 					<control type="image"><!-- Star Rating -->
 						<posx>150</posx>
 						<posy>-10</posy>
 						<width>215</width>
 						<height>27</height>
-						<align>center</align>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="empty">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
@@ -157,7 +148,6 @@
 							<posy>-30</posy>
 							<width>106</width>
 							<height>75</height>
-							<align>center</align>
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioShadow</colordiffuse>
 							<aspectratio>keep</aspectratio>
@@ -168,7 +158,6 @@
 							<posy>-31</posy>
 							<width>106</width>
 							<height>75</height>
-							<align>center</align>
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioDiffuse</colordiffuse>
 							<aspectratio>keep</aspectratio>
@@ -325,7 +314,6 @@
 							<posy>-30</posy>
 							<width>106</width>
 							<height>75</height>
-							<align>center</align>
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioShadow</colordiffuse>
 							<aspectratio>keep</aspectratio>
@@ -336,7 +324,6 @@
 							<posy>-31</posy>
 							<width>106</width>
 							<height>75</height>
-							<align>center</align>
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioDiffuse</colordiffuse>
 							<aspectratio>keep</aspectratio>
@@ -358,7 +345,6 @@
 						<posy>-10</posy>
 						<width>215</width>
 						<height>27</height>
-						<align>center</align>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="empty">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
@@ -368,8 +354,8 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultMovies.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultMovies.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 					<control type="label"><!-- Genre -->
 						<posx>531</posx>
@@ -505,8 +491,8 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultTvshows.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultTvshows.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 				</control>
 				<control type="list" id="130">
@@ -600,7 +586,6 @@
 						<posy>-10</posy>
 						<width>215</width>
 						<height>27</height>
-						<align>center</align>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="empty">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
@@ -611,7 +596,7 @@
 						<width>384</width>
 						<height>384</height>
 						<texture fallback="DefaultTvshows.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="group"><!-- Duration -->
 						<visible>!IsEmpty(Container(100).ListItem.Property(Duration))</visible>
@@ -748,7 +733,6 @@
 							<posy>-30</posy>
 							<width>106</width>
 							<height>75</height>
-							<align>center</align>
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioShadow</colordiffuse>
 							<aspectratio>keep</aspectratio>
@@ -759,7 +743,6 @@
 							<posy>-31</posy>
 							<width>106</width>
 							<height>75</height>
-							<align>center</align>
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioDiffuse</colordiffuse>
 							<aspectratio>keep</aspectratio>
@@ -791,8 +774,8 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultMusicVideos.png" scalediffuse="false" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultMusicVideos.png" diffuse="mask-rect.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 					<control type="group"><!-- Duration -->
 						<visible>!IsEmpty(Container(100).ListItem.Property(Duration))</visible>
@@ -946,8 +929,8 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultAudio.png" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultAudio.png" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 					<control type="textbox">
 						<posx>60</posx>
@@ -1081,8 +1064,8 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultAudio.png" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultAudio.png" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 					<control type="textbox">
 						<posx>60</posx>
@@ -1221,8 +1204,8 @@
 						<posy>46</posy>
 						<width>384</width>
 						<height>384</height>
-						<texture fallback="DefaultAudio.png" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultAudio.png" diffuse="mask-squ.png">$INFO[Container(100).ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 					</control>
 					<control type="textbox"><!-- Song Comment -->
 						<posx>60</posx>

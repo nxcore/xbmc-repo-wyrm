@@ -23,7 +23,7 @@
 						<width>610</width>
 						<height>100</height>
 						<texture background="true">$VAR[IconBanner]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
 						<visible>!IsEmpty(ListItem.Art(banner))</visible>
 					</control>
@@ -34,7 +34,7 @@
 						<width>610</width>
 						<height>100</height>
 						<texture fallback="DefaultTvshows.png">$INFO[ListItem.path]logo.png</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<colordiffuse>UnFocusedPosters</colordiffuse>
 						<visible>IsEmpty(ListItem.Art(banner))</visible>
 					</control>
@@ -46,7 +46,7 @@
 					<width>610</width>
 					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
@@ -69,7 +69,7 @@
 						<width>610</width>
 						<height>100</height>
 						<texture background="true">$VAR[IconBanner]</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Art(banner))</visible>
 					</control>
 					<control type="image">
@@ -79,7 +79,7 @@
 						<width>610</width>
 						<height>100</height>
 						<texture fallback="DefaultTvshows.png">$INFO[ListItem.path]logo.png</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<visible>IsEmpty(ListItem.Art(banner))</visible>
 					</control>
 				</control>
@@ -90,7 +90,7 @@
 					<width>610</width>
 					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</focusedlayout>
@@ -116,7 +116,6 @@
 				<width>557</width>
 				<height>600</height>
 				<itemgap>2</itemgap>
-				<orientation>vertical</orientation>
 				<visible>!IsEmpty(ListItem.Icon)</visible>
 				<control type="group">
 					<posx>0</posx>
@@ -129,7 +128,7 @@
 						<width>531</width>
 						<height>225</height>
 						<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-						<aspectratio align="center" aligny="bottom">keep</aspectratio>
+						<aspectratio aligny="bottom">keep</aspectratio>
 						<fadetime>600</fadetime>
 					</control>
 				</control>

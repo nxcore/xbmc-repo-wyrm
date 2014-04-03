@@ -29,7 +29,6 @@
 				<width>628</width>
 				<height>578</height>
 				<itemgap>2</itemgap>
-				<orientation>vertical</orientation>
 				<control type="group">
 					<visible>!Player.HasVideo | [Player.HasVideo + Skin.HasSetting(HomeViewToggle)]</visible>
 					<posx>0</posx>
@@ -39,9 +38,8 @@
 						<posx>186</posx>
 						<width>256</width>
 						<height>256</height>
-						<texture fallback="DefaultTvshows.png" background="true" scalediffuse="false" diffuse="mask-rect.png">$INFO[ListItem.Thumb]</texture>
-						<aspectratio>keep</aspectratio>
-						<align>center</align>
+						<texture fallback="DefaultTvshows.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 						<aligny>top</aligny>
 						<visible>!IsEmpty(ListItem.Thumb)</visible>
 					</control>
@@ -51,7 +49,6 @@
 						<height>256</height>
 						<texture fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
-						<align>center</align>
 						<aligny>top</aligny>
 						<visible>IsEmpty(ListItem.Thumb) + !IsEmpty(ListItem.Icon)</visible>
 					</control>
@@ -124,8 +121,7 @@
 		<control type="group">
 			<posy>720</posy>
 			<include>View-as</include>
-			<control type="image">
-				<description>Button Background</description>
+			<control type="image"><!-- Button background -->
 				<posx>440</posx>
 				<posy>202</posy>
 				<width>398</width>
@@ -142,8 +138,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<itemgap>0</itemgap>
-				<control type="button" id="32">
-					<description>TV Channels</description>
+				<control type="button" id="32"><!-- TV Channels -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>362</width>
@@ -152,8 +147,7 @@
 					<label>$LOCALIZE[19023]</label>
 					<textoffsetx>20</textoffsetx>
 				</control>
-				<control type="button" id="33">
-					<description>Radio Channels</description>
+				<control type="button" id="33"><!-- Radio Channels -->
 					<posx>0</posx>
 					<posy>50</posy>
 					<width>362</width>
@@ -162,8 +156,7 @@
 					<label>$LOCALIZE[19024]</label>
 					<textoffsetx>20</textoffsetx>
 				</control>
-				<control type="button" id="31">
-					<description>TV Guide</description>
+				<control type="button" id="31"><!-- TV Guide -->
 					<posx>0</posx>
 					<posy>100</posy>
 					<width>362</width>
@@ -172,8 +165,7 @@
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
 				</control>
-				<control type="button" id="34">
-					<description>Recordings</description>
+				<control type="button" id="34"><!-- Recordings -->
 					<posx>0</posx>
 					<posy>150</posy>
 					<width>362</width>
@@ -182,8 +174,7 @@
 					<font>font12</font>
 					<textoffsetx>20</textoffsetx>
 				</control>
-				<control type="button" id="35">
-					<description>Timers</description>
+				<control type="button" id="35"><!-- Timers -->
 					<posx>0</posx>
 					<posy>200</posy>
 					<width>362</width>
@@ -191,8 +182,7 @@
 					<label>$LOCALIZE[19040]</label>
 					<textoffsetx>20</textoffsetx>
 				</control>
-				<control type="button" id="36">
-					<description>Search</description>
+				<control type="button" id="36"><!-- Search -->
 					<posx>0</posx>
 					<posy>250</posy>
 					<width>362</width>

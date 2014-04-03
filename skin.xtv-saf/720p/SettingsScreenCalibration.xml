@@ -45,7 +45,7 @@
 			<posy>320</posy>
 			<width>1280</width>
 			<height>71</height>
-			<texture  border="4">bluebar.png</texture>
+			<texture border="4">bluebar.png</texture>
 		</control>
 		<control type="label" id="2">
 			<description>coordinates label</description>

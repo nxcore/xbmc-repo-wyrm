@@ -42,14 +42,6 @@
 					<visible>Skin.HasSetting(HomeViewToggle)</visible>
 					<control type="group">
 						<visible>Player.HasVideo</visible>
-						<control type="image"><!-- Mask out any backgrounds showing around video -->
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1280</width>
-							<height>720</height>
-							<texture>colours/black.png</texture>
-							<aspectratio>scale</aspectratio>
-						</control>
 						<control type="videowindow">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -75,7 +67,7 @@
 						<width>1280</width>
 						<height>720</height>
 						<texture>colours/black.png</texture>
-						<aspectratio>scale</aspectratio>
+						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="multiimage"><!-- Backgroung ArtistSlideshow fanart image -->
 						<posx>0</posx>
@@ -144,7 +136,7 @@
 					<width>180</width>
 					<height>45</height>
 					<colordiffuse>StudioShadow</colordiffuse>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
 				</control>
 				<control type="image"><!-- Weather provider logo (shadow) -->
@@ -153,7 +145,7 @@
 					<width>180</width>
 					<height>45</height>
 					<colordiffuse>StudioDiffuse</colordiffuse>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
 				</control>
 			</control>

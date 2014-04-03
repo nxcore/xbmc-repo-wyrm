@@ -30,7 +30,6 @@
 				<itemgap>0</itemgap>
 				<onup>500</onup>
 				<ondown>500</ondown>
-				<orientation>vertical</orientation>
 				<control type="label"><!-- Header -->
 					<width>376</width>
 					<height>40</height>
@@ -95,7 +94,6 @@
 				<itemgap>0</itemgap>
 				<onup>550</onup>
 				<ondown>550</ondown>
-				<orientation>vertical</orientation>
 				<control type="label" id=""><!-- Header -->
 					<width>376</width>
 					<height>40</height>

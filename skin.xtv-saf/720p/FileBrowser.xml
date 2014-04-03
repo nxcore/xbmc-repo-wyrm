@@ -83,7 +83,6 @@
 			<width>256</width>
 			<height>256</height>
 			<aspectratio>keep</aspectratio>
-			<align>center</align>
 			<texture>$INFO[ListItem.Icon]</texture>
 		</control>
 		<control type="group" id="460">

@@ -101,8 +101,8 @@
 					<posy>150</posy>
 					<width>384</width>
 					<height>384</height>
-					<texture background="true" scalediffuse="false" diffuse="mask-squ.png">$INFO[Container(999).Listitem.ActualIcon]</texture>
-					<aspectratio>keep</aspectratio>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(999).Listitem.ActualIcon]</texture>
+					<aspectratio scalediffuse="false">keep</aspectratio>
 				</control>
 			</control>
 		</control>

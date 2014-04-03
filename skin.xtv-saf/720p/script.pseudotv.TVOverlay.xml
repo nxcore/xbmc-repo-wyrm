@@ -169,8 +169,7 @@
 							<width>276</width>
 							<height>75</height>
 							<texture fallback="blank.png">$INFO[Player.FolderPath,,logo.png]</texture>
-							<aligny>bottom</aligny>
-							<aspectratio align="left">keep</aspectratio>
+							<aspectratio align="left" aligny="bottom">keep</aspectratio>
 						</control>
 						<control type="image" id="993">
 							<description>Otherwise try TV logo if available(episodes in tv show folder)</description>
@@ -179,8 +178,7 @@
 							<width>276</width>
 							<height>75</height>
 							<texture fallback="blank.png">$INFO[Player.FolderPath,,../logo.png]</texture>
-							<aligny>bottom</aligny>
-							<aspectratio align="left">keep</aspectratio>
+							<aspectratio align="left" aligny="bottom">keep</aspectratio>
 							<visible>StringCompare(Control.GetLabel(992),blank.png)</visible>
 						</control>
 						<control type="group">
@@ -192,8 +190,7 @@
 								<width>132</width>
 								<height>180</height>
 								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,folder.jpg]</texture>
-								<aligny>bottom</aligny>
-								<aspectratio align="left">keep</aspectratio>
+								<aspectratio align="left" aligny="bottom">keep</aspectratio>
 							</control>
 							<control type="image" id="995">
 								<description>Otherwise try TV folder.jpg if available(episodes in tv show folder)</description>
@@ -202,8 +199,7 @@
 								<width>132</width>
 								<height>180</height>
 								<texture fallback="blank.png" diffuse="mask-rect.png">$INFO[Player.FolderPath,,../folder.jpg]</texture>
-								<aligny>bottom</aligny>
-								<aspectratio align="left">keep</aspectratio>
+								<aspectratio align="left" aligny="bottom">keep</aspectratio>
 								<visible>StringCompare(Control.GetLabel(994),blank.png)</visible>
 							</control>
 						</control>
@@ -216,9 +212,8 @@
 					<posy>460</posy>
 					<width>132</width>
 					<height>180</height>
-					<aligny>bottom</aligny>
 					<texture diffuse="mask-rect.png">$INFO[VideoPlayer.cover]</texture>
-					<aspectratio align="left">keep</aspectratio>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<visible>VideoPlayer.Content(Movies) + Window.IsVisible(FullscreenVideo)</visible>
 				</control>

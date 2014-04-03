@@ -74,7 +74,6 @@
 				<visible>!Window.IsVisible(fullscreeninfo)</visible>
 				<!-- Progress bar -->
 				<control type="progress">
-					<description>Progressbar Cache</description>
 					<posx>238</posx>
 					<posy>12</posy>
 					<width>800</width>
@@ -83,7 +82,6 @@
 					<colordiffuse>FF777777</colordiffuse>
 				</control>
 				<control type="progress">
-					<description>Progressbar</description>
 					<posx>238</posx>
 					<posy>12</posy>
 					<width>800</width>
@@ -106,8 +104,7 @@
 			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(karaoke) | Window.IsActive(Visualisation) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
 			<posx>463</posx>
 			<posy>-620</posy>
-			<control type="image">
-				<description>Popup Volume Dialog Background</description>
+			<control type="image"><!-- Dialog background image -->
 				<posx>0</posx>
 				<posy>2</posy>
 				<width>354</width>
@@ -115,7 +112,6 @@
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="label">
-				<description>Elapsed Time Label</description>
 				<posx>146</posx>
 				<posy>25</posy>
 				<font>font12</font>
@@ -126,7 +122,6 @@
 				<visible>!Player.Seeking</visible>
 			</control>
 			<control type="label">
-				<description>Seek Time Label</description>
 				<posx>146</posx>
 				<posy>25</posy>
 				<font>font12</font>
@@ -137,7 +132,6 @@
 				<visible>Player.Seeking</visible>
 			</control>
 			<control type="label">
-				<description>Duration Label</description>
 				<posx>156</posx>
 				<posy>25</posy>
 				<label>$INFO[Player.Duration,/ ]</label>
@@ -146,7 +140,6 @@
 				<height>20</height>
 			</control>
 			<control type="progress">
-				<description>Progressbar Cache</description>
 				<posx>18</posx>
 				<posy>66</posy>
 				<width>300</width>
@@ -155,7 +148,6 @@
 				<colordiffuse>FF777777</colordiffuse>
 			</control>
 			<control type="progress">
-				<description>Progressbar</description>
 				<posx>18</posx>
 				<posy>66</posy>
 				<width>300</width>

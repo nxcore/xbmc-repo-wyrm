@@ -124,7 +124,7 @@
 						<width>418</width>
 						<height>418</height>
 						<texture>case-cd.png</texture>
-						<aspectratio aligny="center">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<visible>Skin.HasSetting(CDcase) + [Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
 					</control>
 					<control type="image">
@@ -133,7 +133,7 @@
 						<width>350</width>
 						<height>350</height>
 						<texture background="true" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 				<control type="group">
@@ -144,7 +144,7 @@
 						<width>350</width>
 						<height>350</height>
 						<texture background="true" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 					</control>
 				</control>
 			</control>
@@ -214,6 +214,7 @@
 					<posx>124</posx>
 					<posy>600</posy>
 					<width>177</width>
+					<height>25</height>
 					<label>$LOCALIZE[563]:</label>
 					<font>font11</font>
 					<align>right</align>
@@ -273,7 +274,7 @@
 					<width>154</width>
 					<texture background="true">case-cd.png</texture>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<visible>Skin.HasSetting(CDcase) + !SubString(ListItem.Icon,Default,Left)</visible>
 				</control>
 				<control type="image">
@@ -283,7 +284,7 @@
 					<width>128</width>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 				</control>
 			</itemlayout>
 			<focusedlayout height="366" width="366">
@@ -295,7 +296,7 @@
 						<height>320</height>
 						<width>344</width>
 						<texture>mask-hilite.png</texture>
-						<aspectratio aligny="center" align="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
 						<posx>2</posx>
@@ -303,7 +304,7 @@
 						<height>305</height>
 						<width>305</width>
 						<texture>case-cd.png</texture>
-						<aspectratio aligny="center">stretch</aspectratio>
+						<aspectratio>stretch</aspectratio>
 						<visible>Skin.HasSetting(CDcase)</visible>
 					</control>
 				</control>
@@ -313,7 +314,7 @@
 					<width>256</width>
 					<height>256</height>
 					<texture background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio aligny="center" align="center">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 				</control>
 			</focusedlayout>
 		</control>
@@ -795,7 +796,7 @@
 					<posy>8</posy>
 					<width>128</width>
 					<height>128</height>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<colordiffuse>UnFocusedCovers</colordiffuse>
 					<texture diffuse="mask-squ.png" background="true" fallback="DefaultAudio.png">$INFO[ListItem.Icon]</texture>
 				</control>
@@ -807,7 +808,7 @@
 					<width>128</width>
 					<height>128</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<bordertexture border="9">mask-hilite.png</bordertexture>
 					<bordersize>9</bordersize>
 					<animation effect="zoom" start="90" end="150" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
