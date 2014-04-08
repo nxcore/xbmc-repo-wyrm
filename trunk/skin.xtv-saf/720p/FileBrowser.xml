@@ -20,6 +20,7 @@
 			<posx>16</posx>
 			<posy>-2</posy>
 			<width>1080</width>
+			<height>30</height>
 			<label>$LOCALIZE[1023]</label>
 			<align>center</align>
 		</control>

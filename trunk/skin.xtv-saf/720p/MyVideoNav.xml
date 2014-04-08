@@ -148,13 +148,6 @@
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
 					<font>font11</font>
 				</control>
-				<control type="radiobutton" id="7"><!-- Stack button -->
-					<width>376</width>
-					<height>48</height>
-					<label>$LOCALIZE[346]</label>
-					<font>font11</font>
-					<radioposx>330</radioposx>
-				</control>
 				<control type="button" id="10"><!-- Show button -->
 					<width>376</width>
 					<height>48</height>
@@ -199,12 +192,6 @@
 					<font>font11</font>
 					<visible>Container.Content(MusicVideos)</visible>
 				</control>
-				<control type="button" id="17"><!-- Flatten library button -->
-					<width>376</width>
-					<height>48</height>
-					<label>$LOCALIZE[20411]</label>
-					<font>font11</font>
-				</control>
 				<control type="radiobutton" id="11"><!-- Unlock shares button -->
 					<label>$LOCALIZE[20336]</label>
 					<width>376</width>
@@ -231,7 +218,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<onclick condition="SubString(System.BuildVersion,12.,Left)">UpdateLibrary(video)</onclick>
 				</control>
 				<control type="button" id="1200"><!-- player controls button -->
 					<width>376</width>
@@ -241,6 +227,14 @@
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
+				</control>
+				<control type="button" id="22"><!-- now playing -->
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
+					<label>$LOCALIZE[13350]</label>
+					<onclick>ActivateWindow(videoplaylist)</onclick>
+					<visible>Player.HasVideo</visible>
 				</control>
 			</control>
 		</control>

@@ -79,13 +79,13 @@
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<control type="textbox" id="6"><!-- Settings description area -->
-			<posx>53</posx>
-			<posy>654</posy>
-			<width>870</width>
-			<height>62</height>
+			<posx>50</posx>
+			<posy>664</posy>
+			<width>1180</width>
+			<height>54</height>
 			<textcolor>listselected-text</textcolor>
-			<font>font12</font>
-			<align>justify</align>
+			<font>font11</font>
+			<align>left</align>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
 		<control type="button" id="7"><!-- Default button -->
@@ -161,13 +161,6 @@
 						<label>$LOCALIZE[10037]</label>
 						<font>font12</font>
 						<onclick>SettingsLevelChange</onclick>
-					</control>
-					<control type="button" id="21"><!-- Reset button -->
-						<width>376</width>
-						<height>50</height>
-						<label>$LOCALIZE[10035]</label>
-						<font>font12</font>
-						<onclick>SettingsReset</onclick>
 					</control>
 				</control>
 			</control>

@@ -3,6 +3,7 @@
 	<defaultcontrol always="false">214</defaultcontrol>
 	<animation effect="fade" start="0" time="100">WindowOpen</animation>
 	<animation effect="fade" end="0" time="200">WindowClose</animation>
+	<animation effect="fade" end="0" time="200" condition="[Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(SubtitleSearch) | Window.IsVisible(VideoBookmarks)]">Conditional</animation>
 	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation) + !Window.IsActive(karaoke) + !Window.IsActive(visualisationpresetlist)</visible>
 	<coordinates>
 		<system>1</system>
@@ -199,8 +200,8 @@
 				<texturenofocus>osd-btn-subtitle.png</texturenofocus>
 				<texturefocus>osd-btn-subtitle-focus.png</texturefocus>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(osd-subscriptpath)])</onclick>
-				<visible>Player.HasVideo + !IsEmpty(Skin.String(osd-subscriptpath))</visible>
+				<onclick>ActivateWindow(SubtitleSearch)</onclick>
+				<visible>Player.HasVideo</visible>
 			</control>
 			<control type="button" id="951">
 				<description>Lyrics Menu</description>
