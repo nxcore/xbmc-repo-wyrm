@@ -102,31 +102,9 @@
 				<width>360</width>
 				<height>37</height>
 				<font>font18</font>
-				<label>$ADDON[script.cu.lrclyrics 0]</label>
+				<label>$ADDON[script.cu.lrclyrics 32199]</label>
 			</control>
 
-			<!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
-			<control type="textbox" id="100">
-				<posx>20</posx>
-				<posy>100</posy>
-				<width>1240</width>
-				<height>370</height>
-				<align>center</align>
-				<selectedcolor>listselected-text</selectedcolor>
-				<pagecontrol>101</pagecontrol>
-			</control>
-			<control type="spincontrol" id="101"><!-- Next page button -->
-				<posx>1195</posx>
-				<posy>580</posy>
-				<subtype>page</subtype>
-				<font>font12</font>
-				<onleft>101</onleft>
-				<onright>101</onright>
-				<ondown>101</ondown>
-				<onup>101</onup>
-				<showonepage>true</showonepage>
-				<visible>Control.IsVisible(100)</visible>
-			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<control type="list" id="110">
 				<posx>20</posx>

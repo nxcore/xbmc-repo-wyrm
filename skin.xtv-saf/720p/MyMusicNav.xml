@@ -179,7 +179,6 @@
 					<font>font11</font>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
-					<onclick condition="SubString(System.BuildVersion,12.,Left)">UpdateLibrary(music)</onclick>
 				</control>
 				<control type="button" id="1200"><!-- Player controls -->
 					<width>372</width>
@@ -189,6 +188,14 @@
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
+				</control>
+				<control type="button" id="22"><!-- now playing -->
+					<width>376</width>
+					<height>48</height>
+					<font>font11</font>
+					<label>$LOCALIZE[13350]</label>
+					<onclick>ActivateWindow(musicplaylist)</onclick>
+					<visible>Player.HasAudio</visible>
 				</control>
 			</control>
 		</control>
