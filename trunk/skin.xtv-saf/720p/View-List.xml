@@ -137,7 +137,7 @@
 							<width>384</width>
 							<height>384</height>
 							<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio scalediffuse="false">keep</aspectratio>
+							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
 					<control type="group">

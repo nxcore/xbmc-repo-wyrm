@@ -29,15 +29,39 @@
 			<posx>940</posx>
 			<posy>112</posy>
 			<width>320</width>
-			<height>542</height>
+			<height>434</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
 			<onright>noop</onright>
 			<onup>3</onup>
-			<ondown>3</ondown>
+			<ondown>20</ondown>
 			<scrolltime tween="sine" easing="out">100</scrolltime>
 		</control>
 
+		<control type="button" id="20">
+			<description>Setting level button</description>
+			<posx>940</posx>
+			<posy>598</posy>
+			<width>320</width>
+			<height>56</height>
+			<font>font11</font>
+			<textcolor>listselected-text</textcolor>
+			<label>$LOCALIZE[10037]</label>
+			<align>right</align>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>noop</ondown>
+			<onclick>SettingsLevelChange</onclick>
+		</control>
+		<control type="label"><!-- Settings level heading -->
+			<posx>958</posx>
+			<posy>598</posy>
+			<width>320</width>
+			<height>56</height>
+			<label>$LOCALIZE[10004]:</label>
+			<font>font11</font>
+		</control>
 		<!-- Markers for control area items -->
 		<control type="image">
 			<posx>480</posx>
@@ -79,13 +103,13 @@
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 		<control type="textbox" id="6"><!-- Settings description area -->
-			<posx>50</posx>
-			<posy>664</posy>
-			<width>1180</width>
+			<posx>10</posx>
+			<posy>662</posy>
+			<width>1260</width>
 			<height>54</height>
-			<textcolor>listselected-text</textcolor>
-			<font>font11</font>
-			<align>left</align>
+			<!--<textcolor>listselected-text</textcolor>-->
+			<font>rss20</font>
+			<align>center</align>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
 		<control type="button" id="7"><!-- Default button -->
@@ -121,49 +145,6 @@
 			<height>56</height>
 			<label>$LOCALIZE[224]</label>
 			<font>font12</font>
-		</control>
-
-		<control type="group"><!-- Show "View-as" menu -->
-			<posy>720</posy>
-			<include>View-as</include>
-			<control type="group">
-				<visible>!Skin.HasSetting(view-as-lock) + !IsEmpty(Control.GetLabel(21))</visible>
-				<control type="image"><!-- Background shadow -->
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<texture>colours/black.png</texture>
-					<colordiffuse>osd-background</colordiffuse>
-					<visible>!Skin.HasSetting(view-as-lock)</visible>
-				</control>
-				<control type="image"><!-- Button background -->
-					<posx>440</posx>
-					<posy>282</posy>
-					<width>396</width>
-					<height>125</height>
-					<texture border="8">button-menu-background.png</texture>
-				</control>
-				<control type="grouplist" id="9000">
-					<posx>450</posx>
-					<posy>292</posy>
-					<width>376</width>
-					<height>150</height>
-					<onleft>noop</onleft>
-					<onright>23</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<onback>3</onback>
-					<itemgap>0</itemgap>
-					<control type="button" id="20"><!-- Setting level button -->
-						<width>376</width>
-						<height>50</height>
-						<label>$LOCALIZE[10037]</label>
-						<font>font12</font>
-						<onclick>SettingsLevelChange</onclick>
-					</control>
-				</control>
-			</control>
 		</control>
 	</controls>
 </window>

@@ -654,7 +654,16 @@ msgctxt "#31946"
 msgid "Banner"
 msgstr ""
 
-#empty strings from id 31947 to 31950
+#empty strings from id 31947 to 31948
+
+msgctxt "#31949"
+msgid "Banners"
+msgstr ""
+
+msgctxt "#31950"
+msgid "Posters"
+msgstr ""
+
 #Spincontrol options
 
 msgctxt "#31951"

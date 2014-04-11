@@ -20,25 +20,23 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
-			<control type="label">
-				<description>Programs Label</description>
+			<control type="label"><!-- Video screen heading -->
 				<width min="60" max="250">auto</width>
 				<height>37</height>
 				<label>$LOCALIZE[31029]</label>
-				<font>font20</font>
+				<font>font18</font>
 			</control>
-			<control type="label">
-				<description>Number of files</description>
+			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>
-				<width min="40" max="110">auto</width>
+				<width min="40" max="90">auto</width>
 				<height>38</height>
 				<label>$INFO[Container.NumItems, (,)]</label>
+				<font>font13</font>
 			</control>
 		</control>
 
 		<control type="image">
-			<description>list item overlay</description>
 			<posx>548</posx>
 			<posy>506</posy>
 			<width>88</width>
@@ -46,8 +44,7 @@
 			<texture>$INFO[ListItem.Overlay]</texture>
 			<visible>Control.IsVisible(50)</visible>
 		</control>
-		<control type="image">
-			<description>list item overlay reflection</description>
+		<control type="image"><!-- Reflected overlay image -->
 			<posx>548</posx>
 			<posy>568</posy>
 			<width>88</width>
@@ -58,8 +55,7 @@
 
 		<include>memory-low</include>
 
-		<!-- Various Views of Addons library -->
-		<control type="group">
+		<control type="group"><!-- Various Views of Addons library -->
 			<include>ListView</include>
 			<include>IconView</include>
 			<include>WrapView</include>
