@@ -30,23 +30,25 @@
 			<posx>946</posx>
 			<posy>35</posy>
 			<width>365</width>
-			<height>80</height>
+			<height>72</height>
 			<align>left</align>
-			<aligny>center</aligny>
+			<aligny>bottom</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Video screen heading -->
-				<width min="40" max="275">auto</width>
-				<height>80</height>
+				<width min="60" max="570">auto</width>
+				<height>72</height>
 				<label>$VAR[VideoHeadings]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
-				<aligny>top</aligny>
+				<aligny>bottom</aligny>
 			</control>
 			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<width min="40" max="90">auto</width>
-				<height>46</height>
+				<height>50</height>
 				<label>$INFO[Container.NumItems,(,)]</label>
+				<font>font13</font>
+				<aligny>top</aligny>
 			</control>
 		</control>
 

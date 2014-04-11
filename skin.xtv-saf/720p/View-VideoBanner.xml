@@ -11,7 +11,7 @@
 			<pagecontrol>29</pagecontrol>
 			<onup>59</onup>
 			<ondown>59</ondown>
-			<onleft>noop</onleft>
+			<onleft>9000</onleft>
 			<onright>29</onright>
 			<itemlayout height="100">
 				<control type="group">

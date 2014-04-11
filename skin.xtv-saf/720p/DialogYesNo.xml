@@ -30,32 +30,15 @@
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
-		<control type="label" id="2"><!-- Dialog line 1 -->
+		<control type="textbox" id="9"><!-- Dialog info prompt -->
 			<posx>20</posx>
-			<posy>76</posy>
+			<posy>64</posy>
 			<width>650</width>
-			<height>37</height>
+			<height>110</height>
+			<align>center</align>
 			<label>-</label>
 			<font>font11</font>
-			<align>center</align>
-		</control>
-		<control type="label" id="3"><!-- Dialog line 2 -->
-			<posx>20</posx>
-			<posy>106</posy>
-			<width>650</width>
-			<height>37</height>
-			<label>-</label>
-			<font>font11</font>
-			<align>center</align>
-		</control>
-		<control type="label" id="4"><!-- Dialog line 3 -->
-			<posx>20</posx>
-			<posy>130</posy>
-			<width>650</width>
-			<height>37</height>
-			<label>-</label>
-			<font>font11</font>
-			<align>center</align>
+			<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>
 		<control type="button" id="11"><!-- YES button -->
 			<posx>48</posx>
