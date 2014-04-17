@@ -74,11 +74,14 @@
 				<posy>154</posy>
 				<width>376</width>
 				<height>432</height>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<onback>50</onback>
+				<onleft>noop</onleft>
+				<onright condition="Control.IsVisible(50)">50</onright>
+				<onright condition="Control.IsVisible(52)">52</onright>
+				<onright condition="Control.IsVisible(58)">58</onright>
+				<onright condition="Control.IsVisible(54)">noop</onright>
+				<onup>noop</onup>
+				<ondown condition="Control.IsVisible(54)">54</ondown>
+				<ondown condition="Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(58)">noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View type -->
 					<width>376</width>

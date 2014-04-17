@@ -88,22 +88,20 @@
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
 			<include>SortLetterNotification</include>
-			<!-- Scroll Bar -->
 			<control type="scrollbar" id="24">
 				<posx>18</posx>
 				<posy>660</posy>
 				<width>1240</width>
 				<height>18</height>
 				<onup>54</onup>
-				<ondown>9000</ondown>
+				<ondown>noop</ondown>
 				<orientation>horizontal</orientation>
 				<animation condition="!Control.HasFocus(24) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
-			<!-- Show logo -->
 			<control type="group">
 				<visible>!Skin.HasSetting(hide-chrome)</visible>
-				<control type="image" id="7216">
+				<control type="image" id="7216"><!-- Show logo -->
 					<posx>272</posx>
 					<posy>424</posy>
 					<width>314</width>
@@ -113,8 +111,7 @@
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
-				<!-- Title -->
-				<control type="label">
+				<control type="label"><!-- Title -->
 					<posx>272</posx>
 					<posy>460</posy>
 					<width>929</width>
@@ -128,8 +125,7 @@
 					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 			</control>
-			<!-- Title -->
-			<control type="label">
+			<control type="label"><!-- Title -->
 				<posx>272</posx>
 				<posy>460</posy>
 				<width>929</width>
@@ -142,8 +138,7 @@
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [IsEmpty(ListItem.Title) | Skin.HasSetting(hide-chrome)]</visible>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 			</control>
-			<!-- Go Back -->
-			<control type="label">
+			<control type="label"><!-- Go Back -->
 				<posx>272</posx>
 				<posy>460</posy>
 				<width>929</width>
@@ -156,8 +151,7 @@
 			</control>
 			<control type="group">
 				<visible>!IsEmpty(ListItem.Title)</visible>
-				<!-- Duration -->
-				<control type="label">
+				<control type="label"><!-- Duration -->
 					<posx>26</posx>
 					<posy>284</posy>
 					<width>204</width>
@@ -167,8 +161,7 @@
 					<label>$VAR[VideoDuration]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 				</control>
-				<!-- Star Rating -->
-				<control type="image">
+				<control type="image"><!-- Star Rating -->
 					<posx>234</posx>
 					<posy>335</posy>
 					<width>200</width>
@@ -177,8 +170,7 @@
 					<colordiffuse>StarDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.StarRating)</visible>
 				</control>
-				<!-- MPAA Rating -->
-				<control type="image">
+				<control type="image"><!-- MPAA Rating -->
 					<posx>272</posx>
 					<posy>364</posy>
 					<width>212</width>
