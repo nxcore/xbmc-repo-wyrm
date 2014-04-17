@@ -40,8 +40,7 @@
 					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
-					<!-- Watched Overlay -->
-				<control type="image">
+				<control type="image"><!-- Watched Overlay -->
 					<posx>90</posx>
 					<posy>-4</posy>
 					<width>32</width>
@@ -104,8 +103,7 @@
 						<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
-					<!-- Watched Overlay -->
-					<control type="image">
+					<control type="image"><!-- Watched Overlay -->
 						<posx>84</posx>
 						<posy>4</posy>
 						<width>32</width>
