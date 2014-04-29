@@ -26,16 +26,16 @@
 		<control type="image">
 			<posx>1000</posx>
 			<posy>88</posy>
-			<height>32</height>
-			<width>32</width>
+			<height>30</height>
+			<width>30</width>
 			<texture>scroll-up.png</texture>
 			<visible>Container(8999).HasPrevious</visible>
 		</control>
 		<control type="image">
 			<posx>1000</posx>
 			<posy>654</posy>
-			<height>32</height>
-			<width>32</width>
+			<height>30</height>
+			<width>30</width>
 			<texture>scroll-down.png</texture>
 			<visible>Container(8999).HasNext</visible>
 		</control>

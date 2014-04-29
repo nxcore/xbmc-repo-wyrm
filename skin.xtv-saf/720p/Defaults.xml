@@ -105,7 +105,6 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<font>font13</font>
-		<label>$LOCALIZE[167]</label>
 		<texturecheckmark>check-box.png</texturecheckmark>
 		<texturecheckmarknofocus>check-boxnf.png</texturecheckmarknofocus>
 		<markwidth>32</markwidth>
@@ -119,7 +118,6 @@
 		<texturefocus border="7">default-button.png</texturefocus>
 		<textureradioon>check-box.png</textureradioon>
 		<textureradiooff>check-boxnf.png</textureradiooff>
-		<label>$LOCALIZE[215]</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -130,7 +128,6 @@
 		<aligny>center</aligny>
 	</default>
 	<default type="selectbutton">
-		<label>$LOCALIZE[132]</label>
 		<font>font13</font>
 		<texturefocus border="7">default-button.png</texturefocus>
 		<texturebg>button-menu-background.png</texturebg>
@@ -142,10 +139,6 @@
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<pulseonselect>false</pulseonselect>
-		<onleft>50</onleft>
-		<onright>50</onright>
-		<onup>3</onup>
-		<ondown>7</ondown>
 		<textoffsetx>18</textoffsetx>
 		<aligny>center</aligny>
 	</default>
@@ -176,13 +169,11 @@
 	<default type="edit">
 		<texturefocus border="7">default-button.png</texturefocus>
 		<font>font12</font>
-		<label>$LOCALIZE[587]</label>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
 		<disabledcolor>disabled-text</disabledcolor>
 		<invalidcolor>invalid-text</invalidcolor>
 		<pulseonselect>false</pulseonselect>
-		<textwidth>340</textwidth>
 		<textoffsetx>18</textoffsetx>
 		<textoffsety>8</textoffsety>
 		<aligny>center</aligny>

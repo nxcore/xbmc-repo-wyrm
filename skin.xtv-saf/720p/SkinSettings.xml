@@ -172,22 +172,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(101).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(101).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(101).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(101).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="101">
@@ -252,22 +255,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(200).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(200).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(200).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(200).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="200">
@@ -417,22 +423,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(301).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(301).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(301).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(301).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="301">
@@ -873,22 +882,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(401).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(401).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(401).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(401).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="401">
@@ -1134,22 +1146,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(501).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(501).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(501).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(501).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="501">
@@ -1227,22 +1242,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(801).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>32</height>
-					<width>32</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(801).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(801).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(801).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="801">

@@ -350,10 +350,10 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left) + !IsEmpty(ListItem.Label)</visible>
 								<control type="image">
-								<posx>90</posx>
+								<posx>320</posx>
 								<posy>120</posy>
-								<width>448</width>
-								<height>448</height>
+								<width>318</width>
+								<height>318</height>
 								<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio scalediffuse="false">keep</aspectratio>
 							</control>
@@ -361,10 +361,10 @@
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>90</posx>
+								<posx>320</posx>
 								<posy>120</posy>
-								<width>448</width>
-								<height>448</height>
+								<width>318</width>
+								<height>318</height>
 								<texture>DefaultVideo.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
@@ -375,7 +375,7 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>230</posx>
+								<posx>320</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
@@ -386,7 +386,7 @@
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>230</posx>
+								<posx>320</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
@@ -400,17 +400,17 @@
 						<control type="group">
 							<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 							<control type="image">
-								<posx>90</posx>
+								<posx>320</posx>
 								<posy>120</posy>
-								<width>448</width>
-								<height>448</height>
+								<width>318</width>
+								<height>318</height>
 								<texture>DefaultVideo.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="group">
 								<control type="image">
-									<posx>242</posx>
-									<posy>314</posy>
+									<posx>404</posx>
+									<posy>238</posy>
 									<width>161</width>
 									<height>161</height>
 									<colordiffuse>StudioShadow</colordiffuse>
@@ -418,8 +418,8 @@
 									<texture>special://skin/extras/images/studios/$INFO[ListItem.Label,,.png]</texture>
 								</control>
 								<control type="image">
-									<posx>240</posx>
-									<posy>312</posy>
+									<posx>402</posx>
+									<posy>236</posy>
 									<width>161</width>
 									<height>161</height>
 									<colordiffuse>StudioDiffuse</colordiffuse>
@@ -431,10 +431,10 @@
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 							<control type="image">
-								<posx>90</posx>
+								<posx>320</posx>
 								<posy>120</posy>
-								<width>448</width>
-								<height>448</height>
+								<width>318</width>
+								<height>318</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
@@ -456,7 +456,7 @@
 						<control type="group">
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>230</posx>
+								<posx>320</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
@@ -470,7 +470,7 @@
 						<control type="group"><!-- Show Icon For TV SHOW/SEASON/EPISODES -->
 							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>230</posx>
+								<posx>320</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
@@ -481,7 +481,7 @@
 						<control type="group"><!-- Show TV icon as the Default icon -->
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 							<control type="image">
-								<posx>230</posx>
+								<posx>320</posx>
 								<posy>120</posy>
 								<width>318</width>
 								<height>318</height>
