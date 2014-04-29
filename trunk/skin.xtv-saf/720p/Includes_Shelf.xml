@@ -74,6 +74,7 @@
 	</include>
 
 	<include name="MovieRecent">
+		<!--<content target="video">special://skin/extras/playlists/video/RecentMovies.xsp</content>-->
 		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>

@@ -102,22 +102,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(101).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(101).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(101).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(101).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="101">
@@ -172,18 +175,18 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>816</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posx>814</posx>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(103)</visible>
 								</control>
 								<control type="image">
-									<posx>816</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posx>814</posx>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down.png</texture>
 									<visible>!Control.HasFocus(103)</visible>
 								</control>
@@ -216,27 +219,27 @@
 							<posx>843</posx>
 							<posy>0</posy>
 							<height>56</height>
-							<width>27</width>
+							<width>32</width>
 							<onup>114</onup>
 							<ondown>105</ondown>
 							<onleft>103</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
-							<itemlayout width="27" height="56"/>
-							<focusedlayout width="27" height="56">
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(104)</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
 									<visible>Control.HasFocus(104)</visible>
 								</control>
@@ -350,22 +353,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(201).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(201).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(201).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(201).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="201">
@@ -420,18 +426,18 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>816</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posx>814</posx>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(203)</visible>
 								</control>
 								<control type="image">
-									<posx>816</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posx>814</posx>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down.png</texture>
 									<visible>!Control.HasFocus(203)</visible>
 								</control>
@@ -469,27 +475,27 @@
 							<posx>843</posx>
 							<posy>0</posy>
 							<height>56</height>
-							<width>27</width>
+							<width>32</width>
 							<onup>214</onup>
 							<ondown>205</ondown>
 							<onleft>203</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
-							<itemlayout width="27" height="56"/>
-							<focusedlayout width="27" height="56">
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(204)</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
 									<visible>Control.HasFocus(204)</visible>
 								</control>
@@ -524,70 +530,88 @@
 							</content>
 						</control>
 					</control>
-					<control type="button" id="205"><!-- TVShow favourite 1 -->
+					<!--<control type="button" id="205"><!-- Icon type toggle (banners)
+						<include>settings-submenu-common</include>
+						<textwidth>480</textwidth>
+						<label>- $LOCALIZE[467]</label>
+						<label2>$LOCALIZE[31949]</label2>
+						<onclick>Skin.ToggleSetting(shelf-poster)</onclick>
+						<onclick>SetFocus(203)</onclick>
+						<visible>!Skin.HasSetting(shelf-poster)</visible>
+					</control>
+					<control type="button" id="206"><!-- Icon type toggle (posters)
+						<include>settings-submenu-common</include>
+						<textwidth>480</textwidth>
+						<label>- $LOCALIZE[467]</label>
+						<label2>$LOCALIZE[31950]</label2>
+						<onclick>Skin.ToggleSetting(shelf-poster)</onclick>
+						<onclick>SetFocus(203)</onclick>
+						<visible>Skin.HasSetting(shelf-poster)</visible>
+					</control>-->
+					<control type="button" id="207"><!-- TVShow favourite 1 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.1)</onclick>
 					</control>
-					<control type="button" id="206"><!-- TVShow favourite 1 icon location -->
+					<control type="button" id="208"><!-- TVShow favourite 1 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.1.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="207"><!-- TVShow favourite 2 -->
+					<control type="button" id="209"><!-- TVShow favourite 2 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.2)</onclick>
 					</control>
-					<control type="button" id="208"><!-- TVShow favourite 2 icon location -->
+					<control type="button" id="210"><!-- TVShow favourite 2 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.2.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="209"><!-- TVShow favourite 3 -->
+					<control type="button" id="211"><!-- TVShow favourite 3 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.3)</onclick>
 					</control>
-					<control type="button" id="210"><!-- TVShow favourite 3 icon location -->
+					<control type="button" id="212"><!-- TVShow favourite 3 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.3.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="211"><!-- TVShow favourite 4 -->
+					<control type="button" id="213"><!-- TVShow favourite 4 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.4)</onclick>
 					</control>
-					<control type="button" id="212"><!-- TVShow favourite 4 icon location -->
+					<control type="button" id="214"><!-- TVShow favourite 4 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.4.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="213"><!-- TVShow favourite 5 -->
+					<control type="button" id="215"><!-- TVShow favourite 5 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.5)</onclick>
 					</control>
-					<control type="button" id="214"><!-- TVShow favourite 5 icon location -->
+					<control type="button" id="216"><!-- TVShow favourite 5 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
@@ -608,22 +632,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(301).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(301).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(301).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(301).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="301">
@@ -678,18 +705,18 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>816</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posx>814</posx>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(303)</visible>
 								</control>
 								<control type="image">
-									<posx>816</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posx>814</posx>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-down.png</texture>
 									<visible>!Control.HasFocus(303)</visible>
 								</control>
@@ -723,27 +750,27 @@
 							<posx>843</posx>
 							<posy>0</posy>
 							<height>56</height>
-							<width>27</width>
+							<width>32</width>
 							<onup>314</onup>
 							<ondown>305</ondown>
 							<onleft>303</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
-							<itemlayout width="27" height="56"/>
-							<focusedlayout width="27" height="56">
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(304)</visible>
 								</control>
 								<control type="image">
 									<posx>0</posx>
-									<posy>15</posy>
-									<width>27</width>
-									<height>25</height>
+									<posy>12</posy>
+									<width>32</width>
+									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
 									<visible>Control.HasFocus(304)</visible>
 								</control>
@@ -857,22 +884,25 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for excess menu items -->
-				<control type="image">
-					<posx>480</posx>
-					<posy>88</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-up.png</texture>
-					<visible>Container(401).HasPrevious</visible>
-				</control>
-				<control type="image">
-					<posx>480</posx>
-					<posy>650</posy>
-					<height>27</height>
-					<width>38</width>
-					<texture>scroll-down.png</texture>
-					<visible>Container(401).HasNext</visible>
+				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+				<control type="group">
+					<visible>!Skin.HasSetting(sbar)</visible>
+					<control type="image">
+						<posx>480</posx>
+						<posy>88</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-up.png</texture>
+						<visible>Container(401).HasPrevious</visible>
+					</control>
+					<control type="image">
+						<posx>480</posx>
+						<posy>646</posy>
+						<height>30</height>
+						<width>30</width>
+						<texture>scroll-down.png</texture>
+						<visible>Container(401).HasNext</visible>
+					</control>
 				</control>
 
 				<control type="grouplist" id="401">

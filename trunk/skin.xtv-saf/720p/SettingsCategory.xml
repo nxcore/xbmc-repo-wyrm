@@ -62,22 +62,25 @@
 			<label>$LOCALIZE[10004]:</label>
 			<font>font11</font>
 		</control>
-		<!-- Markers for control area items -->
-		<control type="image">
-			<posx>480</posx>
-			<posy>90</posy>
-			<height>27</height>
-			<width>38</width>
-			<texture>scroll-up.png</texture>
-			<visible>Container(5).HasPrevious</visible>
-		</control>
-		<control type="image">
-			<posx>480</posx>
-			<posy>648</posy>
-			<height>27</height>
-			<width>38</width>
-			<texture>scroll-down.png</texture>
-			<visible>Container(5).HasNext</visible>
+		<!-- Markers for control area items (Don't show if scrollbar is in use)-->
+		<control type="group">
+			<visible>!Skin.HasSetting(sbar)</visible>
+			<control type="image">
+				<posx>480</posx>
+				<posy>88</posy>
+				<height>30</height>
+				<width>30</width>
+				<texture>scroll-up.png</texture>
+				<visible>Container(5).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>480</posx>
+				<posy>646</posy>
+				<height>30</height>
+				<width>30</width>
+				<texture>scroll-down.png</texture>
+				<visible>Container(5).HasNext</visible>
+			</control>
 		</control>
 
 		<control type="grouplist" id="5"><!-- Controls area -->
@@ -107,7 +110,6 @@
 			<posy>662</posy>
 			<width>1260</width>
 			<height>54</height>
-			<!--<textcolor>listselected-text</textcolor>-->
 			<font>rss20</font>
 			<align>center</align>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
