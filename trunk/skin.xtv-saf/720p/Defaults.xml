@@ -26,7 +26,6 @@
 	<default type="togglebutton">
 		<texturefocus border="7">default-button.png</texturefocus>
 		<alttexturefocus border="7">default-button.png</alttexturefocus>
-		<label>-</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>
 		<shadowcolor>shadow-text</shadowcolor>
@@ -53,9 +52,9 @@
 	</default>
 	<default type="progress">
 		<texturebg border="8,0,8,0">progress-background.png</texturebg>
-		<lefttexture>-</lefttexture>
+		<lefttexture></lefttexture>
 		<midtexture border="8,0,8,0">progress-bar.png</midtexture>
-		<righttexture>-</righttexture>
+		<righttexture></righttexture>
 		<overlaytexture></overlaytexture>
 		<colordiffuse>ProgressBarColor</colordiffuse>
 		<pulseonselect>false</pulseonselect>
