@@ -251,6 +251,7 @@
 						<font>font18</font>
 						<align>center</align>
 						<label>$INFO[ListItem.ChannelNumber]</label>
+						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="image">
 						<posx>11</posx>
@@ -304,6 +305,7 @@
 						<font>font18</font>
 						<align>center</align>
 						<label>$INFO[ListItem.ChannelNumber]</label>
+						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="image">
 						<posx>11</posx>
@@ -397,6 +399,7 @@
 						<font>font18</font>
 						<align>center</align>
 						<label>$INFO[ListItem.ChannelNumber]</label>
+						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="image">
 						<posx>11</posx>
@@ -440,6 +443,7 @@
 						<font>font18</font>
 						<align>center</align>
 						<label>$INFO[ListItem.ChannelNumber]</label>
+						<visible>IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="image">
 						<posx>11</posx>
