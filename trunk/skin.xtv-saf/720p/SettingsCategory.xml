@@ -33,7 +33,7 @@
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
 			<onright>noop</onright>
-			<onup>3</onup>
+			<onup>noop</onup>
 			<ondown>20</ondown>
 			<scrolltime tween="sine" easing="out">100</scrolltime>
 		</control>
@@ -66,18 +66,18 @@
 		<control type="group">
 			<visible>!Skin.HasSetting(sbar)</visible>
 			<control type="image">
-				<posx>480</posx>
-				<posy>88</posy>
-				<height>30</height>
-				<width>30</width>
+				<posx>484</posx>
+				<posy>92</posy>
+				<height>24</height>
+				<width>24</width>
 				<texture>scroll-up.png</texture>
 				<visible>Container(5).HasPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>480</posx>
-				<posy>646</posy>
-				<height>30</height>
-				<width>30</width>
+				<posx>484</posx>
+				<posy>648</posy>
+				<height>24</height>
+				<width>24</width>
 				<texture>scroll-down.png</texture>
 				<visible>Container(5).HasNext</visible>
 			</control>
@@ -91,8 +91,8 @@
 			<itemgap>-2</itemgap>
 			<onleft>23</onleft>
 			<onright>3</onright>
-			<onup>5</onup>
-			<ondown>5</ondown>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
 			<pagecontrol>23</pagecontrol>
 			<scrolltime tween="sine" easing="out">100</scrolltime>
 		</control>

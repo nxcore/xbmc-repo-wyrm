@@ -24,18 +24,18 @@
 
 		<!-- Markers for control area items -->
 		<control type="image">
-			<posx>1000</posx>
-			<posy>88</posy>
-			<height>30</height>
-			<width>30</width>
+			<posx>1008</posx>
+			<posy>92</posy>
+			<height>24</height>
+			<width>24</width>
 			<texture>scroll-up.png</texture>
 			<visible>Container(8999).HasPrevious</visible>
 		</control>
 		<control type="image">
-			<posx>1000</posx>
-			<posy>654</posy>
-			<height>30</height>
-			<width>30</width>
+			<posx>1008</posx>
+			<posy>658</posy>
+			<height>24</height>
+			<width>24</width>
 			<texture>scroll-down.png</texture>
 			<visible>Container(8999).HasNext</visible>
 		</control>
@@ -47,13 +47,13 @@
 			<control type="list" id="8999">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>580</width>
+				<width>480</width>
 				<height>550</height>
-				<onup>8999</onup>
-				<ondown>8999</ondown>
-				<scrolltime tween="sine" easing="out">100</scrolltime>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<scrolltime>100</scrolltime>
 				<viewtype label="List">list</viewtype>
-				<itemlayout width="560" height="50">
+				<itemlayout width="480" height="50">
 					<control type="label">
 						<posx>18</posx>
 						<posy>8</posy>
@@ -65,14 +65,14 @@
 					</control>
 					<control type="image">
 						<posy>10</posy>
-						<posx>440</posx>
-						<width>27</width>
-						<height>27</height>
+						<posx>438</posx>
+						<width>30</width>
+						<height>30</height>
 						<texture>scroll-right.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="560" height="50">
+				<focusedlayout width="480" height="50">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -91,9 +91,9 @@
 					</control>
 					<control type="image">
 						<posy>10</posy>
-						<posx>440</posx>
-						<width>27</width>
-						<height>27</height>
+						<posx>438</posx>
+						<width>30</width>
+						<height>30</height>
 						<texture>scroll-right-focus.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
