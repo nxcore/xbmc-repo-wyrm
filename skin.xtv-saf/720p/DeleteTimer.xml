@@ -45,6 +45,7 @@
 				<onup>15</onup>
 				<ondown>11</ondown>
 				<label>$ADDON[pvr.wmc 30121]</label>
+				<radioposx>460</radioposx>
 			</control>
 			<control type="radiobutton" id="11"><!-- Series rec -->
 				<posx>20</posx>
@@ -56,6 +57,7 @@
 				<onup>10</onup>
 				<ondown>12</ondown>
 				<label>$ADDON[pvr.wmc 30122]</label>
+				<radioposx>460</radioposx>
 			</control>
 		</control>
 		<control type="group" id="9000">

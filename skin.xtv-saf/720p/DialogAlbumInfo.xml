@@ -514,7 +514,6 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<usecontrolcoords>false</usecontrolcoords>
 			<onleft>noop</onleft>
 			<onright condition="Control.IsVisible(50)">noop</onright>
 			<onright condition="Control.IsVisible(4)">1423</onright>

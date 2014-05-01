@@ -25,41 +25,39 @@
 		<control type="group">
 			<control type="group" id="540">
 				<visible allowhiddenfocus="true">Skin.HasSetting(selectmusicentry)</visible>
-				<posx>433</posx>
-				<posy>30</posy>
 				<animation effect="slide" start="0,720" end="0,0" time="200" condition="Skin.HasSetting(selectmusicentry)">Conditional</animation>
 				<control type="image"><!-- Dialog background -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<posx>433</posx>
+					<posy>30</posy>
 					<width>433</width>
 					<height>655</height>
 					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
-					<posx>21</posx>
-					<posy>8</posy>
+					<posx>454</posx>
+					<posy>36</posy>
 					<width>389</width>
+					<height>34</height>
 					<font>font12</font>
 					<label>$LOCALIZE[31923]</label>
 					<align>center</align>
 				</control>
 				<control type="image">
-					<posx>21</posx>
-					<posy>38</posy>
+					<posx>454</posx>
+					<posy>68</posy>
 					<width>389</width>
 					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="541"><!-- Music library entry point -->
-					<posx>21</posx>
-					<posy>46</posy>
+					<posx>454</posx>
+					<posy>76</posy>
 					<width>389</width>
 					<height>598</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
 					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
 					<onright>Dialog.Close(1156)</onright>
 					<viewtype label="31028">list</viewtype>
@@ -178,41 +176,39 @@
 			</control>
 			<control type="group" id="560">
 				<visible allowhiddenfocus="true">Skin.HasSetting(selectmovieentry)</visible>
-				<posx>433</posx>
-				<posy>160</posy>
 				<animation effect="slide" start="0,720" end="0,0" time="200" condition="Skin.HasSetting(selectmovieentry)">Conditional</animation>
 				<control type="image"><!-- Dialog background -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<posx>433</posx>
+					<posy>160</posy>
 					<width>433</width>
 					<height>475</height>
 					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
-					<posx>21</posx>
-					<posy>8</posy>
+					<posx>454</posx>
+					<posy>166</posy>
 					<width>389</width>
+					<height>34</height>
 					<font>font12</font>
 					<label>$LOCALIZE[31920]</label>
 					<align>center</align>
 				</control>
 				<control type="image">
-					<posx>21</posx>
-					<posy>38</posy>
+					<posx>454</posx>
+					<posy>198</posy>
 					<width>389</width>
 					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="561"><!-- Movie library entry point -->
-					<posx>21</posx>
-					<posy>46</posy>
+					<posx>454</posx>
+					<posy>206</posy>
 					<width>389</width>
 					<height>414</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
 					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
 					<onright>Dialog.Close(1156)</onright>
 					<viewtype label="31028">list</viewtype>
@@ -307,41 +303,39 @@
 			</control>
 			<control type="group" id="570">
 				<visible allowhiddenfocus="true">Skin.HasSetting(selecttventry)</visible>
-				<posx>433</posx>
-				<posy>160</posy>
 				<animation effect="slide" start="0,720" end="0,0" time="200" condition="Skin.HasSetting(selecttventry)">Conditional</animation>
 				<control type="image"><!-- Dialog background -->
-					<posx>0</posx>
-					<posy>0</posy>
+					<posx>433</posx>
+					<posy>160</posy>
 					<width>433</width>
 					<height>430</height>
 					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
-					<posx>21</posx>
-					<posy>8</posy>
+					<posx>454</posx>
+					<posy>166</posy>
 					<width>389</width>
+					<height>34</height>
 					<font>font12</font>
 					<label>$LOCALIZE[31921]</label>
 					<align>center</align>
 				</control>
 				<control type="image">
-					<posx>21</posx>
-					<posy>38</posy>
+					<posx>454</posx>
+					<posy>198</posy>
 					<width>389</width>
 					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="571"><!-- TVShow library entry point -->
-					<posx>21</posx>
-					<posy>46</posy>
+					<posx>454</posx>
+					<posy>206</posy>
 					<width>389</width>
 					<height>368</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
 					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
 					<onright>Dialog.Close(1156)</onright>
 					<viewtype label="31028">list</viewtype>
@@ -430,41 +424,39 @@
 			</control>
 			<control type="group" id="580">
 				<visible allowhiddenfocus="true">Skin.HasSetting(selectmusicvidentry)</visible>
-				<posx>433</posx>
-				<posy>160</posy>
 				<animation effect="slide" start="0,720" end="0,0" time="200" condition="Skin.HasSetting(selectmusicvidentry)">Conditional</animation>
 				<control type="image"><!-- Dialog background -->
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>160</posy>
 					<width>433</width>
 					<height>475</height>
 					<texture border="8">button-menu-background.png</texture>
 					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
-					<posx>21</posx>
-					<posy>8</posy>
+					<posx>454</posx>
+					<posy>166</posy>
 					<width>389</width>
+					<height>34</height>
 					<font>font12</font>
 					<label>$LOCALIZE[31922]</label>
 					<align>center</align>
 				</control>
 				<control type="image">
-					<posx>21</posx>
-					<posy>38</posy>
+					<posx>454</posx>
+					<posy>198</posy>
 					<width>389</width>
 					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="581"><!-- Music video library entry point -->
-					<posx>21</posx>
-					<posy>46</posy>
+					<posx>454</posx>
+					<posy>206</posy>
 					<width>389</width>
 					<height>414</height>
 					<itemgap>0</itemgap>
 					<scrolltime>200</scrolltime>
 					<align>center</align>
-					<usecontrolcoords>false</usecontrolcoords>
 					<onleft>Dialog.Close(1156)</onleft>
 					<onright>Dialog.Close(1156)</onright>
 					<viewtype label="31028">list</viewtype>

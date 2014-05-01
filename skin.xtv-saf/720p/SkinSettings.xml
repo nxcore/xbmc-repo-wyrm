@@ -38,7 +38,7 @@
 				<height>56</height>
 				<label>$LOCALIZE[31801]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,startup)</onfocus>
-				<onup>988</onup>
+				<onup>noop</onup>
 				<ondown>982</ondown>
 				<onleft>100</onleft>
 				<onright>noop</onright>
@@ -143,7 +143,7 @@
 				<label>$LOCALIZE[31807]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,support)</onfocus>
 				<onup>987</onup>
-				<ondown>981</ondown>
+				<ondown>noop</ondown>
 				<onleft>800</onleft>
 				<onright>noop</onright>
 			</control>
@@ -176,18 +176,18 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>92</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(101).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>648</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-down.png</texture>
 						<visible>Container(101).HasNext</visible>
 					</control>
@@ -199,8 +199,8 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>101</onup>
-					<ondown>101</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -212,7 +212,7 @@
 						<onclick>Skin.ToggleSetting(intro-vid)</onclick>
 						<onclick>Skin.Reset(startup-playlist)</onclick>
 						<selected>Skin.HasSetting(intro-vid)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="button" id="111">
 						<description>Intro Video Location</description>
@@ -230,7 +230,7 @@
 						<onclick>Skin.ToggleSetting(startup-playlist)</onclick>
 						<onclick>Skin.Reset(intro-vid)</onclick>
 						<selected>Skin.HasSetting(startup-playlist)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="button" id="113">
 						<description>Choose Playlist button</description>
@@ -259,18 +259,18 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>92</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(200).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>648</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-down.png</texture>
 						<visible>Container(200).HasNext</visible>
 					</control>
@@ -282,8 +282,8 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>200</onup>
-					<ondown>200</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -294,7 +294,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(view-as-lock)</onclick>
 						<selected>Skin.HasSetting(view-as-lock)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="202">
 						<description>Scrollbar Toggle</description>
@@ -303,7 +303,7 @@
 						<onclick>Skin.ToggleSetting(sbar)</onclick>
 						<textwidth>750</textwidth>
 						<selected>Skin.HasSetting(sbar)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="203">
 						<description>Autoscroll Toggle</description>
@@ -312,7 +312,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(autoscroll)</onclick>
 						<selected>Skin.HasSetting(autoscroll)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="204">
 						<description>Media Overlay Toggle</description>
@@ -321,7 +321,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(overlay)</onclick>
 						<selected>Skin.HasSetting(overlay)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="205">
 						<description>Watched/Unwatched Overlay Toggle</description>
@@ -330,7 +330,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(watched-overlay)</onclick>
 						<selected>Skin.HasSetting(watched-overlay)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="208">
 						<description>Time On Home Screen toggle</description>
@@ -339,7 +339,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-time)</onclick>
 						<selected>!Skin.HasSetting(home-time)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="209">
 						<description>Current Weather On Home Screen toggle</description>
@@ -349,7 +349,7 @@
 						<onclick>Skin.ToggleSetting(home-currentweather)</onclick>
 						<selected>Skin.HasSetting(home-currentweather)</selected>
 						<enable>!IsEmpty(Weather.plugin)</enable>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="210">
 						<description>Animated Weather Icons toggle</description>
@@ -358,7 +358,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
 						<selected>Skin.HasSetting(weather-animateicon)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="button" id="211">
 						<description>Custom Homescreen Watermark Image</description>
@@ -398,7 +398,7 @@
 						<onclick>Skin.ToggleSetting(tv_theme)</onclick>
 						<selected>Skin.HasSetting(tv_theme)</selected>
 						<enable>System.HasAddon(script.tvtunes)</enable>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="button" id="218">
 						<description>TV Logo Downloader Script</description>
@@ -427,18 +427,18 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>92</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(301).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>648</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-down.png</texture>
 						<visible>Container(301).HasNext</visible>
 					</control>
@@ -450,8 +450,8 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>301</onup>
-					<ondown>301</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -463,7 +463,7 @@
 							<posy>0</posy>
 							<height>56</height>
 							<width>885</width>
-							<onup>316</onup>
+							<onup>noop</onup>
 							<ondown>303</ondown>
 							<onleft>1223</onleft>
 							<onright>322</onright>
@@ -496,7 +496,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>806</posx>
+									<posx>804</posx>
 									<posy>10</posy>
 									<width>32</width>
 									<height>32</height>
@@ -504,7 +504,7 @@
 									<visible>Control.HasFocus(321)</visible>
 								</control>
 								<control type="image">
-									<posx>806</posx>
+									<posx>804</posx>
 									<posy>10</posy>
 									<width>32</width>
 									<height>32</height>
@@ -534,11 +534,11 @@
 							</content>
 						</control>
 						<control type="list" id="322">
-							<posx>833</posx>
+							<posx>835</posx>
 							<posy>0</posy>
 							<height>56</height>
 							<width>32</width>
-							<onup>316</onup>
+							<onup>noop</onup>
 							<ondown>303</ondown>
 							<onleft>321</onleft>
 							<onright>999</onright>
@@ -591,7 +591,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-video)</onclick>
 						<selected>!Skin.HasSetting(home-video)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="304">
 						<description>Movies On Home toggle</description>
@@ -600,7 +600,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-movie)</onclick>
 						<selected>!Skin.HasSetting(home-movie)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="305">
 						<description>TV Shows On Home toggle</description>
@@ -609,7 +609,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-tv)</onclick>
 						<selected>!Skin.HasSetting(home-tv)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="306">
 						<description>Music Videos On Home toggle</description>
@@ -618,7 +618,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
 						<selected>Skin.HasSetting(home-musicvideo)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="307">
 						<description>Music On Home toggle</description>
@@ -627,7 +627,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-music)</onclick>
 						<selected>!Skin.HasSetting(home-music)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="308">
 						<description>Addons On Home toggle</description>
@@ -636,7 +636,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-programs)</onclick>
 						<selected>!Skin.HasSetting(home-programs)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="309">
 						<description>Pictures On Home toggle</description>
@@ -645,7 +645,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-photos)</onclick>
 						<selected>Skin.HasSetting(home-photos)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="310">
 						<description>Profiles On Home toggle</description>
@@ -654,7 +654,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-profile)</onclick>
 						<selected>Skin.HasSetting(home-profile)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="311">
 						<description>Weather On Home toggle</description>
@@ -664,7 +664,7 @@
 						<onclick>Skin.ToggleSetting(home-weather)</onclick>
 						<selected>Skin.HasSetting(home-weather)</selected>
 						<enable>!IsEmpty(Weather.plugin)</enable>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="312">
 						<description>Favorites On Home toggle</description>
@@ -673,7 +673,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-favorites)</onclick>
 						<selected>Skin.HasSetting(home-favorites)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="313">
 						<description>Search On Home toggle</description>
@@ -682,7 +682,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-search)</onclick>
 						<selected>Skin.HasSetting(home-search)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="314">
 						<description>Play Disc On Home toggle</description>
@@ -691,7 +691,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-playdisc)</onclick>
 						<selected>Skin.HasSetting(home-playdisc)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="315">
 						<description>Shutdown From Home toggle</description>
@@ -700,7 +700,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-shutdown)</onclick>
 						<selected>!Skin.HasSetting(home-shutdown)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="group" id="316">
 						<height>56</height>
@@ -711,7 +711,7 @@
 							<height>56</height>
 							<width>885</width>
 							<onup>315</onup>
-							<ondown>320</ondown>
+							<ondown>noop</ondown>
 							<onleft>1223</onleft>
 							<onright>318</onright>
 							<scrolltime>0</scrolltime>
@@ -743,7 +743,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>806</posx>
+									<posx>804</posx>
 									<posy>10</posy>
 									<width>32</width>
 									<height>32</height>
@@ -751,7 +751,7 @@
 									<visible>Control.HasFocus(317)</visible>
 								</control>
 								<control type="image">
-									<posx>806</posx>
+									<posx>804</posx>
 									<posy>10</posy>
 									<width>32</width>
 									<height>32</height>
@@ -799,12 +799,12 @@
 							</content>
 						</control>
 						<control type="list" id="318">
-							<posx>833</posx>
+							<posx>835</posx>
 							<posy>0</posy>
 							<height>56</height>
 							<width>32</width>
 							<onup>315</onup>
-							<ondown>320</ondown>
+							<ondown>noop</ondown>
 							<onleft>317</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
@@ -886,18 +886,18 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>92</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(401).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>648</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-down.png</texture>
 						<visible>Container(401).HasNext</visible>
 					</control>
@@ -909,8 +909,8 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>401</onup>
-					<ondown>401</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -937,7 +937,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(background-fanart)</onclick>
 						<selected>Skin.HasSetting(background-fanart)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="405">
 						<description>Background ExtraFanart Toggle</description>
@@ -947,7 +947,7 @@
 						<onclick>Skin.ToggleSetting(background-extrafanart)</onclick>
 						<selected>Skin.HasSetting(background-extrafanart)</selected>
 						<enable>Skin.HasSetting(background-fanart)</enable>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="406">
 						<description>Media In Background Toggle</description>
@@ -956,7 +956,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(HomeViewToggle)</onclick>
 						<selected>Skin.HasSetting(HomeViewToggle)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="407">
 						<description>Background Artistslideshow Toggle</description>
@@ -966,7 +966,7 @@
 						<onclick>Skin.ToggleSetting(background-slideshow)</onclick>
 						<selected>Skin.HasSetting(background-slideshow)</selected>
 						<enable>System.HasAddon(script.artistslideshow)</enable>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="button" id="408">
 						<description>Custom Weather Background Button</description>
@@ -1025,7 +1025,7 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>806</posx>
+									<posx>804</posx>
 									<posy>10</posy>
 									<width>32</width>
 									<height>32</height>
@@ -1033,7 +1033,7 @@
 									<visible>Control.HasFocus(411)</visible>
 								</control>
 								<control type="image">
-									<posx>806</posx>
+									<posx>804</posx>
 									<posy>10</posy>
 									<width>32</width>
 									<height>32</height>
@@ -1063,7 +1063,7 @@
 							</content>
 						</control>
 						<control type="list" id="412">
-							<posx>833</posx>
+							<posx>835</posx>
 							<posy>0</posy>
 							<height>56</height>
 							<width>32</width>
@@ -1120,7 +1120,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DVDcase)</onclick>
 						<selected>Skin.HasSetting(DVDcase)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="414">
 						<description>Use CD case Toggle</description>
@@ -1129,7 +1129,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(CDcase)</onclick>
 						<selected>Skin.HasSetting(CDcase)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 				</control>
 			</control>
@@ -1150,18 +1150,18 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>92</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(501).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>648</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-down.png</texture>
 						<visible>Container(501).HasNext</visible>
 					</control>
@@ -1173,8 +1173,8 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>501</onup>
-					<ondown>501</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1246,18 +1246,18 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>92</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(801).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
-						<height>30</height>
-						<width>30</width>
+						<posx>484</posx>
+						<posy>648</posy>
+						<height>24</height>
+						<width>24</width>
 						<texture>scroll-down.png</texture>
 						<visible>Container(801).HasNext</visible>
 					</control>
@@ -1269,8 +1269,8 @@
 					<width>885</width>
 					<height>540</height>
 					<itemgap>-2</itemgap>
-					<onup>801</onup>
-					<ondown>801</ondown>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1289,7 +1289,7 @@
 						<textwidth>750</textwidth>
 						<onclick>XBMC.ToggleDebug</onclick>
 						<selected>system.getbool(debug.showloginfo)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="image" id="805">
 						<width>885</width>
@@ -1303,7 +1303,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
 						<selected>Skin.HasSetting(DebugGrid)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="radiobutton" id="807">
 						<description>Show Skin Debug Info toggle</description>
@@ -1312,7 +1312,7 @@
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
 						<selected>Skin.HasSetting(DebugInfo)</selected>
-						<radioposx>840</radioposx>
+						<radioposx>844</radioposx>
 					</control>
 					<control type="image" id="808">
 						<width>885</width>

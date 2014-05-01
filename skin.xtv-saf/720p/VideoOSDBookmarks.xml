@@ -102,7 +102,6 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<usecontrolcoords>false</usecontrolcoords>
 			<onleft>999</onleft>
 			<onright>999</onright>
 			<ondown>11</ondown>
