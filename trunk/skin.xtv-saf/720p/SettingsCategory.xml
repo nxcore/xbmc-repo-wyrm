@@ -130,7 +130,7 @@
 			<textwidth>810</textwidth>
 			<height>56</height>
 			<font>font12</font>
-			<radioposx>840</radioposx>
+			<radioposx>844</radioposx>
 		</control>
 		<control type="spincontrolex" id="9"><!-- Default spincontrolex -->
 			<posx>53</posx>

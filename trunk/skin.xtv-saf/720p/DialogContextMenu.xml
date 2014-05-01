@@ -23,14 +23,14 @@
 				<posy>8</posy>
 				<width>496</width>
 				<height min="10" max="528">auto</height>
-				<onup>996</onup>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="1000"><!-- Button template -->
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>496</width>
 					<height>48</height>
-					<textoffsety>6</textoffsety>
 					<align>center</align>
 					<aligny>top</aligny>
 					<onleft>Close</onleft>
