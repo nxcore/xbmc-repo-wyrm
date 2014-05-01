@@ -195,7 +195,6 @@
 			<onright>noop</onright>
 			<onup>9800</onup>
 			<ondown>noop</ondown>
-			<orientation>vertical</orientation>
 			<scrolltime tween="sine" easing="inout">280</scrolltime>
 			<itemlayout height="160" width="252">
 				<control type="image"><!-- Icon image -->
