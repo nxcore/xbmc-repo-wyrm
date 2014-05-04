@@ -139,7 +139,7 @@
 				</control>
 				<control type="group">
 					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
-					<control type="textbox" id="400">
+					<control type="textbox">
 						<description>Description</description>
 						<posx>17</posx>
 						<posy>246</posy>
@@ -152,10 +152,10 @@
 					<control type="scrollbar" id="60">
 						<posx>765</posx>
 						<posy>243</posy>
-						<width>20</width>
+						<width>16</width>
 						<height>184</height>
 						<onleft>9000</onleft>
-						<onright>61</onright>
+						<onright>noop</onright>
 					</control>
 					<control type="label">
 						<description>Disclaimer txt</description>
@@ -179,7 +179,7 @@
 				</control>
 				<control type="group">
 					<visible>IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
-					<control type="textbox" id="400">
+					<control type="textbox">
 						<posx>17</posx>
 						<posy>246</posy>
 						<width>734</width>
@@ -191,10 +191,10 @@
 					<control type="scrollbar" id="61">
 						<posx>765</posx>
 						<posy>243</posy>
-						<width>20</width>
+						<width>16</width>
 						<height>312</height>
-						<onleft>60</onleft>
-						<onright>9000</onright>
+						<onleft>9000</onleft>
+						<onright>noop</onright>
 					</control>
 				</control>
 			</control>
@@ -203,48 +203,44 @@
 				<posy>370</posy>
 				<width>305</width>
 				<height>310</height>
-				<onleft>60</onleft>
-				<onright>60</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onleft>noop</onleft>
+				<onright condition="Control.IsVisible(60)">60</onright>
+				<onright condition="!Control.IsVisible(60) + Control.IsVisible(61)">61</onright>
+				<onright condition="!Control.IsVisible(60) + !Control.IsVisible(61)">noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 				<itemgap>2</itemgap>
-				<control type="button" id ="6">
-					<description>Enable Addon button</description>
+				<control type="button" id ="6"><!-- Enable Addon button -->
 					<width>305</width>
 					<height>50</height>
 					<label>$LOCALIZE[24022]</label>
 					<align>center</align>
 				</control>
-				<control type="button" id="7">
-					<description>Disable Addon button</description>
+				<control type="button" id="7"><!-- Disable Addon button -->
 					<width>305</width>
 					<height>50</height>
 					<label>$LOCALIZE[24021]</label>
 					<align>center</align>
 				</control>
-				<control type="button" id="9">
-					<description>Addon Settings</description>
+				<control type="button" id="9"><!-- Addon Settings -->
 					<width>305</width>
 					<height>50</height>
 					<label>$LOCALIZE[24020]</label>
 					<align>center</align>
 				</control>
-				<control type="button" id="8">
-					<description>Update Addon button</description>
+				<control type="button" id="8"><!-- Update Addon button -->
 					<width>305</width>
 					<height>50</height>
 					<label>$LOCALIZE[24069]</label>
 					<align>center</align>
 				</control>
-				<control type="button" id="11">
-					<description>Rollback button</description>
+				<control type="button" id="11"><!-- Rollback button -->
 					<width>305</width>
 					<height>50</height>
 					<label>$LOCALIZE[24048]</label>
 					<align>center</align>
 				</control>
-				<control type="button" id="10">
-					<description>Changelog button</description>
+				<control type="button" id="10"><!-- Changelog button -->
 					<width>305</width>
 					<height>50</height>
 					<label>$LOCALIZE[24036]</label>
