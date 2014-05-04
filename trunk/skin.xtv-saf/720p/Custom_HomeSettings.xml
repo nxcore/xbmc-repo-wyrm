@@ -530,24 +530,7 @@
 							</content>
 						</control>
 					</control>
-					<!--<control type="button" id="205"><!-- Icon type toggle (banners)
-						<include>settings-submenu-common</include>
-						<textwidth>480</textwidth>
-						<label>- $LOCALIZE[467]</label>
-						<label2>$LOCALIZE[31949]</label2>
-						<onclick>Skin.ToggleSetting(shelf-poster)</onclick>
-						<onclick>SetFocus(203)</onclick>
-						<visible>!Skin.HasSetting(shelf-poster)</visible>
-					</control>
-					<control type="button" id="206"><!-- Icon type toggle (posters)
-						<include>settings-submenu-common</include>
-						<textwidth>480</textwidth>
-						<label>- $LOCALIZE[467]</label>
-						<label2>$LOCALIZE[31950]</label2>
-						<onclick>Skin.ToggleSetting(shelf-poster)</onclick>
-						<onclick>SetFocus(203)</onclick>
-						<visible>Skin.HasSetting(shelf-poster)</visible>
-					</control>-->
+					<!-- Removed TVShow icon type code, re-add in future update -->
 					<control type="button" id="207"><!-- TVShow favourite 1 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
