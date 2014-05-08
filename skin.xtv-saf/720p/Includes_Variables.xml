@@ -76,7 +76,7 @@
 		<value condition="substring(Container(100).ListItem.Property(Mpaa),TV-14)">special://skin/extras/images/rating/TV-14.png</value>
 		<value condition="substring(Container(100).ListItem.Property(Mpaa),TV-MA)">special://skin/extras/images/rating/TV-MA.png</value>
 	</variable>
-	<variable name="MusicRating">
+	<variable name="MediaRating">
 		<value condition="substring(ListItem.StarRating,5)">rating5.png</value>
 		<value condition="substring(ListItem.StarRating,4)">rating4.png</value>
 		<value condition="substring(ListItem.StarRating,3)">rating3.png</value>

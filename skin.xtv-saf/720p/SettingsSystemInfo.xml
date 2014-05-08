@@ -157,7 +157,7 @@
 			<visible>Control.HasFocus(100)</visible>
 			<control type="label"><!-- Skin version -->
 				<height>45</height>
-				<label>$LOCALIZE[31563] xTV-SAF v1.4.5</label>
+				<label>$LOCALIZE[31563] xTV-SAF v1.4.6</label>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Current theme -->
@@ -178,7 +178,7 @@
 		</control>
 		<control type="label"><!-- XBMC build version and date -->
 			<posx>34</posx>
-			<posy>688</posy>
+			<posy>686</posy>
 			<width>1212</width>
 			<label>$INFO[System.BuildVersion,$LOCALIZE[144] ,] $INFO[System.BuildDate,(,)]</label>
 			<font>font11</font>

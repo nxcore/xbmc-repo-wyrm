@@ -224,7 +224,7 @@
 					<posy>600</posy>
 					<width>150</width>
 					<height>25</height>
-					<texture>$VAR[MusicRating]</texture>
+					<texture>$VAR[MediaRating]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
@@ -360,7 +360,7 @@
 				<posy>687</posy>
 				<width>177</width>
 				<height>25</height>
-				<texture>$VAR[MusicRating]</texture>
+				<texture>$VAR[MediaRating]</texture>
 				<visible>!SubString(ListItem.Icon,Default,Left) + !IsEmpty(ListItem.StarRating)</visible>
 			</control>
 			<control type="label"><!-- Genre -->
@@ -758,7 +758,7 @@
 					<posy>681</posy>
 					<width>177</width>
 					<height>25</height>
-					<texture>$VAR[MusicRating]</texture>
+					<texture>$VAR[MediaRating]</texture>
 					<visible>!IsEmpty(ListItem.StarRating)</visible>
 				</control>
 			</control>
@@ -870,7 +870,7 @@
 					<posy>685</posy>
 					<width>177</width>
 					<height>25</height>
-					<texture>$VAR[MusicRating]</texture>
+					<texture>$VAR[MediaRating]</texture>
 				</control>
 				<control type="label"><!-- Genre -->
 					<posx>240</posx>

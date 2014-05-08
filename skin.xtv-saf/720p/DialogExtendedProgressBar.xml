@@ -24,6 +24,7 @@
 				<posy>12</posy>
 				<width>654</width>
 				<height>25</height>
+				<font>font12</font>
 				<label>-</label>
 			</control>
 			<control type="label" id="31"><!-- Dialog line 1 -->
@@ -32,6 +33,7 @@
 				<width>654</width>
 				<height>25</height>
 				<haspath>yes</haspath>
+				<font>font12</font>
 				<label>-</label>
 			</control>
 			<control type="progress" id="32">

@@ -36,23 +36,25 @@
 			<posx>946</posx>
 			<posy>35</posy>
 			<width>365</width>
-			<height>80</height>
+			<height>72</height>
 			<align>left</align>
-			<aligny>center</aligny>
+			<aligny>bottom</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Screen heading -->
 				<width min="40" max="275">auto</width>
-				<height>80</height>
+				<height>72</height>
 				<label>$LOCALIZE[31956]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
-				<aligny>top</aligny>
+				<aligny>bottom</aligny>
 			</control>
 			<control type="label"><!-- Number of files (Use for non Vertical home menu) -->
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<width min="40" max="90">auto</width>
 				<height>46</height>
 				<label>$INFO[Window(Home).Property(NextAired.Total),(,)]</label>
+				<font>font13</font>
+				<aligny>top</aligny>
 			</control>
 		</control>
 		<control type="label"><!-- Number of files (Use for Vertical home menu) -->
@@ -105,8 +107,8 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>200</onleft>
-				<onright>200</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>206</onup>
 				<ondown>201</ondown>
 				<itemlayout width="180" height="90">
@@ -306,8 +308,8 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>201</onleft>
-				<onright>201</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>200</onup>
 				<ondown>202</ondown>
 				<itemlayout width="180" height="90">
@@ -507,8 +509,8 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>202</onleft>
-				<onright>202</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>201</onup>
 				<ondown>203</ondown>
 				<itemlayout width="180" height="90">
@@ -909,8 +911,8 @@
 				<width>850</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>204</onleft>
-				<onright>204</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>203</onup>
 				<ondown>205</ondown>
 				<itemlayout width="170" height="90">
@@ -1110,8 +1112,8 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>205</onleft>
-				<onright>205</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>204</onup>
 				<ondown>206</ondown>
 				<itemlayout width="180" height="90">
@@ -1311,8 +1313,8 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>206</onleft>
-				<onright>206</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>205</onup>
 				<ondown>200</ondown>
 				<itemlayout width="180" height="90">
@@ -1473,42 +1475,43 @@
 		<control type="group"><!-- Next Aired Episode description -->
 			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-			<posx>880</posx>
+			<posx>850</posx>
 			<posy>115</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>370</width>
+				<width>470</width>
 				<height>540</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>4F000000</colordiffuse>
 			</control>
 			<control type="group">
 				<control type="image"><!-- Next Aired Logo -->
-					<posx>85</posx>
-					<posy>14</posy>
-					<width>200</width>
-					<height>78</height>
+					<posx>76</posx>
+					<posy>-25</posy>
+					<width>258</width>
+					<height>100</height>
 					<texture>$VAR[NextAiredImage3]</texture>
 				</control>
 				<control type="image"><!-- Next Aired Network Logo -->
-					<posx>295</posx>
-					<posy>42</posy>
+					<posx>340</posx>
+					<posy>95</posy>
 					<width>60</width>
 					<height>60</height>
 					<aspectratio>keep</aspectratio>
+					<align>right</align>
 					<texture>$VAR[NextAiredImage4]</texture>
 				</control>
 				<control type="image"><!-- Next Aired Poster -->
-					<posx>130</posx>
-					<posy>100</posy>
-					<width>110</width>
-					<height>160</height>
+					<posx>128</posx>
+					<posy>95</posy>
+					<width>154</width>
+					<height>220</height>
 					<texture>$VAR[NextAiredImage1]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + [StringCompare(Window(Home).Property(TVGuide.ThumbType),0) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)]</visible>
 				</control>
 				<control type="image"><!-- Next Aired Banner -->
-					<posx>63</posx>
+					<posx>33</posx>
 					<posy>140</posy>
 					<width>244</width>
 					<height>45</height>
@@ -1516,27 +1519,28 @@
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 				</control>
 				<control type="image"><!-- Next Aired Landscape Thumb -->
-					<posx>63</posx>
+					<posx>23</posx>
 					<posy>100</posy>
-					<width>244</width>
-					<height>160</height>
+					<width>264</width>
+					<height>170</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$VAR[NextAiredImage2]</texture>
 					<visible>!IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs))</visible>
 				</control>
 				<control type="label"><!-- Next Aired Episode Title -->
-					<posx>10</posx>
-					<posy>280</posy>
-					<width>350</width>
+					<posx>0</posx>
+					<posy>330</posy>
+					<width>410</width>
 					<height>90</height>
 					<label>$VAR[NextAiredLabel2]</label>
+					<font>font13</font>
 					<align>center</align>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Run Time -->
-					<posx>10</posx>
-					<posy>380</posy>
-					<width>350</width>
+					<posx>0</posx>
+					<posy>436</posy>
+					<width>410</width>
 					<height>24</height>
 					<label>$VAR[NextAiredLabel3]</label>
 					<font>font12</font>
@@ -1544,9 +1548,9 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Genre -->
-					<posx>10</posx>
-					<posy>410</posy>
-					<width>350</width>
+					<posx>0</posx>
+					<posy>480</posy>
+					<width>410</width>
 					<height>44</height>
 					<label>$VAR[NextAiredLabel4]</label>
 					<font>font11</font>
@@ -1554,9 +1558,9 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Time and Date -->
-					<posx>10</posx>
-					<posy>474</posy>
-					<width>350</width>
+					<posx>0</posx>
+					<posy>544</posy>
+					<width>410</width>
 					<height>22</height>
 					<label>$VAR[NextAiredLabel5]   $VAR[NextAiredLabel6]</label>
 					<align>center</align>

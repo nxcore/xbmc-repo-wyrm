@@ -405,7 +405,7 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31893]</label>
 						<textwidth>785</textwidth>
-						<onclick>XBMC.runscript(script.artwork.downloader, mode=custom, fanart, extrafanart, poster, seasonposter, clearlogo, clearart)</onclick>
+						<onclick>XBMC.runscript(script.artwork.downloader,mode=custom,fanart,extrafanart,poster,seasonposter,clearlogo,clearart,banner,seasonbanner)</onclick>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
 					</control>
 				</control>

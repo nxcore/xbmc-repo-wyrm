@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<allowoverlay>no</allowoverlay>
-	<include>shutdown-ani</include>
+	<include>screen-fade</include>
 	<controls>
 		<control type="group" id="100">
 			<control type="image"><!-- Solid background -->
@@ -29,7 +29,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(111).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(111).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -42,7 +42,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(121).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(121).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -55,7 +55,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(131).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(131).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -68,7 +68,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(141).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(141).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -81,7 +81,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(151).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(151).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -94,7 +94,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(161).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(161).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -107,7 +107,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(171).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(171).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
@@ -120,7 +120,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="background.png">$INFO[Container(181).ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" fallback="background.png">$INFO[Container(181).ListItem.Property(Fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<colordiffuse>fanart-background</colordiffuse>
