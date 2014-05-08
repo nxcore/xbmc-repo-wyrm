@@ -1,3 +1,6 @@
+[B]1.4.6[/B]
+- A number of minor bug fixes and performance tweaks.
+
 [B]1.4.5[/B]
 - Cleanup of a number of skin texture files.
 - Changes to make skin Gotham compliant.
