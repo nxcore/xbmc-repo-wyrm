@@ -410,7 +410,7 @@
 					<posy>681</posy>
 					<width>200</width>
 					<height>25</height>
-					<texture>$INFO[ListItem.StarRating]</texture>
+					<texture>$VAR[MediaRating]</texture>
 					<align>right</align>
 					<colordiffuse>StarDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.StarRating)</visible>

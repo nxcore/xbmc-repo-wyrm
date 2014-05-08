@@ -498,7 +498,7 @@
 						<posy>268</posy>
 						<width>177</width>
 						<height>25</height>
-						<texture>$INFO[ListItem.StarRating]</texture>
+						<texture>$VAR[MediaRating]</texture>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<visible>!IsEmpty(ListItem.StarRating)</visible>
 					</control>
@@ -547,7 +547,7 @@
 					<control type="textbox"><!-- Plot Outline -->
 						<posx>17</posx>
 						<posy>467</posy>
-						<width>646</width>
+						<width>636</width>
 						<height>190</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.PlotOutline]</label>
@@ -559,7 +559,7 @@
 					<control type="textbox"><!-- Plot (Show if no outline available)-->
 						<posx>17</posx>
 						<posy>467</posy>
-						<width>646</width>
+						<width>636</width>
 						<height>190</height>
 						<font>font12</font>
 						<label fallback="161">$INFO[ListItem.Plot]</label>

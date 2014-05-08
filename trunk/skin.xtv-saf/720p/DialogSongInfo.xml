@@ -120,7 +120,7 @@
 			<posy>574</posy>
 			<width>150</width>
 			<height>25</height>
-			<texture>$VAR[MusicRating]</texture>
+			<texture>$VAR[MediaRating]</texture>
 			<aspectratio>keep</aspectratio>
 		</control>
 		<control type="image">

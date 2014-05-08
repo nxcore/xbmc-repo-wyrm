@@ -9,16 +9,16 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
 			<control type="image">
 				<description>Seekbar Dialog background image</description>
-				<posx>-42</posx>
+				<posx>0</posx>
 				<posy>6</posy>
 				<height>80</height>
-				<width>1359</width>
+				<width>1280</width>
 				<texture>background.png</texture>
 				<colordiffuse>osd-background</colordiffuse>
-				<visible>[Window.IsActive(fullscreenvideo)] + ![Window.IsActive(MusicOSD)] + ![Window.IsVisible(fullscreeninfo)]</visible>
+				<visible>[Window.IsActive(fullscreenvideo)] + ![Window.IsActive(MusicOSD)]</visible>
 			</control>
 			<include>player-mediaicon</include>
 		</control>
@@ -50,23 +50,22 @@
 		</control>
 
 		<control type="group">
-			<visible>[Window.IsVisible(FullscreenVideo)]</visible>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(SubtitleSearch) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(SubtitleSearch) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
 			<!-- Player info labels -->
 			<control type="label">
 				<posx>224</posx>
-				<posy>5</posy>
+				<posy>4</posy>
 				<width>220</width>
-				<height>31</height>
+				<height>26</height>
 				<font>rss20</font>
 				<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
 				<align>right</align>
 			</control>
 			<control type="label">
 				<posx>1048</posx>
-				<posy>5</posy>
+				<posy>4</posy>
 				<width>230</width>
-				<height>31</height>
+				<height>26</height>
 				<font>rss20</font>
 				<label>-$INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 			</control>
