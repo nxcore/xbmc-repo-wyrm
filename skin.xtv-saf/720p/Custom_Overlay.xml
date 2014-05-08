@@ -391,6 +391,12 @@
 				<control type="label">
 					<include>overlaylabel-dimension</include>
 					<textcolor>kai-text</textcolor>
+					<label>DialogSubtitles.xml</label>
+					<visible>Window.IsVisible(DialogSubtitles.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
 					<label>DialogTextViewer.xml</label>
 					<visible>Window.IsVisible(DialogTextViewer.xml)</visible>
 				</control>
@@ -465,6 +471,66 @@
 					<textcolor>kai-text</textcolor>
 					<label>ProfileSettings.xml</label>
 					<visible>Window.IsVisible(ProfileSettings.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>RecordPrefs.xml</label>
+					<visible>Window.IsVisible(RecordPrefs.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script.pseudotv.AdvancedConfig.xml</label>
+					<visible>Window.IsVisible(script.pseudotv.AdvancedConfig.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script.pseudotv.ChannelConfig.xml</label>
+					<visible>Window.IsVisible(script.pseudotv.ChannelConfig.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script.pseudotv.EPG.xml</label>
+					<visible>Window.IsVisible(script.pseudotv.EPG.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script.pseudotv.TVOverlay.xml</label>
+					<visible>Window.IsVisible(script.pseudotv.TVOverlay.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-globalsearch-contextmenu.xml</label>
+					<visible>Window.IsVisible(script-globalsearch-contextmenu.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-globalsearch-infodialog.xml</label>
+					<visible>Window.IsVisible(script-globalsearch-infodialog.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-globalsearch-main.xml</label>
+					<visible>Window.IsVisible(script-globalsearch-main.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-NextAired-TVGuide.xml</label>
+					<visible>Window.IsVisible(script-NextAired-TVGuide.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-XBMC_Lyrics-main.xml</label>
+					<visible>Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
 				</control>
 				<control type="label">
 					<include>overlaylabel-dimension</include>
