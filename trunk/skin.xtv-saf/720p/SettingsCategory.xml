@@ -2,13 +2,11 @@
 <window>
 	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-		<control type="image"><!-- Settings logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-settings.png</texture>
-		</control>
+
 		<control type="label" id="2"><!-- Settings screen heading -->
 			<posx>946</posx>
 			<posy>25</posy>

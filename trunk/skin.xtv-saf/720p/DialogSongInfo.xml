@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="false">999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
 		<control type="label"><!-- Song Title -->

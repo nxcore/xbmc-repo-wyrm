@@ -2,16 +2,11 @@
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>background</include>
-		<include>#files</include>
 		<include>Fake-Overlay</include>
-		<control type="image">
-			<description>Programs Logo</description>
-			<include>icon-header-commons</include>
-			<texture>icon-programs.png</texture>
-		</control>
 		<control type="grouplist">
 			<posx>946</posx>
 			<posy>50</posy>
@@ -26,8 +21,7 @@
 				<label>$LOCALIZE[31029]</label>
 				<font>font18</font>
 			</control>
-			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
-				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
+			<control type="label"><!-- Number of files -->
 				<posy>13</posy>
 				<width min="40" max="90">auto</width>
 				<height>38</height>

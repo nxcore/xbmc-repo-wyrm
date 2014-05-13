@@ -2,16 +2,12 @@
 <window>
 	<defaultcontrol>8999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>background</include>
 		<include>xtv-box</include>
 		<include>Fake-Overlay</include>
-		<control type="image">
-			<description>Settings Logo</description>
-			<include>icon-header-commons</include>
-			<texture>icon-settings.png</texture>
-		</control>
 		<control type="label">
 			<description>Settings Label</description>
 			<posx>946</posx>

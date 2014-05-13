@@ -2,7 +2,6 @@
 <window>
 	<defaultcontrol>15</defaultcontrol>
 	<include>screen-fade</include>
-	<include>fadebackground</include>
 	<coordinates>
 		<posx>168</posx>
 		<posy>300</posy>

@@ -10,44 +10,26 @@
 		<include>screen-fade</include>
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
-		<include>#files</include>
-		<control type="image"><!-- Movies/General video logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-video-sml.png</texture>
-			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
-		</control>
-		<control type="image"><!-- TV shows logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-tv.png</texture>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-		</control>
-		<control type="image"><!-- Music videos logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-musicvideo-sml.png</texture>
-			<visible>Container.Content(musicvideos)</visible>
-		</control>
 		<control type="grouplist">
 			<posx>946</posx>
 			<posy>35</posy>
-			<width>365</width>
+			<width>334</width>
 			<height>72</height>
 			<align>left</align>
-			<aligny>bottom</aligny>
+			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Video screen heading -->
-				<width min="60" max="570">auto</width>
+				<width>auto</width>
 				<height>72</height>
 				<label>$VAR[VideoHeadings]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
-				<aligny>bottom</aligny>
+				<aligny>top</aligny>
 			</control>
-			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
-				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
-				<width min="40" max="90">auto</width>
-				<height>50</height>
+			<control type="label"><!-- Number of files -->
+				<width>90</width>
+				<height>72</height>
 				<label>$INFO[Container.NumItems,(,)]</label>
-				<font>font13</font>
 				<aligny>top</aligny>
 			</control>
 		</control>
@@ -80,6 +62,7 @@
 		</control>
 
 		<control type="group"><!-- View-As Menu -->
+			<posx>0</posx>
 			<posy>720</posy>
 			<include>View-as</include>
 			<control type="group">
@@ -101,6 +84,7 @@
 				</control>
 			</control>
 			<control type="grouplist" id="9000">
+				<visible>!Skin.HasSetting(view-as-lock)</visible>
 				<posx>450</posx>
 				<posy>40</posy>
 				<width>376</width>
