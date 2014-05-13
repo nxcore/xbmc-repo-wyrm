@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="HorzHomeMenu">
-		<include>screen-fade</include>
-
 		<control type="group"><!-- Build up home menu shelf image -->
 			<visible>![Window.IsActive(videolibrary) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>192</height>
 				<texture>colours/grey.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>192</posy>
+				<left>0</left>
+				<top>192</top>
 				<width>1280</width>
 				<height>102</height>
 				<texture>colours/midgrey.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>1280</width>
 				<height>294</height>
 				<texture>menu-mask.png</texture>
@@ -38,24 +36,26 @@
 			<control type="group" id="9155"><!-- Movie icons -->
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9160).NumItems,0)] | [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
+					<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])</visible>
+					<!--<visible>![IntegerGreaterThan(Container(9160).NumItems,0)] | [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>-->
 					<control type="image">
-						<posx>560</posx>
-						<posy>55</posy>
+						<left>560</left>
+						<top>55</top>
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-video.png</texture>
 					</control>
 					<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
+						<left>560</left>
+						<top>215</top>
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9160).NumItems,0)] + ![StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
+					<visible>![StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
+					<!--<visible>[IntegerGreaterThan(Container(9160).NumItems,0)] + ![StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>-->
 					<include>movie-shelficons</include>
 				</control>
 			</control>
@@ -63,24 +63,26 @@
 			<control type="group" id="9205"><!-- TV Shows icons -->
 				<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9210).NumItems,0)] | [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
+					<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])</visible>
+					<!--<visible>![IntegerGreaterThan(Container(9210).NumItems,0)] | [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>-->
 					<control type="image">
-						<posx>560</posx>
-						<posy>55</posy>
+						<left>560</left>
+						<top>55</top>
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-tv.png</texture>
 					</control>
 					<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
+						<left>560</left>
+						<top>215</top>
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-tv.png</texture>
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9210).NumItems,0)] + ![StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
+					<visible>![StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
+					<!--<visible>[IntegerGreaterThan(Container(9210).NumItems,0)] + ![StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>-->
 					<include>tvshow-shelficons</include>
 				</control>
 			</control>
@@ -88,24 +90,26 @@
 			<control type="group" id="9255"><!-- Music icons -->
 				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
 				<control type="group">
-					<visible>![IntegerGreaterThan(Container(9260).NumItems,0)] | [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
+					<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])</visible>
+					<!--<visible>![IntegerGreaterThan(Container(9260).NumItems,0)] | [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>-->
 					<control type="image">
-						<posx>560</posx>
-						<posy>55</posy>
+						<left>560</left>
+						<top>55</top>
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-music.png</texture>
 					</control>
 					<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
+						<left>560</left>
+						<top>215</top>
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
 					</control>
 				</control>
 				<control type="group">
-					<visible>[IntegerGreaterThan(Container(9260).NumItems,0)] + ![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
+					<visible>![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
+					<!--<visible>[IntegerGreaterThan(Container(9260).NumItems,0)] + ![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>-->
 					<include>music-shelficons</include>
 				</control>
 			</control>
@@ -115,15 +119,15 @@
 				<control type="group">
 					<visible>!Weather.IsFetched</visible>
 					<control type="image">
-						<posx>560</posx>
-						<posy>55</posy>
+						<left>560</left>
+						<top>55</top>
 						<width>160</width>
 						<height>160</height>
 						<texture>icon-weather.png</texture>
 					</control>
 					<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
+						<left>560</left>
+						<top>215</top>
 						<width>160</width>
 						<height>160</height>
 						<texture flipy="true" diffuse="mask-fade.png">icon-weather.png</texture>
@@ -138,15 +142,15 @@
 			<control type="group"><!-- Default Shelf icons -->
 				<visible>![Control.IsVisible(9155) | Control.IsVisible(9205) | Control.IsVisible(9255) | Control.IsVisible(9405)]</visible>
 				<control type="image">
-					<posx>560</posx>
-					<posy>55</posy>
+					<left>560</left>
+					<top>55</top>
 					<width>160</width>
 					<height>160</height>
 					<texture>$VAR[HorzHomeShelfIcon]</texture>
 				</control>
 				<control type="image">
-					<posx>560</posx>
-					<posy>215</posy>
+					<left>560</left>
+					<top>215</top>
 					<width>160</width>
 					<height>160</height>
 					<texture flipy="true" diffuse="mask-fade.png">$VAR[HorzHomeShelfIcon]</texture>
@@ -157,22 +161,22 @@
 		<control type="group"><!-- Main Horizontal menu bar -->
 			<visible>Window.IsActive(home)</visible>
 			<control type="image"><!-- Background image for menu area -->
-				<posx>0</posx>
-				<posy>292</posy>
+				<left>0</left>
+				<top>292</top>
 				<width>1280</width>
 				<height>428</height>
 				<texture>colours/black.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>290</posy>
+				<left>0</left>
+				<top>290</top>
 				<width>1280</width>
 				<height>6</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>360</posy>
+				<left>0</left>
+				<top>360</top>
 				<width>1280</width>
 				<height>6</height>
 				<texture>separator.png</texture>
@@ -180,8 +184,8 @@
 		</control>
 
 		<control type="grouplist" id="9000"><!-- Home Sub menus -->
-			<posx>10</posx>
-			<posy>295</posy>
+			<left>10</left>
+			<top>295</top>
 			<width>1260</width>
 			<height>345</height>
 			<itemgap>0</itemgap>
@@ -192,8 +196,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -201,8 +205,8 @@
 					<visible>Control.HasFocus(9100)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -211,8 +215,8 @@
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>72</posy>
+					<left>0</left>
+					<top>72</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -225,8 +229,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>292</posy>
+					<left>0</left>
+					<top>292</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -241,8 +245,8 @@
 				<control type="list" id="9100">
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9100)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -254,8 +258,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -265,15 +269,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -323,8 +327,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -332,8 +336,8 @@
 					<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -342,8 +346,8 @@
 					<animation condition="Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>72</posy>
+					<left>0</left>
+					<top>72</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -356,8 +360,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>292</posy>
+					<left>0</left>
+					<top>292</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -372,8 +376,8 @@
 				<control type="list" id="9150">
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9150)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -385,8 +389,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -396,15 +400,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -462,8 +466,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -471,8 +475,8 @@
 					<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -481,8 +485,8 @@
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>72</posy>
+					<left>0</left>
+					<top>72</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -495,8 +499,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>292</posy>
+					<left>0</left>
+					<top>292</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -511,8 +515,8 @@
 				<control type="list" id="9200">
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9200)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -524,8 +528,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -535,15 +539,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -607,8 +611,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -616,8 +620,8 @@
 					<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -626,8 +630,8 @@
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>72</posy>
+					<left>0</left>
+					<top>72</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -640,8 +644,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>292</posy>
+					<left>0</left>
+					<top>292</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -656,8 +660,8 @@
 				<control type="list" id="9250">
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9250)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -669,8 +673,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -680,15 +684,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -752,8 +756,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -761,8 +765,8 @@
 					<visible>Control.HasFocus(9300)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -773,8 +777,8 @@
 				<control type="list" id="9300">
 					<animation condition="!Control.HasFocus(9300)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9300)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -786,8 +790,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -797,15 +801,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -832,8 +836,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -841,8 +845,8 @@
 					<visible>Control.HasFocus(9350)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -851,8 +855,8 @@
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>72</posy>
+					<left>0</left>
+					<top>72</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -865,8 +869,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>292</posy>
+					<left>0</left>
+					<top>292</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -881,8 +885,8 @@
 				<control type="list" id="9350">
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9350)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -894,8 +898,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -905,15 +909,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -985,8 +989,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -994,8 +998,8 @@
 					<visible>Control.HasFocus(9400)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -1006,8 +1010,8 @@
 				<control type="list" id="9400">
 					<animation condition="!Control.HasFocus(9400)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9400)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -1019,8 +1023,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1030,15 +1034,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1059,8 +1063,8 @@
 				<animation effect="fade" time="0" delay="150" reversible="false">Focus</animation>
 				<width>210</width>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
@@ -1068,8 +1072,8 @@
 					<visible>Control.HasFocus(9450)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>17</posy>
+					<left>0</left>
+					<top>17</top>
 					<width>210</width>
 					<height>32</height>
 					<font>font18</font>
@@ -1078,8 +1082,8 @@
 					<animation condition="Control.HasFocus(9160) | Control.HasFocus(9210) | Control.HasFocus(9260)" effect="fade" start="100" end="65">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>72</posy>
+					<left>0</left>
+					<top>72</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -1092,8 +1096,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>292</posy>
+					<left>0</left>
+					<top>292</top>
 					<width>210</width>
 					<height>22</height>
 					<font>font11</font>
@@ -1108,8 +1112,8 @@
 				<control type="list" id="9450">
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<animation condition="Control.HasFocus(9450)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
-					<posx>0</posx>
-					<posy>82</posy>
+					<left>0</left>
+					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
@@ -1121,8 +1125,8 @@
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1132,15 +1136,15 @@
 					</itemlayout>
 					<focusedlayout height="42" width="210">
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>210</width>
 							<height>42</height>
 							<texture border="8">default-button.png</texture>
 						</control>
 						<control type="label">
-							<posx>105</posx>
-							<posy>8</posy>
+							<left>105</left>
+							<top>8</top>
 							<width>210</width>
 							<height>22</height>
 							<font>font11</font>
@@ -1201,8 +1205,8 @@
 			</control>
 		</control>
 		<control type="image"><!-- Home menu watermark -->
-			<posx>1100</posx>
-			<posy>592</posy>
+			<left>1100</left>
+			<top>592</top>
 			<width>128</width>
 			<height>128</height>
 			<aspectratio aligny="top">keep</aspectratio>

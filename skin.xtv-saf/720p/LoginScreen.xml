@@ -6,18 +6,6 @@
 	<controls>
 		<include>screen-fade</include>
 		<include>background</include>
-		<control type="image"><!-- Settings logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-settings.png</texture>
-		</control>
-		<control type="label"><!-- Number of files (show if using vertical hame menu) -->
-			<posx>1062</posx>
-			<posy>682</posy>
-			<width>203</width>
-			<height>37</height>
-			<label>$INFO[Container(52).NumItems] $LOCALIZE[127]</label>
-			<visible>Skin.HasSetting(homemenu-vertical)</visible>
-		</control>
 		<control type="grouplist">
 			<posx>946</posx>
 			<posy>50</posy>
@@ -33,7 +21,6 @@
 				<font>font20</font>
 			</control>
 			<control type="label"><!-- Number of files -->
-				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>
 				<width min="40" max="110">auto</width>
 				<height>38</height>

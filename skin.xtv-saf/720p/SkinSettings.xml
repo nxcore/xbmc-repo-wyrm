@@ -2,14 +2,10 @@
 <window>
 	<defaultcontrol always="true">999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-		<control type="image">
-			<description>Settings Logo</description>
-			<include>icon-header-commons</include>
-			<texture>icon-settings.png</texture>
-		</control>
 		<control type="label">
 			<description>Settings Label</description>
 			<posx>946</posx>

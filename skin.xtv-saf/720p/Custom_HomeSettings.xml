@@ -2,24 +2,22 @@
 <window id="1153">
 	<defaultcontrol always="true">999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-		<control type="image"><!-- Settings logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-settings.png</texture>
-		</control>
+
 		<control type="label"><!-- Settings label line 1 -->
-			<posx>946</posx>
-			<posy>25</posy>
+			<left>946</left>
+			<top>25</top>
 			<width>309</width>
 			<height>31</height>
 			<label>$LOCALIZE[636] $LOCALIZE[1036]</label>
 			<font>font18</font>
 		</control>
 		<control type="label"><!-- Settings label line 2 -->
-			<posx>946</posx>
-			<posy>62</posy>
+			<left>946</left>
+			<top>62</top>
 			<width>309</width>
 			<height>31</height>
 			<label>$LOCALIZE[5]</label>
@@ -28,8 +26,8 @@
 		<control type="group" id="999">
 			<control type="button" id="981"><!-- Custom Movie settings button -->
 				<font>font12</font>
-				<posx>940</posx>
-				<posy>112</posy>
+				<left>940</left>
+				<top>112</top>
 				<width>305</width>
 				<height>56</height>
 				<label>$LOCALIZE[31026]</label>
@@ -41,8 +39,8 @@
 			</control>
 			<control type="button" id="982"><!-- Custom TV settings button -->
 				<font>font12</font>
-				<posx>940</posx>
-				<posy>166</posy>
+				<left>940</left>
+				<top>166</top>
 				<width>305</width>
 				<height>56</height>
 				<label>$VAR[TVHeadingName]</label>
@@ -54,8 +52,8 @@
 			</control>
 			<control type="button" id="983"><!-- Custom Music settings button -->
 				<font>font12</font>
-				<posx>940</posx>
-				<posy>220</posy>
+				<left>940</left>
+				<top>220</top>
 				<width>305</width>
 				<height>56</height>
 				<label>$LOCALIZE[2]</label>
@@ -67,8 +65,8 @@
 			</control>
 			<control type="button" id="984"><!-- Custom Addons settings button -->
 				<font>font12</font>
-				<posx>940</posx>
-				<posy>274</posy>
+				<left>940</left>
+				<top>274</top>
 				<width>305</width>
 				<height>56</height>
 				<label>$LOCALIZE[31654]</label>
@@ -81,8 +79,8 @@
 		</control>
 
 		<control type="scrollbar" id="1223"><!-- Scrollbar -->
-			<posx>12</posx>
-			<posy>112</posy>
+			<left>12</left>
+			<top>112</top>
 			<width>18</width>
 			<height>542</height>
 			<onleft>noop</onleft>
@@ -94,8 +92,8 @@
 			<control type="group" id="100"><!--Custom Movie Settings-->
 				<visible>Skin.String(customsettingmenu,movie)</visible>
 				<control type="image"><!-- Movie settings button image -->
-					<posx>940</posx>
-					<posy>112</posy>
+					<left>940</left>
+					<top>112</top>
 					<width>305</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
@@ -106,16 +104,16 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
+						<left>480</left>
+						<top>88</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(101).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
+						<left>480</left>
+						<top>646</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-down.png</texture>
@@ -124,8 +122,8 @@
 				</control>
 
 				<control type="grouplist" id="101">
-					<posx>53</posx>
-					<posy>112</posy>
+					<left>53</left>
+					<top>112</top>
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
@@ -138,8 +136,8 @@
 						<height>56</height>
 						<width>885</width>
 						<control type="list" id="103">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<height>56</height>
 							<width>885</width>
 							<onup>114</onup>
@@ -150,24 +148,24 @@
 							<itemlayout width="885" height="56"/>
 							<focusedlayout width="833" height="56">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>885</width>
 									<height>56</height>
 									<texture border="7">default-button.png</texture>
 									<visible>ControlGroup(102).HasFocus()</visible>
 								</control>
 								<control type="label">
-									<posx>18</posx>
-									<posy>10</posy>
+									<left>18</left>
+									<top>10</top>
 									<height>30</height>
 									<width>800</width>
 									<font>font12</font>
 									<label>$LOCALIZE[536]</label>
 								</control>
 								<control type="label">
-									<posx>800</posx>
-									<posy>10</posy>
+									<left>800</left>
+									<top>10</top>
 									<height>30</height>
 									<width>800</width>
 									<align>right</align>
@@ -175,16 +173,16 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>814</posx>
-									<posy>12</posy>
+									<left>814</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(103)</visible>
 								</control>
 								<control type="image">
-									<posx>814</posx>
-									<posy>12</posy>
+									<left>814</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-down.png</texture>
@@ -216,8 +214,8 @@
 							</content>
 						</control>
 						<control type="list" id="104">
-							<posx>843</posx>
-							<posy>0</posy>
+							<left>843</left>
+							<top>0</top>
 							<height>56</height>
 							<width>32</width>
 							<onup>114</onup>
@@ -228,16 +226,16 @@
 							<itemlayout width="32" height="56"/>
 							<focusedlayout width="32" height="56">
 								<control type="image">
-									<posx>0</posx>
-									<posy>12</posy>
+									<left>0</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(104)</visible>
 								</control>
 								<control type="image">
-									<posx>0</posx>
-									<posy>12</posy>
+									<left>0</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
@@ -345,8 +343,8 @@
 			<control type="group" id="200"><!--Custom TV Settings-->
 				<visible>Skin.String(customsettingmenu,tv)</visible>
 				<control type="image"><!-- TVShows settings button image -->
-					<posx>940</posx>
-					<posy>166</posy>
+					<left>940</left>
+					<top>166</top>
 					<width>305</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
@@ -357,16 +355,16 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
+						<left>480</left>
+						<top>88</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(201).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
+						<left>480</left>
+						<top>646</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-down.png</texture>
@@ -375,8 +373,8 @@
 				</control>
 
 				<control type="grouplist" id="201">
-					<posx>53</posx>
-					<posy>112</posy>
+					<left>53</left>
+					<top>112</top>
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
@@ -389,8 +387,8 @@
 						<height>56</height>
 						<width>885</width>
 						<control type="list" id="203">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<height>56</height>
 							<width>885</width>
 							<onup>214</onup>
@@ -401,24 +399,24 @@
 							<itemlayout width="885" height="56"/>
 							<focusedlayout width="833" height="56">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>885</width>
 									<height>56</height>
 									<texture border="7">default-button.png</texture>
 									<visible>ControlGroup(202).HasFocus()</visible>
 								</control>
 								<control type="label">
-									<posx>18</posx>
-									<posy>10</posy>
+									<left>18</left>
+									<top>10</top>
 									<height>30</height>
 									<width>800</width>
 									<font>font12</font>
 									<label>$LOCALIZE[536]</label>
 								</control>
 								<control type="label">
-									<posx>800</posx>
-									<posy>10</posy>
+									<left>800</left>
+									<top>10</top>
 									<height>30</height>
 									<width>800</width>
 									<align>right</align>
@@ -426,16 +424,16 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>814</posx>
-									<posy>12</posy>
+									<left>814</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(203)</visible>
 								</control>
 								<control type="image">
-									<posx>814</posx>
-									<posy>12</posy>
+									<left>814</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-down.png</texture>
@@ -472,8 +470,8 @@
 							</content>
 						</control>
 						<control type="list" id="204">
-							<posx>843</posx>
-							<posy>0</posy>
+							<left>843</left>
+							<top>0</top>
 							<height>56</height>
 							<width>32</width>
 							<onup>214</onup>
@@ -484,16 +482,16 @@
 							<itemlayout width="32" height="56"/>
 							<focusedlayout width="32" height="56">
 								<control type="image">
-									<posx>0</posx>
-									<posy>12</posy>
+									<left>0</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(204)</visible>
 								</control>
 								<control type="image">
-									<posx>0</posx>
-									<posy>12</posy>
+									<left>0</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
@@ -607,8 +605,8 @@
 			<control type="group" id="300"><!--Custom Music settings-->
 				<visible>Skin.String(customsettingmenu,music)</visible>
 				<control type="image"><!-- Music settings button image -->
-					<posx>940</posx>
-					<posy>220</posy>
+					<left>940</left>
+					<top>220</top>
 					<width>305</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
@@ -619,16 +617,16 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
+						<left>480</left>
+						<top>88</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(301).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
+						<left>480</left>
+						<top>646</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-down.png</texture>
@@ -637,8 +635,8 @@
 				</control>
 
 				<control type="grouplist" id="301">
-					<posx>53</posx>
-					<posy>112</posy>
+					<left>53</left>
+					<top>112</top>
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
@@ -651,8 +649,8 @@
 						<height>56</height>
 						<width>885</width>
 						<control type="list" id="303">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<height>56</height>
 							<width>885</width>
 							<onup>314</onup>
@@ -663,24 +661,24 @@
 							<itemlayout width="885" height="56"/>
 							<focusedlayout width="833" height="56">
 								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>885</width>
 									<height>56</height>
 									<texture border="7">default-button.png</texture>
 									<visible>ControlGroup(302).HasFocus()</visible>
 								</control>
 								<control type="label">
-									<posx>18</posx>
-									<posy>10</posy>
+									<left>18</left>
+									<top>10</top>
 									<height>30</height>
 									<width>800</width>
 									<font>font12</font>
 									<label>$LOCALIZE[536]</label>
 								</control>
 								<control type="label">
-									<posx>800</posx>
-									<posy>10</posy>
+									<left>800</left>
+									<top>10</top>
 									<height>30</height>
 									<width>800</width>
 									<align>right</align>
@@ -688,16 +686,16 @@
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 								<control type="image">
-									<posx>814</posx>
-									<posy>12</posy>
+									<left>814</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-down-focus.png</texture>
 									<visible>Control.HasFocus(303)</visible>
 								</control>
 								<control type="image">
-									<posx>814</posx>
-									<posy>12</posy>
+									<left>814</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-down.png</texture>
@@ -730,8 +728,8 @@
 							</content>
 						</control>
 						<control type="list" id="304">
-							<posx>843</posx>
-							<posy>0</posy>
+							<left>843</left>
+							<top>0</top>
 							<height>56</height>
 							<width>32</width>
 							<onup>314</onup>
@@ -742,16 +740,16 @@
 							<itemlayout width="32" height="56"/>
 							<focusedlayout width="32" height="56">
 								<control type="image">
-									<posx>0</posx>
-									<posy>12</posy>
+									<left>0</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-up.png</texture>
 									<visible>!Control.HasFocus(304)</visible>
 								</control>
 								<control type="image">
-									<posx>0</posx>
-									<posy>12</posy>
+									<left>0</left>
+									<top>12</top>
 									<width>32</width>
 									<height>32</height>
 									<texture>scroll-up-focus.png</texture>
@@ -859,8 +857,8 @@
 			<control type="group" id="400"><!--Custom Addon Settings-->
 				<visible>Skin.String(customsettingmenu,addon)</visible>
 				<control type="image"><!-- Addon settings button image -->
-					<posx>940</posx>
-					<posy>274</posy>
+					<left>940</left>
+					<top>274</top>
 					<width>305</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
@@ -871,16 +869,16 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>480</posx>
-						<posy>88</posy>
+						<left>480</left>
+						<top>88</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(401).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>480</posx>
-						<posy>646</posy>
+						<left>480</left>
+						<top>646</top>
 						<height>30</height>
 						<width>30</width>
 						<texture>scroll-down.png</texture>
@@ -889,8 +887,8 @@
 				</control>
 
 				<control type="grouplist" id="401">
-					<posx>53</posx>
-					<posy>112</posy>
+					<left>53</left>
+					<top>112</top>
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>

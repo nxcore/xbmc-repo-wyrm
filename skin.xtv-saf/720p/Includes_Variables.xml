@@ -174,7 +174,6 @@
 		<value>ActivateWindow(MusicFiles,Addons,return)</value>
 	</variable>
 	<variable name="VideoHeadings" description="Video screen headings">
-		<value condition="!IsEmpty(Container.FolderName) + !IsEmpty(ListItem.Label)">$INFO[Container.FolderName]</value>
 		<value condition="Container.Content(movies)">$LOCALIZE[20342]</value>
 		<value condition="Container.Content(tvshows)">$LOCALIZE[31027]</value>
 		<value condition="Container.Content(actors)">$LOCALIZE[344]</value>
@@ -183,12 +182,13 @@
 		<value condition="Container.Content(studios)">$LOCALIZE[20388]</value>
 		<value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.Content(playlists)">$LOCALIZE[136]</value>
 		<value condition="Container.Content(addons)">$LOCALIZE[31696]</value>
 		<value condition="Container.Content(files)">$LOCALIZE[744]</value>
+		<value condition="!IsEmpty(Container.FolderName) + !IsEmpty(ListItem.Label)">$INFO[Container.FolderName]</value>
 		<value>$LOCALIZE[3]</value>
 	</variable>
 	<variable name="MusicHeadings" description="Music screen headings">
-		<value condition="!IsEmpty(Container.FolderName) + !IsEmpty(ListItem.Label)">$INFO[Container.FolderName]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[133]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[132]</value>
 		<value condition="Container.Content(genres)">$LOCALIZE[135]</value>
@@ -196,8 +196,10 @@
 		<value condition="Container.Content(studios)">$LOCALIZE[20388]</value>
 		<value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
 		<value condition="Container.Content(musicvideos)">$LOCALIZE[20389]</value>
+		<value condition="Container.Content(playlists)">$LOCALIZE[136]</value>
 		<value condition="Container.Content(addons)">$LOCALIZE[31697]</value>
 		<value condition="Container.Content(files)">$LOCALIZE[744]</value>
+		<value condition="!IsEmpty(Container.FolderName) + !IsEmpty(ListItem.Label)">$INFO[Container.FolderName]</value>
 		<value>$LOCALIZE[31030]</value>
 	</variable>
 	<variable name="PVRHeading" description="PVR Headings">
@@ -213,6 +215,7 @@
 	</variable>
 	<variable name="IconBanner">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value condition="!IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="IconPoster">

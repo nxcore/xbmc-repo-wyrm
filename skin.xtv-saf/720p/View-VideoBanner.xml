@@ -4,8 +4,8 @@
 		<control type="list" id="59">
 			<viewtype label="31946">Banner List</viewtype>
 			<visible>[Container.Content(tvshows) | Container.Content(seasons)]</visible>
-			<posx>662</posx>
-			<posy>110</posy>
+			<left>662</left>
+			<top>110</top>
 			<width>556</width>
 			<height>514</height>
 			<pagecontrol>29</pagecontrol>
@@ -14,32 +14,19 @@
 			<onleft>9000</onleft>
 			<onright>29</onright>
 			<itemlayout width="556" height="100">
-				<control type="group">
-					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-					<control type="image"><!-- Banner image -->
-						<posx>7</posx>
-						<posy>4</posy>
-						<width>542</width>
-						<height>100</height>
-						<texture background="true">$VAR[IconBanner]</texture>
-						<aspectratio>keep</aspectratio>
-						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<visible>!IsEmpty(ListItem.Art(banner))</visible>
-					</control>
-					<control type="image"><!-- Otherwise try TV logo if available -->
-						<posx>7</posx>
-						<posy>4</posy>
-						<width>542</width>
-						<height>100</height>
-						<texture fallback="DefaultTvshows.png">$INFO[ListItem.path]logo.png</texture>
-						<aspectratio>keep</aspectratio>
-						<colordiffuse>UnFocusedPosters</colordiffuse>
-						<visible>IsEmpty(ListItem.Art(banner))</visible>
-					</control>
+				<control type="image"><!-- Banner image -->
+					<left>7</left>
+					<top>4</top>
+					<width>542</width>
+					<height>100</height>
+					<texture background="true">$VAR[IconBanner]</texture>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
+					<visible>!IsEmpty(ListItem.Art(banner)) + !SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="image"><!-- Go Back image -->
-					<posx>7</posx>
-					<posy>4</posy>
+					<left>7</left>
+					<top>4</top>
 					<width>542</width>
 					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -49,42 +36,34 @@
 				</control>
 			</itemlayout>
 			<focusedlayout width="556" height="114">
-				<control type="image"><!-- Item hi-lite -->
-					<posx>0</posx>
-					<posy>0</posy>
+				<control type="group">
+					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<control type="image"><!-- Item hi-lite -->
+						<left>0</left>
+						<top>0</top>
+						<width>556</width>
+						<height>114</height>
+						<texture border="7" background="true">button-menu-background.png</texture>
+					</control>
+					<control type="image"><!-- Go Back image -->
+						<left>7</left>
+						<top>7</top>
+						<width>542</width>
+						<height>100</height>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="image"><!-- Banner image -->
+					<left>0</left>
+					<top>0</top>
 					<width>556</width>
 					<height>114</height>
-					<texture border="7" background="true">button-menu-background.png</texture>
-				</control>
-				<control type="group">
-					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-					<control type="image"><!-- Banner image -->
-						<posx>7</posx>
-						<posy>7</posy>
-						<width>542</width>
-						<height>100</height>
-						<texture background="true">$VAR[IconBanner]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!IsEmpty(ListItem.Art(banner))</visible>
-					</control>
-					<control type="image"><!-- Otherwise try TV Logo if available -->
-						<posx>7</posx>
-						<posy>7</posy>
-						<width>542</width>
-						<height>100</height>
-						<texture fallback="DefaultTvshows.png">$INFO[ListItem.path]logo.png</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>IsEmpty(ListItem.Art(banner))</visible>
-					</control>
-				</control>
-				<control type="image"><!-- Go Back image -->
-					<posx>7</posx>
-					<posy>7</posy>
-					<width>542</width>
-					<height>100</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
-					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<bordertexture border="7">button-menu-background.png</bordertexture>
+					<bordersize>7</bordersize>
+					<visible>!IsEmpty(ListItem.Art(banner)) + !SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</focusedlayout>
 		</control>
@@ -93,8 +72,8 @@
 			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			<visible>Window.IsActive(VideoLibrary) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			<control type="label"><!-- Go Back -->
-				<posx>30</posx>
-				<posy>312</posy>
+				<left>30</left>
+				<top>312</top>
 				<width>600</width>
 				<height>50</height>
 				<font>font28</font>
@@ -103,8 +82,8 @@
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 			</control>
 			<control type="image"><!-- Mini Fanart -->
-				<posx>130</posx>
-				<posy>114</posy>
+				<left>130</left>
+				<top>114</top>
 				<width>400</width>
 				<height>225</height>
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -113,15 +92,15 @@
 				<visible>!Container().Scrolling + !IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="grouplist">
-				<posx>30</posx>
-				<posy>355</posy>
+				<left>30</left>
+				<top>355</top>
 				<width>600</width>
 				<height>600</height>
 				<itemgap>2</itemgap>
 				<visible>!IsEmpty(ListItem.Icon)</visible>
 				<control type="label"><!-- Title -->
-					<posx>0</posx>
-					<posy>225</posy>
+					<left>0</left>
+					<top>225</top>
 					<width>600</width>
 					<height>37</height>
 					<font>font18</font>
@@ -130,16 +109,16 @@
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="label"><!-- First Aired -->
-					<posx>0</posx>
-					<posy>268</posy>
+					<left>0</left>
+					<top>268</top>
 					<width>600</width>
 					<height>25</height>
 					<label>[B]$LOCALIZE[20416]:[/B] $INFO[ListItem.Premiered]</label>
 					<visible>!IsEmpty(ListItem.Premiered)</visible>
 				</control>
 				<control type="label"><!-- Genre -->
-					<posx>0</posx>
-					<posy>300</posy>
+					<left>0</left>
+					<top>300</top>
 					<width>600</width>
 					<height>25</height>
 					<label>[B]$LOCALIZE[515]:[/B] $INFO[ListItem.Genre]</label>
@@ -147,32 +126,32 @@
 					<visible>!IsEmpty(ListItem.Genre)</visible>
 				</control>
 				<control type="label"><!-- Rating -->
-					<posx>0</posx>
-					<posy>331</posy>
+					<left>0</left>
+					<top>331</top>
 					<width>600</width>
 					<height>37</height>
 					<label>[B]$LOCALIZE[563]:[/B] $INFO[ListItem.Rating]</label>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>375</posy>
+					<left>0</left>
+					<top>375</top>
 					<width>600</width>
 					<height>37</height>
 					<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101] $LOCALIZE[20360]</label>
 					<visible>!IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>412</posy>
+					<left>0</left>
+					<top>412</top>
 					<width>600</width>
 					<height>2</height>
 					<texture>separator.png</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="textbox"><!-- Plot Outline -->
-					<posx>8</posx>
-					<posy>431</posy>
+					<left>8</left>
+					<top>431</top>
 					<width>600</width>
 					<height>150</height>
 					<label fallback="161">$INFO[ListItem.PlotOutline]</label>
@@ -181,8 +160,8 @@
 					<autoscroll time="4000" delay="6000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 				</control>
 				<control type="textbox"><!-- Plot (Show if no outline available)-->
-					<posx>8</posx>
-					<posy>431</posy>
+					<left>8</left>
+					<top>431</top>
 					<width>600</width>
 					<height>150</height>
 					<label fallback="161">$INFO[ListItem.Plot]</label>
@@ -194,8 +173,8 @@
 			<control type="group">
 				<include>SortLetterNotification</include>
 				<control type="scrollbar" id="29"><!-- Scroll Bar -->
-					<posx>1244</posx>
-					<posy>105</posy>
+					<left>1244</left>
+					<top>105</top>
 					<width>18</width>
 					<height>524</height>
 					<onleft>59</onleft>

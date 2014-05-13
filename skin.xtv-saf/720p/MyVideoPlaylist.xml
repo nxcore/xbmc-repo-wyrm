@@ -4,12 +4,6 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>backgroundvideo</include>
-		<include>#files</include>
-		<control type="image">
-			<description>Videos Logo</description>
-			<include>icon-header-commons</include>
-			<texture>icon-video-sml.png</texture>
-		</control>
 		<control type="label">
 			<description>Video Label</description>
 			<posx>946</posx>

@@ -96,11 +96,6 @@
 			</control>
 		</control>
 
-		<control type="image"><!-- Weather heading logo -->
-			<include>icon-header-commons</include>
-			<texture>icon-weather.png</texture>
-			<visible>Skin.HasSetting(home-weather)</visible>
-		</control>
 		<control type="label"><!-- Weather heading label -->
 			<posx>946</posx>
 			<posy>50</posy>

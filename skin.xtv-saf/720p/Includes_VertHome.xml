@@ -2,12 +2,11 @@
 <includes>
 	<include name="VertHomeMenu">
 		<include>background</include>
-		<include>screen-fade</include>
 
 		<control type="button" id="421"><!-- Bring up Player controls if go left -->
 			<description>trigger player controls if selected</description>
-			<posx>-24</posx>
-			<posy>-24</posy>
+			<left>-24</left>
+			<top>-24</top>
 			<width>1</width>
 			<height>1</height>
 			<onfocus>ActivateWindow(PlayerControls)</onfocus>
@@ -17,16 +16,16 @@
 		<control type="group"><!-- Show time on home screen -->
 			<visible>!Skin.HasSetting(home-time)</visible>
 			<control type="label"><!-- Date -->
-				<posx>354</posx>
-				<posy>18</posy>
+				<left>354</left>
+				<top>18</top>
 				<width>566</width>
 				<height>25</height>
 				<label>$INFO[System.Date]</label>
 				<align>center</align>
 			</control>
 			<control type="label"><!-- Time -->
-				<posx>354</posx>
-				<posy>56</posy>
+				<left>354</left>
+				<top>56</top>
 				<width>566</width>
 				<height>37</height>
 				<label>$INFO[System.Time(hh:mm xx)]</label>
@@ -38,8 +37,8 @@
 		<control type="group"><!-- Weather Condition -->
 			<visible>Skin.HasSetting(home-currentweather) + !IsEmpty(Weather.plugin)</visible>
 			<control type="label"><!-- Can't get current weather conditions -->
-				<posx>1185</posx>
-				<posy>31</posy>
+				<left>1185</left>
+				<top>31</top>
 				<width>212</width>
 				<height>50</height>
 				<wrapmultiline>true</wrapmultiline>
@@ -50,8 +49,8 @@
 			<control type="group">
 				<visible>!IsEmpty(Weather.Conditions)</visible>
 				<control type="label"><!-- Current conditions -->
-					<posx>1132</posx>
-					<posy>6</posy>
+					<left>1132</left>
+					<top>6</top>
 					<width>212</width>
 					<height>50</height>
 					<wrapmultiline>true</wrapmultiline>
@@ -59,8 +58,8 @@
 					<align>right</align>
 				</control>
 				<control type="label"><!-- Current temperature -->
-					<posx>1132</posx>
-					<posy>56</posy>
+					<left>1132</left>
+					<top>56</top>
 					<width>132</width>
 					<height>37</height>
 					<font>font22</font>
@@ -69,8 +68,8 @@
 					<label>$INFO[Weather.Temperature]</label>
 				</control>
 				<control type="image"><!-- Current weather condition icon -->
-					<posx>1141</posx>
-					<posy>18</posy>
+					<left>1141</left>
+					<top>18</top>
 					<height>87</height>
 					<width>123</width>
 					<texture>$INFO[Weather.Conditions]</texture>
@@ -78,8 +77,8 @@
 					<visible>!Skin.HasSetting(weather-animateicon)</visible>
 				</control>
 				<control type="multiimage"><!-- Current weather condition animated icon -->
-					<posx>1141</posx>
-					<posy>18</posy>
+					<left>1141</left>
+					<top>18</top>
 					<width>123</width>
 					<height>87</height>
 					<imagepath>special://skin/extras/images/weather/$INFO[Weather.FanartCode]</imagepath>
@@ -95,16 +94,16 @@
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include><!-- Low memory warning -->
 
 		<control type="image"><!-- Markers for excess menu items -->
-			<posx>956</posx>
-			<posy>92</posy>
+			<left>956</left>
+			<top>92</top>
 			<height>32</height>
 			<width>32</width>
 			<texture>scroll-up.png</texture>
 			<visible>Container(9000).HasPrevious</visible>
 		</control>
 		<control type="image">
-			<posx>956</posx>
-			<posy>616</posy>
+			<left>956</left>
+			<top>616</top>
 			<height>32</height>
 			<width>32</width>
 			<texture>scroll-down.png</texture>
@@ -112,8 +111,8 @@
 		</control>
 
 		<control type="list" id="9000"><!-- Home menu list -->
-			<posx>716</posx>
-			<posy>118</posy>
+			<left>716</left>
+			<top>118</top>
 			<height>504</height>
 			<width>514</width>
 			<focusposition>3</focusposition>
@@ -127,15 +126,15 @@
 			<pagecontrol>23</pagecontrol>
 			<itemlayout width="560" height="56">
 				<control type="label">
-					<posx>26</posx>
-					<posy>16</posy>
+					<left>26</left>
+					<top>16</top>
 					<width>430</width>
 					<height>24</height>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>460</posx>
-					<posy>12</posy>
+					<left>460</left>
+					<top>12</top>
 					<width>32</width>
 					<height>32</height>
 					<texture>scroll-right.png</texture>
@@ -144,22 +143,22 @@
 			</itemlayout>
 			<focusedlayout width="560" height="56">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>514</width>
 					<height>56</height>
 					<texture border="8">default-button.png</texture>
 				</control>
 				<control type="label">
-					<posx>26</posx>
-					<posy>16</posy>
+					<left>26</left>
+					<top>16</top>
 					<width>430</width>
 					<height>24</height>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="image">
-					<posx>460</posx>
-					<posy>12</posy>
+					<left>460</left>
+					<top>12</top>
 					<width>32</width>
 					<height>32</height>
 					<texture>scroll-right-focus.png</texture>
@@ -382,15 +381,15 @@
 			<visible>Container(9000).OnPrevious</visible>
 			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
 			<control type="group">
-				<posx>53</posx>
-				<posy>187</posy>
+				<left>53</left>
+				<top>187</top>
 				<width>88</width>
 				<height>125</height>
 				<visible>Container(9000).OnPrevious</visible>
 				<animation effect="slide" end="-100,0" time="200" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(3).thumb]</texture>
@@ -398,8 +397,8 @@
 					<colordiffuse>LongDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
+					<left>0</left>
+					<top>62</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(3).thumb]</texture>
@@ -408,15 +407,15 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>168</posx>
-				<posy>200</posy>
+				<left>168</left>
+				<top>200</top>
 				<width>115</width>
 				<height>162</height>
 				<visible>Container(9000).OnPrevious</visible>
 				<animation effect="zoom" start="95,160,65,130" end="30,150,50,100" time="200" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>115</width>
 					<height>81</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
@@ -424,8 +423,8 @@
 					<colordiffuse>LongDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>81</posy>
+					<left>0</left>
+					<top>81</top>
 					<width>115</width>
 					<height>81</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
@@ -434,15 +433,15 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>247</posx>
-				<posy>181</posy>
+				<left>247</left>
+				<top>181</top>
 				<width>407</width>
 				<height>575</height>
 				<visible>Container(9000).OnPrevious</visible>
 				<animation effect="zoom" start="140,145,230,460" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
@@ -450,8 +449,8 @@
 					<colordiffuse>MiddleDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>287</posy>
+					<left>0</left>
+					<top>287</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
@@ -460,23 +459,23 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>-601</posx>
-				<posy>281</posy>
+				<left>-601</left>
+				<top>281</top>
 				<width>407</width>
 				<height>575</height>
 				<visible>Container(9000).OnPrevious</visible>
 				<animation effect="slide" start="0,0" end="400,-80" delay="50" time="150" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>287</posy>
+					<left>0</left>
+					<top>287</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
@@ -488,15 +487,15 @@
 			<visible>Container(9000).OnNext</visible>
 			<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
 			<control type="group">
-				<posx>-123</posx>
-				<posy>187</posy>
+				<left>-123</left>
+				<top>187</top>
 				<width>88</width>
 				<height>125</height>
 				<visible>Container(9000).OnNext</visible>
 				<animation effect="slide" end="100,0" time="200" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
@@ -504,8 +503,8 @@
 					<colordiffuse>LongDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
+					<left>0</left>
+					<top>62</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
@@ -514,15 +513,15 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>53</posx>
-				<posy>187</posy>
+				<left>53</left>
+				<top>187</top>
 				<width>88</width>
 				<height>125</height>
 				<visible>Container(9000).OnNext</visible>
 				<animation effect="zoom" start="30,150,50,100" end="95,160,65,130" time="200" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
@@ -530,8 +529,8 @@
 					<colordiffuse>LongDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
+					<left>0</left>
+					<top>62</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
@@ -540,15 +539,15 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>168</posx>
-				<posy>200</posy>
+				<left>168</left>
+				<top>200</top>
 				<width>115</width>
 				<height>162</height>
 				<visible>Container(9000).OnNext</visible>
 				<animation effect="zoom" start="95,160,65,130" end="140,145,230,460" time="200" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>115</width>
 					<height>81</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
@@ -556,8 +555,8 @@
 					<colordiffuse>MiddleDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>81</posy>
+					<left>0</left>
+					<top>81</top>
 					<width>115</width>
 					<height>81</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
@@ -566,23 +565,23 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>247</posx>
-				<posy>181</posy>
+				<left>247</left>
+				<top>181</top>
 				<width>407</width>
 				<height>575</height>
 				<visible>Container(9000).OnNext</visible>
 				<animation effect="slide" start="0,0" end="-400,80" time="150" reversible="false">Hidden</animation>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(-1).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>287</posy>
+					<left>0</left>
+					<top>287</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(-1).thumb]</texture>
@@ -593,13 +592,13 @@
 		<control type="group">
 			<visible>!Control.IsVisible(3001) + !Control.IsVisible(3002)</visible>
 			<control type="group">
-				<posx>53</posx>
-				<posy>187</posy>
+				<left>53</left>
+				<top>187</top>
 				<width>88</width>
 				<height>125</height>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
@@ -607,8 +606,8 @@
 					<colordiffuse>LongDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>62</posy>
+					<left>0</left>
+					<top>62</top>
 					<width>88</width>
 					<height>62</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(2).thumb]</texture>
@@ -617,13 +616,13 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>168</posx>
-				<posy>200</posy>
+				<left>168</left>
+				<top>200</top>
 				<width>115</width>
 				<height>162</height>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>115</width>
 					<height>81</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
@@ -631,8 +630,8 @@
 					<colordiffuse>MiddleDistance</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>81</posy>
+					<left>0</left>
+					<top>81</top>
 					<width>115</width>
 					<height>81</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(1).thumb]</texture>
@@ -641,21 +640,21 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>247</posx>
-				<posy>181</posy>
+				<left>247</left>
+				<top>181</top>
 				<width>407</width>
 				<height>575</height>
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" diffuse="mask-squ.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>287</posy>
+					<left>0</left>
+					<top>287</top>
 					<width>407</width>
 					<height>287</height>
 					<texture background="true" flipy="true" diffuse="mask-fade.png">$INFO[Container(9000).Listitem(0).thumb]</texture>
@@ -665,8 +664,8 @@
 		</control>
 
 		<control type="scrollbar" id="23"><!-- Scroll Bar -->
-			<posx>1244</posx>
-			<posy>142</posy>
+			<left>1244</left>
+			<top>142</top>
 			<width>18</width>
 			<height>512</height>
 			<onleft>9000</onleft>
@@ -676,8 +675,8 @@
 		</control>
 
 		<control type="image"><!-- Home menu watermark -->
-			<posx>1100</posx>
-			<posy>592</posy>
+			<left>1100</left>
+			<top>592</top>
 			<width>128</width>
 			<height>128</height>
 			<aspectratio aligny="top">keep</aspectratio>
@@ -694,8 +693,8 @@
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
 					<description>cover image</description>
-					<posx>20</posx>
-					<posy>536</posy>
+					<left>20</left>
+					<top>536</top>
 					<width>130</width>
 					<height>130</height>
 					<texture>$INFO[MusicPlayer.Cover]</texture>
@@ -703,8 +702,8 @@
 				</control>
 				<control type="label">
 					<description>Artist label</description>
-					<posx>170</posx>
-					<posy>537</posy>
+					<left>170</left>
+					<top>537</top>
 					<width>520</width>
 					<height>31</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
@@ -713,8 +712,8 @@
 				</control>
 				<control type="label">
 					<description>Album label</description>
-					<posx>170</posx>
-					<posy>568</posy>
+					<left>170</left>
+					<top>568</top>
 					<width>520</width>
 					<height>31</height>
 					<label>$INFO[MusicPlayer.Album]</label>
@@ -723,8 +722,8 @@
 				</control>
 				<control type="label">
 					<description>Title label</description>
-					<posx>170</posx>
-					<posy>600</posy>
+					<left>170</left>
+					<top>600</top>
 					<width>520</width>
 					<height>31</height>
 					<label>$INFO[MusicPlayer.Title]</label>
@@ -733,8 +732,8 @@
 				</control>
 				<control type="label">
 					<description>Time label</description>
-					<posx>170</posx>
-					<posy>631</posy>
+					<left>170</left>
+					<top>631</top>
 					<width>520</width>
 					<height>31</height>
 					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
@@ -746,15 +745,15 @@
 				<visible>Player.HasVideo</visible>
 				<control type="videowindow">
 					<description>video preview window</description>
-					<posx>44</posx>
-					<posy>520</posy>
+					<left>44</left>
+					<top>520</top>
 					<width>205</width>
 					<height>123</height>
 				</control>
 				<control type="label">
 					<description>Now playing</description>
-					<posx>265</posx>
-					<posy>537</posy>
+					<left>265</left>
+					<top>537</top>
 					<width>398</width>
 					<height>31</height>
 					<label>$LOCALIZE[13350]</label>
@@ -763,8 +762,8 @@
 				</control>
 				<control type="label">
 					<description>Video Title label</description>
-					<posx>265</posx>
-					<posy>568</posy>
+					<left>265</left>
+					<top>568</top>
 					<width>398</width>
 					<height>31</height>
 					<label>$INFO[VideoPlayer.Title]</label>
@@ -773,8 +772,8 @@
 				</control>
 				<control type="label">
 					<description>Time label</description>
-					<posx>265</posx>
-					<posy>600</posy>
+					<left>265</left>
+					<top>600</top>
 					<width>398</width>
 					<height>31</height>
 					<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>

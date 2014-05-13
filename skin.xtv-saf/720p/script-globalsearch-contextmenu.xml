@@ -9,7 +9,6 @@
 	</coordinates>
 	<controls>
 		<control type="image" id="999"><!-- Dialog background image -->
-			<description>background mid image</description>
 			<posx>8</posx>
 			<posy>-16</posy>
 			<width>360</width>

@@ -38,9 +38,22 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<colordiffuse>fanart-background</colordiffuse>
+				<colordiffuse>solid-background</colordiffuse>
 				<aspectratio>scale</aspectratio>
 				<texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
+				<visible>Skin.HasSetting(background-fanart)</visible>
+			</control>
+			<control type="image"><!-- Mask to fade backgrounds -->
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>mask-background</colordiffuse>
+				<texture>colours/black.png</texture>
+				<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
+				<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+				<aspectratio>stretch</aspectratio>
+				<visible>Skin.HasSetting(background-fanart)</visible>
 			</control>
 			<control type="grouplist"><!-- Media flags -->
 				<visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>

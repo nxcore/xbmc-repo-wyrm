@@ -5,11 +5,6 @@
 	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>backgroundvideo</include>
-		<control type="image">
-			<description>TV Logo</description>
-			<include>icon-header-commons</include>
-			<texture>icon-tv.png</texture>
-		</control>
 		<control type="label">
 			<description>header label</description>
 			<posx>946</posx>
