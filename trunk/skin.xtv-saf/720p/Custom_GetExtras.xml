@@ -7,7 +7,6 @@
 	</coordinates>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<include>shutdown-ani</include>
 		<include>fadebackground</include>
 			<control type="group">
 				<posx>337</posx>
@@ -94,18 +93,12 @@
 							<visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)] + system.hasaddon(script.artwork.downloader)</visible>
 						</item>
 						<item id="4">
-							<label>$ADDON[script.videoextras 32001]</label>
-							<onclick>Dialog.Close(1154)</onclick>
-							<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-							<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
-						</item>
-						<item id="5">
 							<label>$LOCALIZE[31682]</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[Window(Home).Property(TVShowPath)]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 							<visible>System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies)]</visible>
 						</item>
-						<item id="6">
+						<item id="5">
 							<label>$LOCALIZE[31689]</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
