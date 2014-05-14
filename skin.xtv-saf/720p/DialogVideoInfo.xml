@@ -516,6 +516,7 @@
 				<label>$LOCALIZE[208]</label>
 				<altlabel>$LOCALIZE[1024]</altlabel>
 				<usealttexture>Container.Content(tvshows)</usealttexture>
+				<visible>[!System.HasAddon(script.cinema.experience) + Container.Content(movies)] | [Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
 			</control>
 			<control type="button" id="18"><!-- Home cinema button -->
 				<height>56</height>
@@ -536,6 +537,15 @@
 				<align>center</align>
 				<enable>!IsEmpty(ListItem.Trailer)</enable>
 				<visible>Container.Content(movies)</visible>
+			</control>
+			<control type="button" id="100"><!-- Video Extras -->
+				<height>56</height>
+				<width>208</width>
+				<font>font11</font>
+				<label>$ADDON[script.videoextras 32001]</label>
+				<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+				<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
+				<align>center</align>
 			</control>
 			<control type="button" id="5"><!-- Cast/Plot button -->
 				<height>56</height>
