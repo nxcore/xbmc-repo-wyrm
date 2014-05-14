@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol>999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
 	<onload condition="Skin.HasSetting(tv_theme)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<include>screen-fade</include>
 	<controls>
