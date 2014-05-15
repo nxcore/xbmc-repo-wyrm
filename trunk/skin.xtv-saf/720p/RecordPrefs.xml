@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window><!-- Record Prefs dialog for WMC PVR addon -->
 	<defaultcontrol always="true">10</defaultcontrol>
-	<include>shutdown-ani</include>
 	<controls>
+		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background image -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<posx>295</posx>
+			<posy>174</posy>
 			<width>690</width>
 			<height>372</height>
 			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label"><!-- Heading -->
-			<posx>20</posx>
-			<posy>12</posy>
+			<posx>315</posx>
+			<posy>186</posy>
 			<width>650</width>
 			<height>37</height>
 			<label>$ADDON[pvr.wmc 30100]</label>
 		</control>
 		<control type="label" id="20"><!-- Program title -->
-			<posx>20</posx>
-			<posy>50</posy>
+			<posx>315</posx>
+			<posy>224</posy>
 			<width>650</width>
 			<height>37</height>
 			<align>center</align>
 			<font>font12</font>
 		</control>
 		<control type="image">
-			<posx>20</posx>
-			<posy>90</posy>
+			<posx>315</posx>
+			<posy>264</posy>
 			<width>650</width>
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="group" id="9001">
 			<control type="radiobutton" id="10"><!-- Episode rec -->
-				<posx>20</posx>
-				<posy>100</posy>
+				<posx>315</posx>
+				<posy>274</posy>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -47,8 +47,8 @@
 				<radioposx>618</radioposx>
 			</control>
 			<control type="radiobutton" id="11"><!-- Series rec -->
-				<posx>20</posx>
-				<posy>138</posy>
+				<posx>315</posx>
+				<posy>312</posy>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -59,8 +59,8 @@
 				<radioposx>618</radioposx>
 			</control>
 			<control type="spincontrolex" id="12"><!-- Series runtype -->
-				<posx>20</posx>
-				<posy>176</posy>
+				<posx>315</posx>
+				<posy>350</posy>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -70,8 +70,8 @@
 				<label>$ADDON[pvr.wmc 30103]</label>
 			</control>
 			<control type="spincontrolex" id="13"><!-- Channel series choice -->
-				<posx>20</posx>
-				<posy>214</posy>
+				<posx>315</posx>
+				<posy>388</posy>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -81,8 +81,8 @@
 				<label>$ADDON[pvr.wmc 30107]</label>
 			</control>
 			<control type="spincontrolex" id="14"><!-- Airtime series choice -->
-				<posx>20</posx>
-				<posy>252</posy>
+				<posx>315</posx>
+				<posy>426</posy>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -94,26 +94,28 @@
 		</control>
 		<control type="group" id="9000">
 			<control type="button" id="1"><!-- OK button -->
-				<posx>48</posx>
-				<posy>310</posy>
+				<posx>343</posx>
+				<posy>484</posy>
 				<width>230</width>
 				<height>50</height>
 				<font>font12</font>
 				<label>$LOCALIZE[186]</label>
-				<onup>2</onup>
-				<onleft>10</onleft>
-				<ondown>2</ondown>
+				<onup>10</onup>
+				<onleft>noop</onleft>
+				<onright>2</onright>
+				<ondown>noop</ondown>
 			</control>
 			<control type="button" id="2"><!-- Cancel button -->
-				<posx>362</posx>
-				<posy>310</posy>
+				<posx>657</posx>
+				<posy>484</posy>
 				<width>230</width>
 				<height>50</height>
 				<font>font12</font>
 				<label>$LOCALIZE[222]</label>
-				<onup>1</onup>
-				<onleft>10</onleft>
-				<ondown>1</ondown>
+				<onup>10</onup>
+				<onleft>1</onleft>
+				<onright>noop</onright>
+				<ondown>noop</ondown>
 			</control>
 		</control>
 	</controls>
