@@ -1,5 +1,6 @@
 [B]1.4.6[/B]
 - Cleaned up layout of Filemanager, MusicPlaylist Editor and Video Info screens.
+- Add hook to Video Extras script to Video info screens "More options..." dialog.
 - Remove a number of redundant skin graphics.
 - A number of minor bug fixes and performance tweaks.
 
