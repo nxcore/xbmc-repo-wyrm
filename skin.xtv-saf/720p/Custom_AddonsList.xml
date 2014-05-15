@@ -87,10 +87,6 @@
 			</content>
 		</control>
 		<control type="group">
-			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-				<effect type="rotatey" start="-20" end="-20" time="0"/>
-				<effect type="slide" end="10,0" time="0"/>
-			</animation>
 			<control type="group">
 				<control type="image"><!-- list item icon -->
 					<left>122</left>

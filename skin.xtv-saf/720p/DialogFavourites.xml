@@ -72,10 +72,6 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<animation type="TYPE" condition="Skin.HasSetting(tilted-icons)" reversible="false">
-				<effect type="rotatey" start="-20" end="-20" time="0"/>
-				<effect type="slide" end="10,0" time="0"/>
-			</animation>
 			<control type="image"><!-- List item icon -->
 				<left>35</left>
 				<top>156</top>
