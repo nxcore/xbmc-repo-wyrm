@@ -3,12 +3,14 @@
 	<defaultcontrol always="true">65</defaultcontrol>
 	<coordinates>
 		<posx>0</posx>
-		<posy>280</posy>
+		<posy>0</posy>
 	</coordinates>
+	<include>screen-fade</include>
 	<controls>
+		<include>fadebackground</include>
 		<control type="group">
-			<animation effect="fade" delay="400" start="0" end="100" time="200">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<posx>0</posx>
+			<posy>280</posy>
 			<visible>!Window.IsVisible(NumericInput)</visible>
 			<control type="image"><!-- Keyboard background -->
 				<posx>0</posx>

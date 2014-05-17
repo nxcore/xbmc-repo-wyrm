@@ -2,7 +2,9 @@
 <window type="dialog" id="1156">
 	<defaultcontrol always="true">999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
+		<include>fadebackground</include>
 		<control type="button" id="999"><!-- Dummy button to shift focus -->
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -12,15 +14,6 @@
 			<onfocus condition="Skin.HasSetting(selectmovieentry)">SetFocus(560)</onfocus>
 			<onfocus condition="Skin.HasSetting(selecttventry)">SetFocus(570)</onfocus>
 			<onfocus condition="Skin.HasSetting(selectmusicvidentry)">SetFocus(580)</onfocus>
-		</control>
-
-		<control type="image"><!-- Background shadow -->
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>colours/black.png</texture>
-			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="group">
 			<control type="group" id="540">

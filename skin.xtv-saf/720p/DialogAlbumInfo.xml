@@ -31,6 +31,7 @@
 				<posx>172</posx>
 				<posy>387</posy>
 				<width>320</width>
+				<height>25</height>
 				<align>center</align>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<label fallback="416">$INFO[ListItem.Artist]</label>
@@ -39,6 +40,7 @@
 				<posx>220</posx>
 				<posy>437</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[562]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -47,6 +49,7 @@
 				<posx>220</posx>
 				<posy>462</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[563]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -55,6 +58,7 @@
 				<posx>220</posx>
 				<posy>487</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[515]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -63,6 +67,7 @@
 				<posx>220</posx>
 				<posy>512</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[175]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -71,6 +76,7 @@
 				<posx>220</posx>
 				<posy>537</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[176]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -79,6 +85,7 @@
 				<posx>220</posx>
 				<posy>562</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21895]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -87,6 +94,7 @@
 				<posx>220</posx>
 				<posy>587</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21899]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -95,6 +103,7 @@
 				<posx>220</posx>
 				<posy>612</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[467]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -191,6 +200,7 @@
 				<posx>172</posx>
 				<posy>387</posy>
 				<width>320</width>
+				<height>25</height>
 				<align>center</align>
 				<label fallback="416">$INFO[ListItem.Artist]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -199,6 +209,7 @@
 				<posx>220</posx>
 				<posy>437</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21893]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -208,6 +219,7 @@
 				<posx>220</posx>
 				<posy>437</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21894]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -217,6 +229,7 @@
 				<posx>220</posx>
 				<posy>437</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21900]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -226,6 +239,7 @@
 				<posx>220</posx>
 				<posy>462</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[515]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -234,6 +248,7 @@
 				<posx>220</posx>
 				<posy>487</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[176]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -242,6 +257,7 @@
 				<posx>220</posx>
 				<posy>512</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[175]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -250,6 +266,7 @@
 				<posx>220</posx>
 				<posy>537</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21892]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -258,6 +275,7 @@
 				<posx>220</posx>
 				<posy>562</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21897]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -266,6 +284,7 @@
 				<posx>220</posx>
 				<posy>587</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21896]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -274,6 +293,7 @@
 				<posx>220</posx>
 				<posy>612</posy>
 				<width>210</width>
+				<height>25</height>
 				<label>$LOCALIZE[21898]:</label>
 				<font>font11</font>
 				<align>right</align>
@@ -430,10 +450,10 @@
 			</itemlayout>
 			<focusedlayout width="582" height="72">
 				<control type="image">
-					<width>582</width>
-					<height>72</height>
 					<posx>0</posx>
 					<posy>0</posy>
+					<width>582</width>
+					<height>72</height>
 					<visible>Control.HasFocus(50)</visible>
 					<texture border="8">default-button.png</texture>
 				</control>

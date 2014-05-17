@@ -5,6 +5,7 @@
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
+	<include>screen-fade</include>
 	<controls>
 		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background image -->

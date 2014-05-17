@@ -2,14 +2,14 @@
 <window type="dialog" id="1151">
 	<defaultcontrol>499</defaultcontrol>
 	<visible>VideoPlayer.IsStereoscopic</visible>
-	<animation effect="fade" time="400">WindowOpen</animation>
-	<animation effect="fade" time="400">WindowClose</animation>
+	<include>screen-fade</include>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background -->
 			<posx>720</posx>
 			<posy>100</posy>

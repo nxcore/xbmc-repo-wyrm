@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>10</defaultcontrol>
-	<animation effect="fade" time="400">WindowOpen</animation>
-	<animation effect="fade" time="400">WindowClose</animation>
 	<coordinates>
-		<posx>274</posx>
-		<posy>187</posy>
+		<posx>0</posx>
+		<posy>0</posy>
 	</coordinates>
+	<include>screen-fade</include>
 	<controls>
+		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background -->
-			<posx>-26</posx>
-			<posy>-18</posy>
+			<posx>248</posx>
+			<posy>169</posy>
 			<width>778</width>
 			<height>425</height>
 			<texture border="8">button-menu-background.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label"><!-- Dialog heading -->
-			<posx>17</posx>
-			<posy>-2</posy>
+			<posx>291</posx>
+			<posy>185</posy>
 			<width>743</width>
+			<height>25</height>
 			<label>$LOCALIZE[1007]</label>
 			<font>font12</font>
 		</control>
 		<control type="spincontrolex" id="10"><!-- Protocol -->
-			<posx>17</posx>
-			<posy>43</posy>
+			<posx>291</posx>
+			<posy>230</posy>
 			<height>40</height>
 			<width>708</width>
 			<font>font12</font>
@@ -38,8 +39,8 @@
 			<onright>10</onright>
 		</control>
 		<control type="button" id="11"><!-- Server address -->
-			<posx>17</posx>
-			<posy>87</posy>
+			<posx>291</posx>
+			<posy>274</posy>
 			<width>566</width>
 			<height>40</height>
 			<font>font12</font>
@@ -51,8 +52,8 @@
 			<ondown>16</ondown>
 		</control>
 		<control type="button" id="12"><!-- Server browse -->
-			<posx>589</posx>
-			<posy>87</posy>
+			<posx>863</posx>
+			<posy>274</posy>
 			<width>136</width>
 			<height>40</height>
 			<font>font12</font>
@@ -65,8 +66,8 @@
 			<ondown>16</ondown>
 		</control>
 		<control type="button" id="16"><!-- Remote path -->
-			<posx>17</posx>
-			<posy>131</posy>
+			<posx>291</posx>
+			<posy>318</posy>
 			<width>708</width>
 			<height>40</height>
 			<font>font12</font>
@@ -78,8 +79,8 @@
 			<ondown>13</ondown>
 		</control>
 		<control type="button" id="13"><!-- Port -->
-			<posx>17</posx>
-			<posy>175</posy>
+			<posx>291</posx>
+			<posy>362</posy>
 			<width>708</width>
 			<height>40</height>
 			<font>font12</font>
@@ -91,8 +92,8 @@
 			<ondown>14</ondown>
 		</control>
 		<control type="button" id="14"><!-- Username -->
-			<posx>17</posx>
-			<posy>218</posy>
+			<posx>291</posx>
+			<posy>405</posy>
 			<width>708</width>
 			<height>40</height>
 			<font>font12</font>
@@ -104,8 +105,8 @@
 			<ondown>15</ondown>
 		</control>
 		<control type="button" id="15"><!-- Password -->
-			<posx>17</posx>
-			<posy>262</posy>
+			<posx>291</posx>
+			<posy>449</posy>
 			<width>708</width>
 			<height>40</height>
 			<font>font12</font>
@@ -117,8 +118,8 @@
 			<ondown>18</ondown>
 		</control>
 		<control type="button" id="18"><!-- OK -->
-			<posx>447</posx>
-			<posy>318</posy>
+			<posx>721</posx>
+			<posy>505</posy>
 			<width>136</width>
 			<height>40</height>
 			<font>font12</font>
@@ -131,8 +132,8 @@
 			<ondown>10</ondown>
 		</control>
 		<control type="button" id="19"><!-- Cancel -->
-			<posx>589</posx>
-			<posy>318</posy>
+			<posx>863</posx>
+			<posy>505</posy>
 			<width>136</width>
 			<height>40</height>
 			<font>font12</font>

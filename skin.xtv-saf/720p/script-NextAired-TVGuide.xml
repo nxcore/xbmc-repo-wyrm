@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<include>screen-fade</include>
 	<controls>
 		<include>Fake-Overlay</include>
 		<control type="image">
@@ -1473,8 +1474,6 @@
 			</control>
 		</control>
 		<control type="group"><!-- Next Aired Episode description -->
-			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<posx>850</posx>
 			<posy>115</posy>
 			<control type="image">

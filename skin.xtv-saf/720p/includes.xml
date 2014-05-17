@@ -34,7 +34,7 @@
 	<include file="View-VideoWall.xml" />
 	<include file="View-VideoWrap.xml" />
 
-	<include name="fadebackground">
+	<include name="fadebackground"><!-- Background shadow -->
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
