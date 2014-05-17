@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<animation effect="slide" start="0,-400" time="300">WindowOpen</animation>
-	<animation effect="slide" end="0,-400" time="300">WindowClose</animation>
+	<include>screen-fade</include>
 	<coordinates>
 		<system>1</system>
 		<posx>88</posx>
@@ -10,7 +9,6 @@
 	<controls>
 		<control type="group">
 			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | Window.IsVisible(Seekbar) | Window.IsVisible(FullscreenVideo) | Window.IsVisible(selectdialog)]</visible>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
 			<control type="image"><!-- Dialog background image -->
 				<posx>0</posx>
 				<posy>0</posy>

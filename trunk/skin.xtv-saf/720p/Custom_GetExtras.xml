@@ -6,6 +6,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<allowoverlay>no</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
 		<include>fadebackground</include>
 			<control type="group">

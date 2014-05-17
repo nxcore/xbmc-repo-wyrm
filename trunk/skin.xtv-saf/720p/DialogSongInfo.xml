@@ -36,6 +36,7 @@
 			<posx>210</posx>
 			<posy>418</posy>
 			<width>150</width>
+			<height>25</height>
 			<label>$LOCALIZE[558]:</label>
 			<font>font12</font>
 			<align>right</align>
@@ -44,6 +45,7 @@
 			<posx>240</posx>
 			<posy>418</posy>
 			<width>380</width>
+			<height>25</height>
 			<label>$INFO[ListItem.Album]</label>
 			<font>font12</font>
 		</control>
@@ -51,6 +53,7 @@
 			<posx>210</posx>
 			<posy>450</posy>
 			<width>150</width>
+			<height>25</height>
 			<label>$LOCALIZE[557]:</label>
 			<font>font12</font>
 			<align>right</align>
@@ -59,6 +62,7 @@
 			<posx>240</posx>
 			<posy>450</posy>
 			<width>380</width>
+			<height>25</height>
 			<label>$INFO[ListItem.Artist]</label>
 			<font>font12</font>
 		</control>
@@ -66,6 +70,7 @@
 			<posx>210</posx>
 			<posy>482</posy>
 			<width>150</width>
+			<height>25</height>
 			<label>$LOCALIZE[515]:</label>
 			<font>font12</font>
 			<align>right</align>
@@ -74,6 +79,7 @@
 			<posx>240</posx>
 			<posy>482</posy>
 			<width>380</width>
+			<height>25</height>
 			<label>$INFO[ListItem.Genre]</label>
 			<font>font12</font>
 		</control>
@@ -81,6 +87,7 @@
 			<posx>210</posx>
 			<posy>512</posy>
 			<width>150</width>
+			<height>25</height>
 			<label>$LOCALIZE[562]:</label>
 			<font>font12</font>
 			<align>right</align>
@@ -89,6 +96,7 @@
 			<posx>240</posx>
 			<posy>512</posy>
 			<width>380</width>
+			<height>25</height>
 			<label>$INFO[ListItem.Year]</label>
 			<font>font12</font>
 		</control>
@@ -96,6 +104,7 @@
 			<posx>210</posx>
 			<posy>544</posy>
 			<width>150</width>
+			<height>25</height>
 			<label>$LOCALIZE[554]:</label>
 			<font>font12</font>
 			<align>right</align>
@@ -104,6 +113,7 @@
 			<posx>240</posx>
 			<posy>544</posy>
 			<width>50</width>
+			<height>25</height>
 			<label>$INFO[ListItem.TrackNumber]</label>
 			<font>font12</font>
 			<visible>!StringCompare(ListItem.TrackNumber,0)</visible>
@@ -112,6 +122,7 @@
 			<posx>210</posx>
 			<posy>574</posy>
 			<width>150</width>
+			<height>25</height>
 			<label>$LOCALIZE[563]:</label>
 			<font>font12</font>
 			<align>right</align>

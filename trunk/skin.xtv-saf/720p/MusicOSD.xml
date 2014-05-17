@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>214</defaultcontrol>
-	<animation effect="fade" start="0" time="100">WindowOpen</animation>
-	<animation effect="fade" end="0" time="200">WindowClose</animation>
+	<include>screen-fade</include>
 	<animation effect="fade" end="0" time="200" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>	
 	<controls>
 		<control type="image">

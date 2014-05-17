@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
+	<include>screen-fade</include>
 	<controls>
-		<include>fadebackground</include>
 		<include>background</include>
 		<include>Fake-Overlay</include>
 

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<animation effect="slide" time="400" start="0,-200">WindowOpen</animation>
-	<animation effect="slide" time="400" end="0,-200">WindowClose</animation>
+	<include>screen-fade</include>
 	<coordinates>
 		<posx>348</posx>
-		<posy>5</posy>
+		<posy>2</posy>
 	</coordinates>
 	<controls>
 		<control type="image"><!-- Dialog background image -->

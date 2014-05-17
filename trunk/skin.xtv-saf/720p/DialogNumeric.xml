@@ -5,9 +5,9 @@
 		<posx>0</posx>
 		<posy>330</posy>
 	</coordinates>
+	<include>screen-fade</include>
 	<controls>
-		<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		<include>fadebackground</include>
 		<control type="image"><!-- Keyboard background button -->
 			<posx>0</posx>
 			<posy>26</posy>

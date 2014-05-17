@@ -2,8 +2,8 @@
 <window id="1155">
 	<defaultcontrol always="false">999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
-		<include>screen-fade</include>
 		<include>background</include>
 		<include>Fake-Overlay</include>
 
