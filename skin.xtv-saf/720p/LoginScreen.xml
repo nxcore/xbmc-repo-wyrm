@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">52</defaultcontrol>
 	<visible>!Window.IsActive(startup)</visible>
 	<allowoverlay>no</allowoverlay>
+	<include>screen-fade</include>
 	<controls>
-		<include>screen-fade</include>
 		<include>background</include>
 		<control type="grouplist">
 			<posx>946</posx>
@@ -35,10 +35,10 @@
 			<height>456</height>
 			<focusposition>1</focusposition>
 			<movement>2</movement>
-			<onleft>52</onleft>
-			<onright>52</onright>
-			<onup>52</onup>
-			<ondown>52</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<pagecontrol>-</pagecontrol>

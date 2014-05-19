@@ -2,8 +2,7 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<controls>
-		<control type="button" id="10">
-			<description>Play the startup video if required</description>
+		<control type="button" id="10"><!-- Play the startup video if required -->
 			<posx>-12</posx>
 			<posy>-12</posy>
 			<width>1</width>
@@ -13,11 +12,11 @@
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="1400" end="100">Focus</animation>
+			<animation effect="fade" delay="1000" end="100">Focus</animation>
 		</control>
 		<control type="group">
 			<visible>!Skin.HasSetting(intro-vid)</visible>
-			<animation effect="fade" end="0" delay="4000" time="1000">WindowClose</animation>
+			<animation effect="fade" end="0" delay="2800" time="200">WindowClose</animation>
 			<control type="image">
 				<description>Xtv Logo</description>
 				<posx>384</posx>

@@ -5,9 +5,9 @@
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
 	<views>50,52,54,57,58,59,560</views>
+	<include>screen-fade</include>
 	<controls>
 		<visible>!Window.IsVisible(movieinformation)</visible>
-		<include>screen-fade</include>
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
 		<control type="grouplist">

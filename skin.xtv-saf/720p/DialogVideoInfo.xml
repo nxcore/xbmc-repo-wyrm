@@ -35,15 +35,13 @@
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>50</posy>
 			<control type="group"><!-- Show logo -->
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 				<control type="group">
 					<visible>!Skin.HasSetting(hide-chrome)</visible>
 					<control type="image" id="7018"><!-- Show logo -->
 						<posx>530</posx>
-						<posy>-38</posy>
+						<posy>12</posy>
 						<width>266</width>
 						<height>74</height>
 						<texture fallback="blank.png">$VAR[VideoLogo]</texture>
@@ -54,7 +52,7 @@
 					</control>
 					<control type="label"><!-- Title -->
 						<posx>530</posx>
-						<posy>-11</posy>
+						<posy>39</posy>
 						<width>732</width>
 						<height>40</height>
 						<font>font22</font>
@@ -67,7 +65,7 @@
 				</control>
 				<control type="label"><!-- Title -->
 					<posx>530</posx>
-					<posy>-11</posy>
+					<posy>39</posy>
 					<width>732</width>
 					<height>40</height>
 					<font>font22</font>
@@ -80,7 +78,7 @@
 			</control>
 			<control type="label">
 				<posx>530</posx>
-				<posy>-11</posy>
+				<posy>39</posy>
 				<width>732</width>
 				<height>40</height>
 				<font>font22</font>
@@ -91,7 +89,7 @@
 			</control>
 			<control type="label"><!-- Genre -->
 				<posx>530</posx>
-				<posy>35</posy>
+				<posy>85</posy>
 				<width>732</width>
 				<height>37</height>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -100,7 +98,7 @@
 			</control>
 			<control type="image"><!-- MPAA Rating -->
 				<posx>530</posx>
-				<posy>70</posy>
+				<posy>120</posy>
 				<width>212</width>
 				<height>62</height>
 				<aligny>bottom</aligny>
@@ -111,7 +109,7 @@
 				<visible>!IsEmpty(listitem.Duration)</visible>
 				<control type="label">
 					<posx>730</posx>
-					<posy>76</posy>
+					<posy>126</posy>
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
@@ -121,7 +119,7 @@
 				</control>
 				<control type="label">
 					<posx>730</posx>
-					<posy>76</posy>
+					<posy>126</posy>
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
@@ -131,7 +129,7 @@
 				</control>
 				<control type="label">
 					<posx>730</posx>
-					<posy>76</posy>
+					<posy>126</posy>
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
@@ -142,7 +140,7 @@
 			</control>
 			<control type="label"><!-- Year -->
 				<posx>1226</posx>
-				<posy>76</posy>
+				<posy>126</posy>
 				<width>177</width>
 				<height>62</height>
 				<align>right</align>
@@ -153,14 +151,14 @@
 				<visible>Container.Content(movies) | Container.Content(episodes)| Container.Content(musicvideos)</visible>
 				<control type="label"><!-- Director -->
 					<posx>530</posx>
-					<posy>150</posy>
+					<posy>200</posy>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[31130]</label>
 				</control>
 				<control type="label">
 					<posx>770</posx>
-					<posy>150</posy>
+					<posy>200</posy>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -168,14 +166,14 @@
 				</control>
 				<control type="label"><!-- Writer -->
 					<posx>530</posx>
-					<posy>180</posy>
+					<posy>230</posy>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[31131]</label>
 				</control>
 				<control type="label">
 					<posx>770</posx>
-					<posy>180</posy>
+					<posy>230</posy>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -183,14 +181,14 @@
 				</control>
 				<control type="label"><!-- Play count -->
 					<posx>530</posx>
-					<posy>210</posy>
+					<posy>260</posy>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[567]:</label>
 				</control>
 				<control type="label">
 					<posx>770</posx>
-					<posy>210</posy>
+					<posy>260</posy>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -203,14 +201,14 @@
 					<visible>StringCompare(Container.FolderPath,videodb://tvshows/titles/)</visible>
 					<control type="label"><!-- Seasons -->
 						<posx>530</posx>
-						<posy>155</posy>
+						<posy>205</posy>
 						<width>238</width>
 						<height>24</height>
 						<label>$LOCALIZE[33054]</label>
 					</control>
 					<control type="label">
 						<posx>770</posx>
-						<posy>155</posy>
+						<posy>205</posy>
 						<width>456</width>
 						<height>24</height>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -221,14 +219,14 @@
 					<visible>!StringCompare(Container.FolderPath,videodb://tvshows/titles/)</visible>
 					<control type="label"><!-- Current TVShow Season -->
 						<posx>530</posx>
-						<posy>155</posy>
+						<posy>205</posy>
 						<width>238</width>
 						<height>24</height>
 						<label>$LOCALIZE[20373]</label>
 					</control>
 					<control type="label">
 						<posx>770</posx>
-						<posy>155</posy>
+						<posy>205</posy>
 						<width>456</width>
 						<height>24</height>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -237,14 +235,14 @@
 				</control>
 				<control type="label"><!-- Episodes -->
 					<posx>530</posx>
-					<posy>185</posy>
+					<posy>235</posy>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[20360]</label>
 				</control>
 				<control type="label">
 					<posx>770</posx>
-					<posy>185</posy>
+					<posy>235</posy>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -252,14 +250,14 @@
 				</control>
 				<control type="label"><!-- Premiered -->
 					<posx>530</posx>
-					<posy>215</posy>
+					<posy>265</posy>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[20416]</label>
 				</control>
 				<control type="label">
 					<posx>770</posx>
-					<posy>215</posy>
+					<posy>265</posy>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -268,7 +266,7 @@
 			</control>
 			<control type="label"><!-- Plot -->
 				<posx>530</posx>
-				<posy>254</posy>
+				<posy>304</posy>
 				<width>400</width>
 				<height>32</height>
 				<font>font18</font>
@@ -277,14 +275,14 @@
 			</control>
 			<control type="image">
 				<posx>530</posx>
-				<posy>288</posy>
+				<posy>338</posy>
 				<width>696</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">
 				<posx>530</posx>
-				<posy>292</posy>
+				<posy>342</posy>
 				<width>696</width>
 				<height>298</height>
 				<label>$INFO[ListItem.Plot]</label>
@@ -295,7 +293,7 @@
 			</control>
 			<control type="textbox"><!-- Plot outline (Show if no plot available)-->
 				<posx>530</posx>
-				<posy>292</posy>
+				<posy>342</posy>
 				<width>696</width>
 				<height>298</height>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
@@ -310,7 +308,7 @@
 					<visible>!IsEmpty(ListItem.Studio)</visible>
 					<control type="image">
 						<posx>214</posx>
-						<posy>2</posy>
+						<posy>52</posy>
 						<width>106</width>
 						<height>72</height>
 						<aligny>bottom</aligny>
@@ -320,7 +318,7 @@
 					</control>
 					<control type="image">
 						<posx>212</posx>
-						<posy>0</posy>
+						<posy>50</posy>
 						<width>106</width>
 						<height>72</height>
 						<aligny>bottom</aligny>
@@ -331,7 +329,7 @@
 				</control>
 				<control type="image"><!-- Video cover-->
 					<posx>122</posx>
-					<posy>74</posy>
+					<posy>124</posy>
 					<width>286</width>
 					<height>412</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -340,7 +338,7 @@
 				</control>
 				<control type="image"><!-- Video cover-->
 					<posx>122</posx>
-					<posy>74</posy>
+					<posy>124</posy>
 					<width>286</width>
 					<height>412</height>
 					<aspectratio scalediffuse="false">keep</aspectratio>
@@ -349,7 +347,7 @@
 				</control>
 				<control type="image">
 					<posx>59</posx>
-					<posy>74</posy>
+					<posy>124</posy>
 					<width>412</width>
 					<height>412</height>
 					<aspectratio scalediffuse="false">keep</aspectratio>
@@ -358,7 +356,7 @@
 				</control>
 			<control type="image"><!-- Star Rating -->
 				<posx>150</posx>
-				<posy>498</posy>
+				<posy>548</posy>
 				<width>215</width>
 				<height>27</height>
 				<texture>$VAR[MediaRating]</texture>
@@ -369,7 +367,7 @@
 			</control>
 			<control type="image"><!-- Actor image-->
 				<posx>122</posx>
-				<posy>74</posy>
+				<posy>124</posy>
 				<width>286</width>
 				<height>412</height>
 				<aspectratio scalediffuse="false">keep</aspectratio>
@@ -378,7 +376,7 @@
 			</control>
 			<control type="label"><!-- Cast -->
 				<posx>530</posx>
-				<posy>254</posy>
+				<posy>304</posy>
 				<width>400</width>
 				<height>32</height>
 				<font>font18</font>
@@ -387,7 +385,7 @@
 			</control>
 			<control type="list" id="50">
 				<posx>530</posx>
-				<posy>292</posy>
+				<posy>342</posy>
 				<width>696</width>
 				<height>305</height>
 				<onleft>999</onleft>
@@ -427,7 +425,7 @@
 			</control>
 			<control type="grouplist"><!-- Media flags -->
 				<posx>120</posx>
-				<posy>530</posy>
+				<posy>580</posy>
 				<width>328</width>
 				<height>60</height>
 				<align>center</align>

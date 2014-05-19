@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<previouswindow>Home</previouswindow>
+	<include>screen-fade</include>
 	<controls>
 		<control type="group"><!-- Weather screen background image -->
 			<control type="image"><!-- Solid background -->

@@ -114,30 +114,30 @@
 			<control type="label">
 				<posx>146</posx>
 				<posy>25</posy>
+				<width>177</width>
+				<height>20</height>
 				<font>font12</font>
 				<align>right</align>
 				<label>$INFO[Player.Time]</label>
-				<width>177</width>
-				<height>20</height>
 				<visible>!Player.Seeking</visible>
 			</control>
 			<control type="label">
 				<posx>146</posx>
 				<posy>25</posy>
+				<width>177</width>
+				<height>20</height>
 				<font>font12</font>
 				<align>right</align>
 				<label>$INFO[Player.SeekTime]</label>
-				<width>177</width>
-				<height>20</height>
 				<visible>Player.Seeking</visible>
 			</control>
 			<control type="label">
 				<posx>156</posx>
 				<posy>25</posy>
-				<label>$INFO[Player.Duration,/ ]</label>
-				<font>font12</font>
 				<width>177</width>
 				<height>20</height>
+				<label>$INFO[Player.Duration,/ ]</label>
+				<font>font12</font>
 			</control>
 			<control type="progress">
 				<posx>18</posx>

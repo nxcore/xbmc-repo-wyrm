@@ -30,7 +30,6 @@
 					<top>35</top>
 					<width>320</width>
 					<height>40</height>
-					<font>font13</font>
 					<align>left</align>
 					<visible>IsEmpty(Control.GetLabel(110))</visible>
 				</control>

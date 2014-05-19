@@ -6,7 +6,6 @@
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-
 		<control type="label"><!-- Screen heading -->
 			<posx>946</posx>
 			<posy>50</posy>
@@ -20,8 +19,8 @@
 			<posy>112</posy>
 			<width>305</width>
 			<height>315</height>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
 			<itemgap>0</itemgap>
 			<control type="button" id="95"><!-- Summary -->
 				<width>305</width>
@@ -154,21 +153,25 @@
 			<ondown>noop</ondown>
 			<visible>Control.HasFocus(100)</visible>
 			<control type="label"><!-- Skin version -->
+				<width>890</width>
 				<height>45</height>
 				<label>$LOCALIZE[31563] xTV-SAF v1.4.6</label>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Current theme -->
+				<width>890</width>
 				<height>45</height>
 				<label>$LOCALIZE[31564] $INFO[Skin.CurrentTheme]</label>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Screen mode -->
+				<width>890</width>
 				<height>45</height>
 				<label>$LOCALIZE[31565] $INFO[System.ScreenMode]</label>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Platform system is running on -->
+				<width>890</width>
 				<height>45</height>
 				<label>$VAR[SystemPlatform]</label>
 				<font>font11</font>

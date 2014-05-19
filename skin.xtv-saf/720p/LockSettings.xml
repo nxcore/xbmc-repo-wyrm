@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>5</defaultcontrol>
+	<include>screen-fade</include>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(profilesettings)</visible>
@@ -36,9 +37,9 @@
 				<height>318</height>
 				<itemgap>0</itemgap>
 				<pagecontrol>60</pagecontrol>
-				<onleft>5</onleft>
+				<onleft>noop</onleft>
 				<onright>60</onright>
-				<onup>28</onup>
+				<onup>noop</onup>
 				<ondown>28</ondown>
 			</control>
 			<control type="scrollbar" id="60">
@@ -47,7 +48,7 @@
 				<width>20</width>
 				<height>318</height>
 				<onleft>5</onleft>
-				<onright>5</onright>
+				<onright>noop</onright>
 			</control>
 			<control type="button" id="7"><!-- Default button -->
 				<posx>53</posx>
@@ -82,7 +83,7 @@
 				<onleft>29</onleft>
 				<onright>29</onright>
 				<onup>5</onup>
-				<ondown>5</ondown>
+				<ondown>noop</ondown>
 			</control>
 			<control type="button" id="29"><!-- Cancel -->
 				<posx>708</posx>
@@ -94,7 +95,7 @@
 				<onleft>28</onleft>
 				<onright>28</onright>
 				<onup>5</onup>
-				<ondown>5</ondown>
+				<ondown>noop</ondown>
 			</control>
 		</control>
 	</controls>

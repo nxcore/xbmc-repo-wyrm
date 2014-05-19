@@ -2,11 +2,14 @@
 <window>
 	<defaultcontrol>11</defaultcontrol>
 	<coordinates>
-		<posx>283</posx>
-		<posy>625</posy>
+		<posx>0</posx>
+		<posy>0</posy>
 	</coordinates>
+	<include>screen-fade</include>
 	<controls>
 		<control type="group">
+			<posx>283</posx>
+			<posy>625</posy>
 			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(VolumeBar)]</visible>
 			<control type="image"><!-- Dialog background -->
 				<posx>0</posx>

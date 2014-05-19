@@ -3,21 +3,21 @@
 	<defaultcontrol always="true">21</defaultcontrol>
 	<coordinates>
 		<posx>0</posx>
-		<posy>330</posy>
+		<posy>0</posy>
 	</coordinates>
 	<include>screen-fade</include>
 	<controls>
 		<include>fadebackground</include>
 		<control type="image"><!-- Keyboard background button -->
 			<posx>0</posx>
-			<posy>26</posy>
+			<posy>356</posy>
 			<width>1280</width>
 			<height>410</height>
 			<texture>colours/darkgrey.png</texture>
 		</control>
 		<control type="label" id="1"><!-- Dialog heading -->
 			<posx>97</posx>
-			<posy>46</posy>
+			<posy>376</posy>
 			<width>1062</width>
 			<height>37</height>
 			<font>font18</font>
@@ -28,14 +28,14 @@
 		</control>
 		<control type="image"><!-- Entered text background -->
 			<posx>74</posx>
-			<posy>50</posy>
+			<posy>380</posy>
 			<width>1122</width>
 			<height>34</height>
 			<texture border="16">text-background.png</texture>
 		</control>
 		<control type="label" id="4"><!-- Entered text -->
 			<posx>97</posx>
-			<posy>46</posy>
+			<posy>376</posy>
 			<width>1062</width>
 			<height>37</height>
 			<font>font18</font>
@@ -45,7 +45,7 @@
 		</control>
 		<control type="group">
 			<posx>442</posx>
-			<posy>120</posy>
+			<posy>450</posy>
 			<control type="button" id="11"><!-- 1 button -->
 				<posx>0</posx>
 				<posy>0</posy>
