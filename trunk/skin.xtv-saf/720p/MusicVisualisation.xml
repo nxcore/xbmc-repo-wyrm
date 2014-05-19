@@ -3,6 +3,7 @@
 	<onload condition="Skin.HasSetting(background-slideshow)">RunScript(script.artistslideshow)</onload>
 	<allowoverlay>no</allowoverlay>
 	<visible>!Window.IsVisible(videooverlay) + !Window.IsVisible(fullscreenvideo)</visible>
+	<include>screen-fade</include>
 	<controls>
 		<control type="image"><!-- Solid background -->
 			<posx>0</posx>

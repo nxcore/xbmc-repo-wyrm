@@ -3,6 +3,7 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<previouswindow>Home</previouswindow>
+	<include>screen-fade</include>
 	<controls>
 		<include>backgroundvideo</include>
 		<control type="label">
@@ -52,8 +53,6 @@
 					<posx>0</posx>
 					<width>512</width>
 					<height>256</height>
-					<animation effect="fade" start="0" end="100" time="200" delay="100">Visible</animation>
-					<animation effect="zoom" start="100" end="0" time="0">WindowClose</animation>
 					<visible>Player.HasVideo + !Skin.HasSetting(HomeViewToggle)</visible>
 					<control type="videowindow">
 						<posx>58</posx>

@@ -8,6 +8,7 @@
 			<posx>946</posx>
 			<posy>25</posy>
 			<width>309</width>
+			<height>31</height>
 			<label>$LOCALIZE[20093]</label>
 			<font>font18</font>
 		</control>
@@ -15,6 +16,7 @@
 			<posx>946</posx>
 			<posy>56</posy>
 			<width>309</width>
+			<height>31</height>
 			<font>font18</font>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
@@ -31,6 +33,7 @@
 			<posx>17</posx>
 			<posy>356</posy>
 			<width>274</width>
+			<height>25</height>
 			<font>font12</font>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			<label>$LOCALIZE[20070]</label>
@@ -39,6 +42,7 @@
 			<posx>17</posx>
 			<posy>387</posy>
 			<width>274</width>
+			<height>25</height>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			<font>font11</font>
 		</control>

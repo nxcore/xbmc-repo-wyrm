@@ -48,6 +48,7 @@
 
 	<include name="background">
 		<control type="group">
+			<visible>!Container().Scrolling</visible>
 			<animation effect="fade" start="0" end="100" time="500" delay="2500">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="image"><!-- Use a black background until background image has had a chance to load -->
@@ -657,7 +658,6 @@
 
 	<include name="View-as">
 		<animation effect="slide" time="0" start="0,0" end="0,-720">Visible</animation>
-		<animation effect="fade" time="100" delay="200">WindowOpen</animation>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
 
