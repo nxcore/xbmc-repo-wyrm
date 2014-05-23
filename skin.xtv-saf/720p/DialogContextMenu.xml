@@ -16,7 +16,6 @@
 				<width>516</width>
 				<height>550</height>
 				<texture border="8">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
 			</control>
 			<control type="grouplist" id="996"><!-- Grouplist for context buttons -->
 				<posx>10</posx>

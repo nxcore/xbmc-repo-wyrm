@@ -6,10 +6,7 @@
 	<controls>
 		<control type="image"><!-- Global debug grid -->
 			<visible>Skin.HasSetting(DebugGrid)</visible>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>fullscreenimage</include>
 			<texture>debuggrid720.png</texture>
 		</control>
 		<control type="group"><!-- Window/Dialog debug -->
@@ -478,30 +475,6 @@
 					<textcolor>kai-text</textcolor>
 					<label>RecordPrefs.xml</label>
 					<visible>Window.IsVisible(RecordPrefs.xml)</visible>
-				</control>
-				<control type="label">
-					<include>overlaylabel-dimension</include>
-					<textcolor>kai-text</textcolor>
-					<label>script.pseudotv.AdvancedConfig.xml</label>
-					<visible>Window.IsVisible(script.pseudotv.AdvancedConfig.xml)</visible>
-				</control>
-				<control type="label">
-					<include>overlaylabel-dimension</include>
-					<textcolor>kai-text</textcolor>
-					<label>script.pseudotv.ChannelConfig.xml</label>
-					<visible>Window.IsVisible(script.pseudotv.ChannelConfig.xml)</visible>
-				</control>
-				<control type="label">
-					<include>overlaylabel-dimension</include>
-					<textcolor>kai-text</textcolor>
-					<label>script.pseudotv.EPG.xml</label>
-					<visible>Window.IsVisible(script.pseudotv.EPG.xml)</visible>
-				</control>
-				<control type="label">
-					<include>overlaylabel-dimension</include>
-					<textcolor>kai-text</textcolor>
-					<label>script.pseudotv.TVOverlay.xml</label>
-					<visible>Window.IsVisible(script.pseudotv.TVOverlay.xml)</visible>
 				</control>
 				<control type="label">
 					<include>overlaylabel-dimension</include>

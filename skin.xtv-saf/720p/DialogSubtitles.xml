@@ -9,10 +9,7 @@
 		<control type="group" id="250">
 			<control type="image">
 				<description>media info background image</description>
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture>colours/black.png</texture>
 			</control>
 			<control type="group">

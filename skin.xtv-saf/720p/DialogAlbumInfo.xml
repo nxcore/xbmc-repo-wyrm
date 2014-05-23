@@ -37,72 +37,72 @@
 				<label fallback="416">$INFO[ListItem.Artist]</label>
 			</control>
 			<control type="label"><!-- Year heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>437</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[562]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Rating heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>462</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[563]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Genre heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>487</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[515]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Moods heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>512</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[175]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Styles heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>537</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[176]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Themes heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>562</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21895]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Record Label heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>587</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21899]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Type heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>612</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[467]:</label>
 				<font>font11</font>
@@ -110,16 +110,16 @@
 			</control>
 
 			<control type="label"><!-- Year value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>437</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Year]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="image"><!-- Rating value -->
-				<posx>212</posx>
+				<posx>182</posx>
 				<posy>466</posy>
 				<width>115</width>
 				<height>20</height>
@@ -128,55 +128,55 @@
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label"><!-- Genre value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>487</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Genre]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Moods value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>512</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Mood)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Styles value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>537</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Style)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Theme value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>562</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Theme)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Record Label value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>587</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Label)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Type value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>612</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Type)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
@@ -206,9 +206,9 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label"><!-- Born heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>437</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21893]:</label>
 				<font>font11</font>
@@ -216,9 +216,9 @@
 				<visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
 			</control>
 			<control type="label"><!-- Formed heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>437</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21894]:</label>
 				<font>font11</font>
@@ -226,9 +226,9 @@
 				<visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
 			</control>
 			<control type="label"><!-- Born/Formed heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>437</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21900]:</label>
 				<font>font11</font>
@@ -236,136 +236,136 @@
 				<visible>IsEmpty(ListItem.Property(Artist_Born)) + IsEmpty(ListItem.Property(Artist_Formed))</visible>
 			</control>
 			<control type="label"><!-- Genre heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>462</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[515]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Styles heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>487</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[176]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Moods heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>512</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[175]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Instruments heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>537</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21892]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Died heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>562</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21897]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Disbanded heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>587</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21896]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Years Active heading -->
-				<posx>220</posx>
+				<posx>190</posx>
 				<posy>612</posy>
-				<width>210</width>
+				<width>180</width>
 				<height>25</height>
 				<label>$LOCALIZE[21898]:</label>
 				<font>font11</font>
 				<align>right</align>
 			</control>
 			<control type="label"><!-- Born/Formed value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>437</posy>
-				<width>384</width>
+				<width>414</width>
 				<height>46</height>
 				<label>$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Genre value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>462</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Genre]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Styles value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>487</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Style)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Moods value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>512</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Album_Mood)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Instruments value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>537</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Artist_Instrument)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Died value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>562</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Artist_Died)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Disbanded value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>587</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Artist_Disbanded)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
 			</control>
 			<control type="label"><!-- Years Active value -->
-				<posx>230</posx>
+				<posx>200</posx>
 				<posy>612</posy>
-				<width>384</width>
-				<height>46</height>
+				<width>414</width>
+				<height>25</height>
 				<label>$INFO[ListItem.Property(Artist_YearsActive)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font11</font>
@@ -529,7 +529,7 @@
 			<posx>15</posx>
 			<posy>650</posy>
 			<width>1250</width>
-			<height>57</height>
+			<height>56</height>
 			<itemgap>0</itemgap>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
@@ -542,7 +542,7 @@
 			<ondown>noop</ondown>
 			<control type="button" id="35"><!-- Play Album -->
 				<width>250</width>
-				<height>57</height>
+				<height>56</height>
 				<label>$LOCALIZE[208]</label>
 				<align>center</align>
 				<onclick>RunScript(script.playalbum,artist=$ESCINFO[ListItem.Artist]&amp;album=$ESCINFO[ListItem.Album])</onclick>
@@ -550,25 +550,25 @@
 			</control>
 			<control type="button" id="5"><!-- Tracks/Review or Biography/Discography -->
 				<width>250</width>
-				<height>57</height>
+				<height>56</height>
 				<label>$LOCALIZE[182]</label>
 				<align>center</align>
 			</control>
 			<control type="button" id="6"><!-- Refresh -->
 				<width>250</width>
-				<height>57</height>
+				<height>56</height>
 				<label>$LOCALIZE[184]</label>
 				<align>center</align>
 			</control>
 			<control type="button" id="10"><!-- Get Album cover -->
 				<width>250</width>
-				<height>57</height>
+				<height>56</height>
 				<label>$LOCALIZE[13405]</label>
 				<align>center</align>
 			</control>
 			<control type="button" id="16"><!-- CDArtManager Script -->
 				<width>250</width>
-				<height>57</height>
+				<height>56</height>
 				<label>$LOCALIZE[31693]</label>
 				<align>center</align>
 				<onclick>RunScript(script.cdartmanager)</onclick>

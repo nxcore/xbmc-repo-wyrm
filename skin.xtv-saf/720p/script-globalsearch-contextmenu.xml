@@ -14,7 +14,6 @@
 			<width>344</width>
 			<height>166</height>
 			<texture border="8">button-menu-background.png</texture>
-			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 
 		<control type="button" id="1001">

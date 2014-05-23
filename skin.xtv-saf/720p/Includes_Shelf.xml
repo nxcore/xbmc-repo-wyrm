@@ -989,7 +989,6 @@
 					<posy>10</posy>
 					<width>180</width>
 					<height>45</height>
-					<colordiffuse>StudioDiffuse</colordiffuse>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
 				</control>

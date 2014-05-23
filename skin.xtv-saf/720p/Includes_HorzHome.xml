@@ -32,7 +32,6 @@
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include><!-- Low memory warning -->
 
 		<control type="group" id="9800"><!-- Shelf icons-->
-
 			<control type="group" id="9155"><!-- Movie icons -->
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
 				<control type="group">

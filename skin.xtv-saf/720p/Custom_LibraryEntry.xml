@@ -25,7 +25,6 @@
 					<width>433</width>
 					<height>655</height>
 					<texture border="8">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
 					<posx>454</posx>
@@ -176,7 +175,6 @@
 					<width>433</width>
 					<height>475</height>
 					<texture border="8">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
 					<posx>454</posx>
@@ -303,7 +301,6 @@
 					<width>433</width>
 					<height>430</height>
 					<texture border="8">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
 					<posx>454</posx>
@@ -424,7 +421,6 @@
 					<width>433</width>
 					<height>475</height>
 					<texture border="8">button-menu-background.png</texture>
-					<colordiffuse>dialog-background</colordiffuse>
 				</control>
 				<control type="label"><!-- Dialog heading -->
 					<posx>454</posx>

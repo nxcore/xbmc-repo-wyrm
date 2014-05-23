@@ -14,39 +14,24 @@
 		</control>
 		<control type="group">
 			<control type="image"><!-- Solid background -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>solid-background</colordiffuse>
+				<include>fullscreenimage</include>
 				<texture>background.png</texture>
 				<visible>IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<control type="image"><!-- Custom background -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>solid-background</colordiffuse>
+				<include>fullscreenimage</include>
 				<aspectratio>stretch</aspectratio>
 				<texture>$INFO[Skin.String(custom-background)]</texture>
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<control type="image"><!-- Fanart background -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<colordiffuse>solid-background</colordiffuse>
+				<include>fullscreenimage</include>
 				<aspectratio>scale</aspectratio>
 				<texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
 				<visible>Skin.HasSetting(background-fanart)</visible>
 			</control>
 			<control type="image"><!-- Mask to fade backgrounds -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<colordiffuse>mask-background</colordiffuse>
 				<texture>colours/black.png</texture>
 				<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
@@ -95,14 +80,12 @@
 				<control type="image" id="771"><!-- Audio Codec -->
 					<width>81</width>
 					<height>60</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">special://skin/extras/images/audio/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec)) + !StringCompare(Control.GetLabel(761),blank.png)</visible>
 				</control>
 				<control type="image" id="772"><!-- Video Codec -->
 					<width>81</width>
 					<height>60</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">special://skin/extras/images/video/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec)) + !StringCompare(Control.GetLabel(762),blank.png)</visible>
 				</control>
@@ -110,13 +93,11 @@
 					<width>81</width>
 					<height>60</height>
 					<texture background="true">special://skin/extras/images/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoAspect)) + !StringCompare(Control.GetLabel(763),blank.png)</visible>
 				</control>
 				<control type="image" id="774"><!-- Video Resolution -->
 					<width>81</width>
 					<height>60</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">special://skin/extras/images/resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
 					<visible>!IsEmpty(Container(100).ListItem.Property(VideoResolution)) + !StringCompare(Control.GetLabel(764),blank.png)</visible>
 				</control>
@@ -155,7 +136,6 @@
 							<width>106</width>
 							<height>72</height>
 							<aligny>bottom</aligny>
-							<colordiffuse>StudioDiffuse</colordiffuse>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
@@ -364,7 +344,6 @@
 							<width>106</width>
 							<height>72</height>
 							<aligny>bottom</aligny>
-							<colordiffuse>StudioDiffuse</colordiffuse>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
@@ -786,7 +765,6 @@
 							<width>106</width>
 							<height>75</height>
 							<aligny>bottom</aligny>
-							<colordiffuse>StudioDiffuse</colordiffuse>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
