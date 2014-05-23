@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="buttonMenu">
+	<defaultcontrol>9001</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<include>fadebackground</include>
+		<control type="button" id="9001">
+			<description>Make sure we hit the first button in the group list and not the close window button</description>
+			<posx>-16</posx>
+			<posy>-16</posy>
+			<width>4</width>
+			<height>4</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>down</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="image"><!-- Dialog background image -->
+			<posx>470</posx>
+			<posy>240</posy>
+			<width>340</width>
+			<height>120</height>
+			<align>center</align>
+			<texture border="8">button-menu-background.png</texture>
+		</control>
+		<control type="grouplist" id="9000">
+			<posx>482</posx>
+			<posy>240</posy>
+			<width>300</width>
+			<height>120</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<itemgap>0</itemgap>
+			<align>center</align>
+			<control type="button" id="2"><!-- Rusume button -->
+				<width>300</width>
+				<height>46</height>
+				<align>center</align>
+				<textwidth>290</textwidth>
+				<label>$ADDON[script.videoextras 32104] </label>
+			</control>
+			<control type="button" id="40"><!-- Start from beginning button -->
+				<width>300</width>
+				<height>46</height>
+				<align>center</align>
+				<textwidth>290</textwidth>
+				<label>$ADDON[script.videoextras 32105]</label>
+			</control>
+		</control>
+	</controls>
+</window>
