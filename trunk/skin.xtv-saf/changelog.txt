@@ -2,7 +2,7 @@
 - Cleaned up layout of Filemanager, MusicPlaylist Editor and Video Info screens.
 - Add hook to Video Extras script to Video info screen.
 - Add LiveTV codec info to VideoFullScreen window.
-- Added Spanish and Hungarian Ratings images.
+- Added Brazilian and Hungarian Ratings images.
 - Remove a number of redundant skin graphics.
 - Added a number of missing video and audio codec flag images.
 - A number of minor bug fixes and performance tweaks.
