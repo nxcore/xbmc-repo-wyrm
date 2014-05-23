@@ -9,30 +9,22 @@
 	</coordinates>
 	<controls>
 		<control type="group">
+			<visible>StringCompare(Skin.String(osd-lyricpath),script.cu.lrclyrics)</visible>
 			<control type="image"><!-- Solid background -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture>background.png</texture>
 				<visible>!Skin.String(custom-background)</visible>
 			</control>
 			<control type="image"><!-- Custom background -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture>$INFO[Skin.String(custom-background)]</texture>
 				<colordiffuse>osd-background</colordiffuse>
 				<visible>Skin.String(custom-background)</visible>
 			</control>
 			<control type="group"><!-- Backgroung fanart image -->
-				<animation effect="fade" time="300">VisibleChange</animation>
+				<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 					<aspectratio>scale</aspectratio>
 					<fadetime>1000</fadetime>
@@ -41,31 +33,23 @@
 			</control>
 			<control type="group"><!-- Background visualisation image -->
 				<visible>Skin.HasSetting(HomeViewToggle)</visible>
-				<animation effect="fade" time="300">VisibleChange</animation>
+				<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 				<control type="visualisation" id="2">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				</control>
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(background-slideshow)</visible>
-				<animation effect="fade" time="300">VisibleChange</animation>
+				<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 				<control type="image"><!-- Mask out any backgrounds showing around ArtistSlideshow Fanart -->
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<texture>colours/black.png</texture>
 					<aspectratio>stretch</aspectratio>
+					<visible>SubString(Control.GetLabel(991),blank.png)</visible>
 				</control>
 				<control type="multiimage" id="991">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 					<aspectratio>keep</aspectratio>
 					<timeperimage>5000</timeperimage>
@@ -74,10 +58,7 @@
 				</control>
 			</control>
 			<control type="image"><!-- Mask to fade backgrounds -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<colordiffuse>mask-background</colordiffuse>
 				<texture>colours/black.png</texture>
 				<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
@@ -235,7 +216,7 @@
 				<height>215</height>
 				<posx>132</posx>
 				<posy>480</posy>
-				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath]/cdart.png</texture>
+				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath,,/cdart.png]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>!SubString(MusicPlayer.Cover,Default,Left)</visible>
 			</control>

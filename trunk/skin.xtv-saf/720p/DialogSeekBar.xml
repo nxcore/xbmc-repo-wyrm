@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<control type="image">
 				<description>Seekbar Dialog background image</description>
 				<posx>0</posx>
@@ -50,7 +50,7 @@
 		</control>
 
 		<control type="group">
-			<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(SubtitleSearch) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(SubtitleSearch) | Window.IsVisible(VideoBookmarks)]</visible>
 			<!-- Player info labels -->
 			<control type="label">
 				<posx>224</posx>

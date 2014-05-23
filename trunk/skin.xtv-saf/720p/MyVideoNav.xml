@@ -65,26 +65,15 @@
 			<posx>0</posx>
 			<posy>720</posy>
 			<include>View-as</include>
-			<control type="group">
-				<visible>ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
-				<control type="image"><!-- Background shadow -->
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<texture>colours/black.png</texture>
-					<colordiffuse>osd-background</colordiffuse>
-				</control>
-				<control type="image"><!-- Button background -->
-					<posx>440</posx>
-					<posy>32</posy>
-					<width>396</width>
-					<height>640</height>
-					<texture border="8">button-menu-background.png</texture>
-				</control>
+			<include>fadebackground</include>
+			<control type="image"><!-- Button background -->
+				<posx>440</posx>
+				<posy>32</posy>
+				<width>396</width>
+				<height>640</height>
+				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<visible>!Skin.HasSetting(view-as-lock)</visible>
 				<posx>450</posx>
 				<posy>40</posy>
 				<width>376</width>
@@ -209,6 +198,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
+					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>
 				<control type="button" id="1200"><!-- player controls button -->
 					<width>376</width>

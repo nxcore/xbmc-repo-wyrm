@@ -16,7 +16,7 @@
 			<posx>0</posx>
 			<posy>640</posy>
 			<control type="group">
-				<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+				<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<control type="image"><!-- Dialog background -->
 					<posx>0</posx>
 					<posy>6</posy>
@@ -54,7 +54,7 @@
 			</control>
 
 			<control type="group">
-				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<!-- Player info labels -->
 				<control type="label">
 					<posx>224</posx>

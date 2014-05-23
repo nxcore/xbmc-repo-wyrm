@@ -2,7 +2,7 @@
 <includes>
 	<!--
 	  CUSTOM WINDOWS LIST
-		_Overlay 50
+		_Overlay 1150
 		_3DDialogSelect 1151
 		_SkinSettings 1152
 		_HomeSettings 1153
@@ -34,12 +34,15 @@
 	<include file="View-VideoWall.xml" />
 	<include file="View-VideoWrap.xml" />
 
-	<include name="fadebackground"><!-- Background shadow -->
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
+	<include name="fullscreenimage"><!-- Postion and size of fullscreen image -->
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
+	</include>
+	<include name="fadebackground"><!-- Background shadow -->
+		<control type="image">
+			<include>fullscreenimage</include>
 			<texture>colours/black.png</texture>
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>mask-background</colordiffuse>
@@ -52,18 +55,12 @@
 			<animation effect="fade" start="0" end="100" time="500" delay="2500">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="image"><!-- Use a black background until background image has had a chance to load -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture>colours/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture background="true">$VAR[BackgroundImage]</texture>
 				<fadetime>200</fadetime>
 				<visible>![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
@@ -71,18 +68,12 @@
 			<control type="group">
 				<visible>Skin.HasSetting(HomeViewToggle)</visible>
 				<control type="videowindow">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<aspectratio>stretch</aspectratio>
 					<visible>Player.HasVideo</visible>
 				</control>
 				<control type="visualisation">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<aspectratio>stretch</aspectratio>
 					<visible>Player.HasAudio</visible>
 				</control>
@@ -91,19 +82,13 @@
 				<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
 					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<texture>colours/black.png</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="multiimage">
 					<description>Backgroung ArtistSlideshow fanart image</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
+					<include>fullscreenimage</include>
 					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 					<aspectratio>keep</aspectratio>
 					<timeperimage>5000</timeperimage>
@@ -112,12 +97,8 @@
 				</control>
 			</control>
 		</control>
-		<control type="image">
-			<description>mask to fade backgrounds</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+		<control type="image"><!-- mask to fade backgrounds -->
+			<include>fullscreenimage</include>
 			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
@@ -133,10 +114,7 @@
 			<animation effect="fade" start="0" end="100" time="2500" delay="500" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="image"><!-- Use a black background until background image has had a chance to load -->
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture>colours/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
@@ -146,10 +124,7 @@
 					<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
 					<control type="image">
 						<description>Fallback background image</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
+						<include>fullscreenimage</include>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<texture background="true">$VAR[VideoBackgndImage]</texture>
@@ -158,10 +133,7 @@
 				<control type="group">
 					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos)] + Skin.HasSetting(background-fanart)</visible>
 					<control type="multiimage" id="6300">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
+						<include>fullscreenimage</include>
 						<randomize>true</randomize>
 						<timeperimage>5000</timeperimage>
 						<fadetime>300</fadetime>
@@ -171,10 +143,7 @@
 					</control>
 					<control type="image">
 						<description>Fallback background image</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
+						<include>fullscreenimage</include>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
 						<texture background="true">$VAR[VideoBackgndImage]</texture>
@@ -184,10 +153,7 @@
 				<control type="group">
 					<visible>Container.Content(episodes)</visible>
 					<control type="multiimage" id="6340">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
+						<include>fullscreenimage</include>
 						<randomize>true</randomize>
 						<timeperimage>5000</timeperimage>
 						<fadetime>300</fadetime>
@@ -196,10 +162,7 @@
 						<visible>Skin.HasSetting(background-extrafanart) + !Window.IsVisible(InfoDialog) + !IsEmpty(ListItem.Path)</visible>
 					</control>
 					<control type="image" id="6342">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
+						<include>fullscreenimage</include>
 						<texture background="true">$VAR[VideoBackgndImage]</texture>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
@@ -211,18 +174,12 @@
 		<control type="group">
 			<visible>Skin.HasSetting(HomeViewToggle)</visible>
 			<control type="videowindow">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<aspectratio>stretch</aspectratio>
 				<visible>Player.HasVideo</visible>
 			</control>
 			<control type="visualisation">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<aspectratio>stretch</aspectratio>
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<animation effect="fade" time="300">VisibleChange</animation>
@@ -232,19 +189,13 @@
 			<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 			<control type="image">
 				<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<texture>colours/black.png</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="multiimage">
 				<description>Backgroung ArtistSlideshow fanart image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<include>fullscreenimage</include>
 				<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 				<aspectratio>keep</aspectratio>
 				<timeperimage>5000</timeperimage>
@@ -252,12 +203,8 @@
 				<randomize>true</randomize>
 			</control>
 		</control>
-		<control type="image">
-			<description>mask to fade backgrounds</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+		<control type="image"><!-- mask to fade backgrounds -->
+			<include>fullscreenimage</include>
 			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
@@ -633,8 +580,16 @@
 		<font>font12</font>
 	</include>
 
-	<include name="scrolltext">
-		<scroll>true</scroll>
+	<include name="keyboard-key-common">
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsetx>0</textoffsetx>
+		<textoffsety>2</textoffsety>
+		<font>font18</font>
+		<textcolor>shadow-text</textcolor>
+		<shadowcolor>button-text</shadowcolor>
+		<texturenofocus border="6">key-nofocus.png</texturenofocus>
+		<texturefocus border="6">key-focus.png</texturefocus>
 	</include>
 
 	<include name="overlaylabel-dimension">
@@ -642,6 +597,10 @@
 		<height>21</height>
 	</include>
 
+	<include name="scrolltext">
+		<scroll>true</scroll>
+	</include>
+	
 	<include name="settingbutton-fade">
 		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
 	</include>
@@ -658,7 +617,7 @@
 
 	<include name="View-as">
 		<animation effect="slide" time="0" start="0,0" end="0,-720">Visible</animation>
-		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
 	</include>
 
 </includes>

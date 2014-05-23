@@ -5,10 +5,7 @@
 	<animation effect="fade" end="0" time="200" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>	
 	<controls>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<height>100</height>
-			<width>1280</width>
+			<include>fullscreenimage</include>
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>

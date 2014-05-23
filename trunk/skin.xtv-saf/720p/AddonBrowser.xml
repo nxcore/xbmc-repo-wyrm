@@ -45,23 +45,13 @@
 			<left>0</left>
 			<top>720</top>
 			<include>View-as</include>
-			<control type="group">
-				<visible>ControlGroup(9000).HasFocus()</visible>
-				<control type="image"><!-- Background shadow -->
-					<left>0</left>
-					<top>0</top>
-					<width>1280</width>
-					<height>720</height>
-					<texture>colours/black.png</texture>
-					<colordiffuse>osd-background</colordiffuse>
-				</control>
-				<control type="image"><!-- Dialog background -->
-					<left>440</left>
-					<top>212</top>
-					<width>396</width>
-					<height>360</height>
-					<texture border="8">button-menu-background.png</texture>
-				</control>
+			<include>fadebackground</include>
+			<control type="image"><!-- Dialog background -->
+				<left>440</left>
+				<top>212</top>
+				<width>396</width>
+				<height>360</height>
+				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>450</left>
@@ -76,8 +66,6 @@
 				<onup>noop</onup>
 				<ondown condition="Control.IsVisible(54)">54</ondown>
 				<ondown condition="Control.IsVisible(57)">57</ondown>
-				<ondown condition="Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(58)">noop</ondown>
-				<visible>!Skin.HasSetting(view-as-lock)</visible>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View as button -->
 					<width>376</width>

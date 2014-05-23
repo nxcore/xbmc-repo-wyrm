@@ -7,27 +7,18 @@
 	<include>screen-fade</include>
 	<controls>
 		<control type="image"><!-- Use a black background until background image has finished loading -->
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>fullscreenimage</include>
 			<texture>colours/black.png</texture>
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image"><!-- Background image -->
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>fullscreenimage</include>
 			<aspectratio>stretch</aspectratio>
 			<fadetime>300</fadetime>
 			<texture background="true">$VAR[VideoBackgndImage]</texture>
 		</control>
 		<control type="image"><!-- Mask to fade background -->
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>fullscreenimage</include>
 			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
@@ -322,7 +313,6 @@
 						<width>106</width>
 						<height>72</height>
 						<aligny>bottom</aligny>
-						<colordiffuse>StudioDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
 					</control>
@@ -465,14 +455,12 @@
 				<control type="image" id="171"><!-- Audio codec -->
 					<width>81</width>
 					<height>60</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">$INFO[Listitem.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
 					<visible>!IsEmpty(ListItem.AudioCodec) + !StringCompare(Control.GetLabel(161),blank.png)</visible>
 				</control>
 				<control type="image" id="172"><!-- Video codec -->
 					<width>81</width>
 					<height>60</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">$INFO[Listitem.VideoCodec,special://skin/extras/images/video/,.png]</texture>
 					<visible>!IsEmpty(ListItem.VideoCodec) + !StringCompare(Control.GetLabel(162),blank.png)</visible>
 				</control>
@@ -480,13 +468,11 @@
 					<width>81</width>
 					<height>60</height>
 					<texture background="true">$INFO[ListItem.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.VideoAspect) + !StringCompare(Control.GetLabel(163),blank.png)</visible>
 				</control>
 				<control type="image" id="174"><!-- Video resolution -->
 					<width>81</width>
 					<height>60</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">$INFO[Listitem.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
 					<visible>!IsEmpty(ListItem.VideoResolution) + !StringCompare(Control.GetLabel(164),blank.png)</visible>
 				</control>

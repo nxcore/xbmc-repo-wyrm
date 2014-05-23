@@ -7,12 +7,8 @@
 			<control type="group">
 				<visible>![Window.IsActive(videolibrary) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]</visible>
 				<control type="image"><!-- Use solid background image -->
-					<left>0</left>
-					<top>0</top>
-					<width>1280</width>
-					<height>720</height>
-					<colordiffuse>solid-background</colordiffuse>
-					<texture>background.png</texture>
+					<include>fullscreenimage</include>
+					<texture>colours/black.png</texture>
 				</control>
 				<control type="image"><!-- Build up home menu shelf image -->
 					<left>0</left>
@@ -491,7 +487,6 @@
 			<top>620</top>
 			<width>1280</width>
 			<height>100</height>
-			<colordiffuse>solid-background</colordiffuse>
 			<texture>colours/black.png</texture>
 			<visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Container(9000).HasPrevious()</visible>
 		</control>

@@ -17,7 +17,6 @@
 				<width>690</width>
 				<height>256</height>
 				<texture border="8">button-menu-background.png</texture>
-				<colordiffuse>dialog-background</colordiffuse>
 			</control>
 			<control type="label" id="1"><!-- Dialog heading -->
 				<posx>318</posx>

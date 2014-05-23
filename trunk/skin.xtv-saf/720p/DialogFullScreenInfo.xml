@@ -5,7 +5,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>640</posy>
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<control type="group">
 				<control type="image"><!-- Dialog background -->
 					<posx>0</posx>
@@ -133,14 +133,12 @@
 				<control type="image" id="171"><!-- Audio Codec -->
 					<width>67</width>
 					<height>50</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">$INFO[VideoPlayer.AudioCodec,special://skin/extras/images/audio/,.png]</texture>
 					<visible>!IsEmpty(VideoPlayer.AudioCodec) + !StringCompare(Control.GetLabel(161),blank.png)</visible>
 				</control>
 				<control type="image" id="172"><!-- Video Codec -->
 					<width>67</width>
 					<height>50</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">$INFO[VideoPlayer.VideoCodec,special://skin/extras/images/video/,.png]</texture>
 					<visible>!IsEmpty(VideoPlayer.VideoCodec) + !StringCompare(Control.GetLabel(162),blank.png)</visible>
 				</control>
@@ -148,13 +146,11 @@
 					<width>67</width>
 					<height>50</height>
 					<texture background="true">$INFO[VideoPlayer.VideoAspect,special://skin/extras/images/aspectratio/,.png]</texture>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<visible>!IsEmpty(VideoPlayer.VideoAspect) + !StringCompare(Control.GetLabel(163),blank.png)</visible>
 				</control>
 				<control type="image" id="174"><!-- Video Resolution -->
 					<width>67</width>
 					<height>50</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture background="true">$INFO[VideoPlayer.VideoResolution,special://skin/extras/images/resolution/,.png]</texture>
 					<visible>!IsEmpty(VideoPlayer.VideoResolution) + !StringCompare(Control.GetLabel(164),blank.png)</visible>
 				</control>
@@ -185,7 +181,7 @@
 			</control>
 
 			<control type="group">
-				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(script.pseudotv.TVOverlay.xml)]</visible>
+				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<control type="label">
 					<posx>224</posx>
 					<posy>4</posy>

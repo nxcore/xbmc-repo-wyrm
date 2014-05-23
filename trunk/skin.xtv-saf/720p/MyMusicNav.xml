@@ -42,23 +42,13 @@
 			<left>0</left>
 			<top>720</top>
 			<include>View-as</include>
-			<control type="group">
-				<visible>ControlGroup(9000).HasFocus()</visible>
-				<control type="image"><!-- Background shadow -->
-					<left>0</left>
-					<top>0</top>
-					<width>1280</width>
-					<height>720</height>
-					<texture>colours/black.png</texture>
-					<colordiffuse>osd-background</colordiffuse>
-				</control>
-				<control type="image"><!-- Button background -->
-					<left>460</left>
-					<top>90</top>
-					<width>396</width>
-					<height>544</height>
-					<texture border="8">button-menu-background.png</texture>
-				</control>
+			<include>fadebackground</include>
+			<control type="image"><!-- Button background -->
+				<left>460</left>
+				<top>90</top>
+				<width>396</width>
+				<height>550</height>
+				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>472</left>
@@ -74,7 +64,6 @@
 				<ondown condition="Control.IsVisible(57)">57</ondown>
 				<ondown condition="Control.IsVisible(50) | Control.IsVisible(58)">noop</ondown>
 				<itemgap>0</itemgap>
-				<visible>!Skin.HasSetting(view-as-lock)</visible>
 				<control type="button" id="2"><!-- View type -->
 					<width>372</width>
 					<height>48</height>
@@ -175,6 +164,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
+					<usealttexture>library.isscanningmusic</usealttexture>
 				</control>
 				<control type="button" id="1200"><!-- Player controls -->
 					<width>372</width>
@@ -185,7 +175,7 @@
 					<onclick>SetFocus(50)</onclick>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
-				<control type="button" id="22"><!-- now playing -->
+				<control type="button" id="22"><!-- Now playing -->
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>

@@ -4,19 +4,13 @@
 	<controls>
 		<include>Fake-Overlay</include>
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>fullscreenimage</include>
 			<texture background="true">$VAR[NextAiredFanart]</texture>
 			<aspectratio>scale</aspectratio>
 			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart)) + Skin.HasSetting(background-fanart)</visible>
 		</control>
 		<control type="image"><!-- mask to fade background -->
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>fullscreenimage</include>
 			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
