@@ -2,7 +2,6 @@
 			<!-- Backgrounds -->
 	<color name="osd-background">A0FFFFFF</color>
 	<color name="mask-background">C0FFFFFF</color>
-	<color name="fanart-background">FF505050</color>
 
 			<!-- Text -->
 	<color name="info-text">FF0066CC</color>
