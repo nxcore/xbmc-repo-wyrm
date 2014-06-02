@@ -8,7 +8,7 @@
 			<top>0</top>
 			<width>1280</width>
 			<height>176</height>
-			<texture>background.png</texture>
+			<texture>colours/black.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 			<visible>Player.ShowCodec + !VideoPlayer.Content(LiveTV)</visible>
 		</control>
@@ -17,7 +17,7 @@
 			<top>0</top>
 			<width>1280</width>
 			<height>396</height>
-			<texture>background.png</texture>
+			<texture>colours/black.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 			<visible>Player.ShowCodec + VideoPlayer.Content(LiveTV)</visible>
 		</control>

@@ -64,18 +64,17 @@
 			</control>
 			<control type="image"><!-- Mask to fade background -->
 				<include>fullscreenimage</include>
-				<colordiffuse>mask-background</colordiffuse>
 				<texture>colours/black.png</texture>
-				<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
-				<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+				<colordiffuse>mask-background</colordiffuse>
 				<aspectratio>stretch</aspectratio>
+				<include>background-fade</include>
 				<visible>!IsEmpty(Skin.String(custom-weatherbackgrounds)) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 			</control>
 		</control>
 
 		<control type="label"><!-- Weather heading label -->
-			<posx>946</posx>
-			<posy>50</posy>
+			<left>946</left>
+			<top>50</top>
 			<width>309</width>
 			<height>37</height>
 			<label>$LOCALIZE[31032]</label>
@@ -85,8 +84,8 @@
 		<control type="group">
 			<visible>Weather.IsFetched</visible>
 			<control type="label"><!-- Weather location label -->
-				<posx>17</posx>
-				<posy>2</posy>
+				<left>17</left>
+				<top>2</top>
 				<width>636</width>
 				<height>37</height>
 				<font>font18</font>
@@ -94,8 +93,8 @@
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 			</control>
 			<control type="label"><!-- Update label -->
-				<posx>17</posx>
-				<posy>38</posy>
+				<left>17</left>
+				<top>38</top>
 				<width>636</width>
 				<height>25</height>
 				<font>font11</font>
@@ -103,8 +102,8 @@
 			</control>
 			<control type="group">
 				<control type="image"><!-- Weather provider logo -->
-					<posx>18</posx>
-					<posy>63</posy>
+					<left>18</left>
+					<top>63</top>
 					<width>180</width>
 					<height>45</height>
 					<colordiffuse>StudioShadow</colordiffuse>
@@ -112,8 +111,8 @@
 					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
 				</control>
 				<control type="image"><!-- Weather provider logo (shadow) -->
-					<posx>17</posx>
-					<posy>62</posy>
+					<left>17</left>
+					<top>62</top>
 					<width>180</width>
 					<height>45</height>
 					<aspectratio>keep</aspectratio>
@@ -121,8 +120,8 @@
 				</control>
 			</control>
 			<control type="label"><!-- Weather provider label -->
-				<posx>17</posx>
-				<posy>64</posy>
+				<left>17</left>
+				<top>64</top>
 				<width>636</width>
 				<height>20</height>
 				<font>font11</font>
@@ -135,8 +134,8 @@
 
 		<control type="group" id="9000"><!-- Button Group -->
 			<control type="spincontrolex" id="3"><!-- Change location button -->
-				<posx>176</posx>
-				<posy>662</posy>
+				<left>176</left>
+				<top>662</top>
 				<width>309</width>
 				<height>50</height>
 				<font>-</font>
@@ -146,15 +145,15 @@
 				<ondown>7050</ondown>
 			</control>
 			<control type="label"><!-- Change location label -->
-				<posx>193</posx>
-				<posy>662</posy>
+				<left>193</left>
+				<top>662</top>
 				<width>250</width>
 				<height>50</height>
 				<label>$LOCALIZE[31530]</label>
 			</control>
 			<control type="button" id="2"><!-- Refresh button -->
-				<posx>486</posx>
-				<posy>662</posy>
+				<left>486</left>
+				<top>662</top>
 				<width>309</width>
 				<height>50</height>
 				<label>$LOCALIZE[103]</label>
@@ -165,8 +164,8 @@
 				<ondown>7050</ondown>
 			</control>
 			<control type="button" id="4"><!-- Settings button -->
-				<posx>796</posx>
-				<posy>662</posy>
+				<left>796</left>
+				<top>662</top>
 				<width>309</width>
 				<height>50</height>
 				<label>$LOCALIZE[5]</label>

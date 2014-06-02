@@ -111,7 +111,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>![Window.IsVisible(videoplaylist) | Window.IsVisible(videoplaylist)]</visible>
+				<visible>![Window.IsVisible(videoplaylist) | Window.IsVisible(musicplaylist)]</visible>
 				<animation type="TYPE" condition="Skin.HasSetting(tiltmisclisticon)" reversible="false">
 					<effect type="rotatey" start="-25" end="-25" time="0"/>
 					<effect type="slide" end="15,0" time="0"/>

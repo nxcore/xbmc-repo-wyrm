@@ -11,16 +11,15 @@
 		</control>
 		<control type="image"><!-- mask to fade background -->
 			<include>fullscreenimage</include>
-			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
-			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
-			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+			<colordiffuse>mask-background</colordiffuse>
 			<aspectratio>stretch</aspectratio>
+			<include>background-fade</include>
 			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart)) + Skin.HasSetting(background-fanart)</visible>
 		</control>
 		<control type="image"><!-- Screen logo (Use for vertical home menu) -->
-			<posx>840</posx>
-			<posy>-12</posy>
+			<left>840</left>
+			<top>-12</top>
 			<width>80</width>
 			<height>80</height>
 			<texture>icon-tv.png</texture>
@@ -28,8 +27,8 @@
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>35</posy>
+			<left>946</left>
+			<top>35</top>
 			<width>365</width>
 			<height>72</height>
 			<align>left</align>
@@ -53,35 +52,35 @@
 			</control>
 		</control>
 		<control type="label"><!-- Number of files (Use for Vertical home menu) -->
-			<posx>1062</posx>
-			<posy>682</posy>
+			<left>1062</left>
+			<top>682</top>
 			<width>203</width>
 			<height>37</height>
 			<label>$INFO[Window(Home).Property(NextAired.Total),, $LOCALIZE[127]]</label>
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 		<control type="group"><!-- Monday -->
-			<posx>30</posx>
-			<posy>70</posy>
+			<left>30</left>
+			<top>70</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>100</width>
 				<height>630</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>5FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -89,16 +88,16 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[41])</visible>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[41][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="200">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -108,24 +107,24 @@
 				<ondown>201</ondown>
 				<itemlayout width="180" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -134,8 +133,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -144,16 +143,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -161,8 +160,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -170,8 +169,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -180,8 +179,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -189,24 +188,24 @@
 						<visible>Control.HasFocus(200)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -215,8 +214,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -225,16 +224,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -242,8 +241,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -251,8 +250,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -262,19 +261,19 @@
 			</control>
 		</control>
 		<control type="group"><!-- Tuesday -->
-			<posx>30</posx>
-			<posy>160</posy>
+			<left>30</left>
+			<top>160</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -282,24 +281,24 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[42])</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>818</width>
 				<height>1</height>
 				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[42][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="201">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -309,24 +308,24 @@
 				<ondown>202</ondown>
 				<itemlayout width="180" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -335,8 +334,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -345,16 +344,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -362,8 +361,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -371,8 +370,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -381,8 +380,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -390,24 +389,24 @@
 						<visible>Control.HasFocus(201)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -416,8 +415,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -426,16 +425,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -443,8 +442,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -452,8 +451,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -463,19 +462,19 @@
 			</control>
 		</control>
 		<control type="group"><!-- Wednesday -->
-			<posx>30</posx>
-			<posy>250</posy>
+			<left>30</left>
+			<top>250</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -483,24 +482,24 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[43])</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>818</width>
 				<height>1</height>
 				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[43][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="202">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -510,24 +509,24 @@
 				<ondown>203</ondown>
 				<itemlayout width="180" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -536,8 +535,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -546,16 +545,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -563,8 +562,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -572,8 +571,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -582,8 +581,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -591,24 +590,24 @@
 						<visible>Control.HasFocus(202)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -617,8 +616,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -627,16 +626,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -644,8 +643,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -653,8 +652,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -664,19 +663,19 @@
 			</control>
 		</control>
 		<control type="group"><!-- Thursday -->
-			<posx>30</posx>
-			<posy>340</posy>
+			<left>30</left>
+			<top>340</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -684,24 +683,24 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[44])</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>818</width>
 				<height>1</height>
 				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[44][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="203">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -711,24 +710,24 @@
 				<ondown>204</ondown>
 				<itemlayout width="180" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -737,8 +736,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -747,16 +746,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -764,8 +763,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -773,8 +772,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -783,8 +782,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -792,24 +791,24 @@
 						<visible>Control.HasFocus(203)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -818,8 +817,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -828,16 +827,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -845,8 +844,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -854,8 +853,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -865,19 +864,19 @@
 			</control>
 		</control>
 		<control type="group"><!-- Friday -->
-			<posx>30</posx>
-			<posy>430</posy>
+			<left>30</left>
+			<top>430</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -885,24 +884,24 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[45])</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>818</width>
 				<height>1</height>
 				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[45][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="204">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>850</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -912,24 +911,24 @@
 				<ondown>205</ondown>
 				<itemlayout width="170" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -938,8 +937,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -948,16 +947,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -965,8 +964,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -974,8 +973,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -984,8 +983,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -993,24 +992,24 @@
 						<visible>Control.HasFocus(204)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1019,8 +1018,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1029,16 +1028,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1046,8 +1045,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1055,8 +1054,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -1066,19 +1065,19 @@
 			</control>
 		</control>
 		<control type="group"><!-- Saturday -->
-			<posx>30</posx>
-			<posy>520</posy>
+			<left>30</left>
+			<top>520</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -1086,24 +1085,24 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[46])</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>818</width>
 				<height>1</height>
 				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[46][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="205">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -1113,24 +1112,24 @@
 				<ondown>206</ondown>
 				<itemlayout width="180" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1139,8 +1138,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1149,16 +1148,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1166,8 +1165,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1175,8 +1174,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -1185,8 +1184,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -1194,24 +1193,24 @@
 						<visible>Control.HasFocus(205)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1220,8 +1219,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1230,16 +1229,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1247,8 +1246,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1256,8 +1255,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -1267,19 +1266,19 @@
 			</control>
 		</control>
 		<control type="group"><!-- Sunday -->
-			<posx>30</posx>
-			<posy>610</posy>
+			<left>30</left>
+			<top>610</top>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>4FFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>-1</posx>
-				<posy>0</posy>
+				<left>-1</left>
+				<top>0</top>
 				<width>820</width>
 				<height>91</height>
 				<texture border="2">epg-genres/112.png</texture>
@@ -1287,24 +1286,24 @@
 				<visible>StringCompare(System.Date(ddd),$LOCALIZE[47])</visible>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>818</width>
 				<height>1</height>
 				<texture>colours/white.png</texture>
 				<colordiffuse>AFFFFFFF</colordiffuse>
 			</control>
 			<control type="label">
-				<posx>90</posx>
-				<posy>0</posy>
+				<left>90</left>
+				<top>0</top>
 				<width>100</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[47][/B]</label>
 				<align>right</align>
 			</control>
 			<control type="list" id="206">
-				<posx>98</posx>
-				<posy>0</posy>
+				<left>98</left>
+				<top>0</top>
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
@@ -1314,24 +1313,24 @@
 				<ondown>200</ondown>
 				<itemlayout width="180" height="90">
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1340,8 +1339,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1350,16 +1349,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1367,8 +1366,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1376,8 +1375,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -1386,8 +1385,8 @@
 				</itemlayout>
 				<focusedlayout width="180" height="90">
 					<control type="image">
-						<posx>-1</posx>
-						<posy>0</posy>
+						<left>-1</left>
+						<top>0</top>
 						<width>180</width>
 						<height>90</height>
 						<texture border="2">epg-genres/112.png</texture>
@@ -1395,24 +1394,24 @@
 						<visible>Control.HasFocus(206)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>4</posy>
+						<left>4</left>
+						<top>4</top>
 						<width>160</width>
 						<height>40</height>
 						<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>46</posy>
+						<left>84</left>
+						<top>46</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1421,8 +1420,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="label">
-						<posx>84</posx>
-						<posy>65</posy>
+						<left>84</left>
+						<top>65</top>
 						<width>160</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1431,16 +1430,16 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 					</control>
 					<control type="image">
-						<posx>4</posx>
-						<posy>5</posy>
+						<left>4</left>
+						<top>5</top>
 						<width>54</width>
 						<height>80</height>
 						<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>28</posy>
+						<left>63</left>
+						<top>28</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(NextDate)]</label>
@@ -1448,8 +1447,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="label">
-						<posx>63</posx>
-						<posy>54</posy>
+						<left>63</left>
+						<top>54</top>
 						<width>105</width>
 						<height>22</height>
 						<label>$INFO[ListItem.Property(ShortTime)]</label>
@@ -1457,8 +1456,8 @@
 						<visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 					</control>
 					<control type="image">
-						<posx>178</posx>
-						<posy>0</posy>
+						<left>178</left>
+						<top>0</top>
 						<width>2</width>
 						<height>90</height>
 						<texture>separator.png</texture>
@@ -1468,27 +1467,38 @@
 			</control>
 		</control>
 		<control type="group"><!-- Next Aired Episode description -->
-			<posx>850</posx>
-			<posy>115</posy>
+			<left>850</left>
+			<top>115</top>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>470</width>
 				<height>540</height>
 				<texture border="2">epg-genres/0.png</texture>
 				<colordiffuse>4F000000</colordiffuse>
 			</control>
 			<control type="group">
-				<control type="image"><!-- Next Aired Logo -->
-					<posx>76</posx>
-					<posy>-25</posy>
+				<control type="image" id="7018"><!-- Next Aired Logo -->
+					<left>76</left>
+					<top>-25</top>
 					<width>258</width>
 					<height>100</height>
-					<texture>$VAR[NextAiredImage3]</texture>
+					<texture fallback="blank.png">$VAR[NextAiredImage3]</texture>
+				</control>
+				<control type="label"><!-- Next TVShow Title -->
+					<left>0</left>
+					<top>0</top>
+					<width>410</width>
+					<height>90</height>
+					<label>$VAR[NextAiredLabel1]</label>
+					<font>font18</font>
+					<align>center</align>
+					<wrapmultiline>true</wrapmultiline>
+					<visible>SubString(Control.GetLabel(7018),blank.png,Left)</visible>
 				</control>
 				<control type="image"><!-- Next Aired Network Logo -->
-					<posx>340</posx>
-					<posy>95</posy>
+					<left>340</left>
+					<top>95</top>
 					<width>60</width>
 					<height>60</height>
 					<aspectratio>keep</aspectratio>
@@ -1496,24 +1506,24 @@
 					<texture>$VAR[NextAiredImage4]</texture>
 				</control>
 				<control type="image"><!-- Next Aired Poster -->
-					<posx>128</posx>
-					<posy>95</posy>
+					<left>128</left>
+					<top>95</top>
 					<width>154</width>
 					<height>220</height>
 					<texture>$VAR[NextAiredImage1]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + [StringCompare(Window(Home).Property(TVGuide.ThumbType),0) | StringCompare(Window(Home).Property(TVGuide.ThumbType),2)]</visible>
 				</control>
 				<control type="image"><!-- Next Aired Banner -->
-					<posx>33</posx>
-					<posy>140</posy>
+					<left>33</left>
+					<top>140</top>
 					<width>244</width>
 					<height>45</height>
 					<texture>$VAR[NextAiredImage5]</texture>
 					<visible>IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs)) + StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 				</control>
 				<control type="image"><!-- Next Aired Landscape Thumb -->
-					<posx>23</posx>
-					<posy>100</posy>
+					<left>23</left>
+					<top>100</top>
 					<width>264</width>
 					<height>170</height>
 					<aspectratio>keep</aspectratio>
@@ -1521,8 +1531,8 @@
 					<visible>!IsEmpty(Window(Home).Property(TVGuide.PreviewThumbs))</visible>
 				</control>
 				<control type="label"><!-- Next Aired Episode Title -->
-					<posx>0</posx>
-					<posy>330</posy>
+					<left>0</left>
+					<top>330</top>
 					<width>410</width>
 					<height>90</height>
 					<label>$VAR[NextAiredLabel2]</label>
@@ -1531,8 +1541,8 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Run Time -->
-					<posx>0</posx>
-					<posy>436</posy>
+					<left>0</left>
+					<top>436</top>
 					<width>410</width>
 					<height>24</height>
 					<label>$VAR[NextAiredLabel3]</label>
@@ -1541,8 +1551,8 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Genre -->
-					<posx>0</posx>
-					<posy>480</posy>
+					<left>0</left>
+					<top>480</top>
 					<width>410</width>
 					<height>44</height>
 					<label>$VAR[NextAiredLabel4]</label>
@@ -1551,19 +1561,19 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label"><!-- Next Aired Time and Date -->
-					<posx>0</posx>
-					<posy>544</posy>
+					<left>0</left>
+					<top>544</top>
 					<width>410</width>
 					<height>22</height>
-					<label>$VAR[NextAiredLabel5]   $VAR[NextAiredLabel6]</label>
+					<label>$VAR[NextAiredLabel5]  $VAR[NextAiredLabel6]</label>
 					<align>center</align>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 			</control>
 		</control>
 		<control type="button" id="8">
-			<posx>-10</posx>
-			<posy>-10</posy>
+			<left>-10</left>
+			<top>-10</top>
 			<width>1</width>
 			<height>1</height>
 			<label>-</label>

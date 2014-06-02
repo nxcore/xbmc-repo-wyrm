@@ -67,7 +67,7 @@
 					<width>566</width>
 					<height>46</height>
 					<texture border="8">default-button.png</texture>
-					<animation condition="!Control.HasFocus(10)" effect="fade" start="100" end="65">Conditional</animation>
+					<animation condition="!Control.HasFocus(10)" effect="fade" start="100" end="60">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>13</posx>

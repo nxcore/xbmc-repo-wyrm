@@ -342,7 +342,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<include>background-fade</include>
+			<include>transition-fade</include>
 			<include>SortLetterNotification</include>
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="1357">
