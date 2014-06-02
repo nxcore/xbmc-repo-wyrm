@@ -161,7 +161,7 @@
 									<height>30</height>
 									<width>800</width>
 									<font>font12</font>
-									<label>$LOCALIZE[536]</label>
+									<label>$LOCALIZE[31939]</label>
 								</control>
 								<control type="label">
 									<left>800</left>
@@ -412,7 +412,7 @@
 									<height>30</height>
 									<width>800</width>
 									<font>font12</font>
-									<label>$LOCALIZE[536]</label>
+									<label>$LOCALIZE[31939]</label>
 								</control>
 								<control type="label">
 									<left>800</left>
@@ -528,71 +528,193 @@
 							</content>
 						</control>
 					</control>
-					<!-- Removed TVShow icon type code, re-add in future update -->
-					<control type="button" id="207"><!-- TVShow favourite 1 -->
+					<control type="group" id="205">
+						<height>56</height>
+						<width>885</width>
+						<control type="list" id="206">
+							<left>0</left>
+							<top>0</top>
+							<height>56</height>
+							<width>885</width>
+							<onup>202</onup>
+							<ondown>208</ondown>
+							<onleft>1223</onleft>
+							<onright>207</onright>
+							<scrolltime>0</scrolltime>
+							<itemlayout width="885" height="56"/>
+							<focusedlayout width="833" height="56">
+								<control type="image">
+									<left>0</left>
+									<top>0</top>
+									<width>885</width>
+									<height>56</height>
+									<texture border="7">default-button.png</texture>
+									<visible>ControlGroup(205).HasFocus()</visible>
+								</control>
+								<control type="label">
+									<left>18</left>
+									<top>10</top>
+									<height>30</height>
+									<width>800</width>
+									<font>font12</font>
+									<label>$LOCALIZE[31940]</label>
+								</control>
+								<control type="label">
+									<left>800</left>
+									<top>10</top>
+									<height>30</height>
+									<width>800</width>
+									<align>right</align>
+									<font>font12</font>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+								<control type="image">
+									<left>814</left>
+									<top>12</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>scroll-down-focus.png</texture>
+									<visible>Control.HasFocus(206)</visible>
+								</control>
+								<control type="image">
+									<left>814</left>
+									<top>12</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>scroll-down.png</texture>
+									<visible>!Control.HasFocus(206)</visible>
+								</control>
+							</focusedlayout>
+							<content>
+								<item>
+									<label>$LOCALIZE[21371]</label><!-- Thumbs -->
+									<onclick>Skin.SetString(shelf-tvshowimgtyp,$LOCALIZE[31950])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])</visible>
+								</item>
+								<item>
+									<label>$LOCALIZE[31950]</label><!-- Posters -->
+									<onclick>Skin.SetString(shelf-tvshowimgtyp,$LOCALIZE[31949])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])</visible>
+								</item>
+								<item>
+									<label>$LOCALIZE[31949]</label><!-- Banners -->
+									<onclick>Skin.SetString(shelf-tvshowimgtyp,$LOCALIZE[21371])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])</visible>
+								</item>
+							</content>
+						</control>
+						<control type="list" id="207">
+							<left>843</left>
+							<top>0</top>
+							<height>56</height>
+							<width>32</width>
+							<onup>202</onup>
+							<ondown>208</ondown>
+							<onleft>206</onleft>
+							<onright>999</onright>
+							<scrolltime>0</scrolltime>
+							<itemlayout width="32" height="56"/>
+							<focusedlayout width="32" height="56">
+								<control type="image">
+									<left>0</left>
+									<top>12</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>scroll-up.png</texture>
+									<visible>!Control.HasFocus(207)</visible>
+								</control>
+								<control type="image">
+									<left>0</left>
+									<top>12</top>
+									<width>32</width>
+									<height>32</height>
+									<texture>scroll-up-focus.png</texture>
+									<visible>Control.HasFocus(207)</visible>
+								</control>
+							</focusedlayout>
+							<content>
+								<item>
+									<label>$LOCALIZE[21371]</label><!-- Thumbs -->
+									<onclick>Skin.SetString(shelf-tvshowimgtyp,$LOCALIZE[31949])</onclick>
+									<visible>IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])</visible>
+								</item>
+								<item>
+									<label>$LOCALIZE[31949]</label><!-- Banners -->
+									<onclick>Skin.SetString(shelf-tvshowimgtyp,$LOCALIZE[31950])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])</visible>
+								</item>
+								<item>
+									<label>$LOCALIZE[31950]</label><!-- Posters -->
+									<onclick>Skin.SetString(shelf-tvshowimgtyp,$LOCALIZE[21371])</onclick>
+									<visible>StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])</visible>
+								</item>
+							</content>
+						</control>
+					</control>
+					<control type="button" id="208"><!-- TVShow favourite 1 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.1)</onclick>
 					</control>
-					<control type="button" id="208"><!-- TVShow favourite 1 icon location -->
+					<control type="button" id="209"><!-- TVShow favourite 1 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.1.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="209"><!-- TVShow favourite 2 -->
+					<control type="button" id="210"><!-- TVShow favourite 2 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.2)</onclick>
 					</control>
-					<control type="button" id="210"><!-- TVShow favourite 2 icon location -->
+					<control type="button" id="211"><!-- TVShow favourite 2 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.2.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="211"><!-- TVShow favourite 3 -->
+					<control type="button" id="212"><!-- TVShow favourite 3 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.3)</onclick>
 					</control>
-					<control type="button" id="212"><!-- TVShow favourite 3 icon location -->
+					<control type="button" id="213"><!-- TVShow favourite 3 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.3.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="213"><!-- TVShow favourite 4 -->
+					<control type="button" id="214"><!-- TVShow favourite 4 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.4)</onclick>
 					</control>
-					<control type="button" id="214"><!-- TVShow favourite 4 icon location -->
+					<control type="button" id="215"><!-- TVShow favourite 4 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Icon)] </label2>
 						<onclick>Skin.SetFile(CustomTVShow.4.Icon,.jpg|.png)</onclick>
 					</control>
-					<control type="button" id="215"><!-- TVShow favourite 5 -->
+					<control type="button" id="216"><!-- TVShow favourite 5 -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Label)]</label2>
 						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.5)</onclick>
 					</control>
-					<control type="button" id="216"><!-- TVShow favourite 5 icon location -->
+					<control type="button" id="217"><!-- TVShow favourite 5 icon location -->
 						<include>settings-submenu-common</include>
 						<textwidth>480</textwidth>
 						<label>- $LOCALIZE[21371]</label>
@@ -674,7 +796,7 @@
 									<height>30</height>
 									<width>800</width>
 									<font>font12</font>
-									<label>$LOCALIZE[536]</label>
+									<label>$LOCALIZE[31939]</label>
 								</control>
 								<control type="label">
 									<left>800</left>
