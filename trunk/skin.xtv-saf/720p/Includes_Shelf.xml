@@ -152,7 +152,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.1.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.1.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent1]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.File))</visible>
 		</item>
@@ -160,7 +160,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.2.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.2.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent2]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.File))</visible>
 		</item>
@@ -168,7 +168,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.3.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.3.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent3]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.File))</visible>
 		</item>
@@ -176,7 +176,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.4.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.4.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent4]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.File))</visible>
 		</item>
@@ -184,7 +184,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.5.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.5.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent5]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.File))</visible>
 		</item>
@@ -192,7 +192,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.6.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.6.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent6]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.File))</visible>
 		</item>
@@ -200,7 +200,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.7.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.7.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent7]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.File))</visible>
 		</item>
@@ -208,7 +208,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.8.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.8.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent8]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.File))</visible>
 		</item>
@@ -216,7 +216,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.9.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.9.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent9]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.File))</visible>
 		</item>
@@ -224,7 +224,7 @@
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.10.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.10.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecent10]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.File))</visible>
 		</item>
@@ -679,7 +679,64 @@
 			<animation condition="Container(9160).Position(5)" effect="slide" start="0,0" end="1050,0" time="200" easing="inout" reversible="true">Conditional</animation>
 		</control>
 	</include>
-
+	<include name="tvshow-shelfbanner">
+		<control type="image">
+			<posx>31</posx>
+			<posy>8</posy>
+			<width>190</width>
+			<height>190</height>
+			<aligny>bottom</aligny>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+		</control>
+		<control type="image">
+			<posx>31</posx>
+			<posy>198</posy>
+			<width>190</width>
+			<height>190</height>
+			<aligny>bottom</aligny>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+		</control>
+	</include>
+	<include name="tvshow-shelfposter">
+		<control type="image">
+			<posx>22</posx>
+			<posy>0</posy>
+			<width>160</width>
+			<height>205</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+		</control>
+		<control type="image">
+			<posx>22</posx>
+			<posy>205</posy>
+			<width>160</width>
+			<height>205</height>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+		</control>
+	</include>
+	<include name="tvshow-shelfthumb">
+		<control type="image">
+			<posx>31</posx>
+			<posy>8</posy>
+			<width>190</width>
+			<height>190</height>
+			<aligny>top</aligny>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+		</control>
+		<control type="image">
+			<posx>31</posx>
+			<posy>198</posy>
+			<width>190</width>
+			<height>190</height>
+			<aligny>top</aligny>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+		</control>
+	</include>
 	<include name="tvshow-shelficons">
 		<control type="label"><!-- TV Episodes shelf icons label -->
 			<posx>55</posx>
@@ -724,44 +781,14 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<itemlayout height="252" width="252">
-				<control type="image">
-					<posx>31</posx>
-					<posy>8</posy>
-					<width>190</width>
-					<height>190</height>
-					<aligny>top</aligny>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
-				</control>
-				<control type="image">
-					<posx>31</posx>
-					<posy>198</posy>
-					<width>190</width>
-					<height>190</height>
-					<aligny>top</aligny>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
-				</control>
+				<include condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">tvshow-shelfthumb</include>
+				<include condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">tvshow-shelfposter</include>
+				<include condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">tvshow-shelfbanner</include>
 			</itemlayout>
 			<focusedlayout height="252" width="252">
-				<control type="image">
-					<posx>31</posx>
-					<posy>8</posy>
-					<width>190</width>
-					<height>190</height>
-					<aligny>top</aligny>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
-				</control>
-				<control type="image">
-					<posx>31</posx>
-					<posy>198</posy>
-					<width>190</width>
-					<height>190</height>
-					<aligny>top</aligny>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
-				</control>
+				<include condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">tvshow-shelfthumb</include>
+				<include condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">tvshow-shelfposter</include>
+				<include condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">tvshow-shelfbanner</include>
 				<control type="group">
 					<animation effect="fade" time="100" delay="300">Focus</animation>
 					<visible>Control.HasFocus(9210)</visible>

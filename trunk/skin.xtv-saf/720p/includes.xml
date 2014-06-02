@@ -99,10 +99,9 @@
 		</control>
 		<control type="image"><!-- mask to fade backgrounds -->
 			<include>fullscreenimage</include>
-			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
-			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
-			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+			<colordiffuse>mask-background</colordiffuse>
+			<include>background-fade</include>
 			<aspectratio>stretch</aspectratio>
 			<visible>!IsEmpty(Skin.String(custom-weatherbackgrounds)) | Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 		</control>
@@ -205,10 +204,9 @@
 		</control>
 		<control type="image"><!-- mask to fade backgrounds -->
 			<include>fullscreenimage</include>
-			<colordiffuse>mask-background</colordiffuse>
 			<texture>colours/black.png</texture>
-			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
-			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+			<colordiffuse>mask-background</colordiffuse>
+			<include>background-fade</include>
 			<aspectratio>stretch</aspectratio>
 			<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 		</control>
@@ -600,12 +598,17 @@
 	<include name="scrolltext">
 		<scroll>true</scroll>
 	</include>
-	
-	<include name="settingbutton-fade">
-		<animation effect="fade" start="100" end="60" time="50">Visible</animation>
-	</include>
 
 	<include name="background-fade">
+		<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
+		<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+	</include>
+
+	<include name="settingbutton-fade">
+		<animation effect="fade" start="100" end="60">Visible</animation>
+	</include>
+
+	<include name="transition-fade">
 		<animation effect="fade" time="100">Visible</animation>
 		<animation effect="fade" time="100">Hidden</animation>
 	</include>

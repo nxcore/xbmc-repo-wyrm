@@ -12,11 +12,6 @@
 		<value condition="!IsEmpty(Skin.String(custom-background))">$INFO[Skin.String(custom-background)]</value>
 		<value>background.png</value>
 	</variable>
-	<variable name="MusicBackgndImage">
-		<value condition="[Container.Content(artists) | Container.Content(albums)]">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/extrafanart/]</value>
-		<value condition="Container.Content(songs)">$INFO[ListItem.Path,,extrafanart/]</value>
-		<value condition="Container.Content(files) + Skin.HasSetting(extrafanartaudio)">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/extrafanart/]</value>
-	</variable>
 	<variable name="VideoRating">
 		<value condition="substring(ListItem.Mpaa,Rated G) | substring(ListItem.Mpaa,Rated: G)">special://skin/extras/images/rating/mpaa_general.png</value>
 		<value condition="[substring(ListItem.Mpaa,Rated PG) | substring(ListItem.Mpaa,Rated: PG)] + !substring(ListItem.Mpaa,Rated PG-13) + !substring(ListItem.Mpaa,Rated: PG-13)">special://skin/extras/images/rating/mpaa_pg.png</value>
@@ -445,6 +440,56 @@
 		<value condition="StringCompare(Window(Home).Property(TVGuide.ThumbType),2)">$INFO[Window(Home).Property(NextAired.10.Art(clearlogo))]</value>
 		<value>$INFO[Window(Home).Property(NextAired.10.Thumb)]</value>
 	</variable>
+	<variable name="TVShowShelfRecent1">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent2">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent3">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent4">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent5">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent6">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent7">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent8">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent9">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecent10">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</value>
+	</variable>
 	<variable name="VideoList0">
 		<value condition="Container(9100).Position(0)">$INFO[Container(9100).ListItemNoWrap(-1).Label]</value>
 		<value condition="Container(9100).Position(1)">$INFO[Container(9100).ListItemNoWrap(-2).Label]</value>
@@ -604,15 +649,6 @@
 		<value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(NextDate)]</value>
 		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(NextDate)]</value>
 		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(NextDate)]</value>
-	</variable>
-	<variable name="NextAiredLabel7">
-		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Network)]</value>
-		<value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Network)]</value>
-		<value condition="Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Network)]</value>
-		<value condition="Control.HasFocus(203)">$INFO[Container(203).ListItem.Property(Network)]</value>
-		<value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Network)]</value>
-		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Network)]</value>
-		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Network)]</value>
 	</variable>
 	<variable name="NextAiredImage1">
 		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Art(poster))]</value>
