@@ -72,7 +72,7 @@
 							<height>46</height>
 							<align>left</align>
 							<texture border="8">default-button.png</texture>
-							<include>background-fade</include>
+							<include>transition-fade</include>
 						</control>
 						<control type="label">
 							<posx>194</posx>
@@ -222,7 +222,7 @@
 							<height>46</height>
 							<align>left</align>
 							<texture border="8">default-button.png</texture>
-							<include>background-fade</include>
+							<include>transition-fade</include>
 						</control>
 						<control type="label">
 							<posx>194</posx>
@@ -348,7 +348,7 @@
 							<height>46</height>
 							<align>left</align>
 							<texture border="8">default-button.png</texture>
-							<include>background-fade</include>
+							<include>transition-fade</include>
 						</control>
 						<control type="label">
 							<posx>194</posx>
@@ -468,7 +468,7 @@
 							<height>46</height>
 							<align>left</align>
 							<texture border="8">default-button.png</texture>
-							<include>background-fade</include>
+							<include>transition-fade</include>
 						</control>
 						<control type="label">
 							<posx>194</posx>

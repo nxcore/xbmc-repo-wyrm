@@ -16,17 +16,17 @@
 			<itemlayout width="556" height="100">
 				<control type="image"><!-- Banner image -->
 					<left>7</left>
-					<top>4</top>
+					<top>0</top>
 					<width>542</width>
 					<height>100</height>
 					<texture background="true">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<visible>!IsEmpty(ListItem.Art(banner)) + !SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="image"><!-- Go Back image -->
 					<left>7</left>
-					<top>4</top>
+					<top>0</top>
 					<width>542</width>
 					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -36,41 +36,36 @@
 				</control>
 			</itemlayout>
 			<focusedlayout width="556" height="114">
-				<control type="group">
-					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-					<control type="image"><!-- Item hi-lite -->
-						<left>0</left>
-						<top>0</top>
-						<width>556</width>
-						<height>114</height>
-						<texture border="7" background="true">button-menu-background.png</texture>
-					</control>
-					<control type="image"><!-- Go Back image -->
-						<left>7</left>
-						<top>7</top>
-						<width>542</width>
-						<height>100</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-				</control>
-				<control type="image"><!-- Banner image -->
+				<control type="image"><!-- Item hi-lite -->
 					<left>0</left>
 					<top>0</top>
 					<width>556</width>
 					<height>114</height>
+					<texture border="7" background="true">button-menu-background.png</texture>
+				</control>
+				<control type="image"><!-- Go Back image -->
+					<left>7</left>
+					<top>7</top>
+					<width>542</width>
+					<height>100</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+				</control>
+				<control type="image"><!-- Banner image -->
+					<left>7</left>
+					<top>7</top>
+					<width>542</width>
+					<height>100</height>
 					<texture background="true">$VAR[IconBanner]</texture>
 					<aspectratio>keep</aspectratio>
-					<bordertexture border="7">button-menu-background.png</bordertexture>
-					<bordersize>7</bordersize>
-					<visible>!IsEmpty(ListItem.Art(banner)) + !SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
+					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(59)</visible>
 			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
-			<visible>Window.IsActive(VideoLibrary) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			<control type="label"><!-- Go Back -->
 				<left>30</left>
 				<top>312</top>

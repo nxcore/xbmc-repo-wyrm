@@ -32,11 +32,10 @@
 			</control>
 			<control type="image"><!-- Mask to fade backgrounds -->
 				<include>fullscreenimage</include>
-				<colordiffuse>mask-background</colordiffuse>
 				<texture>colours/black.png</texture>
-				<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
-				<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
+				<colordiffuse>mask-background</colordiffuse>
 				<aspectratio>stretch</aspectratio>
+				<include>background-fade</include>
 				<visible>Skin.HasSetting(background-fanart)</visible>
 			</control>
 			<control type="grouplist"><!-- Media flags -->
