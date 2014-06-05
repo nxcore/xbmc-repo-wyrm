@@ -355,7 +355,11 @@ msgctxt "#31807"
 msgid "Support"
 msgstr ""
 
-#empty strings from id 31808 to 31849
+msgctxt "#31808"
+msgid "Home Screen"
+msgstr ""
+
+#empty strings from id 31809 to 31849
 
 msgctxt "#31850"
 msgid "Use Intro video"
