@@ -131,50 +131,47 @@
 		</control>
 
 		<include>weather</include>
-
-		<control type="group" id="9000"><!-- Button Group -->
+		<control type="grouplist" id="9000"><!-- Option buttons -->
+			<posx>40</posx>
+			<posy>660</posy>
+			<width>1200</width>
+			<height>50</height>
+			<itemgap>0</itemgap>
+			<scrolltime>200</scrolltime>
+			<orientation>horizontal</orientation>
+			<align>center</align>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
 			<control type="spincontrolex" id="3"><!-- Change location button -->
-				<left>176</left>
-				<top>662</top>
-				<width>309</width>
+				<width>480</width>
 				<height>50</height>
-				<font>-</font>
-				<onleft>1115</onleft>
-				<onright>2</onright>
-				<onup>7050</onup>
-				<ondown>7050</ondown>
-			</control>
-			<control type="label"><!-- Change location label -->
-				<left>193</left>
-				<top>662</top>
-				<width>250</width>
-				<height>50</height>
-				<label>$LOCALIZE[31530]</label>
+				<label>$LOCALIZE[31530] : </label>
 			</control>
 			<control type="button" id="2"><!-- Refresh button -->
-				<left>486</left>
-				<top>662</top>
-				<width>309</width>
+				<width>240</width>
 				<height>50</height>
 				<label>$LOCALIZE[103]</label>
 				<align>center</align>
-				<onleft>3</onleft>
-				<onright>4</onright>
-				<onup>7050</onup>
-				<ondown>7050</ondown>
+			</control>
+			<control type="togglebutton" id="999"><!-- Radar/forecast button -->
+				<width>240</width>
+				<height>50</height>
+				<font>font11</font>
+				<align>center</align>
+				<label>$LOCALIZE[33035]</label>
+				<altlabel>$LOCALIZE[31528]</altlabel>
+				<onclick>Skin.ToggleSetting(showradar)</onclick>
+				<usealttexture>Skin.HasSetting(showradar)</usealttexture>
+				<visible>SubString(Weather.plugin,weather.ozweather)</visible>
 			</control>
 			<control type="button" id="4"><!-- Settings button -->
-				<left>796</left>
-				<top>662</top>
-				<width>309</width>
+				<width>240</width>
 				<height>50</height>
 				<label>$LOCALIZE[5]</label>
 				<align>center</align>
 				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-				<onleft>2</onleft>
-				<onright>1115</onright>
-				<onup>7050</onup>
-				<ondown>7050</ondown>
 			</control>
 		</control>
 	</controls>

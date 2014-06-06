@@ -29,12 +29,79 @@
 				<height>128</height>
 				<texture>busy.png</texture>
 				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" start="360" end="0" center="auto" time="5400" loop="true" condition="true">conditional</animation>
+				<include>busy-spin</include>
 			</control>
 		</control>
 		<control type="group">
 			<visible>Weather.IsFetched</visible>
 			<control type="group">
+				<visible>SubString(Weather.plugin,weather.ozweather + Skin.HasSetting(showradar)</visible>
+				<!-- RADAR BACKGROUND IMAGES -->
+				<control type="image">
+					<description>background image</description>
+					<posx>104</posx>
+					<posy>120</posy>
+					<width>460</width>
+					<height>502</height>
+					<texture>special://profile/addon_data/weather.ozweather/radarbackgrounds/$INFO[Window.Property(Radar)]/legend.png</texture>
+				</control>
+				<control type="image">
+					<description>background image</description>
+					<posx>104</posx>
+					<posy>120</posy>
+					<width>460</width>
+					<height>460</height>
+					<texture>special://profile/addon_data/weather.ozweather/radarbackgrounds/$INFO[Window.Property(Radar)]/background.png</texture>
+				</control>
+				<control type="image">
+					<description>background image</description>
+					<posx>104</posx>
+					<posy>120</posy>
+					<width>460</width>
+					<height>460</height>
+					<texture>special://profile/addon_data/weather.ozweather/radarbackgrounds/$INFO[Window.Property(Radar)]/topography.png</texture>
+				</control>
+				<control type="image">
+					<description>background image</description>
+					<posx>104</posx>
+					<posy>120</posy>
+					<width>460</width>
+					<height>460</height>
+					<texture>special://profile/addon_data/weather.ozweather/radarbackgrounds/$INFO[Window.Property(Radar)]/catchments.png</texture>
+				</control>
+				<control type="image">
+					<description>background image</description>
+					<posx>104</posx>
+					<posy>120</posy>
+					<width>460</width>
+					<height>460</height>
+					<texture>special://profile/addon_data/weather.ozweather/radarbackgrounds/$INFO[Window.Property(Radar)]/range.png</texture>
+				</control>
+				<control type="image">
+					<description>locations image</description>
+					<posx>104</posx>
+					<posy>120</posy>
+					<width>460</width>
+					<height>460</height>
+					<texture>special://profile/addon_data/weather.ozweather/radarbackgrounds/$INFO[Window.Property(Radar)]/locations.png</texture>
+				</control>
+				<!-- RADAR OVERLAY SLIDESHOW -->
+				<control type="multiimage">
+					<description>maps multiimage</description>
+					<posx>104</posx>
+					<posy>113</posy>
+					<width>460</width>
+					<height>460</height>
+					<imagepath>special://profile/addon_data/weather.ozweather/currentloop/$INFO[Window.Property(Radar)]/</imagepath>
+					<timeperimage>500</timeperimage>
+					<pauseatend>1000</pauseatend>
+					<fadetime>0</fadetime>
+					<randomize>false</randomize>
+					<loop>yes</loop>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!SubString(Weather.plugin,weather.ozweather | !Skin.HasSetting(showradar)</visible>
 				<posx>17</posx>
 				<posy>12</posy>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Current_Icon</include>
