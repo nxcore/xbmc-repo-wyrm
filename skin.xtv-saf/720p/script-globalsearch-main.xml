@@ -1201,7 +1201,7 @@
 					<height>128</height>
 					<texture>busy.png</texture>
 					<aspectratio>keep</aspectratio>
-					<animation effect="rotate" start="360" end="0" center="auto" time="5400" loop="true" condition="true">conditional</animation>
+	<include>busy-spin</include>
 				</control>
 				<control type="label"><!-- Busy text -->
 					<left>283</left>

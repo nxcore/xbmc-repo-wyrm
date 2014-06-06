@@ -617,7 +617,11 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</include>
-
+	
+	<include name="busy-spin">
+		<animation effect="rotate" start="360" end="0" center="auto" time="5400" loop="true" condition="true">conditional</animation>
+	</include>
+	
 	<include name="View-as">
 		<animation effect="slide" time="0" start="0,0" end="0,-720">Visible</animation>
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Skin.HasSetting(view-as-lock)</visible>
