@@ -35,7 +35,7 @@
 		<control type="group">
 			<visible>Weather.IsFetched</visible>
 			<control type="group">
-				<visible>SubString(Weather.plugin,weather.ozweather + Skin.HasSetting(showradar)</visible>
+				<visible>SubString(Weather.plugin,weather.ozweather) + Skin.HasSetting(showradar)</visible>
 				<!-- RADAR BACKGROUND IMAGES -->
 				<control type="image">
 					<description>background image</description>
@@ -101,7 +101,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!SubString(Weather.plugin,weather.ozweather | !Skin.HasSetting(showradar)</visible>
+				<visible>!SubString(Weather.plugin,weather.ozweather) | !Skin.HasSetting(showradar)</visible>
 				<posx>17</posx>
 				<posy>12</posy>
 				<include condition="Skin.HasSetting(weather-animateicon)">Weather_Animated_Current_Icon</include>
