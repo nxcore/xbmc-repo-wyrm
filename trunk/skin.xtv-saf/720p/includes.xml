@@ -50,15 +50,15 @@
 	</include>
 
 	<include name="background">
+		<control type="image"><!-- Use a black background until background image has had a chance to load -->
+			<include>fullscreenimage</include>
+			<texture>colours/black.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
 		<control type="group">
 			<visible>!Container().Scrolling</visible>
 			<animation effect="fade" start="0" end="100" time="500" delay="2500">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-			<control type="image"><!-- Use a black background until background image has had a chance to load -->
-				<include>fullscreenimage</include>
-				<texture>colours/black.png</texture>
-				<aspectratio>stretch</aspectratio>
-			</control>
 			<control type="image">
 				<include>fullscreenimage</include>
 				<texture background="true">$VAR[BackgroundImage]</texture>
@@ -108,15 +108,15 @@
 	</include>
 
 	<include name="backgroundvideo">
+		<control type="image"><!-- Use a black background until background image has had a chance to load -->
+			<include>fullscreenimage</include>
+			<texture>colours/black.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
 		<control type="group">
 			<visible>!Container().Scrolling</visible>
 			<animation effect="fade" start="0" end="100" time="2500" delay="500" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-			<control type="image"><!-- Use a black background until background image has had a chance to load -->
-				<include>fullscreenimage</include>
-				<texture>colours/black.png</texture>
-				<aspectratio>stretch</aspectratio>
-			</control>
 			<control type="group">
 				<visible>![Skin.HasSetting(HomeViewToggle) + Player.HasVideo] + !IsEmpty(ListItem.Title)</visible>
 				<control type="group">

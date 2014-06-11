@@ -273,7 +273,7 @@
 					<onclick>$VAR[MusicLibEntry]</onclick>
 				</item>
 				<item><!-- Weather -->
-					<visible>Skin.HasSetting(home-weather) + !IsEmpty(Weather.plugin)</visible>
+					<visible>!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]</visible>
 					<thumb>special://skin/extras/homeicons/weather.png</thumb>
 					<label>$LOCALIZE[8]</label>
 					<label2>$LOCALIZE[8]</label2>
