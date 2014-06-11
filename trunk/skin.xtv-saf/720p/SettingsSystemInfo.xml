@@ -7,16 +7,16 @@
 		<include>background</include>
 		<include>Fake-Overlay</include>
 		<control type="label"><!-- Screen heading -->
-			<posx>946</posx>
-			<posy>50</posy>
+			<left>946</left>
+			<top>50</top>
 			<width>309</width>
 			<height>37</height>
 			<label>$LOCALIZE[31559]</label>
 			<font>font20</font>
 		</control>
 		<control type="grouplist" id="9000"><!-- Main menu -->
-			<posx>940</posx>
-			<posy>112</posy>
+			<left>940</left>
+			<top>112</top>
 			<width>305</width>
 			<height>315</height>
 			<onup>noop</onup>
@@ -60,8 +60,8 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<posx>34</posx>
-			<posy>112</posy>
+			<left>34</left>
+			<top>112</top>
 			<width>890</width>
 			<height>550</height>
 			<itemgap>5</itemgap>
@@ -142,8 +142,8 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<posx>34</posx>
-			<posy>112</posy>
+			<left>34</left>
+			<top>112</top>
 			<width>890</width>
 			<height>225</height>
 			<itemgap>5</itemgap>
@@ -178,8 +178,8 @@
 			</control>
 		</control>
 		<control type="label"><!-- XBMC build version and date -->
-			<posx>34</posx>
-			<posy>686</posy>
+			<left>34</left>
+			<top>686</top>
 			<width>1212</width>
 			<label>$INFO[System.BuildVersion,$LOCALIZE[144] ,] $INFO[System.BuildDate,(,)]</label>
 			<font>font11</font>
