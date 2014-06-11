@@ -360,30 +360,37 @@
 						<selected>Skin.HasSetting(CDcase)</selected>
 						<radioposx>844</radioposx>
 					</control>
-					<control type="radiobutton" id="208">
-						<description>Animated Weather Icons toggle</description>
+					<control type="button" id="208">
+						<description>Custom Weather Icons Button</description>
 						<include>settings-submenu-common</include>
-						<label>$LOCALIZE[31890]</label>
-						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(weather-animateicon)</onclick>
-						<selected>Skin.HasSetting(weather-animateicon)</selected>
-						<radioposx>844</radioposx>
+						<label>$LOCALIZE[31873]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.SetPath(custom-weathericons)</onclick>
+						<visible>!Skin.String(custom-weathericons)</visible>
 					</control>
 					<control type="button" id="209">
+						<description>Reset Custom Weather Icons Button</description>
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[31874]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(custom-weathericons)</onclick>
+						<visible>Skin.String(custom-weathericons)</visible>
+					</control>
+					<control type="button" id="210">
 						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
 						<label>$LOCALIZE[31656]</label>
 						<label2>$INFO[system.addontitle(Skin.String(osd-lyricpath))]</label2>
 						<onclick>Skin.SetAddon(osd-lyricpath,xbmc.python.lyrics)</onclick>
 					</control>
-					<control type="button" id="210">
+					<control type="button" id="211">
 						<include>settings-submenu-common</include>
 						<textwidth>785</textwidth>
 						<label>- $LOCALIZE[24020]</label>
 						<enable>!IsEmpty(Skin.String(osd-lyricpath))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-lyricpath)])</onclick>
 					</control>
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="212">
 						<description>Use TV Tunes</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31892]</label>
@@ -393,7 +400,7 @@
 						<enable>System.HasAddon(script.tvtunes)</enable>
 						<radioposx>844</radioposx>
 					</control>
-					<control type="button" id="212">
+					<control type="button" id="213">
 						<description>TV Logo Downloader Script</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31893]</label>
