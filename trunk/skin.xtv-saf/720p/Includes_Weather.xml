@@ -102,11 +102,11 @@
 			</control>
 			<control type="group">
 				<visible>!SubString(Weather.plugin,weather.ozweather) | !Skin.HasSetting(showradar)</visible>
-				<left>17</left>
+				<left>24</left>
 				<top>12</top>
 				<control type="multiimage">
 					<description>current weather condition icon</description>
-					<left>122</left>
+					<left>132</left>
 					<top>94</top>
 					<width>256</width>
 					<height>256</height>
@@ -119,7 +119,7 @@
 				</control>
 				<control type="image">
 					<description>weather icon</description>
-					<left>122</left>
+					<left>132</left>
 					<top>94</top>
 					<width>256</width>
 					<height>256</height>
@@ -139,9 +139,9 @@
 					<aligny>bottom</aligny>
 				</control>
 				<control type="label"><!-- Current temp heading -->
-					<left>340</left>
+					<left>376</left>
 					<top>340</top>
-					<width>282</width>
+					<width>280</width>
 					<height>48</height>
 					<font>font28</font>
 					<align>right</align>
@@ -150,8 +150,8 @@
 				</control>
 				<control type="image">
 					<left>0</left>
-					<top>400</top>
-					<width>626</width>
+					<top>410</top>
+					<width>656</width>
 					<height>5</height>
 					<texture>separator.png</texture>
 				</control>
@@ -198,45 +198,43 @@
 				<control type="label"><!-- Current feels like value -->
 					<left>290</left>
 					<top>412</top>
-					<width>336</width>
+					<width>366</width>
 					<height>43</height>
 					<label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
 				</control>
 				<control type="label"><!-- Current dew value -->
 					<left>290</left>
 					<top>443</top>
-					<width>336</width>
+					<width>366</width>
 					<height>43</height>
 					<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
 				</control>
 				<control type="label"><!-- Current humidity value -->
 					<left>290</left>
 					<top>475</top>
-					<width>336</width>
+					<width>366</width>
 					<height>43</height>
 					<label>$INFO[Window.Property(Current.Humidity)]</label>
 				</control>
 				<control type="label"><!-- Current UV index value -->
 					<left>290</left>
 					<top>506</top>
-					<width>336</width>
+					<width>366</width>
 					<height>43</height>
 					<label>$INFO[Window.Property(Current.UVIndex)]</label>
 				</control>
 				<control type="label"><!-- Current wind value -->
 					<left>290</left>
 					<top>537</top>
-					<width>336</width>
+					<width>366</width>
 					<height>43</height>
 					<label>$INFO[Window.Property(Current.Wind)]</label>
 				</control>
 			</control>
 			<control type="group">
-				<left>636</left>
-				<top>34</top>
 				<control type="group"><!-- Day 1 -->
-					<left>34</left>
-					<top>76</top>
+					<left>690</left>
+					<top>110</top>
 					<control type="image">
 						<left>34</left>
 						<top>0</top>
@@ -302,8 +300,8 @@
 					</control>
 				</control>
 				<control type="group"><!-- Day 2 -->
-					<left>34</left>
-					<top>210</top>
+					<left>690</left>
+					<top>244</top>
 					<control type="label"><!-- Day label -->
 						<left>60</left>
 						<top>10</top>
@@ -362,8 +360,8 @@
 					</control>
 				</control>
 				<control type="group"><!-- Day 3 -->
-					<left>34</left>
-					<top>344</top>
+					<left>690</left>
+					<top>378</top>
 					<control type="label"><!-- Day label -->
 						<left>60</left>
 						<top>10</top>
@@ -422,8 +420,8 @@
 					</control>
 				</control>
 				<control type="group"><!-- Day 4 -->
-					<left>34</left>
-					<top>478</top>
+					<left>690</left>
+					<top>512</top>
 					<control type="label"><!-- Day title -->
 						<left>60</left>
 						<top>10</top>
