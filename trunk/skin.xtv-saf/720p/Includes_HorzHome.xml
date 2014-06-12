@@ -553,7 +553,7 @@
 							<visible>System.GetBool(pvrmanager.enabled)</visible>
 							<label>$LOCALIZE[19020]</label>
 							<label2>$LOCALIZE[19020]</label2>
-							<onclick>ActivateWindow(PVR)</onclick>
+							<onclick>$VAR[PVRLibEntry]</onclick>
 						</item>
 						<item id="1"><!-- TV shows library -->
 							<visible>!Skin.HasSetting(home-tv)</visible>

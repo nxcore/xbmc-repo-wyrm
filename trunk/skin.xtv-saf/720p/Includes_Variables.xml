@@ -159,6 +159,14 @@
 		<value condition="StringCompare(Skin.String(tv-libraryentry),$LOCALIZE[744])">ActivateWindow(Videos,Files,return)</value>
 		<value>ActivateWindow(Videos,TvShowTitles,return)</value>
 	</variable>
+	<variable name="PVRLibEntry">
+		<value condition="StringCompare(Skin.String(pvr-libraryentry),$LOCALIZE[19023])">ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</value>
+		<value condition="StringCompare(Skin.String(pvr-libraryentry),$LOCALIZE[19024])">ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</value>
+		<value condition="StringCompare(Skin.String(pvr-libraryentry),$LOCALIZE[19069])">ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</value>
+		<value condition="StringCompare(Skin.String(pvr-libraryentry),$LOCALIZE[19163])">ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</value>
+		<value condition="StringCompare(Skin.String(pvr-libraryentry),$LOCALIZE[19040])">ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</value>
+		<value>ActivateWindow(PVR)</value>
+	</variable>
 	<variable name="MusicLibEntry">
 		<value condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,,return)</value>
 		<value condition="StringCompare(Skin.String(music-libraryentry),$LOCALIZE[20108])">ActivateWindow(MusicLibrary,root,return)</value>

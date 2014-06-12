@@ -211,7 +211,7 @@
 				<item>
 					<thumb>icon-tv.png</thumb>
 					<label>$LOCALIZE[19020]</label>
-					<onclick>ActivateWindow(PVR)</onclick>
+					<onclick>$VAR[PVRLibEntry]</onclick>
 					<visible>System.GetBool(pvrmanager.enabled)</visible>
 				</item>
 				<item>

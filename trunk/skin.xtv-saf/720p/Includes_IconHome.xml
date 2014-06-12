@@ -297,7 +297,7 @@
 					<thumb>special://skin/extras/homeicons/tv.png</thumb>
 					<label>$LOCALIZE[19020]</label>
 					<label2>$LOCALIZE[571]</label2>
-					<onclick>ActivateWindow(PVR)</onclick>
+					<onclick>$VAR[PVRLibEntry]</onclick>
 				</item>
 				<item><!-- Addons menu -->
 					<visible>!Skin.HasSetting(home-programs)</visible>
