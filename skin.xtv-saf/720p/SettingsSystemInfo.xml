@@ -179,7 +179,7 @@
 		</control>
 		<control type="label"><!-- XBMC build version and date -->
 			<left>34</left>
-			<top>686</top>
+			<top>680</top>
 			<width>1212</width>
 			<label>$INFO[System.BuildVersion,$LOCALIZE[144] ,] $INFO[System.BuildDate,(,)]</label>
 			<font>font11</font>
