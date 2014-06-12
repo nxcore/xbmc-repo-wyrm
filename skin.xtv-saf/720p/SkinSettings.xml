@@ -6,32 +6,29 @@
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
-		<control type="label">
-			<description>Settings Label</description>
-			<posx>946</posx>
-			<posy>25</posy>
+		<control type="label"><!-- Settings Label -->
+			<left>946</left>
+			<top>25</top>
 			<width>309</width>
 			<height>31</height>
 			<label>$LOCALIZE[31556]</label>
 			<font>font20</font>
 		</control>
-		<control type="label">
-			<description>Settings Label</description>
-			<posx>946</posx>
-			<posy>62</posy>
+		<control type="label"><!-- Settings Label -->
+			<left>946</left>
+			<top>62</top>
 			<width>309</width>
 			<height>31</height>
 			<label>$LOCALIZE[5]</label>
 			<font>font20</font>
 		</control>
 		<control type="group" id="999">
-			<control type="button" id="981">
-				<description>Startup Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>112</posy>
+			<control type="button" id="981"><!-- Startup Settings Menu -->
+				<left>940</left>
+				<top>112</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31801]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,startup)</onfocus>
 				<onup>noop</onup>
@@ -39,13 +36,12 @@
 				<onleft>100</onleft>
 				<onright>noop</onright>
 			</control>
-			<control type="button" id="982">
-				<description>General Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>166</posy>
+			<control type="button" id="982"><!-- General Settings Menu -->
+				<left>940</left>
+				<top>166</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31802]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,general)</onfocus>
 				<onup>981</onup>
@@ -53,13 +49,12 @@
 				<onleft>200</onleft>
 				<onright>noop</onright>
 			</control>
-			<control type="button" id="983">
-				<description>Home Window Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>220</posy>
+			<control type="button" id="983"><!-- Home window Settings Menu -->
+				<left>940</left>
+				<top>220</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31808]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,homescreen)</onfocus>
 				<onup>982</onup>
@@ -67,13 +62,12 @@
 				<onleft>300</onleft>
 				<onright>noop</onright>
 			</control>
-			<control type="button" id="984">
-				<description>Home Menu Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>274</posy>
+			<control type="button" id="984"><!-- Home menu Settings Menu -->
+				<left>940</left>
+				<top>274</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31803]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,homemenu)</onfocus>
 				<onup>983</onup>
@@ -81,13 +75,12 @@
 				<onleft>400</onleft>
 				<onright>noop</onright>
 			</control>
-			<control type="button" id="985">
-				<description>Background Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>328</posy>
+			<control type="button" id="985"><!-- Background Settings Menu -->
+				<left>940</left>
+				<top>328</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31804]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,background)</onfocus>
 				<onup>984</onup>
@@ -95,13 +88,12 @@
 				<onleft>500</onleft>
 				<onright>noop</onright>
 			</control>
-			<control type="button" id="986">
-				<description>Media Sources Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>382</posy>
+			<control type="button" id="986"><!-- Media sources Settings Menu -->
+				<left>940</left>
+				<top>382</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31805]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,sources)</onfocus>
 				<onup>985</onup>
@@ -109,10 +101,9 @@
 				<onleft>600</onleft>
 				<onright>noop</onright>
 			</control>
-			<control type="button" id="987">
-				<description>Custom Settings Button</description>
-				<posx>940</posx>
-				<posy>436</posy>
+			<control type="button" id="987"><!-- Custom Favourites Settings Menu -->
+				<left>940</left>
+				<top>436</top>
 				<width>320</width>
 				<height>56</height>
 				<font>font12</font>
@@ -126,8 +117,8 @@
 				<onright>noop</onright>
 			</control>
 			<control type="image">
-				<posx>1222</posx>
-				<posy>449</posy>
+				<left>1222</left>
+				<top>449</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>scroll-right.png</texture>
@@ -135,21 +126,20 @@
 				<visible>!Control.HasFocus(987)</visible>
 			</control>
 			<control type="image">
-				<posx>1222</posx>
-				<posy>449</posy>
+				<left>1222</left>
+				<top>449</top>
 				<width>30</width>
 				<height>30</height>
 				<texture>scroll-right-focus.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Control.HasFocus(987)</visible>
 			</control>
-			<control type="button" id="988">
-				<description>Support Settings Button</description>
-				<font>font12</font>
-				<posx>940</posx>
-				<posy>490</posy>
+			<control type="button" id="988"><!-- Support Settings Menu -->
+				<left>940</left>
+				<top>490</top>
 				<width>320</width>
 				<height>56</height>
+				<font>font12</font>
 				<label>$LOCALIZE[31807]</label>
 				<onfocus>Skin.SetString(skinsettingmenu,support)</onfocus>
 				<onup>987</onup>
@@ -158,10 +148,9 @@
 				<onright>noop</onright>
 			</control>
 		</control>
-		<!-- Scrollbar -->
 		<control type="scrollbar" id="1223">
-			<posx>10</posx>
-			<posy>112</posy>
+			<left>10</left>
+			<top>112</top>
 			<width>18</width>
 			<height>542</height>
 			<onleft>noop</onleft>
@@ -169,33 +158,31 @@
 			<visible>Skin.HasSetting(sbar) + !Skin.String(skinsettingmenu,custom)</visible>
 		</control>
 		<control type="group" id="998">
-			<!--Startup Settings-->
-			<control type="group" id="100">
+			<control type="group" id="100"><!-- Startup Settings -->
 				<visible>Skin.String(skinsettingmenu,startup)</visible>
 				<control type="image">
 					<description>Startup Settings Button Image</description>
-					<posx>940</posx>
-					<posy>112</posy>
+					<left>940</left>
+					<top>112</top>
 					<width>320</width>
 					<height>56</height>
 					<texture border="7">default-button.png</texture>
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
-						<posx>484</posx>
-						<posy>92</posy>
+						<left>484</left>
+						<top>92</top>
 						<height>24</height>
 						<width>24</width>
 						<texture>scroll-up.png</texture>
 						<visible>Container(101).HasPrevious</visible>
 					</control>
 					<control type="image">
-						<posx>484</posx>
-						<posy>648</posy>
+						<left>484</left>
+						<top>648</top>
 						<height>24</height>
 						<width>24</width>
 						<texture>scroll-down.png</texture>
@@ -204,8 +191,8 @@
 				</control>
 
 				<control type="grouplist" id="101">
-					<posx>53</posx>
-					<posy>112</posy>
+					<left>53</left>
+					<top>112</top>
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
@@ -252,8 +239,7 @@
 					</control>
 				</control>
 			</control>
-			<!--General Settings-->
-			<control type="group">
+			<control type="group"><!-- General Settings -->
 				<visible>Skin.String(skinsettingmenu,general)</visible>
 				<control type="image">
 					<description>General Settings Button Image</description>
@@ -265,8 +251,7 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
 						<posx>484</posx>
@@ -410,8 +395,7 @@
 					</control>
 				</control>
 			</control>
-			<!--Home Screen Settings-->
-			<control type="group" id="300">
+			<control type="group" id="300"><!-- Home Screen Settings -->
 				<visible>Skin.String(skinsettingmenu,homescreen)</visible>
 				<control type="image">
 					<description>Background Settings Button Image</description>
@@ -423,8 +407,7 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
 						<posx>484</posx>
@@ -1041,8 +1024,8 @@
 					</control>
 				</control>
 			</control>
-			<!--Home Menu Settings-->
-			<control type="group" id="400">
+			
+			<control type="group" id="400"><!-- Home Menu Settings -->
 				<visible>Skin.String(skinsettingmenu,homemenu)</visible>
 				<control type="image">
 					<description>Home Settings Button Image</description>
@@ -1054,8 +1037,7 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
 						<posx>484</posx>
@@ -1500,8 +1482,7 @@
 					</control>
 				</control>
 			</control>
-			<!--Background-->
-			<control type="group" id="500">
+			<control type="group" id="500"><!-- Background Settings -->
 				<visible>Skin.String(skinsettingmenu,background)</visible>
 				<control type="image">
 					<description>Background Settings Button Image</description>
@@ -1513,8 +1494,7 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
 						<posx>484</posx>
@@ -1746,11 +1726,10 @@
 					</control>
 				</control>
 			</control>
-			<!--Media Sources Settings-->
-			<control type="group" id="600">
+			<control type="group" id="600"><!-- Media Entry Points Settings -->
 				<visible>Skin.String(skinsettingmenu,sources)</visible>
 				<control type="image">
-					<description>Media Sources Settings Button Image</description>
+					<description>Media Entry Points Settings Button Image</description>
 					<posx>940</posx>
 					<posy>382</posy>
 					<width>320</width>
@@ -1759,8 +1738,7 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
 						<posx>484</posx>
@@ -1791,7 +1769,7 @@
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
-					<control type="button" id="612">
+					<control type="button" id="602">
 						<description>Set Movie library entry point</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31920]</label>
@@ -1800,7 +1778,16 @@
 						<onclick>ActivateWindow(1156)</onclick>
 						<onclick>Skin.Reset(selectmovieentry)</onclick>
 					</control>
-					<control type="button" id="616">
+					<control type="button" id="603">
+						<description>Set PVR library entry point</description>
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[31924]</label>
+						<label2>$INFO[Skin.String(pvr-libraryentry)]</label2>
+						<onclick>Skin.SetBool(selectpvrentry)</onclick>
+						<onclick>ActivateWindow(1156)</onclick>
+						<onclick>Skin.Reset(selectpvrentry)</onclick>
+					</control>
+					<control type="button" id="604">
 						<description>Set TV library entry point</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31921]</label>
@@ -1809,7 +1796,7 @@
 						<onclick>ActivateWindow(1156)</onclick>
 						<onclick>Skin.Reset(selecttventry)</onclick>
 					</control>
-					<control type="button" id="620">
+					<control type="button" id="605">
 						<description>Set Music Video library entry point</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31922]</label>
@@ -1818,7 +1805,7 @@
 						<onclick>ActivateWindow(1156)</onclick>
 						<onclick>Skin.Reset(selectmusicvidentry)</onclick>
 					</control>
-					<control type="button" id="624">
+					<control type="button" id="606">
 						<description>Set Music library entry point</description>
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31923]</label>
@@ -1829,8 +1816,7 @@
 					</control>
 				</control>
 			</control>
-			<!--Custom-->
-			<control type="group" id="700">
+			<control type="group" id="700"><!-- Custom Favourites -->
 				<visible>Skin.String(skinsettingmenu,custom)</visible>
 				<control type="image">
 					<description>Xtv Logo</description>
@@ -1842,8 +1828,7 @@
 					<texture>xtv-logo-big.png</texture>
 				</control>
 			</control>
-			<!--Support Settings-->
-			<control type="group" id="800">
+			<control type="group" id="800"><!-- Support Settings -->
 				<visible>Skin.String(skinsettingmenu,support)</visible>
 				<control type="image">
 					<description>Support Settings Button Image</description>
@@ -1855,8 +1840,7 @@
 					<include>settingbutton-fade</include>
 					<visible>!ControlGroup(999).HasFocus()</visible>
 				</control>
-				<!-- Markers for control area items (Don't show if scrollbar is in use)-->
-				<control type="group">
+				<control type="group"><!-- Markers for control area items (Don't show if scrollbar is in use)-->
 					<visible>!Skin.HasSetting(sbar)</visible>
 					<control type="image">
 						<posx>484</posx>
