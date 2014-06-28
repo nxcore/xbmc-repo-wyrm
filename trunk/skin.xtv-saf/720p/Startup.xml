@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<controls>
 		<control type="button" id="10"><!-- Play the startup video if required -->
-			<posx>-12</posx>
-			<posy>-12</posy>
+			<left>-12</left>
+			<top>-12</top>
 			<width>1</width>
 			<height>1</height>
 			<onfocus condition="Skin.HasSetting(intro-vid)">PlayMedia($ESCINFO[Skin.String(intro-vid-location)])</onfocus>
@@ -18,9 +18,8 @@
 			<visible>!Skin.HasSetting(intro-vid)</visible>
 			<animation effect="fade" end="0" delay="2800" time="200">WindowClose</animation>
 			<control type="image">
-				<description>Xtv Logo</description>
-				<posx>384</posx>
-				<posy>200</posy>
+				<left>384</left>
+				<top>200</top>
 				<width>512</width>
 				<height>256</height>
 				<aspectratio>keep</aspectratio>
