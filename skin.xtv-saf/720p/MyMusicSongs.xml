@@ -8,15 +8,14 @@
 		<include>background</include>
 		<include>Fake-Overlay</include>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>50</posy>
+			<left>946</left>
+			<top>50</top>
 			<width>360</width>
 			<height>72</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
-			<control type="label">
-				<description>Music screen headings</description>
+			<control type="label"><!-- Music screen headings -->
 				<width min="40" max="250">auto</width>
 				<height>72</height>
 				<label>$VAR[MusicHeadings]</label>
@@ -24,9 +23,8 @@
 				<wrapmultiline>true</wrapmultiline>
 				<aligny>top</aligny>
 			</control>
-			<control type="label">
-				<description>Number of files</description>
-				<posy>13</posy>
+			<control type="label"><!-- Number of files -->
+				<top>13</top>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
 				<label>$INFO[Container.NumItems,(,)]</label>
@@ -41,19 +39,19 @@
 		<include>AlbumCoverflow</include>
 
 		<control type="group">
-			<posy>720</posy>
+			<top>720</top>
 			<include>View-as</include>
 			<include>fadebackground</include>
 			<control type="image"><!-- Button background -->
-				<posx>460</posx>
-				<posy>140</posy>
+				<left>460</left>
+				<top>140</top>
 				<width>396</width>
 				<height>448</height>
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>472</posx>
-				<posy>150</posy>
+				<left>472</left>
+				<top>150</top>
 				<width>372</width>
 				<height>432</height>
 				<onleft>noop</onleft>
@@ -146,6 +144,7 @@
 					<height>48</height>
 					<font>font12</font>
 					<label>$LOCALIZE[600]</label>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="button" id="1200"><!-- Player controls -->
 					<width>372</width>
@@ -154,7 +153,8 @@
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
-					<enable>Player.HasAudio | Player.HasVideo</enable>
+					<textoffsetx>10</textoffsetx>
+					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 			</control>
 		</control>

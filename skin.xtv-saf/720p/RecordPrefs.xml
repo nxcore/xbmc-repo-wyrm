@@ -5,38 +5,38 @@
 	<controls>
 		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background image -->
-			<posx>295</posx>
-			<posy>174</posy>
+			<left>295</left>
+			<top>174</top>
 			<width>690</width>
 			<height>372</height>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="label"><!-- Heading -->
-			<posx>315</posx>
-			<posy>186</posy>
+			<left>315</left>
+			<top>186</top>
 			<width>650</width>
 			<height>37</height>
 			<label>$ADDON[pvr.wmc 30100]</label>
 		</control>
 		<control type="label" id="20"><!-- Program title -->
-			<posx>315</posx>
-			<posy>224</posy>
+			<left>315</left>
+			<top>224</top>
 			<width>650</width>
 			<height>37</height>
 			<align>center</align>
 			<font>font12</font>
 		</control>
 		<control type="image">
-			<posx>315</posx>
-			<posy>264</posy>
+			<left>315</left>
+			<top>264</top>
 			<width>650</width>
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="group" id="9001">
 			<control type="radiobutton" id="10"><!-- Episode rec -->
-				<posx>315</posx>
-				<posy>274</posy>
+				<left>315</left>
+				<top>274</top>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -47,8 +47,8 @@
 				<radioposx>618</radioposx>
 			</control>
 			<control type="radiobutton" id="11"><!-- Series rec -->
-				<posx>315</posx>
-				<posy>312</posy>
+				<left>315</left>
+				<top>312</top>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -59,8 +59,8 @@
 				<radioposx>618</radioposx>
 			</control>
 			<control type="spincontrolex" id="12"><!-- Series runtype -->
-				<posx>315</posx>
-				<posy>350</posy>
+				<left>315</left>
+				<top>350</top>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -70,8 +70,8 @@
 				<label>$ADDON[pvr.wmc 30103]</label>
 			</control>
 			<control type="spincontrolex" id="13"><!-- Channel series choice -->
-				<posx>315</posx>
-				<posy>388</posy>
+				<left>315</left>
+				<top>388</top>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -81,8 +81,8 @@
 				<label>$ADDON[pvr.wmc 30107]</label>
 			</control>
 			<control type="spincontrolex" id="14"><!-- Airtime series choice -->
-				<posx>315</posx>
-				<posy>426</posy>
+				<left>315</left>
+				<top>426</top>
 				<width>650</width>
 				<height>37</height>
 				<font>font11</font>
@@ -94,8 +94,8 @@
 		</control>
 		<control type="group" id="9000">
 			<control type="button" id="1"><!-- OK button -->
-				<posx>343</posx>
-				<posy>484</posy>
+				<left>343</left>
+				<top>484</top>
 				<width>230</width>
 				<height>50</height>
 				<font>font12</font>
@@ -106,8 +106,8 @@
 				<ondown>noop</ondown>
 			</control>
 			<control type="button" id="2"><!-- Cancel button -->
-				<posx>657</posx>
-				<posy>484</posy>
+				<left>657</left>
+				<top>484</top>
 				<width>230</width>
 				<height>50</height>
 				<font>font12</font>

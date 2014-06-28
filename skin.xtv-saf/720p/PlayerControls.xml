@@ -6,14 +6,14 @@
 	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation) + !Window.IsActive(karaoke) + !Window.IsActive(visualisationpresetlist)</visible>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background image -->
-			<posx>123</posx>
-			<posy>125</posy>
+			<left>123</left>
+			<top>125</top>
 			<height>175</height>
 			<width>1026</width>
 			<texture border="8">button-menu-background.png</texture>
@@ -24,14 +24,14 @@
  		<control type="group">
 			<visible>Player.HasVideo</visible>
 			<control type="videowindow">
-				<posx>150</posx>
-				<posy>137</posy>
+				<left>150</left>
+				<top>137</top>
 				<width>212</width>
 				<height>150</height>
 			</control>
 			<control type="label"><!-- Now playing -->
-				<posx>354</posx>
-				<posy>137</posy>
+				<left>354</left>
+				<top>137</top>
 				<width>778</width>
 				<height>31</height>
 				<label>$LOCALIZE[13350]</label>
@@ -40,8 +40,8 @@
 				<textcolor>listselected-text</textcolor>
 			</control>
 			<control type="label">
-				<posx>354</posx>
-				<posy>168</posy>
+				<left>354</left>
+				<top>168</top>
 				<width>778</width>
 				<height>31</height>
 				<label>$INFO[VideoPlayer.Title]</label>
@@ -49,34 +49,34 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<posx>540</posx>
-				<posy>205</posy>
+				<left>370</left>
+				<top>213</top>
 				<width>170</width>
-				<height>31</height>
+				<height>20</height>
 				<font>font11</font>
 				<label>$INFO[VideoPlayer.Time]</label>
 				<align>right</align>
 			</control>
 			<control type="progress">
-				<posx>550</posx>
-				<posy>213</posy>
+				<left>550</left>
+				<top>213</top>
 				<width>380</width>
 				<height>16</height>
 				<info>Player.Progress</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="slider">
-				<posx>550</posx>
-				<posy>211</posy>
+				<left>550</left>
+				<top>211</top>
 				<width>380</width>
 				<height>20</height>
 				<action>seek</action>
 			</control>
 			<control type="label">
-				<posx>940</posx>
-				<posy>205</posy>
+				<left>940</left>
+				<top>213</top>
 				<width>170</width>
-				<height>31</height>
+				<height>20</height>
 				<font>font11</font>
 				<label>- $INFO[VideoPlayer.TimeRemaining]</label>
 			</control>
@@ -85,20 +85,20 @@
  		<control type="group">
 			<visible>Player.HasAudio</visible>
 			<control type="image">
-				<posx>132</posx>
-				<posy>137</posy>
+				<left>132</left>
+				<top>137</top>
 				<width>212</width>
 				<height>150</height>
 				<align>left</align>
 				<aligny>bottom</aligny>
 				<fadetime>300</fadetime>
-				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<texture fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>!Window.IsActive(visualisation)</visible>
 			</control>
 			<control type="label">
-				<posx>354</posx>
-				<posy>132</posy>
+				<left>354</left>
+				<top>132</top>
 				<width>778</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]</label>
@@ -106,8 +106,8 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<posx>354</posx>
-				<posy>160</posy>
+				<left>354</left>
+				<top>160</top>
 				<width>778</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Album]</label>
@@ -115,8 +115,8 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<posx>354</posx>
-				<posy>188</posy>
+				<left>354</left>
+				<top>188</top>
 				<width>778</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Title]</label>
@@ -124,45 +124,45 @@
 				<align>center</align>
 			</control>
 			<control type="label">
-				<posx>510</posx>
-				<posy>216</posy>
+				<left>310</left>
+				<top>220</top>
+				<width>200</width>
+				<height>20</height>
 				<label>$INFO[MusicPlayer.Time]</label>
 				<font>font12</font>
 				<align>right</align>
-				<width>220</width>
-				<height>20</height>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>520</posx>
-				<posy>223</posy>
+				<left>520</left>
+				<top>223</top>
 				<width>440</width>
 				<height>16</height>
 				<info>Player.Progress</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="slider">
-				<posx>520</posx>
-				<posy>221</posy>
+				<left>520</left>
+				<top>221</top>
 				<width>440</width>
 				<height>20</height>
 				<action>seek</action>
 			</control>
 			<control type="label">
-				<posx>970</posx>
-				<posy>216</posy>
-				<label>- $INFO[MusicPlayer.TimeRemaining]</label>
-				<font>font12</font>
+				<left>970</left>
+				<top>220</top>
 				<width>220</width>
 				<height>20</height>
+				<label>- $INFO[MusicPlayer.TimeRemaining]</label>
+				<font>font12</font>
 			</control>
 		</control>
 		<!-- End of Media Info-->
 		<!-- Player buttons -->
 		<control type="grouplist" id="999">
 			<description>Group OSD Button</description>
-			<posx>354</posx>
-			<posy>245</posy>
+			<left>354</left>
+			<top>245</top>
 			<width>778</width>
 			<height>40</height>
 			<itemgap>3</itemgap>
