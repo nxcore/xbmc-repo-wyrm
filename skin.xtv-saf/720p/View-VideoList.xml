@@ -337,7 +337,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(50) + [!System.IdleTime(20) | [System.IdleTime(20) + !Container.Content(movies)]]</visible>
 			<control type="group">
 				<control type="group">
 					<animation type="TYPE" condition="Skin.HasSetting(tiltvideolisticon)" reversible="false">
@@ -579,6 +579,68 @@
 				<onright>noop</onright>
 				<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<visible>System.IdleTime(20) + Container.Content(movies)</visible>
+			<control type="wraplist" id="950">
+				<left>-10</left>
+				<top>-10</top>
+				<width>10</width>
+				<height>10</height>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<viewtype label="31028">wraplist</viewtype>
+				<pagecontrol>noop</pagecontrol>
+				<autoscroll>true</autoscroll>
+				<scrolltime>4000</scrolltime>
+				<orientation>horizontal</orientation>
+				<itemlayout height="10" width="10"></itemlayout>
+				<focusedlayout height="10" width="10"></focusedlayout>
+				<content target="video">library://video/recentlyaddedmovies.xml</content>
+			</control>
+			<control type="group" id="951">
+				<visible>Control.IsVisible(950)</visible>
+				<animation effect="fade" start="100" end="100" time="200" reversible="false">Hidden</animation>
+				<control type="image">
+					<left>-88</left>
+					<top>190</top>
+					<width>88</width>
+					<height>62</height>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(950).Listitem(2).thumb]</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<!--<animation condition="!Container(950).OnNext" effect="fade" start="0" end="100" time="2000" reversible="false">Conditional</animation>-->
+					<animation condition="!Container(950).OnNext" effect="slide" start="0,0" end="148,10" time="4000" tween="Quadratic" easing="in" reversible="false">Conditional</animation>
+				</control>
+				<control type="image">
+					<left>60</left>
+					<top>200</top>
+					<width>88</width>
+					<height>62</height>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(950).Listitem(1).thumb]</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<animation condition="!Container(950).OnNext" effect="zoom" end="180,210,115,81" time="4000" reversible="false">Conditional</animation>
+				</control>
+				<control type="image">
+					<left>180</left>
+					<top>210</top>
+					<width>115</width>
+					<height>81</height>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(950).Listitem(0).thumb]</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<animation condition="!Container(950).OnNext" effect="zoom" end="250,230,407,287" time="4000" tween="Quadratic" easing="in" reversible="false">Conditional</animation>
+				</control>
+				<control type="image">
+					<left>250</left>
+					<top>230</top>
+					<width>407</width>
+					<height>287</height>
+					<texture background="true" diffuse="mask-squ.png">$INFO[Container(950).Listitem(-1).thumb]</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<animation condition="!Container(950).OnNext" effect="fade" start="100" end="0" time="1000" reversible="false">Conditional</animation>
+				</control>
 			</control>
 		</control>
 	</include>
