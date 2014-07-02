@@ -17,15 +17,7 @@
 			<include>background-fade</include>
 			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart)) + Skin.HasSetting(background-fanart)</visible>
 		</control>
-		<control type="image"><!-- Screen logo (Use for vertical home menu) -->
-			<left>840</left>
-			<top>-12</top>
-			<width>80</width>
-			<height>80</height>
-			<texture>icon-tv.png</texture>
-			<aspectratio aligny="bottom">keep</aspectratio>
-			<visible>Skin.HasSetting(homemenu-vertical)</visible>
-		</control>
+
 		<control type="grouplist">
 			<left>946</left>
 			<top>35</top>
@@ -42,22 +34,12 @@
 				<wrapmultiline>true</wrapmultiline>
 				<aligny>bottom</aligny>
 			</control>
-			<control type="label"><!-- Number of files (Use for non Vertical home menu) -->
-				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
+			<control type="label"><!-- Number of files -->
 				<width min="40" max="90">auto</width>
 				<height>46</height>
 				<label>$INFO[Window(Home).Property(NextAired.Total),(,)]</label>
-				<font>font13</font>
 				<aligny>top</aligny>
 			</control>
-		</control>
-		<control type="label"><!-- Number of files (Use for Vertical home menu) -->
-			<left>1062</left>
-			<top>682</top>
-			<width>203</width>
-			<height>37</height>
-			<label>$INFO[Window(Home).Property(NextAired.Total),, $LOCALIZE[127]]</label>
-			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 		<control type="group"><!-- Monday -->
 			<left>30</left>
@@ -1536,7 +1518,6 @@
 					<width>410</width>
 					<height>90</height>
 					<label>$VAR[NextAiredLabel2]</label>
-					<font>font13</font>
 					<align>center</align>
 					<wrapmultiline>true</wrapmultiline>
 				</control>

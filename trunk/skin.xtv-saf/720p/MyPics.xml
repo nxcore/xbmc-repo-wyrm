@@ -9,8 +9,8 @@
 		<include>background</include>
 		<include>Fake-Overlay</include>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>50</posy>
+			<left>946</left>
+			<top>50</top>
 			<width>360</width>
 			<height>37</height>
 			<align>left</align>
@@ -25,7 +25,7 @@
 			</control>
 			<control type="label">
 				<description>Number of files</description>
-				<posy>13</posy>
+				<top>13</top>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
 				<label>$INFO[Container.NumItems, (,)]</label>
@@ -43,19 +43,19 @@
 		</control>
 
 		<control type="group">
-			<posy>720</posy>
+			<top>720</top>
 			<include>View-as</include>
 			<include>fadebackground</include>
 			<control type="image"><!-- Button background -->
-				<posx>440</posx>
-				<posy>142</posy>
+				<left>440</left>
+				<top>142</top>
 				<width>396</width>
 				<height>466</height>
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>450</posx>
-				<posy>154</posy>
+				<left>450</left>
+				<top>154</top>
 				<width>376</width>
 				<height>432</height>
 				<onleft>noop</onleft>

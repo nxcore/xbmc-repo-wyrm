@@ -4,15 +4,14 @@
 	<visible>VideoPlayer.IsStereoscopic</visible>
 	<include>screen-fade</include>
 	<coordinates>
-		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background -->
-			<posx>720</posx>
-			<posy>100</posy>
+			<left>720</left>
+			<top>100</top>
 			<width>396</width>
 			<height>216</height>
 			<texture border="8">button-menu-background.png</texture>
@@ -23,8 +22,8 @@
 			<control type="grouplist" id="500"><!-- STEREOSCOPIC 3D !LiveTV -->
 				<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<posx>730</posx>
-				<posy>108</posy>
+				<left>730</left>
+				<top>108</top>
 				<width>376</width>
 				<height>200</height>
 				<itemgap>0</itemgap>
@@ -47,12 +46,10 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
 					<label>$LOCALIZE[305]</label>
-					<radioposx>330</radioposx>
+					<radioleft>330</radioleft>
 					<onclick>ToggleStereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
-					<onup>501</onup>
-					<ondown>502</ondown>
 					<selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
 				</control>
 				<control type="button" id="502">
@@ -64,8 +61,6 @@
 					<onclick>StereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
-					<onup>503</onup>
-					<ondown>501</ondown>
 				</control>
 				<control type="radiobutton" id="501">
 					<height>50</height>
@@ -74,12 +69,10 @@
 					<font>font12</font>
 					<!--<label>Watch as 2D</label>-->
 					<label>2D ?</label>
-					<radioposx>330</radioposx>
+					<radioleft>330</radioleft>
 					<onclick>StereoModeToMono</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
-					<onup>502</onup>
-					<ondown>503</ondown>
 					<selected>StringCompare(System.StereoscopicMode,7)</selected>
 				</control>
 			</control>
@@ -87,8 +80,8 @@
 			<control type="grouplist" id="550"><!-- STEREOSCOPIC 3D LiveTV -->
 				<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<posx>730</posx>
-				<posy>108</posy>
+				<left>730</left>
+				<top>108</top>
 				<width>376</width>
 				<height>200</height>
 				<itemgap>0</itemgap>
@@ -111,13 +104,11 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
 					<label>$LOCALIZE[305]</label>
-					<radioposx>330</radioposx>
+					<radioleft>330</radioleft>
 					<onclick>ToggleStereoMode</onclick>
 					<selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
-					<onup>551</onup>
-					<ondown>552</ondown>
 				</control>
 				<control type="button" id="552">
 					<height>50</height>
@@ -128,8 +119,6 @@
 					<onclick>StereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
-					<onup>553</onup>
-					<ondown>551</ondown>
 				</control>
 				<control type="radiobutton" id="551">
 					<height>50</height>
@@ -138,12 +127,10 @@
 					<font>font12</font>
 					<!--<label>Watch as 2D</label>-->
 					<label>2D ?</label>
-					<radioposx>330</radioposx>
+					<radioleft>330</radioleft>
 					<onclick>StereoModeToMono</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
-					<onup>552</onup>
-					<ondown>553</ondown>
 					<selected>StringCompare(System.StereoscopicMode,7)</selected>
 				</control>
 			</control>

@@ -11,8 +11,8 @@
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>35</posy>
+			<left>946</left>
+			<top>35</top>
 			<width>334</width>
 			<height>72</height>
 			<align>left</align>
@@ -51,31 +51,31 @@
 			<visible>IsEmpty(ListItem.Label) + IsEmpty(Container().ListItem(1).Label) + System.IdleTime(1) + !Window.IsVisible(busydialog)</visible>
 			<include>fadebackground</include>
 			<control type="image"><!-- Busy animation -->
-				<posx>576</posx>
-				<posy>290</posy>
+				<left>576</left>
+				<top>290</top>
 				<width>128</width>
 				<height>128</height>
 				<texture>busy.png</texture>
 				<aspectratio>keep</aspectratio>
-<include>busy-spin</include>
+				<include>busy-spin</include>
 			</control>
 		</control>
 
 		<control type="group"><!-- View-As Menu -->
-			<posx>0</posx>
-			<posy>720</posy>
+			<left>0</left>
+			<top>720</top>
 			<include>View-as</include>
 			<include>fadebackground</include>
 			<control type="image"><!-- Button background -->
-				<posx>440</posx>
-				<posy>32</posy>
+				<left>440</left>
+				<top>32</top>
 				<width>396</width>
 				<height>640</height>
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>450</posx>
-				<posy>40</posy>
+				<left>450</left>
+				<top>40</top>
 				<width>376</width>
 				<height>624</height>
 				<onleft>noop</onleft>

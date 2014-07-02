@@ -8,8 +8,8 @@
 		<include>background</include>
 		<include>Fake-Overlay</include>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>50</posy>
+			<left>946</left>
+			<top>50</top>
 			<width>360</width>
 			<height>37</height>
 			<align>left</align>
@@ -22,25 +22,24 @@
 				<font>font18</font>
 			</control>
 			<control type="label"><!-- Number of files -->
-				<posy>13</posy>
+				<top>13</top>
 				<width min="40" max="90">auto</width>
 				<height>38</height>
 				<label>$INFO[Container.NumItems, (,)]</label>
-				<font>font13</font>
 			</control>
 		</control>
 
 		<control type="image">
-			<posx>548</posx>
-			<posy>506</posy>
+			<left>548</left>
+			<top>506</top>
 			<width>88</width>
 			<height>62</height>
 			<texture>$INFO[ListItem.Overlay]</texture>
 			<visible>Control.IsVisible(50)</visible>
 		</control>
 		<control type="image"><!-- Reflected overlay image -->
-			<posx>548</posx>
-			<posy>568</posy>
+			<left>548</left>
+			<top>568</top>
 			<width>88</width>
 			<height>62</height>
 			<texture flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Overlay]</texture>
@@ -58,19 +57,19 @@
 		</control>
 
 		<control type="group">
-			<posy>720</posy>
+			<top>720</top>
 			<include>View-as</include>
 			<include>fadebackground</include>
 			<control type="image"><!-- Button background -->
-				<posx>440</posx>
-				<posy>212</posy>
+				<left>440</left>
+				<top>212</top>
 				<width>396</width>
 				<height>312</height>
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
-				<posx>450</posx>
-				<posy>224</posy>
+				<left>450</left>
+				<top>224</top>
 				<width>376</width>
 				<height>288</height>
 				<onleft>noop</onleft>
