@@ -17,7 +17,6 @@
 			<visible>Skin.String(custom-background)</visible>
 		</control>
 		<control type="group">
-			<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 			<control type="image"><!-- Backgroung fanart image -->
 				<include>fullscreenimage</include>
 				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
@@ -28,7 +27,6 @@
 		</control>
 		<control type="group">
 			<visible>Skin.HasSetting(HomeViewToggle)</visible>
-			<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 			<control type="visualisation" id="2"><!-- Background visualisation image -->
 				<include>fullscreenimage</include>
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
@@ -36,7 +34,6 @@
 		</control>
 		<control type="group">
 			<visible>Skin.HasSetting(background-slideshow)</visible>
-			<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 			<control type="image"><!-- Mask out any backgrounds showing around ArtistSlideshow Fanart -->
 				<include>fullscreenimage</include>
 				<texture>colours/black.png</texture>
@@ -170,7 +167,7 @@
 			<control type="progress" id="1">
 				<description>Progressbar</description>
 				<posx>558</posx>
-				<posy>674</posy>
+				<posy>680</posy>
 				<width>685</width>
 				<height>16</height>
 				<info>Player.Progress</info>
@@ -179,7 +176,7 @@
 			</control>
 			<control type="slider" id="402"><!-- Seek slider -->
 				<posx>558</posx>
-				<posy>672</posy>
+				<posy>678</posy>
 				<width>685</width>
 				<height>20</height>
 				<action>seek</action>

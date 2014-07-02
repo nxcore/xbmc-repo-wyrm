@@ -295,7 +295,6 @@
 						<width>552</width>
 						<height>70</height>
 						<texture border="8">default-button.png</texture>
-						<animation effect="fade" time="200" reversible="false" tween="quadratic" easing="out">VisibleChange</animation>
 					</control>
 					<control type="label">
 						<posx>38</posx>
@@ -433,7 +432,6 @@
 						<width>552</width>
 						<height>70</height>
 						<texture border="8">default-button.png</texture>
-						<animation effect="fade" time="200" reversible="false" tween="quadratic" easing="out">VisibleChange</animation>
 					</control>
 					<control type="label">
 						<posx>38</posx>
@@ -887,7 +885,6 @@
 							<width>552</width>
 							<height>70</height>
 							<texture border="8">default-button.png</texture>
-							<animation effect="fade" time="200" reversible="false" tween="quadratic" easing="out">VisibleChange</animation>
 						</control>
 						<control type="image">
 							<posx>11</posx>

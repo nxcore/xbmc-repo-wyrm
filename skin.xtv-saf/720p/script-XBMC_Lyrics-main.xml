@@ -2,6 +2,8 @@
 <window>
 	<allowoverlay>no</allowoverlay>
 	<defaultcontrol always="false">101</defaultcontrol>
+	<visible>StringCompare(Skin.String(osd-lyricpath),script.cu.lrclyrics)</visible>
+	<include>screen-fade</include>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -9,7 +11,6 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>StringCompare(Skin.String(osd-lyricpath),script.cu.lrclyrics)</visible>
 			<control type="image"><!-- Solid background -->
 				<include>fullscreenimage</include>
 				<texture>background.png</texture>
@@ -22,7 +23,6 @@
 				<visible>Skin.String(custom-background)</visible>
 			</control>
 			<control type="group"><!-- Backgroung fanart image -->
-				<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 				<control type="image">
 					<include>fullscreenimage</include>
 					<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
@@ -33,7 +33,6 @@
 			</control>
 			<control type="group"><!-- Background visualisation image -->
 				<visible>Skin.HasSetting(HomeViewToggle)</visible>
-				<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 				<control type="visualisation" id="2">
 					<include>fullscreenimage</include>
 					<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
@@ -41,7 +40,6 @@
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(background-slideshow)</visible>
-				<!--<animation effect="fade" time="300">VisibleChange</animation>-->
 				<control type="image"><!-- Mask out any backgrounds showing around ArtistSlideshow Fanart -->
 					<include>fullscreenimage</include>
 					<texture>colours/black.png</texture>

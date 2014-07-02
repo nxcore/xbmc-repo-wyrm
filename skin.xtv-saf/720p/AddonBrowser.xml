@@ -22,11 +22,10 @@
 				<wrapmultiline>true</wrapmultiline>
 				<aligny>top</aligny>
 			</control>
-			<control type="label"><!-- Number of file (Use if home menu type is not vertical) -->
+			<control type="label"><!-- Number of file -->
 				<width min="40" max="90">auto</width>
 				<height>50</height>
 				<label>$INFO[Container.NumItems, (,)]</label>
-				<font>font13</font>
 				<aligny>top</aligny>
 			</control>
 		</control>
