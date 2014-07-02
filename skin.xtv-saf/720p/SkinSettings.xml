@@ -346,21 +346,7 @@
 						<onclick>Skin.Reset(custom-weathericons)</onclick>
 						<visible>Skin.String(custom-weathericons)</visible>
 					</control>
-					<control type="button" id="210">
-						<include>settings-submenu-common</include>
-						<textwidth>785</textwidth>
-						<label>$LOCALIZE[31656]</label>
-						<label2>$INFO[system.addontitle(Skin.String(osd-lyricpath))]</label2>
-						<onclick>Skin.SetAddon(osd-lyricpath,xbmc.python.lyrics)</onclick>
-					</control>
-					<control type="button" id="211">
-						<include>settings-submenu-common</include>
-						<textwidth>785</textwidth>
-						<label>- $LOCALIZE[24020]</label>
-						<enable>!IsEmpty(Skin.String(osd-lyricpath))</enable>
-						<onclick>Addon.OpenSettings($INFO[Skin.String(osd-lyricpath)])</onclick>
-					</control>
-					<control type="radiobutton" id="212"><!-- Use TV Tunes -->
+					<control type="radiobutton" id="210"><!-- Use TV Tunes -->
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31892]</label>
 						<textwidth>750</textwidth>
@@ -369,7 +355,7 @@
 						<enable>System.HasAddon(script.tvtunes)</enable>
 						<radioposx>844</radioposx>
 					</control>
-					<control type="button" id="213"><!-- TV Logo Downloader Script -->
+					<control type="button" id="211"><!-- TV Logo Downloader Script -->
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31893]</label>
 						<textwidth>785</textwidth>
