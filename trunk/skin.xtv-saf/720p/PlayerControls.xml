@@ -193,16 +193,6 @@
 				<onclick>ActivateWindow(SubtitleSearch)</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
-			<control type="button" id="951">
-				<description>Lyrics Menu</description>
-				<width>40</width>
-				<height>40</height>
-				<texturenofocus>osd-btn-lyric.png</texturenofocus>
-				<texturefocus>osd-btn-lyric-focus.png</texturefocus>
-				<onclick>Dialog.Close(playercontrols)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(osd-lyricpath)])</onclick>
-				<visible>Player.HasAudio + !IsEmpty(Skin.String(osd-lyricpath))</visible>
-			</control>
 			<control type="togglebutton" id="908">
 				<width>40</width>
 				<height>40</height>
