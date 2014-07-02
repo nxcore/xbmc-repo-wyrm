@@ -248,11 +248,7 @@ msgctxt "#31654"
 msgid "Addon"
 msgstr ""
 
-#empty string with id 31655
-
-msgctxt "#31656"
-msgid "OSD Lyrics"
-msgstr ""
+#empty string with id 31655 to 31656
 
 msgctxt "#31657"
 msgid "Local subtitle available"
