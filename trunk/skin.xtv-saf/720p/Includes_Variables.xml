@@ -327,8 +327,8 @@
 		<value>blank.png</value>
 	</variable>
 	<variable name="HorzHomeShelfIcon">
-		<value condition="Control.HasFocus(9100)">icon-video.png</value><!--Video shelf Icon -->
-		<value condition="Control.HasFocus(9300)">icon-photo.png</value><!--Picture shelf Icon -->
+		<value condition="Control.HasFocus(9100)">DefaultVideo.png</value><!--Video shelf Icon -->
+		<value condition="Control.HasFocus(9300)">DefaultPicture.png</value><!--Picture shelf Icon -->
 		<value condition="Control.HasFocus(9350)">DefaultAddon.png</value><!--Addon shelf Icon -->
 		<value condition="Control.HasFocus(9450)">icon-settings.png</value><!--Setting shelf Icon -->
 	</variable>

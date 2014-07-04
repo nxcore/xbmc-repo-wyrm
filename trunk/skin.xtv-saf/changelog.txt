@@ -2,6 +2,7 @@
 - Allow user to select image type to show on TVShows shelf on skins Home screen.
 - Allow user to select entry point into the PVR section.
 - Add radar animation in MyWeather screen when oz.weather plugin is enabled.
+- Add setting to allow user to choose Type of Icons to show on Addons shelf in Horizontal home menu.
 - Remove animate weather icon setting. Now have a new setting to allow user to set
   location of custom weather icons (can be animated or not).
 - Skin settings menus reorganised, new heading for home screen added
