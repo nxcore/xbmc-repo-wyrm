@@ -59,9 +59,9 @@
 					<control type="image">
 						<posx>120</posx>
 						<posy>5</posy>
-						<width>30</width>
+						<width>20</width>
 						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
+						<texture>overlayisrecording.png</texture>
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="image">
@@ -69,7 +69,7 @@
 						<posy>5</posy>
 						<width>20</width>
 						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
+						<texture>overlayhastimer.png</texture>
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>
 					<control type="label">
@@ -115,9 +115,9 @@
 					<control type="image">
 						<posx>120</posx>
 						<posy>5</posy>
-						<width>30</width>
+						<width>20</width>
 						<height>20</height>
-						<texture>PVR-IsRecording.png</texture>
+						<texture>overlayisrecording.png</texture>
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="image">
@@ -125,7 +125,7 @@
 						<posy>5</posy>
 						<width>20</width>
 						<height>20</height>
-						<texture>PVR-HasTimer.png</texture>
+						<texture>overlayhastimer.png</texture>
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>
 					<control type="label">

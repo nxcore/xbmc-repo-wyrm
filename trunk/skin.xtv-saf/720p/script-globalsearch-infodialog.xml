@@ -127,7 +127,7 @@
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioShadow</colordiffuse>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+							<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
 						<control type="image">
 							<posx>212</posx>
@@ -136,7 +136,7 @@
 							<height>72</height>
 							<aligny>bottom</aligny>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+							<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
 					</control>
 					<control type="image"><!-- Cover Image -->
@@ -154,7 +154,7 @@
 						<height>27</height>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="empty">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
+						<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
 					</control>
 					<control type="label"><!-- Genre -->
 						<posx>530</posx>
@@ -323,7 +323,6 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<control type="group"><!-- Studio -->
 						<visible>!IsEmpty(Container(100).ListItem.Property(Studio))</visible>
@@ -335,7 +334,7 @@
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioShadow</colordiffuse>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+							<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
 						<control type="image">
 							<posx>212</posx>
@@ -344,7 +343,7 @@
 							<height>72</height>
 							<aligny>bottom</aligny>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+							<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
 					</control>
 					<control type="image"><!-- Cover Image -->
@@ -362,7 +361,7 @@
 						<height>27</height>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="empty">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
+						<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
 					</control>
 					<control type="label"><!-- Genre -->
 						<posx>530</posx>
@@ -584,7 +583,6 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Property(TVShowTitle]</label>
 					</control>
 					<control type="label"><!-- Title -->
 						<posx>531</posx>
@@ -594,7 +592,6 @@
 						<font>font18</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<control type="image"><!-- Star Rating -->
 						<posx>150</posx>
@@ -603,7 +600,7 @@
 						<height>27</height>
 						<colordiffuse>StarDiffuse</colordiffuse>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="empty">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
+						<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(StarRating)]</texture>
 					</control>
 					<control type="image"><!-- Cover Image -->
 						<posx>72</posx>
@@ -756,7 +753,7 @@
 							<aligny>bottom</aligny>
 							<colordiffuse>StudioShadow</colordiffuse>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+							<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
 						<control type="image">
 							<posx>420</posx>
@@ -765,7 +762,7 @@
 							<height>75</height>
 							<aligny>bottom</aligny>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="empty">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
+							<texture fallback="blank.png">$INFO[Container(100).ListItem.Property(Studio),special://skin/extras/images/studios/,.png]</texture>
 						</control>
 					</control>
 					<control type="label"><!-- Title -->
@@ -776,7 +773,6 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<control type="label"><!-- Genre -->
 						<posx>531</posx>
@@ -937,7 +933,6 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<control type="image"><!-- Cover Image -->
 						<posx>72</posx>
@@ -1072,7 +1067,6 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<control type="image"><!-- Cover Image -->
 						<posx>72</posx>
@@ -1212,7 +1206,6 @@
 						<font>font22</font>
 						<label>$INFO[Container(100).ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[Container(100).ListItem.Label]</label>
 					</control>
 					<control type="image"><!-- Cover Image -->
 						<posx>72</posx>
