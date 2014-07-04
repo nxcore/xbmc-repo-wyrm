@@ -41,14 +41,14 @@
 						<top>55</top>
 						<width>160</width>
 						<height>160</height>
-						<texture>icon-video.png</texture>
+						<texture>DefaultVideo.png</texture>
 					</control>
 					<control type="image">
 						<left>560</left>
 						<top>215</top>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -66,14 +66,14 @@
 						<top>55</top>
 						<width>160</width>
 						<height>160</height>
-						<texture>icon-tv.png</texture>
+						<texture>DefaultTvshows.png</texture>
 					</control>
 					<control type="image">
 						<left>560</left>
 						<top>215</top>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">icon-tv.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -91,19 +91,44 @@
 						<top>55</top>
 						<width>160</width>
 						<height>160</height>
-						<texture>icon-music.png</texture>
+						<texture>DefaultMusicSongs.png</texture>
 					</control>
 					<control type="image">
 						<left>560</left>
 						<top>215</top>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">DefaultMusicSongs.png</texture>
 					</control>
 				</control>
 				<control type="group">
 					<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
 					<include>music-shelficons</include>
+				</control>
+			</control>
+
+			<control type="group" id="9355"><!-- Music icons -->
+				<visible>Control.HasFocus(9350) | Control.HasFocus(9360)</visible>
+				<control type="group">
+					<visible>!StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31652])</visible>
+					<control type="image">
+						<left>560</left>
+						<top>55</top>
+						<width>160</width>
+						<height>160</height>
+						<texture>DefaultAddon.png</texture>
+					</control>
+					<control type="image">
+						<left>560</left>
+						<top>215</top>
+						<width>160</width>
+						<height>160</height>
+						<texture flipy="true" diffuse="mask-fade.png">DefaultAddon.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31652])</visible>
+					<include>addons-shelficons</include>
 				</control>
 			</control>
 
@@ -133,7 +158,7 @@
 			</control>
 
 			<control type="group"><!-- Default Shelf icons -->
-				<visible>![Control.IsVisible(9155) | Control.IsVisible(9205) | Control.IsVisible(9255) | Control.IsVisible(9405)]</visible>
+				<visible>![Control.IsVisible(9155) | Control.IsVisible(9205) | Control.IsVisible(9255) | Control.IsVisible(9355) | Control.IsVisible(9405)]</visible>
 				<control type="image">
 					<left>560</left>
 					<top>55</top>
