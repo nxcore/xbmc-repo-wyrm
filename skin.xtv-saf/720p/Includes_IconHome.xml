@@ -55,14 +55,14 @@
 							<top>55</top>
 							<width>160</width>
 							<height>160</height>
-							<texture>icon-video.png</texture>
+							<texture>DefaultVideo.png</texture>
 						</control>
 						<control type="image">
 							<left>560</left>
 							<top>215</top>
 							<width>160</width>
 							<height>160</height>
-							<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
+							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
 						</control>
 					</control>
 					<control type="group">
@@ -79,14 +79,14 @@
 							<top>55</top>
 							<width>160</width>
 							<height>160</height>
-							<texture>icon-tv.png</texture>
+							<texture>DefaultTvshows.png</texture>
 						</control>
 						<control type="image">
 							<left>560</left>
 							<top>215</top>
 							<width>160</width>
 							<height>160</height>
-							<texture flipy="true" diffuse="mask-fade.png">icon-tv.png</texture>
+							<texture flipy="true" diffuse="mask-fade.png">DefaultTvshows.png</texture>
 						</control>
 					</control>
 					<control type="group">
@@ -103,14 +103,14 @@
 							<top>55</top>
 							<width>160</width>
 							<height>160</height>
-							<texture>icon-music.png</texture>
+							<texture>DefaultMusicSongs.png</texture>
 						</control>
 						<control type="image">
 							<left>560</left>
 							<top>215</top>
 							<width>160</width>
 							<height>160</height>
-							<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
+							<texture flipy="true" diffuse="mask-fade.png">DefaultMusicSongs.png</texture>
 						</control>
 					</control>
 					<control type="group">
