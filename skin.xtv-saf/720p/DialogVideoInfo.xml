@@ -304,7 +304,7 @@
 						<aligny>bottom</aligny>
 						<colordiffuse>StudioShadow</colordiffuse>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+						<texture fallback="blank.png">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
 					</control>
 					<control type="image">
 						<posx>212</posx>
@@ -313,7 +313,7 @@
 						<height>72</height>
 						<aligny>bottom</aligny>
 						<aspectratio>keep</aspectratio>
-						<texture fallback="empty">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
+						<texture fallback="blank.png">special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
 					</control>
 				</control>
 				<control type="image"><!-- Video cover-->

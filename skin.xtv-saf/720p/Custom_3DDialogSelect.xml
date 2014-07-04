@@ -46,7 +46,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
 					<label>$LOCALIZE[305]</label>
-					<radioleft>330</radioleft>
+					<radioposx>330</radioposx>
 					<onclick>ToggleStereoMode</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
@@ -69,7 +69,7 @@
 					<font>font12</font>
 					<!--<label>Watch as 2D</label>-->
 					<label>2D ?</label>
-					<radioleft>330</radioleft>
+					<radioposx>330</radioposx>
 					<onclick>StereoModeToMono</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
@@ -104,7 +104,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font12</font>
 					<label>$LOCALIZE[305]</label>
-					<radioleft>330</radioleft>
+					<radioposx>330</radioposx>
 					<onclick>ToggleStereoMode</onclick>
 					<selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
 					<onleft>Dialog.Close(1151)</onleft>
@@ -127,7 +127,7 @@
 					<font>font12</font>
 					<!--<label>Watch as 2D</label>-->
 					<label>2D ?</label>
-					<radioleft>330</radioleft>
+					<radioposx>330</radioposx>
 					<onclick>StereoModeToMono</onclick>
 					<onleft>Dialog.Close(1151)</onleft>
 					<onright>Dialog.Close(1151)</onright>
