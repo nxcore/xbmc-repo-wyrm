@@ -242,7 +242,7 @@
 					<label>$VAR[VideoList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
-					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9100)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -253,10 +253,11 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
+					<aligny>center</aligny>
 					<label>$VAR[VideoList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
-					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9100)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -373,7 +374,7 @@
 					<label>$VAR[MovieList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
-					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9150)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -387,7 +388,7 @@
 					<label>$VAR[MovieList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
-					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9150)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9150)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -512,7 +513,7 @@
 					<label>$VAR[TVShowList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
-					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9200)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -526,7 +527,7 @@
 					<label>$VAR[TVShowList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
-					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9200)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9200)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -657,7 +658,7 @@
 					<label>$VAR[MusicList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
-					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9250)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -671,7 +672,7 @@
 					<label>$VAR[MusicList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
-					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9250)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9250)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -882,7 +883,7 @@
 					<label>$VAR[AddonList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
-					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9350)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -896,7 +897,7 @@
 					<label>$VAR[AddonList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
-					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9350)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9350)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -1109,7 +1110,7 @@
 					<label>$VAR[SystemList0]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="72" />
-					<animation effect="rotatex" center="72" start="0" end="65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9450)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
@@ -1123,7 +1124,7 @@
 					<label>$VAR[SystemList6]</label>
 					<textcolor>disabled-text</textcolor>
 					<camera x="105" y="292" />
-					<animation effect="rotatex" center="292" start="0" end="-65" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9450)">Conditional</animation>
 					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>

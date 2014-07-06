@@ -617,7 +617,7 @@
 			<texture diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon0]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="65" y="159" />
-			<animation effect="rotatey" center="0" start="0" end="-60" time="600" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="0" end="-60" time="600" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
 			<posx>1148</posx>
@@ -628,7 +628,7 @@
 			<texture diffuse="mask-rect.png" background="true">$VAR[MovieShelfIcon7]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="1215" y="159" />
-			<animation effect="rotatey" center="1280" start="0" end="60" time="600" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="1280" end="60" time="600" condition="true">Conditional</animation>
 		</control>
 		<control type="list" id="9160">
 			<posx>10</posx>
@@ -792,7 +792,7 @@
 			<texture diffuse="mask-rect.png" background="true">$VAR[TVShowShelfIcon0]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="62" y="159" />
-			<animation effect="rotatey" center="0" start="-60" end="-60" time="300" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="0" end="-60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
 			<posx>1134</posx>
@@ -803,7 +803,7 @@
 			<texture diffuse="mask-rect.png" background="true">$VAR[TVShowShelfIcon7]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="1214" y="159" />
-			<animation effect="rotatey" center="1280" start="60" end="60" time="300" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="1280" end="60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="list" id="9210">
 			<posx>10</posx>
@@ -915,7 +915,7 @@
 			<texture diffuse="mask-squ.png" background="true">$VAR[MusicShelfIcon0]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="65" y="159" />
-			<animation effect="rotatey" center="0" start="0" end="-60" time="300" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="0" end="-60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
 			<posx>1136</posx>
@@ -926,7 +926,7 @@
 			<texture diffuse="mask-squ.png" background="true">$VAR[MusicShelfIcon7]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<camera x="1212" y="159" />
-			<animation effect="rotatey" center="1276" start="60" end="60" time="300" condition="true">Conditional</animation>
+			<animation effect="rotatey" center="1276" end="60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="list" id="9260">
 			<posx>10</posx>
