@@ -4,6 +4,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<previouswindow>Home</previouswindow>
+	<views>50,54,57,58</views>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
@@ -55,20 +56,23 @@
 				<top>100</top>
 				<width>372</width>
 				<height>528</height>
-				<onleft>noop</onleft>
 				<onright condition="Control.IsVisible(50)">50</onright>
+				<onright condition="Control.IsVisible(54)">54</onright>
+				<onright condition="Control.IsVisible(57)">57</onright>
 				<onright condition="Control.IsVisible(58)">58</onright>
-				<onright condition="Control.IsVisible(54) | Control.IsVisible(57)">noop</onright>
+				<onleft condition="Control.IsVisible(50)">50</onleft>
+				<onleft condition="Control.IsVisible(54)">54</onleft>
+				<onleft condition="Control.IsVisible(57)">57</onleft>
+				<onleft condition="Control.IsVisible(58)">58</onleft>
 				<onup>noop</onup>
-				<ondown condition="Control.IsVisible(54)">54</ondown>
-				<ondown condition="Control.IsVisible(57)">57</ondown>
-				<ondown condition="Control.IsVisible(50) | Control.IsVisible(58)">noop</ondown>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View type -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[100]</label>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="radiobutton" id="1198"><!-- Tilt icon list view -->
 					<width>372</width>
@@ -78,6 +82,7 @@
 					<onclick>Skin.ToggleSetting(tiltmusiclisticon)</onclick>
 					<selected>Skin.HasSetting(tiltmusiclisticon)</selected>
 					<radioposx>330</radioposx>
+					<textoffsetx>10</textoffsetx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31941],Right)</visible>
 				</control>
 				<control type="radiobutton" id="1197"><!-- Tilt icon wall view -->
@@ -88,6 +93,7 @@
 					<onclick>Skin.ToggleSetting(tiltmusicwallicon)</onclick>
 					<selected>Skin.HasSetting(tiltmusicwallicon)</selected>
 					<radioposx>330</radioposx>
+					<textoffsetx>10</textoffsetx>
 					<visible>SubString(Control.GetLabel(2),$LOCALIZE[31944],Right)</visible>
 				</control>
 				<control type="button" id="3"><!-- Sort by -->
@@ -95,6 +101,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[103]</label>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="togglebutton" id="4"><!-- Sort direction -->
 					<width>372</width>
@@ -102,6 +109,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
 					<altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="radiobutton" id="5"><!-- Library -->
 					<width>372</width>
@@ -109,6 +117,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[29800]</label>
 					<selected>Window.IsVisible(musiclibrary)</selected>
+					<textoffsetx>10</textoffsetx>
 					<radioposx>330</radioposx>
 				</control>
 				<control type="button" id="8"><!-- Search -->
@@ -116,6 +125,7 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[137]</label>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="edit" id="19"><!-- Filter -->
 					<width>372</width>
@@ -123,6 +133,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[587]</label>
 					<textwidth>340</textwidth>
+					<textoffsetx>10</textoffsetx>
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="98"><!-- Advanced filter -->
@@ -133,6 +144,7 @@
 					<font>font11</font>
 					<selected>Container.Filtered</selected>
 					<onclick>Filter</onclick>
+					<textoffsetx>10</textoffsetx>
 					<radioposx>330</radioposx>
 					<visible>Container.CanFilterAdvanced</visible>
 				</control>
@@ -141,12 +153,14 @@
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[31226]</label>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="button" id="16"><!-- Party mode -->
 					<width>372</width>
 					<height>48</height>
 					<font>font11</font>
 					<label>$LOCALIZE[589]</label>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="button" id="1199"><!-- Goto playlist -->
 					<width>372</width>
@@ -154,6 +168,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[13350]</label>
 					<onclick>$VAR[PlayList]</onclick>
+					<textoffsetx>10</textoffsetx>
 					<visible>Player.HasMedia</visible>
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 					<visible>!Window.IsVisible(MusicPlaylist) + !Window.IsVisible(VideoPlaylist)</visible>
@@ -165,6 +180,7 @@
 					<label>$LOCALIZE[653]</label>
 					<altlabel>$LOCALIZE[13353]</altlabel>
 					<usealttexture>library.isscanningmusic</usealttexture>
+					<textoffsetx>10</textoffsetx>
 				</control>
 				<control type="button" id="1200"><!-- Player controls -->
 					<width>372</width>
@@ -173,6 +189,7 @@
 					<label>$LOCALIZE[16003] $LOCALIZE[478]</label>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<onclick>SetFocus(50)</onclick>
+					<textoffsetx>10</textoffsetx>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
 				<control type="button" id="22"><!-- Now playing -->
@@ -181,6 +198,7 @@
 					<font>font11</font>
 					<label>$LOCALIZE[13350]</label>
 					<onclick>ActivateWindow(musicplaylist)</onclick>
+					<textoffsetx>10</textoffsetx>
 					<visible>Player.HasAudio</visible>
 				</control>
 			</control>

@@ -582,7 +582,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>System.IdleTime(20) + Container.Content(movies)</visible>
+			<visible>Control.IsVisible(50) + System.IdleTime(20) + Container.Content(movies)</visible>
 			<control type="wraplist" id="950">
 				<left>-10</left>
 				<top>-10</top>

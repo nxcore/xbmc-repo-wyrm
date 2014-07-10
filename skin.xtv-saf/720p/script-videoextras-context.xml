@@ -3,14 +3,14 @@
 	<defaultcontrol>9001</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<include>fadebackground</include>
 		<control type="button" id="9001"><!-- Make sure we hit the first button in the group list and not the close window button -->
-			<posx>-16</posx>
-			<posy>-16</posy>
+			<left>-16</left>
+			<top>-16</top>
 			<width>4</width>
 			<height>4</height>
 			<label>-</label>
@@ -24,21 +24,21 @@
 			<ondown>2</ondown>
 		</control>
 		<control type="image"><!-- Dialog background image -->
-			<posx>470</posx>
-			<posy>240</posy>
+			<left>470</left>
+			<top>240</top>
 			<width>320</width>
 			<height>250</height>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="grouplist" id="9000">
-			<posx>490</posx>
-			<posy>240</posy>
+			<left>490</left>
+			<top>240</top>
 			<width>300</width>
 			<height>230</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
 			<itemgap>0</itemgap>
 			<align>center</align>
 			<control type="button" id="2"><!-- Resume button -->

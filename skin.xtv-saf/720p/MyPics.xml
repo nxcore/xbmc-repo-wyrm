@@ -4,6 +4,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<previouswindow>Home</previouswindow>
+	<views>50,52,54,58</views>
 	<visible>!Window.IsActive(139)</visible>
 	<controls>
 		<include>background</include>
@@ -16,15 +17,13 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
-			<control type="label">
-				<description>Heading label</description>
+			<control type="label"><!-- Heading label -->
 				<width min="60" max="250">auto</width>
 				<height>37</height>
 				<label>$LOCALIZE[1]</label>
 				<font>font20</font>
 			</control>
-			<control type="label">
-				<description>Number of files</description>
+			<control type="label"><!-- Number of files -->
 				<top>13</top>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
@@ -34,8 +33,7 @@
 
 		<include>memory-low</include>
 
-		<!-- Various Views of Pictures library -->
-		<control type="group">
+		<control type="group"><!-- Various Views of Pictures library -->
 			<include>ListView</include>
 			<include>IconView</include>
 			<include>PhotoWrap</include>
@@ -58,14 +56,16 @@
 				<top>154</top>
 				<width>376</width>
 				<height>432</height>
-				<onleft>noop</onleft>
 				<onright condition="Control.IsVisible(50)">50</onright>
 				<onright condition="Control.IsVisible(52)">52</onright>
+				<onright condition="Control.IsVisible(54)">54</onright>
 				<onright condition="Control.IsVisible(58)">58</onright>
-				<onright condition="Control.IsVisible(54)">noop</onright>
+				<onleft condition="Control.IsVisible(50)">50</onleft>
+				<onleft condition="Control.IsVisible(52)">52</onleft>
+				<onleft condition="Control.IsVisible(54)">54</onleft>
+				<onleft condition="Control.IsVisible(58)">58</onleft>
 				<onup>noop</onup>
-				<ondown condition="Control.IsVisible(54)">54</ondown>
-				<ondown condition="Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(58)">noop</ondown>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View type -->
 					<width>376</width>
@@ -143,7 +143,6 @@
 					<radioposx>330</radioposx>
 				</control>
 				<control type="button" id="1200"><!-- Player controls -->
-					<description>PlayerControls</description>
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>

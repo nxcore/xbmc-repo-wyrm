@@ -78,16 +78,22 @@
 				<top>40</top>
 				<width>376</width>
 				<height>624</height>
-				<onleft>noop</onleft>
 				<onright condition="Control.IsVisible(50)">50</onright>
 				<onright condition="Control.IsVisible(52)">52</onright>
+				<onright condition="Control.IsVisible(54)">54</onright>
+				<onright condition="Control.IsVisible(57)">57</onright>
 				<onright condition="Control.IsVisible(58)">58</onright>
 				<onright condition="Control.IsVisible(59)">59</onright>
-				<onright condition="Control.IsVisible(54) | Control.IsVisible(57)">noop</onright>
+				<onright condition="Control.IsVisible(560)">560</onright>
+				<onleft condition="Control.IsVisible(50)">50</onleft>
+				<onleft condition="Control.IsVisible(52)">52</onleft>
+				<onleft condition="Control.IsVisible(54)">54</onleft>
+				<onleft condition="Control.IsVisible(57)">57</onleft>
+				<onleft condition="Control.IsVisible(58)">58</onleft>
+				<onleft condition="Control.IsVisible(59)">59</onleft>
+				<onleft condition="Control.IsVisible(560)">560</onleft>
 				<onup>noop</onup>
-				<ondown condition="Control.IsVisible(54)">54</ondown>
-				<ondown condition="Control.IsVisible(57)">57</ondown>
-				<ondown condition="Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(58) | Control.IsVisible(59)">noop</ondown>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View as button -->
 					<width>376</width>

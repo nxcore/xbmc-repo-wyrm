@@ -12,9 +12,9 @@
 		<control type="group"><!-- Window/Dialog debug -->
 			<visible>Skin.HasSetting(DebugInfo)</visible>
 			<control type="grouplist">
-				<posx>15</posx>
-				<posy>15</posy>
-				<width>780</width>
+				<left>15</left>
+				<top>15</top>
+				<width>620</width>
 				<height>450</height>
 				<itemgap>12</itemgap>
 				<!-- Custom Window labels -->
@@ -569,9 +569,9 @@
 			</control>
 			<!-- Control label -->
 			<control type="label">
-				<posx>1265</posx>
-				<posy>15</posy>
-				<width>780</width>
+				<left>645</left>
+				<top>15</top>
+				<width>620</width>
 				<height>21</height>
 				<textcolor>info-text</textcolor>
 				<align>right</align>
@@ -579,9 +579,9 @@
 			</control>
 			<!-- Path label -->
 			<control type="label">
-				<posx>1265</posx>
-				<posy>48</posy>
-				<width>780</width>
+				<left>645</left>
+				<top>48</top>
+				<width>620</width>
 				<height>21</height>
 				<textcolor>kai-text</textcolor>
 				<align>right</align>

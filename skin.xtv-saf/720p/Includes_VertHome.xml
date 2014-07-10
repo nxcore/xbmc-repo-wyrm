@@ -680,7 +680,7 @@
 			<width>128</width>
 			<height>128</height>
 			<aspectratio aligny="top">keep</aspectratio>
-			<texture background="true" fallback="blank.png">$INFO[Skin.String(custom-watermark)]</texture>
+			<texture background="true">$INFO[Skin.String(custom-watermark)]</texture>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<visible>!IsEmpty(Skin.String(custom-watermark))</visible>
 		</control>

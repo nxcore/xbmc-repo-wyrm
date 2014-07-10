@@ -120,6 +120,7 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<onup>noop</onup>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="radiobutton" id="4"><!-- Enable login screen -->
 					<width>376</width>
