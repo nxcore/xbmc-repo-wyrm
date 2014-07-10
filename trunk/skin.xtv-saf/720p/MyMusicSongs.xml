@@ -4,6 +4,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<previouswindow>Home</previouswindow>
+	<views>50,54,57,58</views>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
@@ -54,16 +55,17 @@
 				<top>150</top>
 				<width>372</width>
 				<height>432</height>
-				<onleft>noop</onleft>
 				<onright condition="Control.IsVisible(50)">50</onright>
+				<onright condition="Control.IsVisible(54)">54</onright>
+				<onright condition="Control.IsVisible(57)">57</onright>
 				<onright condition="Control.IsVisible(58)">58</onright>
-				<onright condition="Control.IsVisible(54) | Control.IsVisible(57)">noop</onright>
+				<onleft condition="Control.IsVisible(50)">50</onleft>
+				<onleft condition="Control.IsVisible(54)">54</onleft>
+				<onleft condition="Control.IsVisible(57)">57</onleft>
+				<onleft condition="Control.IsVisible(58)">58</onleft>
 				<onup>noop</onup>
-				<ondown condition="Control.IsVisible(54)">54</ondown>
-				<ondown condition="Control.IsVisible(57)">57</ondown>
-				<ondown condition="Control.IsVisible(50) | Control.IsVisible(58)">noop</ondown>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
-				<visible>!Skin.HasSetting(view-as-lock)</visible>
 				<control type="button" id="2"><!-- View type -->
 					<width>372</width>
 					<height>48</height>

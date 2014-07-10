@@ -80,16 +80,14 @@
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
-				<control type="image">
-					<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
+				<control type="image"><!-- Mask out any backgrounds showing around ArtistSlideshow Fanart -->
 					<include>fullscreenimage</include>
 					<texture>colours/black.png</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
-				<control type="multiimage">
-					<description>Backgroung ArtistSlideshow fanart image</description>
+				<control type="multiimage"><!-- Backgroung ArtistSlideshow fanart image -->
 					<include>fullscreenimage</include>
-					<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+					<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 					<aspectratio>keep</aspectratio>
 					<timeperimage>5000</timeperimage>
 					<fadetime>400</fadetime>
@@ -121,8 +119,7 @@
 				<visible>![Skin.HasSetting(HomeViewToggle) + Player.HasVideo] + !IsEmpty(ListItem.Title)</visible>
 				<control type="group">
 					<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
-					<control type="image">
-						<description>Fallback background image</description>
+					<control type="image"><!-- Fallback background image -->
 						<include>fullscreenimage</include>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
@@ -140,8 +137,7 @@
 						<aspectratio>stretch</aspectratio>
 						<visible>Skin.HasSetting(background-extrafanart) + Skin.HasSetting(background-fanart)</visible>
 					</control>
-					<control type="image">
-						<description>Fallback background image</description>
+					<control type="image"><!-- Fallback background image -->
 						<include>fullscreenimage</include>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>300</fadetime>
@@ -186,16 +182,14 @@
 		</control>
 		<control type="group">
 			<visible>Skin.HasSetting(background-slideshow) + Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
-			<control type="image">
-				<description>Mask out any backgrounds showing around ArtistSlideshow Fanart</description>
+			<control type="image"><!-- Mask out any backgrounds showing around ArtistSlideshow Fanart -->
 				<include>fullscreenimage</include>
 				<texture>colours/black.png</texture>
 				<aspectratio>scale</aspectratio>
 			</control>
-			<control type="multiimage">
-				<description>Backgroung ArtistSlideshow fanart image</description>
+			<control type="multiimage"><!-- Backgroung ArtistSlideshow fanart image -->
 				<include>fullscreenimage</include>
-				<imagepath fallback="blank.png" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 				<aspectratio>keep</aspectratio>
 				<timeperimage>5000</timeperimage>
 				<fadetime>300</fadetime>
@@ -283,46 +277,41 @@
 			<control type="group" id="9960"><!-- media infos (music) -->
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
-					<description>cover image</description>
-					<posx>30</posx>
-					<posy>616</posy>
+					<left>30</left>
+					<top>616</top>
 					<width>96</width>
 					<height>96</height>
 					<texture background="true" diffuse="mask-squ.png" fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 				</control>
-				<control type="label">
-					<description>Artist label</description>
-					<posx>162</posx>
-					<posy>616</posy>
+				<control type="label"><!-- Artist -->
+					<left>162</left>
+					<top>616</top>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Artist]</label>
 					<font>font11</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
-				<control type="label">
-					<description>Album label</description>
-					<posx>162</posx>
-					<posy>640</posy>
+				<control type="label"><!-- Album -->
+					<left>162</left>
+					<top>640</top>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Album]</label>
 					<font>font11</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>162</posx>
-					<posy>664</posy>
+				<control type="label"><!-- Song Title -->
+					<left>162</left>
+					<top>664</top>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Title]</label>
 					<font>font11</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
-				<control type="label">
-					<description>Time label</description>
+				<control type="label"><!-- Time and duration -->
 					<posx>162</posx>
 					<posy>688</posy>
 					<width>520</width>
@@ -334,35 +323,32 @@
 			<control type="group" id="9970"><!-- media infos (video) -->
 				<visible>Player.HasVideo</visible>
 				<control type="videowindow">
-					<description>video preview window</description>
-					<posx>33</posx>
-					<posy>616</posy>
+					<left>33</left>
+					<top>616</top>
 					<width>168</width>
 					<height>100</height>
 				</control>
-				<control type="label">
-					<description>Now playing</description>
-					<posx>234</posx>
-					<posy>624</posy>
+				<control type="label"><!-- Now playing -->
+					<left>234</left>
+					<top>624</top>
 					<width>280</width>
 					<height>23</height>
 					<label>$LOCALIZE[13350]</label>
 					<font>font12</font>
 					<textcolor>listselected-text</textcolor>
 				</control>
-				<control type="label">
-					<posx>234</posx>
-					<posy>656</posy>
+				<control type="label"><!-- Video title -->
+					<left>234</left>
+					<top>656</top>
 					<width>520</width>
 					<height>23</height>
 					<label>$INFO[VideoPlayer.Title]</label>
 					<font>font12</font>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
-				<control type="label">
-					<description>Time label</description>
-					<posx>234</posx>
-					<posy>688</posy>
+				<control type="label"><!-- Time and duration -->
+					<left>234</left>
+					<top>688</top>
 					<width>280</width>
 					<height>23</height>
 					<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
@@ -375,9 +361,8 @@
 
 	<include name="xtv-box">
 		<control type="image">
-			<description>Xtv Logo</description>
-			<posx>150</posx>
-			<posy>150</posy>
+			<left>150</left>
+			<top>150</top>
 			<width>512</width>
 			<height>256</height>
 			<aspectratio>keep</aspectratio>
@@ -388,19 +373,17 @@
 	</include>
 
 	<include name="page-info">
-		<control type="image">
-			<description>RSS Logo</description>
-			<posx>5</posx>
-			<posy>682</posy>
+		<control type="image"><!-- RSS Logo -->
+			<left>5</left>
+			<top>682</top>
 			<width>32</width>
 			<height>32</height>
 			<aspectratio>keep</aspectratio>
 			<texture>rss.png</texture>
 		</control>
 		<control type="rss">
-			<description>rss feed</description>
-			<posx>40</posx>
-			<posy>682</posy>
+			<left>40</left>
+			<top>682</top>
 			<width>1240</width>
 			<height>22</height>
 			<font>rss20</font>
@@ -411,9 +394,8 @@
 			<visible>IsEmpty(Skin.String(custom-watermark))</visible>
 		</control>
 		<control type="rss">
-			<description>rss feed</description>
-			<posx>40</posx>
-			<posy>682</posy>
+			<left>40</left>
+			<top>682</top>
 			<width>1064</width>
 			<height>22</height>
 			<font>rss20</font>
@@ -456,21 +438,21 @@
 			<visible>Container.Scrolling + !Window.IsVisible(progressdialog)</visible>
 			<animation effect="fade" time="200">Visible</animation>
 			<animation effect="fade" time="200" delay="500">Hidden</animation>
-			<posx>587</posx>
-			<posy>42</posy>
+			<left>587</left>
+			<top>42</top>
 			<width>81</width>
 			<height>65</height>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>81</width>
 				<height>65</height>
 				<texture border="8">button-menu-background.png</texture>
 				<visible>!IsEmpty(ListItem.SortLetter)</visible>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>79</width>
 				<height>56</height>
 				<align>center</align>
@@ -484,16 +466,15 @@
 		<control type="group"><!-- Video Stuff -->
 			<visible>Skin.HasSetting(overlay) + Player.HasVideo + !VideoPlayer.Content(livetv) + !Skin.HasSetting(HomeViewToggle) + !Window.IsActive(PlayerControls)</visible>
 			<control type="videowindow">
-				<posx>35</posx>
-				<posy>5</posy>
+				<left>35</left>
+				<top>5</top>
 				<width>167</width>
 				<height>100</height>
 				<aspectratio>keep</aspectratio>
 			</control>
-			<control type="label">
-				<description>Now playing</description>
-				<posx>212</posx>
-				<posy>14</posy>
+			<control type="label"><!-- Now playing -->
+				<left>212</left>
+				<top>14</top>
 				<width>430</width>
 				<height>25</height>
 				<label>$LOCALIZE[13350]</label>
@@ -501,18 +482,17 @@
 				<textcolor>listselected-text</textcolor>
 			</control>
 			<control type="label">
-				<posx>212</posx>
-				<posy>39</posy>
+				<left>212</left>
+				<top>39</top>
 				<width>430</width>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<font>font12</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
-			<control type="label">
-				<description>Time label</description>
-				<posx>212</posx>
-				<posy>64</posy>
+			<control type="label"><!-- Time and duration -->
+				<left>212</left>
+				<top>64</top>
 				<width>430</width>
 				<height>25</height>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>

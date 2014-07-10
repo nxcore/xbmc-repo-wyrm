@@ -9,26 +9,23 @@
 				<texture>background.png</texture>
 				<visible>IsEmpty(Skin.String(custom-background))</visible>
 			</control>
-			<control type="image">
-				<description>custom background</description>
+			<control type="image"><!-- Custom background image -->
 				<include>fullscreenimage</include>
 				<aspectratio>stretch</aspectratio>
 				<texture>$INFO[Skin.String(custom-background)]</texture>
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
-			<control type="label" id="1">
-				<description>header label</description>
-				<posx>35</posx>
-				<posy>37</posy>
+			<control type="label" id="1"><!-- Screen heading -->
+				<left>35</left>
+				<top>37</top>
 				<width>1203</width>
 				<height>37</height>
 				<font>font28</font>
 				<align>center</align>
 			</control>
-			<control type="textbox" id="5">
-				<description>textarea</description>
-				<posx>35</posx>
-				<posy>112</posy>
+			<control type="textbox" id="5"><!-- Text area -->
+				<left>35</left>
+				<top>112</top>
 				<width>1185</width>
 				<height>530</height>
 				<label>-</label>
@@ -37,14 +34,14 @@
 				<autoscroll delay="3000" time="1000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="scrollbar" id="23">
-				<posx>1244</posx>
-				<posy>112</posy>
+				<left>1244</left>
+				<top>112</top>
 				<width>20</width>
 				<height>530</height>
-				<onleft>23</onleft>
-				<onright>23</onright>
-				<ondown>23</ondown>
-				<onup>23</onup>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<ondown>noop</ondown>
+				<onup>noop</onup>
 			</control>
 		</control>
 	</controls>

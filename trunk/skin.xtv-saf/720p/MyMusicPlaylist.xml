@@ -5,8 +5,7 @@
 	<include>screen-fade</include>
 	<controls>
 		<include>background</include>
-		<control type="label">
-			<description>Music Label</description>
+		<control type="label"><!-- Screen heading -->
 			<left>946</left>
 			<top>25</top>
 			<width>310</width>
@@ -19,8 +18,8 @@
 		<include>ListView</include>
 
 		<control type="image">
-			<posx>122</posx>
-			<posy>150</posy>
+			<left>122</left>
+			<top>150</top>
 			<width>384</width>
 			<height>384</height>
 			<texture background="true" diffuse="mask-squ.png">$INFO[ListItem.Icon]</texture>
@@ -38,7 +37,6 @@
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 			<control type="label">
-				<description>Time Label</description>
 				<left>505</left>
 				<top>560</top>
 				<width>180</width>
@@ -47,7 +45,6 @@
 				<label>$INFO[Player.Time]$INFO[Player.Duration,/ ]</label>
 			</control>
 			<control type="label">
-				<description>Artist label</description>
 				<left>35</left>
 				<top>585</top>
 				<width>480</width>
@@ -57,7 +54,6 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
-				<description>Now Playing Label</description>
 				<left>35</left>
 				<top>615</top>
 				<width>660</width>
@@ -88,6 +84,7 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>noop</onup>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="20"><!-- Shuffle -->
 					<width>362</width>

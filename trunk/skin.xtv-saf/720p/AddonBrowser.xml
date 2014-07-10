@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include>screen-fade</include>
+	<views>50,52,54,57,58</views>
 	<controls>
 		<include>background</include>
 		<include>Fake-Overlay</include>
@@ -57,14 +58,18 @@
 				<top>224</top>
 				<width>376</width>
 				<height>336</height>
-				<onleft>noop</onleft>
 				<onright condition="Control.IsVisible(50)">50</onright>
 				<onright condition="Control.IsVisible(52)">52</onright>
+				<onright condition="Control.IsVisible(54)">54</onright>
+				<onright condition="Control.IsVisible(57)">57</onright>
 				<onright condition="Control.IsVisible(58)">58</onright>
-				<onright condition="Control.IsVisible(54) | Control.IsVisible(57)">noop</onright>
+				<onleft condition="Control.IsVisible(50)">50</onleft>
+				<onleft condition="Control.IsVisible(52)">52</onleft>
+				<onleft condition="Control.IsVisible(54)">54</onleft>
+				<onleft condition="Control.IsVisible(57)">57</onleft>
+				<onleft condition="Control.IsVisible(58)">58</onleft>
 				<onup>noop</onup>
-				<ondown condition="Control.IsVisible(54)">54</ondown>
-				<ondown condition="Control.IsVisible(57)">57</ondown>
+				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View as button -->
 					<width>376</width>
