@@ -503,6 +503,24 @@
 				<control type="label">
 					<include>overlaylabel-dimension</include>
 					<textcolor>kai-text</textcolor>
+					<label>script-videoextras-context.xml</label>
+					<visible>Window.IsVisible(script-videoextras-context.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-videoextras-main.xml</label>
+					<visible>Window.IsVisible(script-videoextras-main.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
+					<label>script-videoextras-resume.xml</label>
+					<visible>Window.IsVisible(script-videoextras-resume.xml)</visible>
+				</control>
+				<control type="label">
+					<include>overlaylabel-dimension</include>
+					<textcolor>kai-text</textcolor>
 					<label>script-XBMC_Lyrics-main.xml</label>
 					<visible>Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
 				</control>
