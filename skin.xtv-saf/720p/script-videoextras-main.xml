@@ -21,7 +21,7 @@
 			<control type="label"><!-- Video screen heading -->
 				<width>auto</width>
 				<height>72</height>
-				<label>$ADDON[script.videoextras 32001] $INFO[ListItem.Title]</label>
+				<label>$ADDON[script.videoextras 32001]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
 				<aligny>top</aligny>
