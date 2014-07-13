@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="buttonMenu">
-	<defaultcontrol>9001</defaultcontrol>
+	<defaultcontrol>2</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<left>0</left>
@@ -8,35 +8,27 @@
 	</coordinates>
 	<controls>
 		<include>fadebackground</include>
-		<control type="button" id="9001"><!-- Make sure we hit the first button in the group list and not the close window button -->
-			<left>-16</left>
-			<top>-16</top>
-			<width>4</width>
-			<height>4</height>
-			<label>-</label>
-			<font>-</font>
-			<onfocus>down</onfocus>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<onup>9000</onup>
-			<ondown>2</ondown>
+		<control type="button" id="9001"><!-- Dummy hidden button to close dialog -->
+			<left>-10</left>
+			<top>-10</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>PreviousMenu</onfocus>
 		</control>
 		<control type="image"><!-- Dialog background image -->
 			<left>470</left>
 			<top>240</top>
-			<width>320</width>
+			<width>322</width>
 			<height>250</height>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>490</left>
-			<top>240</top>
+			<left>480</left>
+			<top>250</top>
 			<width>300</width>
 			<height>230</height>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
+			<onleft>9001</onleft>
+			<onright>9001</onright>
 			<onup>noop</onup>
 			<ondown>noop</ondown>
 			<itemgap>0</itemgap>
@@ -47,7 +39,7 @@
 				<align>center</align>
 				<textwidth>290</textwidth>
 				<font>font12</font>
-				<label>$ADDON[script.videoextras 32104] </label>
+				<label>$ADDON[script.videoextras 32104]</label>
 			</control>
 			<control type="button" id="40"><!-- Start from beginning button -->
 				<width>300</width>
