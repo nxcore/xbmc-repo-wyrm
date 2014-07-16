@@ -8,7 +8,7 @@
 - Skin settings menus reorganised, new heading for home screen added
   and various items moved to this sub menu.
 - Cleaned up layout of Filemanager, MusicPlaylist Editor and Video Info screens.
-- Add hook to Video Extras script to Video info screen.
+- Add hook to Video Extras script to Video info screen and video views.
 - Add LiveTV codec info to VideoFullScreen window.
 - Added Brazilian and Hungarian Ratings images.
 - Remove a number of redundant skin graphics.

@@ -112,6 +112,11 @@
 		<value condition="ListItem.IsRecording">overlayisrecording.png</value>
 		<value condition="ListItem.HasTimer + !ListItem.IsRecording">overlayhastimer.png</value>
 	</variable>
+	<variable name="ExtrasOverlay">
+		<value condition="Container.Content(movies)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+		<value condition="Container.Content(tvshows)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/tvshows/,.png]</value>
+		<value condition="Container.Content(musicvideos)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/musicvideos/,.png]</value>
+	</variable>
 	<variable name="VideoDuration" description="Duration of video content">
 		<value condition="!substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
