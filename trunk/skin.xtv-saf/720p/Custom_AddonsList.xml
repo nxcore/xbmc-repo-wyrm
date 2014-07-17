@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1155">
-	<defaultcontrol always="false">999</defaultcontrol>
+	<defaultcontrol>999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<include>screen-fade</include>
 	<controls>

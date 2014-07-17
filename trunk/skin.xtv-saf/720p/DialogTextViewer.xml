@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol>23</defaultcontrol>
+	<defaultcontrol>999</defaultcontrol>
 	<controls>
 		<include>screen-fade</include>
 		<control type="group">
@@ -33,15 +33,17 @@
 				<pagecontrol>23</pagecontrol>
 				<autoscroll delay="3000" time="1000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
-			<control type="scrollbar" id="23">
-				<left>1244</left>
-				<top>112</top>
-				<width>20</width>
-				<height>530</height>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
-				<ondown>noop</ondown>
-				<onup>noop</onup>
+			<control type="group" id="999">
+				<control type="scrollbar" id="23">
+					<left>1244</left>
+					<top>112</top>
+					<width>20</width>
+					<height>530</height>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<ondown>noop</ondown>
+					<onup>noop</onup>
+				</control>
 			</control>
 		</control>
 	</controls>
