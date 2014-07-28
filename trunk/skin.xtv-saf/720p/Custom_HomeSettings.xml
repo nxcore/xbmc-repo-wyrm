@@ -137,7 +137,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomMovies.1.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMovies.1)</onclick>
 					</control>
 					<control type="button" id="106"><!-- Movie favourite 1 icon location -->
 						<include>settings-submenu-common</include>
@@ -151,7 +151,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomMovies.2.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMovies.2)</onclick>
 					</control>
 					<control type="button" id="108"><!-- Movie favourite 2 icon location -->
 						<include>settings-submenu-common</include>
@@ -165,7 +165,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomMovies.3.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMovies.3)</onclick>
 					</control>
 					<control type="button" id="110"><!-- Movie favourite 3 icon location -->
 						<include>settings-submenu-common</include>
@@ -179,7 +179,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomMovies.4.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMovies.4)</onclick>
 					</control>
 					<control type="button" id="112"><!-- Movie favourite 4 icon location -->
 						<include>settings-submenu-common</include>
@@ -193,7 +193,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomMovies.5.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMovies.5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMovies.5)</onclick>
 					</control>
 					<control type="button" id="114"><!-- Movie favourite 5 icon location -->
 						<include>settings-submenu-common</include>
@@ -253,7 +253,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomTVShow.1.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomTVShow.1)</onclick>
 					</control>
 					<control type="button" id="209"><!-- TVShow favourite 1 icon location -->
 						<include>settings-submenu-common</include>
@@ -267,7 +267,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomTVShow.2.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomTVShow.2)</onclick>
 					</control>
 					<control type="button" id="211"><!-- TVShow favourite 2 icon location -->
 						<include>settings-submenu-common</include>
@@ -281,7 +281,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomTVShow.3.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomTVShow.3)</onclick>
 					</control>
 					<control type="button" id="213"><!-- TVShow favourite 3 icon location -->
 						<include>settings-submenu-common</include>
@@ -295,7 +295,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomTVShow.4.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomTVShow.4)</onclick>
 					</control>
 					<control type="button" id="215"><!-- TVShow favourite 4 icon location -->
 						<include>settings-submenu-common</include>
@@ -309,7 +309,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomTVShow.5.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomTVShow.5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomTVShow.5)</onclick>
 					</control>
 					<control type="button" id="217"><!-- TVShow favourite 5 icon location -->
 						<include>settings-submenu-common</include>
@@ -370,7 +370,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomMusic.1.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMusic.1)</onclick>
 					</control>
 					<control type="button" id="306"><!-- Music favourite 1 icon location -->
 						<include>settings-submenu-common</include>
@@ -384,7 +384,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomMusic.2.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMusic.2)</onclick>
 					</control>
 					<control type="button" id="308"><!-- Music favourite 2 icon location -->
 						<include>settings-submenu-common</include>
@@ -398,7 +398,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomMusic.3.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMusic.3)</onclick>
 					</control>
 					<control type="button" id="310"><!-- Music favourite 3 icon location -->
 						<include>settings-submenu-common</include>
@@ -412,7 +412,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomMusic.4.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMusic.4)</onclick>
 					</control>
 					<control type="button" id="312"><!-- Music favourite 4 icon location -->
 						<include>settings-submenu-common</include>
@@ -426,7 +426,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomMusic.5.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomMusic.5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMusic.5)</onclick>
 					</control>
 					<control type="button" id="314"><!-- Music favourite 5 icon location -->
 						<include>settings-submenu-common</include>
@@ -486,7 +486,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 1</label>
 						<label2>$INFO[Skin.String(CustomAddon.1.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomAddon.1)</onclick>
 					</control>
 					<control type="button" id="406"><!-- Addon favourite 1 icon location -->
 						<include>settings-submenu-common</include>
@@ -500,7 +500,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 2</label>
 						<label2>$INFO[Skin.String(CustomAddon.2.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomAddon.2)</onclick>
 					</control>
 					<control type="button" id="408"><!-- Addon favourite 2 icon location -->
 						<include>settings-submenu-common</include>
@@ -514,7 +514,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 3</label>
 						<label2>$INFO[Skin.String(CustomAddon.3.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomAddon.3)</onclick>
 					</control>
 					<control type="button" id="410"><!-- Addon favourite 3 icon location -->
 						<include>settings-submenu-common</include>
@@ -528,7 +528,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 4</label>
 						<label2>$INFO[Skin.String(CustomAddon.4.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomAddon.4)</onclick>
 					</control>
 					<control type="button" id="412"><!-- Addon favourite 4 icon location -->
 						<include>settings-submenu-common</include>
@@ -542,7 +542,7 @@
 						<textwidth>480</textwidth>
 						<label>$LOCALIZE[1036] 5</label>
 						<label2>$INFO[Skin.String(CustomAddon.5.Label)]</label2>
-						<onclick>XBMC.runscript(script.favourites,changetitle=true&amp;property=CustomAddon.5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomAddon.5)</onclick>
 					</control>
 					<control type="button" id="414"><!-- Addon favourite 5 icon location -->
 						<include>settings-submenu-common</include>

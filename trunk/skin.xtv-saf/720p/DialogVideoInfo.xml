@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol>999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
+	<onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
 	<onload condition="Skin.HasSetting(tv_theme)">RunScript(script.tvtunes,backend=True)</onload>
 	<include>screen-fade</include>
 	<controls>
@@ -509,7 +509,7 @@
 				<align>center</align>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
-				<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
+				<onclick>RunScript(script.cinema.experience)</onclick>
 				<visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
 			</control>
 			<control type="button" id="11"><!-- Trailer button -->
@@ -526,7 +526,7 @@
 				<width>208</width>
 				<font>font11</font>
 				<label>$ADDON[script.videoextras 32001]</label>
-				<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+				<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 				<visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
 				<align>center</align>
 			</control>
