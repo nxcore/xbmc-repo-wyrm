@@ -183,7 +183,7 @@
 					<width>376</width>
 					<height>48</height>
 					<font>font11</font>
-					<onclick>xbmc.mastermode</onclick>
+					<onclick>Mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<radioposx>330</radioposx>
 					<visible>system.haslocks</visible>

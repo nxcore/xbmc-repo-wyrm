@@ -332,10 +332,10 @@
 		<value>blank.png</value>
 	</variable>
 	<variable name="HorzHomeShelfIcon">
-		<value condition="Control.HasFocus(9100)">DefaultVideo.png</value><!--Video shelf Icon -->
+		<value condition="Control.HasFocus(9100) | Control.HasFocus(9005)">DefaultVideo.png</value><!--Video shelf Icon -->
 		<value condition="Control.HasFocus(9300)">DefaultPicture.png</value><!--Picture shelf Icon -->
 		<value condition="Control.HasFocus(9350)">DefaultAddon.png</value><!--Addon shelf Icon -->
-		<value condition="Control.HasFocus(9450)">icon-settings.png</value><!--Setting shelf Icon -->
+		<value condition="Control.HasFocus(9450) | Control.HasFocus(9095)">icon-settings.png</value><!--Setting shelf Icon -->
 	</variable>
 	<variable name="MovieShelfIcon0">
 		<value condition="Container(9160).Position(0)">$INFO[Container(9160).ListItemNoWrap(-1).Thumb]</value>
@@ -588,13 +588,13 @@
 		<value condition="Container(9450).Position(4)">$INFO[Container(9450).ListItemNoWrap(1).Label]</value>
 	</variable>
 	<variable name="QuitAction">
-		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])">XBMC.quit()</value>
-		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])">XBMC.reboot()</value>
-		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])">XBMC.powerdown()</value>
-		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])">XBMC.hibernate()</value>
-		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])">XBMC.suspend()</value>
+		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13009])">Quit()</value>
+		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13013])">Reboot()</value>
+		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13005])">PowerDown()</value>
+		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])">Hibernate()</value>
+		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])">Suspend()</value>
 		<value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])">ActivateWindow(shutdownmenu)</value>
-		<value>XBMC.quit()</value>
+		<value>Quit()</value>
 	</variable>
 	<variable name="PlayList">
 		<value condition="Player.HasVideo">ActivateWindow(videoplaylist)</value>

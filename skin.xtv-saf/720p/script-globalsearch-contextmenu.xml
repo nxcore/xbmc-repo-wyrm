@@ -3,22 +3,22 @@
 	<defaultcontrol>1001</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<include>fadebackground</include>
 		<control type="image" id="999"><!-- Dialog background image -->
-			<posx>478</posx>
-			<posy>304</posy>
+			<left>478</left>
+			<top>304</top>
 			<width>344</width>
 			<height>166</height>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 
 		<control type="button" id="1001">
-			<posx>490</posx>
-			<posy>320</posy>
+			<left>490</left>
+			<top>320</top>
 			<width>320</width>
 			<height>48</height>
 			<align>center</align>
@@ -30,8 +30,8 @@
 			<ondown>1002</ondown>
 		</control>
 		<control type="button" id="1002">
-			<posx>490</posx>
-			<posy>320</posy>
+			<left>490</left>
+			<top>320</top>
 			<width>320</width>
 			<height>48</height>
 			<align>center</align>
@@ -43,8 +43,8 @@
 			<ondown>1003</ondown>
 		</control>
 		<control type="button" id="1003">
-			<posx>490</posx>
-			<posy>320</posy>
+			<left>490</left>
+			<top>320</top>
 			<width>320</width>
 			<height>48</height>
 			<align>center</align>

@@ -359,7 +359,7 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31893]</label>
 						<textwidth>785</textwidth>
-						<onclick>XBMC.runscript(script.artwork.downloader,mode=custom,fanart,extrafanart,poster,seasonposter,clearlogo,clearart,banner,seasonbanner)</onclick>
+						<onclick>RunScript(script.artwork.downloader,mode=custom,fanart,extrafanart,poster,seasonposter,clearlogo,clearart,banner,seasonbanner)</onclick>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
 					</control>
 				</control>
@@ -1910,14 +1910,14 @@
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[31930]</label>
 						<textwidth>750</textwidth>
-						<onclick>XBMC.runscript(script.xbmc.debug.log)</onclick>
+						<onclick>RunScript(script.xbmc.debug.log)</onclick>
 						<enable>System.HasAddon(script.xbmc.debug.log) + system.getbool(debug.showloginfo)</enable>
 					</control>
 					<control type="radiobutton" id="803"><!-- System Debug toggle -->
 						<include>settings-submenu-common</include>
 						<label>$LOCALIZE[20191]</label>
 						<textwidth>750</textwidth>
-						<onclick>XBMC.ToggleDebug</onclick>
+						<onclick>ToggleDebug</onclick>
 						<selected>system.getbool(debug.showloginfo)</selected>
 						<radioposx>844</radioposx>
 					</control>

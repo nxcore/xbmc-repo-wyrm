@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="MovieRecent">
-		<!--<content target="video">special://skin/extras/playlists/video/RecentMovies.xsp</content>-->
 		<item>
 			<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>
@@ -602,15 +601,15 @@
 
 	<include name="movie-shelficons">
 		<control type="label"><!-- Movie shelf icons label -->
-			<posx>55</posx>
-			<posy>12</posy>
+			<left>55</left>
+			<top>12</top>
 			<height>25</height>
 			<width>400</width>
 			<label>$INFO[Container(9160).ListItem.Property(ItemType)]</label>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>70</posy>
+			<left>0</left>
+			<top>70</top>
 			<width>130</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -620,8 +619,8 @@
 			<animation effect="rotatey" center="0" end="-60" time="600" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
-			<posx>1148</posx>
-			<posy>70</posy>
+			<left>1148</left>
+			<top>70</top>
 			<width>130</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -631,8 +630,8 @@
 			<animation effect="rotatey" center="1280" end="60" time="600" condition="true">Conditional</animation>
 		</control>
 		<control type="list" id="9160">
-			<posx>10</posx>
-			<posy>50</posy>
+			<left>10</left>
+			<top>50</top>
 			<width>1260</width>
 			<height>245</height>
 			<onleft>noop</onleft>
@@ -645,16 +644,16 @@
 			<orientation>horizontal</orientation>
 			<itemlayout height="245" width="210">
 				<control type="image">
-					<posx>22</posx>
-					<posy>0</posy>
+					<left>22</left>
+					<top>0</top>
 					<width>160</width>
 					<height>205</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<posx>22</posx>
-					<posy>205</posy>
+					<left>22</left>
+					<top>205</top>
 					<width>160</width>
 					<height>205</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -663,24 +662,24 @@
 			</itemlayout>
 			<focusedlayout height="245" width="210">
 				<control type="image">
-					<posx>22</posx>
-					<posy>0</posy>
+					<left>22</left>
+					<top>0</top>
 					<width>160</width>
 					<height>205</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<posx>22</posx>
-					<posy>205</posy>
+					<left>22</left>
+					<top>205</top>
 					<width>160</width>
 					<height>205</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture fallback="DefaultMovies.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="label">
-					<posx>105</posx>
-					<posy>210</posy>
+					<left>105</left>
+					<top>210</top>
 					<height>24</height>
 					<width>210</width>
 					<label>$INFO[ListItem.Label]</label>
@@ -698,12 +697,12 @@
 		</control>
 		<control type="group">
 			<visible>Control.HasFocus(9160)</visible>
-			<posx>0</posx>
-			<posy>40</posy>
+			<left>0</left>
+			<top>40</top>
 			<control type="image">
 				<description>Slider</description>
-				<posx>22</posx>
-				<posy>0</posy>
+				<left>22</left>
+				<top>0</top>
 				<width>179</width>
 				<height>224</height>
 				<texture border="9">mask-hilite2.png</texture>
@@ -719,8 +718,8 @@
 	</include>
 	<include name="tvshow-shelfbanner">
 		<control type="image">
-			<posx>31</posx>
-			<posy>8</posy>
+			<left>31</left>
+			<top>8</top>
 			<width>190</width>
 			<height>190</height>
 			<aligny>bottom</aligny>
@@ -728,8 +727,8 @@
 			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 		<control type="image">
-			<posx>31</posx>
-			<posy>198</posy>
+			<left>31</left>
+			<top>198</top>
 			<width>190</width>
 			<height>190</height>
 			<aligny>bottom</aligny>
@@ -739,16 +738,16 @@
 	</include>
 	<include name="tvshow-shelfposter">
 		<control type="image">
-			<posx>52</posx>
-			<posy>2</posy>
+			<left>52</left>
+			<top>2</top>
 			<width>150</width>
 			<height>194</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 		<control type="image">
-			<posx>52</posx>
-			<posy>204</posy>
+			<left>52</left>
+			<top>204</top>
 			<width>150</width>
 			<height>194</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -757,8 +756,8 @@
 	</include>
 	<include name="tvshow-shelfthumb">
 		<control type="image">
-			<posx>31</posx>
-			<posy>8</posy>
+			<left>31</left>
+			<top>8</top>
 			<width>190</width>
 			<height>190</height>
 			<aligny>top</aligny>
@@ -766,8 +765,8 @@
 			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 		<control type="image">
-			<posx>31</posx>
-			<posy>198</posy>
+			<left>31</left>
+			<top>198</top>
 			<width>190</width>
 			<height>190</height>
 			<aligny>top</aligny>
@@ -777,15 +776,15 @@
 	</include>
 	<include name="tvshow-shelficons">
 		<control type="label"><!-- TV Episodes shelf icons label -->
-			<posx>55</posx>
-			<posy>12</posy>
+			<left>55</left>
+			<top>12</top>
 			<height>25</height>
 			<width>400</width>
 			<label>$INFO[Container(9210).ListItem.Property(ItemType)]</label>
 		</control>
 		<control type="image">
-			<posx>-30</posx>
-			<posy>58</posy>
+			<left>-30</left>
+			<top>58</top>
 			<width>178</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">keep</aspectratio>
@@ -795,8 +794,8 @@
 			<animation effect="rotatey" center="0" end="-60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
-			<posx>1134</posx>
-			<posy>58</posy>
+			<left>1134</left>
+			<top>58</top>
 			<width>178</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">keep</aspectratio>
@@ -806,8 +805,8 @@
 			<animation effect="rotatey" center="1280" end="60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="list" id="9210">
-			<posx>10</posx>
-			<posy>42</posy>
+			<left>10</left>
+			<top>42</top>
 			<width>1260</width>
 			<height>252</height>
 			<onleft>noop</onleft>
@@ -831,8 +830,8 @@
 					<animation effect="fade" time="100" delay="300">Focus</animation>
 					<visible>Control.HasFocus(9210)</visible>
 					<control type="label">
-						<posx>126</posx>
-						<posy>200</posy>
+						<left>126</left>
+						<top>200</top>
 						<height>22</height>
 						<width>252</width>
 						<label>$INFO[ListItem.Label2]</label>
@@ -841,8 +840,8 @@
 						<font>font11</font>
 					</control>
 					<control type="label">
-						<posx>126</posx>
-						<posy>224</posy>
+						<left>126</left>
+						<top>224</top>
 						<height>22</height>
 						<width>252</width>
 						<label>$INFO[ListItem.Label]</label>
@@ -860,12 +859,12 @@
 		</control>
 		<control type="group">
 			<visible>Control.HasFocus(9210) + !StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])</visible>
-			<posx>10</posx>
-			<posy>40</posy>
+			<left>10</left>
+			<top>40</top>
 			<control type="image">
 				<description>Slider</description>
-				<posx>22</posx>
-				<posy>0</posy>
+				<left>22</left>
+				<top>0</top>
 				<width>206</width>
 				<height>206</height>
 				<texture border="9">mask-hilite2.png</texture>
@@ -879,12 +878,12 @@
 		</control>
 		<control type="group">
 			<visible>Control.HasFocus(9210) + StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])</visible>
-			<posx>14</posx>
-			<posy>35</posy>
+			<left>14</left>
+			<top>35</top>
 			<control type="image">
 				<description>Slider</description>
-				<posx>40</posx>
-				<posy>2</posy>
+				<left>40</left>
+				<top>2</top>
 				<width>166</width>
 				<height>210</height>
 				<texture border="9">mask-hilite2.png</texture>
@@ -900,15 +899,15 @@
 
 	<include name="music-shelficons">
 		<control type="label"><!-- Album shelf icon label-->
-			<posx>55</posx>
-			<posy>12</posy>
+			<left>55</left>
+			<top>12</top>
 			<height>25</height>
 			<width>400</width>
 			<label>$INFO[Container(9260).ListItem.Property(ItemType)]</label>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>65</posy>
+			<left>0</left>
+			<top>65</top>
 			<width>164</width>
 			<height>164</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -918,8 +917,8 @@
 			<animation effect="rotatey" center="0" end="-60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
-			<posx>1136</posx>
-			<posy>65</posy>
+			<left>1136</left>
+			<top>65</top>
 			<width>164</width>
 			<height>164</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -929,8 +928,8 @@
 			<animation effect="rotatey" center="1276" end="60" time="300" condition="true">Conditional</animation>
 		</control>
 		<control type="list" id="9260">
-			<posx>10</posx>
-			<posy>50</posy>
+			<left>10</left>
+			<top>50</top>
 			<width>1260</width>
 			<height>245</height>
 			<onleft>noop</onleft>
@@ -943,8 +942,8 @@
 			<orientation>horizontal</orientation>
 			<itemlayout height="245" width="210">
 				<control type="image">
-					<posx>17</posx>
-					<posy>10</posy>
+					<left>17</left>
+					<top>10</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -953,8 +952,8 @@
 				</control>
 				<control type="image">
 					<description>list item icon reflection</description>
-					<posx>17</posx>
-					<posy>186</posy>
+					<left>17</left>
+					<top>186</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -964,8 +963,8 @@
 			</itemlayout>
 			<focusedlayout height="245" width="210">
 				<control type="image">
-					<posx>17</posx>
-					<posy>10</posy>
+					<left>17</left>
+					<top>10</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -973,8 +972,8 @@
 					<texture diffuse="mask-squ.png" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<posx>17</posx>
-					<posy>186</posy>
+					<left>17</left>
+					<top>186</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -985,8 +984,8 @@
 					<animation effect="fade" time="100" delay="300">Focus</animation>
 					<visible>Control.HasFocus(9260)</visible>
 					<control type="label">
-						<posx>105</posx>
-						<posy>188</posy>
+						<left>105</left>
+						<top>188</top>
 						<height>24</height>
 						<width>210</width>
 						<label>$INFO[ListItem.Label]</label>
@@ -995,8 +994,8 @@
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
 					<control type="label">
-						<posx>105</posx>
-						<posy>215</posy>
+						<left>105</left>
+						<top>215</top>
 						<height>24</height>
 						<width>210</width>
 						<label>$INFO[ListItem.Label2]</label>
@@ -1015,8 +1014,8 @@
 			<visible>Control.HasFocus(9260)</visible>
 			<control type="image">
 				<description>Slider</description>
-				<posx>17</posx>
-				<posy>50</posy>
+				<left>17</left>
+				<top>50</top>
 				<width>196</width>
 				<height>196</height>
 				<texture border="9">mask-hilite2.png</texture>
@@ -1033,15 +1032,15 @@
 
 	<include name="addons-shelficons">
 		<control type="label"><!-- Addon shelf icon label-->
-			<posx>55</posx>
-			<posy>12</posy>
+			<left>55</left>
+			<top>12</top>
 			<height>25</height>
 			<width>400</width>
 			<label>$INFO[Container(9360).ListItem.Property(ItemType)]</label>
 		</control>
 		<control type="list" id="9360">
-			<posx>10</posx>
-			<posy>50</posy>
+			<left>10</left>
+			<top>50</top>
 			<width>1260</width>
 			<height>245</height>
 			<onleft>noop</onleft>
@@ -1054,8 +1053,8 @@
 			<orientation>horizontal</orientation>
 			<itemlayout height="245" width="252">
 				<control type="image">
-					<posx>38</posx>
-					<posy>10</posy>
+					<left>38</left>
+					<top>10</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1064,8 +1063,8 @@
 				</control>
 				<control type="image">
 					<description>list item icon reflection</description>
-					<posx>38</posx>
-					<posy>186</posy>
+					<left>38</left>
+					<top>186</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1075,8 +1074,8 @@
 			</itemlayout>
 			<focusedlayout height="245" width="252">
 				<control type="image">
-					<posx>38</posx>
-					<posy>10</posy>
+					<left>38</left>
+					<top>10</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1084,8 +1083,8 @@
 					<texture diffuse="mask-squ.png" fallback="DefaultAddon.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<posx>38</posx>
-					<posy>186</posy>
+					<left>38</left>
+					<top>186</top>
 					<width>176</width>
 					<height>176</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -1096,8 +1095,8 @@
 					<animation effect="fade" time="100" delay="300">Focus</animation>
 					<visible>Control.HasFocus(9360)</visible>
 					<control type="label">
-						<posx>126</posx>
-						<posy>194</posy>
+						<left>126</left>
+						<top>194</top>
 						<height>24</height>
 						<width>252</width>
 						<label>$INFO[ListItem.Label]</label>
@@ -1115,8 +1114,8 @@
 			<visible>Control.HasFocus(9360)</visible>
 			<control type="image">
 				<description>Slider</description>
-				<posx>38</posx>
-				<posy>50</posy>
+				<left>38</left>
+				<top>50</top>
 				<width>196</width>
 				<height>196</height>
 				<texture border="9">mask-hilite2.png</texture>
@@ -1132,22 +1131,22 @@
 
 	<include name="ShelfWeather">
 		<control type="group">
-			<posx>10</posx>
-			<posy>40</posy>
+			<left>10</left>
+			<top>0</top>
 			<control type="label">
 				<description>Weather label</description>
-				<posx>20</posx>
-				<posy>-30</posy>
-				<height>50</height>
-				<width>320</width>
+				<left>20</left>
+				<top>0</top>
+				<height>46</height>
+				<width>500</width>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				<font>font18</font>
 			</control>
 			<control type="label">
 				<description>Weather Provider label</description>
-				<posx>20</posx>
-				<posy>10</posy>
+				<left>20</left>
+				<top>50</top>
 				<height>24</height>
 				<width>500</width>
 				<font>font11</font>
@@ -1158,28 +1157,30 @@
 			<control type="group">
 				<control type="image">
 					<description>weather provider logo shadow</description>
-					<posx>21</posx>
-					<posy>11</posy>
+					<left>21</left>
+					<top>44</top>
 					<width>180</width>
 					<height>45</height>
 					<colordiffuse>StudioShadow</colordiffuse>
 					<aspectratio>keep</aspectratio>
+					<aligny>top</aligny>
 					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
 				</control>
 				<control type="image">
 					<description>weather provider logo</description>
-					<posx>20</posx>
-					<posy>10</posy>
+					<left>20</left>
+					<top>43</top>
 					<width>180</width>
 					<height>45</height>
 					<aspectratio>keep</aspectratio>
+					<aligny>top</aligny>
 					<texture>$INFO[Window(Weather).Property(WeatherProviderLogo)]</texture>
 				</control>
 			</control>
 			<control type="label">
 				<description>Current label</description>
-				<posx>0</posx>
-				<posy>50</posy>
+				<left>0</left>
+				<top>88</top>
 				<height>32</height>
 				<width>250</width>
 				<label>$LOCALIZE[31528]</label>
@@ -1189,8 +1190,8 @@
 			</control>
 			<control type="multiimage">
 				<description>current weather condition icon</description>
-				<posx>77</posx>
-				<posy>86</posy>
+				<left>77</left>
+				<top>120</top>
 				<width>96</width>
 				<height>96</height>
 				<imagepath>$INFO[Skin.String(custom-weathericons)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
@@ -1202,8 +1203,8 @@
 			</control>
 			<control type="image">
 				<description>weather icon</description>
-				<posx>77</posx>
-				<posy>86</posy>
+				<left>77</left>
+				<top>120</top>
 				<width>96</width>
 				<height>96</height>
 				<texture>$INFO[Weather.Conditions]</texture>
@@ -1212,33 +1213,34 @@
 			</control>
 			<control type="label">
 				<description>Temp Label</description>
-				<posx>0</posx>
-				<posy>184</posy>
-				<height>38</height>
+				<left>0</left>
+				<top>212</top>
+				<height>36</height>
 				<width>250</width>
 				<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				<align>center</align>
-				<font>font22</font>
+				<font>font20</font>
 			</control>
 			<control type="label">
 				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>222</posy>
-				<height>20</height>
+				<left>0</left>
+				<top>246</top>
+				<height>42</height>
 				<width>250</width>
 				<label>$INFO[Weather.Conditions]</label>
 				<align>center</align>
+				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
+				<font>rss20</font>
 			</control>
 		</control>
 		<control type="group">
-			<posx>270</posx>
-			<posy>64</posy>
+			<left>270</left>
+			<top>62</top>
 			<control type="label">
 				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
+				<left>0</left>
+				<top>30</top>
 				<height>26</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day1.Title)]</label>
@@ -1247,8 +1249,8 @@
 			</control>
 			<control type="multiimage">
 				<description>Day 1 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<imagepath>$INFO[Skin.String(custom-weathericons)]$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
@@ -1260,8 +1262,8 @@
 			</control>
 			<control type="image">
 				<description>weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
@@ -1270,8 +1272,8 @@
 			</control>
 			<control type="label">
 				<description>Day 1 temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
+				<left>0</left>
+				<top>150</top>
 				<height>38</height>
 				<width>240</width>
 				<label>[COLOR red]$INFO[Window(Weather).Property(Day1.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day1.LowTemp)][/COLOR]</label>
@@ -1280,23 +1282,24 @@
 			</control>
 			<control type="label">
 				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
+				<left>0</left>
+				<top>184</top>
+				<height>42</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day1.Outlook)]</label>
 				<align>center</align>
+				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
+				<font>rss20</font>
 			</control>
 		</control>
 		<control type="group">
-			<posx>520</posx>
-			<posy>64</posy>
+			<left>520</left>
+			<top>62</top>
 			<control type="label">
 				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
+				<left>0</left>
+				<top>30</top>
 				<height>26</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day2.Title)]</label>
@@ -1305,8 +1308,8 @@
 			</control>
 			<control type="multiimage">
 				<description>Day 2 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<imagepath>$INFO[Skin.String(custom-weathericons)]$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
@@ -1318,8 +1321,8 @@
 			</control>
 			<control type="image">
 				<description>weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
@@ -1328,8 +1331,8 @@
 			</control>
 			<control type="label">
 				<description>Day 2 temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
+				<left>0</left>
+				<top>150</top>
 				<height>38</height>
 				<width>240</width>
 				<label>[COLOR red]$INFO[Window(Weather).Property(Day2.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day2.LowTemp)][/COLOR]</label>
@@ -1338,23 +1341,24 @@
 			</control>
 			<control type="label">
 				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
+				<left>0</left>
+				<top>184</top>
+				<height>42</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day2.Outlook)]</label>
 				<align>center</align>
+				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
+				<font>rss20</font>
 			</control>
 		</control>
 		<control type="group">
-			<posx>770</posx>
-			<posy>64</posy>
+			<left>770</left>
+			<top>62</top>
 			<control type="label">
 				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
+				<left>0</left>
+				<top>30</top>
 				<height>26</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day3.Title)]</label>
@@ -1363,8 +1367,8 @@
 			</control>
 			<control type="multiimage">
 				<description>Day 3 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<imagepath>$INFO[Skin.String(custom-weathericons)]$INFO[Window(Weather).Property(Day3.FanartCode)]</imagepath>
@@ -1376,8 +1380,8 @@
 			</control>
 			<control type="image">
 				<description>weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
@@ -1386,8 +1390,8 @@
 			</control>
 			<control type="label">
 				<description>Day 3 Temp range</description>
-				<posx>0</posx>
-				<posy>158</posy>
+				<left>0</left>
+				<top>150</top>
 				<height>38</height>
 				<width>240</width>
 				<label>[COLOR red]$INFO[Window(Weather).Property(Day3.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day3.LowTemp)][/COLOR]</label>
@@ -1396,23 +1400,24 @@
 			</control>
 			<control type="label">
 				<description>Weather Conditions label</description>
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
+				<left>0</left>
+				<top>184</top>
+				<height>42</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day3.Outlook)]</label>
 				<align>center</align>
+				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
+				<font>rss20</font>
 			</control>
 		</control>
 		<control type="group">
-			<posx>1020</posx>
-			<posy>64</posy>
+			<left>1020</left>
+			<top>62</top>
 			<control type="label">
 				<description>Weather label</description>
-				<posx>0</posx>
-				<posy>30</posy>
+				<left>0</left>
+				<top>30</top>
 				<height>26</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day4.Title)]</label>
@@ -1421,8 +1426,8 @@
 			</control>
 			<control type="multiimage">
 				<description>Day 4 weather animated icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<imagepath>$INFO[Skin.String(custom-weathericons)]$INFO[Window(Weather).Property(Day4.FanartCode)]</imagepath>
@@ -1434,8 +1439,8 @@
 			</control>
 			<control type="image">
 				<description>weather icon</description>
-				<posx>80</posx>
-				<posy>70</posy>
+				<left>80</left>
+				<top>68</top>
 				<width>80</width>
 				<height>80</height>
 				<texture>$INFO[Window(Weather).Property(Day4.OutlookIcon)]</texture>
@@ -1443,8 +1448,8 @@
 				<visible>!Skin.String(custom-weathericons)</visible>
 			</control>
 			<control type="label"><!-- Day 4 temp range -->
-				<posx>0</posx>
-				<posy>158</posy>
+				<left>0</left>
+				<top>150</top>
 				<height>38</height>
 				<width>240</width>
 				<label>[COLOR red]$INFO[Window(Weather).Property(Day4.HighTemp)][/COLOR] - [COLOR lightblue]$INFO[Window(Weather).Property(Day4.LowTemp)][/COLOR]</label>
@@ -1452,14 +1457,15 @@
 				<font>font18</font>
 			</control>
 			<control type="label"><!-- Current weather condition -->
-				<posx>0</posx>
-				<posy>198</posy>
-				<height>20</height>
+				<left>0</left>
+				<top>184</top>
+				<height>42</height>
 				<width>240</width>
 				<label>$INFO[Window(Weather).Property(Day4.Outlook)]</label>
 				<align>center</align>
+				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font11</font>
+				<font>rss20</font>
 			</control>
 		</control>
 	</include>

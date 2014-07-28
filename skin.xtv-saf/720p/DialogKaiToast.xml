@@ -10,50 +10,50 @@
 			<left>0</left>
 			<top>0</top>
 			<width>584</width>
-			<height>112</height>
+			<height>84</height>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="image" id="400">
-			<left>17</left>
-			<top>15</top>
-			<width>113</width>
-			<height>80</height>
+			<left>12</left>
+			<top>10</top>
+			<width>64</width>
+			<height>64</height>
 			<aspectratio>keep</aspectratio>
 			<texture>kai-warning.png</texture>
 		</control>
 		<control type="image" id="404">
-			<left>17</left>
-			<top>15</top>
-			<width>113</width>
-			<height>80</height>
+			<left>12</left>
+			<top>10</top>
+			<width>64</width>
+			<height>64</height>
 			<aspectratio>keep</aspectratio>
 			<texture>kai-warning.png</texture>
 			<visible>false</visible>
 		</control>
 		<control type="image" id="405">
-			<left>17</left>
-			<top>15</top>
-			<width>113</width>
-			<height>80</height>
+			<left>12</left>
+			<top>10</top>
+			<width>64</width>
+			<height>64</height>
 			<aspectratio>keep</aspectratio>
 			<texture>kai-error.png</texture>
 			<visible>false</visible>
 		</control>
 		<control type="label" id="401"><!-- Caption -->
-			<left>134</left>
-			<top>18</top>
-			<width>424</width>
-			<height>37</height>
+			<left>90</left>
+			<top>10</top>
+			<width>486</width>
+			<height>32</height>
 			<font>font18</font>
 			<align>center</align>
 			<label>-</label>
 			<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 		</control>
 		<control type="label" id="402"><!-- Description -->
-			<left>134</left>
-			<top>60</top>
-			<width>424</width>
-			<height>37</height>
+			<left>90</left>
+			<top>46</top>
+			<width>486</width>
+			<height>24</height>
 			<label>-</label>
 			<font>font12</font>
 			<align>center</align>
