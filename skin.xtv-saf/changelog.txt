@@ -1,4 +1,6 @@
-[B]1.4.6[/B]
+[B]1.4.8[/B]
+- Horizontal home menu no longer wraps to start of menu list. Bump sound now plays
+  when user tries to move outside of menu or shelf area.
 - Allow user to select image type to show on TVShows shelf on skins Home screen.
 - Allow user to select entry point into the PVR section.
 - Add radar animation in MyWeather screen when oz.weather plugin is enabled.
