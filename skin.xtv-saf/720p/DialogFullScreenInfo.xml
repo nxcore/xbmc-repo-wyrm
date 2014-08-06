@@ -3,13 +3,11 @@
 	<include>screen-fade</include>
 	<controls>
 		<control type="group">
-			<posx>0</posx>
-			<posy>640</posy>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<control type="group">
 				<control type="image"><!-- Dialog background -->
-					<posx>0</posx>
-					<posy>-178</posy>
+					<left>0</left>
+					<top>462</top>
 					<height>264</height>
 					<width>1280</width>
 					<texture>background.png</texture>
@@ -19,8 +17,8 @@
 			</control>
 
 			<control type="label"><!-- Title of currently playing video -->
-				<posx>290</posx>
-				<posy>-180</posy>
+				<left>290</left>
+				<top>460</top>
 				<width>960</width>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.Title]</label>
@@ -30,8 +28,8 @@
 			<control type="group"><!-- Details of Live TV Program -->
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<control type="label"><!-- TV Channel Number -->
-					<posx>8</posx>
-					<posy>-260</posy>
+					<left>8</left>
+					<top>380</top>
 					<width>150</width>
 					<height>48</height>
 					<textcolor>info-text</textcolor>
@@ -39,22 +37,22 @@
 					<font>font28</font>
 				</control>
 				<control type="label"><!-- TV Channel Name -->
-					<posx>8</posx>
-					<posy>-210</posy>
+					<left>8</left>
+					<top>430</top>
 					<width>400</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.ChannelName]</label>
 				</control>
 				<control type="label"><!-- Title of Live TV Program -->
-					<posx>290</posx>
-					<posy>-180</posy>
+					<left>290</left>
+					<top>460</top>
 					<width>475</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ,]</label>
 				</control>
 				<control type="label"><!-- Tv Show title up next -->
 					<posx>1250</posx>
-					<posy>-180</posy>
+					<posy>460</posy>
 					<width>475</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ,]</label>
@@ -63,15 +61,15 @@
 				</control>
 			</control>
 			<control type="image">
-				<posx>290</posx>
-				<posy>-152</posy>
+				<left>290</left>
+				<top>488</top>
 				<width>960</width>
 				<height>5</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox"><!-- Plot (Show if available)-->
-				<posx>290</posx>
-				<posy>-146</posy>
+				<left>290</left>
+				<top>494</top>
 				<width>960</width>
 				<height>104</height>
 				<font>font11</font>
@@ -81,8 +79,8 @@
 				<visible>!IsEmpty(VideoPlayer.Plot)</visible>
 			</control>
 			<control type="textbox"><!-- Plot Outline (Show if plot not found)-->
-				<posx>290</posx>
-				<posy>-146</posy>
+				<left>290</left>
+				<top>494</top>
 				<width>960</width>
 				<height>104</height>
 				<font>font11</font>
@@ -94,7 +92,7 @@
 
 			<control type="grouplist"><!-- Media flags -->
 				<posx>804</posx>
-				<posy>-40</posy>
+				<posy>600</posy>
 				<width>453</width>
 				<height>50</height>
 				<align>right</align>
@@ -158,8 +156,8 @@
 			<control type="group">
 				<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
 				<control type="grouplist">
-					<posx>408</posx>
-					<posy>17</posy>
+					<left>657</left>
+					<top>17</top>
 					<width>464</width>
 					<height>64</height>
 					<align>center</align>
@@ -170,8 +168,7 @@
 						<height>64</height>
 						<texture>$VAR[PlayStateImage]</texture>
 					</control>
-					<control type="label">
-						<description>Video screen headings</description>
+					<control type="label"><!-- Video screen headings -->
 						<width min="150" max="400">auto</width>
 						<height>64</height>
 						<label>$VAR[PlayStateTxt]</label>
@@ -184,7 +181,7 @@
 				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<control type="label">
 					<posx>224</posx>
-					<posy>4</posy>
+					<posy>644</posy>
 					<width>220</width>
 					<height>26</height>
 					<font>rss20</font>
@@ -192,8 +189,8 @@
 					<align>right</align>
 				</control>
 				<control type="label">
-					<posx>1048</posx>
-					<posy>4</posy>
+					<left>1048</left>
+					<top>644</top>
 					<width>220</width>
 					<height>26</height>
 					<font>rss20</font>
@@ -201,25 +198,24 @@
 				</control>
 
 				<control type="progress">
-					<posx>238</posx>
-					<posy>12</posy>
+					<left>238</left>
+					<top>652</top>
 					<width>800</width>
 					<height>16</height>
 					<info>Player.ProgressCache</info>
 					<colordiffuse>FF777777</colordiffuse>
 				</control>
 				<control type="progress">
-					<posx>238</posx>
-					<posy>12</posy>
+					<left>238</left>
+					<top>652</top>
 					<width>800</width>
 					<height>16</height>
 					<info>Player.Progress</info>
 					<colordiffuse>ProgressBarColor</colordiffuse>
 				</control>
 				<control type="slider">
-					<description>Seek Slider</description>
-					<posx>238</posx>
-					<posy>10</posy>
+					<left>238</left>
+					<top>650</top>
 					<width>800</width>
 					<height>20</height>
 					<info>Player.Progress</info>

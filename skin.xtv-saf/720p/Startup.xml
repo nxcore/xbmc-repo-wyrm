@@ -10,8 +10,6 @@
 			<onfocus condition="Skin.HasSetting(intro-vid)">PlayMedia($ESCINFO[Skin.String(intro-vid-location)])</onfocus>
 			<onfocus condition="Skin.HasSetting(startup-playlist)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
 			<animation effect="fade" delay="1000" end="100">Focus</animation>
 		</control>
 		<control type="group">

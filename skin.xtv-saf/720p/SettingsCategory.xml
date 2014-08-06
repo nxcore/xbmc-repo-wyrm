@@ -36,8 +36,7 @@
 			<scrolltime tween="sine" easing="out">100</scrolltime>
 		</control>
 
-		<control type="button" id="20">
-			<description>Setting level button</description>
+		<control type="button" id="20"><!-- Setting level button -->
 			<left>940</left>
 			<top>598</top>
 			<width>320</width>

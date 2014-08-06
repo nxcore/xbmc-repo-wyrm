@@ -87,13 +87,6 @@
 				<onright>9000</onright>
 				<ondown>16</ondown>
 				<itemlayout width="660" height="46">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>660</width>
-						<height>46</height>
-						<texture>-</texture>
-					</control>
 					<control type="label">
 						<posx>17</posx>
 						<posy>0</posy>

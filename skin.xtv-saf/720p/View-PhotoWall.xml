@@ -17,13 +17,6 @@
 			<pagecontrol>1358</pagecontrol>
 			<itemlayout height="144" width="144">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>144</width>
-					<height>144</height>
-					<texture>-</texture>
-				</control>
-				<control type="image">
 					<posx>8</posx>
 					<posy>8</posy>
 					<width>128</width>
