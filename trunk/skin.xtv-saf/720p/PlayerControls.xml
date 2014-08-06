@@ -213,8 +213,6 @@
 					<height>40</height>
 					<onleft>908</onleft>
 					<onright>217</onright>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
 					<onclick>PlayerControl(Repeat)</onclick>
 				</control>
 				<control type="image">

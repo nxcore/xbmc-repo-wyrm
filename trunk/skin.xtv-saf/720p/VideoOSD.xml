@@ -5,117 +5,113 @@
 	<animation effect="fade" end="0" time="200" condition="[Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(SubtitleSearch) | Window.IsVisible(VideoBookmarks)]">Conditional</animation>
 	<controls>
 		<control type="image"><!-- Background shadow -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>80</height>
 			<width>1280</width>
 			<texture>colours/black.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="group">
-			<posx>0</posx>
-			<posy>640</posy>
-			<control type="group">
-				<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
-				<control type="image"><!-- Dialog background -->
-					<posx>0</posx>
-					<posy>6</posy>
-					<height>80</height>
-					<width>1280</width>
-					<texture>background.png</texture>
-					<colordiffuse>osd-background</colordiffuse>
-					<visible>[Window.IsActive(fullscreenvideo)] + ![Window.IsActive(MusicOSD)]</visible>
-				</control>
-				<include>player-mediaicon</include>
+			<visible>![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+			<control type="image"><!-- Dialog background -->
+				<left>0</left>
+				<top>646</top>
+				<height>80</height>
+				<width>1280</width>
+				<texture>background.png</texture>
+				<colordiffuse>osd-background</colordiffuse>
+				<visible>[Window.IsActive(fullscreenvideo)] + ![Window.IsActive(MusicOSD)]</visible>
 			</control>
+			<include>player-mediaicon</include>
+		</control>
 
-			<control type="group"><!-- Player action labels -->
-				<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation) | Player.DisplayAfterSeek | Player.Seeking]</visible>
-				<control type="grouplist">
-					<posx>408</posx>
-					<posy>17</posy>
-					<width>464</width>
+		<control type="group"><!-- Player action labels -->
+			<visible>[Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation) | Player.DisplayAfterSeek | Player.Seeking]</visible>
+			<control type="grouplist">
+				<left>408</left>
+				<top>657</top>
+				<width>464</width>
+				<height>64</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<orientation>horizontal</orientation>
+				<control type="image">
+					<width>64</width>
 					<height>64</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<orientation>horizontal</orientation>
-					<control type="image">
-						<width>64</width>
-						<height>64</height>
-						<texture>$VAR[PlayStateImage]</texture>
-					</control>
-					<control type="label"><!-- Dialog heading -->
-						<width min="150" max="400">auto</width>
-						<height>64</height>
-						<label>$VAR[PlayStateTxt]</label>
-						<font>font22</font>
-					</control>
+					<texture>$VAR[PlayStateImage]</texture>
+				</control>
+				<control type="label"><!-- Dialog heading -->
+					<width min="150" max="400">auto</width>
+					<height>64</height>
+					<label>$VAR[PlayStateTxt]</label>
+					<font>font22</font>
 				</control>
 			</control>
+		</control>
 
-			<control type="group">
-				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
-				<!-- Player info labels -->
-				<control type="label">
-					<posx>224</posx>
-					<posy>4</posy>
-					<width>220</width>
-					<height>26</height>
-					<font>rss20</font>
-					<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
-					<align>right</align>
-				</control>
-				<control type="label">
-					<posx>1048</posx>
-					<posy>4</posy>
-					<width>220</width>
-					<height>26</height>
-					<font>rss20</font>
-					<label>-$INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
-				</control>
+		<control type="group">
+			<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+			<!-- Player info labels -->
+			<control type="label">
+				<posx>224</posx>
+				<posy>644</posy>
+				<width>220</width>
+				<height>26</height>
+				<font>rss20</font>
+				<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<left>1048</left>
+				<top>644</top>
+				<width>220</width>
+				<height>26</height>
+				<font>rss20</font>
+				<label>-$INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
+			</control>
 
-				<!-- Progress bar -->
-				<control type="progress">
-					<posx>238</posx>
-					<posy>12</posy>
-					<width>800</width>
-					<height>16</height>
-					<info>Player.ProgressCache</info>
-					<colordiffuse>FF777777</colordiffuse>
-				</control>
-				<control type="progress">
-					<posx>238</posx>
-					<posy>12</posy>
-					<width>800</width>
-					<height>16</height>
-					<info>Player.Progress</info>
-					<colordiffuse>ProgressBarColor</colordiffuse>
-				</control>
-				<control type="slider" id="401"><!-- Seek Slider -->
-					<posx>238</posx>
-					<posy>10</posy>
-					<width>800</width>
-					<height>20</height>
-					<action>seek</action>
-				</control>
+			<!-- Progress bar -->
+			<control type="progress">
+				<left>238</left>
+				<top>652</top>
+				<width>800</width>
+				<height>16</height>
+				<info>Player.ProgressCache</info>
+				<colordiffuse>FF777777</colordiffuse>
+			</control>
+			<control type="progress">
+				<left>238</left>
+				<top>652</top>
+				<width>800</width>
+				<height>16</height>
+				<info>Player.Progress</info>
+				<colordiffuse>ProgressBarColor</colordiffuse>
+			</control>
+			<control type="slider" id="401"><!-- Seek Slider -->
+				<left>238</left>
+				<top>650</top>
+				<width>800</width>
+				<height>20</height>
+				<action>seek</action>
 			</control>
 		</control>
 		<control type="grouplist" id="999"><!-- Player buttons -->
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<description>Group OSD Button</description>
-			<posx>65</posx>
-			<posy>14</posy>
+			<left>65</left>
+			<top>14</top>
 			<width>1150</width>
 			<height>60</height>
 			<itemgap>6</itemgap>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<onleft>999</onleft>
-			<onright>999</onright>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
 			<onup>noop</onup>
-			<ondown>999</ondown>
+			<ondown>noop</ondown>
 			<control type="button" id="919"><!-- Bookmarks menu -->
 				<width>60</width>
 				<height>60</height>
@@ -253,18 +249,18 @@
 		<control type="grouplist" id="999"><!-- Group OSD buttons -->
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
-			<posx>65</posx>
-			<posy>14</posy>
+			<left>65</left>
+			<top>14</top>
 			<width>1150</width>
 			<height>60</height>
 			<itemgap>6</itemgap>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<onleft>999</onleft>
-			<onright>999</onright>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
 			<onup>noop</onup>
-			<ondown>999</ondown>
+			<ondown>noop</ondown>
 			<control type="button" id="210"><!-- Skip back -->
 				<width>60</width>
 				<height>60</height>
@@ -327,7 +323,6 @@
 				<visible>Player.CanRecord + Player.Recording</visible>
 			</control>
 			<control type="button" id="921"><!-- Audio menu -->
-				<description>Audio Menu</description>
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-audio-focus.png</texturefocus>

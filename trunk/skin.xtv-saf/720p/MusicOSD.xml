@@ -9,7 +9,6 @@
 			<texture>background.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
-		<!-- Player buttons -->
 		<control type="grouplist" id="999">
 			<left>40</left>
 			<top>31</top>
@@ -196,7 +195,7 @@
 				<altclick>Dialog.Close(musicosd)</altclick>
 				<altclick>RunScript($INFO[Skin.String(osd-lyricpath)])</altclick>
 				<usealttexture>IsEmpty(Skin.String(osd-lyricpath))</usealttexture>
-			</control>-->
+			</control>
 			<control type="button" id="220">
 				<description>Popup Vis Preset List</description>
 				<width>60</width>
@@ -214,6 +213,5 @@
 				<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 			</control>
 		</control>
-		<!-- End Player buttons -->
 	</controls>
 </window>

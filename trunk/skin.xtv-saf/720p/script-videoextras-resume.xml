@@ -3,8 +3,8 @@
 	<defaultcontrol>2</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<include>fadebackground</include>
@@ -16,16 +16,16 @@
 			<onfocus>PreviousMenu</onfocus>
 		</control>
 		<control type="image"><!-- Dialog background image -->
-			<posx>470</posx>
-			<posy>240</posy>
+			<left>470</left>
+			<top>240</top>
 			<width>322</width>
 			<height>112</height>
 			<align>center</align>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="grouplist" id="9000">
-			<posx>480</posx>
-			<posy>250</posy>
+			<left>480</left>
+			<top>250</top>
 			<width>300</width>
 			<height>92</height>
 			<onleft>9001</onleft>

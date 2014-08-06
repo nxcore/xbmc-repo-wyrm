@@ -215,7 +215,7 @@
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<control type="image" id="890"><!-- Use Clearart if available -->
 						<posx>8</posx>
-						<posy>-144</posy>
+						<posy>496</posy>
 						<width>275</width>
 						<height>145</height>
 						<texture>$VAR[PlayerVideoClearart]</texture>
@@ -226,7 +226,7 @@
 						<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
 						<control type="image" id="891"><!-- Use Logo if available -->
 							<posx>8</posx>
-							<posy>-75</posy>
+							<posy>565</posy>
 							<width>276</width>
 							<height>75</height>
 							<texture>$VAR[PlayerVideoLogo]</texture>
@@ -234,7 +234,7 @@
 						</control>
 						<control type="image"><!-- Fallback to video cover image if no clearart or logo -->
 							<posx>56</posx>
-							<posy>-180</posy>
+							<posy>460</posy>
 							<width>180</width>
 							<height>180</height>
 							<aligny>bottom</aligny>
@@ -250,7 +250,7 @@
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="image"><!-- Fallback to Thumb image if not TV Episode or Movie playing -->
 					<posx>56</posx>
-					<posy>-180</posy>
+					<posy>460</posy>
 					<width>180</width>
 					<height>180</height>
 					<aligny>bottom</aligny>
@@ -261,7 +261,7 @@
 		</control>
 		<control type="image"><!-- Music cover image-->
 			<posx>8</posx>
-			<posy>-256</posy>
+			<posy>384</posy>
 			<width>250</width>
 			<height>250</height>
 			<texture diffuse="mask-squ.png">$INFO[MusicPlayer.Cover]</texture>

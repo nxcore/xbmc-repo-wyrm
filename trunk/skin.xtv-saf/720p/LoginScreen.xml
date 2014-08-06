@@ -7,8 +7,8 @@
 	<controls>
 		<include>background</include>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>50</posy>
+			<left>946</left>
+			<top>50</top>
 			<width>360</width>
 			<height>37</height>
 			<align>left</align>
@@ -21,7 +21,7 @@
 				<font>font20</font>
 			</control>
 			<control type="label"><!-- Number of files -->
-				<posy>13</posy>
+				<top>13</top>
 				<width min="40" max="110">auto</width>
 				<height>38</height>
 				<label>$INFO[Container(52).NumItems, (,)]</label>
@@ -29,8 +29,8 @@
 		</control>
 		<control type="fixedlist" id="52">
 			<viewtype label="31941">List</viewtype>
-			<posx>240</posx>
-			<posy>116</posy>
+			<left>240</left>
+			<top>116</top>
 			<width>800</width>
 			<height>456</height>
 			<focusposition>1</focusposition>
@@ -41,11 +41,10 @@
 			<ondown>noop</ondown>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<pagecontrol>-</pagecontrol>
 			<itemlayout width="800" height="114">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>114</width>
 					<height>114</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -53,16 +52,16 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>150</posx>
-					<posy>16</posy>
+					<left>150</left>
+					<top>16</top>
 					<width>626</width>
 					<height>31</height>
 					<font>font18</font>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>150</posx>
-					<posy>72</posy>
+					<left>150</left>
+					<top>72</top>
 					<width>626</width>
 					<height>25</height>
 					<textcolor>disabled-text</textcolor>
@@ -71,16 +70,16 @@
 			</itemlayout>
 			<focusedlayout width="800" height="114">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<width>114</width>
 					<height>114</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
-					<posx>150</posx>
-					<posy>16</posy>
+					<left>150</left>
+					<top>16</top>
 					<width>626</width>
 					<height>31</height>
 					<font>font18</font>
@@ -89,8 +88,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<posx>150</posx>
-					<posy>72</posy>
+					<left>150</left>
+					<top>72</top>
 					<width>626</width>
 					<height>25</height>
 					<textcolor>disabled-text</textcolor>
@@ -100,12 +99,12 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<posy>66</posy>
+			<top>66</top>
 			<visible>Control.IsVisible(52)</visible>
 			<control type="group">
 				<control type="image"><!-- Slider -->
-					<posx>374</posx>
-					<posy>278</posy>
+					<left>374</left>
+					<top>278</top>
 					<width>658</width>
 					<height>114</height>
 					<texture border="8">default-button.png</texture>
@@ -121,8 +120,8 @@
 			</control>
 		</control>
 		<control type="label"><!-- Current Profile name -->
-			<posx>228</posx>
-			<posy>677</posy>
+			<left>228</left>
+			<top>677</top>
 			<width>824</width>
 			<height>31</height>
 			<align>center</align>

@@ -261,7 +261,6 @@
 					<onright>110</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="694" height="30">
 						<control type="label">
@@ -435,7 +434,6 @@
 					<onright>120</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="694" height="30">
 						<control type="label">
@@ -521,7 +519,6 @@
 					<onright>130</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="694" height="30">
 						<control type="label">
@@ -677,7 +674,6 @@
 					<onright>140</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="694" height="30">
 						<control type="label">
@@ -846,7 +842,6 @@
 						<font>font11</font>
 						<label fallback="161">$INFO[Container(100).ListItem.Property(Plot)]</label>
 						<align>justify</align>
-						<pagecontrol>-</pagecontrol>
 						<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
 				</control>
@@ -859,7 +854,6 @@
 					<onright>150</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="694" height="30">
 						<control type="label">
@@ -962,7 +956,6 @@
 					<onright>160</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="800" height="40">
 						<control type="label">
@@ -1096,7 +1089,6 @@
 					<onright>170</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="800" height="40">
 						<control type="label">
@@ -1235,7 +1227,6 @@
 					<onright>180</onright>
 					<onup>190</onup>
 					<ondown>195</ondown>
-					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout width="800" height="40">
 						<control type="label">
@@ -1337,7 +1328,6 @@
 			<control type="spincontrol" id="195">
 				<posx>1152</posx>
 				<posy>624</posy>
-				<font>-</font>
 				<spinwidth>33</spinwidth>
 				<spinheight>22</spinheight>
 				<textureup>scroll-up.png</textureup>
@@ -1373,13 +1363,11 @@
 				<control type="button" id="192">
 					<width>250</width>
 					<height>56</height>
-					<label>-</label>
 					<align>center</align>
 				</control>
 				<control type="button" id="193">
 					<width>250</width>
 					<height>56</height>
-					<label>-</label>
 					<align>center</align>
 				</control>
 			</control>

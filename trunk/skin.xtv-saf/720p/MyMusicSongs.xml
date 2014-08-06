@@ -125,7 +125,6 @@
 					<font>font12</font>
 					<label>$LOCALIZE[587]</label>
 					<textwidth>340</textwidth>
-					<texturenofocus>-</texturenofocus>
 					<aligny>center</aligny>
 					<textoffsetx>10</textoffsetx>
 					<visible>!Container.CanFilterAdvanced</visible>

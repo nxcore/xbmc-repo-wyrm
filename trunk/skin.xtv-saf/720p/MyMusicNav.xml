@@ -137,7 +137,6 @@
 					<visible>!Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="radiobutton" id="98"><!-- Advanced filter -->
-					<description>Advanced Filter</description>
 					<width>372</width>
 					<height>48</height>
 					<label>$LOCALIZE[587]</label>
