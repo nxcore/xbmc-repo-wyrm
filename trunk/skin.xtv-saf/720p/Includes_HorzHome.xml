@@ -31,7 +31,13 @@
 
 		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include><!-- Low memory warning -->
 
-		<control type="group" id="9800"><!-- Shelf icons-->
+		<control type="grouplist" id="9800"><!-- Shelf icons-->
+			<left>0</left>
+			<top>0</top>
+			<width>1280</width>
+			<height>292</height>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
 			<control type="group" id="9155"><!-- Movie icons -->
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
 				<control type="group">
@@ -201,20 +207,44 @@
 			</control>
 		</control>
 
-		<control type="button" id="9005"><!-- Play sound if too far left in menu -->
+		<control type="button" id="9005"><!-- Play bump sound if user tries to leave menu by undefined direction -->
 			<left>-30</left>
 			<top>-30</top>
 			<width>1</width>
 			<height>1</height>
-			<onfocus>SetFocus(9120)</onfocus>
+			<onfocus>SetFocus(9000)</onfocus>
 			<onfocus>ActivateWindow(1157)</onfocus>
 		</control>
-		<control type="button" id="9095"><!-- Play sound if too far right in menu -->
-			<left>-20</left>
-			<top>-20</top>
+		<control type="button" id="9050"><!-- Play bump sound if user tries to leave Movie shelf by undefined direction -->
+			<left>-40</left>
+			<top>-40</top>
 			<width>1</width>
 			<height>1</height>
-			<onfocus>SetFocus(9470)</onfocus>
+			<onfocus>SetFocus(9160)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9052"><!-- Play bump sound if user tries to leave TV shelf by undefined direction -->
+			<left>-50</left>
+			<top>-50</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9210)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9054"><!-- Play bump sound if user tries to leave Music shelf by undefined direction -->
+			<left>-60</left>
+			<top>-60</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9260)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9056"><!-- Play bump sound if user tries to leave Addons shelf by undefined direction -->
+			<left>-70</left>
+			<top>-70</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9360)</onfocus>
 			<onfocus>ActivateWindow(1157)</onfocus>
 		</control>
 
@@ -235,7 +265,7 @@
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
-					<visible>Control.HasFocus(9100) | Control.HasFocus(9005)</visible>
+					<visible>Control.HasFocus(9100)</visible>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -259,7 +289,7 @@
 					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9100)">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<visible>Control.HasFocus(9100) | Control.HasFocus(9005)</visible>
+					<visible>Control.HasFocus(9100)</visible>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -274,20 +304,19 @@
 					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9100)">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<visible>Control.HasFocus(9100) | Control.HasFocus(9005)</visible>
+					<visible>Control.HasFocus(9100)</visible>
 				</control>
 				<control type="list" id="9100">
-					<animation condition="!Control.HasFocus(9100) + !Control.HasFocus(9005)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
-					<animation condition="Control.HasFocus(9100) | Control.HasFocus(9005)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
+					<animation condition="!Control.HasFocus(9100)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
+					<animation condition="Control.HasFocus(9100)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<left>0</left>
 					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
-					<!--<onleft>9470</onleft>-->
-					<onleft>9005</onleft><!-- change to button to make bump noise -->
+					<onup>9005</onup>
+					<ondown>9005</ondown>
+					<onleft>9005</onleft>
 					<onright>9170</onright>
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
@@ -416,7 +445,7 @@
 					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9155</onup>
-					<ondown>noop</ondown>
+					<ondown>9005</ondown>
 					<onleft>9120</onleft>
 					<onright>9220</onright>
 					<itemgap>0</itemgap>
@@ -554,7 +583,7 @@
 					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9205</onup>
-					<ondown>noop</ondown>
+					<ondown>9005</ondown>
 					<onleft>9170</onleft>
 					<onright>9270</onright>
 					<itemgap>0</itemgap>
@@ -698,7 +727,7 @@
 					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9255</onup>
-					<ondown>noop</ondown>
+					<ondown>9005</ondown>
 					<onleft>9220</onleft>
 					<onright>9320</onright>
 					<itemgap>0</itemgap>
@@ -812,8 +841,8 @@
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
 					<onleft>9270</onleft>
 					<onright>9370</onright>
 					<itemgap>0</itemgap>
@@ -920,7 +949,7 @@
 					<height>210</height>
 					<scrolltime>200</scrolltime>
 					<onup>9355</onup>
-					<ondown>noop</ondown>
+					<ondown>9005</ondown>
 					<onleft>9320</onleft>
 					<onright>9420</onright>
 					<itemgap>0</itemgap>
@@ -1042,8 +1071,8 @@
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
 					<onleft>9370</onleft>
 					<onright>9470</onright>
 					<itemgap>0</itemgap>
@@ -1094,7 +1123,7 @@
 					<width>210</width>
 					<height>66</height>
 					<texture>menu-focus.png</texture>
-					<visible>Control.HasFocus(9450) | Control.HasFocus(9095)</visible>
+					<visible>Control.HasFocus(9450)</visible>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -1118,7 +1147,7 @@
 					<camera x="105" y="72" />
 					<animation effect="rotatex" center="72" end="65" time="0" condition="Control.HasFocus(9450)">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<visible>Control.HasFocus(9450) | Control.HasFocus(9095)</visible>
+					<visible>Control.HasFocus(9450)</visible>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -1132,21 +1161,20 @@
 					<camera x="105" y="292" />
 					<animation effect="rotatex" center="292" end="-65" time="0" condition="Control.HasFocus(9450)">Conditional</animation>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<visible>Control.HasFocus(9450) | Control.HasFocus(9095)</visible>
+					<visible>Control.HasFocus(9450)</visible>
 				</control>
 				<control type="list" id="9450">
-					<animation condition="!Control.HasFocus(9450) + !Control.HasFocus(9095)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
-					<animation condition="Control.HasFocus(9450) | Control.HasFocus(9095)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
+					<animation condition="!Control.HasFocus(9450)" effect="fade" start="100" end="0" reversible="false">Conditional</animation>
+					<animation condition="Control.HasFocus(9450)" effect="fade" start="0" end="100" reversible="false">Conditional</animation>
 					<left>0</left>
 					<top>82</top>
 					<width>210</width>
 					<height>210</height>
 					<scrolltime>200</scrolltime>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
 					<onleft>9420</onleft>
-					<onright>9095</onright><!-- change to button to make bump noise -->
-					<!--<onright>9120</onright>-->
+					<onright>9005</onright><!-- change to button to make bump noise -->
 					<itemgap>0</itemgap>
 					<viewtype label="List">List</viewtype>
 					<itemlayout height="42" width="210">

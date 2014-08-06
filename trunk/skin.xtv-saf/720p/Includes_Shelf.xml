@@ -609,7 +609,7 @@
 		</control>
 		<control type="image">
 			<left>0</left>
-			<top>70</top>
+			<top>58</top>
 			<width>130</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -619,8 +619,8 @@
 			<animation effect="rotatey" center="0" end="-60" time="600" condition="true">Conditional</animation>
 		</control>
 		<control type="image">
-			<left>1148</left>
-			<top>70</top>
+			<left>1190</left>
+			<top>58</top>
 			<width>130</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -634,53 +634,52 @@
 			<top>50</top>
 			<width>1260</width>
 			<height>245</height>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>9000</onup>
+			<onleft>9050</onleft>
+			<onright>9050</onright>
+			<onup>9050</onup>
 			<ondown>9000</ondown>
 			<viewtype label="31028">list</viewtype>
-			<pagecontrol>noop</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<itemlayout height="245" width="210">
 				<control type="image">
-					<left>22</left>
+					<left>28</left>
 					<top>0</top>
-					<width>160</width>
-					<height>205</height>
+					<width>150</width>
+					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<left>22</left>
+					<left>28</left>
 					<top>205</top>
-					<width>160</width>
-					<height>205</height>
+					<width>150</width>
+					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout height="245" width="210">
 				<control type="image">
-					<left>22</left>
+					<left>28</left>
 					<top>0</top>
-					<width>160</width>
-					<height>205</height>
+					<width>150</width>
+					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<left>22</left>
+					<left>28</left>
 					<top>205</top>
-					<width>160</width>
-					<height>205</height>
+					<width>150</width>
+					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture fallback="DefaultMovies.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="label">
 					<left>105</left>
-					<top>210</top>
-					<height>24</height>
+					<top>194</top>
+					<height>44</height>
 					<width>210</width>
 					<label>$INFO[ListItem.Label]</label>
 					<font>font11</font>
@@ -701,11 +700,11 @@
 			<top>40</top>
 			<control type="image">
 				<description>Slider</description>
-				<left>22</left>
+				<left>28</left>
 				<top>0</top>
-				<width>179</width>
-				<height>224</height>
-				<texture border="9">mask-hilite2.png</texture>
+				<width>169</width>
+				<height>214</height>
+				<texture border="8">mask-hilite2.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<animation condition="Container(9160).Position(0)" effect="slide" start="0,0" end="0,0" time="200" easing="inout" reversible="true">Conditional</animation>
@@ -784,7 +783,7 @@
 		</control>
 		<control type="image">
 			<left>-30</left>
-			<top>58</top>
+			<top>54</top>
 			<width>178</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">keep</aspectratio>
@@ -795,7 +794,7 @@
 		</control>
 		<control type="image">
 			<left>1134</left>
-			<top>58</top>
+			<top>54</top>
 			<width>178</width>
 			<height>178</height>
 			<aspectratio scalediffuse="false">keep</aspectratio>
@@ -809,12 +808,11 @@
 			<top>42</top>
 			<width>1260</width>
 			<height>252</height>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>9000</onup>
+			<onleft>9052</onleft>
+			<onright>9052</onright>
+			<onup>9052</onup>
 			<ondown>9000</ondown>
 			<viewtype label="31028">list</viewtype>
-			<pagecontrol>noop</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<itemlayout height="252" width="252">
@@ -932,12 +930,11 @@
 			<top>50</top>
 			<width>1260</width>
 			<height>245</height>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>9000</onup>
+			<onleft>9054</onleft>
+			<onright>9054</onright>
+			<onup>9054</onup>
 			<ondown>9000</ondown>
 			<viewtype label="31028">list</viewtype>
-			<pagecontrol>noop</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<itemlayout height="245" width="210">
@@ -951,7 +948,6 @@
 					<texture diffuse="mask-squ.png" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<description>list item icon reflection</description>
 					<left>17</left>
 					<top>186</top>
 					<width>176</width>
@@ -1043,12 +1039,11 @@
 			<top>50</top>
 			<width>1260</width>
 			<height>245</height>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>9000</onup>
+			<onleft>9056</onleft>
+			<onright>9056</onright>
+			<onup>9056</onup>
 			<ondown>9000</ondown>
 			<viewtype label="31028">list</viewtype>
-			<pagecontrol>noop</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<itemlayout height="245" width="252">
@@ -1062,7 +1057,6 @@
 					<texture diffuse="mask-squ.png" fallback="DefaultAddon.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
-					<description>list item icon reflection</description>
 					<left>38</left>
 					<top>186</top>
 					<width>176</width>
