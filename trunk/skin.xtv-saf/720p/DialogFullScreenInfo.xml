@@ -51,8 +51,8 @@
 					<label>$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ,]</label>
 				</control>
 				<control type="label"><!-- Tv Show title up next -->
-					<posx>1250</posx>
-					<posy>460</posy>
+					<left>775</left>
+					<top>460</top>
 					<width>475</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ,]</label>
@@ -91,9 +91,9 @@
 			</control>
 
 			<control type="grouplist"><!-- Media flags -->
-				<posx>804</posx>
-				<posy>600</posy>
-				<width>453</width>
+				<left>350</left>
+				<top>600</top>
+				<width>452</width>
 				<height>50</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
@@ -180,8 +180,8 @@
 			<control type="group">
 				<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				<control type="label">
-					<posx>224</posx>
-					<posy>644</posy>
+					<left>8</left>
+					<top>644</top>
 					<width>220</width>
 					<height>26</height>
 					<font>rss20</font>

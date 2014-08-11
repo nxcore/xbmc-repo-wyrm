@@ -50,7 +50,7 @@
 			</control>
 			<control type="label">
 				<left>370</left>
-				<top>213</top>
+				<top>210</top>
 				<width>170</width>
 				<height>20</height>
 				<font>font11</font>
@@ -74,7 +74,7 @@
 			</control>
 			<control type="label">
 				<left>940</left>
-				<top>213</top>
+				<top>210</top>
 				<width>170</width>
 				<height>20</height>
 				<font>font11</font>

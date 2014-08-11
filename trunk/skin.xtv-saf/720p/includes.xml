@@ -214,8 +214,8 @@
 					<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(episodes)</visible><!-- Movies or Tv Episodes -->
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<control type="image" id="890"><!-- Use Clearart if available -->
-						<posx>8</posx>
-						<posy>496</posy>
+						<left>8</left>
+						<top>496</top>
 						<width>275</width>
 						<height>145</height>
 						<texture>$VAR[PlayerVideoClearart]</texture>
@@ -225,16 +225,16 @@
 					<control type="group">
 						<visible>StringCompare(Control.GetLabel(890),blank.png)</visible>
 						<control type="image" id="891"><!-- Use Logo if available -->
-							<posx>8</posx>
-							<posy>565</posy>
+							<left>8</left>
+							<top>565</top>
 							<width>276</width>
 							<height>75</height>
 							<texture>$VAR[PlayerVideoLogo]</texture>
 							<aspectratio align="left" aligny="bottom">keep</aspectratio>
 						</control>
 						<control type="image"><!-- Fallback to video cover image if no clearart or logo -->
-							<posx>56</posx>
-							<posy>460</posy>
+							<left>56</left>
+							<top>460</top>
 							<width>180</width>
 							<height>180</height>
 							<aligny>bottom</aligny>
@@ -249,8 +249,8 @@
 				<visible>![VideoPlayer.Content(Movies) | VideoPlayer.Content(episodes)]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="image"><!-- Fallback to Thumb image if not TV Episode or Movie playing -->
-					<posx>56</posx>
-					<posy>460</posy>
+					<left>56</left>
+					<top>460</top>
 					<width>180</width>
 					<height>180</height>
 					<aligny>bottom</aligny>
@@ -260,8 +260,8 @@
 			</control>
 		</control>
 		<control type="image"><!-- Music cover image-->
-			<posx>8</posx>
-			<posy>384</posy>
+			<left>8</left>
+			<top>384</top>
 			<width>250</width>
 			<height>250</height>
 			<texture diffuse="mask-squ.png">$INFO[MusicPlayer.Cover]</texture>
@@ -312,8 +312,8 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label"><!-- Time and duration -->
-					<posx>162</posx>
-					<posy>688</posy>
+					<left>162</left>
+					<top>688</top>
 					<width>520</width>
 					<height>22</height>
 					<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
@@ -409,8 +409,8 @@
 
 	<include name="memory-low">
 		<control type="label"><!-- Low free memory -->
-			<posx>354</posx>
-			<posy>75</posy>
+			<left>354</left>
+			<top>75</top>
 			<width>566</width>
 			<height>37</height>
 			<align>center</align>
@@ -502,18 +502,16 @@
 		<control type="group"><!-- Audio Stuff -->
 			<visible>Player.HasAudio + Skin.HasSetting(overlay) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + !Window.IsActive(PlayerControls)</visible>
 			<control type="image">
-				<description>cover image</description>
-				<posx>24</posx>
-				<posy>2</posy>
+				<left>24</left>
+				<top>2</top>
 				<width>110</width>
 				<height>110</height>
 				<texture background="true" fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
-				<description>Artist label</description>
-				<posx>145</posx>
-				<posy>2</posy>
+				<left>145</left>
+				<top>2</top>
 				<width>475</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Artist]</label>
@@ -521,9 +519,8 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
-				<description>Album label</description>
-				<posx>145</posx>
-				<posy>27</posy>
+				<left>145</left>
+				<top>27</top>
 				<width>475</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Album]</label>
@@ -531,9 +528,8 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
-				<description>Title label</description>
-				<posx>145</posx>
-				<posy>52</posy>
+				<left>145</left>
+				<top>52</top>
 				<width>475</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Title]</label>
@@ -541,9 +537,8 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label">
-				<description>Time label</description>
-				<posx>145</posx>
-				<posy>77</posy>
+				<left>145</left>
+				<top>77</top>
 				<width>475</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
