@@ -118,7 +118,7 @@
 						<include>music-shelficons</include>
 					</control>
 				</control>
-				<control type="group"><!-- Weather icons -->
+				<control type="group" id="9801"><!-- Weather icons -->
 					<visible>StringCompare(Container(9000).ListItem.Label2,$LOCALIZE[8])</visible>
 					<control type="group">
 						<visible>!Weather.IsFetched</visible>
@@ -142,7 +142,7 @@
 						<include condition="!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]">ShelfWeather</include>
 					</control>
 				</control>
-				<control type="group"><!-- Default Shelf image -->
+				<control type="group" id="9802"><!-- Default Shelf image -->
 					<visible>StringCompare(Container(9000).ListItem.Label2,$LOCALIZE[571])</visible>
 					<control type="image">
 						<left>480</left>
@@ -162,6 +162,47 @@
 					</control>
 				</control>
 			</control>
+		</control>
+
+		<control type="button" id="9005"><!-- Play bump sound if user tries to leave menu by undefined direction -->
+			<left>-30</left>
+			<top>-30</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9000)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9050"><!-- Play bump sound if user tries to leave Movie shelf by undefined direction -->
+			<left>-40</left>
+			<top>-40</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9160)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9052"><!-- Play bump sound if user tries to leave TV shelf by undefined direction -->
+			<left>-50</left>
+			<top>-50</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9210)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9054"><!-- Play bump sound if user tries to leave Music shelf by undefined direction -->
+			<left>-60</left>
+			<top>-60</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9260)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
+		</control>
+		<control type="button" id="9056"><!-- Play bump sound if user tries to leave Addons shelf by undefined direction -->
+			<left>-70</left>
+			<top>-70</top>
+			<width>1</width>
+			<height>1</height>
+			<onfocus>SetFocus(9360)</onfocus>
+			<onfocus>ActivateWindow(1157)</onfocus>
 		</control>
 
 		<control type="image"><!-- Background image for icon area -->
@@ -186,10 +227,11 @@
 			<height>640</height>
 			<top>300</top>
 			<left>10</left>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>9800</onup>
-			<ondown>noop</ondown>
+			<onleft>9005</onleft>
+			<onright>9005</onright>
+			<onup condition="![Control.IsVisible(9801) | Control.IsVisible(9802)]">9800</onup>
+			<onup condition="Control.IsVisible(9801) | Control.IsVisible(9802)">9005</onup>
+			<ondown>9005</ondown>
 			<scrolltime tween="sine" easing="inout">280</scrolltime>
 			<itemlayout height="160" width="252">
 				<control type="image"><!-- Icon image -->
