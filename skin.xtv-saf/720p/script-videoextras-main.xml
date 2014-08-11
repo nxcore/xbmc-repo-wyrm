@@ -11,8 +11,8 @@
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
 		<control type="grouplist">
-			<posx>946</posx>
-			<posy>35</posy>
+			<left>946</left>
+			<top>35</top>
 			<width>334</width>
 			<height>72</height>
 			<align>left</align>
@@ -37,8 +37,8 @@
 		<control type="group">
 			<control type="fixedlist" id="51">
 				<viewtype label="31941">List</viewtype>
-				<posx>668</posx>
-				<posy>116</posy>
+				<left>668</left>
+				<top>116</top>
 				<width>555</width>
 				<height>532</height>
 				<focusposition>2</focusposition>
@@ -54,16 +54,16 @@
 					<control type="group">
 						<visible>Skin.HasSetting(watched-overlay)</visible>
 						<control type="image">
-							<posx>10</posx>
-							<posy>20</posy>
+							<left>10</left>
+							<top>20</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>overlaypartialywatched.png</texture>
 							<visible>ListItem.IsResumable</visible>
 						</control>
 						<control type="image">
-							<posx>10</posx>
-							<posy>20</posy>
+							<left>10</left>
+							<top>20</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>overlayunwatched.png</texture>
@@ -72,8 +72,8 @@
 					</control>
 					<control type="group">
 						<control type="label">
-							<posx>46</posx>
-							<posy>22</posy>
+							<left>46</left>
+							<top>22</top>
 							<width>506</width>
 							<height>23</height>
 							<font>font12</font>
@@ -84,8 +84,8 @@
 						<control type="group">
 							<visible>!IsEmpty(ListItem.Label2)</visible>
 							<control type="label">
-								<posx>46</posx>
-								<posy>14</posy>
+								<left>46</left>
+								<top>14</top>
 								<width>506</width>
 								<height>23</height>
 								<font>font11</font>
@@ -93,8 +93,8 @@
 								<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 							</control>
 							<control type="label">
-								<posx>46</posx>
-								<posy>38</posy>
+								<left>46</left>
+								<top>38</top>
 								<width>506</width>
 								<height>23</height>
 								<font>font11</font>
@@ -109,16 +109,16 @@
 					<control type="group">
 						<visible>Skin.HasSetting(watched-overlay)</visible>
 						<control type="image">
-							<posx>10</posx>
-							<posy>20</posy>
+							<left>10</left>
+							<top>20</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>overlaypartialywatched.png</texture>
 							<visible>ListItem.IsResumable</visible>
 						</control>
 						<control type="image">
-							<posx>10</posx>
-							<posy>20</posy>
+							<left>10</left>
+							<top>20</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>overlayunwatched.png</texture>
@@ -127,8 +127,8 @@
 					</control>
 					<control type="group">
 						<control type="label">
-							<posx>46</posx>
-							<posy>22</posy>
+							<left>46</left>
+							<top>22</top>
 							<width>506</width>
 							<height>23</height>
 							<font>font12</font>
@@ -139,8 +139,8 @@
 						<control type="group">
 							<visible>!IsEmpty(ListItem.Label2)</visible>
 							<control type="label">
-								<posx>46</posx>
-								<posy>14</posy>
+								<left>46</left>
+								<top>14</top>
 								<width>506</width>
 								<height>23</height>
 								<font>font11</font>
@@ -148,8 +148,8 @@
 								<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 							</control>
 							<control type="label">
-								<posx>46</posx>
-								<posy>38</posy>
+								<left>46</left>
+								<top>38</top>
 								<width>506</width>
 								<height>23</height>
 								<font>font11</font>
@@ -165,8 +165,8 @@
 				<visible>Control.IsVisible(51)</visible>
 				<control type="group">
 					<control type="image"><!-- Button focus slider -->
-						<posx>674</posx>
-						<posy>386</posy>
+						<left>674</left>
+						<top>386</top>
 						<width>560</width>
 						<height>66</height>
 						<texture border="8">default-button.png</texture>
@@ -189,16 +189,16 @@
 						time="0" easing="inout" reversible="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>320</posx>
-					<posy>120</posy>
+					<left>320</left>
+					<top>120</top>
 					<width>318</width>
 					<height>318</height>
 					<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>1246</posx>
-					<posy>108</posy>
+					<left>1246</left>
+					<top>108</top>
 					<width>18</width>
 					<height>546</height>
 					<onleft>51</onleft>

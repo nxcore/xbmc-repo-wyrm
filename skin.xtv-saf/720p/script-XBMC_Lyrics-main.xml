@@ -6,8 +6,8 @@
 	<include>screen-fade</include>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group">
@@ -64,8 +64,8 @@
 				<visible>Skin.HasSetting(background-fanart) | Skin.HasSetting(HomeViewToggle) | Skin.HasSetting(background-slideshow)</visible>
 			</control>
 			<control type="label"><!-- Scraper -->
-				<posx>10</posx>
-				<posy>50</posy>
+				<left>10</left>
+				<top>50</top>
 				<width>550</width>
 				<height>30</height>
 				<label>$LOCALIZE[21870] - $INFO[Control.GetLabel(200)]</label>
@@ -75,8 +75,8 @@
 				<visible>false</visible>
 			</control>
 			<control type="label"><!--Dialog heading -->
-				<posx>946</posx>
-				<posy>50</posy>
+				<left>946</left>
+				<top>50</top>
 				<width>360</width>
 				<height>37</height>
 				<font>font18</font>
@@ -85,8 +85,8 @@
 
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<control type="list" id="110">
-				<posx>20</posx>
-				<posy>100</posy>
+				<left>20</left>
+				<top>100</top>
 				<width>1240</width>
 				<height>370</height>
 				<onleft>111</onleft>
@@ -97,8 +97,8 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="label">
-						<posx>620</posx>
-						<posy>0</posy>
+						<left>620</left>
+						<top>0</top>
 						<width>1240</width>
 						<height>40</height>
 						<align>center</align>
@@ -107,8 +107,8 @@
 				</itemlayout>
 				<focusedlayout height="50">
 					<control type="label">
-						<posx>620</posx>
-						<posy>0</posy>
+						<left>620</left>
+						<top>0</top>
 						<width>1240</width>
 						<height>50</height>
 						<font>font22</font>
@@ -118,8 +118,8 @@
 						<visible>!Control.HasFocus(110)</visible>
 					</control>
 					<control type="label">
-						<posx>620</posx>
-						<posy>0</posy>
+						<left>620</left>
+						<top>0</top>
 						<width>1240</width>
 						<height>50</height>
 						<font>font22</font>
@@ -131,8 +131,8 @@
 				</focusedlayout>
 			</control>
 			<control type="spincontrol" id="111"><!-- Next page button -->
-				<posx>1195</posx>
-				<posy>580</posy>
+				<left>1195</left>
+				<top>580</top>
 				<subtype>page</subtype>
 				<font>font12</font>
 				<onleft>110</onleft>
@@ -143,8 +143,8 @@
 				<visible>Control.IsVisible(110)</visible>
 			</control>
 			<control type="label" id="2"><!-- Pick -->
-				<posx>20</posx>
-				<posy>130</posy>
+				<left>20</left>
+				<top>130</top>
 				<width>1240</width>
 				<height>30</height>
 				<align>center</align>
@@ -154,8 +154,8 @@
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
 			<control type="list" id="120">
-				<posx>20</posx>
-				<posy>140</posy>
+				<left>20</left>
+				<top>140</top>
 				<width>1240</width>
 				<height>410</height>
 				<onleft>121</onleft>
@@ -167,8 +167,8 @@
 				<animation effect="slide" start="0,0" end="20,0" time="0" condition="!Control.IsVisible(121)">Conditional</animation>
 				<itemlayout height="40">
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>1240</width>
 						<height>40</height>
 						<selectedcolor>listselected-text</selectedcolor>
@@ -178,8 +178,8 @@
 				</itemlayout>
 				<focusedlayout height="40">
 					<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
+						<left>10</left>
+						<top>0</top>
 						<width>1240</width>
 						<height>40</height>
 						<textcolor>listselected-text</textcolor>
@@ -189,8 +189,8 @@
 				</focusedlayout>
 			</control>
 			<control type="spincontrol" id="121"><!-- Next page button -->
-				<posx>1195</posx>
-				<posy>580</posy>
+				<left>1195</left>
+				<top>580</top>
 				<subtype>page</subtype>
 				<font>font12</font>
 				<onleft>120</onleft>
@@ -209,17 +209,17 @@
 					<condition type="!Player.Playing"/>
 				</animation>
 				<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<left>132</left>
+				<top>480</top>
 				<width>215</width>
 				<height>215</height>
-				<posx>132</posx>
-				<posy>480</posy>
 				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath,,/cdart.png]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>!SubString(MusicPlayer.Cover,Default,Left)</visible>
 			</control>
 			<control type="image">
-				<posx>-5</posx>
-				<posy>455</posy>
+				<left>-5</left>
+				<top>455</top>
 				<height>265</height>
 				<width>265</width>
 				<texture>case-cd.png</texture>
@@ -227,16 +227,16 @@
 				<visible>Skin.HasSetting(CDcase) + !SubString(MusicPlayer.Cover,Default,Left)</visible>
 			</control>
 			<control type="image"><!-- Album cover -->
-				<posx>20</posx>
-				<posy>475</posy>
+				<left>20</left>
+				<top>475</top>
 				<width>225</width>
 				<height>225</height>
 				<texture fallback="DefaultAudio.png">$INFO[MusicPlayer.Cover]</texture>
 				<aspectratio aligny="bottom">stretch</aspectratio>
 			</control>
 			<control type="label"><!-- Song title -->
-				<posx>370</posx>
-				<posy>572</posy>
+				<left>370</left>
+				<top>572</top>
 				<width>656</width>
 				<height>45</height>
 				<font>font18</font>
@@ -244,8 +244,8 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label"><!-- Artist -->
-				<posx>370</posx>
-				<posy>608</posy>
+				<left>370</left>
+				<top>608</top>
 				<width>682</width>
 				<height>37</height>
 				<font>font12</font>
@@ -253,8 +253,8 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label"><!-- Album name -->
-				<posx>370</posx>
-				<posy>638</posy>
+				<left>370</left>
+				<top>638</top>
 				<width>656</width>
 				<height>37</height>
 				<font>font12</font>
@@ -262,21 +262,20 @@
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>
 			<control type="label"><!-- Player time -->
-				<posx>370</posx>
-				<posy>668</posy>
+				<left>370</left>
+				<top>668</top>
 				<width>656</width>
 				<height>37</height>
 				<label>$INFO[musicplayer.Time]$INFO[musicplayer.Duration, / ]</label>
 				<font>font12</font>
 			</control>
 			<control type="progress" id="1">
-				<posx>558</posx>
-				<posy>674</posy>
+				<left>558</left>
+				<top>674</top>
 				<width>685</width>
 				<height>16</height>
 				<info>Player.Progress</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
-				<visible>true</visible>
 			</control>
 		</control>
 	</controls>

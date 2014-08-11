@@ -54,8 +54,8 @@
 			<visible>[Window.IsVisible(FullscreenVideo)] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(SliderDialog) | Window.IsVisible(Seekbar) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<!-- Player info labels -->
 			<control type="label">
-				<posx>224</posx>
-				<posy>644</posy>
+				<left>8</left>
+				<top>644</top>
 				<width>220</width>
 				<height>26</height>
 				<font>rss20</font>
@@ -96,10 +96,9 @@
 				<action>seek</action>
 			</control>
 		</control>
-		<control type="grouplist" id="999"><!-- Player buttons -->
+		<control type="grouplist" id="999"><!-- OSD buttons -->
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
-			<description>Group OSD Button</description>
 			<left>65</left>
 			<top>14</top>
 			<width>1150</width>
@@ -238,7 +237,6 @@
 				<onclick>ActivateWindow(osdaudiosettings)</onclick>
 			</control>
 			<control type="button" id="920"><!-- Video menu -->
-				<description>Video Menu</description>
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-video-focus.png</texturefocus>
