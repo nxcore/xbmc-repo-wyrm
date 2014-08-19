@@ -4,7 +4,6 @@
 		<include>background</include>
 
 		<control type="button" id="421"><!-- Bring up Player controls if go left -->
-			<description>trigger player controls if selected</description>
 			<left>-24</left>
 			<top>-24</top>
 			<width>1</width>
@@ -692,7 +691,6 @@
 			<control type="group" id="9960">
 				<visible>Player.HasAudio + !SubString(Window(VideoLibrary).Property(TvTunesIsAlive),True)</visible>
 				<control type="image">
-					<description>cover image</description>
 					<left>20</left>
 					<top>536</top>
 					<width>130</width>
@@ -701,7 +699,6 @@
 					<aspectratio align="center">keep</aspectratio>
 				</control>
 				<control type="label">
-					<description>Artist label</description>
 					<left>170</left>
 					<top>537</top>
 					<width>520</width>
@@ -711,7 +708,6 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<description>Album label</description>
 					<left>170</left>
 					<top>568</top>
 					<width>520</width>
@@ -721,7 +717,6 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<description>Title label</description>
 					<left>170</left>
 					<top>600</top>
 					<width>520</width>
@@ -731,7 +726,6 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<description>Time label</description>
 					<left>170</left>
 					<top>631</top>
 					<width>520</width>
@@ -743,15 +737,13 @@
 			<!-- media infos (video) -->
 			<control type="group" id="9970">
 				<visible>Player.HasVideo</visible>
-				<control type="videowindow">
-					<description>video preview window</description>
+				<control type="videowindow"><!-- video preview window -->
 					<left>44</left>
 					<top>520</top>
 					<width>205</width>
 					<height>123</height>
 				</control>
-				<control type="label">
-					<description>Now playing</description>
+				<control type="label"><!-- Now playing -->
 					<left>265</left>
 					<top>537</top>
 					<width>398</width>
@@ -761,7 +753,6 @@
 					<textcolor>listselected-text</textcolor>
 				</control>
 				<control type="label">
-					<description>Video Title label</description>
 					<left>265</left>
 					<top>568</top>
 					<width>398</width>
@@ -771,7 +762,6 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 				</control>
 				<control type="label">
-					<description>Time label</description>
 					<left>265</left>
 					<top>600</top>
 					<width>398</width>

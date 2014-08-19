@@ -30,8 +30,8 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(hide-chrome)</visible>
 					<control type="image" id="7018"><!-- Show logo -->
-						<posx>530</posx>
-						<posy>12</posy>
+						<left>530</left>
+						<top>12</top>
 						<width>266</width>
 						<height>74</height>
 						<texture fallback="blank.png">$VAR[VideoLogo]</texture>
@@ -41,12 +41,11 @@
 						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 					</control>
 					<control type="label"><!-- Title -->
-						<posx>530</posx>
-						<posy>39</posy>
+						<left>530</left>
+						<top>39</top>
 						<width>732</width>
 						<height>40</height>
 						<font>font22</font>
-						<align>center</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>0</textoffsetx>
@@ -54,12 +53,11 @@
 					</control>
 				</control>
 				<control type="label"><!-- Title -->
-					<posx>530</posx>
-					<posy>39</posy>
+					<left>530</left>
+					<top>39</top>
 					<width>732</width>
 					<height>40</height>
 					<font>font22</font>
-					<align>center</align>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>
@@ -67,8 +65,8 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>530</posx>
-				<posy>39</posy>
+				<left>530</left>
+				<top>39</top>
 				<width>732</width>
 				<height>40</height>
 				<font>font22</font>
@@ -78,8 +76,8 @@
 				<visible>!Container.Content(tvshows) + !Container.Content(movies)</visible>
 			</control>
 			<control type="label"><!-- Genre -->
-				<posx>530</posx>
-				<posy>85</posy>
+				<left>530</left>
+				<top>85</top>
 				<width>732</width>
 				<height>37</height>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -87,8 +85,8 @@
 				<textoffsetx>0</textoffsetx>
 			</control>
 			<control type="image"><!-- MPAA Rating -->
-				<posx>530</posx>
-				<posy>120</posy>
+				<left>530</left>
+				<top>120</top>
 				<width>212</width>
 				<height>62</height>
 				<aligny>bottom</aligny>
@@ -98,8 +96,8 @@
 			<control type="group"><!-- Duration -->
 				<visible>!IsEmpty(listitem.Duration)</visible>
 				<control type="label">
-					<posx>730</posx>
-					<posy>126</posy>
+					<left>730</left>
+					<top>126</top>
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
@@ -108,8 +106,8 @@
 					<visible>substring(listitem.Duration,hrs)</visible>
 				</control>
 				<control type="label">
-					<posx>730</posx>
-					<posy>126</posy>
+					<left>730</left>
+					<top>126</top>
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
@@ -118,8 +116,8 @@
 					<visible>substring(listitem.Duration,min) + !substring(listitem.Duration,hrs)</visible>
 				</control>
 				<control type="label">
-					<posx>730</posx>
-					<posy>126</posy>
+					<left>730</left>
+					<top>126</top>
 					<width>265</width>
 					<height>62</height>
 					<align>center</align>
@@ -129,8 +127,8 @@
 				</control>
 			</control>
 			<control type="label"><!-- Year -->
-				<posx>1226</posx>
-				<posy>126</posy>
+				<left>1049</left>
+				<top>126</top>
 				<width>177</width>
 				<height>62</height>
 				<align>right</align>
@@ -140,45 +138,45 @@
 			<control type="group">
 				<visible>Container.Content(movies) | Container.Content(episodes)| Container.Content(musicvideos)</visible>
 				<control type="label"><!-- Director -->
-					<posx>530</posx>
-					<posy>200</posy>
+					<left>530</left>
+					<top>200</top>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[31130]</label>
 				</control>
 				<control type="label">
-					<posx>770</posx>
-					<posy>200</posy>
+					<left>770</left>
+					<top>200</top>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label fallback="161">$INFO[ListItem.Director]</label>
 				</control>
 				<control type="label"><!-- Writer -->
-					<posx>530</posx>
-					<posy>230</posy>
+					<left>530</left>
+					<top>230</top>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[31131]</label>
 				</control>
 				<control type="label">
-					<posx>770</posx>
-					<posy>230</posy>
+					<left>770</left>
+					<top>230</top>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label fallback="161">$INFO[ListItem.Writer]</label>
 				</control>
 				<control type="label"><!-- Play count -->
-					<posx>530</posx>
-					<posy>260</posy>
+					<left>530</left>
+					<top>260</top>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[567]:</label>
 				</control>
 				<control type="label">
-					<posx>770</posx>
-					<posy>260</posy>
+					<left>770</left>
+					<top>260</top>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -190,15 +188,15 @@
 				<control type="group">
 					<visible>StringCompare(Container.FolderPath,videodb://tvshows/titles/)</visible>
 					<control type="label"><!-- Seasons -->
-						<posx>530</posx>
-						<posy>205</posy>
+						<left>530</left>
+						<top>205</top>
 						<width>238</width>
 						<height>24</height>
 						<label>$LOCALIZE[33054]</label>
 					</control>
 					<control type="label">
-						<posx>770</posx>
-						<posy>205</posy>
+						<left>770</left>
+						<top>205</top>
 						<width>456</width>
 						<height>24</height>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -208,15 +206,15 @@
 				<control type="group">
 					<visible>!StringCompare(Container.FolderPath,videodb://tvshows/titles/)</visible>
 					<control type="label"><!-- Current TVShow Season -->
-						<posx>530</posx>
-						<posy>205</posy>
+						<left>530</left>
+						<top>205</top>
 						<width>238</width>
 						<height>24</height>
 						<label>$LOCALIZE[20373]</label>
 					</control>
 					<control type="label">
-						<posx>770</posx>
-						<posy>205</posy>
+						<left>770</left>
+						<top>205</top>
 						<width>456</width>
 						<height>24</height>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -224,30 +222,30 @@
 					</control>
 				</control>
 				<control type="label"><!-- Episodes -->
-					<posx>530</posx>
-					<posy>235</posy>
+					<left>530</left>
+					<top>235</top>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[20360]</label>
 				</control>
 				<control type="label">
-					<posx>770</posx>
-					<posy>235</posy>
+					<left>770</left>
+					<top>235</top>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Property(TotalEpisodes)] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
 				</control>
 				<control type="label"><!-- Premiered -->
-					<posx>530</posx>
-					<posy>265</posy>
+					<left>530</left>
+					<top>265</top>
 					<width>238</width>
 					<height>24</height>
 					<label>$LOCALIZE[20416]</label>
 				</control>
 				<control type="label">
-					<posx>770</posx>
-					<posy>265</posy>
+					<left>770</left>
+					<top>265</top>
 					<width>456</width>
 					<height>24</height>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -255,8 +253,8 @@
 				</control>
 			</control>
 			<control type="label"><!-- Plot -->
-				<posx>530</posx>
-				<posy>304</posy>
+				<left>530</left>
+				<top>304</top>
 				<width>400</width>
 				<height>32</height>
 				<font>font18</font>
@@ -264,15 +262,15 @@
 				<visible>!substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<control type="image">
-				<posx>530</posx>
-				<posy>338</posy>
+				<left>530</left>
+				<top>338</top>
 				<width>696</width>
 				<height>2</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">
-				<posx>530</posx>
-				<posy>342</posy>
+				<left>530</left>
+				<top>342</top>
 				<width>696</width>
 				<height>298</height>
 				<label>$INFO[ListItem.Plot]</label>
@@ -282,8 +280,8 @@
 				<autoscroll time="4000" delay="8000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="textbox"><!-- Plot outline (Show if no plot available)-->
-				<posx>530</posx>
-				<posy>342</posy>
+				<left>530</left>
+				<top>342</top>
 				<width>696</width>
 				<height>298</height>
 				<label fallback="161">$INFO[ListItem.PlotOutline]</label>
@@ -297,8 +295,8 @@
 				<control type="group"><!-- Studio -->
 					<visible>!IsEmpty(ListItem.Studio)</visible>
 					<control type="image">
-						<posx>214</posx>
-						<posy>52</posy>
+						<left>214</left>
+						<top>52</top>
 						<width>106</width>
 						<height>72</height>
 						<aligny>bottom</aligny>
@@ -307,8 +305,8 @@
 						<texture>special://skin/extras/images/studios/$INFO[ListItem.Studio,,.png]</texture>
 					</control>
 					<control type="image">
-						<posx>212</posx>
-						<posy>50</posy>
+						<left>212</left>
+						<top>50</top>
 						<width>106</width>
 						<height>72</height>
 						<aligny>bottom</aligny>
@@ -317,8 +315,8 @@
 					</control>
 				</control>
 				<control type="image"><!-- Video cover-->
-					<posx>122</posx>
-					<posy>124</posy>
+					<left>122</left>
+					<top>124</top>
 					<width>286</width>
 					<height>412</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -326,8 +324,8 @@
 					<visible>Container.Content(movies)</visible>
 				</control>
 				<control type="image"><!-- Video cover-->
-					<posx>122</posx>
-					<posy>124</posy>
+					<left>122</left>
+					<top>124</top>
 					<width>286</width>
 					<height>412</height>
 					<aspectratio scalediffuse="false">keep</aspectratio>
@@ -335,8 +333,8 @@
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 				<control type="image">
-					<posx>59</posx>
-					<posy>124</posy>
+					<left>59</left>
+					<top>124</top>
 					<width>412</width>
 					<height>412</height>
 					<aspectratio scalediffuse="false">keep</aspectratio>
@@ -344,8 +342,8 @@
 					<visible>Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 				</control>
 			<control type="image"><!-- Star Rating -->
-				<posx>150</posx>
-				<posy>548</posy>
+				<left>150</left>
+				<top>548</top>
 				<width>215</width>
 				<height>27</height>
 				<texture>$VAR[MediaRating]</texture>
@@ -355,8 +353,8 @@
 
 			</control>
 			<control type="image"><!-- Actor image-->
-				<posx>122</posx>
-				<posy>124</posy>
+				<left>122</left>
+				<top>124</top>
 				<width>286</width>
 				<height>412</height>
 				<aspectratio scalediffuse="false">keep</aspectratio>
@@ -364,8 +362,8 @@
 				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<control type="label"><!-- Cast -->
-				<posx>530</posx>
-				<posy>304</posy>
+				<left>530</left>
+				<top>304</top>
 				<width>400</width>
 				<height>32</height>
 				<font>font18</font>
@@ -373,13 +371,12 @@
 				<visible>substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>
 			<control type="list" id="50">
-				<posx>530</posx>
-				<posy>342</posy>
+				<left>530</left>
+				<top>342</top>
 				<width>696</width>
 				<height>305</height>
 				<onleft>999</onleft>
 				<onright>923</onright>
-				<onup>noop</onup>
 				<ondown>999</ondown>
 				<viewtype label="">list</viewtype>
 				<pagecontrol>923</pagecontrol>
@@ -387,8 +384,8 @@
 				<itemgap>1</itemgap>
 				<itemlayout height="50" width="696">
 					<control type="label">
-						<posx>20</posx>
-						<posy>0</posy>
+						<left>20</left>
+						<top>0</top>
 						<width>660</width>
 						<height>44</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -396,16 +393,16 @@
 				</itemlayout>
 				<focusedlayout height="50" width="696">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>696</width>
 						<height>50</height>
 						<texture border="8">default-button.png</texture>
 						<visible>Control.HasFocus(50) | Control.HasFocus(923)</visible>
 					</control>
 					<control type="label">
-						<posx>20</posx>
-						<posy>0</posy>
+						<left>20</left>
+						<top>0</top>
 						<width>660</width>
 						<height>44</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -413,8 +410,8 @@
 				</focusedlayout>
 			</control>
 			<control type="grouplist"><!-- Media flags -->
-				<posx>120</posx>
-				<posy>580</posy>
+				<left>120</left>
+				<top>580</top>
 				<width>328</width>
 				<height>60</height>
 				<align>center</align>
@@ -478,8 +475,8 @@
 			</control>
 		</control>
 		<control type="grouplist" id="999"><!-- Option buttons -->
-			<posx>8</posx>
-			<posy>656</posy>
+			<left>8</left>
+			<top>656</top>
 			<width>1256</width>
 			<height>56</height>
 			<itemgap>0</itemgap>
@@ -490,7 +487,6 @@
 			<onright>999</onright>
 			<onup condition="Control.IsVisible(50)">50</onup>
 			<onup condition="Control.IsVisible(1023)">1023</onup>
-			<ondown>noop</ondown>
 			<control type="togglebutton" id="8"><!-- Play/Browse button -->
 				<height>56</height>
 				<width>208</width>
@@ -555,24 +551,20 @@
 			</control>
 		</control>
 		<control type="scrollbar" id="923"><!-- Cast Scrollbar -->
-			<posx>1244</posx>
-			<posy>340</posy>
+			<left>1244</left>
+			<top>340</top>
 			<width>18</width>
 			<height>305</height>
 			<onleft>50</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
 			<ondown>999</ondown>
 			<visible>Skin.HasSetting(sbar) + substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 		</control>
 		<control type="scrollbar" id="1023"><!-- Plot Scrollbar -->
-			<posx>1244</posx>
-			<posy>340</posy>
+			<left>1244</left>
+			<top>340</top>
 			<width>18</width>
 			<height>305</height>
 			<onleft>999</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
 			<ondown>999</ondown>
 			<visible>Skin.HasSetting(sbar) + !substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 		</control>
