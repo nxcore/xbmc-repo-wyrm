@@ -34,7 +34,6 @@
 			<top>112</top>
 			<width>504</width>
 			<height>555</height>
-			<onleft>noop</onleft>
 			<onright>423</onright>
 			<onup>450</onup>
 			<ondown>450</ondown>
@@ -95,7 +94,6 @@
 			<width>18</width>
 			<height>555</height>
 			<onleft>450</onleft>
-			<onright>noop</onright>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>
 	</controls>

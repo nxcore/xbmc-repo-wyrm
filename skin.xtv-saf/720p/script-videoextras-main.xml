@@ -43,7 +43,6 @@
 				<height>532</height>
 				<focusposition>2</focusposition>
 				<movement>4</movement>
-				<onleft>noop</onleft>
 				<onright>60</onright>
 				<onup>51</onup>
 				<ondown>51</ondown>
@@ -202,7 +201,6 @@
 					<width>18</width>
 					<height>546</height>
 					<onleft>51</onleft>
-					<onright>noop</onright>
 					<animation condition="!Control.HasFocus(60) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 					<visible>Skin.HasSetting(sbar)</visible>
 				</control>

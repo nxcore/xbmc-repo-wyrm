@@ -215,7 +215,6 @@
 					<width>338</width>
 					<height>360</height>
 					<onleft>120</onleft>
-					<onright>noop</onright>
 					<onup>160</onup>
 					<ondown>160</ondown>
 					<viewtype label="535">list</viewtype>

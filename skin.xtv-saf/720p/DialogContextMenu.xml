@@ -22,8 +22,6 @@
 				<top>10</top>
 				<width>496</width>
 				<height min="10" max="528">auto</height>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="1000"><!-- Button template -->
 					<left>0</left>

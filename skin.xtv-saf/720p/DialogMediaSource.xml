@@ -146,7 +146,6 @@
 			<itemgap>6</itemgap>
 			<orientation>horizontal</orientation>
 			<onup>12</onup>
-			<ondown>noop</ondown>
 			<onleft>900</onleft>
 			<onright>900</onright>
 			<control type="button" id="18"><!-- OK Button -->

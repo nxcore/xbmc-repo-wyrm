@@ -64,8 +64,6 @@
 				<onleft condition="Control.IsVisible(52)">52</onleft>
 				<onleft condition="Control.IsVisible(54)">54</onleft>
 				<onleft condition="Control.IsVisible(58)">58</onleft>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View type -->
 					<width>376</width>

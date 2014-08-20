@@ -263,7 +263,6 @@
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>13</onup>
-					<ondown>noop</ondown>
 					<control type="button" id="26">
 						<description>Add Group</description>
 						<width>250</width>

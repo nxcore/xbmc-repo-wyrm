@@ -19,8 +19,6 @@
 			<top>112</top>
 			<width>305</width>
 			<height>350</height>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<itemgap>0</itemgap>
 			<control type="button" id="95"><!-- Summary -->
 				<width>305</width>
@@ -64,10 +62,6 @@
 			<top>112</top>
 			<width>890</width>
 			<height>550</height>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<visible>!Control.HasFocus(100)</visible>
 			<control type="label" id="2">
 				<width>890</width>
@@ -146,10 +140,6 @@
 			<width>890</width>
 			<height>225</height>
 			<itemgap>5</itemgap>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<visible>Control.HasFocus(100)</visible>
 			<control type="label"><!-- Skin version -->
 				<width>890</width>
