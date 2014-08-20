@@ -147,7 +147,7 @@
 	</include>
 
 	<include name="EpisodeRecent">
-		<item id="141">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.1.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.1.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
@@ -155,7 +155,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.File))</visible>
 		</item>
-		<item id="142">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.2.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.2.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
@@ -163,7 +163,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.File))</visible>
 		</item>
-		<item id="143">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.3.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.3.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
@@ -171,7 +171,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.File))</visible>
 		</item>
-		<item id="144">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.4.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.4.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
@@ -179,7 +179,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.File))</visible>
 		</item>
-		<item id="145">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.5.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.5.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
@@ -187,7 +187,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.File))</visible>
 		</item>
-		<item id="146">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.6.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.6.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
@@ -195,7 +195,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.File))</visible>
 		</item>
-		<item id="147">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.7.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.7.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
@@ -203,7 +203,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.File))</visible>
 		</item>
-		<item id="148">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.8.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.8.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
@@ -211,7 +211,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.File))</visible>
 		</item>
-		<item id="149">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.9.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.9.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
@@ -219,7 +219,7 @@
 			<property name="ItemType">$LOCALIZE[20387]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.File))</visible>
 		</item>
-		<item id="150">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecentEpisode.10.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecentEpisode.10.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
@@ -230,7 +230,7 @@
 	</include>
 
 	<include name="EpisodeNextAired">
-		<item id="151">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.1.NextNumber)]  $INFO[Window(Home).Property(NextAired.1.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.1.Label)]</label2>
 			<onclick>noop</onclick>
@@ -238,7 +238,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.1.NextDate))</visible>
 		</item>
-		<item id="152">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.2.NextNumber)]  $INFO[Window(Home).Property(NextAired.2.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.2.Label)]</label2>
 			<onclick>noop</onclick>
@@ -246,7 +246,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.2.NextDate))</visible>
 		</item>
-		<item id="153">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.3.NextNumber)]  $INFO[Window(Home).Property(NextAired.3.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.3.Label)]</label2>
 			<onclick>noop</onclick>
@@ -254,7 +254,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.3.NextDate))</visible>
 		</item>
-		<item id="154">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.4.NextNumber)]  $INFO[Window(Home).Property(NextAired.4.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.4.Label)]</label2>
 			<onclick>noop</onclick>
@@ -262,7 +262,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.4.NextDate))</visible>
 		</item>
-		<item id="155">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.5.NextNumber)]  $INFO[Window(Home).Property(NextAired.5.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.5.Label)]</label2>
 			<onclick>noop</onclick>
@@ -270,7 +270,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.5.NextDate))</visible>
 		</item>
-		<item id="156">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.6.NextNumber)]  $INFO[Window(Home).Property(NextAired.6.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.6.Label)]</label2>
 			<onclick>noop</onclick>
@@ -278,7 +278,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.6.NextDate))</visible>
 		</item>
-		<item id="157">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.7.NextNumber)]  $INFO[Window(Home).Property(NextAired.7.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.7.Label)]</label2>
 			<onclick>noop</onclick>
@@ -286,7 +286,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.7.NextDate))</visible>
 		</item>
-		<item id="158">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.8.NextNumber)]  $INFO[Window(Home).Property(NextAired.8.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.8.Label)]</label2>
 			<onclick>noop</onclick>
@@ -294,7 +294,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.8.NextDate))</visible>
 		</item>
-		<item id="159">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.9.NextNumber)]  $INFO[Window(Home).Property(NextAired.9.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.9.Label)]</label2>
 			<onclick>noop</onclick>
@@ -302,7 +302,7 @@
 			<property name="ItemType">$LOCALIZE[31961]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.9.NextDate))</visible>
 		</item>
-		<item id="160">
+		<item>
 			<label>$INFO[Window(Home).Property(NextAired.10.NextNumber)]  $INFO[Window(Home).Property(NextAired.10.NextDate)]</label>
 			<label2>$INFO[Window(Home).Property(NextAired.10.Label)]</label2>
 			<onclick>noop</onclick>
@@ -313,90 +313,90 @@
 	</include>
 
 	<include name="EpisodeRecommended">
-		<item id="161">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.1.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended1]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.File))</visible>
 		</item>
-		<item id="162">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.2.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended2]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.File))</visible>
 		</item>
-		<item id="163">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.3.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended3]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.File))</visible>
 		</item>
-		<item id="164">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.4.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended4]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.File))</visible>
 		</item>
-		<item id="165">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.5.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended5]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.File))</visible>
 		</item>
-		<item id="166">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.6.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended6]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.File))</visible>
 		</item>
-		<item id="167">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.7.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended7]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.File))</visible>
 		</item>
-		<item id="168">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.8.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended8]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.File))</visible>
 		</item>
-		<item id="169">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.9.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended9]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.File))</visible>
 		</item>
-		<item id="170">
+		<item>
 			<label>$LOCALIZE[20373]:$INFO[Window(Home).Property(RecommendedEpisode.10.Season)]  $LOCALIZE[20359]:$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</label2>
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
-			<thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</thumb>
+			<thumb>$VAR[TVShowShelfRecommended10]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.File))</visible>
 		</item>
 	</include>
 
 	<include name="AlbumRecent">
-		<item id="181">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.1.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
@@ -404,7 +404,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
 		</item>
-		<item id="182">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.2.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.2.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
@@ -412,7 +412,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Title))</visible>
 		</item>
-		<item id="183">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.3.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.3.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
@@ -420,7 +420,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Title))</visible>
 		</item>
-		<item id="184">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.4.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.4.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
@@ -428,7 +428,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Title))</visible>
 		</item>
-		<item id="185">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.5.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.5.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
@@ -436,7 +436,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Title))</visible>
 		</item>
-		<item id="186">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.6.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.6.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
@@ -444,7 +444,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Title))</visible>
 		</item>
-		<item id="187">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.7.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.7.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
@@ -452,7 +452,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Title))</visible>
 		</item>
-		<item id="188">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.8.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.8.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
@@ -460,7 +460,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Title))</visible>
 		</item>
-		<item id="189">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.9.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.9.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
@@ -468,7 +468,7 @@
 			<property name="ItemType">$LOCALIZE[359]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Title))</visible>
 		</item>
-		<item id="190">
+		<item>
 			<label>$INFO[Window(Home).Property(RecentAlbum.10.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecentAlbum.10.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
@@ -479,7 +479,7 @@
 	</include>
 
 	<include name="AlbumRecommended">
-		<item id="191">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
@@ -487,7 +487,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
 		</item>
-		<item id="192">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
@@ -495,7 +495,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
 		</item>
-		<item id="193">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
@@ -503,7 +503,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
 		</item>
-		<item id="194">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
@@ -511,7 +511,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
 		</item>
-		<item id="195">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
@@ -519,7 +519,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
 		</item>
-		<item id="196">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
@@ -527,7 +527,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
 		</item>
-		<item id="197">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
@@ -535,7 +535,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
 		</item>
-		<item id="198">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
@@ -543,7 +543,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
 		</item>
-		<item id="199">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
@@ -551,7 +551,7 @@
 			<property name="ItemType">$LOCALIZE[31963]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
 		</item>
-		<item id="200">
+		<item>
 			<label>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
 			<label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)]</label2>
 			<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
@@ -562,35 +562,35 @@
 	</include>
 
 	<include name="AddonFavourites">
-		<item id="201">
+		<item>
 			<label>$INFO[Skin.String(CustomAddon.1.Label)]</label>
 			<onclick>$INFO[Skin.String(CustomAddon.1.Path)]</onclick>
 			<thumb>$INFO[Skin.String(CustomAddon.1.Icon)]</thumb>
 			<property name="ItemType">$LOCALIZE[31652]</property>
 			<visible>!IsEmpty(Skin.String(CustomAddon.1.Path))</visible>
 		</item>
-		<item id="202">
+		<item>
 			<label>$INFO[Skin.String(CustomAddon.2.Label)]</label>
 			<onclick>$INFO[Skin.String(CustomAddon.2.Path)]</onclick>
 			<thumb>$INFO[Skin.String(CustomAddon.2.Icon)]</thumb>
 			<property name="ItemType">$LOCALIZE[31652]</property>
 			<visible>!IsEmpty(Skin.String(CustomAddon.2.Path))</visible>
 		</item>
-		<item id="203">
+		<item>
 			<label>$INFO[Skin.String(CustomAddon.3.Label)]</label>
 			<onclick>$INFO[Skin.String(CustomAddon.3.Path)]</onclick>
 			<thumb>$INFO[Skin.String(CustomAddon.3.Icon)]</thumb>
 			<property name="ItemType">$LOCALIZE[31652]</property>
 			<visible>!IsEmpty(Skin.String(CustomAddon.3.Path))</visible>
 		</item>
-		<item id="204">
+		<item>
 			<label>$INFO[Skin.String(CustomAddon.4.Label)]</label>
 			<onclick>$INFO[Skin.String(CustomAddon.4.Path)]</onclick>
 			<thumb>$INFO[Skin.String(CustomAddon.4.Icon)]</thumb>
 			<property name="ItemType">$LOCALIZE[31652]</property>
 			<visible>!IsEmpty(Skin.String(CustomAddon.4.Path))</visible>
 		</item>
-		<item id="205">
+		<item>
 			<label>$INFO[Skin.String(CustomAddon.5.Label)]</label>
 			<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
 			<thumb>$INFO[Skin.String(CustomAddon.5.Icon)]</thumb>
@@ -716,21 +716,21 @@
 	</include>
 	<include name="tvshow-shelfbanner">
 		<control type="image">
-			<left>31</left>
-			<top>8</top>
-			<width>190</width>
-			<height>190</height>
+			<left>10</left>
+			<top>82</top>
+			<width>232</width>
+			<height>42</height>
 			<aligny>bottom</aligny>
 			<aspectratio scalediffuse="false">keep</aspectratio>
 			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 		<control type="image">
-			<left>31</left>
-			<top>198</top>
-			<width>190</width>
-			<height>190</height>
+			<left>10</left>
+			<top>206</top>
+			<width>232</width>
+			<height>42</height>
 			<aligny>bottom</aligny>
-			<aspectratio scalediffuse="false">keep</aspectratio>
+			<aspectratio scalediffuse="true">keep</aspectratio>
 			<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 	</include>
@@ -855,7 +855,25 @@
 			</content>
 		</control>
 		<control type="group">
-			<visible>Control.HasFocus(9210) + !StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])</visible>
+			<visible>Control.HasFocus(9210) + StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])</visible>
+			<left>10</left>
+			<top>40</top>
+			<control type="image"><!-- Focus slider -->
+				<left>2</left>
+				<top>74</top>
+				<width>248</width>
+				<height>62</height>
+				<texture border="9">mask-hilite2.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<animation condition="Container(9210).Position(0)" effect="slide" start="0,0" end="0,0" time="200" easing="inout" reversible="true">Conditional</animation>
+			<animation condition="Container(9210).Position(1)" effect="slide" start="0,0" end="252,0" time="200" easing="inout" reversible="true">Conditional</animation>
+			<animation condition="Container(9210).Position(2)" effect="slide" start="0,0" end="504,0" time="200" easing="inout" reversible="true">Conditional</animation>
+			<animation condition="Container(9210).Position(3)" effect="slide" start="0,0" end="756,0" time="200" easing="inout" reversible="true">Conditional</animation>
+			<animation condition="Container(9210).Position(4)" effect="slide" start="0,0" end="1008,0" time="200" easing="inout" reversible="true">Conditional</animation>
+		</control>
+		<control type="group">
+			<visible>Control.HasFocus(9210) + (!StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950] + !StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949]))</visible>
 			<left>10</left>
 			<top>40</top>
 			<control type="image"><!-- Focus slider -->

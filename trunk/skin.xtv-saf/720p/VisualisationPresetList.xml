@@ -43,7 +43,6 @@
 			<top>75</top>
 			<width>688</width>
 			<height>500</height>
-			<onleft>noop</onleft>
 			<onright>60</onright>
 			<onup>2</onup>
 			<ondown>2</ondown>
@@ -85,7 +84,6 @@
 			<width>18</width>
 			<height>500</height>
 			<onleft>2</onleft>
-			<onright>noop</onright>
 			<pagecontrol>60</pagecontrol>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>

@@ -1149,7 +1149,6 @@
 				<width>18</width>
 				<height>560</height>
 				<onleft>560</onleft>
-				<onright>noop</onright>
 				<visible>Control.IsVisible(560) + Skin.HasSetting(sbar)</visible>
 			</control>
 			<control type="group">

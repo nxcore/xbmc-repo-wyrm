@@ -49,11 +49,8 @@
 					<height>250</height>
 					<scrolltime>200</scrolltime>
 					<viewtype label="536">List</viewtype>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onright>998</onright>
 					<onleft>998</onleft>
-					<pagecontrol>noop</pagecontrol>
 					<itemlayout height="50">
 						<control type="label">
 							<left>20</left>
@@ -83,12 +80,12 @@
 						</control>
 					</focusedlayout>
 					<content>
-						<item id="1">
+						<item>
 							<label>$LOCALIZE[31680]</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>SendClick(movieinformation,10)</onclick>
 						</item>
-						<item id="2">
+						<item>
 							<label>$LOCALIZE[31681]</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
@@ -96,13 +93,13 @@
 							<onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
 							<visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)] + system.hasaddon(script.artwork.downloader)</visible>
 						</item>
-						<item id="3">
+						<item>
 							<label>$LOCALIZE[31682]</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
 							<visible>System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
 						</item>
-						<item id="4">
+						<item>
 							<label>$LOCALIZE[31689]</label>
 							<onclick>Dialog.Close(1154)</onclick>
 							<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>

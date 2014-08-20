@@ -538,7 +538,6 @@
 			<onright condition="Control.IsVisible(4)">1423</onright>
 			<onup condition="Control.IsVisible(50)">50</onup>
 			<onup condition="Control.IsVisible(4)">1423</onup>
-			<ondown>noop</ondown>
 			<control type="button" id="35"><!-- Play Album -->
 				<width>250</width>
 				<height>56</height>
@@ -590,7 +589,6 @@
 			<width>18</width>
 			<height>526</height>
 			<onleft>999</onleft>
-			<onright>noop</onright>
 			<ondown>1423</ondown>
 			<onup>1423</onup>
 			<visible>Skin.HasSetting(sbar) + Control.IsVisible(4)</visible>

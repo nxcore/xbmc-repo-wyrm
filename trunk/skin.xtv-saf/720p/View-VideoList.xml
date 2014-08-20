@@ -592,7 +592,6 @@
 				<width>18</width>
 				<height>546</height>
 				<onleft>50</onleft>
-				<onright>noop</onright>
 				<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
@@ -604,12 +603,7 @@
 				<top>-10</top>
 				<width>10</width>
 				<height>10</height>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
 				<viewtype label="31028">wraplist</viewtype>
-				<pagecontrol>noop</pagecontrol>
 				<autoscroll>true</autoscroll>
 				<scrolltime>4000</scrolltime>
 				<orientation>horizontal</orientation>

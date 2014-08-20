@@ -53,33 +53,33 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<item id="1"><!-- Return to Home -->
+				<item><!-- Return to Home -->
 					<icon>DefaultFolderBack.png</icon>
 					<label>..</label>
 					<onclick>ReplaceWindow(Home)</onclick>
 					<visible>system.getbool(filelists.showparentdiritems)</visible>
 				</item>
-				<item id="2"><!-- Video Addons -->
+				<item><!-- Video Addons -->
 					<icon>DefaultAddon.png</icon>
 					<label>$LOCALIZE[1037]</label>
 					<onclick>ActivateWindow(Videos,Addons)</onclick>
 				</item>
-				<item id="3"><!-- Music Addons -->
+				<item><!-- Music Addons -->
 					<icon>DefaultAddon.png</icon>
 					<label>$LOCALIZE[1038]</label>
 					<onclick>$VAR[MusicAddonEntry]</onclick>
 				</item>
-				<item id="4"><!-- Picture Addons -->
+				<item><!-- Picture Addons -->
 					<icon>DefaultAddon.png</icon>
 					<label>$LOCALIZE[1039]</label>
 					<onclick>ActivateWindow(Pictures,Addons)</onclick>
 				</item>
-				<item id="5"><!-- Program Addons -->
+				<item><!-- Program Addons -->
 					<icon>DefaultAddon.png</icon>
 					<label>$LOCALIZE[1043]</label>
 					<onclick>ActivateWindow(Programs,Addons)</onclick>
 				</item>
-				<item id="6"><!-- Get More Addons -->
+				<item><!-- Get More Addons -->
 					<icon>DefaultAddon.png</icon>
 					<label>$LOCALIZE[21452]</label>
 					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>

@@ -140,10 +140,6 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<control type="spincontrolex" id="3"><!-- Change location button -->
 				<width>480</width>
 				<height>50</height>

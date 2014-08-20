@@ -101,9 +101,7 @@
 				<font>font12</font>
 				<label>$LOCALIZE[186]</label>
 				<onup>10</onup>
-				<onleft>noop</onleft>
 				<onright>2</onright>
-				<ondown>noop</ondown>
 			</control>
 			<control type="button" id="2"><!-- Cancel button -->
 				<left>657</left>
@@ -114,8 +112,6 @@
 				<label>$LOCALIZE[222]</label>
 				<onup>10</onup>
 				<onleft>1</onleft>
-				<onright>noop</onright>
-				<ondown>noop</ondown>
 			</control>
 		</control>
 	</controls>

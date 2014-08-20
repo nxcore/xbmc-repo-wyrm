@@ -503,6 +503,56 @@
 		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</value>
 		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</value>
 	</variable>
+	<variable name="TVShowShelfRecommended1">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended2">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended3">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended4">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended5">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended6">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended7">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended8">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended9">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</value>
+	</variable>
+	<variable name="TVShowShelfRecommended10">
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.banner))]</value>
+		<value condition="StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31950])">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</value>
+		<value condition="IsEmpty(Skin.String(shelf-tvshowimgtyp)) | StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[21371])">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</value>
+	</variable>
 	<variable name="VideoList0">
 		<value condition="Container(9100).Position(0)">$INFO[Container(9100).ListItemNoWrap(-1).Label]</value>
 		<value condition="Container(9100).Position(1)">$INFO[Container(9100).ListItemNoWrap(-2).Label]</value>
