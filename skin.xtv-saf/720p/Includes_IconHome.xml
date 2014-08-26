@@ -43,8 +43,6 @@
 
 			<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include><!-- Show time on home screen -->
 
-			<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include><!-- Low memory warning -->
-
 			<control type="group" id="9800"><!-- Shelf icons-->
 				<control type="group" id="9155"><!-- Movie icons -->
 					<visible>StringCompare(Container(9000).ListItem.Label2,$LOCALIZE[31026])</visible>

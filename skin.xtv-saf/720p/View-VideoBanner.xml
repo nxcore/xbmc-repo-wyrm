@@ -3,7 +3,6 @@
 	<include name="BannerView">
 		<control type="list" id="59">
 			<viewtype label="31946">Banner List</viewtype>
-			<visible>[Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			<left>662</left>
 			<top>110</top>
 			<width>556</width>
@@ -14,6 +13,15 @@
 			<onleft>9000</onleft>
 			<onright>29</onright>
 			<itemlayout width="556" height="100">
+				<control type="image"><!-- Background shadow for unselected IconBanner image -->
+					<left>7</left>
+					<top>0</top>
+					<width>542</width>
+					<height>100</height>
+					<texture>colours/black.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>UnFocusedPosters</colordiffuse>
+				</control>
 				<control type="image"><!-- Banner image -->
 					<left>7</left>
 					<top>0</top>

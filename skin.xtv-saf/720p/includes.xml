@@ -407,20 +407,6 @@
 		</control>
 	</include>
 
-	<include name="memory-low">
-		<control type="label"><!-- Low free memory -->
-			<left>354</left>
-			<top>75</top>
-			<width>566</width>
-			<height>37</height>
-			<align>center</align>
-			<font>font18</font>
-			<textcolor>warning-text</textcolor>
-			<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
-			<visible>IntegerGreaterThan(system.memory(used.percent),95)</visible>
-		</control>
-	</include>
-
 	<include name="horizontalhome-time">
 		<control type="label"><!-- Time and date -->
 			<left>754</left>

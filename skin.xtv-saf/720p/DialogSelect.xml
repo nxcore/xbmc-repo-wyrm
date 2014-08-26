@@ -31,7 +31,6 @@
 			<top>68</top>
 			<width>736</width>
 			<height>37</height>
-			<label>-</label>
 			<align>center</align>
 		</control>
 		<control type="list" id="3"><!-- Type 3 Select -->

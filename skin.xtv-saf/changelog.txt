@@ -16,6 +16,8 @@
 - Remove a number of redundant skin graphics.
 - Added a number of missing video and audio codec flag images.
 - Now include ALL language files available on Transfix, even if file is incomplete.
+- Remove low memory warning, if this skin generates this warning you have MAJOR issues anyway
+  and in all likelyhood will not need the warning from the skin.
 - Cleanup and optimise a number of skin image files.
 - A number of minor bug fixes and performance tweaks.
 

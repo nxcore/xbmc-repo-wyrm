@@ -106,7 +106,6 @@
 				<enable>System.HasAddon(script.favourites)</enable>
 				<onup>986</onup>
 				<ondown>988</ondown>
-				<onleft>noop</onleft>
 			</control>
 			<control type="image">
 				<left>1222</left>
@@ -143,7 +142,6 @@
 			<top>112</top>
 			<width>18</width>
 			<height>542</height>
-			<onleft>noop</onleft>
 			<onright>998</onright>
 			<visible>Skin.HasSetting(sbar) + !Skin.String(skinsettingmenu,custom)</visible>
 		</control>
@@ -185,8 +183,6 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -261,8 +257,6 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -391,8 +385,6 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -986,7 +978,6 @@
 							<height>56</height>
 							<width>885</width>
 							<onup>315</onup>
-							<ondown>noop</ondown>
 							<onleft>1223</onleft>
 							<onright>320</onright>
 							<scrolltime>0</scrolltime>
@@ -1053,7 +1044,6 @@
 							<height>56</height>
 							<width>32</width>
 							<onup>315</onup>
-							<ondown>noop</ondown>
 							<onleft>319</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
@@ -1130,8 +1120,6 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1143,7 +1131,6 @@
 							<top>0</top>
 							<height>56</height>
 							<width>885</width>
-							<onup>noop</onup>
 							<ondown>403</ondown>
 							<onleft>1223</onleft>
 							<onright>422</onright>
@@ -1218,7 +1205,6 @@
 							<top>0</top>
 							<height>56</height>
 							<width>32</width>
-							<onup>noop</onup>
 							<ondown>403</ondown>
 							<onleft>421</onleft>
 							<onright>999</onright>
@@ -1378,7 +1364,6 @@
 							<height>56</height>
 							<width>885</width>
 							<onup>415</onup>
-							<ondown>noop</ondown>
 							<onleft>1223</onleft>
 							<onright>418</onright>
 							<scrolltime>0</scrolltime>
@@ -1465,7 +1450,6 @@
 							<height>56</height>
 							<width>32</width>
 							<onup>415</onup>
-							<ondown>noop</ondown>
 							<onleft>417</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
@@ -1561,8 +1545,6 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1796,8 +1778,6 @@
 					<width>885</width>
 					<height>542</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1891,8 +1871,6 @@
 					<width>885</width>
 					<height>540</height>
 					<itemgap>-2</itemgap>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>

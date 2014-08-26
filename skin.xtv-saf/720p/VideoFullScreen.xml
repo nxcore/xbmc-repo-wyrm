@@ -26,7 +26,6 @@
 			<top>8</top>
 			<width>1250</width>
 			<height>52</height>
-			<label>-</label>
 			<font>font12</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
@@ -35,7 +34,6 @@
 			<top>60</top>
 			<width>1250</width>
 			<height>52</height>
-			<label>-</label>
 			<font>font12</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
@@ -44,7 +42,6 @@
 			<top>112</top>
 			<width>1250</width>
 			<height>52</height>
-			<label>-</label>
 			<font>font12</font>
 			<wrapmultiline>true</wrapmultiline>
 		</control>
@@ -115,7 +112,6 @@
 				<font>font12</font>
 			</control>
 			<control type="progress"><!-- Signal progressbar -->
-				<description>Progressbar</description>
 				<left>220</left>
 				<top>122</top>
 				<width>910</width>
@@ -147,7 +143,6 @@
 				<info>PVR.ActStreamProgrSNR</info>
 			</control>
 			<control type="label"><!-- SNR value -->
-				<description>SNR value</description>
 				<left>1200</left>
 				<top>140</top>
 				<width>180</width>

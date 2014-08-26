@@ -182,8 +182,6 @@
 				<description>Lyrics Script</description>
 				<width>60</width>
 				<height>60</height>
-				<label>-</label>
-				<font>-</font>
 				<texturenofocus>osd-btn-lyric.png</texturenofocus>
 				<texturefocus>osd-btn-lyric-focus.png</texturefocus>
 				<alttexturenofocus>osd-btn-lyric.png</alttexturenofocus>

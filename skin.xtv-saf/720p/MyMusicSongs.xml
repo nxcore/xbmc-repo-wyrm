@@ -32,8 +32,6 @@
 			</control>
 		</control>
 
-		<include>memory-low</include>
-
 		<include>AlbumListView</include>
 		<include>AlbumWrapView</include>
 		<include>AudioWallView</include>

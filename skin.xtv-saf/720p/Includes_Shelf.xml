@@ -153,6 +153,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent1]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.1.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.File))</visible>
 		</item>
 		<item>
@@ -161,6 +162,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent2]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.2.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.File))</visible>
 		</item>
 		<item>
@@ -169,6 +171,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent3]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.3.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.File))</visible>
 		</item>
 		<item>
@@ -177,6 +180,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent4]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.4.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.File))</visible>
 		</item>
 		<item>
@@ -185,6 +189,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent5]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.5.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.File))</visible>
 		</item>
 		<item>
@@ -193,6 +198,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent6]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.6.Art(tvshow.fanart)))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.File))</visible>
 		</item>
 		<item>
@@ -201,6 +207,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent7]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.7.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.File))</visible>
 		</item>
 		<item>
@@ -209,6 +216,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent8]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.8.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.File))</visible>
 		</item>
 		<item>
@@ -217,6 +225,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent9]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.9.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.File))</visible>
 		</item>
 		<item>
@@ -225,6 +234,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecent10]</thumb>
 			<property name="ItemType">$LOCALIZE[20387]</property>
+			<property name="Art">$INFO[Window.Property(RecentEpisode.10.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.File))</visible>
 		</item>
 	</include>
@@ -236,6 +246,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon1]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.1.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.1.NextDate))</visible>
 		</item>
 		<item>
@@ -244,6 +255,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon2]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.2.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.2.NextDate))</visible>
 		</item>
 		<item>
@@ -252,6 +264,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon3]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.3.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.3.NextDate))</visible>
 		</item>
 		<item>
@@ -260,6 +273,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon4]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.4.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.4.NextDate))</visible>
 		</item>
 		<item>
@@ -268,6 +282,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon5]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.5.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.5.NextDate))</visible>
 		</item>
 		<item>
@@ -276,6 +291,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon6]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.6.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.6.NextDate))</visible>
 		</item>
 		<item>
@@ -284,6 +300,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon7]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.7.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.7.NextDate))</visible>
 		</item>
 		<item>
@@ -292,6 +309,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon8]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.8.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.8.NextDate))</visible>
 		</item>
 		<item>
@@ -300,6 +318,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon9]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.9.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.9.NextDate))</visible>
 		</item>
 		<item>
@@ -308,6 +327,7 @@
 			<onclick>noop</onclick>
 			<thumb>$VAR[TVShowNextAiredIcon10]</thumb>
 			<property name="ItemType">$LOCALIZE[31961]</property>
+			<property name="Art">$INFO[Window.Property(NextAired.10.Fanart)]</property>
 			<visible>!IsEmpty(Window(Home).Property(NextAired.10.NextDate))</visible>
 		</item>
 	</include>
@@ -319,6 +339,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended1]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.1.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.File))</visible>
 		</item>
 		<item>
@@ -327,6 +348,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended2]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.2.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.File))</visible>
 		</item>
 		<item>
@@ -335,6 +357,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended3]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.3.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.File))</visible>
 		</item>
 		<item>
@@ -343,6 +366,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended4]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.4.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.File))</visible>
 		</item>
 		<item>
@@ -351,6 +375,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended5]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.5.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.File))</visible>
 		</item>
 		<item>
@@ -359,6 +384,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended6]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.6.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.File))</visible>
 		</item>
 		<item>
@@ -367,6 +393,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended7]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.7.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.File))</visible>
 		</item>
 		<item>
@@ -375,6 +402,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended8]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.8.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.File))</visible>
 		</item>
 		<item>
@@ -383,6 +411,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended9]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.9.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.File))</visible>
 		</item>
 		<item>
@@ -391,6 +420,7 @@
 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
 			<thumb>$VAR[TVShowShelfRecommended10]</thumb>
 			<property name="ItemType">$LOCALIZE[31962]</property>
+			<property name="Art">$INFO[Window.Property(RecommendedEpisode.10.Art(tvshow.fanart))]</property>
 			<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.File))</visible>
 		</item>
 	</include>
@@ -716,13 +746,22 @@
 	</include>
 	<include name="tvshow-shelfbanner">
 		<control type="image">
+			<left>12</left>
+			<top>24</top>
+			<width>228</width>
+			<height>130</height>
+			<aligny>bottom</aligny>
+			<aspectratio>stretch</aspectratio>
+			<texture background="true">$INFO[ListItem.Property(Art)]</texture>
+		</control>
+		<control type="image">
 			<left>10</left>
-			<top>82</top>
+			<top>154</top>
 			<width>232</width>
 			<height>42</height>
 			<aligny>bottom</aligny>
 			<aspectratio scalediffuse="false">keep</aspectratio>
-			<texture diffuse="mask-rect.png" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+			<texture diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 		<control type="image">
 			<left>10</left>
@@ -731,7 +770,7 @@
 			<height>42</height>
 			<aligny>bottom</aligny>
 			<aspectratio scalediffuse="true">keep</aspectratio>
-			<texture diffuse="mask-fade.png" flipy="true" fallback="DefaultTvshows.png" background="true">$INFO[ListItem.Thumb]</texture>
+			<texture diffuse="mask-fade.png" flipy="true" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 	</include>
 	<include name="tvshow-shelfposter">
@@ -860,9 +899,9 @@
 			<top>40</top>
 			<control type="image"><!-- Focus slider -->
 				<left>2</left>
-				<top>74</top>
+				<top>16</top>
 				<width>248</width>
-				<height>62</height>
+				<height>192</height>
 				<texture border="9">mask-hilite2.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>

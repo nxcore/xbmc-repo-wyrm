@@ -20,7 +20,6 @@
 			<top>252</top>
 			<width>650</width>
 			<height>37</height>
-			<label>-</label>
 			<align>center</align>
 		</control>
 		<control type="image">
@@ -36,7 +35,6 @@
 			<width>650</width>
 			<height>110</height>
 			<align>center</align>
-			<label>-</label>
 			<font>font11</font>
 			<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>
@@ -48,10 +46,7 @@
 			<label>$LOCALIZE[107]</label>
 			<font>font12</font>
 			<align>center</align>
-			<onleft>noop</onleft>
 			<onright>10</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 		</control>
 		<control type="button" id="10"><!-- NO button -->
 			<left>657</left>
@@ -62,9 +57,6 @@
 			<font>font12</font>
 			<align>center</align>
 			<onleft>11</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 		</control>
 	</controls>
 </window>

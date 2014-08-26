@@ -20,7 +20,6 @@
 			<top>250</top>
 			<width>650</width>
 			<height>37</height>
-			<label>-</label>
 			<align>center</align>
 		</control>
 		<control type="image">
@@ -36,7 +35,6 @@
 			<width>650</width>
 			<height>110</height>
 			<align>center</align>
-			<label>-</label>
 			<font>font11</font>
 			<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>

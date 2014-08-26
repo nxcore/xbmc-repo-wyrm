@@ -147,7 +147,6 @@
 						<description>Record</description>
 						<height>56</height>
 						<width>256</width>
-						<label>-</label>
 						<align>center</align>
 					</control>
 					<control type="button" id="7">

@@ -31,8 +31,6 @@
 			</control>
 		</control>
 
-		<include>memory-low</include><!-- Display warning if free memory is low -->
-
 		<control type="group"><!-- Various Views of Addons Browser -->
 			<include>ListView</include>
 			<include>IconView</include>
@@ -68,8 +66,6 @@
 				<onleft condition="Control.IsVisible(54)">54</onleft>
 				<onleft condition="Control.IsVisible(57)">57</onleft>
 				<onleft condition="Control.IsVisible(58)">58</onleft>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="2"><!-- View as button -->
 					<width>376</width>

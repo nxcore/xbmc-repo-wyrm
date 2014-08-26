@@ -44,7 +44,6 @@
 			<height>40</height>
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
-			<label>-</label>
 			<onup>10</onup>
 			<onleft>12</onleft>
 			<onright>12</onright>
@@ -71,7 +70,6 @@
 			<height>40</height>
 			<font>font12</font>
 			<textoffsetx>10</textoffsetx>
-			<label>-</label>
 			<onup>11</onup>
 			<onleft>16</onleft>
 			<onright>16</onright>
