@@ -83,8 +83,6 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
 				<onup>206</onup>
 				<ondown>201</ondown>
 				<itemlayout width="180" height="90">
@@ -284,8 +282,6 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
 				<onup>200</onup>
 				<ondown>202</ondown>
 				<itemlayout width="180" height="90">
@@ -485,8 +481,6 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
 				<onup>201</onup>
 				<ondown>203</ondown>
 				<itemlayout width="180" height="90">
@@ -887,8 +881,6 @@
 				<width>850</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
 				<onup>203</onup>
 				<ondown>205</ondown>
 				<itemlayout width="170" height="90">
@@ -1088,8 +1080,6 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
 				<onup>204</onup>
 				<ondown>206</ondown>
 				<itemlayout width="180" height="90">
@@ -1289,8 +1279,6 @@
 				<width>720</width>
 				<height>90</height>
 				<orientation>horizontal</orientation>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
 				<onup>205</onup>
 				<ondown>200</ondown>
 				<itemlayout width="180" height="90">
@@ -1557,9 +1545,6 @@
 			<top>-10</top>
 			<width>1</width>
 			<height>1</height>
-			<label>-</label>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
 		</control>
 	</controls>
 </window>

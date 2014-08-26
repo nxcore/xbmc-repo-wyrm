@@ -35,7 +35,6 @@
 				<onup>984</onup>
 				<ondown>982</ondown>
 				<onleft>100</onleft>
-				<onright>noop</onright>
 			</control>
 			<control type="button" id="982"><!-- Custom TV settings button -->
 				<font>font12</font>
@@ -48,7 +47,6 @@
 				<onup>981</onup>
 				<ondown>983</ondown>
 				<onleft>200</onleft>
-				<onright>noop</onright>
 			</control>
 			<control type="button" id="983"><!-- Custom Music settings button -->
 				<font>font12</font>
@@ -61,7 +59,6 @@
 				<onup>982</onup>
 				<ondown>984</ondown>
 				<onleft>300</onleft>
-				<onright>noop</onright>
 			</control>
 			<control type="button" id="984"><!-- Custom Addons settings button -->
 				<font>font12</font>
@@ -74,7 +71,6 @@
 				<onup>983</onup>
 				<ondown>981</ondown>
 				<onleft>400</onleft>
-				<onright>noop</onright>
 			</control>
 		</control>
 
@@ -83,7 +79,6 @@
 			<top>112</top>
 			<width>18</width>
 			<height>542</height>
-			<onleft>noop</onleft>
 			<onright>998</onright>
 			<visible>Skin.HasSetting(sbar)</visible>
 		</control>

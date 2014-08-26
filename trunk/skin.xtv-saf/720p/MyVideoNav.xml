@@ -34,8 +34,6 @@
 			</control>
 		</control>
 
-		<include>memory-low</include><!-- Display warning if free memory is low -->
-
 		<control type="group"><!-- Various Views of Video library node -->
 			<visible>![IsEmpty(ListItem.Label) + IsEmpty(Container().ListItem(1).Label)]</visible>
 			<include>VideoListView</include>

@@ -17,7 +17,6 @@
 				<top>12</top>
 				<width>1239</width>
 				<height>25</height>
-				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="11"><!-- Row 2 label -->
@@ -25,7 +24,6 @@
 				<top>37</top>
 				<width>1239</width>
 				<height>25</height>
-				<label>-</label>
 				<font>font12</font>
 			</control>
 			<control type="label" id="12"><!-- Row 3 label -->
@@ -33,7 +31,6 @@
 				<top>62</top>
 				<width>1239</width>
 				<height>25</height>
-				<label>-</label>
 				<font>font12</font>
 			</control>
 		</control>

@@ -66,70 +66,60 @@
 			<control type="label" id="2">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="3">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="4">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="5">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="6">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="7">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="8">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="9">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="10">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="label" id="11">
 				<width>890</width>
 				<height>50</height>
-				<label>-</label>
 				<font>font11</font>
 				<wrapmultiline>true</wrapmultiline>
 			</control>

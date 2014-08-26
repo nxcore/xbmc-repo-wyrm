@@ -90,8 +90,6 @@
 			</control>
 		</control>
 
-		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include><!-- Low memory warning -->
-
 		<control type="image"><!-- Markers for excess menu items -->
 			<left>956</left>
 			<top>92</top>
@@ -117,7 +115,6 @@
 			<focusposition>3</focusposition>
 			<movement>4</movement>
 			<onleft condition="[Player.HasVideo | Player.HasAudio]">421</onleft>
-			<onleft condition="!Player.HasVideo + !Player.HasAudio">noop</onleft>
 			<onright>23</onright>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
@@ -668,7 +665,6 @@
 			<width>18</width>
 			<height>512</height>
 			<onleft>9000</onleft>
-			<onright>noop</onright>
 			<visible>Skin.HasSetting(sbar)</visible>
 			<animation condition="!Control.HasFocus(23) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 		</control>

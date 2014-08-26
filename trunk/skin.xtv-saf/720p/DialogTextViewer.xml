@@ -28,7 +28,6 @@
 				<top>112</top>
 				<width>1185</width>
 				<height>530</height>
-				<label>-</label>
 				<align>justify</align>
 				<pagecontrol>23</pagecontrol>
 				<autoscroll delay="3000" time="1000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -39,10 +38,6 @@
 					<top>112</top>
 					<width>20</width>
 					<height>530</height>
-					<onleft>noop</onleft>
-					<onright>noop</onright>
-					<ondown>noop</ondown>
-					<onup>noop</onup>
 				</control>
 			</control>
 		</control>

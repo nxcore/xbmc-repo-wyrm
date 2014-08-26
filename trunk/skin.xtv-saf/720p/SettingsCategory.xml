@@ -12,7 +12,6 @@
 			<top>25</top>
 			<width>309</width>
 			<height>31</height>
-			<label>-</label>
 			<font>font20</font>
 		</control>
 		<control type="label"><!-- Settings subscreen heading -->
@@ -30,8 +29,6 @@
 			<height>434</height>
 			<itemgap>-2</itemgap>
 			<onleft>5</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
 			<ondown>20</ondown>
 			<scrolltime tween="sine" easing="out">100</scrolltime>
 		</control>
@@ -48,7 +45,6 @@
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<onup>3</onup>
-			<ondown>noop</ondown>
 			<onclick>SettingsLevelChange</onclick>
 		</control>
 		<control type="label"><!-- Settings level heading -->
@@ -88,8 +84,6 @@
 			<itemgap>-2</itemgap>
 			<onleft>23</onleft>
 			<onright>3</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<pagecontrol>23</pagecontrol>
 			<scrolltime tween="sine" easing="out">100</scrolltime>
 		</control>

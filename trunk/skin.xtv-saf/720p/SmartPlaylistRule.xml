@@ -70,7 +70,6 @@
 				<font>font12</font>
 				<textoffsetx>10</textoffsetx>
 				<textwidth>340</textwidth>
-				<label>-</label>
 				<onup>9001</onup>
 				<ondown>9000</ondown>
 			</control>

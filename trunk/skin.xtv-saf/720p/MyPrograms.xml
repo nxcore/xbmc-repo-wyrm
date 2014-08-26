@@ -30,8 +30,6 @@
 			</control>
 		</control>
 
-		<include>memory-low</include>
-
 		<control type="group"><!-- Various Views of Addons library -->
 			<include>ListView</include>
 			<include>IconView</include>

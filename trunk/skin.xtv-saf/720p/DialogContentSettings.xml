@@ -2,53 +2,52 @@
 <window>
 	<defaultcontrol>3</defaultcontrol>
 	<coordinates>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 	</coordinates>
 	<include>screen-fade</include>
 	<controls>
 		<include>fadebackground</include>
 		<control type="image"><!-- Dialog background image -->
-			<posx>234</posx>
-			<posy>152</posy>
+			<left>234</left>
+			<top>152</top>
 			<width>808</width>
 			<height>507</height>
 			<texture border="8">button-menu-background.png</texture>
 		</control>
 		<control type="image"><!-- Scraper image -->
-			<posx>295</posx>
-			<posy>211</posy>
+			<left>295</left>
+			<top>211</top>
 			<width>176</width>
 			<height>176</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.Icon]</texture>
 		</control>
 		<control type="label" id="1000"><!-- Directory contains -->
-			<posx>295</posx>
-			<posy>165</posy>
+			<left>295</left>
+			<top>165</top>
 			<height>46</height>
 			<width>380</width>
 			<font>font12</font>
 			<label>$LOCALIZE[20344]</label>
 		</control>
 		<control type="spincontrolex" id="3"><!-- Directory content select spincontrol -->
-			<posx>683</posx>
-			<posy>165</posy>
+			<left>683</left>
+			<top>165</top>
 			<width>320</width>
 			<height>46</height>
 			<font>font12</font>
 			<align>left</align>
 			<reverse>yes</reverse>
 			<textoffsetx>12</textoffsetx>
-			<onup>noop</onup>
 			<ondown>4</ondown>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<subtype>text</subtype>
 		</control>
 		<control type="list" id="4">
-			<posx>553</posx>
-			<posy>209</posy>
+			<left>553</left>
+			<top>209</top>
 			<width>700</width>
 			<height>184</height>
 			<onup>3</onup>
@@ -58,15 +57,15 @@
 			<scrolltime>200</scrolltime>
 			<itemlayout height="46">
 				<control type="image">
-					<posx>0</posx>
-					<posy>3</posy>
+					<left>0</left>
+					<top>3</top>
 					<width>40</width>
 					<height>40</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>54</posx>
-					<posy>8</posy>
+					<left>54</left>
+					<top>8</top>
 					<width>380</width>
 					<height>28</height>
 					<font>font12</font>
@@ -76,23 +75,23 @@
 			</itemlayout>
 			<focusedlayout height="46">
 				<control type="image">
-					<posx>44</posx>
-					<posy>0</posy>
+					<left>44</left>
+					<top>0</top>
 					<width>406</width>
 					<height>46</height>
 					<texture border="8">default-button.png</texture>
 					<visible>Control.HasFocus(4)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>3</posy>
+					<left>0</left>
+					<top>3</top>
 					<width>40</width>
 					<height>40</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>54</posx>
-					<posy>8</posy>
+					<left>54</left>
+					<top>8</top>
 					<width>380</width>
 					<height>28</height>
 					<font>font12</font>
@@ -102,8 +101,8 @@
 			</focusedlayout>
 		</control>
 		<control type="grouplist" id="5"><!-- Control area -->
-			<posx>278</posx>
-			<posy>390</posy>
+			<left>278</left>
+			<top>390</top>
 			<width>722</width>
 			<height>208</height>
 			<itemgap>2</itemgap>
@@ -113,19 +112,19 @@
 			<onright>5</onright>
 		</control>
 		<control type="button" id="7"><!-- Default button -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>700</width>
 			<height>50</height>
 			<font>font12</font>
 		</control>
 		<control type="radiobutton" id="8"><!-- Default radiobutton -->
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>700</width>
 			<height>50</height>
 			<font>font12</font>
-			<radioposx>680</radioposx>
+			<radioleft>680</radioleft>
 		</control>
 		<control type="image" id="11">
 			<width>619</width>
@@ -133,21 +132,19 @@
 			<texture>separator.png</texture>
 		</control>
 		<control type="button" id="6"><!-- Settings -->
-			<posx>288</posx>
-			<posy>596</posy>
+			<left>288</left>
+			<top>596</top>
 			<width>210</width>
 			<height>50</height>
 			<align>center</align>
 			<label>$LOCALIZE[5]</label>
 			<font>font12</font>
-			<onleft>noop</onleft>
 			<onright>28</onright>
 			<onup>30</onup>
-			<ondown>noop</ondown>
 		</control>
 		<control type="button" id="28"><!-- OK -->
-			<posx>533</posx>
-			<posy>596</posy>
+			<left>533</left>
+			<top>596</top>
 			<width>210</width>
 			<height>50</height>
 			<align>center</align>
@@ -156,20 +153,17 @@
 			<onleft>6</onleft>
 			<onright>29</onright>
 			<onup>30</onup>
-			<ondown>noop</ondown>
 		</control>
 		<control type="button" id="29"><!-- Cancel -->
-			<posx>778</posx>
-			<posy>596</posy>
+			<left>778</left>
+			<top>596</top>
 			<width>210</width>
 			<height>50</height>
 			<align>center</align>
 			<label>$LOCALIZE[222]</label>
 			<font>font12</font>
 			<onleft>28</onleft>
-			<onright>noop</onright>
 			<onup>30</onup>
-			<ondown>noop</ondown>
 		</control>
 	</controls>
 </window>

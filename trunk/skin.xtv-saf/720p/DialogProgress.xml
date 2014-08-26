@@ -23,7 +23,6 @@
 				<top>272</top>
 				<width>637</width>
 				<height>25</height>
-				<label>-</label>
 				<align>center</align>
 			</control>
 			<control type="textbox" id="9"><!-- Dialog info prompt -->
@@ -32,7 +31,6 @@
 				<width>637</width>
 				<height>80</height>
 				<align>center</align>
-				<label>-</label>
 				<font>font11</font>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
@@ -51,10 +49,6 @@
 				<label>$LOCALIZE[222]</label>
 				<font>font12</font>
 				<align>center</align>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
 			</control>
 		</control>
 	</controls>

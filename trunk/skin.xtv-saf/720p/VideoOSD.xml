@@ -107,10 +107,6 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<control type="button" id="919"><!-- Bookmarks menu -->
 				<width>60</width>
 				<height>60</height>
@@ -255,10 +251,6 @@
 			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<control type="button" id="210"><!-- Skip back -->
 				<width>60</width>
 				<height>60</height>

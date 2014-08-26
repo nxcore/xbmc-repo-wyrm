@@ -18,7 +18,6 @@
 			<top>75</top>
 			<width>1200</width>
 			<height>25</height>
-			<label>-</label>
 			<align>center</align>
 		</control>
 		<control type="label" id="3"><!-- help information -->
@@ -26,7 +25,6 @@
 			<top>105</top>
 			<width>1200</width>
 			<height>25</height>
-			<label>-</label>
 			<align>center</align>
 		</control>
 		<control type="mover" id="9"><!-- right bottom mover -->

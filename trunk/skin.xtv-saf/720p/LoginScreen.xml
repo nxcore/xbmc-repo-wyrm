@@ -35,10 +35,6 @@
 			<height>456</height>
 			<focusposition>1</focusposition>
 			<movement>2</movement>
-			<onleft>noop</onleft>
-			<onright>noop</onright>
-			<onup>noop</onup>
-			<ondown>noop</ondown>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<itemlayout width="800" height="114">

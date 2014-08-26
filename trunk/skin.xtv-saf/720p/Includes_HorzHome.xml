@@ -29,8 +29,6 @@
 
 		<include condition="!Skin.HasSetting(home-time)">horizontalhome-time</include><!-- Show time on home screen -->
 
-		<include condition="!Skin.HasSetting(hidememwarning)">memory-low</include><!-- Low memory warning -->
-
 		<control type="grouplist" id="9800"><!-- Shelf icons-->
 			<left>0</left>
 			<top>0</top>

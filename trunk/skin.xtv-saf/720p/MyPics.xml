@@ -31,8 +31,6 @@
 			</control>
 		</control>
 
-		<include>memory-low</include>
-
 		<control type="group"><!-- Various Views of Pictures library -->
 			<include>ListView</include>
 			<include>IconView</include>
