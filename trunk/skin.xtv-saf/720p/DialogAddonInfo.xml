@@ -17,10 +17,10 @@
 			</control>
 			<control type="label">
 				<left>477</left>
-				<top>37</top>
+				<top>36</top>
 				<width>708</width>
-				<height>37</height>
-				<font>font28</font>
+				<height>38</height>
+				<font>font22</font>
 				<label>[B]$INFO[ListItem.Property(Addon.Name)][/B]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 			</control>

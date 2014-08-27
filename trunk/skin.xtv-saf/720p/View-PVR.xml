@@ -6,9 +6,9 @@
 			<control type="label"><!-- Current time -->
 				<posx>50</posx>
 				<posy>50</posy>
-				<width>309</width>
-				<height>36</height>
-				<font>font20</font>
+				<width>310</width>
+				<height>32</height>
+				<font>font18</font>
 				<label>$INFO[System.Time]</label>
 			</control>
 			<control type="epggrid" id="10"><!-- EPG grid -->

@@ -10,20 +10,20 @@
 			<left>946</left>
 			<top>50</top>
 			<width>360</width>
-			<height>37</height>
+			<height>32</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Load profile heading label -->
 				<width min="60" max="250">auto</width>
-				<height>37</height>
+				<height>32</height>
 				<label>$LOCALIZE[20092]</label>
-				<font>font20</font>
+				<font>font18</font>
 			</control>
 			<control type="label"><!-- Number of files -->
 				<top>13</top>
 				<width min="40" max="110">auto</width>
-				<height>38</height>
+				<height>32</height>
 				<label>$INFO[Container(52).NumItems, (,)]</label>
 			</control>
 		</control>

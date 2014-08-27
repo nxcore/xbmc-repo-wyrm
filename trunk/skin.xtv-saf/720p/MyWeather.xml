@@ -75,10 +75,10 @@
 		<control type="label"><!-- Weather heading label -->
 			<left>946</left>
 			<top>50</top>
-			<width>309</width>
-			<height>37</height>
+			<width>310</width>
+			<height>32</height>
 			<label>$LOCALIZE[31032]</label>
-			<font>font20</font>
+			<font>font18</font>
 		</control>
 
 		<control type="group">

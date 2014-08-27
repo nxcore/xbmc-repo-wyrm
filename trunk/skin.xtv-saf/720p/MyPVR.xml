@@ -9,9 +9,9 @@
 		<control type="label"><!-- Screen heading -->
 			<left>946</left>
 			<top>50</top>
-			<width>309</width>
-			<height>36</height>
-			<font>font20</font>
+			<width>310</width>
+			<height>32</height>
+			<font>font18</font>
 			<label>$VAR[PVRHeading]</label>
 		</control>
 

@@ -7,11 +7,11 @@
 		<include>background</include>
 		<control type="label"><!-- Screen heading -->
 			<left>946</left>
-			<top>40</top>
-			<width>309</width>
-			<height>31</height>
+			<top>50</top>
+			<width>310</width>
+			<height>32</height>
 			<label>$LOCALIZE[10003]</label>
-			<font>font20</font>
+			<font>font18</font>
 		</control>
 		
 		<control type="image">

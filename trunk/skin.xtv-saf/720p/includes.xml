@@ -386,7 +386,7 @@
 			<top>682</top>
 			<width>1240</width>
 			<height>22</height>
-			<font>rss20</font>
+			<font>font10</font>
 			<urlset>1</urlset>
 			<textcolor>info-text</textcolor>
 			<titlecolor>rss-title-text</titlecolor>
@@ -398,7 +398,7 @@
 			<top>682</top>
 			<width>1064</width>
 			<height>22</height>
-			<font>rss20</font>
+			<font>font10</font>
 			<urlset>1</urlset>
 			<textcolor>info-text</textcolor>
 			<titlecolor>rss-title-text</titlecolor>
@@ -424,23 +424,23 @@
 			<visible>Container.Scrolling + !Window.IsVisible(progressdialog)</visible>
 			<animation effect="fade" time="200">Visible</animation>
 			<animation effect="fade" time="200" delay="500">Hidden</animation>
-			<left>587</left>
-			<top>42</top>
-			<width>81</width>
-			<height>65</height>
+			<left>598</left>
+			<top>4</top>
+			<width>82</width>
+			<height>70</height>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>81</width>
-				<height>65</height>
+				<width>82</width>
+				<height>70</height>
 				<texture border="8">button-menu-background.png</texture>
 				<visible>!IsEmpty(ListItem.SortLetter)</visible>
 			</control>
 			<control type="label">
 				<left>0</left>
-				<top>0</top>
-				<width>79</width>
-				<height>56</height>
+				<top>8</top>
+				<width>82</width>
+				<height>48</height>
 				<align>center</align>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<font>font28</font>
