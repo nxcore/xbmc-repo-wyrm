@@ -76,10 +76,10 @@
 			<animation effect="fade" delay="300" start="0" end="100" time="200">Visible</animation>
 			<control type="label"><!-- Go Back -->
 				<left>30</left>
-				<top>312</top>
+				<top>318</top>
 				<width>600</width>
-				<height>50</height>
-				<font>font28</font>
+				<height>38</height>
+				<font>font22</font>
 				<align>center</align>
 				<label>$LOCALIZE[31688]</label>
 				<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>

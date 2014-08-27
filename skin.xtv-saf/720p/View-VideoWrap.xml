@@ -114,31 +114,15 @@
 				<animation condition="!Control.HasFocus(24) + !Container.Scrolling" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
-			<control type="group">
-				<visible>!Skin.HasSetting(hide-chrome)</visible>
-				<control type="image" id="7216"><!-- Show logo -->
-					<left>272</left>
-					<top>424</top>
-					<width>314</width>
-					<height>86</height>
-					<texture fallback="blank.png">$VAR[VideoLogo]</texture>
-					<aspectratio align="left" aligny="bottom">keep</aspectratio>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>
-				<control type="label"><!-- Title -->
-					<left>272</left>
-					<top>460</top>
-					<width>929</width>
-					<height>38</height>
-					<font>font22</font>
-					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<label>$INFO[ListItem.Label]</label>
-					<wrapmultiline>true</wrapmultiline>
-					<textoffsetx>0</textoffsetx>
-					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7216),blank.png,Left) + !IsEmpty(ListItem.Title)</visible>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				</control>
+			<control type="image" id="7216"><!-- Show logo -->
+				<left>272</left>
+				<top>424</top>
+				<width>314</width>
+				<height>86</height>
+				<texture fallback="blank.png">$VAR[VideoLogo]</texture>
+				<aspectratio align="left" aligny="bottom">keep</aspectratio>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>!IsEmpty(ListItem.Title)</visible>
 			</control>
 			<control type="label"><!-- Title -->
 				<left>272</left>
@@ -150,7 +134,7 @@
 				<label>$INFO[ListItem.Label]</label>
 				<wrapmultiline>true</wrapmultiline>
 				<textoffsetx>0</textoffsetx>
-				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + [IsEmpty(ListItem.Title) | Skin.HasSetting(hide-chrome)]</visible>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7216),blank.png,Left)</visible>
 				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 			</control>
 			<control type="label"><!-- Go Back -->

@@ -25,32 +25,18 @@
 			<include>background-fade</include>
 		</control>
 		<control type="group">
-			<control type="group"><!-- Show logo -->
+			<control type="group">
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-				<control type="group">
-					<visible>!Skin.HasSetting(hide-chrome)</visible>
-					<control type="image" id="7018"><!-- Show logo -->
-						<left>530</left>
-						<top>12</top>
-						<width>266</width>
-						<height>74</height>
-						<texture fallback="blank.png">$VAR[VideoLogo]</texture>
-						<align>center</align>
-						<aligny>bottom</aligny>
-						<aspectratio align="left">keep</aspectratio>
-						<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-					</control>
-					<control type="label"><!-- Title -->
-						<left>530</left>
-						<top>39</top>
-						<width>732</width>
-						<height>40</height>
-						<font>font22</font>
-						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<label>$INFO[ListItem.Label]</label>
-						<textoffsetx>0</textoffsetx>
-						<visible>SubString(Control.GetLabel(7018),blank.png,Left)</visible>
-					</control>
+				<control type="image" id="7018"><!-- Show logo -->
+					<left>530</left>
+					<top>12</top>
+					<width>266</width>
+					<height>74</height>
+					<texture fallback="blank.png">$VAR[VideoLogo]</texture>
+					<align>center</align>
+					<aligny>bottom</aligny>
+					<aspectratio align="left">keep</aspectratio>
+					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
 				</control>
 				<control type="label"><!-- Title -->
 					<left>530</left>
@@ -61,7 +47,7 @@
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>
-					<visible>Skin.HasSetting(hide-chrome)</visible>
+					<visible>SubString(Control.GetLabel(7018),blank.png,Left)</visible>
 				</control>
 			</control>
 			<control type="label">

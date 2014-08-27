@@ -341,46 +341,29 @@
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
 			<include>SortLetterNotification</include>
-			<control type="group">
-				<visible>!Skin.HasSetting(hide-chrome) + !IsEmpty(ListItem.Title)</visible>
-				<control type="image" id="7018"><!-- Show logo -->
-					<left>564</left>
-					<top>612</top>
-					<width>234</width>
-					<height>64</height>
-					<texture fallback="blank.png">$VAR[VideoLogo]</texture>
-					<align>center</align>
-					<aligny>bottom</aligny>
-					<aspectratio align="left">keep</aspectratio>
-					<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
-				</control>
-				<control type="label"><!-- Title -->
-					<left>220</left>
-					<top>626</top>
-					<width>832</width>
-					<height>37</height>
-					<font>font22</font>
-					<align>center</align>
-					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<label>$INFO[ListItem.Label]</label>
-					<textoffsetx>0</textoffsetx>
-					<visible>SubString(Control.GetLabel(7018),blank.png,Left)</visible>
-				</control>
+			<control type="image" id="7018"><!-- Show logo -->
+				<left>564</left>
+				<top>612</top>
+				<width>234</width>
+				<height>64</height>
+				<texture fallback="blank.png">$VAR[VideoLogo]</texture>
+				<align>center</align>
+				<aligny>bottom</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<animation effect="fade" delay="100" start="0" end="100" time="200">Visible</animation>
+				<visible>!IsEmpty(ListItem.Title)</visible>
 			</control>
-			<control type="group">
-				<visible>Skin.HasSetting(hide-chrome)</visible>
-				<control type="label"><!-- Title -->
-					<left>220</left>
-					<top>626</top>
-					<width>832</width>
-					<height>37</height>
-					<font>font22</font>
-					<align>center</align>
-					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-					<label>$INFO[ListItem.Label]</label>
-					<textoffsetx>0</textoffsetx>
-					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-				</control>
+			<control type="label"><!-- Title -->
+				<left>220</left>
+				<top>626</top>
+				<width>832</width>
+				<height>37</height>
+				<font>font22</font>
+				<align>center</align>
+				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+				<label>$INFO[ListItem.Label]</label>
+				<textoffsetx>0</textoffsetx>
+				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + SubString(Control.GetLabel(7018),blank.png,Left)</visible>
 			</control>
 			<control type="label"><!-- Go Back -->
 				<left>220</left>

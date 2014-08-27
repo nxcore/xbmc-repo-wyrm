@@ -16,11 +16,11 @@
 				<visible>!IsEmpty(Skin.String(custom-background))</visible>
 			</control>
 			<control type="label" id="1"><!-- Screen heading -->
-				<left>35</left>
-				<top>37</top>
-				<width>1203</width>
-				<height>37</height>
-				<font>font28</font>
+				<left>34</left>
+				<top>36</top>
+				<width>1204</width>
+				<height>38</height>
+				<font>font22</font>
 				<align>center</align>
 			</control>
 			<control type="textbox" id="5"><!-- Text area -->

@@ -712,7 +712,7 @@
 					<height>44</height>
 					<width>210</width>
 					<label>$INFO[ListItem.Label]</label>
-					<font>font11</font>
+					<font>font10</font>
 					<align>center</align>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<animation effect="fade" time="100" delay="300">Focus</animation>
@@ -873,7 +873,7 @@
 						<label>$INFO[ListItem.Label2]</label>
 						<align>center</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<font>font11</font>
+						<font>font10</font>
 					</control>
 					<control type="label">
 						<left>126</left>
@@ -883,7 +883,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<align>center</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-						<font>font11</font>
+						<font>font10</font>
 					</control>
 				</control>
 			</focusedlayout>
@@ -1039,7 +1039,7 @@
 						<height>24</height>
 						<width>210</width>
 						<label>$INFO[ListItem.Label]</label>
-						<font>font11</font>
+						<font>font10</font>
 						<align>center</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -1049,7 +1049,7 @@
 						<height>24</height>
 						<width>210</width>
 						<label>$INFO[ListItem.Label2]</label>
-						<font>font11</font>
+						<font>font10</font>
 						<align>center</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -1147,7 +1147,7 @@
 						<height>24</height>
 						<width>252</width>
 						<label>$INFO[ListItem.Label]</label>
-						<font>font11</font>
+						<font>font10</font>
 						<align>center</align>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					</control>
@@ -1253,11 +1253,11 @@
 			<control type="label">
 				<left>0</left>
 				<top>212</top>
-				<height>36</height>
+				<height>38</height>
 				<width>250</width>
 				<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				<align>center</align>
-				<font>font20</font>
+				<font>font22</font>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -1268,7 +1268,7 @@
 				<align>center</align>
 				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>rss20</font>
+				<font>font10</font>
 			</control>
 		</control>
 		<control type="group">
@@ -1322,7 +1322,7 @@
 				<align>center</align>
 				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>rss20</font>
+				<font>font10</font>
 			</control>
 		</control>
 		<control type="group">
@@ -1376,7 +1376,7 @@
 				<align>center</align>
 				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>rss20</font>
+				<font>font10</font>
 			</control>
 		</control>
 		<control type="group">
@@ -1430,7 +1430,7 @@
 				<align>center</align>
 				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>rss20</font>
+				<font>font10</font>
 			</control>
 		</control>
 		<control type="group">
@@ -1484,7 +1484,7 @@
 				<align>center</align>
 				<wrapmultiline>true</wrapmultiline>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>rss20</font>
+				<font>font10</font>
 			</control>
 		</control>
 	</include>

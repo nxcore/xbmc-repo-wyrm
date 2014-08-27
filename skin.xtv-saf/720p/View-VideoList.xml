@@ -353,7 +353,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) + [!System.IdleTime(20) | [System.IdleTime(20) + !Container.Content(movies)]]</visible>
+			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
 				<control type="group">
 					<animation type="TYPE" condition="Skin.HasSetting(tiltvideolisticon)" reversible="false">
@@ -547,17 +547,14 @@
 						<aspectratio>keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Mpaa)</visible>
 					</control>
-					<control type="group"><!-- Logo -->
-						<visible>!Skin.HasSetting(hide-chrome)</visible>
-						<control type="image">
-							<left>17</left>
-							<top>412</top>
-							<width>184</width>
-							<height>50</height>
-							<texture fallback="blank.png">$VAR[ListViewVideoLogo]</texture>
-							<aligny>bottom</aligny>
-							<aspectratio align="left">keep</aspectratio>
-						</control>
+					<control type="image"><!-- Logo -->
+						<left>17</left>
+						<top>412</top>
+						<width>184</width>
+						<height>50</height>
+						<texture fallback="blank.png">$VAR[ListViewVideoLogo]</texture>
+						<aligny>bottom</aligny>
+						<aspectratio align="left">keep</aspectratio>
 					</control>
 					<control type="textbox"><!-- Plot Outline -->
 						<left>17</left>
@@ -596,6 +593,7 @@
 				<visible>Skin.HasSetting(sbar)</visible>
 			</control>
 		</control>
+		<!-- Remove for the moment, future feature that is still not quite cooked 
 		<control type="group">
 			<visible>Control.IsVisible(50) + System.IdleTime(20) + Container.Content(movies)</visible>
 			<control type="wraplist" id="950">
@@ -651,6 +649,6 @@
 					<animation condition="!Container(950).OnNext" effect="fade" start="100" end="0" time="2500" reversible="false">Conditional</animation>
 				</control>
 			</control>
-		</control>
+		</control>-->
 	</include>
 </includes>

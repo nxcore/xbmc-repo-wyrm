@@ -10,10 +10,10 @@
 		<control type="label"><!-- Settings Label -->
 			<left>946</left>
 			<top>50</top>
-			<width>309</width>
-			<height>37</height>
+			<width>310</width>
+			<height>32</height>
 			<label>$LOCALIZE[24001]</label>
-			<font>font20</font>
+			<font>font18</font>
 		</control>
 		<control type="list" id="999">
 			<viewtype label="31941">List</viewtype>

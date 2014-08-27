@@ -11,10 +11,10 @@
 		<control type="label"><!-- Screen heading -->
 			<left>946</left>
 			<top>50</top>
-			<width>504</width>
-			<height>37</height>
+			<width>310</width>
+			<height>32</height>
 			<label>$LOCALIZE[31035]</label>
-			<font>font20</font>
+			<font>font18</font>
 		</control>
 
 		<!-- Markers for control area items -->

@@ -184,7 +184,7 @@
 					<top>644</top>
 					<width>220</width>
 					<height>26</height>
-					<font>rss20</font>
+					<font>font10</font>
 					<label>[COLOR=disabled-text]($INFO[System.Time])[/COLOR] $INFO[VideoPlayer.Time]</label>
 					<align>right</align>
 				</control>
@@ -193,7 +193,7 @@
 					<top>644</top>
 					<width>220</width>
 					<height>26</height>
-					<font>rss20</font>
+					<font>font10</font>
 					<label>-$INFO[VideoPlayer.TimeRemaining] [COLOR=disabled-text]($INFO[Player.FinishTime])[/COLOR]</label>
 				</control>
 
