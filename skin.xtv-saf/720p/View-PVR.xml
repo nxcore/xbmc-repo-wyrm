@@ -46,7 +46,7 @@
 						<posx>0</posx>
 						<posy>28</posy>
 						<width>1120</width>
-						<height>5</height>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 				</rulerlayout>
@@ -212,7 +212,7 @@
 				<posx>30</posx>
 				<posy>602</posy>
 				<width>1220</width>
-				<height>5</height>
+				<height>6</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox"><!-- Plot -->
@@ -611,7 +611,7 @@
 					<posx>-60</posx>
 					<posy>45</posy>
 					<width>1240</width>
-					<height>5</height>
+					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 			</control>
@@ -975,7 +975,7 @@
 					<posx>0</posx>
 					<posy>45</posy>
 					<width>1100</width>
-					<height>5</height>
+					<height>6</height>
 					<texture>separator.png</texture>
 					<visible>Control.IsVisible(17)</visible>
 				</control>

@@ -27,7 +27,7 @@
 			<posx>315</posx>
 			<posy>80</posy>
 			<width>650</width>
-			<height>5</height>
+			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
 

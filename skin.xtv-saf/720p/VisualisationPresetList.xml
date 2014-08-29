@@ -33,9 +33,9 @@
 		</control>
 		<control type="image">
 			<left>502</left>
-			<top>68</top>
+			<top>66</top>
 			<width>716</width>
-			<height>2</height>
+			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="list" id="2">

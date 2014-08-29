@@ -251,7 +251,7 @@
 				<left>530</left>
 				<top>338</top>
 				<width>696</width>
-				<height>2</height>
+				<height>6</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">

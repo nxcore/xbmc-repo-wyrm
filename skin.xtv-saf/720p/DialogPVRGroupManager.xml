@@ -22,7 +22,7 @@
 					<posx>10</posx>
 					<posy>135</posy>
 					<width>1260</width>
-					<height>5</height>
+					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="group">
