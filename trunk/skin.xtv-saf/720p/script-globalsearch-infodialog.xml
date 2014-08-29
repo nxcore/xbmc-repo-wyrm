@@ -218,9 +218,9 @@
 					</control>
 					<control type="image">
 						<posx>530</posx>
-						<posy>288</posy>
+						<posy>286</posy>
 						<width>696</width>
-						<height>2</height>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="label"><!-- Plot -->
@@ -391,9 +391,9 @@
 					</control>
 					<control type="image">
 						<posx>530</posx>
-						<posy>288</posy>
+						<posy>286</posy>
 						<width>696</width>
-						<height>2</height>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="label"><!-- Plot -->

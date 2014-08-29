@@ -146,9 +146,9 @@
 				</control>
 				<control type="image">
 					<left>0</left>
-					<top>412</top>
+					<top>410</top>
 					<width>600</width>
-					<height>2</height>
+					<height>6</height>
 					<texture>separator.png</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>

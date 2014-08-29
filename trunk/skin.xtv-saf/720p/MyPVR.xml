@@ -80,7 +80,7 @@
 				<control type="image">
 					<visible>!IsEmpty(ListItem.Title)</visible>
 					<width>628</width>
-					<height>5</height>
+					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="textbox"><!-- Plot -->
@@ -94,7 +94,7 @@
 				<control type="image">
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<width>628</width>
-					<height>5</height>
+					<height>6</height>
 					<texture>separator.png</texture>
 				</control>
 			</control>
