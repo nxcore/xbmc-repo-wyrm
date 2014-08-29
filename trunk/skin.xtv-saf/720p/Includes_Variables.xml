@@ -368,6 +368,20 @@
 		<value condition="Container(9210).Position(3)">$INFO[Container(9210).ListItemNoWrap(2).Thumb]</value>
 		<value condition="Container(9210).Position(4)">$INFO[Container(9210).ListItemNoWrap(1).Thumb]</value>
 	</variable>
+	<variable name="TVShowShelfArt0">
+		<value condition="Container(9210).Position(0)">$INFO[Container(9210).ListItemNoWrap(-1).Property(Art)]</value>
+		<value condition="Container(9210).Position(1)">$INFO[Container(9210).ListItemNoWrap(-2).Property(Art)]</value>
+		<value condition="Container(9210).Position(2)">$INFO[Container(9210).ListItemNoWrap(-3).Property(Art)]</value>
+		<value condition="Container(9210).Position(3)">$INFO[Container(9210).ListItemNoWrap(-4).Property(Art)]</value>
+		<value condition="Container(9210).Position(4)">$INFO[Container(9210).ListItemNoWrap(-5).Property(Art)]</value>
+	</variable>
+	<variable name="TVShowShelfArt7">
+		<value condition="Container(9210).Position(0)">$INFO[Container(9210).ListItemNoWrap(5).Property(Art)]</value>
+		<value condition="Container(9210).Position(1)">$INFO[Container(9210).ListItemNoWrap(4).Property(Art)]</value>
+		<value condition="Container(9210).Position(2)">$INFO[Container(9210).ListItemNoWrap(3).Property(Art)]</value>
+		<value condition="Container(9210).Position(3)">$INFO[Container(9210).ListItemNoWrap(2).Property(Art)]</value>
+		<value condition="Container(9210).Position(4)">$INFO[Container(9210).ListItemNoWrap(1).Property(Art)]</value>
+	</variable>
 	<variable name="MusicShelfIcon0">
 		<value condition="Container(9260).Position(0)">$INFO[Container(9260).ListItemNoWrap(-1).Thumb]</value>
 		<value condition="Container(9260).Position(1)">$INFO[Container(9260).ListItemNoWrap(-2).Thumb]</value>
