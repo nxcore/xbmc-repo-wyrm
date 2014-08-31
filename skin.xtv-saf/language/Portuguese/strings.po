@@ -152,10 +152,6 @@ msgctxt "#31570"
 msgid "Mac OS X"
 msgstr "MAC OS X"
 
-msgctxt "#31572"
-msgid "Warning Memory Low:"
-msgstr "Aviso de pouca memória:"
-
 msgctxt "#31573"
 msgid "AppleTV"
 msgstr "AppleTV"

@@ -124,7 +124,7 @@
 			<width>700</width>
 			<height>50</height>
 			<font>font12</font>
-			<radioleft>680</radioleft>
+			<radioposx>680</radioposx>
 		</control>
 		<control type="image" id="11">
 			<width>619</width>
