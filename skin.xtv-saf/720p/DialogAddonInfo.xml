@@ -186,8 +186,8 @@
 				<top>370</top>
 				<width>305</width>
 				<height>310</height>
-				<onright condition="Control.IsVisible(60)">60</onright>
-				<onright condition="!Control.IsVisible(60) + Control.IsVisible(61)">61</onright>
+				<onright condition="!IsEmpty(ListItem.Property(Addon.Disclaimer))">60</onright>
+				<onright condition="IsEmpty(ListItem.Property(Addon.Disclaimer))">61</onright>
 				<itemgap>2</itemgap>
 				<control type="button" id ="6"><!-- Enable Addon button -->
 					<width>305</width>
