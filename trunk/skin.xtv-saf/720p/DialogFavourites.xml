@@ -72,21 +72,13 @@
 		</control>
 		<control type="group">
 			<control type="image"><!-- List item icon -->
-				<left>35</left>
-				<top>156</top>
-				<width>610</width>
-				<height>431</height>
+				<left>162</left>
+				<top>112</top>
+				<width>384</width>
+				<height>384</height>
 				<texture fallback="shut-fav.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio scalediffuse="false">keep</aspectratio>
 			</control>
-		</control>
-		<control type="label" id="12"><!-- Number of files (show if vertical home menu) -->
-			<left>1062</left>
-			<top>682</top>
-			<width>203</width>
-			<height>37</height>
-			<label>$INFO[Container(450).NumItems] $LOCALIZE[127]</label>
-			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 		<control type="scrollbar" id="423">
 			<left>1244</left>

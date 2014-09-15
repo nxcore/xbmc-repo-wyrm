@@ -205,13 +205,13 @@
 					<visible>!IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				</item>
 				<item>
-					<thumb>DefaultTvshows.png</thumb>
+					<thumb>DefaultTVShows.png</thumb>
 					<label>$LOCALIZE[19020]</label>
 					<onclick>$VAR[PVRLibEntry]</onclick>
 					<visible>System.GetBool(pvrmanager.enabled)</visible>
 				</item>
 				<item>
-					<thumb>DefaultTvshows.png</thumb>
+					<thumb>DefaultTVShows.png</thumb>
 					<label>$LOCALIZE[31027]</label>
 					<onclick>$VAR[TVLibEntry]</onclick>
 					<visible>!Skin.HasSetting(home-tv)</visible>
@@ -337,7 +337,7 @@
 					<visible>Skin.HasSetting(home-weather) + !IsEmpty(Weather.plugin)</visible>
 				</item>
 				<item>
-					<thumb>icon-fav.png</thumb>
+					<thumb>shut-fav.png</thumb>
 					<label>$LOCALIZE[31652]</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<visible>Skin.HasSetting(home-favorites)</visible>

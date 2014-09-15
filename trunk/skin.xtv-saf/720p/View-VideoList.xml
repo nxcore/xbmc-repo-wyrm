@@ -509,7 +509,7 @@
 				<control type="group">
 					<visible>!IsEmpty(ListItem.Title)</visible>
 					<control type="image"><!-- Star Rating -->
-						<left>-15</left>
+						<left>-10</left>
 						<top>268</top>
 						<width>177</width>
 						<height>25</height>

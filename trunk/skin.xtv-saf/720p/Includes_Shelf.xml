@@ -678,15 +678,15 @@
 					<width>150</width>
 					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture diffuse="mask-rect.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture diffuse="mask-rect.png" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
 					<left>28</left>
-					<top>205</top>
+					<top>195</top>
 					<width>150</width>
 					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultMovies.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture flipy="true" diffuse="mask-fade.png" fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout height="245" width="210">
@@ -696,15 +696,15 @@
 					<width>150</width>
 					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture fallback="DefaultMovies.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="DefaultVideo.png" diffuse="mask-rect.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
 					<left>28</left>
-					<top>205</top>
+					<top>195</top>
 					<width>150</width>
 					<height>194</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture fallback="DefaultMovies.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="DefaultVideo.png" flipy="true" diffuse="mask-fade.png" background="true">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="label">
 					<left>105</left>
@@ -765,11 +765,10 @@
 		</control>
 		<control type="image">
 			<left>10</left>
-			<top>206</top>
+			<top>196</top>
 			<width>232</width>
 			<height>42</height>
-			<aligny>bottom</aligny>
-			<aspectratio scalediffuse="true">keep</aspectratio>
+			<aspectratio>keep</aspectratio>
 			<texture diffuse="mask-fade.png" flipy="true" background="true">$INFO[ListItem.Thumb]</texture>
 		</control>
 	</include>
@@ -784,7 +783,7 @@
 		</control>
 		<control type="image">
 			<left>52</left>
-			<top>204</top>
+			<top>196</top>
 			<width>150</width>
 			<height>194</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
