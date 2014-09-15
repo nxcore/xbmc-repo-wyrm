@@ -47,7 +47,7 @@
 					<top>2</top>
 					<height>52</height>
 					<width>52</width>
-					<texture fallback="DefaultScript.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultFile.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
@@ -67,7 +67,7 @@
 					<top>2</top>
 					<height>52</height>
 					<width>52</width>
-					<texture fallback="DefaultScript.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultFile.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
@@ -131,7 +131,7 @@
 					<top>2</top>
 					<height>52</height>
 					<width>52</width>
-					<texture fallback="DefaultScript.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultFile.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
@@ -151,7 +151,7 @@
 					<top>2</top>
 					<height>52</height>
 					<width>52</width>
-					<texture fallback="DefaultScript.png">$INFO[ListItem.Icon]</texture>
+					<texture fallback="DefaultFile.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
@@ -197,7 +197,7 @@
 				<top>190</top>
 				<height>256</height>
 				<width>256</width>
-				<texture fallback="DefaultScript.png">$INFO[Container(6).ListItem.Icon]</texture>
+				<texture fallback="DefaultFile.png">$INFO[Container(6).ListItem.Icon]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
 			</control>
 			<control type="label">

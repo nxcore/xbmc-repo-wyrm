@@ -95,14 +95,14 @@
 						<top>55</top>
 						<width>160</width>
 						<height>160</height>
-						<texture>DefaultMusicAlbums.png</texture>
+						<texture>DefaultAudio.png</texture>
 					</control>
 					<control type="image">
 						<left>560</left>
 						<top>215</top>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">DefaultMusicAlbums.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">DefaultAudio.png</texture>
 					</control>
 				</control>
 				<control type="group">

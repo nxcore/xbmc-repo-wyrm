@@ -57,13 +57,13 @@
 					<visible>System.HasAddon(script.videoextras)</visible>
 				</control>
 			</itemlayout>
-			<itemlayout height="169" width="120" condition="Container.Content(addons)">
+			<itemlayout height="120" width="120" condition="Container.Content(addons)">
 				<control type="image">
 					<left>1</left>
 					<top>1</top>
 					<width>119</width>
-					<height>169</height>
-					<aspectratio>stretch</aspectratio>
+					<height>119</height>
+					<aspectratio>keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -72,8 +72,8 @@
 					<left>1</left>
 					<top>1</top>
 					<width>119</width>
-					<height>169</height>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<height>119</height>
+					<aspectratio scalediffuse="false">keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 					<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
@@ -129,15 +129,15 @@
 					</control>
 				</control>
 			</focusedlayout>
-			<focusedlayout height="169" width="120" condition="Container.Content(addons)">
+			<focusedlayout height="120" width="120" condition="Container.Content(addons)">
 				<control type="group">
 					<animation effect="zoom" start="90" end="140" center="auto" time="400" tween="back" easing="out" reversible="false">focus</animation>
 					<control type="image">
 						<left>1</left>
 						<top>1</top>
 						<width>119</width>
-						<height>169</height>
-						<aspectratio>stretch</aspectratio>
+						<height>119</height>
+						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>
@@ -145,7 +145,7 @@
 						<left>0</left>
 						<top>0</top>
 						<width>120</width>
-						<height>169</height>
+						<height>120</height>
 						<texture>mask-hilite.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<animation effect="fade" start="0" end="100" time="300" delay="300">Visible</animation>
@@ -153,11 +153,11 @@
 						<visible>![Container().OnScrollNext | Container().OnScrollPrevious] + !SubString(ListItem.Icon,Default,Left)</visible>
 					</control>
 					<control type="image">
-						<left>9</left>
-						<top>12</top>
-						<width>101</width>
-						<height>144</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<left>5</left>
+						<top>5</top>
+						<width>110</width>
+						<height>110</height>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 						<texture fallback="DefaultAddon.png" diffuse="mask-rect.png" background="true">$VAR[IconPoster]</texture>
 						<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 					</control>

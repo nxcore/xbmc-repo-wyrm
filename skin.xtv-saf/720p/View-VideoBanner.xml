@@ -12,9 +12,9 @@
 			<ondown>59</ondown>
 			<onleft>9000</onleft>
 			<onright>29</onright>
-			<itemlayout width="556" height="100">
+			<itemlayout width="558" height="100">
 				<control type="image"><!-- Background shadow for unselected IconBanner image -->
-					<left>7</left>
+					<left>8</left>
 					<top>0</top>
 					<width>542</width>
 					<height>100</height>
@@ -23,7 +23,7 @@
 					<colordiffuse>UnFocusedPosters</colordiffuse>
 				</control>
 				<control type="image"><!-- Banner image -->
-					<left>7</left>
+					<left>8</left>
 					<top>0</top>
 					<width>542</width>
 					<height>100</height>
@@ -33,7 +33,7 @@
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="image"><!-- Go Back image -->
-					<left>7</left>
+					<left>8</left>
 					<top>0</top>
 					<width>542</width>
 					<height>100</height>
@@ -43,17 +43,17 @@
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 			</itemlayout>
-			<focusedlayout width="556" height="114">
+			<focusedlayout width="558" height="116">
 				<control type="image"><!-- Item hi-lite -->
 					<left>0</left>
 					<top>0</top>
-					<width>556</width>
-					<height>114</height>
-					<texture border="7" background="true">button-menu-background.png</texture>
+					<width>558</width>
+					<height>116</height>
+					<texture border="8" background="true">button-menu-background.png</texture>
 				</control>
 				<control type="image"><!-- Go Back image -->
-					<left>7</left>
-					<top>7</top>
+					<left>8</left>
+					<top>8</top>
 					<width>542</width>
 					<height>100</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -61,8 +61,8 @@
 					<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>
 				<control type="image"><!-- Banner image -->
-					<left>7</left>
-					<top>7</top>
+					<left>8</left>
+					<top>8</top>
 					<width>542</width>
 					<height>100</height>
 					<texture background="true">$VAR[IconBanner]</texture>
