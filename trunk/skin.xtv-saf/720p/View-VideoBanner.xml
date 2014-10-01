@@ -148,7 +148,7 @@
 					<left>0</left>
 					<top>410</top>
 					<width>600</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 					<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 				</control>

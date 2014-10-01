@@ -18,7 +18,7 @@
 			<left>346</left>
 			<top>385</top>
 			<width>590</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 			<animation effect="rotate" center="auto" end="-90" time="0" condition="true">Conditional</animation>
@@ -27,7 +27,7 @@
 			<left>0</left>
 			<top>90</top>
 			<width>1280</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
@@ -35,7 +35,7 @@
 			<left>0</left>
 			<top>130</top>
 			<width>1280</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
@@ -43,7 +43,7 @@
 			<left>0</left>
 			<top>640</top>
 			<width>1280</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>
@@ -51,7 +51,7 @@
 			<left>0</left>
 			<top>680</top>
 			<width>1280</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 		</control>

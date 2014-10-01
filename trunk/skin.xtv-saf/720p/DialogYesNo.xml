@@ -26,7 +26,7 @@
 			<left>315</left>
 			<top>290</top>
 			<width>650</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="textbox" id="9"><!-- Dialog info prompt -->

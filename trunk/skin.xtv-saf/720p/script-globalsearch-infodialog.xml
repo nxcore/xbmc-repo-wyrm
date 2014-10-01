@@ -220,7 +220,7 @@
 						<posx>530</posx>
 						<posy>286</posy>
 						<width>696</width>
-						<height>6</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="label"><!-- Plot -->
@@ -393,7 +393,7 @@
 						<posx>530</posx>
 						<posy>286</posy>
 						<width>696</width>
-						<height>6</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="label"><!-- Plot -->

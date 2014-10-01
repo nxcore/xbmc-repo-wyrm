@@ -28,7 +28,7 @@
 			<left>86</left>
 			<top>167</top>
 			<width>1080</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="list" id="450">

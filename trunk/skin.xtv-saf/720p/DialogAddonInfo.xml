@@ -114,7 +114,7 @@
 					<left>0</left>
 					<top>200</top>
 					<width>778</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="label"><!-- Description heading -->

@@ -16,20 +16,29 @@
 			<wrapmultiline>true</wrapmultiline>
 			<aligny>top</aligny>
 		</control>
+		<control type="image"><!-- CD case -->
+			<left>138</left>
+			<top>38</top>
+			<width>386</width>
+			<height>386</height>
+			<texture>case-cd.png</texture>
+			<aspectratio>keep</aspectratio>
+			<visible>Skin.HasSetting(CDcase) + [Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
+		</control>
 		<control type="image"><!-- Album cover -->
 			<left>183</left>
 			<top>70</top>
 			<width>320</width>
 			<height>320</height>
-			<texture>$INFO[ListItem.Icon]</texture>
-			<aspectratio>keep</aspectratio>
+			<texture diffuse="mask-squ.png" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+			<aspectratio>stretch</aspectratio>
 			<align>center</align>
 		</control>
 		<control type="image">
 			<left>60</left>
 			<top>406</top>
 			<width>566</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="label"><!-- Album title -->
@@ -139,7 +148,7 @@
 			<left>60</left>
 			<top>608</top>
 			<width>566</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="textbox">

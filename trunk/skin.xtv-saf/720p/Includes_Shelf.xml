@@ -720,8 +720,8 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecent</include>
-				<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])]">MovieRecommended</include>
+				<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31954])">MovieRecent</include>
+				<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31955])">MovieRecommended</include>
 			</content>
 		</control>
 		<control type="group">
@@ -969,9 +969,9 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecent</include>
-				<include condition="System.HasAddon(script.tv.show.next.aired) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeNextAired</include>
-				<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])]">EpisodeRecommended</include>
+				<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31954])">EpisodeRecent</include>
+				<include condition="System.HasAddon(script.tv.show.next.aired) + StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31956])">EpisodeNextAired</include>
+				<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31955])">EpisodeRecommended</include>
 			</content>
 		</control>
 		<control type="group">
@@ -1137,8 +1137,8 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecent</include>
-				<include condition="System.HasAddon(service.skin.widgets) + [StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])]">AlbumRecommended</include>
+				<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31954])">AlbumRecent</include>
+				<include condition="System.HasAddon(service.skin.widgets) + StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31955])">AlbumRecommended</include>
 			</content>
 		</control>
 		<control type="group">

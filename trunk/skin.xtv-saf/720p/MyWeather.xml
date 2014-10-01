@@ -75,7 +75,7 @@
 		<control type="label"><!-- Weather heading label -->
 			<left>946</left>
 			<top>50</top>
-			<width>310</width>
+			<width>314</width>
 			<height>32</height>
 			<label>$LOCALIZE[31032]</label>
 			<font>font18</font>

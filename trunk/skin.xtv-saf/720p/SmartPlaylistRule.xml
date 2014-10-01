@@ -27,7 +27,7 @@
 				<left>212</left>
 				<top>263</top>
 				<width>840</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="label"><!-- Rule heading -->

@@ -128,7 +128,7 @@
 		</control>
 		<control type="image" id="11">
 			<width>619</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="button" id="6"><!-- Settings -->

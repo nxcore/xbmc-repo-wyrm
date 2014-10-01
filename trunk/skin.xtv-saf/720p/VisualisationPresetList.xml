@@ -35,7 +35,7 @@
 			<left>502</left>
 			<top>66</top>
 			<width>716</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="list" id="2">

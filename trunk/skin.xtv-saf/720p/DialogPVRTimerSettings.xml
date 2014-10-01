@@ -27,7 +27,7 @@
 			<posx>315</posx>
 			<posy>80</posy>
 			<width>650</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 
@@ -89,7 +89,7 @@
 			<height>46</height>
 		</control>
 		<control type="image" id="11">
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="edit" id="12"><!-- Default edit -->

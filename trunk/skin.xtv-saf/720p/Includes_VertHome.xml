@@ -360,7 +360,7 @@
 					<onclick>ActivateWindow(Settings,,return)</onclick>
 				</item>
 				<item>
-					<thumb>DefaultDVDEmpty.png</thumb>
+					<thumb>DefaultDVDRom.png</thumb>
 					<label>$LOCALIZE[31036]</label>
 					<onclick>PlayDVD</onclick>
 					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>

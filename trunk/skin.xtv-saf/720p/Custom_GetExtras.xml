@@ -39,7 +39,7 @@
 					<left>25</left>
 					<top>48</top>
 					<width>554</width>
-					<height>5</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="999">

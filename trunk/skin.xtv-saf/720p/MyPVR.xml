@@ -9,7 +9,7 @@
 		<control type="label"><!-- Screen heading -->
 			<left>946</left>
 			<top>50</top>
-			<width>310</width>
+			<width>314</width>
 			<height>32</height>
 			<font>font18</font>
 			<label>$VAR[PVRHeading]</label>
@@ -80,7 +80,7 @@
 				<control type="image">
 					<visible>!IsEmpty(ListItem.Title)</visible>
 					<width>628</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="textbox"><!-- Plot -->
@@ -94,7 +94,7 @@
 				<control type="image">
 					<visible>!IsEmpty(ListItem.Plot)</visible>
 					<width>628</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 			</control>

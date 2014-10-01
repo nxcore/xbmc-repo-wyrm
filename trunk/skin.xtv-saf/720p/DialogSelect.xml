@@ -96,7 +96,7 @@
 				<left>170</left>
 				<top>106</top>
 				<width>996</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="scrollbar" id="23">
@@ -180,7 +180,7 @@
 				<left>162</left>
 				<top>106</top>
 				<width>996</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="scrollbar" id="26">

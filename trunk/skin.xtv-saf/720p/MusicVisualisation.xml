@@ -88,7 +88,7 @@
 				<height>215</height>
 				<left>132</left>
 				<top>480</top>
-				<texture fallback="DefaultDVDEmpty.png">$INFO[Player.FolderPath]/cdart.png</texture>
+				<texture fallback="DefaultDVDRom.png">$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<visible>!SubString(Player.Art(thumb),Default,Left)</visible>
 			</control>
