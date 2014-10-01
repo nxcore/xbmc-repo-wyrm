@@ -71,7 +71,7 @@
 			<textoffsetx>20</textoffsetx>
 		</control>
 		<control type="image" id="11"><!-- Default seperator -->
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="button" id="28"><!-- OK -->

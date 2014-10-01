@@ -510,19 +510,28 @@
 				</control>
 			</focusedlayout>
 		</control>
+		<control type="image"><!-- CD case -->
+			<left>128</left>
+			<top>28</top>
+			<width>384</width>
+			<height>384</height>
+			<texture>case-cd.png</texture>
+			<aspectratio>keep</aspectratio>
+			<visible>Skin.HasSetting(CDcase) + [Container.Content(songs) | Container.Content(albums)] + !SubString(ListItem.Icon,Default,Left)</visible>
+		</control>
 		<control type="image"><!-- Album cover -->
 			<left>172</left>
-			<top>62</top>
+			<top>60</top>
 			<width>320</width>
 			<height>320</height>
-			<texture>$INFO[ListItem.Thumb]</texture>
-			<aspectratio>keep</aspectratio>
+			<texture diffuse="mask-squ.png" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
+			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image">
 			<left>49</left>
 			<top>425</top>
 			<width>566</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="grouplist" id="999"><!-- Buttons -->

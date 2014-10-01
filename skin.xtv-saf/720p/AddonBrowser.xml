@@ -10,13 +10,13 @@
 		<control type="grouplist">
 			<left>946</left>
 			<top>35</top>
-			<width>365</width>
+			<width>auto</width>
 			<height>72</height>
 			<align>left</align>
 			<aligny>bottom</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Addons heading -->
-				<width min="40" max="275">auto</width>
+				<width max="256">auto</width>
 				<height>72</height>
 				<label>$LOCALIZE[24001]</label>
 				<font>font18</font>
@@ -24,9 +24,9 @@
 				<aligny>top</aligny>
 			</control>
 			<control type="label"><!-- Number of file -->
-				<width min="40" max="90">auto</width>
+				<width max="80">auto</width>
 				<height>50</height>
-				<label>$INFO[Container.NumItems, (,)]</label>
+				<label>$INFO[Container.NumItems,(,)]</label>
 				<aligny>top</aligny>
 			</control>
 		</control>

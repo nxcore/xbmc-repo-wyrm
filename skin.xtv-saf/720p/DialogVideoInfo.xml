@@ -251,7 +251,7 @@
 				<left>530</left>
 				<top>338</top>
 				<width>696</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox">
@@ -328,11 +328,11 @@
 					<visible>Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 				</control>
 			<control type="image"><!-- Star Rating -->
-				<left>150</left>
+				<left>158</left>
 				<top>548</top>
 				<width>215</width>
 				<height>27</height>
-				<texture>$VAR[MediaRating]</texture>
+				<texture>$VAR[MediaRatingCentered]</texture>
 				<colordiffuse>StarDiffuse</colordiffuse>
 				<visible>!IsEmpty(ListItem.StarRating) + !substring(Control.GetLabel(5),$LOCALIZE[207])</visible>
 			</control>

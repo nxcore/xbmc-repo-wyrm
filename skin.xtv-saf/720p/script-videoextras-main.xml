@@ -13,13 +13,13 @@
 		<control type="grouplist">
 			<left>946</left>
 			<top>35</top>
-			<width>334</width>
+			<width>auto</width>
 			<height>72</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Video screen heading -->
-				<width>auto</width>
+				<width max="256">auto</width>
 				<height>72</height>
 				<label>$ADDON[script.videoextras 32001]</label>
 				<font>font18</font>
@@ -27,7 +27,7 @@
 				<aligny>top</aligny>
 			</control>
 			<control type="label"><!-- Number of files -->
-				<width>90</width>
+				<width max="80">auto</width>
 				<height>72</height>
 				<label>$INFO[Container.NumItems,(,)]</label>
 				<aligny>top</aligny>

@@ -64,7 +64,7 @@
 				<left>290</left>
 				<top>488</top>
 				<width>960</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="textbox"><!-- Plot (Show if available)-->

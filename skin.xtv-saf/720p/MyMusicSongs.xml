@@ -11,13 +11,13 @@
 		<control type="grouplist">
 			<left>946</left>
 			<top>50</top>
-			<width>360</width>
+			<width>auto</width>
 			<height>72</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Music screen headings -->
-				<width min="40" max="250">auto</width>
+				<width max="256">auto</width>
 				<height>72</height>
 				<label>$VAR[MusicHeadings]</label>
 				<font>font18</font>
@@ -26,7 +26,7 @@
 			</control>
 			<control type="label"><!-- Number of files -->
 				<top>13</top>
-				<width min="40" max="110">auto</width>
+				<width max="80">auto</width>
 				<height>38</height>
 				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>

@@ -27,7 +27,7 @@
 			<left>211</left>
 			<top>235</top>
 			<width>848</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="label"><!-- Path heading -->

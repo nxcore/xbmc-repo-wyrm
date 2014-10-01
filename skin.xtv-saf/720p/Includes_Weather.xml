@@ -173,7 +173,7 @@
 					<left>0</left>
 					<top>410</top>
 					<width>656</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="label"><!-- Current feels like heading -->
@@ -260,7 +260,7 @@
 						<left>34</left>
 						<top>0</top>
 						<width>532</width>
-						<height>5</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="label"><!-- Day label -->
@@ -316,7 +316,7 @@
 						<left>34</left>
 						<top>136</top>
 						<width>532</width>
-						<height>6</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>
@@ -376,7 +376,7 @@
 						<left>34</left>
 						<top>136</top>
 						<width>532</width>
-						<height>6</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>
@@ -436,7 +436,7 @@
 						<left>34</left>
 						<top>136</top>
 						<width>532</width>
-						<height>6</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>
@@ -496,7 +496,7 @@
 						<left>34</left>
 						<top>136</top>
 						<width>532</width>
-						<height>6</height>
+						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>

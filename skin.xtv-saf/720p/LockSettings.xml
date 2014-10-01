@@ -26,7 +26,7 @@
 				<left>115</left>
 				<top>156</top>
 				<width>1000</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="grouplist" id="5"><!-- Control area -->

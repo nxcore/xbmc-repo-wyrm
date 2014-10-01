@@ -39,7 +39,8 @@
 			<control type="group" id="9155"><!-- Movie icons -->
 				<visible>Control.HasFocus(9150) | Control.HasFocus(9160)</visible>
 				<control type="group">
-					<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953]) | !System.HasAddon(service.skin.widgets)</visible>
+					<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953]) | !IntegerGreaterThan(Container(9160).NumItems,0)</visible>
+					<!--<visible>StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953]) | !System.HasAddon(service.skin.widgets) | StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[593])</visible>-->
 					<control type="image">
 						<left>560</left>
 						<top>55</top>
@@ -56,7 +57,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
+					<visible>!StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])</visible>
 					<include>movie-shelficons</include>
 				</control>
 			</control>
@@ -64,7 +65,8 @@
 			<control type="group" id="9205"><!-- TV Shows icons -->
 				<visible>Control.HasFocus(9200) | Control.HasFocus(9210)</visible>
 				<control type="group">
-					<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953]) | !System.HasAddon(service.skin.widgets)</visible>
+					<visible>StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953]) | !IntegerGreaterThan(Container(9210).NumItems,0)</visible>
+					<!--<visible>!System.HasAddon(service.skin.widgets) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953]) | StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[593])</visible>-->
 					<control type="image">
 						<left>560</left>
 						<top>55</top>
@@ -81,7 +83,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
+					<visible>!StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])</visible>
 					<include>tvshow-shelficons</include>
 				</control>
 			</control>
@@ -89,7 +91,8 @@
 			<control type="group" id="9255"><!-- Music icons -->
 				<visible>Control.HasFocus(9250) | Control.HasFocus(9260)</visible>
 				<control type="group">
-					<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953]) | !System.HasAddon(service.skin.widgets)</visible>
+					<visible>StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953]) | !IntegerGreaterThan(Container(9260).NumItems,0)</visible>
+					<!--<visible>!System.HasAddon(service.skin.widgets) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953]) | StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[593])</visible>-->
 					<control type="image">
 						<left>560</left>
 						<top>55</top>
@@ -106,15 +109,16 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
+					<visible>!StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])</visible>
 					<include>music-shelficons</include>
 				</control>
 			</control>
 
-			<control type="group" id="9355"><!-- Music icons -->
+			<control type="group" id="9355"><!-- Addon icons -->
 				<visible>Control.HasFocus(9350) | Control.HasFocus(9360)</visible>
 				<control type="group">
-					<visible>!StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31652])</visible>
+					<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31953]) | !IntegerGreaterThan(Container(9360).NumItems,0)</visible>
+					<!--<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31652])</visible>-->
 					<control type="image">
 						<left>560</left>
 						<top>55</top>
@@ -131,7 +135,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31652])</visible>
+					<visible>!StringCompare(Skin.String(shelf-addonimages),$LOCALIZE[31953])</visible>
 					<include>addons-shelficons</include>
 				</control>
 			</control>
@@ -193,14 +197,14 @@
 				<left>0</left>
 				<top>290</top>
 				<width>1280</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<top>360</top>
 				<width>1280</width>
-				<height>6</height>
+				<height>4</height>
 				<texture>separator.png</texture>
 			</control>
 		</control>

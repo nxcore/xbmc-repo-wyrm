@@ -28,12 +28,12 @@
 	<include file="View-PhotoWall.xml" />
 	<include file="View-PhotoWrap.xml" />
 	<include file="View-PVR.xml" />
-	<include file="View-VideoBanner.xml" />
-	<include file="View-VideoCoverflow.xml" />
-	<include file="View-VideoIcon.xml" />
 	<include file="View-VideoList.xml" />
-	<include file="View-VideoWall.xml" />
+	<include file="View-VideoIcon.xml" />
+	<include file="View-VideoBanner.xml" />
 	<include file="View-VideoWrap.xml" />
+	<include file="View-VideoWall.xml" />
+	<include file="View-VideoCoverflow.xml" />
 
 	<include name="fullscreenimage"><!-- Postion and size of fullscreen image -->
 			<left>0</left>

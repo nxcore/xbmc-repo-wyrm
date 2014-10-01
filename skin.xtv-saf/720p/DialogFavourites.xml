@@ -9,13 +9,13 @@
 		<control type="grouplist">
 			<left>946</left>
 			<top>35</top>
-			<width>365</width>
+			<width>auto</width>
 			<height>72</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Favorites heading -->
-				<width min="40" max="275">auto</width>
+				<width max="256">auto</width>
 				<height>72</height>
 				<label>$LOCALIZE[1036]</label>
 				<font>font18</font>
@@ -24,7 +24,7 @@
 			</control>
 			<control type="label"><!-- Number of files -->
 				<top>13</top>
-				<width min="40" max="90">auto</width>
+				<width max="80">auto</width>
 				<height>38</height>
 				<label>$INFO[Container(450).NumItems,(,)]</label>
 			</control>

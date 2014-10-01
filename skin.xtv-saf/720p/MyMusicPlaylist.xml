@@ -8,7 +8,7 @@
 		<control type="label"><!-- Screen heading -->
 			<left>946</left>
 			<top>25</top>
-			<width>310</width>
+			<width>314</width>
 			<height>50</height>
 			<label>$LOCALIZE[10517]</label>
 			<font>font18</font>

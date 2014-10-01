@@ -39,7 +39,7 @@
 					<left>454</left>
 					<top>68</top>
 					<width>389</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="541"><!-- Music library entry point -->
@@ -189,7 +189,7 @@
 					<left>454</left>
 					<top>198</top>
 					<width>389</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="551"><!-- PVR entry point -->
@@ -291,7 +291,7 @@
 					<left>454</left>
 					<top>198</top>
 					<width>389</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="561"><!-- Movie library entry point -->
@@ -417,7 +417,7 @@
 					<left>454</left>
 					<top>198</top>
 					<width>389</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="571"><!-- TVShow library entry point -->
@@ -537,7 +537,7 @@
 					<left>454</left>
 					<top>198</top>
 					<width>389</width>
-					<height>6</height>
+					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
 				<control type="list" id="581"><!-- Music video library entry point -->

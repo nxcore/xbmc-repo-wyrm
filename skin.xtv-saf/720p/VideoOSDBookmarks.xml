@@ -27,7 +27,7 @@
 			<left>61</left>
 			<top>62</top>
 			<width>743</width>
-			<height>6</height>
+			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="panel" id="11">

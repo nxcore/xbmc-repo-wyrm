@@ -11,22 +11,22 @@
 		<control type="grouplist">
 			<left>946</left>
 			<top>50</top>
-			<width>360</width>
+			<width>auto</width>
 			<height>37</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<orientation>horizontal</orientation>
 			<control type="label"><!-- Video screen heading -->
-				<width min="60" max="250">auto</width>
+				<width max="256">auto</width>
 				<height>37</height>
 				<label>$LOCALIZE[31029]</label>
 				<font>font18</font>
 			</control>
 			<control type="label"><!-- Number of files -->
 				<top>13</top>
-				<width min="40" max="90">auto</width>
+				<width max="80">auto</width>
 				<height>38</height>
-				<label>$INFO[Container.NumItems, (,)]</label>
+				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
 		</control>
 
