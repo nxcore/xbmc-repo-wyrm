@@ -1,4 +1,5 @@
 [B]1.4.9[/B]
+- Initial support for Media Browser.
 - Cleanup a number of default skin images.
 - Add a number of missing codec images.
 
