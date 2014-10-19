@@ -93,8 +93,8 @@ msgid "Bold"
 msgstr "Podebljano"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC zadano"
+msgid "Kodi Default"
+msgstr "Kodi zadano"
 
 msgctxt "#31652"
 msgid "Favourites"

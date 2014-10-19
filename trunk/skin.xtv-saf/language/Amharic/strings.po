@@ -65,8 +65,8 @@ msgid "Bold"
 msgstr "ማድመቂያ "
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC ነባር"
+msgid "Kodi Default"
+msgstr "Kodi ነባር"
 
 msgctxt "#31652"
 msgid "Favourites"

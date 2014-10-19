@@ -169,8 +169,8 @@ msgid "Bold"
 msgstr "Vet"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC Standaard"
+msgid "Kodi Default"
+msgstr "Kodi Standaard"
 
 msgctxt "#31578"
 msgid "Raspberry Pi"

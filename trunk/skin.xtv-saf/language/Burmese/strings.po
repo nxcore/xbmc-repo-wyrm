@@ -53,8 +53,8 @@ msgid "Default"
 msgstr "မူလအတိုင်း"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "မူလ XBMC "
+msgid "Kodi Default"
+msgstr "မူလ Kodi "
 
 msgctxt "#31652"
 msgid "Favourites"

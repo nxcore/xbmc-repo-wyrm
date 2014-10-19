@@ -97,8 +97,8 @@ msgid "Bold"
 msgstr "Удебелен"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "Стандартния за XBMC"
+msgid "Kodi Default"
+msgstr "Стандартния за Kodi"
 
 msgctxt "#31651"
 msgid "Muted"

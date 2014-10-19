@@ -85,8 +85,8 @@ msgid "Bold"
 msgstr "Negreta"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC per defecte"
+msgid "Kodi Default"
+msgstr "Kodi per defecte"
 
 msgctxt "#31652"
 msgid "Favourites"

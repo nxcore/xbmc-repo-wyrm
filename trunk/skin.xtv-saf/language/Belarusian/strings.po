@@ -97,8 +97,8 @@ msgid "Bold"
 msgstr "Тоўсты"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC Default"
+msgid "Kodi Default"
+msgstr "Kodi Default"
 
 msgctxt "#31652"
 msgid "Favourites"
