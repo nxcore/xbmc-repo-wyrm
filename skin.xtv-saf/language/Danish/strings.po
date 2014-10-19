@@ -81,8 +81,8 @@ msgid "Bold"
 msgstr "Fed"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC Standard"
+msgid "Kodi Default"
+msgstr "Kodi Standard"
 
 msgctxt "#31652"
 msgid "Favourites"

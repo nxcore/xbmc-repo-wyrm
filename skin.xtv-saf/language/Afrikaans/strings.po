@@ -77,8 +77,8 @@ msgid "Bold"
 msgstr "Vet"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "XBMC Bestek"
+msgid "Kodi Default"
+msgstr "Kodi Bestek"
 
 msgctxt "#31652"
 msgid "Favourites"

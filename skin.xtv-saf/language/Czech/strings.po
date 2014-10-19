@@ -89,8 +89,8 @@ msgid "Bold"
 msgstr "Tučné"
 
 msgctxt "#31577"
-msgid "XBMC Default"
-msgstr "Výchozí XBMC"
+msgid "Kodi Default"
+msgstr "Výchozí Kodi"
 
 msgctxt "#31652"
 msgid "Favourites"
