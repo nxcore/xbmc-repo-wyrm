@@ -14,10 +14,6 @@
 	-->
 	<include file="Includes_Variables.xml" />
 	<include file="Defaults.xml" />
-	<include file="Includes_VertHome.xml" />
-	<include file="Includes_HorzHome.xml" />
-	<include file="Includes_IconHome.xml" />
-	<include file="Includes_Shelf.xml" />
 	<include file="Includes_Weather.xml" />
 	<include file="View-Coverflow.xml" />
 	<include file="View-Icon.xml" />
@@ -27,13 +23,7 @@
 	<include file="View-Music.xml" />
 	<include file="View-PhotoWall.xml" />
 	<include file="View-PhotoWrap.xml" />
-	<include file="View-PVR.xml" />
-	<include file="View-VideoList.xml" />
-	<include file="View-VideoIcon.xml" />
-	<include file="View-VideoBanner.xml" />
-	<include file="View-VideoWrap.xml" />
-	<include file="View-VideoWall.xml" />
-	<include file="View-VideoCoverflow.xml" />
+	<!--<include file="View-PVR.xml" />-->
 
 	<include name="fullscreenimage"><!-- Postion and size of fullscreen image -->
 			<left>0</left>
@@ -540,13 +530,15 @@
 	</include>
 
 	<include name="keyboard-key-common">
+		<width>64</width>
+		<height>48</height>
 		<align>center</align>
 		<aligny>top</aligny>
 		<textoffsetx>0</textoffsetx>
 		<textoffsety>2</textoffsety>
 		<font>font18</font>
 		<textcolor>shadow-text</textcolor>
-		<shadowcolor>button-text</shadowcolor>
+		<shadowcolor>-</shadowcolor>
 		<texturenofocus border="6">key-nofocus.png</texturenofocus>
 		<texturefocus border="6">key-focus.png</texturefocus>
 	</include>
