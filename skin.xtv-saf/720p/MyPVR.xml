@@ -101,14 +101,14 @@
 		</control>
 
 		<control type="group" id="50">
-			<include>PVRTVListView</include>
-			<include>PVRRadioListView</include>
-			<include>PVRTimelineView</include>
-			<include>PVRRecordListView</include>
-			<include>PVRTimerListView</include>
-			<include>PVRChannelListView</include>
-			<include>PVRNowNextListView</include>
-			<include>PVRSearchListView</include>
+			<include file="View-PVR.xml">PVRTVListView</include>
+			<include file="View-PVR.xml">PVRRadioListView</include>
+			<include file="View-PVR.xml">PVRTimelineView</include>
+			<include file="View-PVR.xml">PVRRecordListView</include>
+			<include file="View-PVR.xml">PVRTimerListView</include>
+			<include file="View-PVR.xml">PVRChannelListView</include>
+			<include file="View-PVR.xml">PVRNowNextListView</include>
+			<include file="View-PVR.xml">PVRSearchListView</include>
 		</control>
 
 		<control type="group">

@@ -5,10 +5,10 @@
 	<include>screen-fade</include>
 	<controls>
 		<!-- Use Vertical Home menu-->
-		<include condition="Skin.HasSetting(homemenu-vertical)">VertHomeMenu</include>
+		<include condition="Skin.HasSetting(homemenu-vertical)" file="Includes_VertHome.xml">VertHomeMenu</include>
 		<!-- Use Horizontal Home menu-->
-		<include condition="Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-icon)]">HorzHomeMenu</include>
+		<include condition="Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-icon)]" file="Includes_HorzHome.xml">HorzHomeMenu</include>
 		<!-- Use Icon Home menu-->
-		<include condition="Skin.HasSetting(homemenu-icon)">IconHomeMenu</include>
+		<include condition="Skin.HasSetting(homemenu-icon)" file="Includes_IconHome.xml">IconHomeMenu</include>
 	</controls>
 </window>
