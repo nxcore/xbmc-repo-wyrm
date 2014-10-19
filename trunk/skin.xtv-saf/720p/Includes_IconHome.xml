@@ -65,7 +65,7 @@
 					</control>
 					<control type="group">
 						<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-movieimages),$LOCALIZE[31953])]</visible>
-						<include>movie-shelficons</include>
+						<include file="Includes_Shelf.xml">movie-shelficons</include>
 					</control>
 				</control>
 				<control type="group" id="9205"><!-- TV Shows icons -->
@@ -89,7 +89,7 @@
 					</control>
 					<control type="group">
 						<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-tvshowimages),$LOCALIZE[31953])]</visible>
-						<include>tvshow-shelficons</include>
+						<include file="Includes_Shelf.xml">tvshow-shelficons</include>
 					</control>
 				</control>
 				<control type="group" id="9255"><!-- Music icons -->
@@ -113,7 +113,7 @@
 					</control>
 					<control type="group">
 						<visible>System.HasAddon(service.skin.widgets) + ![StringCompare(Skin.String(shelf-musicimages),$LOCALIZE[31953])]</visible>
-						<include>music-shelficons</include>
+						<include file="Includes_Shelf.xml">music-shelficons</include>
 					</control>
 				</control>
 				<control type="group" id="9801"><!-- Weather icons -->
@@ -137,7 +137,7 @@
 					</control>
 					<control type="group">
 						<visible>Weather.IsFetched</visible>
-						<include condition="!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]">ShelfWeather</include>
+						<include condition="!IsEmpty(Weather.plugin) + [Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)]" file="Includes_Shelf.xml">ShelfWeather</include>
 					</control>
 				</control>
 				<control type="group" id="9802"><!-- Default Shelf image -->
@@ -277,6 +277,13 @@
 				</control>
 			</focusedlayout>
 			<content>
+				<item><!-- Videos -->
+					<visible>!Skin.HasSetting(home-video)</visible>
+					<thumb>special://skin/extras/homeicons/video.png</thumb>
+					<label>$LOCALIZE[3]</label>
+					<label2>$LOCALIZE[571]</label2>
+					<onclick>ActivateWindow(Videolibrary,root,return)</onclick>
+				</item>
 				<item><!-- Movies -->
 					<visible>!Skin.HasSetting(home-movie)</visible>
 					<thumb>special://skin/extras/homeicons/movie.png</thumb>
