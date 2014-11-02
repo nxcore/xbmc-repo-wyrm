@@ -27,7 +27,7 @@
 			<height>187</height>
 			<align>left</align>
 			<aspectratio>keep</aspectratio>
-			<texture>unknown-user.png</texture>
+			<texture>icon-profile.png</texture>
 		</control>
 		<control type="label"><!-- Profile directory heading -->
 			<left>17</left>

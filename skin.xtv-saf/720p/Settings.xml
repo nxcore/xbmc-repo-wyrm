@@ -61,7 +61,7 @@
 						<top>10</top>
 						<width>30</width>
 						<height>30</height>
-						<texture>scroll-right.png</texture>
+						<texture>menu-more-unfocus.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
@@ -87,7 +87,7 @@
 						<top>10</top>
 						<width>30</width>
 						<height>30</height>
-						<texture>scroll-right-focus.png</texture>
+						<texture>menu-more-focus.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</focusedlayout>

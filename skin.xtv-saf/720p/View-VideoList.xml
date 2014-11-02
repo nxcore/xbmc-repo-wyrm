@@ -18,7 +18,7 @@
 			<pagecontrol>23</pagecontrol>
 			<itemlayout width="575" height="66">
 				<control type="image">
-					<left>11</left>
+					<left>8</left>
 					<top>22</top>
 					<width>32</width>
 					<height>32</height>
@@ -26,19 +26,27 @@
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 				<control type="image">
-					<left>20</left>
-					<top>48</top>
+					<left>532</left>
+					<top>16</top>
 					<width>16</width>
 					<height>16</height>
 					<texture fallback="blank.png">$VAR[ExtrasOverlay]</texture>
 					<visible>System.HasAddon(script.videoextras)</visible>
 				</control>
+				<control type="image">
+					<left>526</left>
+					<top>38</top>
+					<width>30</width>
+					<height>30</height>
+					<texture>flag-hd.png</texture>
+					<visible>!IsEmpty(ListItem.VideoResolution) + IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+				</control>
 				<control type="group">
 					<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -47,17 +55,17 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -68,9 +76,9 @@
 				<control type="group">
 					<visible>Container.Content(addons)</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -79,17 +87,17 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -100,9 +108,9 @@
 				<control type="group">
 					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -111,17 +119,17 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -132,9 +140,9 @@
 				<control type="group">
 					<visible>Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -143,17 +151,17 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -164,7 +172,7 @@
 			</itemlayout>
 			<focusedlayout width="575" height="66">
 				<control type="image">
-					<left>11</left>
+					<left>8</left>
 					<top>22</top>
 					<width>32</width>
 					<height>32</height>
@@ -172,19 +180,27 @@
 					<visible>Skin.HasSetting(watched-overlay)</visible>
 				</control>
 				<control type="image">
-					<left>20</left>
-					<top>48</top>
+					<left>532</left>
+					<top>16</top>
 					<width>16</width>
 					<height>16</height>
 					<texture fallback="blank.png">$VAR[ExtrasOverlay]</texture>
 					<visible>System.HasAddon(script.videoextras)</visible>
 				</control>
+				<control type="image">
+					<left>526</left>
+					<top>38</top>
+					<width>30</width>
+					<height>30</height>
+					<texture>flag-hd.png</texture>
+					<visible>!IsEmpty(ListItem.VideoResolution) + IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+				</control>
 				<control type="group">
 					<visible>![Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -194,18 +210,18 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Label2)</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -217,9 +233,9 @@
 				<control type="group">
 					<visible>Container.Content(addons)</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<selectedcolor>listselected-text</selectedcolor>
@@ -230,9 +246,9 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<selectedcolor>listselected-text</selectedcolor>
@@ -240,9 +256,9 @@
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -254,9 +270,9 @@
 				<control type="group">
 					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -266,18 +282,18 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.PlotOutline)</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -289,9 +305,9 @@
 				<control type="group">
 					<visible>Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)</visible>
 					<control type="label">
-						<left>46</left>
+						<left>38</left>
 						<top>22</top>
-						<width>506</width>
+						<width>480</width>
 						<height>23</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label]</label>
@@ -301,18 +317,18 @@
 					<control type="group">
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>14</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<label>$INFO[ListItem.Label]</label>
 							<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						</control>
 						<control type="label">
-							<left>46</left>
+							<left>38</left>
 							<top>38</top>
-							<width>506</width>
+							<width>480</width>
 							<height>23</height>
 							<font>font11</font>
 							<textcolor>disabled-text</textcolor>
@@ -332,7 +348,7 @@
 					<top>330</top>
 					<width>560</width>
 					<height>66</height>
-					<texture border="8">default-button.png</texture>
+					<texture border="5">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-264"
