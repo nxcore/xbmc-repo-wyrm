@@ -632,10 +632,11 @@
 	<include name="movie-shelficons">
 		<control type="label"><!-- Movie shelf icons label -->
 			<left>55</left>
-			<top>12</top>
-			<height>25</height>
+			<top>16</top>
+			<height>22</height>
 			<width>400</width>
 			<label>$INFO[Container(9160).ListItem.Property(ItemType)]</label>
+			<font>font11</font>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -821,10 +822,11 @@
 	<include name="tvshow-shelficons">
 		<control type="label"><!-- TV Episodes shelf icons label -->
 			<left>55</left>
-			<top>12</top>
-			<height>25</height>
+			<top>16</top>
+			<height>22</height>
 			<width>400</width>
 			<label>$INFO[Container(9210).ListItem.Property(ItemType)]</label>
+			<font>font11</font>
 		</control>
 		<control type="group">
 			<visible>StringCompare(Skin.String(shelf-tvshowimgtyp),$LOCALIZE[31949])</visible><!-- Banners -->
@@ -1033,10 +1035,11 @@
 	<include name="music-shelficons">
 		<control type="label"><!-- Album shelf icon label-->
 			<left>55</left>
-			<top>12</top>
-			<height>25</height>
+			<top>16</top>
+			<height>22</height>
 			<width>400</width>
 			<label>$INFO[Container(9260).ListItem.Property(ItemType)]</label>
+			<font>font11</font>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -1163,10 +1166,11 @@
 	<include name="addons-shelficons">
 		<control type="label"><!-- Addon shelf icon label-->
 			<left>55</left>
-			<top>12</top>
-			<height>25</height>
+			<top>16</top>
+			<height>22</height>
 			<width>400</width>
 			<label>$INFO[Container(9360).ListItem.Property(ItemType)]</label>
+			<font>font11</font>
 		</control>
 		<control type="list" id="9360">
 			<left>10</left>
@@ -1267,7 +1271,7 @@
 				<width>500</width>
 				<label>$INFO[Window(Weather).Property(Location)]</label>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
-				<font>font18</font>
+				<font>font13</font>
 			</control>
 			<control type="label">
 				<left>20</left>

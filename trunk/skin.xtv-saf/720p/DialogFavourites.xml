@@ -76,7 +76,7 @@
 				<top>112</top>
 				<width>384</width>
 				<height>384</height>
-				<texture fallback="shut-fav.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+				<texture fallback="icon-fav.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio scalediffuse="false">keep</aspectratio>
 			</control>
 		</control>

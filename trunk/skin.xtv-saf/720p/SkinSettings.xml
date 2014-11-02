@@ -112,7 +112,7 @@
 				<top>449</top>
 				<width>30</width>
 				<height>30</height>
-				<texture>scroll-right.png</texture>
+				<texture>menu-more-unfocus.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>!Control.HasFocus(987)</visible>
 			</control>
@@ -121,7 +121,7 @@
 				<top>449</top>
 				<width>30</width>
 				<height>30</height>
-				<texture>scroll-right-focus.png</texture>
+				<texture>menu-more-focus.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Control.HasFocus(987)</visible>
 			</control>
@@ -217,6 +217,15 @@
 						<textwidth>785</textwidth>
 						<enable>Skin.HasSetting(startup-playlist)</enable>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://musicplaylists)</onclick>
+					</control>
+					<control type="button" id="114"><!-- Reset Above Settings button -->
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[10041]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(intro-vid)</onclick>
+						<onclick>Skin.Reset(intro-vid-location)</onclick>
+						<onclick>Skin.Reset(startup-playlist)</onclick>
+						<onclick>Skin.Reset(Startup_Playlist_Path)</onclick>
 					</control>
 				</control>
 			</control>
@@ -345,6 +354,20 @@
 						<textwidth>785</textwidth>
 						<onclick>RunScript(script.artwork.downloader,mode=custom,fanart,extrafanart,poster,seasonposter,clearlogo,clearart,banner,seasonbanner)</onclick>
 						<enable>System.HasAddon(script.artwork.downloader)</enable>
+					</control>
+					<control type="button" id="212"><!-- Reset Above Settings button -->
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[10041]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(view-as-lock)</onclick>
+						<onclick>Skin.Reset(sbar)</onclick>
+						<onclick>Skin.Reset(autoscroll)</onclick>
+						<onclick>Skin.Reset(overlay)</onclick>
+						<onclick>Skin.Reset(watched-overlay)</onclick>
+						<onclick>Skin.Reset(DVDcase)</onclick>
+						<onclick>Skin.Reset(CDcase)</onclick>
+						<onclick>Skin.Reset(custom-weathericons)</onclick>
+						<onclick>Skin.Reset(tv_theme)</onclick>
 					</control>
 				</control>
 			</control>
@@ -941,6 +964,7 @@
 							<height>56</height>
 							<width>885</width>
 							<onup>315</onup>
+							<ondown>322</ondown>
 							<onleft>1223</onleft>
 							<onright>320</onright>
 							<scrolltime>0</scrolltime>
@@ -1007,6 +1031,7 @@
 							<height>56</height>
 							<width>32</width>
 							<onup>315</onup>
+							<ondown>322</ondown>
 							<onleft>319</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
@@ -1042,6 +1067,19 @@
 								</item>
 							</content>
 						</control>
+					</control>
+					<control type="button" id="322"><!-- Reset Above Settings button -->
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[10041]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(home-time)</onclick>
+						<onclick>Skin.Reset(home-currentweather)</onclick>
+						<onclick>Skin.Reset(custom-watermark)</onclick>
+						<onclick>Skin.Reset(shelf-movieimages)</onclick>
+						<onclick>Skin.Reset(shelf-tvshowimages)</onclick>
+						<onclick>Skin.Reset(shelf-tvshowimgtyp)</onclick>
+						<onclick>Skin.Reset(shelf-musicimages)</onclick>
+						<onclick>Skin.Reset(shelf-addonimages)</onclick>
 					</control>
 				</control>
 			</control>
@@ -1582,7 +1620,7 @@
 							<height>56</height>
 							<width>885</width>
 							<onup>509</onup>
-							<ondown>513</ondown>
+							<ondown>514</ondown>
 							<onleft>1223</onleft>
 							<onright>512</onright>
 							<scrolltime>0</scrolltime>
@@ -1657,7 +1695,7 @@
 							<height>56</height>
 							<width>32</width>
 							<onup>509</onup>
-							<ondown>513</ondown>
+							<ondown>514</ondown>
 							<onleft>511</onleft>
 							<onright>999</onright>
 							<scrolltime>0</scrolltime>
@@ -1701,6 +1739,20 @@
 								</item>
 							</content>
 						</control>
+					</control>
+					<control type="button" id="514"><!-- Reset Above Settings button -->
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[10041]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(custom-background)</onclick>
+						<onclick>Skin.Reset(movie-libraryentry)</onclick>
+						<onclick>Skin.Reset(background-fanart)</onclick>
+						<onclick>Skin.Reset(background-extrafanart)</onclick>
+						<onclick>Skin.Reset(HomeViewToggle)</onclick>
+						<onclick>Skin.Reset(background-slideshow)</onclick>
+						<onclick>Skin.Reset(custom-weatherbackgrounds)</onclick>
+						<onclick>Skin.Reset(background-visibiltymed)</onclick>
+						<onclick>Skin.Reset(background-visibiltyhigh)</onclick>
 					</control>
 				</control>
 			</control>
@@ -1783,6 +1835,16 @@
 						<onclick>Skin.SetBool(selectmusicentry)</onclick>
 						<onclick>ActivateWindow(1156)</onclick>
 						<onclick>Skin.Reset(selectmusicentry)</onclick>
+					</control>
+					<control type="button" id="607"><!-- Reset Above Settings button -->
+						<include>settings-submenu-common</include>
+						<label>$LOCALIZE[10041]</label>
+						<textwidth>785</textwidth>
+						<onclick>Skin.Reset(movie-libraryentry)</onclick>
+						<onclick>Skin.Reset(pvr-libraryentry)</onclick>
+						<onclick>Skin.Reset(tv-libraryentry)</onclick>
+						<onclick>Skin.Reset(musicvideo-libraryentry)</onclick>
+						<onclick>Skin.Reset(music-libraryentry)</onclick>
 					</control>
 				</control>
 			</control>

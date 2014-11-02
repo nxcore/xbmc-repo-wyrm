@@ -133,7 +133,7 @@
 					<top>12</top>
 					<width>32</width>
 					<height>32</height>
-					<texture>scroll-right.png</texture>
+					<texture>menu-more-unfocus.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</itemlayout>
@@ -157,7 +157,7 @@
 					<top>12</top>
 					<width>32</width>
 					<height>32</height>
-					<texture>scroll-right-focus.png</texture>
+					<texture>menu-more-focus.png</texture>
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 			</focusedlayout>
@@ -337,19 +337,19 @@
 					<visible>Skin.HasSetting(home-weather) + !IsEmpty(Weather.plugin)</visible>
 				</item>
 				<item>
-					<thumb>shut-fav.png</thumb>
+					<thumb>icon-fav.png</thumb>
 					<label>$LOCALIZE[31652]</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<visible>Skin.HasSetting(home-favorites)</visible>
 				</item>
 				<item>
-					<thumb>DefaultMusicSearch.png</thumb>
+					<thumb>icon-search.png</thumb>
 					<label>$LOCALIZE[137]</label>
 					<onclick>RunScript(script.globalsearch)</onclick>
 					<visible>Skin.HasSetting(home-search)</visible>
 				</item>
 				<item>
-					<thumb>shut-profile.png</thumb>
+					<thumb>icon-profile.png</thumb>
 					<label>$LOCALIZE[20092]</label>
 					<onclick>System.LogOff</onclick>
 					<visible>Skin.HasSetting(home-profile)</visible>
@@ -366,7 +366,7 @@
 					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
 				</item>
 				<item>
-					<thumb>shut-power.png</thumb>
+					<thumb>icon-power.png</thumb>
 					<label>$LOCALIZE[13009]</label>
 					<onclick>$VAR[QuitAction]</onclick>
 					<visible>!Skin.HasSetting(home-shutdown)</visible>

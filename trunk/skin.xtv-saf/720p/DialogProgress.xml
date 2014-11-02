@@ -15,7 +15,7 @@
 				<left>292</left>
 				<top>256</top>
 				<width>690</width>
-				<height>256</height>
+				<height>228</height>
 				<texture border="8">button-menu-background.png</texture>
 			</control>
 			<control type="label" id="1"><!-- Dialog heading -->
@@ -27,7 +27,7 @@
 			</control>
 			<control type="textbox" id="9"><!-- Dialog info prompt -->
 				<left>318</left>
-				<top>310</top>
+				<top>305</top>
 				<width>637</width>
 				<height>80</height>
 				<align>center</align>
@@ -36,14 +36,14 @@
 			</control>
 			<control type="progress">
 				<left>336</left>
-				<top>418</top>
+				<top>393</top>
 				<width>601</width>
 				<height>16</height>
 				<info>System.Progressbar</info>
 			</control>
 			<control type="button" id="10"><!-- Cancel -->
 				<left>558</left>
-				<top>450</top>
+				<top>417</top>
 				<width>160</width>
 				<height>50</height>
 				<label>$LOCALIZE[222]</label>
