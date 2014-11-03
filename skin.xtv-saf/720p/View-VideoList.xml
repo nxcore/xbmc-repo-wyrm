@@ -474,7 +474,7 @@
 					<control type="group">
 						<visible>Container.Content(movies)</visible>
 						<control type="group">
-							<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+							<visible>!SubString(ListItem.Icon,DefaultFolder,Left)</visible>
 							<control type="image">
 								<left>320</left>
 								<top>120</top>
@@ -484,16 +484,23 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 						</control>
-						<control type="group">
+						<control type="image">
+							<left>320</left>
+							<top>120</top>
+							<width>318</width>
+							<height>318</height>
+							<texture>DefaultVideo.png</texture>
+							<aspectratio>keep</aspectratio>
 							<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
-							<control type="image">
-								<left>320</left>
-								<top>120</top>
-								<width>318</width>
-								<height>318</height>
-								<texture>DefaultVideo.png</texture>
-								<aspectratio>keep</aspectratio>
-							</control>
+						</control>
+						<control type="image">
+							<left>320</left>
+							<top>120</top>
+							<width>318</width>
+							<height>318</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
 						</control>
 					</control>
 					<control type="group">
